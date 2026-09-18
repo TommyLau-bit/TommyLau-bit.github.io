@@ -2,7 +2,6 @@
 title: "The chip isn't slow. Fetching is. Why memory became the bottleneck"
 date: 2026-09-18
 summary: "When an AI writes its reply, the arithmetic is fast and the waiting for data is slow. So the industry started stacking memory chips into little towers glued right next to the processor. It's a clever fix, it's expensive, and it explains a lot about which parts of the AI supply chain are actually scarce."
-shortLabel: "MEMORY"
 category: "Explainer"
 cover: "/covers/memory.svg"
 tags: ["memory", "HBM", "the-stack"]
@@ -49,7 +48,7 @@ So the bottlenecks up and down the stack do not resolve together. The ones near 
 
 <section class="exposure">
 <h3>Who makes the parts</h3>
-<p class="note">This maps who makes what. It is explicitly not a recommendation, and on memory in particular I hold no investment view.</p>
+<p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares. On memory in particular I hold no investment view.</p>
 <dl>
 <dt>Stacked memory beside the chip</dt>
 <dd><span class="names">SK Hynix, Samsung and Micron</span> are the only three companies making high-bandwidth memory at scale.</dd>

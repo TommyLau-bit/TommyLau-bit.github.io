@@ -2,7 +2,6 @@
 title: "Electricity doesn't get used up making AI. It turns into heat. Cooling is half the job."
 date: 2026-08-21
 summary: "Almost every watt that goes into an AI chip comes out as heat, and one cabinet now gives off as much as eighty space heaters. Air can't carry that away. So the biggest plumbing change in the history of data centres is happening right now, and it doesn't care which chip company wins."
-shortLabel: "COOLING"
 category: "Explainer"
 cover: "/covers/cooling.svg"
 tags: ["cooling", "data-centres", "liquid"]

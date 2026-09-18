@@ -19,6 +19,19 @@ Astro static site. Markdown in, website out.
 3. Write in Markdown below it. Set `draft: true` to hide a piece while it's unfinished.
 4. `git add -A && git commit -m "New piece" && git push` — GitHub builds and publishes it automatically (about 60 seconds).
 
+## The full formula
+
+`WRITING-FORMAT.md` in this folder is the complete spec: the two shapes a piece
+can take, every frontmatter field, the body skeleton in order, the house style
+measured from the existing pieces, the scope limits, the cover art spec, the
+publish checklist and the matching LinkedIn post. `TEMPLATE.md` is a fill-in
+skeleton, kept at the repo root so the site never loads it. `brand/check-piece.py`
+validates a piece against the spec and exits non-zero if it does not comply.
+
+Hand Claude raw notes and point it at `WRITING-FORMAT.md` and it will produce a
+piece that matches the others. The two blocks below are the parts you are most
+likely to forget, so they are repeated here.
+
 ## Every piece needs these two blocks
 
 **1. The analogy.** Right before the first `##` heading. This is the whole point of the journal: the same idea in a familiar frame, for a reader with no finance background.

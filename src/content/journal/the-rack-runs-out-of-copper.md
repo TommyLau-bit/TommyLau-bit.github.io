@@ -2,7 +2,6 @@
 title: "The rack runs out of copper before it runs out of chips"
 date: 2026-08-07
 summary: "AI computers are getting so power-hungry that the copper bars carrying electricity inside each cabinet would soon weigh more than the computers. So the industry is about to change how power enters the building. That change, not the chips, is what decides who gets to build."
-shortLabel: "800 VDC"
 category: "Explainer"
 cover: "/covers/copper-rack.svg"
 tags: ["power", "data-centres", "800VDC"]
