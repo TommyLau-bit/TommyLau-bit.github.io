@@ -6,24 +6,19 @@ import { SITE, READING_ORDER } from '../config';
 const all = await getCollection('journal', ({ data }) => !data.draft);
 const posts = all.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 const byId = Object.fromEntries(all.map((p) => [p.id, p]));
-const path = READING_ORDER.map((id) => byId[id]).filter(Boolean);
+const first = READING_ORDER.map((id) => byId[id]).find(Boolean);
 ---
 <Base wide>
   <section class="hero hero--compact">
     <h1>The AI buildout has a physical layer.</h1>
     <p>{SITE.description}</p>
+    {first && (
+      <p class="hero-start">
+        New here? Begin with <a href={`/journal/${first.id}/`}>{first.data.title}</a>,
+        or take the <a href="/start/">whole path in order</a>.
+      </p>
+    )}
   </section>
-  {path.length > 1 && (
-    <aside class="starthere">
-      <p class="label">New here? Read them in this order.</p>
-      <ol>
-        {path.map((p) => (
-          <li><a href={`/journal/${p.id}/`}>{p.data.title}</a></li>
-        ))}
-      </ol>
-      <p class="why">Each one stands alone, but they build. The first explains what a data centre is actually doing; the rest work down through the constraints, from the grid connection to the memory beside the chip.</p>
-    </aside>
-  )}
   <section class="grid">
     {posts.map((p) => <Card p={p} />)}
   </section>

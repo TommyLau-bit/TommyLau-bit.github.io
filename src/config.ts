@@ -11,15 +11,33 @@ export const SITE = {
   locale: 'en-GB',
 };
 
-// ── Suggested reading order for newcomers. Slugs, in order. ──────────────────
-export const READING_ORDER = [
-  'the-two-seconds-after-you-hit-send',
-  'the-queue-not-the-chip',
-  'the-rack-runs-out-of-copper',
-  'cooling-is-half-the-job',
-  'ten-thousand-chips-one-thought',
-  'the-countertop-is-the-bottleneck',
+// ── Suggested reading path for newcomers, grouped into stages. ───────────────
+// Add new pieces to the stage they belong to. The home page never grows:
+// it shows a single line pointing at /start, which is where this lives.
+export const READING_PATH = [
+  {
+    stage: 'What the building is actually doing',
+    note: 'One piece. Read it and the rest of the site makes sense.',
+    ids: ['the-two-seconds-after-you-hit-send'],
+  },
+  {
+    stage: 'Getting the power in',
+    note: 'From the grid connection down to the busbar inside the cabinet.',
+    ids: ['the-queue-not-the-chip', 'the-rack-runs-out-of-copper'],
+  },
+  {
+    stage: 'Getting the heat back out',
+    note: 'Every watt that goes in comes out as heat. Somebody has to carry it away.',
+    ids: ['cooling-is-half-the-job'],
+  },
+  {
+    stage: 'Keeping the chips fed',
+    note: 'The wiring between chips and the memory beside them decide whether the silicon earns its keep.',
+    ids: ['ten-thousand-chips-one-thought', 'the-countertop-is-the-bottleneck'],
+  },
 ];
+
+export const READING_ORDER = READING_PATH.flatMap((s) => s.ids);
 
 // Bump when a social card's artwork changes: LinkedIn caches by URL.
 export const OG_VERSION = 'v3';

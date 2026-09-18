@@ -153,20 +153,42 @@ details.analogy > p:first-of-type { margin-top: 0.1rem; }
 
 
 /* ── start here ────────────────────────────────────────────────── */
-.starthere {
-  margin: 0 0 2.5rem; padding: 1.15rem 1.35rem; background: var(--bg-elev);
-  border: 1px solid var(--rule); border-left: 3px solid var(--accent); border-radius: 0 6px 6px 0;
+/* ── start-here pointer + reading path ─────────────────────────── */
+.hero-start {
+  margin: 0.85rem 0 0; font-family: var(--sans); font-size: 0.92rem; color: var(--ink-3);
 }
-.starthere .label {
-  margin: 0 0 0.6rem; font-family: var(--sans); font-size: 0.78rem; font-weight: 700;
-  letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent);
+.hero-start a { color: var(--ink-2); text-decoration-color: var(--rule); }
+.hero-start a:hover { color: var(--accent); text-decoration-color: var(--accent); }
+
+.path { padding-bottom: 1rem; }
+.path-stage h2 {
+  font-family: var(--sans); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--accent); margin: 2.4rem 0 0.2rem;
+  border-top: 1px solid var(--rule); padding-top: 1.1rem;
 }
-.starthere ol { margin: 0; padding-left: 1.2rem; }
-.starthere li { margin: 0.28rem 0; font-size: 1rem; line-height: 1.4; }
-.starthere li::marker { color: var(--ink-3); font-family: var(--sans); font-size: 0.85rem; }
-.starthere li a { text-decoration: none; }
-.starthere li a:hover { color: var(--accent); text-decoration: underline; text-decoration-color: var(--accent); }
-.starthere .why { margin: 0.85rem 0 0; font-size: 0.93rem; color: var(--ink-3); }
+.path-note { margin: 0 0 1rem; font-size: 0.93rem; color: var(--ink-3); }
+.path-list { list-style: none; margin: 0; padding: 0; }
+.path-list li { display: flex; gap: 0.9rem; padding: 0.7rem 0; align-items: baseline; }
+.path-list li > div { min-width: 0; }
+.path-num {
+  flex: 0 0 auto; font-family: var(--mono); font-size: 0.8rem; color: var(--ink-3);
+  width: 1.6rem; text-align: right; font-variant-numeric: tabular-nums;
+}
+.path-title {
+  font-family: var(--sans); font-weight: 600; font-size: 1.05rem; line-height: 1.3;
+  text-decoration: none; letter-spacing: -0.01em;
+}
+.path-title:hover { color: var(--accent); text-decoration: underline; text-decoration-color: var(--accent); }
+.path-sum { margin: 0.3rem 0 0.35rem; font-size: 0.95rem; color: var(--ink-2); }
+.path-meta { font-family: var(--sans); font-size: 0.8rem; color: var(--ink-3); }
+.path-foot {
+  margin: 2.4rem 0 3rem; padding-top: 1.1rem; border-top: 1px solid var(--rule);
+  font-size: 0.95rem; color: var(--ink-3);
+}
+@media (max-width: 560px) {
+  .path-list li { gap: 0.7rem; }
+  .path-num { width: 1.3rem; }
+}
 
 /* ── glossary ──────────────────────────────────────────────────── */
 .glossary { padding-bottom: 3rem; }
