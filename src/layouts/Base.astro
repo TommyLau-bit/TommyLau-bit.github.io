@@ -21,7 +21,11 @@ const cur = (p: string) => (p === '/' ? path === '/' : path.startsWith(p)) ? 'pa
   <meta property="og:site_name" content={SITE.name} />
   <meta property="og:title" content={title ?? SITE.name} />
   <meta property="og:description" content={description} />
-  <meta name="twitter:card" content="summary" />
+  <meta property="og:image" content={`${SITE.url}/og.png`} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content={`${SITE.url}/og.png`} />
 </head>
 <body>
   <header class="site-head">
