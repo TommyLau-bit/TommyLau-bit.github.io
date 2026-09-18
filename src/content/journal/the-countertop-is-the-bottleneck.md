@@ -11,6 +11,13 @@ There is a widespread assumption that AI is limited by how fast a chip can do ma
 
 When the model writes, one token at a time, its maths cores are often not the constraint. The arithmetic is fast. What is slow is fetching: pulling the model's settings and its working memory of your conversation out of storage and into the cores, over and over, for every word. In the jargon, inference is memory-bandwidth-bound. In plain terms, the cook is quick but the countertop is too far from the pantry.
 
+<details class="analogy">
+<summary>Explain it like I don't work in finance</summary>
+<p>Imagine a chef who can chop faster than anyone alive, but the pantry is across the car park. It does not matter how fast the knife is. The job is limited by walking.</p>
+<p>That is a modern AI chip while it writes an answer. The arithmetic is quick; fetching the data is slow.</p>
+<p>So the industry did the obvious thing: it moved the pantry. Stacked memory takes the ingredients, piles them into a tower eight to twelve storeys high, and glues that tower directly beside the chopping board. Millimetres instead of a car park.</p>
+</details>
+
 ## Move the pantry
 
 For decades, computer memory sat on the motherboard a few centimetres from the processor, connected by wires on the circuit board. Think of it as suburbs across a motorway from the factory. Wide enough for ordinary work. Far too slow for this.
@@ -38,6 +45,25 @@ Here is the comparison I actually hold a view on.
 Memory and chip packaging are hard, but they are the kind of hard that money solves in quarters. Factories and production lines can be built, and are being built. A transformer, a substation, or a place in a grid connection queue is the kind of hard that money does not solve quickly, because it waits on physical infrastructure, permitting and a supply chain with very few producers.
 
 So the bottlenecks up and down the stack do not resolve together. The ones near the chip clear first. The ones near the wall socket clear last. If you only watch the chip, you will think the constraint has lifted long before it has.
+
+<section class="exposure">
+<h3>Who makes the parts</h3>
+<p class="note">This maps who makes what. It is explicitly not a recommendation, and on memory in particular I hold no investment view.</p>
+<dl>
+<dt>Stacked memory beside the chip</dt>
+<dd><span class="names">SK Hynix, Samsung and Micron</span> are the only three companies making high-bandwidth memory at scale.</dd>
+<dt>Cold bulk storage</dt>
+<dd>The spinning hard drive, written off a decade ago, is still the cheapest way to keep data nobody is reading today: <span class="names">Seagate and Western Digital</span>.</dd>
+<dt>Hot storage</dt>
+<dd>The faster solid-state tier for data in active use: <span class="names">Kioxia and Solidigm</span>.</dd>
+<dt>The packaging that makes it work</dt>
+<dd>Stacking and joining the tower to the processor is advanced packaging, done by <span class="names">TSMC</span> and its equipment suppliers.</dd>
+</dl>
+<dl class="against">
+<dt>Where I stop</dt>
+<dd>I can explain how this works and why it is scarce. I hold no view on the memory companies as investments and I would distrust anyone who offered one confidently. Memory has been a brutal boom-and-bust business for decades, and the open question is what happens to pricing when all three finish expanding capacity at the same time. I do not know.</dd>
+</dl>
+</section>
 
 ---
 

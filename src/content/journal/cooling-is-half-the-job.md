@@ -15,6 +15,13 @@ So when a cabinet of AI chips draws 120 kilowatts, it is also giving off 120 kil
 
 Getting that heat out of the building is not a support function. It is half the job.
 
+<details class="analogy">
+<summary>Explain it like I don't work in finance</summary>
+<p>A laptop gets warm on your knees. That is about 50 watts of heat. Now picture eighty hairdryers running inside a wardrobe with the door shut. That is one modern AI cabinet.</p>
+<p>You cannot fix that with a fan. To carry that much heat away with air you would need something close to a gale blowing through the electronics.</p>
+<p>Water is simply a better lorry for heat. Think of stepping out of a swimming pool on a breezy day and how much colder you feel than standing in the same breeze dry. Same air, but the water is carrying the heat off your skin. That is the whole industry shift in one image: the cooling is moving from blowing air at the problem to running liquid right onto the chip.</p>
+</details>
+
 ## Why air stopped working
 
 For twenty years data centres were cooled with air. Fans pushed cold air through the servers, warm air came out the back, and chillers cooled it down again. That worked because a normal server rack drew 5 to 10 kilowatts.
@@ -48,6 +55,25 @@ The industrial companies have said as much with their wallets. Within months of 
 ## What I'm watching
 
 Three things. Whether immersion moves from the fringe to the mainstream as racks pass 600 kilowatts, because at that density even direct-to-chip starts to strain. Whether water permitting becomes a hard cap on siting in the places with the cheapest power. And the PUE figures that operators actually publish, because the gap between a design target and a running building is where the money either is or isn't.
+
+<section class="exposure">
+<h3>Who is exposed if cooling moves to liquid</h3>
+<p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares.</p>
+<dl>
+<dt>The one-stop suppliers</dt>
+<dd><span class="names">Vertiv</span> sells both the power gear and the liquid cooling, which is rare. <span class="names">Schneider Electric</span> and <span class="names">Eaton</span> bought their way in, Schneider acquiring Motivair and Eaton acquiring Boyd Thermal. Two disciplined industrials paying up for the same niche within months of each other is revealed preference, and it is a better signal than any forecast.</dd>
+<dt>The specialists</dt>
+<dd><span class="names">CoolIT</span> makes cold plates shipping inside many brand-name servers. <span class="names">nVent</span> makes loops and enclosures. <span class="names">Munters, Modine and Asetek</span> sit in adjacent parts of the thermal chain.</dd>
+<dt>The component layer</dt>
+<dd>Pumps, plates and distribution units from <span class="names">Delta, LiteOn</span> and the Taiwanese thermal suppliers feeding the rack builders.</dd>
+<dt>Why this lane is unusually clean</dt>
+<dd>Cooling does not care which chip company wins. Whether the silicon is <span class="names">Nvidia, AMD</span> or a hyperscaler's own design, it produces heat and the heat has to go somewhere.</dd>
+</dl>
+<dl class="against">
+<dt>On the other side</dt>
+<dd>Air-only cooling incumbents, and existing buildings whose floor loading, plumbing and electrical rooms cannot take liquid without a refit.</dd>
+</dl>
+</section>
 
 ---
 

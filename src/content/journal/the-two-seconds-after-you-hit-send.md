@@ -15,6 +15,13 @@ When you ask an AI assistant, nothing exists yet. The model writes the reply fro
 
 That is the whole story of the AI buildout in one sentence. Generating text is a manufacturing process, and manufacturing needs a plant, power, cooling and logistics. Multiply one query by hundreds of millions of people a week and you get the reason companies are spending hundreds of billions of dollars on buildings.
 
+<details class="analogy">
+<summary>Explain it like I don't work in finance</summary>
+<p>Think of a restaurant rather than a library. A library already has the book on the shelf; finding it is quick and cheap. A restaurant has no finished meal waiting. Every order is cooked from scratch, even if fifty people ask for the same dish.</p>
+<p>An AI assistant is the restaurant. That is why it costs so much more per question than a web search, and why the whole industry suddenly cares about electricity and plumbing rather than software.</p>
+<p>And the trick that keeps your meal cheap is the same one restaurants use. The chef does not cook fifty separate pans, they cook one big pan and plate fifty servings. In AI that is called batching: your question is processed alongside hundreds of strangers' questions on the same chip at the same moment. It is the difference between your question costing pennies and costing pounds.</p>
+</details>
+
 ## Three words that unlock the rest
 
 **Token.** The thing the factory makes. A token is a chunk of text, roughly three quarters of a word. Your question is chopped into tokens on the way in, and the answer is manufactured token by token on the way out. It is also the unit the labs charge for. A token is the widget coming off the line.
@@ -68,6 +75,27 @@ For fifty years, better software meant hiring cleverer programmers. Intelligence
 That turned intelligence into something you can purchase, and large companies know exactly how to compete on purchasing: outspend everyone. Software used to be the escape from the physical world, with no factory and no marginal cost. AI reversed it. The frontier of software is now poured in concrete, measured in megawatts and cooled with water.
 
 Software became heavy industry. And heavy industry is gated by the slowest thing in the chain, which is never the chip. It is the building, the wires and the water. That is what the rest of this journal is about.
+
+<section class="exposure">
+<h3>Who sits in each layer</h3>
+<p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares.</p>
+<dl>
+<dt>Power</dt>
+<dd>Generation, grid connection, transformers and backup. <span class="names">Hitachi Energy, Siemens Energy, GE Vernova, Schneider Electric, Eaton, ABB, Caterpillar, Cummins</span>.</dd>
+<dt>Cooling</dt>
+<dd>Liquid loops, coolant distribution units and chillers. <span class="names">Vertiv, Schneider Electric, Eaton, nVent, CoolIT, Munters</span>.</dd>
+<dt>Compute</dt>
+<dd>The accelerators and the processors beside them. <span class="names">Nvidia, AMD, Broadcom</span> for custom silicon, built by <span class="names">TSMC</span>, assembled by <span class="names">Foxconn, Quanta, Wiwynn, Supermicro, Dell</span>.</dd>
+<dt>Memory and storage</dt>
+<dd>Stacked memory beside the chip, drives behind it. <span class="names">SK Hynix, Samsung, Micron, Seagate, Western Digital, Kioxia</span>.</dd>
+<dt>Networking</dt>
+<dd>The links that make thousands of chips act as one. <span class="names">Broadcom, Nvidia, Arista, Marvell, Astera Labs, Coherent, Lumentum, Fabrinet, Corning, Amphenol</span>.</dd>
+<dt>Buildings and land</dt>
+<dd>The campuses themselves. <span class="names">Equinix, Digital Realty, AirTrunk, Princeton Digital Group, STT GDC, Keppel Data Centres, Vantage</span>.</dd>
+<dt>Models and apps</dt>
+<dd>The labs and the subscriptions. <span class="names">OpenAI, Anthropic, Google, Meta, Microsoft, Amazon</span>.</dd>
+</dl>
+</section>
 
 ---
 

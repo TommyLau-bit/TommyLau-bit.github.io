@@ -10,7 +10,7 @@ export async function getStaticPaths() {
 const { p } = Astro.props;
 const { Content } = await render(p);
 ---
-<Base title={p.data.title} description={p.data.summary} type="article" canonical={`${SITE.url}/journal/${p.id}/`}>
+<Base title={p.data.title} description={p.data.summary} type="article" canonical={`${SITE.url}/journal/${p.id}/`} image={`/og/${p.id}.png`}>
   <article>
     <header class="article-head">
       <h1>{p.data.title}</h1>

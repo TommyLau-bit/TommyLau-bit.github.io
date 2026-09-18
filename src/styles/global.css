@@ -117,3 +117,36 @@ main.wrap--wide { max-width: 72rem; }
   display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 .card-foot { margin-top: auto; display: flex; justify-content: space-between; font-family: var(--sans); font-size: 0.7rem; letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink-3); }
 .card-cat { color: var(--accent); font-weight: 700; }
+
+
+/* ── analogy disclosure ────────────────────────────────────────── */
+details.analogy {
+  margin: 1.6em 0; border: 1px solid var(--rule); border-left: 3px solid var(--accent-2);
+  border-radius: 0 6px 6px 0; background: var(--bg-elev); overflow: hidden;
+}
+details.analogy > summary {
+  cursor: pointer; list-style: none; padding: 0.75rem 1rem;
+  font-family: var(--sans); font-size: 0.86rem; font-weight: 700; letter-spacing: 0.01em;
+  color: var(--accent-2); display: flex; align-items: center; gap: 0.55rem;
+}
+details.analogy > summary::-webkit-details-marker { display: none; }
+details.analogy > summary::before {
+  content: "＋"; font-weight: 700; font-size: 0.95rem; line-height: 1; transition: transform .18s ease;
+}
+details.analogy[open] > summary::before { content: "－"; }
+details.analogy > summary:hover { color: var(--ink); }
+details.analogy > p { margin: 0 1rem 0.9rem; color: var(--ink-2); font-size: 0.99rem; }
+details.analogy > p:first-of-type { margin-top: 0.1rem; }
+
+/* ── exposure map ──────────────────────────────────────────────── */
+.exposure { margin: 2em 0 1.4em; border-top: 2px solid var(--accent); padding-top: 1rem; }
+.exposure h3 { font-family: var(--sans); font-size: 1.05rem; margin: 0 0 0.2rem; letter-spacing: -0.01em; }
+.exposure .note { font-family: var(--sans); font-size: 0.78rem; color: var(--ink-3); margin: 0 0 1rem; }
+.exposure dl { margin: 0; }
+.exposure dt {
+  font-family: var(--sans); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--accent); margin: 0.9rem 0 0.15rem;
+}
+.exposure dd { margin: 0; color: var(--ink-2); font-size: 0.99rem; }
+.exposure dd .names { color: var(--ink); }
+.exposure .against dt { color: var(--ink-3); }

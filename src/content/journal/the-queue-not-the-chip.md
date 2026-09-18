@@ -13,6 +13,13 @@ Over the last year, the gating item for a new data centre has quietly moved from
 
 I care about this because it is the one part of AI where physics sets the clock and the evidence sits in public documents rather than rumours from a supply chain. You can check it.
 
+<details class="analogy">
+<summary>Explain it like I don't work in finance</summary>
+<p>Imagine you have bought every brick, tile and window for a new house, and hired the builders. Then the council tells you the connection to the water main will take four years.</p>
+<p>The bricks were never the problem. But everyone is watching brick prices, because bricks are what you can see and count.</p>
+<p>That is the AI buildout right now. The chips arrive in months. The connection to the electricity grid, the substation and the transformer that feeds it, takes years. And almost nobody is watching that queue.</p>
+</details>
+
 ## Two places that show it clearly
 
 **Johor** is the cleanest example. Data centre load there more than doubled between 2024 and 2025 and reached roughly 3.8 gigawatts of maximum demand, which is around one and a half times the entire state's own current electricity use. Generation capacity is sufficient system-wide. What now decides whether a project goes ahead is access to transmission and distribution: the wires. Inside the Johor-Singapore Special Economic Zone, installed capacity of 3,885 MVA sat against demand near 1,272 MW in December 2025, a utilisation rate of about 73 per cent. Comfortable today. At the growth rate of the last two years, not for long.
@@ -44,6 +51,25 @@ Third, batteries, which are quietly becoming a connection product rather than on
 The honest counter-argument is Tenaga's own success. If connection timelines keep compressing the way the Green Lane did, from 36 months to 12, then the premium on queue position fades fast and this becomes a two-year dislocation rather than a structural one. I would also be wrong if transformer and high-voltage cable lead times normalise faster than utilities commit capital, which would turn a bottleneck into a glut.
 
 So I watch four things: transformer and cable lead times, the Green Lane project count beyond 33, utilisation in the Johor-Singapore zone past 73 per cent, and who wins the Singapore capacity award, because who gets 200 MW under a strict efficiency ceiling tells you what the regulator now believes is buildable.
+
+<section class="exposure">
+<h3>Who is exposed if the connection is the bottleneck</h3>
+<p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares.</p>
+<dl>
+<dt>The equipment that clears the queue</dt>
+<dd>High-voltage transformers, switchgear and grid connection kit: <span class="names">Hitachi Energy, Siemens Energy, GE Vernova, Schneider Electric, Eaton, ABB</span>. Cable: <span class="names">Prysmian, Nexans, NKT</span>. These order books already stretch past the spending cycle that funds them.</dd>
+<dt>Operators holding energised capacity</dt>
+<dd>Campuses already connected are worth more than campuses that are merely announced: <span class="names">Equinix, Digital Realty, AirTrunk, Princeton Digital Group, STT GDC, Keppel Data Centres, Vantage</span>. Company disclosure rarely separates the two cleanly, which is where the mispricing hides.</dd>
+<dt>Storage as a connection product</dt>
+<dd>A battery that lets a campus switch on ahead of its wires is worth more than its trading spread: <span class="names">Fluence, Tesla Energy, Sungrow, CATL, BYD</span>.</dd>
+<dt>The utilities doing the connecting</dt>
+<dd>In this region specifically, <span class="names">Tenaga Nasional</span> in Malaysia, <span class="names">SP Group</span> in Singapore, and <span class="names">YTL Power</span> as a generator and developer.</dd>
+</dl>
+<dl class="against">
+<dt>On the other side</dt>
+<dd>Developers whose pipeline is announced but unenergised, and anyone whose revenue recognition depends on a commissioning date they do not control. The damage shows up late and quietly, as dates that slip by a quarter at a time.</dd>
+</dl>
+</section>
 
 ---
 

@@ -1,8 +1,8 @@
 ---
 import '../styles/global.css';
 import { SITE } from '../config';
-interface Props { title?: string; description?: string; canonical?: string; type?: 'website' | 'article'; wide?: boolean; }
-const { title, description = SITE.description, canonical, type = 'website', wide = false } = Astro.props;
+interface Props { title?: string; description?: string; canonical?: string; type?: 'website' | 'article'; wide?: boolean; image?: string; }
+const { title, description = SITE.description, canonical, type = 'website', wide = false, image = '/og.png' } = Astro.props;
 const fullTitle = title ? `${title} · ${SITE.name}` : `${SITE.name} · ${SITE.tagline}`;
 const path = Astro.url.pathname;
 const cur = (p: string) => (p === '/' ? path === '/' : path.startsWith(p)) ? 'page' : undefined;
@@ -21,11 +21,11 @@ const cur = (p: string) => (p === '/' ? path === '/' : path.startsWith(p)) ? 'pa
   <meta property="og:site_name" content={SITE.name} />
   <meta property="og:title" content={title ?? SITE.name} />
   <meta property="og:description" content={description} />
-  <meta property="og:image" content={`${SITE.url}/og.png`} />
+  <meta property="og:image" content={`${SITE.url}${image}`} />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content={`${SITE.url}/og.png`} />
+  <meta name="twitter:image" content={`${SITE.url}${image}`} />
 </head>
 <body>
   <header class="site-head">

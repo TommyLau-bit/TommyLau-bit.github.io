@@ -19,6 +19,40 @@ Astro static site. Markdown in, website out.
 3. Write in Markdown below it. Set `draft: true` to hide a piece while it's unfinished.
 4. `git add -A && git commit -m "New piece" && git push` — GitHub builds and publishes it automatically (about 60 seconds).
 
+## Every piece needs these two blocks
+
+**1. The analogy.** Right before the first `##` heading. This is the whole point of the journal: the same idea in a familiar frame, for a reader with no finance background.
+
+```html
+<details class="analogy">
+<summary>Explain it like I don't work in finance</summary>
+<p>Everyday comparison, two or three sentences.</p>
+<p>Why the comparison holds.</p>
+</details>
+```
+
+**2. The exposure map.** Just before the closing `---` and the sources note. Turns a viewpoint into something checkable by naming who actually operates in the layer.
+
+```html
+<section class="exposure">
+<h3>Who is exposed if the claim is right</h3>
+<p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares.</p>
+<dl>
+<dt>Category</dt>
+<dd>What they do: <span class="names">Company, Company</span>.</dd>
+</dl>
+<dl class="against">
+<dt>On the other side</dt>
+<dd>Who loses if this is right.</dd>
+</dl>
+</section>
+```
+
+**Rules for the exposure map.** Name companies and what they make. Never market share, backlogs, financials or ratings. Never a view on shares. Where the AI layer map says there is no view (memory equities), say so in the box.
+
+## Social cards
+`public/og/<slug>.png` is generated per piece from its cover diagram. After adding a piece, run the generator in `brand/make-og.py`, then re-run LinkedIn's Post Inspector on the URL before sharing it.
+
 ## Live site
 `https://thephysicallayer.fyi` (GitHub Pages, custom domain via `public/CNAME`), built by `.github/workflows/deploy.yml` on every push to `main`.
 To use a custom domain later: buy it, add a `CNAME` file in `public/` containing the domain, point the DNS at GitHub Pages, and set `url` in `src/config.ts`.

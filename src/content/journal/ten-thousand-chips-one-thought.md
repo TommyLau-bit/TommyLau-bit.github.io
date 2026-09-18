@@ -15,6 +15,13 @@ Imagine a kitchen with ten thousand cooks preparing a single dish, where every c
 
 That is why the network is not an afterthought. It is a large fraction of what a data centre spends per chip, and the spending is rational.
 
+<details class="analogy">
+<summary>Explain it like I don't work in finance</summary>
+<p>Picture ten thousand people writing a single essay together, one word at a time. Before anyone adds their word, they have to read what everyone else just wrote.</p>
+<p>If passing notes around the room is slow, you have ten thousand of the world's most expensive writers sitting still, waiting. The writing was never the bottleneck. The note-passing was.</p>
+<p>That is why a data centre spends so much on cables, switches and light. It is not extravagance. It is the only way to stop the expensive part standing idle.</p>
+</details>
+
 ## Two words you need
 
 **Bandwidth** is how much data moves per second: the width of the conveyor belt.
@@ -48,6 +55,25 @@ Most of the time, the world's most expensive chips are not waiting for data from
 The skeleton I use for any "justify the spending" question runs claim, constraint, consequence, reframe.
 
 Claim: the network costs what it costs because the alternative is worse. Constraint: a trillion-parameter model versus a few hundred gigabytes of memory per chip, so it is sliced across thousands. Consequence: a network 10 per cent slow leaves the most expensive silicon ever made idle, and idle GPUs are the costliest waste in the building. Reframe: so forty to sixty cents of network for every dollar of chips is not extravagance. It is insurance on the other dollar.
+
+<section class="exposure">
+<h3>Who is exposed in the network layer</h3>
+<p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares.</p>
+<dl>
+<dt>Switch silicon</dt>
+<dd><span class="names">Broadcom</span> makes the merchant chips inside most high-end Ethernet switches, and co-designs custom accelerators for the hyperscalers, so it earns from both the compute and the network. <span class="names">Marvell</span> runs a similar playbook one tier down.</dd>
+<dt>The boxes</dt>
+<dd><span class="names">Arista</span> is the switch builder hyperscalers standardise on. <span class="names">Cisco</span> is the incumbent fighting for AI relevance. <span class="names">Nvidia</span> owns the inside-the-rack link, NVLink, and the premium scale-out option, InfiniBand.</dd>
+<dt>The optics</dt>
+<dd>Copper dies after a few metres, so between racks everything becomes light. Transceivers are consumables, replaced at each upgrade: <span class="names">Coherent, Lumentum, Innolight</span>, assembled in volume by <span class="names">Fabrinet</span>. <span class="names">Corning</span> draws the glass, <span class="names">Amphenol</span> makes the connectors.</dd>
+<dt>The gaps between chips</dt>
+<dd><span class="names">Astera Labs</span> makes the small retimer chips that clean up signals degrading over inches of circuit board. At these speeds even the space between two chips is a market.</dd>
+</dl>
+<dl class="against">
+<dt>On the other side</dt>
+<dd>Single-vendor, proprietary scale-out networking, as open Ethernet takes share. Open standards, given enough time, usually win, and by early 2026 roughly two thirds of new AI cluster networking was Ethernet.</dd>
+</dl>
+</section>
 
 ---
 

@@ -12,6 +12,13 @@ Every few months a new AI chip is announced and the headlines follow it. What al
 
 That question is about to become the whole story.
 
+<details class="analogy">
+<summary>Explain it like I don't work in finance</summary>
+<p>Imagine watering a garden through a hundred drinking straws instead of one hosepipe. You can move the same water, but you need an absurd number of straws, and they weigh a fortune in plastic.</p>
+<p>Electricity behaves the same way. At low voltage you need enormous amounts of copper to carry the current. Raise the voltage and you need far less metal to move the same power, which is exactly why the pylons outside your window run at very high voltage rather than at household voltage.</p>
+<p>The AI rack has finally got big enough that the straws no longer fit in the box. So the industry is switching to a hosepipe. And the parts to do it were already built and made cheap by the electric car charging industry, which had the same problem first.</p>
+</details>
+
 ## A cabinet the size of a fridge, drawing the power of a small town
 
 An AI "rack" is a cabinet about two metres tall, packed with computer trays. A few years ago a full rack drew maybe 10 to 20 kilowatts, roughly what a dozen homes use at once. Today's flagship racks, the kind holding NVIDIA's latest chips, sit near 200 kilowatts. The next generation, called Kyber and due in 2027, is designed to hold 576 chips and draw up to **one megawatt**. That is a single cabinet using as much electricity as several hundred homes.
@@ -57,6 +64,27 @@ A published standard is not a deployment. NVIDIA and roughly thirty vendors have
 I would also be wrong if rack power plateaus below 200 kilowatts because it turns out to be cheaper to run many smaller AI deployments than a few enormous ones. And 2027 is a date in an industry where dates slip.
 
 So I am watching four things: public 800-volt commitments from named operators rather than vendors, whether solid-state transformers win the building edge, new factory capacity for gallium nitride and silicon carbide aimed at data centres rather than cars, and whether this year's racks in the field actually land above 200 kilowatts.
+
+<section class="exposure">
+<h3>Who is exposed in the power delivery shift</h3>
+<p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares.</p>
+<dl>
+<dt>Rack and facility power systems</dt>
+<dd>From NVIDIA's own published partner list, which is revealed preference rather than marketing: <span class="names">Eaton, Schneider Electric and Vertiv</span>.</dd>
+<dt>Power components</dt>
+<dd><span class="names">Delta, LiteOn, Megmeet, Flex Power and Lead Wealth</span> build the conversion hardware inside the chain.</dd>
+<dt>The switching silicon</dt>
+<dd>Moving to high-voltage direct current is a wide-bandgap semiconductor story: <span class="names">Infineon, Texas Instruments, onsemi, ROHM, STMicroelectronics, Renesas, Analog Devices and Monolithic Power</span>, plus the gallium nitride specialists <span class="names">Navitas and Innoscience</span>.</dd>
+<dt>Storage, again</dt>
+<dd>Energy storage is written into the architecture itself, sized for the sudden power spikes AI workloads produce rather than for arbitrage. That makes batteries rack-adjacent infrastructure, not only a grid-side trade.</dd>
+<dt>The copper nuance</dt>
+<dd>Less copper per unit of power does not mean less copper. Power is growing faster than the saving. It changes the specification and the mix, not the direction.</dd>
+</dl>
+<dl class="against">
+<dt>On the other side</dt>
+<dd>Suppliers whose product is the thing being removed: the in-rack power shelves and the low-voltage busbar the new architecture is designed to delete.</dd>
+</dl>
+</section>
 
 ---
 
