@@ -1,0 +1,23 @@
+---
+import { fmtDate, readingTime } from '../utils';
+const { p } = Astro.props;
+const href = `/journal/${p.id}/`;
+// deterministic hue per post so fallback covers differ
+const hue = [...p.id].reduce((h, c) => (h * 31 + c.charCodeAt(0)) % 360, 7);
+---
+<article class="card">
+  <a class="card-cover" href={href} aria-hidden="true" tabindex="-1">
+    {p.data.cover
+      ? <img src={p.data.cover} alt="" loading="lazy" />
+      : <div class="cover-fallback" style={`--h:${hue}`}><span>{p.data.title.split(' ').slice(0,3).join(' ')}</span></div>}
+  </a>
+  <div class="card-body">
+    <time class="card-date" datetime={p.data.date.toISOString()}>{fmtDate(p.data.date)}</time>
+    <h2 class="card-title"><a href={href}>{p.data.title}</a></h2>
+    <p class="card-summary">{p.data.summary}</p>
+    <div class="card-foot">
+      <span class="card-cat">{p.data.category}</span>
+      <span class="card-read">{readingTime(p.body ?? '')} min</span>
+    </div>
+  </div>
+</article>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a1714"/><stop offset="1" stop-color="#0e0d0b"/></linearGradient>
+    <linearGradient id="cu" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f59e0b"/><stop offset="1" stop-color="#b45309"/></linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <g opacity=".18" stroke="#f59e0b" stroke-width="1">
+    <path d="M0 150H800M0 300H800M0 450H800M200 0V600M400 0V600M600 0V600"/>
+  </g>
+  <!-- rack -->
+  <rect x="300" y="90" width="200" height="420" rx="6" fill="none" stroke="#3b342c" stroke-width="3"/>
+  <g fill="#2a2520">
+    <rect x="316" y="110" width="168" height="26" rx="2"/><rect x="316" y="146" width="168" height="26" rx="2"/>
+    <rect x="316" y="182" width="168" height="26" rx="2"/><rect x="316" y="218" width="168" height="26" rx="2"/>
+    <rect x="316" y="254" width="168" height="26" rx="2"/><rect x="316" y="290" width="168" height="26" rx="2"/>
+    <rect x="316" y="326" width="168" height="26" rx="2"/><rect x="316" y="362" width="168" height="26" rx="2"/>
+  </g>
+  <!-- copper busbars growing -->
+  <rect x="336" y="400" width="128" height="14" rx="2" fill="url(#cu)"/>
+  <rect x="330" y="422" width="140" height="20" rx="2" fill="url(#cu)"/>
+  <rect x="322" y="450" width="156" height="30" rx="2" fill="url(#cu)"/>
+  <!-- power in -->
+  <path d="M120 300H300" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/>
+  <path d="M100 300l-30-20v40z" fill="#f59e0b"/>
+  <text x="120" y="280" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="13" fill="#9a8f80" letter-spacing="2">800 VDC</text>
+  <text x="520" y="470" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="13" fill="#9a8f80" letter-spacing="2">200 kg Cu</text>
+</svg>

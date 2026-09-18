@@ -1,0 +1,17 @@
+---
+import Base from '../layouts/Base.astro';
+import Card from '../components/Card.astro';
+import { getCollection } from 'astro:content';
+import { SITE } from '../config';
+const posts = (await getCollection('journal', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+<Base wide>
+  <section class="hero hero--compact">
+    <h1>The AI buildout has a physical layer.</h1>
+    <p>{SITE.description}</p>
+  </section>
+  <section class="grid">
+    {posts.map((p) => <Card p={p} />)}
+  </section>
+</Base>

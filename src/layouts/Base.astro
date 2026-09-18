@@ -1,0 +1,48 @@
+---
+import '../styles/global.css';
+import { SITE } from '../config';
+interface Props { title?: string; description?: string; canonical?: string; type?: 'website' | 'article'; wide?: boolean; }
+const { title, description = SITE.description, canonical, type = 'website', wide = false } = Astro.props;
+const fullTitle = title ? `${title} · ${SITE.name}` : `${SITE.name} · ${SITE.tagline}`;
+const path = Astro.url.pathname;
+const cur = (p: string) => (p === '/' ? path === '/' : path.startsWith(p)) ? 'page' : undefined;
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{fullTitle}</title>
+  <meta name="description" content={description} />
+  {canonical && <link rel="canonical" href={canonical} />}
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="alternate" type="application/rss+xml" title={SITE.name} href="/rss.xml" />
+  <meta property="og:type" content={type} />
+  <meta property="og:site_name" content={SITE.name} />
+  <meta property="og:title" content={title ?? SITE.name} />
+  <meta property="og:description" content={description} />
+  <meta name="twitter:card" content="summary" />
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap">
+      <div class="row">
+        <a class="site-name" href="/">{SITE.name.split(' ').slice(0,-1).join(' ')} <span>{SITE.name.split(' ').slice(-1)}</span></a>
+        <nav class="site-nav">
+          <a href="/" aria-current={cur('/')}>Journal</a>
+          <a href="/about" aria-current={cur('/about')}>About</a>
+          <a href="/rss.xml">RSS</a>
+        </nav>
+      </div>
+      <p class="site-tag">{SITE.tagline}</p>
+    </div>
+  </header>
+  <main class={wide ? "wrap wrap--wide" : "wrap"}><slot /></main>
+  <footer class="site-foot">
+    <div class="wrap" style="display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;width:100%">
+      <span>© {new Date().getFullYear()} {SITE.author}. Personal research, not investment advice.</span>
+      <span><a href={SITE.linkedin}>LinkedIn</a> · <a href={`mailto:${SITE.email}`}>Email</a></span>
+    </div>
+  </footer>
+</body>
+</html>

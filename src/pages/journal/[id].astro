@@ -1,0 +1,33 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection, render } from 'astro:content';
+import { SITE } from '../../config';
+import { fmtDate, readingTime } from '../../utils';
+export async function getStaticPaths() {
+  const posts = await getCollection('journal', ({ data }) => !data.draft);
+  return posts.map((p) => ({ params: { id: p.id }, props: { p } }));
+}
+const { p } = Astro.props;
+const { Content } = await render(p);
+---
+<Base title={p.data.title} description={p.data.summary} type="article" canonical={`${SITE.url}/journal/${p.id}/`}>
+  <article>
+    <header class="article-head">
+      <h1>{p.data.title}</h1>
+      <div class="meta">
+        <span>{SITE.author}</span><span>·</span>
+        <time datetime={p.data.date.toISOString()}>{fmtDate(p.data.date)}</time>
+        <span>·</span><span>{readingTime(p.body ?? '')} min read</span>
+        {p.data.tags.map((t) => <span class="tag">#{t}</span>)}
+      </div>
+      <aside class="plain">
+        <p class="label">In plain English</p>
+        <p>{p.data.summary}</p>
+      </aside>
+    </header>
+    <div class="prose"><Content /></div>
+    <footer class="article-foot">
+      Written by {SITE.author}. If you think the argument is wrong, I would genuinely like to hear it: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
+    </footer>
+  </article>
+</Base>
