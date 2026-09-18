@@ -2,6 +2,7 @@
 title: "Ten thousand chips, one thought: why the network costs almost as much as the chips"
 date: 2026-09-18
 summary: "A frontier AI model is too big to fit on any single chip, so it's sliced across thousands of them, and they have to swap notes for every single word. If the wiring between them is even slightly slow, the most expensive chips ever built sit idle. That's why a huge slice of every AI dollar goes on cables and light."
+shortLabel: "THE NETWORK"
 category: "Explainer"
 cover: "/covers/network.svg"
 tags: ["networking", "optics", "the-stack"]

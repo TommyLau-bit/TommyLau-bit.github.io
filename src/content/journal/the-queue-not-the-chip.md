@@ -2,6 +2,7 @@
 title: "The queue, not the chip, is what's holding AI back"
 date: 2026-08-15
 summary: "Everyone watches the chip supply. Almost nobody watches the queue to plug a data centre into the grid. But a chip order arrives in months, and a substation takes years. The scarce thing is a finished connection to the wires, and it isn't priced like it's scarce."
+shortLabel: "THE QUEUE"
 category: "Analysis"
 cover: "/covers/queue.svg"
 tags: ["power", "grid", "johor", "singapore"]

@@ -2,6 +2,7 @@
 title: "What actually happens in the two seconds after you hit send"
 date: 2026-09-18
 summary: "When you ask an AI a question, no answer is waiting on a shelf. A building the size of a factory manufactures every word for you, one at a time, in real time. Understanding that one fact explains why the whole industry is suddenly about electricity, water and copper."
+shortLabel: "TWO SECONDS"
 category: "Explainer"
 cover: "/covers/two-seconds.svg"
 tags: ["explainer", "inference", "the-stack"]

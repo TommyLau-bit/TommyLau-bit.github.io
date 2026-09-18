@@ -6,7 +6,8 @@ const journal = defineCollection({
     title: z.string(),
     date: z.coerce.date(),
     summary: z.string(),                       // plain-English one-liner
-    category: z.string().default('Explainer'), // small label under the card, e.g. Explainer · Note · Analysis
+    category: z.string().default('Explainer'),
+    shortLabel: z.string().optional(),   // 1-3 words, shown huge on the social card so it reads at thumbnail size // small label under the card, e.g. Explainer · Note · Analysis
     cover: z.string().optional(),              // /covers/name.svg or .jpg — optional, a styled fallback renders without it
     tags: z.array(z.string()).default([]),
     draft: z.boolean().default(false),

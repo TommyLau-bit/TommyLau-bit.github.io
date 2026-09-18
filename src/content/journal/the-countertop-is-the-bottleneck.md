@@ -2,6 +2,7 @@
 title: "The chip isn't slow. Fetching is. Why memory became the bottleneck"
 date: 2026-09-18
 summary: "When an AI writes its reply, the arithmetic is fast and the waiting for data is slow. So the industry started stacking memory chips into little towers glued right next to the processor. It's a clever fix, it's expensive, and it explains a lot about which parts of the AI supply chain are actually scarce."
+shortLabel: "MEMORY"
 category: "Explainer"
 cover: "/covers/memory.svg"
 tags: ["memory", "HBM", "the-stack"]
