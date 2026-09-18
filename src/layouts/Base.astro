@@ -26,6 +26,20 @@ const cur = (p: string) => (p === '/' ? path === '/' : path.startsWith(p)) ? 'pa
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content={`${SITE.url}${image}`} />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#fbfaf7" />
+  <script is:inline>
+    (function () {
+      var root = document.documentElement;
+      var saved = null;
+      try { saved = localStorage.getItem('tpl-theme'); } catch (e) {}
+      if (saved === 'light' || saved === 'dark') root.setAttribute('data-theme', saved);
+      var dark = saved ? saved === 'dark'
+        : window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var m = document.querySelector('meta[name="theme-color"]');
+      if (m) m.setAttribute('content', dark ? '#131312' : '#fbfaf7');
+    })();
+  </script>
 </head>
 <body>
   <header class="site-head">
@@ -38,6 +52,10 @@ const cur = (p: string) => (p === '/' ? path === '/' : path.startsWith(p)) ? 'pa
           <a href="/glossary" aria-current={cur('/glossary')}>Glossary</a>
           <a href="/about" aria-current={cur('/about')}>About</a>
           <a href="/rss.xml">RSS</a>
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch theme">
+            <svg class="moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+            <svg class="sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 1.8v2.4M12 19.8v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M1.8 12h2.4M19.8 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/></svg>
+          </button>
         </nav>
       </div>
       <p class="site-tag">{SITE.tagline}</p>
@@ -50,5 +68,36 @@ const cur = (p: string) => (p === '/' ? path === '/' : path.startsWith(p)) ? 'pa
       <span><a href={SITE.linkedin}>LinkedIn</a> · <a href={`mailto:${SITE.email}`}>Email</a></span>
     </div>
   </footer>
+  <script is:inline>
+    (function () {
+      var root = document.documentElement;
+      var btn = document.getElementById('theme-toggle');
+      if (!btn) return;
+      var mq = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+      function current() {
+        var a = root.getAttribute('data-theme');
+        if (a === 'light' || a === 'dark') return a;
+        return mq && mq.matches ? 'dark' : 'light';
+      }
+      function paint() {
+        var dark = current() === 'dark';
+        btn.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
+        btn.setAttribute('title', dark ? 'Switch to light theme' : 'Switch to dark theme');
+        var m = document.querySelector('meta[name="theme-color"]');
+        if (m) m.setAttribute('content', dark ? '#131312' : '#fbfaf7');
+      }
+      btn.addEventListener('click', function () {
+        var next = current() === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        try { localStorage.setItem('tpl-theme', next); } catch (e) {}
+        paint();
+      });
+      // follow the system while the reader has never chosen
+      if (mq && mq.addEventListener) mq.addEventListener('change', function () {
+        if (!root.getAttribute('data-theme')) paint();
+      });
+      paint();
+    })();
+  </script>
 </body>
 </html>
