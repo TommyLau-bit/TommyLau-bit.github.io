@@ -7,6 +7,6 @@ export const SITE = {
   author: 'Tommy Lau',
   email: 'tommyllk2003@gmail.com',
   linkedin: 'https://www.linkedin.com/in/tommy-lau-170364253',
-  url: 'https://tommylau-bit.github.io', // GitHub Pages; swap for the custom domain later
+  url: 'https://thephysicallayer.fyi',
   locale: 'en-GB',
 };

@@ -20,7 +20,7 @@ Astro static site. Markdown in, website out.
 4. `git add -A && git commit -m "New piece" && git push` — GitHub builds and publishes it automatically (about 60 seconds).
 
 ## Live site
-`https://tommylau-bit.github.io` — GitHub Pages, built by `.github/workflows/deploy.yml` on every push to `main`.
+`https://thephysicallayer.fyi` (GitHub Pages, custom domain via `public/CNAME`), built by `.github/workflows/deploy.yml` on every push to `main`.
 To use a custom domain later: buy it, add a `CNAME` file in `public/` containing the domain, point the DNS at GitHub Pages, and set `url` in `src/config.ts`.
 
 ## Change the name, tagline, author or links
