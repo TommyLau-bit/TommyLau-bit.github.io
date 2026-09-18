@@ -22,4 +22,4 @@ export const READING_ORDER = [
 ];
 
 // Bump when a social card's artwork changes: LinkedIn caches by URL.
-export const OG_VERSION = 'v2';
+export const OG_VERSION = 'v3';
