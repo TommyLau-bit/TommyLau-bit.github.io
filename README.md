@@ -50,6 +50,24 @@ Astro static site. Markdown in, website out.
 
 **Rules for the exposure map.** Name companies and what they make. Never market share, backlogs, financials or ratings. Never a view on shares. Where the AI layer map says there is no view (memory equities), say so in the box.
 
+## "Where to start" is not a table of contents
+
+`/start` is an on-ramp for someone who has never read the site. It is **not** an
+index, and **you never touch it when you publish**.
+
+Write whatever you want, drop the `.md` in, push. The piece appears on the home
+page in date order and gets its own URL. It does not need a home in the path and
+nothing breaks if it never gets one. An energy piece, a one-off note, anything
+outside the main arc: all fine, none of it belongs on `/start` by default.
+
+The list is capped at `PATH_MAX` in `src/config.ts`. Anything past the cap is
+ignored, so it cannot creep into an index you owe something to.
+
+Revisit it when you feel like it, twice a year at most. Ask one question: if
+someone landed here today, which pieces get them oriented fastest? **Swap one
+out rather than adding another**, then update `PATH_REVIEWED`, which is the
+"Chosen ..." date shown on the page.
+
 ## Social cards
 `public/og/<slug>.png` is generated per piece from its cover diagram. After adding a piece, run the generator in `brand/make-og.py`, then re-run LinkedIn's Post Inspector on the URL before sharing it.
 

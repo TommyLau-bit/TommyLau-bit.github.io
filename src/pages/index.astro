@@ -15,7 +15,7 @@ const first = READING_ORDER.map((id) => byId[id]).find(Boolean);
     {first && (
       <p class="hero-start">
         New here? Begin with <a href={`/journal/${first.id}/`}>{first.data.title}</a>,
-        or take the <a href="/start/">whole path in order</a>.
+        or see <a href="/start/">where to start</a>.
       </p>
     )}
   </section>

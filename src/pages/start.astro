@@ -1,33 +1,34 @@
 ---
 import Base from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
-import { READING_PATH } from '../config';
+import { READING_PATH, PATH_MAX, PATH_REVIEWED } from '../config';
 import { readingTime } from '../utils';
 const all = await getCollection('journal', ({ data }) => !data.draft);
 const byId = Object.fromEntries(all.map((p) => [p.id, p]));
+// Hard cap: the on-ramp stays this size no matter how much gets published.
+const capped = new Set(READING_PATH.flatMap((s) => s.ids).slice(0, PATH_MAX));
 const stages = READING_PATH
-  .map((s) => ({ ...s, posts: s.ids.map((id) => byId[id]).filter(Boolean) }))
+  .map((s) => ({ ...s, posts: s.ids.filter((id) => capped.has(id)).map((id) => byId[id]).filter(Boolean) }))
   .filter((s) => s.posts.length);
-const listed = new Set(stages.flatMap((s) => s.posts.map((p) => p.id)));
-const rest = all
-  .filter((p) => !listed.has(p.id))
-  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const chosen = stages.flatMap((s) => s.posts);
+const mins = chosen.reduce((t, p) => t + readingTime(p.body ?? ''), 0);
 let n = 0;
-const total = listed.size;
-const mins = stages.flatMap((s) => s.posts).reduce((t, p) => t + readingTime(p.body ?? ''), 0);
 ---
 <Base
-  title="Start here"
-  description="A short path through the physical constraints on the AI buildout, in the order that makes them make sense."
+  title="Where to start"
+  description="A handful of pieces, in the order that makes the physical constraints on the AI buildout stack up the way they actually do."
 >
   <section class="hero hero--compact">
-    <h1>Start here</h1>
+    <h1>Where to start</h1>
     <p>
-      Every piece stands on its own, but they build. This is the order that makes
-      them make sense: what the building is doing, then the constraints working
-      inward from the grid to the memory beside the chip.
+      Every piece stands on its own, but these build on each other. Read them in
+      this order and the constraints stack up the way they actually do, working
+      inward from the grid connection to the memory sitting beside the chip.
     </p>
-    <p class="hero-start">{total} pieces · about {mins} minutes end to end.</p>
+    <p class="hero-start">
+      {chosen.length} pieces · about {mins} minutes. A fixed on-ramp, not an
+      index of the site. Chosen {PATH_REVIEWED}.
+    </p>
   </section>
 
   <div class="path">
@@ -49,29 +50,11 @@ const mins = stages.flatMap((s) => s.posts).reduce((t, p) => t + readingTime(p.b
         </ol>
       </section>
     ))}
-
-    {rest.length > 0 && (
-      <section class="path-stage">
-        <h2>Also on the site</h2>
-        <p class="path-note">Outside the main path, in no particular order.</p>
-        <ol class="path-list path-list--plain">
-          {rest.map((p) => (
-            <li>
-              <span class="path-num">·</span>
-              <div>
-                <a class="path-title" href={`/journal/${p.id}/`}>{p.data.title}</a>
-                <p class="path-sum">{p.data.summary}</p>
-                <span class="path-meta">{p.data.category} · {readingTime(p.body ?? '')} min</span>
-              </div>
-            </li>
-          ))}
-        </ol>
-      </section>
-    )}
   </div>
 
   <p class="path-foot">
-    Unsure about a word? The <a href="/glossary/">glossary</a> defines every term
-    the journal uses, in plain English.
+    That is the whole on-ramp. Everything else, and everything published since,
+    is in <a href="/">the journal</a>, newest first. If a word gets in the way,
+    the <a href="/glossary/">glossary</a> defines every term in plain English.
   </p>
 </Base>

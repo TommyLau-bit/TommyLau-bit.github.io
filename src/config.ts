@@ -11,9 +11,21 @@ export const SITE = {
   locale: 'en-GB',
 };
 
-// ── Suggested reading path for newcomers, grouped into stages. ───────────────
-// Add new pieces to the stage they belong to. The home page never grows:
-// it shows a single line pointing at /start, which is where this lives.
+// ── The on-ramp for a new reader. NOT an index of the site. ──────────────────
+//
+// THE RULE: you do not touch this when you publish. Write whatever you want,
+// push it, and it appears on the home page in date order. This list exists only
+// to answer "where does a stranger start", and it is capped so it cannot creep
+// into a table of contents that you owe something to.
+//
+// Revisit it when you feel like it, twice a year at most, by asking one
+// question: if someone landed here today, which pieces get them oriented
+// fastest? Swap one out rather than adding a seventh. Then update REVIEWED.
+//
+// Anything beyond PATH_MAX is ignored by /start.
+export const PATH_MAX = 6;
+export const PATH_REVIEWED = 'September 2026';
+
 export const READING_PATH = [
   {
     stage: 'What the building is actually doing',
@@ -37,7 +49,6 @@ export const READING_PATH = [
   },
 ];
 
-export const READING_ORDER = READING_PATH.flatMap((s) => s.ids);
+export const READING_ORDER = READING_PATH.flatMap((s) => s.ids).slice(0, PATH_MAX);
 
-// Bump when a social card's artwork changes: LinkedIn caches by URL.
 export const OG_VERSION = 'v3';
