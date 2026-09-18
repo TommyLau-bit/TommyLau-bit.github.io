@@ -44,7 +44,8 @@ for md in sorted(glob.glob('src/content/journal/*.md')):
     d.text((120,H-86),"The Physical",font=bf,fill=WHITE)
     d.text((120+d.textlength("The Physical ",font=bf),H-86),"Layer",font=bf,fill=AMBER)
     d.text((120,H-54),"thephysicallayer.fyi",font=mf,fill=MUTED)
-    card.save(f'public/og/{pid}.png',optimize=True)
+    VER=re.search(r"OG_VERSION = '([^']+)'", open('src/config.ts').read()).group(1)
+    card.save(f'public/og/{pid}-{VER}.png',optimize=True)
     # prove it reads small: save a 128px proof next to it
     card.resize((128,72),Image.LANCZOS).save(f'/tmp/proof_{pid}.png')
-    print(f'{pid}: "{label}" @{size}px  {os.path.getsize(f"public/og/{pid}.png")//1024}KB')
+    print(f'{pid}-{VER}.png: "{label}" @{size}px  {os.path.getsize(f"public/og/{pid}-{VER}.png")//1024}KB')

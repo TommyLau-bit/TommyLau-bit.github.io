@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getCollection, render } from 'astro:content';
-import { SITE } from '../../config';
+import { SITE, OG_VERSION } from '../../config';
 import { fmtDate, readingTime } from '../../utils';
 export async function getStaticPaths() {
   const posts = await getCollection('journal', ({ data }) => !data.draft);
@@ -10,7 +10,7 @@ export async function getStaticPaths() {
 const { p } = Astro.props;
 const { Content } = await render(p);
 ---
-<Base title={p.data.title} description={p.data.summary} type="article" canonical={`${SITE.url}/journal/${p.id}/`} image={`/og/${p.id}.png`}>
+<Base title={p.data.title} description={p.data.summary} type="article" canonical={`${SITE.url}/journal/${p.id}/`} image={`/og/${p.id}-${OG_VERSION}.png`}>
   <article>
     <header class="article-head">
       <h1>{p.data.title}</h1>

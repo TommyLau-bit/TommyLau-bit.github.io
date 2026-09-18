@@ -20,3 +20,6 @@ export const READING_ORDER = [
   'ten-thousand-chips-one-thought',
   'the-countertop-is-the-bottleneck',
 ];
+
+// Bump when a social card's artwork changes: LinkedIn caches by URL.
+export const OG_VERSION = 'v2';
