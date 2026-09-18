@@ -10,3 +10,13 @@ export const SITE = {
   url: 'https://thephysicallayer.fyi',
   locale: 'en-GB',
 };
+
+// ── Suggested reading order for newcomers. Slugs, in order. ──────────────────
+export const READING_ORDER = [
+  'the-two-seconds-after-you-hit-send',
+  'the-queue-not-the-chip',
+  'the-rack-runs-out-of-copper',
+  'cooling-is-half-the-job',
+  'ten-thousand-chips-one-thought',
+  'the-countertop-is-the-bottleneck',
+];

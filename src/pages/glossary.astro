@@ -1,0 +1,61 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../config';
+const groups = [
+  { name: 'What the factory makes', terms: [
+    ['Token', 'A chunk of text, roughly three quarters of a word. Your question is chopped into tokens on the way in and the answer is manufactured token by token on the way out. It is also the unit the AI labs charge for.'],
+    ['FLOP', 'One floating-point operation: a single multiply or add. Producing one token takes hundreds of billions of them. A chip’s speed in FLOPs per second is how many workers it has on the floor.'],
+    ['Training', 'Building the model: adjusting more than a trillion internal settings over months. Happens once per model.'],
+    ['Inference', 'Running the model: every question anyone asks, billions of times a day. Most AI computation is now inference. The money is in running the factory, not building it.'],
+    ['Batching', 'Processing hundreds of people’s questions on the same chip at the same moment, the way a kitchen cooks one big pan and plates fifty servings. It is the difference between a query costing pennies and costing pounds.'],
+    ['KV cache', 'The model’s working memory of your conversation, built while it reads your prompt so it does not have to re-read everything for every new word.'],
+  ]},
+  { name: 'Getting power to the building', terms: [
+    ['Interconnection queue', 'The waiting list to physically connect a new site to the electricity grid. You file a request and wait while the utility studies whether the grid can take you. Currently years, not months, and the real bottleneck on AI buildout.'],
+    ['Transformer (the grid kind)', 'The large grey box that steps voltage down so power can be used. Nothing to do with the AI model architecture that shares the name. Supply-constrained, and lead times run to years.'],
+    ['Substation', 'The site where high-voltage transmission power is converted and routed onward. Building one is a multi-year civil project, not an equipment order.'],
+    ['Announced versus energised megawatts', 'Announced is capacity a developer says it will build. Energised is capacity actually connected and drawing power. The two have been diverging, and company disclosure rarely separates them cleanly.'],
+    ['Behind the meter', 'Generating power on your own site, on your side of the utility’s meter, so you never join the public connection queue. Gas turbines, fuel cells and restarted nuclear are the usual routes.'],
+    ['Grain-oriented electrical steel', 'The specialised steel used in transformer cores. Very few producers worldwide, which is part of why transformers cannot simply be made faster.'],
+    ['BESS', 'Battery energy storage system. Increasingly bought not to trade electricity prices but to let a site switch on ahead of its grid connection.'],
+  ]},
+  { name: 'Inside the building', terms: [
+    ['Rack', 'The cabinet, roughly two metres tall, that holds the computers. Rack density means how much power one draws. A normal server rack is 5 to 10 kilowatts; a current AI rack is near 200; the next generation is designed for up to a megawatt.'],
+    ['PUE', 'Power usage effectiveness. Total electricity entering the building divided by the electricity that actually reaches the computers. A perfect score is 1.0; old air-cooled sites run near 2.0 and modern liquid-cooled ones near 1.1. Everything above 1.0 is overhead, mostly cooling.'],
+    ['Direct-to-chip cooling', 'A metal plate with liquid channels sitting directly on each chip, hosed to a pump unit. The mainstream answer now that air has run out of road.'],
+    ['CDU', 'Coolant distribution unit. The pump and heat-exchange box that drives liquid around the rack. Effectively the rack’s heart.'],
+    ['Immersion cooling', 'Submerging whole servers in a non-conductive fluid. The most extreme option, and the one that handles the most heat.'],
+    ['800 VDC', 'Eight hundred volts of direct current, delivered to the rack instead of converting inside it. Higher voltage means less current, which means far less copper for the same power. Borrowed from the electric vehicle charging supply chain.'],
+    ['Busbar', 'The thick copper bar carrying current inside a rack. At one megawatt the old low-voltage design needs about 200 kilograms of it per rack, which is what forced the change.'],
+    ['Wide-bandgap semiconductor', 'Silicon carbide and gallium nitride switching chips. They handle high voltage efficiently, which is what makes the 800 volt architecture practical.'],
+  ]},
+  { name: 'Chips, memory and the wiring between them', terms: [
+    ['GPU', 'The accelerator doing the bulk of AI maths: thousands of small identical cores performing the same operation at once, which is exactly the shape of neural network arithmetic.'],
+    ['HBM', 'High-bandwidth memory. Memory chips stacked eight to twelve high and glued directly beside the processor, so data travels millimetres instead of centimetres. Five to six times the bandwidth, at five to six times the price.'],
+    ['Memory-bandwidth-bound', 'When the chip is waiting for data rather than waiting to finish a calculation. Most of the time an AI model is writing its answer, this is what is limiting it.'],
+    ['Scale-up versus scale-out', 'Scale-up is the very fast link between chips inside one rack. Scale-out is the network between racks across the hall. They use different technologies and have different economics.'],
+    ['Optical transceiver', 'The thumb-sized device at each end of a fibre link that converts between electricity and light. Copper fails after a few metres, so between racks everything becomes light. They are consumables, replaced at each upgrade.'],
+    ['Advanced packaging', 'Assembling several pieces of silicon into one component, including stacking memory beside a processor. Frequently the real constraint rather than the chip fabrication itself.'],
+  ]},
+];
+---
+<Base title="Glossary" description="Every term used in The Physical Layer, explained in a line. No finance or engineering background needed.">
+  <header class="article-head">
+    <h1>Glossary</h1>
+    <aside class="plain">
+      <p class="label">In plain English</p>
+      <p>Every term this journal uses, explained in one line. If a piece ever loses you, the word you are missing is almost certainly here.</p>
+    </aside>
+  </header>
+  <div class="prose glossary">
+    {groups.map((g) => (
+      <section>
+        <h2>{g.name}</h2>
+        <dl>
+          {g.terms.map(([t, d]) => (<><dt>{t}</dt><dd>{d}</dd></>))}
+        </dl>
+      </section>
+    ))}
+    <p class="sources" style="margin-top:2.5rem">Missing something? Tell me and I will add it: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.</p>
+  </div>
+</Base>

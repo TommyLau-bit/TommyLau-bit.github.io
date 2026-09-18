@@ -34,6 +34,7 @@ const cur = (p: string) => (p === '/' ? path === '/' : path.startsWith(p)) ? 'pa
         <a class="site-name" href="/">{SITE.name.split(' ').slice(0,-1).join(' ')} <span>{SITE.name.split(' ').slice(-1)}</span></a>
         <nav class="site-nav">
           <a href="/" aria-current={cur('/')}>Journal</a>
+          <a href="/glossary" aria-current={cur('/glossary')}>Glossary</a>
           <a href="/about" aria-current={cur('/about')}>About</a>
           <a href="/rss.xml">RSS</a>
         </nav>
