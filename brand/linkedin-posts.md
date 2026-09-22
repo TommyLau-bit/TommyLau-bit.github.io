@@ -116,3 +116,19 @@ The piece covers why a site protects itself by disappearing, why a sudden absenc
 https://thephysicallayer.fyi/journal/the-power-it-drops/
 
 #AIInfrastructure #Grid #DataCentres
+
+---
+
+## 9 · The best argument against my own thesis
+
+I have written twice that the constraint on AI is the wait to connect to the grid. The strongest objection is obvious: do not join the queue. Build your own power station on site and connect to nothing.
+
+That objection is real and I take it seriously. Then you look at who makes the machines. GE Vernova reports 116 GW under contract, 53 GW firm and 63 GW in reserved manufacturing slots, mostly sold out through 2030. Siemens Energy reports 95 GW. The escape route from the queue is a queue, and it is already years deep.
+
+The part usually left out: a turbine on your site still needs transformers, switchgear and a substation-grade yard, from the same constrained supply chain that makes a grid connection slow. You have swapped a queue you cannot control for one you can. That is worth something. It is not no queue.
+
+The piece covers the objection at its strongest, why I think it relocates the problem rather than removing it, and the specific test that would prove me wrong.
+
+https://thephysicallayer.fyi/journal/the-way-out-has-its-own-queue/
+
+#AIInfrastructure #Grid #DataCentres
