@@ -84,3 +84,19 @@ The constraint is moving out of the silicon and into the last fifty feet of powe
 https://thephysicallayer.fyi/journal/the-rack-runs-out-of-copper/
 
 #AIInfrastructure #DataCentres #PowerElectronics
+
+---
+
+## 7 · The one part of the grid that money cannot hurry
+
+Malaysia cut the wait to connect a new project to the grid from 36 months to 12, and pushed 33 projects through the scheme by March 2026.
+
+That is a real achievement, and it is also the cleanest experiment anyone has run on the AI buildout, because of the thing it could not touch. A connection queue is two queues wearing one coat. The permission half is a policy variable and a government can rewrite it. The plant half is a large power transformer, built to order around a steel core made by very few mills worldwide, and it answers to nobody.
+
+Policy compression has a floor, and the floor is made of steel and copper.
+
+The piece covers why the first clock moved twenty four months, why the second one did not move at all, and what that gap does to any announced energisation date.
+
+https://thephysicallayer.fyi/journal/the-part-money-cannot-hurry/
+
+#AIInfrastructure #Grid #DataCentres
