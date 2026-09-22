@@ -100,3 +100,19 @@ The piece covers why the first clock moved twenty four months, why the second on
 https://thephysicallayer.fyi/journal/the-part-money-cannot-hurry/
 
 #AIInfrastructure #Grid #DataCentres
+
+---
+
+## 8 · The power it drops
+
+On 22 July, 3.8 GW of data centre demand in northern Virginia switched itself off. PJM called it the largest event of its kind in its history.
+
+Nobody lost power because the data centres stopped. The risk ran the other way. A grid is a tug of war rebalanced every second, and when one side lets go of the rope the other side falls over. Lose a generator and frequency falls, which every operator plans for. Lose a gigawatt of demand and it rises, which almost nobody planned for, because until recently no single customer was big enough to do it.
+
+NERC issued its only alert of 2026 over this, a Level 3, binding the planning and operating spine of the grid. PJM is now weighing ride-through requirements. A data centre is quietly being reclassified from a customer into a piece of grid equipment with obligations.
+
+The piece covers why a site protects itself by disappearing, why a sudden absence is harder than a sudden demand, and what happens to connection costs when behaviour becomes a condition of connecting.
+
+https://thephysicallayer.fyi/journal/the-power-it-drops/
+
+#AIInfrastructure #Grid #DataCentres
