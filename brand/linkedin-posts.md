@@ -132,3 +132,19 @@ The piece covers the objection at its strongest, why I think it relocates the pr
 https://thephysicallayer.fyi/journal/the-way-out-has-its-own-queue/
 
 #AIInfrastructure #Grid #DataCentres
+
+---
+
+## 10 · What the battery is really for
+
+Most people still think a grid battery is for storing cheap electricity and selling it later. That is no longer the job that explains who is buying them.
+
+A battery now lets a data centre open before its grid connection is finished. The site draws what its partial connection allows, discharges to run harder during the day, and refills when demand is low. Nothing about that is an energy trade. It is a scheduling trick, and it is worth paying for because the alternative is eight months of not earning anything.
+
+Developers planned 24 GW of utility-scale storage in the US this year. 12.9 GW of it, 53%, is in Texas, which is not half the American economy but is where the computing load is arriving. Storage is following the load, not the price.
+
+If you model grid storage off electric vehicle adoption, you miss a buyer who does not care about cars and is working to a completely different clock.
+
+https://thephysicallayer.fyi/journal/what-the-battery-is-really-for/
+
+#AIInfrastructure #EnergyStorage #Grid
