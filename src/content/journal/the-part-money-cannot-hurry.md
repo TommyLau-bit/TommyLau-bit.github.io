@@ -67,7 +67,9 @@ Singapore shows the same constraint from the other direction. Peak demand is pro
 
 Singapore is rationing connection by efficiency because it cannot ration it by supply. That is a regulator telling you which clock is binding.
 
-Inside the Johor-Singapore Special Economic Zone, installed capacity stood at 3,885 megavolt amperes in December 2025, a rating called MVA that measures what the equipment can carry, against demand near 1,272 megawatts. That is a 72.76 per cent utilisation rate. Comfortable today, and narrowing quickly at the growth rate of the last two years.
+Inside the Johor-Singapore Special Economic Zone, installed capacity stood at 3,885 megavolt amperes in December 2025, a rating called MVA that measures what the equipment can carry, against demand near 1,272 megawatts. The state's own published utilisation figure is 72.76 per cent.
+
+Those two numbers divide to about 33 per cent, not 73, so the published rate cannot be measured against total installed capacity. My reading is that it is measured against capacity actually energised, while the 3,885 headline includes substations approved but not yet commissioned. I take that discrepancy apart properly in a later piece, because it is this whole argument happening inside an official statistic. Either way the headroom is comfortable today and narrowing quickly at the growth rate of the last two years.
 
 ## What would prove me wrong
 

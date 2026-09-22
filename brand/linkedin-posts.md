@@ -148,3 +148,21 @@ If you model grid storage off electric vehicle adoption, you miss a buyer who do
 https://thephysicallayer.fyi/journal/what-the-battery-is-really-for/
 
 #AIInfrastructure #EnergyStorage #Grid
+
+---
+
+## 11 · Two governments, opposite policies, the same confession
+
+There are two ways to find out what somebody thinks is scarce. Ask them, or watch what they do about it. The second is more reliable, because the first is a statement and the second is a cost.
+
+Malaysia could make more grid connection, so it did. Tenaga committed RM43 billion and cut the wait for a connection from 36 months to 12, delivering 33 projects by March 2026. Note what the money bought: wires, substations and a faster approval process. Not power stations. A utility that thought it was short of electricity would be building generation.
+
+Singapore cannot make more, so it rations. It froze new data centre approvals from 2019 to 2022, and now releases capacity in controlled batches with an efficiency condition attached, so the megawatts go to whoever wastes the fewest of them.
+
+Nobody rations something that is plentiful. Two jurisdictions, different politics, different tools, opposite routes, same operational conclusion. One is spending to relieve a scarcity and the other is rationing access to it, and those are the only two things you can do about a scarce thing.
+
+The piece also takes apart an official statistic in the middle of this that does not divide the way it should, and what the likely explanation says about announced capacity versus energised capacity.
+
+https://thephysicallayer.fyi/journal/two-governments-one-confession/
+
+#AIInfrastructure #Grid #DataCentres
