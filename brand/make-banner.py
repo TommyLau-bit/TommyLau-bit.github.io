@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""Brand banner: pylons receding to a data centre on the horizon, with the slogan.
-Writes the LinkedIn company cover (brand/linkedin-banner.png, 4200x700) and the
+"""Brand banner: pylons receding to a data centre on the horizon.
+The LinkedIn cover has no words; the share image carries the slogan.
+Writes the LinkedIn company cover (brand/linkedin-banner.png, 4200x763, and brand/linkedin-banner-1128.png, the one to upload) and the
 site's default share image (public/og-horizon.png, 1200x630) from the same scene.
 Run: DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/lib python3 brand/make-banner.py"""
 import cairosvg
@@ -74,9 +75,10 @@ def words(x, y, size, sub_size, gap):
 
 # LinkedIn company cover. LinkedIn's editor trims roughly 5% off each side, so
 # the scene is drawn at 1128 x 205 with everything between about x 100 and 1040,
-# then exported at 4200 x 763. The page logo covers the lower-left corner from
-# about half height down, so the text sits in the top half.
-li = scene(1128, 205, 158, 1, [668, 796, 882, 942, 980], [96, 70, 50, 36, 26], 998, words(88, 62, 30, 14, 28))
+# then exported at 4200 x 763. No words: LinkedIn serves covers at 1128 px and
+# a high-density screen stretches that, which blurs type. The page logo covers
+# the lower-left corner, so the pylons start to the right of it.
+li = scene(1128, 205, 158, 1, [310, 530, 700, 822, 912], [124, 92, 68, 49, 35], 944, '')
 cairosvg.svg2png(bytestring=li.encode(), write_to='brand/linkedin-banner.png', output_width=4200, output_height=763)
 # LinkedIn stores and serves covers at 1128 px wide whatever you upload, and its
 # own downscale softens the type. Uploading this one, already drawn at 1128, keeps
