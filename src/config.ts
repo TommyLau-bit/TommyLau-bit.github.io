@@ -51,4 +51,4 @@ export const READING_PATH = [
 
 export const READING_ORDER = READING_PATH.flatMap((s) => s.ids).slice(0, PATH_MAX);
 
-export const OG_VERSION = 'v7';
+export const OG_VERSION = 'v8';
