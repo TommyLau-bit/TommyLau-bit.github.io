@@ -349,6 +349,9 @@ In order:
 6. Run the new URL through LinkedIn's Post Inspector so the card is cached
    before anyone shares it:
    `linkedin.com/post-inspector/inspect/<url-encoded URL>`
+   The same step fixes a changed cover after the fact. Re-running Post Inspector
+   on a URL updates the thumbnail on posts that already link to it, published
+   and scheduled alike, so never delete and repost a post to change its image.
 7. Add the LinkedIn post to `brand/linkedin-posts.md` and schedule it from the
    **company page only**. Never from the personal profile.
 
