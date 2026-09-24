@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Brand banner: pylons receding to a data centre on the horizon, with the slogan.
 Writes the LinkedIn company cover (brand/linkedin-banner.png, 4200x700) and the
-site's default share image (public/og.png, 1200x630) from the same scene.
+site's default share image (public/og-horizon.png, 1200x630) from the same scene.
 Run: DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/lib python3 brand/make-banner.py"""
 import cairosvg
 
@@ -84,5 +84,5 @@ og_words = (f'<text x="72" y="150" {FONT} font-size="64" font-weight="700" fill=
             f'<text x="74" y="276" {FONT} font-size="20" fill="#a39a8c" letter-spacing="4">{TAGLINE}</text>'
             f'<text x="74" y="580" {FONT} font-size="24" font-weight="700" fill="{A}" letter-spacing="1">thephysicallayer.fyi</text>')
 og = scene(1200, 630, 500, 1.6, [640, 820, 940, 1015, 1060], [210, 150, 108, 78, 56], 1082, og_words)
-cairosvg.svg2png(bytestring=og.encode(), write_to='public/og.png', output_width=1200, output_height=630)
+cairosvg.svg2png(bytestring=og.encode(), write_to='public/og-horizon.png', output_width=1200, output_height=630)
 print('brand/linkedin-banner.png, public/og.png')

@@ -2,7 +2,7 @@
 import '../styles/global.css';
 import { SITE } from '../config';
 interface Props { title?: string; description?: string; canonical?: string; type?: 'website' | 'article'; wide?: boolean; image?: string; }
-const { title, description = SITE.description, canonical, type = 'website', wide = false, image = '/og.png' } = Astro.props;
+const { title, description = SITE.description, canonical, type = 'website', wide = false, image = '/og-horizon.png' } = Astro.props;
 const fullTitle = title ? `${title} · ${SITE.name}` : `${SITE.name} · ${SITE.tagline}`;
 const path = Astro.url.pathname;
 const cur = (p: string) => (p === '/' ? path === '/' : path.startsWith(p)) ? 'page' : undefined;
