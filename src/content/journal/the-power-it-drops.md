@@ -1,6 +1,6 @@
 ---
 title: "The grid's new problem is not the power AI uses, it is the power it drops"
-date: 2026-10-08
+date: 2026-09-22T18:53:00+08:00
 summary: "On one day in July, 3.8 gigawatts of data centre demand in Virginia switched itself off in moments. That was the largest event of its kind in the region's history. The worry is no longer only whether the grid can supply these buildings, but what happens to everyone else when they suddenly stop drawing power."
 category: "Analysis"
 cover: "/covers/the-power-it-drops.svg"

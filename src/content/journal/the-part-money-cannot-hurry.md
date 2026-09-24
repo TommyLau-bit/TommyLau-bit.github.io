@@ -1,6 +1,6 @@
 ---
 title: "The one part of the grid that money cannot hurry"
-date: 2026-09-24
+date: 2026-09-22T18:48:00+08:00
 summary: "Malaysia cut the wait to connect a data centre to the grid from three years to one, which is a real achievement and also a warning. Paperwork can be sped up, but the large steel machine that actually delivers the power cannot. Those two things sit in the same queue and run on completely different clocks."
 category: "Analysis"
 cover: "/covers/the-part-money-cannot-hurry.svg"

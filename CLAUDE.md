@@ -23,6 +23,14 @@ cover brief and LinkedIn post, is yours to write.
 
 ## Hard rules
 
+- **The subject stays the subject.** If the notes are about one company,
+  project or policy, it is named in the title, summary, cold open and thesis
+  line, and every section keeps coming back to it. Never turn it into a generic
+  industry piece that mentions it in passing. See WRITING-FORMAT.md §0.
+- **The date is when it actually publishes.** `date` is the real go-live time,
+  `YYYY-MM-DDTHH:MM:SS+08:00`, set at publish. Never a planned, staggered or
+  future date. The checker fails a future date.
+
 - **Scope is AI and energy infrastructure only.** No commodities, shipping,
   general equities or macro. The narrowness is the asset.
 - **Financials as evidence, never a view on the shares.** A company's own

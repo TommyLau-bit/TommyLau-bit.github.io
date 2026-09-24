@@ -23,6 +23,13 @@ If a piece of that is missing Claude will ask for that one thing rather than
 invent it. Everything else, including the title, the analogy, the section
 breaks, the summary and the LinkedIn post, Claude writes.
 
+**The subject stays the subject.** If the notes are about one company, one project or one policy, that is the
+subject of the piece, and it stays the subject. Name it in the title, in the
+summary, in the cold open and in the thesis line, and carry it through every
+section. Use it to explain the layer, but never abstract it away into a
+generic industry piece that mentions it only in passing. The exposure map lists
+it first.
+
 ---
 
 ## 1. The two shapes
@@ -46,7 +53,7 @@ A third label, **Note**, exists in the schema for something short. Unused so far
 ```yaml
 ---
 title: "The rack runs out of copper before it runs out of chips"
-date: 2026-08-07
+date: 2026-09-24T13:43:00+08:00
 summary: "AI computers are getting so power-hungry that the copper bars carrying electricity inside each cabinet would soon weigh more than the computers. So the industry is about to change how power enters the building. That change, not the chips, is what decides who gets to build."
 category: "Explainer"
 cover: "/covers/copper-rack.svg"
@@ -56,8 +63,8 @@ tags: ["power", "data-centres", "800VDC"]
 
 | Field | Rule |
 |---|---|
-| `title` | Sentence case, never title case. A claim or a plain question, 8 to 16 words. May be two sentences. Must be understandable by someone who has never read the site. |
-| `date` | `YYYY-MM-DD`. A weekday. Keep roughly a fortnight clear of the last piece, so the cadence stays honest. |
+| `title` | Sentence case, never title case. A claim or a plain question, 8 to 16 words. May be two sentences. Must be understandable by someone who has never read the site. If the piece is about one company or project, the title names it. |
+| `date` | The real moment the piece goes live, as `YYYY-MM-DDTHH:MM:SS+08:00` in Singapore time. Set it when you publish, never a planned, back-dated or future date. The full time keeps pieces published on the same day in order. The checker fails any date in the future. |
 | `summary` | Two or three sentences, plain English, zero jargon. **The hardest-working field on the site**: it renders in the "In plain English" box at the top of the piece, on the home-page card, on the reading page, as the meta description, and as the LinkedIn card subtitle. Write it last, after the piece exists. |
 | `category` | `Explainer`, `Analysis` or `Note`. Shown on the card and on the social image. |
 | `cover` | `/covers/<slug>.svg`. Effectively required: it is the background of the social card. See §7. |
@@ -304,9 +311,12 @@ Dark background, same family as the others: a near-black gradient, amber
 `#1d4ed8` for anything compute or data. One diagram idea only, drawn in flat
 shapes, with a small uppercase caption in letter-spaced grey.
 
-It has to survive being cropped to a 16:9 social card with a dark scrim over the
-left two thirds, so keep the subject centred and to the right, and keep it
-legible at thumbnail size.
+Keep the diagram horizontally centred on the canvas, roughly x 170 to 630 and
+y 150 to 450, so it sits balanced on the article page with no empty band on
+either side. On the 16:9 social card the title sits over the left side with a
+dark scrim, and the diagram showing faintly behind it is the house look. Keep it
+legible at thumbnail size, and inside y 120 to 470 so the card crop does not cut
+the caption. Where the piece has a named subject, the caption names it too.
 
 ---
 
@@ -386,6 +396,8 @@ Run it before you build. All six existing pieces pass.
 ## 11. The finished-piece checklist
 
 - [ ] One of the two shapes, and if Analysis, it carries a falsifier section
+- [ ] If the notes are about one company or project, it is named in the title, summary, open and thesis, and stays the subject throughout
+- [ ] `date` is the real publish time, not a planned or future one
 - [ ] Cold open ends on the thesis, alone on its line
 - [ ] Analogy block present, fixed summary line, household objects, no finance
 - [ ] Four to six `##` sections, sentence case

@@ -1,6 +1,6 @@
 ---
 title: "The battery has quietly stopped being an energy product"
-date: 2026-11-05
+date: 2026-09-22T19:01:00+08:00
 summary: "Most people still think of grid batteries as a way to store cheap electricity and sell it later. That is no longer the main reason they are being bought. A battery now lets a data centre switch on before its grid connection is finished, and absorbs the violent swings that AI computing creates. It has become a way of getting connected."
 category: "Analysis"
 cover: "/covers/what-the-battery-is-really-for.svg"

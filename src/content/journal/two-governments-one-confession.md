@@ -1,6 +1,6 @@
 ---
 title: "Two governments did the opposite thing and confessed the same problem"
-date: 2026-11-19
+date: 2026-09-22T19:40:00+08:00
 summary: "Malaysia spent heavily to build more grid connection. Singapore restricts who is allowed to have any. Those look like opposite policies, and they are evidence of the same thing, because nobody rations what is plentiful."
 category: "Analysis"
 cover: "/covers/two-governments-one-confession.svg"

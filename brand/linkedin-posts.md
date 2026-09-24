@@ -169,14 +169,14 @@ https://thephysicallayer.fyi/journal/two-governments-one-confession/
 
 ---
 
-## 12 · The product is time
+## 12 · Bloom Energy is selling time
 
-AI builders are now choosing electricity that costs more than the grid's, on purpose.
+Bloom Energy's electricity costs more than the grid's. Oracle and one of America's biggest utilities are buying gigawatts of it anyway.
 
-The US is not short of power in general. It is short of the ability to deliver a large new block of it to one site quickly, and grid waits now run past four years. So Oracle swapped the gas turbines planned for its New Mexico campus for fuel cells that arrive in months, and one of America's largest utilities signed for up to a gigawatt of them itself. Nobody bought them because they were cheapest. They bought them because they were fastest.
+The US is not short of power in general. It is short of the ability to deliver a large new block of it to one site quickly, and grid waits now run past four years. Bloom's fuel cells switch on in months. Oracle swapped the gas turbines planned for its New Mexico campus for Bloom, and AEP signed for up to a gigawatt itself. Nobody bought Bloom because it was cheapest. They bought it because it was fastest.
 
-The piece covers what a solid oxide fuel cell actually is, where the time premium shows up in the supplier's own margins, and the specific evidence that would prove me wrong.
+The piece covers what Bloom actually makes, where the time premium shows up in Bloom's own margins, and the specific evidence that would prove me wrong.
 
 https://thephysicallayer.fyi/journal/the-product-is-time/
 
-#AIInfrastructure #Grid #DataCentres
+#AIInfrastructure #FuelCells #DataCentres

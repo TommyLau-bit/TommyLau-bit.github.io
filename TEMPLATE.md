@@ -1,9 +1,10 @@
 <!-- Copy to src/content/journal/<slug>.md and fill in.
      This file lives at the repo root on purpose, so the site never loads it.
-     The rules behind every slot are in WRITING-FORMAT.md. -->
+     The rules behind every slot are in WRITING-FORMAT.md.
+     date is the real moment you publish, Singapore time. Never a future date. -->
 ---
 title: "A claim or a plain question, sentence case, 8 to 16 words"
-date: 2026-00-00
+date: 2026-00-00T00:00:00+08:00
 summary: "Two or three sentences, plain English, no jargon. This is the hardest-working line on the site: it renders in the In plain English box, on the home card, on the reading page, as the meta description and as the LinkedIn card subtitle. Write it last."
 category: "Explainer"
 cover: "/covers/<slug>.svg"

@@ -1,6 +1,6 @@
 ---
 title: "The best argument against my own thesis, and why I still think it is wrong"
-date: 2026-10-22
+date: 2026-09-22T18:56:00+08:00
 summary: "I have argued that the queue to connect to the electricity grid is what limits AI. The strongest objection is that operators can skip the queue entirely by building their own power station on site. That objection is real, and worth taking seriously. But the escape route has a waiting list of its own, and the order books are already full to 2030."
 category: "Analysis"
 cover: "/covers/the-way-out-has-its-own-queue.svg"

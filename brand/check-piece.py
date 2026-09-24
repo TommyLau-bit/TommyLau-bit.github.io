@@ -10,6 +10,7 @@ import sys, os, re, glob, datetime
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CATEGORIES = {'Explainer', 'Analysis', 'Note'}
+SGT = datetime.timezone(datetime.timedelta(hours=8))
 ANALOGY_SUMMARY = "<summary>Explain it like I don't work in finance</summary>"
 # The disclaimer must open with this exact sentence pair. A piece may add a
 # further statement after it, as the memory piece does.
@@ -54,12 +55,16 @@ def check(path):
         warns.append('shortLabel is legacy and read by nothing; remove it')
     d = field('date')
     if d:
+        # The date is when the piece actually went live, never a planned or
+        # invented one. A full datetime with offset keeps same-day pieces in order.
         try:
-            dt = datetime.date.fromisoformat(d)
-            if dt.weekday() >= 5:
-                warns.append(f'date {d} is a {dt.strftime("%A")}; the others are weekdays')
+            dt = datetime.datetime.fromisoformat(d)
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=SGT)
+            if dt > datetime.datetime.now(SGT):
+                fails.append(f'date {d} is in the future; use the real publish time')
         except ValueError:
-            fails.append(f'date "{d}" is not YYYY-MM-DD')
+            fails.append(f'date "{d}" is not YYYY-MM-DDTHH:MM:SS+08:00')
     t = field('tags')
     if t:
         n = len(re.findall(r'"[^"]+"', t))

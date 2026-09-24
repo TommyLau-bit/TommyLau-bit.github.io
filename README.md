@@ -8,7 +8,7 @@ Astro static site. Markdown in, website out.
    ```
    ---
    title: "Your title"
-   date: 2026-09-18
+   date: 2026-09-18T15:14:00+08:00
    summary: "The one-line plain-English version. Shown at the top of the piece and on the index."
    category: "Explainer"        # small label on the card: Explainer · Note · Analysis · whatever you like
    cover: "/covers/my-image.jpg" # optional. Drop an image in public/covers/. Leave it out and a styled cover renders.

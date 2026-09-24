@@ -3,5 +3,5 @@ export function readingTime(text: string): number {
   return Math.max(1, Math.round(words / 220));
 }
 export function fmtDate(d: Date, locale = 'en-GB'): string {
-  return d.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric' });
+  return d.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Asia/Singapore' });
 }
