@@ -67,7 +67,7 @@ tags: ["power", "data-centres", "800VDC"]
 | `date` | The real moment the piece goes live, as `YYYY-MM-DDTHH:MM:SS+08:00` in Singapore time. Set it when you publish, never a planned, back-dated or future date. The full time keeps pieces published on the same day in order. The checker fails any date in the future. |
 | `summary` | Two or three sentences, plain English, zero jargon. **The hardest-working field on the site**: it renders in the "In plain English" box at the top of the piece, on the home-page card, on the reading page, as the meta description, and as the LinkedIn card subtitle. Write it last, after the piece exists. |
 | `category` | `Explainer`, `Analysis` or `Note`. Shown on the card and on the social image. |
-| `cover` | `/covers/<slug>.svg`. Effectively required: it is the background of the social card. See §7. |
+| `cover` | `/covers/<slug>.svg`. Effectively required: it is also the social card, on its own. See §7. |
 | `tags` | Two to four, lowercase, kebab-case. Reuse existing ones where they fit: `power`, `data-centres`, `cooling`, `networking`, `memory`, `the-stack`, `grid`, `explainer`. |
 | `draft` | Optional, defaults false. `true` hides the piece everywhere while you finish it. |
 | `shortLabel` | Legacy. Nothing reads it any more. Leave it out. |
@@ -311,12 +311,18 @@ Dark background, same family as the others: a near-black gradient, amber
 `#1d4ed8` for anything compute or data. One diagram idea only, drawn in flat
 shapes, with a small uppercase caption in letter-spaced grey.
 
-Keep the diagram horizontally centred on the canvas, roughly x 170 to 630 and
-y 150 to 450, so it sits balanced on the article page with no empty band on
-either side. On the 16:9 social card the title sits over the left side with a
-dark scrim, and the diagram showing faintly behind it is the house look. Keep it
-legible at thumbnail size, and inside y 120 to 470 so the card crop does not cut
-the caption. Where the piece has a named subject, the caption names it too.
+Draw it bold. The diagram fills a centred frame, roughly x 110 to 690 and
+y 110 to 480, with no empty band on either side. Labels are 16 to 20 px, strokes
+4 to 6 px, and there is as little text as the idea allows. Tiny secondary lines
+of text do not survive thumbnail size, so leave them out. Where the piece has a
+named subject, the caption names it too.
+
+The social card is the cover and nothing else: no title, no scrim, no logo.
+Words over the artwork look cluttered, and LinkedIn already prints the title
+under the image. `brand/make-og.py` frames each card around the cover's own
+drawing at 1200 by 630 and stretches the cover's background to fill the width.
+It needs the background as a plain `<rect width="800" height="600" fill="url(#id)"/>`
+directly after `<defs>`.
 
 ---
 

@@ -82,7 +82,7 @@ out rather than adding another**, then update `PATH_REVIEWED`, which is the
 "Chosen ..." date shown on the page.
 
 ## Social cards
-`public/og/<slug>.png` is generated per piece from its cover diagram. After adding a piece, run the generator in `brand/make-og.py`, then re-run LinkedIn's Post Inspector on the URL before sharing it.
+`public/og/<slug>-<OG_VERSION>.png` is generated per piece from its cover diagram alone, with no title or logo over it. After adding a piece, run the generator in `brand/make-og.py`, then re-run LinkedIn's Post Inspector on the URL before sharing it.
 
 ## Live site
 `https://thephysicallayer.fyi` (GitHub Pages, custom domain via `public/CNAME`), built by `.github/workflows/deploy.yml` on every push to `main`.
