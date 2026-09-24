@@ -66,15 +66,17 @@ def scene(w, h, hz, k, xs, hs, dc_x, text):
 
 
 def words(x, y, size, sub_size, gap):
-    return (f'<text x="{x}" y="{y}" {FONT} font-size="{size}" font-weight="700" fill="#f0efea" letter-spacing="-0.3">{SLOGAN}</text>'
-            f'<text x="{x+1}" y="{y+gap}" {FONT} font-size="{sub_size}" fill="#a39a8c" letter-spacing="{sub_size*0.2:.1f}">{TAGLINE}</text>')
+    # Heavy weights and a bright tagline: LinkedIn recompresses covers as JPEG,
+    # which smears thin, pale, widely spaced type.
+    return (f'<text x="{x}" y="{y}" {FONT} font-size="{size}" font-weight="800" fill="#ffffff" letter-spacing="-0.2">{SLOGAN}</text>'
+            f'<text x="{x+1}" y="{y+gap}" {FONT} font-size="{sub_size}" font-weight="600" fill="#d6cfc2" letter-spacing="{sub_size*0.12:.1f}">{TAGLINE}</text>')
 
 
 # LinkedIn company cover. LinkedIn's editor trims roughly 5% off each side, so
 # the scene is drawn at 1128 x 205 with everything between about x 100 and 1040,
 # then exported at 4200 x 763. The page logo covers the lower-left corner from
 # about half height down, so the text sits in the top half.
-li = scene(1128, 205, 158, 1, [630, 768, 860, 924, 964], [96, 70, 50, 36, 26], 984, words(88, 60, 26, 11.5, 24))
+li = scene(1128, 205, 158, 1, [668, 796, 882, 942, 980], [96, 70, 50, 36, 26], 998, words(88, 62, 30, 14, 28))
 cairosvg.svg2png(bytestring=li.encode(), write_to='brand/linkedin-banner.png', output_width=4200, output_height=763)
 open('brand/linkedin-banner.svg', 'w').write(li)
 
@@ -85,4 +87,4 @@ og_words = (f'<text x="72" y="150" {FONT} font-size="64" font-weight="700" fill=
             f'<text x="74" y="580" {FONT} font-size="24" font-weight="700" fill="{A}" letter-spacing="1">thephysicallayer.fyi</text>')
 og = scene(1200, 630, 500, 1.6, [640, 820, 940, 1015, 1060], [210, 150, 108, 78, 56], 1082, og_words)
 cairosvg.svg2png(bytestring=og.encode(), write_to='public/og-horizon.png', output_width=1200, output_height=630)
-print('brand/linkedin-banner.png, public/og.png')
+print('brand/linkedin-banner.png, public/og-horizon.png')
