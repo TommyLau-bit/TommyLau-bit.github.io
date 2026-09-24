@@ -70,9 +70,12 @@ def words(x, y, size, sub_size, gap):
             f'<text x="{x+1}" y="{y+gap}" {FONT} font-size="{sub_size}" fill="#a39a8c" letter-spacing="{sub_size*0.2:.1f}">{TAGLINE}</text>')
 
 
-# LinkedIn company cover: 6:1, drawn at 1128 x 188 and exported at 4200 x 700
-li = scene(1128, 188, 148, 1, [640, 790, 895, 968, 1018], [100, 72, 52, 37, 27], 1046, words(40, 70, 28, 12, 26))
-cairosvg.svg2png(bytestring=li.encode(), write_to='brand/linkedin-banner.png', output_width=4200, output_height=700)
+# LinkedIn company cover. LinkedIn's editor trims roughly 5% off each side, so
+# the scene is drawn at 1128 x 205 with everything between about x 100 and 1040,
+# then exported at 4200 x 763. The page logo covers the lower-left corner from
+# about half height down, so the text sits in the top half.
+li = scene(1128, 205, 158, 1, [630, 768, 860, 924, 964], [96, 70, 50, 36, 26], 984, words(88, 60, 26, 11.5, 24))
+cairosvg.svg2png(bytestring=li.encode(), write_to='brand/linkedin-banner.png', output_width=4200, output_height=763)
 open('brand/linkedin-banner.svg', 'w').write(li)
 
 # Site default share image: 1200 x 630, slogan stacked on two lines
