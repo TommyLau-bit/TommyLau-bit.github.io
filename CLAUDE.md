@@ -25,8 +25,13 @@ cover brief and LinkedIn post, is yours to write.
 
 - **Scope is AI and energy infrastructure only.** No commodities, shipping,
   general equities or macro. The narrowness is the asset.
-- **Never a price, target, rating, market share, backlog, financial or
-  recommendation** anywhere on the site.
+- **Financials as evidence, never a view on the shares.** A company's own
+  disclosed figures (revenue, margins, backlog, capex, order books) may appear
+  in the body when they test or confirm the physical mechanism, dated and
+  sourced to the filing. Never a share price, market value, valuation multiple,
+  target, rating, recommendation, or claim that a share is cheap or expensive.
+  Keep them out of the exposure map, which stays "what they make" only. See
+  WRITING-FORMAT.md §4a.
 - **Never post to LinkedIn from Tommy's personal profile.** The company page
   only. Verify the composer identity reads "The Physical Layer" before submitting.
 - **Do not add a new piece to `READING_PATH`.** The reading page is a capped

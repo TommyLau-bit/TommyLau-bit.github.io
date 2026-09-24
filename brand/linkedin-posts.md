@@ -166,3 +166,17 @@ The piece also takes apart an official statistic in the middle of this that does
 https://thephysicallayer.fyi/journal/two-governments-one-confession/
 
 #AIInfrastructure #Grid #DataCentres
+
+---
+
+## 12 · The product is time
+
+AI builders are now choosing electricity that costs more than the grid's, on purpose.
+
+The US is not short of power in general. It is short of the ability to deliver a large new block of it to one site quickly, and grid waits now run past four years. So Oracle swapped the gas turbines planned for its New Mexico campus for fuel cells that arrive in months, and one of America's largest utilities signed for up to a gigawatt of them itself. Nobody bought them because they were cheapest. They bought them because they were fastest.
+
+The piece covers what a solid oxide fuel cell actually is, where the time premium shows up in the supplier's own margins, and the specific evidence that would prove me wrong.
+
+https://thephysicallayer.fyi/journal/the-product-is-time/
+
+#AIInfrastructure #Grid #DataCentres

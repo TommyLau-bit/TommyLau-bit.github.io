@@ -61,7 +61,7 @@ likely to forget, so they are repeated here.
 </section>
 ```
 
-**Rules for the exposure map.** Name companies and what they make. Never market share, backlogs, financials or ratings. Never a view on shares. Where the AI layer map says there is no view (memory equities), say so in the box.
+**Rules for the exposure map.** Name companies and what they make. Never market share, backlogs, financials or ratings in the map itself. Disclosed financials may appear in the body as evidence for the mechanism (see WRITING-FORMAT.md §4a). Never a view on shares. Where the AI layer map says there is no view (memory equities), say so in the box.
 
 ## "Where to start" is not a table of contents
 

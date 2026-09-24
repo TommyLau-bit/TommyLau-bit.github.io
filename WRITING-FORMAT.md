@@ -14,8 +14,9 @@ paragraph, a screenshot of a chart. The only things that must be in there:
 1. **The claim.** One sentence. What is true that most people have wrong?
 2. **The mechanism.** Why it is true, physically. Not "the market thinks", but
    what actually happens in the wire, the loop, the rack, the queue.
-3. **The number that matters.** One or two. Structural, not financial. The air
+3. **The number that matters.** One or two. Structural first. The air
    ceiling in kW per rack. The ratio of water to air. Two years for a substation.
+   A company's disclosed financials can support it, never replace it. See §4a.
 4. **Who operates in the layer.** Names of real companies, and who is hurt.
 
 If a piece of that is missing Claude will ask for that one thing rather than
@@ -169,8 +170,9 @@ Just before the closing `---`.
   The single exemption is a whole-stack orientation map, where the box lists the
   entire industry and there is genuinely no loser. The two-seconds piece is the
   one example.
-- **Never**: market share, backlogs, revenue, margins, ratings, price targets,
-  valuation, or any view on shares.
+- **Never** in the map: market share, backlogs, revenue, margins, ratings,
+  price targets, valuation, or any view on shares. Financial evidence belongs
+  in the body under §4a, not here. The map says what companies make.
 - Where the AI layer map says you hold no view, say so inside the box. The
   memory piece ends its map with a `<dt>Where I stop</dt>` doing exactly that.
 
@@ -225,9 +227,46 @@ Voice:
   even when it is in the glossary. "a unit called a CDU, the coolant
   distribution unit, which is effectively the rack's heart".
 
-Never appears anywhere on the site: a price, a target, a rating, a
-recommendation, a portfolio position, or a claim about a share being cheap or
-expensive.
+Never appears anywhere on the site: a share price, a market value, a
+valuation multiple, a target, a rating, a recommendation, a portfolio position,
+or a claim about a share being cheap or expensive.
+
+---
+
+## 4a. Financial evidence
+
+A company's reported numbers are allowed when they are evidence for the
+physical argument. The test: **does the figure tell the reader whether the
+mechanism is real, or does it tell them what to do with the shares?** Only the
+first is allowed.
+
+Allowed, in the body:
+
+- Revenue, product versus service mix, growth rates, gross margin, cash flow,
+  capex, backlog, order books, contracted capacity, customer concentration.
+- Always the company's own disclosure, with the period and the filing or
+  release date. Never a figure lifted from a video, a newsletter or a forecast
+  by someone else.
+- Always tied to the mechanism in the next sentence. "Margin rose while volume
+  more than doubled, which is what a time premium looks like in money" is the
+  shape. A number left standing alone is decoration.
+- Where a piece makes a claim, a financial figure can be the falsifier. "If
+  the premium is for time, margin should compress as grid waits shorten" is
+  exactly the kind of test an Analysis piece wants.
+- Jargon is still defined in place. "Gross margin, the share of each sale left
+  after the cost of making it."
+
+Never, anywhere:
+
+- Share price, share price moves, market value, P/E or any other valuation
+  multiple, what the price implies or assumes, targets, ratings, buy or sell
+  language, "cheap", "expensive", "priced for perfection".
+- Management guidance presented as your own forecast. Report it as theirs.
+
+Anything that crosses into a view on the shares belongs in the separate
+market-views notes, not on this site. The sources line names the filings used,
+and the exposure disclaimer adds that the figures are used as evidence for the
+mechanism and imply nothing about value.
 
 ---
 
@@ -351,7 +390,8 @@ Run it before you build. All six existing pieces pass.
 - [ ] Analogy block present, fixed summary line, household objects, no finance
 - [ ] Four to six `##` sections, sentence case
 - [ ] Exposure map present, with the fixed disclaimer and an "on the other side" block
-- [ ] No price, target, rating, market share or recommendation anywhere
+- [ ] No share price, valuation, target, rating or recommendation anywhere
+- [ ] Any financial figure is the company's own, dated, sourced, and tied to the mechanism
 - [ ] Sources paragraph, ending "Personal research, not investment advice."
 - [ ] Every jargon term defined in place, and present in the glossary
 - [ ] No em dashes. British spelling. 1,050 to 1,500 words

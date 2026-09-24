@@ -23,6 +23,11 @@ BANNED = [
     (r'\bprice target\b', 'price target'), (r'\bmarket share\b', 'market share'),
     (r'\boverweight\b', 'a rating'), (r'\bunderweight\b', 'a rating'),
     (r'\bbuy rating\b', 'a rating'), (r'\bundervalued\b', 'a valuation call'),
+    (r'\bovervalued\b', 'a valuation call'),
+    (r'\bP/E\b|\bprice[- ]to[- ]earnings\b|\btimes (?:next year.s |forward |trailing )?earnings\b', 'a valuation multiple'),
+    (r'\bmarket (?:cap|capitali[sz]ation|value)\b', 'market value'),
+    (r'\bshare price\b|\bstock price\b', 'a share price'),
+    (r'\bpriced for perfection\b|\bpriced in\b', 'a valuation call'),
 ]
 
 def check(path):
