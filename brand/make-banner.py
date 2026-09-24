@@ -78,6 +78,10 @@ def words(x, y, size, sub_size, gap):
 # about half height down, so the text sits in the top half.
 li = scene(1128, 205, 158, 1, [668, 796, 882, 942, 980], [96, 70, 50, 36, 26], 998, words(88, 62, 30, 14, 28))
 cairosvg.svg2png(bytestring=li.encode(), write_to='brand/linkedin-banner.png', output_width=4200, output_height=763)
+# LinkedIn stores and serves covers at 1128 px wide whatever you upload, and its
+# own downscale softens the type. Uploading this one, already drawn at 1128, keeps
+# the text as crisp as LinkedIn allows.
+cairosvg.svg2png(bytestring=li.encode(), write_to='brand/linkedin-banner-1128.png', output_width=1128, output_height=205)
 open('brand/linkedin-banner.svg', 'w').write(li)
 
 # Site default share image: 1200 x 630, slogan stacked on two lines
