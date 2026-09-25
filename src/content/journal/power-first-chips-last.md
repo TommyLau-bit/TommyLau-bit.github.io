@@ -1,6 +1,6 @@
 ---
 title: "Jane Street now commits to the power first and picks the chips last"
-date: 2026-09-25T13:59:00+08:00
+date: 2026-09-25T14:00:00+08:00
 summary: "You might expect an AI buildout to start with the chips. At Jane Street it now starts with the building, the power and the cooling, because those take more than a year to arrive and the chips do not. The firm even kept backup generators to the core of a site, rather than the whole building, to switch its chips on six months sooner."
 category: "Analysis"
 cover: "/covers/power-first-chips-last.svg"

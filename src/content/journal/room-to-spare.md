@@ -1,6 +1,6 @@
 ---
 title: "Jane Street's AI data hall has room to spare, and no power to fill it"
-date: 2026-09-25T12:51:00+08:00
+date: 2026-09-25T13:59:00+08:00
 summary: "Jane Street is a trading firm, not a tech giant, yet it now runs its own AI training centre in Texas with 4,032 chips cooled by liquid. The most revealing thing on its tour is the empty floor. The building has space left over, because the electricity the utility agreed to supply runs out long before the room does."
 category: "Explainer"
 cover: "/covers/room-to-spare.svg"
