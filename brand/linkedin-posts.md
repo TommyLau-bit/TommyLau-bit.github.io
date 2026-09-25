@@ -180,3 +180,17 @@ The piece covers what Bloom actually makes, where the time premium shows up in B
 https://thephysicallayer.fyi/journal/the-product-is-time/
 
 #AIInfrastructure #FuelCells #DataCentres
+
+---
+
+## 13 · Vertiv is paid per megawatt
+
+Vertiv makes no chips and writes no software, yet AI has made it one of the busiest suppliers in the buildout.
+
+An ordinary server rack drew around 10 kW. An AI rack draws about 130, and air cannot carry that heat away, so every megawatt of building now needs liquid loops, coolant pumps and heavier power gear. Vertiv gets paid for every new building, and again for how much more equipment sits inside each one. Its own numbers show it: adjusted operating margin up 4.1 points to 22.6% last quarter, and service revenue growing faster than hardware.
+
+The piece covers what Vertiv actually makes, where that second win shows up in its disclosures, and the specific evidence that would prove me wrong.
+
+https://thephysicallayer.fyi/journal/every-megawatt-got-harder/
+
+#AIInfrastructure #DataCentres #Cooling
