@@ -32,6 +32,8 @@ const groups = [
     ['Book-to-bill', 'New orders taken in a period divided by sales shipped in the same period. Above 1 means work is arriving faster than it can be delivered, so the queue of orders is growing.'],
     ['Organic growth', 'Growth with the effects of acquisitions and currency movements stripped out, so it shows what the existing business actually sold more of.'],
     ['Adjusted operating margin', 'The share of each sale left after the costs of running the business, with one-off items removed. Used on this site only as evidence: a margin widening while volume grows means each sale is carrying more value.'],
+    ['Lead time', 'The wait between ordering a piece of equipment and having it delivered. For generators, large transformers and some cooling gear it now runs past a year, which is why they are ordered before the chips.'],
+    ['Colocation', 'Renting space, power and cooling inside a data centre someone else runs. Trading firms colocate beside the exchanges, where the host sets the power and cooling limits.'],
     ['BESS', 'Battery energy storage system. Increasingly bought not to trade electricity prices but to let a site switch on ahead of its grid connection.'],
   ]},
   { name: 'Inside the building', terms: [
@@ -52,6 +54,7 @@ const groups = [
   ]},
   { name: 'Chips, memory and the wiring between them', terms: [
     ['GPU', 'The accelerator doing the bulk of AI maths: thousands of small identical cores performing the same operation at once, which is exactly the shape of neural network arithmetic.'],
+    ['TPU', 'Tensor processing unit, the AI chip Google designs for its own data centres. It needs a different cooling and power design from Nvidia’s racks, so a building planned for one may not suit the other.'],
     ['HBM', 'High-bandwidth memory. Memory chips stacked eight to twelve high and glued directly beside the processor, so data travels millimetres instead of centimetres. Five to six times the bandwidth, at five to six times the price.'],
     ['Memory-bandwidth-bound', 'When the chip is waiting for data rather than waiting to finish a calculation. Most of the time an AI model is writing its answer, this is what is limiting it.'],
     ['Scale-up versus scale-out', 'Scale-up is the very fast link between chips inside one rack. Scale-out is the network between racks across the hall. They use different technologies and have different economics.'],

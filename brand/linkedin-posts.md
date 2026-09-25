@@ -208,3 +208,17 @@ The piece covers why the floor went quiet, what it takes to put water where wate
 https://thephysicallayer.fyi/journal/room-to-spare/
 
 #AIInfrastructure #DataCentres #LiquidCooling
+
+---
+
+## 15 · Jane Street commits to the power first
+
+At Jane Street, the chips are now the last thing ordered.
+
+The firm's head of physical engineering says generators, transformers and some liquid-cooling equipment take more than a year to arrive, so the building and the power are settled before the chip order goes in. On one site the team kept backup generators to the core of the system rather than the whole building, and switched its GPUs on six months sooner. His words: maybe not the best engineering decision, but the best business decision.
+
+The piece covers why the order flipped, the generator the firm chose not to buy, and what would prove me wrong.
+
+https://thephysicallayer.fyi/journal/power-first-chips-last/
+
+#AIInfrastructure #DataCentres #Power
