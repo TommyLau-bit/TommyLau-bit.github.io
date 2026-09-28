@@ -59,6 +59,12 @@ const groups = [
     ['Memory-bandwidth-bound', 'When the chip is waiting for data rather than waiting to finish a calculation. Most of the time an AI model is writing its answer, this is what is limiting it.'],
     ['Scale-up versus scale-out', 'Scale-up is the very fast link between chips inside one rack. Scale-out is the network between racks across the hall. They use different technologies and have different economics.'],
     ['Optical transceiver', 'The thumb-sized device at each end of a fibre link that converts between electricity and light. Copper fails after a few metres, so between racks everything becomes light. They are consumables, replaced at each upgrade.'],
+    ['Optical DSP', 'The digital signal processor inside an optical transceiver. It cleans up and reshapes the signal so electricity can become light and back again without errors, and it is the hardest part of the plug to make.'],
+    ['PAM4', 'The signalling standard used by fast links: four levels of brightness or voltage instead of on and off, so each pulse carries two bits. Harder to read, which is why the DSP is needed.'],
+    ['800G and 1.6T', 'How much data one link moves per second: 800 gigabits, or 1.6 terabits for the generation now ramping. Each step doubles the traffic through the same small plug.'],
+    ['XPU', 'An industry label for a custom AI chip, designed with a chip partner for one company’s own workload rather than sold to everyone. Cheaper per calculation than a general GPU, for that one job.'],
+    ['Co-packaged optics', 'Putting the light conversion on the switch chip’s own package instead of in a plug at the front of the switch. Saves power and moves the translation job to whoever makes the switch chip.'],
+    ['Linear pluggable optics', 'A transceiver with the DSP removed, leaving the switch chip to clean up the signal. Uses less power, at the cost of shorter reach and tighter engineering.'],
     ['Advanced packaging', 'Assembling several pieces of silicon into one component, including stacking memory beside a processor. Frequently the real constraint rather than the chip fabrication itself.'],
   ]},
 ];

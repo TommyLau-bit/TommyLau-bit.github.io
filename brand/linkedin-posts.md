@@ -222,3 +222,17 @@ The piece covers why the order flipped, the generator the firm chose not to buy,
 https://thephysicallayer.fyi/journal/power-first-chips-last/
 
 #AIInfrastructure #DataCentres #Power
+
+---
+
+## 16 · Marvell collects the toll
+
+Marvell is paid every time AI chips talk to each other, and it barely matters whose chips they are.
+
+Copper stops carrying an AI signal after a few metres, so every link between cabinets turns electricity into light and back, and the chip doing that translation is very often Marvell's. Bigger clusters need more links, and every speed jump means new ones. Data centre work is now 79% of Marvell's revenue, and it is prepaying about $1 billion to suppliers to secure its next generation of optical chips.
+
+The piece covers where copper stops and Marvell starts, what its own numbers show, and the change in optics that would prove me wrong.
+
+https://thephysicallayer.fyi/journal/marvell-collects-the-toll/
+
+#AIInfrastructure #Optics #DataCentres
