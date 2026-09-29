@@ -236,3 +236,17 @@ The piece covers where copper stops and Marvell starts, what its own numbers sho
 https://thephysicallayer.fyi/journal/marvell-collects-the-toll/
 
 #AIInfrastructure #Optics #DataCentres
+
+---
+
+## 17 · Oklo sells the electricity
+
+Oklo, the nuclear start-up building small reactors for AI data centres, does not plan to sell a single reactor.
+
+It plans to build them with its own money, put them beside the data centre, keep them, and charge for the electricity under contracts lasting decades. That makes it a power company, and it means it earns nothing from power until its first reactor runs. So far only Meta has put binding money behind its agreement; the 12 gigawatt deal with Switch is still a framework.
+
+The piece covers why a data centre wants a reactor next door, what Oklo's own numbers show, and the fuel and licence problems that could stop it.
+
+https://thephysicallayer.fyi/journal/oklo-sells-the-electricity/
+
+#AIInfrastructure #Nuclear #DataCentres
