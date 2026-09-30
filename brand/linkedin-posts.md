@@ -250,3 +250,17 @@ The piece covers why a data centre wants a reactor next door, what Oklo's own nu
 https://thephysicallayer.fyi/journal/oklo-sells-the-electricity/
 
 #AIInfrastructure #Nuclear #DataCentres
+
+---
+
+## 18 · Nebius is paid for what is switched on
+
+Microsoft and Meta, two of the biggest data centre builders on earth, both rent AI capacity from Nebius.
+
+They were not short of chips. They were short of buildings with the power on. Nebius expects 5 gigawatts of power contracted by the end of 2026 and about 1 gigawatt connected, and its contracts pay only for capacity that is running, at $20 to $25 million per megawatt a year on its latest deals.
+
+The piece covers what Nebius actually sells, what its own numbers show, and the Meta report that would prove me wrong.
+
+https://thephysicallayer.fyi/journal/nebius-paid-for-what-is-switched-on/
+
+#AIInfrastructure #DataCentres #Power
