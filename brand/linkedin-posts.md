@@ -264,3 +264,17 @@ The piece covers what Nebius actually sells, what its own numbers show, and the 
 https://thephysicallayer.fyi/journal/nebius-paid-for-what-is-switched-on/
 
 #AIInfrastructure #DataCentres #Power
+
+---
+
+## 19 · Corning lays the glass
+
+Meta, Amazon and Nvidia have all signed deals this year with a 175-year-old glass company.
+
+Corning makes the optical fibre AI chips talk through once copper runs out, about two metres from the chip. Every new chip generation replaces the plugs at each end, but the glass in the ceiling stays, and a campus of AI buildings needs far more of it between halls than inside them. Corning's data centre business grew 65% last quarter, and it says demand is running above what its factories can make.
+
+The piece covers why the glass is hard to make, what Corning's own numbers show, and the 2001 fibre bust that could repeat.
+
+https://thephysicallayer.fyi/journal/corning-lays-the-glass/
+
+#AIInfrastructure #Optics #DataCentres
