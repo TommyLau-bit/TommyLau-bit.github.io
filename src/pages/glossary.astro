@@ -62,6 +62,8 @@ const groups = [
     ['Immersion cooling', 'Submerging whole servers in a non-conductive fluid. The most extreme option, and the one that handles the most heat.'],
     ['800 VDC', 'Eight hundred volts of direct current, delivered to the rack instead of converting inside it. Higher voltage means less current, which means far less copper for the same power. Borrowed from the electric vehicle charging supply chain.'],
     ['Busbar', 'The thick copper bar carrying current inside a rack. At one megawatt the old low-voltage design needs about 200 kilograms of it per rack, which is what forced the change.'],
+    ['Power stage', 'A small chip that switches on and off very fast to step a voltage down. Several sit around each AI processor, each carrying a share of the very high current it draws at below one volt.'],
+    ['eFuse', 'An electronic fuse. It cuts power in microseconds if something shorts, and, paired with a hot-swap controller, lets an engineer pull a live server tray without crashing the rack.'],
     ['Wide-bandgap semiconductor', 'Silicon carbide and gallium nitride switching chips. They handle high voltage efficiently, which is what makes the 800 volt architecture practical.'],
   ]},
   { name: 'Chips, memory and the wiring between them', terms: [
@@ -84,6 +86,11 @@ const groups = [
     ['Ethernet', 'The open standard for how machines talk over a network, used in offices for decades and now adapted for AI. No single company owns it, so any maker’s chip can join an Ethernet network.'],
     ['Network tier', 'One layer of switches in a data centre network. Chips plug into the first tier, which plugs into the next. Every extra tier adds switches, optical plugs, power and delay, so bigger switch chips that cut a tier save all four.'],
     ['Tape-out', 'The moment a finished chip design is sent to the factory for manufacture. Everything before it is design work; everything after it is making and testing the real silicon.'],
+    ['Analog chip', 'A chip that handles real-world quantities such as voltage, current and temperature rather than doing calculations. Many manage power, and some sell for cents.'],
+    ['Wafer', 'The thin silicon disc chips are made on before it is cut up. A 300 millimetre wafer has about 2.25 times the area of a 200 millimetre one, so each pass through the factory yields more than twice the chips.'],
+    ['Foundry', 'A company that manufactures chips other companies design. TSMC is the largest, and makes most leading AI accelerators whoever designed them.'],
+    ['Fab', 'Short for fabrication plant, the factory where chips are made on wafers. TSMC says a new one takes two to three years to build and one to two more to reach full output.'],
+    ['CoWoS', 'TSMC’s advanced packaging that joins an AI processor to its stacked memory on one base. A separate factory step from making the chip, and in 2026 the tightest one.'],
     ['Advanced packaging','Assembling several pieces of silicon into one component, including stacking memory beside a processor. Frequently the real constraint rather than the chip fabrication itself.'],
   ]},
 ];

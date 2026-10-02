@@ -292,3 +292,31 @@ The piece covers why the switch sets the size of the machine, why the giants wan
 https://thephysicallayer.fyi/journal/broadcom-wins-either-way/
 
 #AIInfrastructure #Networking #DataCentres
+
+---
+
+## 21 · TI feeds the chip
+
+The AI processor that costs tens of thousands of dollars cannot run on the electricity delivered to it.
+
+Power reaches the rack at 54 volts, soon 800, and the chip runs below one volt, so a crowd of small chips steps it down millimetres away. Texas Instruments makes many of them, some for cents, and is spending more than $60 billion on its own American factories to make them cheaper. Its data centre business doubled last quarter, from a base of 9% of revenue.
+
+The piece covers why the last centimetre is the hard part, TI's factory bet, and what would prove me wrong.
+
+https://thephysicallayer.fyi/journal/ti-feeds-the-chip/
+
+#AIInfrastructure #Power #DataCentres
+
+---
+
+## 22 · TSMC says it is the bottleneck
+
+I have argued that the grid, not the chip, is what holds AI back. TSMC's chief executive disagrees.
+
+Almost every advanced AI chip, whoever designs it, is made in TSMC's factories, and TSMC says a new one takes two to three years to build and one to two more to fill. Its 2026 spending of up to $64 billion adds almost nothing to this year's output, and its packaging capacity is so tight it is limiting customers' growth.
+
+The piece covers why one company makes everyone's chips, the clock on a chip factory, and what would prove me wrong.
+
+https://thephysicallayer.fyi/journal/tsmc-says-it-is-the-bottleneck/
+
+#AIInfrastructure #Semiconductors #DataCentres
