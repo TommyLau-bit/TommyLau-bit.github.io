@@ -278,3 +278,17 @@ The piece covers why the glass is hard to make, what Corning's own numbers show,
 https://thephysicallayer.fyi/journal/corning-lays-the-glass/
 
 #AIInfrastructure #Optics #DataCentres
+
+---
+
+## 20 · Broadcom wins either way
+
+When OpenAI built its first chip to rely less on Nvidia, it built it with Broadcom.
+
+Broadcom also makes the switch chips that let thousands of AI processors work as one machine, Nvidia's included. So whether the cloud giants keep buying Nvidia or design their own, the work runs through the same company. Its AI revenue was $16.7 billion last quarter, up 221% on a year earlier, with six custom chip customers behind it.
+
+The piece covers why the switch sets the size of the machine, why the giants want their own chips, and the Google work that could prove me wrong.
+
+https://thephysicallayer.fyi/journal/broadcom-wins-either-way/
+
+#AIInfrastructure #Networking #DataCentres

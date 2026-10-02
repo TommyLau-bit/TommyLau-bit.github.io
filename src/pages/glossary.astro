@@ -80,7 +80,11 @@ const groups = [
     ['XPU', 'An industry label for a custom AI chip, designed with a chip partner for one company’s own workload rather than sold to everyone. Cheaper per calculation than a general GPU, for that one job.'],
     ['Co-packaged optics', 'Putting the light conversion on the switch chip’s own package instead of in a plug at the front of the switch. Saves power and moves the translation job to whoever makes the switch chip.'],
     ['Linear pluggable optics', 'A transceiver with the DSP removed, leaving the switch chip to clean up the signal. Uses less power, at the cost of shorter reach and tighter engineering.'],
-    ['Advanced packaging', 'Assembling several pieces of silicon into one component, including stacking memory beside a processor. Frequently the real constraint rather than the chip fabrication itself.'],
+    ['Switch chip', 'The processor inside a network switch, sending each piece of data arriving from many chips to the right destination. Sold to any switch builder, it is called merchant silicon. Its capacity decides how many chips one network layer can connect.'],
+    ['Ethernet', 'The open standard for how machines talk over a network, used in offices for decades and now adapted for AI. No single company owns it, so any maker’s chip can join an Ethernet network.'],
+    ['Network tier', 'One layer of switches in a data centre network. Chips plug into the first tier, which plugs into the next. Every extra tier adds switches, optical plugs, power and delay, so bigger switch chips that cut a tier save all four.'],
+    ['Tape-out', 'The moment a finished chip design is sent to the factory for manufacture. Everything before it is design work; everything after it is making and testing the real silicon.'],
+    ['Advanced packaging','Assembling several pieces of silicon into one component, including stacking memory beside a processor. Frequently the real constraint rather than the chip fabrication itself.'],
   ]},
 ];
 ---
