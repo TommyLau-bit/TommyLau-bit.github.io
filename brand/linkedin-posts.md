@@ -320,3 +320,17 @@ The piece covers why one company makes everyone's chips, the clock on a chip fac
 https://thephysicallayer.fyi/journal/tsmc-says-it-is-the-bottleneck/
 
 #AIInfrastructure #Semiconductors #DataCentres
+
+---
+
+## 23 · Lumentum makes the light
+
+In March, Nvidia paid $2 billion to a laser company, and another $2 billion to its rival on the same day.
+
+Past a couple of metres, AI chips talk to each other in light, and that light starts in a laser grown on indium phosphide, a crystal that only a few factories in the world can work at volume. Lumentum doubled its revenue in a year and says it will still be significantly behind demand at the end of 2026.
+
+The piece covers why silicon cannot make light, what Lumentum's own numbers show, and what would prove me wrong.
+
+https://thephysicallayer.fyi/journal/lumentum-makes-the-light/
+
+#AIInfrastructure #Optics #DataCentres
