@@ -41,7 +41,13 @@ export const CLAIMS: Claim[] = [
     claim: 'In Johor and Singapore, a finished grid connection, not chip supply, is the scarce thing holding the AI buildout back.',
     breaksIf: 'Connection waits keep shrinking the way Malaysia\'s Green Lane cut them from 36 months to 12, or transformer and cable lead times normalise faster than utilities commit capital.',
     watch: ['Transformer and high-voltage cable lead times', 'The Green Lane project count beyond 33', 'Johor-Singapore zone utilisation past 72.76 per cent', 'Who wins Singapore\'s capacity award'],
-    reviews: [],
+    reviews: [
+      {
+        date: '5 October 2026',
+        status: 'holding',
+        note: 'Singapore\'s 200 MW award went to four existing operators at 50 MW each, from more than 20 proposals, with the next round 18 to 24 months away, so connection is still being rationed. Transformer waits show no sign of normalising. The Green Lane count and the Johor zone utilisation figure have not been updated since March, so two of the four tests remain unread. Sources: EDB and IMDA award announcement, 21 August 2026; Wood Mackenzie transformer lead times as reported by POWER Magazine, 2026.',
+      },
+    ],
   },
   {
     id: 'the-part-money-cannot-hurry',
