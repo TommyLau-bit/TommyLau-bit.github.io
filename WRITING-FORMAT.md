@@ -312,18 +312,15 @@ have it.
 list of the one layer it explains. The map, the "On the map" line under the
 piece and the company pages all read from this.
 
-**The claims ledger, `src/data/claims.ts`. Every Analysis piece.** Add one
+**The claims page, `src/data/claims.ts`. Every Analysis piece.** Add one
 entry: `claim` is the thesis in one sentence, `breaksIf` is the falsifier from
-"What would prove me wrong", and `watch` is its list of evidence. `reviews`
-starts empty, so the claim shows as Open. The claim and the test are fixed on
-the day the piece goes live and are never reworded afterwards.
+"What would prove me wrong", and `watch` is its list of evidence. The page
+lists every claim with its date, newest first. The claim and the test are fixed
+on the day the piece goes live and are never reworded afterwards.
 
-Reviews are Tommy's judgement, never Claude's: Claude may draft one from new
-evidence, but only Tommy sets a status. Reviewing a claim later means adding one dated entry to its `reviews`, with a
-status of `holding`, `pressure` or `broken` and a sentence or two saying what
-evidence moved. Do it when something named in `watch` reports, usually the
-company's results. A broken claim stays on the page, marked broken. That is the
-point of the page.
+There are no statuses and no reviews. The page is a plain, dated record of what
+was claimed and what would prove it wrong, by decision. Do not add status
+tracking back.
 
 **The numbers, `src/data/numbers.ts`. Optional.** If the piece rests on a
 structural figure that is not already there, add it: power, distance, time or
@@ -460,6 +457,6 @@ Run it before you build. All six existing pieces pass.
 - [ ] Any financial figure is the company's own, dated, sourced, and tied to the mechanism
 - [ ] Sources paragraph, ending "Personal research, not investment advice."
 - [ ] Every jargon term defined in place, and present in the glossary
-- [ ] On the map in `stack.ts`; if Analysis, on the claims ledger in `claims.ts`
+- [ ] On the map in `stack.ts`; if Analysis, on the claims page in `claims.ts`
 - [ ] No em dashes. British spelling. 1,050 to 1,500 words
 - [ ] Cover SVG in place, social card regenerated, build clean

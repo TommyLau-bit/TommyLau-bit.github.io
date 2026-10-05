@@ -53,18 +53,18 @@ A new piece is not published until the site around it is updated. Every time:
 
 - **The map.** Add the slug to one layer in `src/data/stack.ts`. Every piece,
   no exceptions.
-- **The claims ledger.** For an Analysis piece, add an entry to
-  `src/data/claims.ts`: the thesis in one sentence, the falsifier, the evidence
-  watched, `reviews: []`. The claim and test are never reworded later; only
-  dated reviews are added, and a broken claim stays on the page marked broken.
-  Statuses are Tommy's judgement: propose a review, never record one on your own.
+- **The claims page.** For an Analysis piece, add an entry to
+  `src/data/claims.ts`: the thesis in one sentence, the falsifier, and the
+  evidence watched. The claim and test are never reworded later. There are no
+  statuses (Open, Holding and so on) and no reviews: Tommy decided the page is
+  a plain list of claims. Do not add status tracking back or suggest it.
 - **The numbers.** If the piece rests on a new structural figure, add it to
   `src/data/numbers.ts`. Physical figures only, never anything about shares.
 - **Companies and topics** build themselves from the exposure map and tags.
   Spell company names consistently.
 
 The checker fails a piece missing from the map, or an Analysis piece missing
-from the ledger. See WRITING-FORMAT.md §6a.
+from the claims page. See WRITING-FORMAT.md §6a.
 
 **No email sign-ups.** Tommy has decided against a newsletter or sign-up form
 anywhere on the site. Do not add one or suggest one. Readers follow via the

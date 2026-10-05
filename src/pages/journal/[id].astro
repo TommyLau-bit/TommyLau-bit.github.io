@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import { getCollection, render } from 'astro:content';
 import { SITE, OG_VERSION } from '../../config';
 import { fmtDate, readingTime, topicLabel, topicSlug } from '../../utils';
-import { claimOf, statusOf, STATUS_LABEL } from '../../data/claims';
+import { claimOf } from '../../data/claims';
 import { layerOf } from '../../data/stack';
 import { exposureOf, slugify } from '../../lib/exposure';
 export async function getStaticPaths() {
@@ -40,11 +40,10 @@ const companies = [...new Set(exposureOf(p).flatMap((r) => r.names))];
 
     {claim && (
       <aside class="claim-box">
-        <p class="claim-box-label">This piece makes a claim I track in public</p>
+        <p class="claim-box-label">The claim this piece makes</p>
         <p class="claim-box-claim">{claim.claim}</p>
         <p class="claim-box-meta">
-          <span class={`status status--${statusOf(claim)}`}>{STATUS_LABEL[statusOf(claim)]}</span>
-          <a href={`/claims/#${claim.id}`}>See how it is holding up, with every other claim on the site</a>
+          <a href={`/claims/#${claim.id}`}>See it alongside every other claim on the site</a>
         </p>
       </aside>
     )}

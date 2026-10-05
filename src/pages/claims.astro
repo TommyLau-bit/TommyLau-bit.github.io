@@ -1,48 +1,27 @@
 ---
 import Base from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
-import { CLAIMS, STATUS_LABEL, STATUS_MEANING, statusOf, type Status } from '../data/claims';
+import { CLAIMS } from '../data/claims';
 import { fmtDate } from '../utils';
 const posts = await getCollection('journal', ({ data }) => !data.draft);
 const byId = Object.fromEntries(posts.map((p) => [p.id, p]));
 const rows = CLAIMS.filter((c) => byId[c.id])
-  .map((c) => ({ c, p: byId[c.id], status: statusOf(c) }))
+  .map((c) => ({ c, p: byId[c.id] }))
   .sort((a, b) => b.p.data.date.valueOf() - a.p.data.date.valueOf());
-const order: Status[] = ['open', 'holding', 'pressure', 'broken'];
-const counts = Object.fromEntries(order.map((s) => [s, rows.filter((r) => r.status === s).length]));
-const reviewed = rows.filter((r) => r.c.reviews.length).length;
 ---
-<Base title="Claims" description="Every claim this journal makes, what would prove it wrong, and how it is holding up. Dated, and never reworded after the fact.">
+<Base title="Claims" description="Every claim this journal makes, dated, with what would prove it wrong and the evidence to watch.">
   <header class="article-head">
-    <h1>The claims I am tracking</h1>
+    <h1>The claims I have made</h1>
     <aside class="plain">
       <p class="label">In plain English</p>
-      <p>Every Analysis piece on this site makes a claim and names the evidence that would prove it wrong. This page keeps them all in one place and marks how each is holding up. The claim and the test are fixed on the day the piece goes live. Only the reviews change.</p>
+      <p>Every Analysis piece on this site makes a claim and names the evidence that would prove it wrong. This page lists them all in one place, newest first. Each claim is fixed on the day its piece went live and is never reworded afterwards.</p>
     </aside>
   </header>
 
-  <div class="ledger-summary">
-    {order.map((s) => (
-      <div class={`ledger-count ledger-count--${s}`}>
-        <span class="ledger-n">{counts[s]}</span>
-        <span class={`status status--${s}`}>{STATUS_LABEL[s]}</span>
-      </div>
-    ))}
-  </div>
-  <dl class="ledger-key">
-    {order.map((s) => (<><dt><span class={`status status--${s}`}>{STATUS_LABEL[s]}</span></dt><dd>{STATUS_MEANING[s]}</dd></>))}
-  </dl>
-  <p class="ledger-note">
-    {rows.length} claims, {reviewed === 0 ? 'none reviewed yet. The first reviews follow the next round of company results and regulator publications, and each one is dated here.' : `${reviewed} reviewed so far.`}
-  </p>
-
   <ol class="ledger">
-    {rows.map(({ c, p, status }) => (
+    {rows.map(({ c, p }) => (
       <li class="claim" id={c.id}>
-        <div class="claim-head">
-          <span class={`status status--${status}`}>{STATUS_LABEL[status]}</span>
-          <span class="claim-date">Made {fmtDate(p.data.date)}</span>
-        </div>
+        <span class="claim-date">{fmtDate(p.data.date)}</span>
         <p class="claim-text">{c.claim}</p>
         <p class="claim-piece">From <a href={`/journal/${p.id}/`}>{p.data.title}</a></p>
         <details class="claim-detail">
@@ -51,18 +30,12 @@ const reviewed = rows.filter((r) => r.c.reviews.length).length;
           <p>{c.breaksIf}</p>
           <p class="claim-sub">Evidence I watch</p>
           <ul>{c.watch.map((w) => <li>{w}</li>)}</ul>
-          <p class="claim-sub">Reviews</p>
-          {c.reviews.length === 0
-            ? <p class="claim-none">None yet. The claim stands as published.</p>
-            : <ol class="reviews">{c.reviews.map((r) => (
-                <li><span class={`status status--${r.status}`}>{STATUS_LABEL[r.status]}</span> <time>{r.date}</time> {r.note}</li>
-              ))}</ol>}
         </details>
       </li>
     ))}
   </ol>
 
   <div class="prose">
-    <p class="sources">Explainer pieces teach a mechanism and make no prediction, so they do not appear here. Reviews cite the evidence that moved, with its date. Personal research, not investment advice.</p>
+    <p class="sources">{rows.length} claims. Explainer pieces teach a mechanism and make no prediction, so they do not appear here. Personal research, not investment advice.</p>
   </div>
 </Base>

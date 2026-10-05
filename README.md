@@ -84,7 +84,7 @@ out rather than adding another**, then update `PATH_REVIEWED`, which is the
 ## The pages around the journal
 
 - `/map` reads `src/data/stack.ts`: the layers of the stack, the pieces in each, and the companies their exposure maps name most.
-- `/claims` reads `src/data/claims.ts`: one entry per Analysis piece, with dated reviews.
+- `/claims` reads `src/data/claims.ts`: one entry per Analysis piece, listed newest first.
 - `/numbers` reads `src/data/numbers.ts`: structural figures, each linked to its piece.
 - `/companies` and `/topics` are generated from exposure maps and tags. Nothing to maintain.
 

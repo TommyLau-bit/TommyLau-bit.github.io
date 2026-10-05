@@ -64,3 +64,13 @@ tags: ["", ""]
 ---
 
 <p class="sources"><!-- Either: this piece explains mechanism, the figures are structural, and the position you are not taking. Or: named institutions and documents with dates. --> Personal research, not investment advice.</p>
+
+<!-- BEFORE PUBLISHING: the site around the piece (WRITING-FORMAT.md §6a).
+     1. Map: add the slug to one layer's `pieces` in src/data/stack.ts. Every piece.
+     2. Claims: Analysis pieces only. Add { id, claim, breaksIf, watch } to
+        src/data/claims.ts. One-sentence claim, the falsifier, the evidence watched.
+        Never reworded later. No statuses, no reviews.
+     3. Numbers: optional. A new structural figure goes in src/data/numbers.ts.
+     4. Companies and topics build themselves from the exposure map and tags.
+     No email sign-ups anywhere on the site.
+     brand/check-piece.py fails the piece if step 1, or step 2 for Analysis, is missing. -->
