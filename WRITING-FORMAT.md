@@ -310,7 +310,9 @@ have it.
 
 **The map, `src/data/stack.ts`. Every piece.** Add the slug to the `pieces`
 list of the one layer it explains. The map, the "On the map" line under the
-piece and the company pages all read from this.
+piece and the company pages all read from this. If no layer genuinely fits, add
+a new layer to `STACK` in its physical place in the chain, with a plain `what`
+and `constraint` sentence, rather than forcing the piece into the nearest one.
 
 **The claims page, `src/data/claims.ts`. Every Analysis piece.** Add one
 entry: `claim` is the thesis in one sentence, `breaksIf` is the falsifier from

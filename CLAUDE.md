@@ -52,7 +52,8 @@ cover brief and LinkedIn post, is yours to write.
 A new piece is not published until the site around it is updated. Every time:
 
 - **The map.** Add the slug to one layer in `src/data/stack.ts`. Every piece,
-  no exceptions.
+  no exceptions. If no layer fits, add a new layer in its physical place in
+  the chain rather than forcing the piece into the nearest one.
 - **The claims page.** For an Analysis piece, add an entry to
   `src/data/claims.ts`: the thesis in one sentence, the falsifier, and the
   evidence watched. The claim and test are never reworded later. There are no

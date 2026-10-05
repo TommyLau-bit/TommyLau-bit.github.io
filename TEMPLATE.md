@@ -67,6 +67,7 @@ tags: ["", ""]
 
 <!-- BEFORE PUBLISHING: the site around the piece (WRITING-FORMAT.md §6a).
      1. Map: add the slug to one layer's `pieces` in src/data/stack.ts. Every piece.
+        If no layer fits, add a new layer in its physical place in the chain.
      2. Claims: Analysis pieces only. Add { id, claim, breaksIf, watch } to
         src/data/claims.ts. One-sentence claim, the falsifier, the evidence watched.
         Never reworded later. No statuses, no reviews.
