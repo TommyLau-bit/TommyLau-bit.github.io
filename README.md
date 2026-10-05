@@ -86,7 +86,8 @@ out rather than adding another**, then update `PATH_REVIEWED`, which is the
 - `/map` reads `src/data/stack.ts`: the layers of the stack, the pieces in each, and the companies their exposure maps name most.
 - `/claims` reads `src/data/claims.ts`: one entry per Analysis piece, listed newest first.
 - `/numbers` reads `src/data/numbers.ts`: structural figures, each linked to its piece.
-- `/companies` and `/topics` are generated from exposure maps and tags. Nothing to maintain.
+- `/companies` is generated from exposure maps. Nothing to maintain. Topic pages were folded into the map; old `/topics/` links redirect there.
+- The top menu is fixed at five: Journal, Map, Claims, Glossary, About. Start here, Numbers and Companies live in the footer and on the map page.
 
 ## Social cards
 `public/og/<slug>-<OG_VERSION>.png` is generated per piece from its cover diagram alone, with no title or logo over it. After adding a piece, run the generator in `brand/make-og.py`, then re-run LinkedIn's Post Inspector on the URL before sharing it.

@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import { getCollection, render } from 'astro:content';
 import { SITE, OG_VERSION } from '../../config';
-import { fmtDate, readingTime, topicLabel, topicSlug } from '../../utils';
+import { fmtDate, readingTime } from '../../utils';
 import { claimOf } from '../../data/claims';
 import { layerOf } from '../../data/stack';
 import { exposureOf, slugify } from '../../lib/exposure';
@@ -24,7 +24,7 @@ const companies = [...new Set(exposureOf(p).flatMap((r) => r.names))];
         <span>{SITE.author}</span><span>·</span>
         <time datetime={p.data.date.toISOString()}>{fmtDate(p.data.date)}</time>
         <span>·</span><span>{readingTime(p.body ?? '')} min read</span>
-        {p.data.tags.map((t) => <a class="tag" href={`/topics/${topicSlug(t)}/`}>#{t}</a>)}
+        {p.data.tags.map((t) => <span class="tag">#{t}</span>)}
       </div>
       {p.data.updated && (
         <p class="updated">

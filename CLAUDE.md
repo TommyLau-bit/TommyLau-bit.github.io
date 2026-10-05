@@ -61,8 +61,13 @@ A new piece is not published until the site around it is updated. Every time:
   a plain list of claims. Do not add status tracking back or suggest it.
 - **The numbers.** If the piece rests on a new structural figure, add it to
   `src/data/numbers.ts`. Physical figures only, never anything about shares.
-- **Companies and topics** build themselves from the exposure map and tags.
-  Spell company names consistently.
+- **Companies** build themselves from the exposure map. Spell company names
+  consistently. There are no topic pages; the map does that job.
+
+**The top menu is fixed at five: Journal, Map, Claims, Glossary, About.** Tommy
+found nine items too crowded. Do not add to it. Start here, Numbers and
+Companies live in the footer and are linked from the map page; any new
+reference page goes there too.
 
 The checker fails a piece missing from the map, or an Analysis piece missing
 from the claims page. See WRITING-FORMAT.md §6a.

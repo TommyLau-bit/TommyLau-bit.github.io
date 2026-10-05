@@ -333,10 +333,15 @@ frontmatter rather than quietly editing history.
 **No email sign-ups.** The site has no newsletter or sign-up form, by
 decision. Do not add one. LinkedIn and RSS are how readers follow.
 
-**Companies and topics. Automatic.** Every name in a `<span class="names">`
-gets a company page built from the exposure box, and every tag gets a topic
-page. Spell a company the same way each time; `ALIAS` in
-`src/lib/exposure.ts` catches the odd variant.
+**Companies. Automatic.** Every name in a `<span class="names">` gets a
+company page built from the exposure box. Spell a company the same way each
+time; `ALIAS` in `src/lib/exposure.ts` catches the odd variant. Tags show as
+plain labels on the piece; there are no topic pages, because the map does that
+job.
+
+**The top menu is fixed at five: Journal, Map, Claims, Glossary, About.** Do
+not add a sixth. A new reference page goes in the footer and is linked from
+the map page, the way Start here, Numbers and Companies are.
 
 ---
 

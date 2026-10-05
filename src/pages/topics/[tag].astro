@@ -1,28 +1,9 @@
 ---
-import Base from '../../layouts/Base.astro';
-import Card from '../../components/Card.astro';
+// Topics were folded into the map. Old links land there.
 import { getCollection } from 'astro:content';
-import { topicLabel, topicSlug } from '../../utils';
 export async function getStaticPaths() {
-  const posts = await getCollection('journal', ({ data }) => !data.draft);
-  const tags = new Map<string, string>();
-  for (const p of posts) for (const t of p.data.tags) tags.set(topicSlug(t), t);
-  return [...tags].map(([tag, raw]) => ({
-    params: { tag },
-    props: {
-      label: topicLabel(raw),
-      posts: posts.filter((p) => p.data.tags.some((t) => topicSlug(t) === tag))
-        .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()),
-    },
-  }));
+  const posts = await getCollection('journal');
+  return [...new Set(posts.flatMap((p) => p.data.tags.map((t) => t.toLowerCase())))].map((tag) => ({ params: { tag } }));
 }
-const { label, posts } = Astro.props;
+return Astro.redirect('/map/');
 ---
-<Base wide title={label} description={`Every piece on The Physical Layer about ${label.toLowerCase()}.`}>
-  <section class="hero hero--compact">
-    <p class="kicker"><a href="/topics/">Topics</a></p>
-    <h1>{label}</h1>
-    <p>{posts.length} {posts.length === 1 ? 'piece' : 'pieces'}, newest first.</p>
-  </section>
-  <section class="grid">{posts.map((p) => <Card p={p} />)}</section>
-</Base>

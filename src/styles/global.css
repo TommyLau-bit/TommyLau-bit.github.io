@@ -189,6 +189,7 @@ details.analogy > p:first-of-type { margin-top: 0.1rem; }
 .hero-start {
   margin: 1.15rem 0 0; font-family: var(--sans); font-size: 0.92rem; color: var(--ink-3);
 }
+.hero p.hero-start { margin-top: 1rem; }
 .hero-start a { color: var(--ink-2); text-decoration-color: var(--rule); }
 .hero-start a:hover { color: var(--accent); text-decoration-color: var(--accent); }
 
@@ -237,8 +238,6 @@ details.analogy > p:first-of-type { margin-top: 0.1rem; }
 /* ── shared small parts ────────────────────────────────────────── */
 .kicker { font-family: var(--sans); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 0.5rem; }
 .kicker a { color: var(--accent); text-decoration: none; }
-.meta a.tag { text-decoration: none; }
-.meta a.tag:hover { text-decoration: underline; }
 .updated { font-family: var(--sans); font-size: 0.88rem; color: var(--ink-2); margin: 0.9rem 0 0; }
 .chips { display: flex; flex-wrap: wrap; gap: 0.45rem; margin: 0.5rem 0 0; }
 .chip {
@@ -336,7 +335,7 @@ details.analogy > p:first-of-type { margin-top: 0.1rem; }
 .num-src a { color: var(--ink-2); }
 .num-note { font-family: var(--sans); font-size: 0.78rem; color: var(--accent); margin: 0.5rem 0 0; }
 
-/* ── companies + topics ────────────────────────────────────────── */
+/* ── companies ─────────────────────────────────────────────────── */
 .co-section { margin: 0 0 2.5rem; }
 .co-section > h2 { font-family: var(--sans); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin: 0 0 0.8rem; border-top: 1px solid var(--rule); padding-top: 1.1rem; }
 .co-letters { display: flex; flex-wrap: wrap; gap: 0.2rem 0.75rem; font-family: var(--sans); font-size: 0.92rem; margin: 0 0 1rem; }
@@ -348,7 +347,6 @@ details.analogy > p:first-of-type { margin-top: 0.1rem; }
 .co-list a { text-decoration: none; }
 .co-list a:hover { color: var(--accent); }
 .co-list span { color: var(--ink-3); font-size: 0.78rem; margin-left: 0.25rem; }
-.topic-list { margin-bottom: 4rem; }
 .co-mentions { list-style: none; padding: 0; }
 .co-mentions li { border-top: 1px solid var(--rule); padding: 1rem 0; }
 .co-mentions p { margin: 0.2rem 0; }

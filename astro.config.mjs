@@ -4,6 +4,6 @@ import { SITE } from './src/config.ts';
 
 export default defineConfig({
   site: SITE.url,
-  integrations: [sitemap()],
+  integrations: [sitemap({ filter: (page) => !page.includes('/topics/') })],
   markdown: { shikiConfig: { theme: 'github-light' } },
 });

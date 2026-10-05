@@ -72,6 +72,7 @@ tags: ["", ""]
         src/data/claims.ts. One-sentence claim, the falsifier, the evidence watched.
         Never reworded later. No statuses, no reviews.
      3. Numbers: optional. A new structural figure goes in src/data/numbers.ts.
-     4. Companies and topics build themselves from the exposure map and tags.
+     4. Company pages build themselves from the exposure map. No topic pages.
+     The top menu stays at five items: Journal, Map, Claims, Glossary, About.
      No email sign-ups anywhere on the site.
      brand/check-piece.py fails the piece if step 1, or step 2 for Analysis, is missing. -->

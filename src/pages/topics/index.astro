@@ -1,18 +1,4 @@
 ---
-import Base from '../../layouts/Base.astro';
-import { getCollection } from 'astro:content';
-import { topicLabel, topicSlug } from '../../utils';
-const posts = await getCollection('journal', ({ data }) => !data.draft);
-const counts = new Map<string, { label: string; n: number }>();
-for (const p of posts) for (const t of p.data.tags) {
-  const s = topicSlug(t);
-  counts.set(s, { label: topicLabel(t), n: (counts.get(s)?.n ?? 0) + 1 });
-}
-const topics = [...counts.entries()].sort((a, b) => b[1].n - a[1].n || a[1].label.localeCompare(b[1].label));
+// Topics were folded into the map. Old links land there.
+return Astro.redirect('/map/');
 ---
-<Base title="Topics" description="Every piece on The Physical Layer, by topic.">
-  <header class="article-head"><h1>Topics</h1></header>
-  <ul class="co-list topic-list">
-    {topics.map(([s, t]) => <li><a href={`/topics/${s}/`}>{t.label}</a> <span>{t.n}</span></li>)}
-  </ul>
-</Base>
