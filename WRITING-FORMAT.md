@@ -302,6 +302,45 @@ a term without adding the glossary entry is an incomplete publish.
 
 ---
 
+## 6a. The site around the piece
+
+A piece is not finished when the Markdown is. Four other pages read from it,
+and two of them need a line from you. The checker fails the piece until they
+have it.
+
+**The map, `src/data/stack.ts`. Every piece.** Add the slug to the `pieces`
+list of the one layer it explains. The map, the "On the map" line under the
+piece and the company pages all read from this.
+
+**The claims ledger, `src/data/claims.ts`. Every Analysis piece.** Add one
+entry: `claim` is the thesis in one sentence, `breaksIf` is the falsifier from
+"What would prove me wrong", and `watch` is its list of evidence. `reviews`
+starts empty, so the claim shows as Open. The claim and the test are fixed on
+the day the piece goes live and are never reworded afterwards.
+
+Reviews are Tommy's judgement, never Claude's: Claude may draft one from new
+evidence, but only Tommy sets a status. Reviewing a claim later means adding one dated entry to its `reviews`, with a
+status of `holding`, `pressure` or `broken` and a sentence or two saying what
+evidence moved. Do it when something named in `watch` reports, usually the
+company's results. A broken claim stays on the page, marked broken. That is the
+point of the page.
+
+**The numbers, `src/data/numbers.ts`. Optional.** If the piece rests on a
+structural figure that is not already there, add it: power, distance, time or
+capacity, never anything about the shares. When a figure is overtaken, update
+it there with a `note`, and give the piece `updated` and `updateNote` in its
+frontmatter rather than quietly editing history.
+
+**No email sign-ups.** The site has no newsletter or sign-up form, by
+decision. Do not add one. LinkedIn and RSS are how readers follow.
+
+**Companies and topics. Automatic.** Every name in a `<span class="names">`
+gets a company page built from the exposure box, and every tag gets a topic
+page. Spell a company the same way each time; `ALIAS` in
+`src/lib/exposure.ts` catches the odd variant.
+
+---
+
 ## 7. The cover image
 
 `public/covers/<slug>.svg`, `viewBox="0 0 800 600"`.
@@ -340,7 +379,9 @@ In order:
 
 1. `src/content/journal/<slug>.md` written and complete, both blocks present.
 2. `public/covers/<slug>.svg` in place, then `brand/check-piece.py` passes.
-3. Any new terms added to the glossary.
+3. Any new terms added to the glossary. The slug added to a layer in
+   `src/data/stack.ts`, and for an Analysis piece, its entry in
+   `src/data/claims.ts` (§6a).
 4. Regenerate the social cards. They are written to
    `public/og/<slug>-<OG_VERSION>.png`. If the artwork of an **existing** card
    changes, bump `OG_VERSION` in `src/config.ts` first, because LinkedIn caches
@@ -419,5 +460,6 @@ Run it before you build. All six existing pieces pass.
 - [ ] Any financial figure is the company's own, dated, sourced, and tied to the mechanism
 - [ ] Sources paragraph, ending "Personal research, not investment advice."
 - [ ] Every jargon term defined in place, and present in the glossary
+- [ ] On the map in `stack.ts`; if Analysis, on the claims ledger in `claims.ts`
 - [ ] No em dashes. British spelling. 1,050 to 1,500 words
 - [ ] Cover SVG in place, social card regenerated, build clean

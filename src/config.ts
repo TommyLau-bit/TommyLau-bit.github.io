@@ -7,6 +7,7 @@ export const SITE = {
   author: 'Tommy Lau',
   email: 'tommyllk2003@gmail.com',
   linkedin: 'https://www.linkedin.com/in/tommy-lau-170364253',
+  linkedinPage: 'https://www.linkedin.com/company/143897682/',
   url: 'https://thephysicallayer.fyi',
   locale: 'en-GB',
 };

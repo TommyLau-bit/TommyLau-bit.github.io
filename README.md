@@ -81,6 +81,13 @@ someone landed here today, which pieces get them oriented fastest? **Swap one
 out rather than adding another**, then update `PATH_REVIEWED`, which is the
 "Chosen ..." date shown on the page.
 
+## The pages around the journal
+
+- `/map` reads `src/data/stack.ts`: the layers of the stack, the pieces in each, and the companies their exposure maps name most.
+- `/claims` reads `src/data/claims.ts`: one entry per Analysis piece, with dated reviews.
+- `/numbers` reads `src/data/numbers.ts`: structural figures, each linked to its piece.
+- `/companies` and `/topics` are generated from exposure maps and tags. Nothing to maintain.
+
 ## Social cards
 `public/og/<slug>-<OG_VERSION>.png` is generated per piece from its cover diagram alone, with no title or logo over it. After adding a piece, run the generator in `brand/make-og.py`, then re-run LinkedIn's Post Inspector on the URL before sharing it.
 

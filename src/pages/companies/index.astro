@@ -1,0 +1,38 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { companyIndex, pieceCount } from '../../lib/exposure';
+const posts = await getCollection('journal', ({ data }) => !data.draft);
+const companies = companyIndex(posts);
+const letters = [...new Set(companies.map((c) => c.name[0].toUpperCase()))];
+const subjects = companies.filter((c) => c.mentions.some((m) => m.subject));
+---
+<Base wide title="Companies" description="Every company named in The Physical Layer's exposure maps, with what it makes and the pieces that explain its layer.">
+  <section class="hero hero--compact">
+    <h1>Companies</h1>
+    <p>Every company the journal names, and what it makes, drawn from the exposure map at the foot of each piece. {companies.length} companies across {posts.length} pieces.</p>
+    <p class="hero-start">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares.</p>
+  </section>
+
+  {subjects.length > 0 && (
+    <section class="co-section">
+      <h2>The subject of a piece</h2>
+      <p class="chips">{subjects.map((c) => <a class="chip chip--strong" href={`/companies/${c.slug}/`}>{c.name}</a>)}</p>
+    </section>
+  )}
+
+  <section class="co-section">
+    <h2>A to Z</h2>
+    <p class="co-letters">{letters.map((l) => <a href={`#letter-${l}`}>{l}</a>)}</p>
+    {letters.map((l) => (
+      <div class="co-letter" id={`letter-${l}`}>
+        <h3>{l}</h3>
+        <ul class="co-list">
+          {companies.filter((c) => c.name[0].toUpperCase() === l).map((c) => (
+            <li><a href={`/companies/${c.slug}/`}>{c.name}</a> <span>{pieceCount(c)}</span></li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </section>
+</Base>

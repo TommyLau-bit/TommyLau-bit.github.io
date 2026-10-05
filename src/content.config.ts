@@ -11,6 +11,8 @@ const journal = defineCollection({
     cover: z.string().optional(),              // /covers/name.svg or .jpg — optional, a styled fallback renders without it
     tags: z.array(z.string()).default([]),
     draft: z.boolean().default(false),
+    updated: z.coerce.date().optional(),       // when a figure in the piece was overtaken and corrected
+    updateNote: z.string().optional(),         // one sentence: what changed. Shown under the title.
   }),
 });
 export const collections = { journal };

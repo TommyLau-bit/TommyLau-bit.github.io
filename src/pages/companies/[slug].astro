@@ -1,0 +1,36 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { companyIndex, pieceCount } from '../../lib/exposure';
+import { layerOf } from '../../data/stack';
+import { fmtDate } from '../../utils';
+export async function getStaticPaths() {
+  const posts = await getCollection('journal', ({ data }) => !data.draft);
+  return companyIndex(posts).map((c) => ({ params: { slug: c.slug }, props: { c } }));
+}
+const { c } = Astro.props;
+const n = pieceCount(c);
+const layers = [...new Map(c.mentions.map((m) => layerOf(m.post.id)).filter(Boolean).map((l) => [l!.id, l!])).values()];
+---
+<Base title={c.name} description={`What ${c.name} makes, where it sits in the AI infrastructure stack, and the ${n === 1 ? 'piece' : `${n} pieces`} on The Physical Layer that name it.`}>
+  <header class="article-head">
+    <p class="kicker"><a href="/companies/">Companies</a></p>
+    <h1>{c.name}</h1>
+    {layers.length > 0 && (
+      <p class="meta">On the map: {layers.map((l, i) => <>{i > 0 && ' · '}<a href={`/map/#${l.id}`}>{l.name}</a></>)}</p>
+    )}
+  </header>
+  <div class="prose">
+    <p>Named in {n === 1 ? 'one piece' : `${n} pieces`}. Each entry below is that piece's own description of what the company makes, from its exposure map.</p>
+    <ol class="co-mentions">
+      {c.mentions.map((m) => (
+        <li>
+          <p class="co-group">{m.group}</p>
+          <p>{m.text}</p>
+          <p class="co-from"><a href={`/journal/${m.post.id}/`}>{m.post.data.title}</a> · {fmtDate(m.post.data.date)}</p>
+        </li>
+      ))}
+    </ol>
+    <p class="sources">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares. Personal research, not investment advice.</p>
+  </div>
+</Base>

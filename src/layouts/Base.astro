@@ -48,10 +48,12 @@ const cur = (p: string) => (p === '/' ? path === '/' : path.startsWith(p)) ? 'pa
         <a class="site-name" href="/">{SITE.name.split(' ').slice(0,-1).join(' ')} <span>{SITE.name.split(' ').slice(-1)}</span></a>
         <nav class="site-nav">
           <a href="/" aria-current={cur('/')}>Journal</a>
-          <a href="/start" aria-current={cur('/start')}>Where to start</a>
+          <a href="/start" aria-current={cur('/start')}>Start here</a>
+          <a href="/map" aria-current={cur('/map')}>Map</a>
+          <a href="/claims" aria-current={cur('/claims')}>Claims</a>
+          <a href="/numbers" aria-current={cur('/numbers')}>Numbers</a>
           <a href="/glossary" aria-current={cur('/glossary')}>Glossary</a>
           <a href="/about" aria-current={cur('/about')}>About</a>
-          <a href="/rss.xml">RSS</a>
           <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch theme">
             <svg class="moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
             <svg class="sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 1.8v2.4M12 19.8v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M1.8 12h2.4M19.8 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/></svg>
@@ -65,7 +67,7 @@ const cur = (p: string) => (p === '/' ? path === '/' : path.startsWith(p)) ? 'pa
   <footer class="site-foot">
     <div class="wrap" style="display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;width:100%">
       <span>© {new Date().getFullYear()} {SITE.author}. Personal research, not investment advice.</span>
-      <span><a href={SITE.linkedin}>LinkedIn</a> · <a href={`mailto:${SITE.email}`}>Email</a></span>
+      <span><a href="/companies/">Companies</a> · <a href="/topics/">Topics</a> · <a href="/rss.xml">RSS</a> · <a href={SITE.linkedinPage}>LinkedIn</a> · <a href={`mailto:${SITE.email}`}>Email</a></span>
     </div>
   </footer>
   <script is:inline>

@@ -1,0 +1,39 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { STACK } from '../data/stack';
+import { NUMBERS } from '../data/numbers';
+const posts = await getCollection('journal', ({ data }) => !data.draft);
+const byId = Object.fromEntries(posts.map((p) => [p.id, p]));
+const groups = STACK.map((l) => ({ ...l, nums: NUMBERS.filter((n) => n.layer === l.id && byId[n.piece]) })).filter((g) => g.nums.length);
+---
+<Base wide title="The numbers" description="The physical figures behind the AI buildout: rack power, the air-cooling ceiling, copper's reach, grid connection waits and factory build times. Dated and sourced.">
+  <section class="hero hero--compact">
+    <h1>The numbers that matter</h1>
+    <p>The physical figures this journal keeps coming back to, layer by layer. Power, distance, time and capacity, never a share price. Each one is dated and links to the piece that explains it and names its source.</p>
+  </section>
+
+  {groups.map((g) => (
+    <section class="num-group" id={g.id}>
+      <h2><a href={`/map/#${g.id}`}>{g.name}</a></h2>
+      <div class="num-grid">
+        {g.nums.map((n) => (
+          <article class="num-card">
+            <span class={`num-value num-value--${g.kind}`}>{n.value}</span>
+            <p class="num-what">{n.what}</p>
+            <p class="num-src">
+              <span>As of {n.asOf}</span>
+              <a href={`/journal/${n.piece}/`}>{byId[n.piece].data.title}</a>
+            </p>
+            {n.note && <p class="num-note">{n.note}</p>}
+          </article>
+        ))}
+      </div>
+    </section>
+  ))}
+
+  <p class="path-foot">
+    Each figure is as the linked piece cites it, and the sources sit at the foot of that piece. When a figure is overtaken it is updated here with a note, and the piece carries an update line.
+    Spotted a figure that has moved? <a href="/about/">Tell me</a>. Personal research, not investment advice.
+  </p>
+</Base>

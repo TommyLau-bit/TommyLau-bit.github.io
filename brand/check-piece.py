@@ -31,6 +31,16 @@ BANNED = [
     (r'\bpriced for perfection\b|\bpriced in\b', 'a valuation call'),
 ]
 
+def _read(rel):
+    try:
+        return open(os.path.join(ROOT, rel)).read()
+    except OSError:
+        return ''
+CLAIMS_TS = _read('src/data/claims.ts')
+STACK_TS = _read('src/data/stack.ts')
+CLAIM_IDS = set(re.findall(r"^\s*id: '([^']+)'", CLAIMS_TS, re.M))
+STACK_IDS = set(re.findall(r"'([a-z0-9-]+)'", ''.join(re.findall(r'pieces: \[([^\]]*)\]', STACK_TS))))
+
 def check(path):
     fails, warns = [], []
     raw = open(path).read()
@@ -120,6 +130,16 @@ def check(path):
         warns.append(f'{len(h2)} ## sections; the format asks for 4 to 6')
     if cat == 'Analysis' and not any('prove me wrong' in h.lower() for h in h2):
         fails.append('an Analysis piece must carry a "What would prove me wrong" section')
+
+    # ── the site around the piece
+    # Every piece sits on the map; every Analysis piece is on the claims ledger.
+    if field('draft') != 'true':
+        if slug not in STACK_IDS:
+            fails.append('not on the map: add the slug to one layer in src/data/stack.ts')
+        if cat == 'Analysis' and slug not in CLAIM_IDS:
+            fails.append('Analysis piece has no entry in src/data/claims.ts')
+    if field('updated') and not field('updateNote'):
+        fails.append('updated is set without an updateNote saying what changed')
 
     # ── style
     prose = re.sub(r'<[^>]+>', '', body)

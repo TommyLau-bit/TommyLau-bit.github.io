@@ -1,0 +1,77 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { STACK } from '../data/stack';
+import { NUMBERS } from '../data/numbers';
+import { topCompanies } from '../lib/exposure';
+import { readingTime } from '../utils';
+const posts = await getCollection('journal', ({ data }) => !data.draft);
+const byId = Object.fromEntries(posts.map((p) => [p.id, p]));
+const layers = STACK.map((l) => {
+  const ps = l.pieces.map((id) => byId[id]).filter(Boolean);
+  return { ...l, posts: ps, numbers: NUMBERS.filter((n) => n.layer === l.id), companies: topCompanies(ps, 10) };
+});
+---
+<Base wide title="Map of the stack" description="The physical layers of an AI data centre, from the grid connection to the chip: what happens in each, what binds, the numbers that matter and who operates there.">
+  <section class="hero hero--compact">
+    <h1>The map of the stack</h1>
+    <p>An AI data centre is a chain of physical layers. Power comes in from the grid or is made on site, is carried to each rack, and comes back out as heat. Inside, thousands of chips talk over copper and light while memory feeds them. Each layer has its own constraint, and the slowest one sets the pace for all the rest.</p>
+  </section>
+
+  <div class="stack-layout">
+    <nav class="stack" aria-label="Layers of the stack">
+      <p class="stack-end">From the grid</p>
+      {layers.map((l, i) => (
+        <a class={`stack-band stack-band--${l.kind}`} href={`#${l.id}`}>
+          <span class="stack-n">{String(i + 1).padStart(2, '0')}</span>
+          <span class="stack-name">{l.name}</span>
+          <span class="stack-count">{l.posts.length} {l.posts.length === 1 ? 'piece' : 'pieces'}</span>
+        </a>
+      ))}
+      <p class="stack-end">To the answer on your screen</p>
+    </nav>
+
+    <div class="layers">
+      {layers.map((l, i) => (
+        <section class={`layer layer--${l.kind}`} id={l.id}>
+          <p class="layer-n">Layer {String(i + 1).padStart(2, '0')}</p>
+          <h2>{l.name}</h2>
+          <p class="layer-what">{l.what}</p>
+          <p class="layer-constraint"><strong>What binds.</strong> {l.constraint}</p>
+
+          {l.numbers.length > 0 && (
+            <div class="layer-nums">
+              {l.numbers.map((n) => (
+                <div class="num-tile">
+                  <span class="num-value">{n.value}</span>
+                  <span class="num-what">{n.what}</span>
+                </div>
+              ))}
+            </div>
+          )}
+
+          <h3>Read</h3>
+          <ul class="layer-pieces">
+            {l.posts.map((p) => (
+              <li><a href={`/journal/${p.id}/`}>{p.data.title}</a> <span class="layer-meta">{p.data.category} · {readingTime(p.body ?? '')} min</span></li>
+            ))}
+          </ul>
+
+          {l.companies.length > 0 && (
+            <>
+              <h3>Named most often in this layer</h3>
+              <p class="chips">
+                {l.companies.map((c) => <a class="chip" href={`/companies/${c.slug}/`}>{c.name}</a>)}
+              </p>
+            </>
+          )}
+        </section>
+      ))}
+    </div>
+  </div>
+
+  <p class="path-foot">
+    Companies are listed because the pieces in each layer name them in their exposure maps. That maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares.
+    The figures behind each layer are collected on <a href="/numbers/">the numbers page</a>, and every company has its own page in <a href="/companies/">the company index</a>.
+  </p>
+</Base>

@@ -2,13 +2,19 @@
 import Base from '../../layouts/Base.astro';
 import { getCollection, render } from 'astro:content';
 import { SITE, OG_VERSION } from '../../config';
-import { fmtDate, readingTime } from '../../utils';
+import { fmtDate, readingTime, topicLabel, topicSlug } from '../../utils';
+import { claimOf, statusOf, STATUS_LABEL } from '../../data/claims';
+import { layerOf } from '../../data/stack';
+import { exposureOf, slugify } from '../../lib/exposure';
 export async function getStaticPaths() {
   const posts = await getCollection('journal', ({ data }) => !data.draft);
   return posts.map((p) => ({ params: { id: p.id }, props: { p } }));
 }
 const { p } = Astro.props;
 const { Content } = await render(p);
+const claim = claimOf(p.id);
+const layer = layerOf(p.id);
+const companies = [...new Set(exposureOf(p).flatMap((r) => r.names))];
 ---
 <Base title={p.data.title} description={p.data.summary} type="article" canonical={`${SITE.url}/journal/${p.id}/`} image={`/og/${p.id}-${OG_VERSION}.png`}>
   <article>
@@ -18,14 +24,44 @@ const { Content } = await render(p);
         <span>{SITE.author}</span><span>·</span>
         <time datetime={p.data.date.toISOString()}>{fmtDate(p.data.date)}</time>
         <span>·</span><span>{readingTime(p.body ?? '')} min read</span>
-        {p.data.tags.map((t) => <span class="tag">#{t}</span>)}
+        {p.data.tags.map((t) => <a class="tag" href={`/topics/${topicSlug(t)}/`}>#{t}</a>)}
       </div>
+      {p.data.updated && (
+        <p class="updated">
+          <strong>Updated {fmtDate(p.data.updated)}.</strong> {p.data.updateNote}
+        </p>
+      )}
       <aside class="plain">
         <p class="label">In plain English</p>
         <p>{p.data.summary}</p>
       </aside>
     </header>
     <div class="prose"><Content /></div>
+
+    {claim && (
+      <aside class="claim-box">
+        <p class="claim-box-label">This piece makes a claim I track in public</p>
+        <p class="claim-box-claim">{claim.claim}</p>
+        <p class="claim-box-meta">
+          <span class={`status status--${statusOf(claim)}`}>{STATUS_LABEL[statusOf(claim)]}</span>
+          <a href={`/claims/#${claim.id}`}>See how it is holding up, with every other claim on the site</a>
+        </p>
+      </aside>
+    )}
+
+    {(layer || companies.length > 0) && (
+      <nav class="related" aria-label="Related">
+        {layer && (
+          <p><span class="related-label">On the map</span> <a href={`/map/#${layer.id}`}>{layer.name}</a></p>
+        )}
+        {companies.length > 0 && (
+          <p><span class="related-label">Companies named</span>
+            {companies.map((n, i) => <>{i > 0 && ', '}<a href={`/companies/${slugify(n)}/`}>{n}</a></>)}
+          </p>
+        )}
+      </nav>
+    )}
+
     <footer class="article-foot">
       Unfamiliar term? The <a href="/glossary">glossary</a> explains every one of them in a line.<br />
       Written by {SITE.author}. If you think the argument is wrong, I would genuinely like to hear it: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.

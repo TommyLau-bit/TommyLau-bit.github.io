@@ -1,6 +1,9 @@
 ---
 import Base from '../layouts/Base.astro';
 import Card from '../components/Card.astro';
+import { CLAIMS } from '../data/claims';
+import { NUMBERS } from '../data/numbers';
+import { STACK } from '../data/stack';
 import { getCollection } from 'astro:content';
 import { SITE, READING_ORDER } from '../config';
 const all = await getCollection('journal', ({ data }) => !data.draft);
@@ -19,6 +22,11 @@ const first = READING_ORDER.map((id) => byId[id]).find(Boolean);
       </p>
     )}
   </section>
+  <nav class="ways-in" aria-label="Ways into the site">
+    <a href="/map/"><strong>The map</strong><span>{STACK.length} layers from the grid to the chip, and what binds in each.</span></a>
+    <a href="/claims/"><strong>The claims</strong><span>{CLAIMS.length} calls I am tracking in public, and what would prove each wrong.</span></a>
+    <a href="/numbers/"><strong>The numbers</strong><span>{NUMBERS.length} physical figures behind the buildout, dated and sourced.</span></a>
+  </nav>
   <section class="grid">
     {posts.map((p) => <Card p={p} />)}
   </section>
