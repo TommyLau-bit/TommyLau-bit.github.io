@@ -31,8 +31,8 @@ checks = [
     ("CapStructure", "C32", b["debt_stays"]),
     ("CapStructure", "C33", b["equity"]),
     ("CapStructure", "C36", b["ev"]),
-    ("Valuation", "B10", m["ev_ebitda_r"]),
-    ("Valuation", "B11", m["ev_ebitda"]),
+    ("Valuation", "B10", m["ev_ebitda"]),
+    ("Valuation", "B11", m["ev_ebitda_r"]),
     ("Valuation", "B12", m["ev_rev"]),
     *[("Scenarios", f"J{5+i}", scen[i][9]) for i in range(3)],
     *[("Scenarios", f"K{5+i}", scen[i][10]) for i in range(3)],
@@ -52,7 +52,7 @@ for sh, cell, exp in checks:
 
 print("\nKey outputs:")
 for sh, cell, lbl in [("CapStructure", "C25", "If-converted shares, m"), ("CapStructure", "C33", "Equity value, US$m"),
-                      ("CapStructure", "C36", "EV, US$m"), ("Valuation", "B10", "EV/2027 EBITDA (pitch basis)"),
+                      ("CapStructure", "C36", "EV, US$m"), ("Valuation", "B10", "EV/2027 EBITDA"),
                       ("Valuation", "B12", "EV/2027 revenue"), ("Scenarios", "J5", "Bear"), ("Scenarios", "J6", "Base"),
                       ("Scenarios", "J7", "Bull"), ("Scenarios", "J8", "Weighted"), ("Scenarios", "K8", "Weighted change"),
                       ("Quarterly", "B15", "H2 ARR multiple to guide low"), ("Quarterly", "B18", "H2 capex low"),

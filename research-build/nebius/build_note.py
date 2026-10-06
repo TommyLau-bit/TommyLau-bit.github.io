@@ -74,7 +74,7 @@ A(statbox([
     ("Equity value, if-converted", "~US$86bn"),
     ("Pro forma cash / debt staying as debt", "~US$14.5bn / ~US$6.5bn"),
     ("Enterprise value", "~US$78bn"),
-    ("EV / 2027 EBITDA, consensus revenue at 50%", "~12.6x"),
+    ("EV / 2027 EBITDA, consensus revenue at 50%", "~12.7x"),
     ("EV / 2027 consensus revenue", "6.3x"),
     ("Remaining performance obligations", "US$37.49bn, 30 Jun 2026"),
     ("Top three customers, Q2 2026 revenue", "59% (24%, 21%, 14%)"),
@@ -131,7 +131,7 @@ A(caption("Left: ARR at quarter end against the US$7 to 9bn year-end 2026 guide.
           "shareholder letters, Q2 2025 to Q2 2026; Q4 2025 to Q2 2026 capital spending approximate, as reported."))
 
 A(section("The thesis: paid for power that is switched on"))
-A(para("Nebius closed at US$232.57 on 5 October 2026, more than ten times its price two years earlier. In that time it went "
+A(para("Nebius closed at US$232.57 on 5 October 2026, more than ten times its price when trading resumed in October 2024. In that time it went "
        "from a leftover of Yandex with one data centre in Finland to a supplier of AI capacity to Microsoft and Meta. In my "
        "30 September journal piece I argued that Nebius is paid for megawatts that are switched on, not megawatts it has "
        "signed. This note asks a narrower question. If that is how Nebius gets paid, what is a share worth, and does the "
@@ -165,21 +165,25 @@ A(datatable(
     ],
     num_cols={1, 2},
 ))
-A(caption("Source: Nebius Q2 2026 shareholder letter, 12 Aug 2026, for the guide, contract value per MW and the definitions of "
-          "connected and active power. Working is mine; see ARR_Recon in the model."))
+A(caption("Source: Nebius Q2 2026 shareholder letter, 12 Aug 2026, for the run-rate guide and contract value per MW; Q1 2026 "
+          "letter, 13 May 2026, for the connected power guide and the definitions of connected and active power. Working is mine; see ARR_Recon in the model."))
 A(para("First, annualised revenue is December's revenue multiplied by twelve, so it captures only what is billing that month. "
        "Second, the US$20 to 25m applies to the new deals, against an approximate base of US$12m for the 2026 fleet. Third, "
        "Nebius says most of those new deals were signed against capacity arriving in late 2026 and will mainly earn in 2027. "
        "At US$12m per megawatt, US$7 to 9bn of run-rate means about 580 to 750 MW billing in December. That sits below 800 MW "
-       "connected, which is exactly what a lag of several months looks like. At the end of 2025 the ratio was similar: "
-       "US$1.25bn of run-rate on about 170 MW active, or roughly US$7.4m each."))
+       "connected, which is exactly what a lag of several months looks like. At the end of 2025, US$1.25bn of run-rate sat on "
+       "about 170 MW active, roughly US$7.4m each, from older and cheaper contracts; the 2026 base of about US$12m reflects "
+       "newer contracts replacing them."))
 
 A(section("Where I was wrong in September"))
-A(para("My 30 September journal piece, and the claim I logged with it, said AI buyers pay for connected power. That was wrong. "
-       "They pay for active power, which trails connection by several months. What changed my view was the gap above: "
+A(para("My 30 September journal piece defined connected power as power wired up and feeding running chips, and said customers "
+       "pay for it. That was wrong. What I described is Nebius's active power. Connected power is the building, finished and "
+       "equipped; active power is the chips running and billing, and it trails connection by several months. "
+       "What changed my view was the gap above: "
        "Nebius's contract value per megawatt and its run-rate guide do not fit together unless much of its connected power is "
        "not yet billing, and its own definitions confirm that."))
-A(para("The edge the claim describes is still speed, but the right test is active power, not connected. Hitting 800 MW "
+A(para("The edge the claim describes is still speed, but the right test is active power, not connected. Nebius does not report "
+       "active megawatts each quarter, so I read them through run-rate divided by the fleet price per megawatt. Hitting 800 MW "
        "connected by the end of 2026 is necessary. It is not yet revenue. The piece and the claim stay exactly as published, "
        "so the record shows the mistake."))
 
@@ -189,7 +193,7 @@ A(para("On my count, Nebius's equity is worth about US$86bn at US$232.57, if eve
        "pre-funded warrants. After the August note issue I estimate cash of about US$14.5bn before third quarter spending, "
        "against about US$6.5bn of notes and loans that would stay as debt. That gives an enterprise value of about US$78bn."))
 A(para("Against that, consensus expects revenue of US$3.34bn in 2026 and US$12.3bn in 2027. At a 50% margin, 2027 EBITDA would "
-       "be about US$6.2bn. The enterprise value is about 12.6 times that, and 6.3 times 2027 revenue. CoreWeave, the closest "
+       "be about US$6.15bn. The enterprise value is about 12.7 times that, and 6.3 times 2027 revenue. CoreWeave, the closest "
        "listed rival, trades at about 3.6 times its 2027 revenue on the same source, and Oracle at about 4.3 times its next "
        "year's revenue. So the market already gives Nebius a premium, and it rests on one belief: that Nebius turns "
        "contracted power into earning power faster and at better prices than anyone else."))
@@ -198,7 +202,7 @@ A(para("That is my September claim. The difference is that I think the price now
        "second contract comes online on time in early 2027, and that new deals keep pricing at US$20m a megawatt or more."))
 A(para("<strong class='lead'>Where I differ is on what could break.</strong> The bull story treats five gigawatts as a pipeline. "
        "I treat it as a promise to spend. At my estimate of about US$30m of capital per megawatt, five gigawatts is roughly "
-       "US$150bn of building, against a market value of US$86bn. Customers prepay part of it, but the rest needs debt and new "
+       "US$150bn of building, against an if-converted equity value of US$86bn. Customers prepay part of it, but the rest needs debt and new "
        "shares. And if Meta builds a business selling its own spare capacity, as Bloomberg reported on 1 July, the price per "
        "megawatt is the first thing to give."))
 A('</div>')
@@ -261,7 +265,7 @@ A(datatable(
         ["Less: pro forma cash before Q3 spending", "(14.5)"],
         ["Plus: notes and loans staying as debt", "6.5"],
         ["Enterprise value", "~78.0"],
-        ["EV / 2027 EBITDA (~US$6.2bn)", "12.6x"],
+        ["EV / 2027 EBITDA (~US$6.15bn)", "12.7x"],
         ["EV / 2027 revenue (US$12.3bn)", "6.3x"],
     ],
     num_cols={1}, total_row_idx=3,
@@ -385,7 +389,7 @@ A(section("Conclusion"))
 A(para("The September claim holds up. Nebius earns money only from capacity that is running, its new contracts pay roughly "
        "twice the old ones, and customers prepay to hold their place. The gap between US$20 to 25m per megawatt and a US$7 to "
        "9bn run-rate is explained by the lag between connecting power and billing for it. But the market has read the same "
-       "letter. At about 12.6 times 2027 EBITDA, the price assumes fast connection and lasting new-deal pricing. My call is "
+       "letter. At about 12.7 times 2027 EBITDA, the price assumes fast connection and lasting new-deal pricing. My call is "
        "no call at US$232.57, held with medium conviction. I would go long below about US$185, or at today's price once the "
        "fourth quarter results show the power switching on as promised."))
 A('</div>')
@@ -396,8 +400,9 @@ A(section("Sources"))
 for s in [
     "Nebius quarterly shareholder letters and results on Form 6-K, Q2 2025 to Q2 2026: revenue, annualised run-rate, margins, "
     "capital spending, power and customer concentration.",
-    "Nebius Q2 2026 shareholder letter, 12 August 2026: guidance, contract value per megawatt and its definitions of connected "
-    "and active power. Nebius Q2 2026 earnings call, 12 August 2026: the deployment sequence.",
+    "Nebius Q2 2026 shareholder letter, 12 August 2026: run-rate guide, contract value per megawatt and prepayments. Nebius Q1 "
+    "2026 shareholder letter, 13 May 2026: definitions of connected and active power, and the 800 MW to 1 GW connected guide. "
+    "Nebius Q2 2026 earnings call, 12 August 2026: capital spending guide, connected guide as reaffirmed, deployment sequence.",
     "Nebius interim financial statements to 30 June 2026: shares, cash, restricted cash, deferred revenue, remaining "
     "performance obligations, notes, options, restricted stock units and warrants. Nebius releases of 19 and 24 August 2026 "
     "on the convertible notes, and of 10 July 2026 on the secured loan.",

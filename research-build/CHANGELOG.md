@@ -14,3 +14,13 @@ Calls, targets, scenario values and revisit levels are never changed after publi
 - UtilityInnovation Group's multiple is described as EBITDA in full (adds "amortisation"). The agreement date in the PDF timeline is 1 September (the 8-K event date), not 2 September.
 - The diluted share count is labelled as the Q2 weighted average.
 - Checked and kept: the "Where I was wrong" passage. The fact-checker read the piece's "same quarter" as Q4 2025; it is Q2 2026. On the Q2 2026 release, reported service growth was inflated by acquisitions (organic 10.1 per cent against 19.7 per cent for products), as the note says.
+
+**Nebius** (no change to the call, scenarios or revisit levels):
+- The "Where I was wrong" passage now names the real mistake. The September piece defined connected power as power "feeding running chips", which is Nebius's definition of active power. The earlier wording also said the commissioning sequence was "a detail I left out", but the piece did describe it, so that line is removed. The frontmatter correction is reworded to match.
+- The note now says how active power is read: through run-rate divided by the fleet price per megawatt, since Nebius does not report active megawatts each quarter.
+- Sources corrected: the connected and active power definitions and the 800 MW to 1 GW guide are from the Q1 2026 letter (13 May 2026). The capital spending guide is from the Q2 call, not the Q2 letter.
+- EV to 2027 EBITDA is 12.7 times on unrounded EBITDA of about US$6.15bn, not 12.6 times on a rounded US$6.2bn.
+- The end-2025 run-rate per active megawatt (US$7.4m) is now explained as older, cheaper contracts, instead of being called "similar" to the US$12m base.
+- US$86bn is labelled the if-converted equity value, not the market value. "Ten times its price two years earlier" is now "ten times its price when trading resumed in October 2024".
+- The unverified attribution to the chief infrastructure officer is removed.
+- The PDF is now 7 pages.
