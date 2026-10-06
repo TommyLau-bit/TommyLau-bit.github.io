@@ -16,8 +16,11 @@ const journal = defineCollection({
   }),
 });
 
-// ── Pitches: one buy-side call per file, at /calls/<slug>/. See CALLS-SPEC.md.
-// The call box is fixed on the day the pitch publishes and never edited after.
+// ── Research: one initiation note per file, summarised at /research/<slug>/.
+// The full note is a PDF with its Excel model, both in public/research/. The
+// Markdown body is the note's text of record; the web page shows only the
+// call box, the key points and the downloads. See CALLS-SPEC.md.
+// The call is fixed on the day it publishes and never edited after.
 // Monthly marks against it live in src/data/calls.ts, not here.
 const chart = z.object({
   id: z.string(),
@@ -44,6 +47,13 @@ const calls = defineCollection({
     // Where the pitch finds the claim's piece was wrong, in one sentence. Shown
     // under the claim on /claims; the claim itself is never reworded.
     correction: z.string().optional(),
+    keyPoints: z.array(z.string()).min(3).max(5),  // the thesis in three to five sentences
+    files: z.object({
+      pdf: z.string(),                          // /research/<date>_<Company>_Initiation.pdf
+      xlsx: z.string(),                         // /research/<date>_<Company>_Model.xlsx
+      thumb: z.string().optional(),             // page one as a PNG, for the library card
+      pages: z.number().optional(),
+    }),
     date: z.coerce.date().optional(),           // the real publication time; required once published
     draft: z.boolean().default(true),
     // Tommy's call. Left null until he decides it; a pitch cannot publish without it.
@@ -59,7 +69,7 @@ const calls = defineCollection({
       conviction: z.enum(['High', 'Medium', 'Low']).nullable(),
       wrongIf: z.string(),                      // what proves the call wrong
       revisitIf: z.string().optional(),         // NO CALL only: what would turn it into a call
-      position: z.string().default('The author holds no position.'),
+      position: z.string().default(''),          // a holdings statement, only as Tommy gives it
     }),
     // Claude's draft view for Tommy to accept, change or reject. Never rendered in production.
     draftView: z.object({

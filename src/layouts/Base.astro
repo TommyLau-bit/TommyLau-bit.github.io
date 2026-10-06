@@ -49,7 +49,7 @@ const cur = (p: string) => (p === '/' ? path === '/' : path.startsWith(p)) ? 'pa
         <nav class="site-nav">
           <a href="/" aria-current={cur('/')}>Journal</a>
           <a href="/map" aria-current={cur('/map')}>Map</a>
-          <a href="/claims" aria-current={cur('/claims')}>Claims</a>
+          <a href="/research/" aria-current={cur('/research') ?? cur('/calls')}>Research</a>
           <a href="/glossary" aria-current={cur('/glossary')}>Glossary</a>
           <a href="/about" aria-current={cur('/about')}>About</a>
           <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch theme">
@@ -65,7 +65,7 @@ const cur = (p: string) => (p === '/' ? path === '/' : path.startsWith(p)) ? 'pa
   <footer class="site-foot">
     <div class="wrap" style="display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;width:100%">
       <span>© {new Date().getFullYear()} {SITE.author}. Personal research, not investment advice.</span>
-      <span><a href="/start/">Start here</a> · <a href="/numbers/">Numbers</a> · <a href="/companies/">Companies</a> · <a href="/rss.xml">RSS</a> · <a href={SITE.linkedinPage}>LinkedIn</a> · <a href={`mailto:${SITE.email}`}>Email</a></span>
+      <span><a href="/start/">Start here</a> · <a href="/claims/">Claims</a> · <a href="/numbers/">Numbers</a> · <a href="/companies/">Companies</a> · <a href="/rss.xml">RSS</a> · <a href={SITE.linkedinPage}>LinkedIn</a> · <a href={`mailto:${SITE.email}`}>Email</a></span>
     </div>
   </footer>
   <script is:inline>

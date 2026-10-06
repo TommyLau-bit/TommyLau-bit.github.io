@@ -4,6 +4,7 @@ import { getCollection, render } from 'astro:content';
 import { SITE, OG_VERSION } from '../../config';
 import { fmtDate, readingTime } from '../../utils';
 import { claimOf } from '../../data/claims';
+import { getPitches, pitchesFor, callLabel } from '../../lib/calls';
 import { layerOf } from '../../data/stack';
 import { exposureOf, slugify } from '../../lib/exposure';
 export async function getStaticPaths() {
@@ -13,6 +14,7 @@ export async function getStaticPaths() {
 const { p } = Astro.props;
 const { Content } = await render(p);
 const claim = claimOf(p.id);
+const notes = pitchesFor(await getPitches(), p.id);
 const layer = layerOf(p.id);
 const companies = [...new Set(exposureOf(p).flatMap((r) => r.names))];
 ---
@@ -44,6 +46,7 @@ const companies = [...new Set(exposureOf(p).flatMap((r) => r.names))];
         <p class="claim-box-claim">{claim.claim}</p>
         <p class="claim-box-meta">
           <a href={`/claims/#${claim.id}`}>See it alongside every other claim on the site</a>
+          {notes.map((n) => <a href={`/research/${n.id}/`}>Research note: {n.data.company}, {callLabel(n).toLowerCase()}</a>)}
         </p>
       </aside>
     )}

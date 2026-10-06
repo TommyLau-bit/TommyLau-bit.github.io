@@ -2,25 +2,19 @@
 import Base from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { CLAIMS } from '../data/claims';
-import { SCORECARD_REFRESHED } from '../data/calls';
-import { getPitches, pitchesFor, latest, fmtMoney, fmtPct } from '../lib/calls';
 import { fmtDate } from '../utils';
 const posts = await getCollection('journal', ({ data }) => !data.draft);
 const byId = Object.fromEntries(posts.map((p) => [p.id, p]));
 const rows = CLAIMS.filter((c) => byId[c.id])
   .map((c) => ({ c, p: byId[c.id] }))
   .sort((a, b) => b.p.data.date.valueOf() - a.p.data.date.valueOf());
-const pitches = await getPitches();
-const card = pitches.map((p) => ({ p, ...latest(p) }));
-const dirClass = (d: string | null) => `tagdir tagdir--${d ? d.toLowerCase().replace(' ', '') : 'open'}`;
-const dirName = (d: string | null) => d === 'NO CALL' ? 'NO CALL' : d;
 ---
-<Base title="Claims and calls" description="Every claim this journal makes, dated, with what would prove it wrong, and the calls built on them, marked monthly against their targets.">
+<Base title="Claims" description="Every claim this journal makes, dated, with what would prove it wrong and the evidence to watch.">
   <header class="article-head">
-    <h1>Claims and calls</h1>
+    <h1>The claims I have made</h1>
     <aside class="plain">
       <p class="label">In plain English</p>
-      <p>Every Analysis piece on this site makes a claim and names the evidence that would prove it wrong. Each claim is fixed on the day its piece went live and is never reworded. Some claims carry a call: a full pitch on a company, with a direction, a target and what would prove it wrong. Every call is marked once a month on the <a href="#scorecard">scorecard</a> below, right or wrong, and none is ever deleted.</p>
+      <p>Every Analysis piece on this site makes a claim and names the evidence that would prove it wrong. This page lists them all in one place, newest first. Each claim is fixed on the day its piece went live and is never reworded afterwards. Where a claim became a call on a company, the note is on the <a href="/research/">research page</a>.</p>
     </aside>
   </header>
 
@@ -30,14 +24,6 @@ const dirName = (d: string | null) => d === 'NO CALL' ? 'NO CALL' : d;
         <span class="claim-date">{fmtDate(p.data.date)}</span>
         <p class="claim-text">{c.claim}</p>
         <p class="claim-piece">From <a href={`/journal/${p.id}/`}>{p.data.title}</a></p>
-        {pitchesFor(pitches, c.id).map((x) => (<>
-          <p class="claim-call">
-            <span class={dirClass(x.data.call.direction)}>{x.data.call.direction ?? 'DRAFT'}</span>
-            <a href={`/calls/${x.id}/`}>{x.data.company} ({x.data.ticker}): {x.data.title}</a>
-            {x.data.date && <span class="claim-date" style="display:inline"> · called {fmtDate(x.data.date)}</span>}
-          </p>
-          {x.data.correction && <p class="claim-correction"><span>Where I was wrong{x.data.date && `, noted ${fmtDate(x.data.date)}`}</span>{x.data.correction} <a href={`/calls/${x.id}/`}>What changed my view</a></p>}
-        </>))}
         <details class="claim-detail">
           <summary>What would prove me wrong, and what I watch</summary>
           <p class="claim-sub">Wrong if</p>
@@ -49,39 +35,7 @@ const dirName = (d: string | null) => d === 'NO CALL' ? 'NO CALL' : d;
     ))}
   </ol>
 
-  <section class="scorecard" id="scorecard">
-    <h2>The calls scorecard</h2>
-    <p class="scorecard-intro">Every call ever made, against the price on the day it was published, its target and what would prove it wrong. Marked once a month{SCORECARD_REFRESHED && <>, last on {fmtDate(new Date(SCORECARD_REFRESHED))}</>}. The return is signed so that a call going the right way is positive.</p>
-    {card.length === 0 ? (
-      <p class="scorecard-empty">No call has been published yet. The first pitches are being written.</p>
-    ) : (
-      <div class="scorecard-wrap">
-        <table>
-          <thead><tr><th>Called</th><th>Company</th><th>Call</th><th>Price then</th><th>Target</th><th>Latest mark</th><th>For the call</th><th>Wrong-if check</th><th>Status</th></tr></thead>
-          <tbody>
-            {card.map(({ p, mark, ret, move, score }) => {
-              const c = p.data.call;
-              return (
-                <tr>
-                  <td>{p.data.date ? fmtDate(p.data.date) : 'Draft'}</td>
-                  <td><a href={`/calls/${p.id}/`}>{p.data.company}</a> <span style="color:var(--ink-3)">{p.data.ticker}</span></td>
-                  <td><span class={dirClass(c.direction)}>{c.direction ?? 'Undecided'}</span>{c.conviction && <><br />{c.conviction}</>}</td>
-                  <td>{fmtMoney(c.currency, c.price)}</td>
-                  <td>{c.target != null ? fmtMoney(c.currency, c.target) : 'n/a'}</td>
-                  <td>{mark ? <>{fmtMoney(c.currency, mark.price)}<br /><span style="color:var(--ink-3)">{fmtDate(new Date(mark.date))}</span></> : 'First mark due next month'}</td>
-                  <td class={ret == null ? '' : ret >= 0 ? 'up' : 'down'}>{ret != null ? fmtPct(ret) : move != null ? <>n/a<br /><span style="color:var(--ink-3)">price {fmtPct(move)}</span></> : 'n/a'}</td>
-                  <td>{mark ? mark.falsifier : 'Not yet checked'}</td>
-                  <td>{score?.resolved ? <><strong>{score.resolved.outcome}</strong>, {fmtDate(new Date(score.resolved.date))}<p class="scorecard-pm">{score.resolved.postmortem}</p></> : 'Open'}</td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
-      </div>
-    )}
-  </section>
-
   <div class="prose">
-    <p class="sources">{rows.length} claims, {card.length} {card.length === 1 ? 'call' : 'calls'}. Explainer pieces teach a mechanism and make no prediction, so they do not appear here. Calls are the author's own analysis, not investment advice, and the author holds no position unless a pitch says so.</p>
+    <p class="sources">{rows.length} claims. Explainer pieces teach a mechanism and make no prediction, so they do not appear here. Personal research, not investment advice.</p>
   </div>
 </Base>

@@ -3,21 +3,29 @@
 Tommy's public journal on AI and energy infrastructure. Astro static site,
 GitHub Pages, live at https://thephysicallayer.fyi
 
-## Claims and Calls (read `CALLS-SPEC.md` first)
+## Research: initiation notes and calls (read `CALLS-SPEC.md` first)
 
-The site has a second core: buy-side pitches with Tommy's own calls, at
-`/calls/<slug>/`, merged into the claims page (`/claims`, titled "Claims and
-calls"). Before any work on pitches, calls, the claims page or share prices,
-read `CALLS-SPEC.md`, which is the spec and records what was built.
+The site has a second core: Tommy's initiation notes, each a PDF in his house
+style with its live Excel model, listed at `/research` like an investor-letters
+page. Each note has a short summary page at `/research/<slug>/` (call box,
+three to five key points, downloads, the claim it rests on). Tommy's
+direction (6 Oct 2026): the page is for analysts and PMs, the same pack he
+attaches to cold emails, so it stays clean and simple. No long web pitch, no
+charts on the web page; the depth lives in the PDF and the model. Before any
+work on notes, calls, the research page or share prices, read `CALLS-SPEC.md`.
 
-- A pitch is `src/content/calls/<slug>.md`. It starts `draft: true` with
-  `call.direction`, `call.target` and `call.conviction` null and Claude's view
-  in `draftView`. **Only Tommy decides the call.** A pitch goes live only when
-  he has set those three and given an explicit go; the build fails a
-  non-draft pitch without them. Drafts show only under `npm run dev`.
-- Pitches are never rewritten after publication. The monthly scorecard mark
-  goes in `src/data/calls.ts`, with Tommy's approval.
-- When a journal piece publishes, ask Tommy whether to draft a pitch on it.
+- A note's text of record is `src/content/calls/<slug>.md`; the PDF and xlsx
+  are built from it with the template in `~/Desktop/jobs/research
+  coverage/_note_template/` (scripts kept in `research-build/<slug>/`) and
+  saved in `public/research/`. A draft has `draft: true`, the call fields null
+  and Claude's view in `draftView`. **Only Tommy decides the call** (LONG,
+  SHORT or NO CALL). The build fails a non-draft note without it.
+- Notes are never rewritten after publication. The monthly mark goes in
+  `src/data/calls.ts`, with Tommy's approval.
+- When a later note finds a journal claim was wrong, the note says so openly
+  ("Where I was wrong", and what changed the view). The piece and the claim
+  are never edited.
+- When a journal piece publishes, ask Tommy whether to draft a note on it.
 
 ## Before writing or editing any piece, read `WRITING-FORMAT.md`
 
@@ -55,7 +63,7 @@ cover brief and LinkedIn post, is yours to write.
   mechanism, dated and sourced to the filing. Never a share price, market
   value, valuation multiple, target, rating, recommendation, or claim that a
   share is cheap or expensive, in a journal piece or on any page **except
-  pitch pages (`/calls/<slug>/`) and the calls scorecard**. Keep them out of
+  research notes (`/research`, its note pages and PDFs, and the track record)**. Keep them out of
   the exposure map, which stays "what they make" only. See WRITING-FORMAT.md
   §4a and CALLS-SPEC.md.
 - **Never post to LinkedIn from Tommy's personal profile.** The company page
@@ -77,7 +85,7 @@ A new piece is not published until the site around it is updated. Every time:
   evidence watched. The claim and test are never reworded later. The claims
   list keeps no statuses (Open, Holding and so on) and no reviews: Tommy
   decided it is a plain list of claims. Do not add status tracking to it or
-  suggest it. Scoring lives only in the calls scorecard, for calls. If a pitch
+  suggest it. Scoring lives only in the research track record, for calls. If a note
   disagrees with a published claim, the pitch says so openly and, if needed,
   a new dated claim is added beside the old one. Never a silent fix.
 - **The numbers.** If the piece rests on a new structural figure, add it to
@@ -85,10 +93,10 @@ A new piece is not published until the site around it is updated. Every time:
 - **Companies** build themselves from the exposure map. Spell company names
   consistently. There are no topic pages; the map does that job.
 
-**The top menu is fixed at five: Journal, Map, Claims, Glossary, About.** Tommy
-found nine items too crowded. Do not add to it. Start here, Numbers and
-Companies live in the footer and are linked from the map page; any new
-reference page goes there too.
+**The top menu is fixed at five: Journal, Map, Research, Glossary, About.**
+Tommy found nine items too crowded. Do not add to it. Claims moved to the
+footer on 6 Oct 2026 when Research took its slot. Start here, Claims, Numbers
+and Companies live in the footer; any new reference page goes there too.
 
 The checker fails a piece missing from the map, or an Analysis piece missing
 from the claims page. See WRITING-FORMAT.md §6a.
@@ -101,7 +109,7 @@ LinkedIn company page and RSS.
 
 ```bash
 python3 brand/check-piece.py src/content/journal/<slug>.md
-python3 brand/check-call.py            # pitches
+python3 brand/check-call.py            # research notes
 DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/lib python3 brand/make-og.py
 npm run build
 ```

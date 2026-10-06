@@ -60,22 +60,26 @@ Useful prior work (in the jobs folder, read only): the paused Physical Layer Rad
 
 - The **Physical Layer Radar** (Claude's paper book) is **PAUSED** as of 6 Oct 2026. Its scheduled task `model-portfolio-daily` is disabled; its files stay in `~/Desktop/jobs/lanes/paper_portfolio/`. It is not part of the site.
 
-## What was built (6 Oct 2026)
+## Redesign, 6 Oct 2026 (supersedes "The structure" above)
 
-- **Pitches:** `src/content/calls/<slug>.md`, schema in `src/content.config.ts`. Frontmatter holds the call box (`call`), the claim ids it rests on (`claims`), Claude's `draftView`, and the `charts` data. The body runs: The thesis; What the market prices in, and where I differ; Valuation, with the working; `<div class="charts-slot"></div>` (charts render there); Risks, and what would change my view; Conclusion; the sources line.
-- **Page:** `src/pages/calls/[slug].astro` renders the call box, the linked claim, the body, the charts (`src/components/Chart.astro`) and the disclaimer. `/calls/` redirects to the scorecard.
-- **Drafts** render only under `npm run dev`, with a banner and Claude's draft view in the call box. The production build excludes them, and **fails** any pitch with `draft: false` that lacks a date, direction, target or conviction (`src/lib/calls.ts`).
-- **Claims page** (`/claims`, "Claims and calls"): each claim lists its pitch underneath, and the scorecard sits at `#scorecard`.
-- **Scorecard data:** `src/data/calls.ts`. Monthly, add one `Mark` per open call (date, close, falsifier check) and set `SCORECARD_REFRESHED`. A resolved call gets `resolved` with a short post-mortem. Never delete.
-- **Checker:** `python3 brand/check-call.py` checks sections, order, sources tail, claim ids, banned punctuation and US spellings, and that a published pitch carries Tommy's call and a real date.
+Tommy found the first build (a long web pitch with charts, merged into the claims page) messy and confusing. His direction: a clean page for analysts and PMs to read his calls and see his thinking, like the initiation note plus CV pack he attaches to cold emails. Reference: the Andromeda investor-letters page (a single clean list, newest first). What is built now:
 
-- **No call** is a decided verdict (`direction: "NO CALL"`, no target). It needs `call.revisitIf`, what would turn it into a call. It is marked on the scorecard like any call, with the price move shown instead of a return.
-- **Corrections:** when a pitch finds its journal piece was wrong, the pitch says so in a "Where I was wrong in September" passage (what was wrong, what changed the view), and the pitch's `correction` field puts one sentence under the claim on `/claims`. The piece and the claim are never edited. Tommy's rule (6 Oct 2026): do not change what was said before; say it was wrong and why.
+- **Menu:** Journal, Map, **Research**, Glossary, About. Claims moved to the footer. `/claims` is back to the plain claims list, with one line pointing to Research.
+- **`/research`:** a library list, newest first. Each entry has page one of the note as a thumbnail, the date, "Initiation", the call, the company and ticker, the one-line title, and links to the PDF, the Excel model and the summary page. Below it is a compact track record table (`#scorecard`).
+- **The note:** a PDF initiation note in Tommy's house style (`~/Desktop/jobs/research coverage/_note_template/`, matched to his MarcoPolo, EGP and Concord notes), with a live-formula Excel model. Both sit in `public/research/<date>_<Company>_Initiation.pdf` and `_Model.xlsx`. Build scripts are in `research-build/<slug>/`.
+- **`/research/<slug>/`:** a short summary page with the call box, two download buttons, three to five key points (`keyPoints`), the claim it rests on, and a "Where I was wrong" line (`correction`) when the note finds the piece was wrong. No charts and no long body on the web; the Markdown body is the note's text of record. `/calls/...` redirects here.
+- **Journal pieces:** if a note rests on a piece's claim, the claim box under the piece links to it.
+- **Drafts** render only under `npm run dev`. The build fails a non-draft note without Tommy's call (`src/lib/calls.ts`).
+- **No call** is a decided verdict (`direction: "NO CALL"`, no target, `revisitIf` required). It is marked monthly with the price move shown.
+- **Scorecard data:** `src/data/calls.ts`. Monthly, add one `Mark` per open call and set `SCORECARD_REFRESHED`. A resolved call gets `resolved` with a short post-mortem. Never delete.
+- **Checker:** `python3 brand/check-call.py`.
+- **Corrections:** do not change what was said before. Say it was wrong and what changed the view, in the note, in `correction`, and in a "Where I was wrong" passage in the PDF.
 
-## To publish a pitch (only with Tommy's explicit go)
+## To publish a note (only with Tommy's explicit go)
 
 1. Tommy sets `call.direction`, `call.target`, `call.conviction`, and confirms `call.wrongIf`.
 2. Refresh `call.price` and `call.priceDate` to the latest close, and rework any figure that moved with it.
 3. Rewrite the conclusion (and title, if needed) to match his call. Delete `draftView`.
 4. Set `draft: false` and `date` to the real go-live time, `+08:00`.
-5. `python3 brand/check-call.py`, then `npm run build`, then push.
+5. Build the PDF and model into `public/research/`, with a page-one PNG for the thumbnail. Set `files` and `keyPoints`.
+6. `python3 brand/check-call.py`, then `npm run build`, then push.

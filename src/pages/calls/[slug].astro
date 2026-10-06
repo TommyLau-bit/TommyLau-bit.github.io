@@ -1,98 +1,12 @@
 ---
-import Base from '../../layouts/Base.astro';
-import Chart from '../../components/Chart.astro';
-import { getCollection } from 'astro:content';
-import { SITE } from '../../config';
-import { fmtDate } from '../../utils';
-import { claimOf } from '../../data/claims';
-import { getPitches, latest, fmtMoney, fmtPct } from '../../lib/calls';
+// Pitches moved to /research/<slug>/ on 6 October 2026. Kept so early links work.
+import { getPitches } from '../../lib/calls';
 export async function getStaticPaths() {
   const pitches = await getPitches();
-  return pitches.map((p) => ({ params: { slug: p.id }, props: { p } }));
+  return pitches.map((p) => ({ params: { slug: p.id } }));
 }
-const { p } = Astro.props;
-const d = p.data, c = d.call;
-const posts = await getCollection('journal', ({ data }) => !data.draft);
-const pieceOf = (id: string) => posts.find((x) => x.id === id);
-const claims = d.claims.map((id) => ({ claim: claimOf(id), piece: pieceOf(id) })).filter((x) => x.claim && x.piece);
-
-// The body carries one marker, <div class="charts-slot"></div>, where the
-// charts section renders. Everything before it is thesis, variant view and
-// valuation; everything after is risks and the conclusion.
-const html = p.rendered?.html ?? '';
-const SLOT = '<div class="charts-slot"></div>';
-const [before, after = ''] = html.includes(SLOT) ? html.split(SLOT) : [html, ''];
-const dirSlug = (c.direction ?? 'open').toLowerCase().replace(' ', '');
-const upside = c.target != null ? (c.direction === 'SHORT' ? c.price / c.target - 1 : c.target / c.price - 1) : null;
-const { mark, ret, move, score } = latest(p);
+const to = `/research/${Astro.params.slug}/`;
 ---
-<Base title={`${d.company}: ${d.title}`} description={d.summary} type="article" canonical={`${SITE.url}/calls/${p.id}/`}>
-  <article class="pitch">
-    {d.draft && (
-      <p class="draft-banner"><strong>Draft, not published.</strong> Visible only in local preview. The call is Tommy's to decide; until then the call box shows Claude's draft view.</p>
-    )}
-    <header class="article-head">
-      <p class="pitch-kicker">A call · {d.company} ({d.exchange}: {d.ticker})</p>
-      <h1>{d.title}</h1>
-      <div class="meta">
-        <span>{SITE.author}</span><span>·</span>
-        {d.date ? <time datetime={d.date.toISOString()}>{fmtDate(d.date)}</time> : <span>Unpublished</span>}
-      </div>
-      <aside class="plain">
-        <p class="label">In plain English</p>
-        <p>{d.summary}</p>
-      </aside>
-    </header>
-
-    <section class="callbox" aria-label="The call">
-      <div class="callbox-head">
-        <span class="callbox-co">{d.company} <span>{d.exchange}: {d.ticker}</span></span>
-        {c.direction
-          ? <span class={`callbox-dir callbox-dir--${dirSlug}`}>{c.direction === 'NO CALL' ? 'No call' : c.direction}</span>
-          : <span class="callbox-dir callbox-dir--open">Call not yet decided</span>}
-      </div>
-      <dl>
-        <div><dt>Price at publication</dt><dd>{fmtMoney(c.currency, c.price)}<small>close, {fmtDate(c.priceDate)}</small></dd></div>
-        <div><dt>Target</dt><dd>{c.target != null ? <>{fmtMoney(c.currency, c.target)}<small>{fmtPct(upside!)} · {c.horizon}</small></> : c.direction === 'NO CALL' ? <>None<small>no position at this price</small></> : <>Tommy to set<small>{c.horizon}</small></>}</dd></div>
-        <div><dt>Conviction</dt><dd>{c.conviction ?? 'Tommy to set'}</dd></div>
-      </dl>
-      <p class="callbox-wrong"><span>{c.direction === 'NO CALL' ? 'What would prove the thesis wrong' : 'What proves it wrong'}</span>{c.wrongIf}</p>
-      {c.revisitIf && <p class="callbox-wrong"><span>What would turn this into a call</span>{c.revisitIf}</p>}
-      {d.draft && d.draftView && (
-        <p class="callbox-draft"><span>Claude's draft view, for Tommy to decide</span>
-          {d.draftView.direction}{d.draftView.target != null && `, target ${fmtMoney(c.currency, d.draftView.target)} (${fmtPct(d.draftView.direction === 'SHORT' ? c.price / d.draftView.target - 1 : d.draftView.target / c.price - 1)})`}, {d.draftView.conviction.toLowerCase()} conviction. {d.draftView.reasoning}</p>
-      )}
-      {mark && (
-        <p class="callbox-mark"><span>Latest scorecard mark</span>{fmtMoney(c.currency, mark.price)} on {fmtDate(new Date(mark.date))}, {ret != null ? `${fmtPct(ret)} for the call` : `price ${fmtPct(move!)} since publication`}{score?.resolved && `. Resolved ${score.resolved.outcome.toLowerCase()}`}. <a href="/claims/#scorecard">Scorecard</a></p>
-      )}
-    </section>
-
-    <section class="pitch-claims">
-      <h2>The claim behind it</h2>
-      {claims.map(({ claim, piece }) => (
-        <aside class="claim-box">
-          <p class="claim-box-label">Claimed {fmtDate(piece!.data.date)}</p>
-          <p class="claim-box-claim">{claim!.claim}</p>
-          <p class="claim-box-meta"><a href={`/journal/${piece!.id}/`}>{piece!.data.title}</a> · <a href={`/claims/#${claim!.id}`}>On the claims page</a></p>
-        </aside>
-      ))}
-    </section>
-
-    <div class="prose" set:html={before} />
-    {d.charts.length > 0 && (
-      <section class="pitch-charts">
-        <h2>The numbers, charted</h2>
-        {d.charts.map((ch) => <Chart {...ch} />)}
-      </section>
-    )}
-    <div class="prose" set:html={after} />
-
-    <aside class="pitch-disclaimer">
-      This is the author's own analysis, not investment advice. {c.position} Prices are closing prices on the dates given. The call is fixed on the day it is published and is never rewritten; how it is going is marked once a month on the <a href="/claims/#scorecard">calls scorecard</a>, right or wrong.
-    </aside>
-
-    <footer class="article-foot">
-      Written by {SITE.author}. If you think the call is wrong, I would genuinely like to hear why: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
-    </footer>
-  </article>
-</Base>
+<meta http-equiv="refresh" content={`0; url=${to}`} />
+<link rel="canonical" href={to} />
+<a href={to}>This note has moved</a>

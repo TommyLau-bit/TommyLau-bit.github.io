@@ -6,6 +6,17 @@ ticker: "NBIS"
 exchange: "Nasdaq"
 claims: ["nebius-paid-for-what-is-switched-on"]
 correction: "I wrote that customers pay for connected power. They pay for active power, which comes on months later, so the test is active megawatts."
+keyPoints:
+  - "Nebius builds AI computing centres and rents them out. It is paid only once the chips are running, months after the power is connected."
+  - "New contracts pay US$20 to 25 million a megawatt a year, about twice the 2026 fleet. At the old price a megawatt barely earns its cost; at the new one it returns 16 to 25 per cent before tax."
+  - "The gap between that price and a US$7 to 9 billion run-rate guide closes once you see that most new capacity bills in 2027, not 2026."
+  - "At about 12.6 times 2027 EBITDA the market already pays for fast switch-on at the new price. My base case is worth about the share price, and the bear case is a 66 per cent fall."
+  - "Where I was wrong: my September piece said customers pay for connected power. They pay for active power, so that is the number to watch."
+files:
+  pdf: "/research/2026-10-06_Nebius_Initiation.pdf"
+  xlsx: "/research/2026-10-06_Nebius_Model.xlsx"
+  thumb: "/research/2026-10-06_Nebius_Initiation-p1.png"
+  pages: 6
 date: 2026-10-06T19:29:59+08:00
 draft: false
 call:

@@ -235,7 +235,7 @@ Voice:
   distribution unit, which is effectively the rack's heart".
 
 Never appears in a journal piece, or anywhere on the site except pitch pages
-(`/calls/<slug>/`) and the calls scorecard: a share price, a market value, a
+(`/research`, its note pages, PDFs and track record): a share price, a market value, a
 valuation multiple, a target, a rating, a recommendation, a portfolio position,
 or a claim about a share being cheap or expensive. Pitches follow
 `CALLS-SPEC.md`.
@@ -273,7 +273,7 @@ Never, in a journal piece:
 - Management guidance presented as your own forecast. Report it as theirs.
 
 Anything that crosses into a view on the shares belongs in a pitch, never in
-the journal piece. A pitch is a separate page (`src/content/calls/<slug>.md`)
+the journal piece. A research note is separate (`src/content/calls/<slug>.md`, published as a PDF and model at `/research`)
 with its own rules in `CALLS-SPEC.md`: it may carry prices, valuation, a
 target and Tommy's call, and links back to the claim it rests on. The journal
 piece stays free of all of it. The sources line names the filings used,
@@ -344,9 +344,9 @@ time; `ALIAS` in `src/lib/exposure.ts` catches the odd variant. Tags show as
 plain labels on the piece; there are no topic pages, because the map does that
 job.
 
-**The top menu is fixed at five: Journal, Map, Claims, Glossary, About.** Do
+**The top menu is fixed at five: Journal, Map, Research, Glossary, About.** Do
 not add a sixth. A new reference page goes in the footer and is linked from
-the map page, the way Start here, Numbers and Companies are.
+the map page, the way Start here, Claims, Numbers and Companies are.
 
 ---
 

@@ -1,0 +1,80 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { SCORECARD_REFRESHED } from '../../data/calls';
+import { getPitches, latest, fmtMoney, fmtPct, callLabel } from '../../lib/calls';
+import { fmtDate } from '../../utils';
+const pitches = await getPitches();
+const posts = await getCollection('journal', ({ data }) => !data.draft);
+const coverOf = (id: string) => posts.find((p) => p.id === id)?.data.cover;
+const rows = pitches.map((p) => ({ p, ...latest(p) }));
+---
+<Base title="Research" description="Initiation notes on companies in the physical layer of AI, each with the model behind it and a call that is marked every month, right or wrong." wide>
+  <header class="research-head">
+    <h1>Research</h1>
+    <p>Initiation notes on the companies that build the physical layer of AI: power, cooling, grid and compute capacity. Each note comes with the Excel model behind it. Every call is dated and marked once a month against its target, and none is ever deleted.</p>
+  </header>
+
+  {pitches.length === 0 ? (
+    <p class="scorecard-empty">The first notes are being written.</p>
+  ) : (
+    <ol class="library">
+      {pitches.map((p) => {
+        const d = p.data, c = d.call;
+        const thumb = d.files.thumb ?? coverOf(d.claims[0]);
+        return (
+          <li class="note-card">
+            <a class="note-thumb" href={`/research/${p.id}/`} aria-hidden="true" tabindex="-1">
+              {thumb && <img src={thumb} alt="" loading="lazy" />}
+            </a>
+            <div class="note-body">
+              <p class="note-meta">
+                {d.date && <time datetime={d.date.toISOString()}>{fmtDate(d.date)}</time>}
+                <span>Initiation</span>
+                <span class={`note-call note-call--${(c.direction ?? '').toLowerCase().replace(' ', '')}`}>{callLabel(p)}</span>
+              </p>
+              <h2><a href={`/research/${p.id}/`}>{d.company} <span>{d.exchange}: {d.ticker}</span></a></h2>
+              <p class="note-title">{d.title}</p>
+              <p class="note-links">
+                <a href={d.files.pdf}>Read the note <small>PDF{d.files.pages && `, ${d.files.pages} pages`}</small></a>
+                <a href={d.files.xlsx}>The model <small>Excel</small></a>
+                <a href={`/research/${p.id}/`}>Summary</a>
+              </p>
+            </div>
+          </li>
+        );
+      })}
+    </ol>
+  )}
+
+  {rows.length > 0 && (
+    <section class="track" id="scorecard">
+      <h2>Track record</h2>
+      <p class="track-intro">Each call against the closing price on the day it was published. Marked once a month{SCORECARD_REFRESHED ? <>, last on {fmtDate(new Date(SCORECARD_REFRESHED))}</> : ', starting in November 2026'}. Returns are signed so that a call going the right way is positive.</p>
+      <div class="track-wrap">
+        <table>
+          <thead><tr><th>Published</th><th>Company</th><th>Call</th><th>Price then</th><th>Target</th><th>Latest</th><th>Return</th><th>Status</th></tr></thead>
+          <tbody>
+            {rows.map(({ p, mark, ret, move, score }) => {
+              const c = p.data.call;
+              return (
+                <tr>
+                  <td>{p.data.date && fmtDate(p.data.date)}</td>
+                  <td><a href={`/research/${p.id}/`}>{p.data.company}</a></td>
+                  <td>{callLabel(p, false)}{p.data.call.conviction && `, ${p.data.call.conviction.toLowerCase()} conviction`}</td>
+                  <td>{fmtMoney(c.currency, c.price)}</td>
+                  <td>{c.target != null ? fmtMoney(c.currency, c.target) : 'None'}</td>
+                  <td>{mark ? fmtMoney(c.currency, mark.price) : 'Not yet marked'}</td>
+                  <td class={ret == null ? '' : ret >= 0 ? 'up' : 'down'}>{ret != null ? fmtPct(ret) : move != null ? `n/a (price ${fmtPct(move)})` : 'n/a'}</td>
+                  <td>{score?.resolved ? `${score.resolved.outcome}, ${fmtDate(new Date(score.resolved.date))}` : 'Open'}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  )}
+
+  <p class="research-foot">Each call rests on a claim made first in the journal. <a href="/claims/">See every claim and what would prove it wrong</a>. These notes are the author's own analysis, not investment advice.</p>
+</Base>

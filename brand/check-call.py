@@ -79,6 +79,12 @@ def check(path):
                     fails.append(f'date {d} is in the future')
             except ValueError:
                 fails.append(f'date not ISO: {d}')
+        for k in ('pdf', 'xlsx', 'thumb'):
+            f = field(k, fm.split('\nfiles:', 1)[1] if '\nfiles:' in fm else '')
+            if f and not os.path.exists(os.path.join(ROOT, 'public', f.lstrip('/'))):
+                (warns if k == 'thumb' else fails).append(f'files.{k} not found in public/: {f}')
+        if not re.search(r'^keyPoints:', fm, re.M):
+            fails.append('missing keyPoints')
         if 'draftView' in fm:
             warns.append('published pitch still carries draftView; remove it')
     else:

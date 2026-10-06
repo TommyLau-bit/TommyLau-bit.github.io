@@ -1,0 +1,76 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { SITE } from '../../config';
+import { fmtDate } from '../../utils';
+import { claimOf } from '../../data/claims';
+import { getPitches, latest, fmtMoney, fmtPct } from '../../lib/calls';
+export async function getStaticPaths() {
+  const pitches = await getPitches();
+  return pitches.map((p) => ({ params: { slug: p.id }, props: { p } }));
+}
+const { p } = Astro.props;
+const d = p.data, c = d.call;
+const posts = await getCollection('journal', ({ data }) => !data.draft);
+const claims = d.claims.map((id) => ({ claim: claimOf(id), piece: posts.find((x) => x.id === id) })).filter((x) => x.claim && x.piece);
+const dirSlug = (c.direction ?? 'open').toLowerCase().replace(' ', '');
+const upside = c.target != null ? (c.direction === 'SHORT' ? c.price / c.target - 1 : c.target / c.price - 1) : null;
+const { mark, ret, move } = latest(p);
+---
+<Base title={`${d.company} (${d.ticker}): initiation`} description={d.summary} type="article" canonical={`${SITE.url}/research/${p.id}/`}>
+  <article class="pitch">
+    {d.draft && <p class="draft-banner"><strong>Draft, not published.</strong> Visible only in local preview.</p>}
+    <header class="article-head">
+      <p class="pitch-kicker"><a href="/research/">Research</a> · Initiation · {d.date ? fmtDate(d.date) : 'Unpublished'}</p>
+      <h1>{d.company} <span class="pitch-ticker">{d.exchange}: {d.ticker}</span></h1>
+      <p class="pitch-title">{d.title}</p>
+    </header>
+
+    <section class="callbox" aria-label="The call">
+      <div class="callbox-head">
+        <span class="callbox-co">The call</span>
+        {c.direction
+          ? <span class={`callbox-dir callbox-dir--${dirSlug}`}>{c.direction === 'NO CALL' ? 'No call' : c.direction}</span>
+          : <span class="callbox-dir callbox-dir--open">Undecided</span>}
+      </div>
+      <dl>
+        <div><dt>Price at publication</dt><dd>{fmtMoney(c.currency, c.price)}<small>close, {fmtDate(c.priceDate)}</small></dd></div>
+        <div><dt>Target</dt><dd>{c.target != null ? <>{fmtMoney(c.currency, c.target)}<small>{fmtPct(upside!)} · {c.horizon}</small></> : <>None<small>no position at this price</small></>}</dd></div>
+        <div><dt>Conviction</dt><dd>{c.conviction ?? 'Undecided'}</dd></div>
+      </dl>
+      <p class="callbox-wrong"><span>{c.direction === 'NO CALL' ? 'What would prove the thesis wrong' : 'What proves it wrong'}</span>{c.wrongIf}</p>
+      {c.revisitIf && <p class="callbox-wrong"><span>What would turn this into a call</span>{c.revisitIf}</p>}
+      {mark && <p class="callbox-wrong"><span>Latest monthly mark</span>{fmtMoney(c.currency, mark.price)} on {fmtDate(new Date(mark.date))}, {ret != null ? `${fmtPct(ret)} for the call` : `price ${fmtPct(move!)} since publication`}. {mark.falsifier}</p>}
+    </section>
+
+    <div class="downloads">
+      <a class="download download--main" href={d.files.pdf}>
+        <strong>Read the full note</strong><span>PDF{d.files.pages && `, ${d.files.pages} pages`}: thesis, valuation, scenarios, risks and sources</span>
+      </a>
+      <a class="download" href={d.files.xlsx}>
+        <strong>Open the model</strong><span>Excel, live formulas: change an assumption and the target moves</span>
+      </a>
+    </div>
+
+    <section class="keypoints">
+      <h2>The call in brief</h2>
+      <ol>{d.keyPoints.map((k) => <li>{k}</li>)}</ol>
+    </section>
+
+    {claims.map(({ claim, piece }) => (
+      <aside class="claim-box">
+        <p class="claim-box-label">The claim it rests on, made {fmtDate(piece!.data.date)}</p>
+        <p class="claim-box-claim">{claim!.claim}</p>
+        <p class="claim-box-meta"><a href={`/journal/${piece!.id}/`}>Read the journal piece</a></p>
+        {d.correction && <p class="claim-box-correction"><span>Where I was wrong</span>{d.correction} The piece and the claim stay as published; the note explains what changed my view.</p>}
+      </aside>
+    ))}
+
+    <aside class="pitch-disclaimer">
+      This is the author's own analysis, not investment advice. {c.position} Prices are closing prices on the dates given. The call is fixed on the day it is published and is never rewritten; it is marked once a month in the <a href="/research/#scorecard">track record</a>, right or wrong.
+    </aside>
+    <footer class="article-foot">
+      Written by {SITE.author}. If you think the call is wrong, I would genuinely like to hear why: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
+    </footer>
+  </article>
+</Base>

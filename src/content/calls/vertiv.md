@@ -6,6 +6,17 @@ ticker: "VRT"
 exchange: "NYSE"
 claims: ["every-megawatt-got-harder"]
 correction: "I cited service growing faster than products as evidence. Without acquisitions it grew more slowly, so the claim rests on margin alone."
+keyPoints:
+  - "Vertiv makes the power and cooling equipment inside AI data centres, and each AI megawatt needs more of it, and more complex versions of it, than an ordinary one."
+  - "The proof is margin, not volume: adjusted operating margin has beaten the same quarter a year earlier every quarter since Q3 2025, reaching 22.6 per cent in Q2 2026."
+  - "The shares have fallen a third since May on a sales miss, supply congestion and a dropped backlog figure. I read congestion with a rising margin as too little capacity, not too little demand."
+  - "At 37.9 times the 2026 guide the market prices Vertiv like a diversified industrial. Twenty-eight times my 2028 estimate of US$10.65 gives US$300."
+  - "Where I was wrong: my September piece cited service outgrowing products. Organically it grew more slowly, so the call rests on margin alone."
+files:
+  pdf: "/research/2026-10-06_Vertiv_Initiation.pdf"
+  xlsx: "/research/2026-10-06_Vertiv_Model.xlsx"
+  thumb: "/research/2026-10-06_Vertiv_Initiation-p1.png"
+  pages: 5
 date: 2026-10-06T19:29:59+08:00
 draft: false
 call:
@@ -136,7 +147,7 @@ The 2024 and 2025 figures are the sums of the four quarterly releases. Growth in
 | Base | Growth at the long-run target, margin up a point a year | US$10.65 | 28x | US$298 | up 18% |
 | Bull | Growth of 22 to 24 per cent, margin reaches 27 per cent early | US$11.52 | 34x | US$392 | up 54% |
 
-Weighted 25, 50 and 25 per cent, the three cases give about US$293, 15 per cent above the price.
+Weighted 25, 50 and 25 per cent, the three cases give about US$292, 15 per cent above the price.
 
 **How sensitive it is.** Each row is a 2028 estimate and each column a multiple.
 

@@ -47,3 +47,12 @@ export function latest(p: Pitch) {
 export const fmtMoney = (cur: string, n: number) =>
   `${cur}${n.toLocaleString('en-GB', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
 export const fmtPct = (r: number) => `${r >= 0 ? '+' : ''}${(r * 100).toFixed(1)}%`;
+
+// "Long, target US$300" / "No call" / "Short, target US$40"
+export function callLabel(p: Pitch, withTarget = true): string {
+  const c = p.data.call;
+  if (!c.direction) return 'Undecided';
+  if (c.direction === 'NO CALL') return 'No call';
+  const dir = c.direction === 'LONG' ? 'Long' : 'Short';
+  return withTarget && c.target != null ? `${dir}, target ${c.currency}${Math.round(c.target)}` : dir;
+}
