@@ -85,3 +85,8 @@ Tommy found the first build (a long web pitch with charts, merged into the claim
 4. Set `draft: false` and `date` to the real go-live time, `+08:00`.
 5. Build the PDF and model into `public/research/`, with a page-one PNG for the thumbnail. Recalculate the model so its values are cached (`soffice --headless --calc --convert-to xlsx` into a temp folder, then copy back), or it shows blank in Mail and Gmail previews. Set `files` and `keyPoints`.
 6. `python3 brand/check-call.py`, then `npm run build`, then push.
+
+## Pending (7 Oct 2026)
+
+- **Marvell** (`src/content/calls/marvell.md`, draft, not committed): drafted and fact-checked, draft view no call on the 5 Oct close of US$271.25. Held because Marvell's Investor Day on 6 Oct reportedly raised the fiscal 2028 revenue target from about US$18bn to about US$20bn, which would lift the base case to about US$322. Rebuild on the confirmed figures once Marvell files the 8-K or posts the presentation, refresh the price, and bring the new draft view to Tommy.
+- Published so far: Vertiv (long), Nebius, TSMC, Texas Instruments, Corning, Bloom Energy, Lumentum (no call), Oklo (short), Broadcom (long).
