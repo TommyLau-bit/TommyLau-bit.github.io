@@ -5,7 +5,7 @@ company: "Texas Instruments"
 ticker: "TXN"
 exchange: "Nasdaq"
 claims: ["ti-feeds-the-chip"]
-correction: "I called TI's 61 per cent gross margin what full factories look like. TI's factories are not full: loadings are still rising, and the margin sits seven points below 2022 because depreciation has more than doubled."
+correction: "I called TI's 61 per cent gross margin what full factories look like. TI's factories are not full: loadings are still rising, and the margin sits seven points below 2022, mostly because depreciation has more than doubled."
 keyPoints:
   - "Texas Instruments makes the small power chips that step electricity down to an AI processor. Its data centre sales doubled in a year, and on my working they reached about 12 per cent of revenue in the second quarter, up from 9 per cent for 2025."
   - "Data centre supplied about a third of TI's growth in that quarter. The rest came from the analog upturn in factories and cars, and that cycle moves my 2028 earnings two and a half times as much as data centre does."
@@ -124,11 +124,11 @@ So data centre is no longer a rounding error in TI's growth. On my estimates it 
 
 Capital spending fell from US$4.55 billion in 2025 to an expected US$2 to 3 billion in 2026. CHIPS Act grants and tax credits return part of the rest. Free cash flow, in TI's definition, rose from US$1.5 billion in 2024 to US$6.5 billion in the twelve months to June 2026.
 
-**Where I was wrong in October.** In the piece I called TI's 61 per cent gross margin what owning cheap, full factories looks like in money. TI's factories are not full. On the July call TI said loadings rose through the second quarter and were still rising into the third. It also said it has empty clean room space ready to equip.
+**Where I was wrong in October.** In the piece I called TI's 61 per cent gross margin what owning cheap, full factories looks like in money. TI's factories are not full. On the July call TI said loadings rose through the second quarter and were still rising into the third. It also said it has empty clean room space ready to equip. The piece also said the factories now had to be filled, so it contradicted itself.
 
-The margin also sits well below its last peak. Gross margin was 68.8 per cent in 2022, on lower revenue than today. The difference is depreciation, the annual charge for factories already built. It rose from US$0.93 billion in 2022 to US$1.92 billion in 2025, and TI expects US$2.2 to 2.4 billion in 2026.
+The margin also sits well below its last peak. Gross margin was 68.8 per cent in 2022, on revenue of US$20.0 billion, about what TI earned in the year to June 2026. Most of the difference is depreciation, the annual charge for factories already built. It rose from US$0.93 billion in 2022 to US$1.92 billion in 2025, and TI expects US$2.2 to 2.4 billion in 2026.
 
-What changed my view was putting the July call next to TI's depreciation line for this note. The point matters for the call. Half-full factories mean the margin can still rise as they fill. But a larger fixed cost base also means earnings fall faster if the cycle turns. The piece and the claim stay exactly as published.
+What changed my view was putting the July call next to TI's depreciation line for this note. The point matters for the call. Partly filled factories mean the margin can still rise as they fill. But a larger fixed cost base also means earnings fall faster if the cycle turns. The piece and the claim stay exactly as published.
 
 ## What the market prices in, and where I differ
 
@@ -156,7 +156,7 @@ I value TI on earnings per share, twelve months out, so the year I value is 2028
 
 I build revenue in two parts: data centre and the rest of TI. Operating profit rises by 75 per cent of each extra dollar of revenue, before depreciation, the middle of the 70 to 85 per cent TI gives. I then subtract extra depreciation of US$0.2 billion in 2027 and US$0.1 billion in 2028.
 
-Other income less interest costs US$0.32 billion a year, as in the second quarter. Tax is 13 per cent, as TI guides, and the share count stays at 920 million. For the third quarter I use revenue of US$5.95 billion, which gives earnings at the US$2.40 midpoint of TI's guide.
+Other income less interest costs about US$0.3 billion a year, close to the second quarter's rate. Tax is 13 per cent, as TI guides, and the share count stays at 920 million. For the third quarter I use revenue of US$5.95 billion, which gives earnings at the US$2.40 midpoint of TI's guide.
 
 | | 2022 | 2025 | 2026 mine | 2027 mine | 2028 mine |
 |---|---|---|---|---|---|
@@ -197,7 +197,7 @@ Only three of the nine cells sit above today's price. To make money from here, T
 
 ## Risks, and what would change my view
 
-**The upturn runs longer.** This is the bull case and the main risk to a no call. Analog makers spent 2023 and 2024 running stock down, and restocking could last into 2027. With empty clean room space and falling capital spending, each extra dollar of revenue carries a high margin. A gross margin of 65 per cent or more would be the clearest sign.
+**The upturn runs longer.** This is the bull case and the main risk to a no call. Analog makers spent 2023 and 2024 running stock down, and restocking could last into 2027. With empty clean room space and falling capital spending, each extra dollar of revenue carries a high margin. TI also said on the July call that it had started raising prices, which builds through the second half. A gross margin of 65 per cent or more would be the clearest sign.
 
 **The upturn turns.** This is the bear case. TI warns every quarter that demand can differ from forecasts. Industrial and automotive are two thirds of revenue, and the 30 per cent industrial growth will not repeat for long. The new fixed cost base makes the fall in earnings steeper than the fall in revenue.
 

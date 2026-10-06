@@ -90,7 +90,7 @@ A(datatable(
         ["Revenue", f"{REV_H[3]:.2f}", f"{REV_H[5]:.2f}", f"{REV_H[6]:.2f}", f"{REV26:.2f}", f"{R27:.2f}", f"{R28:.2f}"],
         ["Of which data centre", "n.d.", "n.d.", f"{DC_25:.1f}", f"{DC_26E:.2f}", f"{PB['dc27']:.2f}", f"{PB['dc28']:.2f}"],
         ["Revenue growth (%)", "9", "(11)", f"{(REV_H[6] / REV_H[5] - 1) * 100:.0f}", f"{(REV26 / REV_H[6] - 1) * 100:.0f}", f"{(R27 / REV26 - 1) * 100:.0f}", f"{(R28 / R27 - 1) * 100:.0f}"],
-        ["Gross margin (%)", f"{GM22 * 100:.1f}", f"{GP_H[5] / REV_H[5] * 100:.1f}", f"{GP_H[6] / REV_H[6] * 100:.1f}", "n.m.", "n.m.", "n.m."],
+        ["Gross margin (%)", f"{GM22 * 100:.1f}", f"{GP_H[5] / REV_H[5] * 100:.1f}", f"{GP_H[6] / REV_H[6] * 100:.1f}", "not forecast", "not forecast", "not forecast"],
         ["Operating margin (%)", f"{OM22 * 100:.1f}", f"{OP_H[5] / REV_H[5] * 100:.1f}", f"{OP_H[6] / REV_H[6] * 100:.1f}", f"{OM26 * 100:.1f}", f"{OM27 * 100:.1f}", f"{OM28 * 100:.1f}"],
         ["Diluted EPS (US$)", f"{EPS_H[3]:.2f}", f"{EPS_H[5]:.2f}", f"{EPS_H[6]:.2f}", f"{EPS26:.2f}", f"{EPS27:.2f}", f"{EPS28:.2f}"],
         [f"P/E at US${PRICE:.2f} (x)", f"{PRICE / EPS_H[3]:.1f}", f"{PRICE / EPS_H[5]:.1f}", f"{PRICE / EPS_H[6]:.1f}", f"{PRICE / EPS26:.1f}", f"{PRICE / EPS27:.1f}", f"{PRICE / EPS28:.1f}"],
@@ -102,7 +102,7 @@ A(datatable(
 A(caption("*2026E to 2028E are my own estimates; n.d. = not disclosed. 2026E uses the reported first half plus my third quarter "
           f"(revenue US${Q3E_REV}bn, EPS US${Q3E_EPS:.2f}, the guide midpoint) and fourth (US${Q4E_REV}bn, US${Q4E_EPS:.2f}). Ahead, operating "
           f"profit rises by {FALL * 100:.0f}% of extra revenue before depreciation, less extra depreciation; EPS = (operating profit less "
-          f"US$0.32bn net interest) x (1 - {TAX * 100:.0f}% tax) / 920m shares. 2026 depreciation and capital spending are TI's guides. "
+          f"about US$0.3bn net interest) x (1 - {TAX * 100:.0f}% tax) / 920m shares. 2026 depreciation and capital spending are TI's guides. "
           "History from TI's Forms 10-K (SEC XBRL). Silicon Labs is excluded."))
 
 A('<div class="keeptogether">')
@@ -141,11 +141,11 @@ A(para(f"<strong>The factory build.</strong> TI spent about US${CAPEX_CYCLE:.0f}
 
 A(section("Where I was wrong in October"))
 A(para("In the piece I called TI's 61% gross margin what owning cheap, full factories looks like in money. TI's factories are not "
-       "full. On the July call TI said loadings rose through the second quarter and were still rising into the third, and that it "
+       "full, and the piece itself said they still had to be filled. On the July call TI said loadings rose through the second quarter and were still rising into the third, and that it "
        f"has empty clean room space ready to equip. The margin is also {GM22 * 100 - GM_Q2 * 100:.0f} points below 2022's "
-       f"{GM22 * 100:.1f}%, on lower revenue then, because depreciation rose from US${DEP_H[3]:.2f}bn in 2022 to US${DEP_H[6]:.2f}bn "
+       f"{GM22 * 100:.1f}%, on revenue of about what TI earned in the year to June 2026, mostly because depreciation rose from US${DEP_H[3]:.2f}bn in 2022 to US${DEP_H[6]:.2f}bn "
        "in 2025, with US$2.2 to 2.4bn guided for 2026. Putting the July call next to the depreciation line showed the slip. It "
-       "matters: half-full factories leave room for the margin to rise, but the larger fixed cost base makes earnings fall faster "
+       "matters: partly filled factories leave room for the margin to rise, but the larger fixed cost base makes earnings fall faster "
        "if the cycle turns. The piece and the claim stay exactly as published."))
 
 A(section("Variant perception: what the market prices in, and where I differ"))
@@ -249,7 +249,8 @@ A('</div>')
 
 A(section("Risks: what would hurt the view"))
 A(para("<strong>The upturn runs longer.</strong> The bull case and the main risk to a no call. Restocking could last into 2027, "
-       "and with empty clean room space and falling capital spending each extra dollar carries a high margin. A gross margin of "
+       "and with empty clean room space and falling capital spending each extra dollar carries a high margin. TI also said on the "
+       "July call that it had started raising prices, which builds through the second half. A gross margin of "
        "65% or more would be the clearest sign."))
 A(para("<strong>The upturn turns.</strong> The bear case. Industrial and automotive are two thirds of revenue, and 30% industrial "
        "growth will not repeat for long. The new fixed cost base makes earnings fall faster than revenue."))

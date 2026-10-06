@@ -30,3 +30,11 @@ Calls, targets, scenario values and revisit levels are never changed after publi
 - The PDF's "Net cash" line is relabelled "Cash less long-term debt". TSMC's own net cash figure, which deducts all interest-bearing debt, is about US$78bn.
 - "2026 near US$172bn" is marked as my estimate. "What changed my view" in the correction reads "What showed me the slip", since the view itself did not change.
 - Checked and kept: the "Where I was wrong" passage, which matches the January transcript and the piece's wording.
+
+**Texas Instruments** (no change to the call, scenarios or revisit levels):
+- The correction now says the 2022 margin gap is "mostly" depreciation (about 5.4 of 7.4 points), not entirely. It notes the piece itself said the factories still had to be filled.
+- "On lower revenue than today" replaced with the exact comparison: 2022 revenue of US$20.0bn is about what TI earned in the year to June 2026.
+- "Half-full factories" changed to "partly filled", since TI gives no utilisation figure.
+- Net interest is about US$0.3bn a year, not US$0.32bn (Q2 was minus US$72m). It moves EPS by about 3 cents.
+- Added that TI said on the July call it had started raising prices; this bears on the 65 per cent gross margin trigger.
+- The PDF's "n.m." for future gross margin now reads "not forecast".
