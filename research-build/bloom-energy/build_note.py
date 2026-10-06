@@ -78,7 +78,7 @@ A(f'<p class="lede">Bloom\'s customers pay for time. Bloom is paid for it in vol
 A(para("Bloom Energy makes fuel cells that turn natural gas into electricity beside a building. On 24 September I argued that "
        "its buyers pay for an earlier switch-on date, not for cheap power. The claim is holding: revenue rose "
        f"{(Q_REV[-1] / Q_REV[5] - 1) * 100:.0f}% in the second quarter, Oracle plans up to {ORCL_GW[0]} GW and AEP has taken most of "
-       "its 1 GW option."))
+       "its 900 MW option."))
 A(para(f"But I misread where the premium shows. Product gross margin, where a price for speed would appear, was "
        f"{pc(PROD_GM_H[0])} in 2024, {pc(PROD_GM_H[1])} in 2025 and {pc(H1_26_PROD_GM)} in the first half of 2026. "
        f"Bloom earns the time premium as volume, and volume is set by a factory. At US${PRICE:.2f} the price needs about "
@@ -134,17 +134,18 @@ A('<div class="keeptogether">')
 A(f'<div class="chartsrow"><div class="col left"><img class="chart" src="file://{D}/chart_margin.png"></div>'
   f'<div class="col"><img class="chart" src="file://{D}/chart_quarterly.png"></div></div>')
 A(caption("Left: GAAP gross margin on products, on services and in total, by quarter. Product margin has sat at 33 to 37% since "
-          "early 2025 while revenue tripled; the total rose because services turned from a loss to a profit. Right: revenue by "
+          "early 2025 while revenue tripled; the total rose mainly because products grew to 88% of revenue. Right: revenue by "
           "quarter, with sales to related parties hatched (mainly joint ventures with Brookfield from Q3 2025) and the non-GAAP "
           "gross margin. Source: Bloom results releases, 2024 to 28 July 2026; product and service margins are derived."))
 A('</div>')
 
 A(section("Where I was wrong in September"))
 A(para(f"In the piece I wrote that gross margin rising from 26.7% to 33.4% while volume more than doubled was \"the time premium, "
-       f"expressed in money\". That was wrong. The rise came from elsewhere. Service margin went from {pc(SERV_GM_H[0])} in 2024 to "
-       f"{pc(Q_SERV_GM[-1])} in the second quarter of 2026, and fixed costs spread over far more units. Product margin, where a "
+       f"expressed in money\". That was wrong. The rise came mainly from mix: products, which earn far more than "
+       "installation and service, went from 74% to 88% of revenue between the two quarters. Product margin also recovered, from "
+       "33.0% to 36.5%, after a weak 2025, and service added a little. But over a full year the product margin, where a "
        f"premium for speed would show, was {pc(PROD_GM_H[0])} in 2024, {pc(PROD_GM_H[1])} in 2025 and {pc(H1_26_PROD_GM)} in the "
-       f"first half of 2026. Splitting the margin by line in Bloom's own reconciliation tables, which I had not done for the piece, "
+       f"first half of 2026. Splitting the margin by line in Bloom's income statement, which I had not done for the piece, "
        "changed my view."))
 A(para("Two smaller points. I wrote that the service backlog of about US$14bn was contracts for up to twenty years and the part "
        "least exposed to the grid catching up. The 10-K says those contracts run 5 to 20 years, but customers can end them for "
@@ -155,7 +156,7 @@ A(para("Two smaller points. I wrote that the service backlog of about US$14bn wa
 A(section("The factory is the ceiling"))
 A(para(f"If the premium is paid in volume, the question is how much Bloom can make. Its Fremont plant makes about 1 GW a year and "
        f"is doubling to 2 GW by the end of 2026, with room for about 5 GW. AEP's order works out at about US${USD_PER_MW:.2f}m a "
-       f"megawatt. At that price, and with products {PROD_SHARE * 100:.1f}% of revenue as in the first half, my 2026 estimate is "
+       f"megawatt if it covers the full 900 MW. At that price, and with products {PROD_SHARE * 100:.1f}% of revenue as in the first half, my 2026 estimate is "
        f"about {GW26:.1f} GW, 2027 about {G27:.1f} GW and my 2028 base about {BASE_GW28:.1f} GW. These are my conversions, not "
        "Bloom figures; Bloom does not report megawatts shipped."))
 A('<div class="keeptogether">')
@@ -270,8 +271,8 @@ A(para("<strong>The volume keeps surprising.</strong> The bull case, and the mai
        f"its 2026 revenue guide from US${GUIDE_26_FEB['rev'][0]} to {GUIDE_26_FEB['rev'][1]}bn in February to US$3.9 to 4.2bn in July. "
        "Another step like that, with Fremont expanding fast, puts 2028 near the bull case. <strong>The gap closes.</strong> The "
        "bear case and the claim's own falsifier: faster interconnection or more turbine capacity shrinks the window Bloom sells into."))
-A(para(f"<strong>Few, large buyers.</strong> Two customers took {Q2_TOP2[0] * 100:.0f}% and {Q2_TOP2[1] * 100:.0f}% of second "
-       f"quarter revenue, and in 2025 {RELATED_SHARE_25 * 100:.0f}% of revenue went to related parties, mainly Brookfield joint "
+A(para(f"<strong>Few, large buyers.</strong> One customer took about 73% of second quarter revenue, and two took "
+       f"{Q2_TOP2[0] * 100:.0f}% and {Q2_TOP2[1] * 100:.0f}% of the first half (amended 10-Q), and in 2025 {RELATED_SHARE_25 * 100:.0f}% of revenue went to related parties, mainly Brookfield joint "
        "ventures in which Bloom holds stakes. <strong>Gas and supply.</strong> The boxes need gas and scandium; a supply or permit "
        "shock would slow deployments. <strong>Quality of earnings.</strong> Non-GAAP figures exclude stock-based pay; a short report "
        "and a securities lawsuit are outstanding."))
@@ -315,7 +316,7 @@ A(section("Sources"))
 A('<p class="sourceline">Bloom Energy quarterly results releases furnished on Form 8-K, Q2 2024 to Q2 2026 (28 July 2026), with '
   'their comparative quarters, for revenue and cost by line, GAAP and non-GAAP margins, operating income, EPS, related-party '
   'revenue, guidance and backlog. Bloom Form 10-K for 2025 for backlog definitions, service contract terms, the 2 GW plan and grid '
-  'context. Bloom Form 10-Q for Q2 2026 for the convertible notes, the Oracle warrant, the diluted share count, Brookfield joint '
+  'context. Bloom Form 10-Q/A for Q2 2026 (29 July 2026) for the convertible notes, the Oracle warrant, the diluted share count, Brookfield joint '
   'ventures, customer concentration and the short report. Bloom announcements of 13 April 2026 (Oracle), 30 June 2026 '
   '(Brookfield) and 19 August 2026 (Power Connect); AEP option exercise as reported on 8 January 2026. Consensus EPS from '
   'stockanalysis.com and Nasdaq.com (Zacks); multiples and average target from stockanalysis.com; share prices from Yahoo Finance; '

@@ -48,3 +48,9 @@ Calls, targets, scenario values and revisit levels are never changed after publi
 - A reference to the private paper portfolio as a source has been removed from the text of record; the question it raised (why a sold-out business sells shares) stays.
 
 **Texas Instruments, further change:** the reference to the private paper portfolio as a source is removed from the text of record and the PDF. The argument is now framed as "the obvious objection" (that TI is mostly an analog-cycle bet), which the note tests and finds right about the shares.
+
+**Bloom Energy** (no change to the call, scenarios or revisit levels):
+- The "Where I was wrong" passage now gives the right cause. Gross margin rose from 26.7 to 33.4 per cent mainly through mix: products, which earn far more than installation and service, went from 74 to 88 per cent of revenue. Product margin also recovered from 33.0 to 36.5 per cent after a weak 2025, and service added a little. The earlier text said service "turning from a loss to a profit" was the cause; the income statement does not support that. The conclusion stands: on full-year figures the product margin has not moved (36.8, 35.2 and 35.6 per cent). The key point and chart caption are reworded to match.
+- Customer concentration corrected from Bloom's amended 10-Q (29 July 2026): one customer took about 73 per cent of second quarter revenue. The 44 and 21 per cent figures are for the first half. Sources now cite the 10-Q/A.
+- AEP's option is 900 MW (the PDF's first page said 1 GW). The US$2.94m per megawatt is now stated as assuming AEP took the full 900 MW.
+- "Reconciliation tables" corrected to "income statement".
