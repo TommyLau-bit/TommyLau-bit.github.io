@@ -48,7 +48,7 @@ A('<div class="clearfix"><div class="sidebar">')
 A(statbox([
     ("Last price", "US$253.62, NYSE close 5 Oct 2026"),
     ("Peak", "US$379.94 intraday, 14 May 2026; price now 33% below"),
-    ("Diluted shares", "392.7m (10-Q, 30 Jun 2026)"),
+    ("Diluted shares", "392.7m, Q2 2026 weighted average (10-Q)"),
     ("Market value", f"US${mv:.1f}bn"),
     ("Net cash, 30 Jun 2026", f"US${nc:.1f}m (cash US$2,810.6m + short-term investments US$300.0m less debt US$2,939.8m)"),
     ("Enterprise value", f"US${ev:.1f}bn"),
@@ -80,15 +80,15 @@ A(datatable(
         ["Net sales growth (%)", "n.a.", "28", "37", "21", "20"],
         ["Adjusted operating margin (%)", "19.4", "20.4", "23.8", "25.0", "26.0"],
         ["Adjusted operating profit", "1.55&dagger;", "2.09&dagger;", "3.33", r2(S27*M27), r2(S28*M28)],
-        ["Adjusted EPS (US$)", "2.85", "4.19", "6.65 to 6.75", f"{E27:.2f}", f"{E28:.2f}"],
+        ["Adjusted EPS (US$)", "2.85", "4.20", "6.65 to 6.75", f"{E27:.2f}", f"{E28:.2f}"],
         ["Adjusted EPS growth (%)&dagger;", "n.a.", "47", "60", "27", "25"],
         ["P/E at US$253.62 (x)", "", "", "37.9", "29.7", "23.8"],
     ],
     num_cols={1, 2, 3, 4, 5},
 ))
-A(caption("*2027E and 2028E are my own estimates, not Vertiv's. 2024A and 2025A are the sums of the four quarterly results releases. "
+A(caption("*2027E and 2028E are my own estimates, not Vertiv's. 2024A and 2025A sales and margins are the sums of the four quarterly results releases; EPS is as reported for the full year. "
           "2026 is Vertiv's guide of 29 July 2026; growth, margin, operating profit and P/E use the midpoints. &dagger;Derived: operating "
-          "profit as sales x margin; EPS growth from the figures shown. My 2027E EPS sits about 4% below the US$8.93 consensus."))
+          "profit as sales x margin; EPS growth from the figures shown. My 2027E EPS sits about 4.5% below the US$8.93 consensus."))
 
 A('<div class="keeptogether">')
 A(section("Two charts: a margin still rising, and a valuation that sits above the price"))
@@ -135,7 +135,7 @@ A(para("What changed my view was working through the organic split in Vertiv's o
 A(section("Variant perception: what the market prices in, and where I differ"))
 A(para(f"At US$253.62 Vertiv is valued at about US${mv:.1f} billion on its diluted shares, and holds roughly US$170 million more cash "
        "than debt. That is 37.9 times the midpoint of its own 2026 earnings guide, and 28.4 times the 2027 consensus of US$8.93 a share "
-       "(MarketBeat, 6 October). That multiple has fallen fast. At the May peak the shares traded at about 59 times the 2026 guide of the "
+       "(MarketBeat, 6 October). That multiple has fallen fast. At the May peak the shares traded at about 60 times the 2026 guide of the "
        "time, US$6.30 to 6.40 a share. Today the gap to the large electrical groups is small: Eaton, nVent and Trane each trade at about "
        "28.5 to 29 times forward earnings, and Schneider Electric at 24 (stockanalysis.com, 6 October). The market now prices Vertiv close "
        "to a diversified industrial whose data centre exposure is one division among many. Three things moved the price."))
@@ -145,9 +145,9 @@ A(cols(datatable(
     ["Date", "What happened", "Move"],
     [
         ["11 Feb 2026", "Vertiv stops reporting orders and backlog each quarter; backlog now annual only", "n.a."],
-        ["14 May 2026", "Intraday peak of US$379.94; about 59x the 2026 guide of the time", "Peak"],
+        ["14 May 2026", "Intraday peak of US$379.94; about 60x the 2026 guide of the time", "Peak"],
         ["29 Jul 2026", "Q2 sales about 3% below consensus, EPS beats; timing and supply congestion blamed", "down 17% that day"],
-        ["2 Sep 2026", "Agrees to buy UtilityInnovation Group for about US$1.45bn in cash, little financial detail", "n.a."],
+        ["1 Sep 2026", "Agrees to buy UtilityInnovation Group for about US$1.45bn in cash, little financial detail", "n.a."],
         ["9 Sep 2026", "Day after the CEO cites congestion in the supply chain for complex products; sector sell-off", "down 9.6%"],
     ],
 ), [22, 56, 22]))
@@ -170,7 +170,7 @@ A(para("The estimates are mine, not Vertiv's, except where marked as its guide. 
        "implied by Vertiv's own 2026 guide, about US$6.70 of earnings per share for every US$3.325 billion of operating profit. That "
        "carries its current tax rate, interest cost and share count forward unchanged. Growth in 2027 and 2028 sits at Vertiv's own "
        "long-run target of 20 to 22% organic growth a year. Margin climbs about one point a year towards its 2030 target of 27%. My 2027 "
-       "earnings sit about 4% below the consensus, so this is not a call that depends on beating the street."))
+       "earnings sit about 4.5% below the consensus, so this is not a call that depends on beating the street."))
 A(para("<strong class='lead'>The multiple.</strong> I use 28 times 2028 earnings for the base case. That is in line with Eaton, nVent and "
        "Trane on forward earnings today, and far below where Vertiv itself traded in May. A business growing at twice their pace with a "
        "rising margin should not need a discount to them. 28 x US$10.65 = US$298, rounded to a US$300 target."))
@@ -246,7 +246,7 @@ A(para("<strong>Rivals with deeper pockets.</strong> Schneider Electric bought M
        "Schneider's agreed US$22.6 billion purchase of PTC sends money to software, not cooling factories, which slightly helps Vertiv for now."))
 A(para("<strong>Acquisitions.</strong> Vertiv has agreed five deals this year, the largest being UtilityInnovation Group. It costs about "
        "US$1.45 billion in cash, plus up to US$1.15 billion more if profit targets are met, at about 13 times its expected 2027 earnings "
-       "before interest, tax and depreciation. Buying growth at that price only works if the integration is clean."))
+       "before interest, tax, depreciation and amortisation. Buying growth at that price only works if the integration is clean."))
 A(para("<strong>Weak spots in the evidence.</strong> Europe, the Middle East and Africa fell 2.4% organically in the second quarter. Vertiv "
        "discloses no single customer's share of sales, and the backlog figure is now annual."))
 
@@ -256,13 +256,13 @@ A(para("<strong>The call is wrong if</strong> adjusted operating margin falls ye
        "growing, or full year 2026 adjusted earnings per share land below the US$6.65 bottom of Vertiv's own guide, or the 2026 annual "
        "report shows backlog below the US$15.0 billion of a year earlier."))
 A(para("<strong>The other way:</strong> a margin above the 24 to 25% guide in the third quarter, together with a 2026 backlog well above "
-       "US$15.0 billion, would move the bull case closer to the base case."))
+       "US$15.0 billion, would move the base case towards the bull case."))
 A('</div>')
 
 A(section("Conclusion"))
 A(para("The September piece argued that each AI megawatt holds more of what Vertiv makes. A year of margins says that is happening. The "
        "market has spent five months treating Vertiv as a volume story near its peak, and has cut the multiple of this year's earnings "
-       "from about 59 times to about 38. The price now pays for the volume but not for the richer content. LONG, Medium conviction, "
+       "from about 60 times to about 38. The price now pays for the volume but not for the richer content. LONG, Medium conviction, "
        "twelve-month target US$300."))
 
 A('<div class="keeptogether">')

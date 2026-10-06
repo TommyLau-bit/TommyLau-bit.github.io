@@ -83,5 +83,5 @@ Tommy found the first build (a long web pitch with charts, merged into the claim
 2. Refresh `call.price` and `call.priceDate` to the latest close, and rework any figure that moved with it.
 3. Rewrite the conclusion (and title, if needed) to match his call. Delete `draftView`.
 4. Set `draft: false` and `date` to the real go-live time, `+08:00`.
-5. Build the PDF and model into `public/research/`, with a page-one PNG for the thumbnail. Set `files` and `keyPoints`.
+5. Build the PDF and model into `public/research/`, with a page-one PNG for the thumbnail. Recalculate the model so its values are cached (`soffice --headless --calc --convert-to xlsx` into a temp folder, then copy back), or it shows blank in Mail and Gmail previews. Set `files` and `keyPoints`.
 6. `python3 brand/check-call.py`, then `npm run build`, then push.

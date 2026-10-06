@@ -24,7 +24,7 @@ DEBT = 2939.8
 # ---- Annual ----
 SALES = {"2024A": 8.01, "2025A": 10.23}
 MARGIN = {"2024A": 0.194, "2025A": 0.204}
-EPS = {"2024A": 2.85, "2025A": 4.19}
+EPS = {"2024A": 2.85, "2025A": 4.20}
 GUIDE = dict(sales_lo=13.8, sales_hi=14.2, m_lo=0.233, m_hi=0.243,
              eps_lo=6.65, eps_hi=6.75, op_mid=3.325)   # US$bn, from release of 29 Jul 2026
 G_EPS_MID = 6.70

@@ -107,7 +107,7 @@ What changed my view was working through the organic split in Vertiv's own recon
 
 At US$253.62 Vertiv is valued at about US$99.6 billion on its diluted shares. It holds roughly US$170 million more cash than debt. That is 37.9 times the midpoint of its own 2026 earnings guide, and 28.4 times the 2027 consensus of US$8.93 a share, as compiled by MarketBeat on 6 October.
 
-That multiple has fallen fast. At the May peak the shares traded at about 59 times the 2026 earnings guide of the time, US$6.30 to 6.40 a share. Today the gap to the large electrical groups is small. Eaton, nVent and Trane each trade at about 28.5 to 29 times forward earnings, and Schneider Electric at 24, according to stockanalysis.com on 6 October.
+That multiple has fallen fast. At the May peak the shares traded at about 60 times the 2026 earnings guide of the time, US$6.30 to 6.40 a share. Today the gap to the large electrical groups is small. Eaton, nVent and Trane each trade at about 28.5 to 29 times forward earnings, and Schneider Electric at 24, according to stockanalysis.com on 6 October.
 
 So the market now prices Vertiv close to a diversified industrial whose data centre exposure is one division among many. The three things that moved the price explain why.
 
@@ -132,10 +132,10 @@ The estimates below are mine, not Vertiv's, except where marked as its guide. I 
 | Net sales, US$ billion | 8.01 | 10.23 | 13.8 to 14.2 | 16.94 | 20.33 |
 | Growth | | 28% | 37% | 21% | 20% |
 | Adjusted operating margin | 19.4% | 20.4% | 23.8% | 25.0% | 26.0% |
-| Adjusted EPS, US$ | 2.85 | 4.19 | 6.65 to 6.75 | 8.53 | 10.65 |
+| Adjusted EPS, US$ | 2.85 | 4.20 | 6.65 to 6.75 | 8.53 | 10.65 |
 | Price to earnings at US$253.62 | | | 37.9x | 29.7x | 23.8x |
 
-The 2024 and 2025 figures are the sums of the four quarterly releases. Growth in 2027 and 2028 sits at Vertiv's own long-run target of 20 to 22 per cent organic growth a year. Margin climbs about one point a year towards its 2030 target of 27 per cent. My 2027 earnings sit about 4 per cent below the consensus, so this is not a call that depends on beating the street.
+The 2024 and 2025 sales and margins are the sums of the four quarterly releases; earnings per share is as Vertiv reported for the full year. Growth in 2027 and 2028 sits at Vertiv's own long-run target of 20 to 22 per cent organic growth a year. Margin climbs about one point a year towards its 2030 target of 27 per cent. My 2027 earnings sit about 4.5 per cent below the consensus, so this is not a call that depends on beating the street.
 
 **The multiple.** I use 28 times 2028 earnings for the base case. That is in line with Eaton, nVent and Trane on forward earnings today, and far below where Vertiv itself traded in May. A business growing at twice their pace with a rising margin should not need a discount to them.
 
@@ -171,17 +171,17 @@ Most of the range sits above today's price. The call loses money mainly if earni
 
 **Rivals with deeper pockets.** Schneider Electric bought Motivair and Eaton bought Boyd Thermal for liquid cooling. On 5 October Schneider agreed to buy PTC, a software company, for about US$22.6 billion. That money goes to software, not cooling factories, which slightly helps Vertiv for now.
 
-**Acquisitions.** Vertiv has agreed five deals this year, the largest being UtilityInnovation Group. It costs about US$1.45 billion in cash, plus up to US$1.15 billion more if profit targets are met, at about 13 times its expected 2027 earnings before interest, tax and depreciation. Buying growth at that price only works if the integration is clean.
+**Acquisitions.** Vertiv has agreed five deals this year, the largest being UtilityInnovation Group. It costs about US$1.45 billion in cash, plus up to US$1.15 billion more if profit targets are met, at about 13 times its expected 2027 earnings before interest, tax, depreciation and amortisation. Buying growth at that price only works if the integration is clean.
 
 **Weak spots in the evidence.** Europe, the Middle East and Africa fell 2.4 per cent organically in the second quarter. Vertiv discloses no single customer's share of sales, and the backlog figure is now annual.
 
-**What would change my view the other way.** A margin above the 24 to 25 per cent guide in the third quarter, together with a 2026 backlog well above US$15.0 billion, would move the bull case closer to the base case.
+**What would change my view the other way.** A margin above the 24 to 25 per cent guide in the third quarter, together with a 2026 backlog well above US$15.0 billion, would move the base case towards the bull case.
 
 The third quarter results are due in late October. Vertiv has not yet announced the date.
 
 ## Conclusion
 
-The September piece argued that each AI megawatt holds more of what Vertiv makes. A year of margins says that is happening. The market has spent five months treating Vertiv as a volume story near its peak, and has cut the multiple of this year's earnings from about 59 times to about 38.
+The September piece argued that each AI megawatt holds more of what Vertiv makes. A year of margins says that is happening. The market has spent five months treating Vertiv as a volume story near its peak, and has cut the multiple of this year's earnings from about 60 times to about 38.
 
 The price now pays for the volume but not for the richer content. My call is LONG, with medium conviction and a twelve-month target of US$300, which is 28 times my 2028 estimate and 18 per cent above the price. Medium, not high, because the bear case is a 29 per cent fall and the third quarter results land within weeks. The call is wrong if margin falls while sales grow, if 2026 earnings land below Vertiv's own guide, or if the 2026 backlog comes in below US$15.0 billion.
 

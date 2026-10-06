@@ -179,8 +179,8 @@ val = [
     ("pec27", "P/E on 2027 consensus", "=" + A["price"] + "/" + A["cons27"], MULT, "Published as 28.4x (MarketBeat US$8.93)."),
     ("pe27", "P/E on my 2027E", "=" + A["price"] + "/Financials!E10", MULT, "Published as 29.7x."),
     ("pe28", "P/E on my 2028E", "=" + A["price"] + "/Financials!F10", MULT, "Published as 23.8x."),
-    ("vc", "My 2027E EPS against consensus", "=Financials!E10/" + A["cons27"] + "-1", PCT1, "Published as about 4% below."),
-    ("pepk", "P/E at the May peak on that day's 2026 guide", "=" + A["peak"] + "/" + A["gmay"], MULT, "Published as about 59x (intraday peak over the US$6.30 to 6.40 guide midpoint)."),
+    ("vc", "My 2027E EPS against consensus", "=Financials!E10/" + A["cons27"] + "-1", PCT1, "Published as about 4.5% below."),
+    ("pepk", "P/E at the May peak on that day's 2026 guide", "=" + A["peak"] + "/" + A["gmay"], MULT, "Published as about 60x (intraday peak over the US$6.30 to 6.40 guide midpoint)."),
     ("petp", "Target price on 2027E EPS", "=B8/Financials!E10", MULT, "Cross-check: the target on next year's earnings."),
     ("prem", "Vertiv forward P/E premium to Eaton / nVent / Trane (28.75x)", "=" + A["fwdpe"] + "/Peers!C6-1", PCT1, "stockanalysis.com forward multiples, 6 October 2026."),
 ]
