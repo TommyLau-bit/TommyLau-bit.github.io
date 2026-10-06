@@ -24,3 +24,9 @@ Calls, targets, scenario values and revisit levels are never changed after publi
 - US$86bn is labelled the if-converted equity value, not the market value. "Ten times its price two years earlier" is now "ten times its price when trading resumed in October 2024".
 - The unverified attribution to the chief infrastructure officer is removed.
 - The PDF is now 7 pages.
+
+**TSMC** (no change to the call, scenarios or revisit levels):
+- Sensitivity sentence corrected. It said TSMC needs "both" bull-case earnings and a higher multiple; the grid shows either one alone clears the price.
+- The PDF's "Net cash" line is relabelled "Cash less long-term debt". TSMC's own net cash figure, which deducts all interest-bearing debt, is about US$78bn.
+- "2026 near US$172bn" is marked as my estimate. "What changed my view" in the correction reads "What showed me the slip", since the view itself did not change.
+- Checked and kept: the "Where I was wrong" passage, which matches the January transcript and the piece's wording.

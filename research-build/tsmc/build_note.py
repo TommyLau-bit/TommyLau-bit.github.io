@@ -61,7 +61,7 @@ A(statbox([
     ("Last price, Taipei", f"NT${TW_PRICE:,.0f}, TWSE close 6 Oct 2026 (2330.TW)"),
     ("ADR premium to Taipei", f"{ADR_PREMIUM * 100:.0f}% at NT${FX:.2f} per US$ (5 shares per ADR)"),
     ("Market value", f"US${MCAP_ADR / 1000:.2f}tn at the ADR price, US${MCAP_TW / 1000:.2f}tn at Taipei's; {SHARES * 1000:,.0f}m shares, 30 Jun 2026"),
-    ("Net cash, 30 Jun 2026", f"About US${NETCASH:.0f}bn (cash and securities NT${CASH_NT:,.0f}bn less long-term debt NT${LTDEBT_NT:,.0f}bn)"),
+    ("Cash less long-term debt, 30 Jun 2026", f"About US${NETCASH:.0f}bn (cash and securities NT${CASH_NT:,.0f}bn less long-term debt NT${LTDEBT_NT:,.0f}bn)"),
     ("P/E on my estimates", f"{PRICE / EPS26:.1f}x 2026E, {PRICE / EPS27:.1f}x 2027E, {PRICE / EPS28:.1f}x 2028E"),
     ("Consensus", f"2027 EPS US${CONS_27_ADR:.2f} per ADR (MarketBeat); forward P/E {FWD_PE_SA:.1f}x, target US${CONS_TP:.0f} (stockanalysis.com)"),
     ("Q3 2026 guide (16 Jul)", "Revenue US$44.6 to 45.8bn; gross margin 65 to 67%; operating margin 56 to 58%, at NT$32"),
@@ -170,7 +170,7 @@ A(para("<strong class='lead'>Where I differ.</strong> I agree on the near horizo
 A(para("TSMC has offset all of this with price, which works only while customers queue. That is where the longer horizon comes in. "
        "If the grid is the slower clock, the capacity arriving in 2028 meets customers whose data centres are waiting for power: the "
        "queue shortens just as the kitchen gets bigger. TSMC's own plan points the same way. Revenue growth approaching 25% a year "
-       "from 2024 to 2029 implies about US$275bn in 2029; with 2026 near US$172bn, that leaves about 17% a year for 2027 to 2029. "
+       "from 2024 to 2029 implies about US$275bn in 2029; with 2026 near US$172bn on my estimate, that leaves about 17% a year for 2027 to 2029. "
        "My base case follows that plan, not a bust."))
 
 A(section("Valuation, with the working"))
@@ -211,8 +211,8 @@ A(datatable(
     num_cols={1, 2, 3},
 ))
 A('</div><div class="col">')
-A(para(f"Only {above} of the nine cells sit above today's price. To make money from here, TSMC needs both bull-case earnings and a "
-       "multiple at least as high as today's. Every figure is live in the accompanying model, so a change to growth, margin or the "
+A(para(f"Only {above} of the nine cells sit above today's price. To make money from here, TSMC needs either earnings above my base "
+       "case or a higher multiple than my base case uses. Every figure is live in the accompanying model, so a change to growth, margin or the "
        "multiple moves the value."))
 A('</div></div>')
 A('</div>')

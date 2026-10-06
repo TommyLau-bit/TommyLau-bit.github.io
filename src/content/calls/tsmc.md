@@ -125,7 +125,7 @@ A kitchen with a queue does two things. It cooks more meals, and it charges more
 
 **Where I was wrong in October.** In the piece I wrote that TSMC raised its 2026 capital budget to US$60 to 64 billion, and that Wei said that money adds almost nothing to output this year. The timing was wrong. Wei made that remark on 15 January, about the original budget of US$52 to 56 billion. The raise came on 16 July.
 
-What changed my view was rereading the January and July transcripts side by side for this note. The point itself stands, and if anything the larger budget makes it stronger: spending decided in 2026 buys supply for 2028 and 2029. The piece and the claim stay exactly as published, so the record shows the slip.
+What showed me the slip was rereading the January and July transcripts side by side for this note. The point itself stands, and if anything the larger budget makes it stronger: spending decided in 2026 buys supply for 2028 and 2029. The piece and the claim stay exactly as published, so the record shows the slip.
 
 ## What the market prices in, and where I differ
 
@@ -149,7 +149,7 @@ The third is the newest process. TSMC expects its 2 nanometre ramp to cut gross 
 
 TSMC has offset all of this so far with price. It can keep doing so only while customers are still queuing. That is where the longer horizon of my claim comes in. If the grid is the slower clock, the capacity arriving in 2028 meets customers whose data centres are waiting for power. The queue at the kitchen shortens just as the kitchen gets bigger.
 
-TSMC's own plan points the same way. It guides to revenue growth approaching 25 per cent a year from 2024 to 2029, from US$90.1 billion. That implies about US$275 billion in 2029. With 2026 already near US$172 billion, the plan leaves about 17 per cent a year for 2027 to 2029. My base case follows that plan, not a bust.
+TSMC's own plan points the same way. It guides to revenue growth approaching 25 per cent a year from 2024 to 2029, from US$90.1 billion. That implies about US$275 billion in 2029. With 2026 already near US$172 billion on my estimate, the plan leaves about 17 per cent a year for 2027 to 2029. My base case follows that plan, not a bust.
 
 ## Valuation, with the working
 
@@ -190,7 +190,7 @@ Weighted 25, 50 and 25 per cent, the three cases give about US$467, 4 per cent b
 | US$23.29 | US$373 | US$466 | US$559 |
 | US$26.00 | US$416 | US$520 | US$624 |
 
-Only three of the nine cells sit above today's price. To make money from here, TSMC needs both the bull case's earnings and a multiple at least as high as today's.
+Only three of the nine cells sit above today's price. To make money from here, TSMC needs either earnings above my base case or a higher multiple than my base case uses.
 
 **Peers.** Forward multiples from stockanalysis.com on 6 October: GlobalFoundries 22.4 times, UMC 24.0, ASE Technology 31.4, Intel 68.8 and Samsung Electronics 4.5, the last two distorted by recovery and memory cycles. Nvidia, TSMC's largest AI customer, trades at 19.8 times. TSMC at 20.7 times is not expensive against them. It is fully priced against its own margin cycle.
 
