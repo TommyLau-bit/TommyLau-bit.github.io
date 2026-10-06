@@ -38,3 +38,13 @@ Calls, targets, scenario values and revisit levels are never changed after publi
 - Net interest is about US$0.3bn a year, not US$0.32bn (Q2 was minus US$72m). It moves EPS by about 3 cents.
 - Added that TI said on the July call it had started raising prices; this bears on the 65 per cent gross margin trigger.
 - The PDF's "n.m." for future gross margin now reads "not forecast".
+
+**Corning** (no change to the call, scenarios or revisit levels):
+- The intraday high of US$271.78 was on 30 June, not 29 June. 29 June was the highest close.
+- The correction now cites both the 6 May 8-K and the Q2 10-Q. The 8-K gives only the US$500m total for both warrants; the 10-Q gives the split.
+- The US$1.0bn deposit is stated as Nvidia's by direct inference from the filings, instead of "on my reading".
+- Sensitivity sentence corrected. The cells above the price need higher earnings, a higher multiple, or both, not always both.
+- The share price rise on a year earlier is about 91 per cent, not 94. First-half dividends are shown as US$0.495bn in the PDF, consistent with the text.
+- A reference to the private paper portfolio as a source has been removed from the text of record; the question it raised (why a sold-out business sells shares) stays.
+
+**Texas Instruments, further change:** the reference to the private paper portfolio as a source is removed from the text of record and the PDF. The argument is now framed as "the obvious objection" (that TI is mostly an analog-cycle bet), which the note tests and finds right about the shares.

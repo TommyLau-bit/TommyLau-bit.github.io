@@ -140,11 +140,11 @@ A(para("<strong>Customers are paying ahead, and becoming fewer and larger.</stro
 
 A(section("Where I was wrong in October"))
 A(para(f"In the piece I wrote that Nvidia paid US$500m as part of a partnership for Corning to build more fibre. That is not what "
-       "the money bought. The 8-K of 6 May shows Nvidia paid US$500m for a pre-funded warrant, in effect three million Corning "
+       "the money bought. The 8-K of 6 May and the Q2 10-Q show Nvidia paid US$500m for a pre-funded warrant, in effect three million Corning "
        f"shares. Corning also gave Nvidia a second warrant, over 15 million shares at US${NV_WARRANT_K:.0f}, for no separate payment. "
        f"The 10-Q values it at US${NV_WARRANT_FV * 1000:.0f}m and treats it as a payment to a customer, which comes off revenue as "
-       f"Corning delivers. The same note books a US${DEPOSIT_Q2:.1f}bn customer deposit, to the end of 2029, against that warrant; on "
-       "my reading it is Nvidia's, though the filing does not name the customer. The deposit, not the US$500m, secures supply. "
+       f"Corning delivers. The same note books a US${DEPOSIT_Q2:.1f}bn customer deposit, to the end of 2029, against that warrant; the "
+       "10-Q ties it to the warrant's holder, which the 8-K shows is Nvidia. The deposit, not the US$500m, secures supply. "
        f"Reading the 10-Q note for this initiation changed my view: buyers pay ahead, but the largest is also paid, about "
        f"{NV_WARRANT_PCT * 100:.0f} cents of warrant per dollar of deposit. Scarcity is being shared, not kept. The piece and the "
        "claim stay exactly as published."))
@@ -164,7 +164,7 @@ A(caption("Left: capital spending, adjusted free cash flow (Corning's definition
           "my base value."))
 A('</div>')
 A(para(f"Adjusted free cash flow was US${H1_26_FCF:.2f}bn in the first half, but US${H1_26_DEP_INFLOW:.2f}bn of it was net "
-       f"customer deposits and incentives. Without them it was about US${FCF_H1_EX:.2f}bn, against US${H1_26_DIV:.2f}bn of dividends "
+       f"customer deposits and incentives. Without them it was about US${FCF_H1_EX:.2f}bn, against US${H1_26_DIV:.3f}bn of dividends "
        f"and US${DEBT_DUE_1Y:.2f}bn of debt due within a year. None of this is distress: Corning has US${CASH:.1f}bn of cash, an "
        f"undrawn US$1.5bn credit line, and debt at {LEVERAGE_COV[0] * 100:.0f}% of capital against a {LEVERAGE_COV[1] * 100:.0f}% "
        f"covenant. The full programme is about {ATM_SHARES * 1000:.1f}m shares, {ATM_DILUTION * 100:.1f}% dilution at today's price."))
@@ -225,8 +225,8 @@ A(datatable(
     num_cols={1, 2, 3},
 ))
 A('</div><div class="col">')
-A(para(f"Only {above} of the nine cells sit above today's price. Each needs earnings at or above my base and a multiple above "
-       f"{BASE_PE} times. Every figure is live in the accompanying model, so a change to growth, margin, dilution or the multiple "
+A(para(f"Only {above} of the nine cells sit above today's price. Each needs earnings above my base, a multiple above "
+       f"{BASE_PE} times, or both. Every figure is live in the accompanying model, so a change to growth, margin, dilution or the multiple "
        "moves the value."))
 A('</div></div>')
 A('</div>')

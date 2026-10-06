@@ -89,15 +89,15 @@ charts:
     series:
       - name: "Close"
         values: [28.49, 30.45, 32.49, 32.24, 32.96, 33.38, 37.26, 38.85, 40.01, 41.85, 45.15, 47.59, 48.67, 47.52, 52.08, 50.15, 45.78, 44.38, 49.59, 52.59, 63.24, 67.03, 82.03, 89.08, 84.20, 87.56, 103.25, 150.38, 135.97, 164.24, 181.16, 255.43, 138.25, 148.73, 153.76, 159.37]
-    note: "The shares rose fivefold in eighteen months, then fell 46 per cent in July alone. They are still up 94 per cent on a year ago."
+    note: "The shares rose fivefold in eighteen months, then fell 46 per cent in July alone. They are still up about 91 per cent on a year ago."
     source: "Yahoo Finance monthly closes for NYSE: GLW, not adjusted for dividends, retrieved 6 October 2026. The last point is the close on 5 October 2026."
 ---
 
-Corning closed at US$159.37 on 5 October 2026. The shares are up 94 per cent on a year ago. They are also 41 per cent below the intraday high of US$271.78 reached on 29 June.
+Corning closed at US$159.37 on 5 October 2026. The shares are up about 91 per cent on a year ago. They are also 41 per cent below the intraday high of US$271.78 reached on 30 June.
 
 On 1 October I argued that glass fibre is the part of the AI network that outlives every chip generation, and that Corning is paid each time a campus grows. The claim is holding. Corning's optical business grew 32 per cent in the second quarter, and it earned more on each sale than ever before.
 
-An earlier paper-portfolio read, written by Claude on 6 October and used here only as an input, said to avoid the shares until the October results. It raised a question the piece did not answer. Why does a business that is sold out need a US$2 billion share sale?
+The piece left one question unanswered. Why does a business that is sold out need a US$2 billion share sale?
 
 I tested both. The answer to the share sale is in Corning's own cash flow, and it is not a warning about demand. The shares are a different matter. They already price most of what Corning plans to build. My call is no call.
 
@@ -121,11 +121,11 @@ Contract liabilities, which include customer deposits, rose from US$2.3 billion 
 
 **The third watch item is moving the wrong way.** In 2025 two end customers bought 28 per cent of optical sales. Since then, at least five large buyers have signed long-term deals. Fewer, larger buyers on long contracts means steadier volume, but it also means buyers who set terms.
 
-**Where I was wrong in October.** In the piece I wrote that Nvidia paid US$500 million as part of a partnership for Corning to build more fibre. That is not what the money bought. The 8-K of 6 May shows Nvidia paid US$500 million for a pre-funded warrant, in effect three million Corning shares.
+**Where I was wrong in October.** In the piece I wrote that Nvidia paid US$500 million as part of a partnership for Corning to build more fibre. That is not what the money bought. The 8-K of 6 May and the second quarter 10-Q show that Nvidia paid US$500 million for a pre-funded warrant, in effect three million Corning shares.
 
 Corning also gave Nvidia a second warrant, over 15 million shares at US$180, for no separate payment. The 10-Q values it at US$296 million and treats it as a payment to a customer. That amount comes off Corning's revenue as it delivers under the deal.
 
-The same 10-Q books a US$1.0 billion customer deposit, running to the end of 2029, against that warrant. On my reading that is Nvidia's deposit, though the filing does not name the customer. The deposit, not the US$500 million, is what secures supply.
+The same 10-Q books a US$1.0 billion customer deposit, running to the end of 2029, against that warrant. The 10-Q ties the deposit to the customer that received the warrant, and the 8-K shows that customer is Nvidia. The deposit, not the US$500 million, is what secures supply.
 
 What changed my view was reading the 10-Q note for this initiation. It matters for the claim. Buyers are paying ahead, but the biggest one is also being paid, about 30 cents of warrant for each dollar of deposit. Scarcity is being shared, not kept. The piece and the claim stay exactly as published.
 
@@ -198,7 +198,7 @@ Weighted 25, 50 and 25 per cent, the cases give about US$149, 6 per cent below t
 | US$5.41 | US$119 | US$146 | US$173 |
 | US$6.20 | US$136 | US$167 | US$198 |
 
-Three of the nine cells sit above today's price. Each needs both earnings at or above my base and a multiple above 27 times.
+Three of the nine cells sit above today's price. Each needs earnings above my base, a multiple above 27 times, or both.
 
 **Peers.** Forward multiples from stockanalysis.com on 6 October: Sumitomo Electric 21.4 times, Prysmian 23.5, Fujikura 28.9 and Amphenol 29.4. The active optics makers trade higher: Coherent 35.4, Ciena 37.5 and Lumentum 50.1. Corning at 43.0 times is priced with the makers of the plugs, not the makers of the pipes.
 

@@ -73,7 +73,7 @@ A('<p class="lede">Texas Instruments\' data centre business is real. At US$295, 
 A(para("TI makes many of the small power chips that step electricity down to an AI processor. On 2 October I argued that the "
        "move to 800 volt racks turns them into a growing data centre business. The claim is holding: data centre revenue doubled "
        f"in a year, and on my working it reached about {DC_SHARE_Q2 * 100:.0f}% of revenue in the second quarter, a third of TI's growth."))
-A(para("An earlier read said the stock is mostly an analog-cycle bet. That is still right. Swinging the rest of TI from my bear to "
+A(para("The obvious objection is that the stock is mostly an analog-cycle bet. That is right. Swinging the rest of TI from my bear to "
        f"my bull case moves 2028 earnings by {usd(RE_SWING, 2)} a share; doing the same to data centre moves them by {usd(DC_SWING, 2)}. "
        f"At US${PRICE:.2f} the shares are {PRICE / EPS26:.0f} times my 2026 earnings and need 2028 revenue about "
        f"{(NEED_REV28 / REV_H[3] - 1) * 100:.0f}% above the 2022 peak."))
@@ -171,7 +171,7 @@ A(para("<strong class='lead'>Where I differ.</strong> I agree data centre is rea
        "it can carry. Holding one driver at my base and swinging the other from bear to bull: data centre (25% to 60% growth in "
        f"2027, 15% to 40% in 2028) moves 2028 earnings by {usd(DC_SWING, 2)} a share; the rest of TI (an 8% fall to 12% growth in "
        f"2027) moves them by {usd(RE_SWING, 2)}. The cycle in factories, cars and phones is {RE_SWING / DC_SWING:.1f} times the "
-       "bigger driver. So the earlier read was right about the stock, even though the AI exposure has grown faster than it assumed."))
+       "bigger driver. So the objection is right about the stock, even though the AI exposure has grown faster than it assumes."))
 A(para("Industrial grew about 30% on a year earlier in the second quarter. Part of that is customers restocking after two years of "
        f"running inventories down, which flatters a quarter or two. TI's own inventory fell from {INV_DAYS_Q4} days at the end of "
        f"2025 to {INV_DAYS_Q2} days in June: demand is catching up with its stock."))
@@ -270,7 +270,7 @@ A('</div>')
 A(section("Conclusion"))
 A(para("The October piece argued that the move to 800 volt racks turns TI's cheap power chips into a growing data centre business. "
        f"TI's own numbers say the business is real: doubled in a year, about {DC_SHARE_Q2 * 100:.0f}% of revenue on my working, a "
-       "third of recent growth, and all of it before 800 volts arrives. The earlier read was still right about the shares: the "
+       "third of recent growth, and all of it before 800 volts arrives. The objection is still right about the shares: the "
        f"analog cycle moves earnings {RE_SWING / DC_SWING:.1f} times as much as data centre does, and the price already assumes a "
        f"fourth straight year of growth. My call: {CALL['direction']}, {CALL['conviction'].lower()} conviction. Revisit below about "
        f"US${REVISIT:.0f}."))

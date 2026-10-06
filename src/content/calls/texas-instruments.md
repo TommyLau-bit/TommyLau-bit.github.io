@@ -98,7 +98,7 @@ Texas Instruments closed at US$294.90 on 5 October 2026. The shares have risen 6
 
 On 2 October I argued that the move to 800 volt racks turns TI's small, cheap power chips into a growing data centre business. The claim is holding. Data centre revenue doubled in a year, and it is now the fastest-growing market TI reports.
 
-The harder question is whether that business is big enough to matter to the shares. An earlier paper-portfolio read, written by Claude on 5 October and used here only as an input, said no. It called TI mostly an analog-cycle bet, with AI rack power too small a share of revenue to carry a thesis.
+The harder question is whether that business is big enough to matter to the shares. The obvious objection says no: TI is mostly an analog-cycle bet, and AI rack power is too small a share of its revenue to carry a thesis.
 
 I tested that properly. It is half right. Data centre now matters to TI's growth. But the analog cycle still drives most of TI's earnings, and the share price already assumes that cycle runs a long way further. My call is no call.
 
@@ -116,7 +116,7 @@ Those rates are enough to work out the size, within a margin. On my working, dat
 
 **What it adds to growth.** TI's revenue rose by about US$1.0 billion on a year earlier in that quarter. Data centre supplied about a third of the rise. Industrial, up about 30 per cent, supplied more. Automotive grew in the mid-teens and personal electronics was flat.
 
-So data centre is no longer a rounding error in TI's growth. On my estimates it reaches about a fifth of revenue by 2028. That is more than the earlier read allowed for.
+So data centre is no longer a rounding error in TI's growth. On my estimates it reaches about a fifth of revenue by 2028. That is more than the objection allows for.
 
 **Which racks it comes from.** The doubling so far comes from today's racks at 48 and 54 volts. In July TI said the 800 volt design will be phased in, and that more conversion stages mean more of its parts per rack. The claim's 800 volt mechanism is still ahead of TI's numbers, not behind them.
 
@@ -146,7 +146,7 @@ That is 36 per cent above TI's last peak of US$20.0 billion in 2022. It would al
 
 Swinging data centre from 25 per cent growth to 60 per cent in 2027, and from 15 to 40 per cent in 2028, moves my 2028 earnings by US$1.58 a share. Swinging the rest of TI from an 8 per cent fall to 12 per cent growth in 2027 moves them by US$3.90. The cycle in factories, cars and phones is two and a half times the bigger driver.
 
-So the earlier read was right about the stock. The AI exposure has grown faster than it assumed, but it does not decide the value. What decides it is whether industrial and automotive demand keeps rising into 2027 and 2028.
+So the objection is right about the stock. The AI exposure has grown faster than it assumes, but it does not decide the value. What decides it is whether industrial and automotive demand keeps rising into 2027 and 2028.
 
 There is a second point. Industrial grew about 30 per cent on a year earlier in the second quarter. Part of that is customers restocking after two years of running inventories down, which tends to flatter one or two quarters. TI's own inventory fell from 222 days at the end of 2025 to 196 days in June, which shows demand catching up with its stock.
 
@@ -215,6 +215,6 @@ TI reports third quarter results on Wednesday 21 October 2026, with a call at 3:
 
 The October piece argued that the move to 800 volt racks turns TI's cheap power chips into a growing data centre business. TI's own numbers say the business is real and growing fast: doubled in a year, about 12 per cent of revenue on my working, a third of recent growth. That growth comes from today's racks, before 800 volts arrives.
 
-The earlier read was still right about the shares. The analog cycle moves TI's earnings two and a half times as much as data centre does, and at US$294.90 the price already assumes a fourth straight year of growth. My call is no call, with medium conviction. My base case is worth about US$280, and the bear case loses more than the bull case gains. I would revisit below about US$244, or if data centre reaches 15 per cent of revenue while industrial still grows.
+The objection is still right about the shares. The analog cycle moves TI's earnings two and a half times as much as data centre does, and at US$294.90 the price already assumes a fourth straight year of growth. My call is no call, with medium conviction. My base case is worth about US$280, and the bear case loses more than the bull case gains. I would revisit below about US$244, or if data centre reaches 15 per cent of revenue while industrial still grows.
 
 <p class="sources">Sources: Texas Instruments quarterly earnings releases furnished on Form 8-K, 23 April 2024 to 22 July 2026, for revenue, margins, earnings per share, depreciation, capital spending, cash flow, CHIPS Act proceeds, debt, cash and the third quarter 2026 guide. Texas Instruments Form 10-K for 2025, filed 6 February 2026, for revenue by market, the 300mm cost advantage and 2026 capital spending. Texas Instruments Form 10-Q for the second quarter of 2026 for Silicon Labs and its financing. SEC XBRL company facts for annual figures from 2019 to 2025. Texas Instruments earnings calls of 27 January, 22 April and 22 July 2026 for data centre size and growth, end-market growth, depreciation, loadings, fall-through, inventory days and the free cash flow framework. Texas Instruments announcements of 4 February 2026 on Silicon Labs, 17 September 2026 on the dividend and 1 October 2026 on the results date. Consensus and peer multiples from stockanalysis.com, retrieved 6 October 2026. Share prices from Yahoo Finance, retrieved 6 October 2026. The data centre quarterly sizes and all estimates for 2026 to 2028 are the author's own. Personal research, not investment advice.</p>
