@@ -1,0 +1,151 @@
+"""Charts for the Bloom Energy initiation. House style: navy / light blue, red reference lines, grey price line."""
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+import matplotlib.ticker as mticker
+from data import *
+
+plt.rcParams["font.family"] = "Arial"
+NAVY = "#1F3864"; LIGHT_BLUE = "#8FAADC"; PALE = "#C9D6EF"; RED = "#C00000"; GRAY = "#7F7F7F"; GRID = "#E3E3E3"
+D = BUILD_DIR
+SIZE = (4.7, 2.15)
+
+
+def style(ax):
+    ax.tick_params(axis="both", labelsize=7.4, length=0)
+    ax.set_axisbelow(True)
+    for s in ["top", "right", "left"]:
+        ax.spines[s].set_visible(False)
+    ax.spines["bottom"].set_color("#B0B0B0")
+
+
+def save(name):
+    plt.tight_layout(); plt.savefig(f"{D}/{name}.png", bbox_inches="tight"); plt.close()
+
+
+def twin_clean(ax2):
+    ax2.tick_params(axis="y", labelsize=7.4, length=0)
+    for s in ["top", "left", "right"]:
+        ax2.spines[s].set_visible(False)
+
+
+# ---- 1. Revenue 2024A to 2028E with non-GAAP EPS ----
+years = YEARS_H + ["2026E*", "2027E*", "2028E*"]
+rev = REV_H + [REV26, REV27, REV28]
+eps = EPS_H + [EPS26, EPS27, EPS28]
+x = range(len(years))
+fig, ax1 = plt.subplots(figsize=SIZE, dpi=220)
+ax1.bar(x, rev, color=[NAVY] * 2 + [LIGHT_BLUE] * 3, width=0.6, zorder=3, label="Revenue, US$bn")
+for i, r in enumerate(rev):
+    ax1.annotate(f"{r:.1f}", (i, r), xytext=(0, 2), textcoords="offset points", ha="center", va="bottom",
+                 fontsize=6.4, color=NAVY, fontweight="bold")
+ax1.set_ylim(0, 13); ax1.set_ylabel("Revenue (US$bn)", fontsize=8)
+ax1.grid(axis="y", color=GRID, linewidth=0.7, zorder=0); style(ax1)
+ax1.set_xticks(list(x)); ax1.set_xticklabels(years, fontsize=7)
+ax2 = ax1.twinx()
+ax2.plot(list(x), eps, color=RED, marker="o", markersize=3.5, linewidth=1.6, zorder=4, label="Non-GAAP EPS, US$ (RHS)")
+for i, e in enumerate(eps):
+    ax2.annotate(f"{e:.2f}", (i, e), xytext=(0, 4), textcoords="offset points", ha="center", va="bottom",
+                 fontsize=6.2, color=RED, fontweight="bold")
+ax2.set_ylim(-8, 8.5); ax2.set_yticks([0, 2, 4, 6]); twin_clean(ax2)
+h1, l1 = ax1.get_legend_handles_labels(); h2, l2 = ax2.get_legend_handles_labels()
+ax1.legend(h1 + h2, l1 + l2, loc="upper left", fontsize=6.8, frameon=False, bbox_to_anchor=(-0.02, 1.16), ncol=2)
+save("chart_annual")
+
+# ---- 2. Valuation cross-check ----
+bear, base, bull = VALS
+grid_lo = min(SENS_EPS) * min(SENS_PE); grid_hi = max(SENS_EPS) * max(SENS_PE)
+rows = [
+    ("Scenarios\nbear to bull", "range", (bear, bull)),
+    (f"Sensitivity grid\n{SENS_PE[0]} to {SENS_PE[2]}x, EPS {SENS_EPS[0]:.2f} to {SENS_EPS[2]:.2f}", "range", (grid_lo, grid_hi)),
+    ("Probability-weighted\n25 / 50 / 25", "point", WEIGHTED),
+    (f"Base: {BASE_PE}x 2028E EPS\nof US${EPS28:.2f}", "point", base),
+    ("Consensus target\n(stockanalysis.com)", "point", CONS_TP),
+]
+fig, ax = plt.subplots(figsize=SIZE, dpi=220)
+for y, (lab, kind, v) in enumerate(rows):
+    if kind == "point":
+        ax.barh(y, v, height=0.5, color=LIGHT_BLUE, zorder=3)
+        ax.annotate(f"US${v:.0f}", (v, y), xytext=(4, 0), textcoords="offset points", ha="left", va="center",
+                    fontsize=7, color=NAVY, fontweight="bold")
+    else:
+        lo, hi = v
+        ax.barh(y, hi - lo, left=lo, height=0.5, color=PALE, edgecolor=NAVY, linewidth=0.9, zorder=3)
+        ax.annotate(f"US${lo:.0f}", (lo, y), xytext=(-4, 0), textcoords="offset points", ha="right", va="center",
+                    fontsize=7, color=NAVY, fontweight="bold")
+        ax.annotate(f"US${hi:.0f}", (hi, y), xytext=(4, 0), textcoords="offset points", ha="left", va="center",
+                    fontsize=7, color=NAVY, fontweight="bold")
+ax.axvline(PRICE, color=RED, linestyle="--", linewidth=1.3, zorder=4)
+ax.text(PRICE + 6, len(rows) - 0.42, f"Price US${PRICE:.2f}", fontsize=7, color=RED, ha="left", va="bottom")
+ax.set_yticks(range(len(rows))); ax.set_yticklabels([r[0] for r in rows], fontsize=6.8)
+ax.set_xlabel("Value per share (US$)", fontsize=8)
+ax.set_xlim(0, 460); ax.set_ylim(-0.6, len(rows) - 0.1)
+ax.grid(axis="x", color=GRID, linewidth=0.7, zorder=0); style(ax)
+save("chart_valuation")
+
+# ---- 3. Revenue by quarter, sales to related parties shaded, with non-GAAP gross margin ----
+rel = Q_RELATED
+other = [r - p for r, p in zip(Q_REV, rel)]
+fig, ax1 = plt.subplots(figsize=SIZE, dpi=220)
+ax1.bar(Q, other, color=NAVY, width=0.6, zorder=3, label="Revenue, US$m")
+ax1.bar(Q, rel, bottom=other, color=PALE, hatch="////", edgecolor=NAVY, linewidth=0.4, width=0.6, zorder=3,
+        label="of which to related parties")
+for i, v in enumerate(Q_REV):
+    ax1.annotate(f"{v:,.0f}", (i, v), xytext=(0, 2), textcoords="offset points", ha="center", va="bottom",
+                 fontsize=5.9, color=NAVY, fontweight="bold")
+ax1.set_ylim(0, 1700); ax1.set_ylabel("US$m", fontsize=8)
+ax1.grid(axis="y", color=GRID, linewidth=0.7, zorder=0); style(ax1)
+ax1.set_xticks(range(len(Q))); ax1.set_xticklabels(Q, fontsize=6.6)
+ax2 = ax1.twinx()
+ax2.plot(range(len(Q)), Q_GM, color=RED, marker="o", markersize=3.2, linewidth=1.5, zorder=4, label="Non-GAAP gross margin, % (RHS)")
+ax2.set_ylim(-40, 45); ax2.set_yticks([0, 20, 40]); twin_clean(ax2)
+h1, l1 = ax1.get_legend_handles_labels(); h2, l2 = ax2.get_legend_handles_labels()
+ax1.legend(h1 + h2, l1 + l2, loc="upper left", fontsize=6.2, frameon=False, bbox_to_anchor=(-0.02, 1.2), ncol=2)
+save("chart_quarterly")
+
+# ---- 4. Product gross margin against the total: where the time premium would show ----
+pg = [v * 100 for v in Q_PROD_GM]; sg = [v * 100 for v in Q_SERV_GM]
+fig, ax = plt.subplots(figsize=SIZE, dpi=220)
+bars = ax.bar(Q, pg, color=[LIGHT_BLUE] * 8 + [NAVY] * 2, width=0.6, zorder=3, label="Product gross margin (GAAP)")
+for b, v in zip(bars, pg):
+    ax.annotate(f"{v:.0f}", (b.get_x() + b.get_width() / 2, v), xytext=(0, 2), textcoords="offset points",
+                ha="center", va="bottom", fontsize=6.3, color=NAVY, fontweight="bold")
+ax.plot(range(len(Q)), Q_GM_GAAP, color=RED, marker="o", markersize=3.2, linewidth=1.5, zorder=4, label="Total gross margin (GAAP)")
+ax.plot(range(len(Q)), sg, color=GRAY, marker="s", markersize=2.8, linewidth=1.2, zorder=4, label="Service gross margin (GAAP)")
+ax.set_ylim(-5, 58); ax.set_ylabel("Per cent", fontsize=8)
+ax.set_xticks(range(len(Q))); ax.set_xticklabels(Q, fontsize=6.6)
+ax.legend(loc="upper left", fontsize=6.2, frameon=False, bbox_to_anchor=(-0.02, 1.2), ncol=3)
+ax.grid(axis="y", color=GRID, linewidth=0.7, zorder=0); style(ax)
+save("chart_margin")
+
+# ---- 5. Megawatt-equivalents: what the revenue needs from the factory ----
+labs = ["2026E*", "2027E*", "2028E*\nbase", "2028\nprice needs"]
+gw = [GW26, REV27 * PROD_SHARE / USD_PER_MW, BASE_GW28, NEED_GW28]
+fig, ax = plt.subplots(figsize=SIZE, dpi=220)
+bars = ax.bar(labs, gw, color=[LIGHT_BLUE, LIGHT_BLUE, NAVY, RED], width=0.55, zorder=3)
+for b, v in zip(bars, gw):
+    ax.annotate(f"{v:.1f} GW", (b.get_x() + b.get_width() / 2, v), xytext=(0, 2), textcoords="offset points",
+                ha="center", va="bottom", fontsize=6.8, color=NAVY, fontweight="bold")
+ax.axhline(CAPACITY_GW[1], color=GRAY, linestyle="--", linewidth=1.2, zorder=4)
+ax.text(-0.4, 3.55, "Dashed: Fremont factory, planned annual capacity by end 2026, 2 GW", fontsize=6.6, color=GRAY, ha="left", va="bottom")
+ax.set_ylim(0, 3.9); ax.set_ylabel("GW a year (derived)", fontsize=8)
+ax.yaxis.set_major_locator(mticker.MultipleLocator(1))
+ax.tick_params(axis="x", labelsize=6.8)
+ax.grid(axis="y", color=GRID, linewidth=0.7, zorder=0); style(ax)
+save("chart_capacity")
+
+# ---- 6. Share price ----
+fig, ax = plt.subplots(figsize=SIZE, dpi=220)
+ax.plot(range(len(PX)), PX, color=GRAY, linewidth=1.8, zorder=3)
+ax.axhline(BASE_VALUE, color=RED, linestyle="--", linewidth=1.2, zorder=4)
+ax.text(0, BASE_VALUE + 7, f"My base value US${BASE_VALUE:.0f}", fontsize=6.8, color=RED, ha="left", va="bottom")
+ax.annotate(f"US${PX[-1]:.2f}", (len(PX) - 1, PX[-1]), xytext=(2, 8), textcoords="offset points", ha="right",
+            va="bottom", fontsize=7, color=NAVY, fontweight="bold")
+ax.annotate(f"US${PX[31]:.2f}", (31, PX[31]), xytext=(-4, 2), textcoords="offset points", ha="right",
+            va="bottom", fontsize=6.6, color=NAVY)
+ticks = list(range(0, len(PX), 6))
+ax.set_xticks(ticks); ax.set_xticklabels([PX_LABELS[i] for i in ticks], fontsize=7)
+ax.set_ylim(0, 360); ax.set_ylabel("Close (US$)", fontsize=8)
+ax.grid(axis="y", color=GRID, linewidth=0.7, zorder=0); style(ax)
+save("chart_price")
+print("charts written")
