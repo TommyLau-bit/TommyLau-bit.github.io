@@ -296,7 +296,7 @@ A('<p class="aboutnote">I wrote this note and built the accompanying model indep
   '<a href="https://thephysicallayer.fyi/journal/every-megawatt-got-harder/">thephysicallayer.fyi/journal/every-megawatt-got-harder</a>; '
   'all calls and their scorecard are at <a href="https://thephysicallayer.fyi/research/">thephysicallayer.fyi/research</a>. Figures '
   'taken from company filings are labelled as such; derived figures are marked; the forecasts, target and call are my own estimates and my '
-  'own view. Personal research, not investment advice.</p>')
+  'own view. I hold no position in Vertiv. Personal research, not investment advice.</p>')
 A('<p class="signoff">Tommy Lau | The Physical Layer | thephysicallayer.fyi</p>')
 A('</div>')
 

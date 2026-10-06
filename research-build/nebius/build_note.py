@@ -418,8 +418,8 @@ A('<p class="aboutnote">I wrote this note and built the accompanying model, 2026
   're-look levels are unchanged from that pitch. It builds on my journal piece of 30 September 2026, '
   '<a href="https://thephysicallayer.fyi/journal/nebius-paid-for-what-is-switched-on/">thephysicallayer.fyi/journal/'
   'nebius-paid-for-what-is-switched-on</a>, which stays as published. Figures from Nebius filings are labelled as such; '
-  'everything else, including the estimates, scenarios and the call, is my own view. Personal research, not investment '
-  'advice.</p>')
+  'everything else, including the estimates, scenarios and the call, is my own view. I hold no position in Nebius. Personal research, not '
+  'investment advice.</p>')
 A('<p class="signoff">Tommy Lau | The Physical Layer | thephysicallayer.fyi</p>')
 A('</div>')
 

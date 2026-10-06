@@ -251,20 +251,6 @@ details.analogy > p:first-of-type { margin-top: 0.1rem; }
 .chip--strong { color: var(--ink); font-weight: 600; }
 
 
-/* ── home: ways in ─────────────────────────────────────────────── */
-.ways-in { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; margin: 0 0 2.5rem; }
-.ways-in a {
-  display: flex; flex-direction: column; gap: 0.3rem; padding: 1rem 1.1rem; text-decoration: none;
-  border: 1px solid var(--rule); border-top: 3px solid var(--accent); border-radius: 0 0 6px 6px; background: var(--bg-elev);
-}
-.ways-in a:nth-child(2) { border-top-color: var(--accent-2); }
-.ways-in a:hover { border-color: var(--accent); }
-.ways-in strong { font-family: var(--sans); font-size: 1rem; }
-.ways-in span { font-size: 0.93rem; color: var(--ink-2); line-height: 1.45; }
-@media (max-width: 900px) { .ways-in { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 560px) { .ways-in { grid-template-columns: 1fr; } }
-
-
 /* ── article: claim box + related ──────────────────────────────── */
 .claim-box { border: 1px solid var(--rule); border-left: 3px solid var(--accent); border-radius: 0 6px 6px 0; padding: 1rem 1.2rem; background: var(--bg-elev); }
 .claim-box-label { font-family: var(--sans); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin: 0 0 0.35rem; }

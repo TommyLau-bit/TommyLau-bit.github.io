@@ -69,7 +69,7 @@ const calls = defineCollection({
       conviction: z.enum(['High', 'Medium', 'Low']).nullable(),
       wrongIf: z.string(),                      // what proves the call wrong
       revisitIf: z.string().optional(),         // NO CALL only: what would turn it into a call
-      position: z.string().default(''),          // a holdings statement, only as Tommy gives it
+      position: z.string().default('The author holds no position.'),  // confirmed by Tommy, 6 Oct 2026; change per note if he ever holds one
     }),
     // Claude's draft view for Tommy to accept, change or reject. Never rendered in production.
     draftView: z.object({
