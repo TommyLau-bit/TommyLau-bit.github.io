@@ -25,7 +25,12 @@ work on notes, calls, the research page or share prices, read `CALLS-SPEC.md`.
 - When a later note finds a journal claim was wrong, the note says so openly
   ("Where I was wrong", and what changed the view). The piece and the claim
   are never edited.
+- **Journal piece first, always** (Tommy, 6 Oct 2026). A note or call is only
+  written on a company that already has its own Analysis piece and claim. If
+  Tommy asks for a note on a company with none, write the piece first.
 - When a journal piece publishes, ask Tommy whether to draft a note on it.
+- Once a month (scheduled task `research-monthly-marks`) the track record
+  marks are prepared for Tommy to approve; nothing is pushed without his go.
 
 ## Before writing or editing any piece, read `WRITING-FORMAT.md`
 

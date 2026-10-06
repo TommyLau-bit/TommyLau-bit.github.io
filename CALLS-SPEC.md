@@ -73,6 +73,8 @@ Tommy found the first build (a long web pitch with charts, merged into the claim
 - **No call** is a decided verdict (`direction: "NO CALL"`, no target, `revisitIf` required). It is marked monthly with the price move shown.
 - **Scorecard data:** `src/data/calls.ts`. Monthly, add one `Mark` per open call and set `SCORECARD_REFRESHED`. A resolved call gets `resolved` with a short post-mortem. Never delete.
 - **Checker:** `python3 brand/check-call.py`.
+- **Journal piece first** (6 Oct 2026): a note is only written on a company that already has its own Analysis piece and claim. Otherwise, write the piece first.
+- **Monthly marks:** the scheduled task `research-monthly-marks` prepares them early each month for Tommy's approval.
 - **Corrections:** do not change what was said before. Say it was wrong and what changed the view, in the note, in `correction`, and in a "Where I was wrong" passage in the PDF.
 
 ## To publish a note (only with Tommy's explicit go)
