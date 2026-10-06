@@ -234,9 +234,11 @@ Voice:
   even when it is in the glossary. "a unit called a CDU, the coolant
   distribution unit, which is effectively the rack's heart".
 
-Never appears anywhere on the site: a share price, a market value, a
+Never appears in a journal piece, or anywhere on the site except pitch pages
+(`/calls/<slug>/`) and the calls scorecard: a share price, a market value, a
 valuation multiple, a target, a rating, a recommendation, a portfolio position,
-or a claim about a share being cheap or expensive.
+or a claim about a share being cheap or expensive. Pitches follow
+`CALLS-SPEC.md`.
 
 ---
 
@@ -263,15 +265,18 @@ Allowed, in the body:
 - Jargon is still defined in place. "Gross margin, the share of each sale left
   after the cost of making it."
 
-Never, anywhere:
+Never, in a journal piece:
 
 - Share price, share price moves, market value, P/E or any other valuation
   multiple, what the price implies or assumes, targets, ratings, buy or sell
   language, "cheap", "expensive", "priced for perfection".
 - Management guidance presented as your own forecast. Report it as theirs.
 
-Anything that crosses into a view on the shares belongs in the separate
-market-views notes, not on this site. The sources line names the filings used,
+Anything that crosses into a view on the shares belongs in a pitch, never in
+the journal piece. A pitch is a separate page (`src/content/calls/<slug>.md`)
+with its own rules in `CALLS-SPEC.md`: it may carry prices, valuation, a
+target and Tommy's call, and links back to the claim it rests on. The journal
+piece stays free of all of it. The sources line names the filings used,
 and the exposure disclaimer adds that the figures are used as evidence for the
 mechanism and imply nothing about value.
 

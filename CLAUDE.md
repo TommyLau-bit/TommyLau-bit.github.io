@@ -3,6 +3,22 @@
 Tommy's public journal on AI and energy infrastructure. Astro static site,
 GitHub Pages, live at https://thephysicallayer.fyi
 
+## Claims and Calls (read `CALLS-SPEC.md` first)
+
+The site has a second core: buy-side pitches with Tommy's own calls, at
+`/calls/<slug>/`, merged into the claims page (`/claims`, titled "Claims and
+calls"). Before any work on pitches, calls, the claims page or share prices,
+read `CALLS-SPEC.md`, which is the spec and records what was built.
+
+- A pitch is `src/content/calls/<slug>.md`. It starts `draft: true` with
+  `call.direction`, `call.target` and `call.conviction` null and Claude's view
+  in `draftView`. **Only Tommy decides the call.** A pitch goes live only when
+  he has set those three and given an explicit go; the build fails a
+  non-draft pitch without them. Drafts show only under `npm run dev`.
+- Pitches are never rewritten after publication. The monthly scorecard mark
+  goes in `src/data/calls.ts`, with Tommy's approval.
+- When a journal piece publishes, ask Tommy whether to draft a pitch on it.
+
 ## Before writing or editing any piece, read `WRITING-FORMAT.md`
 
 It is the complete spec and it is not optional. Tommy will hand over raw notes
@@ -33,13 +49,15 @@ cover brief and LinkedIn post, is yours to write.
 
 - **Scope is AI and energy infrastructure only.** No commodities, shipping,
   general equities or macro. The narrowness is the asset.
-- **Financials as evidence, never a view on the shares.** A company's own
-  disclosed figures (revenue, margins, backlog, capex, order books) may appear
-  in the body when they test or confirm the physical mechanism, dated and
-  sourced to the filing. Never a share price, market value, valuation multiple,
-  target, rating, recommendation, or claim that a share is cheap or expensive.
-  Keep them out of the exposure map, which stays "what they make" only. See
-  WRITING-FORMAT.md §4a.
+- **Financials as evidence, never a view on the shares, in journal pieces.** A
+  company's own disclosed figures (revenue, margins, backlog, capex, order
+  books) may appear in a piece when they test or confirm the physical
+  mechanism, dated and sourced to the filing. Never a share price, market
+  value, valuation multiple, target, rating, recommendation, or claim that a
+  share is cheap or expensive, in a journal piece or on any page **except
+  pitch pages (`/calls/<slug>/`) and the calls scorecard**. Keep them out of
+  the exposure map, which stays "what they make" only. See WRITING-FORMAT.md
+  §4a and CALLS-SPEC.md.
 - **Never post to LinkedIn from Tommy's personal profile.** The company page
   only. Verify the composer identity reads "The Physical Layer" before submitting.
 - **Do not add a new piece to `READING_PATH`.** The reading page is a capped
@@ -56,9 +74,12 @@ A new piece is not published until the site around it is updated. Every time:
   the chain rather than forcing the piece into the nearest one.
 - **The claims page.** For an Analysis piece, add an entry to
   `src/data/claims.ts`: the thesis in one sentence, the falsifier, and the
-  evidence watched. The claim and test are never reworded later. There are no
-  statuses (Open, Holding and so on) and no reviews: Tommy decided the page is
-  a plain list of claims. Do not add status tracking back or suggest it.
+  evidence watched. The claim and test are never reworded later. The claims
+  list keeps no statuses (Open, Holding and so on) and no reviews: Tommy
+  decided it is a plain list of claims. Do not add status tracking to it or
+  suggest it. Scoring lives only in the calls scorecard, for calls. If a pitch
+  disagrees with a published claim, the pitch says so openly and, if needed,
+  a new dated claim is added beside the old one. Never a silent fix.
 - **The numbers.** If the piece rests on a new structural figure, add it to
   `src/data/numbers.ts`. Physical figures only, never anything about shares.
 - **Companies** build themselves from the exposure map. Spell company names
@@ -80,6 +101,7 @@ LinkedIn company page and RSS.
 
 ```bash
 python3 brand/check-piece.py src/content/journal/<slug>.md
+python3 brand/check-call.py            # pitches
 DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/lib python3 brand/make-og.py
 npm run build
 ```

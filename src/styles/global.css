@@ -7,6 +7,8 @@
   --rule: #e6e3dc;
   --accent: #b45309;      /* amber: energy */
   --accent-2: #1d4ed8;    /* blue: compute */
+  --chart-1: #b45309; --chart-2: #1d4ed8;   /* validated for colour-blind separation */
+  --good: #15803d; --bad: #b91c1c;
   --measure: 66ch;
   --serif: Charter, 'Iowan Old Style', 'Source Serif Pro', Georgia, 'Times New Roman', serif;
   --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif;
@@ -16,11 +18,13 @@
   :root:not([data-theme="light"]) {
     --bg: #131312; --bg-elev: #1c1c1a; --ink: #ecebe6; --ink-2: #bdbbb3; --ink-3: #8b8a83;
     --rule: #2a2a27; --accent: #f59e0b; --accent-2: #60a5fa;
+    --chart-1: #d97706; --chart-2: #3b82f6; --good: #4ade80; --bad: #f87171;
   }
 }
 :root[data-theme="dark"] {
   --bg: #131312; --bg-elev: #1c1c1a; --ink: #ecebe6; --ink-2: #bdbbb3; --ink-3: #8b8a83;
   --rule: #2a2a27; --accent: #f59e0b; --accent-2: #60a5fa;
+    --chart-1: #d97706; --chart-2: #3b82f6; --good: #4ade80; --bad: #f87171;
 }
 
 * { box-sizing: border-box; }
@@ -352,3 +356,65 @@ details.analogy > p:first-of-type { margin-top: 0.1rem; }
 .co-mentions p { margin: 0.2rem 0; }
 .co-group { font-family: var(--sans); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
 .co-from { font-family: var(--sans); font-size: 0.85rem; color: var(--ink-3); }
+
+/* ── pitches and the calls scorecard ───────────────────────────── */
+.draft-banner { font-family: var(--sans); font-size: 0.88rem; background: color-mix(in srgb, var(--accent) 12%, var(--bg-elev)); border: 1px dashed var(--accent); border-radius: 6px; padding: 0.6rem 0.9rem; margin: 1.5rem 0 0; }
+.pitch-kicker { font-family: var(--sans); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin: 0 0 0.4rem; }
+.callbox { border: 1px solid var(--rule); border-top: 3px solid var(--ink); border-radius: 0 0 6px 6px; background: var(--bg-elev); padding: 1rem 1.2rem 1.1rem; margin: 1.75rem 0 2rem; font-family: var(--sans); }
+.callbox-head { display: flex; justify-content: space-between; align-items: baseline; gap: 0.75rem; flex-wrap: wrap; }
+.callbox-co { font-size: 1.15rem; font-weight: 700; }
+.callbox-co span { font-weight: 500; color: var(--ink-3); font-size: 0.9rem; margin-left: 0.3rem; }
+.callbox-dir { font-size: 0.8rem; font-weight: 800; letter-spacing: 0.1em; padding: 0.2rem 0.6rem; border-radius: 4px; border: 1.5px solid currentColor; }
+.callbox-dir--long { color: var(--good); }
+.callbox-dir--short { color: var(--bad); }
+.callbox-dir--nocall { color: var(--ink-2); }
+.callbox-dir--open { color: var(--ink-3); letter-spacing: 0.02em; font-weight: 600; border-style: dashed; }
+.callbox dl { display: grid; grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); gap: 0.9rem; margin: 1rem 0 0; }
+.callbox dt { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); }
+.callbox dd { margin: 0.15rem 0 0; font-size: 1.2rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.callbox dd small { display: block; font-size: 0.78rem; font-weight: 500; color: var(--ink-3); }
+.callbox-wrong, .callbox-draft, .callbox-mark { margin: 1rem 0 0; font-size: 0.92rem; color: var(--ink-2); line-height: 1.5; }
+.callbox-wrong span, .callbox-draft span, .callbox-mark span { display: block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 0.15rem; }
+.callbox-draft { border-top: 1px dashed var(--accent); padding-top: 0.8rem; }
+.callbox-draft span { color: var(--accent); }
+.pitch-claims h2, .pitch-charts h2 { font-family: var(--sans); font-size: 1.35rem; letter-spacing: -0.01em; margin: 0 0 1rem; }
+.pitch-claims .claim-box + .claim-box { margin-top: 0.8rem; }
+.pitch-claims { margin-bottom: 1rem; }
+.pitch .prose { padding-bottom: 1rem; }
+.pitch-charts { margin: 2.2rem 0 1rem; }
+.chart { margin: 0 0 2.2rem; }
+.chart-title { font-family: var(--sans); font-weight: 700; font-size: 0.98rem; margin-bottom: 0.4rem; }
+.chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+.chart .grid { stroke: var(--rule); stroke-width: 1; }
+.chart .axis { stroke: var(--ink-3); stroke-width: 1; }
+.chart .tick { font-family: var(--sans); font-size: 11px; fill: var(--ink-3); font-variant-numeric: tabular-nums; }
+.chart .ref { stroke: var(--ink-2); stroke-width: 1; stroke-dasharray: 4 4; }
+.chart .ref-label { font-family: var(--sans); font-size: 11px; fill: var(--ink-2); paint-order: stroke; stroke: var(--bg); stroke-width: 4px; }
+.chart .hit { fill: transparent; }
+.chart .hit:hover { fill: color-mix(in srgb, var(--ink) 12%, transparent); }
+.chart .end { stroke: var(--bg); stroke-width: 2; }
+.chart .mark:hover { opacity: 0.8; }
+.chart-legend { display: flex; gap: 1rem; margin: 0 0 0.3rem; font-family: var(--sans); font-size: 0.82rem; color: var(--ink-2); }
+.chart-legend i { display: inline-block; width: 0.7rem; height: 0.7rem; border-radius: 2px; margin-right: 0.35rem; vertical-align: -1px; }
+.chart-note { margin: 0.4rem 0 0; font-size: 0.97rem; color: var(--ink-2); }
+.chart-source { margin: 0.3rem 0 0; font-family: var(--sans); font-size: 0.78rem; color: var(--ink-3); }
+.chart-table { margin-top: 0.4rem; font-family: var(--sans); font-size: 0.82rem; }
+.chart-table summary { cursor: pointer; color: var(--accent-2); font-weight: 600; }
+.chart-table table { border-collapse: collapse; margin-top: 0.4rem; font-variant-numeric: tabular-nums; }
+.chart-table th, .chart-table td { padding: 0.2rem 0.9rem 0.2rem 0; text-align: left; border-bottom: 1px solid var(--rule); }
+.pitch-disclaimer { font-family: var(--sans); font-size: 0.85rem; color: var(--ink-3); border-top: 1px solid var(--rule); padding: 1.2rem 0 0.5rem; margin-top: 1.5rem; }
+.claim-call { margin: 0.55rem 0 0; font-family: var(--sans); font-size: 0.88rem; }
+.claim-call .tagdir { font-weight: 800; letter-spacing: 0.06em; font-size: 0.75rem; margin-right: 0.35rem; }
+.tagdir--long { color: var(--good); } .tagdir--short { color: var(--bad); } .tagdir--open, .tagdir--nocall { color: var(--ink-3); }
+.scorecard { margin: 1rem 0 2.5rem; scroll-margin-top: 1rem; }
+.scorecard h2 { font-family: var(--sans); font-size: 1.35rem; letter-spacing: -0.01em; margin: 2.5rem 0 0.4rem; }
+.scorecard-intro { color: var(--ink-2); margin: 0 0 1rem; }
+.scorecard-wrap { overflow-x: auto; }
+.scorecard table { border-collapse: collapse; width: 100%; font-family: var(--sans); font-size: 0.86rem; font-variant-numeric: tabular-nums; }
+.scorecard th, .scorecard td { text-align: left; padding: 0.55rem 0.6rem 0.55rem 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.scorecard th { color: var(--ink-3); font-weight: 600; font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; }
+.scorecard .up { color: var(--good); } .scorecard .down { color: var(--bad); }
+.scorecard-empty { font-family: var(--sans); font-size: 0.92rem; color: var(--ink-3); border: 1px dashed var(--rule); border-radius: 6px; padding: 0.9rem 1rem; }
+.scorecard-pm { margin: 0.3rem 0 0; color: var(--ink-2); font-size: 0.84rem; }
+.claim-correction { margin: 0.45rem 0 0; font-family: var(--sans); font-size: 0.86rem; color: var(--ink-2); border-left: 2px solid var(--bad); padding-left: 0.6rem; }
+.claim-correction span { display: block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--bad); }

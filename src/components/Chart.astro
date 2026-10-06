@@ -1,0 +1,92 @@
+---
+// A small, dependency-free SVG chart for pitch pages. Bars for quarterly
+// figures, lines for prices. One y axis only, at most two series, a legend for
+// two, a native tooltip on every mark and a table view underneath.
+interface Series { name: string; values: (number | null)[] }
+interface Props {
+  id: string; title: string; kind: 'bar' | 'line';
+  unit?: string; prefix?: string; decimals?: number;
+  labels: string[]; series: Series[];
+  refs?: { value: number; label: string }[];
+  note?: string; source: string;
+}
+const { id, title, kind, unit = '', prefix = '', decimals = 0, labels, series, refs = [], note, source } = Astro.props;
+
+const W = 640, H = 280, L = 52, R = 16, T = 16, B = 34;
+const pw = W - L - R, ph = H - T - B;
+const fmt = (v: number) => `${v < 0 ? '-' : ''}${prefix}${Math.abs(v).toLocaleString('en-GB', { minimumFractionDigits: decimals, maximumFractionDigits: decimals })}${unit}`;
+
+const vals = series.flatMap((s) => s.values).filter((v): v is number => v != null).concat(refs.map((r) => r.value));
+let lo = Math.min(...vals), hi = Math.max(...vals);
+if (kind === 'bar') { lo = Math.min(0, lo); hi = Math.max(0, hi); }
+else { const pad = (hi - lo) * 0.08 || 1; lo -= pad; hi += pad; }
+// nice ticks
+const span = hi - lo || 1;
+const raw = span / 4;
+const mag = 10 ** Math.floor(Math.log10(raw));
+const step = [1, 2, 2.5, 5, 10].map((m) => m * mag).find((s) => s >= raw)!;
+const y0 = Math.floor(lo / step) * step, y1 = Math.ceil(hi / step) * step;
+const ticks: number[] = [];
+for (let t = y0; t <= y1 + step / 2; t += step) ticks.push(+t.toFixed(10));
+const y = (v: number) => T + ph - ((v - y0) / (y1 - y0)) * ph;
+const n = labels.length;
+const band = pw / n;
+const xc = (i: number) => L + band * i + band / 2;
+const colour = ['var(--chart-1)', 'var(--chart-2)'];
+// thin out x labels so they never collide
+const labW = Math.max(...labels.map((l) => l.length)) * 6.6 + 10;
+const every = Math.ceil(n / Math.max(1, Math.floor(pw / labW)));
+const tickDec = step >= 1 ? 0 : Math.min(decimals, 2);
+const fmtTick = (v: number) => `${v < 0 ? '-' : ''}${prefix}${Math.abs(v).toLocaleString('en-GB', { minimumFractionDigits: tickDec, maximumFractionDigits: tickDec })}${unit}`;
+const barW = Math.min(36, (band - 6) / series.length - 2);
+const linePath = (s: Series) => s.values.map((v, i) => v == null ? null : `${xc(i).toFixed(1)},${y(v).toFixed(1)}`)
+  .reduce((acc: string[], pt, i, arr) => { if (pt) acc.push(`${arr[i - 1] ? 'L' : 'M'}${pt}`); return acc; }, []).join(' ');
+const lastIdx = (s: Series) => s.values.reduce((a: number, v, i) => (v != null ? i : a), -1);
+---
+<figure class="chart" id={`chart-${id}`}>
+  <figcaption class="chart-title">{title}</figcaption>
+  {series.length > 1 && (
+    <p class="chart-legend">{series.map((s, k) => <span><i style={`background:${colour[k]}`}></i>{s.name}</span>)}</p>
+  )}
+  <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={title}>
+    {ticks.map((t) => (
+      <g>
+        <line x1={L} x2={W - R} y1={y(t)} y2={y(t)} class={t === 0 ? 'axis' : 'grid'} />
+        <text x={L - 8} y={y(t) + 4} class="tick" text-anchor="end">{fmtTick(t)}</text>
+      </g>
+    ))}
+    {labels.map((lab, i) => (i % every === 0 || i === n - 1) && (n - 1 - i >= every || i === n - 1) && (
+      <text x={xc(i)} y={H - 12} class="tick" text-anchor="middle">{lab}</text>
+    ))}
+    {kind === 'bar' && series.map((s, k) => s.values.map((v, i) => v != null && (
+      <rect
+        x={xc(i) - (barW + 2) * series.length / 2 + k * (barW + 2) + 1}
+        y={Math.min(y(v), y(0))} width={barW} height={Math.max(1, Math.abs(y(0) - y(v)))}
+        rx="3" fill={colour[k]} class="mark"><title>{`${labels[i]}, ${s.name}: ${fmt(v)}`}</title></rect>
+    )))}
+    {kind === 'line' && series.map((s, k) => (
+      <g>
+        <path d={linePath(s)} fill="none" stroke={colour[k]} stroke-width="2" stroke-linejoin="round" />
+        {s.values.map((v, i) => v != null && (
+          <circle cx={xc(i)} cy={y(v)} r={n > 24 ? 6 : 8} class="hit"><title>{`${labels[i]}, ${s.name}: ${fmt(v)}`}</title></circle>
+        ))}
+        {lastIdx(s) >= 0 && <circle cx={xc(lastIdx(s))} cy={y(s.values[lastIdx(s)]!)} r="4" fill={colour[k]} class="end" />}
+      </g>
+    ))}
+    {refs.map((r) => (
+      <g>
+        <line x1={L} x2={W - R} y1={y(r.value)} y2={y(r.value)} class="ref" />
+        <text x={W - R - 4} y={y(r.value) - 6} class="ref-label" text-anchor="end">{r.label} {fmt(r.value)}</text>
+      </g>
+    ))}
+  </svg>
+  {note && <p class="chart-note">{note}</p>}
+  <details class="chart-table">
+    <summary>Show the numbers</summary>
+    <table>
+      <thead><tr><th></th>{series.map((s) => <th>{s.name}</th>)}</tr></thead>
+      <tbody>{labels.map((lab, i) => <tr><td>{lab}</td>{series.map((s) => <td>{s.values[i] == null ? 'n/a' : fmt(s.values[i]!)}</td>)}</tr>)}</tbody>
+    </table>
+  </details>
+  <p class="chart-source">Source: {source}</p>
+</figure>
