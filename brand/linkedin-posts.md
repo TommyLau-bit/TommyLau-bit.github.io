@@ -334,3 +334,87 @@ The piece covers why silicon cannot make light, what Lumentum's own numbers show
 https://thephysicallayer.fyi/journal/lumentum-makes-the-light/
 
 #AIInfrastructure #Optics #DataCentres
+
+---
+
+## 24 · Schneider Electric sells the finished system (scheduled 7 Oct 2026)
+
+Schneider Electric's fastest-growing business is not the breakers and switches it is best known for.
+
+Its Systems business, which includes power rooms and cooling plants built and tested in a factory, grew 28% in the second quarter against 13% for its catalogue products. Schneider says data centres led that growth. I think the reason is on the building site: an AI hall cannot switch on until every panel is installed and tested, and the people who do that work are scarce.
+
+The piece covers how Schneider splits what it sells, the shift in its own numbers, and why it is spending on design tools as well as factories.
+
+https://thephysicallayer.fyi/journal/schneider-sells-the-finished-system/
+
+#DataCentres #Electrification #EnergyInfrastructure
+
+---
+
+## 25 · GE Vernova sells the wait (scheduled 9 Oct 2026)
+
+GE Vernova signed 41 gigawatts of gas turbine contracts in the first half of 2026 and shipped seven.
+
+Most of those contracts are paid places in a queue for 2030 and 2031, and customers have handed over billions in deposits to hold them. GE Vernova is using that money to stretch the factories it already has, not to build new ones. For anyone planning to skip the grid queue with their own power, that is the number that sets the date.
+
+The piece covers what a slot reservation is, where the deposits show up in GE Vernova's filings, and why the queue is likely to stay years long.
+
+https://thephysicallayer.fyi/journal/ge-vernova-sells-the-wait/
+
+#GasTurbines #DataCentres #EnergyInfrastructure
+
+---
+
+## 26 · Fluence is short of American-made (scheduled 12 Oct 2026)
+
+Fluence's new Houston battery factory spent this summer running on generators, because its own grid connection was late.
+
+Fluence sells data centres a way to switch on before their grid connection is ready. Its overseas factories are working well, by its own account, but American tax rules reward systems made in America, and the Houston line averaged under one unit a day in August against a plan of eleven. In the United States the scarce thing is not the battery, it is the battery that qualifies.
+
+The piece covers how the tax rules turn "made in America" into the constraint, what data centre buyers are actually paying Fluence for, and the test that would prove me wrong.
+
+https://thephysicallayer.fyi/journal/fluence-short-of-american-made/
+
+#EnergyStorage #DataCentres #EnergyInfrastructure
+
+---
+
+## 27 · Hitachi Energy plans the queue (scheduled 14 Oct 2026)
+
+Hitachi Energy is spending more than $9 billion on factories, and it still expects about three years of orders to be waiting in 2030.
+
+It is the largest maker of the transformers and long-distance power links that connect data centres and power stations to the grid. Its unfilled orders reached $63.6 billion in June, about three years of sales, and it told investors that ratio should stay at two and a half to three times while its output nearly doubles. For anyone waiting on a substation, that is the plan for how long the queue lasts.
+
+The piece covers what Hitachi Energy makes, how its queue is measured in years, and why its new factories keep the queue rather than clear it.
+
+https://thephysicallayer.fyi/journal/hitachi-energy-plans-the-queue/
+
+#Transformers #DataCentres #EnergyInfrastructure
+
+---
+
+## 28 · Eaton's order book outruns it (scheduled 16 Oct 2026)
+
+Eaton shipped 18% more electrical gear in the year to June, and its order book grew 33%.
+
+Eaton makes the switchgear, backup power and wiring that sit between the grid and the racks in a data centre. It is spending more than $1 billion on two dozen capacity projects, yet the orders waiting in its North American business have grown from about eleven months of sales to about thirteen. The big new plants that could close the gap arrive in 2027.
+
+The piece covers what Eaton makes, how its queue is measured in months, and what that queue does to its margin.
+
+https://thephysicallayer.fyi/journal/eaton-order-book-outruns-it/
+
+#DataCentres #Electrification #EnergyInfrastructure
+
+---
+
+## 29 · Siemens Energy measures the shortage (scheduled 20 Oct 2026)
+
+Siemens Energy has published its own estimate of the transformer shortage, and on its chart demand is still ahead of every factory in 2030.
+
+It covers what Siemens Energy calls all market players for large power transformers in Europe and North America. Demand ran about 40 per cent ahead of capacity in 2025 and is still about 10 per cent ahead in 2030, even after capacity grows by about 60 per cent. A smaller shortage still adds to the pile of unfilled orders each year, and Siemens Energy's own grid backlog has grown from €33 billion to €51 billion in under two years.
+
+The piece covers what the chart shows, why a narrowing gap still adds to the pile, and why Siemens Energy's grid business now out-earns its gas turbines.
+
+https://thephysicallayer.fyi/journal/siemens-energy-measures-the-shortage/
+
+#Transformers #DataCentres #EnergyInfrastructure

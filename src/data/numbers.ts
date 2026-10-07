@@ -21,12 +21,15 @@ export const NUMBERS: Num[] = [
   { layer: 'grid', value: '3.8 GW', what: 'Data centre maximum demand in Johor after more than doubling in a year, about one and a half times the state\'s own electricity use.', piece: 'the-queue-not-the-chip', asOf: '2025' },
   { layer: 'grid', value: '3.8 GW', what: 'Demand that vanished from the grid in under a second when data centres in northern Virginia tripped offline together. The largest such event in PJM\'s history.', piece: 'the-power-it-drops', asOf: '22 July 2026' },
   { layer: 'grid', value: '1.25', what: 'The power usage effectiveness Singapore requires to win new data centre capacity. Megawatts go to whoever wastes the fewest of them.', piece: 'two-governments-one-confession', asOf: '2026' },
+  { layer: 'grid', value: '~40% → ~10%', what: 'How far demand for large and medium power transformers in Europe and North America runs ahead of the combined capacity of all makers in the region, by Siemens Energy\'s estimate: about 40 per cent in fiscal 2025 and still about 10 per cent in fiscal 2030.', piece: 'siemens-energy-measures-the-shortage', asOf: '20 November 2025' },
 
   // power on site
   { layer: 'onsite', value: '116 GW', what: 'Gas turbine capacity GE Vernova has under contract. A buyer who skips the grid queue joins this one.', piece: 'the-way-out-has-its-own-queue', asOf: '1 September 2026' },
   { layer: 'onsite', value: '54–60%', what: 'Share of the energy in gas a solid oxide fuel cell turns into electricity, against roughly 35 to 40 per cent for a simple gas turbine.', piece: 'the-product-is-time', asOf: '2026' },
   { layer: 'onsite', value: '53%', what: 'Share of planned 2026 American utility-scale battery additions sited in Texas, 12.9 of 24 gigawatts. Storage is following the computing load.', piece: 'what-the-battery-is-really-for', asOf: 'February 2026' },
   { layer: 'onsite', value: '75 MW', what: 'The design output of Oklo\'s first Aurora reactor in Idaho, small enough to sit beside a data centre campus.', piece: 'oklo-sells-the-electricity', asOf: '2026' },
+  { layer: 'onsite', value: '~6 years', what: 'Gas turbine capacity GE Vernova has under contract, 116 gigawatts, against its output of 20 gigawatts a year. The queue for building your own power, measured in factory time.', piece: 'ge-vernova-sells-the-wait', asOf: '30 June 2026' },
+  { layer: 'onsite', value: '15 GWh', what: 'Planned yearly capacity of the Houston plant that assembles Fluence\'s American-made battery systems. American-made, not batteries, is the scarce kind.', piece: 'fluence-short-of-american-made', asOf: 'August 2026' },
 
   // power inside the building
   { layer: 'distribution', value: '5–10 kW', what: 'What a traditional server rack drew for two decades. Everything in the building was sized for this.', piece: 'cooling-is-half-the-job', asOf: '2026' },

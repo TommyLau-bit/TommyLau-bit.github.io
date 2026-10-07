@@ -21,7 +21,7 @@ export const STACK: Layer[] = [
     kind: 'energy',
     what: 'High-voltage power arrives from the public grid through a substation built for the site.',
     constraint: 'The wait for a connection, and the transformers and switchgear behind it, now runs to years.',
-    pieces: ['the-queue-not-the-chip', 'the-part-money-cannot-hurry', 'two-governments-one-confession', 'the-power-it-drops'],
+    pieces: ['the-queue-not-the-chip', 'the-part-money-cannot-hurry', 'hitachi-energy-plans-the-queue', 'siemens-energy-measures-the-shortage', 'two-governments-one-confession', 'the-power-it-drops'],
   },
   {
     id: 'onsite',
@@ -29,7 +29,7 @@ export const STACK: Layer[] = [
     kind: 'energy',
     what: 'Turbines, fuel cells, batteries and, one day, small reactors make or store power beside the building.',
     constraint: 'Skipping the grid queue means joining the queue for the equipment instead.',
-    pieces: ['the-way-out-has-its-own-queue', 'the-product-is-time', 'what-the-battery-is-really-for', 'oklo-sells-the-electricity'],
+    pieces: ['the-way-out-has-its-own-queue', 'ge-vernova-sells-the-wait', 'the-product-is-time', 'what-the-battery-is-really-for', 'fluence-short-of-american-made', 'oklo-sells-the-electricity'],
   },
   {
     id: 'distribution',
@@ -37,7 +37,7 @@ export const STACK: Layer[] = [
     kind: 'energy',
     what: 'Power is stepped down, backed up and carried to each rack, then down to below one volt at the chip.',
     constraint: 'At a megawatt per rack, the copper needed at today\'s low voltage stops fitting.',
-    pieces: ['the-rack-runs-out-of-copper', 'every-megawatt-got-harder', 'ti-feeds-the-chip'],
+    pieces: ['the-rack-runs-out-of-copper', 'every-megawatt-got-harder', 'schneider-sells-the-finished-system', 'eaton-order-book-outruns-it', 'ti-feeds-the-chip'],
   },
   {
     id: 'cooling',

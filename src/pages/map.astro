@@ -9,7 +9,7 @@ const posts = await getCollection('journal', ({ data }) => !data.draft);
 const byId = Object.fromEntries(posts.map((p) => [p.id, p]));
 const layers = STACK.map((l) => {
   const ps = l.pieces.map((id) => byId[id]).filter(Boolean);
-  return { ...l, posts: ps, numbers: NUMBERS.filter((n) => n.layer === l.id), companies: topCompanies(ps, 10) };
+  return { ...l, posts: ps, numbers: NUMBERS.filter((n) => n.layer === l.id && byId[n.piece]), companies: topCompanies(ps, 10) };
 });
 ---
 <Base wide title="Map of the stack" description="The physical layers of an AI data centre, from the grid connection to the chip: what happens in each, what binds, the numbers that matter and who operates there.">
