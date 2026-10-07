@@ -337,7 +337,7 @@ https://thephysicallayer.fyi/journal/lumentum-makes-the-light/
 
 ---
 
-## 24 · Schneider Electric sells the finished system (scheduled 7 Oct 2026)
+## 24 · Schneider Electric sells the finished system (site live 7 Oct 2026; LinkedIn scheduled by Tommy)
 
 Schneider Electric's fastest-growing business is not the breakers and switches it is best known for.
 
@@ -351,7 +351,7 @@ https://thephysicallayer.fyi/journal/schneider-sells-the-finished-system/
 
 ---
 
-## 25 · GE Vernova sells the wait (scheduled 9 Oct 2026)
+## 25 · GE Vernova sells the wait (site live 9 Oct 2026; LinkedIn Fri 6 Nov, 11:30)
 
 GE Vernova signed 41 gigawatts of gas turbine contracts in the first half of 2026 and shipped seven.
 
@@ -365,7 +365,7 @@ https://thephysicallayer.fyi/journal/ge-vernova-sells-the-wait/
 
 ---
 
-## 26 · Fluence is short of American-made (scheduled 12 Oct 2026)
+## 26 · Fluence is short of American-made (site live 12 Oct 2026; LinkedIn Mon 9 Nov, 11:30)
 
 Fluence's new Houston battery factory spent this summer running on generators, because its own grid connection was late.
 
@@ -379,7 +379,7 @@ https://thephysicallayer.fyi/journal/fluence-short-of-american-made/
 
 ---
 
-## 27 · Hitachi Energy plans the queue (scheduled 14 Oct 2026)
+## 27 · Hitachi Energy plans the queue (site live 14 Oct 2026; LinkedIn Wed 11 Nov, 11:30)
 
 Hitachi Energy is spending more than $9 billion on factories, and it still expects about three years of orders to be waiting in 2030.
 
@@ -393,7 +393,7 @@ https://thephysicallayer.fyi/journal/hitachi-energy-plans-the-queue/
 
 ---
 
-## 28 · Eaton's order book outruns it (scheduled 16 Oct 2026)
+## 28 · Eaton's order book outruns it (site live 16 Oct 2026; LinkedIn Fri 13 Nov, 11:30)
 
 Eaton shipped 18% more electrical gear in the year to June, and its order book grew 33%.
 
@@ -407,7 +407,7 @@ https://thephysicallayer.fyi/journal/eaton-order-book-outruns-it/
 
 ---
 
-## 29 · Siemens Energy measures the shortage (scheduled 20 Oct 2026)
+## 29 · Siemens Energy measures the shortage (site live 20 Oct 2026; LinkedIn Mon 16 Nov, 11:30)
 
 Siemens Energy has published its own estimate of the transformer shortage, and on its chart demand is still ahead of every factory in 2030.
 

@@ -433,8 +433,11 @@ https://thephysicallayer.fyi/journal/<slug>/
 ```
 
 Rules: plain register, first person, three hashtags maximum, the link alone on
-its own line at the end so LinkedIn renders the card. Posts go out 8:30 AM
-Singapore time, on a weekday, roughly every other day while there is a backlog.
+its own line at the end so LinkedIn renders the card. Posts go out at 11:30 AM
+Singapore time on Mondays, Wednesdays and Fridays only (Tommy, 7 Oct 2026), each
+new post taking the next free slot after the last scheduled one. LinkedIn's
+desktop list of scheduled posts shows only the first ten, so check the true last
+date in the app or with Tommy before scheduling.
 
 ---
 
