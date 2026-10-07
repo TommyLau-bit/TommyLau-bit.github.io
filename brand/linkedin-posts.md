@@ -419,7 +419,7 @@ https://thephysicallayer.fyi/journal/siemens-energy-measures-the-shortage/
 
 #Transformers #DataCentres #EnergyInfrastructure
 
-## 30 · Nobody makes a B200 alone (site live 7 Oct 2026; LinkedIn Fri 6 Nov, 11:30)
+## 30 · Nobody makes a B200 alone (site live 7 Oct 2026; LinkedIn Fri 6 Nov, 11:30, scheduled)
 
 Nobody makes an Nvidia B200 on their own, not even Nvidia.
 
@@ -433,7 +433,7 @@ https://thephysicallayer.fyi/journal/nobody-makes-a-b200-alone/
 
 ---
 
-## 31 · Ajinomoto grows with the package (site live 7 Oct 2026; LinkedIn Fri 20 Nov, 11:30)
+## 31 · Ajinomoto grows with the package (site live 7 Oct 2026; LinkedIn Fri 20 Nov, 11:30, scheduled)
 
 The company best known for monosodium glutamate makes the insulating film inside nearly all high-performance processors, by its own account.
 
@@ -447,7 +447,7 @@ https://thephysicallayer.fyi/journal/ajinomoto-grows-with-the-package/
 
 ---
 
-## 32 · ASML booked ahead (site live 7 Oct 2026; LinkedIn Mon 23 Nov, 11:30)
+## 32 · ASML booked ahead (site live 7 Oct 2026; LinkedIn Mon 23 Nov, 11:30, scheduled)
 
 The machines that print the finest AI chips are booked a year or two before they are built.
 
@@ -461,7 +461,7 @@ https://thephysicallayer.fyi/journal/asml-booked-ahead/
 
 ---
 
-## 33 · Micron, three times the wafer (site live 7 Oct 2026; LinkedIn Wed 25 Nov, 11:30)
+## 33 · Micron, three times the wafer (site live 7 Oct 2026; LinkedIn Wed 25 Nov, 11:30, scheduled)
 
 Each bit of AI memory uses about three times the silicon of ordinary computer memory.
 
