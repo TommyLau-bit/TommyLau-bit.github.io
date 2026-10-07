@@ -77,6 +77,11 @@ Tommy found the first build (a long web pitch with charts, merged into the claim
 - **Monthly marks:** the scheduled task `research-monthly-marks` prepares them early each month for Tommy's approval.
 - **Corrections:** do not change what was said before. Say it was wrong and what changed the view, in the note, in `correction`, and in a "Where I was wrong" passage in the PDF.
 
+## Briefs for agents (in research-build/)
+- `BRIEF-note.md`: drafting an initiation note (text of record, PDF, model). `BRIEF-note-factcheck.md`: the read-only fact-check of a note.
+- `BRIEF-journal-piece.md` and `BRIEF-journal-factcheck.md`: the same pair for a company journal piece.
+Process: one company at a time; draft, then an independent fact-check, then fix, then Tommy decides the call.
+
 ## To publish a note (only with Tommy's explicit go)
 
 1. Tommy sets `call.direction`, `call.target`, `call.conviction`, and confirms `call.wrongIf`.
