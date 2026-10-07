@@ -47,9 +47,14 @@ export const NUMBERS: Num[] = [
   { layer: 'network', value: '102.4 Tb/s', what: 'Data moved through one Broadcom Tomahawk 6 switch chip, enough for two tiers of switches to join about 128,000 AI chips.', piece: 'broadcom-wins-either-way', asOf: 'June 2025' },
   { layer: 'network', value: '800G → 1.6T', what: 'Data per second through one optical plug, now doubling. Every step needs faster lasers and replaces the plugs, while the fibre stays.', piece: 'lumentum-makes-the-light', asOf: '2026' },
 
+  // memory
+  { layer: 'memory', value: '~3×', what: 'The wafer HBM3E uses for each bit stored, against ordinary DDR5 memory, by Micron\'s estimate, restated in December 2025, when it said the ratio only increases with future generations. Every HBM bit is about three ordinary bits not made.', piece: 'micron-three-times-the-wafer', asOf: 'December 2025' },
+
   // chips and factories
   { layer: 'chips', value: '2–3 + 1–2 yrs', what: 'TSMC\'s time to build a new chip factory, then to bring it to full output. The slowest clock on the chip side.', piece: 'tsmc-says-it-is-the-bottleneck', asOf: 'January 2026' },
   { layer: 'chips', value: '2.25×', what: 'Area of a 300 millimetre wafer against a 200 millimetre one, so each pass through the factory yields more than twice the chips.', piece: 'ti-feeds-the-chip', asOf: '2026' },
+  { layer: 'chips', value: '~65 → ~85', what: 'ASML\'s capacity for standard (low NA) EUV machines in 2026, all expected to ship, and its plan for 2027, already close to fully ordered by July 2026. Every leading-edge chip factory needs them.', piece: 'asml-booked-ahead', asOf: 'July 2026' },
+  { layer: 'chips', value: '70 → 120 mm', what: 'Ajinomoto\'s estimate of how the base of an advanced chip package grows: about 70 millimetres square with nine wiring layers up to 2023, about 100 with eleven in 2026, about 120 with thirteen from 2031. Each layer needs its own sheet of insulating film.', piece: 'ajinomoto-grows-with-the-package', asOf: 'May 2026' },
 
   // who runs the capacity
   { layer: 'operators', value: '5 GW vs ~1 GW', what: 'Power Nebius expects to have contracted by the end of 2026, against the 0.8 to 1 gigawatt it expects to have connected.', piece: 'nebius-paid-for-what-is-switched-on', asOf: 'end of 2026, company target' },

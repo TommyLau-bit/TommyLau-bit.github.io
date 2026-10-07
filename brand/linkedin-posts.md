@@ -432,3 +432,45 @@ https://thephysicallayer.fyi/journal/nobody-makes-a-b200-alone/
 #Semiconductors #SupplyChain #AIInfrastructure
 
 ---
+
+## 31 · Ajinomoto grows with the package (site live 7 Oct 2026; LinkedIn Fri 20 Nov, 11:30)
+
+The company best known for monosodium glutamate makes the insulating film inside nearly all high-performance processors, by its own account.
+
+Ajinomoto's build-up film insulates each wiring layer in the base under a processor. By Ajinomoto's estimate, AI chip bases are growing from about 70 millimetres square with nine layers to about 100 with eleven, so by my reading each package needs far more film than chip counts suggest. Servers and networks have gone from 40 to 70 per cent of its film volume since fiscal 2017, and its next plant opens only in fiscal 2032.
+
+The piece covers why the film grows faster than the chips, why chipmakers rarely switch to a rival, and what the 2032 plant date implies.
+
+https://thephysicallayer.fyi/journal/ajinomoto-grows-with-the-package/
+
+#Semiconductors #AIInfrastructure #SupplyChain
+
+---
+
+## 32 · ASML booked ahead (site live 7 Oct 2026; LinkedIn Mon 23 Nov, 11:30)
+
+The machines that print the finest AI chips are booked a year or two before they are built.
+
+ASML is the only company that makes EUV lithography machines. It expects to ship about 65 of its standard model this year, its full capacity, and says 2027 is already close to fully ordered. Its output grows only as fast as ZEISS optics and its own cleanrooms allow, about 30 per cent a year, so a chipmaker adding capacity has to commit a year or two ahead, much like a data centre booking its grid connection.
+
+The piece covers why only ASML can build them, the supplier behind the supplier, and what ASML itself says about whether it is short.
+
+https://thephysicallayer.fyi/journal/asml-booked-ahead/
+
+#Semiconductors #AIInfrastructure #SupplyChain
+
+---
+
+## 33 · Micron, three times the wafer (site live 7 Oct 2026; LinkedIn Wed 25 Nov, 11:30)
+
+Each bit of AI memory uses about three times the silicon of ordinary computer memory.
+
+Micron, one of three companies that make the stacked memory beside AI chips, says so itself, and it sells most of each year's supply before the year starts. Every wafer that goes into AI memory is a wafer ordinary memory goes without, so while AI memory grows faster than the rest, phones, laptops and servers feel the squeeze too. New memory factories take years, and Micron names the need for more energy infrastructure among the things slowing them.
+
+The piece covers why stacked memory eats wafers, why it is sold before it is made, and what would show the squeeze has eased.
+
+https://thephysicallayer.fyi/journal/micron-three-times-the-wafer/
+
+#Semiconductors #AIInfrastructure #SupplyChain
+
+---

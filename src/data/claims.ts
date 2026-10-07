@@ -152,6 +152,24 @@ export const CLAIMS: Claim[] = [
     breaksIf: 'Before 30 September 2030: Grid Technologies\' orders fall below its revenue for any full fiscal year; or its order backlog in euros, as Siemens Energy reports it (€51bn at 30 June 2026), falls for two consecutive quarters; or Siemens Energy publishes a revised estimate showing transformer capacity meeting demand in Europe and North America before fiscal 2030.',
     watch: ['Grid Technologies orders against revenue, each fiscal year', 'Grid Technologies backlog in euros, each quarter', 'Whether the Charlotte large power transformer plant ships in 2027 and the Nuremberg expansion opens by 2028', 'Whether Siemens Energy updates its transformer market and capacity chart'],
   },
+  {
+    id: 'ajinomoto-grows-with-the-package',
+    claim: 'Ajinomoto\'s build-up film is used by the area and layer count of each chip package, so as AI packages grow wider and taller its film volume shifts to AI servers faster than chip counts imply, and because a rival film takes a long time to qualify, Ajinomoto keeps that growth at high margins.',
+    breaksIf: 'In any of Ajinomoto\'s annual results presentations through fiscal 2029 (the year to March 2030), servers and networks fall below 70 per cent of its ABF volume by application, its fiscal 2025 level (the split is rounded to five points, so a flat 70 per cent passes); or the business profit margin of its Functional Materials business, part of the Healthcare and Others segment, falls below 50 per cent in a year when that business\'s sales still grow. Ajinomoto discloses the margin only as rounded wording ("over 50%"); if it stops doing so, the test rests on the volume split alone.',
+    watch: ['Ajinomoto\'s ABF volume by application, each May', 'Functional Materials business sales growth and business profit margin, each year', 'Whether construction at the Kani City, Gifu site starts in 2028 and operation in fiscal 2032', 'Whether Sekisui Chemical or LG Chem announce adoption of their build-up film in AI server substrates'],
+  },
+  {
+    id: 'asml-booked-ahead',
+    claim: 'ASML\'s EUV machines are sold out and committed a year or two ahead, and their number grows only as fast as ZEISS optics and ASML\'s cleanrooms allow, about 30 per cent a year, so a chipmaker adding leading-edge AI capacity must commit to scanners a year or two ahead, much as a data centre books a grid connection.',
+    breaksIf: 'The booking half fails if ASML says it has EUV capacity beyond what customers have ordered; or ships more than 10 per cent fewer low NA EUV systems than its stated capacity (around 65 for 2026, around 85 for 2027) and itself attributes the shortfall to customer demand or pushed-out orders; or by its fourth quarter 2026 results (January 2027) no longer describes 2027 as close to fully covered with orders; or says its EUV order lead times are shortening. The growth half fails if ASML raises its stated low NA EUV capacity by more than 40 per cent in a single year, or announces new EUV cleanroom space or a second source for its optics. A shortfall caused by ZEISS or other suppliers supports the claim rather than breaking it.',
+    watch: ['ASML\'s EUV units each quarter, and low NA (NXE) units in its annual report', 'How ASML describes order coverage for 2027 and 2028', 'Whether ASML confirms the further 30 per cent low NA capacity increase for 2028', 'High NA adoption after Intel qualified it on select 18A layers in July 2026'],
+  },
+  {
+    id: 'micron-three-times-the-wafer',
+    claim: 'Micron sells most of each year\'s HBM before that year starts, and because each HBM bit takes about three times the wafer of ordinary DRAM, every year HBM grows faster than conventional DRAM it takes wafers from ordinary memory and keeps that market short too, through calendar 2028.',
+    breaksIf: 'The first half fails if, by its fiscal first quarter 2028 results (around December 2027), Micron has not said most of its calendar 2028 HBM supply is agreed; or if Micron reports unsold HBM or cuts HBM output and itself attributes it to customer demand. The second half fails if, before the end of calendar 2028, Micron stops expecting the DRAM industry to be supply-constrained in 2027 or 2028 while still expecting industry HBM bits to grow faster than conventional DRAM; or if Micron states that any current HBM generation needs less than about three times the wafer of DDR5 per bit. A shortage prolonged by late cleanrooms supports the claim rather than breaking it.',
+    watch: ['Whether Micron says next year\'s HBM is agreed, each autumn (it usually does between September and December)', 'Micron\'s industry DRAM supply outlook and whether HBM still outgrows conventional DRAM', 'Any new trade ratio Micron gives for HBM4 or HBM4E', 'Whether Micron\'s ID1 fab in Idaho starts wafer output in mid 2027'],
+  },
 ];
 
 export const claimOf = (id: string) => CLAIMS.find((c) => c.id === id);

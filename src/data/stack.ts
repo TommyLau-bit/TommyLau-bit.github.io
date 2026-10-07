@@ -61,7 +61,7 @@ export const STACK: Layer[] = [
     kind: 'compute',
     what: 'Stacked memory sits beside each processor, feeding it the model\'s numbers.',
     constraint: 'For most of the time a model is answering, the chip is waiting on memory, not maths.',
-    pieces: ['the-countertop-is-the-bottleneck'],
+    pieces: ['the-countertop-is-the-bottleneck', 'micron-three-times-the-wafer'],
   },
   {
     id: 'chips',
@@ -69,7 +69,7 @@ export const STACK: Layer[] = [
     kind: 'compute',
     what: 'The processors that do the work, and the few factories able to make and package them.',
     constraint: 'A new chip factory takes two to three years to build and one to two more to fill.',
-    pieces: ['the-two-seconds-after-you-hit-send', 'tsmc-says-it-is-the-bottleneck', 'nobody-makes-a-b200-alone'],
+    pieces: ['the-two-seconds-after-you-hit-send', 'tsmc-says-it-is-the-bottleneck', 'nobody-makes-a-b200-alone', 'asml-booked-ahead', 'ajinomoto-grows-with-the-package'],
   },
   {
     id: 'operators',
