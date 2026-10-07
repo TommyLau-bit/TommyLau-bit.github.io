@@ -69,7 +69,7 @@ export const STACK: Layer[] = [
     kind: 'compute',
     what: 'The processors that do the work, and the few factories able to make and package them.',
     constraint: 'A new chip factory takes two to three years to build and one to two more to fill.',
-    pieces: ['the-two-seconds-after-you-hit-send', 'tsmc-says-it-is-the-bottleneck'],
+    pieces: ['the-two-seconds-after-you-hit-send', 'tsmc-says-it-is-the-bottleneck', 'nobody-makes-a-b200-alone'],
   },
   {
     id: 'operators',

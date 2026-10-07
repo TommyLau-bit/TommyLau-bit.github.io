@@ -351,7 +351,7 @@ https://thephysicallayer.fyi/journal/schneider-sells-the-finished-system/
 
 ---
 
-## 25 · GE Vernova sells the wait (site live 9 Oct 2026; LinkedIn Fri 6 Nov, 11:30)
+## 25 · GE Vernova sells the wait (site live 9 Oct 2026; LinkedIn Mon 9 Nov, 11:30)
 
 GE Vernova signed 41 gigawatts of gas turbine contracts in the first half of 2026 and shipped seven.
 
@@ -365,7 +365,7 @@ https://thephysicallayer.fyi/journal/ge-vernova-sells-the-wait/
 
 ---
 
-## 26 · Fluence is short of American-made (site live 12 Oct 2026; LinkedIn Mon 9 Nov, 11:30)
+## 26 · Fluence is short of American-made (site live 12 Oct 2026; LinkedIn Wed 11 Nov, 11:30)
 
 Fluence's new Houston battery factory spent this summer running on generators, because its own grid connection was late.
 
@@ -379,7 +379,7 @@ https://thephysicallayer.fyi/journal/fluence-short-of-american-made/
 
 ---
 
-## 27 · Hitachi Energy plans the queue (site live 14 Oct 2026; LinkedIn Wed 11 Nov, 11:30)
+## 27 · Hitachi Energy plans the queue (site live 14 Oct 2026; LinkedIn Fri 13 Nov, 11:30)
 
 Hitachi Energy is spending more than $9 billion on factories, and it still expects about three years of orders to be waiting in 2030.
 
@@ -393,7 +393,7 @@ https://thephysicallayer.fyi/journal/hitachi-energy-plans-the-queue/
 
 ---
 
-## 28 · Eaton's order book outruns it (site live 16 Oct 2026; LinkedIn Fri 13 Nov, 11:30)
+## 28 · Eaton's order book outruns it (site live 16 Oct 2026; LinkedIn Mon 16 Nov, 11:30)
 
 Eaton shipped 18% more electrical gear in the year to June, and its order book grew 33%.
 
@@ -407,7 +407,7 @@ https://thephysicallayer.fyi/journal/eaton-order-book-outruns-it/
 
 ---
 
-## 29 · Siemens Energy measures the shortage (site live 20 Oct 2026; LinkedIn Mon 16 Nov, 11:30)
+## 29 · Siemens Energy measures the shortage (site live 20 Oct 2026; LinkedIn Wed 18 Nov, 11:30)
 
 Siemens Energy has published its own estimate of the transformer shortage, and on its chart demand is still ahead of every factory in 2030.
 
@@ -418,3 +418,17 @@ The piece covers what the chart shows, why a narrowing gap still adds to the pil
 https://thephysicallayer.fyi/journal/siemens-energy-measures-the-shortage/
 
 #Transformers #DataCentres #EnergyInfrastructure
+
+## 30 · Nobody makes a B200 alone (site live 7 Oct 2026; LinkedIn Fri 6 Nov, 11:30)
+
+Nobody makes an Nvidia B200 on their own, not even Nvidia.
+
+One accelerator draws on factories mostly in Taiwan, machines from the Netherlands, mirrors from Germany, memory from South Korea and materials from Japan. Some of those suppliers could be swapped in months. Others would take years, because a replacement needs a new factory or years of testing before anyone trusts it, and that is the dependency that matters.
+
+The piece follows one B200 from blueprint to wafer, through its memory and packaging, and into the rack.
+
+https://thephysicallayer.fyi/journal/nobody-makes-a-b200-alone/
+
+#Semiconductors #SupplyChain #AIInfrastructure
+
+---
