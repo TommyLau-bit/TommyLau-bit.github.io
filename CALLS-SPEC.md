@@ -94,4 +94,5 @@ Process: one company at a time; draft, then an independent fact-check, then fix,
 ## Pending (7 Oct 2026)
 
 - **Marvell** (`src/content/calls/marvell.md`, draft, not committed): drafted and fact-checked, draft view no call on the 5 Oct close of US$271.25. Held because Marvell's Investor Day on 6 Oct reportedly raised the fiscal 2028 revenue target from about US$18bn to about US$20bn, which would lift the base case to about US$322. Rebuild on the confirmed figures once Marvell files the 8-K or posts the presentation, refresh the price, and bring the new draft view to Tommy.
-- Published so far: Vertiv (long), Nebius, TSMC, Texas Instruments, Corning, Bloom Energy, Lumentum (no call), Oklo (short), Broadcom (long).
+- Published so far: Vertiv (long), Nebius, TSMC, Texas Instruments, Corning, Bloom Energy, Lumentum, Schneider Electric, Micron, ASML, Ajinomoto (no call), Oklo (short), Broadcom (long).
+- Notes to be drafted automatically after each scheduled journal piece goes live (STEP 8 of the publish tasks): GE Vernova (9 Oct), Fluence (12 Oct), Hitachi Ltd (14 Oct), Eaton (16 Oct), Siemens Energy (20 Oct). Drafts only; Tommy decides each call.
