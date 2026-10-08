@@ -6,8 +6,6 @@ category: "Analysis"
 cover: "/covers/the-part-money-cannot-hurry.svg"
 tags: ["grid", "power", "data-centres"]
 draft: false
-updated: 2026-10-08T16:00:00+08:00
-updateNote: "Shortened and made plainer on 8 October 2026. The claim and the test of it are unchanged."
 ---
 
 Malaysia's grid operator did something unusual last year. It took the time needed to connect a new project to the grid and cut it from thirty six months to twelve.

@@ -5,8 +5,6 @@ summary: "Lumentum makes the tiny lasers that turn data into light, so AI chips 
 category: "Analysis"
 cover: "/covers/lumentum-makes-the-light.svg"
 tags: ["networking", "optics", "lasers"]
-updated: 2026-10-08T16:00:00+08:00
-updateNote: "Shortened and made plainer on 8 October 2026. The claim and the test of it are unchanged."
 ---
 
 In March, Nvidia, the company that designs most of the world's AI chips, agreed to invest $2 billion in Lumentum. Lumentum does not make chips. It makes lasers.

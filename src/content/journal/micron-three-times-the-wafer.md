@@ -6,8 +6,6 @@ category: "Analysis"
 cover: "/covers/micron-three-times-the-wafer.svg"
 tags: ["memory", "HBM", "supply-chain"]
 draft: false
-updated: 2026-10-08T16:00:00+08:00
-updateNote: "Shortened and made plainer on 8 October 2026. The claim and the test of it are unchanged."
 ---
 
 Here is a claim I am willing to be wrong about in public. The memory shortage inside AI chips and the one in your next laptop are the same shortage.

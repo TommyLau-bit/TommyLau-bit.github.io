@@ -6,8 +6,6 @@ category: "Explainer"
 cover: "/covers/copper-rack.svg"
 tags: ["power", "data-centres", "800VDC"]
 draft: false
-updated: 2026-10-08T16:00:00+08:00
-updateNote: "Shortened and made plainer on 8 October 2026. The explanation is unchanged."
 ---
 
 Every few months a new AI chip is announced and the headlines follow it. What almost nobody writes about is the boring metal box the chip lives in, and the even more boring question of how electricity gets to it.

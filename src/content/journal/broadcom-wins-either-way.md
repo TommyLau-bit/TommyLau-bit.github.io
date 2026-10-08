@@ -6,8 +6,6 @@ category: "Analysis"
 cover: "/covers/broadcom-wins-either-way.svg"
 tags: ["networking", "custom-chips", "the-stack"]
 draft: false
-updated: 2026-10-08T16:00:00+08:00
-updateNote: "Shortened and made plainer on 8 October 2026. The claim and the test of it are unchanged."
 ---
 
 Most talk about AI hardware comes down to one question. Will the cloud giants keep buying Nvidia's chips, or build their own and leave?

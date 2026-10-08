@@ -6,8 +6,6 @@ category: "Analysis"
 cover: "/covers/tsmc-says-it-is-the-bottleneck.svg"
 tags: ["the-stack", "data-centres", "supply-chain"]
 draft: false
-updated: 2026-10-08T16:00:00+08:00
-updateNote: "Shortened and made plainer on 8 October 2026. The claim and the test of it are unchanged."
 ---
 
 This journal has argued for months that the thing holding back AI is not the chip. It is the wire, the substation and the queue to connect to the grid.

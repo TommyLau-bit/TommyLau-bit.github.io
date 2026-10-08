@@ -5,8 +5,6 @@ summary: "Corning, the 175-year-old glass company, makes the optical fibre that 
 category: "Analysis"
 cover: "/covers/corning-lays-the-glass.svg"
 tags: ["networking", "optics", "data-centres"]
-updated: 2026-10-08T16:00:00+08:00
-updateNote: "Shortened and made plainer on 8 October 2026. The claim and the test of it are unchanged."
 ---
 
 This year three of the biggest buyers in AI have paid to secure the same thing from Corning. In January, Meta agreed to pay Corning up to $6 billion for fibre optic cable through 2030.

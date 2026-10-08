@@ -6,8 +6,6 @@ category: "Analysis"
 cover: "/covers/power-first-chips-last.svg"
 tags: ["power", "grid", "data-centres"]
 draft: false
-updated: 2026-10-08T16:00:00+08:00
-updateNote: "Wording tidied on 8 October 2026. The claim and the test of it are unchanged."
 ---
 
 Here is a claim I am willing to be wrong about: the order in which a company commits its money tells you what is scarce.

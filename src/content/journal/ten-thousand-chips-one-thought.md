@@ -5,8 +5,6 @@ summary: "A frontier AI model is too big to fit on any single chip, so it's slic
 category: "Explainer"
 cover: "/covers/network.svg"
 tags: ["networking", "optics", "the-stack"]
-updated: 2026-10-08T16:00:00+08:00
-updateNote: "Wording tidied on 8 October 2026. The explanation is unchanged."
 ---
 
 Here is the problem in one sentence. A frontier model has more than a trillion internal settings, and no single chip has anywhere near enough memory to hold them. So the model is cut into pieces and spread across thousands of chips.

@@ -6,8 +6,6 @@ category: "Analysis"
 cover: "/covers/ti-feeds-the-chip.svg"
 tags: ["power", "data-centres", "800VDC"]
 draft: false
-updated: 2026-10-08T16:00:00+08:00
-updateNote: "Shortened and made plainer on 8 October 2026. The claim and the test of it are unchanged."
 ---
 
 Here is a fact about AI processors that rarely makes the news. The chip that costs tens of thousands of dollars cannot run on the electricity delivered to it.

@@ -5,8 +5,6 @@ summary: "When you ask an AI a question, no answer is waiting on a shelf. A buil
 category: "Explainer"
 cover: "/covers/two-seconds.svg"
 tags: ["explainer", "inference", "the-stack"]
-updated: 2026-10-08T16:00:00+08:00
-updateNote: "Wording tidied on 8 October 2026. The explanation is unchanged."
 ---
 
 Start with a question you have probably never asked: where does the answer come from?

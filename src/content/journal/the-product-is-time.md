@@ -6,8 +6,6 @@ category: "Analysis"
 cover: "/covers/the-product-is-time.svg"
 tags: ["power", "data-centres", "fuel-cells"]
 draft: false
-updated: 2026-10-08T16:00:00+08:00
-updateNote: "Shortened and made plainer on 8 October 2026. The claim and the test of it are unchanged."
 ---
 
 Bloom Energy has been making fuel cells for more than twenty years. For most of that time, very few people needed what it sold.

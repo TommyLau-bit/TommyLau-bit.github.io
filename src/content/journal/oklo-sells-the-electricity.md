@@ -5,8 +5,6 @@ summary: "Oklo designs small nuclear reactors meant to sit right beside AI data 
 category: "Analysis"
 cover: "/covers/oklo-sells-the-electricity.svg"
 tags: ["power", "nuclear", "data-centres"]
-updated: 2026-10-08T16:00:00+08:00
-updateNote: "Shortened and made plainer on 8 October 2026. The claim and the test of it are unchanged."
 ---
 
 Almost every company building small nuclear reactors wants to sell you one. Oklo does not.

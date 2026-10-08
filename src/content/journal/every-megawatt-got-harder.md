@@ -6,8 +6,6 @@ category: "Analysis"
 cover: "/covers/every-megawatt-got-harder.svg"
 tags: ["power", "cooling", "data-centres"]
 draft: false
-updated: 2026-10-08T16:00:00+08:00
-updateNote: "Shortened and made plainer on 8 October 2026. The claim and the test of it are unchanged."
 ---
 
 A single Nvidia AI chip gives off more than a thousand watts. Put 72 of them in one cabinet and that cabinet draws about 130 kilowatts, roughly what a hundred American homes use, in the footprint of a fridge.

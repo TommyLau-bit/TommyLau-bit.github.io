@@ -6,8 +6,6 @@ category: "Analysis"
 cover: "/covers/ajinomoto-grows-with-the-package.svg"
 tags: ["the-stack", "supply-chain", "data-centres"]
 draft: false
-updated: 2026-10-08T16:00:00+08:00
-updateNote: "Shortened and made plainer on 8 October 2026. The claim and the test of it are unchanged."
 ---
 
 Here is a claim I am willing to be wrong about in public. The AI material Ajinomoto sells is not counted in chips, but in area.

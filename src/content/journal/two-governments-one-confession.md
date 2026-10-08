@@ -6,8 +6,6 @@ category: "Analysis"
 cover: "/covers/two-governments-one-confession.svg"
 tags: ["grid", "power", "johor", "singapore"]
 draft: false
-updated: 2026-10-08T16:00:00+08:00
-updateNote: "Shortened and made plainer on 8 October 2026. The claim and the test of it are unchanged."
 ---
 
 There are two ways to find out what somebody thinks is scarce. You can ask them, or you can watch what they do about it.

@@ -6,8 +6,6 @@ category: "Analysis"
 cover: "/covers/schneider-sells-the-finished-system.svg"
 tags: ["power", "data-centres", "the-stack"]
 draft: false
-updated: 2026-10-08T16:00:00+08:00
-updateNote: "Shortened and made plainer on 8 October 2026. The claim and the test of it are unchanged."
 ---
 
 Here is a claim I am willing to be wrong about in public. Schneider Electric's growth from AI is not mainly a story of selling more breakers and switches.

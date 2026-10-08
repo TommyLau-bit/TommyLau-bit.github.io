@@ -5,8 +5,6 @@ summary: "Nebius builds complete AI computing centres and rents them out, to cus
 category: "Analysis"
 cover: "/covers/nebius-paid-for-what-is-switched-on.svg"
 tags: ["power", "data-centres", "neocloud"]
-updated: 2026-10-08T16:00:00+08:00
-updateNote: "Shortened and made plainer on 8 October 2026. The claim and the test of it are unchanged."
 ---
 
 The easy way to describe Nebius is as a company that rents out Nvidia chips. That description misses what its customers are actually paying for.

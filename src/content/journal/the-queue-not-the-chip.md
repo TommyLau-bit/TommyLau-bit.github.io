@@ -5,8 +5,6 @@ summary: "Everyone watches the chip supply. Almost nobody watches the queue to p
 category: "Analysis"
 cover: "/covers/queue.svg"
 tags: ["power", "grid", "johor", "singapore"]
-updated: 2026-10-08T16:00:00+08:00
-updateNote: "Shortened and made plainer on 8 October 2026. The claim and the test of it are unchanged."
 ---
 
 Here is a claim I am willing to be wrong about in public: the thing holding back the AI buildout is not the chip. It is the wire.

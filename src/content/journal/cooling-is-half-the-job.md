@@ -5,8 +5,6 @@ summary: "Almost every watt that goes into an AI chip comes out as heat, and one
 category: "Explainer"
 cover: "/covers/cooling.svg"
 tags: ["cooling", "data-centres", "liquid"]
-updated: 2026-10-08T16:00:00+08:00
-updateNote: "Wording tidied on 8 October 2026. The explanation is unchanged."
 ---
 
 There is a fact about computers that most people never think about, and once you know it the whole cooling industry makes sense.

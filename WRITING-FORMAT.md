@@ -369,6 +369,12 @@ capacity, never anything about the shares. When a figure is overtaken, update
 it there with a `note`, and give the piece `updated` and `updateNote` in its
 frontmatter rather than quietly editing history.
 
+**Editing a published piece for length or clarity needs no update line** (Tommy, 8 Oct
+2026). Shortening, tidying or rewording a piece without changing what it says is
+just editing: no `updated`, no `updateNote`. The update line is only for a figure
+that was overtaken and corrected. The claim and test on the claims page are
+still never reworded.
+
 **No email sign-ups.** The site has no newsletter or sign-up form, by
 decision. Do not add one. LinkedIn and RSS are how readers follow.
 

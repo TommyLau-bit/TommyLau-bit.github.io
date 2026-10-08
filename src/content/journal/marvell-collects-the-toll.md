@@ -6,8 +6,6 @@ category: "Analysis"
 cover: "/covers/marvell-collects-the-toll.svg"
 tags: ["networking", "optics", "data-centres"]
 draft: false
-updated: 2026-10-08T16:00:00+08:00
-updateNote: "Shortened and made plainer on 8 October 2026. The claim and the test of it are unchanged."
 ---
 
 Most people who follow AI hardware are watching one contest. Nvidia's chips against Google's, Amazon's and everyone else's. Marvell, the American chip designer, sits somewhere that contest barely reaches.

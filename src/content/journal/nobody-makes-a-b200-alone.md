@@ -6,8 +6,6 @@ category: "Explainer"
 cover: "/covers/nobody-makes-a-b200-alone.svg"
 tags: ["the-stack", "supply-chain", "data-centres"]
 draft: false
-updated: 2026-10-08T16:00:00+08:00
-updateNote: "Shortened and made plainer on 8 October 2026. The explanation is unchanged."
 ---
 
 Pick up an Nvidia B200 and ask a simple question: who made it? The honest answer is nobody, not alone.

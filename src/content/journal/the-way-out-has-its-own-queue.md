@@ -6,8 +6,6 @@ category: "Analysis"
 cover: "/covers/the-way-out-has-its-own-queue.svg"
 tags: ["grid", "power", "data-centres"]
 draft: false
-updated: 2026-10-08T16:00:00+08:00
-updateNote: "Wording tidied on 8 October 2026. The claim and the test of it are unchanged."
 ---
 
 I have written twice now that the thing holding back AI is not the chip. It is the wait to plug into the electricity grid.

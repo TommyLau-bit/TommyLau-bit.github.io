@@ -6,8 +6,6 @@ category: "Explainer"
 cover: "/covers/room-to-spare.svg"
 tags: ["power", "cooling", "data-centres"]
 draft: false
-updated: 2026-10-08T16:00:00+08:00
-updateNote: "Shortened and made plainer on 8 October 2026. The explanation is unchanged."
 ---
 
 Twenty years ago, Jane Street's first computing cluster was six Dell boxes stacked at the end of a row of desks. Once, a cleaner unplugged one of its trading systems while vacuuming.
