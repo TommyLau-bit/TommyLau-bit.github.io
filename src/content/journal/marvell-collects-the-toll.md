@@ -5,13 +5,18 @@ summary: "Marvell makes the small chips that turn electrical signals into light 
 category: "Analysis"
 cover: "/covers/marvell-collects-the-toll.svg"
 tags: ["networking", "optics", "data-centres"]
+draft: false
+updated: 2026-10-08T16:00:00+08:00
+updateNote: "Shortened and made plainer on 8 October 2026. The claim and the test of it are unchanged."
 ---
 
-Most people who follow AI hardware are watching one contest. Nvidia's GPUs against Google's chips, Amazon's chips and everyone else's. Marvell sits somewhere that contest barely reaches.
+Most people who follow AI hardware are watching one contest. Nvidia's chips against Google's, Amazon's and everyone else's. Marvell, the American chip designer, sits somewhere that contest barely reaches.
 
-Marvell makes the parts that let AI chips talk. When two processors in different cabinets swap results, the signal leaves one as electricity, crosses the hall as light and arrives at the other as electricity again. The chip doing the translation at each end is very often a Marvell part.
+Marvell makes parts that let AI chips talk. When two processors in different cabinets swap results, the signal leaves as electricity, crosses the hall as light and arrives as electricity again.
 
-It also helps the largest cloud companies design their own AI processors. That half gets the headlines. The first half interests me more, because it is a charge on how big the cluster gets rather than a bet on which chip wins.
+The chip doing that translation at each end is very often a Marvell part. Marvell also helps cloud companies design their own AI chips, and that half gets the headlines.
+
+The first half interests me more. It is a charge on how big the cluster gets, not a bet on which chip wins.
 
 Marvell is paid every time AI chips talk, whoever made the chips.
 
@@ -24,57 +29,53 @@ Marvell is paid every time AI chips talk, whoever made the chips.
 
 ## Three words you need
 
-**Optical DSP.** A DSP, a digital signal processor, is a chip that cleans up and reshapes a signal. The optical kind sits inside the plug at each end of a fibre cable and handles the translation between electricity and light.
+**Optical DSP.** A DSP, a digital signal processor, is a chip that cleans up and reshapes a signal. The optical kind sits inside the plug at each end of a fibre cable and translates between electricity and light.
 
-**800G and 1.6T.** How much data one of those plugs moves per second: 800 gigabits for the current workhorse, 1.6 terabits for the generation now ramping. Each step doubles the traffic through the same small plug.
+**800G and 1.6T.** How much data one of those plugs moves each second. The 800 gigabit plug is today's workhorse, and the 1.6 terabit plug is the generation now arriving.
 
-**XPU.** An industry label for a custom AI chip, designed for one company's own workload rather than sold to everyone. A GPU is a general tool. An XPU does one job, more cheaply.
+**XPU.** An industry label for a custom AI chip, designed for one company's own work rather than sold to everyone. A GPU is a general tool. An XPU does one job, more cheaply.
 
 ## Where copper stops and Marvell starts
 
-AI models are too large for one chip, so they are split across thousands, and those chips exchange partial results constantly. As I wrote in an earlier piece, a network even slightly slow leaves the most expensive silicon ever built waiting.
+AI models are too large for one chip, so they are split across thousands that swap partial results all the time. A network even slightly slow leaves the most expensive silicon ever built waiting.
 
-Inside a cabinet, copper carries most of that traffic. Between cabinets it cannot. At today's speeds an electrical signal degrades within a few metres, so everything leaving the rack is converted to light and sent down glass fibre.
+Inside a cabinet, copper wire carries most of that traffic. Between cabinets it cannot, because at today's speeds an electrical signal fades within a few metres. So everything leaving the cabinet becomes light and travels down glass fibre.
 
-That conversion lives in a plug about the size of a pack of gum, called an optical transceiver, which slots into the front of a network switch. Inside it are a laser, a light detector and the optical DSP. The DSP is the hard part.
+That change happens in a plug about the size of a pack of gum, called an optical transceiver, which slots into the front of a network switch. Inside are a laser, a light detector and the optical DSP. The DSP is the hard part.
 
-Signals at these speeds are not simple on and off pulses. The standard, called PAM4, sends four levels of brightness so each pulse carries two bits. Telling four levels apart, billions of times a second, through noise and distortion, takes a lot of processing. Every doubling in speed makes it harder.
+At these speeds the signal is not a simple on and off. The light shines at four levels of brightness, and the DSP must tell them apart billions of times a second through noise. Every doubling in speed makes that harder.
 
-Marvell bought this capability. In April 2021 it completed its purchase of Inphi, the leader in these electro-optical chips, and the DSP inside many of today's transceivers traces back to that deal.
+Marvell bought this skill. In 2021 it completed its purchase of Inphi, the leader in these chips, and the DSP inside many of today's plugs traces back to that deal.
 
-Here is why it works as a toll. The plug neither knows nor cares whether the chip behind the switch came from Nvidia, AMD, Google or Amazon. A bigger cluster means more links, and a faster generation of chips means replacing the links. Both raise the count.
+## Why it works as a toll
+
+The plug neither knows nor cares whether the chip behind the switch came from Nvidia, AMD, Google or Amazon. It only carries the conversation.
+
+Two things raise the number of plugs. A bigger cluster needs more links between cabinets. And each faster generation of chips means replacing the links with faster ones. Both happen at once in an AI build.
+
+Marvell's own behaviour suggests the demand is real. It has said it will pay suppliers about $1 billion in advance this financial year to secure parts, including its newest optical DSPs. Paying ahead to hold factory space is what a supplier does when demand outruns the factories.
+
+Its sales have shifted the same way. Data centres went from about three quarters of Marvell's revenue to nearly four fifths of it in just two quarters.
 
 ## The second job, and where I stop
 
-Marvell's other data centre business is custom silicon. A cloud company knows what it wants its own AI chip to do. Marvell turns that into a working design and manages its manufacture with TSMC, the Taiwanese foundry that makes it.
+Marvell's other data centre business is custom chips. A cloud company knows what it wants its own AI chip to do. Marvell turns that into a working design and manages its manufacture with TSMC, the Taiwanese chip factory.
 
-Broadcom does the same job and is larger at it. The customers are few and enormous, and each one also runs its own chip team. That makes custom silicon a very different business from the optics, with lumpier programmes and stronger buyers.
+Broadcom does the same job and is larger at it. The customers are few and enormous, and each runs its own chip team. Marvell's ten largest customers bring in more than four fifths of its revenue.
 
-This is where I stop. Judging chip design programmes needs knowledge of semiconductor design I do not claim. What I can say is physical: every custom chip Marvell helps build still has to talk to the others, so it still needs the links.
+That makes custom chips a very different business from the optics, with lumpier orders and stronger buyers. Marvell has said the custom work weighs on its gross margin, the share of each sale left after the cost of making it.
 
-## What Marvell's own numbers show
-
-If the toll is real, data centre revenue should outgrow the rest of Marvell, and the company should be scrambling for supply of optical parts.
-
-**Mix.** In the fourth quarter of fiscal 2026, reported on 5 March 2026, data centre revenue was 74 per cent of the total. By the second quarter of fiscal 2027, reported on 27 August 2026, it was 79 per cent, $2.17 billion, up 46 per cent on a year earlier.
-
-**Scale.** Fiscal 2026 revenue was $8.195 billion, up 42 per cent. Management's own outlook is about $12 billion for fiscal 2027 and $18 billion for fiscal 2028. Those are Marvell's forecasts, not mine.
-
-**Supply.** On the same call, Marvell said it would make about $1 billion of capacity prepayments to suppliers in fiscal 2027, to secure supply of 1.6T optical DSPs and switch chips. Paying ahead to hold manufacturing capacity is what a supplier does when demand is outrunning the factories.
-
-**Concentration.** In fiscal 2026, Marvell's ten largest customers made up 82 per cent of revenue, according to its annual report. That is the cost of selling into a handful of giant buildings.
-
-The margin tells the same split. Marvell flagged the custom ramp as a drag on gross margin, the share of each sale left after the cost of making it, in the third quarter. Custom work is the part where powerful buyers set the price.
+This is where I stop. Judging chip design programmes needs knowledge I do not claim. What I can say is physical: every custom chip Marvell helps build still has to talk to the others, so it still needs the links.
 
 ## What would prove me wrong
 
-I am wrong if the translation moves off the plug. Two approaches aim to do exactly that. Linear pluggable optics drop the DSP from the transceiver and let the switch chip do the cleaning. Co-packaged optics go further and put the light conversion on the switch package itself.
+I am wrong if the translation moves off the plug at scale. Two approaches aim to do exactly that, and both save power, which matters when every watt spent moving data is not spent computing.
 
-Both save power, which matters when each watt spent moving data is a watt not spent computing. If either spreads at scale, the translation job moves to whoever makes the switch chip. Marvell makes switch chips and is developing co-packaged parts, but it would be competing on different ground.
+Linear pluggable optics drop the DSP from the plug and let the switch chip clean the signal. Co-packaged optics go further and put the light conversion on the switch itself. If either spreads widely, the job moves to whoever makes the switch chip.
 
-I am also wrong if Marvell's interconnect growth stalls while clusters keep growing. That would mean the toll is being collected by someone else.
+I am also wrong if Marvell's interconnect growth stalls while clusters keep growing. That would mean someone else is collecting the toll.
 
-So I watch three things. Whether 1.6T links keep a DSP on board. How much of Marvell's growth comes from optics rather than custom chips. And whether the ten largest customers keep rising as a share of revenue.
+So I watch whether the 1.6T links keep a DSP on board. I watch how much of Marvell's growth comes from optics rather than custom chips. And I watch whether its ten largest customers keep rising as a share of revenue.
 
 <section class="exposure">
 <h3>Who is exposed if the link, not the chip, is the toll</h3>
@@ -99,4 +100,4 @@ So I watch three things. Whether 1.6T links keep a DSP on board. How much of Mar
 
 ---
 
-<p class="sources">Sources: Marvell fourth quarter and fiscal 2026 results, released 5 March 2026, for full year revenue and data centre share. Marvell annual report on Form 10-K for fiscal 2026, filed 11 March 2026, for customer concentration. Marvell second quarter fiscal 2027 results and earnings call, 27 August 2026, for data centre revenue, the fiscal 2027 and 2028 outlook, capacity prepayments and gross margin commentary. Marvell announcement completing the Inphi acquisition, 20 April 2021. Nvidia and Marvell NVLink Fusion announcement, 31 March 2026. Figures are as reported on the dates cited. Personal research, not investment advice.</p>
+<p class="sources">Sources: Marvell fourth quarter and fiscal 2026 results, 5 March 2026, for data centre share. Marvell annual report on Form 10-K for fiscal 2026, filed 11 March 2026, for customer concentration. Marvell second quarter fiscal 2027 results and earnings call, 27 August 2026, for data centre share, capacity prepayments and gross margin commentary. Marvell announcement completing the Inphi acquisition, 20 April 2021. Nvidia and Marvell NVLink Fusion announcement, 31 March 2026. Figures are as reported on the dates cited. Personal research, not investment advice.</p>

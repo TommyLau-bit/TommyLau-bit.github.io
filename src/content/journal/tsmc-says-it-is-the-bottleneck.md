@@ -5,13 +5,18 @@ summary: "Almost every advanced AI chip, whoever designs it, is made by one comp
 category: "Analysis"
 cover: "/covers/tsmc-says-it-is-the-bottleneck.svg"
 tags: ["the-stack", "data-centres", "supply-chain"]
+draft: false
+updated: 2026-10-08T16:00:00+08:00
+updateNote: "Shortened and made plainer on 8 October 2026. The claim and the test of it are unchanged."
 ---
 
 This journal has argued for months that the thing holding back AI is not the chip. It is the wire, the substation and the queue to connect to the grid.
 
-In January 2026, the company that makes almost every AI chip disagreed in public. Asked on TSMC's earnings call whether power was the limit, chief executive C.C. Wei said not yet. The bottleneck, Wei said, was TSMC's own wafer supply.
+In January 2026 the company that makes almost every AI chip disagreed in public. Asked on TSMC's earnings call whether power was the limit, chief executive C.C. Wei said not yet. The bottleneck, he said, was TSMC's own wafer supply.
 
-That deserves a fair hearing rather than a reflex. TSMC is the one place where Nvidia, Google, Amazon, AMD and Broadcom all queue for the same factories. And its own numbers show a factory that runs on a clock much closer to a substation's than to a chip's.
+That deserves a fair hearing rather than a reflex. TSMC is the one place where Nvidia, Google, Amazon, AMD and Broadcom all queue for the same factories.
+
+And TSMC's own timetable shows a factory that runs on a clock much closer to a substation's than to a chip's.
 
 On today's horizon, TSMC is right: its factories are the bottleneck.
 
@@ -24,53 +29,51 @@ On today's horizon, TSMC is right: its factories are the bottleneck.
 
 ## Three words you need
 
-**Foundry.** A company that manufactures chips other companies design. Nvidia, Apple, AMD and the cloud giants design. TSMC, the Taiwan Semiconductor Manufacturing Company, makes them.
+**Foundry.** A company that makes chips other companies design. Nvidia, Apple, AMD and the cloud giants design. TSMC, the Taiwan Semiconductor Manufacturing Company, makes them.
 
-**Fab.** Short for fabrication plant, the factory where chips are made on silicon wafers. TSMC's largest sites, which it calls gigafabs, are clusters of fabs built side by side.
+**Fab.** Short for fabrication plant, the factory where chips are made on thin silicon discs called wafers. TSMC's largest sites are clusters of fabs built side by side.
 
-**CoWoS.** TSMC's name for the advanced packaging that joins an AI processor to its stacked memory on one base. Every leading AI accelerator needs it, and it is a separate factory step from making the chip itself.
+**CoWoS.** TSMC's name for the advanced packaging that joins an AI processor to its stacked memory on one base. Every leading AI chip needs it, and it is a separate factory step.
 
 ## Why one company makes everyone's chips
 
-Most chip companies stopped building their own factories long ago. The cost of each new generation of manufacturing rose until only a company making chips for everyone could afford it. TSMC's model was simple: give us your design, and we will make the best chips.
+Most chip companies stopped building their own factories long ago. Each new generation of manufacturing cost more, until only a company making chips for everyone could afford it.
 
-The result is that rivals share a supplier. Nvidia's GPUs, the custom chips Broadcom designs for Google and OpenAI, and AMD's accelerators all come out of the same fabs. In the second quarter of 2026, 77 per cent of TSMC's wafer revenue came from its most advanced processes.
+TSMC's model was simple: give us your design, and we will make the best chips. The result is that rivals share a supplier. Nvidia's chips, the custom chips Broadcom designs for Google and OpenAI, and AMD's chips all come out of the same fabs.
 
-The fabs are clustered for a physical reason. Starting up a new fab, which the industry calls bringing it up, depends on copying settings, people and suppliers from one already working. So the sites sit next to each other, in Hsinchu, Taichung, Tainan and Kaohsiung.
+The fabs cluster for a physical reason. Starting up a new fab depends on copying settings, people and suppliers from one already working. So TSMC's sites sit close together in Taiwan, in Hsinchu, Taichung, Tainan and Kaohsiung.
+
+Building away from the cluster costs more, and TSMC says so. It has begun making chips in Arizona, and it warns that its overseas fabs cut its margin, and by more as they grow.
 
 ## The clock on a chip factory
 
-The usual assumption, which I shared, is that chip shortages clear in quarters, because money can buy another production line. TSMC's own timeline says otherwise.
+The usual assumption, which I shared, is that chip shortages clear in quarters, because money can buy another production line. TSMC's own timetable says otherwise.
 
-On its January call, Wei said a new fab takes two to three years to build. In April Wei added that ramping it to full output takes one to two years more. In July Wei put the whole cycle, from developing the process to high-volume production, at more than five years.
+On the January call, Wei said a new fab takes two to three years to build. In April he added that ramping it to full output takes one to two years more. Money spent today mostly buys output for 2028 and 2029.
 
-The spending shows the same lag. TSMC raised its 2026 capital spending guidance to $60 billion to $64 billion, up from $40.9 billion in 2025. Wei said that money adds almost nothing to output in 2026 and only a little in 2027. It buys supply for 2028 and 2029.
+TSMC plans to spend at least $60 billion on new capacity this year, far more than last year. Yet Wei said that money adds almost nothing to output this year and only a little next year.
 
-Packaging is tighter still. In July, Wei said TSMC's packaging capacity was so tight it was limiting customers' growth. A stacked-memory AI chip that cannot be joined to its memory cannot ship, however many processors are waiting.
+Packaging is tighter still. In July Wei said TSMC's packaging capacity was so tight it was limiting its customers' growth. An AI chip that cannot be joined to its memory cannot ship, however many processors are waiting.
 
-## What TSMC's own numbers show
+## What TSMC's own results show
 
-If AI is the pull and the factories are the limit, AI work should be taking over the mix while TSMC spends heavily and still cannot catch up.
+If AI is the pull and the factories are the limit, AI work should be taking over TSMC's business while it spends heavily and still cannot catch up.
 
-**Mix.** High-performance computing, the platform that includes AI accelerators, was 66 per cent of revenue in the second quarter of 2026, reported on 16 July. A year earlier it was 60 per cent. AI accelerators alone were in the high teens as a share of 2025 revenue, according to TSMC.
+That is what its results show. The part of TSMC that makes chips for AI and other heavy computing now brings in about two thirds of its sales, up from three fifths a year earlier.
 
-**Growth.** Second quarter revenue was $40.2 billion, up 33.7 per cent in dollars. TSMC now expects 2026 growth slightly above 40 per cent. Those are TSMC's forecasts, not mine.
-
-**Margin.** Gross margin, the share of each sale left after the cost of making it, was 67.7 per cent, up 9.1 points on a year earlier. Margin rising while factories run full is what a scarce supplier looks like in money.
-
-**The cost of leaving the cluster.** TSMC began volume production in Arizona at the end of 2024 and has committed $165 billion in America. It guides that overseas fabs cut gross margin by two to three points at first, widening to three to four. Building away from the cluster costs more, which is why clusters form.
+Its gross margin, the share of each sale left after the cost of making it, has risen sharply over the same year. Margin rising while factories run full is what a scarce supplier looks like in money.
 
 ## What would prove me wrong
 
-My claim is narrow. Today, TSMC's factories bind before the grid does. I am not conceding the longer argument, because a grid connection and the substation behind it still take years, and the queue in front of them keeps growing.
+My claim is narrow. Today, TSMC's factories bind before the grid does. Over the longer run, I still expect the grid to be the slower clock, because a grid connection still takes years.
 
 I am wrong about today if TSMC's tightness eases while data centres with chips on order still sit waiting for power. That would show power was binding all along, and the chip queue was simply more visible.
 
-I am wrong about the longer argument if TSMC still describes capacity as tight in 2028, once the new spending has landed, while grid connection waits shorten. Then the chip side would be the slower clock after all.
+I am wrong about the longer run if TSMC still calls its capacity tight in 2028, once the new spending has landed, while waits for grid connections shorten. Then the chip side would be the slower clock after all.
 
-Wei himself hinted at the link between the two. On the same January call, Wei said that when it came to electricity, the first worry was Taiwan's own supply. A fab is also a building waiting on power.
+Wei himself hinted at the link. On the same January call, he said that when it came to electricity, the first worry was Taiwan's own supply. A fab is also a building waiting on power.
 
-So I watch four things. Whether TSMC keeps calling packaging capacity tight. Whether Arizona's second fab reaches volume in the second half of 2027 as planned. Whether high-performance computing keeps rising as a share of revenue. And how TSMC describes Taiwan's electricity supply.
+So I watch whether TSMC keeps calling packaging tight, and whether Arizona's second fab reaches volume in the second half of 2027. I watch AI and heavy computing as a share of its sales. And I watch how TSMC describes Taiwan's electricity.
 
 <section class="exposure">
 <h3>Who is exposed if the factory, for now, is the bottleneck</h3>
@@ -95,4 +98,4 @@ So I watch four things. Whether TSMC keeps calling packaging capacity tight. Whe
 
 ---
 
-<p class="sources">Sources: TSMC second quarter 2026 management report and earnings release, 16 July 2026, for revenue, margin, platform and technology mix. TSMC earnings calls of 15 January, 16 April and 16 July 2026 for comments on wafer supply, power, fab build and ramp times, capital spending, packaging capacity, Taiwan's electricity and overseas margin dilution. TSMC 2025 annual report for 2025 results and Arizona production. TSMC announcement of its expanded United States investment, 4 March 2025. Figures are as reported on the dates cited. Where a quote comes from a call, it is TSMC's management speaking. I hold no view here on the politics around Taiwan, which sits outside this site's layer. Personal research, not investment advice.</p>
+<p class="sources">Sources: TSMC second quarter 2026 management report and earnings release, 16 July 2026, for platform mix and margin. TSMC earnings calls of 15 January, 16 April and 16 July 2026 for comments on wafer supply, power, fab build and ramp times, capital spending, packaging capacity, Taiwan's electricity and overseas margin dilution. TSMC 2025 annual report for 2025 results and Arizona production. Figures are as reported on the dates cited. Where a quote comes from a call, it is TSMC's management speaking. I hold no view here on the politics around Taiwan, which sits outside this site's layer. Personal research, not investment advice.</p>

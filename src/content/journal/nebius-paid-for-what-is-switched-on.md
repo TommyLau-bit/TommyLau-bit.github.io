@@ -5,11 +5,13 @@ summary: "Nebius builds complete AI computing centres and rents them out, to cus
 category: "Analysis"
 cover: "/covers/nebius-paid-for-what-is-switched-on.svg"
 tags: ["power", "data-centres", "neocloud"]
+updated: 2026-10-08T16:00:00+08:00
+updateNote: "Shortened and made plainer on 8 October 2026. The claim and the test of it are unchanged."
 ---
 
 The easy way to describe Nebius is as a company that rents out Nvidia chips. That description misses what its customers are actually paying for.
 
-Microsoft runs one of the largest clouds in the world. In September 2025 it still signed up to rent capacity from Nebius for five years. Meta followed with two agreements, the second worth up to $27 billion.
+Microsoft runs one of the largest clouds in the world. Even so, it signed up in September 2025 to rent capacity from Nebius for five years. Meta followed with two agreements of its own.
 
 Neither company was short of chips it could order. Both were short of finished buildings with the power switched on and the chips already running inside them.
 
@@ -24,61 +26,57 @@ Nebius is paid for megawatts that are switched on, not megawatts it has signed.
 <p>Nebius builds the whole kitchen and rents it out. It has booked the gas supply for five kitchens and expects to light about one this year. Its customers only pay for meals that come out of lit ovens.</p>
 </details>
 
-## Three words you need
+## Two ideas you need
 
-**Neocloud.** A cloud company built only to run AI. It rents out large groups of GPUs, the Nvidia chips that do the maths, rather than selling websites, databases and email like the big clouds.
+**Neocloud.** A cloud company built only to run AI. It rents out large groups of GPUs, the Nvidia chips that do the maths, rather than websites, databases and email like the big clouds.
 
-**Contracted versus connected power.** Contracted power is electricity a company has secured the rights to at its sites. Connected power is what is actually wired up and feeding running chips. It is the same gap I covered between announced and energised megawatts.
-
-**ARR.** Annualised run-rate revenue, the current month's revenue pace multiplied out over a year. It measures how big a business is now, and it is not a forecast.
+**Contracted versus connected power.** Contracted power is electricity a company has secured the rights to at its sites. Connected power is what is actually wired up and feeding running chips. Nebius lives in the gap between the two.
 
 ## What Nebius actually sells
 
 Serious AI work needs thousands of GPUs wired together so tightly that they behave as one computer. That is a GPU cluster. The chips pass results to each other constantly, and if one is slow, the rest wait.
 
-So the chip is the easy part. The cluster needs a very fast network, large storage feeding it data, cooling for the heat, and above all a large block of electricity at one site. Nvidia sells the chips. It does not sell the building around them.
+So the chip is the easy part. The cluster also needs a very fast network, large storage, cooling for the heat, and above all a big block of electricity at one site. Nvidia sells the chips. It does not sell the building around them.
 
-Nebius described its own sequence on its August results call. Commission the data centre, build the network, build the clusters, deploy the software, onboard the customer. Only then does revenue start, and that last stretch alone takes a few months.
+Nebius described its own sequence to investors in August. Commission the data centre, build the network, build the clusters, deploy the software, then bring the customer on board. Only then does revenue start.
 
-Nebius had an unusual head start on this. It is what remained of Yandex's Dutch parent company after it sold the Russian businesses in July 2024. It kept a working data centre in Finland, a team of engineers who had left Russia, and cash from the sale.
+Nebius had an unusual head start. It is what remained of Yandex's Dutch parent company after the Russian businesses were sold. It kept a working data centre in Finland, a team of engineers and cash from the sale.
 
-A working data centre was the scarce part. Most new entrants begin with a site, a grid application and a long wait.
+That working data centre was the scarce part. Most new entrants begin with an empty site, a grid application and a long wait.
 
-## The number that turns megawatts into money
+## How the money follows the switch
 
-In its second quarter letter, Nebius said the four large deals it signed that quarter carry annual contract value of $20 to $25 million per megawatt. Annual contract value is what the customer pays each year of the deal.
+Nebius says its largest new deals pay at least $20 million a year for every megawatt that runs. A megawatt that is contracted but not yet connected earns nothing at all.
 
-At that rate, every 100 megawatts switched on is worth $2 billion to $2.5 billion a year. Every 100 megawatts contracted but not yet connected is worth nothing yet.
+The contracts are written that way on purpose. Nebius's filing on the Microsoft deal ties its fees to the capacity actually being deployed and available. The money arrives as each block goes live, not on the day the agreement is signed.
 
-The contracts are written that way. Nebius's filing on the Microsoft deal set its fees as subject to deployment and availability of the contracted capacity. The money arrives as tranches go live, not when the agreement is signed.
+Nebius says it has now delivered every block promised to Microsoft. The capacity for Meta's second agreement is due to come online in early 2027.
 
-Nebius says it has now delivered every Microsoft tranche. The capacity for Meta's second agreement is due to come online in early 2027. The gap between 5 gigawatts contracted and roughly 1 gigawatt connected is where the whole business either happens or does not.
+So the gap between power contracted and power connected is where the whole business either happens or does not. Every month a building sits unfinished is a month of rent nobody pays.
 
-## What Nebius's own numbers show
+## What the business looks like now
 
-If switched-on capacity is the scarce thing, the numbers should show fast revenue from the capacity that runs, very heavy building, and customers paying before delivery to hold their place.
+If switched-on capacity is the scarce thing, three patterns should show. Running capacity should earn well, building should be very heavy, and customers should pay early to hold their place.
 
-**Revenue.** Group revenue for the quarter to 30 June 2026 was $582.3 million, up 454% on a year earlier. ARR stood at $3.0 billion at the end of June. Management guides to $7 billion to $9 billion by the end of the year.
+All three show. Revenue has grown several times over in a year, and the AI cloud business keeps about half of its sales as operating profit before interest, tax and wear on equipment.
 
-**Margin.** The AI cloud business made an adjusted EBITDA margin of 49.7%. That is operating profit before interest, tax and the wearing out of equipment. Running capacity earns well once it is running.
+The building bill is far larger than the income so far. Nebius is spending many times its revenue on chips and data centres, paying for megawatts long before they earn. Customer prepayments cover part of that bill, and Nebius has raised most of the rest by borrowing and by selling new shares.
 
-**Building.** Spending on equipment and data centres was $8.1 billion in the first half, against revenue of $981 million. Management guides to $20 billion to $25 billion for the full year. That is what paying for megawatts before they earn looks like.
+The most telling pattern is prepayment. Most of the deals Nebius signed between April and June included customers paying in advance, and Nebius says those payments cover half or more of the related building cost.
 
-**Prepayment.** Seventy per cent of second quarter deals included customer prepayments, which Nebius says cover 50 to 60 per cent of the related capital spending. It expects more than $9 billion of prepayments in 2026. A buyer does not pay a year early for something it can find next month.
-
-The rest came from convertible notes, a form of borrowing that can turn into shares, and from selling new shares. Cash stood at $8.0 billion at 30 June, against long-term debt of $8.5 billion.
+A buyer does not pay a year early for something it can find next month. Prepayment is what scarcity looks like from the customer's side of the table.
 
 ## What would prove me wrong
 
 My claim is that AI buyers are paying for connected power, and that Nebius's edge is turning contracted power into connected power faster than they can themselves.
 
-I am wrong if prepayments fade. Buyers who stop paying ahead are telling you capacity is no longer scarce. I am also wrong if Nebius misses 800 megawatts connected by year end, because then its edge is not speed.
+I am wrong if prepayments fade, because buyers who stop paying ahead are saying capacity is no longer scarce. I am also wrong if Nebius misses 800 megawatts connected by the end of 2026, because then its edge is not speed.
 
-The sharper test is the customers themselves. On 1 July 2026, Bloomberg reported that Meta is building a business to sell its own spare computing capacity. A customer with capacity to sell is not short of it.
+And I am wrong if its customers start selling their own spare capacity. Bloomberg reported on 1 July 2026 that Meta is building a business to do exactly that. A customer with capacity to sell is not short of it.
 
-The last risk is age. Nvidia ships a new chip generation every year or two, and Nebius has just received its first Vera Rubin systems. A switched-on room full of older chips earns less each year, so the building never stops.
+There is a slower risk too. Nvidia ships a new chip generation every year or two, so a switched-on room of older chips earns less each year, and the building never stops.
 
-So I watch four things each quarter. Connected megawatts against the target. The share of new deals with prepayments. Whether revenue spreads beyond Microsoft and Meta. And whether any hyperscaler starts renting out capacity instead of renting it in.
+So I watch four things each quarter. Connected megawatts against the target. The share of new deals with prepayments. Whether revenue spreads beyond Microsoft and Meta. And whether any hyperscaler starts renting capacity out instead of in.
 
 <section class="exposure">
 <h3>Who is exposed if AI buyers pay for power that is switched on</h3>
@@ -101,4 +99,4 @@ So I watch four things each quarter. Connected megawatts against the target. The
 
 ---
 
-<p class="sources">Sources: Nebius second quarter 2026 shareholder letter and financial results on Form 6-K, 12 August 2026, for revenue, ARR and guidance, margins, capital spending, prepayments, contract value per megawatt, cash and debt, contracted power, Microsoft and Meta delivery, and Vera Rubin. Nebius second quarter 2026 earnings call, 12 August 2026, for connected power guidance and the deployment sequence. Nebius Form 6-K on the Microsoft agreement, 8 September 2025. Nebius announcement of its second Meta agreement, 16 March 2026. Bloomberg News report on Meta's cloud plans, 1 July 2026. Figures are as reported on the dates cited. Personal research, not investment advice.</p>
+<p class="sources">Sources: Nebius second quarter 2026 shareholder letter and financial results on Form 6-K, 12 August 2026, for contract value per megawatt, revenue, margins, capital spending, prepayments, contracted power and Microsoft and Meta delivery. Nebius second quarter 2026 earnings call, 12 August 2026, for connected power guidance and the deployment sequence. Nebius Form 6-K on the Microsoft agreement, 8 September 2025. Nebius announcement of its second Meta agreement, 16 March 2026. Bloomberg News report on Meta's cloud plans, 1 July 2026. Figures are as reported on the dates cited. Personal research, not investment advice.</p>

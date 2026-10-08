@@ -1,17 +1,21 @@
 ---
 title: "Nvidia paid Lumentum $2 billion for lasers, because silicon cannot make light"
 date: 2026-10-05T14:01:18+08:00
-summary: "Lumentum makes the tiny lasers that turn data into light, so AI chips can talk to each other across a data centre. Those lasers have to be grown on a fragile crystal that only a few factories in the world can work at volume, and demand is running well ahead of supply. That is why Nvidia, a chip company, paid $2 billion to make sure Lumentum builds more of them."
+summary: "Lumentum makes the tiny lasers that turn data into light, so AI chips can talk to each other across a data centre. Those lasers have to be grown on a fragile crystal that only a few factories in the world can work at volume, and demand is running well ahead of supply. That is why Nvidia, a chip company, paid to make sure Lumentum builds more of them."
 category: "Analysis"
 cover: "/covers/lumentum-makes-the-light.svg"
 tags: ["networking", "optics", "lasers"]
+updated: 2026-10-08T16:00:00+08:00
+updateNote: "Shortened and made plainer on 8 October 2026. The claim and the test of it are unchanged."
 ---
 
-On 2 March 2026, Nvidia, the company that makes most of the world's AI chips, agreed to invest $2 billion in Lumentum. Lumentum does not make chips. It makes lasers. On the same day Nvidia put another $2 billion into Coherent, Lumentum's closest rival.
+In March, Nvidia, the company that makes most of the world's AI chips, agreed to invest $2 billion in Lumentum. Lumentum does not make chips. It makes lasers.
 
-The Lumentum deal came with a multibillion-dollar purchase commitment and rights to future factory capacity for advanced laser parts. The money is meant to help Lumentum build a new factory in America. Nvidia was not buying a stake for its own sake. It was buying a place in the queue.
+The deal came with a large purchase commitment and rights to future factory capacity. On the same day Nvidia made a similar investment in Coherent, Lumentum's closest rival. Nvidia was not buying a stake for its own sake. It was buying a place in the queue.
 
-The reason is simple once you see it. Every AI chip Nvidia sells has to talk to thousands of others, and past a couple of metres it talks in light. Something has to make that light, and Lumentum makes it from a crystal that very few factories on earth can work.
+The reason is simple once you see it. Every AI chip has to talk to thousands of others, and past a couple of metres it talks in light.
+
+Something has to make that light, and Lumentum makes it from a crystal that very few factories on earth can work.
 
 The bottleneck Nvidia paid to clear is not a chip. It is the laser at the start of the fibre.
 
@@ -24,55 +28,59 @@ The bottleneck Nvidia paid to clear is not a chip. It is the laser at the start 
 
 ## Three words you need
 
-**Optical transceiver.** The plug at each end of a fibre that converts electricity into light and back again. It snaps into the front of a network switch. Lumentum sells the lasers inside these plugs to the companies that assemble them, and also sells finished plugs of its own.
+**Optical transceiver.** The plug at each end of a fibre that converts electricity into light and back again. Lumentum sells the lasers inside these plugs, and also sells finished plugs of its own.
 
-**EML.** Short for electro-absorption modulated laser, Lumentum's flagship product. It does two jobs at once. It makes a beam of light, and it switches that beam on and off billions of times a second to spell out data in ones and zeros.
+**EML.** Short for electro-absorption modulated laser, Lumentum's flagship product. It makes a beam of light, and switches it on and off billions of times a second to spell out data.
 
 **Indium phosphide.** The crystal these lasers are grown on, usually shortened to InP. When you see it in this piece, read it as the material that can actually glow.
 
 ## Why the conversation needs light
 
-Training an AI model splits the work across thousands of chips that must constantly swap partial results. As I wrote in an earlier piece, an AI cluster is less a pile of chips than a conversation. If the network cannot keep up, the most expensive silicon ever built sits waiting.
+Training an AI model splits the work across thousands of chips that must constantly swap partial results. If the network cannot keep up, the most expensive silicon ever built sits waiting.
 
-Copper carried that conversation for decades. At today's speeds a copper signal smears into noise within about two metres. Pushing it further means spending more and more power just to be heard at the other end.
+Copper carried that conversation for decades. At today's speeds a copper signal smears into noise within a couple of metres, and pushing it further costs more and more power.
 
-That power is the real cost. An AI data centre is limited by how much electricity it can get, not by floor space. Every watt spent moving data is a watt not spent computing. Light down glass travels further, carries more, and uses far less energy per bit over distance.
+That power is the real cost. An AI data centre is limited by how much electricity it can get, not by floor space. Light down glass travels further and uses far less energy per bit.
 
-Each chip generation makes this worse, not better. A faster chip needs a faster link, which is why the industry keeps climbing from 400 gigabits a second per plug to 800, then to 1.6 terabits. Each step needs more lasers, and better ones, at the start of every fibre.
+Each chip generation makes this worse, not better. A faster chip needs a faster link, which is why the industry is climbing from 800 gigabits a second per plug to 1.6 terabits. Each step needs more lasers, and better ones.
 
 ## Why almost nobody can make the laser
 
-The obvious question is why every chip factory does not simply make lasers too. The answer is the material. Silicon, the base of every processor and phone, is excellent at computing and very poor at giving off light. That is built into the structure of the crystal itself.
+The obvious question is why every chip factory does not simply make lasers too. The answer is the material. Silicon, the base of every processor, is excellent at computing and very poor at giving off light.
 
-So the laser has to be grown on indium phosphide instead, and InP is miserable to work with. The wafers, the thin discs that chips are built on, are small and brittle. They crack. A painful share of each batch comes out unusable and is thrown away.
+So the laser has to be grown on indium phosphide instead, and InP is miserable to work with. The wafers, the thin discs that chips are built on, are small and brittle. A painful share of each batch is thrown away.
 
-Getting good yields depends on years of accumulated and mostly secret process knowledge. It cannot be bought, hired or rushed. Lumentum's EMLs come out of two InP wafer factories in Japan, both of which it is expanding.
+Getting good yields depends on years of mostly secret process knowledge. It cannot be bought, hired or rushed. Lumentum's EMLs come out of two InP factories in Japan, both of which it is expanding.
 
-New capacity arrives slowly. Lumentum is converting a factory in Greensboro, North Carolina, from gallium arsenide, a different light-emitting crystal, to InP. Its chief executive, Michael Hurlston, said in August he expects first revenue from it in early 2028, reaching full output by the end of 2028.
+New capacity arrives slowly. Lumentum is converting a factory in Greensboro, North Carolina, to InP. Its chief executive, Michael Hurlston, expects first revenue from it only in early 2028.
 
-The layer is also tangled. Lumentum sells lasers to module makers such as Innolight, which then compete with Lumentum's own finished modules. It is a supplier and a rival to the same customers at once.
+The layer is also tangled. Lumentum sells lasers to module makers such as Innolight, which then compete with its own finished modules. It is a supplier and a rival to the same customers.
 
-## What Lumentum's own numbers show
+## What Lumentum's own results show
 
-If the laser is the bottleneck, Lumentum should be selling more, earning more on each sale and still failing to keep up. All three appear in its results for the quarter to 27 June 2026, released on 11 August 2026.
+If the laser is the bottleneck, Lumentum should be selling more, earning more on each sale and still failing to keep up. All three appear in its results for the quarter to June 2026.
 
-**Growth.** Revenue was $1.01 billion, up from $481 million a year earlier. For the full fiscal year it was $3.01 billion, against $1.65 billion the year before. Hurlston called it another record quarter for EMLs.
+Revenue roughly doubled on a year earlier. Gross margin, the share of each sale left after the cost of making it, rose from about a third to nearly half.
 
-**Profit per sale.** Gross margin, the share of each sale left after the cost of making it, was 47.4 per cent, up from 33.3 per cent a year earlier. Operating margin, what remains after running the whole business, went from a small loss to 27.8 per cent. Lumentum attributed the gain partly to fuller factories and higher prices on some products, which is what scarcity looks like in money.
+Lumentum put that gain partly down to fuller factories and higher prices on some products. That is what scarcity looks like in money.
 
-**Supply.** Hurlston said Lumentum is still shipping behind customer demand for EMLs. He expects to be significantly behind demand at the end of the year even as output rises.
+And it still cannot keep up. Hurlston said Lumentum is shipping behind customer demand for EMLs, and expects to be significantly behind at the end of the year even as output rises.
 
-**The next generation.** EMLs carrying 200 gigabits per lane, the speed the next plugs need, were already over a quarter of Lumentum's EML revenue. The company expects them to be most of its shipments by the middle of 2027.
+The next generation is already arriving. The faster lasers the next plugs need are a growing share of Lumentum's laser sales, and it expects them to be most of its shipments by the middle of 2027.
 
 ## What would prove me wrong
 
-This industry has a history, and it is not kind. Optical components have run through repeated cycles of shortage, expansion and glut. Lumentum's own revenue fell 23 per cent in fiscal 2024, to $1.36 billion, when customers stopped ordering to work through stock.
+This industry has a history, and it is not kind. Optical parts have run through repeated cycles of shortage, expansion and glut. Lumentum's own revenue fell by almost a quarter in fiscal 2024, when customers stopped ordering to work through stock.
 
-The margin I just cited may be the shortage talking. Everyone is now adding capacity, including Lumentum with Nvidia's money. Coherent makes InP on six-inch wafers, which it says give about four times the area of three-inch ones and cut the cost of each laser.
+The margin I just described may be the shortage talking. Everyone is now adding capacity, including Lumentum with Nvidia's money. Coherent makes InP on six-inch wafers, which it says cut the cost of each laser.
 
-The second threat is a different design. Silicon photonics builds most of the optics in silicon and feeds it with a simpler laser that stays on continuously, called a CW laser. For shorter links, that can route around the EML altogether. Lumentum makes CW lasers too, but more companies can make those.
+The second threat is a different design. Silicon photonics builds most of the optics in silicon and feeds it with a simpler, always-on laser. For shorter links, that can route around the EML altogether.
 
-So I watch three things. Whether gross margin holds as the new factories come online, because a slide toward the low forties would mean the advantage was scarcity, not skill. Whether 200 gigabit EMLs keep growing as a share of Lumentum's laser sales, or whether Coherent's cheaper wafers start taking those orders. And whether the hyperscalers, the giant cloud companies, keep spending, because a supplier this far down the chain is hit first when they pause.
+So I am wrong if any of three things happens. Lumentum's gross margin slides towards the low forties as new capacity arrives, which would mean the advantage was scarcity, not skill.
+
+Or Coherent's cheaper six-inch wafers take the orders for the newest 200 gigabit EMLs. Or silicon photonics routes around the EML.
+
+Alongside those, I watch whether the giant cloud companies keep spending. A supplier this far down the chain is hit first when they pause.
 
 <section class="exposure">
 <h3>Who is exposed if the laser, not the chip, is the bottleneck</h3>
@@ -97,4 +105,4 @@ So I watch three things. Whether gross margin holds as the new factories come on
 
 ---
 
-<p class="sources">Sources: Nvidia and Lumentum announcement of their strategic agreements, 2 March 2026, and Nvidia's announcement of its Coherent agreement the same day. Lumentum fourth quarter and fiscal 2026 results, released 11 August 2026, for revenue, gross and operating margins and segment sales. Lumentum fourth quarter fiscal 2026 earnings call, 11 August 2026, for EML supply, 200 gigabit mix, Japanese wafer fabs and the Greensboro conversion. Lumentum fiscal 2024 results, released 14 August 2024. Coherent announcement of six-inch InP wafer fabrication, March 2024. Figures are as reported on the dates cited. Personal research, not investment advice.</p>
+<p class="sources">Sources: Nvidia and Lumentum announcement of their strategic agreements, 2 March 2026, and Nvidia's announcement of its Coherent agreement the same day. Lumentum fourth quarter and fiscal 2026 results, released 11 August 2026, for revenue and gross margin. Lumentum fourth quarter fiscal 2026 earnings call, 11 August 2026, for EML supply, the next-generation mix, Japanese wafer fabs and the Greensboro conversion. Lumentum fiscal 2024 results, released 14 August 2024. Coherent announcement of six-inch InP wafer fabrication, March 2024. Figures are as reported on the dates cited. Personal research, not investment advice.</p>

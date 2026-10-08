@@ -6,13 +6,15 @@ category: "Explainer"
 cover: "/covers/nobody-makes-a-b200-alone.svg"
 tags: ["the-stack", "supply-chain", "data-centres"]
 draft: false
+updated: 2026-10-08T16:00:00+08:00
+updateNote: "Shortened and made plainer on 8 October 2026. The explanation is unchanged."
 ---
 
 Pick up an Nvidia B200 and ask a simple question: who made it? The honest answer is nobody, not alone.
 
 Nvidia designed it, but Nvidia runs no chip factories. TSMC made its two slabs of logic, mostly in Taiwan, using machines only ASML in the Netherlands can build. Nvidia buys its memory from three makers, two of them South Korean. The bare silicon came from a short list of wafer makers, the largest of them Japanese.
 
-The B200 holds 208 billion transistors, according to Nvidia. Placing one every second, without a break, would take about 6,600 years.
+The chip holds 208 billion transistors, according to Nvidia. Placing one every second, without a break, would take about 6,600 years.
 
 So the useful question is not who makes each part.
 
@@ -27,7 +29,7 @@ The B200's real dependency is how long each part would take to replace.
 
 ## Three words you need
 
-**Die.** A single chip cut from a wafer, the thin silicon disc on which hundreds are made together. A B200 joins two large logic dies so they behave as one processor.
+**Die.** A single chip cut from a wafer, the thin silicon disc on which hundreds are made together. The chip joins two large logic dies so they behave as one processor.
 
 **Package.** The finished component you could hold, with dies, memory and wiring mounted together on a base.
 
@@ -39,31 +41,31 @@ Design is Nvidia's own work, and this journal leaves it alone. What matters is t
 
 The design becomes masks, plates carrying the circuit pattern for one layer of the chip. The most advanced masks are themselves mirrors, made on blank plates from Japanese suppliers such as AGC and Hoya.
 
-The wafers begin as single crystals of ultra-pure silicon, sliced into discs 300 millimetres across. Two Japanese companies, Shin-Etsu and SUMCO, are among the largest makers.
+The wafers begin as single crystals of ultra-pure silicon, sliced into thin discs. Two Japanese companies, Shin-Etsu and SUMCO, are among the largest makers.
 
-Then comes lithography, printing the pattern onto the wafer with light. The finest layers use extreme ultraviolet light, EUV, at a wavelength of 13.5 nanometres. ASML describes the technology as unique to itself.
+Then comes lithography, printing the pattern onto the wafer with light. The finest layers use extreme ultraviolet light, EUV, which has a very short wavelength. ASML describes the technology as unique to itself.
 
 The light bounces off mirrors made by ZEISS in Germany. ZEISS says that if one were enlarged to the size of Germany, its largest bump would be 0.1 millimetres high.
 
-TSMC makes the dies on a custom version of its four nanometre process, called 4NP. Nvidia says each die is as large as the factory's printing field allows, which is why there are two.
+TSMC makes the dies on a custom version of its four nanometre process. Nvidia says each die is as large as the factory's printing field allows, which is why there are two.
 
 ## Memory, the package and the test
 
 Beside the logic sit eight stacks of HBM, high-bandwidth memory: memory chips piled vertically and wired through their own silicon. Nvidia's annual report names SK Hynix, Micron and Samsung as its memory suppliers.
 
-Each maker's stacks must be qualified for each accelerator, so they are ordered far ahead. In December 2025 Micron said it had agreed price and volume for its entire 2026 supply of HBM.
+Each maker's stacks must be qualified for each accelerator, so they are ordered far ahead. Last December Micron said it had already agreed price and volume for its whole supply of HBM for this year.
 
-The dies and memory are joined in TSMC's CoWoS packaging, short for chip on wafer on substrate. For Blackwell, Nvidia's chief executive said in January 2025, that means largely CoWoS-L. The chips sit on an interposer, a slab of extremely fine wiring with small silicon bridges between neighbours.
+The dies and memory are joined in TSMC's CoWoS packaging, short for chip on wafer on substrate. For Blackwell, Nvidia's chief executive has said, that means largely a version called CoWoS-L. The chips sit on an interposer, a slab of extremely fine wiring with small silicon bridges between neighbours.
 
 The interposer is mounted on a package substrate, a laminated circuit board that carries power and signals out to the computer. A small group of makers, such as Ibiden in Japan and Unimicron in Taiwan, builds the substrates for AI processors.
 
-Inside each substrate is insulating film from Ajinomoto, a company better known for seasoning. Ajinomoto says its film has become the choice for nearly all high-performance central processors. In May 2026 it announced it would buy land for a new film plant, with construction from 2028 and operations from 2032.
+Inside each substrate is insulating film from Ajinomoto, a company better known for seasoning. Ajinomoto says its film has become the choice for nearly all high-performance central processors. This May it announced land for a new film plant, which will not operate until 2032.
 
 Finally the package is tested across temperature, voltage and speed, on machines from companies such as Advantest and Teradyne.
 
 ## Into the rack
 
-In Nvidia's GB200 NVL72 rack, 72 Blackwell processors sit beside 36 Grace processors, Nvidia's own central processors built on Arm designs. Nvidia's switch chips join all 72 so they act as one machine.
+In Nvidia's flagship rack, 72 Blackwell processors sit beside 36 Grace processors, Nvidia's own central processors built on Arm designs. Nvidia's switch chips join all 72 so they act as one machine.
 
 Between racks, signals pass through switches, usually Nvidia's own in its clusters, with Broadcom's chips the alternative, and travel as light down Corning's glass. Transceivers, which turn electricity into light and back, use lasers from Coherent and Lumentum and often Marvell's signal chips.
 
@@ -77,9 +79,9 @@ My own rough sort, by how long each supplier would take to replace, gives four g
 
 **A handful, each slow to qualify.** HBM, substrates, test equipment and photoresist, the light-sensitive coating that lithography prints into. Rivals exist, but each new part must be proven on each new chip, which takes quarters or years.
 
-**Short of capacity.** TSMC's fabs, its chip factories, and its packaging lines. For the B200 they are in practice also the only source of the 4NP dies and CoWoS-L. On its July 2026 call, TSMC said packaging capacity was so tight it was limiting customers' growth. Its chief has said a new fab takes two to three years to build and one to two more to fill.
+**Short of capacity.** TSMC's fabs, its chip factories, and its packaging lines. For this chip they are in practice also the only source of the dies and the packaging. This July, TSMC said packaging capacity was so tight it was limiting customers' growth. Its chief has said a new fab takes two to three years to build and one to two more to fill.
 
-**No second source at all.** EUV machines and their mirrors. I put Ajinomoto's film close by, though rival films exist and its own claim covers central processors. Replacing either is not a purchasing decision, and Ajinomoto's own new plant opens only in 2032.
+**No second source at all.** EUV machines and their mirrors. I put Ajinomoto's film close by, though rival films exist and its own claim covers central processors. Replacing either is not a purchasing decision, and Ajinomoto's own new plant is years away.
 
 Nvidia's annual report shows the cost. It says lead times have run beyond twelve months, and that it has paid premiums and deposits and signed long-term capacity commitments. That is a chip designer paying for time in other people's factories.
 

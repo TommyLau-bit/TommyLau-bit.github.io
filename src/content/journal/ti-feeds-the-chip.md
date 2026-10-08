@@ -5,13 +5,16 @@ summary: "An AI processor needs electricity at less than one volt, but power rea
 category: "Analysis"
 cover: "/covers/ti-feeds-the-chip.svg"
 tags: ["power", "data-centres", "800VDC"]
+draft: false
+updated: 2026-10-08T16:00:00+08:00
+updateNote: "Shortened and made plainer on 8 October 2026. The claim and the test of it are unchanged."
 ---
 
-Here is a fact about AI processors that rarely makes the news. The chip that costs tens of thousands of dollars cannot run on the electricity delivered to it. Something has to change that electricity first, millimetres away.
+Here is a fact about AI processors that rarely makes the news. The chip that costs tens of thousands of dollars cannot run on the electricity delivered to it.
 
-Power arrives at an AI cabinet at 54 volts today, and at 800 volts in the designs coming next. The processor's core runs at less than one volt. Bridging that gap, safely and with almost nothing lost as heat, falls to a crowd of small chips around it.
+Power arrives at an AI cabinet at 54 volts today, and at 800 volts in the designs coming next. The processor's core runs at less than one volt.
 
-Texas Instruments, the company most people still know for calculators, makes many of them. Some sell for cents. And TI is spending more than $60 billion on American factories to make them more cheaply than its rivals can.
+Bridging that gap, safely and with almost nothing lost as heat, falls to a crowd of small chips around the processor. Texas Instruments, the company most people still know for calculators, makes many of them. Some sell for cents.
 
 The most expensive chip in an AI rack runs on Texas Instruments' cheapest ones.
 
@@ -24,55 +27,53 @@ The most expensive chip in an AI rack runs on Texas Instruments' cheapest ones.
 
 ## Three words you need
 
-**Analog chip.** A chip that handles real-world quantities such as voltage, current and temperature, rather than doing calculations. Most of TI's revenue comes from analog chips, and many of them manage power.
+**Analog chip.** A chip that handles real-world quantities such as voltage, current and temperature, rather than doing sums. Most of TI's sales come from analog chips, and many of them manage power.
 
-**Power stage.** A small chip that switches on and off very fast to step a voltage down. Several work together around one processor, each carrying a share of the current.
+**Power stage.** A small chip that switches on and off very fast to step a voltage down. Several work together around one processor, each carrying a share of the load.
 
-**300mm wafer.** A wafer is the thin silicon disc chips are made on, before it is cut up. A 300 millimetre wafer has about 2.25 times the area of the older 200mm size, so each pass through the factory yields more than twice as many chips.
+**300mm wafer.** A wafer is the thin silicon disc that chips are made on before it is cut up. A 300 millimetre wafer has about 2.25 times the area of the older 200mm size, so each pass through the factory yields more than twice as many chips.
 
 ## Why the last centimetre is the hard part
 
-An AI processor's core runs at below one volt but draws enormous power. Low voltage and high power together mean very high current, and high current is what turns copper hot and wastes energy.
+An AI processor runs at very low voltage but draws enormous power. Low voltage and high power together mean a very large current, and large currents heat copper and waste energy.
 
-So the power has to be carried at high voltage for as long as possible and stepped down at the very last moment, as close to the processor as the board allows. As I wrote in an earlier piece, that logic is why the industry is moving the whole rack to 800 volts.
+So power has to travel at high voltage for as long as possible, then step down at the last moment, as close to the processor as the board allows. That logic is why the industry is moving the whole rack to 800 volts.
 
-TI says a one megawatt rack fed at 48 volts would need almost 450 pounds of copper. In March 2026, at Nvidia's developer conference, it showed a complete set of parts for the 800 volt design. Power steps down in only two stages: from 800 volts to 6 volts, then from 6 volts to below one volt.
+TI says a one megawatt rack fed at today's low voltage would need hundreds of pounds of copper. Earlier this year, at Nvidia's developer conference, it showed a complete set of parts for the new design, stepping power down in only two stages.
 
-TI says its first-stage converter reaches 97.6 per cent peak efficiency. That number matters more than it looks. In a one megawatt rack, every percentage point lost in conversion is ten kilowatts of extra heat, which the cooling system then has to remove as well.
+Every step loses a little energy as heat, and the cooling system then has to remove that heat too. So a converter that wastes even a sliver less pays twice, in electricity and in cooling.
 
-Around those converters sit protection chips. An eFuse, an electronic fuse, cuts the power in microseconds if something shorts, and a hot-swap controller lets an engineer pull a live tray without crashing the rack. In 2025 TI released a 48 volt eFuse for exactly that job.
+Around those converters sit protection chips. An eFuse, an electronic fuse, cuts the power in an instant if something shorts. A hot-swap controller lets an engineer pull out a live tray without crashing the whole rack.
 
 ## The factory bet
 
-The second half of the story is where those chips are made. Most chip companies now design their products and rent factory space to make them. TI went the other way and decided to own almost every step.
+The second half of the story is where those chips are made. Most chip companies now design their products and rent factory space from someone else. TI went the other way and decided to own almost every step.
 
-On 18 June 2025, TI announced plans to invest more than $60 billion across seven American chip factories in Texas and Utah. The largest site is Sherman, Texas, with room for four connected factories. The first, SM1, began production on 17 December 2025.
+In June 2025 TI announced plans to invest more than $60 billion in seven American chip factories in Texas and Utah. The largest site is Sherman, Texas, where the first factory began production at the end of that year.
 
-TI says SM1 will ultimately produce tens of millions of chips a day. Every wafer it runs is 300mm. In its 2025 annual report, TI says an unpackaged chip made on a 300mm wafer costs about 40 per cent less than one made on a 200mm wafer.
+Every wafer Sherman runs is 300mm. TI says a chip made on the larger wafer costs about 40 per cent less than one made on the older size, before it is packaged.
 
-That is a big edge for a product that sells for cents and competes on price. TI's stated goal is to make more than 95 per cent of its wafers in its own factories by 2030, with over 80 per cent of them on 300mm.
+That is a big edge for a product that sells for cents and competes on price. TI wants nearly all its wafers made in its own factories by the end of the decade, most of them on the larger size.
 
-## What TI's own numbers show
+## What TI's own results show
 
-If AI is pulling on these chips, the data centre should be growing much faster than the rest of TI.
+If AI is pulling on these chips, data centres should be growing much faster than the rest of TI.
 
-**Mix.** In TI's 2025 annual report, data centres were 9 per cent of revenue. Industrial and automotive were 33 per cent each. So this is a small slice of a large analog business, not an AI company.
+They are, from a small base. Data centres were under a tenth of TI's sales in 2025, far behind its industrial and car customers. But TI said in July 2026 that its data centre sales had doubled in a year. That makes it the fastest-growing market TI reports.
 
-**Growth.** In the second quarter of 2026, reported on 22 July 2026, total revenue rose 23 per cent to $5.46 billion. On the earnings call, TI said data centre revenue had doubled on a year earlier. That is the fastest-growing market TI reports.
+So this is a small slice of a large analog business, not an AI company. What makes it interesting is the timing. TI says its long cycle of heavy factory building is nearly over. The factories are built. Now they have to fill.
 
-**Margin.** Gross margin, the share of each sale left after the cost of making it, was 61 per cent in the quarter. For a company whose main product sells for very little, that is what owning cheap, full factories looks like in money.
-
-**Spending.** Capital spending fell from $4.55 billion in 2025 to an expected $2 billion to $3 billion in 2026. TI says its six-year cycle of heavy factory building is nearly over. The factories are built. Now they have to fill.
+TI's gross margin, the share of each sale left after the cost of making it, is the place to watch that happen. Full factories make cheap chips profitable. Empty ones do the opposite.
 
 ## What would prove me wrong
 
-I am wrong if the 800 volt design is adopted slowly. TI itself said on the July call that the new architecture will be phased in. If racks stay at 54 volts for years, TI is one of many suppliers of a mature product rather than an early mover in a new one.
+I am wrong if racks stay at 54 volts for years. TI itself says the new design will be phased in. If it is adopted slowly, TI is one of many suppliers of a mature product rather than an early mover in a new one.
 
-I am also wrong if rivals hold the high end. Infineon, Monolithic Power, Analog Devices and others make the same kinds of power chips, and the processor makers choose. Cheaper factories help most on simple parts. The newest, most demanding parts are won on design.
+I am also wrong if rivals hold the demanding high end. Infineon, Monolithic Power, Analog Devices and others make the same kinds of chips, and the processor makers choose. Cheap factories help most on simple parts. The newest parts are won on design.
 
-And the factory bet can backfire. TI built ahead of demand. If industrial and car demand weakens while data centre stays small, those new 300mm lines run part-empty, and a cost advantage becomes a cost burden.
+And the factory bet can backfire. TI built ahead of demand. If industrial and car demand weakens while data centres stay small, the new 300mm lines run part-empty, and a cost advantage becomes a cost burden.
 
-So I watch three things. Whether data centre keeps growing as a share of TI's revenue. Whether named operators commit to 800 volt racks. And whether gross margin holds as the new Sherman capacity comes online.
+So I watch whether data centres keep growing as a share of TI's sales. I watch whether named operators commit to 800 volt racks. And I watch whether gross margin holds as the new Sherman capacity comes online.
 
 <section class="exposure">
 <h3>Who is exposed if power at the chip runs through cheap analog parts</h3>
@@ -97,4 +98,4 @@ So I watch three things. Whether data centre keeps growing as a share of TI's re
 
 ---
 
-<p class="sources">Sources: Texas Instruments second quarter 2026 results, released 22 July 2026, and earnings call of the same date, for revenue, gross margin, data centre growth and 800 volt timing. Texas Instruments annual report and Form 10-K for 2025 for revenue by end market, 300mm cost and the 2030 manufacturing goal. Texas Instruments announcements of 18 June 2025 on the $60 billion investment, 17 December 2025 on Sherman production, 17 March 2025 on its 48 volt eFuse, 23 May 2025 on copper in a one megawatt rack, and 16 March 2026 on its 800 volt power design. Figures are as reported on the dates cited. Personal research, not investment advice.</p>
+<p class="sources">Sources: Texas Instruments second quarter 2026 results and earnings call, 22 July 2026, for data centre growth, gross margin, capital spending and 800 volt timing. Texas Instruments annual report and Form 10-K for 2025 for revenue by end market, 300mm cost and the 2030 manufacturing goal. Texas Instruments announcements of 18 June 2025 on the $60 billion investment, 17 December 2025 on Sherman production, 23 May 2025 on copper in a one megawatt rack, and 16 March 2026 on its 800 volt power design. Figures are as reported on the dates cited. Personal research, not investment advice.</p>

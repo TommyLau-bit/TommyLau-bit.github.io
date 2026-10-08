@@ -219,7 +219,7 @@ These are not preferences. They are what the existing corpus does.
 | British spelling always | centres, energised, analysed. 0 US spellings |
 | Sentences short | 14 to 20 words average |
 | Paragraphs short | 1 to 4 sentences, 18 to 28 paragraphs per piece |
-| Length | 1,050 to 1,500 words, which reads as 5 to 6 minutes |
+| Length | 900 to 1,150 words, which reads as about 5 minutes (Tommy, 8 Oct 2026: a journal piece is a five to seven minute read, never longer) |
 
 Voice:
 
@@ -249,7 +249,7 @@ physical argument. The test: **does the figure tell the reader whether the
 mechanism is real, or does it tell them what to do with the shares?** Only the
 first is allowed.
 
-Allowed, in the body:
+Allowed, in the body, within the §4b budget of three:
 
 - Revenue, product versus service mix, growth rates, gross margin, cash flow,
   capex, backlog, order books, contracted capacity, customer concentration.
@@ -279,6 +279,30 @@ target and Tommy's call, and links back to the claim it rests on. The journal
 piece stays free of all of it. The sources line names the filings used,
 and the exposure disclaimer adds that the figures are used as evidence for the
 mechanism and imply nothing about value.
+
+---
+
+## 4b. The numbers budget. Explanation in the journal, numbers in the research
+
+**Tommy, 8 Oct 2026, permanent.** The journal is for a layman with no finance
+background. It explains. The research notes at `/research` carry the numbers.
+A piece that reads like an accounting booklet has failed, however accurate it is.
+The company pieces of 24 Sep to 7 Oct drifted to 40 to 78 figures and 1,400 words
+and were all rewritten on 8 Oct; do not drift back.
+
+- **15 figures at most** in the body, counting dates. Most pieces need fewer.
+- **3 company financial figures at most** (revenue, growth, margin, orders,
+  backlog, capex, deal sizes). Prefer one. Say it in words where you can:
+  "Systems has outgrown catalogue parts for a year" beats a table of quarters.
+- **Never two money figures in the same paragraph**, and never a paragraph that
+  walks through a set of accounts, segments or quarters.
+- Structural, physical numbers (kilowatts, years of waiting, distances) are the
+  ones worth keeping. Financial detail, segment splits, quarter-by-quarter
+  comparisons, guidance and deal arithmetic go in the research note, never here.
+- A falsifier may still name one disclosed figure as its test, stated once and
+  plainly. The precise wording lives on the claims page.
+- If you need a number to make the point land, use it. If the point lands
+  without it, cut it.
 
 ---
 
@@ -473,5 +497,6 @@ Run it before you build. All six existing pieces pass.
 - [ ] Sources paragraph, ending "Personal research, not investment advice."
 - [ ] Every jargon term defined in place, and present in the glossary
 - [ ] On the map in `stack.ts`; if Analysis, on the claims page in `claims.ts`
-- [ ] No em dashes. British spelling. 1,050 to 1,500 words
+- [ ] No em dashes. British spelling. 900 to 1,150 words, about 5 minutes
+- [ ] Numbers budget kept (§4b): 15 figures at most, 3 company financial figures at most, never two money figures in one paragraph
 - [ ] Cover SVG in place, social card regenerated, build clean

@@ -5,13 +5,17 @@ summary: "Corning, the 175-year-old glass company, makes the optical fibre that 
 category: "Analysis"
 cover: "/covers/corning-lays-the-glass.svg"
 tags: ["networking", "optics", "data-centres"]
+updated: 2026-10-08T16:00:00+08:00
+updateNote: "Shortened and made plainer on 8 October 2026. The claim and the test of it are unchanged."
 ---
 
-In January, Meta agreed to pay Corning up to $6 billion for fibre optic cable through 2030. In May, Nvidia paid $500 million as part of a partnership for Corning to build more of it in America. In June, Amazon signed a multi-year, multibillion-dollar supply deal of its own.
+This year three of the biggest buyers in AI have paid to secure the same thing from Corning. In January, Meta agreed to pay Corning up to $6 billion for fibre optic cable through 2030.
 
-Corning does not make a single chip. It makes no lasers, no switches and no processors. It is the company that made the glass for Edison's light bulb and the glass on the front of most phones.
+In May, Nvidia paid Corning to build more of it in America. In June, Amazon signed a multi-year supply deal of its own.
 
-What those three buyers want is the strand of glass between the chips. It is the one part of the AI network that is laid once and then outlives every chip generation that talks through it.
+Corning does not make a single chip. It makes no lasers, no switches and no processors. It is the company that made the glass for Edison's light bulb and the glass on most phones.
+
+What those three buyers want is the strand of glass between the chips. It is laid once, and then it outlives every chip generation that talks through it.
 
 Corning owns the part of the AI network that does not go out of date.
 
@@ -24,59 +28,61 @@ Corning owns the part of the AI network that does not go out of date.
 
 ## Three words you need
 
-**Optical fibre.** A strand of glass thinner than a human hair that carries data as pulses of light. It has two layers. The core in the middle carries the light, and the cladding wrapped around it keeps the light in.
+**Optical fibre.** A strand of glass thinner than a human hair that carries data as pulses of light. The core in the middle carries the light, and the cladding wrapped around it keeps the light in.
 
-**Passive.** Equipment with no electronics in it. A fibre, a cable or a connector does not compute or convert anything. It only carries. Corning's AI business sits almost entirely in this passive layer.
+**Passive.** Equipment with no electronics in it. A fibre, a cable or a connector does not compute or convert anything. It only carries, and Corning's AI business sits almost entirely in this layer.
 
-**Optical transceiver.** The thumb-sized plug at each end of a fibre that turns electrical signals into light and back again. Coherent and Lumentum make them, and every new chip generation needs a faster one.
+**Optical transceiver.** The thumb-sized plug at each end of a fibre that turns electrical signals into light and back. Coherent and Lumentum make them, and every new chip generation needs a faster one.
 
 ## Why the glass is hard to make
 
-Training an AI model splits the work across thousands of chips that must swap partial results every few moments. As I wrote in an earlier piece, a slow link leaves the most expensive silicon ever built sitting idle while it waits.
+Training an AI model splits the work across thousands of chips that must swap partial results every few moments. A slow link leaves the most expensive silicon ever built sitting idle while it waits.
 
 Inside a cabinet, copper wire carries most of that traffic. At today's speeds a copper signal fades into noise within about two metres, roughly the height of a rack. Beyond that, everything travels as light down glass.
 
-In 1970 three Corning scientists made glass clear enough to carry light for kilometres. The trick is that the cladding bends light slightly less than the core. Light striking the boundary at a shallow angle is reflected back inward, an effect called total internal reflection, so it stays trapped for very long distances.
+In 1970 three Corning scientists made glass clear enough to carry light for kilometres. The trick is that the cladding bends light slightly less than the core, so light striking the boundary is reflected back inward.
 
-Making that glass is unforgiving work. Purified silica is laid down with small additives that tune how it bends light, then drawn into a hair-thin strand at more than a kilometre a minute. The width is held to millionths of a metre, and the coating must be flawless.
+Making that glass is unforgiving work. Purified silica is drawn into a hair-thin strand at more than a kilometre a minute, with its width held to millionths of a metre.
 
-A small error lets light leak, and leaked light shortens the distance a signal can travel. That accumulated process knowledge, built up since 1970, is the reason a new entrant cannot simply buy its way in.
+A small error lets light leak, and leaked light shortens the distance a signal can travel. Decades of that process knowledge are the reason a new entrant cannot simply buy its way in.
 
 ## Where the extra fibre comes from
 
 The demand comes from two directions at once, and both grow faster than the chip count.
 
-**Inside the rack.** According to Corning, a modern AI rack of 72 GPUs wired to act as one machine needs about sixteen times more fibre than a traditional cloud switch rack. Every chip needs many more connections to every other chip.
+**Inside the rack.** According to Corning, a modern AI rack of 72 chips wired to act as one machine needs about sixteen times more fibre than a traditional cloud switch rack. Every chip needs many more connections to every other chip.
 
-**Between buildings.** The largest clusters now draw so much power that they no longer fit in one building. They spread across campuses, sometimes kilometres apart, and every building has to be stitched to every other with very large fibre counts.
+**Between buildings.** The largest clusters now draw so much power that they no longer fit in one building. They spread across campuses, and every building has to be stitched to every other with very large bundles of fibre.
 
 The second direction matters most. Double the number of buildings and the links between them more than double, because each new hall must reach all the others. That is a physical relationship, not a forecast.
 
-Then there is the part that makes the glass different from everything plugged into it. When the industry moves from 800 gigabits a second per link to 1.6 terabits, the transceivers at each end are replaced. The fibre in the ceiling trays usually stays, carrying each new generation in turn.
+Then there is the part that makes the glass different from everything plugged into it. When the industry moves from 800 gigabits a second per link to 1.6 terabits, the plugs at each end are replaced.
 
-## What Corning's own numbers show
+The fibre in the ceiling trays usually stays where it is, carrying each new generation in turn.
+
+## What Corning's own results show
 
 If the mechanism is real, Corning's fibre business should be growing faster than the rest of the company, earning more on each sale, and running short of factory space. All three show up in its filings.
 
-**Growth.** In the second quarter of 2026, reported on 28 July 2026, Optical Communications sales rose 32 per cent to $2.07 billion. Within that, Enterprise Networks, the data centre business, grew 65 per cent, and Corning said its AI products grew significantly faster still.
+In the second quarter of 2026, its data centre fibre business grew by about two thirds on a year earlier. Profit in the wider fibre division grew more than twice as fast as its sales.
 
-**Profit per sale.** The segment's net income rose 77 per cent to $438 million in the same quarter, about 21 per cent of its sales. Profit growing more than twice as fast as sales is what full factories and firm demand look like in money.
+Profit outrunning sales like that is what full factories and firm demand look like in money. Corning also says demand for its data centre products is running above what it can make.
 
-**Supply.** Corning said demand for its high-density data centre products is running above its production capacity. Under the Nvidia partnership it plans to expand American optical connectivity capacity tenfold and American fibre production by more than half.
+Two cautions keep this in proportion. In 2025, two end customers made up more than a quarter of the fibre division's sales, and buyers that few and that large set the terms.
 
-**Concentration.** In its annual report for 2025, Corning said two end customers made up 28 per cent of Optical Communications sales, which totalled $6.27 billion that year. When the buyers are this few and this large, they set the terms.
-
-It is also worth keeping the scale in proportion. Optical Communications was 38 per cent of Corning's segment sales in 2025. The rest is display glass, phone cover glass, car exhaust filters, solar materials and laboratory and pharmaceutical glass. Corning is a glass company with a fast-growing AI business inside it, not an AI company.
+And fibre is still well under half of Corning. The rest is display glass, phone cover glass, car exhaust filters and laboratory glass. Corning is a glass company with a fast-growing AI business inside it, not an AI company.
 
 ## What would prove me wrong
 
-The obvious risk is that fibre stops being scarce. Corning is expanding hard, and so are producers in China. Scarcity is what lets a supplier hold its terms, and the hyperscalers, the giant cloud companies, will push hard on price the moment supply loosens.
+The obvious risk is that fibre stops being scarce. Corning is expanding hard, and so are producers in China. The giant cloud companies will push hard on price the moment supply loosens.
 
-Corning has lived through this exact film. In the telecom fibre boom of the late 1990s it expanded on forecasts of near-endless demand. When the boom broke, it reported a $4.8 billion loss for the second quarter of 2001, mostly writing down the value of businesses it had bought, and cut thousands of jobs.
+Corning has lived through this exact film. In the telecom fibre boom of the late 1990s it expanded on forecasts of near-endless demand. When the boom broke in 2001, it reported a huge loss and cut thousands of jobs.
 
-The difference this time is the customer. In 2001 Corning sold to borrowed-money telecom start-ups that went bankrupt. Today it sells to Amazon, Meta and Nvidia, under multi-year agreements. That is a real difference, but it does not repeal the cycle.
+The difference this time is the customer. Then, Corning sold to borrowed-money telecom start-ups that went bankrupt. Today it sells to Amazon, Meta and Nvidia under multi-year agreements, but that does not repeal the cycle.
 
-So I watch three things. Whether Enterprise Networks keeps growing faster than the rest of Optical Communications. Whether the segment holds its profit margin while sales rise, because a falling margin on rising sales would mean the scarcity is ending. And whether the two largest customers grow as a share of the segment.
+So my test is simple. If the fibre division's profit margin falls while its sales keep rising, the scarcity is ending and I am wrong.
+
+I also watch whether the data centre business keeps outgrowing the rest of the division, and whether the two largest customers grow as a share of it.
 
 <section class="exposure">
 <h3>Who is exposed if the glass, not the plug, is the part that lasts</h3>
@@ -101,4 +107,4 @@ So I watch three things. Whether Enterprise Networks keeps growing faster than t
 
 ---
 
-<p class="sources">Sources: Meta announcement of its agreement with Corning, 27 January 2026. Nvidia and Corning partnership announcement, May 2026. Amazon and Corning agreement announcement, 8 June 2026. Corning second quarter 2026 results, released 28 July 2026, for Optical Communications sales, net income, Enterprise Networks growth and capacity commentary. Corning annual report on Form 10-K for 2025 for segment sales, mix and customer concentration. Corning commentary on fibre required by 72-GPU AI racks. Corning results for the second quarter of 2001. Figures are as reported on the dates cited. Personal research, not investment advice.</p>
+<p class="sources">Sources: Meta announcement of its agreement with Corning, 27 January 2026. Nvidia and Corning partnership announcement, May 2026. Amazon and Corning agreement announcement, 8 June 2026. Corning second quarter 2026 results, released 28 July 2026, for Optical Communications growth, net income and capacity commentary. Corning annual report on Form 10-K for 2025 for segment mix and customer concentration. Corning commentary on fibre required by 72-GPU AI racks. Corning results for the second quarter of 2001. Figures are as reported on the dates cited. Personal research, not investment advice.</p>

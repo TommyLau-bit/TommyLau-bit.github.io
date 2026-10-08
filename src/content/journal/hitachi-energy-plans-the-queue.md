@@ -8,13 +8,13 @@ tags: ["grid", "power", "data-centres"]
 draft: true
 ---
 
-At the end of June 2026, Hitachi Energy had $63.6 billion of orders signed but not yet delivered. Over the previous twelve months it delivered about $21 billion.
+At the end of June 2026, Hitachi Energy had $63.6 billion of orders signed but not yet delivered.
 
-That is roughly three years of work already waiting in the line, and the line keeps getting longer.
+That is roughly three years of its sales already waiting in the line, and the line keeps getting longer.
 
-Hitachi Energy is not sitting still. It is in the middle of what it calls the largest investment programme in its industry, more than $9 billion since 2020, now going into more than 40 new and expanded factories.
+Hitachi Energy is not sitting still. It is in the middle of what it calls the largest investment programme in its industry, more than $9 billion in all, now going into more than 40 new and expanded factories.
 
-Yet when its parent, Hitachi, set out its plan in June, it did not promise to shorten the line. It said it expects the backlog to stay at two and a half to three times annual revenue, rising to about $100 billion by 2030.
+Yet when its parent, Hitachi, set out its plan in June, it did not promise to shorten the line. It expects the backlog to stay at two and a half to three times annual revenue through its 2030 financial year.
 
 Hitachi Energy is not building its way out of the transformer queue. It is building just fast enough to keep it.
 
@@ -27,7 +27,7 @@ Hitachi Energy is not building its way out of the transformer queue. It is build
 
 ## What Hitachi Energy makes
 
-Hitachi Energy is the power grids business of Hitachi, the Japanese industrial group. It is not listed on its own, so its figures come from Hitachi's results, with fiscal years ending on 31 March.
+Hitachi Energy is the power grids business of Hitachi, the Japanese industrial group. It is not listed on its own, so its figures come from Hitachi's results.
 
 By its own count it has installed one in six of the world's transformers and one in four of the world's high voltage switchgear. Three products matter for this piece.
 
@@ -41,39 +41,35 @@ A data centre needs the first and third to connect at all. The grid behind it in
 
 ## The queue, measured in years
 
-Hitachi reports Hitachi Energy's backlog, the orders customers have firmly placed but not yet received, in dollars each quarter. Dividing it by revenue turns it into years.
+Hitachi reports Hitachi Energy's backlog, the orders customers have firmly placed but not yet received, every quarter. Dividing it by a year of revenue turns it into years of work.
 
-At the end of fiscal 2024, in March 2025, the backlog was about $43.5 billion against revenue of $15.7 billion, or 2.8 years. A year later it was $57.9 billion against $19.8 billion, or 2.9 years.
+In March last year the backlog came to just under three years of revenue. By June this year it was just over three.
 
-In June 2026 it reached $63.6 billion. Against the last four quarters of revenue, my arithmetic gives just over three years.
-
-Orders in fiscal 2025 were $32.8 billion, about 1.7 times its revenue for the year. Hitachi says orders from data centres rose more than 150 per cent that year.
+The reason is simple. Orders keep arriving much faster than the factories can turn them into finished machines. Hitachi says orders from data centres more than doubled last year.
 
 This ratio is a proxy for the queue, not a lead time. HVDC projects take years to build by design, so a bigger share of them lengthens the ratio without anyone waiting longer for a transformer.
 
-Hitachi's own slides set the horizons. By my reading of the chart, products such as transformers turn from order into revenue within about three years, and systems such as HVDC over up to six. Even a component can be slow: Hitachi Energy quotes 140 weeks for some of its high voltage bushings from its Swedish plant at Ludvika. A bushing is the insulated sleeve that carries the current through a transformer's steel tank.
+Even a component can be slow. Hitachi Energy quotes 140 weeks for some of its high voltage bushings from its Swedish plant at Ludvika. A bushing is the insulated sleeve that carries the current through a transformer's steel tank.
 
-## Nine billion dollars that follow the orders
+## Factories that follow the orders
 
-The programme is real. Hitachi says it spent $3 billion between 2020 and 2023 and is spending more than $6 billion between 2024 and 2027.
+The programme is real, and much of it is new transformer floor space in North America and Europe.
 
-More than $2 billion goes to North America and more than $1.8 billion to Europe. In the United States, a $457 million large power transformer plant at South Boston, Virginia, broke ground in June. A Hitachi spokesman said in 2025 that it should be operating by 2028.
-
-In September Hitachi Energy announced a $528 million transformer factory in Mississippi, more than doubling capacity there. Production is due to start in 2029.
+In Virginia, a large power transformer plant at South Boston broke ground in June. A Hitachi spokesman said last year that it should be operating by 2028. In September Hitachi Energy announced a transformer factory in Mississippi that more than doubles its capacity there, with production due in 2029.
 
 That is the transformer clock in its plainest form. A factory announced today makes its first transformer two to three years later, and only then starts on the queue.
 
 Hitachi Energy is also not trying to get ahead of demand. In Hitachi's published summary of its June investor day, Andreas Schierenbeck, who runs the energy business, said "we are only investing if we have a bankable business case". He added, "we are not building over-capacity".
 
-Customers are booking the capacity in advance. In 2025 Hitachi Energy agreed a framework deal with E.ON, the German energy group, worth up to $700 million. Part of it reserves manufacturing capacity for E.ON's transformers.
+Customers are booking the capacity in advance. Last year Hitachi Energy agreed a framework deal with E.ON, the German energy group, and part of it reserves factory capacity for E.ON's transformers.
 
-## What the plan says about 2030
+## What the five-year plan says
 
-Hitachi's investor day put numbers on the next five years. Revenue at Hitachi Energy rises from about $20 billion in fiscal 2025 to $36 billion in fiscal 2030. The backlog rises from about $60 billion to about $100 billion. Both plan figures are at Hitachi's budget exchange rate, so they differ slightly from the reported $57.9 billion.
+Hitachi's investor day set out the next five years. Hitachi Energy's revenue nearly doubles by the end of its plan, and its backlog grows with it.
 
-The slide says the backlog to revenue ratio is expected to "remain stable" at 2.5 to 3 times. Schierenbeck said the 2030 figure includes framework agreements and capacity reservations, so it may be counted more widely than the backlog Hitachi reports each quarter.
+The slide says the backlog to revenue ratio is expected to "remain stable" at two and a half to three times. In other words, Hitachi Energy plans to nearly double its output and still have close to three years of work waiting.
 
-One hundred divided by 36 is about 2.8. In other words, Hitachi Energy plans to nearly double its output and still have close to three years of work waiting. Today's ratio, just over three, already sits above the top of that range, so the floor is what matters.
+Schierenbeck said the plan counts framework agreements and capacity reservations in the backlog, so it may be wider than the figure Hitachi reports each quarter. Today's ratio, just over three, already sits above the top of the range, so the floor is what matters.
 
 I read that as a deliberate choice, and a sensible one for a factory owner. A transformer plant runs for decades, and a long queue protects it from the empty years the industry remembers. For a data centre waiting on a substation, the cost of that choice is time.
 
@@ -81,15 +77,13 @@ There is one route around it. Hitachi says it wins data centre orders through fa
 
 ## What would prove me wrong
 
-I am wrong if the queue at Hitachi Energy starts to clear before the end of fiscal 2030, in March 2031. The test is its backlog divided by its revenue over the previous four quarters, both in dollars from Hitachi's results.
+I am wrong if the queue at Hitachi Energy starts to clear before 31 March 2031, the end of its fiscal 2030, Hitachi's financial year. The test is its backlog divided by its revenue over the previous four quarters, both in dollars from Hitachi's results.
 
-It stands at just over three years today. If it falls below 2.5 at two quarter ends in a row before 31 March 2031, the factories are catching up. That would also break Hitachi's own stated range.
+It stands at just over three today. If it falls below 2.5 at two quarter ends in a row before that date, the factories are catching up. That would also break Hitachi's own stated range.
 
-I am also wrong if orders stop outrunning output. If Hitachi Energy's orders for a full fiscal year fall below its revenue for that year, the queue is being worked down, not kept.
+I am also wrong if Hitachi Energy's orders for any full fiscal year before then fall below its revenue for that year. The queue would then be worked down, not kept.
 
-The ratio has a weakness I should name. A shift towards long HVDC projects can hold it up while transformer waits shorten. So I also watch Hitachi Energy's quoted delivery times for its own components, and whether the 140 weeks for those bushings falls.
-
-So I watch four things. The backlog against four quarters of revenue, each quarter. Annual orders against revenue. Whether South Boston and Mississippi start on time in 2028 and 2029. And whether Hitachi ever announces capacity ahead of signed orders.
+The ratio has one weakness. A shift towards long HVDC projects can hold it up while transformer waits shorten. So I also watch Hitachi Energy's own quoted delivery times, including those 140 weeks for bushings.
 
 <section class="exposure">
 <h3>Who is exposed if Hitachi Energy's queue stays three years long</h3>
@@ -112,4 +106,4 @@ So I watch four things. The backlog against four quarters of revenue, each quart
 
 ---
 
-<p class="sources">Sources: Hitachi results for fiscal 2025, 27 April 2026, for Hitachi Energy revenue, orders, backlog, capital spending and order to revenue horizons. Hitachi results for the first quarter of fiscal 2026, 29 July 2026, and for the second and third quarters of fiscal 2025, for quarterly revenue and backlog. Hitachi Investor Day 2026 energy presentation and published question and answer summary, 10 June 2026, and Hitachi Integrated Report 2026, for the 2030 plan, the backlog ratio, the investment programme, installed base and data centre orders. Hitachi Energy announcements of 28 July 2025, 29 June 2026 and 15 September 2026, Manufacturing Dive on the Virginia plant, and Hitachi Energy's published component delivery times, updated 6 October 2026. Figures are as reported on the dates cited. Personal research, not investment advice.</p>
+<p class="sources">Sources: Hitachi results for fiscal 2025, 27 April 2026, and for the first quarter of fiscal 2026, 29 July 2026, with earlier quarterly results, for Hitachi Energy orders, revenue and backlog. Hitachi Investor Day 2026 energy presentation and published question and answer summary, 10 June 2026, and Hitachi Integrated Report 2026, for data centre orders, the plan to fiscal 2030, the backlog ratio, the investment programme and installed base. Hitachi Energy announcements of 28 July 2025, 29 June 2026 and 15 September 2026, Manufacturing Dive on the Virginia plant, and Hitachi Energy's published component delivery times, updated 6 October 2026. Figures are as reported on the dates cited. Personal research, not investment advice.</p>

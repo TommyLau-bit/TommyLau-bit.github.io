@@ -8,11 +8,11 @@ tags: ["power", "data-centres", "the-stack"]
 draft: true
 ---
 
-In the twelve months to June 2026, Eaton's North American electrical business sold $14.5 billion of equipment and services. That was 18 per cent more than the year before.
+In the year to June 2026, Eaton's North American electrical business sold 18 per cent more than the year before.
 
-Over the same twelve months, the orders it had signed but not yet delivered grew by 33 per cent.
+Over the same year, the orders it had signed but not yet delivered grew by 33 per cent.
 
-Eaton is not standing still. It is spending more than $1 billion on two dozen capacity projects, and its factories are shipping more each day than ever.
+Eaton is not standing still. It is spending heavily on two dozen capacity projects, and its factories ship more each day than ever.
 
 The orders are simply arriving faster than the new floor space can absorb them. Measured in months of sales, the line in front of Eaton's factories has grown longer, not shorter.
 
@@ -27,75 +27,67 @@ Eaton is shipping more than ever, and the queue in front of its factories is sti
 
 ## What Eaton makes, and where it sits
 
-Eaton is an electrical group founded in 1911 and now based in Dublin, with $27.4 billion of sales in 2025. Its biggest unit is Electrical Americas, which makes and sells electrical equipment across North and South America.
+Eaton is an electrical group more than a century old, now based in Dublin. Its biggest unit, Electrical Americas, sells electrical equipment across North and South America.
 
-Its products sit inside the fence of a data centre, meaning on the site itself, between the grid connection and the racks.
+Its products sit inside the fence of a data centre, meaning on the site itself, between the grid connection and the computers.
 
-**Switchgear.** The heavy cabinets that connect and isolate circuits safely, so one fault does not take down a hall.
+**Switchgear.** The heavy cabinets that connect and isolate circuits safely, so one fault does not take down a whole hall.
 
-**Backup power.** The UPS, the uninterruptible power supply, is a large battery system that carries the load through any dip in grid power until generators start.
+**Backup power.** The UPS, or uninterruptible power supply, is a large battery system that carries the load through a dip in grid power.
 
-**Distribution.** Busway, the metal power rails above the racks, plus breakers, power distribution units and transformers that step voltage down.
+**Distribution.** Busway, the metal power rails above the racks, plus breakers and transformers that step the voltage down.
 
-**Enclosures and cooling.** Fibrebond, bought in April 2025, builds complete electrical rooms as modules in a factory. Boyd Thermal, bought in March 2026, makes cold plates and coolant distribution units for liquid cooling.
+**Enclosures and cooling.** Fibrebond, which Eaton bought last year, builds complete electrical rooms in a factory. Boyd Thermal, bought this year, makes parts for liquid cooling.
 
 ## The queue, measured in months
 
-Eaton reports backlog, the orders customers have firmly committed to but not yet received. At the end of June 2026, Electrical Americas held $15.2 billion of it.
+Eaton reports its backlog, the orders customers have firmly committed to but not yet received.
 
-Dividing that by the segment's sales over the previous four quarters turns dollars into time. The answer is about 1.05 years, or just under thirteen months of sales.
+Dividing that backlog by a year of the unit's sales turns money into time. It tells you how long the factories would take to clear the queue if no new order arrived.
 
-A year earlier the same ratio was 0.93 years, about eleven months. At the end of 2025 it was almost exactly one year. It has risen in every quarter since.
+At the end of June the answer was just under thirteen months of sales. At the end of 2025 it was about a year, and it has risen in every quarter since.
 
-Eaton said data centre revenue in the segment grew about 65 per cent in the second quarter. Its book-to-bill ratio, new orders divided by sales shipped, rose to 1.3 over the previous twelve months.
+Some of the climb may be price, because new prices reach the order book before they reach shipments. Eaton does not split the two, so I cannot strip that out.
 
-Some of the climb may be price, because new prices reach the order book before they reach shipments. Eaton does not split backlog into price and volume, so I cannot strip that out. Even so, more work is being promised each quarter than Eaton can deliver in that quarter.
-
-This ratio is a proxy, not a lead time. It also rises if customers simply book earlier for later delivery, and Ruiz said most of the US data centre pipeline delivers in 2028 and beyond. I read it as a longer wait because Eaton itself says capacity is the priority, and Ruiz conceded "we know the product lines where our lead times are extended".
+The ratio is also a proxy, not a promised delivery date. It rises if customers simply book earlier for later delivery. I still read it as a longer wait, because Eaton itself says capacity is the priority.
 
 ## Why more factories have not shortened it
 
 Eaton's chief executive, Paulo Ruiz, was blunt on the July results call. "Scaling capacity to turn demand into revenue remains the clear priority in the business," he said.
 
-The effort is real. Revenue per day in the segment is up about 25 per cent since the start of 2025, by the company's account.
+The effort is real. By the company's account, the unit ships about a quarter more each day than it did at the start of last year.
 
-But several big new plants are still to come. A South Carolina site for three-phase transformers, which Eaton says serve utility, large commercial, industrial and data centre customers, announced in February 2025, is due to start production in 2027. A Nebraska switchgear factory, announced in April 2026, is due to start in the first half of 2027.
+But the biggest new plants are still to come. A transformer site in South Carolina and a switchgear factory in Nebraska are both due to start production in 2027.
 
-A new line is also slow before it is fast. On the same call, Eaton's finance chief, Dave Foster, said the third quarter would run on regular time rather than overtime, with more experienced operators. Ruiz said the worst of the ramp disruption fell in the fourth quarter of 2025 and the first of 2026.
+A new line is also slow before it is fast. Eaton said its plants had leaned on overtime while new operators learned the work, and that the worst of that disruption has passed.
 
-Demand is not waiting for any of that. Eaton estimates the backlog of US data centre projects at 307 gigawatts, which it says is 15 years of building at the 2025 pace.
+Demand is not waiting. Eaton estimates that the American data centre projects already planned would take about 15 years to build at last year's pace.
 
-## What a year-long queue does to the margin
+## What a long queue does to the margin
 
-Orders priced today are built many months later, after metal and parts may have risen.
+An order priced today is built many months later, after metal and parts may have become dearer.
 
-Eaton's filings fit that pattern. Electrical Americas operating margin, the share of each sale left after running costs, fell from 29.5 per cent to 27.5 per cent between the second quarters of 2025 and 2026. Eaton blamed a 470 basis point drag from higher commodity costs, partly offset by higher volume. A basis point is a hundredth of a percentage point. The margin had already recovered 190 basis points from the first quarter.
+Eaton's results fit that pattern. The unit's operating margin, the share of each sale left after running costs, fell by about two points over the year. Eaton blamed higher commodity costs, and expects new price rises to catch up in the second half.
 
-Foster said "the majority of the margin decline was driven by temporary negative price/cost". He expects new price increases to bring that roughly back to neutral in the second half.
+Buyers of large gas turbines often pay big deposits years ahead to hold a factory slot. Eaton's customers mostly do not. My reading is that they queue with signed orders rather than cash.
 
-Buyers of large gas turbines often pay big deposits years ahead to hold a factory slot. Eaton's customers mostly do not. Across the group, its deferred revenue, which it describes as advance payments and billings ahead of delivery, was $1.2 billion at the end of June. Its firm backlog across the group was $24.1 billion.
-
-My reading is that Eaton's customers queue with signed orders rather than cash. Eaton carries the cost of the ramp itself and recovers it through price, after a delay. Eaton calls the squeeze price/cost; linking it to the length of the queue is my inference.
+My reading is that Eaton carries the cost of the ramp itself and recovers it through price, after a delay. Eaton calls the squeeze a matter of price and cost; linking it to the length of the queue is my inference.
 
 ## Moving the building site into the factory
 
-There is a second queue on the site itself. Asked about prefabricated electrical rooms, Ruiz named "one of the bottlenecks in the industry, which is to have availability of electricians, plumbers".
+There is a second queue on the site itself. Asked about factory-built electrical rooms, Ruiz named "one of the bottlenecks in the industry, which is to have availability of electricians, plumbers".
 
-His answer is to build more of the room in a factory. Fibrebond's enclosures arrive at the site with Eaton's own switchgear and UPS packaged inside. In September 2026 Eaton announced a $242 million plant in Arkansas to double its US capacity for them.
+His answer is to build more of the room in a factory. Fibrebond's enclosures arrive with Eaton's own switchgear and UPS already packed inside. In September Eaton announced a new plant in Arkansas to double its American capacity for them.
 
-I read this as a deliberate trade. Work that would have waited on scarce site electricians now waits on Eaton's factory instead. That shortens the build, but it adds to the line in front of Eaton.
+I read this as a deliberate trade. Work that would have waited on scarce site electricians now waits on Eaton's factory instead. The build gets shorter, but the line in front of Eaton gets longer.
 
 ## What would prove me wrong
 
-I am wrong if the queue stops lengthening before the new plants arrive. The test is Electrical Americas backlog divided by the segment's sales over the previous four quarters, both from Eaton's filings.
+I am wrong if the queue stops lengthening before the new plants arrive. The test is the unit's backlog divided by its sales over the previous four quarters, both from Eaton's filings.
 
-It stands at 1.05 years today, and the rise has slowed, from 1.04 in March. If it falls for two quarters in a row before mid 2027, when the new plants start, my claim fails. It also fails if it drops below 0.93, its level of June 2025, before the end of 2027.
+That ratio stands at 1.05 years, and its rise has slowed. If it falls for two quarters in a row before mid 2027, when the new plants start, my claim fails. It also fails if it drops below 0.93, its level a year earlier, before the end of 2027.
 
-I am also wrong if the segment's book-to-bill, measured over the previous twelve months, falls below 1.0 for two quarters running.
-
-The margin gives a sharper test. If the queue is the cause of the squeeze, margin should recover year on year as new prices reach the factory. A margin still falling year on year once price and cost are neutral points to something else, such as rivals undercutting Eaton.
-
-So I watch four things. The backlog against four quarters of sales, each quarter, and whether it keeps rising. Rolling book-to-bill. Whether the Nebraska and South Carolina plants start on time in 2027. And whether Eaton says its extended lead times are shrinking.
+I am also wrong if the unit's book-to-bill, new orders divided by sales over twelve months, falls below 1.0 for two quarters running. And I am wrong if its margin is still falling year on year after Eaton says price and cost are back in balance.
 
 <section class="exposure">
 <h3>Who is exposed if Eaton's queue keeps lengthening</h3>
@@ -118,4 +110,4 @@ So I watch four things. The backlog against four quarters of sales, each quarter
 
 ---
 
-<p class="sources">Sources: Eaton second quarter 2026 results, 31 July 2026, and the earnings call the same day, for segment sales, orders, book-to-bill, data centre growth, capacity projects, revenue per day, prefabrication, margin drivers and the US data centre pipeline estimate. Eaton quarterly reports on Form 10-Q for the periods ended 30 September 2025, 31 March 2026 and 30 June 2026, and the annual report on Form 10-K for 2025, filed 26 February 2026, for segment backlog, quarterly sales, margin factors, deferred revenue and acquisitions. Eaton facility announcements of 12 February 2025, 8 April 2026 and 2 September 2026. Figures are as reported on the dates cited. Personal research, not investment advice.</p>
+<p class="sources">Sources: Eaton second quarter 2026 results and earnings call, 31 July 2026, for segment growth, capacity projects, daily shipments, margin drivers, prefabrication and the US data centre pipeline estimate. Eaton quarterly reports on Form 10-Q for the periods ended 30 September 2025, 31 March 2026 and 30 June 2026, and the annual report on Form 10-K for 2025, for segment backlog, sales and acquisitions. Eaton facility announcements of 12 February 2025, 8 April 2026 and 2 September 2026. Figures are as reported on the dates cited. Personal research, not investment advice.</p>

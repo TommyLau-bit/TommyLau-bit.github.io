@@ -147,9 +147,25 @@ def check(path):
         hits = re.findall(pat, prose, re.I)
         if hits:
             fails.append(f'{label} appears {len(hits)}x')
-    words = len(prose.split())
-    if not 900 <= words <= 1700:
-        warns.append(f'{words} words; the format asks for 1,050 to 1,500')
+    # length and numbers budget, measured on the reading body only (WRITING-FORMAT §4, §4b)
+    rb = re.sub(r'<section class="exposure">.*?</section>', '', body, flags=re.S)
+    rb = re.sub(r'<p class="sources">.*?</p>', '', rb, flags=re.S)
+    rb = re.sub(r'<[^>]+>', ' ', rb)
+    words = len(rb.split())
+    if words > 1300:
+        fails.append(f'{words} words; a journal piece is 900 to 1,150 (about 5 minutes), never over 1,300')
+    elif not 800 <= words <= 1150:
+        warns.append(f'{words} words; the format asks for 900 to 1,150')
+    figures = len(re.findall(r'(?<![A-Za-z\d.,])\d[\d,.]*(?![A-Za-z]*\d)', rb))
+    money = len(re.findall(r'(?:(?:US|S|HK)?\$|€|£|¥)\s?\d[\d.,]*(?:\s*(?:billion|million|bn)\b)?|(?<![\d.,$€£¥])\d[\d.,]*\s*(?:billion|million|bn)\b', rb))
+    if money > 4:
+        fails.append(f'{money} money figures; the journal allows 3 company financial figures (§4b), the numbers live in the research note')
+    elif money > 3:
+        warns.append(f'{money} money figures; §4b allows 3')
+    if figures > 25:
+        fails.append(f'{figures} figures in the body; §4b allows 15')
+    elif figures > 15:
+        warns.append(f'{figures} figures in the body; §4b asks for 15 at most')
     sents = [x for x in re.split(r'(?<=[.!?]) ', ' '.join(
         p for p in prose.split('\n\n') if p.strip() and not p.strip().startswith('#'))) if x.strip()]
     if sents:

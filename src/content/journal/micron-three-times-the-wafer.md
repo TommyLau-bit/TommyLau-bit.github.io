@@ -6,13 +6,15 @@ category: "Analysis"
 cover: "/covers/micron-three-times-the-wafer.svg"
 tags: ["memory", "HBM", "supply-chain"]
 draft: false
+updated: 2026-10-08T16:00:00+08:00
+updateNote: "Shortened and made plainer on 8 October 2026. The claim and the test of it are unchanged."
 ---
 
 Here is a claim I am willing to be wrong about in public. The memory shortage inside AI chips and the one in your next laptop are the same shortage.
 
 The link is Micron, the memory maker based in Boise, Idaho. It is one of three companies making HBM, high-bandwidth memory, the stacked memory beside the leading AI processors. SK Hynix and Samsung are the other two.
 
-In [the piece on the memory wall](/journal/the-countertop-is-the-bottleneck/), I explained why AI chips need memory beside them. In [the map of who makes an Nvidia B200](/journal/nobody-makes-a-b200-alone/), I noted Micron had agreed its 2026 supply in advance. This piece asks what that memory takes away.
+In [the piece on the memory wall](/journal/the-countertop-is-the-bottleneck/), I explained why AI chips need memory beside them. In [the map of who makes Nvidia's flagship AI chip](/journal/nobody-makes-a-b200-alone/), I noted Micron had agreed its 2026 supply before the year began. This piece asks what that memory takes away.
 
 The answer is silicon wafers. Micron says HBM uses about three times the wafer of ordinary memory to store the same amount of data.
 
@@ -30,76 +32,63 @@ Micron sells most of each year's HBM before the year starts, and every wafer tha
 
 **DRAM.** Dynamic random access memory, the working memory in every phone, laptop and server. HBM is DRAM too, made from the same kind of memory chip in the same factories.
 
-**Wafer.** The thin silicon disc, 300 millimetres across, on which hundreds of memory chips are made together. A memory maker's output is limited by how many wafers its cleanrooms, the dust-free halls where chips are made, can process.
+**Wafer.** The thin silicon disc on which hundreds of memory chips are made together. A memory maker's output is limited by how many wafers its cleanrooms, the dust-free halls where chips are made, can process.
 
-**Trade ratio.** Micron's term for how many wafers of ordinary DRAM it gives up to make the same number of HBM bits. A bit is the smallest unit of stored data.
+**Trade ratio.** Micron's term for how many wafers of ordinary DRAM it gives up to make the same amount of HBM. It is measured in bits, the smallest unit of stored data.
 
 ## Why HBM eats wafers
 
-An HBM stack is a pile of DRAM chips, wired through their own silicon by vertical connections called through-silicon vias. Micron's HBM4 stacks twelve memory chips on a logic chip that talks to the processor, holding 36 gigabytes.
+An HBM stack is a pile of DRAM chips, wired together through their own silicon by tiny vertical connections. The pile sits on a logic chip that talks to the processor.
 
-Micron gave three reasons for its appetite in December 2023. Across the industry, it said, an HBM3E memory chip was roughly twice the size of a DDR5 chip, the standard server memory, holding the same data.
+Micron gives three reasons the stack is so hungry. First, an HBM memory chip is roughly twice the size of a DDR5 chip, the standard server memory, holding the same data.
 
-Each stack also needs that extra logic chip at its base. And the stacking is complex enough to lower yields, the share of finished stacks that actually work.
+Second, each stack needs that extra logic chip at its base. Third, the stacking is complex enough to lower yields, the share of finished stacks that actually work.
 
-That December, Micron put HBM at more than twice the wafer supply of DDR5 per bit. In March 2024 it called the industry-wide figure "approximately three times", and said the ratio for HBM4 would be "even higher".
-
-In December 2025 Micron restated "the three to one trade ratio with DDR5", and said it "only increases with future generations". So three is a floor, not a ceiling.
+Put together, Micron calls it "the three to one trade ratio with DDR5". It says the ratio "only increases with future generations". So three is a floor, not a ceiling.
 
 ## Sold before it is made
 
-For 2025, 2026 and 2027, Micron had most of each year's HBM committed before the year started. In March 2024 it said its 2024 HBM was sold out and the "overwhelming majority" of its 2025 supply already allocated.
+For three years running, Micron has had most of each year's HBM committed before that year started. This autumn it said it had agreements for "the vast majority" of its HBM for next year.
 
-In December 2025 it said it had agreed price and volume for its whole calendar 2026 supply. On 30 September 2026 it said it had completed agreements for "the vast majority" of its calendar 2027 HBM bits.
+The reason is qualification, the testing a customer runs before trusting a supplier's part. HBM is tested and approved separately for each AI processor it sits beside.
 
-The reason is qualification, the testing a customer runs before trusting a supplier's part. HBM is qualified for each accelerator it sits beside, which Micron calls "platform qualifications". In December 2023 it said it was in the final stages of qualifying its HBM3E for Nvidia's H200. In March 2024 it said the H200 would use it.
+So a buyer cannot easily switch memory late. My inference is that the order is effectively placed when the processor is designed.
 
-So a buyer cannot easily switch memory late. My inference is that the order is effectively placed when the accelerator is designed.
-
-The price is fixed early too. Asked by an analyst from Cantor Fitzgerald when HBM prices would move closer to conventional DRAM's, Micron's chief executive, Sanjay Mehrotra, said "for 2026, our prices for HBM were negotiated with our customers last year."
+The price is fixed early too. Asked when HBM prices would move closer to ordinary memory, Sanjay Mehrotra, Micron's chief executive, said "for 2026, our prices for HBM were negotiated with our customers last year."
 
 ## Where the squeeze shows up
 
-If HBM takes wafers from ordinary DRAM, ordinary DRAM should be the tighter market. Micron's figures for fiscal 2026, its year to 3 September 2026, fit that.
+If HBM takes wafers from ordinary DRAM, ordinary DRAM should be the tighter market. Micron's latest figures fit that.
 
-In the fourth quarter, Micron's DRAM revenue, which includes HBM, was $39.8 billion, up 27 per cent on the quarter before. Bits shipped rose by a mid single digit percentage, while prices rose by a high teens percentage. Micron put the price rise down to "tight DRAM industry conditions".
+Its DRAM prices rose sharply over the past quarter while the amount it shipped rose only a little. Micron put the price rise down to "tight DRAM industry conditions".
 
-Here is the surprise. Micron's own wording implies that HBM, priced a year earlier, has been the less profitable kind. It says its 2027 HBM prices carry significant increases, "narrowing the gross margin gap with conventional DRAM". Gross margin is the share of each sale left after the cost of making it.
+Here is the surprise. Micron's own wording implies that HBM, priced a year earlier, has lately been the less profitable kind. It says next year's HBM prices are rising enough to narrow the gap in gross margin, the share of each sale left after the cost of making it.
 
-My reading is that ordinary memory, sold nearer today's price, felt the shortage first. HBM catches up only as each new year's contracts are signed.
+My reading is that ordinary memory, sold nearer today's price, felt the shortage first. HBM is still far dearer per bit, but it catches up only as each new year's contracts are signed.
 
-That sits alongside my memory wall piece, which called HBM priced like a luxury. Per bit it still costs far more. But by Micron's account its margin lagged ordinary DRAM in 2026, because its prices were fixed a year early.
-
-SK Hynix describes the same pull. In its results release of 29 July 2026 it said demand for AI memory and conventional memory is "expanding in tandem", in a market where customer demand "exceeds supply capabilities".
+SK Hynix describes the same pull. It says demand for AI memory and ordinary memory is "expanding in tandem", in a market where demand outruns what makers can supply.
 
 ## Why the squeeze lasts
 
-The lasting cure is more cleanroom, and cleanrooms are slow. Micron's first new Idaho fab, ID1, is due to start wafer output in mid 2027, ID2 in late 2028, and its first New York fab in 2030.
+The lasting cure is more cleanroom, and cleanrooms are slow. Micron's first new fab in Idaho, called ID1, is due to start output in mid 2027, with more sites to follow.
 
-Even then, Micron says, new output becomes meaningful only "a few quarters after initial output." SK Hynix's Yongin Phase 1 cleanroom opens in early 2027.
+Among the things slowing new fabs, Micron lists building times, permits and "the need for enhanced energy infrastructure". Memory waits on the same grid as everything else in this journal.
 
-In June 2026 Micron listed what slows new fabs, from construction lead times and permitting to "the need for enhanced energy infrastructure". Memory waits on the same grid as everything else in this journal.
+Micron expects HBM across the industry to keep growing faster than ordinary memory, and a rising trade ratio to keep squeezing everything else. That ordinary memory stays short for years is my stronger reading, not Micron's wording.
 
-Asked whether new capacity or customers' cutbacks could ease the market by 2028, Mehrotra said HBM's next generations, "with the trade ratio that exists", create headwinds for supply growth. Micron expects industry HBM bits to grow faster than conventional DRAM through 2028. In June it said that growth, and a trade ratio rising with each generation, "further pressures non-HBM supply". That ordinary memory stays short through 2028 is my stronger reading, not Micron's wording.
-
-An analyst from TD Cowen offered the obvious counter: if one large customer used less HBM, would its wafers returning to ordinary DRAM add much supply?
-
-Mehrotra did not answer the wafer part directly. He said HBM demand would outpace the industry in 2027 and 2028. That is Micron's forecast, not proof, and it marks where my claim is weakest.
-
+An analyst asked the obvious question: if one large customer used less HBM, would its wafers returning to ordinary memory add much supply? Mehrotra did not answer that part directly. He said HBM demand would outpace the industry for the next two years. That is Micron's forecast, not proof, and it marks where my claim is weakest.
 
 ## What would prove me wrong
 
 My claim has two halves, and Micron's own results and calls test both through calendar 2028.
 
-The first half, sold before the year starts, fails if, by its fiscal first quarter 2028 results around December 2027, Micron has not said most of its calendar 2028 HBM supply is agreed. It usually says so between September and December. It also fails if Micron reports unsold HBM, or cuts HBM output, and itself blames customer demand.
+The first half, sold before the year starts, fails if, by its fiscal first quarter 2028 results around December 2027, Micron has not said most of its calendar 2028 HBM is agreed. It also fails if Micron reports unsold HBM, or cuts HBM output, and itself blames customer demand.
 
-The second half, the squeeze, fails if Micron stops expecting the DRAM industry to be supply-constrained in 2027 or 2028, while still expecting HBM bits to outgrow conventional DRAM. It also fails if Micron puts any current HBM generation below about three times the wafer of DDR5 per bit.
+The second half, the squeeze, fails if Micron stops expecting DRAM to be short across the industry in 2027 or 2028, while still expecting HBM to outgrow ordinary DRAM. It also fails if Micron puts any current HBM generation below about three times the wafer of DDR5 for each bit.
 
-A shortage prolonged by late cleanrooms supports the claim rather than breaking it. Two things could blur the test. Micron's multi-year take-or-pay agreements, where customers pay for committed volumes whether or not they take them, now cover ordinary memory too.
+A shortage made longer by late cleanrooms supports the claim rather than breaking it. And if chip designers cut the HBM on each chip, the squeeze would ease for a reason my claim allows. I will say so if it happens.
 
-And if chip designers cut HBM per chip, the squeeze would ease for a reason my claim allows. I will say so if it happens.
-
-So I watch next year's HBM agreements each autumn, Micron's DRAM outlook, any new HBM4 trade ratio, and whether ID1 starts in mid 2027.
+So I watch next year's HBM agreements each autumn, Micron's view of the DRAM market, and whether ID1 starts on time.
 
 <section class="exposure">
 <h3>Who is exposed if HBM keeps taking wafers from ordinary memory</h3>
@@ -122,4 +111,4 @@ So I watch next year's HBM agreements each autumn, Micron's DRAM outlook, any ne
 
 ---
 
-<p class="sources">Sources: Micron earnings call prepared remarks of 20 December 2023, 17 December 2025, 24 June 2026 and 30 September 2026, and its calls of 20 March 2024 and 30 September 2026. Micron fourth quarter and fiscal 2026 results, 30 September 2026, filed on Form 8-K. Micron HBM4 product page. SK Hynix second quarter 2026 results, 29 July 2026. Figures are as reported on the dates cited, with call quotes as transcribed or reported. Personal research, not investment advice.</p>
+<p class="sources">Sources: Micron earnings call prepared remarks of 20 December 2023, 17 December 2025, 24 June 2026 and 30 September 2026, and its calls of 20 March 2024 and 30 September 2026. Micron fourth quarter and fiscal 2026 results, 30 September 2026, filed on Form 8-K. SK Hynix second quarter 2026 results, 29 July 2026. Figures are as reported on the dates cited, with call quotes as transcribed or reported. Personal research, not investment advice.</p>

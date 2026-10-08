@@ -6,15 +6,15 @@ category: "Analysis"
 cover: "/covers/schneider-sells-the-finished-system.svg"
 tags: ["power", "data-centres", "the-stack"]
 draft: false
+updated: 2026-10-08T16:00:00+08:00
+updateNote: "Shortened and made plainer on 8 October 2026. The claim and the test of it are unchanged."
 ---
 
 Here is a claim I am willing to be wrong about in public. Schneider Electric's growth from AI is not mainly a story of selling more breakers and switches.
 
-Schneider, the French electrical group, reports its sales in three buckets. One of them, which it calls Systems, has grown faster than the others in every quarter of the past year.
+Schneider, the French electrical group, sorts what it sells into three groups. The one it calls Systems, the big equipment it builds and tests before delivery, has outgrown its catalogue parts for a year. Schneider says data centres led that growth in the latest quarter.
 
-In the second quarter of 2026, Systems grew 28 per cent on an organic basis. Products, the catalogue items, grew 13 per cent. Schneider says data centres led the Systems growth.
-
-What it is selling those buyers is increasingly the finished article. Power rooms built and tested in a factory, cooling plants, and large backup power units, shipped ready to connect.
+What those buyers increasingly want is the finished article. Power rooms and cooling plants are assembled in a factory, tested, then shipped ready to connect.
 
 Schneider Electric is selling AI data centres the finished system, because the hours on site are now scarcer than the parts.
 
@@ -25,75 +25,57 @@ Schneider Electric is selling AI data centres the finished system, because the h
 <p>The boxed fridge is cold by the evening it arrives. When skilled hands are the scarce thing, you pay to have the work done before delivery. Schneider is selling AI data centres more fridges and fewer loose parts.</p>
 </details>
 
-## How Schneider sorts what it sells
+## Loose parts or a finished room
 
-Schneider reported €40.2 billion of revenue in 2025, its calendar and financial year. It splits that revenue three ways.
+Schneider's three groups are easy to picture.
 
-**Products.** Catalogue items such as circuit breakers, switches and low voltage drives. They made up 47 per cent of 2025 revenue.
+**Products.** Catalogue items such as circuit breakers and switches. They arrive in boxes, and electricians fit them on site.
 
-**Systems.** Larger engineered offers, 34 per cent of 2025 revenue. For the second quarter of 2026, Schneider says data centre growth here came from prefabricated solutions, cooling technologies and three-phase UPS.
+**Systems.** The bigger offers, now about a third of Schneider's sales. For data centres that means prefabricated modules, cooling plants and large backup power units.
 
-**Software and services.** Design and operating software, plus field engineers, at 19 per cent.
+**Software and services.** Design tools, plus engineers who maintain the kit once it runs.
 
-A prefabricated module is a power or cooling room built inside a factory, wired and tested, then shipped to the site in one piece. A three-phase UPS, an uninterruptible power supply, is a large battery system that carries a whole hall through a grid dip.
+A prefabricated module is a power or cooling room built inside a factory, wired and tested, then shipped to the site in one piece. The backup units are called UPS, uninterruptible power supplies: large battery systems that carry a whole hall through a dip in the grid.
 
-Since February 2025 Schneider has also controlled Motivair, a liquid cooling maker based in Buffalo, New York. Its coolant distribution units, which pump liquid to plates on the chips, are part of the cooling Schneider now sells.
+Since 2025 Schneider has also owned Motivair, a liquid cooling maker in Buffalo, New York. Its pumps send coolant to metal plates sitting directly on the chips.
 
-## The shift, in Schneider's own numbers
+## The tell in Schneider's own results
 
-Systems was 31 per cent of revenue in 2024, 34 per cent in 2025, and 35 per cent in the second quarter of 2026.
+If buyers wanted more of the same parts, Products would grow fastest. It does not.
 
-The growth gap has held for a year. Systems grew 17 per cent in the second quarter of 2025, against 2 per cent for Products. In the following three quarters the pairs were 19 and 3, 19 and 4, then 16 and 9.
+In the second quarter of 2026, Systems grew 28 per cent and Products 13 per cent, leaving out currency moves and acquisitions. Systems has grown faster in every quarter for a year, and Schneider says data centres led the latest quarter.
 
-By my arithmetic, Systems supplied more than half of Schneider's organic growth in the second quarter of 2026, from about a third of the revenue base. Organic growth strips out currency moves and acquisitions.
+The shift even costs Schneider something, and it says so. Finished systems keep less of each euro of sales than catalogue parts do, and Schneider's half year results blame the mix for pulling down its gross margin, though it says operating profit absorbs much of that.
 
-Data centres sit behind it. Schneider says data centre and networks customers made up 30 per cent of its 2025 orders, the largest of its four end markets.
+I read that as revealed preference. Schneider is accepting a thinner cut on each sale in order to deliver more of the work already done.
 
-The shift has a cost, and Schneider names it. Its first half results put a €148 million drag on adjusted operating profit down to mix, "mainly due to the relatively faster growth of Systems revenues compared to Products and Software". It says the same mix also weighed on gross margin, the share of each sale left after the cost of making it.
+## Why the building site sets the pace
 
-I read that as revealed preference. Schneider is accepting a lower gross margin per euro to sell more of the work already done, though it says the dilution is "mitigated at the adjusted EBITA level", its measure of operating profit.
+An AI hall is not finished when its equipment arrives. Every panel and battery string still has to be installed and commissioned, which means tested under power before it carries a real load.
 
-## Why the site, not the factory, sets the pace
+That takes electricians, and every new AI campus draws on the same pool as homes, factories and the grid itself.
 
-An AI hall is not finished when its equipment arrives. Every panel and battery string still has to be installed and commissioned, meaning tested under power before it carries load.
+Schneider's own executives say the pool is too small. At its investor day in December 2025, Frédéric Godemel, who runs its energy business, described "tension on the number of people to commission product and install them" in data centres. Aamir Paul, who runs North America, said land and power get the attention, "but actually labor is one" barrier.
 
-That needs electricians. For scale, the US Bureau of Labor Statistics counted about 821,000 electrician jobs in 2025. It projects 9 per cent growth in those jobs by 2035. Every new AI campus draws on that same pool, alongside homes, factories and grid work.
+Customers say so too. David Howson of Vantage, a data centre developer, described designs "pre-configured, pre-commissioned to avoid the labor challenges". In November 2025 Switch, another operator, signed a supply agreement with Schneider for prefabricated power modules and chillers.
 
-Schneider's own executives say the pool is too small. At its Capital Markets Day in December 2025, Frédéric Godemel, who runs Energy Management, described "tension on the number of people to commission product and install them" in data centres.
+Prefabrication does not abolish the wait. It moves part of it from the building site into the factory, so Schneider's own output still matters.
 
-Aamir Paul, who runs North America, was blunter about the US. Land and power get the attention, he said, "but actually labor is one" barrier.
+## Buying design, not just floor space
 
-Customers say so too. On the same stage, David Howson of Vantage, a data centre developer, described designs "pre-configured, pre-commissioned to avoid the labor challenges". At the same event, Noelle Walsh, who runs Microsoft's cloud operations, named "skidding and modularization" as ways to bring capacity online faster.
+If factory output were the only limit, I would expect Schneider to pour money into new plants. It is adding some, but its biggest moves point elsewhere.
 
-The orders follow. In November 2025 Switch, a data centre operator, signed a $1.9 billion supply capacity agreement with Schneider, in two phases, covering prefabricated power modules and chillers. Schneider describes the modules as having "standardized, pretested layouts".
+For extra prefabricated capacity in North America it is leaning on a partner, Foxconn, rather than only its own floor space. And it keeps buying design tools. It already owns ETAP, software for designing electrical systems, which it pairs with Nvidia's tools to build a digital twin of an AI data centre, a working simulation of the building before it exists.
 
-Prefabrication does not abolish the wait. It moves part of it off the site and into the factory, so Schneider's own output still matters.
-
-## Spending on design, not floor space
-
-If equipment output were the only constraint, I would expect Schneider to pour money into plants. Its spending points somewhere else.
-
-Net capital expenditure, spending on plants, equipment and capitalised development, was €669 million in the first half of 2026. That was €48 million lower than a year earlier, while revenue grew 14 per cent organic.
-
-Schneider is adding plants too. On 26 March 2025 it announced about $700 million of US investment through 2027, spread across several states. But on the July results call, its chief executive, Olivier Blum, said a Foxconn agreement would help increase its capacity to deliver prefabricated units in North America. As I read it, that is partner capacity rather than new Schneider floor space.
-
-Meanwhile Schneider is buying design tools. It already owns ETAP, software for designing electrical systems, which it pairs with Nvidia's tools to build a digital twin of an AI data centre. A digital twin is a working simulation of the building before it exists. On 5 October 2026 it agreed to buy PTC, an American design software company, in an all-cash deal worth about $22.6 billion.
-
-PTC's software is used mainly to design products and machines, in industries such as cars and aircraft, so it is not a data centre deal. But Schneider describes it as linking design and build to operate and maintain. My inference is that Schneider sees engineering and site hours as scarcer than factory hours.
+On 5 October 2026 Schneider agreed to buy PTC, an American design software company, for about $22.6 billion. PTC's software mostly designs cars and machines, so it is not a data centre deal. But Schneider describes it as linking how things are designed to how they are built and run. My inference is that Schneider sees engineering and site hours as scarcer than factory hours.
 
 ## What would prove me wrong
 
-I am wrong if Schneider's growth stops arriving as systems. The test is Systems as a share of group revenue.
+I am wrong if Schneider's growth stops arriving as systems.
 
-It was 34 per cent in 2025. The share moves from quarter to quarter, and was 33 per cent in the first quarter of 2026, so the test uses full years. If it falls below 34 per cent for 2026 or 2027, while Schneider describes data centre and networks sales as growing double digit, my claim fails.
+The simplest test is the share of its sales that comes from Systems. It was 34 per cent in 2025. If it falls below that for 2026 or 2027, while Schneider still says its data centre sales are growing by double digits, my claim fails. I am also wrong if catalogue Products outgrow Systems on an organic basis for two quarters running while data centres remain its main driver.
 
-I am also wrong if Products outgrows Systems on an organic basis for two quarters running, with data centres still Schneider's main growth driver.
-
-Two things could blur the test, and I watch both. Systems also includes industrial automation, which is not data centres. And Schneider reports its 2026 price rises on Products, which could lower the Systems share without any change in what data centres buy.
-
-The share test checks the outcome. The reason behind it, scarce site labour, I check through what Schneider's executives say.
-
-So I watch four things. The Systems share of revenue each year. Systems against Products growth each quarter. Whether Schneider keeps naming prefabricated solutions as a driver. And whether its executives stop describing site labour as a constraint.
+One thing could blur the test. Systems also includes factory automation, which has nothing to do with data centres. So I also watch the reason behind the numbers: whether Schneider keeps naming prefabricated units as a driver, and whether its executives stop saying site labour is short.
 
 <section class="exposure">
 <h3>Who is exposed if Schneider's growth keeps arriving as finished systems</h3>
@@ -116,4 +98,4 @@ So I watch four things. The Systems share of revenue each year. Systems against 
 
 ---
 
-<p class="sources">Sources: Schneider Electric full year 2024 results, 20 February 2025, full year 2025 results and presentation, 26 February 2026, third quarter 2025 revenues, 30 October 2025, first quarter 2026 revenues, 30 April 2026, and half year results for 2025 and 2026, 31 July 2025 and 30 July 2026. Schneider Electric Capital Markets Day transcript, 11 December 2025. Schneider Electric half year 2026 results call, 30 July 2026, from a third-party transcript, for the Foxconn remark. Schneider Electric and Foxconn announcement, 15 June 2026. Schneider Electric US investment announcement, 26 March 2025. Schneider Electric and Switch announcement, 19 November 2025. Schneider Electric completion of the Motivair acquisition, 28 February 2025. Schneider Electric and PTC announcement, 5 October 2026. US Bureau of Labor Statistics, Occupational Outlook Handbook, electricians. Figures are as reported on the dates cited. Personal research, not investment advice.</p>
+<p class="sources">Sources: Schneider Electric full year 2025 results and presentation, 26 February 2026, and half year results, 30 July 2026, with earlier quarterly revenue releases for the growth comparison. Schneider Electric Capital Markets Day transcript, 11 December 2025. Schneider Electric half year 2026 results call, 30 July 2026, from a third-party transcript, for the Foxconn remark. Schneider Electric and Foxconn announcement, 15 June 2026. Schneider Electric and Switch announcement, 19 November 2025. Schneider Electric completion of the Motivair acquisition, 28 February 2025. Schneider Electric and PTC announcement, 5 October 2026. Figures are as reported on the dates cited. Personal research, not investment advice.</p>

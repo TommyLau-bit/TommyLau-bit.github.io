@@ -10,7 +10,7 @@ draft: true
 
 In the first half of 2026, GE Vernova signed contracts for 41 gigawatts of gas turbines. In the same six months it shipped seven.
 
-Most of what it signed was not an order for a machine. It was a paid place in the line to have one built, much of it for 2030 and now 2031.
+Most of what it signed was not an order for a machine. It was a paid place in the line to have one built, much of it for the end of the decade and beyond.
 
 Customers handed over billions of dollars in down payments to hold those places. GE Vernova says that money is funding its next step up in output.
 
@@ -35,37 +35,35 @@ GE Vernova makes gas turbines, grid equipment and wind turbines, and the first t
 
 **Slot reservation agreements.** A paid hold on a future production slot, signed before the buyer is ready to order a machine. It becomes a firm order once the project has a schedule, a gas pipeline and a builder.
 
-GE Vernova reports its queue as both added together. At the end of June it stood at 116 gigawatts, 53 of them firm orders and 63 of them reservations.
+GE Vernova reports its queue as both added together. At the end of June it stood at 116 gigawatts, roughly half firm orders and half reservations.
 
 ## The queue, measured in years
 
-GE Vernova has been shipping about three gigawatts a quarter. From the third quarter of 2026 it steps up to five, or 20 a year.
+GE Vernova has been shipping about three gigawatts a quarter. From the second half of this year it steps up to five a quarter, or about 20 gigawatts a year.
 
-At that pace, 116 gigawatts is almost six years of output already signed. GE Vernova expects to end 2026 with at least 125.
+At that pace, the queue is almost six years of output already signed. It also grew by about two fifths in the first half of this year alone.
 
-The queue is also lengthening faster than it is worked down. It stood at 83 gigawatts at the end of 2025, then added 33 more in six months.
+The company says it is mostly sold out to the end of the decade. Then add the time at site. Its chief executive said a heavy-duty unit can take another year and a half to commission, meaning test and switch on, after it leaves the factory.
 
-The company says it is mostly sold out through 2030, and expects more than half of 2031's slots to be sold by the end of this year. Then add the time at site. GE Vernova's chief executive said a heavy-duty unit can take another 18 months to commission after it leaves the factory. Turbines shipped in 2030 and 2031 make power in 2032 and 2033.
-
-GE Vernova puts data centres at about 20 per cent of its turbine demand, without saying whether that counts customers or gigawatts. For an AI campus planned today, that date is no faster than the grid queue it was meant to skip. The company's own answer is the aeroderivative, which can be running about six months after shipping and fills the gap until the big machine arrives.
+GE Vernova puts data centres at about a fifth of its turbine demand. A turbine shipped in 2030 or 2031 makes power in 2032 or 2033. For an AI campus planned today, a big turbine arrives no faster than the grid connection it was meant to skip. The company's own answer is the aeroderivative, which can be running about six months after shipping and fills the gap until the big machine arrives.
 
 ## Where the deposits show up
 
 If customers are paying to hold a place, GE Vernova's cash should show it before its revenue does. It does.
 
-The company's quarterly filing for the period to 30 June 2026 reports contract liabilities and deferred income, mostly cash collected from customers for equipment not yet delivered. In the Power segment this rose from $16.5 billion at the end of 2025 to $27.7 billion six months later. About $1.9 billion of it relates to service agreements.
+Its quarterly filing reports contract liabilities, mostly cash collected from customers for equipment not yet delivered. In Power, its gas turbine segment, these rose by about two thirds in six months, to $27.7 billion at the end of June.
 
-The filing gives the reason in plain words: higher down payments on orders and slot reservation agreements at Power. Cash from operations for the half year was $10.7 billion, against $1.5 billion a year earlier.
+The filing gives the reason plainly: higher down payments on orders and slot reservations.
 
-Price points the same way. GE Vernova said its first half 2026 gas orders were priced more than 20 per cent above its fourth quarter 2025 orders, measured in dollars per kilowatt. Management credits part of that to converting higher-priced reservations, and the quarter was also lifted by a richer mix of aeroderivatives. Even so, a buyer that pays more per unit, and pays years early, is not buying a turbine. It is buying a date.
+Price points the same way. GE Vernova said its gas orders in the first half were priced more than 20 per cent above those of the last quarter of last year, per kilowatt. Part of that came from converting pricier reservations and selling more aeroderivatives. Even so, a buyer that pays more per unit, and pays years early, is not buying a turbine. It is buying a date.
 
 ## Why GE Vernova will not simply build another factory
 
-On its July results call, the chief executive set out the plan. Output goes from 20 gigawatts a year now to 24 in 2028 and 30 in 2030. All of it comes from lean methods, meaning reorganising work to cut wasted time and space, plus new machinery inside the existing factory footprint, "all funded by customer down payments".
+On its July results call, the chief executive set out the plan. Output rises by half by the end of the decade, from lean methods, meaning reorganising work to cut wasted time and space, plus new machinery inside existing factories. It is "all funded by customer down payments".
 
-The pace is set by parts, not floor space. The step to 24 gigawatts waits on castings and forgings, the large shaped metal parts at the hot heart of a turbine. The company can see them arriving in 2027.
+The pace is set by parts, not floor space. The next step waits on castings and forgings, the large shaped metal parts at the hot heart of a turbine, which the company expects next year.
 
-Asked about capacity across the industry, he said GE Vernova feels very balanced on supply against demand for the next six years. He added that some of that capacity will be needed by the mid 2030s anyway, to service turbines already in the field.
+Asked about the industry, he said GE Vernova feels very balanced on supply against demand for the next six years.
 
 I read that as a deliberate choice, and a rational one. A turbine factory is built to run for decades, and a maker that remembers past slumps prefers a long queue to an empty building. For buyers, the cost of that choice is waiting, and they are paying for the privilege.
 
@@ -73,21 +71,17 @@ I read that as a deliberate choice, and a rational one. A turbine factory is bui
 
 A turbine on site still needs transformers and switchgear, the heavy equipment that makes and breaks high voltage connections safely. GE Vernova makes those too, in its Electrification segment, and that queue is also growing.
 
-In the second quarter, Electrification's book-to-bill ratio, new orders divided by sales shipped, was about 1.7. Its equipment backlog reached $40.6 billion, up 69 per cent in a year. Data centre orders in the first half passed $5 billion, more than double the whole of 2025.
+Orders there are running well ahead of shipments, and data centre orders in the first half were already more than double the whole of last year's. The response looks the same as in gas: more switchgear from existing factories, with extra shifts.
 
-The response looks the same as in gas. Switchgear output rises from roughly 9,000 units last year to 10,500 this year, from existing factories with extra shifts.
-
-When GE Vernova wanted more transformer capacity quickly, it bought rather than built. In February it paid about $5.3 billion for the half of Prolec GE it did not own, a transformer maker with seven factories across the Americas. That is the transformer clock again: money can buy an existing factory sooner than it can raise a new one.
+When GE Vernova wanted more transformer capacity quickly, it bought rather than built. In February it bought the half of Prolec GE it did not own, a transformer maker with seven factories across the Americas. That is the transformer clock again: money can buy an existing factory sooner than it can raise a new one.
 
 ## What would prove me wrong
 
-I am wrong if the queue starts to clear before 2030. The test is gigawatts under contract divided by the annual output GE Vernova has planned for that year: 20 now, 24 from 2028, 30 from 2030. It is almost six today. If it falls below four before 2030, the factory is catching up and the queue was never the plan.
+I am wrong if, before 2030, gigawatts under contract fall below four years of the output GE Vernova has planned for that year. That plan is 20 gigawatts a year now, 24 from 2028 and 30 from 2030. Today the queue is almost six years, so a fall below four would mean the factory is catching up.
 
-I am also wrong if GE Vernova announces a new heavy-duty turbine factory. It has not ruled one out. On the July call an analyst recalled management saying capacity could be added once the queue passed about five times output, and it is now 5.8. Treating the queue as deliberate is my reading, and a new factory would end it.
+I am also wrong if GE Vernova announces a new heavy-duty turbine factory. It has not ruled one out. Treating the queue as deliberate is my reading, and a new factory would end it.
 
-The money gives a sharper test. If the deposits are paying for a place in line, Power's contract liabilities should keep growing while reservations convert, and price per kilowatt should hold. Falling deposits or falling prices while orders stay strong would mean buyers no longer need to pay to queue.
-
-So I watch four things. Gigawatts under contract against planned annual output, each quarter. Power contract liabilities in each filing. Whether reservations convert into orders or quietly lapse. And whether the 24 gigawatt step lands in 2028 as promised.
+And I am wrong if Power's deposits and its price per kilowatt fall while orders stay strong. That would mean buyers no longer need to pay to queue.
 
 <section class="exposure">
 <h3>Who is exposed if GE Vernova's queue stays years long</h3>
@@ -110,4 +104,4 @@ So I watch four things. Gigawatts under contract against planned annual output, 
 
 ---
 
-<p class="sources">Sources: GE Vernova second quarter 2026 results and earnings call, 22 July 2026, for gigawatts under contract, orders, reservations, shipments, data centre share, pricing, output plans, commissioning times and Electrification orders, backlog and switchgear volumes. GE Vernova quarterly report on Form 10-Q for the period ended 30 June 2026, filed 22 July 2026, for contract liabilities by segment, cash from operations and the Prolec GE acquisition. GE Vernova first quarter 2026 results, 22 April 2026, for the year end 2025 figure of 83 gigawatts and first quarter shipments. Figures are as reported on the dates cited. Personal research, not investment advice.</p>
+<p class="sources">Sources: GE Vernova second quarter 2026 results and earnings call, 22 July 2026, for gigawatts under contract, orders, reservations, shipments, data centre share, pricing, output plans, commissioning times and Electrification orders. GE Vernova quarterly report on Form 10-Q for the period ended 30 June 2026, filed 22 July 2026, for contract liabilities and the Prolec GE acquisition. GE Vernova first quarter 2026 results, 22 April 2026, for the year end 2025 queue. Figures are as reported on the dates cited. Personal research, not investment advice.</p>

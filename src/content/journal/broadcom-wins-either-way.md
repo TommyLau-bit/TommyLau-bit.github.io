@@ -5,13 +5,18 @@ summary: "Broadcom makes the switch chips that let thousands of AI processors wo
 category: "Analysis"
 cover: "/covers/broadcom-wins-either-way.svg"
 tags: ["networking", "custom-chips", "the-stack"]
+draft: false
+updated: 2026-10-08T16:00:00+08:00
+updateNote: "Shortened and made plainer on 8 October 2026. The claim and the test of it are unchanged."
 ---
 
-Most of the conversation about AI hardware is about one question. Will the cloud giants keep buying Nvidia's chips, or will they build their own and leave? It is treated as a contest with two sides.
+Most talk about AI hardware comes down to one question. Will the cloud giants keep buying Nvidia's chips, or build their own and leave?
 
-On 24 June 2026, OpenAI showed its first custom AI chip, called Jalapeño. It was built to run OpenAI's models faster and more cheaply than the general chips it buys today. The company it chose to build it with was Broadcom.
+It is treated as a contest with two sides. Broadcom, the American chip designer, sits on both of them at once.
 
-That same Broadcom makes the switch chips at the heart of most large AI networks, including networks full of Nvidia processors. If the giants stay, their chips talk across Broadcom's switches. If they leave, Broadcom very often designs the chip they leave with.
+In June 2026 OpenAI showed its first custom AI chip, called Jalapeño, built to run its own models faster and more cheaply. The company it chose to build it with was Broadcom.
+
+That same Broadcom makes the switch chips at the heart of most large AI networks, including networks full of Nvidia processors. If the giants stay, their chips talk across Broadcom's switches. If they leave, Broadcom often designs the chip they leave with.
 
 Broadcom is paid whether the cloud giants stay with Nvidia or leave.
 
@@ -24,57 +29,53 @@ Broadcom is paid whether the cloud giants stay with Nvidia or leave.
 
 ## Three words you need
 
-**Switch chip.** The processor inside a network switch, the box that takes data arriving from many chips and sends each piece to the right destination. Broadcom sells its switch chips to anyone who builds switches, which the industry calls merchant silicon.
+**Switch chip.** The processor inside a network switch, the box that takes data from many chips and sends each piece to the right place. Broadcom sells these chips to anyone who builds switches.
 
-**Ethernet.** The open standard for how machines talk over a network, used in offices for decades and now adapted for AI. Because no single company owns it, any maker's chip can join an Ethernet network.
+**Ethernet.** The open standard for how machines talk over a network, used in offices for decades and now adapted for AI. Because nobody owns it, any maker's chip can join.
 
-**XPU.** An industry label for a custom AI chip, designed for one company's own workload rather than sold to everyone. Google's TPU, its tensor processing unit, is the best known. Jalapeño is the newest.
+**XPU.** An industry label for a custom AI chip, designed for one company's own work rather than sold to everyone. Google's TPU, its tensor processing unit, is the best known.
 
 ## The road: why the switch sets the size of the machine
 
-An AI model is too large for one chip, so it is split across thousands that swap partial results constantly. As I wrote in an earlier piece, a slow network leaves the most expensive silicon ever built waiting. The switch decides how many chips can join without that wait.
+An AI model is too large for one chip, so it is split across thousands that swap partial results all the time. A slow network leaves the most expensive silicon ever built sitting idle, waiting for the next answer.
 
-Broadcom's current flagship, Tomahawk 6, began shipping in June 2025. It moves 102.4 terabits a second through a single chip, double any Ethernet switch before it. That is enough for 512 connections, each running at 200 gigabits a second.
+Broadcom's current flagship switch chip, Tomahawk 6, began shipping in 2025. It moves 102.4 terabits a second through a single piece of silicon, double any Ethernet switch chip before it.
 
-The number of connections is what matters physically. Chips plug into a first layer of switches, and those switches plug into a second layer above. Each extra layer, called a tier, adds more switches, more optical plugs, more power and more delay on every message.
+That matters physically. Chips plug into a first layer of switches, and those switches plug into a second layer above. Each extra layer, called a tier, adds more boxes, more optical plugs, more power and more delay.
 
-According to Broadcom, two tiers of Tomahawk 6 can connect about 128,000 AI chips. With switches half as large, the same cluster needs a third tier. Fewer tiers means fewer boxes, fewer plugs and fewer watts spent moving data rather than computing.
+According to Broadcom, two tiers of its new switches can connect about 128,000 AI chips. With switches half as large, the same cluster would need a third tier. Fewer tiers means fewer watts spent moving data rather than computing.
 
-And the switch does not care whose chip is plugged into it. Nvidia processors, Google TPUs and OpenAI's new chip all speak Ethernet across the hall. That is the first half of the toll.
+And the switch does not care whose chip is plugged into it. Nvidia processors, Google's chips and OpenAI's new one all speak Ethernet across the hall. That is the first half of the toll.
 
 ## The exit: why the giants want their own chips
 
-A GPU, the graphics processor Nvidia sells, is built to run almost any AI workload well. That flexibility costs something. Part of the chip is there for jobs a particular company may never run, and it still occupies silicon and draws power.
+A GPU, the graphics processor Nvidia sells, is built to run almost any AI job well. That flexibility has a cost. Part of the chip serves work a particular company may never run, and it still draws power.
 
-That matters because, as earlier pieces on this site argue, power is the scarcest input in an AI data centre. A chip shaped around one company's own models can spend more of each watt on useful work. At the scale of a cloud giant, that difference compounds across hundreds of thousands of chips.
+Power is the scarcest input in an AI data centre, as earlier pieces on this site argue. A chip shaped around one company's own models spends more of each watt on useful work, across hundreds of thousands of chips.
 
-Few companies can turn that idea into working silicon. OpenAI said Jalapeño went from first design to tape-out, the moment a finished design is sent for manufacture, in nine months. It is built for inference, the work of answering questions rather than training models, and is due to be deployed with partners including Microsoft.
+Few companies can turn that idea into working silicon. OpenAI said Jalapeño went from first design to tape-out, the moment a finished design is sent to the factory, in nine months.
 
-On its September earnings call, Broadcom said it now has six custom chip customers, naming Google, Meta, Anthropic and OpenAI. This is where I stop. Judging how good one chip design is against another needs semiconductor knowledge I do not claim. What I can say is physical: every one of those chips still has to talk to the others.
+Broadcom says it now has six custom chip customers, naming Google, Meta, Anthropic and OpenAI. This is where I stop. Judging one chip design against another needs knowledge I do not claim. What I can say is physical: every one of those chips still has to talk to the others.
 
-## What Broadcom's own numbers show
+## What Broadcom's own results show
 
-If both halves are real, Broadcom's AI revenue should be growing far faster than the company, and custom chips and networking should both be inside it.
+If both halves are real, Broadcom's AI business should be growing far faster than the rest of the company, with custom chips and networking both inside it.
 
-**Growth.** In its third quarter of fiscal 2026, which ended on 2 August and was reported on 2 September 2026, AI semiconductor revenue was $16.7 billion. That was up 221 per cent on a year earlier and 54 per cent on the previous quarter.
+It is. In the quarter to early August 2026, Broadcom's AI chip revenue more than tripled on a year earlier, to $16.7 billion. Custom chips made up about three quarters of it, and networking most of the rest.
 
-**Mix.** On the call, Broadcom said custom accelerators were about 73 per cent of AI revenue in the quarter, leaving the rest largely to networking. Management said it expects AI networking to grow as fast as the custom chips over the next few years.
+The shift has a cost. Custom chips carry expensive stacked memory bought from other companies. So gross margin, the share of each sale left after the cost of making it, has slipped as they grow.
 
-**Margin.** Gross margin, the share of each sale left after the cost of making it, fell as AI made up more of the mix. Custom chips carry expensive stacked memory bought from other companies, so they earn less on each dollar than switch chips do.
-
-**Outlook.** Broadcom guided to $21.7 billion of AI revenue for the fourth quarter. It also said it has secured supply to reach about $115 billion of AI revenue in fiscal 2027. Those are Broadcom's forecasts, not mine.
-
-It is worth keeping the rest in proportion. Infrastructure software, mostly VMware, the data centre software it bought in 2023, brought in $8.75 billion in the quarter, about 30 per cent of revenue. It is real and steady, but it is software, and it sits outside the layer this site covers.
+Broadcom also sells a large software business, mostly VMware, bought in 2023. It is steady, but it is software, and it sits outside the layer this site covers.
 
 ## What would prove me wrong
 
-The biggest risk is that the customers are few and strong. Six companies is a short list, and every one of them has its own chip team. Each is capable of taking work in-house or splitting it between designers.
+The biggest risk is that the customers are few and strong. Six companies is a short list, and every one of them has its own chip team that could take work in-house.
 
-That is already happening. Google has given one version of its next TPU to MediaTek, a rival chip designer. Broadcom says it is shipping its own version first. If the largest customer keeps moving work elsewhere, the exit half of my argument weakens.
+So I am wrong if custom chip customers move their work to other designers. That has already begun. Google has given one version of its next TPU to MediaTek, a rival chip designer, although Broadcom says it is shipping its own version first.
 
-The road half has a challenger too. Nvidia sells its own Ethernet switches, and the fast links inside each rack, called scale-up, are a separate fight that Broadcom has only just entered. If Nvidia's networking wins inside its own clusters, Broadcom collects only when a customer leaves.
+I am also wrong if Nvidia's own networking wins inside its clusters. Nvidia sells its own switches, and the fast links inside each rack are a separate fight Broadcom has only just entered. Then Broadcom collects only when a customer leaves.
 
-So I watch four things. Whether networking holds its share of Broadcom's AI revenue. Whether the custom chip customer count keeps rising beyond six. What happens to the Google work between Broadcom and MediaTek. And whether gross margin keeps falling as custom chips grow, because a toll should not get thinner the more it is collected.
+So I watch whether networking holds its share of Broadcom's AI sales, and whether the customer list grows. I watch the Google work with MediaTek. And I watch margin, because a toll should not get thinner the more it is collected.
 
 <section class="exposure">
 <h3>Who is exposed if Broadcom is paid either way</h3>
@@ -99,4 +100,4 @@ So I watch four things. Whether networking holds its share of Broadcom's AI reve
 
 ---
 
-<p class="sources">Sources: Broadcom third quarter fiscal 2026 results, released 2 September 2026, for AI semiconductor revenue, segment revenue and fourth quarter guidance. Broadcom third quarter fiscal 2026 earnings call, 2 September 2026, for the custom chip and networking split, customer count, gross margin commentary, the fiscal 2027 outlook and the Google TPU work. Broadcom announcement of Tomahawk 6 shipping, 3 June 2025. OpenAI and Broadcom announcement of the Jalapeño chip, 24 June 2026. Figures are as reported on the dates cited. Personal research, not investment advice.</p>
+<p class="sources">Sources: Broadcom third quarter fiscal 2026 results and earnings call, 2 September 2026, for AI semiconductor revenue, the custom chip and networking split, customer count, gross margin commentary and the Google TPU work. Broadcom announcement of Tomahawk 6 shipping, 3 June 2025. OpenAI and Broadcom announcement of the Jalapeño chip, 24 June 2026. Figures are as reported on the dates cited. Personal research, not investment advice.</p>
