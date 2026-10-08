@@ -6,11 +6,13 @@ category: "Analysis"
 cover: "/covers/power-first-chips-last.svg"
 tags: ["power", "grid", "data-centres"]
 draft: false
+updated: 2026-10-08T16:00:00+08:00
+updateNote: "Wording tidied on 8 October 2026. The claim and the test of it are unchanged."
 ---
 
 Here is a claim I am willing to be wrong about: the order in which a company commits its money tells you what is scarce.
 
-Most people picture an AI buildout starting with the chips. You buy the GPUs, then find somewhere to put them. Jane Street's head of physical engineering, Dan Pontecorvo, describes the opposite order.
+Most people picture an AI buildout starting with the chips. You buy the GPUs, the chips that do AI maths, then find somewhere to put them. Jane Street's head of physical engineering, Dan Pontecorvo, describes the opposite order.
 
 Speaking on a podcast recorded at the firm's Texas site, he said the infrastructure can take more than a year to arrive. So the building, the power and the cooling are settled before the chip order is placed. The firm will even commit to a site early and delay the chip decision, holding slightly more power than it needs.
 

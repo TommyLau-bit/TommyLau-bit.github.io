@@ -35,7 +35,7 @@ Broadcom is paid whether the cloud giants stay with Nvidia or leave.
 
 **XPU.** An industry label for a custom AI chip, designed for one company's own work rather than sold to everyone. Google's TPU, its tensor processing unit, is the best known.
 
-## The road: why the switch sets the size of the machine
+## Why the switch sets the size of the machine
 
 An AI model is too large for one chip, so it is split across thousands that swap partial results all the time. A slow network leaves the most expensive silicon ever built sitting idle, waiting for the next answer.
 
@@ -45,9 +45,9 @@ That matters physically. Chips plug into a first layer of switches, and those sw
 
 According to Broadcom, two tiers of its new switches can connect about 128,000 AI chips. With switches half as large, the same cluster would need a third tier. Fewer tiers means fewer watts spent moving data rather than computing.
 
-And the switch does not care whose chip is plugged into it. Nvidia processors, Google's chips and OpenAI's new one all speak Ethernet across the hall. That is the first half of the toll.
+And the switch does not care whose chip is plugged into it. Nvidia processors, Google's chips and OpenAI's new one all speak Ethernet across the hall. That is the first way Broadcom gets paid.
 
-## The exit: why the giants want their own chips
+## Why the giants want their own chips
 
 A GPU, the graphics processor Nvidia sells, is built to run almost any AI job well. That flexibility has a cost. Part of the chip serves work a particular company may never run, and it still draws power.
 
@@ -75,7 +75,7 @@ So I am wrong if custom chip customers move their work to other designers. That 
 
 I am also wrong if Nvidia's own networking wins inside its clusters. Nvidia sells its own switches, and the fast links inside each rack are a separate fight Broadcom has only just entered. Then Broadcom collects only when a customer leaves.
 
-So I watch whether networking holds its share of Broadcom's AI sales, and whether the customer list grows. I watch the Google work with MediaTek. And I watch margin, because a toll should not get thinner the more it is collected.
+So I watch whether networking holds its share of Broadcom's AI sales, and whether the customer list grows. I watch the Google work with MediaTek. And I watch margin, because a cut that every customer pays should not get thinner as more of them pay it.
 
 <section class="exposure">
 <h3>Who is exposed if Broadcom is paid either way</h3>

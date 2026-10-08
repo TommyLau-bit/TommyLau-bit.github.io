@@ -1,7 +1,10 @@
 <!-- Copy to src/content/journal/<slug>.md and fill in.
      This file lives at the repo root on purpose, so the site never loads it.
      The rules behind every slot are in WRITING-FORMAT.md.
-     date is the real moment you publish, Singapore time. Never a future date. -->
+     date is the real moment you publish, Singapore time. Never a future date.
+     FIRST RULE (WRITING-FORMAT §4b): about a five minute read, 900 to 1,150 words,
+     15 figures at most, 3 company financial figures at most. Explanation here,
+     numbers in the research notes. -->
 ---
 title: "A claim or a plain question, sentence case, 8 to 16 words"
 date: 2026-00-00T00:00:00+08:00

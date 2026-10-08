@@ -6,6 +6,8 @@ category: "Explainer"
 cover: "/covers/copper-rack.svg"
 tags: ["power", "data-centres", "800VDC"]
 draft: false
+updated: 2026-10-08T16:00:00+08:00
+updateNote: "Shortened and made plainer on 8 October 2026. The explanation is unchanged."
 ---
 
 Every few months a new AI chip is announced and the headlines follow it. What almost nobody writes about is the boring metal box the chip lives in, and the even more boring question of how electricity gets to it.
@@ -21,15 +23,15 @@ That question is about to become the whole story.
 
 ## A cabinet the size of a fridge, drawing the power of a small town
 
-An AI "rack" is a cabinet about two metres tall, packed with computer trays. A few years ago a full rack drew maybe 10 to 20 kilowatts, roughly what a dozen homes use at once. Today's flagship racks, the kind holding NVIDIA's latest chips, sit near 200 kilowatts. The next generation, called Kyber and due in 2027, is designed to hold 576 chips and draw up to **one megawatt**. That is a single cabinet using as much electricity as several hundred homes.
+An AI "rack" is a cabinet about two metres tall, packed with computer trays. A few years ago a full rack drew roughly what a dozen homes use at once. Today's flagship racks, the kind holding NVIDIA's latest chips, sit near 200 kilowatts. The next generation, called Kyber and due in 2027, is designed to draw up to **one megawatt**. That is a single cabinet using as much electricity as several hundred homes.
 
-Inside the rack, power gets to the trays through thick copper bars called busbars. The industry has used the same low-voltage system for years: 54 volts, carried on copper. At 20 kilowatts that works fine. At one megawatt the physics turns against you.
+Inside the rack, power gets to the trays through thick copper bars called busbars. The industry has used the same low-voltage system for years: 54 volts, carried on copper. At yesterday's power levels that works fine. At one megawatt the physics turns against you.
 
 ## Two numbers that end the argument
 
 NVIDIA, which has every reason to make this sound easy, published the numbers itself.
 
-**First, the copper.** Pushing a megawatt through a 54-volt system needs enormous current, and enormous current needs enormous conductors. NVIDIA's own figure is **up to 200 kilograms of copper busbar in a single rack**. Across a large campus, the rack busbars alone would come to around 200,000 kilograms of copper.
+**First, the copper.** Pushing a megawatt through a 54-volt system needs enormous current, and enormous current needs enormous conductors. NVIDIA's own figure is **up to 200 kilograms of copper busbar in a single rack**.
 
 **Second, the space.** The equipment that converts incoming power for the trays lives in "power shelves" inside the rack. Today's racks carry up to eight of them. To feed a one-megawatt rack the old way, NVIDIA says you would need power shelves taking up **64 units of rack space**, which is more rack than the rack has. In their words, that would leave no room for compute.
 
@@ -39,7 +41,7 @@ That is the entire argument in one line: **the power delivery system starts eati
 
 The answer is to raise the voltage. Higher voltage means less current for the same power, which means thinner wires, less copper, and less heat. The industry is moving from 54 volts inside the rack to **800 volts direct current**, carried right from the edge of the building to the cabinet.
 
-NVIDIA's published design takes power off the grid at 13,800 volts, converts it once to 800 volts DC at the building's edge, and delivers it straight to the rack. Compared to today's system, the same conductor carries **85% more power**, backbone copper falls by about **45%**, and the whole chain gets **up to 5% more efficient** because there are far fewer conversion steps and far fewer fans and power supplies left to fail. NVIDIA puts the total cost of ownership saving at up to 30%.
+NVIDIA's published design takes power off the grid at medium voltage, converts it once to 800 volts DC at the building's edge, and delivers it straight to the rack. Compared to today's system, the same conductor carries **far more power**, backbone copper falls by about **45%**, and the whole chain gets **up to 5% more efficient** because there are far fewer conversion steps and far fewer fans and power supplies left to fail.
 
 Why now, and not ten years ago? Because the electronics needed to switch high-voltage DC safely and cheaply were built out, at scale, by electric vehicle charging. The data centre is inheriting an EV supply chain.
 
@@ -55,7 +57,7 @@ NVIDIA published the list of companies it is building this with. That list is a 
 
 Two quieter points matter more than they look. NVIDIA says it has not yet decided between traditional transformers and a newer solid-state design at the building's edge, which is a genuine fork in the road. And battery storage is written into the design itself, to absorb the sudden power spikes that AI workloads produce. That makes batteries part of the rack, not just a grid-side product.
 
-One thing runs against the headline. Less copper *per unit of power* does not mean less copper. Power is growing faster than the saving. It changes what kind of copper products are needed, not how much.
+One thing runs against the headline. Less copper *per unit of power* does not mean less copper. Power is growing faster than the saving. It changes what kind of copper is needed. The total still rises.
 
 ## What would prove me wrong
 
@@ -74,9 +76,9 @@ So I am watching four things: public 800-volt commitments from named operators r
 <dt>Power components</dt>
 <dd><span class="names">Delta, LiteOn, Megmeet, Flex Power and Lead Wealth</span> build the conversion hardware inside the chain.</dd>
 <dt>The switching silicon</dt>
-<dd>Moving to high-voltage direct current is a wide-bandgap semiconductor story: <span class="names">Infineon, Texas Instruments, onsemi, ROHM, STMicroelectronics, Renesas, Analog Devices and Monolithic Power</span>, plus the gallium nitride specialists <span class="names">Navitas and Innoscience</span>.</dd>
+<dd>Moving to high-voltage direct current relies on wide-bandgap semiconductors, power chips made from materials such as silicon carbide and gallium nitride that handle high voltages efficiently: <span class="names">Infineon, Texas Instruments, onsemi, ROHM, STMicroelectronics, Renesas, Analog Devices and Monolithic Power</span>, plus the gallium nitride specialists <span class="names">Navitas and Innoscience</span>.</dd>
 <dt>Storage, again</dt>
-<dd>Energy storage is written into the architecture itself, sized for the sudden power spikes AI workloads produce rather than for arbitrage. That makes batteries rack-adjacent infrastructure, not only a grid-side trade.</dd>
+<dd>Energy storage is written into the architecture itself, sized for the sudden power spikes AI workloads produce. That puts batteries inside the data centre design, not only out on the grid.</dd>
 <dt>The copper nuance</dt>
 <dd>Less copper per unit of power does not mean less copper. Power is growing faster than the saving. It changes the specification and the mix, not the direction.</dd>
 </dl>
@@ -88,4 +90,4 @@ So I am watching four things: public 800-volt commitments from named operators r
 
 ---
 
-<p class="sources">Sources: NVIDIA Technical Blog, "NVIDIA 800 VDC Architecture Will Power the Next Generation of AI Factories", 20 May 2025; NVIDIA 800 VDC architecture pages; Open Compute Project. All figures as published by NVIDIA. This is a plain-language version of a technical note I published on 17 September 2026. Personal research, not investment advice.</p>
+<p class="sources">Sources: NVIDIA Technical Blog, "NVIDIA 800 VDC Architecture Will Power the Next Generation of AI Factories", 20 May 2025; NVIDIA 800 VDC architecture pages; Open Compute Project. All figures as published by NVIDIA. A longer technical note followed on 17 September 2026. Personal research, not investment advice.</p>

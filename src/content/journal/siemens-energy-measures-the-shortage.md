@@ -12,7 +12,7 @@ Siemens Energy has published something I rarely see from an equipment maker: how
 
 The chart appeared at its capital markets day last November, a briefing where a company sets out its plans to investors. It counts every maker of large and medium power transformers in Europe and North America, not only Siemens Energy itself.
 
-Siemens Energy's fiscal year, its financial year, ends on 30 September. On that chart, demand ran about 40 per cent ahead of the whole industry's capacity in fiscal 2025. In fiscal 2030, after five more years of factory building, demand is still about 10 per cent ahead.
+Siemens Energy's fiscal year, its financial year, ends in September. On that chart, demand ran about 40 per cent ahead of the whole industry's capacity in fiscal 2025. In fiscal 2030, after five more years of factory building, demand is still about 10 per cent ahead.
 
 Most readers would call that a shortage coming to an end. On the chart's own terms, it is a shortage that leaves more orders waiting every single year.
 
@@ -43,9 +43,9 @@ The slide's subheading is plain: "Market remains tight". It measures transformer
 
 By my reading of the bars, the industry nearly doubles its capacity over the years the chart covers. Demand still finishes ahead.
 
-Siemens Energy is doing its share. It says recent spending on its factories added about a fifth to its own transformer capacity, and it plans to spend much more. At Nuremberg in Germany, where it has made transformers since 1912, it is adding about half again by 2028.
+Siemens Energy is doing its share. It says recent spending on its factories added about a fifth to its own transformer capacity, and it plans to spend much more. At Nuremberg in Germany, where it has made transformers for more than a century, it is adding about half again by 2028.
 
-New floor space is slow to arrive. When Siemens Energy announced its first American large transformer plant, at Charlotte, North Carolina, it said production would begin in early 2026. Last year Tim Holt, the board member responsible for the grid business, told Reuters it would be early 2027.
+New floor space is slow to arrive. When Siemens Energy announced its first American large transformer plant, at Charlotte, North Carolina, it said production would begin in early 2026. Last year Tim Holt, the board member responsible for the grid business, told Reuters it would be a year later.
 
 ## A narrower gap still adds to the pile
 

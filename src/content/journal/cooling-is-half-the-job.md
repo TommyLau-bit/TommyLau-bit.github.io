@@ -5,6 +5,8 @@ summary: "Almost every watt that goes into an AI chip comes out as heat, and one
 category: "Explainer"
 cover: "/covers/cooling.svg"
 tags: ["cooling", "data-centres", "liquid"]
+updated: 2026-10-08T16:00:00+08:00
+updateNote: "Wording tidied on 8 October 2026. The explanation is unchanged."
 ---
 
 There is a fact about computers that most people never think about, and once you know it the whole cooling industry makes sense.
@@ -46,7 +48,7 @@ Old air-cooled data centres run around 2.0, meaning for every watt reaching a ch
 
 There is a catch on the water side. Some cooling designs evaporate millions of gallons a year, and in dry regions that has become a permitting fight. Water availability now decides where facilities can be built at all.
 
-## Why this is the clearest picks-and-shovels lane in the stack
+## Why cooling does not care who wins
 
 The thing I find compelling about cooling is that it is indifferent to who wins the chip war. Whether the chips are made by Nvidia, AMD, Google or someone not yet founded, they will give off heat, and the heat has to go somewhere. Heat is heat.
 
@@ -61,7 +63,7 @@ Three things. Whether immersion moves from the fringe to the mainstream as racks
 <p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares.</p>
 <dl>
 <dt>The one-stop suppliers</dt>
-<dd><span class="names">Vertiv</span> sells both the power gear and the liquid cooling, which is rare. <span class="names">Schneider Electric</span> and <span class="names">Eaton</span> bought their way in, Schneider acquiring Motivair and Eaton acquiring Boyd Thermal. Two disciplined industrials paying up for the same niche within months of each other is revealed preference, and it is a better signal than any forecast.</dd>
+<dd><span class="names">Vertiv</span> sells both the power gear and the liquid cooling, which is rare. <span class="names">Schneider Electric</span> and <span class="names">Eaton</span> bought their way in, Schneider acquiring Motivair and Eaton acquiring Boyd Thermal.</dd>
 <dt>The specialists</dt>
 <dd><span class="names">CoolIT</span> makes cold plates shipping inside many brand-name servers. <span class="names">nVent</span> makes loops and enclosures. <span class="names">Munters, Modine and Asetek</span> sit in adjacent parts of the thermal chain.</dd>
 <dt>The component layer</dt>

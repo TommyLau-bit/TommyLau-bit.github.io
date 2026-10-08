@@ -12,7 +12,7 @@ This summer, a new factory in Houston that builds battery systems for Fluence wa
 
 Fluence sells data centres a way to switch on before their grid connection is finished. The plant meant to supply its American orders had the same problem.
 
-In August it averaged fewer than one unit a day, against a plan of eleven. Fluence cut its revenue forecast twice in six weeks.
+In August it averaged fewer than one finished battery enclosure a day, against a plan of eleven. Fluence cut its revenue forecast twice in six weeks.
 
 Its factories overseas, the company said, kept working well. Demand at home and abroad, it said, stayed strong.
 
@@ -61,15 +61,15 @@ Note what failed. It was welding steel boxes and putting them together, not a sh
 
 ## What data centres are actually buying
 
-Fluence is a good test of my argument that grid batteries are becoming connection equipment. The evidence partly supports it.
+Fluence is a good test of my argument that grid batteries are becoming [connection equipment](/journal/what-the-battery-is-really-for/). The evidence partly supports it.
 
 This year Fluence signed its first order from a data centre developer, for a battery on the site's own side of the utility meter. In July a hyperscaler, one of the giant cloud companies, awarded it about $550 million more across several sites, though not yet as a signed order.
 
 The chief executive said developers want "speed to power", and hyperscalers focus on the quality of that power. He said the software's ability to smooth out sudden swings in load had helped win the work.
 
-That matches two jobs I have described for these batteries: letting a site open early, and absorbing the fast swings in AI power demand. Neither buyer, as he described them, is paying to trade electricity.
+That matches two jobs I have described for these batteries: [letting a site open early](/journal/what-the-battery-is-really-for/), and [absorbing the fast swings in AI power demand](/journal/the-power-it-drops/). Neither buyer, as he described them, is paying to trade electricity.
 
-The size is where I have to correct myself. By my arithmetic, data centres are under a tenth of the work Fluence hopes to win, though the two figures may not be counted the same way. Utilities and independent power producers still make up most of its signed orders.
+The size is where I have to temper my own argument. By my arithmetic from Fluence's own pipeline figures, data centres are under a tenth of the work it hopes to win, though the data centre figure may not be counted the same way as the total. Utilities and independent power producers still make up most of its signed orders.
 
 At Fluence, the data centre buyer is real and growing fast, but it is not yet the main customer.
 

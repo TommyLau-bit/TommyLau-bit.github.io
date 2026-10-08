@@ -59,7 +59,7 @@ If the claim is right, Vertiv's own results should show more than volume. They s
 
 Orders came first. In the last quarter of 2025 Vertiv was signing new orders at nearly three times the rate it shipped goods. Buyers were committing well ahead of delivery.
 
-Then the margin moved. Operating margin is the share of each sale left after running costs. In the second quarter of 2026, Vertiv's adjusted figure widened by more than four points while sales grew by about a quarter.
+Then the margin moved. Operating margin is the share of each sale left after running costs. In the second quarter of 2026, Vertiv's operating margin, on its own adjusted measure, widened by more than four points.
 
 A supplier widening its margin that fast while volume grows is not discounting to win work. I read that as richer content per order, showing up in money.
 
@@ -89,7 +89,7 @@ So I watch four things. Adjusted operating margin, quarter by quarter. Service r
 
 <section class="exposure">
 <h3>Who is exposed if every megawatt keeps getting harder</h3>
-<p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares. The financial figures in this piece are Vertiv's own disclosures, used as evidence for the mechanism, and I draw no conclusion from them about value.</p>
+<p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares. Where this piece draws on Vertiv's own disclosures, they are used as evidence for the mechanism, and I draw no conclusion from them about value.</p>
 <dl>
 <dt>The subject</dt>
 <dd><span class="names">Vertiv</span> makes uninterruptible power supplies, switchgear, busway, precision air conditioning, coolant distribution units and liquid cooling systems for data centres, and services them.</dd>

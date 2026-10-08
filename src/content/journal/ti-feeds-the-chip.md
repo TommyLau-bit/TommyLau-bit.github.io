@@ -12,7 +12,7 @@ updateNote: "Shortened and made plainer on 8 October 2026. The claim and the tes
 
 Here is a fact about AI processors that rarely makes the news. The chip that costs tens of thousands of dollars cannot run on the electricity delivered to it.
 
-Power arrives at an AI cabinet at 54 volts today, and at 800 volts in the designs coming next. The processor's core runs at less than one volt.
+Inside an AI cabinet, power runs at 54 volts today, and at 800 volts in the designs coming next. The processor's core runs at less than one volt.
 
 Bridging that gap, safely and with almost nothing lost as heat, falls to a crowd of small chips around the processor. Texas Instruments, the company most people still know for calculators, makes many of them. Some sell for cents.
 
@@ -37,7 +37,7 @@ The most expensive chip in an AI rack runs on Texas Instruments' cheapest ones.
 
 An AI processor runs at very low voltage but draws enormous power. Low voltage and high power together mean a very large current, and large currents heat copper and waste energy.
 
-So power has to travel at high voltage for as long as possible, then step down at the last moment, as close to the processor as the board allows. That logic is why the industry is moving the whole rack to 800 volts.
+So power has to travel at high voltage for as long as possible, then step down at the last moment, as close to the processor as the board allows. That logic is why the industry is moving the whole rack to the higher voltage.
 
 TI says a one megawatt rack fed at today's low voltage would need hundreds of pounds of copper. Earlier this year, at Nvidia's developer conference, it showed a complete set of parts for the new design, stepping power down in only two stages.
 

@@ -9,7 +9,7 @@ updated: 2026-10-08T16:00:00+08:00
 updateNote: "Shortened and made plainer on 8 October 2026. The claim and the test of it are unchanged."
 ---
 
-In March, Nvidia, the company that makes most of the world's AI chips, agreed to invest $2 billion in Lumentum. Lumentum does not make chips. It makes lasers.
+In March, Nvidia, the company that designs most of the world's AI chips, agreed to invest $2 billion in Lumentum. Lumentum does not make chips. It makes lasers.
 
 The deal came with a large purchase commitment and rights to future factory capacity. On the same day Nvidia made a similar investment in Coherent, Lumentum's closest rival. Nvidia was not buying a stake for its own sake. It was buying a place in the queue.
 
@@ -42,7 +42,7 @@ Copper carried that conversation for decades. At today's speeds a copper signal 
 
 That power is the real cost. An AI data centre is limited by how much electricity it can get, not by floor space. Light down glass travels further and uses far less energy per bit.
 
-Each chip generation makes this worse, not better. A faster chip needs a faster link, which is why the industry is climbing from 800 gigabits a second per plug to 1.6 terabits. Each step needs more lasers, and better ones.
+Each chip generation makes this worse, not better. A faster chip needs a faster link, which is why the industry is climbing from 800 gigabits a second per plug to 1.6 terabits. Each step needs more lasers, and better ones: the next plugs need lasers carrying 200 gigabits a second each.
 
 ## Why almost nobody can make the laser
 

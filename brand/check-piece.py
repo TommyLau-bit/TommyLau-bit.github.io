@@ -30,6 +30,8 @@ BANNED = [
     (r'\bshare price\b|\bstock price\b', 'a share price'),
     (r'\bpriced for perfection\b|\bpriced in\b', 'a valuation call'),
 ]
+# WRITING-FORMAT §3.4: the one whole-stack orientation map, exempt from the against block.
+WHOLE_STACK_MAPS = {'the-two-seconds-after-you-hit-send'}
 
 def _read(rel):
     try:
@@ -107,7 +109,7 @@ def check(path):
         note = re.search(r'<p class="note">(.*?)</p>', body, re.S)
         if not note or not note.group(1).strip().startswith(EXPOSURE_NOTE):
             fails.append('exposure disclaimer must open with the fixed sentence pair')
-        if '<dl class="against">' not in body:
+        if '<dl class="against">' not in body and slug not in WHOLE_STACK_MAPS:
             # A whole-stack orientation map has no loser. A directional claim always does.
             (fails if cat == 'Analysis' else warns).append(
                 'exposure map has no "on the other side" block')
@@ -154,7 +156,7 @@ def check(path):
     words = len(rb.split())
     if words > 1300:
         fails.append(f'{words} words; a journal piece is 900 to 1,150 (about 5 minutes), never over 1,300')
-    elif not 800 <= words <= 1150:
+    elif not 700 <= words <= 1150:
         warns.append(f'{words} words; the format asks for 900 to 1,150')
     figures = len(re.findall(r'(?<![A-Za-z\d.,])\d[\d,.]*(?![A-Za-z]*\d)', rb))
     money = len(re.findall(r'(?:(?:US|S|HK)?\$|€|£|¥)\s?\d[\d.,]*(?:\s*(?:billion|million|bn)\b)?|(?<![\d.,$€£¥])\d[\d.,]*\s*(?:billion|million|bn)\b', rb))

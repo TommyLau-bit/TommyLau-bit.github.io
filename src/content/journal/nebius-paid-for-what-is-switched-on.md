@@ -76,7 +76,7 @@ And I am wrong if its customers start selling their own spare capacity. Bloomber
 
 There is a slower risk too. Nvidia ships a new chip generation every year or two, so a switched-on room of older chips earns less each year, and the building never stops.
 
-So I watch four things each quarter. Connected megawatts against the target. The share of new deals with prepayments. Whether revenue spreads beyond Microsoft and Meta. And whether any hyperscaler starts renting capacity out instead of in.
+So I watch four things each quarter. Connected megawatts against the target. The share of new deals with prepayments. Whether revenue spreads beyond Microsoft and Meta. And whether any of the giant cloud companies starts renting capacity out instead of in.
 
 <section class="exposure">
 <h3>Who is exposed if AI buyers pay for power that is switched on</h3>

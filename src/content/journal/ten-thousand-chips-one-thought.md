@@ -1,10 +1,12 @@
 ---
-title: "Ten thousand chips, one thought: why the network costs almost as much as the chips"
+title: "Ten thousand chips, one thought: why the network costs about half as much as the chips"
 date: 2026-09-04
 summary: "A frontier AI model is too big to fit on any single chip, so it's sliced across thousands of them, and they have to swap notes for every single word. If the wiring between them is even slightly slow, the most expensive chips ever built sit idle. That's why a huge slice of every AI dollar goes on cables and light."
 category: "Explainer"
 cover: "/covers/network.svg"
 tags: ["networking", "optics", "the-stack"]
+updated: 2026-10-08T16:00:00+08:00
+updateNote: "Wording tidied on 8 October 2026. The explanation is unchanged."
 ---
 
 Here is the problem in one sentence. A frontier model has more than a trillion internal settings, and no single chip has anywhere near enough memory to hold them. So the model is cut into pieces and spread across thousands of chips.
@@ -54,16 +56,16 @@ Most of the time, the world's most expensive chips are not waiting for data from
 
 The skeleton I use for any "justify the spending" question runs claim, constraint, consequence, reframe.
 
-Claim: the network costs what it costs because the alternative is worse. Constraint: a trillion-parameter model versus a few hundred gigabytes of memory per chip, so it is sliced across thousands. Consequence: a network 10 per cent slow leaves the most expensive silicon ever made idle, and idle GPUs are the costliest waste in the building. Reframe: so forty to sixty cents of network for every dollar of chips is not extravagance. It is insurance on the other dollar.
+Claim: the network costs what it costs because the alternative is worse. Constraint: a model with a trillion parameters, the adjustable settings it learns, versus a few hundred gigabytes of memory per chip, so it is sliced across thousands. Consequence: a network 10 per cent slow leaves the most expensive silicon ever made idle, and idle chips are the costliest waste in the building. Reframe: so forty to sixty cents of network for every dollar of chips is not extravagance. It is insurance on the other dollar.
 
 <section class="exposure">
 <h3>Who is exposed in the network layer</h3>
 <p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares.</p>
 <dl>
 <dt>Switch silicon</dt>
-<dd><span class="names">Broadcom</span> makes the merchant chips inside most high-end Ethernet switches, and co-designs custom accelerators for the hyperscalers, so it earns from both the compute and the network. <span class="names">Marvell</span> runs a similar playbook one tier down.</dd>
+<dd><span class="names">Broadcom</span> makes the merchant chips inside most high-end Ethernet switches, and co-designs custom accelerators for the hyperscalers, so it supplies both the compute and the network. <span class="names">Marvell</span> makes networking chips and custom accelerators too.</dd>
 <dt>The boxes</dt>
-<dd><span class="names">Arista</span> is the switch builder hyperscalers standardise on. <span class="names">Cisco</span> is the incumbent fighting for AI relevance. <span class="names">Nvidia</span> owns the inside-the-rack link, NVLink, and the premium scale-out option, InfiniBand.</dd>
+<dd><span class="names">Arista</span> builds data centre switches. <span class="names">Cisco</span> makes switches and routers. <span class="names">Nvidia</span> owns the inside-the-rack link, NVLink, and the premium scale-out option, InfiniBand.</dd>
 <dt>The optics</dt>
 <dd>Copper dies after a few metres, so between racks everything becomes light. Transceivers are consumables, replaced at each upgrade: <span class="names">Coherent, Lumentum, Innolight</span>, assembled in volume by <span class="names">Fabrinet</span>. <span class="names">Corning</span> draws the glass, <span class="names">Amphenol</span> makes the connectors.</dd>
 <dt>The gaps between chips</dt>
@@ -71,10 +73,10 @@ Claim: the network costs what it costs because the alternative is worse. Constra
 </dl>
 <dl class="against">
 <dt>On the other side</dt>
-<dd>Single-vendor, proprietary scale-out networking, as open Ethernet takes share. Open standards, given enough time, usually win, and by early 2026 roughly two thirds of new AI cluster networking was Ethernet.</dd>
+<dd>Single-vendor, proprietary scale-out networking, if open Ethernet keeps spreading through AI clusters.</dd>
 </dl>
 </section>
 
 ---
 
-<p class="sources">This piece explains mechanism: why models are split across chips, the two kinds of network, and why optics replace copper. Figures are structural. I name technologies rather than vendors on purpose. Personal research, not investment advice.</p>
+<p class="sources">This piece explains mechanism: why models are split across chips, the two kinds of network, and why optics replace copper. Figures are structural. Personal research, not investment advice.</p>

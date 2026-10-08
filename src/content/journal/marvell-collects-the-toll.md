@@ -41,7 +41,7 @@ AI models are too large for one chip, so they are split across thousands that sw
 
 Inside a cabinet, copper wire carries most of that traffic. Between cabinets it cannot, because at today's speeds an electrical signal fades within a few metres. So everything leaving the cabinet becomes light and travels down glass fibre.
 
-That change happens in a plug about the size of a pack of gum, called an optical transceiver, which slots into the front of a network switch. Inside are a laser, a light detector and the optical DSP. The DSP is the hard part.
+That change happens in a plug about the size of a packet of chewing gum, called an optical transceiver, which slots into the front of a network switch. Inside are a laser, a light detector and the optical DSP. The DSP is the hard part.
 
 At these speeds the signal is not a simple on and off. The light shines at four levels of brightness, and the DSP must tell them apart billions of times a second through noise. Every doubling in speed makes that harder.
 
@@ -53,7 +53,7 @@ The plug neither knows nor cares whether the chip behind the switch came from Nv
 
 Two things raise the number of plugs. A bigger cluster needs more links between cabinets. And each faster generation of chips means replacing the links with faster ones. Both happen at once in an AI build.
 
-Marvell's own behaviour suggests the demand is real. It has said it will pay suppliers about $1 billion in advance this financial year to secure parts, including its newest optical DSPs. Paying ahead to hold factory space is what a supplier does when demand outruns the factories.
+Marvell's own behaviour suggests the demand is real. It has said it will pay suppliers in advance this financial year to secure parts, including its newest optical DSPs. Paying ahead to hold factory space is what a supplier does when demand outruns the factories.
 
 Its sales have shifted the same way. Data centres went from about three quarters of Marvell's revenue to nearly four fifths of it in just two quarters.
 
@@ -90,7 +90,7 @@ So I watch whether the 1.6T links keep a DSP on board. I watch how much of Marve
 <dt>The module makers</dt>
 <dd><span class="names">Coherent</span>, <span class="names">Lumentum</span> and <span class="names">Innolight</span> make the transceivers and lasers the DSPs sit inside, assembled in volume by <span class="names">Fabrinet</span>.</dd>
 <dt>The ecosystem owner</dt>
-<dd><span class="names">Nvidia</span> makes GPUs and its own networking, and invested $2 billion in Marvell in March 2026 as part of a partnership around NVLink Fusion, its link for mixing its chips with others in one rack.</dd>
+<dd><span class="names">Nvidia</span> makes GPUs and its own networking, and partners with Marvell on NVLink Fusion, its link for mixing its chips with others in one rack.</dd>
 </dl>
 <dl class="against">
 <dt>On the other side</dt>

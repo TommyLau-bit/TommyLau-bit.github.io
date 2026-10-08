@@ -61,7 +61,7 @@ If those buyers really are paying for speed, Bloom's own results should show it.
 
 Bloom's sales of boxes have roughly tripled in a year. That is equipment being delivered, not just announced.
 
-The telling part is the margin. Gross margin is the share of each sale left after the cost of building it. Bloom's has widened while its volume more than doubled.
+The telling part is the margin. Gross margin is the share of each sale left after the cost of building it. Bloom's has widened while its sales grew.
 
 A supplier that widens its margin while it grows that fast is not discounting to win work. That is the time premium, expressed in money.
 

@@ -6,6 +6,8 @@ category: "Analysis"
 cover: "/covers/the-way-out-has-its-own-queue.svg"
 tags: ["grid", "power", "data-centres"]
 draft: false
+updated: 2026-10-08T16:00:00+08:00
+updateNote: "Wording tidied on 8 October 2026. The claim and the test of it are unchanged."
 ---
 
 I have written twice now that the thing holding back AI is not the chip. It is the wait to plug into the electricity grid.
@@ -37,9 +39,9 @@ Anyone holding my view should be uncomfortable with that. I am.
 
 Then you look at who makes the machines, and how full their order books are.
 
-GE Vernova has **116 gigawatts under contract**. That splits into 53 gigawatts of firm backlog and 63 gigawatts under slot reservation agreements, which are effectively places held in a queue to be manufactured. Its capacity is described as mostly sold out through 2030.
+GE Vernova has **116 gigawatts under contract**. Part of it is firm orders and part is slot reservations, which are effectively places held in a queue to be manufactured. Its capacity is described as mostly sold out through 2030.
 
-Siemens Energy reports **95 gigawatts**, comprising 69 gigawatts of firm backlog and 26 gigawatts under reservation.
+Siemens Energy reports **95 gigawatts**, on a similar mix.
 
 Read those numbers again, because they are the answer to the objection. The escape route from the connection queue is itself a queue, and it is already years deep.
 
@@ -77,7 +79,7 @@ So I watch three things: gas turbine lead times and whether the announced expans
 
 <section class="exposure">
 <h3>Who is exposed if the escape route is slower than it looks</h3>
-<p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares. The order book figures below are the companies' own disclosures as reported, and I draw no conclusion from them about value.</p>
+<p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares. The order book figures in this piece are the companies' own disclosures as reported, and I draw no conclusion from them about value.</p>
 <dl>
 <dt>The turbine makers</dt>
 <dd><span class="names">GE Vernova</span>, <span class="names">Siemens Energy</span>, <span class="names">Mitsubishi Power</span> and <span class="names">Ansaldo Energia</span> build the heavy-duty gas turbines that on-site generation depends on.</dd>

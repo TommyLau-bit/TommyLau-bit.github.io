@@ -84,7 +84,7 @@ So I watch four things. The pace of construction in Idaho. The first non-binding
 
 <section class="exposure">
 <h3>Who is exposed if nuclear power is sold by the unit, not by the reactor</h3>
-<p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares. The financial figures in this piece are Oklo's own disclosures, used as evidence for the mechanism, and I draw no conclusion from them about value.</p>
+<p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares. Where this piece draws on Oklo's own disclosures, they are used as evidence for the mechanism, and I draw no conclusion from them about value.</p>
 <dl>
 <dt>The subject</dt>
 <dd><span class="names">Oklo</span> designs Aurora sodium-cooled fast reactors that it intends to own and operate, and runs an isotope reactor and fuel recycling work.</dd>

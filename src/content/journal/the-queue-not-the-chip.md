@@ -36,7 +36,7 @@ A GPU order clears in months. A substation, its transformer and its queue slot c
 
 That mismatch means "announced megawatts" has become a poor guide to "deliverable megawatts." The gap shows up late and unglamorously, as commissioning dates that slip and revenue that arrives a quarter or two after it was promised.
 
-And there is an asymmetry of attention. Chip supply is tracked weekly by a large community of analysts. Connection queues are tracked by very few people with money at risk. That is where I think the mispricing sits, and it is why a reading of the power and grid layer is worth something alongside a reading of the silicon, not instead of it.
+And there is an asymmetry of attention. Chip supply is tracked weekly by a large community of analysts. Connection queues are tracked by very few people with money at risk. That is where I think the common picture goes wrong, and it is why a reading of the power and grid layer is worth something alongside a reading of the silicon, not instead of it.
 
 ## Where the value goes if I'm right
 
@@ -59,20 +59,20 @@ So I watch four things: transformer and cable lead times, the Green Lane project
 <p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares.</p>
 <dl>
 <dt>The equipment that clears the queue</dt>
-<dd>High-voltage transformers, switchgear and grid connection kit: <span class="names">Hitachi Energy, Siemens Energy, GE Vernova, Schneider Electric, Eaton, ABB</span>. Cable: <span class="names">Prysmian, Nexans, NKT</span>. These order books already stretch past the spending cycle that funds them.</dd>
+<dd>High-voltage transformers, switchgear and grid connection kit: <span class="names">Hitachi Energy, Siemens Energy, GE Vernova, Schneider Electric, Eaton, ABB</span>. Cable: <span class="names">Prysmian, Nexans, NKT</span>.</dd>
 <dt>Operators holding energised capacity</dt>
-<dd>Campuses already connected are worth more than campuses that are merely announced: <span class="names">Equinix, Digital Realty, AirTrunk, Princeton Digital Group, STT GDC, Keppel Data Centres, Vantage</span>. Company disclosure rarely separates the two cleanly, which is where the mispricing hides.</dd>
+<dd>Operators with campuses already connected, rather than merely announced: <span class="names">Equinix, Digital Realty, AirTrunk, Princeton Digital Group, STT GDC, Keppel Data Centres, Vantage</span>. Company disclosure rarely separates the two cleanly.</dd>
 <dt>Storage as a connection product</dt>
-<dd>A battery that lets a campus switch on ahead of its wires is worth more than its trading spread: <span class="names">Fluence, Tesla Energy, Sungrow, CATL, BYD</span>.</dd>
+<dd>Batteries that let a campus switch on before its grid connection is ready: <span class="names">Fluence, Tesla Energy, Sungrow, CATL, BYD</span>.</dd>
 <dt>The utilities doing the connecting</dt>
 <dd>In this region specifically, <span class="names">Tenaga Nasional</span> in Malaysia, <span class="names">SP Group</span> in Singapore, and <span class="names">YTL Power</span> as a generator and developer.</dd>
 </dl>
 <dl class="against">
 <dt>On the other side</dt>
-<dd>Developers whose pipeline is announced but unenergised, and anyone whose revenue recognition depends on a commissioning date they do not control. The damage shows up late and quietly, as dates that slip by a quarter at a time.</dd>
+<dd>Developers whose pipeline is announced but unenergised, and anyone paid only once a site switches on, on a date they do not control. The damage shows up late and quietly, as dates that slip by a quarter at a time.</dd>
 </dl>
 </section>
 
 ---
 
-<p class="sources">Sources: Energy Market Authority, EDB and JTC, Tenaga Nasional disclosures, Wood Mackenzie, EIA and ERCOT, drawn from my own market notes on the Singapore-Johor power corridor (29 July 2026) and grid-scale battery storage (7 August 2026). Figures as reported on the dates cited. This is the plain-language version of a technical note I published on 15 August 2026. Personal research, not investment advice.</p>
+<p class="sources">Sources: Energy Market Authority, EDB and JTC, Tenaga Nasional disclosures, Wood Mackenzie, EIA and ERCOT, drawn from my own market notes on the Singapore-Johor power corridor (29 July 2026) and grid-scale battery storage (7 August 2026). Figures as reported on the dates cited. A longer technical note on the same corridor followed on 15 August 2026. Personal research, not investment advice.</p>

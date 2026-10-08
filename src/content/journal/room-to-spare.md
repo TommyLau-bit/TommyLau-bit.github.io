@@ -6,11 +6,13 @@ category: "Explainer"
 cover: "/covers/room-to-spare.svg"
 tags: ["power", "cooling", "data-centres"]
 draft: false
+updated: 2026-10-08T16:00:00+08:00
+updateNote: "Shortened and made plainer on 8 October 2026. The explanation is unchanged."
 ---
 
 Twenty years ago, Jane Street's first computing cluster was six Dell boxes stacked at the end of a row of desks. Once, a cleaner unplugged one of its trading systems while vacuuming.
 
-In May 2026 the firm published a tour of its new AI training site in Texas. It holds 4,032 Nvidia GPUs, the chips that do AI maths, in 56 racks, and nearly all the heat leaves through liquid.
+In May 2026 the firm published a tour of its new AI training site in Texas. It holds 4,032 Nvidia GPUs, the chips that do AI maths, in 56 racks, and most of the heat leaves through liquid.
 
 Jane Street is a trading firm, not a cloud company. It trains its own models, some of them large language models and some built around trading data. So it has had to learn the same physics as the tech giants, in a building that was never designed for it.
 
@@ -29,7 +31,7 @@ Jane Street has more room than it can use. What it cannot get more of is power.
 
 The building was planned at what Jane Street's engineers call an intermediate point. The firm knew it had to grow a lot, but not what shape the coming computers would take.
 
-The answer turned out to be dense. Each of its GB300 NVL72 cabinets, Nvidia's current rack of 72 GPUs, draws about 140 kilowatts at peak. A traditional air-cooled cabinet draws 10 to 40 kW.
+The answer turned out to be dense. Each of its GB300 NVL72 cabinets, Nvidia's current flagship rack, draws about 140 kilowatts at peak. A traditional air-cooled cabinet draws 10 to 40 kW.
 
 The site runs on a fixed allocation of power from the utility. It is on the grid, not generating its own. So when each cabinet started drawing three to fourteen times as much, the same megawatts filled a fraction of the room.
 
@@ -45,7 +47,7 @@ About 85 to 90 per cent of each server's heat leaves through cold plates, metal 
 
 Chillers on the roof send down water at about 18°C. Valves with ultrasonic flow meters give each cabinet exactly the flow its heat needs, so the racks at the end of a row are not starved.
 
-That water never touches the chips. A heat exchanger, which passes heat between two loops without mixing them, hands it to a sealed technical loop. That loop is filtered to 25 microns, about a third of the width of a hair, so nothing clogs the cold plates. It carries 25 per cent propylene glycol, an antifreeze, because bacteria growing inside it could block the plates.
+That water never touches the chips. A heat exchanger, which passes heat between two loops without mixing them, hands it to a sealed technical loop. That loop is filtered to 25 microns, about a third of the width of a hair, so nothing clogs the cold plates. It carries propylene glycol, an antifreeze, because bacteria growing inside it could block the plates.
 
 Leaks are handled in layers. Sensing ropes under the raised floor detect drips, valves isolate a section, and large buffer tanks store cold water. Those tanks keep the GPUs cool for the minutes the chillers need to restart after a power cut.
 

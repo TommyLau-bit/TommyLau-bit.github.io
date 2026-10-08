@@ -4,6 +4,16 @@ How every piece on this site is built. Derived from the first six, not invented.
 If you hand Claude raw notes and say "make this a journal post", this is the
 contract it works to. Nothing here is a suggestion.
 
+> ## THE FIRST RULE. EXPLANATION IN THE JOURNAL, NUMBERS IN THE RESEARCH. (Tommy, 8 Oct 2026, permanent)
+> The journal is for a layman with no financial background. Every piece must be short, sweet,
+> professional and easy to understand: **about a five minute read (900 to 1,150 words, never over
+> 1,300), 15 figures at most, 3 company financial figures at most.** Use a number only when the point
+> does not land without it. Revenue tables, segment splits, quarter-by-quarter comparisons, guidance
+> and deal arithmetic belong in the research notes at `/research`, never in a journal piece.
+> On 8 Oct 2026 twenty-one pieces that had drifted to 1,400 words and up to 78 figures were rewritten
+> to this standard. `brand/check-piece.py` enforces it. Full rule: §4b. The model company piece is
+> `schneider-sells-the-finished-system.md`.
+
 ---
 
 ## 0. What Claude needs from you
@@ -14,7 +24,7 @@ paragraph, a screenshot of a chart. The only things that must be in there:
 1. **The claim.** One sentence. What is true that most people have wrong?
 2. **The mechanism.** Why it is true, physically. Not "the market thinks", but
    what actually happens in the wire, the loop, the rack, the queue.
-3. **The number that matters.** One or two. Structural first. The air
+3. **The number that matters.** One or two, no more (§4b). Structural first. The air
    ceiling in kW per rack. The ratio of water to air. Two years for a substation.
    A company's disclosed financials can support it, never replace it. See §4a.
 4. **Who operates in the layer.** Names of real companies, and who is hurt.
@@ -476,10 +486,11 @@ python3 brand/check-piece.py src/content/journal/my-slug.md
 
 It validates the frontmatter, both mandatory blocks, the fixed disclaimer, the
 sources tail, the section count, the falsifier on Analysis pieces, banned
-punctuation, US spellings, rating and valuation language, length and average
-sentence length. Failures exit non-zero. Warnings are advisory and do not fail.
+punctuation, US spellings, rating and valuation language, length, the §4b
+numbers budget and average sentence length. Over 1,300 words, more than 4 money
+figures or more than 25 figures fails the piece. Failures exit non-zero. Warnings are advisory and do not fail.
 
-Run it before you build. All six existing pieces pass.
+Run it before you build. Every published piece passes with no failures.
 
 ---
 

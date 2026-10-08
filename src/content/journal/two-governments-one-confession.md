@@ -6,6 +6,8 @@ category: "Analysis"
 cover: "/covers/two-governments-one-confession.svg"
 tags: ["grid", "power", "johor", "singapore"]
 draft: false
+updated: 2026-10-08T16:00:00+08:00
+updateNote: "Shortened and made plainer on 8 October 2026. The claim and the test of it are unchanged."
 ---
 
 There are two ways to find out what somebody thinks is scarce. You can ask them, or you can watch what they do about it.
@@ -23,7 +25,7 @@ Two governments in this region have spent the last few years responding to the s
 
 ## Malaysia could make more, so it did
 
-Tenaga Nasional has committed RM43 billion, about US$10.8 billion, to modernise the grid specifically for data centre demand. Its Green Lane Pathway cut the wait for a new connection from 36 months to 12, and had delivered 33 projects under that scheme by March 2026.
+Tenaga Nasional has committed RM43 billion to modernise the grid specifically for data centre demand. Its Green Lane Pathway cut the wait for a new connection from 36 months to 12, and had delivered 33 projects under that scheme by March 2026.
 
 The detail that matters is what the money was aimed at. That is a connection programme. It buys wires, substations and a faster approval process. It does not buy power stations.
 
@@ -31,9 +33,9 @@ A utility that believed it was short of electricity would be building generation
 
 ## Singapore cannot make more, so it rations
 
-Singapore has almost no land and imports most of its energy. It froze new data centre approvals outright between 2019 and 2022. Peak demand is projected to grow 3.7 to 5.7 per cent a year, reaching somewhere between 10.1 and 11.8 gigawatts by 2030.
+Singapore has almost no land and imports most of its energy. It froze new data centre approvals outright for about three years. Peak demand is projected to keep climbing every year to 2030.
 
-Its answer has been to release capacity in small controlled batches with conditions attached. A roughly 20 hectare low carbon data centre park on Jurong Island is sized to 700 megawatts. The capacity award requires a power efficiency score of 1.25 or better, which means the megawatts go to whoever wastes the fewest of them.
+Its answer has been to release capacity in small controlled batches with conditions attached. A low carbon data centre park on Jurong Island is sized to 700 megawatts. The capacity award requires a power efficiency score of 1.25 or better, which means the megawatts go to whoever wastes the fewest of them.
 
 **Nobody rations something that is plentiful.** Singapore is allocating connection by efficiency because it cannot allocate it by supply, and a queue with entry conditions tells you what the regulator thinks the binding resource is.
 
@@ -51,11 +53,11 @@ The thing is not electricity. It is the connection.
 
 There is a number in the middle of this that I keep returning to.
 
-Inside the Johor-Singapore Special Economic Zone, installed capacity was reported at 3,885 MVA in December 2025, against demand near 1,272 megawatts. The published utilisation figure is **72.76 per cent**.
+Inside the Johor-Singapore Special Economic Zone, installed capacity was reported at 3,885 MVA in December 2025, MVA being a measure of what the substations can carry, against demand near 1,272 megawatts. The published utilisation figure is **72.76 per cent**.
 
 Those two numbers divide to about 33 per cent.
 
-So the published rate cannot be measured against total installed capacity. The only reading I can find that makes all three numbers consistent is that 72.76 per cent is measured against capacity actually energised, while the 3,885 headline includes substations that are approved but not yet commissioned.
+So the published rate cannot be measured against total installed capacity. The only reading I can find that makes all three numbers consistent is that the published rate is measured against capacity actually energised, while the installed headline includes substations that are approved but not yet commissioned.
 
 If that is right, then an official statistic is already using the distinction that the rest of the conversation refuses to make. Announced capacity and energised capacity are being treated as two different quantities inside one government release, while developer disclosure and most commentary still treat them as one number.
 
@@ -88,7 +90,7 @@ So I watch the Green Lane project count beyond 33, the composition of the Singap
 </dl>
 <dl class="against">
 <dt>On the other side</dt>
-<dd>Anyone reading an announced megawatt as a deliverable one. And any forecast built on a single headline utilisation figure without asking what it is measured against, which is not a hypothetical risk but the specific trap this piece walked into and had to climb out of.</dd>
+<dd>Anyone reading an announced megawatt as a deliverable one. And any forecast built on a single headline utilisation figure without asking what it is measured against.</dd>
 </dl>
 </section>
 

@@ -57,7 +57,7 @@ The programme is real, and much of it is new transformer floor space in North Am
 
 In Virginia, a large power transformer plant at South Boston broke ground in June. A Hitachi spokesman said last year that it should be operating by 2028. In September Hitachi Energy announced a transformer factory in Mississippi that more than doubles its capacity there, with production due in 2029.
 
-That is the transformer clock in its plainest form. A factory announced today makes its first transformer two to three years later, and only then starts on the queue.
+That is [the transformer clock](/journal/the-part-money-cannot-hurry/), the years it takes to raise a new factory, in its plainest form. A factory announced today makes its first transformer two to three years later, and only then starts on the queue.
 
 Hitachi Energy is also not trying to get ahead of demand. In Hitachi's published summary of its June investor day, Andreas Schierenbeck, who runs the energy business, said "we are only investing if we have a bankable business case". He added, "we are not building over-capacity".
 

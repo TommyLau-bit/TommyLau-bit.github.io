@@ -67,7 +67,7 @@ If factory output were the only limit, I would expect Schneider to pour money in
 
 For extra prefabricated capacity in North America it is leaning on a partner, Foxconn, rather than only its own floor space. And it keeps buying design tools. It already owns ETAP, software for designing electrical systems, which it pairs with Nvidia's tools to build a digital twin of an AI data centre, a working simulation of the building before it exists.
 
-On 5 October 2026 Schneider agreed to buy PTC, an American design software company, for about $22.6 billion. PTC's software mostly designs cars and machines, so it is not a data centre deal. But Schneider describes it as linking how things are designed to how they are built and run. My inference is that Schneider sees engineering and site hours as scarcer than factory hours.
+On 5 October 2026 Schneider agreed to buy PTC, an American design software company. PTC's software mostly designs cars and machines, so it is not a data centre deal. But Schneider describes it as linking how things are designed to how they are built and run. My inference is that Schneider sees engineering and site hours as scarcer than factory hours.
 
 ## What would prove me wrong
 

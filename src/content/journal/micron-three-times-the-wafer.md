@@ -92,7 +92,7 @@ So I watch next year's HBM agreements each autumn, Micron's view of the DRAM mar
 
 <section class="exposure">
 <h3>Who is exposed if HBM keeps taking wafers from ordinary memory</h3>
-<p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares. The financial figures in this piece are Micron's own disclosures, used as evidence for the mechanism, and I draw no conclusion from them about value.</p>
+<p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares. Where this piece draws on Micron's own disclosures, they are used as evidence for the mechanism, and I draw no conclusion from them about value.</p>
 <dl>
 <dt>The subject</dt>
 <dd><span class="names">Micron</span> makes DRAM, including HBM, and NAND flash, the memory inside solid-state drives.</dd>

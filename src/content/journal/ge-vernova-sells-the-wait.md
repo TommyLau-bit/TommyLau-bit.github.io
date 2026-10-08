@@ -8,7 +8,7 @@ tags: ["power", "grid", "data-centres"]
 draft: true
 ---
 
-In the first half of 2026, GE Vernova signed contracts for 41 gigawatts of gas turbines. In the same six months it shipped seven.
+In the first half of this year, GE Vernova signed contracts for 41 gigawatts of gas turbines. In the same six months it shipped seven.
 
 Most of what it signed was not an order for a machine. It was a paid place in the line to have one built, much of it for the end of the decade and beyond.
 
@@ -41,11 +41,11 @@ GE Vernova reports its queue as both added together. At the end of June it stood
 
 GE Vernova has been shipping about three gigawatts a quarter. From the second half of this year it steps up to five a quarter, or about 20 gigawatts a year.
 
-At that pace, the queue is almost six years of output already signed. It also grew by about two fifths in the first half of this year alone.
+At that pace, the queue is almost six years of output already signed. It also grew by about two fifths in the first half alone.
 
 The company says it is mostly sold out to the end of the decade. Then add the time at site. Its chief executive said a heavy-duty unit can take another year and a half to commission, meaning test and switch on, after it leaves the factory.
 
-GE Vernova puts data centres at about a fifth of its turbine demand. A turbine shipped in 2030 or 2031 makes power in 2032 or 2033. For an AI campus planned today, a big turbine arrives no faster than the grid connection it was meant to skip. The company's own answer is the aeroderivative, which can be running about six months after shipping and fills the gap until the big machine arrives.
+GE Vernova puts data centres at about a fifth of its turbine demand. A turbine shipped in 2030 or 2031 makes power in 2032 or 2033. For an AI campus planned today, a big turbine arrives no faster than the grid connection it was meant to skip. The company's own answer is the aeroderivative, which can be running about six months after shipping and fills the gap.
 
 ## Where the deposits show up
 
@@ -55,7 +55,7 @@ Its quarterly filing reports contract liabilities, mostly cash collected from cu
 
 The filing gives the reason plainly: higher down payments on orders and slot reservations.
 
-Price points the same way. GE Vernova said its gas orders in the first half were priced more than 20 per cent above those of the last quarter of last year, per kilowatt. Part of that came from converting pricier reservations and selling more aeroderivatives. Even so, a buyer that pays more per unit, and pays years early, is not buying a turbine. It is buying a date.
+Price points the same way. GE Vernova said its gas orders in the first half were priced more than a fifth above those of the last quarter of last year, per kilowatt. Part of that came from converting pricier reservations and selling more aeroderivatives. Even so, a buyer that pays more per unit, and pays years early, is not buying a turbine. It is buying a date.
 
 ## Why GE Vernova will not simply build another factory
 
@@ -73,7 +73,7 @@ A turbine on site still needs transformers and switchgear, the heavy equipment t
 
 Orders there are running well ahead of shipments, and data centre orders in the first half were already more than double the whole of last year's. The response looks the same as in gas: more switchgear from existing factories, with extra shifts.
 
-When GE Vernova wanted more transformer capacity quickly, it bought rather than built. In February it bought the half of Prolec GE it did not own, a transformer maker with seven factories across the Americas. That is the transformer clock again: money can buy an existing factory sooner than it can raise a new one.
+When GE Vernova wanted more transformer capacity quickly, it bought rather than built. In February it bought the half of Prolec GE it did not own, a transformer maker with seven factories across the Americas. That is [the transformer clock](/journal/the-part-money-cannot-hurry/) again: money can buy an existing factory sooner than it can raise a new one.
 
 ## What would prove me wrong
 

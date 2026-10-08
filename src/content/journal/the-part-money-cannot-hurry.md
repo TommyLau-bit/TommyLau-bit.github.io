@@ -6,6 +6,8 @@ category: "Analysis"
 cover: "/covers/the-part-money-cannot-hurry.svg"
 tags: ["grid", "power", "data-centres"]
 draft: false
+updated: 2026-10-08T16:00:00+08:00
+updateNote: "Shortened and made plainer on 8 October 2026. The claim and the test of it are unchanged."
 ---
 
 Malaysia's grid operator did something unusual last year. It took the time needed to connect a new project to the grid and cut it from thirty six months to twelve.
@@ -29,47 +31,45 @@ A connection queue looks like one line. It is really two, and only one of them a
 
 When a data centre developer says it is waiting for a grid connection, it is waiting for two different things at once.
 
-The first is permission and position. Studies, approvals, a place in the order in which projects get connected, and agreement on who pays for what. All of that is process. It is done by people, on schedules that a government can rewrite.
+The first is permission and position. Studies, approvals, a place in the connection order, and agreement on who pays for what. All of that is process. It is done by people, on schedules that a government can rewrite.
 
 The second is plant. A substation is not paperwork. It is a physical site holding switchgear, which is the heavy equipment that makes and breaks high voltage connections safely, along with protection equipment, cable and, at its centre, a large power transformer. That last item is the one that decides everything.
 
-A transformer steps voltage down from the level the grid uses for long distance transport to the level a site can actually consume. Without one, the wires arriving at the fence are useless.
+A transformer steps voltage down from the level used for long distance transport to the level a site can actually use. Without one, the wires arriving at the fence are useless.
 
 ## Why the first clock can be compressed
 
-Malaysia's scheme is the clean proof. Tenaga Nasional, the national utility, created what it called a Green Lane Pathway and cut connection timelines from thirty six months to twelve. It has also committed around RM43bn, about 10.8 billion US dollars, to modernising the grid specifically for data centre demand.
+Tenaga Nasional, the national utility, created what it called a Green Lane Pathway, the scheme behind the cut to twelve months. It has also committed around RM43bn to modernising the grid specifically for data centre demand.
 
 You do not build a programme to compress connection time unless connection time, rather than generation, was the thing stopping projects.
 
-That is worth sitting with. The common assumption is that the constraint on data centres is electricity supply. In Johor it is not. Data centre load there more than doubled between 2024 and 2025 to roughly 3.8 gigawatts of maximum demand, which Wood Mackenzie notes is about one and a half times the state's own current electricity demand. Generation capacity remains sufficient across the system. Access to the wires is what decides whether a project proceeds.
+The common assumption is that the constraint on data centres is electricity supply. In Johor it is not. Data centre load there more than doubled in a year, to about one and a half times the state's own current electricity demand, Wood Mackenzie notes. Generation capacity remains sufficient across the system. Access to the wires is what decides whether a project proceeds.
 
 So the first clock moved, and it moved a long way. Twenty four months came out of it.
 
 ## Why the second clock cannot
 
-A large power transformer is not a product you order from a catalogue. It is designed for the site it will serve, wound from a great deal of copper, and built around a core of a specialist material called grain oriented electrical steel, which is made by a small number of mills worldwide and is not easily substituted.
+A large power transformer is not a product you order from a catalogue. It is designed for the site it will serve, wound from a great deal of copper, and built around a core of a specialist material called grain oriented electrical steel, which is made by a few mills worldwide and is hard to substitute.
 
-Then it is tested, because a unit that fails in service takes the site with it. Then it is moved, and at this size moving it is a civil engineering job of its own involving road surveys and sometimes bridges.
+Then it is tested, because a unit that fails in service takes the site with it. Then it is moved, which at this size is a civil engineering job of its own.
 
 None of those steps is inefficiency. Each is there because the alternative is a fire.
 
-This is the difference that matters. The first clock is a policy variable, and a policy variable can be compressed by decision. The second is a manufacturing variable, and a manufacturing variable can only be compressed by building more factories, which itself takes years.
+The first clock is a policy variable, and a policy variable can be compressed by decision. The second is a manufacturing variable, and a manufacturing variable can only be compressed by building more factories, which itself takes years.
 
 **Policy compression has a floor, and the floor is made of steel and copper.**
 
 ## What this means for a date on a slide
 
-Announced capacity and energised capacity are not the same number, and the gap between them is where I think the mispricing sits.
+Announced capacity and energised capacity are not the same number, and the gap between them is where I think most forecasts go wrong.
 
-An announcement is a decision. An energisation is a delivery. Between the two sits a queue whose faster half has already been optimised in the markets that care most, and whose slower half has not moved at all.
+An announcement is a decision. An energisation is a delivery. Between the two sits a queue whose faster half has already been optimised, and whose slower half has not moved at all.
 
-Singapore shows the same constraint from the other direction. Peak demand is projected to grow 3.7 to 5.7 per cent a year to between 10.1 and 11.8 gigawatts by 2030. The response has included a roughly twenty hectare low carbon data centre park on Jurong Island sized to 700 megawatts, and a capacity call requiring a power usage effectiveness of 1.25 or better, a measure of how much total electricity a site uses for every unit that reaches the computers.
+Singapore shows the same constraint from the other direction. Its response has included a low carbon data centre park on Jurong Island sized to 700 megawatts, and a capacity call requiring a power usage effectiveness of 1.25 or better, a measure of how much total electricity a site uses for every unit that reaches the computers.
 
 Singapore is rationing connection by efficiency because it cannot ration it by supply. That is a regulator telling you which clock is binding.
 
-Inside the Johor-Singapore Special Economic Zone, installed capacity stood at 3,885 megavolt amperes in December 2025, a rating called MVA that measures what the equipment can carry, against demand near 1,272 megawatts. The state's own published utilisation figure is 72.76 per cent.
-
-Those two numbers divide to about 33 per cent, not 73, so the published rate cannot be measured against total installed capacity. My reading is that it is measured against capacity actually energised, while the 3,885 headline includes substations approved but not yet commissioned. I take that discrepancy apart properly in a later piece, because it is this whole argument happening inside an official statistic. Either way the headroom is comfortable today and narrowing quickly at the growth rate of the last two years.
+In the Johor-Singapore zone, the published grid utilisation figure is about 73 per cent, most likely measured against capacity already switched on rather than everything planned, as [the piece on two governments](/journal/two-governments-one-confession/) explains. Either way the headroom is comfortable today and narrowing quickly at the growth rate of the last two years.
 
 ## What would prove me wrong
 

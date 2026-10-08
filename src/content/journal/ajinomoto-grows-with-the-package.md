@@ -41,7 +41,7 @@ Ajinomoto describes it as "a product of choice for nearly all high-performance C
 
 Ajinomoto's results presentation in May drew the trend as a picture of the board itself.
 
-A package for high-performance computing up to 2023 was about 70 millimetres square, with nine layers of wiring. Today's AI package is wider and has more layers. From 2031 Ajinomoto projects about 120 millimetres square and thirteen layers.
+Until recently, a package for high-performance computing was about 70 millimetres square, with nine layers of wiring. An AI package in 2026 is about 100 millimetres square, with eleven layers. From 2031 Ajinomoto projects about 120 millimetres square and thirteen layers.
 
 Film is laid across the whole board, once per layer. By my rough arithmetic, today's package needs about two and a half times the film of that older one. The package Ajinomoto projects needs more than four times as much.
 
@@ -57,7 +57,7 @@ Ajinomoto publishes its film volume by application. Servers and networks, the hi
 
 The money moved with the mix. Sales in Functional Materials, the business built around the film, rose by almost a third last year.
 
-Its business profit margin, Ajinomoto's main measure of profit as a share of sales, was over 50 per cent. In fiscal 2018 it was about 30 per cent.
+Its business profit margin, Ajinomoto's main measure of profit as a share of sales, was over half. In fiscal 2018 it was about 30 per cent.
 
 A margin that widens while volume grows is what a material customers dare not swap looks like in money.
 
@@ -79,7 +79,7 @@ The growth has to come out of Ajinomoto's factories, and its timetable is slow b
 
 Ajinomoto makes the film at two sites in Japan, Kawasaki and Gunma, and opened a new facility at Gunma last year. In May it announced it would buy land in Kani City, Gifu, for a third site.
 
-Construction is planned from 2028, with operation in the year to March 2032. That is about six years from choosing the land to the first film.
+By my count, that is about six years from choosing the land to the first film.
 
 My inference is that until then, any extra film has to come from the existing sites. A rival, meanwhile, needs its own long qualification. The slowest part is time, and money cannot buy it back.
 
@@ -95,7 +95,7 @@ Ajinomoto discloses that margin only as rounded wording, "over 50%". If it stops
 
 <section class="exposure">
 <h3>Who is exposed if Ajinomoto's film keeps growing with the package</h3>
-<p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares. The financial figures in this piece are Ajinomoto's and Nvidia's own disclosures, used as evidence for the mechanism, and I draw no conclusion from them about value.</p>
+<p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares. Where this piece draws on Ajinomoto's and Nvidia's own disclosures, they are used as evidence for the mechanism, and I draw no conclusion from them about value.</p>
 <dl>
 <dt>The subject</dt>
 <dd><span class="names">Ajinomoto</span> makes ABF insulating film for chip package substrates, alongside seasonings, frozen foods and amino acids.</dd>

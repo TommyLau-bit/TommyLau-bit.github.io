@@ -1,14 +1,14 @@
 ---
 title: "Eaton is shipping more electrical gear than ever, and its order book is growing faster still"
 date: 2026-10-07T11:56:14+08:00
-summary: "Eaton makes the switchgear, backup power and wiring that sit between the grid and the computers in a data centre. It is adding factories and shipping more each quarter, yet its order book is growing faster still. Its North American orders waiting to be filled now equal about thirteen months of sales, up from eleven a year ago, and the new plants that could close the gap mostly arrive in 2027."
+summary: "Eaton makes the switchgear, backup power and wiring that sit between the grid and the computers in a data centre. It is adding factories and shipping more each quarter, yet its order book is growing faster still. Its orders in the Americas waiting to be filled now equal about thirteen months of sales, up from eleven a year ago, and the new plants that could close the gap mostly arrive in 2027."
 category: "Analysis"
 cover: "/covers/eaton-order-book-outruns-it.svg"
 tags: ["power", "data-centres", "the-stack"]
 draft: true
 ---
 
-In the year to June 2026, Eaton's North American electrical business sold 18 per cent more than the year before.
+In the year to June 2026, Eaton's electrical business in the Americas sold 18 per cent more than the year before.
 
 Over the same year, the orders it had signed but not yet delivered grew by 33 per cent.
 
@@ -45,7 +45,7 @@ Eaton reports its backlog, the orders customers have firmly committed to but not
 
 Dividing that backlog by a year of the unit's sales turns money into time. It tells you how long the factories would take to clear the queue if no new order arrived.
 
-At the end of June the answer was just under thirteen months of sales. At the end of 2025 it was about a year, and it has risen in every quarter since.
+At the end of June the answer was just under thirteen months of sales. A year earlier it was about eleven months, and by the end of 2025 about a year. It has risen in every quarter since.
 
 Some of the climb may be price, because new prices reach the order book before they reach shipments. Eaton does not split the two, so I cannot strip that out.
 
@@ -71,7 +71,7 @@ Eaton's results fit that pattern. The unit's operating margin, the share of each
 
 Buyers of large gas turbines often pay big deposits years ahead to hold a factory slot. Eaton's customers mostly do not. My reading is that they queue with signed orders rather than cash.
 
-My reading is that Eaton carries the cost of the ramp itself and recovers it through price, after a delay. Eaton calls the squeeze a matter of price and cost; linking it to the length of the queue is my inference.
+I think Eaton carries the cost of the ramp itself and recovers it through price, after a delay. Eaton calls the squeeze a matter of price and cost; linking it to the length of the queue is my inference.
 
 ## Moving the building site into the factory
 
@@ -91,7 +91,7 @@ I am also wrong if the unit's book-to-bill, new orders divided by sales over twe
 
 <section class="exposure">
 <h3>Who is exposed if Eaton's queue keeps lengthening</h3>
-<p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares. The financial figures in this piece are Eaton's own disclosures, used as evidence for the mechanism, and I draw no conclusion from them about value.</p>
+<p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares. Where this piece draws on Eaton's own disclosures, they are used as evidence for the mechanism, and I draw no conclusion from them about value.</p>
 <dl>
 <dt>The subject</dt>
 <dd><span class="names">Eaton</span> makes switchgear, uninterruptible power supplies, busway, breakers, power distribution units, transformers and prefabricated electrical enclosures, and through Boyd Thermal, cold plates and coolant distribution units.</dd>

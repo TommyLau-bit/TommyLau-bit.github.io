@@ -5,6 +5,8 @@ summary: "When you ask an AI a question, no answer is waiting on a shelf. A buil
 category: "Explainer"
 cover: "/covers/two-seconds.svg"
 tags: ["explainer", "inference", "the-stack"]
+updated: 2026-10-08T16:00:00+08:00
+updateNote: "Wording tidied on 8 October 2026. The explanation is unchanged."
 ---
 
 Start with a question you have probably never asked: where does the answer come from?
@@ -59,7 +61,7 @@ Two more tricks stack on top. The working memory from your conversation is reuse
 Every AI data centre is the same seven layers, bottom to top:
 
 1. **Power.** Generation, grid connection, transformers, backup. The raw material.
-2. **Cooling.** Liquid loops, pumps and chillers. Half the job, as you will see.
+2. **Cooling.** Liquid loops, pumps and chillers. Half the job, as [the cooling piece](/journal/cooling-is-half-the-job/) explains.
 3. **Compute.** The chips themselves.
 4. **Memory and storage.** Fast memory stacked beside the chip, slower storage behind it.
 5. **Networking.** The links that let ten thousand chips act as one machine.
