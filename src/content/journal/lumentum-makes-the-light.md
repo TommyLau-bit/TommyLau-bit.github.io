@@ -93,7 +93,7 @@ Alongside those, I watch whether the giant cloud companies keep spending. A supp
 <dt>The crystal</dt>
 <dd><span class="names">AXT</span> makes the InP substrates that lasers are grown on.</dd>
 <dt>The buyer who paid ahead</dt>
-<dd><span class="names">Nvidia</span> has invested in Lumentum and Coherent and signed multi-year agreements for laser and optical products.</dd>
+<dd><span class="names">Nvidia</span> designs the AI chips and network systems these lasers connect.</dd>
 </dl>
 <dl class="against">
 <dt>On the other side</dt>

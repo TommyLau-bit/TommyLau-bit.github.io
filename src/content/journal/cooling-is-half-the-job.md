@@ -50,7 +50,7 @@ There is a catch on the water side. Some cooling designs evaporate millions of g
 
 The thing I find compelling about cooling is that it is indifferent to who wins the chip war. Whether the chips are made by Nvidia, AMD, Google or someone not yet founded, they will give off heat, and the heat has to go somewhere. Heat is heat.
 
-The industrial companies have said as much with their wallets. Within months of each other, Eaton bought Boyd Thermal and Schneider Electric bought Motivair, both specialist liquid-cooling businesses. When two disciplined electrical giants pay up for the same niche at the same time, they are telling you what they think every future data centre looks like. I read acquisitions like that as revealed preference. They are a better signal than any forecast.
+The industrial companies have said as much with their wallets. Within months of each other, Eaton bought Boyd Thermal and Schneider Electric bought Motivair, both specialist liquid-cooling businesses. When two electrical giants buy into the same niche at the same time, they are telling you what they think every future data centre looks like. What companies spend their own money on tells you more than any forecast.
 
 ## What I'm watching
 
@@ -61,13 +61,13 @@ Three things. Whether immersion moves from the fringe to the mainstream as racks
 <p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares.</p>
 <dl>
 <dt>The one-stop suppliers</dt>
-<dd><span class="names">Vertiv</span> sells both the power gear and the liquid cooling, which is rare. <span class="names">Schneider Electric</span> and <span class="names">Eaton</span> bought their way in, Schneider acquiring Motivair and Eaton acquiring Boyd Thermal.</dd>
+<dd><span class="names">Vertiv</span> sells both the power gear and the liquid cooling, which is rare. <span class="names">Schneider Electric</span> and <span class="names">Eaton</span> make power gear and, through Motivair and Boyd Thermal, liquid cooling.</dd>
 <dt>The specialists</dt>
-<dd><span class="names">CoolIT</span> makes cold plates shipping inside many brand-name servers. <span class="names">nVent</span> makes loops and enclosures. <span class="names">Munters, Modine and Asetek</span> sit in adjacent parts of the thermal chain.</dd>
+<dd><span class="names">CoolIT</span> makes cold plates shipping inside many brand-name servers. <span class="names">nVent</span> makes loops and enclosures. <span class="names">Munters</span> makes air handlers, <span class="names">Modine</span> makes chillers, and <span class="names">Asetek</span> makes liquid cooling loops.</dd>
 <dt>The component layer</dt>
 <dd>Pumps, plates and distribution units from <span class="names">Delta, LiteOn</span> and the Taiwanese thermal suppliers feeding the rack builders.</dd>
-<dt>Why this lane is unusually clean</dt>
-<dd>Cooling does not care which chip company wins. Whether the silicon is <span class="names">Nvidia, AMD</span> or a hyperscaler's own design, it produces heat and the heat has to go somewhere.</dd>
+<dt>Why the chip race does not matter here</dt>
+<dd>Cooling does not care which chip company wins. Whether the silicon is <span class="names">Nvidia, AMD</span> or a giant cloud company's own design, it produces heat and the heat has to go somewhere.</dd>
 </dl>
 <dl class="against">
 <dt>On the other side</dt>

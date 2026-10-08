@@ -41,7 +41,7 @@ But generators are among the longest-lead items a builder can order. So Jane Str
 
 He is candid that it may not be the best engineering decision. It is the best business decision. My reading of the logic is that a training job can restart from its last saved checkpoint, so an outage costs hours of work. Six months of waiting for a generator costs six months.
 
-This is the same trade I described in Bloom Energy's case. Paying for a less perfect answer that arrives sooner beats waiting for the ideal one.
+This is the same trade I described in [Bloom Energy's case](/journal/the-product-is-time/). Paying for a less perfect answer that arrives sooner beats waiting for the ideal one.
 
 The firm also changes how it buys. It warehouses components that fit any of its sites so they are ready when a project starts. The largest items cannot sit on a shelf, so it increasingly uses modular infrastructure, power and cooling built off-site and shipped close to plug-and-play.
 

@@ -55,7 +55,7 @@ Ajinomoto publishes its film volume by application. Servers and networks, the hi
 
 The money moved with the mix. Sales in Functional Materials, the business built around the film, rose by almost a third last year.
 
-Its business profit margin, Ajinomoto's main measure of profit as a share of sales, was over half. In fiscal 2018 it was about 30 per cent.
+Its business profit margin, Ajinomoto's main measure of profit as a share of sales, was over half.
 
 A margin that widens while volume grows is what a material customers dare not swap looks like in money.
 

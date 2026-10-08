@@ -43,9 +43,9 @@ If buyers wanted more of the same parts, Products would grow fastest. It does no
 
 In the second quarter of 2026, Systems grew 28 per cent and Products 13 per cent, leaving out currency moves and acquisitions. Systems has grown faster in every quarter for a year, and Schneider says data centres led the latest quarter.
 
-The shift even costs Schneider something, and it says so. Finished systems keep less of each euro of sales than catalogue parts do, and Schneider's half year results blame the mix for pulling down its gross margin, though it says operating profit absorbs much of that.
+The shift even costs Schneider something, and it says so. Finished systems keep less of each euro of sales than catalogue parts do, and Schneider's half year results blame the mix for pulling down its gross margin, the share of each sale left after the cost of making it, though Schneider says its overall operating profit absorbs much of that.
 
-I read that as revealed preference. Schneider is accepting a thinner cut on each sale in order to deliver more of the work already done.
+I read that as a telling choice. Schneider is accepting a thinner cut on each sale in order to deliver more of the work already done.
 
 ## Why the building site sets the pace
 
@@ -71,7 +71,7 @@ On 5 October 2026 Schneider agreed to buy PTC, an American design software compa
 
 I am wrong if Schneider's growth stops arriving as systems.
 
-The simplest test is the share of its sales that comes from Systems. It was 34 per cent in 2025. If it falls below that for 2026 or 2027, while Schneider still says its data centre sales are growing by double digits, my claim fails. I am also wrong if catalogue Products outgrow Systems on an organic basis for two quarters running while data centres remain its main driver.
+The simplest test is the share of its sales that comes from Systems. It was 34 per cent in 2025. If it falls below that for 2026 or 2027, while Schneider still says its data centre sales are growing by double digits, my claim fails. I am also wrong if catalogue Products outgrow Systems on an organic basis, leaving out currency moves and acquisitions, for two quarters running while data centres remain its main driver.
 
 One thing could blur the test. Systems also includes factory automation, which has nothing to do with data centres. So I also watch the reason behind the numbers: whether Schneider keeps naming prefabricated units as a driver, and whether its executives stop saying site labour is short.
 
@@ -86,7 +86,7 @@ One thing could blur the test. Systems also includes factory automation, which h
 <dt>The other electrical groups</dt>
 <dd><span class="names">ABB</span> and <span class="names">Siemens</span> make switchgear, power distribution equipment and uninterruptible power supplies for data centres and industry.</dd>
 <dt>The factory partner</dt>
-<dd><span class="names">Foxconn</span> makes AI servers and racks, and is working with Schneider on modular power and cooling units.</dd>
+<dd><span class="names">Foxconn</span> makes AI servers and racks, and builds modular power and cooling units with Schneider.</dd>
 </dl>
 <dl class="against">
 <dt>On the other side</dt>

@@ -73,7 +73,7 @@ In the Johor-Singapore zone, the published grid utilisation figure is about 73 p
 
 The honest falsifier is that the first clock keeps winning.
 
-If connection timelines keep compressing the way the Green Lane did, the premium on queue position decays fast and this becomes a two year dislocation rather than a structural one. I would also be wrong if transformer and high voltage cable lead times normalise faster than utility capital spending is committed, which would turn a bottleneck into a glut.
+If connection timelines keep compressing the way the Green Lane did, a place near the front of the queue stops mattering and this becomes a two year delay rather than a lasting one. I would also be wrong if transformer and high voltage cable lead times normalise faster than utility capital spending is committed, which would turn a bottleneck into a glut.
 
 There is a second escape route I take seriously. Operators can build their own generation on site and skip the queue entirely. My position is that this relocates the constraint rather than removing it, because on site generation still needs transformers and switchgear and has its own waiting list. But that is the part of my own argument most likely to be wrong, and I would rather name it than have it pointed out to me.
 

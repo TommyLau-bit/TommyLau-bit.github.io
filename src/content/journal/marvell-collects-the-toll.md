@@ -88,7 +88,7 @@ So I watch whether the 1.6T links keep a DSP on board. I watch how much of Marve
 <dt>The module makers</dt>
 <dd><span class="names">Coherent</span>, <span class="names">Lumentum</span> and <span class="names">Innolight</span> make the transceivers and lasers the DSPs sit inside, assembled in volume by <span class="names">Fabrinet</span>.</dd>
 <dt>The ecosystem owner</dt>
-<dd><span class="names">Nvidia</span> makes GPUs and its own networking, and partners with Marvell on NVLink Fusion, its link for mixing its chips with others in one rack.</dd>
+<dd><span class="names">Nvidia</span> makes GPUs and its own networking, including NVLink Fusion, a link for mixing its chips with others in one rack.</dd>
 </dl>
 <dl class="against">
 <dt>On the other side</dt>

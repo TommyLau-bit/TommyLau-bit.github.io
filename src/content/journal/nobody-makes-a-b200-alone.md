@@ -87,7 +87,7 @@ Nvidia's annual report shows the cost. It says lead times have run beyond twelve
 
 A sole supplier with spare capacity is a manageable risk. One whose replacement would take a decade is a different kind of risk.
 
-I make no prediction about the slowest links. The slowest links each have their own piece: [ASML](/journal/asml-booked-ahead/), [Ajinomoto](/journal/ajinomoto-grows-with-the-package/) and [Micron](/journal/micron-three-times-the-wafer/). This one is the map.
+I make no prediction about the slowest links here. Each has its own piece: [ASML](/journal/asml-booked-ahead/), [Ajinomoto](/journal/ajinomoto-grows-with-the-package/) and [Micron](/journal/micron-three-times-the-wafer/). This one is the map.
 
 <section class="exposure">
 <h3>Who operates at each stage of a B200</h3>

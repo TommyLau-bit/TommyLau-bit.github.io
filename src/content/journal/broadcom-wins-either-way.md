@@ -84,7 +84,7 @@ So I watch whether networking holds its share of Broadcom's AI sales, and whethe
 <dt>The custom chip customers</dt>
 <dd><span class="names">Google</span>, <span class="names">Meta</span>, <span class="names">Anthropic</span> and <span class="names">OpenAI</span> design their own AI chips with Broadcom for their own data centres.</dd>
 <dt>The rival designers</dt>
-<dd><span class="names">Marvell</span> designs custom AI chips and makes optical DSPs and switch chips. <span class="names">MediaTek</span> designs one version of Google's next TPU.</dd>
+<dd><span class="names">Marvell</span> designs custom AI chips, switch chips and the signal chips inside optical plugs. <span class="names">MediaTek</span> designs one version of Google's next TPU.</dd>
 <dt>The switch builders</dt>
 <dd><span class="names">Arista</span> and <span class="names">Cisco</span> make the network switches many Broadcom chips sit inside.</dd>
 <dt>The chip foundry</dt>

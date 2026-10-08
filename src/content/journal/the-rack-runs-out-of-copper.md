@@ -70,7 +70,7 @@ So I am watching four things: public 800-volt commitments from named operators r
 <p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares.</p>
 <dl>
 <dt>Rack and facility power systems</dt>
-<dd>From NVIDIA's own published partner list, which is revealed preference rather than marketing: <span class="names">Eaton, Schneider Electric and Vertiv</span>.</dd>
+<dd><span class="names">Eaton, Schneider Electric and Vertiv</span> make the rack and building power systems, and appear on NVIDIA's published partner list.</dd>
 <dt>Power components</dt>
 <dd><span class="names">Delta, LiteOn, Megmeet, Flex Power and Lead Wealth</span> build the conversion hardware inside the chain.</dd>
 <dt>The switching silicon</dt>

@@ -71,7 +71,7 @@ Yet Grid now earns the higher profit margin, the share of each sale left as prof
 
 My reading is that buyers are paying more for scarce grid equipment than for the turbines themselves. Siemens Energy credits Grid's gains to the "improved margin profile of the processed order backlog", meaning orders signed once the shortage was plain.
 
-Grid already earns more than the margin Siemens Energy once set as its goal for 2028. Siemens Gamesa, the wind business, shows the reverse, with weak orders and a small loss. A tough comparison with large offshore orders a year earlier explains part of that, so I treat it as a contrast, not proof.
+Grid already earns more than the margin Siemens Energy once set as its goal for 2028. Siemens Gamesa, the wind business, shows the reverse, with weak orders and a small loss. Part of that is because a year earlier it booked unusually large offshore orders, so I treat it as a contrast, not proof.
 
 ## What would prove me wrong
 

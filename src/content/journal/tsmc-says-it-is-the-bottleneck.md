@@ -41,7 +41,7 @@ TSMC's model was simple: give us your design, and we will make the best chips. T
 
 The fabs cluster for a physical reason. Starting up a new fab depends on copying settings, people and suppliers from one already working. So TSMC's sites sit close together in Taiwan, in Hsinchu, Taichung, Tainan and Kaohsiung.
 
-Building away from the cluster costs more, and TSMC says so. It has begun making chips in Arizona, and it warns that its overseas fabs cut its margin, and by more as they grow.
+Building away from the cluster costs more, and TSMC says so. It has begun making chips in Arizona, and it warns that its overseas fabs leave it less profit on each chip, and more so as they grow.
 
 ## The clock on a chip factory
 

@@ -60,7 +60,7 @@ If the model is what Oklo says, the early picture should show heavy spending, al
 
 Oklo is spending heavily on its first plants and losing money while it does. It is funded by investors, through new shares, rather than by customers. Its small revenue comes from engineering businesses it recently bought, not from electricity.
 
-The customer commitments are mostly paper so far. Oklo's own filings describe most of them as non-binding. Its large framework agreement with Switch, a data centre developer, needs binding contracts to follow as projects reach milestones.
+The customer commitments are mostly paper so far. Oklo's own filings describe most of them as non-binding, closer to letters of intent than contracts. Its large framework agreement with Switch, a data centre developer, needs binding contracts to follow as projects reach milestones.
 
 Meta is the exception. Its January 2026 agreement for a campus in Ohio includes a binding prepayment to secure fuel. That is the first customer money placed ahead of the reactor.
 

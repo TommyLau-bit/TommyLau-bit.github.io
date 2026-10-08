@@ -95,7 +95,7 @@ I also watch whether the data centre business keeps outgrowing the rest of the d
 <dt>The traffic control</dt>
 <dd><span class="names">Arista</span> and <span class="names">Cisco</span> make the network switches the fibre connects.</dd>
 <dt>The buyers who paid ahead</dt>
-<dd><span class="names">Meta</span>, <span class="names">Amazon</span> and <span class="names">Nvidia</span> have each signed multi-year agreements with Corning to secure fibre and connectivity supply.</dd>
+<dd><span class="names">Meta</span>, <span class="names">Amazon</span> and <span class="names">Nvidia</span> build the AI data centres and systems the fibre connects.</dd>
 </dl>
 <dl class="against">
 <dt>On the other side</dt>

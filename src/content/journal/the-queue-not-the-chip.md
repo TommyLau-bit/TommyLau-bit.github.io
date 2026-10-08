@@ -42,13 +42,13 @@ Three places.
 
 First, the equipment that clears the queue: high-voltage transformers, cable, switchgear and the contractors who build substations. Their order books already stretch past the spending cycle that funds them.
 
-Second, operators who hold energised or queue-secured capacity, which ought to be worth more than peers quoting announced capacity, a distinction that company disclosures rarely make cleanly.
+Second, operators who already hold energised or queue-secured capacity, a distinction that company disclosures rarely make cleanly.
 
 Third, batteries, which are quietly becoming a connection product rather than only a trading product. US utility-scale battery additions are expected to rise sharply this year, with Texas alone more than half the national total, sited against data centre load that the Texas grid operator projects near 35 GW of peak demand by 2035. A battery that lets a campus switch on ahead of its wires is worth more than the money it makes buying cheap and selling dear.
 
 ## What would prove me wrong
 
-The honest counter-argument is Tenaga's own success. If connection timelines keep compressing the way the Green Lane did, cutting two thirds off the wait, then the premium on queue position fades fast and this becomes a two-year dislocation rather than a structural one. I would also be wrong if transformer and high-voltage cable lead times normalise faster than utilities commit capital, which would turn a bottleneck into a glut.
+The honest counter-argument is Tenaga's own success. If connection timelines keep compressing the way the Green Lane did, cutting two thirds off the wait, then a place near the front of the queue stops mattering and this becomes a two-year delay rather than a lasting one. I would also be wrong if transformer and high-voltage cable lead times normalise faster than utilities commit capital, which would turn a bottleneck into a glut.
 
 So I watch four things: transformer and cable lead times, the Green Lane project count beyond 33, utilisation in the Johor-Singapore zone past 73 per cent, and who wins the Singapore capacity award, because who wins capacity under a strict efficiency ceiling tells you what the regulator now believes is buildable.
 

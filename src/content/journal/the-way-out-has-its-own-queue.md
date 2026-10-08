@@ -69,7 +69,7 @@ If anything, the size of the turbine backlog is the clearest evidence I have fou
 
 This piece is the falsifier, so it deserves a specific one rather than a vague one.
 
-I am wrong if turbine lead times fall materially while the backlog is still being worked through, because that would mean the bottleneck was capacity discipline rather than physical capability, and it could unwind quickly. I am also wrong if a significant number of large sites energise on site generation faster than comparable sites achieve a grid connection. That is the direct head to head test, and it is measurable.
+I am wrong if turbine lead times fall materially while the backlog is still being worked through, because that would mean the makers were choosing not to build more, rather than being unable to, and it could unwind quickly. I am also wrong if a significant number of large sites energise on site generation faster than comparable sites achieve a grid connection. That is the direct head to head test, and it is measurable.
 
 And I am wrong about the whole stack if the equipment underneath both routes, the transformers and the switchgear, stops being the constraint. That is the single dependency my argument rests on. If it clears, everything I have written becomes a story about one difficult decade rather than a structural feature.
 

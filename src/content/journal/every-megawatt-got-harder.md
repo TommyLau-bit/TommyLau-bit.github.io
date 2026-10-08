@@ -92,7 +92,7 @@ So I watch four things. Adjusted operating margin, quarter by quarter. Service r
 <dt>The subject</dt>
 <dd><span class="names">Vertiv</span> makes uninterruptible power supplies, switchgear, busway, precision air conditioning, coolant distribution units and liquid cooling systems for data centres, and services them.</dd>
 <dt>The electrical groups</dt>
-<dd><span class="names">Schneider Electric</span>, <span class="names">Eaton</span>, <span class="names">ABB</span> and <span class="names">Siemens</span> make switchgear, power distribution and backup power across many industries. Schneider added Motivair and Eaton added Boyd Thermal for liquid cooling.</dd>
+<dd><span class="names">Schneider Electric</span>, <span class="names">Eaton</span>, <span class="names">ABB</span> and <span class="names">Siemens</span> make switchgear, power distribution and backup power across many industries. Schneider, through Motivair, and Eaton, through Boyd Thermal, also make liquid cooling.</dd>
 <dt>The building-cooling firms</dt>
 <dd><span class="names">Trane</span>, <span class="names">Carrier</span> and <span class="names">Johnson Controls</span> make chillers and large-scale air conditioning for buildings, including data centres.</dd>
 <dt>The liquid-cooling specialists</dt>

@@ -9,7 +9,7 @@ tags: ["networking", "optics", "the-stack"]
 
 Here is the problem in one sentence. A frontier model has more than a trillion internal settings, and no single chip has anywhere near enough memory to hold them. So the model is cut into pieces and spread across thousands of chips.
 
-That would be fine if each piece could work alone. It can't. To produce one token, the pieces have to exchange their partial results with each other, constantly, and then do it again for the next token. Ten thousand chips, one thought.
+That would be fine if each piece could work alone. It can't. To produce one token, a word or part of a word, the pieces have to exchange their partial results with each other, constantly, and then do it again for the next token. Ten thousand chips, one thought.
 
 Imagine a kitchen with ten thousand cooks preparing a single dish, where every cook needs ingredients from other cooks every second. If passing ingredients is slow, the most expensive cooks in history stand around waiting. At this scale, a network that is 10 per cent slower can leave billions of dollars of silicon doing nothing.
 
@@ -61,7 +61,7 @@ Claim: the network costs what it costs because the alternative is worse. Constra
 <p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares.</p>
 <dl>
 <dt>Switch silicon</dt>
-<dd><span class="names">Broadcom</span> makes the merchant chips inside most high-end Ethernet switches, and co-designs custom accelerators for the hyperscalers, so it supplies both the compute and the network. <span class="names">Marvell</span> makes networking chips and custom accelerators too.</dd>
+<dd><span class="names">Broadcom</span> makes the off-the-shelf chips inside most high-end Ethernet switches, and co-designs custom accelerators for the giant cloud companies, so it supplies both the compute and the network. <span class="names">Marvell</span> makes networking chips and custom accelerators too.</dd>
 <dt>The boxes</dt>
 <dd><span class="names">Arista</span> builds data centre switches. <span class="names">Cisco</span> makes switches and routers. <span class="names">Nvidia</span> owns the inside-the-rack link, NVLink, and the premium scale-out option, InfiniBand.</dd>
 <dt>The optics</dt>

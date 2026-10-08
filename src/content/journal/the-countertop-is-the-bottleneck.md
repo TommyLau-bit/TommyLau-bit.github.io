@@ -9,7 +9,7 @@ tags: ["memory", "HBM", "the-stack"]
 
 There is a widespread assumption that AI is limited by how fast a chip can do maths. For the part of the job you actually experience, the answer typing itself out, that is wrong.
 
-When the model writes, one token at a time, its maths cores are often not the constraint. The arithmetic is fast. What is slow is fetching: pulling the model's settings and its working memory of your conversation out of storage and into the cores, over and over, for every word. In the jargon, inference is memory-bandwidth-bound. In plain terms, the cook is quick but the countertop is too far from the pantry.
+When the model writes, one token at a time, its maths cores are often not the constraint. The arithmetic is fast. What is slow is fetching: pulling the model's settings and its working memory of your conversation out of storage and into the cores, over and over, for every word. In the jargon, inference, the model answering you, is memory-bandwidth-bound. In plain terms, the cook is quick but the countertop is too far from the pantry.
 
 <details class="analogy">
 <summary>Explain it like I don't work in finance</summary>
@@ -24,7 +24,7 @@ For decades, computer memory sat on the motherboard a few centimetres from the p
 
 The fix is called high-bandwidth memory, HBM, and it is a genuinely elegant piece of engineering. Instead of laying memory chips flat, you stack them eight to twelve high. You drill thousands of microscopic vertical shafts straight through the silicon so data can travel up and down the tower instead of across a board. Then you glue the whole tower directly beside the processor, on the same package, so the distance is millimetres rather than centimetres.
 
-The result is five to six times the bandwidth of conventional memory. The cost is roughly five to six times the price. Chip makers pay it gladly, because memory is now one of the largest cost components in every AI chip. The countertop moved next to the cook.
+The result is five to six times the bandwidth of conventional memory. It also costs roughly five to six times as much. Chip makers pay it gladly, because memory is now one of the largest cost components in every AI chip. The countertop moved next to the cook.
 
 ## A scarce thing behaves like a scarce thing
 
