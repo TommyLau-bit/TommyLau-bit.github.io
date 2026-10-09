@@ -12,96 +12,59 @@ Bloom Energy has been making fuel cells for more than twenty years. For most of 
 
 Now Oracle is using Bloom as the main power source for one of the largest AI campuses in America. One of the country's biggest utilities has signed for up to a gigawatt of Bloom's boxes itself.
 
-None of those buyers chose Bloom because its electricity is cheap. It is not. Where a normal grid connection is available, Bloom's power costs more.
-
-They chose it because the grid can take five years to connect a new site, and Bloom can switch one on in months.
+None of them chose Bloom because its electricity is cheap. They chose it because the grid can take five years to connect a new site, and Bloom can switch one on in months.
 
 Bloom is not selling electricity. It is selling time.
 
 <details class="analogy">
 <summary>Explain it like I don't work in finance</summary>
-<p>You move into a new flat and the broadband company says the engineer cannot come for three months. You work from home, so three months offline is not an option.</p>
-<p>So you buy a mobile hotspot. Every gigabyte costs more than the cable would, and you know that when you buy it. You are not paying for better internet. You are paying to be online this week.</p>
-<p>The day the engineer finally turns up, the hotspot goes into a drawer. Its whole reason to exist was the gap between when you needed the connection and when the cable could arrive. That gap is Bloom's market.</p>
+<p>You move into a new flat and the broadband engineer cannot come for three months. You work from home, so you buy a mobile hotspot. Every gigabyte costs more than the cable would, and you know it.</p>
+<p>You are not paying for better internet. You are paying to be online this week. The day the engineer arrives, the hotspot goes in a drawer. That gap is Bloom's market.</p>
 </details>
 
 ## Why anyone pays more for Bloom's power
 
-America is not running out of electricity. It is running out of the ability to deliver a large new block of it to one exact site, quickly. An AI builder with the money, the chips and the land has roughly three ways to get it.
+America is not running out of electricity. It is running out of the ability to deliver a large new block of it to one site, quickly. An AI builder has roughly three routes.
 
-**The grid.** The cheapest power and the slowest to arrive. Joining means entering the interconnection queue, the waiting list to connect anything large. Reported waits run to several years.
+**The grid.** The cheapest power and the slowest to arrive, through the interconnection queue, the waiting list to connect anything large.
 
-**Your own gas turbine.** Proven and cheaper at scale. But this escape route has its own queue, because the turbine makers are largely sold out.
+**Your own gas turbine.** Proven and cheaper at scale, but this route has its own queue, because the turbine makers are largely sold out.
 
-**Bloom.** Factory-built boxes that arrive on a lorry, sit beside the building and make electricity there. Dearer per unit of energy, but installed in months rather than years.
+**Bloom.** Factory-built solid oxide fuel cells that arrive on a lorry and sit beside the building. Natural gas goes in and electricity comes out, with no flame, as oxygen passes through thin ceramic plates held at several hundred degrees. Skipping combustion turns around 54 to 60 per cent of the gas's energy into electricity, against roughly 35 to 40 per cent for a simple gas turbine. Need more power, add more boxes.
 
-Bloom only makes sense once you see the builder's real cost: an idle building full of chips that cannot switch on.
-
-## What Bloom actually makes
-
-Bloom makes solid oxide fuel cells. Think of a battery that never runs down, as long as you keep feeding it fuel. Natural gas goes in, electricity comes out, with no flame and no spinning machinery.
-
-Inside each box, thin ceramic plates are held at several hundred degrees. Oxygen from the air passes through them and reacts with the fuel on the other side, releasing electrons directly as current.
-
-Bloom is not solar, because its boxes run day and night. It is not a battery company, because the boxes make power rather than store it. And although the boxes can run on hydrogen, nearly all of them run on natural gas.
-
-**Efficiency.** Skipping combustion turns around 54 to 60 per cent of the energy in the gas into electricity, against roughly 35 to 40 per cent for a typical simple gas turbine.
-
-**Permits.** When Oracle swapped the gas turbines planned for its Project Jupiter campus in New Mexico for Bloom, it cited far lower smog-forming emissions. Less pollution means an easier air permit, and an easier permit means a faster start.
-
-**Modularity.** Need more power, add more boxes, so a site can switch on in stages rather than waiting for one enormous machine.
+Per unit of energy, Bloom is still dearer than the grid. It only makes sense once you see the builder's real cost: a building full of chips that cannot switch on. Bloom wins because the grid is slow and the turbines are sold out, and neither is under its control.
 
 ## Where the time premium shows up
 
-Start with who is buying. Oracle has committed to up to 2.8 gigawatts of Bloom capacity, roughly the output of three large nuclear reactors. American Electric Power, a grid company, signed for up to a gigawatt. **The grid company itself is buying Bloom, because even it cannot build wires fast enough.**
+Start with who is buying. Oracle has committed to up to 2.8 gigawatts of Bloom capacity. American Electric Power, a grid company, signed for up to a gigawatt, because even it cannot build wires fast enough.
 
-If those buyers really are paying for speed, Bloom's own results should show it. They do.
-
-Bloom's sales of boxes have roughly tripled in a year. That is equipment being delivered, not just announced.
-
-The telling part is the margin. Gross margin is the share of each sale left after the cost of building it. Bloom's has widened while its sales grew.
-
-A supplier that widens its margin while it grows that fast is not discounting to win work. That is the time premium, expressed in money.
-
-Much of Bloom's order book is long contracts to maintain the boxes for up to twenty years. That income keeps coming after the grid catches up, so it is the part of Bloom least exposed to the gap closing.
-
-## Why Bloom's lead is real, and partly borrowed
-
-Bloom was unveiled on television as a power plant for every home, then spent most of the next decade losing money. The chemistry did not change. The grid did.
-
-The lead is real, but it is not secret physics. It is two decades of manufacturing and deployment nobody else has done at this scale. Bosch, one of Europe's most capable engineering firms, stopped developing these fuel cells. Ceres Power in Britain licenses its design rather than building systems itself.
-
-The other half of Bloom's advantage is borrowed. It wins because the grid is slow and the turbines are sold out. Both can improve, and neither is under Bloom's control. The boxes also still need gas, so a pipeline and carbon rules that could change hang over every site.
+If buyers are paying for speed, Bloom's own results should show it. Its sales of boxes roughly tripled in a year, and its gross margin, the share of each sale left after the cost of building it, widened. A supplier that widens its margin while growing that fast is not discounting to win work. That is the time premium, expressed in money.
 
 ## What would prove me wrong
 
-I am wrong if Bloom keeps winning sites where a grid connection is available on schedule. That would mean it competes on the cost of energy, not on arrival date, which is a different business entirely.
+I am wrong if Bloom keeps winning sites where a grid connection is available on schedule. That would mean it competes on the cost of energy, not on arrival date.
 
-I am also wrong if Bloom's deployment times stretch towards the turbine and grid timelines. If its factory line becomes its own queue, the reason to pay extra disappears.
-
-The sharpest test is the margin. If the premium is for time, Bloom's gross margin should come under pressure as grid waits shorten. Margin holding while queues ease would mean buyers value something other than speed.
-
-So I watch four things. Bloom's time from order to energised power. Grid and turbine waits, because shorter waits shrink the gap Bloom lives in. Bloom's gross margin against those waits. And whether Bloom stays the primary supply at sites like Jupiter, or quietly becomes a bridge that is switched off once the grid arrives.
+I am also wrong if Bloom's deployment times stretch towards turbine and grid timelines. The sharpest test is the margin: if the premium is for time, it should come under pressure as grid waits shorten. Margin holding while queues ease would mean buyers value something other than speed.
 
 <section class="exposure">
 <h3>Who is exposed if Bloom really is selling time</h3>
-<p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares. The capacity and financial figures in this piece are the companies' own disclosures, used as evidence for the mechanism, and I draw no conclusion from them about value.</p>
+<p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares. The figures are the companies' own disclosures, used as evidence for the mechanism.</p>
 <dl>
 <dt>The subject</dt>
-<dd><span class="names">Bloom Energy</span> builds solid oxide fuel cell systems for large sites and maintains them under long service contracts.</dd>
+<dd><span class="names">Bloom Energy</span> makes solid oxide fuel cell systems and maintains them under long contracts.</dd>
 <dt>Other fuel cell makers</dt>
-<dd><span class="names">FuelCell Energy</span> makes molten carbonate and solid oxide systems. <span class="names">Mitsubishi Heavy Industries</span> and <span class="names">Kyocera</span> make solid oxide systems, mostly at smaller scale in Asia. <span class="names">Ceres Power</span> designs solid oxide cell technology and licenses it to manufacturers.</dd>
+<dd><span class="names">FuelCell Energy</span>, <span class="names">Mitsubishi Heavy Industries</span> and <span class="names">Kyocera</span> make fuel cell systems. <span class="names">Ceres Power</span> licenses solid oxide cell designs.</dd>
 <dt>The routes Bloom competes with</dt>
-<dd><span class="names">GE Vernova</span>, <span class="names">Siemens Energy</span> and <span class="names">Mitsubishi Power</span> make gas turbines. <span class="names">Caterpillar</span> and <span class="names">Cummins</span> make gas and diesel engine generators.</dd>
+<dd><span class="names">GE Vernova</span>, <span class="names">Siemens Energy</span> and <span class="names">Mitsubishi Power</span> make gas turbines. <span class="names">Caterpillar</span> and <span class="names">Cummins</span> make engine generators.</dd>
 <dt>Bloom's buyers of time</dt>
-<dd><span class="names">Oracle</span> builds and operates AI data centres. <span class="names">American Electric Power</span> runs transmission and distribution networks across the United States.</dd>
+<dd><span class="names">Oracle</span> builds AI data centres. <span class="names">American Electric Power</span> runs transmission and distribution networks.</dd>
 </dl>
 <dl class="against">
 <dt>On the other side</dt>
-<dd>Anyone treating Bloom's demand as permanent rather than as a measure of how late the grid is. Utilities that lose large new customers to on-site supply. And Bloom's own case, wherever queues shorten or turbines catch up.</dd>
+<dd>Utilities that lose large new customers to on-site supply, and Bloom itself wherever queues shorten or turbines catch up.</dd>
 </dl>
 </section>
 
 ---
 
-<p class="sources">Sources: Bloom Energy and Oracle announcement of up to 2.8 gigawatts, 14 April 2026. Oracle, BorderPlex and Bloom Energy announcement on Project Jupiter, 27 April 2026, including the replacement of the planned gas turbines and the reported reduction in emissions. Bloom Energy and American Electric Power procurement agreement for up to 1 gigawatt, November 2024. Bosch's decision to end solid oxide fuel cell development, February 2025. Bloom Energy second quarter 2026 results, released 28 July 2026, for product revenue and gross margin. The service share of the backlog as described by Bloom with its full-year 2025 results in February 2026. Interconnection wait times are commonly reported estimates rather than one official statistic, and the efficiency ranges are typical published figures for each technology. Figures are as reported on the dates cited. Personal research, not investment advice.</p>
+<p class="sources">Sources: Bloom Energy and Oracle announcement, 14 April 2026, the Project Jupiter announcement, 27 April 2026, Bloom Energy and American Electric Power agreement, November 2024, and Bloom Energy second quarter 2026 results, 28 July 2026. Efficiency ranges are typical published figures and interconnection waits are commonly reported estimates. Personal research, not investment advice.</p>

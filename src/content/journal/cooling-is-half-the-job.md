@@ -9,72 +9,59 @@ tags: ["cooling", "data-centres", "liquid"]
 
 There is a fact about computers that most people never think about, and once you know it the whole cooling industry makes sense.
 
-Electricity is not consumed by computation. A chip does not use up power the way a kettle uses up water. Almost every watt that goes in comes back out again, as heat. A data centre is, in energy terms, a very expensive electric heater that happens to think on the way through.
+A chip does not use up power the way a kettle uses up water. Almost every watt that goes in comes back out as heat.
 
-So when a cabinet of AI chips draws 120 kilowatts, it is also giving off 120 kilowatts of heat. That is roughly eighty domestic space heaters running flat out inside a box the size of a fridge. A single flagship AI chip alone gives off more than a thousand watts, a space heater the size of a postcard.
+So when a cabinet of AI chips draws 120 kilowatts, it gives off 120 kilowatts of heat. That is roughly eighty space heaters running flat out inside a box the size of a fridge.
 
 Getting that heat out of the building is not a support function. It is half the job.
 
 <details class="analogy">
 <summary>Explain it like I don't work in finance</summary>
-<p>A laptop gets warm on your knees. That is about 50 watts of heat. Now picture eighty hairdryers running inside a wardrobe with the door shut. That is one modern AI cabinet.</p>
-<p>You cannot fix that with a fan. To carry that much heat away with air you would need something close to a gale blowing through the electronics.</p>
-<p>Water is simply a better lorry for heat. Think of stepping out of a swimming pool on a breezy day and how much colder you feel than standing in the same breeze dry. Same air, but the water is carrying the heat off your skin. That is the whole industry shift in one image: the cooling is moving from blowing air at the problem to running liquid right onto the chip.</p>
+<p>A laptop gets warm on your knees. Now picture eighty hairdryers running inside a wardrobe with the door shut. That is one modern AI cabinet, and no fan will fix it.</p>
+<p>Step out of a swimming pool on a breezy day and you feel far colder than standing dry in the same breeze. The water carries the heat off your skin. Cooling is moving from blowing air to running liquid onto the chip.</p>
 </details>
 
 ## Why air stopped working
 
-For twenty years data centres were cooled with air. Fans pushed cold air through the servers, warm air came out the back, and chillers cooled it down again. That worked because a normal server rack drew 5 to 10 kilowatts.
+For twenty years data centres were cooled with air. Fans pushed cold air through the servers, and that worked because a normal rack drew 5 to 10 kilowatts.
 
-Air has a limit, and the industry has just passed it permanently. Somewhere between 30 and 50 kilowatts per rack, air simply cannot carry heat away fast enough. To cool a 120 kilowatt rack with air you would need something close to hurricane-force wind blowing through the electronics.
+Somewhere between 30 and 50 kilowatts per rack, air simply cannot carry heat away fast enough. Water, per unit of volume, carries heat roughly three thousand times better.
 
-Water is a different animal. Per unit of volume it carries heat roughly three thousand times more effectively than air. So the industry is doing what car engines did a century ago: switching from air to liquid.
+So the mainstream answer in 2026 is direct-to-chip. A metal plate with liquid channels sits on each chip, and hoses run to a CDU, the coolant distribution unit, which pumps liquid round the loop like the rack's heart. Current flagship AI racks require it. The most extreme option, immersion, dunks the whole server in non-conductive fluid.
 
-## Three ways to do it
+None of this can be bolted on quickly. Many buildings designed for air have floors, plumbing and electrical rooms that cannot take liquid without a refit.
 
-**Rear-door heat exchanger.** A water-cooled radiator bolted to the back of the rack. The servers still cool themselves with air, but the hot air hits a cold radiator before it leaves. A transitional patch for existing buildings.
+## What the industrial companies did
 
-**Direct-to-chip.** This is the mainstream answer in 2026. A metal plate with liquid channels sits directly on each chip, the way a water block sits on a gaming PC's processor, and hoses run to a unit called a CDU, the coolant distribution unit, which is effectively the rack's heart, pumping liquid round the loop. The current flagship AI racks require this. It is not an option.
+Cooling is indifferent to who wins the chip war. Whether the chips come from Nvidia, AMD or Google, the heat has to go somewhere.
 
-**Immersion.** Dunk the entire server in a tank of non-conductive fluid. Think of deep-frying a computer that never burns. The most extreme option, and the one that handles the most heat per rack.
+The industrial companies have said as much with their own money. Within months of each other, Eaton bought Boyd Thermal and Schneider Electric bought Motivair, both specialist liquid-cooling businesses. Two electrical giants buying into the same niche tells you what they think every future data centre looks like.
 
-## The number that turns physics into money
+## What binds: efficiency and water
 
-Data centre efficiency is measured by a single ratio called PUE, power usage effectiveness. It is the total electricity entering the building divided by the electricity that actually reaches the computers. A perfect score is 1.0. Everything above that is overhead, and most of the overhead is cooling.
+Efficiency is measured by PUE, power usage effectiveness: the electricity entering the building divided by what reaches the computers. Old air-cooled halls run around 2.0, modern liquid-cooled ones around 1.1, and Singapore rations capacity by it.
 
-Old air-cooled data centres run around 2.0, meaning for every watt reaching a chip, another watt was spent on fans and chillers. Modern liquid-cooled ones run around 1.1. Take that gap, multiply it by a gigawatt of demand and by the price of electricity, and it is real money every hour of every day. This is why Singapore, which rations data centre capacity by efficiency, set its bar at a PUE of 1.25 or better.
-
-There is a catch on the water side. Some cooling designs evaporate millions of gallons a year, and in dry regions that has become a permitting fight. Water availability now decides where facilities can be built at all.
-
-## Why cooling does not care who wins
-
-The thing I find compelling about cooling is that it is indifferent to who wins the chip war. Whether the chips are made by Nvidia, AMD, Google or someone not yet founded, they will give off heat, and the heat has to go somewhere. Heat is heat.
-
-The industrial companies have said as much with their wallets. Within months of each other, Eaton bought Boyd Thermal and Schneider Electric bought Motivair, both specialist liquid-cooling businesses. When two electrical giants buy into the same niche at the same time, they are telling you what they think every future data centre looks like. What companies spend their own money on tells you more than any forecast.
-
-## What I'm watching
-
-Three things. Whether immersion moves from the fringe to the mainstream as racks pass 600 kilowatts, because at that density even direct-to-chip starts to strain. Whether water permitting becomes a hard cap on siting in the places with the cheapest power. And the PUE figures that operators actually publish, because the gap between a design target and a running building is where the money either is or isn't.
+Water is the other limit. Some cooling designs evaporate millions of gallons a year, and in dry regions water now decides where a facility can be built at all.
 
 <section class="exposure">
 <h3>Who is exposed if cooling moves to liquid</h3>
 <p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares.</p>
 <dl>
 <dt>The one-stop suppliers</dt>
-<dd><span class="names">Vertiv</span> sells both the power gear and the liquid cooling, which is rare. <span class="names">Schneider Electric</span> and <span class="names">Eaton</span> make power gear and, through Motivair and Boyd Thermal, liquid cooling.</dd>
+<dd><span class="names">Vertiv</span>, <span class="names">Schneider Electric</span> and <span class="names">Eaton</span> make power gear and liquid cooling.</dd>
 <dt>The specialists</dt>
-<dd><span class="names">CoolIT</span> makes cold plates shipping inside many brand-name servers. <span class="names">nVent</span> makes loops and enclosures. <span class="names">Munters</span> makes air handlers, <span class="names">Modine</span> makes chillers, and <span class="names">Asetek</span> makes liquid cooling loops.</dd>
+<dd><span class="names">CoolIT</span> makes cold plates, <span class="names">nVent</span> loops and enclosures, <span class="names">Munters</span> air handlers, <span class="names">Modine</span> chillers and <span class="names">Asetek</span> cooling loops.</dd>
 <dt>The component layer</dt>
-<dd>Pumps, plates and distribution units from <span class="names">Delta, LiteOn</span> and the Taiwanese thermal suppliers feeding the rack builders.</dd>
-<dt>Why the chip race does not matter here</dt>
-<dd>Cooling does not care which chip company wins. Whether the silicon is <span class="names">Nvidia, AMD</span> or a giant cloud company's own design, it produces heat and the heat has to go somewhere.</dd>
+<dd><span class="names">Delta, LiteOn</span> and other Taiwanese suppliers make pumps, plates and distribution units.</dd>
+<dt>The chips that make the heat</dt>
+<dd><span class="names">Nvidia, AMD</span> and the cloud giants design the silicon, and all of it gives off heat.</dd>
 </dl>
 <dl class="against">
 <dt>On the other side</dt>
-<dd>Air-only cooling incumbents, and existing buildings whose floor loading, plumbing and electrical rooms cannot take liquid without a refit.</dd>
+<dd>Air-only cooling incumbents, and existing buildings that cannot take liquid without a refit.</dd>
 </dl>
 </section>
 
 ---
 
-<p class="sources">This piece explains mechanism: why air fails, how liquid cooling works, and what PUE measures. The figures used are physical and structural (heat per chip, the air ceiling, the water-versus-air ratio, typical PUE ranges). The two acquisitions are a matter of public record. I hold no view here on individual equipment makers. Personal research, not investment advice.</p>
+<p class="sources">This piece explains mechanism: why air fails, how liquid cooling works and what PUE measures, using physical figures and two acquisitions of public record. I hold no view here on individual equipment makers. Personal research, not investment advice.</p>

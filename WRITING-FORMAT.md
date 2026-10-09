@@ -6,13 +6,15 @@ contract it works to. Nothing here is a suggestion.
 
 > ## THE FIRST RULE. EXPLANATION IN THE JOURNAL, NUMBERS IN THE RESEARCH. (Tommy, 8 Oct 2026, permanent)
 > The journal is for a layman with no financial background. Every piece must be short, sweet,
-> professional and easy to understand: **about a five minute read (900 to 1,150 words, never over
-> 1,300), 15 figures at most, 3 company financial figures at most.** Use a number only when the point
+> professional and easy to understand: **about a five minute read for a person reading to understand
+> (450 to 600 words in the body, never over 700, plus a short exposure map and sources line), 15 figures
+> at most, 3 company financial figures at most.** Use a number only when the point
 > does not land without it. Revenue tables, segment splits, quarter-by-quarter comparisons, guidance
 > and deal arithmetic belong in the research notes at `/research`, never in a journal piece.
 > On 8 Oct 2026 twenty-one pieces that had drifted to 1,400 words and up to 78 figures were rewritten
-> to this standard. `brand/check-piece.py` enforces it. Full rule: §4b. The model company piece is
-> `schneider-sells-the-finished-system.md`.
+> to this standard. On 9 Oct 2026 Tommy timed himself at 10 to 15 minutes a piece, reading to understand,
+> so every piece was cut again to the short skeleton in §3 (about 100 words a minute for real reading).
+> `brand/check-piece.py` enforces it. Full rule: §4b. The model piece is `ge-vernova-sells-the-wait.md`.
 
 ---
 
@@ -90,7 +92,14 @@ in it. It can never change once published without breaking links.
 
 ## 3. The body, in order
 
-### 3.1 Cold open, three to five short paragraphs
+**The short skeleton (Tommy, 9 Oct 2026, permanent).** Every piece is these parts and no others:
+summary, cold open, analogy, how it works, the evidence, what would prove me wrong (Analysis only),
+exposure map, sources. About 600 to 650 words in all. No separate definitions section, no second
+angle, no "where I stop" or "what I'm watching" section: fold one line of either into the falsifier
+if it matters. The claims page holds the full falsifier, the glossary holds definitions, the map holds
+the layer and the research note holds the numbers, so the piece does not repeat them.
+
+### 3.1 Cold open, three or four short paragraphs, about 80 words
 
 No throat-clearing, no "in this piece I will". Open on one of four moves, all
 of which the first six use:
@@ -118,7 +127,7 @@ text and never changes.
 </details>
 ```
 
-Two to four `<p>`. Rules:
+Two `<p>`, about 70 words in all. Rules:
 
 - Objects a person already owns or has stood next to. Laptops on knees,
   hairdryers, a wardrobe, a swimming pool on a breezy day, a kitchen countertop,
@@ -128,10 +137,24 @@ Two to four `<p>`. Rules:
 - Build in order: the familiar thing, then the scale, then why the naive fix
   fails, then the image that transfers.
 
-### 3.3 Four to six `##` sections
+### 3.3 Three `##` sections, about 350 words together
 
-Headings are short and plain, sentence case, no numbering. Recurring shapes,
-all drawn from the first six:
+Headings are short and plain, sentence case, no numbering.
+
+1. **How it works** (about 200 words). The physical mechanism, with any jargon defined in the
+   sentence where it appears. It includes, in two or three sentences, why supply cannot simply
+   catch up.
+2. **The evidence** (about 100 words). The company's own disclosure or statement that shows the
+   mechanism is real. One figure, two at most, tied to the mechanism in the next sentence.
+3. **What would prove me wrong** (about 60 words, Analysis only). Three or four sentences naming
+   the observable that would kill the claim. Same test as the claims page, said plainly.
+
+An Explainer has no falsifier, so its third section is the constraint or the clock: what binds
+and why. A whole-stack Explainer may use one extra section where the walk through the chain needs
+it, but stays inside the word limit.
+
+The older shapes below are kept for reference. Use them only as headings for the three sections
+above, never as extra sections:
 
 | Shape | Real examples |
 |---|---|
@@ -179,8 +202,9 @@ Just before the closing `---`.
   recommendation, and naming a company is not a view on its shares." A piece may
   add one further statement after it, as the memory piece does when it says the
   author holds no investment view on memory.
-- Three to six `<dt>` groups. Each `<dd>` says **what the company makes**, and
-  nothing else.
+- Three or four `<dt>` groups, one short line each, about 100 words for the whole map. Each `<dd>`
+  says **what the company makes**, and nothing else. When trimming, merge groups rather than drop
+  names: company pages are built from these names.
 - Company names go inside `<span class="names">`.
 - The `<dl class="against">` block is **mandatory for any piece making a
   directional claim**, which is every Analysis piece and almost every Explainer.
@@ -195,7 +219,7 @@ Just before the closing `---`.
 
 ### 3.5 The sources line
 
-After the closing `---`, one paragraph, no heading:
+After the closing `---`, one paragraph of one or two sentences, no heading:
 
 ```html
 <p class="sources">...</p>
@@ -228,8 +252,8 @@ These are not preferences. They are what the existing corpus does.
 | Semicolons sparingly | 8 in total |
 | British spelling always | centres, energised, analysed. 0 US spellings |
 | Sentences short | 14 to 20 words average |
-| Paragraphs short | 1 to 4 sentences, 18 to 28 paragraphs per piece |
-| Length | 900 to 1,150 words, which reads as about 5 minutes (Tommy, 8 Oct 2026: a journal piece is a five to seven minute read, never longer) |
+| Paragraphs short | 1 to 4 sentences, about 12 to 16 paragraphs per piece |
+| Length | 450 to 600 words in the body, never over 700, plus about 100 in the exposure map and 30 in the sources line. Reads in about 5 to 6 minutes at real reading pace (Tommy, 9 Oct 2026) |
 
 Voice:
 
@@ -507,13 +531,13 @@ Run it before you build. Every published piece passes with no failures.
 - [ ] `date` is the real publish time, not a planned or future one
 - [ ] Cold open ends on the thesis, alone on its line
 - [ ] Analogy block present, fixed summary line, household objects, no finance
-- [ ] Four to six `##` sections, sentence case
+- [ ] Three `##` sections, sentence case: how it works, the evidence, what would prove me wrong (or the constraint, for an Explainer)
 - [ ] Exposure map present, with the fixed disclaimer and an "on the other side" block
 - [ ] No share price, valuation, target, rating or recommendation anywhere
 - [ ] Any financial figure is the company's own, dated, sourced, and tied to the mechanism
 - [ ] Sources paragraph, ending "Personal research, not investment advice."
 - [ ] Every jargon term defined in place, and present in the glossary
 - [ ] On the map in `stack.ts`; if Analysis, on the claims page in `claims.ts`
-- [ ] No em dashes. British spelling. 900 to 1,150 words, about 5 minutes
+- [ ] No em dashes. British spelling. 450 to 600 words in the body, never over 700
 - [ ] Numbers budget kept (§4b): 15 figures at most, 3 company financial figures at most, never two money figures in one paragraph
 - [ ] Cover SVG in place, social card regenerated, build clean

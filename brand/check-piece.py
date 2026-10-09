@@ -98,8 +98,8 @@ def check(path):
     else:
         blk = body.split(ANALOGY_SUMMARY)[1].split('</details>')[0]
         n = blk.count('<p>')
-        if not 2 <= n <= 4:
-            warns.append(f'analogy has {n} paragraphs; the format asks for 2 to 4')
+        if not 2 <= n <= 3:
+            warns.append(f'analogy has {n} paragraphs; the format asks for 2')
         first_h2 = body.find('\n## ')
         if first_h2 != -1 and body.find(ANALOGY_SUMMARY) > first_h2:
             fails.append('analogy block must come before the first ## heading')
@@ -115,9 +115,13 @@ def check(path):
                 'exposure map has no "on the other side" block')
         if '<span class="names">' not in body:
             warns.append('exposure map names no companies in <span class="names">')
-        groups = body.count('<dt>')
-        if not 3 <= groups <= 7:
-            warns.append(f'{groups} exposure groups; the format asks for 3 to 6')
+        groups = body.count('<dt>')  # includes "On the other side"
+        if not 3 <= groups <= 6:
+            warns.append(f'{groups} exposure groups; the format asks for 3 or 4 plus the other side')
+        ex = re.search(r'<section class="exposure">(.*?)</section>', body, re.S)
+        exw = len(re.sub(r'<[^>]+>', ' ', ex.group(1)).split()) if ex else 0
+        if exw > 150:
+            warns.append(f'exposure map is {exw} words; the format asks for about 100')
 
     # ── sources
     m = re.search(r'<p class="sources">(.*?)</p>', body, re.S)
@@ -125,11 +129,13 @@ def check(path):
         fails.append('no sources paragraph')
     elif not m.group(1).strip().endswith(SOURCES_TAIL):
         fails.append(f'sources paragraph must end "{SOURCES_TAIL}"')
+    elif len(m.group(1).split()) > 60:
+        warns.append(f'sources line is {len(m.group(1).split())} words; the format asks for one or two sentences')
 
     # ── shape
     h2 = re.findall(r'^## (.+)$', body, re.M)
-    if not 3 <= len(h2) <= 7:
-        warns.append(f'{len(h2)} ## sections; the format asks for 4 to 6')
+    if not 2 <= len(h2) <= 4:
+        warns.append(f'{len(h2)} ## sections; the format asks for 3')
     if cat == 'Analysis' and not any('prove me wrong' in h.lower() for h in h2):
         fails.append('an Analysis piece must carry a "What would prove me wrong" section')
 
@@ -154,10 +160,10 @@ def check(path):
     rb = re.sub(r'<p class="sources">.*?</p>', '', rb, flags=re.S)
     rb = re.sub(r'<[^>]+>', ' ', rb)
     words = len(rb.split())
-    if words > 1300:
-        fails.append(f'{words} words; a journal piece is 900 to 1,150 (about 5 minutes), never over 1,300')
-    elif not 700 <= words <= 1150:
-        warns.append(f'{words} words; the format asks for 900 to 1,150')
+    if words > 700:
+        fails.append(f'{words} words; a journal piece is 450 to 600 in the body (about 5 minutes), never over 700')
+    elif not 400 <= words <= 600:
+        warns.append(f'{words} words; the format asks for 450 to 600')
     figures = len(re.findall(r'(?<![A-Za-z\d.,])\d[\d,.]*(?![A-Za-z]*\d)', rb))
     money = len(re.findall(r'(?:(?:US|S|HK)?\$|€|£|¥)\s?\d[\d.,]*(?:\s*(?:billion|million|bn)\b)?|(?<![\d.,$€£¥])\d[\d.,]*\s*(?:billion|million|bn)\b', rb))
     if money > 4:

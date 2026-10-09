@@ -7,96 +7,62 @@ cover: "/covers/two-seconds.svg"
 tags: ["explainer", "inference", "the-stack"]
 ---
 
+
 Start with a question you have probably never asked: where does the answer come from?
 
-When you search Google, the answer already exists. The internet was read and indexed years ago, and your query is a lookup. The expensive work was done in advance, which is why a search costs a fraction of a cent.
+When you search Google, the answer already exists. The internet was indexed years ago, and your query is a lookup.
 
-When you ask an AI assistant, nothing exists yet. The model writes the reply from scratch, one word at a time, every single time, even if a million people asked the same thing this morning. There is no shelf. There is a factory.
+When you ask an AI assistant, nothing exists yet. The model writes the reply from scratch, one word at a time, even if a million people asked the same thing this morning.
 
-That is the whole story of the AI buildout in one sentence. Generating text is a manufacturing process, and manufacturing needs a plant, power, cooling and logistics. Multiply one query by hundreds of millions of people a week and you get the reason companies are spending hundreds of billions of dollars on buildings.
+There is no shelf. There is a factory.
 
 <details class="analogy">
 <summary>Explain it like I don't work in finance</summary>
-<p>Think of a restaurant rather than a library. A library already has the book on the shelf; finding it is quick and cheap. A restaurant has no finished meal waiting. Every order is cooked from scratch, even if fifty people ask for the same dish.</p>
-<p>An AI assistant is the restaurant. That is why it costs so much more per question than a web search, and why the whole industry suddenly cares about electricity and plumbing rather than software.</p>
-<p>And the trick that keeps your meal cheap is the same one restaurants use. The chef does not cook fifty separate pans, they cook one big pan and plate fifty servings. In AI that is called batching: your question is processed alongside hundreds of strangers' questions on the same chip at the same moment. It is the difference between your question costing pennies and costing pounds.</p>
+<p>Think of a restaurant rather than a library. A library already has the book on the shelf. A restaurant has no finished meal waiting, and every order is cooked from scratch.</p>
+<p>The trick that keeps your meal cheap is that the chef cooks one big pan and plates fifty servings. Your AI question is cooked the same way, alongside hundreds of strangers' questions on the same chip.</p>
 </details>
 
-## Three words that unlock the rest
+## How the factory makes a word
 
-**Token.** The thing the factory makes. A token is a chunk of text, roughly three quarters of a word. Your question is chopped into tokens on the way in, and the answer is manufactured token by token on the way out. It is also the unit the labs charge for. A token is the widget coming off the line.
+The thing the factory makes is a **token**, a chunk of text about three quarters of a word. Your question is chopped into tokens on the way in, and the answer is made token by token on the way out.
 
-**FLOP.** The unit of labour. One floating-point operation is a single multiply or add. Producing one token takes hundreds of billions of them. Not per answer, per word. A chip's speed in FLOPs per second is how many workers it has on the floor.
+The unit of labour is a **FLOP**, a floating-point operation, meaning a single multiply or add. Producing one token takes hundreds of billions of them. Not per answer, per word.
 
-**Training versus inference.** Training is building the model: adjusting over a trillion internal settings across months of computation. It happens once per model. Inference is running it: every question anyone asks, billions of times a day. The instinct is that training is where the money goes. It isn't. By 2026 most AI computation is inference. The money is in running the factory, not building it.
+**Training** is building the model, once, over months of computation. **Inference** is running it, every time anyone asks anything. By 2026 most AI computation is inference. The money is in running the factory, not building it.
+
+What keeps it affordable is **batching**: your question runs through the chip together with hundreds of others at the same moment. That is the difference between a query costing cents and costing dollars.
 
 ## The journey, slowed down
 
-Here is what happens between your thumb and the first word of the reply.
+Your question leaves your phone as radio waves, then travels as light in glass fibre, often hundreds of miles to a data centre.
 
-**The trip.** Your question leaves your phone as radio waves, reaches a tower or router, becomes pulses of light in glass fibre travelling at about two thirds the speed of light, and often crosses hundreds of miles to reach a data centre.
+There the model reads your whole prompt at once, a step called prefill. That is the short pause before the first word. Then it writes, one token at a time, each needing a full pass through the network. When an answer types itself out, you are watching an assembly line run. Total time, about two seconds.
 
-**The front door.** A gateway checks who you are, applies limits, runs a safety screen, and staples your question to the system's instructions and your past conversation.
-
-**Tokenisation.** The text is chopped into tokens and turned into numbers. From here on, everything is arithmetic.
-
-**Prefill: the model reads.** It takes in the whole prompt at once, in parallel, in a burst of billions of calculations. This produces something called the KV cache, which is the model's working memory of your conversation. The short pause before the first word appears is prefill happening.
-
-**Decode: the model writes.** One token at a time. Each word requires a full pass through the entire network, hundreds of billions of calculations, and then it does it again for the next word. When you watch an answer type itself out, you are watching an assembly line run.
-
-**The trip home.** Each token streams back down the same fibre. Total elapsed time, about two seconds.
-
-## Why it costs cents and not dollars
-
-There is one trick behind the curtain that makes this affordable, and it is worth knowing because it explains a lot of the hardware.
-
-Your question is not processed alone. It is grouped with hundreds of other people's questions and run through the same chip at the same time, the way a delivery driver batches orders on one route. This is called batching, and it is the difference between a query costing cents and costing dollars.
-
-Two more tricks stack on top. The working memory from your conversation is reused rather than recomputed for every word. And the model's numbers are rounded to lower precision, like a slightly compressed photo, near-identical to the eye at a fraction of the cost. Together these software tricks alone cut the cost of a token by several times. When you see the price of an AI service fall sharply in a year, most of that is this layer, not a new chip.
-
-## The factory in layers
-
-Every AI data centre is the same seven layers, bottom to top:
-
-1. **Power.** Generation, grid connection, transformers, backup. The raw material.
-2. **Cooling.** Liquid loops, pumps and chillers. Half the job, as [the cooling piece](/journal/cooling-is-half-the-job/) explains.
-3. **Compute.** The chips themselves.
-4. **Memory and storage.** Fast memory stacked beside the chip, slower storage behind it.
-5. **Networking.** The links that let ten thousand chips act as one machine.
-6. **Software.** The layer that makes the hardware usable and affordable.
-7. **Models and apps.** The labs, the APIs, the subscription you pay for.
-
-One sentence for the whole thing: electricity flows through silicon and becomes computation and heat; water carries the heat away; light coordinates the computation; words ship out the door.
+Underneath sit seven layers: power, cooling, chips, memory, networking, software, and the models and apps on top. Cooling alone is [half the job](/journal/cooling-is-half-the-job/). Electricity flows through silicon and becomes computation and heat, water carries the heat away, and light coordinates it all.
 
 ## Why the story moved from chips to electricity
 
-For fifty years, better software meant hiring cleverer programmers. Intelligence was a research problem. Then, around 2020, researchers found that making a model bigger, feeding it more data and spending more computation made it predictably smarter. Spend ten times more, get a reliably better model.
+Around 2020, researchers found that a bigger model, fed more data and more computation, got predictably smarter. That turned intelligence into something you can buy, and large companies know how to outspend everyone.
 
-That turned intelligence into something you can purchase, and large companies know exactly how to compete on purchasing: outspend everyone. Software used to be the escape from the physical world, with no factory and no marginal cost. AI reversed it. The frontier of software is now poured in concrete, measured in megawatts and cooled with water.
+Software used to be the escape from the physical world. AI reversed it. The frontier of software is now poured in concrete, measured in megawatts and cooled with water.
 
-Software became heavy industry. And heavy industry is gated by the slowest thing in the chain, which is never the chip. It is the building, the wires and the water. That is what the rest of this journal is about.
+Heavy industry is gated by the slowest thing in the chain, which is never the chip. It is the building, the wires and the water.
 
 <section class="exposure">
 <h3>Who sits in each layer</h3>
 <p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares.</p>
 <dl>
-<dt>Power</dt>
-<dd>Generation, grid connection, transformers and backup. <span class="names">Hitachi Energy, Siemens Energy, GE Vernova, Schneider Electric, Eaton, ABB, Caterpillar, Cummins</span>.</dd>
-<dt>Cooling</dt>
-<dd>Liquid loops, coolant distribution units and chillers. <span class="names">Vertiv, Schneider Electric, Eaton, nVent, CoolIT, Munters</span>.</dd>
-<dt>Compute</dt>
-<dd>The accelerators and the processors beside them. <span class="names">Nvidia, AMD, Broadcom</span> for custom silicon, built by <span class="names">TSMC</span>, assembled by <span class="names">Foxconn, Quanta, Wiwynn, Supermicro, Dell</span>.</dd>
-<dt>Memory and storage</dt>
-<dd>Stacked memory beside the chip, drives behind it. <span class="names">SK Hynix, Samsung, Micron, Seagate, Western Digital, Kioxia</span>.</dd>
+<dt>Power and cooling</dt>
+<dd>Grid, backup and liquid cooling gear: <span class="names">Hitachi Energy, Siemens Energy, GE Vernova, Schneider Electric, Eaton, ABB, Caterpillar, Cummins</span>, and <span class="names">Vertiv, Schneider Electric, Eaton, nVent, CoolIT, Munters</span>.</dd>
+<dt>Chips and memory</dt>
+<dd><span class="names">Nvidia, AMD, Broadcom</span> design chips, <span class="names">TSMC</span> makes them, <span class="names">Foxconn, Quanta, Wiwynn, Supermicro, Dell</span> assemble servers. Memory and drives: <span class="names">SK Hynix, Samsung, Micron, Seagate, Western Digital, Kioxia</span>.</dd>
 <dt>Networking</dt>
-<dd>The links that make thousands of chips act as one. <span class="names">Broadcom, Nvidia, Arista, Marvell, Astera Labs, Coherent, Lumentum, Fabrinet, Corning, Amphenol</span>.</dd>
-<dt>Buildings and land</dt>
-<dd>The campuses themselves. <span class="names">Equinix, Digital Realty, AirTrunk, Princeton Digital Group, STT GDC, Keppel Data Centres, Vantage</span>.</dd>
-<dt>Models and apps</dt>
-<dd>The labs and the subscriptions. <span class="names">OpenAI, Anthropic, Google, Meta, Microsoft, Amazon</span>.</dd>
+<dd><span class="names">Broadcom, Nvidia, Arista, Marvell, Astera Labs, Coherent, Lumentum, Fabrinet, Corning, Amphenol</span> make the links.</dd>
+<dt>Buildings, models and apps</dt>
+<dd>Campuses: <span class="names">Equinix, Digital Realty, AirTrunk, Princeton Digital Group, STT GDC, Keppel Data Centres, Vantage</span>. Labs: <span class="names">OpenAI, Anthropic, Google, Meta, Microsoft, Amazon</span>.</dd>
 </dl>
 </section>
 
 ---
 
-<p class="sources">This piece is a plain-language explainer, written from my own study notes on the AI infrastructure stack. It describes mechanism, not market figures; where numbers appear they are structural (how a token is made, what a FLOP is) rather than financial. Personal research, not investment advice.</p>
+<p class="sources">This piece is a plain-language explainer, written from my own study notes on the AI infrastructure stack, and its numbers are structural rather than financial. Personal research, not investment advice.</p>

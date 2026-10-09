@@ -76,7 +76,8 @@ cover brief and LinkedIn post, is yours to write.
 - **Do not add a new piece to `READING_PATH`.** The reading page is a capped
   on-ramp, not an index. See the README section on it.
 - House style: no em dashes, British spelling, 14 to 20 word sentences,
-  900 to 1,150 words (about a 5 minute read).
+  450 to 600 words in the body (about a 5 minute read for a person reading to
+  understand), in the short skeleton of WRITING-FORMAT.md §3 (Tommy, 9 Oct 2026).
 - **Explanation in the journal, numbers in the research** (Tommy, 8 Oct 2026).
   A journal piece is written for a layman with no finance background: 15
   figures at most, 3 company financial figures at most. Financial detail lives

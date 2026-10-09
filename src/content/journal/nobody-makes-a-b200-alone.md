@@ -10,106 +10,67 @@ draft: false
 
 Pick up an Nvidia B200 and ask a simple question: who made it? The honest answer is nobody, not alone.
 
-Nvidia designed it, but Nvidia runs no chip factories. TSMC made its two slabs of logic, mostly in Taiwan, using machines only ASML in the Netherlands can build. Nvidia buys its memory from three makers, two of them South Korean. The bare silicon came from a short list of wafer makers, the largest of them Japanese.
+Nvidia designed it, but runs no chip factories. TSMC made its two slabs of logic, mostly in Taiwan, using machines only ASML in the Netherlands can build. Its memory comes from three makers, two of them South Korean.
 
-The chip holds 208 billion transistors, according to Nvidia. Placing one every second, without a break, would take about 6,600 years.
-
-So the useful question is not who makes each part.
+The chip holds 208 billion transistors, according to Nvidia. So the useful question is not who makes each part.
 
 The B200's real dependency is how long each part would take to replace.
 
 <details class="analogy">
 <summary>Explain it like I don't work in finance</summary>
-<p>Think of a wedding cake. One baker designs it, but the flour, the eggs, the icing and the stand all come from different shops, and some are the only shop in town that makes that thing.</p>
-<p>If the eggs run out, you buy eggs elsewhere tomorrow. If the one shop that makes the sugar flowers closes, you wait while someone else learns, then test their flowers on a few cakes before trusting them on the day.</p>
-<p>A B200 is that cake with hundreds of suppliers. The ones that matter are not the biggest. They are the ones that would take longest to learn.</p>
+<p>Think of a wedding cake. One baker designs it, but the flour, the eggs and the sugar flowers come from different shops. If the eggs run out, you buy eggs elsewhere tomorrow.</p>
+<p>If the only shop that makes the sugar flowers closes, you wait while someone else learns, then test their flowers before trusting them. The suppliers that matter are the ones that would take longest to learn.</p>
 </details>
-
-## Three words you need
-
-**Die.** A single chip cut from a wafer, the thin silicon disc on which hundreds are made together. The chip joins two large logic dies so they behave as one processor.
-
-**Package.** The finished component you could hold, with dies, memory and wiring mounted together on a base.
-
-**Qualification.** The months or years of testing a customer runs before trusting a new supplier's part. It is why a cheaper alternative cannot simply be swapped in.
 
 ## From blueprint to wafer
 
-Design is Nvidia's own work, and this journal leaves it alone. What matters is tape-out, when the finished design goes to the factory.
+The finished design becomes masks, plates carrying the circuit pattern for one layer, made on blank plates from Japanese suppliers such as AGC and Hoya. Wafers, the thin silicon discs chips are made on, come largely from Shin-Etsu and SUMCO.
 
-The design becomes masks, plates carrying the circuit pattern for one layer of the chip. The most advanced masks are themselves mirrors, made on blank plates from Japanese suppliers such as AGC and Hoya.
+Lithography prints the pattern with light. The finest layers use extreme ultraviolet light, EUV, which ASML describes as unique to itself, bounced off mirrors made by ZEISS in Germany.
 
-The wafers begin as single crystals of ultra-pure silicon, sliced into thin discs. Two Japanese companies, Shin-Etsu and SUMCO, are among the largest makers.
+TSMC makes the dies, the single chips cut from a wafer, on a custom four nanometre process. Each die is as large as the factory's printing field allows, which is why there are two.
 
-Then comes lithography, printing the pattern onto the wafer with light. The finest layers use extreme ultraviolet light, EUV, which has a very short wavelength. ASML describes the technology as unique to itself.
+## Memory, the package and the rack
 
-The light bounces off mirrors made by ZEISS in Germany. ZEISS says that if one were enlarged to the size of Germany, its largest bump would be 0.1 millimetres high.
+Beside the logic sit eight stacks of HBM, memory chips piled vertically. Nvidia names SK Hynix, Micron and Samsung as suppliers, and each maker's stacks must pass qualification, months of testing, for each chip.
 
-TSMC makes the dies on a custom version of its four nanometre process. Nvidia says each die is as large as the factory's printing field allows, which is why there are two.
+TSMC's CoWoS packaging joins dies and memory on a slab of fine wiring, mounted on a substrate from makers such as Ibiden. Inside it is insulating film from Ajinomoto, whose new film plant will not operate until 2032.
 
-## Memory, the package and the test
-
-Beside the logic sit eight stacks of HBM, high-bandwidth memory: memory chips piled vertically and wired through their own silicon. Nvidia's annual report names SK Hynix, Micron and Samsung as its memory suppliers.
-
-Each maker's stacks must be qualified for each accelerator, so they are ordered far ahead. Last December Micron said it had already agreed price and volume for its whole supply of HBM for this year.
-
-The dies and memory are joined in TSMC's CoWoS packaging, short for chip on wafer on substrate. For Blackwell, Nvidia's chief executive has said, that means largely a version called CoWoS-L. The chips sit on an interposer, a slab of extremely fine wiring with small silicon bridges between neighbours.
-
-The interposer is mounted on a package substrate, a laminated circuit board that carries power and signals out to the computer. A small group of makers, such as Ibiden in Japan and Unimicron in Taiwan, builds the substrates for AI processors.
-
-Inside each substrate is insulating film from Ajinomoto, a company better known for seasoning. Ajinomoto says its film has become the choice for nearly all high-performance central processors. This May it announced land for a new film plant, which will not operate until 2032.
-
-Finally the package is tested across temperature, voltage and speed, on machines from companies such as Advantest and Teradyne.
-
-## Into the rack
-
-In Nvidia's flagship rack, 72 Blackwell processors sit beside 36 Grace processors, Nvidia's own central processors built on Arm designs. Nvidia's switch chips join all 72 so they act as one machine.
-
-Between racks, signals pass through switches, usually Nvidia's own in its clusters, with Broadcom's chips the alternative, and travel as light down Corning's glass. Transceivers, which turn electricity into light and back, use lasers from Coherent and Lumentum and often Marvell's signal chips.
-
-Power reaches the building as hundreds of volts of alternating current and the processor at less than one volt, through conversion chips from companies such as Texas Instruments, Infineon and Monolithic Power Systems. Liquid carries the heat away through cold plates, metal blocks with liquid channels clamped on each chip, and pumps from companies such as Vertiv. Foxconn, Quanta and Wistron assemble the whole thing.
+In Nvidia's flagship rack, 72 Blackwell processors join through Nvidia's switch chips. Lasers, glass fibre, power chips and cold plates surround them, and Foxconn, Quanta and Wistron assemble the whole thing.
 
 ## The clock on each part
 
 My own rough sort, by how long each supplier would take to replace, gives four groups.
 
-**Swappable fastest.** Rack assembly, connectors and much of the power hardware. Several firms can do the work, so moving it probably takes months rather than years.
+**Swappable fastest.** Rack assembly, connectors and much of the power hardware, which several firms can do in months rather than years.
 
-**A handful, each slow to qualify.** HBM, substrates, test equipment and photoresist, the light-sensitive coating that lithography prints into. Rivals exist, but each new part must be proven on each new chip, which takes quarters or years.
+**A handful, each slow to qualify.** HBM, substrates, test equipment and photoresist, the light-sensitive coating lithography prints into. Each new part must be proven on each new chip.
 
-**Short of capacity.** TSMC's fabs, its chip factories, and its packaging lines. For this chip they are in practice also the only source of the dies and the packaging. This July, TSMC said packaging capacity was so tight it was limiting customers' growth. Its chief has said a new fab takes two to three years to build and one to two more to fill.
+**Short of capacity.** TSMC's fabs and packaging lines. Its chief has said a new fab takes two to three years to build and one to two more to fill.
 
-**No second source at all.** EUV machines and their mirrors. I put Ajinomoto's film close by, though rival films exist and its own claim covers central processors. Replacing either is not a purchasing decision, and Ajinomoto's own new plant is years away.
+**No second source at all.** EUV machines and their mirrors, with Ajinomoto's film close by. Replacing either is not a purchasing decision.
 
-Nvidia's annual report shows the cost. It says lead times have run beyond twelve months, and that it has paid premiums and deposits and signed long-term capacity commitments. That is a chip designer paying for time in other people's factories.
-
-## Where I stop
-
-A sole supplier with spare capacity is a manageable risk. One whose replacement would take a decade is a different kind of risk.
-
-I make no prediction about the slowest links here. Each has its own piece: [ASML](/journal/asml-booked-ahead/), [Ajinomoto](/journal/ajinomoto-grows-with-the-package/) and [Micron](/journal/micron-three-times-the-wafer/). This one is the map.
+Nvidia's annual report shows the cost: lead times beyond twelve months, paid with deposits and long-term capacity commitments. The slowest links each have their own piece: [ASML](/journal/asml-booked-ahead/), [Ajinomoto](/journal/ajinomoto-grows-with-the-package/) and [Micron](/journal/micron-three-times-the-wafer/).
 
 <section class="exposure">
 <h3>Who operates at each stage of a B200</h3>
-<p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares. Nvidia's and Micron's disclosures are used as evidence for the mechanism, and I draw no conclusion from them about value.</p>
+<p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares.</p>
 <dl>
 <dt>The subject</dt>
-<dd><span class="names">Nvidia</span> designs the B200, the Grace processor and the switch chips that join them, using processor designs licensed from <span class="names">Arm</span>.</dd>
-<dt>The factory and its machines</dt>
-<dd><span class="names">TSMC</span> makes and packages the dies. <span class="names">ASML</span> builds the EUV machines, with mirrors from <span class="names">ZEISS</span> and lasers from <span class="names">Trumpf</span>. <span class="names">Applied Materials, Lam Research, Tokyo Electron</span> and <span class="names">KLA</span> make deposition, etching and inspection tools.</dd>
-<dt>The materials</dt>
-<dd><span class="names">Shin-Etsu</span> and <span class="names">SUMCO</span> make wafers, <span class="names">JSR</span> and <span class="names">Tokyo Ohka Kogyo</span> photoresist, <span class="names">AGC</span> and <span class="names">Hoya</span> mask blanks, and <span class="names">Ajinomoto</span> substrate film.</dd>
-<dt>Memory, substrate and test</dt>
-<dd><span class="names">SK Hynix, Micron</span> and <span class="names">Samsung</span> make the stacked memory, <span class="names">Ibiden</span> and <span class="names">Unimicron</span> substrates, and <span class="names">Advantest</span> and <span class="names">Teradyne</span> test equipment.</dd>
-<dt>The rack around it</dt>
-<dd><span class="names">Broadcom</span> and <span class="names">Marvell</span> make network chips, <span class="names">Coherent</span> and <span class="names">Lumentum</span> optics, <span class="names">Corning</span> fibre, <span class="names">Texas Instruments, Infineon</span> and <span class="names">Monolithic Power</span> power chips, and <span class="names">Vertiv</span> cooling. <span class="names">Foxconn, Quanta</span> and <span class="names">Wistron</span> assemble.</dd>
+<dd><span class="names">Nvidia</span> designs the chip, licensing from <span class="names">Arm</span>.</dd>
+<dt>Factory and tools</dt>
+<dd><span class="names">TSMC</span> makes the dies. <span class="names">ASML</span>, <span class="names">ZEISS</span>, <span class="names">Trumpf</span>, <span class="names">Applied Materials, Lam Research, Tokyo Electron</span> and <span class="names">KLA</span> make tools.</dd>
+<dt>Materials and memory</dt>
+<dd><span class="names">Shin-Etsu</span>, <span class="names">SUMCO</span>, <span class="names">JSR</span>, <span class="names">Tokyo Ohka Kogyo</span>, <span class="names">AGC</span>, <span class="names">Hoya</span> and <span class="names">Ajinomoto</span> make materials. <span class="names">SK Hynix, Micron</span>, <span class="names">Samsung</span>, <span class="names">Ibiden</span>, <span class="names">Unimicron</span>, <span class="names">Advantest</span> and <span class="names">Teradyne</span> make memory, substrates and testers.</dd>
+<dt>The rack</dt>
+<dd><span class="names">Broadcom</span>, <span class="names">Marvell</span>, <span class="names">Coherent</span>, <span class="names">Lumentum</span>, <span class="names">Corning</span>, <span class="names">Texas Instruments, Infineon</span>, <span class="names">Monolithic Power</span> and <span class="names">Vertiv</span> make network, power and cooling parts. <span class="names">Foxconn, Quanta</span> and <span class="names">Wistron</span> assemble.</dd>
 </dl>
 <dl class="against">
 <dt>Where I stop</dt>
-<dd>This maps one product's whole supply chain, so it has no loser. I hold no view on any of these companies as investments.</dd>
+<dd>One product's whole chain, so no loser. I hold no investment view on any.</dd>
 </dl>
 </section>
 
 ---
 
-<p class="sources">Sources: Nvidia's Blackwell architecture page and GTC release of 18 March 2024 for transistors, dies and process, and its GTC 2024 presentation, as reported, for the memory stacks. Nvidia GB200 NVL72 page. Nvidia Form 10-K, filed 25 February 2026, for suppliers, lead times and capacity commitments. Jensen Huang on CoWoS-L, 16 January 2025, as reported by Reuters. Nvidia on the first Blackwell wafer at TSMC Arizona, 17 October 2025. TechInsights teardown, 15 April 2025, for the eight memory packages. TSMC earnings calls of January and July 2026. ASML and ZEISS EUV pages. Ajinomoto's film page and its release of 7 May 2026. Micron earnings call, 17 December 2025. The 6,600 years is my own arithmetic. Personal research, not investment advice.</p>
+<p class="sources">Sources: Nvidia's Blackwell pages and its Form 10-K of 25 February 2026, TSMC earnings calls of 2026, ASML and ZEISS EUV pages, and Ajinomoto's release of 7 May 2026. Personal research, not investment advice.</p>

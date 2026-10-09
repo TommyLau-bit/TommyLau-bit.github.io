@@ -2,9 +2,11 @@
      This file lives at the repo root on purpose, so the site never loads it.
      The rules behind every slot are in WRITING-FORMAT.md.
      date is the real moment you publish, Singapore time. Never a future date.
-     FIRST RULE (WRITING-FORMAT §4b): about a five minute read, 900 to 1,150 words,
-     15 figures at most, 3 company financial figures at most. Explanation here,
-     numbers in the research notes. -->
+     FIRST RULE (WRITING-FORMAT §3 and §4b): about a five minute read for a person
+     reading to understand. 450 to 600 words in the body, never over 700. 15 figures
+     at most, 3 company financial figures at most. Explanation here, numbers in the
+     research notes. Model piece: ge-vernova-sells-the-wait.md.
+-->
 ---
 title: "A claim or a plain question, sentence case, 8 to 16 words"
 date: 2026-00-00T00:00:00+08:00
@@ -14,7 +16,7 @@ cover: "/covers/<slug>.svg"
 tags: ["", ""]
 ---
 
-<!-- COLD OPEN — three to five short paragraphs.
+<!-- COLD OPEN: three or four short paragraphs, about 80 words.
      Open on a question the reader has never asked, a claim you offer up for
      attack, a correction of a common assumption, or a fact with a payoff.
      No throat-clearing. -->
@@ -23,31 +25,21 @@ tags: ["", ""]
 
 <details class="analogy">
 <summary>Explain it like I don't work in finance</summary>
-<p>The everyday comparison. Household objects, domestic scale. No finance.</p>
-<p>Why the obvious fix does not work.</p>
+<p>The everyday comparison, household objects, and why the obvious fix fails. No finance.</p>
 <p>The one image that carries the whole argument.</p>
 </details>
 
-## <!-- Definitions, if the piece needs them. "Two words you need". -->
+## <!-- How it works, about 200 words. The mechanism, jargon defined in place,
+        and in two or three sentences why supply cannot simply catch up. -->
 
-## <!-- The mechanism. What physically happens. -->
-
-## <!-- The options, as bold lead-ins, if there are competing approaches. -->
-
-**Option one.** What it is, in a sentence, then why it is used.
-
-**Option two.** Same.
-
-## <!-- The number that turns physics into money. -->
-
-## <!-- Why the market misreads it, or where the value goes if you are right. -->
+## <!-- The evidence, about 100 words. The company's own disclosure, one figure,
+        tied to the mechanism in the next sentence. -->
 
 ## What would prove me wrong
 
-<!-- MANDATORY for Analysis pieces. Delete this heading for an Explainer.
+<!-- About 60 words. MANDATORY for Analysis pieces. For an Explainer, replace this
+     section with the constraint: what binds and why.
      Name the observable that would kill the claim, not a hedge. -->
-
-## <!-- The honest limit, or what you are watching next. -->
 
 <section class="exposure">
 <h3>Who is exposed if <!-- the claim --> is right</h3>
@@ -57,6 +49,7 @@ tags: ["", ""]
 <dd>What they make: <span class="names">Company, Company</span>.</dd>
 <dt><!-- Category --></dt>
 <dd>What they make: <span class="names">Company</span>.</dd>
+<!-- Three or four groups, one short line each, about 100 words for the whole map. -->
 </dl>
 <dl class="against">
 <dt>On the other side</dt>
@@ -66,7 +59,7 @@ tags: ["", ""]
 
 ---
 
-<p class="sources"><!-- Either: this piece explains mechanism, the figures are structural, and the position you are not taking. Or: named institutions and documents with dates. --> Personal research, not investment advice.</p>
+<p class="sources"><!-- One or two sentences: the documents and dates, or that the piece explains mechanism. --> Personal research, not investment advice.</p>
 
 <!-- BEFORE PUBLISHING: the site around the piece (WRITING-FORMAT.md §6a).
      1. Map: add the slug to one layer's `pieces` in src/data/stack.ts. Every piece.
@@ -76,6 +69,6 @@ tags: ["", ""]
         Never reworded later. No statuses, no reviews.
      3. Numbers: optional. A new structural figure goes in src/data/numbers.ts.
      4. Company pages build themselves from the exposure map. No topic pages.
-     The top menu stays at five items: Journal, Map, Claims, Glossary, About.
+     The top menu stays at five items: Journal, Map, Research, Glossary, About.
      No email sign-ups anywhere on the site.
      brand/check-piece.py fails the piece if step 1, or step 2 for Analysis, is missing. -->
