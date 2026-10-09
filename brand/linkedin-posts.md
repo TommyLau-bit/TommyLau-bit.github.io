@@ -474,3 +474,21 @@ https://thephysicallayer.fyi/journal/micron-three-times-the-wafer/
 #Semiconductors #AIInfrastructure #SupplyChain
 
 ---
+
+## The descent, from the grid to the chip (site live 9 Oct 2026; LinkedIn posted Fri 9 Oct, with the dark square video from brand/video/)
+
+Everything in an AI data centre is one chain, so I drew it as one.
+
+Scroll down the map on The Physical Layer and you descend through it: a high-voltage line, the site, the hall, one rack, one tray, one Nvidia B200, and finally the machine that prints its silicon with light.
+
+At every level the choke point is circled in red. Transformers. Gas turbines. Copper in the rack. Packaging. The EUV machine only ASML builds.
+
+That is the point of the drawing. The slowest link sets the pace for everything above it, and the slowest links are rarely the famous ones.
+
+Nine stops, from kilometres down to nanometres, with every piece I have written pinned to the layer it explains.
+
+https://thephysicallayer.fyi/map/
+
+#AIInfrastructure #DataCentres #Semiconductors
+
+---

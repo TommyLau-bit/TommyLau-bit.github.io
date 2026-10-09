@@ -4,3 +4,4 @@ dist/
 .DS_Store
 __pycache__/
 research-build/*/*_note.html
+brand/video/
