@@ -21,7 +21,7 @@ export const STACK: Layer[] = [
     kind: 'energy',
     what: 'High-voltage power arrives from the public grid through a substation built for the site.',
     constraint: 'The wait for a connection, and the transformers and switchgear behind it, now runs to years.',
-    pieces: ['the-queue-not-the-chip', 'the-part-money-cannot-hurry', 'hitachi-energy-plans-the-queue', 'siemens-energy-measures-the-shortage', 'two-governments-one-confession', 'the-power-it-drops'],
+    pieces: ['the-queue-not-the-chip', 'the-part-money-cannot-hurry', 'hitachi-energy-plans-the-queue', 'siemens-energy-measures-the-shortage', 'two-governments-one-confession', 'the-power-it-drops', 'pjm-sends-the-bill'],
   },
   {
     id: 'onsite',
@@ -29,7 +29,7 @@ export const STACK: Layer[] = [
     kind: 'energy',
     what: 'Turbines, fuel cells, batteries and, one day, small reactors make or store power beside the building.',
     constraint: 'Skipping the grid queue means joining the queue for the equipment instead.',
-    pieces: ['the-way-out-has-its-own-queue', 'ge-vernova-sells-the-wait', 'the-product-is-time', 'what-the-battery-is-really-for', 'fluence-short-of-american-made', 'oklo-sells-the-electricity'],
+    pieces: ['the-way-out-has-its-own-queue', 'ge-vernova-sells-the-wait', 'the-product-is-time', 'what-the-battery-is-really-for', 'fluence-short-of-american-made', 'constellation-restarts-the-reactor', 'oklo-sells-the-electricity'],
   },
   {
     id: 'distribution',
@@ -45,7 +45,7 @@ export const STACK: Layer[] = [
     kind: 'energy',
     what: 'Almost every watt that goes into a chip comes back out as heat, and liquid now carries most of it away.',
     constraint: 'Air stops working somewhere between 30 and 50 kilowatts per rack.',
-    pieces: ['cooling-is-half-the-job', 'room-to-spare'],
+    pieces: ['cooling-is-half-the-job', 'room-to-spare', 'water-is-a-siting-problem'],
   },
   {
     id: 'network',
@@ -61,7 +61,7 @@ export const STACK: Layer[] = [
     kind: 'compute',
     what: 'Stacked memory sits beside each processor, feeding it the model\'s numbers.',
     constraint: 'For most of the time a model is answering, the chip is waiting on memory, not maths.',
-    pieces: ['the-countertop-is-the-bottleneck', 'micron-three-times-the-wafer'],
+    pieces: ['the-countertop-is-the-bottleneck', 'micron-three-times-the-wafer', 'seagate-sells-the-terabyte'],
   },
   {
     id: 'chips',

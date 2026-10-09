@@ -170,6 +170,30 @@ export const CLAIMS: Claim[] = [
     breaksIf: 'The first half fails if, by its fiscal first quarter 2028 results (around December 2027), Micron has not said most of its calendar 2028 HBM supply is agreed; or if Micron reports unsold HBM or cuts HBM output and itself attributes it to customer demand. The second half fails if, before the end of calendar 2028, Micron stops expecting the DRAM industry to be supply-constrained in 2027 or 2028 while still expecting industry HBM bits to grow faster than conventional DRAM; or if Micron states that any current HBM generation needs less than about three times the wafer of DDR5 per bit. A shortage prolonged by late cleanrooms supports the claim rather than breaking it.',
     watch: ['Whether Micron says next year\'s HBM is agreed, each autumn (it usually does between September and December)', 'Micron\'s industry DRAM supply outlook and whether HBM still outgrows conventional DRAM', 'Any new trade ratio Micron gives for HBM4 or HBM4E', 'Whether Micron\'s ID1 fab in Idaho starts wafer output in mid 2027'],
   },
+  {
+    id: 'constellation-restarts-the-reactor',
+    claim: 'The fastest nuclear power Constellation can bring to AI this decade comes from reactors that already hold a place on the grid: at Crane the reactor can be ready by 2027, but a fresh grid connection would not have been fully ready until around 2030 or later.',
+    breaksIf: 'Crane, with the 760 MW of grid rights transferred from Eddystone, has still not delivered power to the grid at full output by 31 December 2028, which would mean the reactor work and not the connection set the pace; or restarts and uprates that need new grid capacity are connected as quickly as those that reuse an existing one.',
+    watch: ['Crane\'s first power to the grid against the 2027 target', 'Whether Crane reaches full deliverability before PJM\'s transmission upgrades finish', 'Palisades and Duane Arnold restart dates, and whether reactor work or the connection sets them', 'Whether the first of the 890 MW Google uprates lands in 2028'],
+  },
+  {
+    id: 'pjm-sends-the-bill',
+    claim: 'PJM\'s capacity auction cannot summon new power stations as fast as data centres add demand, so it will keep clearing at or near its price ceiling, with households paying.',
+    breaksIf: 'A PJM base auction clears below $325 per MW-day, the cap in force in 2026, and meets its reliability requirement while the data centre load forecast is still rising; or new generation cleared in an auction outruns the data centre load added to its forecast.',
+    watch: ['Clearing price against the cap in each base auction, starting with 2029/2030 in December 2026', 'Shortfall against the reliability requirement in each auction', 'New generation cleared against data centre load added to the forecast', 'Large-load tariffs and bring-your-own-capacity rules adopted by PJM states, and the refiled Reliability Backstop Procurement'],
+  },
+  {
+    id: 'seagate-sells-the-terabyte',
+    claim: 'Seagate is meeting AI\'s demand for storage by putting more terabytes in each hard drive, not by making more drives, so its high-capacity supply stays committed well over a year ahead.',
+    breaksIf: 'Seagate grows supply by making many more drives, through a new drive factory or drive numbers rising faster than terabytes per drive; or, at any quarterly results before the end of 2027, Seagate says most of its nearline output for the next calendar year is not yet committed.',
+    watch: ['Seagate nearline exabytes shipped versus drive units', 'Average terabytes per nearline drive', 'How far ahead Seagate says nearline output is allocated (into calendar 2028 as of July 2026)', 'Any new Seagate drive or head and disk factory'],
+  },
+  {
+    id: 'water-is-a-siting-problem',
+    claim: 'Data centre water decides where AI campuses go and how they are cooled, not how many get built, because a site can swap evaporated water for a little extra electricity, and most of a data centre\'s water is consumed at the power station.',
+    breaksIf: 'A large AI campus with its power already secured is cancelled outright over water rather than redesigned to cool without it, or Microsoft\'s water per kilowatt-hour of computing climbs back above 0.30 litres, its fiscal 2024 level (0.27 in fiscal 2025), as its AI campuses grow.',
+    watch: ['Microsoft\'s reported WUE each year', 'Whether Microsoft\'s zero-water sites in Phoenix and Mount Pleasant come online from late 2027 as planned', 'Permit refusals on water grounds in dry regions, and whether projects redesign or leave', 'On-site against power station water in the next national estimate'],
+  },
 ];
 
 export const claimOf = (id: string) => CLAIMS.find((c) => c.id === id);

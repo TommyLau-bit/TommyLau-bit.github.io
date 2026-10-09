@@ -58,4 +58,8 @@ export const NUMBERS: Num[] = [
 
   // who runs the capacity
   { layer: 'operators', value: '5 GW vs ~1 GW', what: 'Power Nebius expects to have contracted by the end of 2026, against the 0.8 to 1 gigawatt it expects to have connected.', piece: 'nebius-paid-for-what-is-switched-on', asOf: 'end of 2026, company target' },
+  { layer: 'onsite', value: '835 MW', what: 'Output of the Crane reactor at Three Mile Island that Constellation is restarting for Microsoft, enough for a large AI campus running around the clock.', piece: 'constellation-restarts-the-reactor', asOf: 'target 2027' },
+  { layer: 'grid', value: '6,831 MW', what: 'How far PJM\'s capacity auction for 2028/2029 fell short of its own reliability requirement. New power stations and upgrades cleared only 525 MW.', piece: 'pjm-sends-the-bill', asOf: '14 July 2026' },
+  { layer: 'memory', value: '+26% on flat units', what: 'How much more hard drive storage Seagate shipped in a year on a similar number of drives. Supply grows by packing each drive, not by making more.', piece: 'seagate-sells-the-terabyte', asOf: 'December quarter 2025' },
+  { layer: 'cooling', value: '~12×', what: 'Water consumed at the power stations supplying American data centres, nearly 800 billion litres, against 66 billion litres consumed on site. Most of a data centre\'s water follows its electricity.', piece: 'water-is-a-siting-problem', asOf: '2023' },
 ];

@@ -492,3 +492,59 @@ https://thephysicallayer.fyi/map/
 #AIInfrastructure #DataCentres #Semiconductors
 
 ---
+
+## 34 · Constellation restarts the reactor (site live Thu 22 Oct 2026, scheduled; LinkedIn proposed Fri 27 Nov, 11:30, if 25 Nov is still the last post in the queue)
+
+The hardest part of restarting the Three Mile Island reactor was not the reactor. It was the wire.
+
+Constellation can have the 835 megawatt unit ready for Microsoft in 2027, but a fresh grid connection would not have been fully ready until around 2030 or later. So it borrowed one, moving grid rights from two old units it had planned to retire. For AI campuses that want firm, carbon-free power this decade, that is the real constraint: a place on the grid that already exists.
+
+The piece covers how a reactor restart works, why Constellation had to borrow a connection, and what would prove me wrong.
+
+https://thephysicallayer.fyi/journal/constellation-restarts-the-reactor/
+
+#NuclearEnergy #DataCentres #EnergyInfrastructure
+
+---
+
+## 35 · PJM sends the bill (site live Mon 26 Oct 2026, scheduled; LinkedIn proposed Mon 30 Nov, 11:30, if 25 Nov is still the last post in the queue)
+
+PJM's capacity auction has cleared at its price cap three times running, and the latest one still came up almost 7 gigawatts short.
+
+PJM runs the grid for 67 million people across 13 states, including northern Virginia's data centres. Data centre demand is rising faster than power stations can be built and connected, and its market monitor puts nearly two fifths of the latest auction's cost on that demand. That cost lands on household bills, which is where the AI build-out meets its political limit.
+
+The piece covers how the capacity auction works, why a higher price cannot summon a plant in time, and what would prove the claim wrong.
+
+https://thephysicallayer.fyi/journal/pjm-sends-the-bill/
+
+#PowerGrid #DataCentres #EnergyInfrastructure
+
+---
+
+## 36 · Seagate sells the terabyte (site live Wed 28 Oct 2026, scheduled; LinkedIn proposed Wed 2 Dec, 11:30, if 25 Nov is still the last post in the queue)
+
+Seagate shipped 26 per cent more hard drive storage in a year on roughly the same number of drives.
+
+AI keeps producing data that has to live somewhere, and the spinning hard drive is still the cheapest place to keep it. Seagate is answering by packing more terabytes into each drive rather than building more, so most of what it can make is already promised into 2028. Storage grows only as fast as each disk can be packed.
+
+The piece covers how a laser lets a disk hold more, why the makers will not simply build more drives, and what would prove me wrong.
+
+https://thephysicallayer.fyi/journal/seagate-sells-the-terabyte/
+
+#DataCentres #AIInfrastructure #Storage
+
+---
+
+## 37 · Water is a siting problem (site live Fri 30 Oct 2026, scheduled; LinkedIn proposed Fri 4 Dec, 11:30, if 25 Nov is still the last post in the queue)
+
+Most of a data centre's water is not used at the data centre.
+
+Lawrence Berkeley National Laboratory estimates American data centres consumed 66 billion litres of water on site in 2023, and the power stations feeding them about twelve times that. On site, water is a choice: evaporate it to save electricity, or spend a little more power and use none, as Microsoft's new designs do. That makes water a question of where campuses go, not how many get built.
+
+The piece covers how a cooling tower trades water for power, where the water really goes, and what would prove me wrong.
+
+https://thephysicallayer.fyi/journal/water-is-a-siting-problem/
+
+#DataCentres #Water #Cooling
+
+---
