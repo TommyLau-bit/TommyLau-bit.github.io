@@ -87,10 +87,10 @@ const n = (i: number) => String(i).padStart(2, '0');
 
   <div class="d-stage" aria-hidden="true">
     <div class="rail">
-      <span class="rail-n">01 / 09</span>
+      <span class="rail-n">01</span>
       <span class="rail-name">The grid</span>
       <span class="rail-scale">Kilometres</span>
-      <span class="rail-dots">{Array.from({ length: 9 }, () => <i />)}</span>
+      <span class="rail-dots"></span>
     </div>
 
     <!-- 1 · GRID ─────────────────────────────────────────── -->
@@ -637,7 +637,8 @@ const n = (i: number) => String(i).padStart(2, '0');
     const reveal = [...root.querySelectorAll<HTMLElement>('[data-at]')];
     const rail = root.querySelector<HTMLElement>('.rail')!;
     const railN = rail.querySelector('.rail-n')!, railName = rail.querySelector('.rail-name')!, railScale = rail.querySelector('.rail-scale')!;
-    const dots = [...rail.querySelectorAll('.rail-dots i')];
+    // one dot per stop, so a newly drawn stop is counted without touching this
+    const dots = scenes.map(() => rail.querySelector('.rail-dots')!.appendChild(document.createElement('i')));
     const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
     const lastStep = scenes.map((_, s) => steps.map((st) => +st.dataset.scene!).lastIndexOf(s));
     const focal = scenes.map((el) => [parseFloat(el.style.getPropertyValue('--fx')) || 50, parseFloat(el.style.getPropertyValue('--fy')) || 50]);

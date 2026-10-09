@@ -377,6 +377,12 @@ piece and the company pages all read from this. If no layer genuinely fits, add
 a new layer to `STACK` in its physical place in the chain, with a plain `what`
 and `constraint` sentence, rather than forcing the piece into the nearest one.
 
+**The descent at the top of `/map` (`src/components/Descent.astro`).** A piece in an existing
+layer needs nothing more: the layer text and piece counts are read from `stack.ts`. A **new
+layer** appears in the layer index and the closing funnel on its own, but its own stop in the
+descent (a drawing, in its physical place in the chain, plus its step cards) is drawn by hand
+as part of publishing that piece. The stop counter counts drawn stops itself.
+
 **The claims page, `src/data/claims.ts`. Every Analysis piece.** Add one
 entry: `claim` is the thesis in one sentence, `breaksIf` is the falsifier from
 "What would prove me wrong", and `watch` is its list of evidence. The page
