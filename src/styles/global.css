@@ -405,3 +405,5 @@ details.analogy > p:first-of-type { margin-top: 0.1rem; }
 .claim-box-correction { margin: 0.8rem 0 0; font-family: var(--sans); font-size: 0.86rem; color: var(--ink-2); border-top: 1px solid var(--rule); padding-top: 0.7rem; }
 .claim-box-correction span { display: block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--bad); }
 .pitch-disclaimer { font-family: var(--sans); font-size: 0.85rem; color: var(--ink-3); border-top: 1px solid var(--rule); padding: 1.2rem 0 0.5rem; margin-top: 2rem; }
+.layers-h { font-family: var(--sans); font-size: clamp(1.5rem, 3vw, 1.9rem); line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 0.6rem; }
+#layers { scroll-margin-top: 1rem; }

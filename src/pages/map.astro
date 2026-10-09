@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import Descent from '../components/Descent.astro';
 import { getCollection } from 'astro:content';
 import { STACK } from '../data/stack';
 import { NUMBERS } from '../data/numbers';
@@ -12,11 +13,18 @@ const layers = STACK.map((l) => {
   return { ...l, posts: ps, numbers: NUMBERS.filter((n) => n.layer === l.id && byId[n.piece]), companies: topCompanies(ps, 10) };
 });
 ---
-<Base wide title="Map of the stack" description="The physical layers of an AI data centre, from the grid connection to the chip: what happens in each, what binds, the numbers that matter and who operates there.">
+<Base wide title="Map of the stack" description="The physical layers of an AI data centre as one scroll, from a high-voltage line down to the die: what happens in each, what binds, the numbers that matter and who operates there.">
   <section class="hero hero--compact">
     <h1>The map of the stack</h1>
     <p>An AI data centre is a chain of physical layers. Power comes in from the grid or is made on site, is carried to each rack, and comes back out as heat. Inside, thousands of chips talk over copper and light while memory feeds them. Each layer has its own constraint, and the slowest one sets the pace for all the rest.</p>
-    <p class="hero-start">New here? <a href="/start/">Start with six pieces in order</a>. Looking something up? See <a href="/numbers/">the numbers</a> or <a href="/companies/">every company</a>.</p>
+    <p class="hero-start">Scroll down to follow the power from the grid to the chip, or <a href="#layers">jump to the layers</a>. New here? <a href="/start/">Start with six pieces in order</a>.</p>
+  </section>
+
+  <Descent />
+
+  <section class="hero hero--compact" id="layers">
+    <h2 class="layers-h">Layer by layer</h2>
+    <p>Every layer, the pieces in it, the numbers that matter and the companies named most often. Looking something up? See <a href="/numbers/">the numbers</a> or <a href="/companies/">every company</a>.</p>
   </section>
 
   <div class="stack-layout">

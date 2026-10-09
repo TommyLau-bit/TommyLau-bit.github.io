@@ -84,6 +84,7 @@ out rather than adding another**, then update `PATH_REVIEWED`, which is the
 ## The pages around the journal
 
 - `/map` reads `src/data/stack.ts`: the layers of the stack, the pieces in each, and the companies their exposure maps name most.
+- The top of `/map` is the descent (`src/components/Descent.astro`): a scroll from the grid down to the die, nine stops, hand-drawn SVG. Its text (what happens, what binds, the pieces to read) is read from `stack.ts`, so edits there flow through. A new layer appears in its closing funnel on its own, but needs a drawing and step cards added by hand to get a stop of its own.
 - `/claims` reads `src/data/claims.ts`: one entry per Analysis piece, listed newest first.
 - `/numbers` reads `src/data/numbers.ts`: structural figures, each linked to its piece.
 - `/companies` is generated from exposure maps. Nothing to maintain. Topic pages were folded into the map; old `/topics/` links redirect there.
