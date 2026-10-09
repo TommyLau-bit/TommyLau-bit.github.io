@@ -93,5 +93,5 @@ Process: one company at a time; draft, then an independent fact-check, then fix,
 
 ## Pending (7 Oct 2026)
 
-- Published so far: Vertiv (long), Nebius, TSMC, Texas Instruments, Corning, Bloom Energy, Lumentum, Schneider Electric, Micron, ASML, Ajinomoto (no call), Oklo (short), Broadcom (long), Marvell (long, 8 Oct 2026, target US$355, medium; rebuilt on the Investor Day deck of 6 Oct, which had not been filed on Form 8-K).
+- Published so far: Vertiv (long), Nebius, TSMC, Texas Instruments, Corning, Bloom Energy, Lumentum, Schneider Electric, Micron, ASML, Ajinomoto (no call), Oklo (short), Broadcom (long), Marvell (long, 8 Oct 2026, target US$355, medium; rebuilt on the Investor Day deck of 6 Oct, which had not been filed on Form 8-K), GE Vernova (no call, 9 Oct 2026, medium).
 - Notes to be drafted automatically after each scheduled journal piece goes live (STEP 8 of the publish tasks): GE Vernova (9 Oct), Fluence (12 Oct), Hitachi Ltd (14 Oct), Eaton (16 Oct), Siemens Energy (20 Oct). Drafts only; Tommy decides each call.
