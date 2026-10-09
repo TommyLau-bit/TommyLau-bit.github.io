@@ -1,11 +1,11 @@
 ---
 title: "GE Vernova's customers are paying years in advance for a place in its queue"
-date: 2026-10-07T11:39:44+08:00
+date: 2026-10-09T11:22:31+08:00
 summary: "GE Vernova builds the large gas turbines that power stations, and now AI campuses, run on. Buyers are handing over billions in deposits just to hold a factory slot for 2030 or 2031. That money is paying to stretch the factories GE Vernova already has, not to build new ones, so the wait for a turbine is set to stay years long rather than clear."
 category: "Analysis"
 cover: "/covers/ge-vernova-sells-the-wait.svg"
 tags: ["power", "grid", "data-centres"]
-draft: true
+draft: false
 ---
 
 In the first half of this year, GE Vernova signed contracts for 41 gigawatts of gas turbines. In the same six months it shipped seven.
