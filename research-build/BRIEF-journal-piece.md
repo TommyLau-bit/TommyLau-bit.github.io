@@ -5,7 +5,7 @@ You are drafting one Analysis piece about one company for Tommy's journal. It st
 ## Read first, all of it
 - /Users/tommylau/Desktop/journal/CLAUDE.md
 - /Users/tommylau/Desktop/journal/WRITING-FORMAT.md (the complete spec: shapes, frontmatter, body skeleton in order, house style, §4a financial evidence, scope, cover, LinkedIn post, checker). Follow it exactly.
-- Models for density and voice: src/content/journal/schneider-sells-the-finished-system.md (the company-piece model, rewritten 8 Oct 2026), plus the early explainers the-two-seconds-after-you-hit-send.md and cooling-is-half-the-job.md. Match their length and lightness. The journal explains for a layman; the numbers live in the research note (WRITING-FORMAT §4b).
+- Model for shape, length and voice: src/content/journal/ge-vernova-sells-the-wait.md (the short-skeleton model, 9 Oct 2026). Every published piece was cut to this skeleton on 9 Oct 2026, so any of them is a fair second example. Match their length and lightness exactly. The journal explains for a layman; the numbers live in the research note (WRITING-FORMAT §3 and §4b).
 - Pieces that already mention your company, so the new piece builds on them and does not contradict them (grep src/content/journal for the company name).
 - src/data/stack.ts (map layers), src/data/claims.ts (claim format), src/data/numbers.ts, src/pages/glossary.astro.
 - Cover examples in public/covers/ (e.g. every-megawatt-got-harder.svg, the-product-is-time.svg).
@@ -16,7 +16,8 @@ You are drafting one Analysis piece about one company for Tommy's journal. It st
 - Required content (CLAUDE.md "What his notes must contain"): the claim in one sentence, the mechanism, one or two structural numbers, and who operates in the layer.
 - Financials only as evidence for the mechanism, dated and sourced to the company's own filings (§4a), and within the §4b budget: 15 figures at most in the body, 3 company financial figures at most, never two money figures in one paragraph. NEVER a share price, market value, valuation multiple, target, rating, or any view on the shares. The exposure map says what companies make, nothing else.
 - Real, dated, sourced data only, from the company's own reports, filings and investor materials (annual reports, quarterly results, capital markets days), plus grid operators and agencies for structural numbers. If you cannot verify something, leave it out. Load web tools with ToolSearch "select:WebSearch,WebFetch".
-- House style: no em dashes or en dashes anywhere, British spelling, 14 to 20 word sentences, 900 to 1,150 words (about 5 minutes), first person only for judgement, jargon defined where it first appears, the analogy block with household objects (no finance comparisons), a "## What would prove me wrong" section.
+- The short skeleton (WRITING-FORMAT §3, Tommy 9 Oct 2026), these parts only, in this order: cold open of three or four short paragraphs, about 80 words, ending on the thesis alone on its line; the analogy block, two paragraphs, about 70 words; three ## sections: how it works (about 200 words, including why supply cannot simply catch up), the evidence (about 100 words, one figure, two at most), and "## What would prove me wrong" (about 60 words); the exposure map, three or four groups plus "On the other side", about 100 words; a sources line of one or two sentences. Body 450 to 600 words, never over 700 (the checker fails it). No separate definitions section, no second angle, no "where I stop" or "what I'm watching" section.
+- House style: no em dashes or en dashes anywhere, British spelling, 14 to 20 word sentences, first person only for judgement, jargon defined where it first appears, the analogy with household objects (no finance comparisons).
 - NEVER mention Claude, a paper portfolio, a radar, a watch list or any "earlier read". The piece is Tommy's.
 - Frontmatter: `draft: true`, `date` set to the current Singapore time (it will be reset at publish), category "Analysis", cover path, two to four tags reusing existing ones where they fit.
 
@@ -33,7 +34,7 @@ You are drafting one Analysis piece about one company for Tommy's journal. It st
 Do NOT edit stack.ts, claims.ts, numbers.ts, glossary.astro or linkedin-posts.md yet; those go in at publish.
 
 ## Checks before finishing
-- `python3 brand/check-piece.py src/content/journal/<slug>.md` passes (fix every failure; warnings explained).
+- `python3 brand/check-piece.py src/content/journal/<slug>.md` passes with 0 failures and 0 warnings (it enforces the word limit and the skeleton).
 - `npm run build` still succeeds (drafts are excluded from production).
 - Touch only your own files.
 
