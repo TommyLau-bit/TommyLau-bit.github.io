@@ -351,7 +351,7 @@ https://thephysicallayer.fyi/journal/schneider-sells-the-finished-system/
 
 ---
 
-## 25 · GE Vernova sells the wait (site live 9 Oct 2026; LinkedIn Mon 9 Nov, 11:30)
+## 25 · GE Vernova sells the wait (site live 9 Oct 2026; LinkedIn Sun 15 Nov, 11:30, scheduled)
 
 GE Vernova signed 41 gigawatts of gas turbine contracts in the first half of 2026 and shipped seven.
 
@@ -365,7 +365,7 @@ https://thephysicallayer.fyi/journal/ge-vernova-sells-the-wait/
 
 ---
 
-## 26 · Fluence is short of American-made (site live 12 Oct 2026; LinkedIn Wed 11 Nov, 11:30, scheduled)
+## 26 · Fluence is short of American-made (site live 12 Oct 2026; LinkedIn Tue 17 Nov, 11:30, scheduled)
 
 Fluence's new Houston battery factory spent this summer running on generators, because its own grid connection was late.
 
