@@ -476,8 +476,17 @@ In order:
    re-running, and for any that did not update, delete the post and schedule a
    fresh copy with the same text. Never remove a link preview from a post while
    editing it; LinkedIn will not regenerate it inside that edit.
-7. Add the LinkedIn post to `brand/linkedin-posts.md` and schedule it from the
-   **company page only**. Never from the personal profile.
+7. **The last step, and it is Claude's job, not Tommy's (Tommy, 12 Oct 2026,
+   permanent).** Add the LinkedIn post to `brand/linkedin-posts.md`, then
+   schedule it yourself from the **company page only**, never the personal
+   profile, in Tommy's Chrome (Claude in Chrome; the built-in browser is not
+   signed in). Confirm the composer's author reads "The Physical Layer" before
+   typing. Schedule, never post now. Verify it in the scheduled list, then mark
+   the post "scheduled" in the file and push. **A piece is not published, and
+   the job is not finished, until its LinkedIn post is scheduled.** Never end a
+   publish, by hand or by scheduled task, with a reminder for Tommy to do it.
+   If something blocks it, say "NOT DONE: LinkedIn post not scheduled" at the
+   top of the report. A scheduled publish task carries this as its final step.
 
 Do **not** add the piece to `READING_PATH`. See the README section on why the
 reading page is not a table of contents.
@@ -505,9 +514,11 @@ https://thephysicallayer.fyi/journal/<slug>/
 Rules: plain register, first person, three hashtags maximum, the link alone on
 its own line at the end so LinkedIn renders the card. Posts go out at 11:30 AM
 Singapore time on Mondays, Wednesdays and Fridays only (Tommy, 7 Oct 2026), each
-new post taking the next free slot after the last scheduled one. LinkedIn's
-desktop list of scheduled posts shows only the first ten, so check the true last
-date in the app or with Tommy before scheduling.
+new post taking the next free slot after the last scheduled one. The record of
+the queue is `brand/linkedin-posts.md`: every post's heading carries its slot and
+"scheduled" once it is in LinkedIn. LinkedIn's desktop list shows only the first
+ten scheduled posts, so take the next free slot after the latest date marked
+scheduled in the file.
 
 ---
 

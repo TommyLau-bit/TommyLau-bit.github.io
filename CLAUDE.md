@@ -73,6 +73,12 @@ cover brief and LinkedIn post, is yours to write.
   §4a and CALLS-SPEC.md.
 - **Never post to LinkedIn from Tommy's personal profile.** The company page
   only. Verify the composer identity reads "The Physical Layer" before submitting.
+- **Scheduling the LinkedIn post is the last step of publishing, and it is
+  Claude's job** (Tommy, 12 Oct 2026). A piece is not done until its post is
+  scheduled on the company page and marked "scheduled" in
+  `brand/linkedin-posts.md`. Never finish with a reminder for Tommy to do it.
+  Every scheduled publish task ends with this step. See WRITING-FORMAT.md §8
+  step 7.
 - **Do not add a new piece to `READING_PATH`.** The reading page is a capped
   on-ramp, not an index. See the README section on it.
 - House style: no em dashes, British spelling, 14 to 20 word sentences,
