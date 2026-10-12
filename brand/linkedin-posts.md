@@ -365,7 +365,7 @@ https://thephysicallayer.fyi/journal/ge-vernova-sells-the-wait/
 
 ---
 
-## 26 · Fluence is short of American-made (site live 12 Oct 2026; LinkedIn Wed 11 Nov, 11:30)
+## 26 · Fluence is short of American-made (site live 12 Oct 2026; LinkedIn Wed 11 Nov, 11:30, scheduled)
 
 Fluence's new Houston battery factory spent this summer running on generators, because its own grid connection was late.
 
