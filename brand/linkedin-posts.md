@@ -19,7 +19,7 @@ https://thephysicallayer.fyi/journal/the-two-seconds-after-you-hit-send/
 
 ---
 
-## 2 · The queue, not the chip
+## 2 · The queue, not the chip (LinkedIn posted)
 
 Everyone watches chip supply. Almost nobody watches the queue to plug a data centre into the grid.
 
@@ -33,7 +33,7 @@ https://thephysicallayer.fyi/journal/the-queue-not-the-chip/
 
 ---
 
-## 3 · Cooling is half the job
+## 3 · Cooling is half the job (LinkedIn posted)
 
 Electricity is not used up by computation. Almost every watt that goes into an AI chip comes back out as heat.
 
@@ -47,7 +47,7 @@ https://thephysicallayer.fyi/journal/cooling-is-half-the-job/
 
 ---
 
-## 4 · Ten thousand chips, one thought
+## 4 · Ten thousand chips, one thought (LinkedIn posted)
 
 A frontier AI model is too big to fit on any single chip. So it is sliced across thousands of them, and they have to swap notes for every single word.
 
@@ -59,7 +59,7 @@ https://thephysicallayer.fyi/journal/ten-thousand-chips-one-thought/
 
 ---
 
-## 5 · The countertop is the bottleneck
+## 5 · The countertop is the bottleneck (LinkedIn posted)
 
 When an AI writes its reply, the arithmetic is fast and the waiting for data is slow.
 
@@ -73,7 +73,7 @@ https://thephysicallayer.fyi/journal/the-countertop-is-the-bottleneck/
 
 ---
 
-## 6 · The rack runs out of copper
+## 6 · The rack runs out of copper (LinkedIn posted)
 
 NVIDIA's next rack is designed to draw one megawatt. Feed that through today's 54-volt system and you need 200 kg of copper busbar in a single cabinet, and power shelves that take up more rack than the rack has.
 
@@ -87,7 +87,7 @@ https://thephysicallayer.fyi/journal/the-rack-runs-out-of-copper/
 
 ---
 
-## 7 · The one part of the grid that money cannot hurry
+## 7 · The one part of the grid that money cannot hurry (LinkedIn posted)
 
 Malaysia cut the wait to connect a new project to the grid from 36 months to 12, and pushed 33 projects through the scheme by March 2026.
 
@@ -103,7 +103,7 @@ https://thephysicallayer.fyi/journal/the-part-money-cannot-hurry/
 
 ---
 
-## 8 · The power it drops
+## 8 · The power it drops (LinkedIn posted)
 
 On 22 July, 3.8 GW of data centre demand in northern Virginia switched itself off. PJM called it the largest event of its kind in its history.
 
@@ -119,7 +119,7 @@ https://thephysicallayer.fyi/journal/the-power-it-drops/
 
 ---
 
-## 9 · The best argument against my own thesis
+## 9 · The best argument against my own thesis (LinkedIn posted)
 
 I have written twice that the constraint on AI is the wait to connect to the grid. The strongest objection is obvious: do not join the queue. Build your own power station on site and connect to nothing.
 
@@ -135,7 +135,7 @@ https://thephysicallayer.fyi/journal/the-way-out-has-its-own-queue/
 
 ---
 
-## 10 · What the battery is really for
+## 10 · What the battery is really for (LinkedIn posted)
 
 Most people still think a grid battery is for storing cheap electricity and selling it later. That is no longer the job that explains who is buying them.
 
@@ -151,7 +151,7 @@ https://thephysicallayer.fyi/journal/what-the-battery-is-really-for/
 
 ---
 
-## 11 · Two governments, opposite policies, the same confession
+## 11 · Two governments, opposite policies, the same confession (LinkedIn posted)
 
 There are two ways to find out what somebody thinks is scarce. Ask them, or watch what they do about it. The second is more reliable, because the first is a statement and the second is a cost.
 
@@ -169,7 +169,7 @@ https://thephysicallayer.fyi/journal/two-governments-one-confession/
 
 ---
 
-## 12 · Bloom Energy is selling time
+## 12 · Bloom Energy is selling time (LinkedIn posted)
 
 Bloom Energy's electricity costs more than the grid's. Oracle and one of America's biggest utilities are buying gigawatts of it anyway.
 
@@ -183,7 +183,7 @@ https://thephysicallayer.fyi/journal/the-product-is-time/
 
 ---
 
-## 13 · Vertiv is paid per megawatt
+## 13 · Vertiv is paid per megawatt (LinkedIn posted)
 
 Vertiv makes no chips and writes no software, yet AI has made it one of the busiest suppliers in the buildout.
 
@@ -197,7 +197,7 @@ https://thephysicallayer.fyi/journal/every-megawatt-got-harder/
 
 ---
 
-## 14 · Jane Street has room to spare
+## 14 · Jane Street has room to spare (LinkedIn posted)
 
 Jane Street's new AI training centre in Texas has empty floor it cannot use.
 
@@ -211,7 +211,7 @@ https://thephysicallayer.fyi/journal/room-to-spare/
 
 ---
 
-## 15 · Jane Street commits to the power first
+## 15 · Jane Street commits to the power first (LinkedIn Wed 14 Oct, 11:30, scheduled)
 
 At Jane Street, the chips are now the last thing ordered.
 
@@ -225,7 +225,7 @@ https://thephysicallayer.fyi/journal/power-first-chips-last/
 
 ---
 
-## 16 · Marvell collects the toll
+## 16 · Marvell collects the toll (LinkedIn Fri 16 Oct, 11:30, scheduled)
 
 Marvell is paid every time AI chips talk to each other, and it barely matters whose chips they are.
 
@@ -239,7 +239,7 @@ https://thephysicallayer.fyi/journal/marvell-collects-the-toll/
 
 ---
 
-## 17 · Oklo sells the electricity
+## 17 · Oklo sells the electricity (LinkedIn Mon 19 Oct, 11:30, scheduled)
 
 Oklo, the nuclear start-up building small reactors for AI data centres, does not plan to sell a single reactor.
 
@@ -253,7 +253,7 @@ https://thephysicallayer.fyi/journal/oklo-sells-the-electricity/
 
 ---
 
-## 18 · Nebius is paid for what is switched on
+## 18 · Nebius is paid for what is switched on (LinkedIn Wed 21 Oct, 11:30, scheduled)
 
 Microsoft and Meta, two of the biggest data centre builders on earth, both rent AI capacity from Nebius.
 
@@ -267,7 +267,7 @@ https://thephysicallayer.fyi/journal/nebius-paid-for-what-is-switched-on/
 
 ---
 
-## 19 · Corning lays the glass
+## 19 · Corning lays the glass (LinkedIn Fri 23 Oct, 11:30, scheduled)
 
 Meta, Amazon and Nvidia have all signed deals this year with a 175-year-old glass company.
 
@@ -281,7 +281,7 @@ https://thephysicallayer.fyi/journal/corning-lays-the-glass/
 
 ---
 
-## 20 · Broadcom wins either way
+## 20 · Broadcom wins either way (LinkedIn Mon 26 Oct, 11:30, scheduled)
 
 When OpenAI built its first chip to rely less on Nvidia, it built it with Broadcom.
 
@@ -295,7 +295,7 @@ https://thephysicallayer.fyi/journal/broadcom-wins-either-way/
 
 ---
 
-## 21 · TI feeds the chip
+## 21 · TI feeds the chip (LinkedIn Wed 28 Oct, 11:30, scheduled)
 
 The AI processor that costs tens of thousands of dollars cannot run on the electricity delivered to it.
 
@@ -309,7 +309,7 @@ https://thephysicallayer.fyi/journal/ti-feeds-the-chip/
 
 ---
 
-## 22 · TSMC says it is the bottleneck
+## 22 · TSMC says it is the bottleneck (LinkedIn Fri 30 Oct, 11:30, scheduled)
 
 I have argued that the grid, not the chip, is what holds AI back. TSMC's chief executive disagrees.
 
@@ -323,7 +323,7 @@ https://thephysicallayer.fyi/journal/tsmc-says-it-is-the-bottleneck/
 
 ---
 
-## 23 · Lumentum makes the light
+## 23 · Lumentum makes the light (LinkedIn Wed 4 Nov, 11:30, scheduled)
 
 In March, Nvidia paid $2 billion to a laser company, and another $2 billion to its rival on the same day.
 
@@ -337,7 +337,7 @@ https://thephysicallayer.fyi/journal/lumentum-makes-the-light/
 
 ---
 
-## 24 · Schneider Electric sells the finished system (site live 7 Oct 2026; LinkedIn scheduled by Tommy)
+## 24 · Schneider Electric sells the finished system (site live 7 Oct 2026; LinkedIn Mon 2 Nov, 11:30, scheduled)
 
 Schneider Electric's fastest-growing business is not the breakers and switches it is best known for.
 
@@ -351,7 +351,7 @@ https://thephysicallayer.fyi/journal/schneider-sells-the-finished-system/
 
 ---
 
-## 25 · GE Vernova sells the wait (site live 9 Oct 2026; LinkedIn Sun 15 Nov, 11:30, scheduled)
+## 25 · GE Vernova sells the wait (site live 9 Oct 2026; LinkedIn Mon 16 Nov, 11:30, scheduled)
 
 GE Vernova signed 41 gigawatts of gas turbine contracts in the first half of 2026 and shipped seven.
 
@@ -365,7 +365,7 @@ https://thephysicallayer.fyi/journal/ge-vernova-sells-the-wait/
 
 ---
 
-## 26 · Fluence is short of American-made (site live 12 Oct 2026; LinkedIn Tue 17 Nov, 11:30, scheduled)
+## 26 · Fluence is short of American-made (site live 12 Oct 2026; LinkedIn Wed 18 Nov, 11:30, scheduled)
 
 Fluence's new Houston battery factory spent this summer running on generators, because its own grid connection was late.
 
@@ -379,7 +379,7 @@ https://thephysicallayer.fyi/journal/fluence-short-of-american-made/
 
 ---
 
-## 27 · Hitachi Energy plans the queue (site live Thu 22 Oct 2026; LinkedIn Fri 13 Nov, 11:30)
+## 27 · Hitachi Energy plans the queue (site live Thu 22 Oct 2026; LinkedIn Fri 20 Nov, 11:30)
 
 Hitachi Energy is spending more than $9 billion on factories, and it still expects about three years of orders to be waiting in 2030.
 
@@ -393,7 +393,7 @@ https://thephysicallayer.fyi/journal/hitachi-energy-plans-the-queue/
 
 ---
 
-## 28 · Eaton's order book outruns it (site live Mon 26 Oct 2026; LinkedIn Mon 16 Nov, 11:30)
+## 28 · Eaton's order book outruns it (site live Mon 26 Oct 2026; LinkedIn Mon 23 Nov, 11:30)
 
 Eaton shipped 18% more electrical gear in the year to June, and its order book grew 33%.
 
@@ -407,7 +407,7 @@ https://thephysicallayer.fyi/journal/eaton-order-book-outruns-it/
 
 ---
 
-## 29 · Siemens Energy measures the shortage (site live Wed 28 Oct 2026; LinkedIn Wed 18 Nov, 11:30)
+## 29 · Siemens Energy measures the shortage (site live Wed 28 Oct 2026; LinkedIn Wed 25 Nov, 11:30)
 
 Siemens Energy has published its own estimate of the transformer shortage, and on its chart demand is still ahead of every factory in 2030.
 
@@ -433,7 +433,7 @@ https://thephysicallayer.fyi/journal/nobody-makes-a-b200-alone/
 
 ---
 
-## 31 · Ajinomoto grows with the package (site live 7 Oct 2026; LinkedIn Fri 20 Nov, 11:30, scheduled)
+## 31 · Ajinomoto grows with the package (site live 7 Oct 2026; LinkedIn Mon 9 Nov, 11:30, scheduled)
 
 The company best known for monosodium glutamate makes the insulating film inside nearly all high-performance processors, by its own account.
 
@@ -447,7 +447,7 @@ https://thephysicallayer.fyi/journal/ajinomoto-grows-with-the-package/
 
 ---
 
-## 32 · ASML booked ahead (site live 7 Oct 2026; LinkedIn Mon 23 Nov, 11:30, scheduled)
+## 32 · ASML booked ahead (site live 7 Oct 2026; LinkedIn Wed 11 Nov, 11:30, scheduled)
 
 The machines that print the finest AI chips are booked a year or two before they are built.
 
@@ -461,7 +461,7 @@ https://thephysicallayer.fyi/journal/asml-booked-ahead/
 
 ---
 
-## 33 · Micron, three times the wafer (site live 7 Oct 2026; LinkedIn Wed 25 Nov, 11:30, scheduled)
+## 33 · Micron, three times the wafer (site live 7 Oct 2026; LinkedIn Fri 13 Nov, 11:30, scheduled)
 
 Each bit of AI memory uses about three times the silicon of ordinary computer memory.
 
@@ -493,7 +493,7 @@ https://thephysicallayer.fyi/map/
 
 ---
 
-## 34 · Constellation restarts the reactor (site live Fri 30 Oct 2026, scheduled; LinkedIn proposed Fri 27 Nov, 11:30, if 25 Nov is still the last post in the queue)
+## 34 · Constellation restarts the reactor (site live Fri 30 Oct 2026, scheduled; LinkedIn Fri 27 Nov, 11:30)
 
 The hardest part of restarting the Three Mile Island reactor was not the reactor. It was the wire.
 
@@ -507,7 +507,7 @@ https://thephysicallayer.fyi/journal/constellation-restarts-the-reactor/
 
 ---
 
-## 35 · PJM sends the bill (site live Mon 2 Nov 2026, scheduled; LinkedIn proposed Mon 30 Nov, 11:30, if 25 Nov is still the last post in the queue)
+## 35 · PJM sends the bill (site live Mon 2 Nov 2026, scheduled; LinkedIn Mon 30 Nov, 11:30)
 
 PJM's capacity auction has cleared at its price cap three times running, and the latest one still came up almost 7 gigawatts short.
 
@@ -521,7 +521,7 @@ https://thephysicallayer.fyi/journal/pjm-sends-the-bill/
 
 ---
 
-## 36 · Seagate sells the terabyte (site live Wed 4 Nov 2026, scheduled; LinkedIn proposed Wed 2 Dec, 11:30, if 25 Nov is still the last post in the queue)
+## 36 · Seagate sells the terabyte (site live Wed 4 Nov 2026, scheduled; LinkedIn Wed 2 Dec, 11:30)
 
 Seagate shipped 26 per cent more hard drive storage in a year on roughly the same number of drives.
 
@@ -535,7 +535,7 @@ https://thephysicallayer.fyi/journal/seagate-sells-the-terabyte/
 
 ---
 
-## 37 · Water is a siting problem (site live Fri 6 Nov 2026, scheduled; LinkedIn proposed Fri 4 Dec, 11:30, if 25 Nov is still the last post in the queue)
+## 37 · Water is a siting problem (site live Fri 6 Nov 2026, scheduled; LinkedIn Fri 4 Dec, 11:30)
 
 Most of a data centre's water is not used at the data centre.
 
