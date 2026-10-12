@@ -29,7 +29,6 @@ export const NUMBERS: Num[] = [
   { layer: 'onsite', value: '53%', what: 'Share of planned 2026 American utility-scale battery additions sited in Texas, 12.9 of 24 gigawatts. Storage is following the computing load.', piece: 'what-the-battery-is-really-for', asOf: 'February 2026' },
   { layer: 'onsite', value: '75 MW', what: 'The design output of Oklo\'s first Aurora reactor in Idaho, small enough to sit beside a data centre campus.', piece: 'oklo-sells-the-electricity', asOf: '2026' },
   { layer: 'onsite', value: '~6 years', what: 'Gas turbine capacity GE Vernova has under contract, 116 gigawatts, against its output of 20 gigawatts a year. The queue for building your own power, measured in factory time.', piece: 'ge-vernova-sells-the-wait', asOf: '30 June 2026' },
-  { layer: 'onsite', value: '15 GWh', what: 'Planned yearly capacity of the Houston plant that assembles Fluence\'s American-made battery systems. American-made, not batteries, is the scarce kind.', piece: 'fluence-short-of-american-made', asOf: 'August 2026' },
 
   // power inside the building
   { layer: 'distribution', value: '5–10 kW', what: 'What a traditional server rack drew for two decades. Everything in the building was sized for this.', piece: 'cooling-is-half-the-job', asOf: '2026' },

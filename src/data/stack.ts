@@ -29,7 +29,7 @@ export const STACK: Layer[] = [
     kind: 'energy',
     what: 'Turbines, fuel cells, batteries and, one day, small reactors make or store power beside the building.',
     constraint: 'Skipping the grid queue means joining the queue for the equipment instead.',
-    pieces: ['the-way-out-has-its-own-queue', 'ge-vernova-sells-the-wait', 'the-product-is-time', 'what-the-battery-is-really-for', 'fluence-short-of-american-made', 'constellation-restarts-the-reactor', 'oklo-sells-the-electricity'],
+    pieces: ['the-way-out-has-its-own-queue', 'ge-vernova-sells-the-wait', 'the-product-is-time', 'what-the-battery-is-really-for', 'constellation-restarts-the-reactor', 'oklo-sells-the-electricity'],
   },
   {
     id: 'distribution',

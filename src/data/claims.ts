@@ -129,12 +129,6 @@ export const CLAIMS: Claim[] = [
     watch: ['Gigawatts under contract against planned annual output, each quarter', 'Power segment contract liabilities in each filing', 'Whether slot reservations convert into orders or lapse', 'Whether the 24 gigawatt output step lands in 2028'],
   },
   {
-    id: 'fluence-short-of-american-made',
-    claim: 'Through fiscal 2027, Fluence\'s American deliveries, where its data centre orders sit, will be limited by how fast it can make systems that count as American-made, not by demand.',
-    breaksIf: 'Fluence\'s published American production figures show Houston at about 11 units a day, or a 15 GWh a year pace, by the end of March 2027, and its plan for the year to September 2027 is not cut again for American production, or American orders fall while its American lines have spare capacity.',
-    watch: ['Houston units a day and US run-rate in Fluence\'s published US production figures', 'Any further cut to the fiscal 2027 plan for American production', 'Liquidated damages and gross margin in each quarterly filing', 'Whether the $550 million hyperscaler award becomes a signed order'],
-  },
-  {
     id: 'hitachi-energy-plans-the-queue',
     claim: 'Hitachi Energy is adding factories only as fast as signed orders justify, and its order backlog will stay at or above about 2.5 times annual revenue, roughly three years of work, through fiscal 2030, which ends on 31 March 2031, so the queue for its transformers and HVDC links will not clear.',
     breaksIf: 'Hitachi Energy\'s order backlog divided by its revenue over the previous four quarters, both in US dollars as Hitachi reports them (about 3.06 at 30 June 2026), falls below 2.5 at two consecutive quarter ends before 31 March 2031, the end of fiscal 2030; or its orders for any full fiscal year up to fiscal 2030 fall below its revenue for that year.',

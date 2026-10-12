@@ -365,17 +365,7 @@ https://thephysicallayer.fyi/journal/ge-vernova-sells-the-wait/
 
 ---
 
-## 26 · Fluence is short of American-made (site live 12 Oct 2026; LinkedIn Wed 18 Nov, 11:30, scheduled)
-
-Fluence's new Houston battery factory spent this summer running on generators, because its own grid connection was late.
-
-Fluence sells data centres a way to switch on before their grid connection is ready. Its overseas factories are working well, by its own account, but American tax rules reward systems made in America, and the Houston line averaged under one unit a day in August against a plan of eleven. In the United States the scarce thing is not the battery, it is the battery that qualifies.
-
-The piece covers how the tax rules turn "made in America" into the constraint, what data centre buyers are actually paying Fluence for, and the test that would prove me wrong.
-
-https://thephysicallayer.fyi/journal/fluence-short-of-american-made/
-
-#EnergyStorage #DataCentres #EnergyInfrastructure
+## 26 · Fluence (removed 12 Oct 2026: piece and note taken down by Tommy; its 18 Nov LinkedIn post deleted, slot left empty)
 
 ---
 
