@@ -3,7 +3,7 @@ One per piece. Plain register, first person, no hashtag walls (three max), the l
 
 ---
 
-## 1 · The two seconds (post first)
+## 1 · The two seconds (post first; LinkedIn posted)
 
 When you ask an AI a question, there is no answer sitting on a shelf.
 
