@@ -1,11 +1,11 @@
 ---
 title: "Fluence has plenty of batteries. What it is short of is American-made ones"
-date: 2026-10-07T13:12:34+08:00
+date: 2026-10-12T09:34:51+08:00
 summary: "Fluence builds the giant battery systems that utilities and, now, data centres buy. In America its problem is not finding buyers or batteries, and by its own account its overseas factories are working well. It is making systems that count as American-made, because tax rules reward them, and one new factory in Houston has fallen badly behind."
 category: "Analysis"
 cover: "/covers/fluence-short-of-american-made.svg"
 tags: ["power", "grid", "data-centres"]
-draft: true
+draft: false
 ---
 
 This summer, a new factory in Houston that builds battery systems for Fluence was running on generators. Its own grid connection was late.
