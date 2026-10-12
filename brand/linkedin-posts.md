@@ -379,7 +379,7 @@ https://thephysicallayer.fyi/journal/fluence-short-of-american-made/
 
 ---
 
-## 27 · Hitachi Energy plans the queue (site live 14 Oct 2026; LinkedIn Fri 13 Nov, 11:30)
+## 27 · Hitachi Energy plans the queue (site live Thu 22 Oct 2026; LinkedIn Fri 13 Nov, 11:30)
 
 Hitachi Energy is spending more than $9 billion on factories, and it still expects about three years of orders to be waiting in 2030.
 
@@ -393,7 +393,7 @@ https://thephysicallayer.fyi/journal/hitachi-energy-plans-the-queue/
 
 ---
 
-## 28 · Eaton's order book outruns it (site live 16 Oct 2026; LinkedIn Mon 16 Nov, 11:30)
+## 28 · Eaton's order book outruns it (site live Mon 26 Oct 2026; LinkedIn Mon 16 Nov, 11:30)
 
 Eaton shipped 18% more electrical gear in the year to June, and its order book grew 33%.
 
@@ -407,7 +407,7 @@ https://thephysicallayer.fyi/journal/eaton-order-book-outruns-it/
 
 ---
 
-## 29 · Siemens Energy measures the shortage (site live 20 Oct 2026; LinkedIn Wed 18 Nov, 11:30)
+## 29 · Siemens Energy measures the shortage (site live Wed 28 Oct 2026; LinkedIn Wed 18 Nov, 11:30)
 
 Siemens Energy has published its own estimate of the transformer shortage, and on its chart demand is still ahead of every factory in 2030.
 
@@ -493,7 +493,7 @@ https://thephysicallayer.fyi/map/
 
 ---
 
-## 34 · Constellation restarts the reactor (site live Thu 22 Oct 2026, scheduled; LinkedIn proposed Fri 27 Nov, 11:30, if 25 Nov is still the last post in the queue)
+## 34 · Constellation restarts the reactor (site live Fri 6 Nov 2026, scheduled; LinkedIn proposed Fri 27 Nov, 11:30, if 25 Nov is still the last post in the queue)
 
 The hardest part of restarting the Three Mile Island reactor was not the reactor. It was the wire.
 
@@ -507,7 +507,7 @@ https://thephysicallayer.fyi/journal/constellation-restarts-the-reactor/
 
 ---
 
-## 35 · PJM sends the bill (site live Mon 26 Oct 2026, scheduled; LinkedIn proposed Mon 30 Nov, 11:30, if 25 Nov is still the last post in the queue)
+## 35 · PJM sends the bill (site live Mon 2 Nov 2026, scheduled; LinkedIn proposed Mon 30 Nov, 11:30, if 25 Nov is still the last post in the queue)
 
 PJM's capacity auction has cleared at its price cap three times running, and the latest one still came up almost 7 gigawatts short.
 
@@ -521,7 +521,7 @@ https://thephysicallayer.fyi/journal/pjm-sends-the-bill/
 
 ---
 
-## 36 · Seagate sells the terabyte (site live Wed 28 Oct 2026, scheduled; LinkedIn proposed Wed 2 Dec, 11:30, if 25 Nov is still the last post in the queue)
+## 36 · Seagate sells the terabyte (site live Wed 4 Nov 2026, scheduled; LinkedIn proposed Wed 2 Dec, 11:30, if 25 Nov is still the last post in the queue)
 
 Seagate shipped 26 per cent more hard drive storage in a year on roughly the same number of drives.
 
@@ -535,7 +535,7 @@ https://thephysicallayer.fyi/journal/seagate-sells-the-terabyte/
 
 ---
 
-## 37 · Water is a siting problem (site live Fri 30 Oct 2026, scheduled; LinkedIn proposed Fri 4 Dec, 11:30, if 25 Nov is still the last post in the queue)
+## 37 · Water is a siting problem (site live Fri 6 Nov 2026, scheduled; LinkedIn proposed Fri 4 Dec, 11:30, if 25 Nov is still the last post in the queue)
 
 Most of a data centre's water is not used at the data centre.
 
