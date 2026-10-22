@@ -1,11 +1,11 @@
 ---
 title: "Hitachi Energy is spending more than $9 billion on factories, and still plans a three-year queue"
-date: 2026-10-07T12:13:58+08:00
+date: 2026-10-22T12:51:38+08:00
 summary: "Hitachi Energy, by its own estimate the biggest maker of the transformers and power links connecting AI data centres to the grid, is building or expanding over 40 factories. Yet it expects unfilled orders to stay at two and a half to three years of sales through fiscal 2030, so its factories keep pace with the queue, not clear it."
 category: "Analysis"
 cover: "/covers/hitachi-energy-plans-the-queue.svg"
 tags: ["grid", "power", "data-centres"]
-draft: true
+draft: false
 ---
 
 At the end of June 2026, Hitachi Energy had $63.6 billion of orders signed but not yet delivered. That is roughly three years of its sales.
