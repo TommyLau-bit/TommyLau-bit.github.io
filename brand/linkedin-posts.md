@@ -369,7 +369,7 @@ https://thephysicallayer.fyi/journal/ge-vernova-sells-the-wait/
 
 ---
 
-## 27 · Hitachi Energy plans the queue (site live Thu 22 Oct 2026; LinkedIn Fri 20 Nov, 11:30)
+## 27 · Hitachi Energy plans the queue (site live Thu 22 Oct 2026; LinkedIn Fri 20 Nov, 11:30, scheduled)
 
 Hitachi Energy is spending more than $9 billion on factories, and it still expects about three years of orders to be waiting in 2030.
 
