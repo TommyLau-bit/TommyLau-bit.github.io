@@ -383,7 +383,7 @@ https://thephysicallayer.fyi/journal/hitachi-energy-plans-the-queue/
 
 ---
 
-## 28 · Eaton's order book outruns it (site live Mon 26 Oct 2026; LinkedIn Mon 23 Nov, 11:30)
+## 28 · Eaton's order book outruns it (site live Mon 26 Oct 2026; LinkedIn Mon 23 Nov, 11:30, scheduled)
 
 Eaton shipped 18% more electrical gear in the year to June, and its order book grew 33%.
 
