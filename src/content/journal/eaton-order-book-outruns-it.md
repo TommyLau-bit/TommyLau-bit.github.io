@@ -1,11 +1,11 @@
 ---
 title: "Eaton is shipping more electrical gear than ever, and its order book is growing faster still"
-date: 2026-10-07T11:56:14+08:00
+date: 2026-10-26T08:03:14+08:00
 summary: "Eaton makes the switchgear, backup power and wiring between the grid and the computers in a data centre, and it is shipping more each quarter, yet its order book is growing faster still. Its Americas orders waiting to be filled now equal about thirteen months of sales, up from eleven a year ago, and the new plants that could close the gap mostly arrive in 2027."
 category: "Analysis"
 cover: "/covers/eaton-order-book-outruns-it.svg"
 tags: ["power", "data-centres", "the-stack"]
-draft: true
+draft: false
 ---
 
 In the year to June 2026, Eaton's electrical business in the Americas sold 18 per cent more than the year before.
