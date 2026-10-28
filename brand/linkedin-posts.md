@@ -397,7 +397,7 @@ https://thephysicallayer.fyi/journal/eaton-order-book-outruns-it/
 
 ---
 
-## 29 · Siemens Energy measures the shortage (site live Wed 28 Oct 2026; LinkedIn Wed 25 Nov, 11:30)
+## 29 · Siemens Energy measures the shortage (site live Wed 28 Oct 2026; LinkedIn Wed 25 Nov, 11:30, scheduled)
 
 Siemens Energy has published its own estimate of the transformer shortage, and on its chart demand is still ahead of every factory in 2030.
 
