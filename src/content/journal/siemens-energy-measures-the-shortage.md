@@ -1,11 +1,11 @@
 ---
 title: "Siemens Energy has measured the transformer shortage, and its own chart runs to 2030"
-date: 2026-10-07T12:31:34+08:00
+date: 2026-10-28T11:50:30+08:00
 summary: "Siemens Energy, one of the biggest makers of the transformers that connect power stations and data centres to the grid, has estimated how far demand for them in Europe and North America outruns the industry's capacity. The shortfall shrinks from about 40 per cent to about 10 per cent by 2030 but never closes, so waiting orders keep piling up."
 category: "Analysis"
 cover: "/covers/siemens-energy-measures-the-shortage.svg"
 tags: ["grid", "power", "data-centres"]
-draft: true
+draft: false
 ---
 
 Siemens Energy has published something I rarely see from an equipment maker: how far demand for large transformers runs ahead of every factory in Europe and North America, not only its own.
