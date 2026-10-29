@@ -3,10 +3,20 @@ import Base from '../layouts/Base.astro';
 import Card from '../components/Card.astro';
 import { getCollection } from 'astro:content';
 import { SITE, READING_ORDER } from '../config';
+import { STACK } from '../data/stack';
 const all = await getCollection('journal', ({ data }) => !data.draft);
 const posts = all.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 const byId = Object.fromEntries(all.map((p) => [p.id, p]));
 const first = READING_ORDER.map((id) => byId[id]).find(Boolean);
+const latest = posts.slice(0, 3);
+// one section per layer, grid to chip; pieces newest first within each
+const layers = STACK.map((l, i) => ({
+  ...l,
+  n: String(i + 1).padStart(2, '0'),
+  posts: posts.filter((p) => l.pieces.includes(p.id)),
+})).filter((l) => l.posts.length > 0);
+const mapped = new Set(STACK.flatMap((l) => l.pieces));
+const other = posts.filter((p) => !mapped.has(p.id));
 ---
 <Base wide>
   <section class="hero hero--compact">
@@ -20,7 +30,44 @@ const first = READING_ORDER.map((id) => byId[id]).find(Boolean);
       </p>
     )}
   </section>
-  <section class="grid">
-    {posts.map((p) => <Card p={p} />)}
+
+  <section class="home-sec" aria-labelledby="latest">
+    <h2 class="home-sec-h" id="latest">Latest</h2>
+    <div class="grid grid--home">
+      {latest.map((p) => <Card p={p} />)}
+    </div>
   </section>
+
+  <nav class="home-jump" aria-label="Jump to a layer">
+    <p class="home-jump-h">By layer, from the grid to the chip</p>
+    <p class="chips">
+      {layers.map((l) => <a class="chip" href={`#${l.id}`}>{l.name}</a>)}
+      {other.length > 0 && <a class="chip" href="#other">Other</a>}
+    </p>
+  </nav>
+
+  {layers.map((l) => (
+    <section class={`home-layer home-layer--${l.kind}`} id={l.id} aria-labelledby={`${l.id}-h`}>
+      <header class="home-layer-head">
+        <p class="home-layer-n">Layer {l.n}</p>
+        <h2 class="home-sec-h" id={`${l.id}-h`}>{l.name}</h2>
+        <p class="home-layer-binds"><strong>What binds.</strong> {l.constraint}</p>
+        <p class="home-layer-map"><a href={`/map/#${l.id}`}>This layer on the map</a></p>
+      </header>
+      <div class="grid grid--home">
+        {l.posts.map((p) => <Card p={p} />)}
+      </div>
+    </section>
+  ))}
+
+  {other.length > 0 && (
+    <section class="home-layer" id="other" aria-labelledby="other-h">
+      <header class="home-layer-head">
+        <h2 class="home-sec-h" id="other-h">Other</h2>
+      </header>
+      <div class="grid grid--home">
+        {other.map((p) => <Card p={p} />)}
+      </div>
+    </section>
+  )}
 </Base>
