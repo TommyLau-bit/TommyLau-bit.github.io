@@ -60,6 +60,13 @@ cover brief and LinkedIn post, is yours to write.
   `YYYY-MM-DDTHH:MM:SS+08:00`, set at publish. Never a planned, staggered or
   future date. The checker fails a future date.
 
+- **Quality over quantity** (Tommy, 29 Oct 2026). The site is for investors and
+  portfolio managers looking for insight, not a feed of every related topic. A
+  piece publishes only if it clears all three: (1) a mechanism the site does not
+  already have (no second "order book outruns the factory" piece), (2) a claim
+  resting on primary sources (filings, regulators, grid operators), not press
+  reports of them, and (3) something a PM would learn beyond the headline. A
+  draft that fails is held, not published. Recommend short lists.
 - **Scope is AI and energy infrastructure only.** No commodities, shipping,
   general equities or macro. The narrowness is the asset. **One exception:
   oil** (Tommy, 29 Oct 2026), because it is part of the energy sector. Oil
