@@ -61,7 +61,11 @@ cover brief and LinkedIn post, is yours to write.
   future date. The checker fails a future date.
 
 - **Scope is AI and energy infrastructure only.** No commodities, shipping,
-  general equities or macro. The narrowness is the asset.
+  general equities or macro. The narrowness is the asset. **One exception:
+  oil** (Tommy, 29 Oct 2026), because it is part of the energy sector. Oil
+  pieces explain the physical system (production, pipelines, refining, how it
+  meets power and gas) under the same rules as every piece: no price
+  forecasts, trading views or views on shares. See WRITING-FORMAT.md §5.
 - **Financials as evidence, never a view on the shares, in journal pieces.** A
   company's own disclosed figures (revenue, margins, backlog, capex, order
   books) may appear in a piece when they test or confirm the physical

@@ -351,6 +351,13 @@ the supply chains that gate any of them.
 Not on this site: commodities, shipping, general equities, macro, anything that
 belongs in the separate market-views notes. The narrowness is the asset.
 
+The one exception is oil (Tommy, 29 Oct 2026): it is part of the energy sector,
+and the site covers the energy sector. An oil piece explains the physical
+system, such as production, pipelines, refining and where oil meets power and
+gas, in the same format and under the same rules as every other piece. It
+carries no oil price forecast, no trading view and no view on shares; those
+stay in the market-views notes. Other commodities remain out.
+
 Do not write above your own layer map. If a piece would require claims about
 wafer-fab process technology or semiconductor design, stop at the layer where
 the mechanism is still physical.
