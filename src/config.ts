@@ -12,4 +12,4 @@ export const SITE = {
   locale: 'en-GB',
 };
 
-export const OG_VERSION = 'v9';
+export const OG_VERSION = 'v10';
