@@ -1,6 +1,8 @@
 ---
 title: "Contracted, energised, running: how Abilene, Nebius and Jane Street's AI capacity really arrives"
-date: 2026-10-30T14:20:52+08:00
+date: 2026-09-25T14:00:00+08:00
+updated: 2026-10-30T14:20:52+08:00
+updateNote: "Rewritten on 30 October 2026 as one deep piece, bringing together 2 earlier pieces, with a new section for investors."
 summary: "An AI campus passes five stages before it computes anything: announced, under construction, energised, delivered and running. Crusoe's campus at Abilene, Nebius's rented clusters and Jane Street's own sites show the order. Power switched on is the last stage a builder controls, but only running chips are computing, and how fast they follow depends on the tenant."
 category: "Analysis"
 cover: "/covers/contracted-energised-running.svg"
@@ -66,9 +68,9 @@ Crusoe builds the campus, Oracle leases it and runs the cloud inside, and OpenAI
 
 The second phase added six buildings, with construction from March 2025. In May 2025 Crusoe expected them energised in mid-2026. In March 2026 it said the phase was "expected to reach completion by the end of 2026", without a date for energisation.
 
-Oracle then reported handover. On its call of 10 June 2026, as transcribed, it said 42% of Abilene's capacity had been delivered, about 35% more would follow within 90 days, and the rest in the quarter after, which ends on 30 November 2026. On 10 September it said six of the eight buildings, 618 MW and 75% of capacity, were with the customer, and that it delivered 131,000 GPUs there in the quarter. I could not find a primary copy of either call on Oracle's site, so those figures stay labelled.
+Oracle then reported handover. On its call of 10 June 2026, as transcribed, it said 42% of Abilene's capacity had been delivered, about 35% more would follow within 90 days, and the rest in the quarter after, which ends on 30 November 2026. On 10 September it said six of the eight buildings, 618 MW and 75% of capacity, were with the customer, and that it delivered 131,000 GPUs there in the quarter. I could not find a primary copy of either call on Oracle's site, so they are marked as transcribed.
 
-My draft on Abilene said that once a hall is live, chips are installed "in months". At Abilene that holds, because the tenant's racks arrived with the power: the first GB200 racks came in June 2025, the window in which Crusoe had said the first two buildings would be energised. It does not hold everywhere, as Johor shows below.
+An unpublished draft of mine on Abilene said that once a hall is live, chips are installed "in months". At Abilene that holds, because the tenant's racks arrived with the power: the first GB200 racks came in June 2025, the window in which Crusoe had said the first two buildings would be energised. It does not hold everywhere, as Johor shows below.
 
 So at Abilene the energised date set the pace. Delivery followed within a quarter or two, and the chips were already in the pipeline.
 
@@ -96,7 +98,7 @@ So the contracted figure is five to six times the connected guide, and the conne
 <a id="power-first-chips-last"></a>
 ## Jane Street: buying the slow stages first
 
-Jane Street's head of physical engineering, Dan Pontecorvo, described the order on the podcast with Dwarkesh Patel published on 21 May 2026. Generators, transformers and some liquid cooling equipment can take more than a year. So the firm commits to a site early, holds slightly more power than it needs, designs for several possible chips and picks one once the building is nearly ready.
+Jane Street's head of physical engineering, Dan Pontecorvo, described the order in a podcast conversation with Dwarkesh Patel published on 21 May 2026, separate from the video tour of the site released on 15 May. Generators, transformers and some liquid cooling equipment can take more than a year. So the firm commits to a site early, holds slightly more power than it needs, designs for several possible chips and picks one once the building is nearly ready.
 
 Chip choice changes the building, he said, so a hall designed for one chip can suit another badly. Choosing late keeps that option open.
 
@@ -108,9 +110,9 @@ Jane Street also buys the finished stage from others. On 15 April 2026 CoreWeave
 
 ## Abilene and Johor: energised is not the same as running
 
-I wrote in the Abilene draft that "Johor is short of connections, not chips". The [deep piece on Johor and Singapore](/journal/the-queue-not-the-chip/) shows that was wrong for campuses already connected, and I withdraw it.
+An unpublished draft of mine said that "Johor is short of connections, not chips". The [deep piece on Johor and Singapore](/journal/the-queue-not-the-chip/) shows that was wrong for campuses already connected, and I withdraw it.
 
-In June 2026 Malaysia's data centres drew 1,256 MW against 5.65 GW of maximum demand booked by the projects in Tenaga Nasional's system, about 22% (Tenaga briefing, 28 August 2026). Maximum demand is the most power a site may draw at once. Johor holds 29 of Malaysia's 61 data centre projects and 5.6 of its 8.3 GW of secured capacity. The figure is national; Tenaga publishes no Johor-only draw.
+In June 2026 Malaysia's data centres drew 1,256 MW against 5.65 GW of maximum demand booked by the projects in Tenaga Nasional's system, about 22% (Tenaga briefing, 28 August 2026). Maximum demand is the most power a site may draw at once. Johor holds 29 of Malaysia's 61 data centre projects and 5.6 of its 8.35 GW of secured capacity. The figure is national; Tenaga publishes no Johor-only draw.
 
 | | Abilene | Nebius | Johor |
 |---|---|---|---|
@@ -135,7 +137,7 @@ Claim: "AI buyers pay for connected power, and Nebius's edge is turning contract
 
 Breaks if: "Prepayments fade, or Nebius misses 800 megawatts connected by the end of 2026, or its customers start selling their own spare capacity."
 
-Where I was wrong: buyers do not pay for connected power. On Nebius's own definitions they pay for active power, chips installed and running, which comes after connection. I said so in the [Nebius note](/research/nebius/) on 6 October. The edge is still speed, but the test that matters is active power, read through annualised revenue.
+Where later evidence bears on it: I was wrong. Buyers do not pay for connected power. On Nebius's own definitions they pay for active power, chips installed and running, which comes after connection. I said so in the [Nebius note](/research/nebius/) on 6 October. The edge is still speed, but the test that matters is active power, read through annualised revenue.
 
 On the three tests: the 800 MW limb is unresolved until Nebius reports the end of 2026. On prepayments, the latest evidence predates the claim: Nebius's letter of 12 August put them in about 70% of second quarter deals, and nothing it has published since shows them fading. On the third limb, I have found no primary evidence of a Nebius customer selling its spare capacity; Bloomberg reported in July 2026 that Meta plans to, which is press and unconfirmed.
 
@@ -145,9 +147,7 @@ Claim: "The order builders commit in reveals the constraint, and at Jane Street 
 
 Breaks if: "Chips become the longest wait again while transformer and generator lead times fall back to months, or dropping full generator backup proves a false saving."
 
-Since it went live: nothing I have found cuts against it. The claim rests on one firm's own account, and I have no published outage record to test the generator saving either way. Jane Street's US$6 billion commitment to CoreWeave in April predates the claim but fits it: a builder short of finished power also rents it.
-
-The Abilene draft's proposed claim never went live. This piece's new claim replaces it.
+Where later evidence bears on it: nothing I have found cuts against it. The claim rests on one firm's own account, and I have no published outage record to test the generator saving either way. Jane Street's US$6 billion commitment to CoreWeave in April predates the claim but fits it: a builder short of finished power also rents it.
 
 <a id="contracted-energised-running"></a>
 

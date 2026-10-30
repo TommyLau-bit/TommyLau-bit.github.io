@@ -1,6 +1,8 @@
 ---
 title: "Powering the rack: from 54 volts to 800, and the gear each megawatt now needs"
-date: 2026-10-30T14:20:52+08:00
+date: 2026-08-07
+updated: 2026-10-30T14:20:52+08:00
+updateNote: "Rewritten on 30 October 2026 as one deep piece, bringing together 3 earlier pieces, with a new section for investors."
 summary: "An AI rack now draws so much power that the copper and power supplies inside it would crowd out the computers. So the industry is moving the rack from 54 volts to 800. Vertiv sells the power equipment in the building and Texas Instruments makes the small chips beside the processor, and both sell more into each megawatt as rack power climbs. The new voltage reaches the rack years before it reaches the whole building."
 category: "Analysis"
 cover: "/covers/powering-the-rack.svg"
@@ -55,7 +57,7 @@ Every watt an AI chip uses passes through the same chain of conversions. Each st
 | Backup | UPS converts AC to DC and back again | Capacitors beside the racks; batteries at the grid connection | Not stated | Vertiv, Schneider Electric, Eaton |
 | Room to rack | 415 or 480 VAC on busway | 800 VDC on two-conductor busway | None, it is copper | Vertiv, Schneider Electric, Eaton |
 | Rack to tray | Power shelves turn 415 VAC into 54 VDC on a copper busbar | 800 VDC enters the tray directly | Varies by design | Delta, LiteOn, Flex, Megmeet |
-| Tray to board | 54 V to 12 V | One converter steps 800 V to 12 V at 64 to 1, or 800 V to 6 V | GaN, low-voltage on today's 54 V step; high-voltage at 800 V | Navitas, Innoscience, Infineon, TI |
+| Tray to board | 54 V to 12 V | One converter steps 800 V to 12 V at about 64 to 1, or 800 V to 6 V | GaN, low-voltage on today's 54 V step; high-voltage at 800 V | Navitas, Innoscience, Infineon, TI |
 | Board to chip | 12 V to below 1 V | 12 V or 6 V to below 1 V | Power stages, many per processor | TI, Monolithic Power, Infineon, Renesas, Analog Devices |
 
 The voltages and steps are Nvidia's (20 May and 13 October 2025). The 800 V to 6 V step is Texas Instruments' design (16 March 2026). Nvidia's October 2025 post says end-to-end efficiency on today's AC path "can be less than 90%". Its May 2025 post claims up to 5% better efficiency for 800 VDC against today's 54 V systems.
@@ -70,7 +72,7 @@ So the honest split is SiC on the grid side, where voltages run into kilovolts, 
 
 ## 800 VDC timing: what Nvidia itself has said
 
-Timing is contested in press reports, which I leave aside. Nvidia's own dated statements are these.
+Press reports contest the timing; Nvidia's own dated statements are these.
 
 | Date | Nvidia's statement | Source |
 |---|---|---|
@@ -83,11 +85,11 @@ The August post dates the power gear, not Kyber, and it says more than 80 manufa
 
 That ordering is my reading of the evidence: the rack converts first, from an AC room, and the building follows.
 
-It reverses my September note. That note led with the building design, 13.8 kV converted straight to 800 VDC at the perimeter, and treated a rack of power supplies beside each compute rack as the downside case. Nvidia has since made that power rack its first product, so the sidecar is the first phase, not the failure mode. The note also counted about thirty vendors; Nvidia now counts more than 80.
+It reverses a research note I wrote in September, which is not on this site. That note led with the building design, 13.8 kV converted straight to 800 VDC at the perimeter, and treated a sidecar, a power rack beside each compute rack, as the downside case. Nvidia has since made that power rack its first product, so the sidecar is the first phase, not the failure mode. The note also counted about thirty vendors; Nvidia now counts more than 80.
 
 ## Content per megawatt
 
-A megawatt of AI capacity holds more power and cooling gear than a megawatt of ordinary servers. Vertiv is the one maker in this cluster to put a dollar figure on it in its own materials.
+A megawatt of AI capacity holds more power and cooling gear than a megawatt of ordinary servers. Vertiv is the one maker here to put a dollar figure on it.
 
 | Measure | Figure | Source |
 |---|---|---|
@@ -156,7 +158,7 @@ Claim: "What Vertiv sells per megawatt is rising, because AI makes every megawat
 
 Breaks if: "Vertiv's growth only ever tracks the megawatts being built, or its margin shrinks while orders stay strong, or the biggest buyers take cooling in-house."
 
-Where I was wrong: the piece said service revenue grew faster than product sales. Those were reported figures, swollen by acquisitions. Organically, services and spares grew 18.1% in the third quarter of 2026 against 63.6% for products, so that evidence fell away, as the Vertiv note said on 6 October. The margin limb has not broken: 25.2%, up 2.9 points, with orders more than doubling. But that margin fits operating leverage as well as richer content. The claim now rests on Vertiv's own per-MW estimate, up about 10 to 15%. The in-house limb is partly met, and was from the start: Google's own blog (30 April 2025) says it has liquid-cooled its TPUs since 2018 "at GigaWatt scale". So at least one of the biggest buyers already designs its own cooling, which the September piece did not weigh.
+Where later evidence bears on it: I was wrong. The piece said service revenue grew faster than product sales. Those were reported figures, swollen by acquisitions. Organically, services and spares grew 18.1% in the third quarter of 2026 against 63.6% for products, so that evidence fell away, as the Vertiv note said on 6 October. The margin limb has not broken: 25.2%, up 2.9 points, with orders more than doubling. But that margin fits operating leverage as well as richer content. The claim now rests on Vertiv's own per-MW estimate, up about 10 to 15%. The in-house limb is partly met, and was from the start: Google's own blog (30 April 2025) says it has liquid-cooled its TPUs since 2018 "at GigaWatt scale". So at least one of the biggest buyers already designs its own cooling, which the September piece did not weigh.
 
 **The most expensive chip in an AI rack runs on Texas Instruments' cheapest ones** (2 October 2026)
 
@@ -164,7 +166,7 @@ Claim: "The move to 800 volt racks turns Texas Instruments' small, cheap power c
 
 Breaks if: "Racks stay at 54 volts for years, or rivals hold the demanding high end, or TI's new 300mm lines run part-empty as industrial and car demand weakens."
 
-Where later evidence cuts against it: the growing data centre business is here, about 13% of revenue in the third quarter of 2026. But it grew before 800 V racks ship in volume, so the cause the claim names is not yet shown. TI names power density and higher voltages together, so the growth so far cannot be pinned on 800 V. Nvidia dates its own 800 V power rack to the second half of 2026, so the first limb cannot be tested before 2027. Industrial grew more than 40%, so the part-empty limb is not near.
+Where later evidence bears on it: the growing data centre business is here, about 13% of revenue in the third quarter of 2026. But it grew before 800 V racks ship in volume, so the cause the claim names is not yet shown. TI names power density and higher voltages together, so the growth so far cannot be pinned on 800 V. Nvidia dates its own 800 V power rack to the second half of 2026, so the first limb cannot be tested before 2027. Industrial grew more than 40%, so the part-empty limb is not near.
 
 <a id="powering-the-rack"></a>
 

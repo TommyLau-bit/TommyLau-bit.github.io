@@ -1,6 +1,8 @@
 ---
 title: "The equipment queue: transformer and switchgear makers are building to keep the wait, not to end it"
-date: 2026-10-30T14:20:52+08:00
+date: 2026-10-07T14:17:41+08:00
+updated: 2026-10-30T14:20:52+08:00
+updateNote: "Rewritten on 30 October 2026 as one deep piece, bringing together 4 earlier pieces, with a new section for investors."
 summary: "An AI data centre cannot switch on without a transformer at the grid and switchgear inside its fence. Hitachi Energy, Siemens Energy, Eaton and Schneider Electric make much of that gear, and each is building new factories. Yet each has a bigger pile of signed orders than a year ago, and the makers add floor space only as fast as orders justify, so the wait for equipment is being kept, not cleared."
 category: "Analysis"
 cover: "/covers/the-equipment-queue.svg"
@@ -122,9 +124,9 @@ Eaton's Electrical Americas business makes the switchgear, UPS systems and elect
 
 In the second quarter of 2026 the segment sold $3,951m, up 18% organic, which strips out acquisitions and currency. Twelve-month orders rose 41% organic and backlog 33% (release and Form 10-Q, 31 July 2026). The latest rise was only 0.01.
 
-The queue had a cost: segment margin fell from 29.5% to 27.5% year on year, with 470 basis points, hundredths of a percentage point, from commodity inflation. Orders priced months ago met higher metal costs.
+The queue had a cost: segment margin fell from 29.5% to 27.5% year on year. Commodity inflation was a 470 basis point headwind (a basis point is a hundredth of a percentage point), partly offset, so the net fall was 200 basis points. Orders priced months ago met higher metal costs.
 
-The transformer and switchgear plants arrive in 2027. Call quotes in my October piece came from a third-party transcript and are not repeated.
+The transformer and switchgear plants arrive in 2027.
 
 <a id="schneider-sells-the-finished-system"></a>
 ## Schneider Electric: selling the finished system
@@ -154,7 +156,7 @@ Claim: "Schneider Electric's AI data centre growth is arriving as finished syste
 
 Breaks if: "Systems falls below 34 per cent of Schneider's group revenue, its 2025 level, for the full year 2026 or 2027 while Schneider describes Data Centre and Networks sales as growing double digit; or Products outgrows Systems on an organic basis for two quarters running while data centres remain Schneider's main growth driver."
 
-Where later evidence cuts against it: not broken, but close. In the third quarter of 2026 Products grew 17% against 22% for Systems, and Schneider says Products growth was "majority volume-driven": more loose parts, not just higher prices. The nine-month Systems share is about 34% from rounded shares (33.9% to 34.9%), on the line. The share test checks the outcome, not the cause: buyers may want prefabrication for speed as much as for scarce electricians.
+Where later evidence bears on it: not broken, but close. In the third quarter of 2026 Products grew 17% against 22% for Systems, and Schneider says Products growth was "majority volume-driven": more loose parts, not just higher prices. The nine-month Systems share is about 34% from rounded shares (33.9% to 34.9%), on the line. The share test checks the outcome, not the cause: buyers may want prefabrication for speed as much as for scarce electricians.
 
 **Hitachi Energy is spending more than $9 billion on factories, and still plans a three-year queue** (22 October 2026)
 
@@ -162,7 +164,7 @@ Claim: "Hitachi Energy is adding factories only as fast as signed orders justify
 
 Breaks if: "Hitachi Energy's order backlog divided by its revenue over the previous four quarters, both in US dollars as Hitachi reports them (about 3.06 at 30 June 2026), falls below 2.5 at two consecutive quarter ends before 31 March 2031, the end of fiscal 2030; or its orders for any full fiscal year up to fiscal 2030 fall below its revenue for that year."
 
-Since the piece: the ratio rose to about 3.1 at 30 September 2026 (Hitachi, 28 October 2026). The claim holds. Its South Boston date came from trade press, not Hitachi.
+Where later evidence bears on it: the ratio rose to about 3.1 at 30 September 2026 (Hitachi, 28 October 2026). The claim holds. Its South Boston date came from trade press, not Hitachi.
 
 **Eaton is shipping more electrical gear than ever, and its order book is growing faster still** (26 October 2026)
 
@@ -170,7 +172,7 @@ Claim: "Eaton is shipping more electrical gear than ever, yet its Electrical Ame
 
 Breaks if: "Electrical Americas backlog divided by the segment's sales over the previous four quarters (1.05 at June 2026, up from 1.04 in March) falls for two consecutive quarters before mid 2027, when the new plants start; or falls below 0.93, its June 2025 level, before the end of 2027; or the segment's twelve-month book-to-bill falls below 1.0 for two quarters running; or Electrical Americas margin is still falling year on year after Eaton reports price and cost back to neutral."
 
-Since the piece: no new figures by 30 October 2026. The rise slowed to 0.01, and some of it may be price.
+Where later evidence bears on it: no new figures by 30 October 2026. The rise slowed to 0.01, and some of it may be price.
 
 **Siemens Energy has measured the transformer shortage, and its own chart runs to 2030** (28 October 2026)
 
@@ -178,7 +180,7 @@ Claim: "By Siemens Energy's own estimate, demand for large and medium power tran
 
 Breaks if: "Before 30 September 2030: Grid Technologies' orders fall below its revenue for any full fiscal year; or its order backlog in euros, as Siemens Energy reports it (€51bn at 30 June 2026), falls for two consecutive quarters; or Siemens Energy publishes a revised estimate showing transformer capacity meeting demand in Europe and North America before fiscal 2030."
 
-Since the piece: no new figures by 30 October 2026. Its Charlotte slip rested on a press report; Siemens Energy's last stated date is early 2026, and its release of 3 February 2026 gives none.
+Where later evidence bears on it: no new figures by 30 October 2026. Its Charlotte slip rested on a press report; Siemens Energy's last stated date is early 2026, and its release of 3 February 2026 gives none.
 
 <a id="the-equipment-queue"></a>
 

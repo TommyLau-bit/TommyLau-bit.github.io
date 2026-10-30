@@ -54,11 +54,54 @@ export function companyIndex(posts: Post[]): Company[] {
   return [...map.values()].sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }));
 }
 
-// The companies most often named across a set of pieces, for the map.
-export function topCompanies(posts: Post[], limit = 10): Company[] {
-  return companyIndex(posts)
-    .sort((a, b) => new Set(b.mentions.map((m) => m.post.id)).size - new Set(a.mentions.map((m) => m.post.id)).size || a.name.localeCompare(b.name))
-    .slice(0, limit);
+export const pieceCount = (c: Company) => new Set(c.mentions.map((m) => m.post.id)).size;
+
+// ── Which companies get a page (Tommy, 30 Oct 2026) ──────────────────────────
+// The index names every company in an exposure map, but a page of its own is
+// kept only for a company the site actually writes about. A company keeps its
+// page if any one of these holds:
+//   1. it has a research note (src/content/calls/*.md `company:`);
+//   2. a heading in the investor layer of a piece that maps it names it;
+//   3. the running prose of a piece that maps it names it BODY_MENTIONS times
+//      or more, outside the exposure map (tables, boxes and headings excluded).
+// Every other company URL redirects to /companies/ (src/pages/companies/[slug].astro).
+export const BODY_MENTIONS = 2;
+
+const esc = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+function partsOf(post: Post) {
+  const body = (post.body ?? '').replace(/<section class="exposure">[\s\S]*?<\/section>/g, '');
+  const investor = body.split('<hr class="layer">')[1] ?? '';
+  const headings = investor.split('\n').filter((l) => /^#{2,4}\s/.test(l)).join('\n');
+  const prose = body
+    .replace(/<(section|details|figure|aside|table|dl|div)\b[\s\S]*?<\/\1>/g, '')
+    .split('\n')
+    .filter((l) => !/^\s*[|<#]/.test(l))
+    .join('\n');
+  return { headings, prose };
 }
 
-export const pieceCount = (c: Company) => new Set(c.mentions.map((m) => m.post.id)).size;
+// Times `name` appears as a whole word, not counting where it is part of a
+// longer company name (Siemens inside Siemens Energy).
+function mentions(name: string, text: string, longer: string[]): number {
+  for (const l of longer) text = text.split(l).join(' ');
+  return (text.match(new RegExp(`(?<![A-Za-z0-9])${esc(name)}(?![A-Za-z0-9])`, 'g')) ?? []).length;
+}
+
+export function companyPages(posts: Post[], noteCompanies: string[]): Company[] {
+  const all = companyIndex(posts);
+  const names = all.map((c) => c.name);
+  const slugs = new Set(all.map((c) => c.slug));
+  // A note on "Hitachi" covers "Hitachi Energy" when no company is named plain "Hitachi".
+  const noted = (c: Company) => noteCompanies.some((n) =>
+    slugify(n) === c.slug || (!slugs.has(slugify(n)) && c.name.startsWith(`${n} `)));
+  const parts = new Map(posts.map((p) => [p.id, partsOf(p)]));
+  return all.filter((c) => {
+    if (noted(c)) return true;
+    const longer = names.filter((n) => n !== c.name && n.includes(c.name)).sort((a, b) => b.length - a.length);
+    return [...new Set(c.mentions.map((m) => m.post.id))].some((id) => {
+      const pt = parts.get(id)!;
+      return mentions(c.name, pt.headings, longer) > 0 || mentions(c.name, pt.prose, longer) >= BODY_MENTIONS;
+    });
+  });
+}

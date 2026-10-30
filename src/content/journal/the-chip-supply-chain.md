@@ -1,6 +1,8 @@
 ---
 title: "The chip supply chain's slow parts are sold years before they are made"
-date: 2026-10-30T14:20:52+08:00
+date: 2026-07-14
+updated: 2026-10-30T14:20:52+08:00
+updateNote: "Rewritten on 30 October 2026 as one deep piece, bringing together 7 earlier pieces, with a new section for investors."
 summary: "An Nvidia AI chip is built by dozens of companies, and most of them could be replaced within months. A few could not: ASML's lithography machines, TSMC's factories and packaging lines, Ajinomoto's insulating film, Micron's stacked memory and Seagate's hard drives each come from one or a handful of makers that grow only by building new plant. Those parts are sold a year or more before they are made, and they set how fast the chip side of AI can grow."
 category: "Analysis"
 cover: "/covers/the-chip-supply-chain.svg"
@@ -79,7 +81,7 @@ Where I was wrong: my July explainer said the slowest thing in the chain "is nev
 
 An EUV scanner prints a chip's finest layers with extreme ultraviolet light. ASML's Form 20-F of 25 February 2026 calls it "the world's only manufacturer of EUV lithography systems", its output "limited by the production capacity" of Carl Zeiss SMT, sole supplier of the critical optics. ASML owns 24.9% of the ZEISS SMT holding company.
 
-On 15 July 2026 it expected to ship around 65 low NA systems, its 2026 capacity, and planned about 30% more for 2027. Its chief executive said ASML was "close to being fully covered with orders" for 2027 (ASML's own transcript); both 30% steps fit the "existing footprint", as transcribed.
+On 15 July 2026 it expected to ship around 65 low NA systems, its 2026 capacity, and planned about 30% more for 2027. Its chief executive said ASML was "close to being fully covered with orders" for 2027 (ASML's own transcript); the 30% step fits the "existing footprint", as transcribed.
 
 On 14 October the wording hardened: "we now expect that our supply as currently planned for both 2027 and 2028 will not fully meet the demand of our customers". It is studying a larger 2028 step, and "some customers are expressing an interest in placing orders with us for 2029 and even 2030".
 
@@ -130,7 +132,7 @@ Claim: "On today's horizon, TSMC's factories bind before the grid does. Over the
 
 Breaks if: "For today: TSMC's tightness eases while data centres with chips on order still wait for power. For the longer run: TSMC still calls capacity tight in 2028 while grid connection waits shorten."
 
-Where later evidence points: the near half holds. On TSMC's 15 October 2026 call Wei said the gap between demand and supply is "still quite big", the finance chief called tool supply tight, and Wei said TSMC's own checks on US data centre power were "so far so good". ASML's warning is a forecast of tool supply and does not test the 2028 half, which is still open.
+Where later evidence bears on it: the near half holds. On TSMC's 15 October 2026 call Wei said the gap between demand and supply is "still quite big", the finance chief called tool supply tight, and Wei said TSMC's own checks on US data centre power were "so far so good". ASML's warning is a forecast of tool supply and does not test the 2028 half, which is still open.
 
 **ASML's EUV machines are booked a year or two ahead, like a grid connection** (7 October 2026)
 
@@ -138,7 +140,7 @@ Claim: "ASML's EUV machines are sold out and committed a year or two ahead, and 
 
 Breaks if: "The booking half fails if ASML says it has EUV capacity beyond what customers have ordered; or ships more than 10 per cent fewer low NA EUV systems than its stated capacity (around 65 for 2026, around 85 for 2027) and itself attributes the shortfall to customer demand or pushed-out orders; or by its fourth quarter 2026 results (January 2027) no longer describes 2027 as close to fully covered with orders; or says its EUV order lead times are shortening. The growth half fails if ASML raises its stated low NA EUV capacity by more than 40 per cent in a single year, or announces new EUV cleanroom space or a second source for its optics. A shortfall caused by ZEISS or other suppliers supports the claim rather than breaking it."
 
-Where later evidence points: the booking half is stronger than I wrote. The growth half is at risk: ASML is studying a 2028 step beyond 30%. It breaks above 40% in one year, or if ASML announces new EUV cleanroom space, which a step beyond two 30% steps may need.
+Where later evidence bears on it: the booking half is stronger than I wrote. The growth half is at risk: ASML is studying a 2028 step beyond 30%. It breaks above 40% in one year, or if ASML announces new EUV cleanroom space, which a step beyond two 30% steps may need.
 
 **As AI chip packages grow, Ajinomoto's insulating film grows with them** (7 October 2026)
 
@@ -146,7 +148,7 @@ Claim: "Ajinomoto's build-up film is used by the area and layer count of each ch
 
 Breaks if: "In any of Ajinomoto's annual results presentations through fiscal 2029 (the year to March 2030), servers and networks fall below 70 per cent of its ABF volume by application, its fiscal 2025 level (the split is rounded to five points, so a flat 70 per cent passes); or the business profit margin of its Functional Materials business, part of the Healthcare and Others segment, falls below 50 per cent in a year when that business's sales still grow. Ajinomoto discloses the margin only as rounded wording ("over 50%"); if it stops doing so, the test rests on the volume split alone."
 
-Where I was wrong: Ajinomoto does not disclose the margin only as rounded wording. Its results data sheets print Functional Materials sales and business profit in yen, so the margin can be computed exactly. The test is sharper than I wrote, and both halves hold.
+Where later evidence bears on it: I was wrong. Ajinomoto does not disclose the margin only as rounded wording. Its results data sheets print Functional Materials sales and business profit in yen, so the margin can be computed exactly. The test is sharper than I wrote, and both halves hold.
 
 **Micron sells AI memory before the year starts, and each bit takes three times the wafer** (7 October 2026)
 
@@ -154,11 +156,11 @@ Claim: "Micron sells most of each year's HBM before that year starts, and becaus
 
 Breaks if: "The first half fails if, by its fiscal first quarter 2028 results (around December 2027), Micron has not said most of its calendar 2028 HBM supply is agreed; or if Micron reports unsold HBM or cuts HBM output and itself attributes it to customer demand. The second half fails if, before the end of calendar 2028, Micron stops expecting the DRAM industry to be supply-constrained in 2027 or 2028 while still expecting industry HBM bits to grow faster than conventional DRAM; or if Micron states that any current HBM generation needs less than about three times the wafer of DDR5 per bit. A shortage prolonged by late cleanrooms supports the claim rather than breaking it."
 
-Where later evidence points: both halves hold, on Micron's September remarks.
+Where later evidence bears on it: both halves hold, on Micron's September remarks.
 
 **Proposed, never published: Seagate sells the terabyte**
 
-Drafted in October 2026 and never published, so it is not on record. Seagate's 27 October results support it, and the drives stay on the watch list below.
+Drafted in October 2026 and never published, so it is not on record. Seagate's 27 October results support it, and the drives stay on watch.
 
 <a id="the-chip-supply-chain"></a>
 
@@ -201,4 +203,4 @@ Four initiation notes rest on these claims, unchanged: [TSMC](/research/tsmc/), 
 
 ---
 
-<p class="sources">Sources: ASML Annual Report 2025 on Form 20-F (25 February 2026) and its results of 15 July and 14 October 2026; TSMC earnings calls of 15 January, 16 April and 16 July 2026 and its third quarter management report (15 October 2026); Ajinomoto's results presentation and Kani City release (7 May 2026), ASV Report 2026 (September 2026) and results data sheets; Micron's earnings calls and prepared remarks of 20 March 2024, 17 December 2025, 24 June and 30 September 2026, and its Form 10-K (9 October 2026); Seagate's supplemental information of 27 January, 28 April and 27 October 2026, its call of 28 July 2026 and Form 10-K (4 August 2026); Nvidia's Blackwell pages and Form 10-K (25 February 2026). Personal research, not investment advice.</p>
+<p class="sources">Sources: ASML Annual Report 2025 on Form 20-F (25 February 2026) and its results of 15 July and 14 October 2026; TSMC earnings calls of 15 January, 16 April, 16 July and 15 October 2026 and its third quarter management report (15 October 2026); Ajinomoto's results presentation and Kani City release (7 May 2026), ASV Report 2026 (September 2026) and results data sheets; Micron's earnings calls and prepared remarks of 20 March 2024, 17 December 2025, 24 June and 30 September 2026, and its Form 10-K (9 October 2026); Seagate's supplemental information of 27 January, 28 April and 27 October 2026, its call of 28 July 2026 and Form 10-K (4 August 2026); Nvidia's Blackwell pages and Form 10-K (25 February 2026). Personal research, not investment advice.</p>

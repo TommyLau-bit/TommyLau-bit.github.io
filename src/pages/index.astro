@@ -1,45 +1,37 @@
 ---
 import Base from '../layouts/Base.astro';
 import Card from '../components/Card.astro';
+import Descent from '../components/Descent.astro';
 import { getCollection } from 'astro:content';
-import { SITE, READING_ORDER } from '../config';
+import { SITE } from '../config';
 import { STACK, layerOf } from '../data/stack';
 const all = await getCollection('journal', ({ data }) => !data.draft);
 const posts = all.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 const byId = Object.fromEntries(all.map((p) => [p.id, p]));
-const first = READING_ORDER.map((id) => byId[id]).find(Boolean);
-const latest = posts.slice(0, 3);
 // one section per layer, grid to chip; pieces newest first within each.
 // A piece listed under two layers shows once, under its home layer (layerOf).
+// Every layer keeps its section (and its #id anchor, which the descent and the
+// rest of the site link to), even one whose only piece lives under another layer.
 const layers = STACK.map((l, i) => ({
   ...l,
   n: String(i + 1).padStart(2, '0'),
   posts: posts.filter((p) => layerOf(p.id)?.id === l.id),
-})).filter((l) => l.posts.length > 0);
+  also: l.pieces.map((id) => byId[id]).filter((p) => p && layerOf(p.id)?.id !== l.id),
+})).filter((l) => l.posts.length > 0 || l.also.length > 0);
 const mapped = new Set(STACK.flatMap((l) => l.pieces));
 const other = posts.filter((p) => !mapped.has(p.id));
+const homeOf = (id: string) => layers.find((l) => l.id === layerOf(id)?.id);
 ---
 <Base wide>
   <section class="hero hero--compact">
     <h1>The AI buildout has a physical layer.</h1>
     <p>{SITE.description}</p>
-    {first && (
-      <p class="hero-start">
-        New here? Begin with <a href={`/journal/${first.id}/`}>{first.data.title}</a>,
-        or see <a href="/start/">where to start</a>. To see the whole chain at once,
-        <a href="/map/">scroll from the grid to the chip</a>.
-      </p>
-    )}
+    <p class="hero-start">Scroll down to follow the power from the grid to the chip, or <a href="#layers">jump to the layers</a>.</p>
   </section>
 
-  <section class="home-sec" aria-labelledby="latest">
-    <h2 class="home-sec-h" id="latest">Latest</h2>
-    <div class="grid grid--home">
-      {latest.map((p) => <Card p={p} />)}
-    </div>
-  </section>
+  <Descent />
 
-  <nav class="home-jump" aria-label="Jump to a layer">
+  <nav class="home-jump" id="layers" aria-label="Jump to a layer">
     <p class="home-jump-h">By layer, from the grid to the chip</p>
     <p class="chips">
       {layers.map((l) => <a class="chip" href={`#${l.id}`}>{l.name}</a>)}
@@ -53,11 +45,16 @@ const other = posts.filter((p) => !mapped.has(p.id));
         <p class="home-layer-n">Layer {l.n}</p>
         <h2 class="home-sec-h" id={`${l.id}-h`}>{l.name}</h2>
         <p class="home-layer-binds"><strong>What binds.</strong> {l.constraint}</p>
-        <p class="home-layer-map"><a href={`/map/#${l.id}`}>This layer on the map</a></p>
+        {l.also.map((p) => {
+          const h = homeOf(p.id);
+          return <p class="home-layer-also">Covered in <a href={`/journal/${p.id}/`}>{p.data.title}</a>{h && <>, listed under <a href={`#${h.id}`}>Layer {h.n}</a></>}.</p>;
+        })}
       </header>
-      <div class="grid grid--home">
-        {l.posts.map((p) => <Card p={p} />)}
-      </div>
+      {l.posts.length > 0 ? (
+        <div class="grid grid--home">
+          {l.posts.map((p) => <Card p={p} />)}
+        </div>
+      ) : <div class="home-layer-gap"></div>}
     </section>
   ))}
 

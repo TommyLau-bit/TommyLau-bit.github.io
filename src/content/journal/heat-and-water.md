@@ -1,6 +1,8 @@
 ---
 title: "Heat and water decide where AI goes: liquid to the chip, a choice on the roof"
-date: 2026-10-30T14:20:52+08:00
+date: 2026-08-21
+updated: 2026-10-30T14:20:52+08:00
+updateNote: "Rewritten on 30 October 2026 as one deep piece, bringing together 2 earlier pieces, with a new section for investors."
 summary: "Almost every watt an AI chip draws comes back out as heat, and a rack of them now gives off more than air can carry. So the heat goes into liquid at the chip. That liquid runs warm enough to be cooled without evaporating water, for little extra power, which turns water from a limit on how much AI gets built into a choice about where and how each hall is cooled."
 category: "Analysis"
 cover: "/covers/heat-and-water.svg"
@@ -10,7 +12,7 @@ draft: false
 
 A chip does not use up electricity the way a kettle uses up water. Almost every watt that goes in comes back out as heat.
 
-Jane Street's engineers say one cabinet of Nvidia's current flagship chips draws about 140 kilowatts at peak. That is roughly ninety space heaters in a box the size of a fridge.
+Jane Street's engineers say one cabinet of Nvidia's current flagship chips draws about 140 kilowatts at peak. That is roughly ninety hairdryers in a box the size of a fridge.
 
 Air cannot carry that away, so the heat now leaves through liquid. And once it is in liquid, the building has a choice: evaporate water to get rid of it, or spend a little more electricity and use none.
 
@@ -89,7 +91,7 @@ What the operators report is the other half. Each names its measure differently,
 | Amazon Web Services, global | 1.14 | 0.12 L | Water withdrawn per kWh of IT load | 2025 |
 | Microsoft | not used here | 0.27 L | Water withdrawn per kWh, average WUE | 2025, likely its fiscal year to June |
 
-One line in it cuts against easy optimism. LBNL's AI specialised halls had the best PUE and nearly twice the hyperscale water per kWh. It projects the national average WUE rising after 2023 to between 0.45 and 0.48 litres, partly from "the increased water consumption of liquid-cooled systems". Liquid at the chip makes going waterless cheap. It does not make it happen; the choice on the roof does.
+One row in that table cuts against easy optimism. LBNL's AI specialised halls had the best PUE and nearly twice the hyperscale water per kWh. It projects the national average WUE rising after 2023 to between 0.45 and 0.48 litres, partly from "the increased water consumption of liquid-cooled systems". Liquid at the chip makes going waterless cheap. It does not make it happen; the choice on the roof does.
 
 <a id="cooling-is-half-the-job"></a>
 ## Why heat forced liquid to the chip
@@ -107,7 +109,7 @@ The August piece said air fails "somewhere between 30 and 50 kilowatts per rack"
 <a id="room-to-spare"></a>
 ## Inside one hall: Jane Street's retrofit
 
-Jane Street, a trading firm, showed its newest Texas AI site to the podcaster Dwarkesh Patel in a video tour published on 15 May 2026. Its write-up names the guides as Ron Minsky, who co-leads its technology group, and Dan Pontecorvo, who runs physical engineering. The site holds "4,032 GPUs across 56 racks, retrofitted for liquid cooling". Patel, quoted in the write-up, was struck by "the whole grid interconnect wattage of the datacenter taken up by racks that fit in a small fraction of the space originally allotted for chips".
+Jane Street, a trading firm, showed its newest Texas AI site to the podcaster Dwarkesh Patel in a video tour published on 15 May 2026; this page cites that tour and its write-up, not the longer conversation the three released on 21 May. Its write-up names the guides as Ron Minsky, who co-leads its technology group, and Dan Pontecorvo, who runs physical engineering. The site holds "4,032 GPUs across 56 racks, retrofitted for liquid cooling". Patel, quoted in the write-up, was struck by "the whole grid interconnect wattage of the datacenter taken up by racks that fit in a small fraction of the space originally allotted for chips".
 
 On the tour, each GB300 NVL72 rack draws about 140 kilowatts at peak, against 10 to 40 kW for a traditional air-cooled cabinet. About 85 to 90% of each server's heat leaves through cold plates; air takes the rest.
 
@@ -126,7 +128,7 @@ Google states the trade in its own words: water is "a highly efficient means of 
 |---|---|---|
 | Waltham Cross, Mesa, Canelones | Google's framework found the water sources at high risk of depletion and scarcity, so it chose air cooling at all three | Google 2025 Environmental Report, pp.40 to 41 |
 | Mesa, Arizona | 9.7 million gallons consumed in 2025 | Google 2026 Environmental Report, per-site table |
-| The Dalles, Oregon | Local water found not at high risk, so water cooling; 469 million gallons consumed in 2025, overhead of 6 to 10% in the fourth quarter | Google 2026 Environmental Report |
+| The Dalles, Oregon | Local water found not at high risk, so water cooling; 469 million gallons consumed in 2025 | Google 2026 Environmental Report |
 | Google, fleet | Share of freshwater withdrawal from sources at high risk: 15% in 2023, 14% in 2024, 13% in 2025 | Google Environmental Reports, 2024 to 2026 |
 | Santiago, Chile | Google filed in February 2022 to replace water cooling towers with air-cooled chillers, ending its draw from three wells; a court still partly annulled the permit on 26 February 2024 | Chile's Second Environmental Court ruling |
 | Microsoft, new designs | Since August 2024 all new designs evaporate no water for cooling, at "a nominal increase" in annual energy use; pilots in Phoenix and Mount Pleasant | Microsoft, 9 December 2024 |
@@ -140,7 +142,7 @@ Johor is the Southeast Asian case. Its water margin is set by treatment plants, 
 
 ## Claims on record
 
-None of the merged pieces put a claim on record. Cooling-is-half-the-job (21 August 2026) and room-to-spare (25 September 2026) were Explainers, and the water draft never went live. So the claim below is this page's first.
+None of the merged pieces put a claim on record. "Electricity doesn't get used up making AI. It turns into heat. Cooling is half the job." (21 August 2026) and "Jane Street's AI data hall has room to spare, and no power to fill it" (25 September 2026) were Explainers. So the claim below is this page's first.
 
 <a id="heat-and-water"></a>
 

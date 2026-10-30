@@ -1,9 +1,9 @@
 ---
-// Topics were folded into the map. Old links land there.
+// Topics were folded into the map, now the homepage. Old links land there.
 import { getCollection } from 'astro:content';
 export async function getStaticPaths() {
   const posts = await getCollection('journal');
   return [...new Set(posts.flatMap((p) => p.data.tags.map((t) => t.toLowerCase())))].map((tag) => ({ params: { tag } }));
 }
-return Astro.redirect('/map/');
+return Astro.redirect('/');
 ---

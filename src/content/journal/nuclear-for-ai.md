@@ -1,6 +1,8 @@
 ---
 title: "Nuclear power for AI comes from old reactors first. The new ones wait on fuel."
-date: 2026-10-30T14:20:52+08:00
+date: 2026-09-29T12:49:48+08:00
+updated: 2026-10-30T14:20:52+08:00
+updateNote: "Rewritten on 30 October 2026 as one deep piece, bringing together 2 earlier pieces, with a new section for investors."
 summary: "AI companies want nuclear power because it runs day and night without carbon. This decade it will mostly come from reactors that already exist, restarted or upgraded, because they already have a licensed site, a grid connection and ordinary fuel. The new small and advanced reactors have permits and buyers, but most need a richer uranium fuel that America has almost stopped making, so their power arrives later."
 category: "Analysis"
 cover: "/covers/nuclear-for-ai.svg"
@@ -54,7 +56,7 @@ Every nuclear megawatt sold to an AI buyer passes four gates: a grid place, reac
 | Rung | Project | Grid place | Reactor work | Licence | Fuel | Date given |
 |---|---|---|---|---|---|---|
 | Restart, borrowed plug | Crane, 835 MW, Constellation | 760 MW of rights moved from Eddystone (FERC, 1 June 2026) | Can generate in the second half of 2027 | Existing; NRC approvals expected early 2027 | Ordinary | 2027 (6 August 2026) |
-| Restart, held plug | Palisades, 800 MW, Holtec | Held to 1 March 2027 (FERC, 28 February 2025) | Fuel loading stopped 30 August to 21 October 2026 | Existing, restored | Ordinary | None (21 October 2026) |
+| Restart, held plug | Palisades, 800 MW, Holtec | Held to 1 March 2027 (FERC, 28 February 2025) | Fuel loading began 30 August; halted, assembly recovered by 21 October 2026 | Existing, restored | Ordinary | None (21 October 2026) |
 | Restart | Duane Arnold, 615 MW, NextEra | Not stated by NextEra | Inspections, engineering | NRC review open | Ordinary | First quarter 2029 at the latest (8 September 2026) |
 | Uprate | 890 MW at eleven Constellation units, for Google | Existing | New turbines, fitted in refuelling outages | NRC amendment where heat rises | Ordinary | 2028 to 2032 (6 October 2026) |
 | Small reactor, old site | Darlington 1, 300 MW, OPG | New 22 km line, existing corridor | Licensed to build, 4 April 2025 | Licence to operate applied for, 25 March 2026 | Ordinary | Vendor: end of 2029 (27 January 2025) |
@@ -91,7 +93,7 @@ On 6 October 2026 Constellation agreed to sell Google 890 MW of new capacity fro
 
 Heavy equipment is swapped during refuelling outages, which Constellation's units take every 18 to 24 months (2025 annual report).
 
-The NRC's list of expected applications, updated 8 September 2026, shows twelve from Constellation: seven small, five extended, four of the five due late 2027 or after and the last late 2030. The list covers all Constellation's uprates, including Amazon's and Meta's, and withholds plant names, so it is not Google's schedule. That is why I held a separate claim on it. It does show a staircase, not a block.
+The NRC's list of expected applications, updated 8 September 2026, shows twelve from Constellation: seven small and five extended uprates, four of the extended ones due to be filed in late 2027 or later, the last in late 2030. The list covers all Constellation's uprates, including Amazon's and Meta's, and withholds plant names, so it is not Google's schedule. That is why I make no separate claim on it. It does show a staircase, not a block.
 
 <a id="darlington-builds-on-the-old-plug"></a>
 ## Darlington: a new reactor on an old site
@@ -166,7 +168,7 @@ Claim: "Oklo is a seller of electricity, not reactors, and the model stands or f
 
 Breaks if: "Oklo starts selling reactors outright to raise cash, or Aurora in Idaho slips well past 2028 or produces power uncompetitive with gas, or the letters of intent stay letters."
 
-Where I was wrong: the piece said Meta's agreement "includes a binding prepayment to secure fuel". Oklo's quarterly report calls it a mechanism for Meta to prepay, discloses no amount, and does not call it a power purchase agreement. Its exposure map also says Centrus "enriches uranium to HALEU levels". Centrus's contracted HALEU production finished in mid-June 2026, the Energy Department has since ordered only maintenance, and its next contracted tonne is due by July 2032. Its supply to Oklo is a letter of intent, deliveries from 2029. The first half of the claim holds: Oklo still sells power, not reactors, and still targets 2028. But the limb "the letters of intent stay letters" currently points towards a break: no customer megawatt is under a binding power purchase agreement, and Oklo's fuel beyond its first core rests on a letter of intent too.
+Where later evidence bears on it: I was wrong. The piece said Meta's agreement "includes a binding prepayment to secure fuel". Oklo's quarterly report calls it a mechanism for Meta to prepay, discloses no amount, and does not call it a power purchase agreement. Its exposure map also says Centrus "enriches uranium to HALEU levels". Centrus's contracted HALEU production finished in mid-June 2026, the Energy Department has since ordered only maintenance, and its next contracted tonne is due by July 2032. Its supply to Oklo is a letter of intent, deliveries from 2029. The first half of the claim holds: Oklo still sells power, not reactors, and still targets 2028. But the limb "the letters of intent stay letters" currently points towards a break: no customer megawatt is under a binding power purchase agreement, and Oklo's fuel beyond its first core rests on a letter of intent too.
 
 <a id="nuclear-for-ai"></a>
 
@@ -178,7 +180,7 @@ Breaks if: "Reactors fuelled with HALEU together send electricity to American gr
 
 ## What would prove me wrong
 
-The first test is the bottom rung. Oklo targets 2028 on a government-stock core, and TerraPower and Kairos target 2030. If HALEU reactors with 100 MW or more of capacity between them send electricity to American grids by the end of 2030, fuel was not the gate it looks like today. Aurora-INL alone would not break it, because its first core is already covered.
+The first test is the bottom rung. Oklo targets 2028 on a government-stock core, and TerraPower and Kairos target 2030. If HALEU reactors with 100 MW or more of capacity between them send electricity to American grids by the end of 2030, fuel was not the gate it looks like today. Aurora-INL alone, at 75 MW, would not break it.
 
 The second is the top rung. If none of Crane, Palisades or Duane Arnold has sent power to the grid by the end of 2029, an existing site is not the fast lane I claim.
 
@@ -193,7 +195,7 @@ Two initiation notes rest on these claims: [Constellation](/research/constellati
 <dt>Plant owners</dt>
 <dd><span class="names">Constellation</span>, <span class="names">NextEra Energy</span> and <span class="names">Holtec</span> run, restart and upgrade existing reactors.</dd>
 <dt>Reactor makers</dt>
-<dd><span class="names">Oklo</span>, <span class="names">TerraPower</span> and <span class="names">Kairos Power</span> design advanced reactors; <span class="names">GE Vernova Hitachi</span> designs the BWRX-300.</dd>
+<dd><span class="names">Oklo</span>, <span class="names">TerraPower</span> and <span class="names">Kairos Power</span> design advanced reactors; <span class="names">GE Vernova Hitachi Nuclear Energy</span> designs the BWRX-300.</dd>
 <dt>Enrichers</dt>
 <dd><span class="names">Centrus Energy</span>, <span class="names">Urenco</span>, <span class="names">Orano</span> and <span class="names">ASP Isotopes</span> enrich or plan to enrich uranium.</dd>
 <dt>The buyers</dt>

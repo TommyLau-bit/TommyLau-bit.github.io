@@ -1,5 +1,5 @@
 import { defineConfig } from 'astro/config';
-import { existsSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import sitemap from '@astrojs/sitemap';
 import { SITE } from './src/config.ts';
 
@@ -11,6 +11,9 @@ import { SITE } from './src/config.ts';
 // src/content/journal/ in the same change: a redirect and a live page cannot
 // share a path. Keys have no trailing slash; the old URL with one still lands.
 const REDIRECTS = {
+  // Start here was removed and the map became the homepage (Tommy, 30 Oct 2026).
+  // /map/ is not here: src/pages/map.astro redirects it with its #layer kept.
+  '/start': '/',
   // the-queue-not-the-chip
   '/journal/johor-plugs-in-before-it-fills': '/journal/the-queue-not-the-chip/#johor-plugs-in-before-it-fills',
   '/journal/johor-waits-on-the-treatment-plant': '/journal/the-queue-not-the-chip/#johor-waits-on-the-treatment-plant',
@@ -90,9 +93,18 @@ for (const from of Object.keys(REDIRECTS)) {
     throw new Error(`Redirect ${from} would shadow src/content/journal/${m[1]}.md: delete the old piece (its original is archived in research-build/archive-pieces/) or drop the redirect.`);
 }
 
+// The sitemap lists live pages only. Redirect stubs written by pages themselves
+// (a company without a page of its own, /map/) are meta-refresh pages in dist/;
+// the sitemap runs after they are written, so read each one to leave it out.
+const DIST = new URL('./dist/', import.meta.url);
+const isStub = (page) => {
+  const f = new URL(`.${new URL(page).pathname}index.html`, DIST);
+  return existsSync(f) && /http-equiv="refresh"/.test(readFileSync(f, 'utf8').slice(0, 600));
+};
+
 export default defineConfig({
   site: SITE.url,
   redirects: REDIRECTS,
-  integrations: [sitemap({ filter: (page) => !page.includes('/topics/') })],
+  integrations: [sitemap({ filter: (page) => !page.includes('/topics/') && !isStub(page) })],
   markdown: { shikiConfig: { theme: 'github-light' } },
 });

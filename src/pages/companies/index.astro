@@ -1,16 +1,18 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
-import { companyIndex, pieceCount } from '../../lib/exposure';
+import { companyPages, pieceCount } from '../../lib/exposure';
+import { getPitches } from '../../lib/calls';
 const posts = await getCollection('journal', ({ data }) => !data.draft);
-const companies = companyIndex(posts);
+// only the companies the journal writes about get a page (lib/exposure.ts, companyPages)
+const companies = companyPages(posts, (await getPitches()).map((n) => n.data.company));
 const letters = [...new Set(companies.map((c) => c.name[0].toUpperCase()))];
 const subjects = companies.filter((c) => c.mentions.some((m) => m.subject));
 ---
-<Base wide title="Companies" description="Every company named in The Physical Layer's exposure maps, with what it makes and the pieces that explain its layer.">
+<Base wide title="Companies" description="The companies The Physical Layer writes about, with what each makes and the pieces that explain its layer.">
   <section class="hero hero--compact">
     <h1>Companies</h1>
-    <p>Every company the journal names, and what it makes, drawn from the exposure map at the foot of each piece. {companies.length} companies across {posts.length} pieces.</p>
+    <p>The companies the journal writes about, and what each makes, drawn from the exposure map at the foot of each piece. {companies.length} companies across {posts.length} pieces: each has a research note, a section of its own in a piece, or a part in a piece's argument.</p>
     <p class="hero-start">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares.</p>
   </section>
 

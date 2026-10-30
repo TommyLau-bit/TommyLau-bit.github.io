@@ -113,7 +113,7 @@ tags: ["power", "data-centres", "800VDC"]
 |---|---|
 | `title` | Sentence case, never title case. A claim or a plain question, 8 to 16 words. May be two sentences. Must be understandable by someone who has never read the site. If the piece is about one company or project, the title names it. |
 | `date` | The real moment the piece goes live, as `YYYY-MM-DDTHH:MM:SS+08:00` in Singapore time. Set it when you publish, never a planned, back-dated or future date. The full time keeps pieces published on the same day in order. The checker fails any date in the future. |
-| `summary` | Two or three sentences, plain English, zero jargon. **The hardest-working field on the site**: it renders in the "In plain English" box at the top of the piece, on the home-page card, on the reading page, as the meta description, and as the LinkedIn card subtitle. Write it last, after the piece exists. |
+| `summary` | Two or three sentences, plain English, zero jargon. **The hardest-working field on the site**: it renders in the "In plain English" box at the top of the piece, on the home-page card, as the meta description, and as the LinkedIn card subtitle. Write it last, after the piece exists. |
 | `category` | `Explainer`, `Analysis` or `Note`. Shown on the card and on the social image. |
 | `cover` | `/covers/<slug>.svg`. Effectively required: it is also the social card, on its own. See §7. |
 | `tags` | Two to four, lowercase, kebab-case. Reuse existing ones where they fit: `power`, `data-centres`, `cooling`, `networking`, `memory`, `the-stack`, `grid`, `explainer`. |
@@ -431,7 +431,7 @@ piece and the company pages all read from this. If no layer genuinely fits, add
 a new layer to `STACK` in its physical place in the chain, with a plain `what`
 and `constraint` sentence, rather than forcing the piece into the nearest one.
 
-**The descent at the top of `/map` (`src/components/Descent.astro`).** A piece in an existing
+**The descent at the top of the homepage (`src/components/Descent.astro`).** A piece in an existing
 layer needs nothing more: the layer text and piece counts are read from `stack.ts`. A **new
 layer** appears in the layer index and the closing funnel on its own, but its own stop in the
 descent (a drawing, in its physical place in the chain, plus its step cards) is drawn by hand
@@ -468,9 +468,9 @@ time; `ALIAS` in `src/lib/exposure.ts` catches the odd variant. Tags show as
 plain labels on the piece; there are no topic pages, because the map does that
 job.
 
-**The top menu is fixed at five: Journal, Map, Research, Glossary, About.** Do
-not add a sixth. A new reference page goes in the footer and is linked from
-the map page, the way Start here, Claims, Numbers and Companies are.
+**The top menu is fixed at five: Journal, Research, Claims, Glossary, About**
+(Tommy, 30 Oct 2026). Do not add a sixth. The homepage is the map. A new
+reference page goes in the footer, the way Numbers and Companies are.
 
 ---
 
@@ -542,8 +542,6 @@ In order:
    If something blocks it, say "NOT DONE: LinkedIn post not scheduled" at the
    top of the report. A scheduled publish task carries this as its final step.
 
-Do **not** add the piece to `READING_PATH`. See the README section on why the
-reading page is not a table of contents.
 
 ---
 

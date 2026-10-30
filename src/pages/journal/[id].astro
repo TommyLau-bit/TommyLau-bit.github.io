@@ -6,12 +6,13 @@ import { fmtDate, readingTime } from '../../utils';
 import { claimOf, claimsHomedAt } from '../../data/claims';
 import { getPitches, pitchesFor, callLabel } from '../../lib/calls';
 import { layerOf } from '../../data/stack';
-import { exposureOf, slugify } from '../../lib/exposure';
+import { exposureOf, slugify, companyPages } from '../../lib/exposure';
 export async function getStaticPaths() {
   const posts = await getCollection('journal', ({ data }) => !data.draft);
-  return posts.map((p) => ({ params: { id: p.id }, props: { p } }));
+  const paged = companyPages(posts, (await getPitches()).map((n) => n.data.company)).map((c) => c.slug);
+  return posts.map((p) => ({ params: { id: p.id }, props: { p, paged } }));
 }
-const { p } = Astro.props;
+const { p, paged } = Astro.props;
 const { Content } = await render(p);
 // An ordinary piece shows its one claim here. A deep piece that other claims
 // have merged into shows none: its body carries the "Claims on record" block.
@@ -19,7 +20,8 @@ const isHome = claimsHomedAt(p.id).some((c) => c.home === p.id);
 const claim = isHome ? undefined : claimOf(p.id);
 const notes = pitchesFor(await getPitches(), p.id);
 const layer = layerOf(p.id);
-const companies = [...new Set(exposureOf(p).flatMap((r) => r.names))];
+// only companies with a page of their own are linked (lib/exposure.ts, companyPages)
+const companies = [...new Set(exposureOf(p).flatMap((r) => r.names))].filter((n) => paged.includes(slugify(n)));
 ---
 <Base title={p.data.title} description={p.data.summary} type="article" canonical={`${SITE.url}/journal/${p.id}/`} image={`/og/${p.id}-${OG_VERSION}.png`}>
   <article>
@@ -57,7 +59,7 @@ const companies = [...new Set(exposureOf(p).flatMap((r) => r.names))];
     {(layer || companies.length > 0) && (
       <nav class="related" aria-label="Related">
         {layer && (
-          <p><span class="related-label">On the map</span> <a href={`/map/#${layer.id}`}>{layer.name}</a></p>
+          <p><span class="related-label">On the map</span> <a href={`/#${layer.id}`}>{layer.name}</a></p>
         )}
         {companies.length > 0 && (
           <p><span class="related-label">Companies named</span>

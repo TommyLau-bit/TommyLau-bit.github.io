@@ -92,8 +92,6 @@ cover brief and LinkedIn post, is yours to write.
   `brand/linkedin-posts.md`. Never finish with a reminder for Tommy to do it.
   Every scheduled publish task ends with this step. See WRITING-FORMAT.md §8
   step 7.
-- **Do not add a new piece to `READING_PATH`.** The reading page is a capped
-  on-ramp, not an index. See the README section on it.
 - **The deep piece: fewer, deeper, layered** (Tommy, 30 Oct 2026; replaces
   the 8 and 9 Oct length and numbers rules, which are retired, and applies to
   every future piece). The journal is being consolidated from 61 short pieces
@@ -120,7 +118,7 @@ cover brief and LinkedIn post, is yours to write.
 A new piece is not published until the site around it is updated. Every time:
 
 - **The map.** Add the slug to one layer in `src/data/stack.ts`. Every piece,
-  no exceptions. The descent at the top of `/map` reads the same file; a new
+  no exceptions. The descent at the top of the homepage reads the same file; a new
   layer also needs its own stop drawn in `src/components/Descent.astro`. If no layer fits, add a new layer in its physical place in
   the chain rather than forcing the piece into the nearest one.
 - **The claims page.** For an Analysis piece, add an entry to
@@ -134,12 +132,19 @@ A new piece is not published until the site around it is updated. Every time:
 - **The numbers.** If the piece rests on a new structural figure, add it to
   `src/data/numbers.ts`. Physical figures only, never anything about shares.
 - **Companies** build themselves from the exposure map. Spell company names
-  consistently. There are no topic pages; the map does that job.
+  consistently. A company gets a page of its own only if it has a research
+  note, a heading in a piece's investor layer, or at least two mentions in a
+  piece's running prose outside the exposure map; every other company URL
+  redirects to `/companies/` (Tommy, 30 Oct 2026; `companyPages` in
+  `src/lib/exposure.ts`). There are no topic pages; the map does that job.
 
-**The top menu is fixed at five: Journal, Map, Research, Glossary, About.**
-Tommy found nine items too crowded. Do not add to it. Claims moved to the
-footer on 6 Oct 2026 when Research took its slot. Start here, Claims, Numbers
-and Companies live in the footer; any new reference page goes there too.
+**The top menu is fixed at five: Journal, Research, Claims, Glossary, About**
+(Tommy, 30 Oct 2026). Tommy found nine items too crowded. Do not add to it.
+The map is the homepage: the descent sits at the top of `/`, then the layer
+sections with their deep pieces, so Journal is the map and `/map/` redirects
+to `/` (`/map/#<layer>` lands on `/#<layer>`). Start here was removed and
+`/start/` redirects to `/`. Numbers and Companies live in the footer, with
+Claims also there; any new reference page goes in the footer too.
 
 The checker fails a piece missing from the map, or an Analysis piece missing
 from the claims page. See WRITING-FORMAT.md §6a.

@@ -1,6 +1,8 @@
 ---
 title: "Building your own power: GE Vernova's queue, not the grid's, sets the date"
-date: 2026-10-30T14:20:52+08:00
+date: 2026-09-22T18:56:00+08:00
+updated: 2026-10-30T14:20:52+08:00
+updateNote: "Rewritten on 30 October 2026 as one deep piece, bringing together 3 earlier pieces, with a new section for investors."
 summary: "AI campuses that cannot wait years for a grid connection are building their own gas power stations beside the building. That does not skip the queue. It swaps it for others: years-long waits for turbines at makers like GE Vernova, for the blades inside them, for an air permit and for gas pipes. Even the quicker, smaller machines now have waiting lists."
 category: "Analysis"
 cover: "/covers/building-your-own-power.svg"
@@ -10,7 +12,7 @@ draft: false
 
 An AI campus that cannot wait years for the grid has an obvious way out. It can build its own power station beside the building and burn gas.
 
-Many have taken it, and they queue beside utilities for the same machines. At the end of September GE Vernova, which makes many of them, had 122 gigawatts of gas turbines under contract. It now ships at a pace of about 20 a year.
+Many have taken it, and they queue beside utilities for the same machines. At the end of September GE Vernova, which makes many of them, had 122 gigawatts of gas turbines under contract. It now ships at a pace of about 20 gigawatts a year.
 
 So the buyers have not left the queue. They have joined a different one, about six years long.
 
@@ -87,7 +89,7 @@ A maker that remembers past slumps prefers a long queue to an empty factory. Tha
 <a id="crusoe-borrows-the-jet-engine"></a>
 ## The fast lane: aeroderivatives and Crusoe
 
-Crusoe, which builds AI campuses, ordered ten LM2500XPRESS aeroderivatives from GE Vernova in December 2024 and nineteen more in the second quarter of 2025, nearly 1 GW. Each leaves the factory about 95% assembled (GE Vernova, 22 July 2025). GE Vernova's case study expected them in full operation in late 2025; I found no statement that they are, nor whether they are primary power; Abilene's turbines are described elsewhere as backup to the grid.
+Crusoe, which builds AI campuses, ordered ten LM2500XPRESS aeroderivatives from GE Vernova in December 2024 and nineteen more in the second quarter of 2025, nearly 1 GW. Each leaves the factory about 95% assembled (GE Vernova, 22 July 2025). GE Vernova's case study expected them in full operation in late 2025; I found no statement that they are, nor whether they are primary power; Crusoe said on 18 March 2025 that the gas turbines on its Abilene site are for backup to the grid.
 
 Their engines come from GE Aerospace and from Aero Alliance, GE Vernova's joint venture with Baker Hughes (GE Vernova 2025 10-K). The filings do not show that this engine source is what makes the machine faster. They show that its lane is queuing.
 
@@ -135,7 +137,7 @@ A big new NOx source in Pennsylvania's ozone region normally faces federal and s
 
 Source: Pennsylvania DEP, plan approval 32-00457A and comment response, 18 November 2025.
 
-The cut counts only within five years, so a coal site shut long ago has none to spend. For volatile organic compounds, with no old cut, the plant must buy 369 tons a year of credits before it runs. Two appeals are pending, neither objecting to the netting directly in the groups' notice. First power is targeted for early 2028.
+The cut counts only within five years, so a coal site shut long ago has none to spend. For volatile organic compounds, with no old cut, the plant must buy 369 tons a year of credits before it runs. Two appeals are pending; neither group's notice challenges the netting directly. First power is targeted for early 2028.
 
 <a id="hyperion-the-plant-outlasts-the-lease"></a>
 ## Hyperion: when the utility builds the plant
@@ -164,7 +166,7 @@ Rigs fell by a fifth while output rose by a twelfth: each rig drilled more wells
 
 The gas then needs pipe. In 2024 gas at the Waha hub traded below zero on 42% of trading days, which EIA put down to output outrunning pipelines (3 February 2025). It is a historical sign of the pipe limit, not a price view.
 
-At the coast, power plants share pipes with export. Golden Pass LNG shipped its first cargo in April 2026, from three trains built to take about 2 billion cubic feet a day (EIA, 23 April 2026); in July it ran at about a tenth of that. In February to April 2026 Texas LNG exports exceeded the gas burned by Texas power plants. Kinder Morgan's Trident pipeline to Port Arthur was developed with Golden Pass, and Entergy Texas signed for its power plants within days of launch (31 January 2025), so I do not hold that export signed first. Data centre power is signing later: Kinder Morgan's Permian Link, approved in October 2026 for a hyperscaler's new generation, is due in 2030.
+At the coast, power plants share pipes with export. Golden Pass LNG shipped its first cargo in April 2026, from three trains built to take about 2 billion cubic feet a day (EIA, 23 April 2026); in July it ran at about a tenth of that. In February to April 2026 Texas LNG exports exceeded the gas burned by Texas power plants. Kinder Morgan's Trident pipeline to Port Arthur was developed with Golden Pass, and Entergy Texas signed for its power plants within days of launch (31 January 2025), so I do not claim that export signed first. Data centre power is signing later: Kinder Morgan's Permian Link, approved in October 2026 for a hyperscaler's new generation, is due in 2030.
 
 ## Claims on record
 
@@ -176,7 +178,7 @@ Claim: "Building your own power on site does not escape the queue. Turbines, tra
 
 Breaks if: "Turbine lead times fall while the backlog is still being worked through, or large sites energise on their own generation faster than comparable sites get a grid connection, or transformers and switchgear stop being the constraint."
 
-Where later evidence cuts against it: its figures came from a trade magazine; GE Vernova's own filings now confirm them, and Siemens Energy's is left out, unconfirmed at source. The second limb, own generation against comparable grid connections, is untested: I have no primary head-to-head of energisation dates.
+Where later evidence bears on it: its figures came from a trade magazine; GE Vernova's own filings now confirm them, and Siemens Energy's is left out, unconfirmed at source. The second limb, own generation against comparable grid connections, is untested: I have no primary head-to-head of energisation dates.
 
 **Bloom Energy is not selling electricity. It is selling time.** (24 September 2026)
 
@@ -184,7 +186,7 @@ Claim: "Bloom Energy's customers are paying for an earlier switch-on date, not f
 
 Breaks if: "Bloom keeps winning sites where a grid connection is available on schedule, or its deployment times stretch towards turbine and grid timelines, or its gross margin holds while grid waits shorten."
 
-Where I was wrong: I read Bloom's rising gross margin as "the time premium, expressed in money". It rose mainly from product mix; product margin sat near 35% for two years, so buyers paid in volume, not price. Oracle intends, rather than has committed, to procure up to 2.8 GW, 1.2 GW contracted. The claim stands; its margin test is weak.
+Where later evidence bears on it: I was wrong. I read Bloom's rising gross margin as "the time premium, expressed in money". It rose mainly from product mix; product margin sat near 35% for two years, so buyers paid in volume, not price. Oracle intends, rather than has committed, to procure up to 2.8 GW, 1.2 GW contracted. The claim stands; its margin test is weak.
 
 **GE Vernova's customers are paying years in advance for a place in its queue** (9 October 2026)
 
@@ -192,7 +194,7 @@ Claim: "GE Vernova is expanding gas turbine output inside its existing factories
 
 Breaks if: "Before 2030, gigawatts under contract fall below four years of the annual output GE Vernova has planned for that year (20 GW now, 24 from 2028, 30 from 2030), or GE Vernova announces a new heavy-duty turbine factory, or Power deposits and price per kilowatt fall while orders stay strong."
 
-Where later evidence stands: holding. At 30 September 2026, 122 GW was 6.1 years of 20 GW output, above four years of the 2030 step, and Power deposits reached $33.2 billion. One correction: the $27.7 billion the piece said was held "for gas turbines" is the whole Power segment, which also covers nuclear and hydro, though the filings tie the rise to gas orders and reservations.
+Where later evidence bears on it: holding. At 30 September 2026, 122 GW was 6.1 years of 20 GW output, above four years of the 2030 step, and Power deposits reached $33.2 billion. One correction: the $27.7 billion the piece said was held "for gas turbines" is the whole Power segment, which also covers nuclear and hydro, though the filings tie the rise to gas orders and reservations.
 
 <a id="building-your-own-power"></a>
 
@@ -216,8 +218,10 @@ Two initiation notes rest on these claims: [GE Vernova](/research/ge-vernova/) a
 <h3>Who is exposed if building your own power means joining the makers' queues</h3>
 <p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares. Figures in the piece are disclosures used as evidence for the mechanism.</p>
 <dl>
-<dt>The machines</dt>
-<dd><span class="names">GE Vernova</span>, <span class="names">Siemens Energy</span>, <span class="names">Mitsubishi Power</span> and <span class="names">Ansaldo Energia</span> make gas turbines; <span class="names">GE Aerospace</span> makes jet engines for them. <span class="names">Howmet Aerospace</span> casts blades. <span class="names">Bloom Energy</span> makes fuel cells.</dd>
+<dt>Turbines</dt>
+<dd><span class="names">GE Vernova</span>, <span class="names">Siemens Energy</span>, <span class="names">Mitsubishi Power</span> and <span class="names">Ansaldo Energia</span> make gas turbines; <span class="names">GE Aerospace</span> makes jet engines for them.</dd>
+<dt>Blades and fuel cells</dt>
+<dd><span class="names">Howmet Aerospace</span> casts turbine blades, and <span class="names">Bloom Energy</span> makes fuel cells.</dd>
 <dt>Plants, campuses and fuel</dt>
 <dd><span class="names">Homer City Generation</span> and <span class="names">Entergy</span> build gas plants, <span class="names">Crusoe</span> builds AI campuses, and <span class="names">Kinder Morgan</span> runs gas pipelines.</dd>
 </dl>
@@ -229,4 +233,4 @@ Two initiation notes rest on these claims: [GE Vernova](/research/ge-vernova/) a
 
 ---
 
-<p class="sources">Sources: GE Vernova results releases of 22 April, 22 July and 28 October 2026, calls of 22 July and 28 October 2026, 2025 Form 10-K and Forms 10-Q to 30 June and 30 September 2026; GE Vernova and Crusoe, 22 July 2025, and GE Vernova's Crusoe case study; GE Aerospace 2025 Form 10-K and Form 10-Q of 20 October 2026; Howmet Aerospace 2025 Form 10-K, Technology and Markets Day (10 March 2026) and releases of 6 August and 29 October 2026; Siemens Energy analyst presentation, 11 February 2026; Bloom Energy and Oracle (24 July 2025, 13 April 2026), Bloom and American Electric Power (November 2024), Bloom's 2025 Form 10-K and releases to 22 October 2026; Pennsylvania DEP plan approval 32-00457A and review papers (18 November 2025), Environmental Hearing Board dockets 2025-135-L and 2025-136-L, and Homer City releases of 26 March and 20 October 2026; Meta's 2025 Form 10-K, Entergy's 2025 Form 10-K and Form 10-Q of 31 July 2026, and LPSC docket U-37425; EIA Short-Term Energy Outlooks of September and October 2026, Today in Energy of 3 February 2025 and 23 April 2026, and monthly gas data of 30 September 2026; the Railroad Commission of Texas on Statewide Rule 32; Kinder Morgan releases of 22 April and 21 October 2026; Entergy Texas, 31 January 2025. Leads came from Leo Cui's videos "GE Vernova Explained: The Power Bottleneck Behind the AI Boom" and "The Entire Energy Sector Explained", and the video "State of AI data centres 2026". Personal research, not investment advice.</p>
+<p class="sources">Sources: GE Vernova results releases of 22 April, 22 July and 28 October 2026, calls of 22 July and 28 October 2026, 2025 Form 10-K and Forms 10-Q to 30 June and 30 September 2026; GE Vernova and Crusoe, 22 July 2025, and GE Vernova's Crusoe case study; Crusoe, 18 March 2025; GE Aerospace 2025 Form 10-K and Form 10-Q of 20 October 2026; Howmet Aerospace 2025 Form 10-K, Technology and Markets Day (10 March 2026) and releases of 6 August and 29 October 2026; Siemens Energy analyst presentation, 11 February 2026; Bloom Energy and Oracle (24 July 2025, 13 April 2026), Bloom and American Electric Power (November 2024), Bloom's 2025 Form 10-K and releases to 22 October 2026; Pennsylvania DEP plan approval 32-00457A and review papers (18 November 2025), Environmental Hearing Board dockets 2025-135-L and 2025-136-L, and Homer City releases of 26 March and 20 October 2026; Meta's 2025 Form 10-K, Entergy's 2025 Form 10-K and Form 10-Q of 31 July 2026, and LPSC docket U-37425; EIA Short-Term Energy Outlooks of September and October 2026, Today in Energy of 3 February 2025 and 23 April 2026, and monthly gas data of 30 September 2026; Kinder Morgan releases of 22 April and 21 October 2026; Entergy Texas, 31 January 2025. Leads came from Leo Cui's videos "GE Vernova Explained: The Power Bottleneck Behind the AI Boom" and "The Entire Energy Sector Explained", and the video "State of AI data centres 2026". Personal research, not investment advice.</p>

@@ -1,6 +1,8 @@
 ---
 title: "America rations the plug: who can be cut, and what backs them up"
-date: 2026-10-30T14:20:52+08:00
+date: 2026-09-22T18:53:00+08:00
+updated: 2026-10-30T14:20:52+08:00
+updateNote: "Rewritten on 30 October 2026 as one deep piece, bringing together 2 earlier pieces, with a new section for investors."
 summary: "America's grids cannot build wires as fast as data centres arrive, so they are rationing the connection instead. Texas and the federal regulator are splitting it into a full connection that waits for new lines and a cheaper one the grid can cut first, while households pay for the shortfall. The same data centres must now stay on when the grid wobbles and come off when it asks, so what backs them up, generators, batteries or slower chips, has become part of the connection."
 category: "Analysis"
 cover: "/covers/america-rations-the-plug.svg"
@@ -55,7 +57,7 @@ Every large American site now meets three questions: firm service or a tier the 
 |---|---|---|---|
 | ERCOT (outside FERC) | Curtailable under local stress, or own generation with a capped draw (approved 18 June 2026) | Yes for new large computational loads; sites approved to energise, or with signed agreements, before 14 November 2025 exempt | New large loads can be cut in rotating outages (Senate Bill 6, 2025) |
 | PJM | Interim service, non-firm until upgrades are built, no capacity bought (9 October 2026) | Proposed from 2027, existing sites included (6 October 2026) | Households, through the capacity auction |
-| Southwest Power Pool | As available, up to seven years (accepted 5 June 2026) | Not shown | Not shown |
+| Southwest Power Pool | SPP's CHILLS: as available, up to seven years (accepted 5 June 2026) | Not shown | Not shown |
 | MISO, NYISO, ISO New England, CAISO | Non-firm or interim flexible services in design (August 2026) | MISO drafting | Not yet filed |
 | Dominion Energy, Virginia | None; firm, with a 14 year minimum bill from January 2027 | At least six automatic reclosing attempts | The customer if it never fills; shared if it does |
 
@@ -66,7 +68,7 @@ Every large American site now meets three questions: firm service or a tier the 
 
 The headline figures are the Governor's, of 3 August 2026: over 474 GW of requests, more than five times ERCOT's record peak, about 90% from data centres. He ordered an audit of every data centre in the queue before any project moves forward.
 
-The rest are from ERCOT's own documents, which block automated reading from here; I read their indexed text, and each matches the Governor's release or a second report. On 29 July ERCOT told the Senate that only about 205 GW had the studies to enter Batch Zero, its first batch. On 20 August it told the regulator that 17 large loads, 6,608 MW, had cleared every check except approval to energise. It paused that approval for data centres and crypto mines of 75 MW or more, and aims to file its audit reports by 10 December 2026.
+The rest are from ERCOT's own documents, each consistent with the Governor's release or a second report. On 29 July ERCOT told the Senate that only about 205 GW had the studies to enter Batch Zero, its first batch. On 20 August it told the regulator that 17 large loads, 6,608 MW, had cleared every check except approval to energise. It paused that approval for data centres and crypto mines of 75 MW or more, and aims to file its audit reports by 10 December 2026.
 
 A Provisional Controllable Load Resource connects early if ERCOT may reduce it "during periods of localized stress". A Withdrawal-Limited Private Use Network brings its own plant and takes a capped amount from the grid. Beneath both, Senate Bill 6 makes loads of 75 MW or more connected after 2025 curtailable in rotating outages, and lets ERCOT order large loads onto their backup generators in an emergency.
 
@@ -165,7 +167,7 @@ Claim: "The grid's new problem with AI data centres is not the power they draw. 
 
 Breaks if: "Ride-through turns out to be a cheap settings change rather than a constraint, or Virginia's 3.8 gigawatt trip proves to be a local fault rather than how these sites are built."
 
-Where later evidence bears on it: the fault "cleared properly" and this was PJM's third such transfer in two years, which supports the second limb. The first is open: nobody has published what compliance costs. Where I was wrong: the piece said NERC's alert "binds" planners and operators; NERC says it "does not create a mandatory obligation". Binding standards will come from NERC, which FERC ordered on 16 July to file them by 31 December 2026. PJM times the event to the minute, so "under a second" was my reading, not PJM's figure.
+Where later evidence bears on it: the fault "cleared properly" and this was PJM's third such transfer in about two years, which supports the second limb. The first is open: nobody has published what compliance costs. Where I was wrong: the piece said NERC's alert "binds" planners and operators; NERC says it "does not create a mandatory obligation". Binding standards will come from NERC, which FERC ordered on 16 July to file them by 31 December 2026. PJM times the event to the minute, so "under a second" was my reading, not PJM's figure.
 
 **The battery has quietly stopped being an energy product** (22 September 2026)
 
@@ -173,7 +175,7 @@ Claim: "Large batteries are increasingly bought as connection equipment that let
 
 Breaks if: "New storage stops clustering where computing load is and spreads out with renewable generation instead, or connection waits shorten enough that opening early stops being worth paying for."
 
-Where later evidence cuts against it: California's 17.3 GW fleet is a time-shifter, earning about four times as much from shifting energy as from balancing. My count of the 2026 summer narrows the claim to, at most, the newest buyers beside data centres. The Texas figure I relied on counts grid batteries, which also trade, and no one publishes the share at data centre sites. The nearest primary case, storage behind Google's Michigan site, is utility supply, not a connection condition.
+Where later evidence bears on it: California's 17.3 GW fleet is a time-shifter, earning about four times as much from shifting energy as from balancing. My count of the 2026 summer narrows the claim to, at most, the newest buyers beside data centres. The Texas figure I relied on counts grid batteries, which also trade, and no one publishes the share at data centre sites. The nearest primary case, storage behind Google's Michigan site, is utility supply, not a connection condition.
 
 <a id="america-rations-the-plug"></a>
 
@@ -212,4 +214,4 @@ No initiation note rests on these claims. The power a site brings itself is the 
 
 ---
 
-<p class="sources">Sources: Office of the Texas Governor (3 August 2026); ERCOT's Senate briefing (29 July 2026), regulator presentation (20 August 2026) and board materials (13 April and 11 September 2026), read through indexed text; PUCT approval of Batch Zero (18 June 2026); Texas Senate Bill 6 (2025); FERC's show cause orders (18 June 2026), abeyance orders (14 August 2026) and order to NERC (16 July 2026); the PJM transmission owners' notice (9 October 2026); ISO New England's abeyance motion and the NEPOOL counsel memorandum (3 August 2026); CAISO's large loads straw proposal (11 August 2026); PJM auction reports and releases (30 July 2024, 22 July 2025, December 2025, 14 July 2026); Monitoring Analytics (27 July 2026); Dominion Energy's 10-K (23 February 2026) and 8-K (14 September 2026); JLARC Report 598 (9 December 2024); PJM's event review (31 July and 11 August 2026) and ride-through proposal (8 September and 6 October 2026); NERC's Level 3 alert (4 May 2026); EIA (20 February 2026); CAISO's fuel mix, my own count, Key Statistics (September 2026) and market monitor (June 2026); PJM's storage ratings (13 March 2025 to 19 August 2026); DTE Energy's 8-K (28 September 2026); Google (4 August 2025, 19 March 2026); the Indiana Utility Regulatory Commission, Cause 46276 (April 2026); Nature Energy (5 December 2025); Nvidia (16 September 2026). Leads came from a third-party YouTube review, "State of AI data centres 2026" (data to 5 October 2026), and two YouTube videos by Leo Cui, on Nvidia and Google's "dimmer switch" for AI data centres and on the energy sector explained. Personal research, not investment advice.</p>
+<p class="sources">Sources: Office of the Texas Governor (3 August 2026); ERCOT's Senate briefing (29 July 2026), regulator presentation (20 August 2026) and board materials (13 April and 11 September 2026); PUCT approval of Batch Zero (18 June 2026); Texas Senate Bill 6 (2025); FERC's show cause orders (18 June 2026), abeyance orders (14 August 2026) and order to NERC (16 July 2026); the PJM transmission owners' notice (9 October 2026); ISO New England's abeyance motion and the NEPOOL counsel memorandum (3 August 2026); CAISO's large loads straw proposal (11 August 2026); PJM auction reports and releases (30 July 2024, 22 July 2025, December 2025, 14 July 2026); Monitoring Analytics (27 July 2026); Dominion Energy's 10-K (23 February 2026) and 8-K (14 September 2026); JLARC Report 598 (9 December 2024); PJM's event review (31 July and 11 August 2026) and ride-through proposal (8 September and 6 October 2026); NERC's Level 3 alert (4 May 2026); EIA (20 February 2026); CAISO's fuel mix, my own count, Key Statistics (September 2026) and market monitor (June 2026); PJM's storage ratings (13 March 2025 to 19 August 2026); DTE Energy's 8-K (28 September 2026); Google (4 August 2025, 19 March 2026); the Indiana Utility Regulatory Commission, Cause 46276 (April 2026); Nature Energy (5 December 2025); Nvidia (16 September 2026). Leads came from a third-party YouTube review, "State of AI data centres 2026" (data to 5 October 2026), and two YouTube videos by Leo Cui, on Nvidia and Google's "dimmer switch" for AI data centres and on the energy sector explained. Personal research, not investment advice.</p>

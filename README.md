@@ -63,32 +63,14 @@ likely to forget, so they are repeated here.
 
 **Rules for the exposure map.** Name companies and what they make. Never market share, backlogs, financials or ratings in the map itself. Disclosed financials may appear in the body as evidence for the mechanism (see WRITING-FORMAT.md §4a). Never a view on shares. Where the AI layer map says there is no view (memory equities), say so in the box.
 
-## "Where to start" is not a table of contents
-
-`/start` is an on-ramp for someone who has never read the site. It is **not** an
-index, and **you never touch it when you publish**.
-
-Write whatever you want, drop the `.md` in, push. The piece appears on the home
-page in date order and gets its own URL. It does not need a home in the path and
-nothing breaks if it never gets one. An energy piece, a one-off note, anything
-outside the main arc: all fine, none of it belongs on `/start` by default.
-
-The list is capped at `PATH_MAX` in `src/config.ts`. Anything past the cap is
-ignored, so it cannot creep into an index you owe something to.
-
-Revisit it when you feel like it, twice a year at most. Ask one question: if
-someone landed here today, which pieces get them oriented fastest? **Swap one
-out rather than adding another**, then update `PATH_REVIEWED`, which is the
-"Chosen ..." date shown on the page.
-
 ## The pages around the journal
 
-- `/map` reads `src/data/stack.ts`: the layers of the stack, the pieces in each, and the companies their exposure maps name most.
-- The top of `/map` is the descent (`src/components/Descent.astro`): a scroll from the grid down to the die, nine stops, hand-drawn SVG. Its text (what happens, what binds, the pieces to read) is read from `stack.ts`, so edits there flow through. A new layer appears in its closing funnel on its own, but needs a drawing and step cards added by hand to get a stop of its own.
+- The homepage `/` is the map. It reads `src/data/stack.ts`: a short hero, then the descent, then one section per layer (anchored `/#<layer-id>`) with its deep-piece cards. `/map/` and `/start/` redirect to `/` (Tommy, 30 Oct 2026).
+- The top of the homepage is the descent (`src/components/Descent.astro`): a scroll from the grid down to the die, nine stops, hand-drawn SVG. Its text (what happens, what binds, the pieces to read) is read from `stack.ts`, so edits there flow through. A new layer appears in its closing funnel on its own, but needs a drawing and step cards added by hand to get a stop of its own.
 - `/claims` reads `src/data/claims.ts`: one entry per Analysis piece, listed newest first.
 - `/numbers` reads `src/data/numbers.ts`: structural figures, each linked to its piece.
-- `/companies` is generated from exposure maps. Nothing to maintain. Topic pages were folded into the map; old `/topics/` links redirect there.
-- The top menu is fixed at five: Journal, Map, Research, Glossary, About. Start here, Claims, Numbers and Companies live in the footer and on the map page.
+- `/companies` is generated from exposure maps. Nothing to maintain. A company gets a page only if it has a research note, a heading in a piece's investor layer, or at least two mentions in a piece's prose outside the exposure map (`companyPages` in `src/lib/exposure.ts`); other company URLs redirect to `/companies/`. Topic pages were folded into the map; old `/topics/` links redirect to `/`.
+- The top menu is fixed at five: Journal, Research, Claims, Glossary, About (Tommy, 30 Oct 2026). Journal is the homepage, which is the map. Numbers and Companies live in the footer, with Claims also there.
 - `/research` lists initiation notes (PDF plus Excel model in `public/research/`) from `src/content/calls/`, with the monthly track record from `src/data/calls.ts`. See `CALLS-SPEC.md`.
 
 ## Social cards

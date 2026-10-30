@@ -9,7 +9,7 @@
 ---
 title: "A claim or a plain question, sentence case, 8 to 16 words"
 date: 2026-00-00T00:00:00+08:00
-summary: "Two or three sentences, plain English, no jargon. This is the hardest-working line on the site: it renders in the In plain English box, on the home card, on the reading page, as the meta description and as the LinkedIn card subtitle. Write it last."
+summary: "Two or three sentences, plain English, no jargon. This is the hardest-working line on the site: it renders in the In plain English box, on the home card, as the meta description and as the LinkedIn card subtitle. Write it last."
 category: "Explainer"
 cover: "/covers/<slug>.svg"
 tags: ["", ""]
@@ -68,6 +68,6 @@ tags: ["", ""]
         Never reworded later. No statuses, no reviews.
      3. Numbers: optional. A new structural figure goes in src/data/numbers.ts.
      4. Company pages build themselves from the exposure map. No topic pages.
-     The top menu stays at five items: Journal, Map, Research, Glossary, About.
+     The top menu stays at five items: Journal, Research, Claims, Glossary, About.
      No email sign-ups anywhere on the site.
      brand/check-piece.py fails the piece if step 1, or step 2 for Analysis, is missing. -->

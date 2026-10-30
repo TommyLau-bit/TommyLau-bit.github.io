@@ -320,5 +320,14 @@ export const homeOf = (c: Claim) => c.home ?? c.id;
 // Where to link a claim: the anchored section of its deep piece once merged.
 export const claimHref = (c: Claim) => (c.home ? `/journal/${c.home}/#${c.id}` : `/journal/${c.id}/`);
 
+// The title of the section a claim's link lands on: the heading (or bold lead)
+// right after its <a id> anchor in the deep piece. Undefined for a claim that
+// still lives at its own piece, which the piece's title names instead.
+export function claimSection(c: Claim, body = ''): string | undefined {
+  if (!c.home) return undefined;
+  const m = body.match(new RegExp(`<a id="${c.id}"></a>\\s*(?:#{2,4} (.+)|\\*\\*(.+?)\\*\\*)`));
+  return (m?.[1] ?? m?.[2])?.trim().replace(/[*_`]/g, '');
+}
+
 // Every claim a piece carries: those homed at it, plus its own.
 export const claimsHomedAt = (slug: string) => CLAIMS.filter((c) => c.home === slug || c.id === slug);

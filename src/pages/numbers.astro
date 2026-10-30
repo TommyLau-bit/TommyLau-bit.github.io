@@ -15,7 +15,7 @@ const groups = STACK.map((l) => ({ ...l, nums: NUMBERS.filter((n) => n.layer ===
 
   {groups.map((g) => (
     <section class="num-group" id={g.id}>
-      <h2><a href={`/map/#${g.id}`}>{g.name}</a></h2>
+      <h2><a href={`/#${g.id}`}>{g.name}</a></h2>
       <div class="num-grid">
         {g.nums.map((n) => (
           <article class="num-card">

@@ -4,12 +4,18 @@ import { getCollection } from 'astro:content';
 import { SCORECARD_REFRESHED } from '../../data/calls';
 import { getPitches, latest, fmtMoney, fmtPct, callLabel } from '../../lib/calls';
 import { fmtDate } from '../../utils';
-import { claimOf, homeOf } from '../../data/claims';
+import { claimOf, homeOf, claimHref } from '../../data/claims';
 const pitches = await getPitches();
 const posts = await getCollection('journal', ({ data }) => !data.draft);
 // A merged claim's cover is its deep piece's.
 const coverOf = (id: string) => { const c = claimOf(id); return posts.find((p) => p.id === (c ? homeOf(c) : id))?.data.cover; };
 const rows = pitches.map((p) => ({ p, ...latest(p) }));
+// The deep piece each note rests on: the piece that carries its first claim today.
+const restsOn = (p: (typeof pitches)[number]) => {
+  const c = claimOf(p.data.claims[0]);
+  const piece = c && posts.find((x) => x.id === homeOf(c));
+  return c && piece ? { href: claimHref(c), title: piece.data.title } : undefined;
+};
 ---
 <Base title="Research" description="Initiation notes on companies in the physical layer of AI, each with the model behind it and a call that is marked every month, right or wrong." wide>
   <header class="research-head">
@@ -24,6 +30,7 @@ const rows = pitches.map((p) => ({ p, ...latest(p) }));
       {pitches.map((p) => {
         const d = p.data, c = d.call;
         const thumb = d.files.thumb ?? coverOf(d.claims[0]);
+        const rests = restsOn(p);
         return (
           <li class="note-card">
             <a class="note-thumb" href={`/research/${p.id}/`} aria-hidden="true" tabindex="-1">
@@ -37,6 +44,7 @@ const rows = pitches.map((p) => ({ p, ...latest(p) }));
               </p>
               <h2><a href={`/research/${p.id}/`}>{d.company} <span>{d.exchange}: {d.ticker}</span></a></h2>
               <p class="note-title">{d.title}</p>
+              {rests && <p class="note-rests">Rests on <a href={rests.href}>{rests.title}</a></p>}
               <p class="note-links">
                 <a href={d.files.pdf}>Read the note <small>PDF{d.files.pages && `, ${d.files.pages} pages`}</small></a>
                 <a href={d.files.xlsx}>The model <small>Excel</small></a>

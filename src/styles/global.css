@@ -267,6 +267,8 @@ details.analogy > p:first-of-type { margin-top: 0.1rem; }
 .claim-box-label { font-family: var(--sans); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin: 0 0 0.35rem; }
 .claim-box-claim { margin: 0 0 0.7rem; font-size: 1.05rem; }
 .claim-box-meta { margin: 0; display: flex; gap: 0.8rem; align-items: center; flex-wrap: wrap; font-family: var(--sans); font-size: 0.86rem; }
+.claim-box-rests { margin: 0.35rem 0 0; font-family: var(--sans); font-size: 0.86rem; color: var(--ink-2); overflow-wrap: anywhere; }
+.claim-box-rests span { font-weight: 700; color: var(--ink); }
 .related { margin: 1.5rem 0 0; font-family: var(--sans); font-size: 0.88rem; color: var(--ink-2); }
 .related p { margin: 0.35rem 0; }
 .related-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); margin-right: 0.4rem; }
@@ -370,6 +372,9 @@ details.analogy > p:first-of-type { margin-top: 0.1rem; }
 .note-body h2 a:hover { color: var(--accent); }
 .note-body h2 span { font-size: 0.95rem; font-weight: 500; color: var(--ink-3); margin-left: 0.25rem; }
 .note-title { margin: 0 0 0.9rem; color: var(--ink-2); max-width: var(--measure); }
+.note-rests { margin: -0.5rem 0 0.9rem; font-family: var(--sans); font-size: 0.86rem; color: var(--ink-3); }
+.note-rests a { color: var(--ink-2); text-decoration-color: var(--rule); }
+.note-rests a:hover { color: var(--accent-2); text-decoration-color: currentColor; }
 .note-links { margin: 0; display: flex; gap: 1.2rem; flex-wrap: wrap; font-family: var(--sans); font-size: 0.9rem; font-weight: 600; }
 .note-links a { text-decoration: none; color: var(--accent-2); }
 .note-links a:hover { text-decoration: underline; }
@@ -431,7 +436,8 @@ details.analogy > p:first-of-type { margin-top: 0.1rem; }
 .home-layer-n { font-family: var(--sans); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin: 0; }
 .home-layer--compute .home-layer-n { color: var(--accent-2); }
 .home-layer-binds { margin: 0; color: var(--ink-2); max-width: 44rem; }
-.home-layer-map { font-family: var(--sans); font-size: 0.85rem; margin: 0.5rem 0 0; }
-.home-layer-map a { color: var(--accent); text-decoration-color: var(--rule); }
-.home-layer--compute .home-layer-map a { color: var(--accent-2); }
-.home-layer-map a:hover { text-decoration-color: currentColor; }
+.home-layer-also { font-family: var(--sans); font-size: 0.85rem; color: var(--ink-3); margin: 0.5rem 0 0; }
+.home-layer-also a { color: var(--accent); text-decoration-color: var(--rule); }
+.home-layer--compute .home-layer-also a { color: var(--accent-2); }
+.home-layer-also a:hover { text-decoration-color: currentColor; }
+.home-layer-gap { height: 2.2rem; }

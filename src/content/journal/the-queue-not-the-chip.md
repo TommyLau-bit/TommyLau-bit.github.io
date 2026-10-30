@@ -1,6 +1,8 @@
 ---
 title: "Johor and Singapore: the plug, not the chip, decides who gets to build"
-date: 2026-10-30T14:20:52+08:00
+date: 2026-07-27
+updated: 2026-10-30T14:20:52+08:00
+updateNote: "Rewritten on 30 October 2026 as one deep piece, bringing together 3 earlier pieces, with a new section for investors."
 summary: "Singapore and the Malaysian state of Johor, either side of a short causeway, are where much of Southeast Asia's AI computing is being built. In both, what decides who may build is a connection to the grid, not a supply of chips. Singapore hands out connections in small rationed batches, while Johor books them years before its halls fill, so booked power is a poor guide to computing at work."
 category: "Analysis"
 cover: "/covers/the-queue-not-the-chip.svg"
@@ -69,9 +71,9 @@ Tenaga publishes the fill every quarter. Most briefings measure booked demand "i
 | December 2025 | 850 MW | about 4.5 GW in operation | about 19% | Tenaga briefing, 4QFY2025 |
 | March 2026 | 1,054 MW | about 4.5 GW in system | about 23% | Tenaga briefing, 1QFY2026 |
 | June 2026 | 1,256 MW | 5.65 GW in system, 42 projects | about 22% | Tenaga briefing, 28 August 2026 |
-| August 2026 | about 1.37 GW | 6 GW at 45 operating sites; 8.771 GW signed by 62 | about 23% | Dewan Rakyat Hansard, 13 October 2026 |
+| August 2026 | about 1.37 GW | 6 GW at 45 operating sites; 8.771 GW signed by 62 projects | about 23% | Dewan Rakyat Hansard, 13 October 2026 |
 
-Load drawn roughly doubled in the year to June 2026, while booked demand grew by about 60%, so the gap has narrowed only slightly. Behind it sit 2.21 GW under construction and 0.49 GW signed, 8.35 GW across 61 projects. Johor holds 29 of them and 5.6 of 8.3 GW of secured capacity. Every draw figure is Malaysia-wide; Tenaga publishes no Johor-only draw.
+Load drawn roughly doubled in the year to June 2026, while booked demand grew by about 60%, so the gap has narrowed only slightly. Behind it, at June 2026, sat 2.21 GW under construction and 0.49 GW signed, 8.35 GW across 61 projects. Johor held 29 of them and 5.6 of the 8.35 GW of secured capacity. Every draw figure is Malaysia-wide; Tenaga publishes no Johor-only draw.
 
 Nothing primary splits the gap between ramp, overbooking and chips. On 13 October 2026 the deputy minister told Parliament that data centres book more than they use, and that the Energy Commission is studying their real needs.
 
@@ -79,13 +81,13 @@ Nothing primary splits the gap between ramp, overbooking and chips. On 13 Octobe
 <a id="the-part-money-cannot-hurry"></a>
 ## Malaysia's queue: what Tenaga shortened
 
-Tenaga launched the Green Lane Pathway on 8 August 2023 for data centres taking supply at 132 or 275 kilovolts. Its release promised connection "three times faster than the normal delivery time", cutting the implementation period from 36 to 48 months to 12.
+Tenaga launched the Green Lane Pathway on 8 August 2023 for data centres taking supply at 132 or 275 kilovolts. Its release, dated the next day, promised connection "three times faster than the normal delivery time", cutting the implementation period from 36 to 48 months to 12.
 
 A programme to compress connection time means connection was what stopped projects. That July argument still holds for a campus waiting to connect.
 
 The release also undercuts my September argument. It cut the whole implementation period, plant included, not just the paperwork. So Malaysia has not shown the equipment clock binding on its own connections.
 
-Where that clock does bind is in the makers' order books. [Hitachi Energy](/journal/the-equipment-queue/#hitachi-energy-plans-the-queue) expects its unfilled orders to stay at two and a half to three years of sales through fiscal 2030. [Siemens Energy's](/journal/the-equipment-queue/#siemens-energy-measures-the-shortage) chart covers Europe and North America, but the same factories and steel serve Johor. Whether Tenaga can keep its 12 months as the queue lengthens is the open question.
+Where that clock does bind is in the makers' order books. [Hitachi Energy](/journal/the-equipment-queue/#hitachi-energy-plans-the-queue) expects its unfilled orders to stay at two and a half to three years of sales through fiscal 2030. [Siemens Energy's](/journal/the-equipment-queue/#siemens-energy-measures-the-shortage) chart covers Europe and North America, but the same factories and steel serve Johor. The open question is whether Tenaga can keep its 12 months.
 
 **Malaysia has shown the queue can be shortened. It has not yet had to show the factories can keep up.**
 
@@ -94,7 +96,7 @@ Where that clock does bind is in the makers' order books. [Hitachi Energy](/jour
 
 DayOne, one of Johor's largest operators, says in its US listing filing of 5 October 2026 that it provides "space, power and cooling" for customers' IT equipment. Its long take-or-pay contracts pay for capacity, while power is charged on customers' actual consumption as a pass-through. So a Johor hall can be energised, let and earning its capacity fees while drawing little.
 
-Its largest customer, a global technology company with a leading short-form video platform, provided 69.4% of revenue in 2025 and 69.2% in the first half of 2026. SemiAnalysis names that customer, by committed power, as ByteDance. DayOne warns that restrictions on it could reduce demand for future deployments.
+Its largest customer, a global technology company with a leading short-form video platform, provided 69.4% of revenue in 2025 and 69.2% in the first half of 2026. SemiAnalysis names that customer, by committed power, as ByteDance. DayOne warns that restrictions on it could cut future demand.
 
 That is where the American rule bites. The US Bureau of Industry and Security confirmed on 31 May 2026 that exporting advanced computing items needs a licence for any entity headquartered in Country Group D:5, which includes China, or in Macau. The same holds where the ultimate parent is headquartered there, wherever the subsidiary sits. Operators need not stop ongoing use "until further notice".
 
@@ -125,7 +127,7 @@ The next tariff period, set in 2027 for 2028 to 2032, could change the split. On
 |---|---|---|---|---|---|
 | Johor reserve margin | 14.3% | 11.5% | 16.8% | 15.7% | 14.3% |
 
-Water runs on a plant clock too: the reserve margin, spare treatment capacity above demand in SPAN's Water and Sewerage Fact Book 2025, jumps when a plant opens and is eaten back within a couple of years. SPAN's target is a band of 10 to 15%, the ministry told Parliament in November 2019, so Johor in 2025 sat inside it and water is not its gate today. I held a claim that the margin would stay under 15%, because SPAN's own series did not support it.
+Water runs on a plant clock too: the reserve margin, spare treatment capacity above demand in SPAN's Water and Sewerage Fact Book 2025, jumps when a plant opens and is eaten back within a couple of years. SPAN's target is a band of 10 to 15%, the ministry told Parliament in November 2019, so Johor in 2025 sat inside it and water is not its gate today. I dropped a planned claim that the margin would stay under 15%, because SPAN's own series did not support it.
 
 <a id="two-governments-one-confession"></a>
 ## Singapore rations what Malaysia builds
@@ -169,7 +171,7 @@ Claim: "In Johor and Singapore, a finished grid connection, not chip supply, is 
 
 Breaks if: "Connection waits keep shrinking the way Malaysia's Green Lane cut them from 36 months to 12, or transformer and cable lead times normalise faster than utilities commit capital."
 
-Where later evidence cuts against it: Malaysia's connected data centres, two thirds of whose secured capacity is in Johor, draw less than a quarter of what they booked. For campuses already connected, a connection is not the scarce thing. The claim holds for Singapore and for campuses still waiting to connect. I found no published cut below 12 months, and Tenaga's own 2023 release gave the starting point as 36 to 48 months.
+Where later evidence bears on it: Malaysia's connected data centres, two thirds of whose secured capacity is in Johor, draw less than a quarter of what they booked. For campuses already connected, a connection is not the scarce thing. The claim holds for Singapore and for campuses still waiting to connect. I found no published cut below 12 months, and Tenaga's own 2023 release gave the starting point as 36 to 48 months.
 
 **The one part of the grid that money cannot hurry** (22 September 2026)
 
@@ -177,7 +179,7 @@ Claim: "A grid connection queue is really two queues. Governments can shorten th
 
 Breaks if: "Connection timelines keep compressing across the board, or equipment lead times normalise faster than utility spending is committed. Also if building power on site removes the constraint rather than moving it."
 
-Where I was wrong: Tenaga's 2023 release says the Green Lane cut the whole implementation period from 36 to 48 months to 12, not only the paperwork. So in Malaysia's own connections, the equipment clock has not been shown to set the pace. The makers' order books still run years long, but the evidence I cited does not show them binding here.
+Where later evidence bears on it: I was wrong. Tenaga's 2023 release says the Green Lane cut the whole implementation period from 36 to 48 months to 12, not only the paperwork. So in Malaysia's own connections, the equipment clock has not been shown to set the pace. The makers' order books still run years long, but the evidence I cited does not show them binding here.
 
 **Two governments did the opposite thing and confessed the same problem** (22 September 2026)
 
@@ -185,7 +187,7 @@ Claim: "Malaysia building more grid and Singapore rationing who may connect are 
 
 Breaks if: "Malaysia's spending turns out to be ordinary renewal weighted towards generation rather than connection, or Singapore's efficiency ceiling moves on a fixed schedule rather than with scarcity, or a third constrained market does neither."
 
-Where later evidence cuts against it: the allowance is grid, not generation, but only 13% of Tenaga's base grid allowance for 2025 to 2027 is labelled demand growth. Most is energy transition and security of supply, closer to renewal than to new connection, with data centre spending in a contingent allowance released on triggers. That weakens the Malaysian half. The piece also said Singapore cannot make more; it is building five gas power stations by 2031, though it still rations data centres' share.
+Where later evidence bears on it: the allowance is grid, not generation, but only 13% of Tenaga's base grid allowance for 2025 to 2027 is labelled demand growth. Most is energy transition and security of supply, closer to renewal than to new connection, with data centre spending in a contingent allowance released on triggers. That weakens the Malaysian half. The piece also said Singapore cannot make more; it is building five gas power stations by 2031, though it still rations data centres' share.
 
 <a id="the-plug-not-the-chip"></a>
 

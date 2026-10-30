@@ -1,6 +1,8 @@
 ---
 title: "How ten thousand chips talk: the glass stays, the plug is bought again"
-date: 2026-10-30T14:20:52+08:00
+date: 2026-09-04
+updated: 2026-10-30T14:20:52+08:00
+updateNote: "Rewritten on 30 October 2026 as one deep piece, bringing together 5 earlier pieces, with a new section for investors."
 summary: "An AI model is spread across thousands of chips that must swap results for every word they produce. Inside a rack they talk over copper; beyond it, over light made by lasers in small plugs and carried down glass fibre. The glass and the mirror switches stay for years, but the plugs are bought again at every speed step, and even the newest switches with built-in optics keep their lasers in a plug."
 category: "Analysis"
 cover: "/covers/ten-thousand-chips-one-thought.svg"
@@ -38,7 +40,7 @@ Switch makers now build the optics onto the switch itself, called co-packaged op
 
 ## The number that matters
 
-Fifteen times. That is how far SPIL, the Taiwanese packaging firm, aims to raise its capacity to build optical engines for co-packaged switches by mid-2027, Nvidia said in October.
+Fifteen times. That is how far SPIL, the Taiwanese packaging firm, aims to raise its capacity to build optical engines for co-packaged switches, the parts that turn electrical signals into light, mounted on the switch chip's own package rather than in a plug, by mid-2027, Nvidia said in October.
 
 It is the size of the bet that optics move off the plug. It is a target, not a factory.
 
@@ -108,7 +110,7 @@ On 11 August 2026 chief executive Michael Hurlston said Lumentum was still shipp
 Co-packaging changes the laser's form, not its need. The engine on the switch is silicon photonics, optics built in silicon, but the light still comes from indium phosphide lasers in a front-panel module. Lumentum sells those lasers too: Hurlston's remark of 11 August was about them.
 
 <a id="the-optics-you-cannot-unplug"></a>
-## Optics onto the switch, lasers left in a plug
+## The package: optics onto the switch, lasers left in a plug
 
 Ordinary plugs sit several inches of circuit board from the switch chip, and each needs its own DSP to push the signal across. Co-packaged optics mount optical engines on the switch package instead. Nvidia claims its co-packaged switches are 3.5 times more power efficient (18 March 2025).
 
@@ -161,7 +163,7 @@ Claim: "Marvell is paid every time AI chips talk, through the signal processor i
 
 Breaks if: "The translation moves off the plug at scale, through linear pluggable or co-packaged optics, or Marvell's interconnect growth stalls while clusters keep growing."
 
-Where things stand: holding on the co-packaged leg for scale-out, since Nvidia's own reference design picks the pluggable switch. The main way that leg could break is SPIL's 15-fold target, if it is built. Two points cut against the piece. Hock Tan said on Broadcom's call of 2 September 2026, by a third-party transcript, "We're now the leader in leading edge optical DSPs", so the DSP is contested. And where I was wrong: the piece tied Marvell's US$1 billion of prepayments to optical DSPs; its filings describe capacity reservations with foundries and partners for the whole business.
+Where later evidence bears on it: holding on the co-packaged leg for scale-out, since Nvidia's own reference design picks the pluggable switch. The main way that leg could break is SPIL's 15-fold target, if it is built. Two points cut against the piece. Hock Tan said on Broadcom's call of 2 September 2026, by a third-party transcript, "We're now the leader in leading edge optical DSPs", so the DSP is contested. And where I was wrong: the piece tied Marvell's US$1 billion of prepayments to optical DSPs; its filings describe capacity reservations with foundries and partners for the whole business.
 
 **Broadcom is paid whether the cloud giants stay with Nvidia or leave** (2 October 2026)
 
@@ -169,7 +171,7 @@ Claim: "Broadcom is paid whether the cloud giants stay with Nvidia or leave for 
 
 Breaks if: "Custom chip customers move work to other designers, as Google has partly done with MediaTek, or Nvidia's own networking wins inside its clusters."
 
-Where things stand: holding, but the stay half has shrunk to 27% of AI revenue. Where I was wrong: the piece said Anthropic designs its own chips with Broadcom. Broadcom's 8-K of 6 April 2026 shows Anthropic accesses Google's TPU design through Broadcom.
+Where later evidence bears on it: holding, but the stay half has shrunk to 27% of AI revenue. Where I was wrong: the piece said Anthropic designs its own chips with Broadcom. Broadcom's 8-K of 6 April 2026 shows Anthropic accesses Google's TPU design through Broadcom.
 
 **Corning makes the glass AI chips talk through** (1 October 2026)
 
@@ -177,7 +179,7 @@ Claim: "Glass fibre is the part of the AI network that outlives every chip gener
 
 Breaks if: "Fibre stops being scarce as Corning and Chinese producers expand, shown by the segment's margin falling while its sales rise."
 
-Where things stand: holding. The segment's margin rose to 22.4% as sales grew 44% in the third quarter of 2026. Where I was wrong: the piece said Nvidia paid Corning to build more fibre. Corning's 8-K of 6 May 2026 shows the US$500 million bought two warrants: a pre-funded one over 3 million shares and one over 15 million shares at US$180. Supply is secured by a US$1.0 billion customer deposit, in the second quarter 10-Q. That 10-Q values the second warrant at US$296 million and deducts it from revenue as Corning delivers. So the largest buyer is paid as well as paying: the scarcity is shared, not kept, which leaves the claim standing but thinner.
+Where later evidence bears on it: holding. The segment's margin rose to 22.4% as sales grew 44% in the third quarter of 2026. Where I was wrong: the piece said Nvidia paid Corning to build more fibre. Corning's 8-K of 6 May 2026 shows the US$500 million bought two warrants: a pre-funded warrant over 3 million shares and a second over 15 million. Supply is secured by a US$1.0 billion customer deposit, in the second quarter 10-Q. That 10-Q values the second warrant at US$296 million and deducts it from revenue as Corning delivers. So the largest buyer is paid as well as paying: the scarcity is shared, not kept, which leaves the claim standing but thinner.
 
 **Nvidia paid Lumentum $2 billion for lasers** (5 October 2026)
 
@@ -185,7 +187,7 @@ Claim: "The AI network's bottleneck has moved to the laser, which only a few ind
 
 Breaks if: "Lumentum's gross margin slides towards the low forties as new capacity arrives, or Coherent's six-inch wafers take the 200 gigabit EML orders, or silicon photonics routes around the EML."
 
-Where things stand: holding, with Lumentum still shipping behind demand. SPIL's 15-fold target bears on the silicon photonics leg: co-packaged engines need continuous lasers, not EMLs, so if it is built, part of the market routes around the EML. It does not route around the laser: on its call of 11 August 2026 Lumentum said it was further behind still on the high-power lasers for co-packaged optics. Where I was wrong: the headline. Lumentum's 8-K of 2 March 2026 shows Nvidia's US$2 billion bought 2,876,415 convertible preferred shares; the lasers sit under a separate purchase commitment of undisclosed size.
+Where later evidence bears on it: holding, with Lumentum still shipping behind demand. SPIL's 15-fold target bears on the silicon photonics leg: co-packaged engines need continuous lasers, not EMLs, so if it is built, part of the market routes around the EML. It does not route around the laser: on its call of 11 August 2026 Lumentum said it was further behind still on the high-power lasers for co-packaged optics. Where I was wrong: the headline. Lumentum's 8-K of 2 March 2026 shows Nvidia's US$2 billion bought 2,876,415 convertible preferred shares; the lasers sit under a separate purchase commitment of undisclosed size.
 
 <a id="the-plug-stays"></a>
 
@@ -226,4 +228,4 @@ Four initiation notes rest on these claims: [Marvell](/research/marvell/), [Broa
 
 ---
 
-<p class="sources">Sources: Broadcom releases (3 June 2025, 8 October 2025, 12 March 2026), third quarter fiscal 2026 results and call (2 September 2026) and 8-K (6 April 2026); Marvell results, 10-Q and call (27 and 28 August 2026) and Celestial AI release (2 February 2026); Lumentum and Nvidia joint release and 8-K (2 March 2026), Lumentum results and call (11 August 2026) and 10-K (17 August 2026); Corning results (28 July and 27 October 2026), 8-K (6 May 2026) and the Meta and Amazon agreements (27 January, 8 June 2026); Nvidia releases (18 March 2025, 26 August 2026, 21 October 2026), technical blogs (27 March, 26 August 2025), GTC update (16 March 2026), CFO commentary for the first quarter of fiscal 2027 and DGX SuperPOD reference architecture (15 September 2026); the OIF ELSFP agreement (August 2023); Google's Apollo (2022) and TPU v4 (2023) papers, Ironwood documentation and TPU 8t post (April 2026); Microsoft's Fairwater posts (12 November 2025) and Google's Gemini report (December 2023). The distance framing and several leads came from Leo Cui's video "The Entire AI Networking Industry Explained", a free YouTube video. Personal research, not investment advice.</p>
+<p class="sources">Sources: Broadcom releases (3 June 2025, 8 October 2025, 12 March 2026), third quarter fiscal 2026 results and call (2 September 2026) and 8-K (6 April 2026); Marvell results, 10-Q and call (27 and 28 August 2026) and Celestial AI release (2 February 2026); Lumentum and Nvidia joint release and 8-K (2 March 2026), Lumentum results and call (11 August 2026) and 10-K (17 August 2026); Corning results (28 July and 27 October 2026), 8-K (6 May 2026) and the Meta and Amazon agreements (27 January, 8 June 2026); Nvidia releases (18 March 2025, 26 August 2026, 21 October 2026), technical blogs (27 March, 26 August 2025), GTC update (16 March 2026), CFO commentary for the first quarter of fiscal 2027 and DGX SuperPOD reference architecture (15 September 2026); the OIF ELSFP agreement (August 2023); Google's Apollo (2022) and TPU v4 (2023) papers, Ironwood documentation and TPU 8t post (April 2026); Microsoft's Fairwater posts (12 November 2025). The distance framing and several leads came from Leo Cui's video "The Entire AI Networking Industry Explained", a free YouTube video. Personal research, not investment advice.</p>

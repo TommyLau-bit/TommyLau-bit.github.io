@@ -542,7 +542,7 @@ https://thephysicallayer.fyi/journal/water-is-a-siting-problem/
 
 ---
 
-## 38 · Johor and Singapore: the plug, not the chip (site live 30 Oct 2026; LinkedIn not yet scheduled)
+## 38 · Johor and Singapore: the plug, not the chip (site live 30 Oct 2026; LinkedIn Mon 2 Nov, 11:30, scheduled)
 
 Malaysia's data centres draw less than a quarter of the power they have booked from the grid.
 
@@ -556,7 +556,7 @@ https://thephysicallayer.fyi/journal/the-queue-not-the-chip/
 
 ---
 
-## 39 · America rations the plug (site live 30 Oct 2026; LinkedIn not yet scheduled)
+## 39 · America rations the plug (site live 30 Oct 2026; LinkedIn Wed 4 Nov, 11:30, scheduled)
 
 Texas has been asked to connect over 474 gigawatts of new demand, more than five times the most power it has ever used at once.
 
@@ -570,7 +570,7 @@ https://thephysicallayer.fyi/journal/america-rations-the-plug/
 
 ---
 
-## 40 · The equipment queue (site live 30 Oct 2026; LinkedIn not yet scheduled)
+## 40 · The equipment queue (site live 30 Oct 2026; LinkedIn Mon 9 Nov, 11:30, scheduled)
 
 Hitachi Energy had $66.9 billion of orders waiting at the end of September, about three years of work, and it plans to keep it that way through 2030.
 
@@ -584,9 +584,9 @@ https://thephysicallayer.fyi/journal/the-equipment-queue/
 
 ---
 
-## 41 · Building your own power (site live 30 Oct 2026; LinkedIn not yet scheduled)
+## 41 · Building your own power (site live 30 Oct 2026; LinkedIn Wed 11 Nov, 11:30, scheduled)
 
-GE Vernova has 122 gigawatts of gas turbines under contract and ships about 20 a year.
+GE Vernova has 122 gigawatts of gas turbines under contract and ships about 20 gigawatts a year.
 
 AI campuses tired of waiting for the grid are building their own gas power, and they are queuing beside utilities for the same machines, with places now sold for 2032. Even the fast lane is full: GE Vernova took orders for 127 jet-engine turbines in nine months and shipped 39.
 
@@ -598,7 +598,7 @@ https://thephysicallayer.fyi/journal/building-your-own-power/
 
 ---
 
-## 42 · Nuclear for AI (site live 30 Oct 2026; LinkedIn not yet scheduled)
+## 42 · Nuclear for AI (site live 30 Oct 2026; LinkedIn Mon 16 Nov, 11:30, scheduled)
 
 The only American plant that has made the near-20% uranium the new reactors need delivered 900 kilograms in one contract phase, and in June its contracted production stopped.
 
@@ -612,7 +612,7 @@ https://thephysicallayer.fyi/journal/nuclear-for-ai/
 
 ---
 
-## 43 · Powering the rack (site live 30 Oct 2026; LinkedIn not yet scheduled)
+## 43 · Powering the rack (site live 30 Oct 2026; LinkedIn Wed 18 Nov, 11:30, scheduled)
 
 Nvidia says a one megawatt AI rack, wired the way racks are today, would need up to 200 kilograms of copper bar.
 
@@ -626,7 +626,7 @@ https://thephysicallayer.fyi/journal/powering-the-rack/
 
 ---
 
-## 44 · Heat and water (site live 30 Oct 2026; LinkedIn not yet scheduled)
+## 44 · Heat and water (site live 30 Oct 2026; LinkedIn Mon 30 Nov, 11:30, scheduled)
 
 A liquid-cooled AI hall can go from about 2 litres of water per kilowatt-hour to almost none, and barely change its power use.
 
@@ -640,7 +640,7 @@ https://thephysicallayer.fyi/journal/heat-and-water/
 
 ---
 
-## 45 · Ten thousand chips, one thought (site live 30 Oct 2026; LinkedIn not yet scheduled)
+## 45 · Ten thousand chips, one thought (site live 30 Oct 2026; LinkedIn Mon 23 Nov, 11:30, scheduled)
 
 Google's whole optical layer, mirror switches, plugs and fibre, came to under 3 per cent of a 4,096-chip AI pod's power.
 
@@ -654,7 +654,7 @@ https://thephysicallayer.fyi/journal/ten-thousand-chips-one-thought/
 
 ---
 
-## 46 · The chip supply chain (site live 30 Oct 2026; LinkedIn not yet scheduled)
+## 46 · The chip supply chain (site live 30 Oct 2026; LinkedIn Wed 25 Nov, 11:30, scheduled)
 
 ASML, the only maker of the machines that print the finest AI chips, says its planned supply for 2027 and 2028 "will not fully meet the demand" of its customers, and some want to order for 2030.
 
@@ -668,7 +668,7 @@ https://thephysicallayer.fyi/journal/the-chip-supply-chain/
 
 ---
 
-## 47 · Contracted, energised, running (site live 30 Oct 2026; LinkedIn not yet scheduled)
+## 47 · Contracted, energised, running (site live 30 Oct 2026; LinkedIn Wed 2 Dec, 11:30, scheduled)
 
 Nebius has signed rights to 5 gigawatts of power for the end of 2026. It expects 0.8 to 1 gigawatt connected, and at the end of 2025 about 170 megawatts were running chips.
 

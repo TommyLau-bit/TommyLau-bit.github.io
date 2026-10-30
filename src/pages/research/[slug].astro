@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { SITE } from '../../config';
 import { fmtDate } from '../../utils';
-import { claimOf, homeOf, claimHref } from '../../data/claims';
+import { claimOf, homeOf, claimHref, claimSection } from '../../data/claims';
 import { getPitches, latest, fmtMoney, fmtPct } from '../../lib/calls';
 export async function getStaticPaths() {
   const pitches = await getPitches();
@@ -16,7 +16,7 @@ const posts = await getCollection('journal', ({ data }) => !data.draft);
 // the date is the claim's own.
 const claims = d.claims.map((id) => claimOf(id)).filter((c) => c != null)
   .map((claim) => ({ claim, piece: posts.find((x) => x.id === homeOf(claim)) })).filter((x) => x.piece)
-  .map((x) => ({ ...x, date: x.claim.date ? new Date(x.claim.date) : x.piece!.data.date }));
+  .map((x) => ({ ...x, date: x.claim.date ? new Date(x.claim.date) : x.piece!.data.date, section: claimSection(x.claim, x.piece!.body) }));
 const dirSlug = (c.direction ?? 'open').toLowerCase().replace(' ', '');
 const upside = c.target != null ? (c.direction === 'SHORT' ? c.price / c.target - 1 : c.target / c.price - 1) : null;
 const { mark, ret, move } = latest(p);
@@ -61,11 +61,12 @@ const { mark, ret, move } = latest(p);
       <ol>{d.keyPoints.map((k) => <li>{k}</li>)}</ol>
     </section>
 
-    {claims.map(({ claim, date }) => (
+    {claims.map(({ claim, date, piece, section }) => (
       <aside class="claim-box">
         <p class="claim-box-label">The claim it rests on, made {fmtDate(date)}</p>
         <p class="claim-box-claim">{claim!.claim}</p>
-        <p class="claim-box-meta"><a href={claimHref(claim)}>Read the journal piece</a></p>
+        <p class="claim-box-rests"><span>Rests on:</span> <a href={claimHref(claim)}>{section ? <>{section}, in {piece!.data.title}</> : piece!.data.title}</a></p>
+        <p class="claim-box-rests"><span>Later evidence on this claim:</span> <a href={claimHref(claim)}>the same section as it stands now</a>{piece!.data.updated && <> (piece updated {fmtDate(piece!.data.updated)})</>}, with anything the deep piece has added since the note.</p>
         {d.correction && <p class="claim-box-correction"><span>Where I was wrong</span>{d.correction} The piece and the claim stay as published; the note explains what changed my view.</p>}
       </aside>
     ))}
