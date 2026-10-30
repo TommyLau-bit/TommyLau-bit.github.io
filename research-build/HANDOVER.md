@@ -39,7 +39,7 @@ LinkedIn company page queue (11:30): posts 38 to 47 (the ten deep pieces) run Mo
 
 ### Open flags for Tommy (not acted on)
 - Research notes hitachi.md (line 162) and siemens-energy.md (line 159) carry corrected dates; confirm the wording.
-- The 3,885 MVA / 72.76% Johor utilisation figure is press-only and inconsistent. It still sits in claims.ts watch lists. Tommy is deciding.
+- CLOSED 30 Oct: the press-only 72.76% Johor utilisation figure no longer appears as fact in claims.ts watch lists (Tommy: "Yes, fix them"). The two watch items now read as Malaysia's contracted against used load (Hansard, Aug 2026) and as whether the press figure is confirmed at source.
 - The 17 Sep 800 VDC note is reversed by powering-the-rack (briefing in its sidecar). Re-read before any call that touches it.
 - Two old one-off scheduled tasks from the job-hunt side (linkedin-connections-reminder-5oct, marvell-investor-day-check) are finished but still listed; the app refused deleting them from here. Tommy can delete them in the Scheduled section.
 

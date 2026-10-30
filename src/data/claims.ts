@@ -21,7 +21,7 @@ export const CLAIMS: Claim[] = [
     date: '2026-07-27',
     claim: 'In Johor and Singapore, a finished grid connection, not chip supply, is the scarce thing holding the AI buildout back.',
     breaksIf: 'Connection waits keep shrinking the way Malaysia\'s Green Lane cut them from 36 months to 12, or transformer and cable lead times normalise faster than utilities commit capital.',
-    watch: ['Transformer and high-voltage cable lead times', 'The Green Lane project count beyond 33', 'Johor-Singapore zone utilisation past 72.76 per cent', 'Who wins Singapore\'s capacity award'],
+    watch: ['Transformer and high-voltage cable lead times', 'The Green Lane project count beyond 33', 'Malaysia\'s contracted against used data centre load (2,346 MW contracted, about 1,374 MW used, August 2026, Hansard)', 'Who wins Singapore\'s capacity award'],
   },
   {
     id: 'the-part-money-cannot-hurry',
@@ -29,7 +29,7 @@ export const CLAIMS: Claim[] = [
     home: 'the-queue-not-the-chip',
     claim: 'A grid connection queue is really two queues. Governments can shorten the paperwork one, but the equipment one sets the pace.',
     breaksIf: 'Connection timelines keep compressing across the board, or equipment lead times normalise faster than utility spending is committed. Also if building power on site removes the constraint rather than moving it.',
-    watch: ['Transformer and high-voltage cable lead times', 'The Green Lane project count beyond 33', 'Johor-Singapore zone utilisation past 72.76 per cent', 'Who wins Singapore\'s capacity award under the 1.25 ceiling'],
+    watch: ['Transformer and high-voltage cable lead times', 'The Green Lane project count beyond 33', 'Whether the press-reported 72.76 per cent Johor-Singapore zone utilisation is confirmed at source', 'Who wins Singapore\'s capacity award under the 1.25 ceiling'],
   },
   {
     id: 'two-governments-one-confession',
