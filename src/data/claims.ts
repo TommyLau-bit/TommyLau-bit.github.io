@@ -310,6 +310,14 @@ export const CLAIMS: Claim[] = [
     watch: ['Data centre substations completed in CLP\'s interim and annual results, every six months (eight by June 2026, one more targeted in the second half of 2026; 18 planned by 2028)', 'Sandy Ridge\'s first phase against CLP\'s mid-2027, Range\'s 2028 and the government\'s 2029', 'CLP\'s installed capacity and local maximum demand in the annual Ten-year Summary (9,258 MW against 7,455 MW in 2025; a margin below 15% is a warning, not a break)', 'CLP\'s quarterly sales to data centres (+12.8%, 6.6% of sales, nine months 2026)', 'Range Intelligent Computing\'s filings for Hong Kong capacity, customers and chips', 'BIS licensing of H200-class chips to end users located in China, and any change to 15 CFR 742.6 or to Hong Kong\'s treatment'],
     date: '2026-10-30',
   },
+  {
+    id: 'memory-not-maths',
+    claim: 'From HBM4E, high-bandwidth memory becomes a part built to the buyer\'s design: by 31 December 2027, at least two of SK Hynix, Samsung and Micron will have said, in their own results releases, filings or newsroom, that they are in volume production of, or shipping in volume, HBM whose base die carries a customer\'s own design, such as Nvidia\'s NVHBM.',
+    breaksIf: 'By 31 December 2027, fewer than two of SK Hynix, Samsung and Micron have said, in their own results releases, filings or newsroom, that they are in volume production of, or shipping in volume, HBM whose base die carries a customer\'s own design, such as Nvidia\'s NVHBM; a maker\'s own base die sold as \'custom HBM\' does not count unless the maker says it carries the customer\'s design. Samples, development, qualification, design wins and plans do not count, and nor do press or research-firm reports.',
+    watch: ['Micron\'s quarterly remarks on NVHBM and the HBM4E ramp in calendar 2027', 'Samsung and SK Hynix quarterly results on custom HBM and HBM4E', 'Nvidia GTC in March 2027: any NVHBM date or second partner', 'Amazon\'s Trainium4 launch with NVHBM'],
+    date: '2026-10-31T00:02:15+08:00',
+    home: 'memory-not-maths',
+  },
 ];
 
 export const claimOf = (id: string) => CLAIMS.find((c) => c.id === id);

@@ -61,10 +61,7 @@ export const STACK: Layer[] = [
     kind: 'compute',
     what: 'Stacked memory sits beside each processor, feeding it the model\'s numbers.',
     constraint: 'For most of the time a model is answering, the chip is waiting on memory, not maths.',
-    // listed under memory and chips both (30 Oct 2026 merge): the one deep piece covers HBM and the
-    // chip factories, and a layer with no piece would leave an empty stop on /map. layerOf() returns the
-    // last layer that lists a piece, so this one's home is chips.
-    pieces: ['the-chip-supply-chain'],
+    pieces: ['memory-not-maths'],
   },
   {
     id: 'chips',

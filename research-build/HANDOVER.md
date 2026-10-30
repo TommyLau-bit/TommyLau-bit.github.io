@@ -2,15 +2,15 @@
 
 Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. Newest day on top. Rewrite START HERE at the end of each session.
 
-## START HERE (as of Fri 30 Oct 2026, evening)
+## START HERE (as of Sat 31 Oct 2026, early morning)
 
-- The site is ten deep pieces, one per mechanism cluster, each in two layers (plain English, then "For investors"). An eleventh, Hong Kong, goes live on Mon 2 Nov.
-- **Standing decision (Tommy, 30 Oct 2026): the site is done for now. Do not keep modifying what does not need it.** Change a live piece only when new evidence lands on its mechanism (the monthly sweep proposes, Tommy picks), never for polish.
-- **Investor first, on every page** (Tommy, 30 Oct 2026, in CLAUDE.md): lists and tables before decoration, counts at the top, no thumbnails in lists, jump links on long pages. Any new page meets this standard.
-- Nothing needs doing until the scheduled jobs below run. When each one reports, check it: page live, update note showing, LinkedIn post listed at the right time. Any "NOT DONE" goes to Tommy.
-- New work follows "Two tracks for new work" in CLAUDE.md: a NEW deep piece for a new mechanism or market, or an UPDATE to an existing one. Ten is not a ceiling. Sourcing method is WRITING-FORMAT.md §E. Each candidate goes to Tommy as one line before any drafting.
-- Briefs for agents are in research-build/deep-pieces/: BRIEF-DEEP.md, BRIEF-DEEP-FACTCHECK.md, BRIEF-GAP-SCOUT.md, BRIEF-UPDATE.md.
-- Folder map: README.md. Anything old (original short pieces, their drafts and sidecars, pre-merge deep drafts, video transcripts, retired briefs, template and rules, unused images) is in research-build/archive/ and is never edited. Retired rules: research-build/archive/RETIRED-RULES.md. Keep the workspace this way: new history goes into archive/, never back at the top level.
+- **Every piece is now a story** (Tommy, 30 to 31 Oct). Tommy read the equipment queue and found the merged pieces stapled together. Overnight, with his go for everything, all ten live pieces and Hong Kong were rewritten as stories with charts, the three approved updates were folded into their pieces, and a new memory piece was researched and written. The rules are research-build/deep-pieces/STORY-RULES.md (one spine and claim by paragraph three, argument headings, no company sections, 2 to 4 inline SVG charts, earlier claims kept word for word in a fold). The model is the-equipment-queue. The checker enforces the core. Read STORY-RULES.md before touching any piece.
+- **Tommy reads them all on Sat 31 Oct and will say what to change.** Act on his notes first.
+- **Standing decision (30 Oct): do not keep modifying what does not need it.** Change a piece only on Tommy's word or new evidence on its mechanism.
+- **Investor first, on every page** (30 Oct, in CLAUDE.md): lists and tables before decoration, counts at the top, jump links on long pages.
+- New work follows "Two tracks for new work" in CLAUDE.md. Sourcing is WRITING-FORMAT.md §E. Each candidate goes to Tommy as one line before drafting.
+- Briefs for agents are in research-build/deep-pieces/: BRIEF-REWRITE.md and BRIEF-STORY-FACTCHECK.md (story format), BRIEF-GAP-SCOUT.md, BRIEF-UPDATE.md, BRIEF-DEEP.md and BRIEF-DEEP-FACTCHECK.md (structure now per STORY-RULES.md).
+- Folder map: README.md. History lives in research-build/archive/ and is never edited.
 
 ### Workspace layout (cleaned 30 Oct 2026; keep it this way)
 
@@ -23,20 +23,20 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 | research-build/archive/ | History, never edited: pieces/ (61 originals), journal-drafts/ (their old drafts and sidecars), deep-drafts/ (pre-merge deep piece drafts), sources/ (Watch Later and video transcripts), old-images/ (191 unused covers and cards), misc/, plus CONSOLIDATION-PLAN.md, RETIRED-RULES.md, the old short-piece briefs and TEMPLATE-short-skeleton.md |
 | public/covers, public/og | Only images a live or scheduled piece uses (11 covers, 10 cards; Hong Kong's card is made at publish) |
 
-### Scheduled jobs (scheduled-tasks; each runs at 8:00 Singapore time, only while the app is open; all saved in Auto mode)
+### Scheduled jobs (scheduled-tasks; 8:00 Singapore time unless shown, only while the app is open)
 
-| Date | Job | What it does | LinkedIn slot it books |
-|---|---|---|---|
-| Sun 1 Nov 09:00 | research-monthly-marks | Monthly track-record marks for the research notes, for Tommy's approval | none |
-| Sun 1 Nov 09:30 | journal-monthly-sweep | Writes research-build/sweeps/2026-11.md; proposes only | none |
-| Mon 2 Nov | publish-hong-kong-piece | Flips hong-kong-has-the-plug to live, stamps the claim date, makes the OG card | Mon 7 Dec, post 48 |
-| Wed 4 Nov | publish-queue-own-power-update | Copies updates/the-queue-not-the-chip.md over the live piece | Wed 9 Dec, post 49 |
-| Fri 6 Nov | publish-gas-pipe-update | Copies updates/building-your-own-power.md over the live piece | Mon 14 Dec, post 50 |
-| Mon 9 Nov | publish-nuclear-fuel-update | Copies updates/nuclear-for-ai.md over the live piece | Wed 16 Dec, post 51 |
+| Date | Job | What it does |
+|---|---|---|
+| Sun 1 Nov 09:00 | research-monthly-marks | Monthly track-record marks for the research notes, for Tommy's approval |
+| Sun 1 Nov 09:30 | journal-monthly-sweep | Writes research-build/sweeps/2026-11.md; proposes only |
+| Mon 2 Nov | publish-hong-kong-piece | Flips the rewritten hong-kong-has-the-plug live, stamps the claim date, makes its card, schedules LinkedIn post 48 (Mon 7 Dec) |
+| Wed 4 Nov | publish-queue-own-power-update | LinkedIn only: schedules post 49 (Wed 9 Dec). The update itself went live in the 31 Oct rewrite |
+| Fri 6 Nov | publish-gas-pipe-update | LinkedIn only: post 50 (Mon 14 Dec) |
+| Mon 9 Nov | publish-nuclear-fuel-update | LinkedIn only: post 51 (Wed 16 Dec) |
 
-Each update job first checks the live file still matches the version Tommy approved (git hash). If anyone edits one of those three live pieces before its date, that job stops by design: re-merge by hand or re-point the job.
+The old hash guards are gone: the three update jobs no longer touch the pieces. research-build/deep-pieces/updates/ is history now and can move to archive/.
 
-LinkedIn company page queue (11:30): posts 38 to 47 (the ten deep pieces) run Mon 2 Nov to Wed 2 Dec; Constellation post 34 on Fri 4 Dec; then posts 48 to 51 above. Headings in brand/linkedin-posts.md say which are scheduled.
+LinkedIn company page queue (11:30): posts 38 to 47 Mon 2 Nov to Wed 2 Dec; Constellation post 34 Fri 4 Dec; then 48 to 51 above; memory post 52 (see the day record).
 
 ### Open flags for Tommy (not acted on)
 - Memory deep piece (Layer 06): candidate raised 30 Oct, waiting on Tommy's go. See day record item 12.

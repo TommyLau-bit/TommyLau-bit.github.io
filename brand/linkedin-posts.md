@@ -737,3 +737,17 @@ https://thephysicallayer.fyi/journal/nuclear-for-ai/
 #Nuclear #Uranium #AIInfrastructure
 
 ---
+
+## 52 · Memory, not maths (site live Sat 31 Oct 2026; LinkedIn Mon 21 Dec, 11:30, to be scheduled Tue 3 Nov)
+
+Since 2020 the maths in Nvidia's top AI chip has grown about 112 times. The memory feeding it has grown about nine.
+
+When a model writes an answer, one word at a time, it must read the whole model out of memory for every word, so the chip spends much of its time waiting. Memory, not maths, sets how fast AI answers and how many people one chip can serve. Rubin is the first Nvidia generation where that gap stopped widening, on the new HBM4 standard.
+
+Now the biggest buyer is designing the memory itself. Nvidia's NVHBM moves its own memory controller into the base of each stack, and Micron says it is working with Nvidia on the first one. A standard part is becoming one built to a buyer's design.
+
+The piece covers the memory wall in Nvidia's own spec sheets, how the base die became a logic chip, and where the new HBM capacity is being built.
+
+https://thephysicallayer.fyi/journal/memory-not-maths/
+
+#AIInfrastructure #Semiconductors #Memory

@@ -17,6 +17,8 @@ export type Num = {
 
 export const NUMBERS: Num[] = [
   // the grid connection
+  { layer: 'memory', value: '112× vs 9.4×', what: 'How far Nvidia\'s peak maths per chip rose against its memory bandwidth from the A100 (2020) to Rubin (2026). The chip got far faster at calculating than at being fed.', piece: 'memory-not-maths', asOf: '2026' },
+  { layer: 'memory', value: '80 → 288 GB', what: 'High-bandwidth memory per Nvidia chip, from the H100 to Rubin.', piece: 'memory-not-maths', asOf: '2026' },
   { layer: 'grid', value: '1.26 GW of 5.65 GW', what: 'Data centre load Tenaga Nasional supplied across Malaysia in June 2026, against the maximum demand booked by the data centre projects in its system. Johor holds two thirds of Malaysia\'s secured data centre capacity.', piece: 'the-queue-not-the-chip', asOf: 'June 2026' },
   { layer: 'grid', value: '~6 GW', what: 'Low-carbon electricity Singapore aims to import by 2035, all by subsea cable. Every one of the 13 projects approved so far is still conditional.', piece: 'the-queue-not-the-chip', asOf: 'August 2026' },
   { layer: 'grid', value: '3 MW', what: 'Critical IT load from which a Singapore data centre needs an IMDA licence stating the capacity it may run, existing halls included. About 70 are in scope.', piece: 'the-queue-not-the-chip', asOf: 'October 2026' },
