@@ -1,4 +1,4 @@
-# LinkedIn Company Page posts — The Physical Layer
+# LinkedIn Company Page posts: The Physical Layer
 
 > **30 Oct 2026: all 11 scheduled LinkedIn posts DELETED on Tommy's go** (Schneider 2 Nov, Lumentum 4 Nov, B200 6 Nov, Ajinomoto 9 Nov, ASML 11 Nov, Micron 13 Nov, GE Vernova 16 Nov, Hitachi Energy 20 Nov, Eaton 23 Nov, Siemens Energy 25 Nov, Constellation 4 Dec). Verified: the page shows no scheduled posts. Texts below are kept for reference only. The 23 live posts (1 to 22 + the descent video) stay up. Restart: one LinkedIn post per merged deep piece as each is finished, Johor and Singapore first, 1 to 2 a week.
 

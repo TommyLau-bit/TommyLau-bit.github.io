@@ -39,11 +39,24 @@ The old hash guards are gone: the three update jobs no longer touch the pieces. 
 LinkedIn company page queue (11:30): posts 38 to 47 Mon 2 Nov to Wed 2 Dec; Constellation post 34 Fri 4 Dec; then 48 to 51 above; memory post 52 (see the day record).
 
 ### Open flags for Tommy (not acted on)
-- Memory deep piece (Layer 06): candidate raised 30 Oct, waiting on Tommy's go. See day record item 12.
+- **LinkedIn post 52 (memory) is written but NOT scheduled.** Creating a scheduled job for it was refused by the app's permission check on 31 Oct, so it was left for Tommy. Either schedule it by hand on the company page (Mon 21 Dec, 11:30, text in brand/linkedin-posts.md), or say "schedule post 52" in a session and Claude will do it in Chrome.
+- Memory replaced the "Memory deep piece" candidate flag: it is live (31 Oct).
 - Research notes hitachi.md (line 162) and siemens-energy.md (line 159) carry corrected dates; confirm the wording.
 - CLOSED 30 Oct: the press-only 72.76% Johor utilisation figure no longer appears as fact in claims.ts watch lists (Tommy: "Yes, fix them"). The two watch items now read as Malaysia's contracted against used load (Hansard, Aug 2026) and as whether the press figure is confirmed at source.
 - The 17 Sep 800 VDC note is reversed by powering-the-rack (briefing in its sidecar). Re-read before any call that touches it.
 - Two old one-off scheduled tasks from the job-hunt side (linkedin-connections-reminder-5oct, marvell-investor-day-check) are finished but still listed; the app refused deleting them from here. Tommy can delete them in the Scheduled section.
+
+## Sat 31 Oct 2026 (overnight, Tommy's go for everything): what was done
+
+1. **Diagnosis.** Tommy read the equipment queue and found it messy: five old pieces stapled together, a section per company, five claims, tables instead of charts, no story. He asked for every piece to read like a good film: hook, build, climax, an ending that ties it up, with charts.
+2. **Study and rules.** An agent took apart eight well-told articles (Construction Physics, Works in Progress, Our World in Data, Epoch AI, SemiAnalysis, plus two wire stories as contrasts): research-build/deep-pieces/STORY-STUDY.md. Distilled into STORY-RULES.md, written into CLAUDE.md ("Every piece is a story") and WRITING-FORMAT.md §D. The checker now fails topic-label headings and fewer than two charts, and ignores charts and folded blocks when counting words.
+3. **Charts.** Inline SVG in each piece, themed by the colour tokens (light and dark), classes listed in STORY-RULES.md, styles at the end of global.css. Phones scroll a chart sideways inside its frame. 38 charts in all, every one checked for label overflow and against its source figures.
+4. **Pilot: the-equipment-queue** (13aeae7), rewritten by Claude: paradox opening, three charts (years of work, factory timeline, Siemens Energy's shortfall), one claim, four earlier claims folded word for word, evidence tables and corrections in a fold.
+5. **The other nine live pieces and Hong Kong**, rewritten by five writer agents to BRIEF-REWRITE.md, each then checked by a separate agent to BRIEF-STORY-FACTCHECK.md (record kept, every number and chart point recomputed, overclaims softened; about 50 fixes in all). Titles changed on america-rations-the-plug, ten-thousand-chips-one-thought, powering-the-rack and hong-kong-has-the-plug (slugs unchanged). the-queue-not-the-chip now leads with the dated the-plug-not-the-chip claim. Commits 092f199, 247fbb8, 143c06f.
+6. **The three approved updates** (Johor own power, gas pipe, nuclear fuel) were folded into their rewrites and went live with them. Their 4, 6 and 9 Nov jobs now only schedule LinkedIn posts 49 to 51. Hong Kong's 2 Nov job publishes the rewritten piece. Posts 48 and 50 reworded to match the checked pieces.
+7. **New piece: memory-not-maths** (59fb6c1, live 31 Oct 00:02). Spine: when AI writes an answer the chip waits on memory, so memory sets the pace, and from HBM4E the biggest buyer (Nvidia's NVHBM) designs the base of the memory stack. Three charts (maths against bandwidth since the A100, memory per chip, the controller moving into the base die). Claim `memory-not-maths` (two of three makers shipping customer-designed base dies in volume by end 2027). Scouted, written, then fact-checked against reopened primary sources (11 fixes). Layer 06 now has its own piece; glossary adds Memory wall, KV cache, Memory controller, NVHBM; numbers.ts adds two memory figures. LinkedIn post 52 written, not scheduled (see open flags).
+8. **Social cards** bumped to v10 (old v9 in archive/old-images).
+9. **Not done / for Tommy:** read the twelve pieces and say what to change. Two pieces were judged "works with reservations" by their checkers: the-chip-supply-chain (a middle beat still tours memory, film and TSMC) and powering-the-rack (Vertiv and TI beats sit close to company sections). contracted-energised-running rests partly on writer arithmetic (Nebius billing range) and Oracle figures from third-party transcripts, labelled as such.
 
 ## Fri 30 Oct 2026: what was done
 
