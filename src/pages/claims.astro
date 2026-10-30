@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { CLAIMS, homeOf, claimHref } from '../data/claims';
 import { fmtDate } from '../utils';
+import { STACK, layerOf } from '../data/stack';
 const posts = await getCollection('journal', ({ data }) => !data.draft);
 const byId = Object.fromEntries(posts.map((p) => [p.id, p]));
 // A claim shows once the piece that carries it is live: its own piece, or the
@@ -10,34 +11,49 @@ const byId = Object.fromEntries(posts.map((p) => [p.id, p]));
 const rows = CLAIMS.filter((c) => byId[homeOf(c)])
   .map((c) => { const p = byId[homeOf(c)]; return { c, p, date: c.date ? new Date(c.date) : p.data.date }; })
   .sort((a, b) => b.date.valueOf() - a.date.valueOf());
+// grouped by the map layer of the piece that carries each claim, grid to chip
+const groups = STACK.map((l, i) => ({ l, n: String(i + 1).padStart(2, '0'), rows: rows.filter((r) => layerOf(r.p.id)?.id === l.id) }))
+  .filter((g) => g.rows.length > 0);
+const pieces = new Set(rows.map((r) => r.p.id)).size;
 ---
 <Base title="Claims" description="Every claim this journal makes, dated, with what would prove it wrong and the evidence to watch.">
-  <header class="article-head">
-    <h1>The claims I have made</h1>
-    <aside class="plain">
-      <p class="label">In plain English</p>
-      <p>Every Analysis piece on this site makes a claim and names the evidence that would prove it wrong. This page lists them all in one place, newest first. Each claim is fixed on the day its piece went live and is never reworded afterwards. Where a claim became a call on a company, the note is on the <a href="/research/">research page</a>.</p>
-    </aside>
+  <header class="research-head">
+    <h1>Claims</h1>
+    <p>Every claim the journal makes, with the evidence that would prove it wrong. Each is fixed on the day it went live and never reworded. Where a claim became a call on a company, the note is on the <a href="/research/">research page</a>.</p>
   </header>
 
-  <ol class="ledger">
-    {rows.map(({ c, p, date }) => (
-      <li class="claim" id={c.id}>
-        <span class="claim-date">{fmtDate(date)}</span>
-        <p class="claim-text">{c.claim}</p>
-        <p class="claim-piece">From <a href={claimHref(c)}>{p.data.title}</a></p>
-        <details class="claim-detail">
-          <summary>What would prove me wrong, and what I watch</summary>
-          <p class="claim-sub">Wrong if</p>
-          <p>{c.breaksIf}</p>
-          <p class="claim-sub">Evidence I watch</p>
-          <ul>{c.watch.map((w) => <li>{w}</li>)}</ul>
-        </details>
-      </li>
-    ))}
-  </ol>
+  <ul class="stat-strip" aria-label="The claims at a glance">
+    <li><strong>{rows.length}</strong> claims on record</li>
+    <li><strong>{pieces}</strong> pieces</li>
+    <li>Newest first within each layer</li>
+  </ul>
+
+  <nav class="claims-jump" aria-label="Claims by layer">
+    {groups.map((g) => <a href={`#claims-${g.l.id}`}>{g.n} {g.l.name} <span>{g.rows.length}</span></a>)}
+  </nav>
+
+  {groups.map((g) => (
+    <section class={`claims-group claims-group--${g.l.kind}`} id={`claims-${g.l.id}`} aria-labelledby={`claims-${g.l.id}-h`}>
+      <h2 class="claims-group-h" id={`claims-${g.l.id}-h`}>Layer {g.n} · {g.l.name}</h2>
+      <ol class="ledger">
+        {g.rows.map(({ c, p, date }) => (
+          <li class="claim" id={c.id}>
+            <p class="claim-piece"><time datetime={date.toISOString()}>{fmtDate(date)}</time> · <a href={claimHref(c)}>{p.data.title}</a></p>
+            <p class="claim-text">{c.claim}</p>
+            <details class="claim-detail">
+              <summary>What would prove me wrong, and what I watch</summary>
+              <p class="claim-sub">Wrong if</p>
+              <p>{c.breaksIf}</p>
+              <p class="claim-sub">Evidence I watch</p>
+              <ul>{c.watch.map((w) => <li>{w}</li>)}</ul>
+            </details>
+          </li>
+        ))}
+      </ol>
+    </section>
+  ))}
 
   <div class="prose">
-    <p class="sources">{rows.length} claims. Explainer pieces teach a mechanism and make no prediction, so they do not appear here. Personal research, not investment advice.</p>
+    <p class="sources">Personal research, not investment advice.</p>
   </div>
 </Base>

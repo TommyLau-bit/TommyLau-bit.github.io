@@ -147,10 +147,18 @@ A new piece is not published until the site around it is updated. Every time:
 
 **The top menu is fixed at five: Journal, Research, Claims, Glossary, About**
 (Tommy, 30 Oct 2026). Tommy found nine items too crowded. Do not add to it.
-The map is the homepage: the descent sits at the top of `/`, then the layer
-sections with their deep pieces, so Journal is the map and `/map/` redirects
-to `/` (`/map/#<layer>` lands on `/#<layer>`). Start here was removed and
-`/start/` redirects to `/`. Numbers and Companies live in the footer, with
+The homepage is the map: under the hero, a compact list of every deep piece
+by layer (grid to chip, anchored `/#<layer>`), then the descent below it as the
+guided walk. `/map/` redirects to `/` (`/map/#<layer>` lands on `/#<layer>`).
+Start here was removed and `/start/` redirects to `/`.
+
+**Investor first, on every page** (Tommy, 30 Oct 2026). A visitor finds what
+they came for at once: lists and tables before decoration, counts at the top,
+no thumbnails in lists, no "In plain English" boxes on index pages (pieces keep
+theirs), jump links where a page is long. Research leads with the calls table;
+Claims are grouped by layer; each deep piece shows "For investors" jump links
+under its summary. Keep new pages to this standard.
+Numbers and Companies live in the footer, with
 Claims also there; any new reference page goes in the footer too.
 
 The checker fails a piece missing from the map, or an Analysis piece missing
