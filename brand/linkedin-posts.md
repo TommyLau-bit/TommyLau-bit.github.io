@@ -1,4 +1,7 @@
 # LinkedIn Company Page posts — The Physical Layer
+
+> **30 Oct 2026: all 11 scheduled LinkedIn posts DELETED on Tommy's go** (Schneider 2 Nov, Lumentum 4 Nov, B200 6 Nov, Ajinomoto 9 Nov, ASML 11 Nov, Micron 13 Nov, GE Vernova 16 Nov, Hitachi Energy 20 Nov, Eaton 23 Nov, Siemens Energy 25 Nov, Constellation 4 Dec). Verified: the page shows no scheduled posts. Texts below are kept for reference only. The 23 live posts (1 to 22 + the descent video) stay up. Restart: one LinkedIn post per merged deep piece as each is finished, Johor and Singapore first, 1 to 2 a week.
+
 One per piece. Plain register, first person, no hashtag walls (three max), the link on its own line at the end so LinkedIn renders the card.
 
 ---
@@ -497,7 +500,7 @@ https://thephysicallayer.fyi/journal/constellation-restarts-the-reactor/
 
 ---
 
-## 35 · PJM sends the bill (site live Mon 2 Nov 2026, scheduled; LinkedIn Mon 30 Nov, 11:30)
+## 35 · PJM sends the bill (site live Mon 9 Nov 2026, scheduled; LinkedIn Mon 7 Dec, 11:30)
 
 PJM's capacity auction has cleared at its price cap three times running, and the latest one still came up almost 7 gigawatts short.
 
@@ -511,7 +514,7 @@ https://thephysicallayer.fyi/journal/pjm-sends-the-bill/
 
 ---
 
-## 36 · Seagate sells the terabyte (site live Wed 4 Nov 2026, scheduled; LinkedIn Wed 2 Dec, 11:30)
+## 36 · Seagate sells the terabyte (site live Wed 11 Nov 2026, scheduled; LinkedIn Wed 9 Dec, 11:30)
 
 Seagate shipped 26 per cent more hard drive storage in a year on roughly the same number of drives.
 
@@ -525,7 +528,7 @@ https://thephysicallayer.fyi/journal/seagate-sells-the-terabyte/
 
 ---
 
-## 37 · Water is a siting problem (site live Fri 6 Nov 2026, scheduled; LinkedIn Fri 4 Dec, 11:30)
+## 37 · Water is a siting problem (site live Fri 13 Nov 2026, scheduled; LinkedIn Fri 11 Dec, 11:30)
 
 Most of a data centre's water is not used at the data centre.
 

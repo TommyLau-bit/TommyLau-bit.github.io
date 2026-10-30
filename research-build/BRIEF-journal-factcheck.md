@@ -1,3 +1,4 @@
+<!-- RETIRED 30 Oct 2026 for new pieces: write and check deep pieces to WRITING-FORMAT.md §D and CLAUDE.md. The short-skeleton parts below apply only to the top layer. -->
 # Brief: fact-check one DRAFT journal piece (READ ONLY)
 
 Audit a draft Analysis piece for Tommy Lau's journal, The Physical Layer. Do NOT edit, create or delete any file. Report only.

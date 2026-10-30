@@ -2,10 +2,9 @@
      This file lives at the repo root on purpose, so the site never loads it.
      The rules behind every slot are in WRITING-FORMAT.md.
      date is the real moment you publish, Singapore time. Never a future date.
-     FIRST RULE (WRITING-FORMAT §3 and §4b): about a five minute read for a person
-     reading to understand. 450 to 600 words in the body, never over 700. 15 figures
-     at most, 3 company financial figures at most. Explanation here, numbers in the
-     research notes. Model piece: ge-vernova-sells-the-wait.md.
+     RETIRED 30 Oct 2026: this short-skeleton template is no longer the format for a
+     piece. Every piece is now a deep piece in two layers (WRITING-FORMAT §D). The
+     slots below are still the shape of the top layer.
 -->
 ---
 title: "A claim or a plain question, sentence case, 8 to 16 words"

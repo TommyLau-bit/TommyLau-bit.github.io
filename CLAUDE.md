@@ -23,11 +23,13 @@ work on notes, calls, the research page or share prices, read `CALLS-SPEC.md`.
 - Notes are never rewritten after publication. The monthly mark goes in
   `src/data/calls.ts`, with Tommy's approval.
 - When a later note finds a journal claim was wrong, the note says so openly
-  ("Where I was wrong", and what changed the view). The piece and the claim
-  are never edited.
+  ("Where I was wrong", and what changed the view). The claim is never edited
+  or deleted, and the archived original text of a piece is never edited. The
+  page itself may be deepened (30 Oct 2026), and says openly where a later
+  finding cuts against a claim on record.
 - **Journal piece first, always** (Tommy, 6 Oct 2026). A note or call is only
-  written on a company that already has its own Analysis piece and claim. If
-  Tommy asks for a note on a company with none, write the piece first.
+  written on a company that already has its own section and claim in a deep
+  piece. If Tommy asks for a note on a company with none, write that first.
 - When a journal piece publishes, ask Tommy whether to draft a note on it.
 - Once a month (scheduled task `research-monthly-marks`) the track record
   marks are prepared for Tommy to approve; nothing is pushed without his go.
@@ -92,13 +94,26 @@ cover brief and LinkedIn post, is yours to write.
   step 7.
 - **Do not add a new piece to `READING_PATH`.** The reading page is a capped
   on-ramp, not an index. See the README section on it.
-- House style: no em dashes, British spelling, 14 to 20 word sentences,
-  450 to 600 words in the body (about a 5 minute read for a person reading to
-  understand), in the short skeleton of WRITING-FORMAT.md §3 (Tommy, 9 Oct 2026).
-- **Explanation in the journal, numbers in the research** (Tommy, 8 Oct 2026).
-  A journal piece is written for a layman with no finance background: 15
-  figures at most, 3 company financial figures at most. Financial detail lives
-  in the research notes. See WRITING-FORMAT.md §4b.
+- **The deep piece: fewer, deeper, layered** (Tommy, 30 Oct 2026; replaces
+  the 8 and 9 Oct length and numbers rules, which are retired, and applies to
+  every future piece). The journal is being consolidated from 61 short pieces
+  into about 11 deep pieces, one per mechanism cluster. New topics deepen an
+  existing deep piece; there are no new standalone pieces.
+  Each deep piece has two layers on one page: a plain-English top (claim, why
+  it matters, the key number, analogy; about 400 to 550 words, still readable
+  by a layman) and an investor layer below it (the numbers, the mechanism or
+  model, company and site sections, claims on record, exposure map, falsifier,
+  links to research notes). The old 15-figure and 450 to 600 word limits apply
+  to the top layer only; every investor-layer number is primary and dated. Share prices, valuations and views on shares still never
+  appear in a journal piece. Spec: WRITING-FORMAT.md §D. Plan:
+  research-build/CONSOLIDATION-PLAN.md.
+- **Merging keeps the record** (Tommy, 30 Oct 2026). When pieces merge, every
+  old URL redirects to its section in the deep piece (`/journal/<deep>/#<old-slug>`),
+  every claim stays in claims.ts word for word with its original date, and the
+  deep piece shows each one in its "Claims on record" block. Research notes are
+  untouched and keep pointing at the same claim ids. The original text of each
+  merged piece is kept in `research-build/archive-pieces/` and never edited.
+- House style: no em dashes, British spelling, 14 to 20 word sentences.
 
 ## The site around each piece
 

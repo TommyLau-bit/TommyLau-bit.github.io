@@ -4,17 +4,53 @@ How every piece on this site is built. Derived from the first six, not invented.
 If you hand Claude raw notes and say "make this a journal post", this is the
 contract it works to. Nothing here is a suggestion.
 
-> ## THE FIRST RULE. EXPLANATION IN THE JOURNAL, NUMBERS IN THE RESEARCH. (Tommy, 8 Oct 2026, permanent)
-> The journal is for a layman with no financial background. Every piece must be short, sweet,
-> professional and easy to understand: **about a five minute read for a person reading to understand
-> (450 to 600 words in the body, never over 700, plus a short exposure map and sources line), 15 figures
-> at most, 3 company financial figures at most.** Use a number only when the point
-> does not land without it. Revenue tables, segment splits, quarter-by-quarter comparisons, guidance
-> and deal arithmetic belong in the research notes at `/research`, never in a journal piece.
-> On 8 Oct 2026 twenty-one pieces that had drifted to 1,400 words and up to 78 figures were rewritten
-> to this standard. On 9 Oct 2026 Tommy timed himself at 10 to 15 minutes a piece, reading to understand,
-> so every piece was cut again to the short skeleton in §3 (about 100 words a minute for real reading).
-> `brand/check-piece.py` enforces it. Full rule: §4b. The model piece is `ge-vernova-sells-the-wait.md`.
+> ## THE FIRST RULE. FEWER, DEEPER, LAYERED. (Tommy, 30 Oct 2026, permanent)
+> The journal is a small set of deep pieces, one per mechanism cluster, each written in two layers on
+> one page (§D): a plain-English top a layman can follow in about five minutes, and an investor layer
+> below it with the numbers, the mechanism, the company and site sections, the claims on record and
+> the falsifier. A PM or investor who reads any piece first must come away thinking the author knows
+> the subject in depth. New topics deepen an existing deep piece; they are not new standalone pieces.
+> Every piece must clear the quality bar in CLAUDE.md. The retired rules, kept as history: on 8 and 9 Oct
+> 2026 pieces were capped at 450 to 600 words and 15 figures with "numbers in the research"; on 30 Oct
+> 2026 Tommy judged that too surface-level and replaced it with this rule. Those caps now apply only to
+> the top layer.
+
+---
+
+## D. THE DEEP PIECE (Tommy, 30 Oct 2026). The format for every piece. §3 and §4b below now apply only where they say so.
+
+Tommy's direction: the short pieces read as surface level, and a PM or investor who reads one first
+thinks the author knows little. Many repeated each other. So the journal becomes about 11 deep
+pieces, one per mechanism cluster (plan: `research-build/CONSOLIDATION-PLAN.md`), each in two layers
+on one page. The top layer keeps everything the 8 and 9 Oct rules got right; the investor layer adds
+the depth those rules sent to the research notes.
+
+**Top layer: In plain English** (about 400 to 550 words, 15 figures at most, a layman can follow it)
+1. Summary (frontmatter), as before.
+2. Cold open ending on the thesis alone on its line, as §3.1.
+3. The analogy block, as §3.2.
+4. `## How it works`: the mechanism, why supply cannot simply catch up.
+5. `## The number that matters`: one or two figures and what they mean.
+Then a divider line: `<hr class="layer">` followed by `<p class="layer-label">For investors</p>`.
+
+**Investor layer** (about 1,200 to 2,500 words; numbers allowed, every one primary-sourced and dated)
+6. `## The mechanism in depth`: the full chain, with a table where it helps (lead times, backlog in
+   years of work, MW booked against drawn, per-unit content). Tables are markdown tables.
+7. One `##` section per company, site or market the cluster covers, each opening with an anchor
+   `<a id="<old-slug>"></a>` for every merged piece it replaces, so redirects land there. Each section
+   carries that piece's evidence, now with the numbers.
+8. `## Claims on record`: every claim from the merged pieces, quoted word for word from claims.ts
+   with its original date and falsifier, then any new dated claim for the deep piece. Never reworded.
+   Where later evidence cuts against an old claim, say so here openly, in the "Where I was wrong" style.
+9. `## What would prove me wrong`: the deep piece's own falsifier.
+10. `## Research notes`: links to each initiation note in `/research/` that rests on these claims.
+11. The exposure map (§3.4 rules unchanged; up to six groups).
+12. Sources (one paragraph naming institutions and documents with dates, ending "Personal research,
+    not investment advice."). Credit third-party leads (videos, SemiAnalysis) once.
+
+Still forbidden anywhere in a piece: share prices, market values, valuation multiples, targets,
+ratings or any view on shares (those live in the research notes). Financials appear only as evidence
+for the mechanism (§4a). No em or en dashes. British spelling.
 
 ---
 
@@ -92,7 +128,9 @@ in it. It can never change once published without breaking links.
 
 ## 3. The body, in order
 
-**The short skeleton (Tommy, 9 Oct 2026, permanent).** Every piece is these parts and no others:
+**Retired 30 Oct 2026 as a whole-piece format.** The short skeleton below is now the shape of the
+top layer of a deep piece (§D): cold open, analogy and how it works keep these rules. The rest of this
+section is history. **The short skeleton (Tommy, 9 Oct 2026).** Every piece was these parts and no others:
 summary, cold open, analogy, how it works, the evidence, what would prove me wrong (Analysis only),
 exposure map, sources. About 600 to 650 words in all. No separate definitions section, no second
 angle, no "where I stop" or "what I'm watching" section: fold one line of either into the falsifier
@@ -253,7 +291,7 @@ These are not preferences. They are what the existing corpus does.
 | British spelling always | centres, energised, analysed. 0 US spellings |
 | Sentences short | 14 to 20 words average |
 | Paragraphs short | 1 to 4 sentences, about 12 to 16 paragraphs per piece |
-| Length | 450 to 600 words in the body, never over 700, plus about 100 in the exposure map and 30 in the sources line. Reads in about 5 to 6 minutes at real reading pace (Tommy, 9 Oct 2026) |
+| Length | Top layer about 400 to 550 words (a five minute read); investor layer about 1,200 to 2,500 words (Tommy, 30 Oct 2026; the 9 Oct cap of 450 to 600 words for a whole piece is retired) |
 
 Voice:
 
@@ -316,7 +354,16 @@ mechanism and imply nothing about value.
 
 ---
 
-## 4b. The numbers budget. Explanation in the journal, numbers in the research
+## 4b. Numbers (rewritten 30 Oct 2026)
+
+**Now:** the top layer keeps the budget below (15 figures at most, 3 company financial figures at
+most, never two money figures in one paragraph), so a layman can follow it. The investor layer has no
+figure cap: every number is primary-sourced and dated, tied to the mechanism, and tables are welcome.
+Still never anywhere: share prices, market values, valuation multiples, targets, ratings or any view on
+shares; those live in the research notes. The 8 Oct text below is kept as history and now governs the
+top layer only.
+
+### The 8 Oct rule (history; top layer only)
 
 **Tommy, 8 Oct 2026, permanent.** The journal is for a layman with no finance
 background. It explains. The research notes at `/research` carry the numbers.
@@ -562,6 +609,7 @@ Run it before you build. Every published piece passes with no failures.
 - [ ] Sources paragraph, ending "Personal research, not investment advice."
 - [ ] Every jargon term defined in place, and present in the glossary
 - [ ] On the map in `stack.ts`; if Analysis, on the claims page in `claims.ts`
-- [ ] No em dashes. British spelling. 450 to 600 words in the body, never over 700
-- [ ] Numbers budget kept (§4b): 15 figures at most, 3 company financial figures at most, never two money figures in one paragraph
+- [ ] No em dashes. British spelling. Top layer about 400 to 550 words; investor layer about 1,200 to 2,500 (§D)
+- [ ] Numbers (§4b): top layer within its budget; every investor-layer number primary-sourced and dated
+- [ ] Claims on record quote every merged claim word for word with its original date (§D)
 - [ ] Cover SVG in place, social card regenerated, build clean

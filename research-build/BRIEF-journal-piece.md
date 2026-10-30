@@ -1,3 +1,4 @@
+<!-- RETIRED 30 Oct 2026 for new pieces: write and check deep pieces to WRITING-FORMAT.md §D and CLAUDE.md. The short-skeleton parts below apply only to the top layer. -->
 # Brief: draft ONE company journal piece for The Physical Layer (Tommy Lau)
 
 You are drafting one Analysis piece about one company for Tommy's journal. It stays a DRAFT: Tommy approves the claim before anything is published. Do not commit, push or publish.
