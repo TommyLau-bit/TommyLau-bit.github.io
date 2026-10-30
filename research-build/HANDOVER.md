@@ -39,6 +39,7 @@ Each update job first checks the live file still matches the version Tommy appro
 LinkedIn company page queue (11:30): posts 38 to 47 (the ten deep pieces) run Mon 2 Nov to Wed 2 Dec; Constellation post 34 on Fri 4 Dec; then posts 48 to 51 above. Headings in brand/linkedin-posts.md say which are scheduled.
 
 ### Open flags for Tommy (not acted on)
+- Memory deep piece (Layer 06): candidate raised 30 Oct, waiting on Tommy's go. See day record item 12.
 - Research notes hitachi.md (line 162) and siemens-energy.md (line 159) carry corrected dates; confirm the wording.
 - CLOSED 30 Oct: the press-only 72.76% Johor utilisation figure no longer appears as fact in claims.ts watch lists (Tommy: "Yes, fix them"). The two watch items now read as Malaysia's contracted against used load (Hansard, Aug 2026) and as whether the press figure is confirmed at source.
 - The 17 Sep 800 VDC note is reversed by powering-the-rack (briefing in its sidecar). Re-read before any call that touches it.
@@ -86,3 +87,5 @@ LinkedIn company page queue (11:30): posts 38 to 47 (the ten deep pieces) run Mo
    - Phone header on every page: one compact row (theme button beside the name, tagline hidden), so content starts on the first screen.
    - CLAUDE.md records the rule. Verified desktop and phone, light and dark, no sideways scroll; build and checkers clean; live and confirmed.
 10. **Homepage list spacing (79ac2e6, late evening).** Tommy found the list squeezed. CSS only: more space above and between layer rows, between pieces within a layer, and a slightly larger title size. Checked on desktop and phone, in light and dark. Live.
+11. **Homepage rows read as articles (0ca23c6).** Each title is split at its colon (or first full stop) into a bold sans headline and a grey line under it, date on the right; no underline until hover. Checked desktop, phone, light and dark. Live.
+12. **Memory candidate raised (not started).** Tommy noticed Layer 06 Memory has no piece of its own (it points at the-chip-supply-chain). Candidate put to him: a NEW deep piece on why AI is bound by memory, not maths, and how HBM4's logic base die makes memory a custom part qualified per customer. Not the Micron sold-ahead / three-times-wafer point, which the chip piece and its claim already own. Next step if he says go: gap scout with BRIEF-GAP-SCOUT.md, which must confirm a distinct mechanism and a primary-sourced claim before any drafting.
