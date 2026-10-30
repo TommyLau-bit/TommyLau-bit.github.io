@@ -3,6 +3,10 @@
 Tommy's public journal on AI and energy infrastructure. Astro static site,
 GitHub Pages, live at https://thephysicallayer.fyi
 
+**Every journal session starts with `research-build/HANDOVER.md`** (what is
+scheduled, open flags, what was done each day). Rewrite its START HERE at the
+end of the session.
+
 ## Research: initiation notes and calls (read `CALLS-SPEC.md` first)
 
 The site has a second core: Tommy's initiation notes, each a PDF in his house
