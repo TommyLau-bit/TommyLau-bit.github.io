@@ -738,7 +738,7 @@ https://thephysicallayer.fyi/journal/nuclear-for-ai/
 
 ---
 
-## 52 · Memory, not maths (site live Sat 31 Oct 2026; LinkedIn Mon 21 Dec, 11:30, to be scheduled Tue 3 Nov)
+## 52 · Memory, not maths (site live Sat 31 Oct 2026; LinkedIn Mon 21 Dec, 11:30, scheduled by Tommy on his phone)
 
 Since 2020 the maths in Nvidia's top AI chip has grown about 112 times. The memory feeding it has grown about nine.
 
