@@ -85,3 +85,4 @@ LinkedIn company page queue (11:30): posts 38 to 47 (the ten deep pieces) run Mo
    - Glossary: plain header with section jump links and counts.
    - Phone header on every page: one compact row (theme button beside the name, tagline hidden), so content starts on the first screen.
    - CLAUDE.md records the rule. Verified desktop and phone, light and dark, no sideways scroll; build and checkers clean; live and confirmed.
+10. **Homepage list spacing (79ac2e6, late evening).** Tommy found the list squeezed. CSS only: more space above and between layer rows, between pieces within a layer, and a slightly larger title size. Checked on desktop and phone, in light and dark. Live.
