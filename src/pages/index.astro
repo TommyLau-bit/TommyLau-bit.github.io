@@ -21,6 +21,12 @@ const layers = STACK.map((l, i) => ({
 const mapped = new Set(STACK.flatMap((l) => l.pieces));
 const other = posts.filter((p) => !mapped.has(p.id));
 const homeOf = (id: string) => layers.find((l) => l.id === layerOf(id)?.id);
+// "The equipment queue: transformer makers..." shows as a headline with a line
+// under it, so each row reads as an article rather than a line of link text.
+const split = (t: string) => {
+  const m = t.match(/^(.+?)(?::\s|\.\s)(.+)$/);
+  return m ? [m[1], m[2].charAt(0).toUpperCase() + m[2].slice(1)] : [t, ''];
+};
 ---
 <Base wide>
   <section class="hero hero--compact">
@@ -36,7 +42,7 @@ const homeOf = (id: string) => layers.find((l) => l.id === layerOf(id)?.id);
           <p class="home-row-n">Layer {l.n} · {l.name}</p>
           <ul class="home-row-pieces">
             {l.posts.map((p) => (
-              <li><a href={`/journal/${p.id}/`}>{p.data.title}</a><time datetime={p.data.date.toISOString()}>{fmtDate(p.data.date)}</time></li>
+              <li class="home-piece"><a href={`/journal/${p.id}/`}><span class="home-piece-h">{split(p.data.title)[0]}</span>{split(p.data.title)[1] && <span class="home-piece-d">{split(p.data.title)[1]}</span>}</a><time datetime={p.data.date.toISOString()}>{fmtDate(p.data.date)}</time></li>
             ))}
             {l.also.map((p) => {
               const h = homeOf(p.id);
@@ -49,7 +55,7 @@ const homeOf = (id: string) => layers.find((l) => l.id === layerOf(id)?.id);
         <li class="home-row" id="other">
           <p class="home-row-n">Other</p>
           <ul class="home-row-pieces">
-            {other.map((p) => <li><a href={`/journal/${p.id}/`}>{p.data.title}</a><time datetime={p.data.date.toISOString()}>{fmtDate(p.data.date)}</time></li>)}
+            {other.map((p) => <li class="home-piece"><a href={`/journal/${p.id}/`}><span class="home-piece-h">{split(p.data.title)[0]}</span>{split(p.data.title)[1] && <span class="home-piece-d">{split(p.data.title)[1]}</span>}</a><time datetime={p.data.date.toISOString()}>{fmtDate(p.data.date)}</time></li>)}
           </ul>
         </li>
       )}
