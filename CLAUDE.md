@@ -94,12 +94,15 @@ cover brief and LinkedIn post, is yours to write.
   step 7.
 - **The deep piece: fewer, deeper, layered** (Tommy, 30 Oct 2026). Every
   piece is a deep piece, one per mechanism or market, with two layers on one
-  page: a plain-English top (claim, why it matters, the key number, analogy;
-  about 400 to 550 words, 15 figures at most, readable by a layman) and an
-  investor layer below it (numbers, mechanism, company and site sections,
-  claims on record, exposure map, falsifier, links to research notes; every
-  number primary and dated). Share prices, valuations and views on shares
-  never appear. Spec: WRITING-FORMAT.md §D.
+  page: a plain-English top readable by a layman, and an investor layer below
+  it where every number is primary and dated. Share prices, valuations and
+  views on shares never appear.
+- **Every piece is a story** (Tommy, 31 Oct 2026). It grabs the reader, builds,
+  reaches a climax with the strongest evidence and charts, and ends by tying
+  everything together. One spine and one claim, stated by paragraph three; no
+  section per company; two to four charts, each proving one sentence. The rules
+  are `research-build/deep-pieces/STORY-RULES.md`, and the checker enforces the
+  core of them. Spec: WRITING-FORMAT.md §D.
 - **Two tracks for new work** (Tommy, 30 Oct 2026; replaces "no new
   standalone pieces"). Ten is not a ceiling. (1) **A new deep piece** when the
   topic is a distinct mechanism or market none of the existing pieces covers
@@ -115,7 +118,8 @@ cover brief and LinkedIn post, is yours to write.
 - **Merging keeps the record** (Tommy, 30 Oct 2026). When pieces merge, every
   old URL redirects to its section in the deep piece (`/journal/<deep>/#<old-slug>`),
   every claim stays in claims.ts word for word with its original date, and the
-  deep piece shows each one in its "Claims on record" block. Research notes are
+  deep piece keeps each one in its "Claims on record" block (earlier claims
+  folded inside `<details class="claims-earlier">`, 31 Oct 2026). Research notes are
   untouched and keep pointing at the same claim ids. The original text of each
   merged piece is kept in `research-build/archive/pieces/` and never edited.
 - House style: no em dashes, British spelling, 14 to 20 word sentences.

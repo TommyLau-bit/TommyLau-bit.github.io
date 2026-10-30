@@ -21,28 +21,22 @@ history in `research-build/archive/RETIRED-RULES.md` and are not in force.
 Every piece is a deep piece, one per mechanism or market, in two layers on one page. The top layer
 is for a layman; the investor layer carries the depth.
 
-**Top layer: In plain English** (about 400 to 550 words, 15 figures at most, a layman can follow it)
-1. Summary (frontmatter, §2).
-2. Cold open ending on the thesis alone on its line, as §3.1.
-3. The analogy block, as §3.2.
-4. `## How it works`: the mechanism, why supply cannot simply catch up.
-5. `## The number that matters`: one or two figures and what they mean.
-Then a divider line: `<hr class="layer">` followed by `<p class="layer-label">For investors</p>`.
+**Superseded on 31 Oct 2026 by the story rules.** Tommy read the merged pieces and found them
+stapled together: one section per company, every merged claim in the middle, tables instead of charts,
+no storyline. The structure of every deep piece is now `research-build/deep-pieces/STORY-RULES.md`
+(the one source of truth; the model is `src/content/journal/the-equipment-queue.md`). In short:
 
-**Investor layer** (about 1,200 to 2,500 words; numbers allowed, every one primary-sourced and dated)
-6. `## The mechanism in depth`: the full chain, with a table where it helps (lead times, backlog in
-   years of work, MW booked against drawn, per-unit content). Tables are markdown tables.
-7. One `##` section per company, site or market the cluster covers, each opening with an anchor
-   `<a id="<old-slug>"></a>` for every merged piece it replaces, so redirects land there. Each section
-   carries that piece's evidence, now with the numbers.
-8. `## Claims on record`: every claim from the merged pieces, quoted word for word from claims.ts
-   with its original date and falsifier, then any new dated claim for the deep piece. Never reworded.
-   Where later evidence cuts against an old claim, say so here openly, in the "Where I was wrong" style.
-9. `## What would prove me wrong`: the deep piece's own falsifier.
-10. `## Research notes`: links to each initiation note in `/research/` that rests on these claims.
-11. The exposure map (§3.4 rules unchanged; up to six groups).
-12. Sources (one paragraph naming institutions and documents with dates, ending "Personal research,
-    not investment advice."). Credit third-party leads (videos, SemiAnalysis) once.
+- One spine and one claim, stated by paragraph three of a plain-English top that opens on a tension.
+- Then `<hr class="layer">` and `<p class="layer-label">For investors</p>`, and an investor storyline
+  of six to nine beats whose headings are steps in the argument, never company names or topic labels.
+  Companies appear inside beats as evidence. Mechanism before evidence; a climax about two thirds in;
+  one named counter-evidence beat; an ending that answers the opening.
+- Two to four inline SVG charts at the turns of the argument, each titled with the sentence it proves.
+- After the story: `## Claims on record` (the piece's claim in full; earlier claims word for word inside
+  `<details class="claims-earlier">`), `## What would prove me wrong`, `## Research notes`, evidence
+  tables and corrections inside `<details class="evidence">`, the exposure map (§3.4, up to six
+  groups) and the sources line (one paragraph, ending "Personal research, not investment advice.").
+- Every `<a id="<old-slug>"></a>` anchor from merged pieces survives at the beat where that idea now sits.
 
 Still forbidden anywhere in a piece: share prices, market values, valuation multiples, targets,
 ratings or any view on shares (those live in the research notes). Financials appear only as evidence
@@ -577,14 +571,14 @@ Run it before you build. Every published piece passes with no failures.
 - [ ] `date` is the real publish time, not a planned or future one
 - [ ] Cold open ends on the thesis, alone on its line
 - [ ] Analogy block present, fixed summary line, household objects, no finance
-- [ ] Top layer has `## How it works` and `## The number that matters`; investor layer sections in §D order, sentence case
+- [ ] Story rules met (STORY-RULES.md): spine and claim by paragraph three, argument headings, 2 to 4 charts, no company sections
 - [ ] Exposure map present, with the fixed disclaimer and an "on the other side" block
 - [ ] No share price, valuation, target, rating or recommendation anywhere
 - [ ] Any financial figure is the company's own, dated, sourced, and tied to the mechanism
 - [ ] Sources paragraph, ending "Personal research, not investment advice."
 - [ ] Every jargon term defined in place, and present in the glossary
 - [ ] On the map in `stack.ts`; if Analysis, on the claims page in `claims.ts`
-- [ ] No em dashes. British spelling. Top layer about 400 to 550 words; investor layer about 1,200 to 2,500 (§D)
+- [ ] No em dashes. British spelling. Top layer about 400 to 600 words; investor storyline about 900 to 2,000 (STORY-RULES.md)
 - [ ] Numbers (§4b): top layer within its budget; every investor-layer number primary-sourced and dated
 - [ ] Claims on record quote every merged claim word for word with its original date (§D)
 - [ ] Cover SVG in place, social card regenerated, build clean
