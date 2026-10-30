@@ -684,7 +684,7 @@ https://thephysicallayer.fyi/journal/contracted-energised-running/
 
 ## 48 · Hong Kong has the plug (site live Mon 2 Nov 2026, scheduled; LinkedIn Mon 7 Dec, 11:30)
 
-Hong Kong's main utility has finished eight substations for data centres since 2024, three times its count from the previous plan, and plans 18 by 2028.
+Hong Kong's main utility has finished eight substations for data centres since 2024, nearly three times as many as in the six years before, and plans 18 by 2028.
 
 It is obliged to meet demand at the lowest reasonable cost, and had about a quarter more capacity than its 2025 peak. Its one AI megasite drew a single bid, from a group that plans to let racks, not run chips. The hard part is the chip: under US rules Hong Kong is treated as China, so the hall's address decides the licence.
 
@@ -696,7 +696,7 @@ https://thephysicallayer.fyi/journal/hong-kong-has-the-plug/
 
 ---
 
-## 49 · Update: Johor and Singapore, own power (site update Wed 4 Nov 2026, scheduled; LinkedIn Wed 9 Dec, 11:30)
+## 49 · Update: Johor and Singapore, own power (update live 31 Oct 2026 in the rewrite; LinkedIn Wed 9 Dec, 11:30, to be scheduled 4 Nov)
 
 A 100 MW data centre running on its own gas turbines in Singapore would burn 1 to 2% of its LNG terminal's capacity, and still would not add a single megawatt of computing.
 
@@ -710,11 +710,11 @@ https://thephysicallayer.fyi/journal/the-queue-not-the-chip/
 
 ---
 
-## 50 · Update: Building your own power, the gas pipe (site update Fri 6 Nov 2026, scheduled; LinkedIn Mon 14 Dec, 11:30)
+## 50 · Update: Building your own power, the gas pipe (update live 31 Oct 2026 in the rewrite; LinkedIn Mon 14 Dec, 11:30, to be scheduled 6 Nov)
 
 The newest Permian gas pipe, 2.8 billion cubic feet a day for one hyperscaler's own power plants, lands in the third quarter of 2030.
 
-A new pipe is contracted take-or-pay by the gas buyer and takes about four years from first bids to gas. That puts the fuel on the same clock as the heavy turbines, which are sold out to 2030. The fastest own-power route I can date from primary sources was built by a pipeline company: Williams' off-grid plants for Meta in Ohio.
+A new pipe is contracted take-or-pay by the gas buyer, and a recent one is due about four years after its first bids. That puts the fuel on the same clock as the heavy turbines, which are sold out to 2030. The fastest own-power route I can date from primary sources was built by a pipeline company: Williams' off-grid plants for Meta in Ohio.
 
 The update covers the pipe's contract clock, Kinder Morgan's and Transco's newest lines, and the one test left open.
 
@@ -724,7 +724,7 @@ https://thephysicallayer.fyi/journal/building-your-own-power/
 
 ---
 
-## 51 · Update: Nuclear for AI, fuel contracts (site update Mon 9 Nov 2026, scheduled; LinkedIn Wed 16 Dec, 11:30)
+## 51 · Update: Nuclear for AI, fuel contracts (update live 31 Oct 2026 in the rewrite; LinkedIn Wed 16 Dec, 11:30, to be scheduled 9 Nov)
 
 America's reactor owners have not yet bought about half the uranium they expect to need to 2035.
 
