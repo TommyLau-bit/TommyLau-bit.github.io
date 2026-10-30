@@ -1,9 +1,9 @@
 ---
 import Base from '../layouts/Base.astro';
-import Card from '../components/Card.astro';
 import Descent from '../components/Descent.astro';
 import { getCollection } from 'astro:content';
 import { SITE } from '../config';
+import { fmtDate } from '../utils';
 import { STACK, layerOf } from '../data/stack';
 const all = await getCollection('journal', ({ data }) => !data.draft);
 const posts = all.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
@@ -26,46 +26,36 @@ const homeOf = (id: string) => layers.find((l) => l.id === layerOf(id)?.id);
   <section class="hero hero--compact">
     <h1>The AI buildout has a physical layer.</h1>
     <p>{SITE.description}</p>
-    <p class="hero-start">Scroll down to follow the power from the grid to the chip, or <a href="#layers">jump to the layers</a>.</p>
+    <p class="hero-start">Read the pieces below, or <a href="#descent">follow the power down</a> from the grid to the chip.</p>
   </section>
 
+  <section class="home-list" aria-label="The pieces, from the grid to the chip">
+    <ol class="home-rows">
+      {layers.map((l) => (
+        <li class={`home-row home-row--${l.kind}`} id={l.id}>
+          <p class="home-row-n">Layer {l.n} · {l.name}</p>
+          <ul class="home-row-pieces">
+            {l.posts.map((p) => (
+              <li><a href={`/journal/${p.id}/`}>{p.data.title}</a><time datetime={p.data.date.toISOString()}>{fmtDate(p.data.date)}</time></li>
+            ))}
+            {l.also.map((p) => {
+              const h = homeOf(p.id);
+              return <li class="home-row-also">Covered in <a href={`/journal/${p.id}/`}>{p.data.title}</a>{h && <>, under <a href={`#${h.id}`}>Layer {h.n}</a></>}.</li>;
+            })}
+          </ul>
+        </li>
+      ))}
+      {other.length > 0 && (
+        <li class="home-row" id="other">
+          <p class="home-row-n">Other</p>
+          <ul class="home-row-pieces">
+            {other.map((p) => <li><a href={`/journal/${p.id}/`}>{p.data.title}</a><time datetime={p.data.date.toISOString()}>{fmtDate(p.data.date)}</time></li>)}
+          </ul>
+        </li>
+      )}
+    </ol>
+  </section>
+
+  <p class="home-walk">Or follow the power down, stop by stop.</p>
   <Descent />
-
-  <nav class="home-jump" id="layers" aria-label="Jump to a layer">
-    <p class="home-jump-h">By layer, from the grid to the chip</p>
-    <p class="chips">
-      {layers.map((l) => <a class="chip" href={`#${l.id}`}>{l.name}</a>)}
-      {other.length > 0 && <a class="chip" href="#other">Other</a>}
-    </p>
-  </nav>
-
-  {layers.map((l) => (
-    <section class={`home-layer home-layer--${l.kind}`} id={l.id} aria-labelledby={`${l.id}-h`}>
-      <header class="home-layer-head">
-        <p class="home-layer-n">Layer {l.n}</p>
-        <h2 class="home-sec-h" id={`${l.id}-h`}>{l.name}</h2>
-        <p class="home-layer-binds"><strong>What binds.</strong> {l.constraint}</p>
-        {l.also.map((p) => {
-          const h = homeOf(p.id);
-          return <p class="home-layer-also">Covered in <a href={`/journal/${p.id}/`}>{p.data.title}</a>{h && <>, listed under <a href={`#${h.id}`}>Layer {h.n}</a></>}.</p>;
-        })}
-      </header>
-      {l.posts.length > 0 ? (
-        <div class="grid grid--home">
-          {l.posts.map((p) => <Card p={p} />)}
-        </div>
-      ) : <div class="home-layer-gap"></div>}
-    </section>
-  ))}
-
-  {other.length > 0 && (
-    <section class="home-layer" id="other" aria-labelledby="other-h">
-      <header class="home-layer-head">
-        <h2 class="home-sec-h" id="other-h">Other</h2>
-      </header>
-      <div class="grid grid--home">
-        {other.map((p) => <Card p={p} />)}
-      </div>
-    </section>
-  )}
 </Base>
