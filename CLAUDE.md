@@ -40,14 +40,10 @@ work on notes, calls, the research page or share prices, read `CALLS-SPEC.md`.
 
 ## Before writing or editing any piece, read `WRITING-FORMAT.md`
 
-It is the complete spec and it is not optional. Tommy will hand over raw notes
-and expect a finished post that matches the existing six exactly. The spec
-covers the two shapes a piece can take, every frontmatter field, the body
-skeleton in order, the house style measured from the corpus, scope limits, the
-cover art brief, the publish steps and the matching LinkedIn post.
-
-`TEMPLATE.md` at the repo root is the fill-in skeleton. The content loader never
-sees it.
+It is the complete spec and it is not optional: the deep piece format (§D),
+sourcing (§E), frontmatter, house style, scope, the cover, the publish
+checklist and the matching LinkedIn post. Agent briefs for drafting,
+fact-checking, gap scouting and updates are in `research-build/deep-pieces/`.
 
 ## What his notes must contain
 
@@ -96,18 +92,14 @@ cover brief and LinkedIn post, is yours to write.
   `brand/linkedin-posts.md`. Never finish with a reminder for Tommy to do it.
   Every scheduled publish task ends with this step. See WRITING-FORMAT.md §8
   step 7.
-- **The deep piece: fewer, deeper, layered** (Tommy, 30 Oct 2026; replaces
-  the 8 and 9 Oct length and numbers rules, which are retired, and applies to
-  every future piece). The journal is being consolidated from 61 short pieces
-  into ten deep pieces, one per mechanism cluster (done 30 Oct 2026).
-  Each deep piece has two layers on one page: a plain-English top (claim, why
-  it matters, the key number, analogy; about 400 to 550 words, still readable
-  by a layman) and an investor layer below it (the numbers, the mechanism or
-  model, company and site sections, claims on record, exposure map, falsifier,
-  links to research notes). The old 15-figure and 450 to 600 word limits apply
-  to the top layer only; every investor-layer number is primary and dated. Share prices, valuations and views on shares still never
-  appear in a journal piece. Spec: WRITING-FORMAT.md §D. Plan:
-  research-build/CONSOLIDATION-PLAN.md.
+- **The deep piece: fewer, deeper, layered** (Tommy, 30 Oct 2026). Every
+  piece is a deep piece, one per mechanism or market, with two layers on one
+  page: a plain-English top (claim, why it matters, the key number, analogy;
+  about 400 to 550 words, 15 figures at most, readable by a layman) and an
+  investor layer below it (numbers, mechanism, company and site sections,
+  claims on record, exposure map, falsifier, links to research notes; every
+  number primary and dated). Share prices, valuations and views on shares
+  never appear. Spec: WRITING-FORMAT.md §D.
 - **Two tracks for new work** (Tommy, 30 Oct 2026; replaces "no new
   standalone pieces"). Ten is not a ceiling. (1) **A new deep piece** when the
   topic is a distinct mechanism or market none of the existing pieces covers
@@ -125,7 +117,7 @@ cover brief and LinkedIn post, is yours to write.
   every claim stays in claims.ts word for word with its original date, and the
   deep piece shows each one in its "Claims on record" block. Research notes are
   untouched and keep pointing at the same claim ids. The original text of each
-  merged piece is kept in `research-build/archive-pieces/` and never edited.
+  merged piece is kept in `research-build/archive/pieces/` and never edited.
 - House style: no em dashes, British spelling, 14 to 20 word sentences.
 
 ## The site around each piece

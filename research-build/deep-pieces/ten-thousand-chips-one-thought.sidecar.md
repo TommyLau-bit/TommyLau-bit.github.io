@@ -69,7 +69,7 @@ The id `the-plug-stays` avoids colliding with the existing slug-ids; if the conv
 | /journal/google-steers-the-light/ | /journal/ten-thousand-chips-one-thought/#google-steers-the-light |
 | /journal/fairwater-spans-two-states/ | /journal/ten-thousand-chips-one-thought/#fairwater-spans-two-states |
 
-The three drafts were never live, but all three are scheduled (the-optics-you-cannot-unplug for 7 Dec, LinkedIn 8 Jan, per UNCAPPED-RESULTS.md), so their redirects are listed in case any post or link was prepared. Their publish tasks need pausing or removing at merge (Tommy's go needed). At merge, the four live originals and the three drafts go verbatim into `research-build/archive-pieces/` and the drafts leave `src/content/journal/`.
+The three drafts were never live, but all three are scheduled (the-optics-you-cannot-unplug for 7 Dec, LinkedIn 8 Jan, per UNCAPPED-RESULTS.md), so their redirects are listed in case any post or link was prepared. Their publish tasks need pausing or removing at merge (Tommy's go needed). At merge, the four live originals and the three drafts go verbatim into `research-build/archive/pieces/` and the drafts leave `src/content/journal/`.
 
 ## stack.ts
 

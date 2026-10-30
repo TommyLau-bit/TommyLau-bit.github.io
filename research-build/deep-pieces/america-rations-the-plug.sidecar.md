@@ -67,7 +67,7 @@ Alternatives considered: (A) PJM auction at or near cap through 2027 as the lead
 | /journal/california-still-shifts-the-sun/ | /journal/america-rations-the-plug/#california-still-shifts-the-sun |
 | /journal/virginia-bills-the-empty-site/ | /journal/america-rations-the-plug/#virginia-bills-the-empty-site |
 
-Only the first two were ever live and strictly need redirects (their LinkedIn posts link them). The drafts never went live; redirects are cheap insurance (the PJM post text in brand/linkedin-posts.md already holds its URL). At merge, the two live originals go verbatim into `research-build/archive-pieces/`; the six draft files leave `src/content/journal/` (archive them too, so their sidecars' verification stays traceable).
+Only the first two were ever live and strictly need redirects (their LinkedIn posts link them). The drafts never went live; redirects are cheap insurance (the PJM post text in brand/linkedin-posts.md already holds its URL). At merge, the two live originals go verbatim into `research-build/archive/pieces/`; the six draft files leave `src/content/journal/` (archive them too, so their sidecars' verification stays traceable).
 
 Sections and anchors, in order: The mechanism in depth; ERCOT (#ercot-rations-the-plug); FERC (#ferc-asks-for-a-softer-plug); PJM (#pjm-sends-the-bill); Virginia (#virginia-bills-the-empty-site); The power it drops (#the-power-it-drops); What backs them up: batteries (#what-the-battery-is-really-for, #california-still-shifts-the-sun); The chip as the backup (#google-lets-the-grid-slow-its-chips); Claims on record; What would prove me wrong; Research notes.
 
@@ -131,7 +131,7 @@ https://thephysicallayer.fyi/journal/america-rations-the-plug/
 ## Needed edits to other files (not made)
 
 - `research-build/deep-pieces/the-queue-not-the-chip.sidecar.md` proposes a grid list keeping `the-power-it-drops` and `pjm-sends-the-bill`; at merge they become `america-rations-the-plug`.
-- `research-build/CONSOLIDATION-PLAN.md`: cluster 6 is now part of cluster 2 (11 pieces become 10).
+- `research-build/archive/CONSOLIDATION-PLAN.md`: cluster 6 is now part of cluster 2 (11 pieces become 10).
 - `brand/linkedin-posts.md` entry 35 (PJM) is superseded by the post above; the scheduled ERCOT (2 Nov) and PJM (9 Nov) publish tasks need pausing (see top).
 - The exposure maps of the two live originals name a company on the never-name list; the deep piece's map does not. Those companies' pages lose these links at merge. Company names dropped from the cluster's maps: Talen, Vistra, NRG Energy, Constellation, Exelon, FirstEnergy, PSEG, Monitoring Analytics, MISO, Southwest Power Pool, NYISO, ISO New England, CAISO, CenterPoint Energy, AEP Texas, Indiana Michigan Power, Tennessee Valley Authority, Entergy Arkansas, Minnesota Power, DTE Energy, Oracle, Nebius, National Grid, Nvidia, AES, NextEra Energy, Sungrow, SMA Solar, Hitachi Energy, Siemens Energy, Amazon, Microsoft, Equinix, Digital Realty (most only appeared in unpublished drafts). Kept to stay near the 120-word map.
 
@@ -171,7 +171,7 @@ From the drafts' sidecars (primary, verified there 29 Oct 2026, not re-opened to
 - Google, 4 Aug 2025: https://blog.google/inside-google/infrastructure/how-were-making-data-centers-more-flexible-to-benefit-power-grids/ ; 19 Mar 2026: https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/demand-response-data-center-milestone/
 - IURC Cause 46276 order (April 2026): https://secure.in.gov/iurc/files/ord_46276_042926.pdf
 - Nature Energy, Colangelo, Coskun et al., online 5 Dec 2025: https://www.nature.com/articles/s41560-025-01927-1 ; Nvidia blog (Oracle, Phoenix), 1 Jul 2025: https://blogs.nvidia.com/blog/ai-factories-flexible-power-use/ ; AI Energy Management Alliance, 16 Sep 2026: https://blogs.nvidia.com/blog/ai-energy-management-alliance/
-- Leads, credited once, not cited for any figure: third-party YouTube review "State of AI data centres 2026", data to 5 Oct 2026 (research-build/source-ai-datacentre-video/TRANSCRIPT.md); Leo Cui, "NVIDIA and Google give AI Data Centers a Dimmer Switch", https://www.youtube.com/watch?v=q5JflUbObe8 ; Leo Cui, "The Entire Energy Sector Explained: Oil, Gas, Electricity & the Grid", https://www.youtube.com/watch?v=0zZyEF4Cq9U . Upload dates of the videos are not in my notes.
+- Leads, credited once, not cited for any figure: third-party YouTube review "State of AI data centres 2026", data to 5 Oct 2026 (research-build/archive/sources/source-ai-datacentre-video/TRANSCRIPT.md); Leo Cui, "NVIDIA and Google give AI Data Centers a Dimmer Switch", https://www.youtube.com/watch?v=q5JflUbObe8 ; Leo Cui, "The Entire Energy Sector Explained: Oil, Gas, Electricity & the Grid", https://www.youtube.com/watch?v=0zZyEF4Cq9U . Upload dates of the videos are not in my notes.
 
 ## Figures dropped or flagged
 

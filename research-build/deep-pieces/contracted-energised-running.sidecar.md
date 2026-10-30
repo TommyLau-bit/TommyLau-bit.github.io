@@ -58,7 +58,7 @@ Alternatives considered: (A) "only energised megawatts count" (the Abilene draft
 | /journal/power-first-chips-last/ | /journal/contracted-energised-running/#power-first-chips-last |
 | /journal/abilene-switched-on-in-stages/ | /journal/contracted-energised-running/#abilene-switched-on-in-stages (scheduled draft, never live; redirect optional) |
 
-The Abilene publish task (scheduled) must be paused or retired at merge, or it will publish the draft with the withdrawn Johor line. Its LinkedIn post in brand/linkedin-posts.md should be dropped. Originals go verbatim to `research-build/archive-pieces/`.
+The Abilene publish task (scheduled) must be paused or retired at merge, or it will publish the draft with the withdrawn Johor line. Its LinkedIn post in brand/linkedin-posts.md should be dropped. Originals go verbatim to `research-build/archive/pieces/`.
 
 Sections and anchors, in order: How it works; The number that matters; The mechanism in depth; Abilene (#abilene-switched-on-in-stages); Nebius (#nebius-paid-for-what-is-switched-on); Jane Street (#power-first-chips-last); Abilene and Johor; Claims on record; What would prove me wrong; Research notes.
 
@@ -129,7 +129,7 @@ From earlier sidecars or live pieces (verified there, not re-opened today):
 - Dewan Rakyat Hansard, 13 Oct 2026: https://www.parlimen.gov.my/files/hindex/pdf/DR-13102026.pdf
 - DayOne Form F-1, 5 Oct 2026: https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm
 - BIS guidance, 31 May 2026: https://www.bis.gov/media/documents/bis-guidance-may-31-2026.pdf
-- Lead only, credited in the sources line: the YouTube video "State of AI data centres 2026" (transcript at research-build/source-ai-datacentre-video/TRANSCRIPT.md).
+- Lead only, credited in the sources line: the YouTube video "State of AI data centres 2026" (transcript at research-build/archive/sources/source-ai-datacentre-video/TRANSCRIPT.md).
 
 ## Figures dropped or flagged
 

@@ -120,8 +120,8 @@ Note: the seven absorbed URLs keep their live posts via redirects. The Seagate p
 - `src/config.ts` READING_PATH stage 1 is `the-two-seconds-after-you-hit-send` ("One piece. Read it and the rest of the site makes sense."). After merge that slug is a section of this piece, which is not an on-ramp. Tommy should decide what replaces it; the redirect keeps the link working meanwhile. (Not adding a new piece; replacing a merged one.)
 - `src/components/Descent.astro` lines 492, 610, 617 link and `reads()` the slugs nobody-makes-a-b200-alone, asml-booked-ahead, tsmc-says-it-is-the-bottleneck, ajinomoto-grows-with-the-package; `reads()` will need the deep piece (or anchored hrefs) once the originals leave `src/content/journal/`. The memory stop goes if option (1) above is taken.
 - `src/content/journal/ten-thousand-chips-one-thought.md` line 50 links "the next piece" to the countertop slug; the redirect resolves it, but at the network cluster merge it should point at `/journal/the-chip-supply-chain/#the-countertop-is-the-bottleneck`.
-- `research-build/source-watch-later/UNCAPPED-RESULTS.md` row A14 states the TSMC base-die lead; line 59 already records Micron's 10-K. No action beyond not using A14.
-- At merge, the seven live files and the Seagate draft go verbatim into `research-build/archive-pieces/`.
+- `research-build/archive/sources/source-watch-later/UNCAPPED-RESULTS.md` row A14 states the TSMC base-die lead; line 59 already records Micron's 10-K. No action beyond not using A14.
+- At merge, the seven live files and the Seagate draft go verbatim into `research-build/archive/pieces/`.
 - Consistency with the prototype: the prototype says the plug, not the chip, decides who builds in Johor; this piece says chip-side horizons now run as long as some grid queues. Not a contradiction (different places and steps), and both say the grid is the slower clock over the longer run.
 
 ## Sources, every one with date

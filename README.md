@@ -1,93 +1,33 @@
-# The Physical Layer — journal site
+# The Physical Layer: journal site
 
-Astro static site. Markdown in, website out.
+Astro static site, live at https://thephysicallayer.fyi. Built and deployed by `.github/workflows/deploy.yml` on every push to `main` (about 60 seconds).
 
-## Publish a piece (the only thing you need to know)
-1. Create `src/content/journal/your-slug.md`
-2. Top of file:
-   ```
-   ---
-   title: "Your title"
-   date: 2026-09-18T15:14:00+08:00
-   summary: "The one-line plain-English version. Shown at the top of the piece and on the index."
-   category: "Explainer"        # small label on the card: Explainer · Note · Analysis · whatever you like
-   cover: "/covers/my-image.jpg" # optional. Drop an image in public/covers/. Leave it out and a styled cover renders.
-   tags: ["power", "data-centres"]
-   draft: false
-   ---
-   ```
-3. Write in Markdown below it. Set `draft: true` to hide a piece while it's unfinished.
-4. `git add -A && git commit -m "New piece" && git push` — GitHub builds and publishes it automatically (about 60 seconds).
+## Where things are
 
-## The full formula
+| Path | What it is |
+|---|---|
+| `CLAUDE.md` | The rule book. Hard rules, what the site around each piece needs, publish commands. |
+| `WRITING-FORMAT.md` | The full spec for a piece: deep piece format (§D), sourcing (§E), style, cover, checklist, LinkedIn post. |
+| `CALLS-SPEC.md` | The spec for research notes and calls (`/research`). |
+| `research-build/HANDOVER.md` | Start here each session: what is scheduled, open flags, what was done each day. |
+| `src/content/journal/` | The deep pieces (the live writing). |
+| `src/content/calls/` | Research notes, text of record. |
+| `src/data/` | `stack.ts` (the map), `claims.ts`, `numbers.ts`, `calls.ts` (track record). |
+| `src/pages/`, `src/components/`, `src/layouts/`, `src/styles/` | The site itself. |
+| `public/covers/`, `public/og/` | Cover art and social cards, one per live piece. `public/research/` holds note PDFs and models. |
+| `brand/` | Checkers (`check-piece.py`, `check-call.py`), card and banner makers, `add-redirects.py`, `linkedin-posts.md` (every post and its slot). |
+| `research-build/deep-pieces/` | Working area: agent briefs, each piece's sidecar (verified sources), gap notes, `updates/` (approved update copies waiting for their publish date). |
+| `research-build/<company>/` | Build scripts and sources for each research note. `BRIEF-note*.md` are the note briefs; `CHANGELOG.md` logs post-publication corrections to notes. |
+| `research-build/archive/` | History, never edited: the original short pieces (`pieces/`), their old drafts and sidecars, pre-merge deep drafts, video transcripts, retired briefs and template, old images. |
 
-`WRITING-FORMAT.md` in this folder is the complete spec: the two shapes a piece
-can take, every frontmatter field, the body skeleton in order, the house style
-measured from the existing pieces, the scope limits, the cover art spec, the
-publish checklist and the matching LinkedIn post. `TEMPLATE.md` is a fill-in
-skeleton, kept at the repo root so the site never loads it. `brand/check-piece.py`
-validates a piece against the spec and exits non-zero if it does not comply.
+## Before every publish
 
-Hand Claude raw notes and point it at `WRITING-FORMAT.md` and it will produce a
-piece that matches the others. The two blocks below are the parts you are most
-likely to forget, so they are repeated here.
-
-## Every piece needs these two blocks
-
-**1. The analogy.** Right before the first `##` heading. This is the whole point of the journal: the same idea in a familiar frame, for a reader with no finance background.
-
-```html
-<details class="analogy">
-<summary>Explain it like I don't work in finance</summary>
-<p>Everyday comparison, two or three sentences.</p>
-<p>Why the comparison holds.</p>
-</details>
+```bash
+python3 brand/check-piece.py src/content/journal/<slug>.md
+DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/lib python3 brand/make-og.py
+npm run build
 ```
-
-**2. The exposure map.** Just before the closing `---` and the sources note. Turns a viewpoint into something checkable by naming who actually operates in the layer.
-
-```html
-<section class="exposure">
-<h3>Who is exposed if the claim is right</h3>
-<p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares.</p>
-<dl>
-<dt>Category</dt>
-<dd>What they do: <span class="names">Company, Company</span>.</dd>
-</dl>
-<dl class="against">
-<dt>On the other side</dt>
-<dd>Who loses if this is right.</dd>
-</dl>
-</section>
-```
-
-**Rules for the exposure map.** Name companies and what they make. Never market share, backlogs, financials or ratings in the map itself. Disclosed financials may appear in the body as evidence for the mechanism (see WRITING-FORMAT.md §4a). Never a view on shares. Where the AI layer map says there is no view (memory equities), say so in the box.
-
-## The pages around the journal
-
-- The homepage `/` is the map. It reads `src/data/stack.ts`: a short hero, then the descent, then one section per layer (anchored `/#<layer-id>`) with its deep-piece cards. `/map/` and `/start/` redirect to `/` (Tommy, 30 Oct 2026).
-- The top of the homepage is the descent (`src/components/Descent.astro`): a scroll from the grid down to the die, nine stops, hand-drawn SVG. Its text (what happens, what binds, the pieces to read) is read from `stack.ts`, so edits there flow through. A new layer appears in its closing funnel on its own, but needs a drawing and step cards added by hand to get a stop of its own.
-- `/claims` reads `src/data/claims.ts`: one entry per Analysis piece, listed newest first.
-- `/numbers` reads `src/data/numbers.ts`: structural figures, each linked to its piece.
-- `/companies` is generated from exposure maps. Nothing to maintain. A company gets a page only if it has a research note, a heading in a piece's investor layer, or at least two mentions in a piece's prose outside the exposure map (`companyPages` in `src/lib/exposure.ts`); other company URLs redirect to `/companies/`. Topic pages were folded into the map; old `/topics/` links redirect to `/`.
-- The top menu is fixed at five: Journal, Research, Claims, Glossary, About (Tommy, 30 Oct 2026). Journal is the homepage, which is the map. Numbers and Companies live in the footer, with Claims also there.
-- `/research` lists initiation notes (PDF plus Excel model in `public/research/`) from `src/content/calls/`, with the monthly track record from `src/data/calls.ts`. See `CALLS-SPEC.md`.
-
-## Social cards
-`public/og/<slug>-<OG_VERSION>.png` is generated per piece from its cover diagram alone, with no title or logo over it. After adding a piece, run the generator in `brand/make-og.py`, then re-run LinkedIn's Post Inspector on the URL before sharing it.
-
-## Live site
-`https://thephysicallayer.fyi` (GitHub Pages, custom domain via `public/CNAME`), built by `.github/workflows/deploy.yml` on every push to `main`.
-To use a custom domain later: buy it, add a `CNAME` file in `public/` containing the domain, point the DNS at GitHub Pages, and set `url` in `src/config.ts`.
-
-## Change the name, tagline, author or links
-`src/config.ts`. One file. Set `url` to the real domain before deploying.
 
 ## Run locally
-`npm install` once, then `npm run dev` → http://localhost:4321
 
-## Structure
-- `src/content/journal/` — the writing
-- `src/pages/` — index, about, article route, RSS
-- `src/layouts/Base.astro` — header, footer, meta
-- `src/styles/global.css` — all styling, light and dark
+`npm install` once, then `npm run dev` → http://localhost:4321. Name, tagline and links live in `src/config.ts`.

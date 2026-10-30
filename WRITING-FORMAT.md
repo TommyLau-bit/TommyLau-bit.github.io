@@ -1,8 +1,8 @@
-# The Physical Layer — the formula
+# The Physical Layer: the formula
 
-How every piece on this site is built. Derived from the first six, not invented.
-If you hand Claude raw notes and say "make this a journal post", this is the
-contract it works to. Nothing here is a suggestion.
+How every piece on this site is built. If you hand Claude raw notes and say "make this a journal
+post", this is the contract it works to. Nothing here is a suggestion. Retired rules are kept as
+history in `research-build/archive/RETIRED-RULES.md` and are not in force.
 
 > ## THE FIRST RULE. FEWER, DEEPER, LAYERED. (Tommy, 30 Oct 2026, permanent)
 > The journal is a small set of deep pieces, one per mechanism cluster, each written in two layers on
@@ -11,23 +11,18 @@ contract it works to. Nothing here is a suggestion.
 > the falsifier. A PM or investor who reads any piece first must come away thinking the author knows
 > the subject in depth. New work takes one of two tracks (CLAUDE.md, "Two tracks for new work"): a new
 > deep piece for a distinct mechanism or market, or an update to an existing deep piece; sourcing is §E.
-> Every piece must clear the quality bar in CLAUDE.md. The retired rules, kept as history: on 8 and 9 Oct
-> 2026 pieces were capped at 450 to 600 words and 15 figures with "numbers in the research"; on 30 Oct
-> 2026 Tommy judged that too surface-level and replaced it with this rule. Those caps now apply only to
-> the top layer.
+> Every piece must clear the quality bar in CLAUDE.md. The old whole-piece word and figure caps now
+> apply only to the top layer (§D, §4b).
 
 ---
 
 ## D. THE DEEP PIECE (Tommy, 30 Oct 2026). The format for every piece. §3 and §4b below now apply only where they say so.
 
-Tommy's direction: the short pieces read as surface level, and a PM or investor who reads one first
-thinks the author knows little. Many repeated each other. So the journal becomes about 11 deep
-pieces, one per mechanism cluster (plan: `research-build/CONSOLIDATION-PLAN.md`), each in two layers
-on one page. The top layer keeps everything the 8 and 9 Oct rules got right; the investor layer adds
-the depth those rules sent to the research notes.
+Every piece is a deep piece, one per mechanism or market, in two layers on one page. The top layer
+is for a layman; the investor layer carries the depth.
 
 **Top layer: In plain English** (about 400 to 550 words, 15 figures at most, a layman can follow it)
-1. Summary (frontmatter), as before.
+1. Summary (frontmatter, §2).
 2. Cold open ending on the thesis alone on its line, as §3.1.
 3. The analogy block, as §3.2.
 4. `## How it works`: the mechanism, why supply cannot simply catch up.
@@ -107,19 +102,12 @@ it first.
 
 ---
 
-## 1. The two shapes
+## 1. The category
 
-Every piece is one of these. Pick before writing.
-
-**Explainer** (four of the first six). Teaches a mechanism. The reader finishes
-knowing how something works. No prediction, so no falsifier needed. Examples:
-the two seconds, cooling, the network, memory.
-
-**Analysis** (two of the first six). Makes a claim about what the market has
-mispriced. Carries a prediction, so it **must** contain a `## What would prove
-me wrong` section. Examples: the queue, the copper rack.
-
-A third label, **Note**, exists in the schema for something short. Unused so far.
+The `category` field takes `Explainer`, `Analysis` or `Note` (§2). An **Analysis** piece makes a
+claim about what the market has mispriced. It carries a prediction, so it **must** contain a
+`## What would prove me wrong` section and an entry in `src/data/claims.ts`. Every deep piece
+carries a dated claim and its own falsifier (§D), and every live piece is Analysis.
 
 ---
 
@@ -155,19 +143,11 @@ in it. It can never change once published without breaking links.
 
 ## 3. The body, in order
 
-**Retired 30 Oct 2026 as a whole-piece format.** The short skeleton below is now the shape of the
-top layer of a deep piece (§D): cold open, analogy and how it works keep these rules. The rest of this
-section is history. **The short skeleton (Tommy, 9 Oct 2026).** Every piece was these parts and no others:
-summary, cold open, analogy, how it works, the evidence, what would prove me wrong (Analysis only),
-exposure map, sources. About 600 to 650 words in all. No separate definitions section, no second
-angle, no "where I stop" or "what I'm watching" section: fold one line of either into the falsifier
-if it matters. The claims page holds the full falsifier, the glossary holds definitions, the map holds
-the layer and the research note holds the numbers, so the piece does not repeat them.
+These rules apply to the top layer of a deep piece (§D), and §3.4 and §3.5 to the exposure map and sources below the divider.
 
 ### 3.1 Cold open, three or four short paragraphs, about 80 words
 
-No throat-clearing, no "in this piece I will". Open on one of four moves, all
-of which the first six use:
+No throat-clearing, no "in this piece I will". Open on one of four moves:
 
 - **A question the reader has never asked.** "Start with a question you have probably never asked: where does the answer come from?"
 - **A claim offered up for attack.** "Here is a claim I am willing to be wrong about in public: the thing holding back the AI buildout is not the chip. It is the wire."
@@ -202,36 +182,14 @@ Two `<p>`, about 70 words in all. Rules:
 - Build in order: the familiar thing, then the scale, then why the naive fix
   fails, then the image that transfers.
 
-### 3.3 Three `##` sections, about 350 words together
+### 3.3 Section headings
 
 Headings are short and plain, sentence case, no numbering.
 
-1. **How it works** (about 200 words). The physical mechanism, with any jargon defined in the
-   sentence where it appears. It includes, in two or three sentences, why supply cannot simply
-   catch up.
-2. **The evidence** (about 100 words). The company's own disclosure or statement that shows the
-   mechanism is real. One figure, two at most, tied to the mechanism in the next sentence.
-3. **What would prove me wrong** (about 60 words, Analysis only). Three or four sentences naming
-   the observable that would kill the claim. Same test as the claims page, said plainly.
-
-An Explainer has no falsifier, so its third section is the constraint or the clock: what binds
-and why. A whole-stack Explainer may use one extra section where the walk through the chain needs
-it, but stays inside the word limit.
-
-The older shapes below are kept for reference. Use them only as headings for the three sections
-above, never as extra sections:
-
-| Shape | Real examples |
-|---|---|
-| Definitions, placed early | "Two words you need", "Three words that unlock the rest" |
-| The mechanism | "Why air stopped working", "Where copper dies and light takes over" |
-| The options, as bold lead-ins | "Three ways to do it" |
-| The number that turns physics into money | "The number that turns physics into money", "Two numbers that end the argument" |
-| Why the market misreads it | "Why the market still treats it as a chip problem" |
-| Where the value goes | "Where the value goes if I'm right", "Who benefits, if I'm right" |
-| **The falsifier. Analysis only, mandatory** | "What would prove me wrong" |
-| The honest limit | "The uncomfortable footnote", "Where I stop" |
-| Forward look | "What I'm watching", "How I'd say this in a room" |
+- **How it works.** The physical mechanism, with any jargon defined in the sentence where it
+  appears. It includes, in two or three sentences, why supply cannot simply catch up.
+- **What would prove me wrong** (investor layer, §D). Names the observable that would kill the
+  claim. Same test as the claims page, said plainly.
 
 Where a section lists options, use bold lead-ins rather than bullets:
 
@@ -265,60 +223,49 @@ Just before the closing `---`.
 - The `<p class="note">` disclaimer **opens with this exact sentence pair** and
   is never reworded: "This maps who operates in each layer. It is not a
   recommendation, and naming a company is not a view on its shares." A piece may
-  add one further statement after it, as the memory piece does when it says the
-  author holds no investment view on memory.
-- Three or four `<dt>` groups, one short line each, about 100 words for the whole map. Each `<dd>`
+  add one further statement after it, as every live piece does when it says the
+  figures are disclosures used as evidence for the mechanism.
+- Three or four `<dt>` groups (up to six in a deep piece, §D), one short line each, about 120 words for the whole map. Each `<dd>`
   says **what the company makes**, and nothing else. When trimming, merge groups rather than drop
   names: company pages are built from these names.
 - Company names go inside `<span class="names">`.
 - The `<dl class="against">` block is **mandatory for any piece making a
   directional claim**, which is every Analysis piece and almost every Explainer.
   The single exemption is a whole-stack orientation map, where the box lists the
-  entire industry and there is genuinely no loser. The two-seconds piece is the
-  one example.
+  entire industry and there is genuinely no loser.
 - **Never** in the map: market share, backlogs, revenue, margins, ratings,
   price targets, valuation, or any view on shares. Financial evidence belongs
   in the body under §4a, not here. The map says what companies make.
 - Where the AI layer map says you hold no view, say so inside the box. The
-  memory piece ends its map with a `<dt>Where I stop</dt>` doing exactly that.
+  chip supply chain piece ends its map with a `<dt>Where I stop</dt>` doing exactly that.
 
 ### 3.5 The sources line
 
-After the closing `---`, one paragraph of one or two sentences, no heading:
+After the closing `---`, one paragraph, no heading:
 
 ```html
 <p class="sources">...</p>
 ```
 
-Two variants, both used:
+Name the institutions and documents, with dates (§D item 12).
+"Sources: Energy Market Authority, EDB and JTC, Tenaga Nasional disclosures,
+Wood Mackenzie, EIA and ERCOT... Figures as reported on the dates cited."
 
-- **Mechanism piece.** State that it explains mechanism, that the figures are
-  structural rather than financial, and any position you are not taking.
-  "This piece explains mechanism: why air fails, how liquid cooling works, and
-  what PUE measures. The figures used are physical and structural. I hold no
-  view here on individual equipment makers."
-- **Sourced piece.** Name the institutions and documents, with dates.
-  "Sources: Energy Market Authority, EDB and JTC, Tenaga Nasional disclosures,
-  Wood Mackenzie, EIA and ERCOT... Figures as reported on the dates cited."
-
-Every variant ends with the same five words: **Personal research, not investment
+Every sources line ends with the same five words: **Personal research, not investment
 advice.**
 
 ---
 
-## 4. House style, measured from the first six
+## 4. House style
 
-These are not preferences. They are what the existing corpus does.
-
-| Rule | Evidence across the six pieces |
-|---|---|
-| No em dashes, no en dashes | 0 of either |
-| Parentheses almost never | 4 in total |
-| Semicolons sparingly | 8 in total |
-| British spelling always | centres, energised, analysed. 0 US spellings |
-| Sentences short | 14 to 20 words average |
-| Paragraphs short | 1 to 4 sentences, about 12 to 16 paragraphs per piece |
-| Length | Top layer about 400 to 550 words (a five minute read); investor layer about 1,200 to 2,500 words (Tommy, 30 Oct 2026; the 9 Oct cap of 450 to 600 words for a whole piece is retired) |
+- No em dashes, no en dashes.
+- Parentheses almost never.
+- Semicolons sparingly.
+- British spelling always: centres, energised, analysed.
+- Sentences short: 14 to 20 words on average.
+- Paragraphs short: 1 to 4 sentences.
+- Length: top layer about 400 to 550 words (a five minute read); investor layer about 1,200 to
+  2,500 words (Tommy, 30 Oct 2026, §D).
 
 Voice:
 
@@ -348,7 +295,7 @@ physical argument. The test: **does the figure tell the reader whether the
 mechanism is real, or does it tell them what to do with the shares?** Only the
 first is allowed.
 
-Allowed, in the body, within the §4b budget of three:
+Allowed, in the top layer within the §4b budget of three, and in the investor layer without a cap (§4b):
 
 - Revenue, product versus service mix, growth rates, gross margin, cash flow,
   capex, backlog, order books, contracted capacity, customer concentration.
@@ -387,18 +334,14 @@ mechanism and imply nothing about value.
 most, never two money figures in one paragraph), so a layman can follow it. The investor layer has no
 figure cap: every number is primary-sourced and dated, tied to the mechanism, and tables are welcome.
 Still never anywhere: share prices, market values, valuation multiples, targets, ratings or any view on
-shares; those live in the research notes. The 8 Oct text below is kept as history and now governs the
-top layer only.
+shares; those live in the research notes.
 
-### The 8 Oct rule (history; top layer only)
+### The top-layer budget (Tommy, 8 Oct 2026)
 
-**Tommy, 8 Oct 2026, permanent.** The journal is for a layman with no finance
-background. It explains. The research notes at `/research` carry the numbers.
-A piece that reads like an accounting booklet has failed, however accurate it is.
-The company pieces of 24 Sep to 7 Oct drifted to 40 to 78 figures and 1,400 words
-and were all rewritten on 8 Oct; do not drift back.
+The top layer is for a layman with no finance background. It explains. A top layer that reads like
+an accounting booklet has failed, however accurate it is.
 
-- **15 figures at most** in the body, counting dates. Most pieces need fewer.
+- **15 figures at most** in the top layer, counting dates. Most pieces need fewer.
 - **3 company financial figures at most** (revenue, growth, margin, orders,
   backlog, capex, deal sizes). Prefer one. Say it in words where you can:
   "Systems has outgrown catalogue parts for a year" beats a table of quarters.
@@ -406,7 +349,8 @@ and were all rewritten on 8 Oct; do not drift back.
   walks through a set of accounts, segments or quarters.
 - Structural, physical numbers (kilowatts, years of waiting, distances) are the
   ones worth keeping. Financial detail, segment splits, quarter-by-quarter
-  comparisons, guidance and deal arithmetic go in the research note, never here.
+  comparisons, guidance and deal arithmetic go in the investor layer or the research note, never
+  in the top layer.
 - A falsifier may still name one disclosed figure as its test, stated once and
   plainly. The precise wording lives on the claims page.
 - If you need a number to make the point land, use it. If the point lands
@@ -489,8 +433,11 @@ still never reworded.
 **No email sign-ups.** The site has no newsletter or sign-up form, by
 decision. Do not add one. LinkedIn and RSS are how readers follow.
 
-**Companies. Automatic.** Every name in a `<span class="names">` gets a
-company page built from the exposure box. Spell a company the same way each
+**Companies. Automatic.** The company list is built from the names in each
+exposure box's `<span class="names">`. A company gets a page of its own only if it has a research
+note, a heading in a piece's investor layer, or at least two mentions in a piece's running prose
+outside the exposure map; every other company URL redirects to `/companies/` (Tommy, 30 Oct 2026;
+`companyPages` in `src/lib/exposure.ts`). Spell a company the same way each
 time; `ALIAS` in `src/lib/exposure.ts` catches the odd variant. Tags show as
 plain labels on the piece; there are no topic pages, because the map does that
 job.
@@ -569,13 +516,12 @@ In order:
    If something blocks it, say "NOT DONE: LinkedIn post not scheduled" at the
    top of the report. A scheduled publish task carries this as its final step.
 
-
 ---
 
 ## 9. The LinkedIn post that goes with it
 
-One per piece, in `brand/linkedin-posts.md`. Fixed shape, four blocks separated
-by blank lines:
+One per new piece and one per substantial update (CLAUDE.md, "Two tracks for new work"), in
+`brand/linkedin-posts.md`. Fixed shape, four blocks separated by blank lines:
 
 ```
 [One sentence. The counterintuitive fact, stated flat.]
@@ -611,10 +557,14 @@ python3 brand/check-piece.py src/content/journal/my-slug.md
 ```
 
 It validates the frontmatter, both mandatory blocks, the fixed disclaimer, the
-sources tail, the section count, the falsifier on Analysis pieces, banned
-punctuation, US spellings, rating and valuation language, length, the §4b
-numbers budget and average sentence length. Over 1,300 words, more than 4 money
-figures or more than 25 figures fails the piece. Failures exit non-zero. Warnings are advisory and do not fail.
+sources tail, the falsifier on Analysis pieces, banned punctuation, US spellings,
+rating and valuation language, and average sentence length. A piece with
+`<hr class="layer">` is checked as a deep piece (§D): it fails without exactly one divider and
+its label, the top layer's two sections, the investor layer's Claims on record and falsifier in
+order, a claims.ts entry, and every claim it carries quoted word for word and anchored. It also
+fails if the top layer is outside 300 to 600 words or has more than 15 figures, if the investor
+layer passes 2,600 words before the exposure map, or if the top layer has more than 4 money
+figures. Failures exit non-zero. Warnings are advisory and do not fail.
 
 Run it before you build. Every published piece passes with no failures.
 
@@ -622,12 +572,12 @@ Run it before you build. Every published piece passes with no failures.
 
 ## 11. The finished-piece checklist
 
-- [ ] One of the two shapes, and if Analysis, it carries a falsifier section
+- [ ] Category set (§1); a `## What would prove me wrong` section and a dated claim (§D)
 - [ ] If the notes are about one company or project, it is named in the title, summary, open and thesis, and stays the subject throughout
 - [ ] `date` is the real publish time, not a planned or future one
 - [ ] Cold open ends on the thesis, alone on its line
 - [ ] Analogy block present, fixed summary line, household objects, no finance
-- [ ] Three `##` sections, sentence case: how it works, the evidence, what would prove me wrong (or the constraint, for an Explainer)
+- [ ] Top layer has `## How it works` and `## The number that matters`; investor layer sections in §D order, sentence case
 - [ ] Exposure map present, with the fixed disclaimer and an "on the other side" block
 - [ ] No share price, valuation, target, rating or recommendation anywhere
 - [ ] Any financial figure is the company's own, dated, sourced, and tied to the mechanism

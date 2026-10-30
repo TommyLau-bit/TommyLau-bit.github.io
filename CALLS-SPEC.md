@@ -79,7 +79,7 @@ Tommy found the first build (a long web pitch with charts, merged into the claim
 
 ## Briefs for agents (in research-build/)
 - `BRIEF-note.md`: drafting an initiation note (text of record, PDF, model). `BRIEF-note-factcheck.md`: the read-only fact-check of a note.
-- `BRIEF-journal-piece.md` and `BRIEF-journal-factcheck.md`: the same pair for a company journal piece.
+- Journal pieces use the deep-piece briefs in `research-build/deep-pieces/` (`BRIEF-DEEP.md`, `BRIEF-DEEP-FACTCHECK.md`, `BRIEF-UPDATE.md`).
 Process: one company at a time; draft, then an independent fact-check, then fix, then Tommy decides the call.
 
 ## To publish a note (only with Tommy's explicit go)

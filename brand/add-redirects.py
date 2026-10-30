@@ -13,7 +13,7 @@ Nothing is written; the paste is a deliberate step at merge time.
 
 A redirect cannot coexist with a live page at the same path. At merge time,
 in the same change as the paste, delete src/content/journal/<old-slug>.md
-(its original text is kept verbatim in research-build/archive-pieces/, never
+(its original text is kept verbatim in research-build/archive/pieces/, never
 in src/), and take the old slug off src/data/stack.ts. astro.config.mjs fails
 the build if a redirect still has its old .md; this script warns first.
 Exit code 1 if the map is empty or a target lacks its #old-slug fragment.

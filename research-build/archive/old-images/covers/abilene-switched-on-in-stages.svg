@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#171512"/><stop offset="1" stop-color="#0c0b09"/></linearGradient></defs><rect width="800" height="600" fill="url(#g)"/>
+<g stroke-width="5" stroke-linejoin="round">
+<rect x="112" y="380" width="100" height="70" rx="4" fill="none" stroke="#4a4238"/>
+<rect x="230" y="320" width="100" height="130" rx="4" fill="none" stroke="#4a4238" stroke-dasharray="12 8"/>
+<rect x="348" y="250" width="104" height="200" rx="4" fill="#f59e0b" stroke="#f59e0b"/>
+<rect x="470" y="190" width="100" height="260" rx="4" fill="#1d4ed8" stroke="#60a5fa"/>
+<rect x="588" y="120" width="100" height="330" rx="4" fill="#60a5fa" stroke="#60a5fa"/>
+</g>
+<path d="M410 282 L386 340 H404 L392 392 L424 326 H406 L418 282 Z" fill="#171512"/>
+<path d="M112 470 H688" stroke="#3a342c" stroke-width="4"/>
+<g font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="16" letter-spacing="1.5" text-anchor="middle">
+<text x="162" y="500" fill="#6b6358">ANNOUNCED</text>
+<text x="280" y="500" fill="#6b6358">BUILDING</text>
+<text x="400" y="500" fill="#f59e0b" font-weight="bold">ENERGISED</text>
+<text x="520" y="500" fill="#60a5fa">DELIVERED</text>
+<text x="638" y="500" fill="#60a5fa">RUNNING</text>
+</g>
+<text x="400" y="80" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="18" fill="#9a8f80" letter-spacing="3" text-anchor="middle">ABILENE ARRIVED IN STAGES</text>
+</svg>

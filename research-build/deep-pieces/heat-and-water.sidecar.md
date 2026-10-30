@@ -57,7 +57,7 @@ Why these tests (rewritten after fact-check): the first draft's Google share tes
 | /journal/cooling-is-half-the-job/ | /journal/heat-and-water/#cooling-is-half-the-job |
 | /journal/room-to-spare/ | /journal/heat-and-water/#room-to-spare |
 
-water-is-a-siting-problem was never live, so no redirect is needed; its anchor exists anyway. At merge its draft leaves `src/content/journal/` and goes, with the two live originals, verbatim into `research-build/archive-pieces/`. Its scheduled publish task (13 Nov) should be paused with the others, on Tommy's go.
+water-is-a-siting-problem was never live, so no redirect is needed; its anchor exists anyway. At merge its draft leaves `src/content/journal/` and goes, with the two live originals, verbatim into `research-build/archive/pieces/`. Its scheduled publish task (13 Nov) should be paused with the others, on Tommy's go.
 
 Sections and anchors, in order: The mechanism in depth; Why heat forced liquid to the chip (#cooling-is-half-the-job); Inside one hall: Jane Street's retrofit (#room-to-spare); Water: a choice made site by site (#water-is-a-siting-problem); Claims on record; What would prove me wrong; Research notes.
 
@@ -156,7 +156,7 @@ From the live piece room-to-spare (not re-opened): Jane Street's video tour with
 
 - `src/content/journal/johor-waits-on-the-treatment-plant.md` (held) links to water-is-a-siting-problem; at merge, point it to `/journal/heat-and-water/#water-is-a-siting-problem` (its own text is archived; the queue deep piece already carries its section).
 - `src/content/journal/power-first-chips-last.md` (cluster 11): the cluster 11 deep piece should link to `/journal/heat-and-water/#room-to-spare` for the density and cooling evidence.
-- `research-build/journal-drafts/schneider-sells-the-finished-system.md` cites "cooling is already covered by cooling-is-half-the-job, room-to-spare and every-megawatt-got-harder"; update the slugs at merge.
+- `research-build/archive/journal-drafts/schneider-sells-the-finished-system.md` cites "cooling is already covered by cooling-is-half-the-job, room-to-spare and every-megawatt-got-harder"; update the slugs at merge.
 - stack.ts cooling `constraint` and glossary `WUE` as above.
 
 ## Could not verify today

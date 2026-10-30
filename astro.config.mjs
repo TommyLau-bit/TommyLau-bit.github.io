@@ -90,7 +90,7 @@ const REDIRECTS = {
 for (const from of Object.keys(REDIRECTS)) {
   const m = from.match(/^\/journal\/([a-z0-9-]+)\/?$/);
   if (m && existsSync(new URL(`./src/content/journal/${m[1]}.md`, import.meta.url)))
-    throw new Error(`Redirect ${from} would shadow src/content/journal/${m[1]}.md: delete the old piece (its original is archived in research-build/archive-pieces/) or drop the redirect.`);
+    throw new Error(`Redirect ${from} would shadow src/content/journal/${m[1]}.md: delete the old piece (its original is archived in research-build/archive/pieces/) or drop the redirect.`);
 }
 
 // The sitemap lists live pages only. Redirect stubs written by pages themselves

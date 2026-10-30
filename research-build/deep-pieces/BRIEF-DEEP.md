@@ -5,8 +5,8 @@ Tommy approved consolidating the journal into 10 deep pieces. The prototype, `re
 ## Read first, in full
 - CLAUDE.md (every Hard rule, especially "The deep piece", "Merging keeps the record", "Quality over quantity", scope, the oil exception, no views on shares).
 - WRITING-FORMAT.md §D (the format), §3.2 (analogy), §3.4 (exposure map), §4a, §4b, §5.
-- `research-build/CONSOLIDATION-PLAN.md` (your cluster) and the prototype plus its sidecar.
-- Every piece your cluster absorbs, in full, from `src/content/journal/`, and each one's sidecar in `research-build/journal-drafts/` where one exists (they hold the verified sources and the fact-check and re-check findings). Held drafts: use only their verified facts and respect every fact-check finding in their sidecars.
+- `research-build/archive/CONSOLIDATION-PLAN.md` (your cluster) and the prototype plus its sidecar.
+- Every piece your cluster absorbs, in full, from `src/content/journal/`, and each one's sidecar in `research-build/archive/journal-drafts/` where one exists (they hold the verified sources and the fact-check and re-check findings). Held drafts: use only their verified facts and respect every fact-check finding in their sidecars.
 - `src/data/claims.ts` for the live claims to quote, and `src/content/calls/` for the research notes resting on them.
 
 ## Rules that the prototype's fact-check taught us

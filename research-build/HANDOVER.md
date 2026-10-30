@@ -8,6 +8,7 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 - Nothing needs doing until the scheduled jobs below run. When each one reports, check it: page live, update note showing, LinkedIn post listed at the right time. Any "NOT DONE" goes to Tommy.
 - New work follows "Two tracks for new work" in CLAUDE.md: a NEW deep piece for a new mechanism or market, or an UPDATE to an existing one. Ten is not a ceiling. Sourcing method is WRITING-FORMAT.md §E. Each candidate goes to Tommy as one line before any drafting.
 - Briefs for agents are in research-build/deep-pieces/: BRIEF-DEEP.md, BRIEF-DEEP-FACTCHECK.md, BRIEF-GAP-SCOUT.md, BRIEF-UPDATE.md.
+- Folder map: README.md. Anything old (original short pieces, their drafts and sidecars, pre-merge deep drafts, video transcripts, retired briefs, template and rules, unused images) is in research-build/archive/ and is never edited. Retired rules: research-build/archive/RETIRED-RULES.md. Keep the workspace this way: new history goes into archive/, never back at the top level.
 
 ### Scheduled jobs (scheduled-tasks; each runs at 8:00 Singapore time, only while the app is open; all saved in Auto mode)
 
@@ -28,12 +29,14 @@ LinkedIn company page queue (11:30): posts 38 to 47 (the ten deep pieces) run Mo
 - Research notes hitachi.md (line 162) and siemens-energy.md (line 159) carry corrected dates; confirm the wording.
 - The 3,885 MVA / 72.76% Johor utilisation figure is press-only and inconsistent. It still sits in claims.ts watch lists. Tommy is deciding.
 - The 17 Sep 800 VDC note is reversed by powering-the-rack (briefing in its sidecar). Re-read before any call that touches it.
-- Old untracked files (public/og/*-v8.png, public/covers for merged slugs, research-build/journal-drafts) are leftovers from the merge. They are harmless, and cleaning them up needs Tommy's go.
+- Two old one-off scheduled tasks from the job-hunt side (linkedin-connections-reminder-5oct, marvell-investor-day-check) are finished but still listed; the app refused deleting them from here. Tommy can delete them in the Scheduled section.
 
 ## Fri 30 Oct 2026: what was done
 
+7. **Workspace clean-up (end of day).** Everything no longer in use moved into research-build/archive/ (nothing deleted): the original pieces, old drafts and sidecars, pre-merge deep drafts, Watch Later and video transcripts, the consolidation plan, the old short-piece briefs and TEMPLATE.md, and 191 unused cover and card images. The empty "Journals " folder is gone. WRITING-FORMAT.md lost its retired history (640 to 590 lines; history in archive/RETIRED-RULES.md, no live rule changed). CLAUDE.md, README.md (now a folder map) and CALLS-SPEC.md were brought up to date. The six finished journal publish jobs were cleared from the scheduler.
+
 1. **Constellation went live (morning).** The piece was published at 11:47 by its scheduled job. Its LinkedIn post is booked for Fri 4 Dec. The initiation note was drafted with no call (commit 9459e88).
-2. **New rule book (13:41, 833a1e5).** The deep piece format replaces the short skeleton: fewer, deeper, layered (WRITING-FORMAT §D). The consolidation plan is research-build/CONSOLIDATION-PLAN.md. The old LinkedIn queue was cleared, and the 20 paused publish tasks were deleted for good.
+2. **New rule book (13:41, 833a1e5).** The deep piece format replaces the short skeleton: fewer, deeper, layered (WRITING-FORMAT §D). The consolidation plan is research-build/archive/CONSOLIDATION-PLAN.md. The old LinkedIn queue was cleared, and the 20 paused publish tasks were deleted for good.
 3. **Consolidation (16:24, 1b05101).** 61 pieces became ten deep pieces:
    - the-queue-not-the-chip
    - america-rations-the-plug (batteries folded in)
@@ -46,7 +49,7 @@ LinkedIn company page queue (11:30): posts 38 to 47 (the ten deep pieces) run Mo
    - the-chip-supply-chain
    - contracted-energised-running
 
-   60 old URLs redirect to anchored sections. Every claim is kept word for word, with its date and a `home`. The originals are archived in research-build/archive-pieces/. Claims never published (pjm, seagate, water) were dropped.
+   60 old URLs redirect to anchored sections. Every claim is kept word for word, with its date and a `home`. The originals are archived in research-build/archive/pieces/. Claims never published (pjm, seagate, water) were dropped.
 4. **Site coherence (16:44, 3588c68).**
    - Dates are the honest first-published dates.
    - The homepage is the map, grouped by layer, and the "latest" feature is gone.

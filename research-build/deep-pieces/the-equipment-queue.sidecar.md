@@ -67,7 +67,7 @@ Alternatives considered: (A) the first draft's three-maker 90% test at 31 Decemb
 | /journal/eaton-order-book-outruns-it/ | /journal/the-equipment-queue/#eaton-order-book-outruns-it |
 | /journal/siemens-energy-measures-the-shortage/ | /journal/the-equipment-queue/#siemens-energy-measures-the-shortage |
 
-All four are live, with LinkedIn posts in `brand/linkedin-posts.md` (lines about 351, 383, 397, 411); those resolve through the redirects. At merge the four originals go verbatim into `research-build/archive-pieces/`.
+All four are live, with LinkedIn posts in `brand/linkedin-posts.md` (lines about 351, 383, 397, 411); those resolve through the redirects. At merge the four originals go verbatim into `research-build/archive/pieces/`.
 
 Sections and anchors, in order: How it works; The number that matters; (divider) The mechanism in depth (years-of-work table, factory table); Hitachi Energy (#hitachi-energy-plans-the-queue); Siemens Energy (#siemens-energy-measures-the-shortage); Eaton (#eaton-order-book-outruns-it); Schneider Electric (#schneider-sells-the-finished-system); Claims on record; What would prove me wrong; Research notes; exposure map; sources.
 

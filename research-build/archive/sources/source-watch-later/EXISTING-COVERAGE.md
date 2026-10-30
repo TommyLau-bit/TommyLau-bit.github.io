@@ -1,0 +1,102 @@
+# Existing journal coverage (29 Oct 2026, refreshed for the uncapped re-run)
+
+## Every piece, published or drafted
+- abilene-switched-on-in-stages (draft, scheduled): Abilene's AI campus arrived in five stages, and only one of them tells you capacity
+- ajinomoto-grows-with-the-package: As AI chip packages grow, Ajinomoto's insulating film grows with them
+- asml-booked-ahead: ASML's EUV machines are booked a year or two ahead, like a grid connection
+- broadcom-wins-either-way: Broadcom is paid whether the cloud giants stay with Nvidia or leave
+- constellation-restarts-the-reactor (draft, scheduled): Constellation can bring a closed reactor back by 2027. The grid connection was the hard part.
+- cooling-is-half-the-job: Electricity doesn't get used up making AI. It turns into heat. Cooling is half the job.
+- corning-lays-the-glass: Corning makes the glass AI chips talk through. Nvidia, Meta and Amazon have all paid to secure it.
+- darlington-builds-on-the-old-plug (draft, scheduled): Darlington is building four small reactors on an old plug. The second one is the test.
+- eaton-order-book-outruns-it: Eaton is shipping more electrical gear than ever, and its order book is growing faster still
+- ercot-rations-the-plug (draft, scheduled): ERCOT will not clear its data centre queue. It will ration the plug
+- every-megawatt-got-harder: Vertiv is paid per megawatt, and AI has made every megawatt harder to build
+- fairwater-spans-two-states (draft, scheduled): Microsoft's Fairwater runs one AI training job across two states. Power chose where.
+- ge-vernova-sells-the-wait: GE Vernova's customers are paying years in advance for a place in its queue
+- google-lets-the-grid-slow-its-chips (draft, scheduled): Google lets the grid slow its AI chips when power runs short
+- hitachi-energy-plans-the-queue: Hitachi Energy is spending more than $9 billion on factories, and still plans a three-year queue
+- howmet-casts-the-queue (draft, scheduled): Howmet Aerospace's new furnaces decide when gas turbine output takes its next step
+- hyperion-the-plant-outlasts-the-lease (draft, scheduled): Meta can hand back its Hyperion campus after four years. The power plants stay
+- johor-waits-on-the-treatment-plant (draft, scheduled): Johor's data centres are waiting on water treatment plants, not on the river
+- lumentum-makes-the-light: Nvidia paid Lumentum $2 billion for lasers, because silicon cannot make light
+- malaysia-keeps-the-wires-shared (draft, scheduled): Malaysia charges its data centres more for power, but the wires stay on the shared bill
+- marvell-collects-the-toll: Marvell is paid every time AI chips talk to each other, whoever made the chips
+- micron-three-times-the-wafer: Micron sells AI memory before the year starts, and each bit takes three times the wafer
+- nebius-paid-for-what-is-switched-on: Nebius has lined up five gigawatts of power. It expects about one switched on this year.
+- nobody-makes-a-b200-alone: Nobody makes an Nvidia B200 alone, and the weak links are measured in years
+- oklo-sells-the-electricity: Oklo will not sell you a reactor. It wants to sell you nuclear electricity for decades.
+- permian-gas-follows-the-oil-rig (draft, scheduled): Oil drillers, not power buyers, decide how much Permian gas there is
+- pjm-sends-the-bill (draft, scheduled): PJM's capacity auction cannot build power stations. It can only send the bill
+- power-first-chips-last: Jane Street now commits to the power first and picks the chips last
+- room-to-spare: Jane Street's AI data hall has room to spare, and no power to fill it
+- schneider-sells-the-finished-system: Schneider Electric sells AI data centres the finished system, not the parts
+- seagate-sells-the-terabyte (draft, scheduled): Seagate is not making more hard drives. It is packing more into each one
+- siemens-energy-measures-the-shortage: Siemens Energy has measured the transformer shortage, and its own chart runs to 2030
+- singapore-cannot-wait-for-the-cable (draft, scheduled): Singapore's green power cables are years away, so its data centres cannot wait for them
+- ten-thousand-chips-one-thought: Ten thousand chips, one thought: why the network costs about half as much as the chips
+- terrapower-waits-on-the-fuel (draft, scheduled): TerraPower has its permit to build in Wyoming. Its reactor now waits on fuel.
+- the-countertop-is-the-bottleneck: The chip isn't slow. Fetching is. Why memory became the bottleneck
+- the-part-money-cannot-hurry: The one part of the grid that money cannot hurry
+- the-power-it-drops: The grid's new problem is not the power AI uses, it is the power it drops
+- the-product-is-time: Bloom Energy is not selling electricity. It is selling time.
+- the-queue-not-the-chip: The queue, not the chip, is what's holding AI back
+- the-rack-runs-out-of-copper: The rack runs out of copper before it runs out of chips
+- the-two-seconds-after-you-hit-send: What actually happens in the two seconds after you hit send
+- the-way-out-has-its-own-queue: The best argument against my own thesis, and why I still think it is wrong
+- ti-feeds-the-chip: The most expensive chip in an AI rack runs on Texas Instruments' cheapest ones
+- tsmc-says-it-is-the-bottleneck: TSMC's chief says the AI bottleneck is its factories, not the power grid
+- two-governments-one-confession: Two governments did the opposite thing and confessed the same problem
+- water-is-a-siting-problem (draft, scheduled): Data centre water decides where AI campuses go, not how many get built
+- what-the-battery-is-really-for: The battery has quietly stopped being an energy product
+
+## Published claims
+- string;      // one sentence, first person where it is judgement
+- 'In Johor and Singapore, a finished grid connection, not chip supply, is the scarce thing holding the AI buildout back.',
+- 'A grid connection queue is really two queues. Governments can shorten the paperwork one, but the equipment one sets the pace.',
+- 'Malaysia building more grid and Singapore rationing who may connect are opposite answers to the same shortage of connection capacity.',
+- 'The grid\'s new problem with AI data centres is not the power they draw. It is the gigawatts they can drop in under a second.',
+- 'Building your own power on site does not escape the queue. Turbines, transformers and switchgear have queues of their own.',
+- 'Large batteries are increasingly bought as connection equipment that lets a site switch on early, not as a way to trade electricity.',
+- 'Bloom Energy\'s customers are paying for an earlier switch-on date, not for cheaper electricity.',
+- 'The order builders commit in reveals the constraint, and at Jane Street power now comes first and chips last.',
+- 'What Vertiv sells per megawatt is rising, because AI makes every megawatt harder to power and cool.',
+- 'Oklo is a seller of electricity, not reactors, and the model stands or falls on building its first plant.',
+- 'Marvell is paid every time AI chips talk, through the signal processor in each optical plug, whoever made the chips.',
+- 'AI buyers pay for connected power, and Nebius\'s edge is turning contracted power into connected power faster than they can.',
+- 'Glass fibre is the part of the AI network that outlives every chip generation, and Corning is paid each time a campus grows.',
+- 'Broadcom is paid whether the cloud giants stay with Nvidia or leave for their own chips.',
+- 'The move to 800 volt racks turns Texas Instruments\' small, cheap power chips into a growing data centre business.',
+- 'On today\'s horizon, TSMC\'s factories bind before the grid does. Over the longer run, I still expect the grid to be the slower clock.',
+- 'The AI network\'s bottleneck has moved to the laser, which only a few indium phosphide factories can make at volume.',
+- 'Schneider Electric\'s AI data centre growth is arriving as finished systems, built and tested in its factories, rather than as loose parts, because skilled hours on site are now scarcer than equipment, so Systems will keep taking a larger share of its revenue.',
+- 'GE Vernova is expanding gas turbine output inside its existing factories, paid for by customers\' deposits, so its queue will stay at four or more years of its planned output through 2030 rather than clear.',
+- 'Hitachi Energy is adding factories only as fast as signed orders justify, and its order backlog will stay at or above about 2.5 times annual revenue, roughly three years of work, through fiscal 2030, which ends on 31 March 2031, so the queue for its transformers and HVDC links will not clear.',
+- 'Eaton is shipping more electrical gear than ever, yet its Electrical Americas backlog keeps growing faster than its sales, so the queue for the equipment inside a data centre\'s fence, measured in months of sales on order, will keep lengthening until its new plants arrive in 2027.',
+- 'By Siemens Energy\'s own estimate, demand for large and medium power transformers in Europe and North America exceeds the combined capacity of all market players in the region in every year through its fiscal 2030, which ends on 30 September 2030, so unfilled orders keep accumulating even as the gap narrows: Grid Technologies\' orders stay above its revenue each fiscal year and its backlog in euros keeps growing.',
+- 'Ajinomoto\'s build-up film is used by the area and layer count of each chip package, so as AI packages grow wider and taller its film volume shifts to AI servers faster than chip counts imply, and because a rival film takes a long time to qualify, Ajinomoto keeps that growth at high margins.',
+- 'ASML\'s EUV machines are sold out and committed a year or two ahead, and their number grows only as fast as ZEISS optics and ASML\'s cleanrooms allow, about 30 per cent a year, so a chipmaker adding leading-edge AI capacity must commit to scanners a year or two ahead, much as a data centre books a grid connection.',
+- 'Micron sells most of each year\'s HBM before that year starts, and because each HBM bit takes about three times the wafer of ordinary DRAM, every year HBM grows faster than conventional DRAM it takes wafers from ordinary memory and keeps that market short too, through calendar 2028.',
+- 'The fastest nuclear power Constellation can bring to AI this decade comes from reactors that already hold a place on the grid: at Crane the reactor can be ready by 2027, but a fresh grid connection would not have been fully ready until around 2030 or later.',
+- 'PJM\'s capacity auction cannot summon new power stations as fast as data centres add demand, so it will keep clearing at or near its price ceiling, with households paying.',
+- 'Seagate is meeting AI\'s demand for storage by putting more terabytes in each hard drive, not by making more drives, so its high-capacity supply stays committed well over a year ahead.',
+- 'Data centre water decides where AI campuses go and how they are cooled, not how many get built, because a site can swap evaporated water for a little extra electricity, and most of a data centre\'s water is consumed at the power station.',
+
+## Claims of scheduled drafts (from their sidecars)
+- ercot-rations-the-plug: 'ERCOT will not clear its queue of about 474 gigawatts of large-load requests. When it reopens to large data centres, most new capacity will come with ERCOT\'s right to cut it, or a condition that the site brings its own power.',
+- abilene-switched-on-in-stages: 'At Abilene, the date each building was energised, not the date it was announced or started, set when capacity arrived, so energised megawatts are the only capacity figure worth quoting.',
+- hyperion-the-plant-outlasts-the-lease: 'At Meta\'s Hyperion campus the binding, long-dated commitment is the power, not the building: Meta\'s lease can end after a four-year first term from 2029, while the gas plants built for it carry a power agreement that runs well past the lease (Entergy has said 15 years), backed by Meta\'s own guarantee, so the financing moved who holds the building and not who is bound to the power.',
+- google-lets-the-grid-slow-its-chips: 'The AI chip is becoming the quickest spare power a stressed grid can add, with no new hardware: Google already lets utilities limit or shift its machine learning work at peak, and a utility will soon connect a large data centre that counts on such a cut.',
+- singapore-cannot-wait-for-the-cable: 'Singapore\'s conditionally approved low-carbon import projects, its main route to future green power, will not deliver power into Singapore before 1 January 2029, so the green power it named for new data centre capacity is made on the island, from clean fuels and solar, rather than imported.',
+- terrapower-waits-on-the-fuel: 'TerraPower\'s Kemmerer Unit 1 start date is set by its HALEU fuel, not its construction permit: its first core depends on a South African enrichment plant that had not enriched any uranium as of August 2026 and on Energy Department stocks of undisclosed size, so fuel load slips past the end of 2030.',
+- johor-waits-on-the-treatment-plant: 'Johor\'s water limit for data centres is how fast its treatment plants can be built, not raw water, so the state keeps rationing data centre water while its reserve margin stays under SPAN\'s 15% minimum.',
+- fairwater-spans-two-states: 'Microsoft runs Fairwater in Wisconsin and Atlanta as one training machine because no single site\'s power and land now fits the largest training runs, so fibre joins sites chosen for their power, and only the quieter work crosses between them.',
+- malaysia-keeps-the-wires-shared: 'Malaysia charges its data centres more for each unit of electricity, but the wires built for them stay in the shared regulated tariff, and the tariff for the period from 1 January 2028 will keep their capacity and network charges level with ordinary high voltage users.',
+- howmet-casts-the-queue: 'GE Vernova\'s step beyond 24 gigawatts to 30 gigawatts a year rests on blade casting capacity that Howmet Aerospace, the largest maker of gas turbine blades, is adding from 2028 to 2030, so the 30 gigawatt year arrives no sooner than that capacity does.',
+- darlington-builds-on-the-old-plug: 'Darlington is the first real test of whether small reactors get cheaper with repetition: built on an existing nuclear site with its grid corridor, licences and crews, OPG\'s first BWRX-300 should reach the grid by the end of 2030, and the three units after it should cost less than the first.',
+- permian-gas-follows-the-oil-rig: 'Permian gas is a by-product of oil wells, so how much there is for Texas power plants and data centres is set by oil drilling and pipeline space, not by power buyers. Through 2027, power buyers will not pull new drilling in the Permian.',
+
+## Held in reserve (already found, do not re-propose, but you may note if your reading strengthens one)
+- PJM capacity accreditation (ELCC) for four-hour batteries falls as more join
+- Thailand (EGAT single buyer, BOI approvals) as the third connection-constrained SE Asian market
+- Enterprise SSDs as overflow memory for AI inference KV cache

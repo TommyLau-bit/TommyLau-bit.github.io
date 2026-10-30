@@ -62,7 +62,7 @@ Why the test is real (revised after fact-check, 30 Oct 2026): the cause now name
 | /journal/kairos-signs-before-it-switches-on/ | /journal/nuclear-for-ai/#kairos-signs-before-it-switches-on | scheduled draft (site 18 Jan, LinkedIn 20 Jan) |
 | /journal/terrapower-waits-on-the-fuel/ | /journal/nuclear-for-ai/#terrapower-waits-on-the-fuel | draft (check its publish task) |
 
-Held drafts constellation-squeezes-the-reactors and darlington-builds-on-the-old-plug were never live; anchors exist anyway. Inbound links on the site to the two live URLs (Palisades and Darlington drafts link to Crane; Darlington links to Oklo; the Constellation piece links to Oklo) resolve through these redirects. At merge the drafts leave `src/content/journal/` and go verbatim, with the two live originals, into `research-build/archive-pieces/`. The scheduled publish tasks for Palisades, Eunice, Kairos (and TerraPower if any) and their LinkedIn posts need pausing or repointing; Tommy's decision.
+Held drafts constellation-squeezes-the-reactors and darlington-builds-on-the-old-plug were never live; anchors exist anyway. Inbound links on the site to the two live URLs (Palisades and Darlington drafts link to Crane; Darlington links to Oklo; the Constellation piece links to Oklo) resolve through these redirects. At merge the drafts leave `src/content/journal/` and go verbatim, with the two live originals, into `research-build/archive/pieces/`. The scheduled publish tasks for Palisades, Eunice, Kairos (and TerraPower if any) and their LinkedIn posts need pausing or repointing; Tommy's decision.
 
 ## stack.ts
 
@@ -116,7 +116,7 @@ Note: 900 kg is Phase 2 only (to June 2025); Phase 1 and Option 1a also produced
 
 ## Edits other drafts need (not made)
 
-- `research-build/journal-drafts/terrapower-waits-on-the-fuel.md` (sidecar) says "Centrus has signed HALEU supply contracts with Oklo, Radiant, Antares and X-energy in 2026". For Oklo it is a letter of intent (18 June 2026), subject to definitive agreements. Fix that line if the sidecar is reused.
+- `research-build/archive/journal-drafts/terrapower-waits-on-the-fuel.md` (sidecar) says "Centrus has signed HALEU supply contracts with Oklo, Radiant, Antares and X-energy in 2026". For Oklo it is a letter of intent (18 June 2026), subject to definitive agreements. Fix that line if the sidecar is reused.
 - `src/content/journal/oklo-sells-the-electricity.md` exposure map ("Centrus Energy enriches uranium to HALEU levels"): not edited; the original text is kept verbatim in the archive, and the deep piece's note says why it no longer holds.
 - `src/content/calls/oklo.md` keeps pointing at the same claim id; no change. Its "Centrus letter of intent from 2029" matches the deep piece.
 - If the deep piece publishes before 4 Dec, the scheduled LinkedIn post for constellation-restarts-the-reactor (4 Dec) still works via the redirect; Tommy may prefer to swap it for the post above.
