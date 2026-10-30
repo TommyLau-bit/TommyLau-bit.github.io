@@ -5,10 +5,22 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 ## START HERE (as of Fri 30 Oct 2026, evening)
 
 - The site is ten deep pieces, one per mechanism cluster, each in two layers (plain English, then "For investors"). An eleventh, Hong Kong, goes live on Mon 2 Nov.
+- **Standing decision (Tommy, 30 Oct 2026): the site is done for now. Do not keep modifying what does not need it.** Change a live piece only when new evidence lands on its mechanism (the monthly sweep proposes, Tommy picks), never for polish.
 - Nothing needs doing until the scheduled jobs below run. When each one reports, check it: page live, update note showing, LinkedIn post listed at the right time. Any "NOT DONE" goes to Tommy.
 - New work follows "Two tracks for new work" in CLAUDE.md: a NEW deep piece for a new mechanism or market, or an UPDATE to an existing one. Ten is not a ceiling. Sourcing method is WRITING-FORMAT.md §E. Each candidate goes to Tommy as one line before any drafting.
 - Briefs for agents are in research-build/deep-pieces/: BRIEF-DEEP.md, BRIEF-DEEP-FACTCHECK.md, BRIEF-GAP-SCOUT.md, BRIEF-UPDATE.md.
 - Folder map: README.md. Anything old (original short pieces, their drafts and sidecars, pre-merge deep drafts, video transcripts, retired briefs, template and rules, unused images) is in research-build/archive/ and is never edited. Retired rules: research-build/archive/RETIRED-RULES.md. Keep the workspace this way: new history goes into archive/, never back at the top level.
+
+### Workspace layout (cleaned 30 Oct 2026; keep it this way)
+
+| Where | What |
+|---|---|
+| Top level | CLAUDE.md (rule book), WRITING-FORMAT.md (piece spec), CALLS-SPEC.md (notes spec), README.md (folder map), plus the site's own folders (src, public, brand) |
+| research-build/HANDOVER.md | This file |
+| research-build/deep-pieces/ | Live working area: the four agent briefs, one sidecar per deep piece (verified sources), gap-*.notes.md, updates/ (approved copies waiting for 4, 6, 9 Nov; can move to archive/ after 9 Nov) |
+| research-build/<company>/, BRIEF-note*.md, CHANGELOG.md | Research notes: build scripts and sources, briefs, post-publication corrections |
+| research-build/archive/ | History, never edited: pieces/ (61 originals), journal-drafts/ (their old drafts and sidecars), deep-drafts/ (pre-merge deep piece drafts), sources/ (Watch Later and video transcripts), old-images/ (191 unused covers and cards), misc/, plus CONSOLIDATION-PLAN.md, RETIRED-RULES.md, the old short-piece briefs and TEMPLATE-short-skeleton.md |
+| public/covers, public/og | Only images a live or scheduled piece uses (11 covers, 10 cards; Hong Kong's card is made at publish) |
 
 ### Scheduled jobs (scheduled-tasks; each runs at 8:00 Singapore time, only while the app is open; all saved in Auto mode)
 
@@ -63,4 +75,4 @@ LinkedIn company page queue (11:30): posts 38 to 47 (the ten deep pieces) run Mo
    - **UPDATE: nuclear-for-ai.** The EIA uranium contract book, HALEU allocations, and Kairos's Hermes 1 fuel contract. No new claim.
 
    Each went through drafting, a separate fact-check, fixes, and Tommy's OK. The approved copies and change lists are in research-build/deep-pieces/updates/, and the scout notes are research-build/deep-pieces/gap-*.notes.md.
-7. **Workspace clean-up (end of day).** Everything no longer in use moved into research-build/archive/ (nothing deleted): the original pieces, old drafts and sidecars, pre-merge deep drafts, Watch Later and video transcripts, the consolidation plan, the old short-piece briefs and TEMPLATE.md, and 191 unused cover and card images. The empty "Journals " folder is gone. WRITING-FORMAT.md lost its retired history (640 to 590 lines; history in archive/RETIRED-RULES.md, no live rule changed). CLAUDE.md, README.md (now a folder map) and CALLS-SPEC.md were brought up to date. The six finished journal publish jobs were cleared from the scheduler.
+7. **Workspace clean-up (end of day).** Everything no longer in use moved into research-build/archive/ (nothing deleted): the original pieces, old drafts and sidecars, pre-merge deep drafts, Watch Later and video transcripts, the consolidation plan, the old short-piece briefs and TEMPLATE.md, and 191 unused cover and card images. The empty "Journals " folder is gone. WRITING-FORMAT.md lost its retired history (640 to 590 lines; history in archive/RETIRED-RULES.md, no live rule changed). CLAUDE.md, README.md (now a folder map) and CALLS-SPEC.md were brought up to date. The six finished journal publish jobs were cleared from the scheduler (their SKILL.md files stay on disk in ~/.claude/scheduled-tasks/, as do the folders of the 24 publish tasks deleted earlier; harmless and not shown in the app). Build and checkers clean; git working tree empty (commit 9c19117). Tommy confirmed the day's work and asked for no further modification for its own sake.
