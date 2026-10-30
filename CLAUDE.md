@@ -95,8 +95,7 @@ cover brief and LinkedIn post, is yours to write.
 - **The deep piece: fewer, deeper, layered** (Tommy, 30 Oct 2026; replaces
   the 8 and 9 Oct length and numbers rules, which are retired, and applies to
   every future piece). The journal is being consolidated from 61 short pieces
-  into about 11 deep pieces, one per mechanism cluster. New topics deepen an
-  existing deep piece; there are no new standalone pieces.
+  into ten deep pieces, one per mechanism cluster (done 30 Oct 2026).
   Each deep piece has two layers on one page: a plain-English top (claim, why
   it matters, the key number, analogy; about 400 to 550 words, still readable
   by a layman) and an investor layer below it (the numbers, the mechanism or
@@ -105,6 +104,18 @@ cover brief and LinkedIn post, is yours to write.
   to the top layer only; every investor-layer number is primary and dated. Share prices, valuations and views on shares still never
   appear in a journal piece. Spec: WRITING-FORMAT.md §D. Plan:
   research-build/CONSOLIDATION-PLAN.md.
+- **Two tracks for new work** (Tommy, 30 Oct 2026; replaces "no new
+  standalone pieces"). Ten is not a ceiling. (1) **A new deep piece** when the
+  topic is a distinct mechanism or market none of the existing pieces covers
+  and it can carry the full §D format: plain-English top, investor layer, its
+  own dated claim, primary sources. It never repeats an existing mechanism
+  with a different company name. (2) **An update** to an existing deep piece
+  when new evidence lands on a mechanism the site already covers (results, a
+  regulator's order, a filing, a transcript that adds a fact): a section or
+  table refresh or a new dated claim beside the old ones, a separate
+  fact-check, Tommy's OK, then the piece's `updated` and `updateNote` fields.
+  Both tracks must clear the quality bar, and each new piece or substantial
+  update gets one LinkedIn post. Sourcing method: WRITING-FORMAT.md §E.
 - **Merging keeps the record** (Tommy, 30 Oct 2026). When pieces merge, every
   old URL redirects to its section in the deep piece (`/journal/<deep>/#<old-slug>`),
   every claim stays in claims.ts word for word with its original date, and the

@@ -9,7 +9,8 @@ contract it works to. Nothing here is a suggestion.
 > one page (§D): a plain-English top a layman can follow in about five minutes, and an investor layer
 > below it with the numbers, the mechanism, the company and site sections, the claims on record and
 > the falsifier. A PM or investor who reads any piece first must come away thinking the author knows
-> the subject in depth. New topics deepen an existing deep piece; they are not new standalone pieces.
+> the subject in depth. New work takes one of two tracks (CLAUDE.md, "Two tracks for new work"): a new
+> deep piece for a distinct mechanism or market, or an update to an existing deep piece; sourcing is §E.
 > Every piece must clear the quality bar in CLAUDE.md. The retired rules, kept as history: on 8 and 9 Oct
 > 2026 pieces were capped at 450 to 600 words and 15 figures with "numbers in the research"; on 30 Oct
 > 2026 Tommy judged that too surface-level and replaced it with this rule. Those caps now apply only to
@@ -51,6 +52,32 @@ Then a divider line: `<hr class="layer">` followed by `<p class="layer-label">Fo
 Still forbidden anywhere in a piece: share prices, market values, valuation multiples, targets,
 ratings or any view on shares (those live in the research notes). Financials appear only as evidence
 for the mechanism (§4a). No em or en dashes. British spelling.
+
+---
+
+## E. Finding new material (Tommy, 30 Oct 2026)
+
+Every lead is a lead only until its figures are read at the primary source. Six channels, in order of
+value:
+
+1. **The calendar.** Each deep piece's companies, grid operators and regulators publish on a known
+   schedule: quarterly results and filings, regulator orders and dockets (FERC, PJM, ERCOT, NERC, EMA,
+   IMDA, Energy Commission, Tenaga, SPAN, NRC), statistical releases (EIA, CAISO). These test the claims
+   on record and feed updates. A monthly sweep lists what landed for each piece.
+2. **The claims' own watch lists.** Every claim in claims.ts names the evidence to watch; that list is the
+   standing to-do for updates.
+3. **Videos and podcasts Tommy saves** (YouTube Watch Later). Claude pulls the transcripts, maps each one to
+   the deep pieces, and proposes only what is new: an update, or a candidate new deep piece. Third-party
+   work is a lead sheet: never copied or paraphrased, credited once.
+4. **Analyst framing from free text** (for example SemiAnalysis previews) as a map of gaps: where the site
+   can add a mechanism or an APAC angle they do not cover. Never paywalled content.
+5. **Gaps in the map.** A market or mechanism the map has no piece for (for example Hong Kong, or fuel for
+   power) is a candidate new deep piece; it needs its own primary sources before drafting.
+6. **Tommy's own work:** interviews, calls and job-hunt research that surface a question the site cannot
+   yet answer.
+
+Every candidate is proposed to Tommy as one line (update to which piece, or new deep piece, plus the claim
+it would carry) before any drafting.
 
 ---
 
