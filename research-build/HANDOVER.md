@@ -33,8 +33,6 @@ LinkedIn company page queue (11:30): posts 38 to 47 (the ten deep pieces) run Mo
 
 ## Fri 30 Oct 2026: what was done
 
-7. **Workspace clean-up (end of day).** Everything no longer in use moved into research-build/archive/ (nothing deleted): the original pieces, old drafts and sidecars, pre-merge deep drafts, Watch Later and video transcripts, the consolidation plan, the old short-piece briefs and TEMPLATE.md, and 191 unused cover and card images. The empty "Journals " folder is gone. WRITING-FORMAT.md lost its retired history (640 to 590 lines; history in archive/RETIRED-RULES.md, no live rule changed). CLAUDE.md, README.md (now a folder map) and CALLS-SPEC.md were brought up to date. The six finished journal publish jobs were cleared from the scheduler.
-
 1. **Constellation went live (morning).** The piece was published at 11:47 by its scheduled job. Its LinkedIn post is booked for Fri 4 Dec. The initiation note was drafted with no call (commit 9459e88).
 2. **New rule book (13:41, 833a1e5).** The deep piece format replaces the short skeleton: fewer, deeper, layered (WRITING-FORMAT §D). The consolidation plan is research-build/archive/CONSOLIDATION-PLAN.md. The old LinkedIn queue was cleared, and the 20 paused publish tasks were deleted for good.
 3. **Consolidation (16:24, 1b05101).** 61 pieces became ten deep pieces:
@@ -65,3 +63,4 @@ LinkedIn company page queue (11:30): posts 38 to 47 (the ten deep pieces) run Mo
    - **UPDATE: nuclear-for-ai.** The EIA uranium contract book, HALEU allocations, and Kairos's Hermes 1 fuel contract. No new claim.
 
    Each went through drafting, a separate fact-check, fixes, and Tommy's OK. The approved copies and change lists are in research-build/deep-pieces/updates/, and the scout notes are research-build/deep-pieces/gap-*.notes.md.
+7. **Workspace clean-up (end of day).** Everything no longer in use moved into research-build/archive/ (nothing deleted): the original pieces, old drafts and sidecars, pre-merge deep drafts, Watch Later and video transcripts, the consolidation plan, the old short-piece briefs and TEMPLATE.md, and 191 unused cover and card images. The empty "Journals " folder is gone. WRITING-FORMAT.md lost its retired history (640 to 590 lines; history in archive/RETIRED-RULES.md, no live rule changed). CLAUDE.md, README.md (now a folder map) and CALLS-SPEC.md were brought up to date. The six finished journal publish jobs were cleared from the scheduler.
