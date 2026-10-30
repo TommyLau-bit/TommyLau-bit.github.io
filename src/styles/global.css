@@ -481,3 +481,39 @@ details.analogy > p:first-of-type { margin-top: 0.1rem; }
   .home-row-pieces li { display: block; }
   .home-row-pieces time { display: block; }
 }
+
+/* Charts inside pieces: inline SVG, themed by the colour tokens */
+.chart { margin: 2rem 0; }
+.chart-title { font-family: var(--sans); font-weight: 650; font-size: 1rem; line-height: 1.3; margin: 0; color: var(--ink); }
+.chart-sub { font-family: var(--sans); font-size: 0.82rem; color: var(--ink-3); margin: 0.2rem 0 0.6rem; }
+.chart svg { display: block; width: 100%; height: auto; font-family: var(--sans); }
+.chart figcaption { font-family: var(--sans); font-size: 0.78rem; line-height: 1.5; color: var(--ink-3); margin-top: 0.5rem; }
+.c-zone { fill: var(--ink-3); opacity: 0.09; }
+.c-zone-t { fill: var(--ink-3); font-size: 13px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; }
+.c-grid line { stroke: var(--rule); stroke-width: 1; }
+.c-axis text { fill: var(--ink-3); font-size: 13px; }
+.c-line { fill: none; stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; }
+.c-s1 { stroke: var(--ink); } .c-dot.c-s1 { fill: var(--ink); stroke: none; }
+.c-s2 { stroke: var(--accent); } .c-dot.c-s2 { fill: var(--accent); stroke: none; }
+.c-s3 { stroke: var(--accent-2); } .c-dot.c-s3 { fill: var(--accent-2); stroke: none; }
+.c-lab { font-size: 14px; font-weight: 600; }
+.c-s1t { fill: var(--ink); } .c-s2t { fill: var(--accent); } .c-s3t { fill: var(--accent-2); }
+.c-plant line { stroke: var(--ink-3); stroke-width: 1.5; }
+.c-plant text { fill: var(--ink-3); font-size: 12px; }
+.c-bar { fill: var(--accent); }
+.c-base { stroke: var(--ink-3); stroke-width: 1; }
+.c-today { stroke: var(--ink-3); stroke-width: 1; stroke-dasharray: 3 3; }
+.c-today-t { fill: var(--ink-3); font-size: 11px; }
+.c-span line { stroke: var(--accent); stroke-width: 2.5; }
+.c-start circle { fill: var(--bg); stroke: var(--accent); stroke-width: 2; }
+.c-end circle { fill: var(--accent); }
+.c-endt text { fill: var(--ink-2); font-size: 12px; }
+.chart { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+@media (max-width: 560px) { .chart svg { min-width: 470px; } }
+.c-bar.c-alt { fill: var(--accent-2); }
+.c-bar.c-mute { fill: var(--ink-3); opacity: 0.55; }
+.c-note { fill: var(--ink-3); font-size: 12px; }
+.c-box { fill: var(--bg-elev); stroke: var(--rule); stroke-width: 1.5; }
+.c-box-t { fill: var(--ink); font-size: 13px; font-weight: 600; }
+.c-arrow { stroke: var(--ink-3); stroke-width: 1.5; fill: none; }
+.c-arrow-head { fill: var(--ink-3); }

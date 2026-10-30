@@ -1,0 +1,20 @@
+<section class="exposure">
+<h3>Who is exposed if the equipment queue is kept, not cleared</h3>
+<p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares. Figures in the piece are disclosures used as evidence for the mechanism.</p>
+<dl>
+<dt>The grid side</dt>
+<dd><span class="names">Hitachi Energy</span>, <span class="names">Siemens Energy</span> and <span class="names">GE Vernova</span> make large power transformers, high voltage switchgear and HVDC systems.</dd>
+<dt>Inside the fence</dt>
+<dd><span class="names">Eaton</span>, <span class="names">Schneider Electric</span>, <span class="names">ABB</span>, <span class="names">Siemens</span> and <span class="names">Vertiv</span> make switchgear, UPS systems and prefabricated power rooms.</dd>
+<dt>The cable between them</dt>
+<dd><span class="names">Prysmian</span>, <span class="names">Nexans</span> and <span class="names">NKT</span> make high voltage land and subsea cable.</dd>
+</dl>
+<dl class="against">
+<dt>On the other side</dt>
+<dd>Developers whose schedules assume electrical gear can be ordered once a site is chosen, and the makers themselves if orders cool as their new plants open.</dd>
+</dl>
+</section>
+
+---
+
+<p class="sources">Sources: Hitachi results of 29 January, 27 April, 29 July and 28 October 2026, its Investor Day energy presentation and Q&A summary (10 June 2026), and Hitachi Energy releases of 29 June and 15 September 2026; Siemens Energy Capital Market Day presentations (20 November 2025), shareholder letters of 13 November 2024 and 14 November 2025, earnings releases of 11 February, 12 May and 5 August 2026, and releases of 14 February 2024, 5 September 2025 and 3 February 2026; Eaton's 2025 Form 10-K, Forms 10-Q for September 2024, September 2025, March and June 2026, second quarter release (31 July 2026) and plant releases of 12 February 2025, 8 April and 2 September 2026; Schneider Electric results of 20 February 2025, 26 February, 30 April, 30 July and 16 October 2026, Capital Markets Day transcript (11 December 2025), and its release of 25 March 2025. Years of work are my arithmetic. Personal research, not investment advice.</p>

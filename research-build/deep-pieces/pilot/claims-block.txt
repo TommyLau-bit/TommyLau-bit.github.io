@@ -1,0 +1,41 @@
+**Schneider Electric sells AI data centres the finished system, not the parts** (7 October 2026)
+
+Claim: "Schneider Electric's AI data centre growth is arriving as finished systems, built and tested in its factories, rather than as loose parts, because skilled hours on site are now scarcer than equipment, so Systems will keep taking a larger share of its revenue."
+
+Breaks if: "Systems falls below 34 per cent of Schneider's group revenue, its 2025 level, for the full year 2026 or 2027 while Schneider describes Data Centre and Networks sales as growing double digit; or Products outgrows Systems on an organic basis for two quarters running while data centres remain Schneider's main growth driver."
+
+Where later evidence bears on it: not broken, but close. In the third quarter of 2026 Products grew 17% against 22% for Systems, and Schneider says Products growth was "majority volume-driven": more loose parts, not just higher prices. The nine-month Systems share is about 34% from rounded shares (33.9% to 34.9%), on the line. The share test checks the outcome, not the cause: buyers may want prefabrication for speed as much as for scarce electricians.
+
+**Hitachi Energy is spending more than $9 billion on factories, and still plans a three-year queue** (22 October 2026)
+
+Claim: "Hitachi Energy is adding factories only as fast as signed orders justify, and its order backlog will stay at or above about 2.5 times annual revenue, roughly three years of work, through fiscal 2030, which ends on 31 March 2031, so the queue for its transformers and HVDC links will not clear."
+
+Breaks if: "Hitachi Energy's order backlog divided by its revenue over the previous four quarters, both in US dollars as Hitachi reports them (about 3.06 at 30 June 2026), falls below 2.5 at two consecutive quarter ends before 31 March 2031, the end of fiscal 2030; or its orders for any full fiscal year up to fiscal 2030 fall below its revenue for that year."
+
+Where later evidence bears on it: the ratio rose to about 3.1 at 30 September 2026 (Hitachi, 28 October 2026). The claim holds. Its South Boston date came from trade press, not Hitachi.
+
+**Eaton is shipping more electrical gear than ever, and its order book is growing faster still** (26 October 2026)
+
+Claim: "Eaton is shipping more electrical gear than ever, yet its Electrical Americas backlog keeps growing faster than its sales, so the queue for the equipment inside a data centre's fence, measured in months of sales on order, will keep lengthening until its new plants arrive in 2027."
+
+Breaks if: "Electrical Americas backlog divided by the segment's sales over the previous four quarters (1.05 at June 2026, up from 1.04 in March) falls for two consecutive quarters before mid 2027, when the new plants start; or falls below 0.93, its June 2025 level, before the end of 2027; or the segment's twelve-month book-to-bill falls below 1.0 for two quarters running; or Electrical Americas margin is still falling year on year after Eaton reports price and cost back to neutral."
+
+Where later evidence bears on it: no new figures by 30 October 2026. The rise slowed to 0.01, and some of it may be price.
+
+**Siemens Energy has measured the transformer shortage, and its own chart runs to 2030** (28 October 2026)
+
+Claim: "By Siemens Energy's own estimate, demand for large and medium power transformers in Europe and North America exceeds the combined capacity of all market players in the region in every year through its fiscal 2030, which ends on 30 September 2030, so unfilled orders keep accumulating even as the gap narrows: Grid Technologies' orders stay above its revenue each fiscal year and its backlog in euros keeps growing."
+
+Breaks if: "Before 30 September 2030: Grid Technologies' orders fall below its revenue for any full fiscal year; or its order backlog in euros, as Siemens Energy reports it (€51bn at 30 June 2026), falls for two consecutive quarters; or Siemens Energy publishes a revised estimate showing transformer capacity meeting demand in Europe and North America before fiscal 2030."
+
+Where later evidence bears on it: no new figures by 30 October 2026. Its Charlotte slip rested on a press report; Siemens Energy's last stated date is early 2026, and its release of 3 February 2026 gives none.
+
+<a id="the-equipment-queue"></a>
+
+**New: the equipment queue is kept, not cleared** (30 October 2026)
+
+Claim: "The first wave of new transformer and switchgear plants will not shorten the equipment queue in years of work: at 30 June 2028, Siemens Energy Grid Technologies' order backlog will still be at least 3.6 times its revenue over the previous four quarters (3.96 at 30 June 2026), and Eaton Electrical Americas' backlog at least 1.0 times its sales over the previous four quarters (1.05), even though Siemens Energy's own chart allows its ratio to fall while the pile grows."
+
+Breaks if: "At 30 June 2028, as each company reports it, Siemens Energy Grid Technologies' order backlog in euros divided by its revenue over the previous four quarters is below 3.6, or Eaton Electrical Americas' backlog divided by its sales over the previous four quarters is below 1.0."
+
+## What would prove me wrong

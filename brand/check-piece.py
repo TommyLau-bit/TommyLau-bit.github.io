@@ -71,6 +71,11 @@ DEEP_INVESTOR_WORDS = 2600   # before the exposure map
 DEEP_REQUIRED = ['## Claims on record', '## What would prove me wrong']
 FIGURE_RE = r'(?<![A-Za-z\d.,])\d[\d,.]*(?![A-Za-z]*\d)'
 
+def storyline(s):
+    """The story a reader follows: no charts, no folded evidence or earlier claims."""
+    s = re.sub(r'<figure class="chart">.*?</figure>', ' ', s, flags=re.S)
+    return re.sub(r'<details class="(?:evidence|claims-earlier)">.*?</details>', ' ', s, flags=re.S)
+
 def reading_text(s):
     """The reading body: no exposure map, no sources line, no tags."""
     s = re.sub(r'<section class="exposure">.*?</section>', '', s, flags=re.S)
@@ -87,9 +92,14 @@ def deep_checks(slug, body, draft):
     top, inv = body.split(LAYER_HR, 1)
     if not inv.lstrip().startswith(LAYER_LABEL):
         fails.append(f'the divider must be followed by {LAYER_LABEL}')
-    for h in ('## How it works', '## The number that matters'):
-        if not re.search(rf'^{re.escape(h)}\s*$', top, re.M):
-            fails.append(f'top layer is missing "{h}"')
+    # Story format (STORY-RULES.md, 31 Oct 2026): charts at the turns of the
+    # argument, and no section named after a company.
+    charts = body.count('<figure class="chart">')
+    if not 2 <= charts <= 5:
+        fails.append(f'{charts} charts; a deep piece carries 2 to 4 at the turns of its argument (STORY-RULES.md)')
+    for h in ('## How it works', '## The number that matters', '## The mechanism in depth'):
+        if re.search(rf'^{re.escape(h)}\s*$', body, re.M):
+            fails.append(f'"{h}" is a topic label; headings are steps in the argument (STORY-RULES.md)')
     pos = -1
     for h in DEEP_REQUIRED:
         m = re.search(rf'^{re.escape(h)}\s*$', inv, re.M)
@@ -224,14 +234,14 @@ def check(path):
         fails.append('updated is set without an updateNote saying what changed')
 
     # ── style
-    prose = re.sub(r'<[^>]+>', '', body)
+    prose = re.sub(r'<[^>]+>', '', storyline(body))
     for pat, label in BANNED:
-        hits = re.findall(pat, prose, re.I)
+        hits = re.findall(pat, re.sub(r'<[^>]+>', '', body), re.I)
         if hits:
             fails.append(f'{label} appears {len(hits)}x')
     # length and numbers budget, measured on the reading body only (WRITING-FORMAT §4, §4b);
     # in a deep piece, on the plain-English top only (§D)
-    rb = reading_text(body.split(LAYER_HR)[0])
+    rb = reading_text(storyline(body.split(LAYER_HR)[0]))
     if deep:
         words = len(rb.split())
         lo, hi = DEEP_TOP_WORDS
@@ -242,12 +252,12 @@ def check(path):
         figures = len(re.findall(FIGURE_RE, rb))
         if figures > DEEP_TOP_FIGURES:
             fails.append(f'{figures} figures in the top layer; §D allows {DEEP_TOP_FIGURES}')
-        inv = body.split(LAYER_HR, 1)[1].split('<section class="exposure">')[0]
+        inv = storyline(body.split(LAYER_HR, 1)[1].split('<section class="exposure">')[0])
         iw = len(re.sub(r'<[^>]+>', ' ', inv).split())
         if iw > DEEP_INVESTOR_WORDS:
             fails.append(f'investor layer is {iw} words before the exposure map; §D allows {DEEP_INVESTOR_WORDS:,}')
-        elif iw < 1200:
-            warns.append(f'investor layer is {iw} words; §D asks about 1,200 to 2,500')
+        elif iw < 900:
+            warns.append(f'investor layer storyline is {iw} words; STORY-RULES.md asks about 900 to 2,000')
     else:
         words = len(rb.split())
         if words > 700:
