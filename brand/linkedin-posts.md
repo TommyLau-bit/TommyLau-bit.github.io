@@ -681,3 +681,59 @@ https://thephysicallayer.fyi/journal/contracted-energised-running/
 #DataCentres #AIInfrastructure #Power
 
 ---
+
+## 48 · Hong Kong has the plug (site live Mon 2 Nov 2026, scheduled; LinkedIn Mon 7 Dec, 11:30)
+
+Hong Kong's main utility has finished eight substations for data centres since 2024, three times its count from the previous plan, and plans 18 by 2028.
+
+It is obliged to meet demand at the lowest reasonable cost, and had about a quarter more capacity than its 2025 peak. Its one AI megasite drew a single bid, from a group that plans to let racks, not run chips. The hard part is the chip: under US rules Hong Kong is treated as China, so the hall's address decides the licence.
+
+The piece covers CLP's substations and sales to data centres, the Sandy Ridge tender and its tenant, and the US licence rules by chip and route.
+
+https://thephysicallayer.fyi/journal/hong-kong-has-the-plug/
+
+#DataCentres #HongKong #ExportControls
+
+---
+
+## 49 · Update: Johor and Singapore, own power (site update Wed 4 Nov 2026, scheduled; LinkedIn Wed 9 Dec, 11:30)
+
+A 100 MW data centre running on its own gas turbines in Singapore would burn 1 to 2% of its LNG terminal's capacity, and still would not add a single megawatt of computing.
+
+In America, AI labs build their own gas power to escape the grid queue. In Singapore that is legal, but what is rationed is IT capacity, allocated by call and soon licensed hall by hall, so own power buys nothing. Across the causeway, Malaysia encourages data centres to generate their own power, but through solar with no export.
+
+The update covers Singapore's licences for on-site power, why gas supply is a system risk rather than a campus cap, and Malaysia's solar steer.
+
+https://thephysicallayer.fyi/journal/the-queue-not-the-chip/
+
+#DataCentres #Singapore #Energy
+
+---
+
+## 50 · Update: Building your own power, the gas pipe (site update Fri 6 Nov 2026, scheduled; LinkedIn Mon 14 Dec, 11:30)
+
+The newest Permian gas pipe, 2.8 billion cubic feet a day for one hyperscaler's own power plants, lands in the third quarter of 2030.
+
+A new pipe is contracted take-or-pay by the gas buyer and takes about four years from first bids to gas. That puts the fuel on the same clock as the heavy turbines, which are sold out to 2030. The fastest own-power route I can date from primary sources was built by a pipeline company: Williams' off-grid plants for Meta in Ohio.
+
+The update covers the pipe's contract clock, Kinder Morgan's and Transco's newest lines, and the one test left open.
+
+https://thephysicallayer.fyi/journal/building-your-own-power/
+
+#NaturalGas #DataCentres #EnergyInfrastructure
+
+---
+
+## 51 · Update: Nuclear for AI, fuel contracts (site update Mon 9 Nov 2026, scheduled; LinkedIn Wed 16 Dec, 11:30)
+
+America's reactor owners have not yet bought about half the uranium they expect to need to 2035.
+
+At the end of 2025 they had at most 174 million pounds under contract for 2026 to 2035 and 186 million still to buy, most of it for 2031 to 2035. That is how utilities normally buy, a few years forward, so it is not a shortage. The harder gap is HALEU, the richer fuel new reactors need: the Energy Department has made ten conditional allocations from its own stock and published a tonnage for none of them.
+
+I've updated my nuclear piece with the uranium contract book, the HALEU allocations, and why Kairos's government fuel is for Hermes 1, not the reactor it sold to TVA.
+
+https://thephysicallayer.fyi/journal/nuclear-for-ai/
+
+#Nuclear #Uranium #AIInfrastructure
+
+---

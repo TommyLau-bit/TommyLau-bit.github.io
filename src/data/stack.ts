@@ -21,7 +21,7 @@ export const STACK: Layer[] = [
     kind: 'energy',
     what: 'High-voltage power arrives from the public grid through a substation built for the site.',
     constraint: 'The wait for a connection, and the transformers and switchgear behind it, now runs to years.',
-    pieces: ['the-queue-not-the-chip', 'america-rations-the-plug', 'the-equipment-queue'],
+    pieces: ['the-queue-not-the-chip', 'hong-kong-has-the-plug', 'america-rations-the-plug', 'the-equipment-queue'],
   },
   {
     id: 'onsite',

@@ -303,6 +303,13 @@ export const CLAIMS: Claim[] = [
     breaksIf: 'Crusoe reports the Abilene campus energised or complete by the end of 2026 but Oracle has not reported all eight buildings delivered to its customer by its results for the quarter ending 28 February 2027, or Nebius reports at least 800 megawatts connected at the end of 2026 but, at 30 June 2027, reports active power below 800 megawatts or, if it reports no active figure, annualised revenue below US$9.6 billion, 800 megawatts at its stated 2026 base of US$12 million a megawatt.',
     watch: ['Oracle\'s Abilene delivery figures in its December 2026 and March 2027 results (Oracle reports delivery, not running, by site)', 'Any Crusoe statement that phase two is energised or complete', 'Nebius connected power at the end of 2026, and active power or annualised revenue at 30 June 2027 (about 170 MW active and US$1.25bn, end 2025; US$3.0bn, June 2026)', 'Tenaga\'s data centre load against booked maximum demand (1,256 MW against 5.65 GW, June 2026)'],
   },
+  {
+    id: 'hong-kong-has-the-plug',
+    claim: 'Hong Kong\'s grid is building to its data centres, not holding them back: CLP will have completed the 18 data centre substations in its 2024 to 2028 Development Plan by 31 December 2028, and Sandy Ridge\'s first phase will be energised by 31 December 2027.',
+    breaksIf: 'CLP\'s interim or annual results show fewer than 18 data centre substations completed in its 2024 to 2028 Development Plan by 31 December 2028, or Sandy Ridge\'s first phase is not energised by 31 December 2027.',
+    watch: ['Data centre substations completed in CLP\'s interim and annual results, every six months (eight by June 2026, one more targeted in the second half of 2026; 18 planned by 2028)', 'Sandy Ridge\'s first phase against CLP\'s mid-2027, Range\'s 2028 and the government\'s 2029', 'CLP\'s installed capacity and local maximum demand in the annual Ten-year Summary (9,258 MW against 7,455 MW in 2025; a margin below 15% is a warning, not a break)', 'CLP\'s quarterly sales to data centres (+12.8%, 6.6% of sales, nine months 2026)', 'Range Intelligent Computing\'s filings for Hong Kong capacity, customers and chips', 'BIS licensing of H200-class chips to end users located in China, and any change to 15 CFR 742.6 or to Hong Kong\'s treatment'],
+    date: '2026-10-30',
+  },
 ];
 
 export const claimOf = (id: string) => CLAIMS.find((c) => c.id === id);
