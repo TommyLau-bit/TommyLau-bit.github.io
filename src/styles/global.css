@@ -94,13 +94,24 @@ a:hover { text-decoration-color: var(--accent); }
 .prose h3 { font-family: var(--sans); font-size: 1.1rem; margin-top: 1.8em; }
 .prose blockquote { margin: 1.5em 0; padding: 0 0 0 1rem; border-left: 3px solid var(--rule); color: var(--ink-2); font-style: italic; }
 .prose img { max-width: 100%; height: auto; border-radius: 6px; }
-.prose > table { display: block; width: 100%; max-width: 100%; overflow-x: auto; }
-.prose table { border-collapse: collapse; width: 100%; font-family: var(--sans); font-size: 0.9rem; }
-.prose th, .prose td { text-align: left; padding: 0.5rem 0.6rem; white-space: normal; border-bottom: 1px solid var(--rule); vertical-align: top; }
-.prose th { font-weight: 600; color: var(--ink-2); }
+/* Markdown tables (deep pieces, §D). The table is its own scroll box, so a wide
+   one scrolls sideways inside the column on a phone and the page never does.
+   Cells keep a minimum width so text wraps to readable lines, not one word each. */
+.prose > table { display: block; width: 100%; max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; overscroll-behavior-x: contain; border-top: 1px solid var(--rule); }
+.prose table { border-collapse: collapse; width: 100%; font-family: var(--sans); font-size: 0.86rem; line-height: 1.45; font-variant-numeric: tabular-nums; }
+.prose th, .prose td { text-align: left; padding: 0.5rem 0.75rem 0.5rem 0; min-width: 7.5rem; white-space: normal; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.prose th:last-child, .prose td:last-child { padding-right: 0; }
+.prose th { font-weight: 600; color: var(--ink-2); font-size: 0.78rem; letter-spacing: 0.02em; border-bottom-color: var(--ink-3); }
+.prose td { color: var(--ink); }
 .prose code { font-family: var(--mono); font-size: 0.88em; background: var(--bg-elev); padding: 0.1em 0.35em; border-radius: 4px; }
 .prose pre { background: var(--bg-elev); border: 1px solid var(--rule); border-radius: 6px; padding: 1rem; overflow-x: auto; }
 .prose hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5em 0; }
+/* The deep piece's divider (§D): a quiet rule, then a small label, between the
+   plain-English top and the investor layer. */
+.prose hr.layer { border: 0; border-top: 1px solid var(--ink-3); margin: 3.25em 0 0; opacity: 0.6; }
+.prose hr.layer + .layer-label, .prose p.layer-label { margin: 0.7rem 0 1.6rem; font-family: var(--sans); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); }
+.prose p.layer-label::before { content: ''; display: inline-block; width: 0.55rem; height: 0.55rem; margin-right: 0.5rem; border-radius: 1px; background: var(--accent); vertical-align: 0.02em; }
+.prose a[id]:not([href]) { scroll-margin-top: 1rem; }
 .prose .sources { font-family: var(--sans); font-size: 0.85rem; color: var(--ink-3); }
 .article-foot { border-top: 1px solid var(--rule); padding: 1.5rem 0 3rem; font-family: var(--sans); font-size: 0.9rem; color: var(--ink-2); }
 

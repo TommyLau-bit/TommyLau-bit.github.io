@@ -3,17 +3,18 @@ import Base from '../layouts/Base.astro';
 import Card from '../components/Card.astro';
 import { getCollection } from 'astro:content';
 import { SITE, READING_ORDER } from '../config';
-import { STACK } from '../data/stack';
+import { STACK, layerOf } from '../data/stack';
 const all = await getCollection('journal', ({ data }) => !data.draft);
 const posts = all.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 const byId = Object.fromEntries(all.map((p) => [p.id, p]));
 const first = READING_ORDER.map((id) => byId[id]).find(Boolean);
 const latest = posts.slice(0, 3);
-// one section per layer, grid to chip; pieces newest first within each
+// one section per layer, grid to chip; pieces newest first within each.
+// A piece listed under two layers shows once, under its home layer (layerOf).
 const layers = STACK.map((l, i) => ({
   ...l,
   n: String(i + 1).padStart(2, '0'),
-  posts: posts.filter((p) => l.pieces.includes(p.id)),
+  posts: posts.filter((p) => layerOf(p.id)?.id === l.id),
 })).filter((l) => l.posts.length > 0);
 const mapped = new Set(STACK.flatMap((l) => l.pieces));
 const other = posts.filter((p) => !mapped.has(p.id));

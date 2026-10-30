@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { SITE } from '../../config';
 import { fmtDate } from '../../utils';
-import { claimOf } from '../../data/claims';
+import { claimOf, homeOf, claimHref } from '../../data/claims';
 import { getPitches, latest, fmtMoney, fmtPct } from '../../lib/calls';
 export async function getStaticPaths() {
   const pitches = await getPitches();
@@ -12,7 +12,11 @@ export async function getStaticPaths() {
 const { p } = Astro.props;
 const d = p.data, c = d.call;
 const posts = await getCollection('journal', ({ data }) => !data.draft);
-const claims = d.claims.map((id) => ({ claim: claimOf(id), piece: posts.find((x) => x.id === id) })).filter((x) => x.claim && x.piece);
+// The piece is the one that carries the claim now (its deep piece once merged);
+// the date is the claim's own.
+const claims = d.claims.map((id) => claimOf(id)).filter((c) => c != null)
+  .map((claim) => ({ claim, piece: posts.find((x) => x.id === homeOf(claim)) })).filter((x) => x.piece)
+  .map((x) => ({ ...x, date: x.claim.date ? new Date(x.claim.date) : x.piece!.data.date }));
 const dirSlug = (c.direction ?? 'open').toLowerCase().replace(' ', '');
 const upside = c.target != null ? (c.direction === 'SHORT' ? c.price / c.target - 1 : c.target / c.price - 1) : null;
 const { mark, ret, move } = latest(p);
@@ -57,11 +61,11 @@ const { mark, ret, move } = latest(p);
       <ol>{d.keyPoints.map((k) => <li>{k}</li>)}</ol>
     </section>
 
-    {claims.map(({ claim, piece }) => (
+    {claims.map(({ claim, date }) => (
       <aside class="claim-box">
-        <p class="claim-box-label">The claim it rests on, made {fmtDate(piece!.data.date)}</p>
+        <p class="claim-box-label">The claim it rests on, made {fmtDate(date)}</p>
         <p class="claim-box-claim">{claim!.claim}</p>
-        <p class="claim-box-meta"><a href={`/journal/${piece!.id}/`}>Read the journal piece</a></p>
+        <p class="claim-box-meta"><a href={claimHref(claim)}>Read the journal piece</a></p>
         {d.correction && <p class="claim-box-correction"><span>Where I was wrong</span>{d.correction} The piece and the claim stay as published; the note explains what changed my view.</p>}
       </aside>
     ))}

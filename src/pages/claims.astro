@@ -1,13 +1,15 @@
 ---
 import Base from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
-import { CLAIMS } from '../data/claims';
+import { CLAIMS, homeOf, claimHref } from '../data/claims';
 import { fmtDate } from '../utils';
 const posts = await getCollection('journal', ({ data }) => !data.draft);
 const byId = Object.fromEntries(posts.map((p) => [p.id, p]));
-const rows = CLAIMS.filter((c) => byId[c.id])
-  .map((c) => ({ c, p: byId[c.id] }))
-  .sort((a, b) => b.p.data.date.valueOf() - a.p.data.date.valueOf());
+// A claim shows once the piece that carries it is live: its own piece, or the
+// deep piece it merged into. Its date is its own, never the deep piece's.
+const rows = CLAIMS.filter((c) => byId[homeOf(c)])
+  .map((c) => { const p = byId[homeOf(c)]; return { c, p, date: c.date ? new Date(c.date) : p.data.date }; })
+  .sort((a, b) => b.date.valueOf() - a.date.valueOf());
 ---
 <Base title="Claims" description="Every claim this journal makes, dated, with what would prove it wrong and the evidence to watch.">
   <header class="article-head">
@@ -19,11 +21,11 @@ const rows = CLAIMS.filter((c) => byId[c.id])
   </header>
 
   <ol class="ledger">
-    {rows.map(({ c, p }) => (
+    {rows.map(({ c, p, date }) => (
       <li class="claim" id={c.id}>
-        <span class="claim-date">{fmtDate(p.data.date)}</span>
+        <span class="claim-date">{fmtDate(date)}</span>
         <p class="claim-text">{c.claim}</p>
-        <p class="claim-piece">From <a href={`/journal/${p.id}/`}>{p.data.title}</a></p>
+        <p class="claim-piece">From <a href={claimHref(c)}>{p.data.title}</a></p>
         <details class="claim-detail">
           <summary>What would prove me wrong, and what I watch</summary>
           <p class="claim-sub">Wrong if</p>

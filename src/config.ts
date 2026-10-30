@@ -25,31 +25,26 @@ export const SITE = {
 //
 // Anything beyond PATH_MAX is ignored by /start.
 export const PATH_MAX = 6;
-export const PATH_REVIEWED = 'September 2026';
+export const PATH_REVIEWED = 'October 2026';
 
 export const READING_PATH = [
   {
-    stage: 'What the building is actually doing',
-    note: 'One piece. Read it and the rest of the site makes sense.',
-    ids: ['the-two-seconds-after-you-hit-send'],
+    stage: 'Getting a connection',
+    note: 'Why the plug, not the chip, decides who gets to build, and what builders do when the grid cannot wait.',
+    ids: ['the-queue-not-the-chip', 'building-your-own-power'],
   },
   {
-    stage: 'Getting the power in',
-    note: 'From the grid connection down to the busbar inside the cabinet.',
-    ids: ['the-queue-not-the-chip', 'the-rack-runs-out-of-copper'],
-  },
-  {
-    stage: 'Getting the heat back out',
-    note: 'Every watt that goes in comes out as heat. Somebody has to carry it away.',
-    ids: ['cooling-is-half-the-job'],
+    stage: 'Getting the power in and the heat out',
+    note: 'From the power room down to the rack, then every watt back out as heat, by liquid, air or water.',
+    ids: ['powering-the-rack', 'heat-and-water'],
   },
   {
     stage: 'Keeping the chips fed',
-    note: 'The wiring between chips and the memory beside them decide whether the silicon earns its keep.',
-    ids: ['ten-thousand-chips-one-thought', 'the-countertop-is-the-bottleneck'],
+    note: 'The wiring between chips, and the few factories that make the chips and their memory.',
+    ids: ['ten-thousand-chips-one-thought', 'the-chip-supply-chain'],
   },
 ];
 
 export const READING_ORDER = READING_PATH.flatMap((s) => s.ids).slice(0, PATH_MAX);
 
-export const OG_VERSION = 'v8';
+export const OG_VERSION = 'v9';

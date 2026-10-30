@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import { getCollection, render } from 'astro:content';
 import { SITE, OG_VERSION } from '../../config';
 import { fmtDate, readingTime } from '../../utils';
-import { claimOf } from '../../data/claims';
+import { claimOf, claimsHomedAt } from '../../data/claims';
 import { getPitches, pitchesFor, callLabel } from '../../lib/calls';
 import { layerOf } from '../../data/stack';
 import { exposureOf, slugify } from '../../lib/exposure';
@@ -13,7 +13,10 @@ export async function getStaticPaths() {
 }
 const { p } = Astro.props;
 const { Content } = await render(p);
-const claim = claimOf(p.id);
+// An ordinary piece shows its one claim here. A deep piece that other claims
+// have merged into shows none: its body carries the "Claims on record" block.
+const isHome = claimsHomedAt(p.id).some((c) => c.home === p.id);
+const claim = isHome ? undefined : claimOf(p.id);
 const notes = pitchesFor(await getPitches(), p.id);
 const layer = layerOf(p.id);
 const companies = [...new Set(exposureOf(p).flatMap((r) => r.names))];

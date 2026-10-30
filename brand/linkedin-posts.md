@@ -541,3 +541,143 @@ https://thephysicallayer.fyi/journal/water-is-a-siting-problem/
 #DataCentres #Water #Cooling
 
 ---
+
+## 38 · Johor and Singapore: the plug, not the chip (site live 30 Oct 2026; LinkedIn not yet scheduled)
+
+Malaysia's data centres draw less than a quarter of the power they have booked from the grid.
+
+Johor holds two thirds of Malaysia's secured data centre capacity, and across the causeway Singapore allocates new capacity in rationed batches, 200 megawatts provisionally in August. In both, the connection decides who gets to build. In Johor, the halls then fill only as fast as tenants bring chips, some of which need an American licence.
+
+The piece covers the three clocks every campus passes, what Tenaga and Singapore's regulators publish, and the claims I have on record.
+
+https://thephysicallayer.fyi/journal/the-queue-not-the-chip/
+
+#DataCentres #Grid #SoutheastAsia
+
+---
+
+## 39 · America rations the plug (site live 30 Oct 2026; LinkedIn not yet scheduled)
+
+Texas has been asked to connect over 474 gigawatts of new demand, more than five times the most power it has ever used at once.
+
+Most of it is data centres, and America cannot build wires that fast. So its grids are rationing the connection: a firm plug that waits years for new lines, and an earlier one the grid can cut first. The same sites must now stay on through faults, after 3,800 megawatts of data centres in Dominion's Virginia zone dropped to backup power in July.
+
+The piece covers who can be cut, who pays for the wait, and what backs the sites up: generators, batteries or slower chips.
+
+https://thephysicallayer.fyi/journal/america-rations-the-plug/
+
+#DataCentres #Grid #Energy
+
+---
+
+## 40 · The equipment queue (site live 30 Oct 2026; LinkedIn not yet scheduled)
+
+Hitachi Energy had $66.9 billion of orders waiting at the end of September, about three years of work, and it plans to keep it that way through 2030.
+
+It is building or expanding more than 40 factories. So are Siemens Energy, Eaton and Schneider Electric, which make the transformers and switchgear an AI data centre cannot switch on without. Yet each reports a bigger pile of signed orders than a year ago, and Siemens Energy's own estimate has transformer demand in Europe and North America still ahead of every maker's capacity in 2030.
+
+The piece puts the four makers side by side: years of work from each one's latest filing, every new plant with its date, and the claims I have on record.
+
+https://thephysicallayer.fyi/journal/the-equipment-queue/
+
+#Transformers #DataCentres #EnergyInfrastructure
+
+---
+
+## 41 · Building your own power (site live 30 Oct 2026; LinkedIn not yet scheduled)
+
+GE Vernova has 122 gigawatts of gas turbines under contract and ships about 20 a year.
+
+AI campuses tired of waiting for the grid are building their own gas power, and they are queuing beside utilities for the same machines, with places now sold for 2032. Even the fast lane is full: GE Vernova took orders for 127 jet-engine turbines in nine months and shipped 39.
+
+The piece covers the four clocks that replace the grid's, from turbine slots to blades, air permits and gas pipes, and the claims I have on record.
+
+https://thephysicallayer.fyi/journal/building-your-own-power/
+
+#GasTurbines #DataCentres #EnergyInfrastructure
+
+---
+
+## 42 · Nuclear for AI (site live 30 Oct 2026; LinkedIn not yet scheduled)
+
+The only American plant that has made the near-20% uranium the new reactors need delivered 900 kilograms in one contract phase, and in June its contracted production stopped.
+
+That fuel, HALEU, is what Oklo, TerraPower and Kairos Power need, and the next contracted American tonne is due in 2032. So the nuclear power AI gets this decade comes from reactors that already exist: Crane for Microsoft in 2027, uprates for Google through 2032, and two other restarts, each reusing a licensed site, a grid place and ordinary fuel.
+
+The piece covers a dated ladder of every route from restart to advanced reactor, the gate each one waits on, and the enrichment supply behind them.
+
+https://thephysicallayer.fyi/journal/nuclear-for-ai/
+
+#NuclearEnergy #DataCentres #EnergyInfrastructure
+
+---
+
+## 43 · Powering the rack (site live 30 Oct 2026; LinkedIn not yet scheduled)
+
+Nvidia says a one megawatt AI rack, wired the way racks are today, would need up to 200 kilograms of copper bar.
+
+So the rack is moving from 54 volts to 800, and each megawatt now holds more power gear: Vertiv puts its own opportunity at US$3.25 million to 3.75 million per megawatt. On Nvidia's own dates, the new voltage reaches the rack before the building, which decides where silicon carbide and gallium nitride chips get used first.
+
+The piece covers the power chain step by step, what Nvidia has actually said on timing, and the claims I have on record on Vertiv and Texas Instruments.
+
+https://thephysicallayer.fyi/journal/powering-the-rack/
+
+#DataCentres #Power #800VDC
+
+---
+
+## 44 · Heat and water (site live 30 Oct 2026; LinkedIn not yet scheduled)
+
+A liquid-cooled AI hall can go from about 2 litres of water per kilowatt-hour to almost none, and barely change its power use.
+
+That is what Lawrence Berkeley National Laboratory's simulations show when a cooling tower is swapped for a dry cooler. Heat has pushed AI chips onto liquid, and the liquid runs warm enough to cool without evaporating water. So water decides where and how AI halls are cooled, not how many get built. Google air-cools its campuses where it judges the water source at high risk: its Mesa, Arizona site used 9.7 million gallons in 2025, against 469 million at its water-cooled campus in Oregon.
+
+The piece covers the cooling chain, PUE and water use by cooling method, Jane Street's retrofit, and the claims I have on record.
+
+https://thephysicallayer.fyi/journal/heat-and-water/
+
+#DataCentres #Cooling #Water
+
+---
+
+## 45 · Ten thousand chips, one thought (site live 30 Oct 2026; LinkedIn not yet scheduled)
+
+Google's whole optical layer, mirror switches, plugs and fibre, came to under 3 per cent of a 4,096-chip AI pod's power.
+
+The parts of an AI network that only carry or steer light, the fibre and the mirrors, last for years. The parts that make and read it, the lasers and the chips inside each plug, are bought again every time the chips get faster. Nvidia and Broadcom now build optics onto their switches, but both kept the lasers in a plug you can pull out by hand, and Nvidia's own blueprint for its newest systems still picks the plug-in switch.
+
+The piece covers the three distances AI chips talk across, the bill of materials layer by layer, the claims I have on record and where I was wrong.
+
+https://thephysicallayer.fyi/journal/ten-thousand-chips-one-thought/
+
+#AIInfrastructure #Networking #Optics
+
+---
+
+## 46 · The chip supply chain (site live 30 Oct 2026; LinkedIn not yet scheduled)
+
+ASML, the only maker of the machines that print the finest AI chips, says its planned supply for 2027 and 2028 "will not fully meet the demand" of its customers, and some want to order for 2030.
+
+It is not alone. Micron has agreed most of its 2027 stacked memory, and Seagate has allocated most of its data centre drives through 2028. Each is a part only one or a few makers can supply, and each grows only as fast as a new building, so the chip side is booked as far ahead as a grid connection.
+
+The piece covers the lead time at each step from the companies' own filings, one B200 sorted by how long each part takes to replace, and the claims I have on record.
+
+https://thephysicallayer.fyi/journal/the-chip-supply-chain/
+
+#Semiconductors #SupplyChain #AIInfrastructure
+
+---
+
+## 47 · Contracted, energised, running (site live 30 Oct 2026; LinkedIn not yet scheduled)
+
+Nebius has signed rights to 5 gigawatts of power for the end of 2026. It expects 0.8 to 1 gigawatt connected, and at the end of 2025 about 170 megawatts were running chips.
+
+Every AI campus passes five stages: announced, under construction, energised, delivered and running. At Abilene, Texas, the tenant's chips arrived with the power. In Malaysia, connected data centres drew about 22% of the power they had booked in June. Power switched on is necessary. It is not enough.
+
+The piece sets Abilene, Nebius and Jane Street side by side, stage by stage, with the claims I have on record and where I was wrong.
+
+https://thephysicallayer.fyi/journal/contracted-energised-running/
+
+#DataCentres #AIInfrastructure #Power
+
+---

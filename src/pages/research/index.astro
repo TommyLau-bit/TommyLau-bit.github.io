@@ -4,9 +4,11 @@ import { getCollection } from 'astro:content';
 import { SCORECARD_REFRESHED } from '../../data/calls';
 import { getPitches, latest, fmtMoney, fmtPct, callLabel } from '../../lib/calls';
 import { fmtDate } from '../../utils';
+import { claimOf, homeOf } from '../../data/claims';
 const pitches = await getPitches();
 const posts = await getCollection('journal', ({ data }) => !data.draft);
-const coverOf = (id: string) => posts.find((p) => p.id === id)?.data.cover;
+// A merged claim's cover is its deep piece's.
+const coverOf = (id: string) => { const c = claimOf(id); return posts.find((p) => p.id === (c ? homeOf(c) : id))?.data.cover; };
 const rows = pitches.map((p) => ({ p, ...latest(p) }));
 ---
 <Base title="Research" description="Initiation notes on companies in the physical layer of AI, each with the model behind it and a call that is marked every month, right or wrong." wide>

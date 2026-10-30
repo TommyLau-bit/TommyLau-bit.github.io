@@ -4,6 +4,12 @@
   python3 brand/check-piece.py                     # every published piece
   python3 brand/check-piece.py src/content/journal/my-slug.md
 
+A body containing <hr class="layer"> is a deep piece (WRITING-FORMAT.md §D)
+and is checked in deep mode: the 15-figure and length budgets apply to the
+plain-English top only, and the investor layer must carry its claims on
+record, falsifier, exposure map and sources. Any other piece is checked as
+before.
+
 Exit code 1 if anything fails. Warnings do not fail the run.
 """
 import sys, os, re, glob, datetime
@@ -41,7 +47,70 @@ def _read(rel):
 CLAIMS_TS = _read('src/data/claims.ts')
 STACK_TS = _read('src/data/stack.ts')
 CLAIM_IDS = set(re.findall(r"^\s*id: '([^']+)'", CLAIMS_TS, re.M))
+
+def _claims(ts):
+    """Each claims.ts entry as a dict of id, home and claim text."""
+    out = []
+    starts = [m.start() for m in re.finditer(r"^\s*id: '", ts, re.M)] + [len(ts)]
+    for a, b in zip(starts, starts[1:]):
+        blk = ts[a:b]
+        get = lambda k: (re.search(rf"^\s*{k}: '((?:[^'\\]|\\.)*)'", blk, re.M) or [None, None])[1]
+        out.append({'id': get('id'), 'home': get('home'), 'claim': (get('claim') or '').replace("\\'", "'")})
+    return out
+CLAIMS = _claims(CLAIMS_TS)
+def claims_homed_at(slug):
+    """Mirror of claimsHomedAt() in src/data/claims.ts."""
+    return [c for c in CLAIMS if c['home'] == slug or c['id'] == slug]
+
+# Deep pieces (WRITING-FORMAT.md §D)
+LAYER_HR = '<hr class="layer">'
+LAYER_LABEL = '<p class="layer-label">For investors</p>'
+DEEP_TOP_WORDS = (300, 600)
+DEEP_TOP_FIGURES = 15
+DEEP_INVESTOR_WORDS = 2600   # before the exposure map
+DEEP_REQUIRED = ['## Claims on record', '## What would prove me wrong']
+FIGURE_RE = r'(?<![A-Za-z\d.,])\d[\d,.]*(?![A-Za-z]*\d)'
+
+def reading_text(s):
+    """The reading body: no exposure map, no sources line, no tags."""
+    s = re.sub(r'<section class="exposure">.*?</section>', '', s, flags=re.S)
+    s = re.sub(r'<p class="sources">.*?</p>', '', s, flags=re.S)
+    return re.sub(r'<[^>]+>', ' ', s)
 STACK_IDS = set(re.findall(r"'([a-z0-9-]+)'", ''.join(re.findall(r'pieces: \[([^\]]*)\]', STACK_TS))))
+
+def deep_checks(slug, body, draft):
+    """Structure of a deep piece (§D): the divider and its label, the investor
+    layer's required sections, and every claim it carries anchored and quoted."""
+    fails = []
+    if body.count(LAYER_HR) != 1:
+        fails.append(f'a deep piece has exactly one {LAYER_HR}, found {body.count(LAYER_HR)}')
+    top, inv = body.split(LAYER_HR, 1)
+    if not inv.lstrip().startswith(LAYER_LABEL):
+        fails.append(f'the divider must be followed by {LAYER_LABEL}')
+    for h in ('## How it works', '## The number that matters'):
+        if not re.search(rf'^{re.escape(h)}\s*$', top, re.M):
+            fails.append(f'top layer is missing "{h}"')
+    pos = -1
+    for h in DEEP_REQUIRED:
+        m = re.search(rf'^{re.escape(h)}\s*$', inv, re.M)
+        if not m:
+            fails.append(f'investor layer is missing "{h}"')
+        elif m.start() < pos:
+            fails.append(f'"{h}" is out of order')
+        else:
+            pos = m.start()
+    if '<section class="exposure">' in top or '<p class="sources">' in top:
+        fails.append('exposure map and sources belong below the divider')
+    # Every claim the piece carries is quoted word for word, and each merged
+    # slug is anchored so its redirect and its claim link land on it.
+    rec = inv.split('## Claims on record')[1] if '## Claims on record' in inv else ''
+    flat = lambda t: re.sub(r'\s+', ' ', re.sub(r'<[^>]+>|[*_]', '', t)).replace('\u2019', "'").strip()
+    for c in claims_homed_at(slug):
+        if c['claim'] and flat(c['claim']) not in flat(rec):
+            fails.append(f'claim "{c["id"]}" is not quoted word for word in Claims on record')
+        if c['id'] != slug and f'<a id="{c["id"]}"></a>' not in body:
+            fails.append(f'no anchor <a id="{c["id"]}"></a> for the merged claim')
+    return fails
 
 def check(path):
     fails, warns = [], []
@@ -51,6 +120,7 @@ def check(path):
     if len(parts) < 3:
         return [f'{slug}: no frontmatter'], []
     fm, body = parts[1], '---'.join(parts[2:])
+    deep = LAYER_HR in body
 
     def field(k):
         m = re.search(rf'^{k}:\s*(.+?)\s*$', fm, re.M)
@@ -129,12 +199,14 @@ def check(path):
         fails.append('no sources paragraph')
     elif not m.group(1).strip().endswith(SOURCES_TAIL):
         fails.append(f'sources paragraph must end "{SOURCES_TAIL}"')
-    elif len(m.group(1).split()) > 60:
+    elif len(m.group(1).split()) > (200 if deep else 60):
         warns.append(f'sources line is {len(m.group(1).split())} words; the format asks for one or two sentences')
 
     # ── shape
     h2 = re.findall(r'^## (.+)$', body, re.M)
-    if not 2 <= len(h2) <= 4:
+    if deep:
+        fails += deep_checks(slug, body, field('draft') == 'true')
+    elif not 2 <= len(h2) <= 4:
         warns.append(f'{len(h2)} ## sections; the format asks for 3')
     if cat == 'Analysis' and not any('prove me wrong' in h.lower() for h in h2):
         fails.append('an Analysis piece must carry a "What would prove me wrong" section')
@@ -144,7 +216,9 @@ def check(path):
     if field('draft') != 'true':
         if slug not in STACK_IDS:
             fails.append('not on the map: add the slug to one layer in src/data/stack.ts')
-        if cat == 'Analysis' and slug not in CLAIM_IDS:
+        if deep and not claims_homed_at(slug):
+            fails.append('deep piece carries no claim: no entry in src/data/claims.ts has this id or home')
+        if not deep and cat == 'Analysis' and slug not in CLAIM_IDS:
             fails.append('Analysis piece has no entry in src/data/claims.ts')
     if field('updated') and not field('updateNote'):
         fails.append('updated is set without an updateNote saying what changed')
@@ -155,25 +229,41 @@ def check(path):
         hits = re.findall(pat, prose, re.I)
         if hits:
             fails.append(f'{label} appears {len(hits)}x')
-    # length and numbers budget, measured on the reading body only (WRITING-FORMAT §4, §4b)
-    rb = re.sub(r'<section class="exposure">.*?</section>', '', body, flags=re.S)
-    rb = re.sub(r'<p class="sources">.*?</p>', '', rb, flags=re.S)
-    rb = re.sub(r'<[^>]+>', ' ', rb)
-    words = len(rb.split())
-    if words > 700:
-        fails.append(f'{words} words; a journal piece is 450 to 600 in the body (about 5 minutes), never over 700')
-    elif not 400 <= words <= 600:
-        warns.append(f'{words} words; the format asks for 450 to 600')
-    figures = len(re.findall(r'(?<![A-Za-z\d.,])\d[\d,.]*(?![A-Za-z]*\d)', rb))
+    # length and numbers budget, measured on the reading body only (WRITING-FORMAT §4, §4b);
+    # in a deep piece, on the plain-English top only (§D)
+    rb = reading_text(body.split(LAYER_HR)[0])
+    if deep:
+        words = len(rb.split())
+        lo, hi = DEEP_TOP_WORDS
+        if not lo <= words <= hi:
+            fails.append(f'top layer is {words} words; a deep piece\'s plain-English top is {lo} to {hi} (§D asks about 400 to 550)')
+        elif not 400 <= words <= 550:
+            warns.append(f'top layer is {words} words; §D asks about 400 to 550')
+        figures = len(re.findall(FIGURE_RE, rb))
+        if figures > DEEP_TOP_FIGURES:
+            fails.append(f'{figures} figures in the top layer; §D allows {DEEP_TOP_FIGURES}')
+        inv = body.split(LAYER_HR, 1)[1].split('<section class="exposure">')[0]
+        iw = len(re.sub(r'<[^>]+>', ' ', inv).split())
+        if iw > DEEP_INVESTOR_WORDS:
+            fails.append(f'investor layer is {iw} words before the exposure map; §D allows {DEEP_INVESTOR_WORDS:,}')
+        elif iw < 1200:
+            warns.append(f'investor layer is {iw} words; §D asks about 1,200 to 2,500')
+    else:
+        words = len(rb.split())
+        if words > 700:
+            fails.append(f'{words} words; a journal piece is 450 to 600 in the body (about 5 minutes), never over 700')
+        elif not 400 <= words <= 600:
+            warns.append(f'{words} words; the format asks for 450 to 600')
+        figures = len(re.findall(FIGURE_RE, rb))
+        if figures > 25:
+            fails.append(f'{figures} figures in the body; §4b allows 15')
+        elif figures > 15:
+            warns.append(f'{figures} figures in the body; §4b asks for 15 at most')
     money = len(re.findall(r'(?:(?:US|S|HK)?\$|€|£|¥)\s?\d[\d.,]*(?:\s*(?:billion|million|bn)\b)?|(?<![\d.,$€£¥])\d[\d.,]*\s*(?:billion|million|bn)\b', rb))
     if money > 4:
         fails.append(f'{money} money figures; the journal allows 3 company financial figures (§4b), the numbers live in the research note')
     elif money > 3:
         warns.append(f'{money} money figures; §4b allows 3')
-    if figures > 25:
-        fails.append(f'{figures} figures in the body; §4b allows 15')
-    elif figures > 15:
-        warns.append(f'{figures} figures in the body; §4b asks for 15 at most')
     sents = [x for x in re.split(r'(?<=[.!?]) ', ' '.join(
         p for p in prose.split('\n\n') if p.strip() and not p.strip().startswith('#'))) if x.strip()]
     if sents:

@@ -10,6 +10,8 @@ const posts = await getCollection('journal', ({ data }) => !data.draft);
 const byId = Object.fromEntries(posts.map((p) => [p.id, p]));
 const L = (id: string) => STACK.find((l) => l.id === id)!;
 const reads = (ids: string[]) => ids.map((id) => byId[id]).filter(Boolean).map((p) => ({ href: `/journal/${p.id}/`, title: p.data.title }));
+// a section of a deep piece, by the anchor of the piece merged into it (CLAUDE.md, "Merging keeps the record")
+const at = (id: string, anchor: string, title: string) => (byId[id] ? [{ href: `/journal/${id}/#${anchor}`, title }] : []);
 const grid = L('grid'), onsite = L('onsite'), dist = L('distribution'), cool = L('cooling'), net = L('network'), mem = L('memory'), chips = L('chips'), ops = L('operators');
 const funnel = STACK.filter((l) => l.id !== 'operators').map((l, i) => ({ ...l, n: l.pieces.filter((id) => byId[id]).length, w: 100 - i * 8 }));
 
@@ -489,7 +491,7 @@ const n = (i: number) => String(i).padStart(2, '0');
         <div class="rrow"><p class="rname">HBM, substrates, test equipment, photoresist<span>SK Hynix, Samsung, Micron · Ibiden, Unimicron · Advantest, Teradyne</span></p><div class="rbar"><i style="--w:46%"></i></div><p class="rclock">Quarters or years to qualify</p></div>
         <div class="rrow"><p class="rname">Chip factories and packaging lines<span>TSMC, Taiwan</span></p><div class="rbar"><i style="--w:74%"></i></div><p class="rclock">Short of capacity: a new fab takes two to three years to build</p></div>
         <div class="rrow rrow--ck"><p class="rname">EUV machines and their mirrors<span>ASML, Netherlands · ZEISS, Germany</span></p><div class="rbar"><i style="--w:100%"></i></div><p class="rclock">No second source at all</p></div>
-        <p class="panel-foot">A rough sort, from <a href="/journal/nobody-makes-a-b200-alone/">Nobody makes an Nvidia B200 alone</a>. Bar lengths are relative, not measured.</p>
+        <p class="panel-foot">A rough sort, from <a href="/journal/the-chip-supply-chain/#nobody-makes-a-b200-alone">The chip supply chain's slow parts</a>. Bar lengths are relative, not measured.</p>
       </div>
     </div>
 
@@ -581,7 +583,7 @@ const n = (i: number) => String(i).padStart(2, '0');
       <p class="kick kick--energy">{n(5)} · {dist.name}</p>
       <h2>Below one volt, right beside the chip</h2>
       <p>Power stages ringed around each processor take the supply down to below one volt. Cold plates sit on top, with coolant running through them.</p>
-      <ul class="reads">{reads(['ti-feeds-the-chip', 'room-to-spare']).map((r) => <li><a href={r.href}>{r.title}</a></li>)}</ul>
+      <ul class="reads">{[...at('powering-the-rack', 'ti-feeds-the-chip', 'Texas Instruments: the last centimetre'), ...at('heat-and-water', 'room-to-spare', "Inside one hall: Jane Street's retrofit")].map((r) => <li><a href={r.href}>{r.title}</a></li>)}</ul>
     </div></div>
 
     <div class="step" data-scene="5"><div class="card">
@@ -607,14 +609,14 @@ const n = (i: number) => String(i).padStart(2, '0');
       <h2>Many dies at once</h2>
       <p>Every wafer carries many dies, printed layer by layer. ASML describes the technology as unique to itself, and its mirrors come from ZEISS.</p>
       <p class="binds"><strong>What binds.</strong> {chips.constraint}</p>
-      <ul class="reads">{reads(['asml-booked-ahead', 'tsmc-says-it-is-the-bottleneck']).map((r) => <li><a href={r.href}>{r.title}</a></li>)}</ul>
+      <ul class="reads">{[...at('the-chip-supply-chain', 'asml-booked-ahead', 'ASML: the scanner sold into 2028'), ...at('the-chip-supply-chain', 'tsmc-says-it-is-the-bottleneck', 'TSMC: the factory and the package')].map((r) => <li><a href={r.href}>{r.title}</a></li>)}</ul>
     </div></div>
 
     <div class="step" data-scene="7"><div class="card">
       <p class="kick kick--compute">{n(8)} · The clock on each part</p>
       <h2>Where the time goes</h2>
       <p>Some parts could be bought elsewhere within months. Others need a new factory or years of testing first. The slowest link sets the pace for everything above it.</p>
-      <ul class="reads">{reads(['nobody-makes-a-b200-alone', 'ajinomoto-grows-with-the-package']).map((r) => <li><a href={r.href}>{r.title}</a></li>)}</ul>
+      <ul class="reads">{[...at('the-chip-supply-chain', 'nobody-makes-a-b200-alone', 'One B200, sorted by how long each part takes to replace'), ...at('the-chip-supply-chain', 'ajinomoto-grows-with-the-package', 'Ajinomoto: film sold by area, not by chip')].map((r) => <li><a href={r.href}>{r.title}</a></li>)}</ul>
     </div></div>
 
     <div class="step" data-scene="8"><div class="card">
