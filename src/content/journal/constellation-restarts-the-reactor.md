@@ -1,11 +1,11 @@
 ---
 title: "Constellation can bring a closed reactor back by 2027. The grid connection was the hard part."
-date: 2026-10-09T16:43:10+08:00
+date: 2026-10-30T11:47:00+08:00
 summary: "Constellation is bringing back the undamaged reactor at Three Mile Island to power Microsoft's data centres. Repairing the reactor was the familiar part. A fresh connection to the grid would not have been fully ready until around 2030 or later, so Constellation is borrowing one from old units it had planned to retire, and that shows which nuclear power AI can actually get this decade."
 category: "Analysis"
 cover: "/covers/constellation-restarts-the-reactor.svg"
 tags: ["power", "nuclear", "grid", "data-centres"]
-draft: true
+draft: false
 ---
 
 In 1979, one of the two reactors at Three Mile Island in Pennsylvania partly melted down. The other ran on, after a long shutdown, until 2019, when it closed because it was losing money.
