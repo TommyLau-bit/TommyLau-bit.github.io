@@ -6,6 +6,7 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 
 - The site is ten deep pieces, one per mechanism cluster, each in two layers (plain English, then "For investors"). An eleventh, Hong Kong, goes live on Mon 2 Nov.
 - **Standing decision (Tommy, 30 Oct 2026): the site is done for now. Do not keep modifying what does not need it.** Change a live piece only when new evidence lands on its mechanism (the monthly sweep proposes, Tommy picks), never for polish.
+- **Investor first, on every page** (Tommy, 30 Oct 2026, in CLAUDE.md): lists and tables before decoration, counts at the top, no thumbnails in lists, jump links on long pages. Any new page meets this standard.
 - Nothing needs doing until the scheduled jobs below run. When each one reports, check it: page live, update note showing, LinkedIn post listed at the right time. Any "NOT DONE" goes to Tommy.
 - New work follows "Two tracks for new work" in CLAUDE.md: a NEW deep piece for a new mechanism or market, or an UPDATE to an existing one. Ten is not a ceiling. Sourcing method is WRITING-FORMAT.md §E. Each candidate goes to Tommy as one line before any drafting.
 - Briefs for agents are in research-build/deep-pieces/: BRIEF-DEEP.md, BRIEF-DEEP-FACTCHECK.md, BRIEF-GAP-SCOUT.md, BRIEF-UPDATE.md.
@@ -76,3 +77,11 @@ LinkedIn company page queue (11:30): posts 38 to 47 (the ten deep pieces) run Mo
 
    Each went through drafting, a separate fact-check, fixes, and Tommy's OK. The approved copies and change lists are in research-build/deep-pieces/updates/, and the scout notes are research-build/deep-pieces/gap-*.notes.md.
 7. **Workspace clean-up (end of day).** Everything no longer in use moved into research-build/archive/ (nothing deleted): the original pieces, old drafts and sidecars, pre-merge deep drafts, Watch Later and video transcripts, the consolidation plan, the old short-piece briefs and TEMPLATE.md, and 191 unused cover and card images. The empty "Journals " folder is gone. WRITING-FORMAT.md lost its retired history (640 to 590 lines; history in archive/RETIRED-RULES.md, no live rule changed). CLAUDE.md, README.md (now a folder map) and CALLS-SPEC.md were brought up to date. The six finished journal publish jobs were cleared from the scheduler (their SKILL.md files stay on disk in ~/.claude/scheduled-tasks/, as do the folders of the 24 publish tasks deleted earlier; harmless and not shown in the app). Build and checkers clean; git working tree empty (commit 9c19117). Tommy confirmed the day's work and asked for no further modification for its own sake.
+8. **Homepage articles first (a8c9c2e).** Under the hero, every deep piece is listed by layer with its date (text only; Claude's call, from Tommy's investor brief); the map follows as the guided walk. Old card grid and jump chips removed.
+9. **Investor-first upgrade across the site (cd00a01; Tommy gave Claude the call and the go).**
+   - Research: stat strip (notes, long, short, no call, marking), then the calls table first (company, date, call, price, target, latest, return, status, note and model links; company column sticks on phones), then compact note rows with no thumbnails.
+   - Claims: plain header and counts, jump links by layer, claims grouped by map layer, newest first; each shows date and piece above the claim text. Claim ids and wording unchanged.
+   - Every deep piece: a "For investors" line under the summary linking to each investor-layer section (built from the headings below the divider; piece files untouched, so the 4, 6, 9 Nov update jobs' hash guards still match).
+   - Glossary: plain header with section jump links and counts.
+   - Phone header on every page: one compact row (theme button beside the name, tagline hidden), so content starts on the first screen.
+   - CLAUDE.md records the rule. Verified desktop and phone, light and dark, no sideways scroll; build and checkers clean; live and confirmed.
