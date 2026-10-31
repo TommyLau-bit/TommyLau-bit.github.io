@@ -160,7 +160,7 @@ A supplier in a boom says it cannot meet demand when its supply is a building, n
 
 <a id="the-chip-supply-chain"></a>
 
-Now set the chip's clock against the factory's. Nvidia has launched a new flagship about every year: Blackwell in 2024, Blackwell Ultra in 2025 and Rubin in 2026. A TSMC fab begun today takes two to three years to build and one to two more to ramp. It reaches full output when Rubin's third to fifth successors would be on sale, if that pace holds.
+The chip and the factory keep very different clocks. Nvidia has launched a new flagship about every year: Blackwell in 2024, Blackwell Ultra in 2025 and Rubin in 2026. A TSMC fab begun today takes two to three years to build and one to two more to ramp. It reaches full output when Rubin's third to fifth successors would be on sale, if that pace holds.
 
 <figure class="chart">
 <p class="chart-title">A fab begun today reaches full output three to five chip generations after Rubin</p>
@@ -182,13 +182,13 @@ Now set the chip's clock against the factory's. Nvidia has launched a new flagsh
 <figcaption>Nvidia spec pages, as in <a href="/journal/memory-not-maths/">Memory, not maths</a>; TSMC calls of 15 January and 16 April 2026; ASML results, 14 October 2026; Micron Form 10-K (9 October 2026); Ajinomoto release, 7 May 2026. My framing. Grey: the first three years of a new fab; amber: when full output arrives. Open circles are not announced chips.</figcaption>
 </figure>
 
-That turns the usual order round. We picture a chip designed first, then factories built to make it. At the slow steps it runs the other way: the cleanroom, the scanner and the film for a 2030 chip are planned before that chip is named. ASML's customers already ask to order for 2029 and 2030, and Ajinomoto aims its current expansion at demand to 2030, with its next film plant opening in fiscal 2032.
+We picture a chip designed first, then factories built to make it. At the slow steps it runs the other way: the cleanroom, the scanner and the film for a 2030 chip are planned before that chip is named. ASML's customers already ask to order for 2029 and 2030, and Ajinomoto aims its current expansion at demand to 2030, with its next film plant opening in fiscal 2032.
 
 So supply goes first to the buyers who commit first, with the deposits and capacity commitments Nvidia's 10-K describes. A designer that books only once its chip is finished joins the back of the line. The same clock reaches the grid, since Micron names energy infrastructure among the limits on new fabs: the queues in [Johor and Singapore](/journal/the-queue-not-the-chip/) and [the equipment queue](/journal/the-equipment-queue/) sit under the chip's own.
 
 ## Ordinary memory pays for the AI chip's
 
-The second surprise sits in memory. Each AI chip carries far more of it, and each bit costs more cleanroom. Nvidia's H100 of 2022 carried 80 gigabytes and Rubin carries 288, 3.6 times as much, as [Memory, not maths](/journal/memory-not-maths/) shows. Micron says a bit of HBM3E takes about three times the wafer of DDR5, the standard server memory.
+Memory has its own twist. Each AI chip carries far more of it, and each bit costs more cleanroom. Nvidia's H100 of 2022 carried 80 gigabytes and Rubin carries 288, 3.6 times as much, as [Memory, not maths](/journal/memory-not-maths/) shows. Micron says a bit of HBM3E takes about three times the wafer of DDR5, the standard server memory.
 
 <figure class="chart">
 <p class="chart-title">Each AI chip carries 3.6 times the memory, at about three times the wafer per bit</p>
@@ -208,7 +208,7 @@ The second surprise sits in memory. Each AI chip carries far more of it, and eac
 
 Both kinds of memory come out of the same cleanrooms. Micron's 10-K says HBM needs more wafers and cleanroom per bit, so each shift towards it takes supply from ordinary memory, and Micron expects DRAM as a whole to stay supply constrained in 2027 and 2028. The quiet payer is a buyer who never ordered an AI chip: anyone who needs ordinary server memory.
 
-That squeeze should last until Micron's Idaho fabs open, the first in mid 2027 and the second in late 2028, which is why my test asks about 2029. ASML's Capital Markets Day on 10 June 2027 is where I expect to learn how big its 2028 step is. The shortage itself is no secret, since the makers repeat it each quarter; who else it reaches is the less told half.
+ASML's Capital Markets Day on 10 June 2027 is where I expect to learn how big its 2028 step is. The memory squeeze should last until Micron's Idaho fabs open, the first in mid 2027 and the second in late 2028, which is why my test asks about 2029. Until then, every server that never runs a model helps pay for the ones that do.
 
 ## What would prove me wrong
 

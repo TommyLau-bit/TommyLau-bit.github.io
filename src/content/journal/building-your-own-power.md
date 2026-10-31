@@ -177,7 +177,7 @@ The big drilling firm is still booked for years, the lighter rig's diary is fill
 
 <a id="building-your-own-power"></a>
 
-Put two dates side by side. A heavy turbine slot sold now ships in 2032 and makes power no earlier than 2033. Meta's lease on the Hyperion campus runs from 2029 for four years, renewable up to 20. Set side by side, the machine's queue runs longer than the tenant's firm promise.
+A turbine and a lease make an odd pair of clocks. A heavy turbine slot sold now ships in 2032 and makes power no earlier than 2033. Meta's lease on the Hyperion campus runs from 2029 for four years, renewable up to 20. So the machine's queue runs longer than the tenant's firm promise.
 
 <figure class="chart">
 <p class="chart-title">A turbine ordered today makes power about when a four-year lease would end</p>
@@ -201,7 +201,7 @@ Hyperion's first plants are not caught: approved in 2025, they land before the l
 
 ## Every clock is paid for before it starts
 
-The second surprise is who pays for the wait: the buyers, before anything is built. GE Vernova's Power deposits doubled in nine months, to $33.2 billion. Three power companies signed 93% of Transco's new pipe before it was laid. Kinder Morgan's newest pipes are take-or-pay, and one was signed by a hyperscaler.
+Then look at who pays for the wait: the buyers, before anything is built. GE Vernova's Power deposits doubled in nine months, to $33.2 billion. Three power companies signed 93% of Transco's new pipe before it was laid. Kinder Morgan's newest pipes are take-or-pay, and one was signed by a hyperscaler.
 
 <figure class="chart">
 <p class="chart-title">Every clock is paid for by its buyers before it starts</p>
@@ -212,9 +212,9 @@ The second surprise is who pays for the wait: the buyers, before anything is bui
 <figcaption>My framing. GE Vernova Forms 10-Q (Power segment, which also holds nuclear and hydro); Transco's FERC application, docket CP25-10; Kinder Morgan, 21 October 2026; Meta's and Entergy's 2025 Forms 10-K. First power spans the dated routes in the timeline above.</figcaption>
 </figure>
 
-That turns the usual picture of a shortage around. The makers and pipe owners are paid up front, so they gain from the queue without betting on it. The transformer makers in [the equipment queue](/journal/the-equipment-queue/) behave the same way, adding floor space only as fast as orders justify. The buyers carry the risk. If AI demand cools, a reservation can lapse, but a take-or-pay pipe and a minimum charge are still owed.
+In most shortages the seller takes the risk of building ahead. Here the makers and pipe owners are paid up front, so they gain from the queue without betting on it. The transformer makers in [the equipment queue](/journal/the-equipment-queue/) behave the same way, adding floor space only as fast as orders justify. The buyers carry the risk. If AI demand cools, a reservation can lapse, but a take-or-pay pipe and a minimum charge are still owed.
 
-The length of the queue is reported every quarter; the deposits and the lease term sit deeper in the filings. Three figures will show whether it holds. The first is GE Vernova's count at the end of 2026, expected at 130 GW or more. Then come its Power deposits each quarter, and the count at the end of 2027. With heavy turbines sold out to 2030 and slots sold for 2032, it should hold well past my test. The campus that left [the grid's queue](/journal/america-rations-the-plug/) did not leave the waiting behind; it now pays for the wait in advance.
+GE Vernova's count at the end of 2026, expected at 130 GW or more, is the first reading; its Power deposits each quarter and its count at the end of 2027 follow. With heavy turbines sold out to 2030 and slots sold for 2032, the pattern should hold well past my test. The campus that left [the grid's queue](/journal/america-rations-the-plug/) did not leave the waiting behind. It bought the wait, in advance.
 
 ## What would prove me wrong
 

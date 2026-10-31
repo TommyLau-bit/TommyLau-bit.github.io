@@ -196,7 +196,7 @@ Nebius's 5 gigawatts and its 170 running megawatts are both true, and they measu
 
 <a id="contracted-energised-running"></a>
 
-Here is the catch in counting lit windows from outside. Nebius has reported active power only once, so revenue is the best public meter of chips running. But its new deals price at US$20 to 25 million a megawatt a year, against a 2026 base of US$12 million. As those deals switch on, mostly in 2027, each new running megawatt could bill up to about twice what the old ones did.
+Counting lit windows from outside has a catch. Nebius has reported active power only once, so revenue is the best public meter of chips running. But its new deals price at US$20 to 25 million a megawatt a year, against a 2026 base of US$12 million. As those deals switch on, mostly in 2027, each new running megawatt could bill up to about twice what the old ones did.
 
 <figure class="chart">
 <p class="chart-title">The same revenue could mean about half the running megawatts at new-deal prices</p>
@@ -211,7 +211,7 @@ So the meter everyone reads can run ahead of the chips. On my arithmetic, US$9.6
 
 The higher price is the queue showing up in a contract. Later buyers pay more for the same megawatt, as gas turbine buyers do in [Building your own power](/journal/building-your-own-power/). About 70% of Nebius's second quarter deals also carried prepayments covering 50 to 60% of the related capital spending. The builder gains twice, and the late buyer pays twice, in price and in cash up front. The risk of lateness runs the other way: Microsoft's US$17.4 billion agreement pays only for services deployed and available, so a late hall costs the builder. The same caution applies in Johor, where [a hall can be let and earning while it draws little](/journal/the-queue-not-the-chip/).
 
-The prices sit in Nebius's own letters; turning them back into running megawatts is my arithmetic. Watch its year-end 2026 letter for connected power, then its figures at 30 June 2027 for active power or revenue. If both arrive, divide revenue by the new-deal price as well as the old one, and the honest count sits between the two. The gap should last as long as new deals price above the old base.
+The readings to take are Nebius's year-end 2026 letter, for connected power, and its figures at 30 June 2027, for active power or revenue. When they arrive, divide revenue by the new-deal price as well as the old one. The honest count sits between the two, and the gap lasts as long as new deals price above the old base. Until then, the builder whose revenue grows fastest may simply be the one charging most per megawatt.
 
 ## What would prove me wrong
 

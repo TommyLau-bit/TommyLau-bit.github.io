@@ -159,7 +159,7 @@ The old cooker still has its socket and its gas pipe, and the service is booked.
 
 <a id="nuclear-for-ai"></a>
 
-Here is the number that is easy to pass over. Oklo's first 75 MW Aurora rests on 5 tonnes of government HALEU. The only American HALEU production under contract with a stated size is Centrus's federal tonne, due by July 2032. That tonne is a fifth of the award one small reactor's first core rests on.
+One number is easy to pass over. Oklo's first 75 MW Aurora rests on 5 tonnes of government HALEU. The only American HALEU production under contract with a stated size is Centrus's federal tonne, due by July 2032. That tonne is a fifth of the award one small reactor's first core rests on.
 
 <figure class="chart">
 <p class="chart-title">America's next contracted tonne is a fifth of the award behind one small reactor's first core</p>
@@ -191,9 +191,7 @@ The second idea joins this piece to its gas sibling. A heavy gas turbine slot so
 <figcaption>Constellation (20 September 2024, 6 August and 6 October 2026); Google (6 October 2026); GE Vernova call (28 October 2026), as in <a href="/journal/building-your-own-power/">Building your own power</a>; Centrus quarterly report (6 August 2026). Years without a month sit mid-year. My framing: the turbine still needs about 18 months on site, and one tonne is not a fleet.</figcaption>
 </figure>
 
-That is why the old reactors' lead should last the decade, not just open it. On the contracts in place today, a buyer wanting firm power from a big new gas turbine is looking at 2033 at the earliest, and advanced reactors beyond the stock wait on a tonne due in 2032. Until then, existing reactors are among the few firm, carbon-free sources that can grow without queuing for a new reactor or gas turbine. Their owners, Constellation, NextEra and Holtec, hold that window. Buyers who waited pay in years. The quicker gas routes, and Aurora-INL on government stock, are the exceptions worth watching.
-
-The HALEU gap is public in Centrus's own filing. That the gas queue and the fuel queue land in the same year is my framing, and I have not seen it made elsewhere.
+That is why the old reactors' lead should last the decade, not just open it. On the contracts in place today, a buyer wanting firm power from a big new gas turbine is looking at 2033 at the earliest, and advanced reactors beyond the stock wait on a tonne due in 2032. Until then, existing reactors are among the few firm, carbon-free sources that can grow without queuing for a new reactor or gas turbine. Their owners, Constellation, NextEra and Holtec, hold that window. Buyers who waited pay in years. The quicker gas routes, and Aurora-INL on government stock, are the exceptions worth watching. For everyone else, 2032 is the year both queues first deliver, and until then the reactors already standing face few rivals for firm, carbon-free power.
 
 ## What would prove me wrong
 

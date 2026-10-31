@@ -197,9 +197,9 @@ Co-packaging is told as a threat to the plug, but the part it takes out is the t
 <figcaption>My framing, from the parts table at the foot: Nvidia's technical blog (26 August 2025), Broadcom's Davisson release (8 October 2025) and Lumentum's call (11 August 2026). The DSP leaves only where the switch drives its engines directly.</figcaption>
 </figure>
 
-That turns the usual picture round. The further co-packaging spreads, the more each switch leans on the one part both designs keep in a module. A co-packaged engine still needs light fed in from outside, by continuous lasers. On 11 August Lumentum said it was further behind demand on those than on its plug lasers. Co-packaging does not end the laser shortage; it adds a second kind of laser to it.
+The further co-packaging spreads, the more each switch leans on the one part both designs keep in a module. A co-packaged engine still needs light fed in from outside, by continuous lasers. On 11 August Lumentum said it was further behind demand on those than on its plug lasers. Co-packaging does not end the laser shortage; it adds a second kind of laser to it.
 
-So if co-packaging wins, the quiet payer is the translator. My Marvell claim rests on the DSP staying in the plug. Lasers sell into either design, and so does the glass, which Corning makes whatever sits at its ends. The laser starts to look like the slow parts in [the chip supply chain](/journal/the-chip-supply-chain/): few makers, and more output only from a new fab.
+If co-packaging wins, the part that loses is the translator. My Marvell claim rests on the DSP staying in the plug. Lasers sell into either design, and so does the glass, which Corning makes whatever sits at its ends. The laser starts to look like the slow parts in [the chip supply chain](/journal/the-chip-supply-chain/): few makers, and more output only from a new fab.
 
 ## Nvidia dated the engines, and named no lasers to feed them
 
@@ -220,7 +220,7 @@ The two clocks to watch do not run together. Nvidia's release of 21 October date
 <figcaption>Nvidia release, 21 October 2026, which names no laser capacity; Lumentum, as in the table at the foot; Nvidia reference architectures, 15 September 2026. My framing. Early 2028 is placed at February. Broadcom says its own indium phosphide factories are more than tripling capacity, with no date to chart.</figcaption>
 </figure>
 
-If the engines come first, the shortage moves rather than ends: engines would wait on lasers. Supply goes first to buyers who booked lasers early, and Nvidia holds a commitment to buy Lumentum's lasers, of undisclosed size. The threat to the DSP is the familiar half of this story; the load it adds to the laser is the half to watch, through Lumentum's quarterly word on continuous lasers and, above all, the Feynman blueprint. My claim runs to the end of 2028.
+If the engines come first, the shortage moves rather than ends. Supply goes first to buyers who booked lasers early, and Nvidia holds a commitment to buy Lumentum's lasers, of undisclosed size. Lumentum's quarterly word on continuous lasers will show the strain, and the Feynman blueprint will show the design; my claim runs to the end of 2028. Co-packaging is watched for what it removes. The thing to watch is what it waits on: a packager aims for thirty times the engines, and each one stays dark until a laser arrives.
 
 ## What would prove me wrong
 

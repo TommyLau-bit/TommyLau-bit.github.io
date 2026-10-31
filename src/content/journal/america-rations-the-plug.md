@@ -240,7 +240,7 @@ July's morning reads differently once the two rules are put together. About 3,80
 
 Load that can leave in seconds is a reserve, if it leaves on the grid's call rather than at the first flicker. The two rules together make that so: a site must hold on through a fault, and come off when the grid asks. As PJM's transmission owners describe its interim tier, no capacity is bought for such a site, so it adds nothing to the auction households pay for. PJM's market monitor put $6.3 billion of the last one on data centre load.
 
-So households are spared that bill, and the site pays: it must own the backup, or chips that slow, as with Google's 1 GW of deals. The first readings come soon: PJM's filings to FERC in November 2026 and its 2029/2030 auction in December.
+The first readings come soon: PJM's filings to FERC in November 2026 and its 2029/2030 auction in December. Households are spared that bill, and the site pays instead: it must own the backup, or chips that slow, as with Google's 1 GW of deals. In July the reserve left by accident. The new rules ask it to leave on cue.
 
 ## What would prove me wrong
 

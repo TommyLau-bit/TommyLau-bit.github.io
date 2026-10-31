@@ -174,7 +174,7 @@ So the ninety hairdryers stay in the wardrobe, and the pipes still come out warm
 
 <a id="heat-and-water"></a>
 
-Now follow the water past the roof. The water argument looks at the roof, but the lab's own figures put most of a hall's water at the power station. Add the two together, and going dry turns out to mean very different things in the two kinds of hall.
+The water argument stops at the roof. The lab's own figures put most of a hall's water further back, at the power station. Add the two together, and going dry turns out to mean very different things in the two kinds of hall.
 
 The sum is mine, built only from the lab's numbers. It estimates about 4.5 litres consumed at the power station for each kilowatt-hour a data centre buys. A hall's PUE says how many kilowatt-hours it buys for each one of computing. So its whole water bill is the roof figure plus its PUE times 4.5.
 
@@ -206,11 +206,11 @@ The sum is mine, built only from the lab's numbers. It estimates about 4.5 litre
 
 In the air-cooled hall, dropping the tower saves about 2.9 litres on the roof. Its PUE rises about 0.3, which spends about 1.4 litres again at the power station, so nearly half the saving leaks away. In the liquid hall the roof saving of about 2 litres is kept whole, because PUE barely moves.
 
-That turns the usual picture round. Liquid is usually cast as the thirstier choice, and the lab's own averages, set out above, seem to agree. Yet counted from the power station to the roof, at the lab's medians a large liquid hall that goes dry uses about half the water of a midsize air-cooled hall with a tower. That is the lowest of any design the lab simulated, though large halls cooled by outside air come close.
+Liquid is usually cast as the thirstier choice, and the lab's own averages, set out above, seem to agree. Yet counted from the power station to the roof, at the lab's medians a large liquid hall that goes dry uses about half the water of a midsize air-cooled hall with a tower. That is the lowest of any design the lab simulated, though large halls cooled by outside air come close.
 
 It also changes who is helped. A dry roof spares the town next to the hall. A lower PUE spares water wherever the power is made, which need not be the same river. And under a fixed grid allowance, the one Jane Street works to in [power first, chips last](/journal/contracted-energised-running/#power-first-chips-last), every bit of PUE saved is power handed back to the chips: at the lab's medians, a large liquid hall at a PUE of about 1.1 runs over 60% more computing from the same plug than a midsize air-cooled hall at 1.8.
 
-So the makers of cold plates, pumps and dry coolers sell into both halves of the cut, while halls that still cool with air must pay in water or in plug. Google's per-site table each year, through 2027 on my test, will show whether the operators keep making the trade.
+Google's per-site table each year, through 2027 on my test, will show whether operators keep making the trade. If they do, the makers of cold plates, pumps and dry coolers sell into both halves of the cut, and halls that still cool with air pay in water or in plug. The design that looks thirstiest is the one that can go dry at almost no cost in power.
 
 ## What would prove me wrong
 

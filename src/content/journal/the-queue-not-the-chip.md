@@ -239,9 +239,9 @@ So the power Singapore hands out in batches sits booked and idle next door, abou
 
 That shapes who pays for the wait. The operator collects its capacity fees on take-or-pay contracts, whether the hall draws much or little. The campus pays a shortfall charge in its first four years only. The shared network behind it sits in the tariff every Malaysian customer pays, unless the regulator's study of a user-pays basis changes that for 2028 to 2032. PJM's households carry a similar bill in [America rations the plug](/journal/america-rations-the-plug/).
 
-The picture holds for as long as bookings outrun the draw, and three dates will test it. Tenaga's briefing for June 2027, due around August 2027, gives the share my test reads. Singapore reviews its next call 18 to 24 months from August 2026. IMDA's first efficiency rules will show how hard the ration reaches the old halls. Hong Kong is the mirror: there the chip licence turns on the hall's address as much as on the tenant's. [Contracted, energised, running](/journal/contracted-energised-running/) follows the same gap between a lit hall and a working one.
+The picture holds for as long as bookings outrun the draw. Tenaga's briefing for June 2027, due around August 2027, gives the share my test reads; Singapore reviews its next call 18 to 24 months from August 2026; and IMDA's first efficiency rules will show how hard the ration reaches the old halls. [Contracted, energised, running](/journal/contracted-energised-running/) follows the same gap between a lit hall and a working one, and Hong Kong is the mirror: there the chip licence turns on the hall's address as much as on the tenant's.
 
-None of these figures is hidden: Tenaga prints the gap every quarter, and setting it beside Singapore's ration is my framing.
+A causeway apart, Singapore hands out power 50 MW at a time, while Malaysia sits on about 22 times Singapore's latest call, booked and unused.
 
 ## What would prove me wrong
 

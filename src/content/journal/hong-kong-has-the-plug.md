@@ -170,7 +170,7 @@ So the single bid at Sandy Ridge was not a verdict on the plug. The landlord has
 
 <a id="hong-kong-has-the-plug"></a>
 
-Here is what the licence rule quietly fixes in place. The class Washington reviews case by case is set by performance and memory bandwidth limits, pegged at Nvidia's H200, a chip of 2024. Nvidia has launched a new flagship about every year since: Blackwell in 2024, Blackwell Ultra in 2025 and Rubin in 2026. Sandy Ridge opens in phases from mid-2027 on CLP's date, and in 2029 on the government's.
+The licence rule quietly fixes one thing in place: the chip. The class Washington reviews case by case is set by performance and memory bandwidth limits, pegged at Nvidia's H200, a chip of 2024. Nvidia has launched a new flagship about every year since: Blackwell in 2024, Blackwell Ultra in 2025 and Rubin in 2026. Sandy Ridge opens in phases from mid-2027 on CLP's date, and in 2029 on the government's.
 
 <figure class="chart">
 <p class="chart-title">Hong Kong's chip ceiling stands still while Nvidia launches a flagship a year</p>
@@ -205,9 +205,7 @@ So the one door left ajar points at a chip that ages while the halls are built. 
 
 That moves the cost onto the tenant, not the landlord. Range sells racks, space, power and cooling, and its customers bring the chips. A tenant capped at the H200 class needs more chips, and so more racks, for the same work than one on the frontier. The rack seller's business survives the cap; the tenant's bill for each unit of work is what grows.
 
-It also refines the usual picture of a chip-gated place. [In Johor](/journal/the-queue-not-the-chip/), a tenant headquartered in China is presumed refused even the H200 class. In Hong Kong an exporter may seek a licence for that tenant, but only up to a ceiling that falls further behind each year. The gap lasts as long as the rule's limits stand still. Watch for any change to 15 CFR 742.6, any H200-class licence naming a Hong Kong user, and Range's filings on which chips Sandy Ridge will run. CLP's results every six months will show whether the plug keeps arriving first.
-
-The rule is public; setting its fixed ceiling against Nvidia's yearly clock is my framing.
+Johor sharpens the contrast. [In Johor](/journal/the-queue-not-the-chip/), a tenant headquartered in China is presumed refused even the H200 class. In Hong Kong an exporter may seek a licence for that tenant, but only up to a ceiling that falls further behind each year. Three things would move the ceiling: any change to 15 CFR 742.6, any H200-class licence naming a Hong Kong user, and Range's filings on which chips Sandy Ridge will run. Until one does, the halls can open on time and still receive a chip three years old, and the gap widens with every launch.
 
 ## What would prove me wrong
 

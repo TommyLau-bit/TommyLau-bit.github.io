@@ -150,7 +150,7 @@ None of this ends the wait. A queue of three and a half years in 2028 binds a da
 
 <a id="the-equipment-queue"></a>
 
-Here is the part that is easy to miss. Nvidia has launched a new flagship AI chip about every year: Blackwell in 2024, Blackwell Ultra in 2025 and Rubin in 2026. The grid makers' order books for the gear that powers them run three to four years. Measured in chip launches, a transformer ordered from them today joins a pile of work that would take three or four generations to clear.
+Count the wait in chips rather than years. Nvidia has launched a new flagship AI chip about every year: Blackwell in 2024, Blackwell Ultra in 2025 and Rubin in 2026. The grid makers' order books for the gear that powers them run three to four years. Measured in chip launches, a transformer ordered from them today joins a pile of work that would take three or four generations to clear.
 
 <figure class="chart">
 <p class="chart-title">The grid makers' order books outlast three or four chip generations</p>
@@ -165,7 +165,7 @@ Here is the part that is easy to miss. Nvidia has launched a new flagship AI chi
 <figcaption>Nvidia spec pages, as in <a href="/journal/memory-not-maths/">Memory, not maths</a>; years of work from the filings in the table at the foot (Eaton and Siemens Energy at 30 June 2026, Hitachi at 30 September 2026). Years of work is backlog over a year of sales, not a quoted lead time: a new order need not wait behind the whole pile. Open circles are not announced chips.</figcaption>
 </figure>
 
-That turns the usual picture of an AI build upside down. The chip is the part a buyer can change late; the electrical gear is the part that must be settled first. A data centre's real start date is set when its transformer is booked, years before the chips it will run are on sale.
+So an AI build runs backwards from the way it is usually told. The chip is the part a buyer can change late; the electrical gear is the part that must be settled first. A data centre's real start date is set when its transformer is booked, years before the chips it will run are on sale.
 
 ## Two readings decide which way it breaks
 

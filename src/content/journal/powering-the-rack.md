@@ -234,9 +234,9 @@ That trades something scarce for something plentiful. Inside the rack, every slo
 
 Read that way, Nvidia's order looks less like hesitation and more like the cheapest path. Each step moves the conversion further from the chips, and each lands somewhere harder to change. The last ends in the power room, whose transformers and switchgear makers hold years of orders, as [the equipment queue](/journal/the-equipment-queue/) shows. My inference from those order books, not any maker's statement: a hall opening in 2028 has probably already booked gear for an AC power room.
 
-The trade has winners and losers. The makers of power racks and rectifiers sell into every hall that goes rack first, while makers of 54 volt shelves and in-rack copper bar lose their place inside the rack. The hall pays in floor, which is cheap where power runs out first, as at Jane Street. A hall drawn tight around dense racks, with no room for a cabinet beside them, pays more.
+The makers of power racks and rectifiers sell into every hall that goes rack first, while makers of 54 volt shelves and in-rack copper bar lose their place inside the rack. The hall pays in floor, which is cheap where power runs out first, as at Jane Street. A hall drawn tight around dense racks, with no room for a cabinet beside them, pays more.
 
-It should hold for as long as the building step stays undated. Three dates will show it moving: Nvidia's power rack shipping in the second half of 2026, its row power centre in 2027, and the first date Nvidia gives its building block. The voltage change is widely reported. Where the power supplies go, and what that costs the hall, is the less obvious part.
+It should hold for as long as the building step stays undated. Nvidia's power rack ships in the second half of 2026 and its row power centre in 2027; the first date it gives its building block is the one to wait for. The voltage change is the headline. The quieter one is the swap underneath it: rack slots, the dearest space in the hall, traded for floor, often the cheapest.
 
 ## What would prove me wrong
 
