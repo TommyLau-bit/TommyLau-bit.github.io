@@ -1,8 +1,6 @@
 ---
 title: "The chip supply chain's slow parts are sold years before they are made"
 date: 2026-07-14
-updated: 2026-10-31T08:00:00+08:00
-updateNote: "Rewritten on 31 October 2026 as one story with three charts; earlier claims are kept word for word at the end."
 summary: "Most of the companies behind an AI chip could be replaced within months, but a few could not: each is one of very few qualified makers, and each can add supply only by building. Those few, from ASML's scanners to Micron's stacked memory, sell their output a year or more before they make it, and through 2026 they sold further and further ahead. The chip side of AI grows at the pace of its cleanrooms."
 category: "Analysis"
 cover: "/covers/the-chip-supply-chain.svg"

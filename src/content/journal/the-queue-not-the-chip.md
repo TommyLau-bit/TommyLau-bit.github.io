@@ -1,8 +1,6 @@
 ---
 title: "Johor and Singapore: the plug, not the chip, decides who gets to build"
 date: 2026-07-27
-updated: 2026-10-31T08:00:00+08:00
-updateNote: "Rewritten on 31 October 2026 as one story with four charts, folding in the update on whether Singapore and Malaysia data halls can build their own power; earlier claims are kept word for word at the end."
 summary: "Malaysia's data centres draw less than a quarter of the grid power they have booked, while Singapore turns most would-be builders away. Both show the same thing: in Johor and Singapore a grid connection, not a supply of chips, decides who gets to build. Building your own power plant does not get round it, because Singapore rations the computing load a hall may run and Malaysia steers data centres to solar."
 category: "Analysis"
 cover: "/covers/the-queue-not-the-chip.svg"

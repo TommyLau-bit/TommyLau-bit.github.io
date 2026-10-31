@@ -1,8 +1,6 @@
 ---
 title: "America rations the plug: who may be cut, who must hold on, who pays"
 date: 2026-09-22T18:53:00+08:00
-updated: 2026-10-31T08:00:00+08:00
-updateNote: "Rewritten on 31 October 2026 as one story with three charts; batteries are cut down to one paragraph, and the earlier claims are kept word for word at the end."
 summary: "America's grids cannot build wires as fast as data centres arrive, so they are rationing the connection instead. Texas and the federal regulator are adding a cheaper plug the grid may cut first beneath the firm one, PJM's households pay for the power stations that are not being built, and after 3,800 megawatts of data centres dropped off Virginia's grid in one morning, the sites that stay must also hold on when the grid wobbles."
 category: "Analysis"
 cover: "/covers/america-rations-the-plug.svg"

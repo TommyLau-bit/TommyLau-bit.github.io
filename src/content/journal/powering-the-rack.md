@@ -1,8 +1,6 @@
 ---
 title: "Powering the rack: 800 volts reaches the AI rack before it reaches the building"
 date: 2026-08-07
-updated: 2026-10-31T08:00:00+08:00
-updateNote: "Rewritten on 31 October 2026 as one story with four charts; earlier claims are kept word for word at the end."
 summary: "An AI rack now draws so much power that the copper and power supplies wired for it would crowd out the computers, so the industry is moving it from 54 volts to 800. The building around it cannot change as fast, so on Nvidia's own dates the new voltage arrives first as a cabinet beside the rack, fed from the old power room. That order means more power gear in every megawatt until halls run on 800 volts from the grid in."
 category: "Analysis"
 cover: "/covers/powering-the-rack.svg"

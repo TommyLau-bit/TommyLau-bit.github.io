@@ -1,8 +1,6 @@
 ---
 title: "Contracted, energised, running: how Abilene, Nebius and Jane Street's AI capacity really arrives"
 date: 2026-09-25T14:00:00+08:00
-updated: 2026-10-31T08:00:00+08:00
-updateNote: "Rewritten on 31 October 2026 as one story with four charts; the earlier claims are kept word for word at the end."
 summary: "An AI campus passes five stages before it computes anything: announced, being built, energised, delivered and running. Power switched on is the last stage a builder controls, and only running chips compute. Jane Street buys the slow stages first, Abilene's tenant brought its chips with the power, Nebius is paid only once chips run, and in Malaysia connected data centres drew about a fifth of the power they had booked."
 category: "Analysis"
 cover: "/covers/contracted-energised-running.svg"

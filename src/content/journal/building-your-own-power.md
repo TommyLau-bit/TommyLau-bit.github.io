@@ -1,8 +1,6 @@
 ---
 title: "Building your own power: GE Vernova's queue, not the grid's, sets the date"
 date: 2026-09-22T18:56:00+08:00
-updated: 2026-10-31T08:00:00+08:00
-updateNote: "Rewritten on 31 October 2026 as one story with three charts, folding in the approved update on the gas pipe's own contract clock (Transco, Kinder Morgan's Permian Link and Williams' off-grid Socrates plants for Meta); earlier claims are kept word for word at the end."
 summary: "AI campuses that cannot wait years for a grid connection are building their own gas power beside the building. That does not skip the queue. It swaps the grid's queue for the turbine makers', which at GE Vernova is six years of output and still growing, and even the quicker machines and the gas pipes are booked years ahead."
 category: "Analysis"
 cover: "/covers/building-your-own-power.svg"

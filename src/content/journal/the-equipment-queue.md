@@ -1,8 +1,6 @@
 ---
 title: "The equipment queue: transformer and switchgear makers are building to keep the wait, not to end it"
 date: 2026-10-07T14:17:41+08:00
-updated: 2026-10-30T14:20:52+08:00
-updateNote: "Rewritten on 31 October 2026 as one story with three charts; the earlier claims are kept word for word at the end."
 summary: "An AI data centre cannot switch on without a transformer at the grid and switchgear inside its fence. Hitachi Energy, Siemens Energy, Eaton and Schneider Electric make much of that gear, and each is building new factories. Yet each has a bigger pile of signed orders than a year ago, and the makers add floor space only as fast as orders justify, so the wait for equipment is being kept, not cleared."
 category: "Analysis"
 cover: "/covers/the-equipment-queue.svg"

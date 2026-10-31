@@ -1,8 +1,6 @@
 ---
 title: "Nuclear power for AI comes from old reactors first. The new ones wait on fuel."
 date: 2026-09-29T12:49:48+08:00
-updated: 2026-10-31T08:00:00+08:00
-updateNote: "Rewritten on 31 October 2026 as one story with three charts, folding in the approved update on the EIA's uranium contract book, the Energy Department's HALEU allocations and Kairos's Hermes 1 fuel contract; earlier claims are kept word for word at the end."
 summary: "AI companies want nuclear power because it runs day and night without carbon. This decade it will come mostly from reactors that already exist, restarted or upgraded, because they already hold a licensed site, a grid connection and ordinary fuel. The new small and advanced reactors have permits and buyers, but most need a richer uranium fuel that America has stopped making, and what stands behind it is government stock or promises."
 category: "Analysis"
 cover: "/covers/nuclear-for-ai.svg"

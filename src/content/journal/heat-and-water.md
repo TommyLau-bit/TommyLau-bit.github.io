@@ -1,8 +1,6 @@
 ---
 title: "Heat and water decide where AI goes: liquid to the chip, a choice on the roof"
 date: 2026-08-21
-updated: 2026-10-31T08:00:00+08:00
-updateNote: "Rewritten on 31 October 2026 as one story with four charts; the claim on record is kept word for word."
 summary: "AI data centres are blamed for drinking towns dry, yet a US government lab finds a liquid-cooled AI hall can stop evaporating water for almost no extra power. Heat has pushed cooling onto liquid at the chip, and that liquid runs warm enough to be cooled by fans alone. So water decides where and how each hall is cooled, not how many get built."
 category: "Analysis"
 cover: "/covers/heat-and-water.svg"

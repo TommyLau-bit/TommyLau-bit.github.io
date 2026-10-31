@@ -1,8 +1,6 @@
 ---
 title: "How ten thousand chips talk: the glass stays, and the plug survives its replacement"
 date: 2026-09-04
-updated: 2026-10-31T08:00:00+08:00
-updateNote: "Rewritten on 31 October 2026 as one story with three charts; earlier claims are kept word for word at the end."
 summary: "An AI model is spread across thousands of chips that swap results for every word they produce, over copper inside a rack and over light between racks. The glass that carries the light stays for years, while the plugs that make it are bought again at every speed step. Switch makers have built optics onto the switch to retire the plug, yet they kept the laser in one, and Nvidia's newest blueprints still pick the plug."
 category: "Analysis"
 cover: "/covers/ten-thousand-chips-one-thought.svg"
