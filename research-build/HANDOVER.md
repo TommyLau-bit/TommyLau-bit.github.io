@@ -41,7 +41,7 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 
 The old hash guards are gone: the three update jobs no longer touch the pieces. research-build/deep-pieces/updates/ is history now and can move to archive/.
 
-LinkedIn company page queue (11:30): posts 38 to 47 Mon 2 Nov to Wed 2 Dec; Constellation post 34 Fri 4 Dec; then 48 to 51 above; memory post 52 (see the day record).
+LinkedIn company page queue (11:30): posts 38 to 47 Mon 2 Nov to Wed 2 Dec; Fri 4 Dec left empty (post 34 retired 1 Nov, Tommy's word: Constellation is now a section of Nuclear for AI); then 48 to 51 above; memory post 52 (see the day record).
 
 ### Open flags for Tommy (not acted on)
 - LinkedIn post 52 (memory): scheduled by Tommy on his phone for Mon 21 Dec, 11:30 (31 Oct). Not checked by Claude, since Chrome was not connected; confirm it in the company page's scheduled list at the next Chrome session.

@@ -486,7 +486,7 @@ https://thephysicallayer.fyi/map/
 
 ---
 
-## 34 · Constellation restarts the reactor (site live Fri 30 Oct 2026; LinkedIn Fri 4 Dec, 11:30, scheduled)
+## 34 · Constellation restarts the reactor (site live Fri 30 Oct 2026; RETIRED 1 Nov 2026: not in LinkedIn's queue, and the piece is now a section of Nuclear for AI, covered by posts 42 and 51; Tommy agreed to leave Fri 4 Dec empty)
 
 The hardest part of restarting the Three Mile Island reactor was not the reactor. It was the wire.
 
