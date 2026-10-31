@@ -51,9 +51,16 @@ Chart mechanics (no colours inline, so dark mode works):
 
 Width 560; height to fit. Text 12 to 14px. Label lines directly rather than with a legend. Compute coordinates with a short script, never by eye. Phones scroll a chart sideways inside its frame, so keep labels inside the viewBox.
 
-## Keeping the record
+## The ending looks forward, never back (Tommy, 31 Oct 2026)
 
-18. **Every claim stays word for word.** Claims on record carries the piece's own claim in full; earlier claims go inside `<details class="claims-earlier">` with a summary line, quoted exactly as before (with their "Breaks if" and later-evidence notes). claims.ts is never reworded.
+Tommy on the pilot: the claims read as a summary of the whole article, so the second half fell back into topics piled on each other, and a strong start finished poorly. The story must not end on a recap.
+
+18a. **After the counter-evidence beat and the paragraph that answers the opening, the piece turns forward**, in two or three statement headings, then "What would prove me wrong". It answers, from facts already in the piece or its sidecar:
+   - what to watch, with dates: the reading, where it is published, and which reading confirms or cracks the claim;
+   - who gains and who pays if the claim is right, who else is in the same market, and what depends on it (link the sibling pieces);
+   - how long it should hold, and whether it is new or already widely known, in physical and disclosure terms.
+   Whether something is "in the share price", entry points and share prices stay out (CLAUDE.md hard rule); say that work sits in the research notes and link them.
+18b. **Every claim stays word for word, folded at the foot.** The piece's own claim and every earlier claim go in one `<details class="claims-record">` ("The claims on record, word for word") after Research notes, quoted exactly as before with their "Breaks if" and later-evidence notes. The headline claim's `<a id>` moves to the first forward heading. claims.ts is never reworded. The old "## Claims on record" section and `claims-earlier` fold are retired.
 19. **Every `<a id="...">` anchor in the old piece survives**, placed at the beat where that company or idea now appears. Old URLs redirect to them.
 20. **Evidence tables move to the end**, inside `<details class="evidence">` ("The figures behind the charts"), with the arithmetic method and any corrections to earlier pieces. Filing dates, method notes and corrections stay out of the story.
 21. "What would prove me wrong", "Research notes", the exposure map and the sources line stay, short and plain, after the story.

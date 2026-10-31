@@ -146,11 +146,48 @@ Some buyers also route around the queue. Schneider Electric sells more power roo
 
 None of this ends the wait. A queue of three and a half years in 2028 binds a data centre developer as surely as four years today, and the makers' own plans are built to keep it. The second chair has arrived, and the diary still runs years ahead.
 
-## Claims on record
-
-The test this piece stands behind, quoted word for word from the claims page:
+## Four readings will show whether the queue holds
 
 <a id="the-equipment-queue"></a>
+
+My test is plain: at 30 June 2028, Siemens Energy's grid business should still hold at least 3.6 years of work, and Eaton's Electrical Americas at least one. Four readings between now and then will show which way it is going.
+
+**The ratios, every quarter.** Siemens Energy's grid backlog over a year of its sales stood at 3.96 in June 2026; Eaton's stood at 1.05. Both are reported each quarter. A ratio that drifts down while orders still outrun output is the queue being kept; a ratio that falls because orders dry up is the queue clearing.
+
+**The plants against their dates.** Eaton's Jonesville and Bellevue plants are due in 2027, Siemens Energy's new Nuremberg areas by 2028 and Hitachi's Gallman plant in 2029. The strongest confirmation would be a plant that opens on time while its maker's ratio still rises. The first real crack would be Eaton's ratio falling two quarters running before its new plants start, or its book-to-bill over twelve months dropping below 1.0.
+
+**Price or volume.** A backlog can grow because gear costs more, not because more is ordered. Watch for any maker splitting its backlog into price and volume, and for Eaton's margin once price and cost are back in balance. A queue that earns is a queue the makers will defend.
+
+**The makers' own chart.** Siemens Energy's estimate is the backbone of this piece. A revision that shows capacity meeting demand in Europe and North America before 2030 would weaken the case at its source.
+
+## Developers pay for the wait, and the whole grid shares it
+
+If the queue is kept, the makers choose which orders to take and when, and the buyers who booked early are the ones who switch on first. The developer whose plan assumes gear can be ordered once a site is chosen waits behind everyone who booked before it. The makers carry a cost too: Eaton's margin fell as orders priced months earlier met higher metal costs.
+
+The four makers here are not alone in the queue. GE Vernova builds the same grid gear; ABB, Siemens and Vertiv make the equipment inside the fence; Prysmian, Nexans and NKT make the cable between them. Factory-built power rooms are the route around it, and Schneider's Systems business, which sells them, grew faster than its loose parts in the third quarter of 2026: 22% against 17%.
+
+Everything upstream depends on this gear. A utility can promise the power and clear a site's place in the grid queue, and the site still waits for its transformer. That is why the equipment queue sits behind the grid stories in [America rations the plug](/journal/america-rations-the-plug/) and [the plug, not the chip](/journal/the-queue-not-the-chip/).
+
+## The wait should outlast the first new plants
+
+On the makers' own plans, the queue lasts through 2030. Hitachi plans its backlog at 2.5 to 3 times revenue to fiscal 2030, and Siemens Energy's chart still has demand about 10% ahead in 2030. My test reads it at mid 2028, early enough to be wrong in public.
+
+The shortage itself is not news; the makers have shown it to investors since at least November 2025. What is new is the timing. The plants announced in 2024 and 2025 start running from 2027, so the next eighteen months show whether new floor space shortens the wait or only keeps it. Whether any of this is already in the makers' share prices is not a question this journal answers; that work sits in the research notes below.
+
+## What would prove me wrong
+
+The test fails if, at 30 June 2028, Siemens Energy's grid backlog is below 3.6 years of its sales or Eaton's Electrical Americas backlog is below one year. That is a genuine risk. The drift worked out above already takes Siemens Energy close to the line, and Eaton's new plants should be running well before the date.
+
+A pass would not prove a longer wait on its own, since price, early bookings, currency and HVDC contracts can hold a ratio up. Hitachi Energy is left out because its own claim already tests its ratio, at 2.5, to 2031. Schneider publishes no backlog, so it cannot be tested this way.
+
+## Research notes
+
+Each maker has an initiation note: [Hitachi](/research/hitachi/), [Siemens Energy](/research/siemens-energy/), [Eaton](/research/eaton/) and [Schneider Electric](/research/schneider-electric/).
+
+<details class="claims-record">
+<summary>The claims on record, word for word</summary>
+
+The test this piece stands behind, quoted word for word from the claims page:
 
 **The equipment queue is kept, not cleared** (30 October 2026)
 
@@ -158,8 +195,7 @@ Claim: "The first wave of new transformer and switchgear plants will not shorten
 
 Breaks if: "At 30 June 2028, as each company reports it, Siemens Energy Grid Technologies' order backlog in euros divided by its revenue over the previous four quarters is below 3.6, or Eaton Electrical Americas' backlog divided by its sales over the previous four quarters is below 1.0."
 
-<details class="claims-earlier">
-<summary>Four earlier claims on this queue, quoted word for word</summary>
+Four earlier claims on this queue:
 
 **Schneider Electric sells AI data centres the finished system, not the parts** (7 October 2026)
 
@@ -194,16 +230,6 @@ Breaks if: "Before 30 September 2030: Grid Technologies' orders fall below its r
 Where later evidence bears on it: no new figures by 30 October 2026. Its Charlotte slip rested on a press report; Siemens Energy's last stated date is early 2026, and its release of 3 February 2026 gives none.
 
 </details>
-
-## What would prove me wrong
-
-The test fails if, at 30 June 2028, Siemens Energy's grid backlog is below 3.6 years of its sales or Eaton's Electrical Americas backlog is below one year. That is a genuine risk: the drift above already takes Siemens Energy close to the line, and Eaton's new plants should be running well before the date.
-
-A pass would not prove a longer wait on its own, since price, early bookings, currency and HVDC contracts can hold a ratio up. Hitachi Energy is left out because its own claim already tests its ratio, at 2.5, to 2031. Schneider publishes no backlog, so it cannot be tested this way.
-
-## Research notes
-
-Each company has an initiation note resting on its claim: [Hitachi](/research/hitachi/), [Siemens Energy](/research/siemens-energy/), [Eaton](/research/eaton/) and [Schneider Electric](/research/schneider-electric/).
 
 <details class="evidence">
 <summary>The figures behind the charts</summary>

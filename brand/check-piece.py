@@ -74,7 +74,7 @@ FIGURE_RE = r'(?<![A-Za-z\d.,])\d[\d,.]*(?![A-Za-z]*\d)'
 def storyline(s):
     """The story a reader follows: no charts, no folded evidence or earlier claims."""
     s = re.sub(r'<figure class="chart">.*?</figure>', ' ', s, flags=re.S)
-    return re.sub(r'<details class="(?:evidence|claims-earlier)">.*?</details>', ' ', s, flags=re.S)
+    return re.sub(r'<details class="(?:evidence|claims-earlier|claims-record)">.*?</details>', ' ', s, flags=re.S)
 
 def reading_text(s):
     """The reading body: no exposure map, no sources line, no tags."""
@@ -100,8 +100,12 @@ def deep_checks(slug, body, draft):
     for h in ('## How it works', '## The number that matters', '## The mechanism in depth'):
         if re.search(rf'^{re.escape(h)}\s*$', body, re.M):
             fails.append(f'"{h}" is a topic label; headings are steps in the argument (STORY-RULES.md)')
+    # The claims fold at the foot (Tommy, 31 Oct 2026) replaces the old
+    # "Claims on record" section: the story ends on what to watch, not a recap.
+    record = re.search(r'<details class="claims-record">(.*?)</details>', inv, re.S)
+    required = [h for h in DEEP_REQUIRED if not (record and h == '## Claims on record')]
     pos = -1
-    for h in DEEP_REQUIRED:
+    for h in required:
         m = re.search(rf'^{re.escape(h)}\s*$', inv, re.M)
         if not m:
             fails.append(f'investor layer is missing "{h}"')
@@ -113,7 +117,7 @@ def deep_checks(slug, body, draft):
         fails.append('exposure map and sources belong below the divider')
     # Every claim the piece carries is quoted word for word, and each merged
     # slug is anchored so its redirect and its claim link land on it.
-    rec = inv.split('## Claims on record')[1] if '## Claims on record' in inv else ''
+    rec = record.group(1) if record else (inv.split('## Claims on record')[1] if '## Claims on record' in inv else '')
     flat = lambda t: re.sub(r'\s+', ' ', re.sub(r'<[^>]+>|[*_]', '', t)).replace('\u2019', "'").strip()
     for c in claims_homed_at(slug):
         if c['claim'] and flat(c['claim']) not in flat(rec):
