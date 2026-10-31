@@ -155,11 +155,60 @@ Neither half reverses the order. Aurora-INL alone, at 75 MW, would not bring HAL
 
 The old cooker still has its socket and its gas pipe, and the service is booked. The new one is the better machine, but its cartridges come from a shop that has stopped and a few promised shops that have not opened. Nuclear power for AI arrives in the order of what each project already has, and this decade that order starts with the old reactors.
 
-## Claims on record
-
-The test this piece stands behind, quoted word for word from the claims page:
+## The next American tonne is a fifth of one small reactor's fuel award
 
 <a id="nuclear-for-ai"></a>
+
+Here is the number that is easy to pass over. Oklo's first 75 MW Aurora rests on 5 tonnes of government HALEU. The only American HALEU production under contract with a stated size is Centrus's federal tonne, due by July 2032. That tonne is a fifth of the award one small reactor's first core rests on.
+
+<figure class="chart">
+<p class="chart-title">America's next contracted tonne is a fifth of the award behind one small reactor's first core</p>
+<p class="chart-sub">HALEU in tonnes: what Centrus made, what it must make next, and the government stock behind Oklo's first reactor</p>
+<svg viewBox="0 0 560 168" role="img" aria-label="Bar chart of HALEU in tonnes. Centrus's demonstration cascade in Ohio delivered 900 kilograms, 0.9 tonnes, in its second phase alone, to June 2025. Its federal task order of 1 July 2026 asks for 1 tonne by July 2032, the only American HALEU production under contract with a stated size. Oklo's first 75 megawatt Aurora reactor rests on a 5 tonne award of government stock. One tonne is a fifth of that.">
+<g class="c-axis"><text x="236" y="41" text-anchor="end">Centrus made, phase two</text><text x="236" y="85" text-anchor="end">Centrus owes, by July 2032</text><text x="236" y="129" text-anchor="end">Award behind Oklo's first core</text></g><rect class="c-bar c-alt" x="246" y="24" width="43.2" height="24" rx="2"/><text class="c-lab c-s3t" x="297.2" y="41">0.9 tonnes</text><rect class="c-bar c-alt" x="246" y="68" width="48" height="24" rx="2"/><text class="c-lab c-s3t" x="302" y="85">1 tonne</text><rect class="c-bar c-mute" x="246" y="112" width="240" height="24" rx="2"/><text class="c-lab c-s1t" x="494" y="129">5 tonnes</text><line class="c-base" x1="246" y1="16" x2="246" y2="140"/><text class="c-note" x="550" y="160" text-anchor="end">One tonne is a fifth of the award behind one 75 MW reactor</text>
+</svg>
+<figcaption>Centrus quarterly report (6 August 2026); Oklo (7 August 2026). The 0.9 tonnes is phase two alone; earlier phases' output is not stated. Left out: ASP Isotopes' contract for up to 150 tonnes for TerraPower, since it has not yet enriched uranium, and General Matter's task order, which states no size.</figcaption>
+</figure>
+
+So this decade's first cores come from stock, not from new enrichment. The stock was recovered from old reactor fuel and is handed out by allocation, with no tonnage published. That makes the Energy Department, not a market, the gate for the new reactors' early years. The nine holders of its selections gain, and Hermes 2, whose fuel source is unnamed, waits. The loop is plain: nobody builds an enrichment plant before reactors exist to burn its output, and no reactor runs without fuel. Two events would start to break it: Centrus agreeing to run its cascade privately, and ASP Isotopes enriching its first uranium.
+
+## Ordered today, a big turbine and the next HALEU tonne both arrive in 2032
+
+The second idea joins this piece to its gas sibling. A heavy gas turbine slot sold now [ships in 2032](/journal/building-your-own-power/). America's next contracted tonne of HALEU is due by July 2032. Google's uprates are due in full before the end of the same year.
+
+<figure class="chart">
+<p class="chart-title">The gas queue and the fuel queue run out in the same year</p>
+<p class="chart-sub">From agreement or order to the date each owner, maker or contract gives</p>
+<svg viewBox="0 0 560 252" role="img" aria-label="Timeline from 2024 to 2034. The Crane restart, announced in September 2024, can generate in the second half of 2027. Constellation's uprates for Google, agreed on 6 October 2026, deliver the first by 2028 and all 890 megawatts before the end of 2032. A heavy-duty gas turbine slot GE Vernova is selling now ships in 2032 and makes power no earlier than 2033. Centrus's federal task order of 1 July 2026 asks for America's next tonne of HALEU by July 2032. The year 2032 is shaded.">
+<rect class="c-zone" x="477" y="22" width="34" height="200"/><text class="c-zone-t" x="494" y="16" text-anchor="middle">2032</text>
+<g class="c-grid"><line x1="205" y1="22" x2="205" y2="222"/><line x1="273" y1="22" x2="273" y2="222"/><line x1="341" y1="22" x2="341" y2="222"/><line x1="409" y1="22" x2="409" y2="222"/><line x1="477" y1="22" x2="477" y2="222"/><line x1="545" y1="22" x2="545" y2="222"/></g>
+<g class="c-axis"><text x="205" y="240" text-anchor="middle">2024</text><text x="273" y="240" text-anchor="middle">2026</text><text x="341" y="240" text-anchor="middle">2028</text><text x="409" y="240" text-anchor="middle">2030</text><text x="477" y="240" text-anchor="middle">2032</text><text x="545" y="240" text-anchor="middle">2034</text><text x="194" y="48" text-anchor="end">Crane restart</text><text x="194" y="102" text-anchor="end">Uprates for Google</text><text x="194" y="156" text-anchor="end">Gas turbine slot sold now</text><text x="194" y="210" text-anchor="end">Next US HALEU tonne</text></g>
+<g class="c-span"><line x1="229.4" y1="44" x2="332.5" y2="44"/><line x1="299.1" y1="98" x2="509.3" y2="98"/><line x1="301.1" y1="152" x2="494" y2="152"/><line x1="290" y1="206" x2="494" y2="206"/></g>
+<g class="c-start"><circle cx="229.4" cy="44" r="4"/><circle cx="299.1" cy="98" r="4"/><circle cx="301.1" cy="152" r="4"/><circle cx="290" cy="206" r="4"/></g>
+<g class="c-end"><circle cx="332.5" cy="44" r="4.5"/><circle cx="358" cy="98" r="4.5"/><circle cx="509.3" cy="98" r="4.5"/><circle cx="494" cy="152" r="4.5"/><circle cx="494" cy="206" r="4.5"/></g>
+<g class="c-endt"><text x="341.5" y="48">second half 2027</text><text x="509.3" y="118" text-anchor="end">first by 2028, all before the end of 2032</text><text x="494" y="172" text-anchor="end">ships 2032</text><text x="494" y="226" text-anchor="end">due by July 2032</text></g>
+</svg>
+<figcaption>Constellation (20 September 2024, 6 August and 6 October 2026); Google (6 October 2026); GE Vernova call (28 October 2026), as in <a href="/journal/building-your-own-power/">Building your own power</a>; Centrus quarterly report (6 August 2026). Years without a month sit mid-year. My framing: the turbine still needs about 18 months on site, and one tonne is not a fleet.</figcaption>
+</figure>
+
+That is why the old reactors' lead should last the decade, not just open it. On the contracts in place today, a buyer wanting firm power from a big new gas turbine is looking at 2033 at the earliest, and advanced reactors beyond the stock wait on a tonne due in 2032. Until then, existing reactors are among the few firm, carbon-free sources that can grow without queuing for a new reactor or gas turbine. Their owners, Constellation, NextEra and Holtec, hold that window. Buyers who waited pay in years. The quicker gas routes, and Aurora-INL on government stock, are the exceptions worth watching.
+
+The HALEU gap is public in Centrus's own filing. That the gas queue and the fuel queue land in the same year is my framing, and I have not seen it made elsewhere.
+
+## What would prove me wrong
+
+The first test is the bottom rung. If HALEU reactors with 100 MW or more of capacity between them send electricity to American grids by the end of 2030, fuel was not the gate it looks like today. Aurora-INL alone, at 75 MW, would not break it.
+
+The second is the top rung. If none of Crane, Palisades or Duane Arnold has sent power to the grid by the end of 2029, an existing site is not the fast lane I claim.
+
+## Research notes
+
+Two initiation notes rest on these claims: [Constellation](/research/constellation/), on the Crane claim, and [Oklo](/research/oklo/), on the Oklo claim. Whether any of this is already in share prices is a question for these notes, not for the journal.
+
+<details class="claims-record">
+<summary>The claims on record, word for word</summary>
+
+The test this piece stands behind, quoted word for word from the claims page:
 
 **Nuclear for AI: restarts first, new reactors later** (30 October 2026)
 
@@ -167,8 +216,7 @@ Claim: "Nuclear power for AI arrives in the order of what each project already h
 
 Breaks if: "Reactors fuelled with HALEU together send electricity to American grids from 100 MW or more of capacity on or before 31 December 2030; or none of Crane, Palisades or Duane Arnold has delivered power to the grid by 31 December 2029."
 
-<details class="claims-earlier">
-<summary>Two earlier claims on these reactors, quoted word for word</summary>
+Two earlier claims on these reactors:
 
 **Constellation can bring a closed reactor back by 2027. The grid connection was the hard part.** (30 October 2026)
 
@@ -187,16 +235,6 @@ Breaks if: "Oklo starts selling reactors outright to raise cash, or Aurora in Id
 Where later evidence bears on it: I was wrong. The piece said Meta's agreement "includes a binding prepayment to secure fuel". Oklo's quarterly report calls it a mechanism for Meta to prepay, discloses no amount, and does not call it a power purchase agreement. Its exposure map also says Centrus "enriches uranium to HALEU levels". Centrus's contracted HALEU production finished in mid-June 2026, the Energy Department has since ordered only maintenance, and its next contracted tonne is due by July 2032. Its supply to Oklo is a letter of intent, deliveries from 2029. The first half of the claim holds: Oklo still sells power, not reactors, and still targets 2028. But the limb "the letters of intent stay letters" currently points towards a break: no customer megawatt is under a binding power purchase agreement, and Oklo's fuel beyond its first core rests on a letter of intent too.
 
 </details>
-
-## What would prove me wrong
-
-The first test is the bottom rung. If HALEU reactors with 100 MW or more of capacity between them send electricity to American grids by the end of 2030, fuel was not the gate it looks like today. Aurora-INL alone, at 75 MW, would not break it.
-
-The second is the top rung. If none of Crane, Palisades or Duane Arnold has sent power to the grid by the end of 2029, an existing site is not the fast lane I claim.
-
-## Research notes
-
-Two initiation notes rest on these claims: [Constellation](/research/constellation/), on the Crane claim, and [Oklo](/research/oklo/), on the Oklo claim.
 
 <details class="evidence">
 <summary>The figures behind the charts</summary>

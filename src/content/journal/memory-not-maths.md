@@ -164,11 +164,92 @@ The custom half is weaker still. NVHBM has one named chip partner, Amazon's Anna
 
 None of this lets the maths stop waiting. The chef is still faster than the hatch. What has changed is who designs the hatch: the biggest kitchen now draws its own, and the memory makers build it to order.
 
-## Claims on record
-
-The test this piece stands behind, dated when it was written:
+## The stack is tied to the buyer, but the buyer is not tied to the maker
 
 <a id="memory-not-maths"></a>
+
+A custom part usually ties a buyer to the one supplier able to make it. NVHBM runs the other way. The design is Nvidia's, and Nvidia says it will be "available from multiple memory providers", so it can move that design between makers.
+
+The maker gets no such freedom. A stack built around Nvidia's controller fits Nvidia's chips and the partners that link to its systems, with Amazon's Trainium4 the first named. If demand for that design falls, the stack, as I read it, cannot be sold to anyone else as standard HBM.
+
+<figure class="chart">
+<p class="chart-title">With NVHBM, a stack fits one design, and the design can go to any maker</p>
+<p class="chart-sub">Who designs the base die under each stack, and who can use a finished one</p>
+<svg viewBox="0 0 560 246" role="img" aria-label="Two diagrams side by side. Standard HBM: SK Hynix, Samsung and Micron each make their own base die, with the memory controller on the buyer's chip, and the stacks fit any chip built to the standard, from Nvidia, AMD and others, so a spare stack can go to any buyer. NVHBM, from HBM4E: the makers build to Nvidia's own design, with its controller in the base die, and the stacks fit Nvidia's chips and partners, the first named being Amazon's Trainium4, so a spare stack fits one design.">
+<text class="c-lab c-s1t" x="10" y="20">Standard HBM</text>
+<rect class="c-box" x="10.0" y="32" width="78" height="32" rx="4"/><text class="c-box-t" x="49.0" y="53" text-anchor="middle">SK Hynix</text>
+<line class="c-arrow" x1="49.0" y1="67" x2="49.0" y2="86"/><polygon class="c-arrow-head" points="49.0,92 45.0,86 53.0,86"/>
+<rect class="c-box" x="98.0" y="32" width="78" height="32" rx="4"/><text class="c-box-t" x="137.0" y="53" text-anchor="middle">Samsung</text>
+<line class="c-arrow" x1="137.0" y1="67" x2="137.0" y2="86"/><polygon class="c-arrow-head" points="137.0,92 133.0,86 141.0,86"/>
+<rect class="c-box" x="186.0" y="32" width="78" height="32" rx="4"/><text class="c-box-t" x="225.0" y="53" text-anchor="middle">Micron</text>
+<line class="c-arrow" x1="225.0" y1="67" x2="225.0" y2="86"/><polygon class="c-arrow-head" points="225.0,92 221.0,86 229.0,86"/>
+<rect class="c-box" x="10" y="94" width="254" height="46" rx="4"/><text class="c-box-t" x="137.0" y="113" text-anchor="middle">Each maker's own base die</text><text class="c-note" x="137.0" y="131" text-anchor="middle">controller on the buyer's chip</text>
+<rect class="c-box" x="10" y="170" width="254" height="46" rx="4"/><text class="c-box-t" x="137.0" y="189" text-anchor="middle">Any chip built to it</text><text class="c-note" x="137.0" y="207" text-anchor="middle">Nvidia, AMD and others</text>
+<line class="c-arrow" x1="137.0" y1="143" x2="137.0" y2="162"/><polygon class="c-arrow-head" points="137.0,168 133.0,162 141.0,162"/>
+<text class="c-note" x="137.0" y="236" text-anchor="middle">a spare stack can go to any buyer</text>
+<text class="c-lab c-s1t" x="296" y="20">NVHBM, from HBM4E</text>
+<rect class="c-box" x="296.0" y="32" width="78" height="32" rx="4"/><text class="c-box-t" x="335.0" y="53" text-anchor="middle">SK Hynix</text>
+<line class="c-arrow" x1="335.0" y1="67" x2="335.0" y2="86"/><polygon class="c-arrow-head" points="335.0,92 331.0,86 339.0,86"/>
+<rect class="c-box" x="384.0" y="32" width="78" height="32" rx="4"/><text class="c-box-t" x="423.0" y="53" text-anchor="middle">Samsung</text>
+<line class="c-arrow" x1="423.0" y1="67" x2="423.0" y2="86"/><polygon class="c-arrow-head" points="423.0,92 419.0,86 427.0,86"/>
+<rect class="c-box" x="472.0" y="32" width="78" height="32" rx="4"/><text class="c-box-t" x="511.0" y="53" text-anchor="middle">Micron</text>
+<line class="c-arrow" x1="511.0" y1="67" x2="511.0" y2="86"/><polygon class="c-arrow-head" points="511.0,92 507.0,86 515.0,86"/>
+<rect class="c-box" x="296" y="94" width="254" height="46" rx="4"/><text class="c-box-t" x="423.0" y="113" text-anchor="middle">Nvidia's own design</text><text class="c-note" x="423.0" y="131" text-anchor="middle">its controller in the base die</text>
+<rect class="c-box" x="296" y="170" width="254" height="46" rx="4"/><text class="c-box-t" x="423.0" y="189" text-anchor="middle">Nvidia's chips and partners</text><text class="c-note" x="423.0" y="207" text-anchor="middle">first named: Amazon's Trainium4</text>
+<line class="c-arrow" x1="423.0" y1="143" x2="423.0" y2="162"/><polygon class="c-arrow-head" points="423.0,168 419.0,162 427.0,162"/>
+<text class="c-note" x="423.0" y="236" text-anchor="middle">a spare stack fits one design</text>
+</svg>
+<figcaption>My framing. Nvidia blog, 26 August 2026 (controller in the base die; "available from multiple memory providers"; Annapurna Labs, starting with Trainium4); Micron, 30 September 2026, so far the only maker to name itself. SK Hynix and Samsung are shown because Nvidia's 10-K names them as suppliers, not because they have named NVHBM.</figcaption>
+</figure>
+
+Custom HBM itself is not new: SK Hynix spoke of "customized HBM" in 2024. Who draws the base die is the newer part. When the maker drew it, custom was the maker's edge. When the buyer draws it, the edge stays with the buyer, and the makers compete to build its design.
+
+## Memory plants take years; the chips they feed change every year
+
+That matters more because the makers commit to buildings years ahead. SK Hynix's Cheongju packaging plant packages by February 2028 and its Indiana plant in the second half of 2028. Nvidia has launched a new flagship every year since 2024.
+
+<figure class="chart">
+<p class="chart-title">The new memory plants come on stream one to two chip launches after Rubin</p>
+<p class="chart-sub">Nvidia's flagship and the HBM generation by year, against the memory makers' new plants by stated date</p>
+<svg viewBox="0 0 560 292" role="img" aria-label="Timeline from 2026 to 2031. Nvidia's flagship: Rubin in 2026 and Rubin Ultra in 2027, with a new flagship each year after that if the pace holds. HBM generation: HBM4 in 2026 and HBM4E in volume in 2027. SK Hynix's M15X fab at full capacity by the end of 2026. Micron's Singapore packaging plant from early 2027. SK Hynix's P&amp;T7 packaging plant with a test line in October 2027 and packaging by February 2028. SK Hynix's Indiana plant in mass production in the second half of 2028. SK Hynix expects demand to outrun supply through 2030.">
+<g class="c-axis"><text x="150" y="45" text-anchor="end">Nvidia flagship</text><text x="150" y="89" text-anchor="end">HBM generation</text><text x="150" y="119" text-anchor="end">SK Hynix M15X fab</text><text x="150" y="149" text-anchor="end">Micron Singapore</text><text x="150" y="179" text-anchor="end">SK Hynix P&amp;T7</text><text x="150" y="209" text-anchor="end">SK Hynix Indiana</text><text x="150" y="239" text-anchor="end">Demand over supply</text><text x="160.0" y="282" text-anchor="middle">2026</text><text x="237.6" y="282" text-anchor="middle">2027</text><text x="315.2" y="282" text-anchor="middle">2028</text><text x="392.8" y="282" text-anchor="middle">2029</text><text x="470.4" y="282" text-anchor="middle">2030</text><text x="557" y="282" text-anchor="end">2031</text></g>
+<line class="c-today" x1="224.4" y1="14" x2="224.4" y2="264"/><text class="c-today-t" x="228.4" y="12">today</text>
+<circle class="c-dot c-s3" cx="198.8" cy="40" r="5"/><circle class="c-dot c-s3" cx="276.4" cy="40" r="5"/>
+<g class="c-start"><circle cx="354.0" cy="40" r="4"/><circle cx="431.6" cy="40" r="4"/><circle cx="509.2" cy="40" r="4"/></g>
+<text class="c-lab c-s3t" x="198.8" y="30" text-anchor="middle">Rubin</text><text class="c-lab c-s3t" x="276.4" y="30" text-anchor="middle">Rubin Ultra</text>
+<text class="c-note" x="548" y="62" text-anchor="end">a new flagship each year, if the pace holds</text>
+<circle class="c-dot c-s2" cx="198.8" cy="84" r="5"/><circle class="c-dot c-s2" cx="276.4" cy="84" r="5"/>
+<text class="c-lab c-s2t" x="198.8" y="74" text-anchor="middle">HBM4</text>
+<text class="c-lab c-s2t" x="286.4" y="89">HBM4E in volume</text>
+<circle class="c-dot c-s2" cx="233.7" cy="114" r="5"/><text class="c-note" x="243.7" y="118">full capacity by end 2026</text>
+<circle class="c-dot c-s2" cx="253.1" cy="144" r="5"/><text class="c-note" x="263.1" y="148">output from early 2027</text>
+<g class="c-span"><line x1="299.0" y1="174" x2="324.9" y2="174"/></g><g class="c-start"><circle cx="299.0" cy="174" r="4"/></g><circle class="c-dot c-s2" cx="324.9" cy="174" r="5"/><text class="c-note" x="334.9" y="178">packaging by Feb 2028</text>
+<circle class="c-dot c-s2" cx="373.4" cy="204" r="5"/><text class="c-note" x="383.4" y="208">mass production 2H 2028</text>
+<rect class="c-bar" x="224.4" y="227" width="323.6" height="14" rx="2"/>
+</svg>
+<figcaption>Nvidia spec pages; Rubin Ultra by 2027 from Nvidia's blog of 13 October 2025, as in <a href="/journal/powering-the-rack/">Powering the rack</a>; Micron prepared remarks and Form 10-K (30 September and 9 October 2026); SK Hynix releases listed in the sources. Open circles are not announced chips; a year with no month is placed at its middle.</figcaption>
+</figure>
+
+So a line planned today will run stacks for chips a generation or two after Rubin. My reading: under standard HBM, the maker planned that line against a published standard. From HBM4E, part of what it builds is set by a buyer, one generation at a time, after the plant is already standing.
+
+For now the shortage hides that risk. Micron has agreed most of its 2027 HBM already, as [the chip supply chain](/journal/the-chip-supply-chain/) shows, and SK Hynix expects demand to outrun supply through 2030. The risk shows only when that ends. Then the biggest buyer holds a part shaped to its chip and a choice of makers, while chip designers without the volume to commission a stack stay on standard parts.
+
+Three dates will show which way it goes: Micron's quarterly remarks as HBM4E ramps through 2027, Nvidia's GTC in March 2027, on the claim's watch list, for an NVHBM date or second partner, and Samsung's and SK Hynix's own results.
+
+## What would prove me wrong
+
+The test fails if, by the end of 2027, fewer than two of the three makers say in their own words that they ship custom HBM in volume. That is a genuine risk: Micron's HBM4E ramps only in 2027, NVHBM has no published date, and Samsung and SK Hynix have said nothing dated about custom volume in releases I could open.
+
+A pass would show that buyers treat memory as a part worth designing, not prove the memory limit itself. That wider argument weakens if the chips after Rubin and MI400 stop raising memory per chip.
+
+## Research notes
+
+[Micron](/research/micron/) has an initiation note, resting on its own claim about HBM wafers. How far ahead each year's HBM is sold is in [the chip supply chain](/journal/the-chip-supply-chain/). Whether any of this is already in share prices is a question for these notes, not for the journal.
+
+<details class="claims-record">
+<summary>The claims on record, word for word</summary>
+
+The test this piece stands behind, quoted word for word from the claims page:
 
 **From HBM4E, the memory beside AI chips is built to the buyer's design** (31 October 2026)
 
@@ -176,15 +257,9 @@ Claim: "From HBM4E, high-bandwidth memory becomes a part built to the buyer's de
 
 Breaks if: "By 31 December 2027, fewer than two of SK Hynix, Samsung and Micron have said, in their own results releases, filings or newsroom, that they are in volume production of, or shipping in volume, HBM whose base die carries a customer's own design, such as Nvidia's NVHBM; a maker's own base die sold as 'custom HBM' does not count unless the maker says it carries the customer's design. Samples, development, qualification, design wins and plans do not count, and nor do press or research-firm reports."
 
-## What would prove me wrong
+There are no earlier claims on this subject; this is the first.
 
-The test fails if, by the end of 2027, fewer than two of the three makers say in their own words that they ship custom HBM in volume. That is a genuine risk. Micron's HBM4E ramps only in 2027, NVHBM has no published date, and Samsung and SK Hynix have said nothing dated about custom volume in releases I could open.
-
-A pass would not prove the memory limit on its own; it would show that buyers now treat memory as a part worth designing. The wider argument weakens if the generations after Rubin and MI400 stop raising memory per chip, since that would say memory no longer sets what a chip can serve.
-
-## Research notes
-
-[Micron](/research/micron/) has an initiation note, resting on its own claim about HBM wafers. How far ahead each year's HBM is sold is in [the chip supply chain](/journal/the-chip-supply-chain/).
+</details>
 
 <details class="evidence">
 <summary>The figures behind the charts</summary>

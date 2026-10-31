@@ -203,11 +203,55 @@ Each of these is a design, not a running hall. Nvidia's own calendar dates the r
 
 Until then, the rack's new voltage arrives the way the house's new supply does. It runs along the outside first, in a cabinet beside the rack, fed from a power room built for the old one. The full rewire, from the grid in, comes later, and every year it waits is a year a megawatt carries both.
 
-## Claims on record
-
-The test this piece stands behind, quoted word for word from the claims page:
+## 800 volts moves the power supplies out of the rack, onto spare floor
 
 <a id="powering-the-rack"></a>
+
+Nvidia's case for 800 volts was about space as much as copper: at a megawatt, its power shelves would fill up to 64 of the rack's slots. Rack first does not make that conversion vanish. It moves it out of the rack, into a cabinet standing on the floor beside it.
+
+That trades something scarce for something plentiful. Inside the rack, every slot a power supply takes is a slot the chips cannot use. On the floor of an AI hall, space is often what runs out last. Jane Street's refitted Texas site, in [heat and water](/journal/heat-and-water/#room-to-spare), fills its whole grid allowance with racks that take a small fraction of the floor once set aside for chips.
+
+<figure class="chart">
+<p class="chart-title">Each step moves the power supplies further from the chips</p>
+<p class="chart-sub">Where alternating current becomes direct current for an AI rack, by phase, with Nvidia's own dates</p>
+<svg viewBox="0 0 560 270" role="img" aria-label="Diagram of four steps, each further from the chips. Today, inside the rack, 54 volt power shelves would fill up to 64 U of rack slots at 1 megawatt, Nvidia says. In the second half of 2026, Nvidia's power rack stands beside the rack and makes 800 volts from the old AC room, using floor rather than rack slots. In 2027, a row power centre serves up to 2 megawatts for a whole row of racks. Not dated: a rectifier or solid-state transformer at the edge of the building makes grid power into 800 volts before it reaches the hall.">
+<g class="c-axis">
+<text x="128" y="38" text-anchor="end">Today</text>
+<text x="128" y="106" text-anchor="end">Second half 2026</text>
+<text x="128" y="174" text-anchor="end">2027</text>
+<text x="128" y="242" text-anchor="end">Not dated</text>
+</g>
+<rect class="c-box" x="140" y="10" width="412" height="46" rx="4"/><text class="c-box-t" x="152" y="29">Inside the rack: 54 V power shelves</text><text class="c-note" x="152" y="47">at 1 MW, up to 64 U of rack slots, Nvidia says</text>
+<line class="c-arrow" x1="346.0" y1="59" x2="346.0" y2="69"/><polygon class="c-arrow-head" points="346.0,75 342.0,69 350.0,69"/>
+<rect class="c-box" x="140" y="78" width="412" height="46" rx="4"/><text class="c-box-t" x="152" y="97">Beside the rack: Nvidia's power rack</text><text class="c-note" x="152" y="115">800 V from the old AC room; uses floor, not rack slots</text>
+<line class="c-arrow" x1="346.0" y1="127" x2="346.0" y2="137"/><polygon class="c-arrow-head" points="346.0,143 342.0,137 350.0,137"/>
+<rect class="c-box" x="140" y="146" width="412" height="46" rx="4"/><text class="c-box-t" x="152" y="165">End of the row: row power centre</text><text class="c-note" x="152" y="183">up to 2 MW for a whole row of racks</text>
+<line class="c-arrow" x1="346.0" y1="195" x2="346.0" y2="205"/><polygon class="c-arrow-head" points="346.0,211 342.0,205 350.0,205"/>
+<rect class="c-box" x="140" y="214" width="412" height="46" rx="4"/><text class="c-box-t" x="152" y="233">Edge of the building: rectifier or SST</text><text class="c-note" x="152" y="251">grid power made 800 V before it reaches the hall</text>
+</svg>
+<figcaption>Nvidia Technical Blog, 20 May 2025 (up to 64 U at megawatt scale); Nvidia blog, 11 August 2026 (power rack, row power centre, undated DC power block). SST is a solid-state transformer. My framing: the order is Nvidia's; reading it as power supplies moving onto spare floor is mine.</figcaption>
+</figure>
+
+Read that way, Nvidia's order looks less like hesitation and more like the cheapest path. Each step moves the conversion further from the chips, and each lands somewhere harder to change. The last ends in the power room, whose transformers and switchgear makers hold years of orders, as [the equipment queue](/journal/the-equipment-queue/) shows. My inference from those order books, not any maker's statement: a hall opening in 2028 has probably already booked gear for an AC power room.
+
+The trade has winners and losers. The makers of power racks and rectifiers sell into every hall that goes rack first, while makers of 54 volt shelves and in-rack copper bar lose their place inside the rack. The hall pays in floor, which is cheap where power runs out first, as at Jane Street. A hall drawn tight around dense racks, with no room for a cabinet beside them, pays more.
+
+It should hold for as long as the building step stays undated. Three dates will show it moving: Nvidia's power rack shipping in the second half of 2026, its row power centre in 2027, and the first date Nvidia gives its building block. The voltage change is widely reported. Where the power supplies go, and what that costs the hall, is the less obvious part.
+
+## What would prove me wrong
+
+The test is a named hall. If Foxconn's Kaohsiung-1, or any hall of 10 MW or more, goes into service before 2028 fed by a central rectifier or solid-state transformer, the building did not wait for the rack.
+
+That would change more than the timing. A building-first switch would pull SiC demand for solid-state transformers forward and shrink the UPS sooner, and the power supplies would skip the floor altogether.
+
+## Research notes
+
+[Vertiv](/research/vertiv/) and [Texas Instruments](/research/texas-instruments/), each resting on its live claim below. Both notes already record where the September and October pieces were wrong. Whether any of this is already in share prices is a question for these notes, not for the journal.
+
+<details class="claims-record">
+<summary>The claims on record, word for word</summary>
+
+The test this piece stands behind, quoted word for word from the claims page:
 
 **Powering the rack** (30 October 2026)
 
@@ -215,8 +259,7 @@ Claim: "800 volts reaches the AI rack before it reaches the building: until 2028
 
 Breaks if: "Before 1 January 2028, Nvidia, a data centre operator or its equipment supplier states that a data hall of 10 MW or more is in service with 800 VDC distributed from a facility-level rectifier or solid-state transformer, rather than from power racks or row power centres fed by AC. 800 VDC includes ±400 VDC, 800 V pole to pole."
 
-<details class="claims-earlier">
-<summary>Two earlier claims on the rack's power, quoted word for word</summary>
+Earlier claims on the rack's power:
 
 **Vertiv is paid per megawatt, and AI has made every megawatt harder to build** (25 September 2026)
 
@@ -235,16 +278,6 @@ Breaks if: "Racks stay at 54 volts for years, or rivals hold the demanding high 
 Where later evidence bears on it: the growing data centre business is here, about 13% of revenue in the third quarter of 2026. But it grew before 800 V racks ship in volume, so the cause the claim names is not yet shown. TI names power density and higher voltages together, so the growth so far cannot be pinned on 800 V. Nvidia dates its own 800 V power rack to the second half of 2026, so the first limb cannot be tested before 2027. Industrial grew more than 40%, so the part-empty limb is not near.
 
 </details>
-
-## What would prove me wrong
-
-The test is a named hall. If Foxconn's Kaohsiung-1, or any hall of 10 MW or more, goes into service before 2028 fed by a central rectifier or solid-state transformer, the building did not wait for the rack.
-
-That would matter beyond timing. A building-first switch would pull SiC demand for solid-state transformers forward and shrink the UPS sooner. A rack-first switch adds power racks while the AC room stays, which is more gear per megawatt, not less.
-
-## Research notes
-
-[Vertiv](/research/vertiv/) and [Texas Instruments](/research/texas-instruments/), each resting on its live claim above. Both notes already record where the September and October pieces were wrong.
 
 <details class="evidence">
 <summary>The figures behind the charts</summary>

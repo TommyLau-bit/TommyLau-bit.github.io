@@ -170,11 +170,60 @@ That is a limit I concede. Liquid at the chip makes going without water cheap; i
 
 So the ninety hairdryers stay in the wardrobe, and the pipes still come out warm. Whether they meet a wet flannel or a fan is now a choice each site makes, paid for in a little electricity. Heat chose the liquid; water only chooses the roof.
 
-## Claims on record
-
-None of the merged pieces put a claim on record. "Electricity doesn't get used up making AI. It turns into heat. Cooling is half the job." (21 August 2026) and "Jane Street's AI data hall has room to spare, and no power to fill it" (25 September 2026) were Explainers. So the claim below is this page's first, quoted word for word from the claims page:
+## Counted from the power station, the dry liquid hall uses half the water
 
 <a id="heat-and-water"></a>
+
+Now follow the water past the roof. The water argument looks at the roof, but the lab's own figures put most of a hall's water at the power station. Add the two together, and going dry turns out to mean very different things in the two kinds of hall.
+
+The sum is mine, built only from the lab's numbers. It estimates about 4.5 litres consumed at the power station for each kilowatt-hour a data centre buys. A hall's PUE says how many kilowatt-hours it buys for each one of computing. So its whole water bill is the roof figure plus its PUE times 4.5.
+
+<figure class="chart">
+<p class="chart-title">Counted whole, a large dry liquid hall uses about half the water of a midsize air hall with a tower</p>
+<p class="chart-sub">Water consumed per kWh of computing, in litres: at the power station for the electricity bought, plus on the roof</p>
+<svg viewBox="0 0 560 212" role="img" aria-label="Stacked bar chart, my arithmetic from Lawrence Berkeley National Laboratory's figures. Midsize air-cooled hall with a cooling tower: about 6.8 litres at the power station plus 2.9 on the roof, about 9.7 in all. Air-cooled chiller with no water on site: about 8.1, all at the power station. Large liquid-cooled hall with a cooling tower: about 5.0 at the power station plus 2.0 on the roof, about 7.0. Liquid-cooled hall with a dry cooler: about 5.0, all at the power station.">
+<g class="c-axis">
+<text x="180" y="52" text-anchor="end">Air, cooling tower</text>
+<text x="180" y="98" text-anchor="end">Air, chiller, no water</text>
+<text x="180" y="144" text-anchor="end">Liquid, cooling tower</text>
+<text x="180" y="190" text-anchor="end">Liquid, dry cooler</text>
+</g>
+<rect class="c-bar c-mute" x="190" y="34" width="183.1" height="26" rx="2"/>
+<rect class="c-bar c-alt" x="373.1" y="34" width="78.3" height="26" rx="2"/>
+<text class="c-lab c-s1t" x="459.4" y="52">about 9.7 L</text>
+<rect class="c-bar c-mute" x="190" y="80" width="219.7" height="26" rx="2"/>
+<text class="c-lab c-s1t" x="417.7" y="98">about 8.1 L</text>
+<rect class="c-bar c-mute" x="190" y="126" width="134.2" height="26" rx="2"/>
+<rect class="c-bar c-alt" x="324.2" y="126" width="54.0" height="26" rx="2"/>
+<text class="c-lab c-s1t" x="386.2" y="144">about 7.0 L</text>
+<rect class="c-bar c-mute" x="190" y="172" width="134.2" height="26" rx="2"/>
+<text class="c-lab c-s1t" x="332.2" y="190">about 5.0 L</text>
+<text class="c-note" x="281.5" y="26" text-anchor="middle">at the power station</text><text class="c-note" x="412.2" y="26" text-anchor="middle">on the roof</text>
+<line class="c-base" x1="190" y1="30" x2="190" y2="202"/>
+</svg>
+<figcaption>My arithmetic from Lawrence Berkeley National Laboratory, December 2024. Roof water and PUE are its simulated medians as I read them from Figure 4.4, rounded (air: midsize hall; liquid: large hall); the power station share is PUE times its national average of 4.52 litres per kWh a data centre buys. A hall on a different power mix would differ.</figcaption>
+</figure>
+
+In the air-cooled hall, dropping the tower saves about 2.9 litres on the roof. Its PUE rises about 0.3, which spends about 1.4 litres again at the power station, so nearly half the saving leaks away. In the liquid hall the roof saving of about 2 litres is kept whole, because PUE barely moves.
+
+That turns the usual picture round. Liquid is usually cast as the thirstier choice, and the lab's own averages, set out above, seem to agree. Yet counted from the power station to the roof, at the lab's medians a large liquid hall that goes dry uses about half the water of a midsize air-cooled hall with a tower. That is the lowest of any design the lab simulated, though large halls cooled by outside air come close.
+
+It also changes who is helped. A dry roof spares the town next to the hall. A lower PUE spares water wherever the power is made, which need not be the same river. And under a fixed grid allowance, the one Jane Street works to in [power first, chips last](/journal/contracted-energised-running/#power-first-chips-last), every bit of PUE saved is power handed back to the chips: at the lab's medians, a large liquid hall at a PUE of about 1.1 runs over 60% more computing from the same plug than a midsize air-cooled hall at 1.8.
+
+So the makers of cold plates, pumps and dry coolers sell into both halves of the cut, while halls that still cool with air must pay in water or in plug. Google's per-site table each year, through 2027 on my test, will show whether the operators keep making the trade.
+
+## What would prove me wrong
+
+Three things would. First, any of the three Google sites it named as high water risk reaching 50 million gallons a year; Mesa consumed 9.7 million in 2025, against 469 million at The Dalles. Second, any hyperscaler disclosing a new evaporatively cooled campus on a source it rates high risk. Third, a powered AI campus abandoned over water rather than redesigned to cool without it, which would mean water decides how many halls, not only where.
+
+## Research notes
+
+No initiation note rests on this claim yet. Liquid cooling equipment is part of the notes on [Vertiv](/research/vertiv/), [Schneider Electric](/research/schneider-electric/) and [Eaton](/research/eaton/), which rest on their own claims. Whether any of this is already in share prices is a question for these notes, not for the journal.
+
+<details class="claims-record">
+<summary>The claims on record, word for word</summary>
+
+The test this piece stands behind, quoted word for word from the claims page:
 
 **Heat and water decide where AI goes** (30 October 2026)
 
@@ -182,17 +231,9 @@ Claim: "In AI data centres heat sets the cooling method and water sets where and
 
 Breaks if: "Google reports consumption of 50 million gallons or more in 2026 or 2027 at Mesa, Waltham Cross or Canelones; or Google, Microsoft, Amazon or Meta reports opening a data centre cooled by evaporating water from a source it rates at high risk of depletion or scarcity; or a large AI campus with its power already secured is cancelled outright over water rather than redesigned to cool without it."
 
-## What would prove me wrong
+Earlier pieces on this subject made no claim. "Electricity doesn't get used up making AI. It turns into heat. Cooling is half the job." (21 August 2026) and "Jane Street's AI data hall has room to spare, and no power to fill it" (25 September 2026) were Explainers, so the claim above is this page's first.
 
-The first test is Google's own high-risk sites. Mesa consumed 9.7 million gallons in 2025, against 469 million at The Dalles. If any of the three it named reaches 50 million gallons a year, Google is evaporating water where it said it would not.
-
-The second is any hyperscaler disclosing a new evaporatively cooled campus on a source it rates high risk. That would mean water is being spent where it is scarcest, not traded away.
-
-The third is a cancellation. A powered AI campus abandoned over water, rather than redesigned to cool without it, would mean water decides how many, not only where.
-
-## Research notes
-
-No initiation note rests on this claim yet. Liquid cooling equipment is part of the notes on [Vertiv](/research/vertiv/), [Schneider Electric](/research/schneider-electric/) and [Eaton](/research/eaton/), which rest on their own claims.
+</details>
 
 <details class="evidence">
 <summary>The figures behind the charts</summary>
@@ -218,6 +259,8 @@ LBNL's simulated medians by cooling design, across 965 US weather stations, as I
 | Liquid cooling, waterside economiser with cooling tower | Large | 1.1 | 2.0 |
 | Liquid cooling, dry cooler with adiabatic assist | Large | 1.1 | 0.15 |
 | Liquid cooling, dry cooler | Large | 1.1 | 0 |
+
+The water counted from the power station to the roof, in the stacked bar chart, is my arithmetic. The lab puts water consumed at the power station at a "national average of 4.52 L/kWh of indirect water consumption" for each kWh a US data centre used in 2023, from the regional grid mix where data centres sit (December 2024, section 5, beside its Figure 5.10; about 800 billion litres over 176 TWh). Each kWh of computing buys PUE kWh, so the whole figure is site WUE plus PUE times 4.52: air with tower 1.5 × 4.52 = 6.8, plus 2.9, about 9.7 litres; air-cooled chiller 1.8 × 4.52 = 8.1; liquid with tower 1.1 × 4.52 = 5.0, plus 2.0, about 7.0; liquid with dry cooler about 5.0. Dropping the tower in the air hall adds 0.3 × 4.52, about 1.4 litres, at the power station. On a fixed supply, computing scales with 1 divided by PUE, and 1.8 divided by 1.1 is about 1.64. The air and liquid rows compare a midsize hall with a large one, as the lab simulated them, and the method ignores power purchase agreements and on-site generation, which the lab also leaves out.
 
 What the operators report. Each names its measure differently, so the column says exactly what each source measures. Google and AWS report calendar years; Microsoft's year is most likely its fiscal year to June.
 

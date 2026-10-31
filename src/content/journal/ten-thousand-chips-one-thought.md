@@ -168,11 +168,74 @@ None of this retires the plug by itself. A target is not a factory, and even a c
 
 The makers built switches to retire the plug, and then kept one. The reason is the split at the heart of the network: glass and mirrors that only carry light are bought once, while the parts that make light need replacing and change with every speed step. A part that must be replaced has to be reachable. The house is wired once, and the bulbs stay where a hand can reach them.
 
-## Claims on record
-
-The test this piece stands behind, quoted word for word from the claims page:
+## Co-packaging removes the translator, not the laser
 
 <a id="the-plug-stays"></a>
+
+Co-packaging is told as a threat to the plug, but the part it takes out is the translator. Set the two designs side by side. The switch chip is bought new in both, and the fibre stays in both. Only the DSP drops out, and only where the switch drives its engines directly.
+
+<figure class="chart">
+<p class="chart-title">Co-packaging takes out the translator, and both designs still buy the laser</p>
+<p class="chart-sub">What one link between racks buys, with a plug at each end and with a co-packaged switch</p>
+<svg viewBox="0 0 560 270" role="img" aria-label="Diagram comparing two designs of one link between racks. With a plug at each end: the switch chip is new at each speed step, an optical DSP sits inside every plug, an EML laser sits inside the plug, and the glass fibre stays for years. With a co-packaged switch: the switch chip is new, with optical engines on it, the DSP is gone from the link, the laser sits in a removable module, and the fibre stays for years. The laser row is shaded: it is bought in both designs and kept reachable.">
+<rect class="c-zone" x="154" y="138" width="404" height="50"/>
+<g class="c-axis"><text x="255.0" y="28" text-anchor="middle">A plug at each end</text><text x="457.0" y="28" text-anchor="middle">Co-packaged switch</text></g>
+<text class="c-box-t" x="150" y="61" text-anchor="end">Switch chip</text><text class="c-note" x="150" y="77" text-anchor="end">Broadcom, Nvidia</text>
+<rect class="c-box" x="160" y="44" width="190" height="38" rx="4"/><text class="c-box-t" x="255.0" y="68" text-anchor="middle">new at each speed step</text>
+<rect class="c-box" x="362" y="44" width="190" height="38" rx="4"/><text class="c-box-t" x="457.0" y="68" text-anchor="middle">new, with engines on it</text>
+<text class="c-box-t" x="150" y="111" text-anchor="end">Translator (DSP)</text><text class="c-note" x="150" y="127" text-anchor="end">Marvell, Broadcom</text>
+<rect class="c-box" x="160" y="94" width="190" height="38" rx="4"/><text class="c-box-t" x="255.0" y="118" text-anchor="middle">one inside every plug</text>
+<rect class="c-box" x="362" y="94" width="190" height="38" rx="4"/><text class="c-box-t" x="457.0" y="118" text-anchor="middle">gone from the link</text>
+<text class="c-box-t" x="150" y="161" text-anchor="end">Laser</text><text class="c-note" x="150" y="177" text-anchor="end">Lumentum, Coherent</text>
+<rect class="c-box" x="160" y="144" width="190" height="38" rx="4"/><text class="c-box-t" x="255.0" y="168" text-anchor="middle">EML, inside the plug</text>
+<rect class="c-box" x="362" y="144" width="190" height="38" rx="4"/><text class="c-box-t" x="457.0" y="168" text-anchor="middle">in a removable module</text>
+<text class="c-box-t" x="150" y="211" text-anchor="end">Glass fibre</text><text class="c-note" x="150" y="227" text-anchor="end">Corning, Prysmian</text>
+<rect class="c-box" x="160" y="194" width="190" height="38" rx="4"/><text class="c-box-t" x="255.0" y="218" text-anchor="middle">stays for years</text>
+<rect class="c-box" x="362" y="194" width="190" height="38" rx="4"/><text class="c-box-t" x="457.0" y="218" text-anchor="middle">stays for years</text>
+<text class="c-note" x="10" y="256">Shaded: the part that makes the light, bought in both designs and kept reachable</text>
+</svg>
+<figcaption>My framing, from the parts table at the foot: Nvidia's technical blog (26 August 2025), Broadcom's Davisson release (8 October 2025) and Lumentum's call (11 August 2026). The DSP leaves only where the switch drives its engines directly.</figcaption>
+</figure>
+
+That turns the usual picture round. The further co-packaging spreads, the more each switch leans on the one part both designs keep in a module. A co-packaged engine still needs light fed in from outside, by continuous lasers. On 11 August Lumentum said it was further behind demand on those than on its plug lasers. Co-packaging does not end the laser shortage; it adds a second kind of laser to it.
+
+So if co-packaging wins, the quiet payer is the translator. My Marvell claim rests on the DSP staying in the plug. Lasers sell into either design, and so does the glass, which Corning makes whatever sits at its ends. The laser starts to look like the slow parts in [the chip supply chain](/journal/the-chip-supply-chain/): few makers, and more output only from a new fab.
+
+## Nvidia dated the engines, and named no lasers to feed them
+
+The two clocks to watch do not run together. Nvidia's release of 21 October dated SPIL's engine targets, fifteen times today's capacity by mid 2027 and about thirty times by the end of 2028. It gave no figure for the lasers those engines need. The nearest dated new laser fab I have is Lumentum's in Greensboro, North Carolina, with first revenue expected in early 2028.
+
+<figure class="chart">
+<p class="chart-title">SPIL's first engine target falls before Lumentum's new laser fab brings first revenue</p>
+<p class="chart-sub">Dated steps to the end of 2028, in each company's own statements</p>
+<svg viewBox="0 0 560 206" role="img" aria-label="Timeline from 2026 to 2029. SPIL's co-packaged optical engine capacity, 1 times its level today, is targeted at 15 times by mid 2027 and about 30 times by the end of 2028. Lumentum's new laser fab in Greensboro is expected to bring first revenue in early 2028. Nvidia's Vera Rubin blueprints of 15 September 2026 picked the plug; its Feynman blueprint has no date.">
+<g class="c-grid"><line x1="200.0" y1="30" x2="200.0" y2="176"/><line x1="313.3" y1="30" x2="313.3" y2="176"/><line x1="426.7" y1="30" x2="426.7" y2="176"/><line x1="540.0" y1="30" x2="540.0" y2="176"/></g>
+<g class="c-axis"><text x="200.0" y="196" text-anchor="middle">2026</text><text x="313.3" y="196" text-anchor="middle">2027</text><text x="426.7" y="196" text-anchor="middle">2028</text><text x="540.0" y="196" text-anchor="middle">2029</text><text x="190" y="64" text-anchor="end">SPIL engine capacity</text><text x="190" y="114" text-anchor="end">Lumentum's new laser fab</text><text x="190" y="164" text-anchor="end">Nvidia blueprints</text></g>
+<line class="c-today" x1="294.4" y1="22" x2="294.4" y2="176"/><text class="c-today-t" x="298.4" y="20">today</text>
+<g class="c-span"><line x1="294.4" y1="60" x2="538.9" y2="60"/></g><g class="c-start"><circle cx="294.4" cy="60" r="4"/></g><g class="c-end"><circle cx="370.0" cy="60" r="4.5"/><circle cx="538.9" cy="60" r="4.5"/></g>
+<g class="c-endt"><text x="286.4" y="64" text-anchor="end">1x</text><text x="370.0" y="50" text-anchor="middle">15x, mid 2027</text><text x="538.9" y="82" text-anchor="end">about 30x, end 2028</text></g>
+<g class="c-end"><circle cx="440.6" cy="110" r="4.5"/></g><g class="c-endt"><text x="440.6" y="100" text-anchor="middle">first revenue, early 2028</text></g>
+<g class="c-end"><circle cx="279.8" cy="160" r="4.5"/></g><g class="c-endt"><text x="300.4" y="164">Rubin: the plug</text></g><text class="c-note" x="540" y="164" text-anchor="end">Feynman: no date</text>
+</svg>
+<figcaption>Nvidia release, 21 October 2026, which names no laser capacity; Lumentum, as in the table at the foot; Nvidia reference architectures, 15 September 2026. My framing. Early 2028 is placed at February. Broadcom says its own indium phosphide factories are more than tripling capacity, with no date to chart.</figcaption>
+</figure>
+
+If the engines come first, the shortage moves rather than ends: engines would wait on lasers. Supply goes first to buyers who booked lasers early, and Nvidia holds a commitment to buy Lumentum's lasers, of undisclosed size. The threat to the DSP is the familiar half of this story; the load it adds to the laser is the half to watch, through Lumentum's quarterly word on continuous lasers and, above all, the Feynman blueprint. My claim runs to the end of 2028.
+
+## What would prove me wrong
+
+The first test is Nvidia's next blueprint. If the reference design for Feynman, or any system before the end of 2028, makes a co-packaged switch the default or only option for the compute fabric, the plug has lost the hall.
+
+The second is a statement of mix: Nvidia or Broadcom saying most AI switches it ships are co-packaged. The third is the laser: a standard co-packaged switch with lasers fixed to the package would show that the repair limit I rest on was not binding. None of these says who wins the plug, only whether it stays.
+
+## Research notes
+
+Four initiation notes rest on these claims: [Marvell](/research/marvell/), [Broadcom](/research/broadcom/), [Corning](/research/corning/) and [Lumentum](/research/lumentum/). Each records where its piece was wrong. Whether any of this is already in share prices is a question for these notes, not for the journal.
+
+<details class="claims-record">
+<summary>The claims on record, word for word</summary>
+
+The test this piece stands behind, quoted word for word from the claims page:
 
 **The plug stays the default between racks through 2028** (30 October 2026)
 
@@ -180,8 +243,7 @@ Claim: "Between the racks of an AI cluster the optical plug stays the default th
 
 Breaks if: "By the end of 2028, either of Nvidia's DGX SuperPOD reference architectures for its newest systems specifies a co-packaged optics switch as the default or only option for the compute fabric, or Nvidia or Broadcom says most of the AI switches it ships carry co-packaged optics, or either ships a co-packaged AI switch as standard whose lasers are fixed to the package rather than in replaceable modules."
 
-<details class="claims-earlier">
-<summary>Four earlier claims on the network, quoted word for word</summary>
+Four earlier claims on the network:
 
 **Marvell is paid every time AI chips talk, whoever made the chips** (28 September 2026)
 
@@ -216,16 +278,6 @@ Breaks if: "Lumentum's gross margin slides towards the low forties as new capaci
 Where later evidence bears on it: holding, with Lumentum still shipping behind demand. SPIL's 15-fold target bears on the silicon photonics leg: co-packaged engines need continuous lasers, not EMLs, so if it is built, part of the market routes around the EML. It does not route around the laser: on its call of 11 August 2026 Lumentum said it was further behind still on the high-power lasers for co-packaged optics. Where I was wrong: the headline. Lumentum's 8-K of 2 March 2026 shows Nvidia's US$2 billion bought 2,876,415 convertible preferred shares; the lasers sit under a separate purchase commitment of undisclosed size.
 
 </details>
-
-## What would prove me wrong
-
-The first test is Nvidia's next reference architecture. If the blueprint for Feynman, or for any system before the end of 2028, specifies a co-packaged switch as the default or only option for the compute fabric, the plug has lost the hall.
-
-The second is a statement of mix: if Nvidia or Broadcom says most AI switches it ships are co-packaged, the same holds. The third is the laser: if a standard co-packaged switch fixes its lasers to the package, the repair limit I rest on was not binding. None of these tests says who wins the plug, only whether it stays.
-
-## Research notes
-
-Four initiation notes rest on these claims: [Marvell](/research/marvell/), [Broadcom](/research/broadcom/), [Corning](/research/corning/) and [Lumentum](/research/lumentum/). Each records where its piece was wrong.
 
 <details class="evidence">
 <summary>The figures behind the charts</summary>

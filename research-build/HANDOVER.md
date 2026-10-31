@@ -2,10 +2,14 @@
 
 Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. Newest day on top. Rewrite START HERE at the end of each session.
 
-## START HERE (as of Sat 31 Oct 2026, early morning)
+## START HERE (as of Sat 31 Oct 2026, evening)
+
+- **Every piece now ends on a jolt, not a recap** (Tommy, 31 Oct). He read the equipment queue: the claims at the end read as a summary of the article, so a strong start finished poorly. Every ending is now one or two forward headings, each built on one non-obvious idea with its own diagram, then "What would prove me wrong", Research notes, and all claims word for word in one `<details class="claims-record">` at the foot. STORY-RULES.md 18a and 18b; the checker accepts the fold. Pieces carry up to 5 charts. Briefs: BRIEF-ENDING.md and BRIEF-ENDING-CHECK.md. Every ending was independently checked. Share-price questions stay out (one line in Research notes points there).
+- **The "Updated / Rewritten" line under titles was removed from every piece** (Tommy, 31 Oct: unnecessary). Do not add `updated`/`updateNote` back for format changes.
+- PDFs of all 12 pieces for Tommy's own notes: ~/Desktop/Physical Layer PDFs (reprint the same way when pieces change and he asks).
 
 - **Every piece is now a story** (Tommy, 30 to 31 Oct). Tommy read the equipment queue and found the merged pieces stapled together. Overnight, with his go for everything, all ten live pieces and Hong Kong were rewritten as stories with charts, the three approved updates were folded into their pieces, and a new memory piece was researched and written. The rules are research-build/deep-pieces/STORY-RULES.md (one spine and claim by paragraph three, argument headings, no company sections, 2 to 4 inline SVG charts, earlier claims kept word for word in a fold). The model is the-equipment-queue. The checker enforces the core. Read STORY-RULES.md before touching any piece.
-- **Tommy reads them all on Sat 31 Oct and will say what to change.** Act on his notes first.
+- **Tommy read the equipment queue on Sat 31 Oct**; his notes (endings) are acted on above. Act on any further notes first.
 - **Standing decision (30 Oct): do not keep modifying what does not need it.** Change a piece only on Tommy's word or new evidence on its mechanism.
 - **Investor first, on every page** (30 Oct, in CLAUDE.md): lists and tables before decoration, counts at the top, jump links on long pages.
 - New work follows "Two tracks for new work" in CLAUDE.md. Sourcing is WRITING-FORMAT.md §E. Each candidate goes to Tommy as one line before drafting.

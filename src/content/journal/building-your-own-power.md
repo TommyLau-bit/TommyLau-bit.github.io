@@ -173,11 +173,63 @@ None of this yet frees a large campus. Signings still run at twice the rate of s
 
 The big drilling firm is still booked for years, the lighter rig's diary is filling, and the pipe was booked by the neighbours before the well was dug. Building your own power buys a place in a queue. What it buys is a date, not power.
 
-## Claims on record
-
-The test this piece stands behind, quoted word for word from the claims page:
+## The turbine is booked for longer than the tenant
 
 <a id="building-your-own-power"></a>
+
+Put two dates side by side. A heavy turbine slot sold now ships in 2032 and makes power no earlier than 2033. Meta's lease on the Hyperion campus runs from 2029 for four years, renewable up to 20. Set side by side, the machine's queue runs longer than the tenant's firm promise.
+
+<figure class="chart">
+<p class="chart-title">A turbine ordered today makes power about when a four-year lease would end</p>
+<p class="chart-sub">A heavy turbine slot sold now, against the plants and the lease at Meta's Hyperion campus</p>
+<svg viewBox="0 0 560 236" role="img" aria-label="Timeline from 2025 to 2034. A heavy-duty gas turbine slot GE Vernova is selling now ships in 2032 and, after about 18 months on site, makes power no earlier than 2033. Entergy's three gas plants for Meta's Hyperion campus were approved in August 2025 and are due in 2028 and 2029. Meta's lease of the Hyperion campus runs from 2029 for four years, to 2033, renewable up to 20 years. The shaded year, 2033, is when the turbine could first make power and the lease's first term ends.">
+<rect class="c-zone" x="507.2" y="22" width="37.8" height="178"/>
+<g class="c-grid"><line x1="242.8" y1="22" x2="242.8" y2="200"/><line x1="318.3" y1="22" x2="318.3" y2="200"/><line x1="393.9" y1="22" x2="393.9" y2="200"/><line x1="469.4" y1="22" x2="469.4" y2="200"/><line x1="545" y1="22" x2="545" y2="200"/></g>
+<g class="c-axis"><text x="242.8" y="218" text-anchor="middle">2026</text><text x="318.3" y="218" text-anchor="middle">2028</text><text x="393.9" y="218" text-anchor="middle">2030</text><text x="469.4" y="218" text-anchor="middle">2032</text><text x="545" y="218" text-anchor="middle">2034</text><text x="190" y="52" text-anchor="end">Turbine slot sold now</text><text x="190" y="116" text-anchor="end">Entergy plants, Hyperion</text><text x="190" y="174" text-anchor="end">Meta's lease, Hyperion</text></g>
+<line class="c-today" x1="272.7" y1="22" x2="272.7" y2="200"/><text class="c-today-t" x="272.7" y="16" text-anchor="middle">today</text>
+<g class="c-span"><line x1="272.7" y1="48" x2="469.4" y2="48"/><line x1="228.6" y1="112" x2="375" y2="112"/></g>
+<g class="c-start"><circle cx="272.7" cy="48" r="4"/><circle cx="228.6" cy="112" r="4"/></g>
+<g class="c-plant"><line x1="469.4" y1="48" x2="526.1" y2="48" stroke-dasharray="3 3"/><line x1="526.1" y1="42" x2="526.1" y2="54"/></g>
+<g class="c-end"><circle cx="469.4" cy="48" r="4.5"/><circle cx="337.2" cy="112" r="4.5"/><circle cx="375" cy="112" r="4.5"/></g>
+<g class="c-endt"><text x="469.4" y="36" text-anchor="middle">ships 2032</text><text x="545" y="70" text-anchor="end">18 months on site: power 2033 at the earliest</text><text x="384" y="116">due 2028, 2029</text></g>
+<rect class="c-bar c-alt" x="375" y="160" width="151.1" height="20" rx="2"/><text class="c-lab c-s3t" x="367" y="175" text-anchor="end">from 2029</text><text class="c-note" x="526.1" y="198" text-anchor="end">four firm years, renewable up to 20</text>
+</svg>
+<figcaption>GE Vernova call, 28 October 2026, and 22 July 2026 for the 18 months on site; Louisiana regulator's approval and Entergy's filings; Meta 2025 Form 10-K for the lease. Years without a month sit mid-year, except the turbine row, which shows the earliest case: shipped at the start of 2032. My framing: the turbine row is not Hyperion's; the chart sets one sale beside one lease.</figcaption>
+</figure>
+
+Hyperion's first plants are not caught: approved in 2025, they land before the lease begins. A campus that orders a big turbine now is. It commits to a machine further ahead than Meta has firmly committed to Hyperion. Meta's agreement with Entergy carries minimum charges and an exit fee, which is how a utility guards a plant that may outlast its customer.
+
+## Every clock is paid for before it starts
+
+The second surprise is who pays for the wait: the buyers, before anything is built. GE Vernova's Power deposits doubled in nine months, to $33.2 billion. Three power companies signed 93% of Transco's new pipe before it was laid. Kinder Morgan's newest pipes are take-or-pay, and one was signed by a hyperscaler.
+
+<figure class="chart">
+<p class="chart-title">Every clock is paid for by its buyers before it starts</p>
+<p class="chart-sub">What buyers commit before the machine, the pipe or the plant exists</p>
+<svg viewBox="0 0 560 248" role="img" aria-label="Flow diagram. Buyers pay first, into three clocks. Turbine maker: GE Vernova's Power deposits doubled, from 16.5 billion dollars at the end of 2025 to 33.2 billion at 30 September 2026. Gas pipeline: three power companies signed 93 per cent of Transco's new pipe before it was built, and Kinder Morgan's newest pipes are take-or-pay, one of them signed by a hyperscaler. Utility's plant: Meta's agreement with Entergy carries minimum charges and an exit fee. All three are paid years ahead, and first power on the dated routes comes from late 2026 to 2033.">
+<rect class="c-box" x="10" y="87" width="112" height="64" rx="4"/><text class="c-box-t" x="66" y="115" text-anchor="middle">Buyers</text><text class="c-note" x="66" y="133" text-anchor="middle">pays first</text><rect class="c-box" x="172" y="24" width="220" height="54" rx="4"/><text class="c-box-t" x="282" y="46" text-anchor="middle">Turbine maker</text><text class="c-note" x="282" y="65" text-anchor="middle">deposits doubled, to $33.2bn</text><rect class="c-box" x="172" y="92" width="220" height="54" rx="4"/><text class="c-box-t" x="282" y="114" text-anchor="middle">Gas pipeline</text><text class="c-note" x="282" y="133" text-anchor="middle">93% signed by power companies</text><rect class="c-box" x="172" y="160" width="220" height="54" rx="4"/><text class="c-box-t" x="282" y="182" text-anchor="middle">Utility's plant</text><text class="c-note" x="282" y="201" text-anchor="middle">minimum charges, exit fee</text><rect class="c-box" x="442" y="87" width="108" height="64" rx="4"/><text class="c-box-t" x="496" y="111" text-anchor="middle">First power</text><text class="c-note" x="496" y="129" text-anchor="middle">late 2026</text><text class="c-note" x="496" y="144" text-anchor="middle">to 2033</text><line class="c-arrow" x1="123.2" y1="117.4" x2="167.3" y2="57.4"/><polygon class="c-arrow-head" points="170.8,52.6 170.5,59.8 164,55.1"/><line class="c-arrow" x1="393.2" y1="52.6" x2="437.3" y2="112.6"/><polygon class="c-arrow-head" points="440.8,117.4 434,114.9 440.5,110.2"/><line class="c-arrow" x1="124" y1="119" x2="164" y2="119"/><polygon class="c-arrow-head" points="170,119 164,123 164,115"/><line class="c-arrow" x1="394" y1="119" x2="434" y2="119"/><polygon class="c-arrow-head" points="440,119 434,123 434,115"/><line class="c-arrow" x1="123.2" y1="120.6" x2="167.3" y2="180.6"/><polygon class="c-arrow-head" points="170.8,185.4 164,182.9 170.5,178.2"/><line class="c-arrow" x1="393.2" y1="185.4" x2="437.3" y2="125.4"/><polygon class="c-arrow-head" points="440.8,120.6 440.5,127.8 434,123.1"/><text class="c-note" x="207" y="236" text-anchor="middle">paid years ahead</text><text class="c-note" x="457" y="236" text-anchor="middle">built years later</text>
+</svg>
+<figcaption>My framing. GE Vernova Forms 10-Q (Power segment, which also holds nuclear and hydro); Transco's FERC application, docket CP25-10; Kinder Morgan, 21 October 2026; Meta's and Entergy's 2025 Forms 10-K. First power spans the dated routes in the timeline above.</figcaption>
+</figure>
+
+That turns the usual picture of a shortage around. The makers and pipe owners are paid up front, so they gain from the queue without betting on it. The transformer makers in [the equipment queue](/journal/the-equipment-queue/) behave the same way, adding floor space only as fast as orders justify. The buyers carry the risk. If AI demand cools, a reservation can lapse, but a take-or-pay pipe and a minimum charge are still owed.
+
+The length of the queue is reported every quarter; the deposits and the lease term sit deeper in the filings. Three figures will show whether it holds. The first is GE Vernova's count at the end of 2026, expected at 130 GW or more. Then come its Power deposits each quarter, and the count at the end of 2027. With heavy turbines sold out to 2030 and slots sold for 2032, it should hold well past my test. The campus that left [the grid's queue](/journal/america-rations-the-plug/) did not leave the waiting behind; it now pays for the wait in advance.
+
+## What would prove me wrong
+
+The first test is GE Vernova's count at the end of 2027 against the end of 2026. Shipping about 20 GW a year, it holds level only if it signs as much as it ships, net of lapses. A fall would mean buyers no longer queue faster than the machine ships, though faded demand, lapsed reservations and faster output would all fit.
+
+The second is the fast lane. Since the start of 2025 GE Vernova has ordered 124 more aeroderivatives than it shipped, about 2.3 years of recent shipments. If that backlog is a year of shipments or less by the end of 2027, the fast lane has room.
+
+## Research notes
+
+Two initiation notes rest on these claims: [GE Vernova](/research/ge-vernova/) and [Bloom Energy](/research/bloom-energy/), where the margin correction was first made. Whether any of this is already in share prices is a question for these notes, not for the journal.
+
+<details class="claims-record">
+<summary>The claims on record, word for word</summary>
+
+The test this piece stands behind, quoted word for word from the claims page:
 
 **Building your own power** (30 October 2026)
 
@@ -185,8 +237,7 @@ Claim: "Building your own gas power swaps the grid's queue for the makers' queue
 
 Breaks if: "GE Vernova reports fewer gigawatts of gas turbines under contract, firm orders and slot reservations together, at 31 December 2027 than at 31 December 2026, or at 31 December 2027 its aeroderivative units ordered less units shipped since 1 January 2025 are equal to or fewer than its aeroderivative units shipped in calendar 2027."
 
-<details class="claims-earlier">
-<summary>Three earlier claims on this queue, quoted word for word</summary>
+Three earlier claims on this queue:
 
 **The best argument against my own thesis, and why I still think it is wrong** (22 September 2026)
 
@@ -213,16 +264,6 @@ Breaks if: "Before 2030, gigawatts under contract fall below four years of the a
 Where later evidence bears on it: holding. At 30 September 2026, 122 GW was 6.1 years of 20 GW output, above four years of the 2030 step, and Power deposits reached $33.2 billion. One correction: the $27.7 billion the piece said was held "for gas turbines" is the whole Power segment, which also covers nuclear and hydro, though the filings tie the rise to gas orders and reservations.
 
 </details>
-
-## What would prove me wrong
-
-The first test is GE Vernova's count at the end of 2027 against the end of 2026, when it expects at least 130 GW. Shipping about 20 GW a year, it holds level only if it signs as much as it ships, net of lapses. A fall would mean buyers are no longer queuing for the big machine faster than it ships, though faded demand, lapsed reservations and faster output would all fit.
-
-The second is the fast lane. Since the start of 2025 GE Vernova has ordered 124 more aeroderivatives than it shipped, about 2.3 years of its shipments over the last twelve months. If by the end of 2027 that backlog is a year of shipments or less, the fast lane has room.
-
-## Research notes
-
-Two initiation notes rest on these claims: [GE Vernova](/research/ge-vernova/) and [Bloom Energy](/research/bloom-energy/), where the margin correction was first made.
 
 <details class="evidence">
 <summary>The figures behind the charts</summary>

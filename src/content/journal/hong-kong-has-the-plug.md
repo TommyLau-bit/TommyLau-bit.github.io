@@ -166,15 +166,48 @@ These are limits, not counter-evidence. No record I read shows a Hong Kong data 
 
 So the single bid at Sandy Ridge was not a verdict on the plug. The landlord has wired the flats and carries a quarter more than the busiest hour. Which fridges go in is decided abroad, by the street address as much as by the tenant.
 
-## Claims on record
+## The door is ajar for a chip of 2024, and the halls open from 2027
 
-This piece absorbs no earlier piece, so it carries no older claims. Its one claim is new.
+<a id="hong-kong-has-the-plug"></a>
 
-**New: Hong Kong has the plug, and the chip needs a licence** (30 October 2026)
+Here is what the licence rule quietly fixes in place. The class Washington reviews case by case is set by performance and memory bandwidth limits, pegged at Nvidia's H200, a chip of 2024. Nvidia has launched a new flagship about every year since: Blackwell in 2024, Blackwell Ultra in 2025 and Rubin in 2026. Sandy Ridge opens in phases from mid-2027 on CLP's date, and in 2029 on the government's.
 
-Claim: "Hong Kong's grid is building to its data centres, not holding them back: CLP will have completed the 18 data centre substations in its 2024 to 2028 Development Plan by 31 December 2028, and Sandy Ridge's first phase will be energised by 31 December 2027."
+<figure class="chart">
+<p class="chart-title">Hong Kong's chip ceiling stands still while Nvidia launches a flagship a year</p>
+<p class="chart-sub">Nvidia's flagship AI chip by year of launch, the class the US reviews case by case for Hong Kong, and each party's date for Sandy Ridge</p>
+<svg viewBox="0 0 560 236" role="img" aria-label="Timeline from 2022 to 2030. Nvidia launched Blackwell in 2024, Blackwell Ultra in 2025 and Rubin in 2026, a new flagship about every year. The class of chip the US reviews case by case for a user in Hong Kong is fixed at the H200, a chip of 2024, and stays there unless the rule changes. Sandy Ridge opens in phases from mid 2027 on CLP's date, within 2028 on Range's and in 2029 on the government's.">
+<g class="c-grid"><line x1="150" y1="30" x2="150" y2="208"/><line x1="199" y1="30" x2="199" y2="208"/><line x1="248" y1="30" x2="248" y2="208"/><line x1="297" y1="30" x2="297" y2="208"/><line x1="346" y1="30" x2="346" y2="208"/><line x1="395" y1="30" x2="395" y2="208"/><line x1="444" y1="30" x2="444" y2="208"/><line x1="493" y1="30" x2="493" y2="208"/><line x1="542" y1="30" x2="542" y2="208"/></g>
+<g class="c-axis"><text x="150" y="226" text-anchor="middle">2022</text><text x="199" y="226" text-anchor="middle">2023</text><text x="248" y="226" text-anchor="middle">2024</text><text x="297" y="226" text-anchor="middle">2025</text><text x="346" y="226" text-anchor="middle">2026</text><text x="395" y="226" text-anchor="middle">2027</text><text x="444" y="226" text-anchor="middle">2028</text><text x="493" y="226" text-anchor="middle">2029</text><text x="542" y="226" text-anchor="middle">2030</text><text x="140" y="63" text-anchor="end">Nvidia flagship</text><text x="140" y="125" text-anchor="end">Hong Kong ceiling</text><text x="140" y="185" text-anchor="end">Sandy Ridge opens</text></g>
+<line class="c-today" x1="386.8" y1="22" x2="386.8" y2="208"/><text class="c-today-t" x="390.8" y="20">today</text>
+<circle class="c-dot c-s3" cx="272.5" cy="58" r="5"/>
+<text class="c-lab c-s3t" x="272.5" y="44" text-anchor="middle">Blackwell</text>
+<circle class="c-dot c-s3" cx="321.5" cy="58" r="5"/>
+<text class="c-lab c-s3t" x="321.5" y="82" text-anchor="middle">Blackwell Ultra</text>
+<circle class="c-dot c-s3" cx="370.5" cy="58" r="5"/>
+<text class="c-lab c-s3t" x="370.5" y="44" text-anchor="middle">Rubin</text>
+<g class="c-start"><circle cx="419.5" cy="58" r="4"/><circle cx="468.5" cy="58" r="4"/><circle cx="517.5" cy="58" r="4"/></g>
+<text class="c-note" x="556" y="82" text-anchor="end">if the pace holds</text>
+<line class="c-line c-s2" x1="272.5" y1="120" x2="542" y2="120"/>
+<circle class="c-dot c-s2" cx="272.5" cy="120" r="5"/>
+<text class="c-lab c-s2t" x="272.5" y="106" text-anchor="middle">H200, 2024</text>
+<text class="c-note" x="542" y="140" text-anchor="end">fixed by the rule's limits, case by case</text>
+<circle class="c-dot c-s1" cx="419.5" cy="180" r="5"/>
+<text class="c-lab c-s1t" x="419.5" y="166" text-anchor="middle">CLP</text>
+<circle class="c-dot c-s1" cx="468.5" cy="180" r="5"/>
+<text class="c-lab c-s1t" x="468.5" y="204" text-anchor="middle">Range</text>
+<circle class="c-dot c-s1" cx="517.5" cy="180" r="5"/>
+<text class="c-lab c-s1t" x="517.5" y="166" text-anchor="middle">Government</text>
+</svg>
+<figcaption>Nvidia spec pages, as in <a href="/journal/memory-not-maths/">Memory, not maths</a>; 15 CFR 742.6, as revised 15 January 2026; Sandy Ridge dates as in the timeline above. My framing. Open circles are not announced chips, and the ceiling holds only until the rule changes.</figcaption>
+</figure>
 
-Breaks if: "CLP's interim or annual results show fewer than 18 data centre substations completed in its 2024 to 2028 Development Plan by 31 December 2028, or Sandy Ridge's first phase is not energised by 31 December 2027."
+So the one door left ajar points at a chip that ages while the halls are built. When Sandy Ridge's first phase runs, the best chip it may hope for will sit at least three flagships behind. On the figures in [Memory, not maths](/journal/memory-not-maths/), Rubin has four times the H200's memory bandwidth. Its peak maths is about 17 times higher, though that sets Rubin's 4-bit sums against the H200's 8-bit, the smallest format each supports.
+
+That moves the cost onto the tenant, not the landlord. Range sells racks, space, power and cooling, and its customers bring the chips. A tenant capped at the H200 class needs more chips, and so more racks, for the same work than one on the frontier. The rack seller's business survives the cap; the tenant's bill for each unit of work is what grows.
+
+It also refines the usual picture of a chip-gated place. [In Johor](/journal/the-queue-not-the-chip/), a tenant headquartered in China is presumed refused even the H200 class. In Hong Kong an exporter may seek a licence for that tenant, but only up to a ceiling that falls further behind each year. The gap lasts as long as the rule's limits stand still. Watch for any change to 15 CFR 742.6, any H200-class licence naming a Hong Kong user, and Range's filings on which chips Sandy Ridge will run. CLP's results every six months will show whether the plug keeps arriving first.
+
+The rule is public; setting its fixed ceiling against Nvidia's yearly clock is my framing.
 
 ## What would prove me wrong
 
@@ -182,11 +215,26 @@ The substation test is marked every six months, in CLP's interim and annual resu
 
 The Sandy Ridge test is the date. CLP says phases from mid-2027, the tenant says delivery within 2028, and the government told LegCo 2029. If the first phase is not energised by the end of 2027, the claim breaks, whether the delay sits in the grid or the building.
 
-CLP's reserve margin is context, not a test. A margin below 15% in its Ten-year Summary would tell me the plug was tightening even if the substations arrive. The export licence is mechanism, not forecast, so it is not in the falsifier. Slow filling would not break the claim either: Range's own date is 2028, so halls may fill slowly because they are not built, not because chips are short.
+CLP's reserve margin is context, not a test: a margin below 15% in its Ten-year Summary would warn that the plug was tightening. The export licence is mechanism, not forecast, so it is not in the falsifier. Nor would slow filling break the claim, since Range's own delivery date is 2028.
 
 ## Research notes
 
-No initiation note rests on this claim. The contrast with [Johor and Singapore](/journal/the-queue-not-the-chip/), where the connection is the scarce thing, is the subject of that deep piece.
+No initiation note rests on this claim. The contrast with [Johor and Singapore](/journal/the-queue-not-the-chip/), where the connection is the scarce thing, is the subject of that deep piece. Whether any of this is already in share prices is a question for these notes, not for the journal.
+
+<details class="claims-record">
+<summary>The claims on record, word for word</summary>
+
+The test this piece stands behind, quoted word for word from the claims page:
+
+**Hong Kong has the plug, and the chip needs a licence** (30 October 2026)
+
+Claim: "Hong Kong's grid is building to its data centres, not holding them back: CLP will have completed the 18 data centre substations in its 2024 to 2028 Development Plan by 31 December 2028, and Sandy Ridge's first phase will be energised by 31 December 2027."
+
+Breaks if: "CLP's interim or annual results show fewer than 18 data centre substations completed in its 2024 to 2028 Development Plan by 31 December 2028, or Sandy Ridge's first phase is not energised by 31 December 2027."
+
+This piece absorbs no earlier piece, so it carries no older claims.
+
+</details>
 
 <details class="evidence">
 <summary>The figures behind the charts</summary>

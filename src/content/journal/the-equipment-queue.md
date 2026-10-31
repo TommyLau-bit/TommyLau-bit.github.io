@@ -186,8 +186,6 @@ Today the marker sits at the top, between two boxes. Years of work are still ris
 
 The box it moves into decides who waits. In "kept on purpose", the developers who booked early switch on first and the late planners queue behind them. In "clearing", the advantage passes back to the buyers. Either way the same gear sits behind the grid stories in [America rations the plug](/journal/america-rations-the-plug/) and [the plug, not the chip](/journal/the-queue-not-the-chip/): a utility can clear a site's place in the grid queue, and the site still waits for its transformer.
 
-Whether any of this is already in the makers' share prices is not a question this journal answers; that work sits in the research notes below.
-
 ## What would prove me wrong
 
 The test fails if, at 30 June 2028, Siemens Energy's grid backlog is below 3.6 years of its sales or Eaton's Electrical Americas backlog is below one year. That is a genuine risk. The drift worked out above already takes Siemens Energy close to the line, and Eaton's new plants should be running well before the date.
@@ -196,7 +194,7 @@ A pass would not prove a longer wait on its own, since price, early bookings, cu
 
 ## Research notes
 
-Each maker has an initiation note: [Hitachi](/research/hitachi/), [Siemens Energy](/research/siemens-energy/), [Eaton](/research/eaton/) and [Schneider Electric](/research/schneider-electric/).
+Each maker has an initiation note: [Hitachi](/research/hitachi/), [Siemens Energy](/research/siemens-energy/), [Eaton](/research/eaton/) and [Schneider Electric](/research/schneider-electric/). Whether any of this is already in share prices is a question for these notes, not for the journal.
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>

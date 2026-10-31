@@ -186,17 +186,47 @@ The case against is that the stages may follow each other quickly almost everywh
 
 Malaysia's gap may also be timing, not idle halls. Campuses book for their finished size and fill in phases, and the deputy minister told Parliament on 13 October 2026 that data centres book more than they use. Nobody splits the gap between ramp, overbooking and licensed chips, so I hang nothing on any one of them.
 
-None of this makes a signed gigawatt into computing. Even on the fastest path, at Abilene, more than two years passed between the start of work and three quarters of the campus handed over. The claim below tests the fast cases directly: if Nebius connects 800 MW and is still not billing that much six months later, the lag is longer than months. That test is generous to me: new deals price at US$20 to 25 million a megawatt, so revenue can pass it with fewer than 800 MW running.
+None of this makes a signed gigawatt into computing. Even on the fastest path, at Abilene, more than two years passed between the start of work and three quarters of the campus handed over. My claim tests the fast cases directly: if Nebius connects 800 MW and is still not billing that much six months later, the lag is longer than months.
 
 ## Count the lit windows
 
 Nebius's 5 gigawatts and its 170 running megawatts are both true, and they measure different stages. A builder controls the slow stages up to energised, which is why Jane Street buys them first. After that, the tenant decides: at Abilene the removal van came with the keys, and in Malaysia many wired houses are still mostly dark. Anyone sizing AI should count lit windows, not houses sold.
 
-## Claims on record
-
-The test this piece stands behind, quoted word for word from the claims page:
+## The later megawatt is priced higher, so revenue can run ahead of the chips
 
 <a id="contracted-energised-running"></a>
+
+Here is the catch in counting lit windows from outside. Nebius has reported active power only once, so revenue is the best public meter of chips running. But its new deals price at US$20 to 25 million a megawatt a year, against a 2026 base of US$12 million. As those deals switch on, mostly in 2027, each new running megawatt could bill up to about twice what the old ones did.
+
+<figure class="chart">
+<p class="chart-title">The same revenue could mean about half the running megawatts at new-deal prices</p>
+<p class="chart-sub">Megawatts billing implied by US$9.6 billion of annualised revenue, at each price per megawatt a year</p>
+<svg viewBox="0 0 560 176" role="img" aria-label="Bar chart. US$9.6 billion of annualised revenue at Nebius means about 800 megawatts billing at its stated 2026 base of US$12 million a megawatt a year, about 480 megawatts at US$20 million, and about 384 megawatts at US$25 million, the range its new deals price at. My arithmetic.">
+<g class="c-axis"><text x="214" y="41" text-anchor="end">At the 2026 base, US$12m</text><text x="214" y="85" text-anchor="end">At US$20m a megawatt</text><text x="214" y="129" text-anchor="end">At US$25m a megawatt</text></g><rect class="c-bar c-mute" x="224" y="24" width="260" height="24" rx="2"/><text class="c-lab c-s1t" x="492" y="41">800 MW</text><rect class="c-bar" x="224" y="68" width="156" height="24" rx="2"/><text class="c-lab c-s2t" x="388" y="85">480 MW</text><rect class="c-bar" x="224" y="112" width="124.8" height="24" rx="2"/><text class="c-lab c-s2t" x="356.8" y="129">384 MW</text><line class="c-base" x1="224" y1="16" x2="224" y2="140"/><text class="c-note" x="550" y="164" text-anchor="end">Each bar is US$9.6bn of annualised revenue, my arithmetic</text>
+</svg>
+<figcaption>My framing and arithmetic: US$9.6 billion, the revenue limb of my test, divided by Nebius's stated 2026 base and by the US$20 to 25 million of annual contract value its new deals price at (letter, 12 August 2026). Contract value is not billing, so this is a range, not a reading.</figcaption>
+</figure>
+
+So the meter everyone reads can run ahead of the chips. On my arithmetic, US$9.6 billion of annualised revenue is 800 MW at the old base, but only about 384 to 480 MW at new-deal prices. If those prices turn into billing, anyone dividing revenue by the old rate could count up to about twice the megawatts actually running. That is also why my own test is generous to me: Nebius can pass it with far fewer than 800 MW at work.
+
+The higher price is the queue showing up in a contract. Later buyers pay more for the same megawatt, as gas turbine buyers do in [Building your own power](/journal/building-your-own-power/). About 70% of Nebius's second quarter deals also carried prepayments covering 50 to 60% of the related capital spending. The builder gains twice, and the late buyer pays twice, in price and in cash up front. The risk of lateness runs the other way: Microsoft's US$17.4 billion agreement pays only for services deployed and available, so a late hall costs the builder. The same caution applies in Johor, where [a hall can be let and earning while it draws little](/journal/the-queue-not-the-chip/).
+
+The prices sit in Nebius's own letters; turning them back into running megawatts is my arithmetic. Watch its year-end 2026 letter for connected power, then its figures at 30 June 2027 for active power or revenue. If both arrive, divide revenue by the new-deal price as well as the old one, and the honest count sits between the two. The gap should last as long as new deals price above the old base.
+
+## What would prove me wrong
+
+The first test is Abilene. Oracle's June timetable put the last buildings in its quarter to 30 November 2026, and Crusoe expects the campus complete by the end of 2026. If it is energised and Oracle has still not reported all eight buildings delivered by its March 2027 results, fitting out, not power, is setting the pace. This limb tests delivery, the nearest stage anyone publishes by site.
+
+The second is Nebius at 30 June 2027, six months after its connected guide falls due. If it has connected at least 800 MW but has fewer than 800 MW active, or, without an active figure, annualised revenue below US$9.6 billion, its halls are waiting more than months for running chips. Neither result would by itself say why: a slip could be chips, fit-out or customers starting late.
+
+## Research notes
+
+The [Nebius initiation note](/research/nebius/) (6 October 2026) rests on the Nebius claim and already carries the correction from connected to active power. No note rests on the Jane Street claim or the new claim. Whether any of this is already in share prices is a question for these notes, not for the journal.
+
+<details class="claims-record">
+<summary>The claims on record, word for word</summary>
+
+The test this piece stands behind, quoted word for word from the claims page:
 
 **Contracted, energised, running** (30 October 2026)
 
@@ -204,8 +234,7 @@ Claim: "An AI campus's capacity arrives in stages, and energised power is the la
 
 Breaks if: "Crusoe reports the Abilene campus energised or complete by the end of 2026 but Oracle has not reported all eight buildings delivered to its customer by its results for the quarter ending 28 February 2027, or Nebius reports at least 800 megawatts connected at the end of 2026 but, at 30 June 2027, reports active power below 800 megawatts or, if it reports no active figure, annualised revenue below US$9.6 billion, 800 megawatts at its stated 2026 base of US$12 million a megawatt."
 
-<details class="claims-earlier">
-<summary>Two earlier claims on Nebius and Jane Street, quoted word for word</summary>
+Two earlier claims on Nebius and Jane Street:
 
 **Nebius has lined up five gigawatts of power. It expects about one switched on this year.** (30 September 2026)
 
@@ -226,16 +255,6 @@ Breaks if: "Chips become the longest wait again while transformer and generator 
 Where later evidence bears on it: nothing I have found cuts against it. The claim rests on one firm's own account, and I have no published outage record to test the generator saving either way. Jane Street's US$6 billion commitment to CoreWeave in April predates the claim but fits it: a builder short of finished power also rents it.
 
 </details>
-
-## What would prove me wrong
-
-The first test is Abilene. Oracle's June timetable put the last buildings in its quarter to 30 November 2026, and Crusoe expects the campus complete by the end of 2026. If the campus is energised and Oracle still has not reported all eight buildings delivered by its March 2027 results, fitting out, not power, is setting the pace. This limb tests delivery, the nearest stage anyone publishes by site.
-
-The second is Nebius at 30 June 2027, six months after its connected guide falls due. If it has connected at least 800 MW but has fewer than 800 MW active, or, without an active figure, annualised revenue below US$9.6 billion, its halls are waiting more than months for running chips. Neither result would by itself say why: a slip could be chips, fit-out or customers starting late.
-
-## Research notes
-
-The [Nebius initiation note](/research/nebius/) (6 October 2026) rests on the Nebius claim above and already carries the correction from connected to active power. No note rests on the Jane Street claim or the new claim.
 
 <details class="evidence">
 <summary>The figures behind the charts</summary>

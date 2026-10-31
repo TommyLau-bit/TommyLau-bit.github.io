@@ -156,11 +156,74 @@ These limits are real, and they shape the test. A double order does not create a
 
 A supplier in a boom says it cannot meet demand when its supply is a building, not an order. That is the whole chip side of AI: most parts can be bought this year, and the few that cannot are booked a year or more ahead, then further ahead each time their makers speak. I once wrote that the bottlenecks near the chip clear in quarters; the makers' own dates say years. The kitchen is finished when the last worktop arrives, and the worktops are cut in buildings that take years to raise.
 
-## Claims on record
-
-The test this piece stands behind, quoted word for word from the claims page:
+## The factory for the chip of 2030 is planned before the chip has a name
 
 <a id="the-chip-supply-chain"></a>
+
+Now set the chip's clock against the factory's. Nvidia has launched a new flagship about every year: Blackwell in 2024, Blackwell Ultra in 2025 and Rubin in 2026. A TSMC fab begun today takes two to three years to build and one to two more to ramp. It reaches full output when Rubin's third to fifth successors would be on sale, if that pace holds.
+
+<figure class="chart">
+<p class="chart-title">A fab begun today reaches full output three to five chip generations after Rubin</p>
+<p class="chart-sub">Nvidia's flagship by year of launch, against when each slow step's new supply arrives, by its maker's own dates</p>
+<svg viewBox="0 0 560 280" role="img" aria-label="Timeline from 2024 to 2034. Nvidia launched Blackwell in 2024, Blackwell Ultra in 2025 and Rubin in 2026, about one flagship a year. A TSMC fab begun today takes two to three years to build and one to two to ramp, so it reaches full output three to five years from now, between late 2029 and late 2031. Some ASML customers want to order scanners for 2029 and 2030. Micron's New York fab is due in 2030. Ajinomoto's Kani City film plant operates in fiscal 2032, April 2032 to March 2033.">
+<g class="c-grid"><line x1="154.0" y1="30" x2="154.0" y2="250"/><line x1="193.1" y1="30" x2="193.1" y2="250"/><line x1="232.2" y1="30" x2="232.2" y2="250"/><line x1="271.3" y1="30" x2="271.3" y2="250"/><line x1="310.4" y1="30" x2="310.4" y2="250"/><line x1="349.5" y1="30" x2="349.5" y2="250"/><line x1="388.6" y1="30" x2="388.6" y2="250"/><line x1="427.7" y1="30" x2="427.7" y2="250"/><line x1="466.8" y1="30" x2="466.8" y2="250"/><line x1="505.9" y1="30" x2="505.9" y2="250"/><line x1="545.0" y1="30" x2="545.0" y2="250"/></g>
+<g class="c-axis"><text x="144" y="63" text-anchor="end">Nvidia flagship</text><text x="144" y="117" text-anchor="end">A new TSMC fab</text><text x="144" y="153" text-anchor="end">ASML orders sought</text><text x="144" y="189" text-anchor="end">Micron New York fab</text><text x="144" y="225" text-anchor="end">Ajinomoto plant</text><text x="154.0" y="268" text-anchor="middle">2024</text><text x="232.2" y="268" text-anchor="middle">2026</text><text x="310.4" y="268" text-anchor="middle">2028</text><text x="388.6" y="268" text-anchor="middle">2030</text><text x="466.8" y="268" text-anchor="middle">2032</text><text x="545.0" y="268" text-anchor="middle">2034</text></g>
+<line class="c-today" x1="264.8" y1="22" x2="264.8" y2="250"/><text class="c-today-t" x="268.8" y="20">today</text>
+<circle class="c-dot c-s3" cx="173.6" cy="58" r="5"/><circle class="c-dot c-s3" cx="212.7" cy="58" r="5"/><circle class="c-dot c-s3" cx="251.8" cy="58" r="5"/>
+<text class="c-lab c-s3t" x="173.6" y="44" text-anchor="middle">Blackwell</text><text class="c-lab c-s3t" x="206" y="82" text-anchor="middle">Blackwell Ultra</text><text class="c-lab c-s3t" x="251.8" y="44" text-anchor="middle">Rubin</text>
+<g class="c-start"><circle cx="290.9" cy="58" r="4"/><circle cx="330.0" cy="58" r="4"/><circle cx="369.1" cy="58" r="4"/><circle cx="408.1" cy="58" r="4"/><circle cx="447.2" cy="58" r="4"/><circle cx="486.3" cy="58" r="4"/><circle cx="525.5" cy="58" r="4"/></g>
+<text class="c-note" x="545" y="82" text-anchor="end">if the yearly pace holds</text>
+<rect class="c-bar c-mute" x="264.8" y="102" width="117.3" height="20" rx="2"/><rect class="c-bar" x="382.1" y="102" width="78.2" height="20" rx="2"/>
+<text class="c-lab c-s2t" x="466.3" y="117">3 to 5 years</text>
+<rect class="c-bar" x="349.5" y="138" width="78.2" height="20" rx="2"/><text class="c-lab c-s2t" x="433.7" y="153">2029 and 2030</text>
+<rect class="c-bar" x="476.6" y="210" width="39.1" height="20" rx="2"/><text class="c-lab c-s2t" x="470.6" y="225" text-anchor="end">operating, fiscal 2032</text>
+<rect class="c-bar" x="388.6" y="174" width="39.1" height="20" rx="2"/><text class="c-lab c-s2t" x="433.7" y="189">2030</text>
+</svg>
+<figcaption>Nvidia spec pages, as in <a href="/journal/memory-not-maths/">Memory, not maths</a>; TSMC calls of 15 January and 16 April 2026; ASML results, 14 October 2026; Micron Form 10-K (9 October 2026); Ajinomoto release, 7 May 2026. My framing. Grey: the first three years of a new fab; amber: when full output arrives. Open circles are not announced chips.</figcaption>
+</figure>
+
+That turns the usual order round. We picture a chip designed first, then factories built to make it. At the slow steps it runs the other way: the cleanroom, the scanner and the film for a 2030 chip are planned before that chip is named. ASML's customers already ask to order for 2029 and 2030, and Ajinomoto aims its current expansion at demand to 2030, with its next film plant opening in fiscal 2032.
+
+So supply goes first to the buyers who commit first, with the deposits and capacity commitments Nvidia's 10-K describes. A designer that books only once its chip is finished joins the back of the line. The same clock reaches the grid, since Micron names energy infrastructure among the limits on new fabs: the queues in [Johor and Singapore](/journal/the-queue-not-the-chip/) and [the equipment queue](/journal/the-equipment-queue/) sit under the chip's own.
+
+## Ordinary memory pays for the AI chip's
+
+The second surprise sits in memory. Each AI chip carries far more of it, and each bit costs more cleanroom. Nvidia's H100 of 2022 carried 80 gigabytes and Rubin carries 288, 3.6 times as much, as [Memory, not maths](/journal/memory-not-maths/) shows. Micron says a bit of HBM3E takes about three times the wafer of DDR5, the standard server memory.
+
+<figure class="chart">
+<p class="chart-title">Each AI chip carries 3.6 times the memory, at about three times the wafer per bit</p>
+<p class="chart-sub">Wafer needed for the same bits, HBM3E against DDR5; and memory per Nvidia chip, in gigabytes</p>
+<svg viewBox="0 0 560 210" role="img" aria-label="Two groups of bars. Wafer needed for the same number of bits: DDR5, ordinary memory, 1 times; HBM3E, AI memory, about 3 times, by Micron. Memory carried by each chip: Nvidia's H100 of 2022 carries 80 gigabytes and Rubin of 2026 carries 288, 3.6 times as much.">
+<text class="c-note" x="10" y="24">Wafer for the same number of bits</text>
+<text class="c-note" x="10" y="122">Memory carried by each chip</text>
+<g class="c-axis"><text x="160" y="51" text-anchor="end">DDR5, ordinary memory</text><text x="160" y="87" text-anchor="end">HBM3E, AI memory</text><text x="160" y="149" text-anchor="end">Nvidia H100, 2022</text><text x="160" y="185" text-anchor="end">Nvidia Rubin, 2026</text></g>
+<rect class="c-bar" x="170" y="36" width="90" height="20" rx="2"/><text class="c-lab c-s2t" x="268" y="51">1x</text>
+<rect class="c-bar" x="170" y="72" width="270" height="20" rx="2"/><text class="c-lab c-s2t" x="448" y="87">about 3x</text>
+<rect class="c-bar c-alt" x="170" y="134" width="75.0" height="20" rx="2"/><text class="c-lab c-s3t" x="253.0" y="149">80 GB</text>
+<rect class="c-bar c-alt" x="170" y="170" width="270.0" height="20" rx="2"/><text class="c-lab c-s3t" x="448.0" y="185">288 GB</text>
+<line class="c-base" x1="170" y1="30" x2="170" y2="98"/><line class="c-base" x1="170" y1="128" x2="170" y2="196"/>
+</svg>
+<figcaption>Micron prepared remarks, 20 March 2024; Nvidia spec pages, as in <a href="/journal/memory-not-maths/">Memory, not maths</a>. My framing. The two are not multiplied: the H100 already used HBM, and Micron's three times compares HBM3E with DDR5.</figcaption>
+</figure>
+
+Both kinds of memory come out of the same cleanrooms. Micron's 10-K says HBM needs more wafers and cleanroom per bit, so each shift towards it takes supply from ordinary memory, and Micron expects DRAM as a whole to stay supply constrained in 2027 and 2028. The quiet payer is a buyer who never ordered an AI chip: anyone who needs ordinary server memory.
+
+That squeeze should last until Micron's Idaho fabs open, the first in mid 2027 and the second in late 2028, which is why my test asks about 2029. ASML's Capital Markets Day on 10 June 2027 is where I expect to learn how big its 2028 step is. The shortage itself is no secret, since the makers repeat it each quarter; who else it reaches is the less told half.
+
+## What would prove me wrong
+
+Both tests rest on the companies' own words, a year or more before the supply they describe. ASML has named 2029 only as a year some customers want to order for, and memory has a long record of gluts, so either could fail.
+
+Seagate and TSMC stay on the watch list: one grows without new plant, the other publishes no number.
+
+## Research notes
+
+Four initiation notes rest on these claims, unchanged: [TSMC](/research/tsmc/), [ASML](/research/asml/), [Ajinomoto](/research/ajinomoto/) and [Micron](/research/micron/). Whether any of this is already in share prices is a question for these notes, not for the journal.
+
+<details class="claims-record">
+<summary>The claims on record, word for word</summary>
+
+The test this piece stands behind, quoted word for word from the claims page:
 
 **The chip supply chain's slow parts stay sold more than a year ahead** (30 October 2026)
 
@@ -168,8 +231,7 @@ Claim: "In the AI chip supply chain, the parts that only one or a few qualified 
 
 Breaks if: "ASML, in its results published between 1 December 2027 and 31 March 2028, says its 2029 low NA EUV capacity exceeds customer orders, or does not describe 2029 as close to fully covered or short of demand; or Micron, by its fiscal first quarter 2029 results (around December 2028), has not said most of its calendar 2029 HBM supply is agreed, or reports unsold HBM and attributes it to customer demand. A shortfall caused by late cleanrooms or suppliers supports the claim rather than breaking it."
 
-<details class="claims-earlier">
-<summary>Four earlier claims on the chip's slow parts, and one proposed, quoted word for word</summary>
+Four earlier claims on the chip's slow parts, and one proposed:
 
 **TSMC's chief says the AI bottleneck is its factories, not the power grid** (2 October 2026)
 
@@ -208,16 +270,6 @@ Where later evidence bears on it: both halves hold, on Micron's September remark
 Drafted in October 2026 and never published, so it is not on record. Seagate's 27 October results support it, and the drives stay on watch.
 
 </details>
-
-## What would prove me wrong
-
-Both tests rest on the companies' own words, a year or more before the supply they describe. ASML has named 2029 only as a year some customers want to order for, and memory has a long record of gluts, so either could fail.
-
-Seagate and TSMC stay on the watch list: one grows without new plant, the other publishes no number.
-
-## Research notes
-
-Four initiation notes rest on these claims, unchanged: [TSMC](/research/tsmc/), [ASML](/research/asml/), [Ajinomoto](/research/ajinomoto/) and [Micron](/research/micron/).
 
 <details class="evidence">
 <summary>The figures behind the charts</summary>
