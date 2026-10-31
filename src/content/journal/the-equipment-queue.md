@@ -150,10 +150,10 @@ None of this ends the wait. A queue of three and a half years in 2028 binds a da
 
 <a id="the-equipment-queue"></a>
 
-Here is the part that is easy to miss. Nvidia has launched a new flagship AI chip about every year: Blackwell in 2024, Blackwell Ultra in 2025 and Rubin in 2026. The order books for the gear that powers them run three to four years. Measured in chip launches, a transformer ordered today joins a pile of work that would take three or four generations to clear.
+Here is the part that is easy to miss. Nvidia has launched a new flagship AI chip about every year: Blackwell in 2024, Blackwell Ultra in 2025 and Rubin in 2026. The grid makers' order books for the gear that powers them run three to four years. Measured in chip launches, a transformer ordered from them today joins a pile of work that would take three or four generations to clear.
 
 <figure class="chart">
-<p class="chart-title">The order books outlast three or four chip generations</p>
+<p class="chart-title">The grid makers' order books outlast three or four chip generations</p>
 <p class="chart-sub">Nvidia's flagship AI chip by year of launch, against each maker's years of work on its books, from its latest filing</p>
 <svg viewBox="0 0 560 236" role="img" aria-label="Timeline from 2024 to 2031. Nvidia launched Blackwell in 2024, Blackwell Ultra in 2025 and Rubin in 2026, a new flagship about every year. From their latest filings, Eaton's Electrical Americas has about 1 year of work on its books, running to mid 2027; Hitachi Energy about 3.1 years, running to late 2029; and Siemens Energy's grid business about 4 years, running to mid 2030.">
 <g class="c-grid"><line x1="150" y1="30" x2="150" y2="208"/><line x1="206" y1="30" x2="206" y2="208"/><line x1="262" y1="30" x2="262" y2="208"/><line x1="318" y1="30" x2="318" y2="208"/><line x1="374" y1="30" x2="374" y2="208"/><line x1="430" y1="30" x2="430" y2="208"/><line x1="486" y1="30" x2="486" y2="208"/><line x1="542" y1="30" x2="542" y2="208"/></g>
