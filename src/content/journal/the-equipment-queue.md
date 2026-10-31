@@ -146,33 +146,47 @@ Some buyers also route around the queue. Schneider Electric sells more power roo
 
 None of this ends the wait. A queue of three and a half years in 2028 binds a data centre developer as surely as four years today, and the makers' own plans are built to keep it. The second chair has arrived, and the diary still runs years ahead.
 
-## Four readings will show whether the queue holds
+## The gear outlives the chip it was ordered for
 
 <a id="the-equipment-queue"></a>
 
-My test is plain: at 30 June 2028, Siemens Energy's grid business should still hold at least 3.6 years of work, and Eaton's Electrical Americas at least one. Four readings between now and then will show which way it is going.
+Here is the part that is easy to miss. Nvidia has launched a new flagship AI chip about every year: Blackwell in 2024, Blackwell Ultra in 2025 and Rubin in 2026. The order books for the gear that powers them run three to four years. Measured in chip launches, a transformer ordered today joins a pile of work that would take three or four generations to clear.
 
-**The ratios, every quarter.** Siemens Energy's grid backlog over a year of its sales stood at 3.96 in June 2026; Eaton's stood at 1.05. Both are reported each quarter. A ratio that drifts down while orders still outrun output is the queue being kept; a ratio that falls because orders dry up is the queue clearing.
+<figure class="chart">
+<p class="chart-title">The order books outlast three or four chip generations</p>
+<p class="chart-sub">Nvidia's flagship AI chip by year of launch, against each maker's years of work on its books, from its latest filing</p>
+<svg viewBox="0 0 560 236" role="img" aria-label="Timeline from 2024 to 2031. Nvidia launched Blackwell in 2024, Blackwell Ultra in 2025 and Rubin in 2026, a new flagship about every year. From their latest filings, Eaton's Electrical Americas has about 1 year of work on its books, running to mid 2027; Hitachi Energy about 3.1 years, running to late 2029; and Siemens Energy's grid business about 4 years, running to mid 2030.">
+<g class="c-grid"><line x1="150" y1="30" x2="150" y2="208"/><line x1="206" y1="30" x2="206" y2="208"/><line x1="262" y1="30" x2="262" y2="208"/><line x1="318" y1="30" x2="318" y2="208"/><line x1="374" y1="30" x2="374" y2="208"/><line x1="430" y1="30" x2="430" y2="208"/><line x1="486" y1="30" x2="486" y2="208"/><line x1="542" y1="30" x2="542" y2="208"/></g>
+<g class="c-axis"><text x="140" y="63" text-anchor="end">Nvidia flagship</text><text x="140" y="117" text-anchor="end">Eaton, inside the fence</text><text x="140" y="153" text-anchor="end">Hitachi Energy</text><text x="140" y="189" text-anchor="end">Siemens Energy, grid</text><text x="150" y="226" text-anchor="middle">2024</text><text x="206" y="226" text-anchor="middle">2025</text><text x="262" y="226" text-anchor="middle">2026</text><text x="318" y="226" text-anchor="middle">2027</text><text x="374" y="226" text-anchor="middle">2028</text><text x="430" y="226" text-anchor="middle">2029</text><text x="486" y="226" text-anchor="middle">2030</text><text x="542" y="226" text-anchor="middle">2031</text></g>
+<line class="c-today" x1="308.7" y1="22" x2="308.7" y2="208"/><text class="c-today-t" x="312.7" y="20">today</text>
+<circle class="c-dot c-s3" cx="178.0" cy="58" r="5"/><circle class="c-dot c-s3" cx="234.0" cy="58" r="5"/><circle class="c-dot c-s3" cx="290.0" cy="58" r="5"/><text class="c-lab c-s3t" x="178.0" y="44" text-anchor="middle">Blackwell</text><text class="c-lab c-s3t" x="234.0" y="82" text-anchor="middle">Blackwell Ultra</text><text class="c-lab c-s3t" x="290.0" y="44" text-anchor="middle">Rubin</text><g class="c-start"><circle cx="346.0" cy="58" r="4"/><circle cx="402.0" cy="58" r="4"/><circle cx="458.0" cy="58" r="4"/><circle cx="514.0" cy="58" r="4"/></g><text class="c-note" x="556" y="82" text-anchor="end">a new flagship each year, if the pace holds</text>
+<rect class="c-bar" x="290.0" y="102" width="58.8" height="20" rx="2"/><text class="c-lab c-s2t" x="354.8" y="117">about 1 year</text><rect class="c-bar" x="304.0" y="138" width="173.6" height="20" rx="2"/><text class="c-lab c-s2t" x="298.0" y="153" text-anchor="end">about 3.1 years</text><rect class="c-bar" x="290.0" y="174" width="221.8" height="20" rx="2"/><text class="c-lab c-s2t" x="284.0" y="189" text-anchor="end">about 4 years</text>
+</svg>
+<figcaption>Nvidia spec pages, as in <a href="/journal/memory-not-maths/">Memory, not maths</a>; years of work from the filings in the table at the foot (Eaton and Siemens Energy at 30 June 2026, Hitachi at 30 September 2026). Years of work is backlog over a year of sales, not a quoted lead time: a new order need not wait behind the whole pile. Open circles are not announced chips.</figcaption>
+</figure>
 
-**The plants against their dates.** Eaton's Jonesville and Bellevue plants are due in 2027, Siemens Energy's new Nuremberg areas by 2028 and Hitachi's Gallman plant in 2029. The strongest confirmation would be a plant that opens on time while its maker's ratio still rises. The first real crack would be Eaton's ratio falling two quarters running before its new plants start, or its book-to-bill over twelve months dropping below 1.0.
+That turns the usual picture of an AI build upside down. The chip is the part a buyer can change late; the electrical gear is the part that must be settled first. A data centre's real start date is set when its transformer is booked, years before the chips it will run are on sale.
 
-**Price or volume.** A backlog can grow because gear costs more, not because more is ordered. Watch for any maker splitting its backlog into price and volume, and for Eaton's margin once price and cost are back in balance. A queue that earns is a queue the makers will defend.
+## Two readings decide which way it breaks
 
-**The makers' own chart.** Siemens Energy's estimate is the backbone of this piece. A revision that shows capacity meeting demand in Europe and North America before 2030 would weaken the case at its source.
+Whether the queue holds comes down to two things: whether the makers' years of work keep rising, and whether their new plants open on time. Put them together and every quarterly result lands in one box.
 
-## Developers pay for the wait, and the whole grid shares it
+<figure class="chart">
+<p class="chart-title">Every quarter from now lands in one of four boxes</p>
+<p class="chart-sub">Two readings: whether the makers' years of work keep rising, and whether their new plants open on time</p>
+<svg viewBox="0 0 560 290" role="img" aria-label="A two by two diagram. Across: new plants open late, or on time. Up: years of work rising, or falling. Rising and on time is the queue kept on purpose, my claim at its strongest. Falling and on time is the queue clearing, which would prove me wrong. Rising and late is stuck, worse than I say. Falling and late is cooling, orders fading rather than supply catching up. Today, at June 2026, years of work are rising and the first plants are not due until 2027, so the marker sits at the top, between the two upper boxes.">
+<rect class="c-box" x="110" y="40" width="209.0" height="99.0" rx="4"/><text class="c-box-t" x="214.5" y="85.5" text-anchor="middle"><tspan font-weight="600">Stuck</tspan></text><text class="c-note" x="214.5" y="104.5" text-anchor="middle">worse than I say</text><rect class="c-box" x="331.0" y="40" width="209.0" height="99.0" rx="4"/><text class="c-box-t" x="435.5" y="85.5" text-anchor="middle"><tspan font-weight="600">Kept on purpose</tspan></text><text class="c-note" x="435.5" y="104.5" text-anchor="middle">my claim, at its strongest</text><rect class="c-box" x="110" y="151.0" width="209.0" height="99.0" rx="4"/><text class="c-box-t" x="214.5" y="196.5" text-anchor="middle"><tspan font-weight="600">Cooling</tspan></text><text class="c-note" x="214.5" y="215.5" text-anchor="middle">demand fading first</text><rect class="c-box" x="331.0" y="151.0" width="209.0" height="99.0" rx="4"/><text class="c-box-t" x="435.5" y="196.5" text-anchor="middle"><tspan font-weight="600">Clearing</tspan></text><text class="c-note" x="435.5" y="215.5" text-anchor="middle">the new plants work: I am wrong</text>
+<g class="c-axis"><text x="110" y="272">new plants late</text><text x="540" y="272" text-anchor="end">new plants on time</text><text x="100" y="52" text-anchor="end">years of</text><text x="100" y="67" text-anchor="end">work rising</text><text x="100" y="232" text-anchor="end">years of</text><text x="100" y="247" text-anchor="end">work falling</text></g>
+<circle class="c-dot c-s2" cx="325.0" cy="40" r="7"/><text class="c-lab c-s2t" x="325.0" y="24" text-anchor="middle">June 2026: rising, plants not yet open</text>
+</svg>
+<figcaption>My framing, not a maker's. The readings are each maker's backlog over a year of its sales, and the plant dates in the table at the foot.</figcaption>
+</figure>
 
-If the queue is kept, the makers choose which orders to take and when, and the buyers who booked early are the ones who switch on first. The developer whose plan assumes gear can be ordered once a site is chosen waits behind everyone who booked before it. The makers carry a cost too: Eaton's margin fell as orders priced months earlier met higher metal costs.
+Today the marker sits at the top, between two boxes. Years of work are still rising, and the first plants are not due until 2027. My test draws the line: at 30 June 2028, Siemens Energy's grid business should still hold at least 3.6 years of work, and Eaton's Electrical Americas at least one.
 
-The four makers here are not alone in the queue. GE Vernova builds the same grid gear; ABB, Siemens and Vertiv make the equipment inside the fence; Prysmian, Nexans and NKT make the cable between them. Factory-built power rooms are the route around it, and Schneider's Systems business, which sells them, grew faster than its loose parts in the third quarter of 2026: 22% against 17%.
+The box it moves into decides who waits. In "kept on purpose", the developers who booked early switch on first and the late planners queue behind them. In "clearing", the advantage passes back to the buyers. Either way the same gear sits behind the grid stories in [America rations the plug](/journal/america-rations-the-plug/) and [the plug, not the chip](/journal/the-queue-not-the-chip/): a utility can clear a site's place in the grid queue, and the site still waits for its transformer.
 
-Everything upstream depends on this gear. A utility can promise the power and clear a site's place in the grid queue, and the site still waits for its transformer. That is why the equipment queue sits behind the grid stories in [America rations the plug](/journal/america-rations-the-plug/) and [the plug, not the chip](/journal/the-queue-not-the-chip/).
-
-## The wait should outlast the first new plants
-
-On the makers' own plans, the queue lasts through 2030. Hitachi plans its backlog at 2.5 to 3 times revenue to fiscal 2030, and Siemens Energy's chart still has demand about 10% ahead in 2030. My test reads it at mid 2028, early enough to be wrong in public.
-
-The shortage itself is not news; the makers have shown it to investors since at least November 2025. What is new is the timing. The plants announced in 2024 and 2025 start running from 2027, so the next eighteen months show whether new floor space shortens the wait or only keeps it. Whether any of this is already in the makers' share prices is not a question this journal answers; that work sits in the research notes below.
+Whether any of this is already in the makers' share prices is not a question this journal answers; that work sits in the research notes below.
 
 ## What would prove me wrong
 

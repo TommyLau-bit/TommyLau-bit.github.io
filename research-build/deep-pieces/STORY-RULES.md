@@ -55,11 +55,10 @@ Width 560; height to fit. Text 12 to 14px. Label lines directly rather than with
 
 Tommy on the pilot: the claims read as a summary of the whole article, so the second half fell back into topics piled on each other, and a strong start finished poorly. The story must not end on a recap.
 
-18a. **After the counter-evidence beat and the paragraph that answers the opening, the piece turns forward**, in two or three statement headings, then "What would prove me wrong". It answers, from facts already in the piece or its sidecar:
-   - what to watch, with dates: the reading, where it is published, and which reading confirms or cracks the claim;
-   - who gains and who pays if the claim is right, who else is in the same market, and what depends on it (link the sibling pieces);
-   - how long it should hold, and whether it is new or already widely known, in physical and disclosure terms.
-   Whether something is "in the share price", entry points and share prices stay out (CLAUDE.md hard rule); say that work sits in the research notes and link them.
+18a. **After the counter-evidence beat and the paragraph that answers the opening, the piece turns forward and ends on a jolt.** Tommy, second pass: the ending must be electric, the part where a reader thinks "I hadn't thought of that". A checklist of what to watch, even a good one, is still topics piled up. So the ending is one or two statement headings, each built on one non-obvious idea drawn from the piece's own facts or a sibling piece's (the model: the transformer ordered today outlasts three or four chip generations, so the gear, not the chip, sets a data centre's start date), each with its own diagram, then "What would prove me wrong".
+   - Diagrams carry the ending: a timeline that sets two clocks side by side, a two by two that shows where each quarter's result would land, a flow that shows what depends on what. Charts per piece: 2 to 5.
+   - Fold in, briefly and only where they serve the idea: what to watch and when, who gains and who pays, what depends on it (link the sibling pieces), how long it should hold. Never as a bulleted or bold-labelled list.
+   - Whether something is "in the share price", entry points and share prices stay out (CLAUDE.md hard rule); say that work sits in the research notes and link them.
 18b. **Every claim stays word for word, folded at the foot.** The piece's own claim and every earlier claim go in one `<details class="claims-record">` ("The claims on record, word for word") after Research notes, quoted exactly as before with their "Breaks if" and later-evidence notes. The headline claim's `<a id>` moves to the first forward heading. claims.ts is never reworded. The old "## Claims on record" section and `claims-earlier` fold are retired.
 19. **Every `<a id="...">` anchor in the old piece survives**, placed at the beat where that company or idea now appears. Old URLs redirect to them.
 20. **Evidence tables move to the end**, inside `<details class="evidence">` ("The figures behind the charts"), with the arithmetic method and any corrections to earlier pieces. Filing dates, method notes and corrections stay out of the story.
