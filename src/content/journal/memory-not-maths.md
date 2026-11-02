@@ -244,7 +244,7 @@ A pass would show that buyers treat memory as a part worth designing, not prove 
 
 ## Research notes
 
-[Micron](/research/micron/) has an initiation note, resting on its own claim about HBM wafers, and [SK Hynix](/research/sk-hynix/) and [Nvidia](/research/nvidia/) have notes resting on this piece's claim. How far ahead each year's HBM is sold is in [the chip supply chain](/journal/the-chip-supply-chain/). Whether any of this is already in share prices is a question for these notes, not for the journal.
+[Micron](/research/micron/) has an initiation note, resting on its own claim about HBM wafers, and [SK Hynix](/research/sk-hynix/), [Samsung Electronics](/research/samsung-electronics/) and [Nvidia](/research/nvidia/) have notes resting on this piece's claim. How far ahead each year's HBM is sold is in [the chip supply chain](/journal/the-chip-supply-chain/). Whether any of this is already in share prices is a question for these notes, not for the journal.
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
@@ -278,7 +278,7 @@ There are no earlier claims on this subject; this is the first.
 
 Maths per byte is peak dense operations divided by bytes a second, my arithmetic. Nvidia publishes sparse figures by default and states that dense is half. The A100 is shown at 16-bit because 8-bit integer maths was not its usual format for models; at 8-bit its maths per byte would be about 306. Rubin at 16-bit (4 PFLOPS dense) gives about 210 against about 280 to 310 for Blackwell Ultra (Nvidia's HGX and rack pages imply 2.25 to 2.5 PFLOPS dense), so at fixed format Rubin narrowed the gap, which fits the story of HBM4 catching up a step. The V100 of 2017 is left off because Nvidia no longer publishes its specification page.
 
-Not used: market shares and any report that SK Hynix's shipping HBM4 base die is made by TSMC, which rest on press and research firms; SK Hynix's own words are its plan of April 2024. Micron's HBM4E base die partner is likewise press only.
+Not used: market shares and any report that SK Hynix's shipping HBM4 base die is made by TSMC, which rest on press and research firms; SK Hynix's own words are its plan of April 2024. Micron's HBM4E base die partner is likewise press only. Correction, 2 November 2026: that was wrong. Micron named its partner in its own prepared remarks of 23 September 2025: "We are partnering with TSMC for manufacturing the HBM4E base logic die for both standard and customized products." The [Samsung Electronics note](/research/samsung-electronics/) found it. The claim is unchanged.
 
 </details>
 
