@@ -67,7 +67,6 @@ const { mark, ret, move } = latest(p);
         <p class="claim-box-claim">{claim!.claim}</p>
         <p class="claim-box-rests"><span>Rests on:</span> <a href={claimHref(claim)}>{section ? <>{section}, in {piece!.data.title}</> : piece!.data.title}</a></p>
         <p class="claim-box-rests"><span>Later evidence on this claim:</span> <a href={claimHref(claim)}>the same section as it stands now</a>{piece!.data.updated && <> (piece updated {fmtDate(piece!.data.updated)})</>}, with anything the deep piece has added since the note.</p>
-        {d.correction && <p class="claim-box-correction"><span>Where I was wrong</span>{d.correction} The piece and the claim stay as published; the note explains what changed my view.</p>}
       </aside>
     ))}
 

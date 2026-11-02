@@ -221,7 +221,7 @@ The second is Nebius at 30 June 2027, six months after its connected guide falls
 
 ## Research notes
 
-The [Nebius initiation note](/research/nebius/) (6 October 2026) rests on the Nebius claim and already carries the correction from connected to active power. The [Nvidia note](/research/nvidia/) rests on this piece's own claim. No note rests on the Jane Street claim. Whether any of this is already in share prices is a question for these notes, not for the journal.
+The [Nebius initiation note](/research/nebius/) (6 October 2026) rests on the Nebius claim and measures it by active power. The [Nvidia note](/research/nvidia/) rests on this piece's own claim. No note rests on the Jane Street claim. Whether any of this is already in share prices is a question for these notes, not for the journal.
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
@@ -242,7 +242,7 @@ Claim: "AI buyers pay for connected power, and Nebius's edge is turning contract
 
 Breaks if: "Prepayments fade, or Nebius misses 800 megawatts connected by the end of 2026, or its customers start selling their own spare capacity."
 
-Where later evidence bears on it: I was wrong. Buyers do not pay for connected power. On Nebius's own definitions they pay for active power, chips installed and running, which comes after connection. I said so in the [Nebius note](/research/nebius/) on 6 October. The edge is still speed, but the test that matters is active power, read through annualised revenue.
+Where later evidence bears on it: against the first limb. Buyers do not pay for connected power. On Nebius's own definitions they pay for active power, chips installed and running, which comes after connection. The edge is still speed, but the test that matters is active power, read through annualised revenue.
 
 On the three tests: the 800 MW limb is unresolved until Nebius reports the end of 2026. On prepayments, the latest evidence predates the claim: Nebius's letter of 12 August put them in about 70% of second quarter deals, and nothing it has published since shows them fading. On the third limb, I have found no primary evidence of a Nebius customer selling its spare capacity; Bloomberg reported in July 2026 that Meta plans to, which is press and unconfirmed.
 

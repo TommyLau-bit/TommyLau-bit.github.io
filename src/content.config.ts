@@ -43,10 +43,9 @@ const calls = defineCollection({
     company: z.string(),
     ticker: z.string(),
     exchange: z.string(),
-    claims: z.array(z.string()).min(1),         // the claim ids (journal slugs) it rests on
-    // Where the pitch finds the claim's piece was wrong, in one sentence. Shown
-    // under the claim on /claims; the claim itself is never reworded.
-    correction: z.string().optional(),
+    // the claim ids it rests on, if any: a note may cover a company the journal
+    // never mentions (Tommy, 2 Nov 2026)
+    claims: z.array(z.string()).default([]),
     keyPoints: z.array(z.string()).min(3).max(5),  // the thesis in three to five sentences
     files: z.object({
       pdf: z.string(),                          // /research/<date>_<Company>_Initiation.pdf

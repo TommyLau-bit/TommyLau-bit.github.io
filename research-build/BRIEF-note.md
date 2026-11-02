@@ -18,7 +18,7 @@ You are drafting ONE initiation note for Tommy's site. Tommy decides the call; y
 
 ## The analysis
 - Thesis in the journal's analogy style, at buy-side depth, built on the piece's claim.
-- **Claims and notes must agree.** Check the claim and the piece's evidence against what you find. If the piece got a fact wrong, do NOT write a "Where I was wrong" passage or a `correction` field (Tommy, 2 Nov 2026). State the right fact plainly in the note, and report the exact sentence in the piece, the right wording and the primary source in your report so the main session can fix the piece in place. NEVER edit the journal piece or claims.ts yourself.
+- **Notes stand on their own** (Tommy, 2 Nov 2026). A note need not rest on a journal claim; set `claims` only if it genuinely relies on one, else `claims: []`. Never write a "Where I was wrong" passage or a `correction` field. If you find a wrong fact in a journal piece, report the exact sentence, the right wording and the primary source; NEVER edit the piece or claims.ts yourself.
 - Variant perception: what the price implies vs your view, with numbers.
 - Valuation with the working: the method that fits the business, a key financials table (history, guidance, your estimates), bear/base/bull with probabilities (25/50/25 unless you justify otherwise), a 3x3 sensitivity grid, peers.
 - Risks, catalysts with dates (verify the next results date; if unconfirmed say so), what would change the view.

@@ -47,7 +47,7 @@ def check(path):
         v = m.group(1).strip().strip('"') if m else None
         return None if v in (None, 'null', '~', '') else v
 
-    for k in ('title', 'summary', 'company', 'ticker', 'exchange', 'claims'):
+    for k in ('title', 'summary', 'company', 'ticker', 'exchange'):
         if not field(k):
             fails.append(f'missing frontmatter: {k}')
     draft = field('draft') != 'false'
@@ -57,6 +57,8 @@ def check(path):
         if not field(k, call):
             fails.append(f'missing call.{k}')
     ids = re.findall(r"[a-z0-9-]+", (re.search(r'^claims:\s*\[([^\]]*)\]', fm, re.M) or [None, ''])[1])
+    if re.search(r'^correction:', fm, re.M):
+        fails.append('correction field: fix the piece in place instead (2 Nov 2026)')
     for i in ids:
         if i not in CLAIM_IDS:
             fails.append(f'claim "{i}" is not in src/data/claims.ts')

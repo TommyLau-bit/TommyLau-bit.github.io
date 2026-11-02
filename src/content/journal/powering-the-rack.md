@@ -246,7 +246,7 @@ That would change more than the timing. A building-first switch would pull SiC d
 
 ## Research notes
 
-[Vertiv](/research/vertiv/) and [Texas Instruments](/research/texas-instruments/), each resting on its live claim below. [Nvidia](/research/nvidia/) rests on this piece's claim among others. Both notes already record where the September and October pieces were wrong. Whether any of this is already in share prices is a question for these notes, not for the journal.
+[Vertiv](/research/vertiv/) and [Texas Instruments](/research/texas-instruments/), each resting on its live claim below. [Nvidia](/research/nvidia/) rests on this piece's claim among others. Whether any of this is already in share prices is a question for these notes, not for the journal.
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
@@ -267,7 +267,7 @@ Claim: "What Vertiv sells per megawatt is rising, because AI makes every megawat
 
 Breaks if: "Vertiv's growth only ever tracks the megawatts being built, or its margin shrinks while orders stay strong, or the biggest buyers take cooling in-house."
 
-Where later evidence bears on it: I was wrong. The piece said service revenue grew faster than product sales. Those were reported figures, swollen by acquisitions. Organically, services and spares grew 18.1% in the third quarter of 2026 against 63.6% for products, so that evidence fell away, as the Vertiv note said on 6 October. The margin limb has not broken: 25.2%, up 2.9 points, with orders more than doubling. But that margin fits operating leverage as well as richer content. The claim now rests on Vertiv's own per-MW estimate, up about 10 to 15%. The in-house limb is partly met, and was from the start: Google's own blog (30 April 2025) says it has liquid-cooled its TPUs since 2018 "at GigaWatt scale". So at least one of the biggest buyers already designs its own cooling, which the September piece did not weigh.
+Where later evidence bears on it: the services evidence has fallen away. Reported service growth was swollen by acquisitions; organically, services and spares grew 18.1% in the third quarter of 2026 against 63.6% for products. The margin limb has not broken: 25.2%, up 2.9 points, with orders more than doubling. But that margin fits operating leverage as well as richer content. The claim now rests on Vertiv's own per-MW estimate, up about 10 to 15%. The in-house limb is partly met, and was from the start: Google's own blog (30 April 2025) says it has liquid-cooled its TPUs since 2018 "at GigaWatt scale". So at least one of the biggest buyers already designs its own cooling.
 
 **The most expensive chip in an AI rack runs on Texas Instruments' cheapest ones** (2 October 2026)
 

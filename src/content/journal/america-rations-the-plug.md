@@ -275,7 +275,7 @@ Claim: "The grid's new problem with AI data centres is not the power they draw. 
 
 Breaks if: "Ride-through turns out to be a cheap settings change rather than a constraint, or Virginia's 3.8 gigawatt trip proves to be a local fault rather than how these sites are built."
 
-Where later evidence bears on it: the fault "cleared properly" and this was PJM's third such transfer in about two years, which supports the second limb. The first is open: nobody has published what compliance costs. Where I was wrong: the piece said NERC's alert "binds" planners and operators; NERC says it "does not create a mandatory obligation". Binding standards will come from NERC, which FERC ordered on 16 July to file them by 31 December 2026. PJM times the event to the minute, so "under a second" was my reading, not PJM's figure.
+Where later evidence bears on it: the fault "cleared properly" and this was PJM's third such transfer in about two years, which supports the second limb. The first is open: nobody has published what compliance costs. NERC's alert "does not create a mandatory obligation"; binding standards will come from NERC, which FERC ordered on 16 July to file them by 31 December 2026. PJM times the event to the minute, so "under a second" is my reading, not PJM's figure.
 
 **The battery has quietly stopped being an energy product** (22 September 2026)
 

@@ -31,10 +31,9 @@ The site does two jobs.
 3. **Only then is it published**, with Tommy's explicit go for that pitch. Nothing is published undecided.
 4. **Every new journal piece is a candidate pitch.** When a piece publishes, Claude asks whether to draft a pitch on the company or infrastructure in it.
 
-## Claims and pitches must agree
+## Claims and pitches (superseded 2 Nov 2026)
 
-- **Published claims are never reworded** (the existing rule in `src/data/claims.ts`). This protects the record.
-- Every pitch is checked against the claim(s) it rests on. **If they disagree, the pitch says so openly** ("In July I argued X. The evidence since says Y, so this call narrows it / goes further"), and if needed a **new dated claim** is added alongside the old one. Never a silent fix.
+- Notes and pieces are independent and need not agree; a wrong fact is fixed in place, never flagged with a correction.
 
 ## Updates: monthly, not daily
 
@@ -73,8 +72,8 @@ Tommy found the first build (a long web pitch with charts, merged into the claim
 - **No call** is a decided verdict (`direction: "NO CALL"`, no target, `revisitIf` required). It is marked monthly with the price move shown.
 - **Scorecard data:** `src/data/calls.ts`. Monthly, add one `Mark` per open call and set `SCORECARD_REFRESHED`. A resolved call gets `resolved` with a short post-mortem. Never delete.
 - **Checker:** `python3 brand/check-call.py`.
-- **Any company in a piece** (2 Nov 2026, replaces "journal piece first"): a note may rest on a piece's claim even when the claim does not name the company.
-- **Errors are fixed in the text** (2 Nov 2026): a wrong fact in a piece is edited so the piece is right; notes do not carry "Where I was wrong" passages or a `correction`.
+- **Notes and pieces are independent** (Tommy, 2 Nov 2026, permanent; replaces "journal piece first"): a note may cover a company the journal never mentions and need not rest on a claim (`claims` may be empty). Notes and pieces do not need to match.
+- **No dated corrections, ever** (2 Nov 2026, permanent): a wrong fact in a piece or note is edited so it is right. No "Where I was wrong", no `correction` field, no "Correction" paragraphs.
 - **Monthly marks:** the scheduled task `research-monthly-marks` prepares them early each month for Tommy's approval.
 - **Corrections:** do not change what was said before. Say it was wrong and what changed the view, in the note, in `correction`, and in a "Where I was wrong" passage in the PDF.
 

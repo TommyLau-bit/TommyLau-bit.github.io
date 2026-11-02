@@ -255,7 +255,7 @@ Claim: "Ajinomoto's build-up film is used by the area and layer count of each ch
 
 Breaks if: "In any of Ajinomoto's annual results presentations through fiscal 2029 (the year to March 2030), servers and networks fall below 70 per cent of its ABF volume by application, its fiscal 2025 level (the split is rounded to five points, so a flat 70 per cent passes); or the business profit margin of its Functional Materials business, part of the Healthcare and Others segment, falls below 50 per cent in a year when that business's sales still grow. Ajinomoto discloses the margin only as rounded wording ("over 50%"); if it stops doing so, the test rests on the volume split alone."
 
-Where later evidence bears on it: I was wrong. Ajinomoto does not disclose the margin only as rounded wording. Its results data sheets print Functional Materials sales and business profit in yen, so the margin can be computed exactly. The test is sharper than I wrote, and both halves hold.
+Where later evidence bears on it: holding. Ajinomoto's results data sheets print Functional Materials sales and business profit in yen, so the margin can be computed exactly, and both halves hold.
 
 **Micron sells AI memory before the year starts, and each bit takes three times the wafer** (7 October 2026)
 

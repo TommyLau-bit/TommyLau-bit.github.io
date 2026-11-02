@@ -238,7 +238,7 @@ The second is the fast lane. Since the start of 2025 GE Vernova has ordered 124 
 
 ## Research notes
 
-Two initiation notes rest on these claims: [GE Vernova](/research/ge-vernova/) and [Bloom Energy](/research/bloom-energy/), where the margin correction was first made. Whether any of this is already in share prices is a question for these notes, not for the journal.
+Two initiation notes rest on these claims: [GE Vernova](/research/ge-vernova/) and [Bloom Energy](/research/bloom-energy/). Whether any of this is already in share prices is a question for these notes, not for the journal.
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
@@ -267,7 +267,7 @@ Claim: "Bloom Energy's customers are paying for an earlier switch-on date, not f
 
 Breaks if: "Bloom keeps winning sites where a grid connection is available on schedule, or its deployment times stretch towards turbine and grid timelines, or its gross margin holds while grid waits shorten."
 
-Where later evidence bears on it: I was wrong. I read Bloom's rising gross margin as "the time premium, expressed in money". It rose mainly from product mix; product margin sat near 35% for two years, so buyers paid in volume, not price. Oracle intends, rather than has committed, to procure up to 2.8 GW, 1.2 GW contracted. The claim stands; its margin test is weak.
+Where later evidence bears on it: the margin test is weak. Bloom's gross margin rose mainly from product mix; product margin sat near 35% for two years, so buyers paid in volume, not price. Oracle intends, rather than has committed, to procure up to 2.8 GW, 1.2 GW contracted. The claim stands; its margin test is weak.
 
 **GE Vernova's customers are paying years in advance for a place in its queue** (9 October 2026)
 
@@ -275,7 +275,7 @@ Claim: "GE Vernova is expanding gas turbine output inside its existing factories
 
 Breaks if: "Before 2030, gigawatts under contract fall below four years of the annual output GE Vernova has planned for that year (20 GW now, 24 from 2028, 30 from 2030), or GE Vernova announces a new heavy-duty turbine factory, or Power deposits and price per kilowatt fall while orders stay strong."
 
-Where later evidence bears on it: holding. At 30 September 2026, 122 GW was 6.1 years of 20 GW output, above four years of the 2030 step, and Power deposits reached $33.2 billion. One correction: the $27.7 billion the piece said was held "for gas turbines" is the whole Power segment, which also covers nuclear and hydro, though the filings tie the rise to gas orders and reservations.
+Where later evidence bears on it: holding. At 30 September 2026, 122 GW was 6.1 years of 20 GW output, above four years of the 2030 step, and Power deposits reached $33.2 billion. Deposits are reported for the whole Power segment, which also covers nuclear and hydro, though the filings tie the rise to gas orders and reservations.
 
 </details>
 

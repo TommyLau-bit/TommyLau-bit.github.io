@@ -286,7 +286,7 @@ Claim: "A grid connection queue is really two queues. Governments can shorten th
 
 Breaks if: "Connection timelines keep compressing across the board, or equipment lead times normalise faster than utility spending is committed. Also if building power on site removes the constraint rather than moving it."
 
-Where later evidence bears on it: I was wrong. Tenaga's 2023 release says the Green Lane cut the whole implementation period, plant included, so the equipment clock has not been shown to set the pace of Malaysia's own connections. No Singapore campus has yet used on-site power to get round the ration.
+Where later evidence bears on it: against the equipment limb so far. Tenaga's 2023 release says the Green Lane cut the whole implementation period, plant included, so the equipment clock has not been shown to set the pace of Malaysia's own connections. No Singapore campus has yet used on-site power to get round the ration.
 
 **Two governments did the opposite thing and confessed the same problem** (22 September 2026)
 
