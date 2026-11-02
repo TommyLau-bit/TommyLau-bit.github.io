@@ -90,6 +90,23 @@ const cur = (p: string) => (p === '/' ? path === '/' : path.startsWith(p)) ? 'pa
         document.documentElement.classList.toggle('bar-on', on);
         if (on) bar.removeAttribute('inert'); else bar.setAttribute('inert', '');
       }).observe(head);
+      // iPhone Safari can swallow the first tap on a fixed bar after scrolling.
+      // A touch that lifts without moving is a tap: open the link at once.
+      var sx = 0, sy = 0, moved = false;
+      bar.addEventListener('touchstart', function (e) {
+        var t = e.touches[0]; sx = t.clientX; sy = t.clientY; moved = false;
+      }, { passive: true });
+      bar.addEventListener('touchmove', function (e) {
+        var t = e.touches[0];
+        if (Math.abs(t.clientX - sx) > 10 || Math.abs(t.clientY - sy) > 10) moved = true;
+      }, { passive: true });
+      bar.addEventListener('touchend', function (e) {
+        if (moved || e.changedTouches.length !== 1) return;
+        var a = e.target.closest && e.target.closest('a[href]');
+        if (!a) return;
+        e.preventDefault();
+        window.location.href = a.href;
+      });
     })();
   </script>
   <script is:inline>
