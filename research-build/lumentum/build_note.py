@@ -232,7 +232,7 @@ A('<div class="keeptogether">')
 A(section("Peer landscape"))
 A(cols(datatable(
     ["Company", "Ticker", "Forward P/E", "What they make"],
-    [[c, t, (f"{p:.1f}x" if p else "n/m"), w] for c, t, p, w in PEERS],
+    [[c, t, (f"{p + 1e-9:.1f}x" if p else "n/m"), w] for c, t, p, w in PEERS],
     num_cols={2},
 ), [22, 15, 12, 51]))
 A(caption("Forward P/E from stockanalysis.com, retrieved 6 October 2026 during US trading. The peer median, excluding Lumentum, is "

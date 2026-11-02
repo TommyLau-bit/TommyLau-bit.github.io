@@ -207,7 +207,7 @@ ws["A23"] = "Illustration: assets in proportion to data centres' share of sales,
 ws["A24"] = "Illustration: earnings per share on those assets, HK$"; put(ws, "B24", "=B23*B19", M3)
 ws["A25"] = "Illustration: share of my 2028E EPS"; put(ws, "B25", "=B24/Earnings!F14", PCT1)
 note(ws, 27, [
-    "Permitted return = 8% of average net fixed assets (SoC). Net return = permitted return less interest on borrowed capital (up to 7%; 1,488 in 2025) and the TSF charge (85), plus performance incentives (526); CESF = 65% of energy efficiency incentives (242).",
+    "Permitted return = 8% of average net fixed assets (SoC). Net return = permitted return less interest on borrowed capital (up to 7%; 1,488 in 2025), interest on the increase in customers' deposits (11) and the TSF charge (85), plus performance incentives (526); CESF = 65% of energy efficiency incentives (242).",
     "Sales above the permitted return go to the Tariff Stabilisation Fund; a shortfall is drawn from it only up to its balance (SCA clause 5(2)). Volume does not move profit directly.",
     "2026E to 2028E: average net fixed assets roll forward by capital spending less depreciation, a simplification (2025 backtest: 145.7bn against 145.3bn implied).",
     "CLP does not disclose the capital cost of its data centre substations; rows 23 to 25 are an illustration only.",

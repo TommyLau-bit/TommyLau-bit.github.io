@@ -142,7 +142,7 @@ The case against starts with arithmetic. A narrowing gap can lower years of work
 
 <a id="schneider-sells-the-finished-system"></a>
 
-Some buyers also route around the queue. Schneider Electric sells more power rooms built and tested in its factories, which cut the work electricians must do on site; my [claim on that](/claims/#schneider-sells-the-finished-system) is close to its line.
+Some buyers also route around the queue. Schneider Electric sells more power rooms built and tested in its factories, which cut the work electricians must do on site.
 
 The wait does not end. A queue of three and a half years in 2028 binds a data centre developer as surely as four years today, and the makers' own plans are built to keep it. The second chair has arrived, and the diary still runs years ahead.
 

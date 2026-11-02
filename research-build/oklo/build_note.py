@@ -170,7 +170,7 @@ A(para(f"<strong class='lead'>What the price needs.</strong> On my base economic
 A(para(f"<strong class='lead'>Where I differ.</strong> Not on the claim, but on what is already in the price. The market prices "
        "Oklo as if a margin per plant were known. The one recent Western small-reactor costing I can check is Ontario's: "
        f"C${DARLINGTON[0]}bn for four 300 MW BWRX-300 units at Darlington, about C${round(DARL_KW, -2):,.0f} a kilowatt, and C${round(DARL1_KW, -2):,.0f} "
-       "for the first with shared costs. Oklo's design is simpler and smaller; my base already assumes well under half of that. "
+       "for the first with shared costs. Oklo's design is simpler and smaller; my base already assumes well below that. "
        f"Analysts are more positive: {CONS_N} have an average target of US${CONS_TP:.2f}."))
 
 A('<div class="keeptogether">')

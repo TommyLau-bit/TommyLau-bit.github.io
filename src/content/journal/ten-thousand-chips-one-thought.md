@@ -199,7 +199,7 @@ Co-packaging is told as a threat to the plug, but the part it takes out is the t
 
 The further co-packaging spreads, the more each switch leans on the one part both designs keep in a module. A co-packaged engine still needs light fed in from outside, by continuous lasers. On 11 August Lumentum said it was further behind demand on those than on its plug lasers. Co-packaging does not end the laser shortage; it adds a second kind of laser to it.
 
-If co-packaging wins, the part that loses is the translator. My Marvell claim rests on the DSP staying in the plug. Lasers sell into either design, and so does the glass, which Corning makes whatever sits at its ends. The laser starts to look like the slow parts in [the chip supply chain](/journal/the-chip-supply-chain/): few makers, and more output only from a new fab.
+If co-packaging wins, the part that loses is the translator. Marvell's optical DSPs sell only while the translator stays in the plug. Lasers sell into either design, and so does the glass, which Corning makes whatever sits at its ends. The laser starts to look like the slow parts in [the chip supply chain](/journal/the-chip-supply-chain/): few makers, and more output only from a new fab.
 
 ## Nvidia dated the engines, and named no lasers to feed them
 

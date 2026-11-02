@@ -1,5 +1,5 @@
 ---
-title: "Wärtsilä's engines are the quicker way to power a data centre, and their queue is lengthening too. At €25.64 the market pays for Energy as if it will not last."
+title: "Wärtsilä's engines are the quicker way to power a data centre, and their queue is lengthening too. At €25.64 the market pays for Energy as if the queue will not last."
 summary: "Wärtsilä's power plant business took orders at 2.50 times its sales in the nine months to September, and about 46 per cent of the megawatts were named data centre orders. On 27 October it said engine lead times continue to increase. The shares are 35 per cent below their April record, and with Marine at 14 times my 2027 profit the price leaves Energy at about 12.5 times. My base value is €30.36, 18 per cent above the price."
 company: "Wärtsilä"
 ticker: "WRT1V"

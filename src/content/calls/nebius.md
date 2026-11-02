@@ -173,7 +173,7 @@ The range is wide and centred close to today's price. That is what a stock looks
 
 **The price per megawatt falls.** The return table shows how much rests on new deals pricing at US$20 million or more. Meta selling spare capacity, or hyperscalers catching up on their own building, would push that down. The rise of 17 to 21 per cent in on-demand GPU prices reported from 1 October points the other way for now, though I have not confirmed it on a Nebius page.
 
-**Funding.** Nebius has raised about US$5.75 billion of convertible notes in August, sold about US$2.8 billion of shares in May and June, and taken US$2 billion from Nvidia in March. Second half capital spending implied by the guide is US$12 to 17 billion. More new shares are likely, and at a lower price they would cost holders more.
+**Funding.** Nebius raised about US$5.75 billion of convertible notes in August, sold about US$2.8 billion of shares in May and June, and took US$2 billion from Nvidia in March. Second half capital spending implied by the guide is US$12 to 17 billion. More new shares are likely, and at a lower price they would cost holders more.
 
 **Customer concentration.** Three unnamed customers made up 59 per cent of second quarter revenue, at 24, 21 and 14 per cent. A pause by one of them changes the year.
 

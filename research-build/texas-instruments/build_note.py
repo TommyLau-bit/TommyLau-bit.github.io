@@ -237,7 +237,7 @@ A(datatable(
     ["When", "Event", "What I watch"],
     [
         ["21 Oct 2026, 3:30pm Central", "Q3 2026 results and call", "Revenue against US$5.65 to 6.15bn; gross margin as loadings rise; data centre growth; industrial momentum; Q4 guide"],
-        ["October 2026", "Board declares the raised dividend", "US$1.52 a quarter, payable 10 November"],
+        ["10 November 2026", "Raised dividend first paid", "US$1.52 a quarter, raised on 17 September"],
         ["January 2027", "Q4 2026 results", "2027 capital spending and depreciation; any sign the industrial restock is ending"],
         ["First half of 2027", "Silicon Labs expected to close", "Financing, interest cost and deal charges"],
         ["2027 and after", "800 volt racks phase in", "Named operators adopting 800 volts; TI design wins in the first conversion stage"],

@@ -155,7 +155,7 @@ A(para(f"<strong>Now the price moves too.</strong> From late 2024 to early 2026,
        "December quarter."))
 A(para("<strong>The piece left one question unanswered.</strong> Allocated is not priced. Seagate's build-to-order contracts set "
        "configuration and price for nearline shipments through calendar 2027 only. It expects to start finalising 2028 prices over "
-       "the next few quarters. The horizon in my chart is a horizon of volume; the price on its last year is still open, and that "
+       "the next few quarters. The horizon in my piece's chart is a horizon of volume; the price on its last year is still open, and that "
        "is the year the share price now depends on."))
 
 A(section("Variant perception: what the market prices in, and where I differ"))

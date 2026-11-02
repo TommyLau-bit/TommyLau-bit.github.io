@@ -121,7 +121,7 @@ Analysts are more positive than the price. The 25 tracked by stockanalysis.com h
 
 That 17 GW is more than the 12 GW Switch agreement and the 1.2 GW Meta campus combined, and none of it is yet under a PPA. Put the other way, at my base fleet the price needs each plant to cost about US$3,200 a kilowatt, against my base of US$7,500.
 
-**Where I differ.** Not on the claim, which is holding, but on what is already in the price. The market prices Oklo as though the hard part is behind it. The hard part, a cost per kilowatt and a power price that leave a margin, has not been disclosed. The only recent Western small reactor costing I can check is Ontario's: C$20.9 billion for four 300 MW BWRX-300 units at Darlington, about C$17,400 a kilowatt. Oklo's design is simpler and smaller, but my base already assumes well under half of that.
+**Where I differ.** Not on the claim, which is holding, but on what is already in the price. The market prices Oklo as though the hard part is behind it. The hard part, a cost per kilowatt and a power price that leave a margin, has not been disclosed. The only recent Western small reactor costing I can check is Ontario's: C$20.9 billion for four 300 MW BWRX-300 units at Darlington, about C$17,400 a kilowatt. Oklo's design is simpler and smaller, but my base already assumes well below that.
 
 ## Valuation, with the working
 

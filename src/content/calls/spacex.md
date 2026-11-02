@@ -41,7 +41,7 @@ charts:
         values: [3.1, 3.3, 4.3, 5.2]
       - name: "Super Intelligence (SI)"
         values: [0.8, 0.8, 2.6, 7.6]
-    note: "In one quarter the AI business went from half of Starlink's revenue to more than Starlink's, as rented computing switched on and Cursor joined."
+    note: "In one quarter the AI business went from about three fifths of Starlink's revenue to more than Starlink's, as rented computing switched on and Cursor joined."
     source: "SpaceX results releases, Form 8-K Exhibit 99.1, 4 August and 20 October 2026; final prospectus (424B4), 12 June 2026, for Q1 2026. Space segment revenue (US$1.7bn, US$0.6bn, US$1.0bn, US$1.8bn) not shown."
   - id: perkg
     title: "Launch services revenue per kilogram of customer payload, US$"

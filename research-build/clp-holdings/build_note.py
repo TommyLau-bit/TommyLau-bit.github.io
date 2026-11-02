@@ -135,7 +135,7 @@ A(para("Think of the landlord from the piece, who must by law wire every flat th
 A(para(f"That is the Scheme of Control. CLP Power and Castle Peak Power, 70% owned, must meet demand at the lowest reasonable cost. "
        f"In return the tariff is set to earn a permitted return of 8% a year on their average net fixed assets. In 2025 that was "
        f"HK${PERMITTED['2025']:,.0f}m, which implies average net fixed assets of about HK${ANFA['2025'] / 1000:.1f}bn. The net return "
-       f"deducts interest on borrowed capital of up to 7% (HK$1,488m) and a charge on the Tariff Stabilisation Fund (HK$85m), and adds "
+       f"deducts interest on borrowed capital of up to 7% (HK$1,488m), interest on the increase in customers' deposits (HK$11m) and a charge on the Tariff Stabilisation Fund (HK$85m), and adds "
        f"performance incentives (HK$526m, about 0.36 points). 65% of the energy efficiency incentives go to the Community Energy Saving "
        f"Fund (HK$242m). That left HK${NET_AFTER_CESF['2025']:,.0f}m, or {R_NET25 * 100:.2f}% of the assets, and CLP's share was "
        f"HK${CLP_SHARE_NR['2025']:,.0f}m."))
