@@ -154,7 +154,7 @@ These limits are real, and they shape the test. A double order does not create a
 
 ## The chip waits for its worktops
 
-A supplier in a boom says it cannot meet demand when its supply is a building, not an order. That is the whole chip side of AI: most parts can be bought this year, and the few that cannot are booked a year or more ahead, then further ahead each time their makers speak. I once wrote that the bottlenecks near the chip clear in quarters; the makers' own dates say years. The kitchen is finished when the last worktop arrives, and the worktops are cut in buildings that take years to raise.
+A supplier in a boom says it cannot meet demand when its supply is a building, not an order. That is the whole chip side of AI: most parts can be bought this year, and the few that cannot are booked a year or more ahead, then further ahead each time their makers speak. The bottlenecks near the chip do not clear in quarters; the makers' own dates say years. The kitchen is finished when the last worktop arrives, and the worktops are cut in buildings that take years to raise.
 
 ## The factory for the chip of 2030 is planned before the chip has a name
 
@@ -182,7 +182,7 @@ The chip and the factory keep very different clocks. Nvidia has launched a new f
 <figcaption>Nvidia spec pages, as in <a href="/journal/memory-not-maths/">Memory, not maths</a>; TSMC calls of 15 January and 16 April 2026; ASML results, 14 October 2026; Micron Form 10-K (9 October 2026); Ajinomoto release, 7 May 2026. My framing. Grey: the first three years of a new fab; amber: when full output arrives. Open circles are not announced chips.</figcaption>
 </figure>
 
-We picture a chip designed first, then factories built to make it. At the slow steps it runs the other way: the cleanroom, the scanner and the film for a 2030 chip are planned before that chip is named. ASML's customers already ask to order for 2029 and 2030, and Ajinomoto aims its current expansion at demand to 2030, with its next film plant opening in fiscal 2032.
+We picture a chip designed first, then factories built to make it. At the slow steps the order is reversed: the cleanroom, the scanner and the film for a 2030 chip are planned before that chip is named. ASML's customers already ask to order for 2029 and 2030, and Ajinomoto aims its current expansion at demand to 2030, with its next film plant opening in fiscal 2032.
 
 So supply goes first to the buyers who commit first, with the deposits and capacity commitments Nvidia's 10-K describes. A designer that books only once its chip is finished joins the back of the line. The same clock reaches the grid, since Micron names energy infrastructure among the limits on new fabs: the queues in [Johor and Singapore](/journal/the-queue-not-the-chip/) and [the equipment queue](/journal/the-equipment-queue/) sit under the chip's own.
 
@@ -218,7 +218,7 @@ Seagate and TSMC stay on the watch list: one grows without new plant, the other 
 
 ## Research notes
 
-Four initiation notes rest on these claims, unchanged: [TSMC](/research/tsmc/), [ASML](/research/asml/), [Ajinomoto](/research/ajinomoto/) and [Micron](/research/micron/). [Seagate](/research/seagate/) and [Samsung Electronics](/research/samsung-electronics/) have notes resting on them too. Whether any of this is already in share prices is a question for these notes, not for the journal.
+Four initiation notes rest on these claims: [TSMC](/research/tsmc/), [ASML](/research/asml/), [Ajinomoto](/research/ajinomoto/) and [Micron](/research/micron/). [Seagate](/research/seagate/) has one resting on this piece's own claim, and [Samsung Electronics](/research/samsung-electronics/) one on the claim in [Memory, not maths](/journal/memory-not-maths/). Whether any of this is already in share prices is a question for these notes, not for the journal.
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
@@ -247,7 +247,7 @@ Claim: "ASML's EUV machines are sold out and committed a year or two ahead, and 
 
 Breaks if: "The booking half fails if ASML says it has EUV capacity beyond what customers have ordered; or ships more than 10 per cent fewer low NA EUV systems than its stated capacity (around 65 for 2026, around 85 for 2027) and itself attributes the shortfall to customer demand or pushed-out orders; or by its fourth quarter 2026 results (January 2027) no longer describes 2027 as close to fully covered with orders; or says its EUV order lead times are shortening. The growth half fails if ASML raises its stated low NA EUV capacity by more than 40 per cent in a single year, or announces new EUV cleanroom space or a second source for its optics. A shortfall caused by ZEISS or other suppliers supports the claim rather than breaking it."
 
-Where later evidence bears on it: the booking half is stronger than I wrote. The growth half is at risk: ASML is studying a 2028 step beyond 30%. It breaks above 40% in one year, or if ASML announces new EUV cleanroom space, which a step beyond two 30% steps may need.
+Where later evidence bears on it: the booking half has firmed. On 14 October ASML said its supply planned for 2027 and 2028 "will not fully meet the demand". The growth half is at risk: ASML is studying a 2028 step beyond 30%. It breaks above 40% in one year, or if ASML announces new EUV cleanroom space, which a step beyond two 30% steps may need.
 
 **As AI chip packages grow, Ajinomoto's insulating film grows with them** (7 October 2026)
 

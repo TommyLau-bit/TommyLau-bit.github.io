@@ -217,7 +217,7 @@ CLP's reserve margin is context, not a test: a margin below 15% in its Ten-year 
 
 ## Research notes
 
-CLP Holdings has an initiation note resting on this claim: [CLP Holdings](/research/clp-holdings/). The contrast with [Johor and Singapore](/journal/the-queue-not-the-chip/), where the connection is the scarce thing, is the subject of that deep piece. Whether any of this is already in share prices is a question for these notes, not for the journal.
+One initiation note rests on this claim: [CLP Holdings](/research/clp-holdings/). The contrast with [Johor and Singapore](/journal/the-queue-not-the-chip/), where the connection is the scarce thing, is the subject of that deep piece. Whether any of this is already in share prices is a question for these notes, not for the journal.
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>

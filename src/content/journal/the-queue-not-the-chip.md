@@ -126,7 +126,7 @@ The split may change. The regulator will study a user-pays basis for the next ta
 <a id="two-governments-one-confession"></a>
 ## Singapore rations what Malaysia builds
 
-Singapore runs the other way: it has demand to spare but little land or green power, so it chooses who may plug in. Its second Data Centre Call for Application, opened on 1 December 2025, offered at least 200 megawatts. Bidders needed a PUE of 1.25 or better, the ratio of power entering a building to power reaching its computers, and at least half their power green.
+Singapore is the mirror image: it has demand to spare but little land or green power, so it chooses who may plug in. Its second Data Centre Call for Application, opened on 1 December 2025, offered at least 200 megawatts. Bidders needed a PUE of 1.25 or better, the ratio of power entering a building to power reaching its computers, and at least half their power green.
 
 On 21 August 2026, EDB and IMDA provisionally allocated 50 megawatts each to Digital Realty, Equinix, Keppel Data Centres and STT GDC, all on Jurong Island, from more than 20 proposals. Singapore already has more than 1.6 gigawatts of data centre capacity, and the ministry sets no fixed ceiling, only growth "within the envelope of our resource constraints".
 
@@ -294,7 +294,7 @@ Claim: "Malaysia building more grid and Singapore rationing who may connect are 
 
 Breaks if: "Malaysia's spending turns out to be ordinary renewal weighted towards generation rather than connection, or Singapore's efficiency ceiling moves on a fixed schedule rather than with scarcity, or a third constrained market does neither."
 
-Where later evidence bears on it: the allowance is grid, not generation, but only 13% of it is labelled demand growth, and most of the rest is closer to renewal, with data centre spending in a contingent allowance released on triggers. That weakens the Malaysian half. The piece also said Singapore cannot make more; it is building five gas power stations by 2031, but still rations data centres.
+Where later evidence bears on it: the allowance is grid, not generation, but only 13% of it is labelled demand growth, and most of the rest is closer to renewal, with data centre spending in a contingent allowance released on triggers. That weakens the Malaysian half. Singapore is building five gas power stations by 2031, but still rations data centres.
 
 </details>
 

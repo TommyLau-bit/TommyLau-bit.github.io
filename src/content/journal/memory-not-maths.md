@@ -168,7 +168,7 @@ None of this lets the maths stop waiting. The chef is still faster than the hatc
 
 <a id="memory-not-maths"></a>
 
-A custom part usually ties a buyer to the one supplier able to make it. NVHBM runs the other way. The design is Nvidia's, and Nvidia says it will be "available from multiple memory providers", so it can move that design between makers.
+A custom part usually ties a buyer to the one supplier able to make it. NVHBM reverses that. The design is Nvidia's, and Nvidia says it will be "available from multiple memory providers", so it can move that design between makers.
 
 The maker gets no such freedom. A stack built around Nvidia's controller fits Nvidia's chips and the partners that link to its systems, with Amazon's Trainium4 the first named. If demand for that design falls, the stack, as I read it, cannot be sold to anyone else as standard HBM.
 
@@ -278,7 +278,7 @@ There are no earlier claims on this subject; this is the first.
 
 Maths per byte is peak dense operations divided by bytes a second, my arithmetic. Nvidia publishes sparse figures by default and states that dense is half. The A100 is shown at 16-bit because 8-bit integer maths was not its usual format for models; at 8-bit its maths per byte would be about 306. Rubin at 16-bit (4 PFLOPS dense) gives about 210 against about 280 to 310 for Blackwell Ultra (Nvidia's HGX and rack pages imply 2.25 to 2.5 PFLOPS dense), so at fixed format Rubin narrowed the gap, which fits the story of HBM4 catching up a step. The V100 of 2017 is left off because Nvidia no longer publishes its specification page.
 
-Not used: market shares and any report that SK Hynix's shipping HBM4 base die is made by TSMC, which rest on press and research firms; SK Hynix's own words are its plan of April 2024. Micron names its own: "We are partnering with TSMC for manufacturing the HBM4E base logic die for both standard and customized products" (prepared remarks, 23 September 2025).
+Not used: market shares and any report that SK Hynix's shipping HBM4 base die is made by TSMC, which rest on press and research firms; SK Hynix's own words are its plan of April 2024. Micron names its HBM4E partner in its own words: "We are partnering with TSMC for manufacturing the HBM4E base logic die for both standard and customized products" (prepared remarks, 23 September 2025).
 
 </details>
 
@@ -303,4 +303,4 @@ Not used: market shares and any report that SK Hynix's shipping HBM4 base die is
 
 ---
 
-<p class="sources">Sources: Nvidia spec pages for the A100, H100, H200, DGX B200, HGX and Vera Rubin NVL72 (read 30 October 2026), its technical blogs of 17 November 2023 and 22 August 2025, its NVHBM blog (26 August 2026) and Form 10-K (25 February 2026); AMD's MI300X page, its release of 2 June 2024 and Advancing AI deck (12 June 2025); JEDEC's HBM4 release (16 April 2025); SK Hynix releases of 3, 19 and 24 April 2024, 12 September 2025, 22 April, 16 October and 28 October 2026; Samsung results of 30 April, 30 July and 29 October 2026; Micron's prepared remarks (30 September 2026) and Form 10-K (9 October 2026). Maths per byte and the read-time sum are my arithmetic. Personal research, not investment advice.</p>
+<p class="sources">Sources: Nvidia spec pages for the A100, H100, H200, DGX B200, HGX and Vera Rubin NVL72 (read 30 October 2026), its technical blogs of 17 November 2023 and 22 August 2025, its NVHBM blog (26 August 2026) and Form 10-K (25 February 2026); AMD's MI300X page, its release of 2 June 2024 and Advancing AI deck (12 June 2025); JEDEC's HBM4 release (16 April 2025); SK Hynix releases of 3, 19 and 24 April 2024, 12 September 2025, 22 April, 16 October and 28 October 2026; Samsung results of 30 April, 30 July and 29 October 2026; Micron's prepared remarks (23 September 2025 and 30 September 2026) and Form 10-K (9 October 2026). Maths per byte and the read-time sum are my arithmetic. Personal research, not investment advice.</p>

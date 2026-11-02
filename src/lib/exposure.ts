@@ -12,7 +12,7 @@ export type Company = { name: string; slug: string; mentions: Mention[] };
 const ALIAS: Record<string, string> = { LITEON: 'LiteOn', NVIDIA: 'Nvidia', InnoLight: 'Innolight' };
 
 export const slugify = (s: string) =>
-  s.toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  s.toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
 const strip = (s: string) => s.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
 

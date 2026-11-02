@@ -14,6 +14,8 @@ const REDIRECTS = {
   // Start here was removed and the map became the homepage (Tommy, 30 Oct 2026).
   // /map/ is not here: src/pages/map.astro redirects it with its #layer kept.
   '/start': '/',
+  // the company slug once kept the umlaut as a hyphen (2 Nov 2026)
+  '/companies/wa-rtsila': '/companies/wartsila/',
   // the-queue-not-the-chip
   '/journal/johor-plugs-in-before-it-fills': '/journal/the-queue-not-the-chip/#johor-plugs-in-before-it-fills',
   '/journal/johor-waits-on-the-treatment-plant': '/journal/the-queue-not-the-chip/#johor-waits-on-the-treatment-plant',

@@ -223,7 +223,7 @@ Claim: "Hitachi Energy is adding factories only as fast as signed orders justify
 
 Breaks if: "Hitachi Energy's order backlog divided by its revenue over the previous four quarters, both in US dollars as Hitachi reports them (about 3.06 at 30 June 2026), falls below 2.5 at two consecutive quarter ends before 31 March 2031, the end of fiscal 2030; or its orders for any full fiscal year up to fiscal 2030 fall below its revenue for that year."
 
-Where later evidence bears on it: the ratio rose to about 3.1 at 30 September 2026 (Hitachi, 28 October 2026). The claim holds. Its South Boston date came from trade press, not Hitachi.
+Where later evidence bears on it: the ratio rose to about 3.1 at 30 September 2026 (Hitachi, 28 October 2026). The claim holds. Hitachi's own release gives no date for its South Boston plant.
 
 **Eaton is shipping more electrical gear than ever, and its order book is growing faster still** (26 October 2026)
 
@@ -239,7 +239,7 @@ Claim: "By Siemens Energy's own estimate, demand for large and medium power tran
 
 Breaks if: "Before 30 September 2030: Grid Technologies' orders fall below its revenue for any full fiscal year; or its order backlog in euros, as Siemens Energy reports it (€51bn at 30 June 2026), falls for two consecutive quarters; or Siemens Energy publishes a revised estimate showing transformer capacity meeting demand in Europe and North America before fiscal 2030."
 
-Where later evidence bears on it: no new figures by 30 October 2026. Its Charlotte slip rested on a press report; Siemens Energy's last stated date is early 2026, and its release of 3 February 2026 gives none.
+Where later evidence bears on it: no new figures by 30 October 2026. Siemens Energy's last stated date for its Charlotte plant is early 2026, and its release of 3 February 2026 gives none.
 
 </details>
 
