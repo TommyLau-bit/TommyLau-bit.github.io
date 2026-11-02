@@ -85,28 +85,29 @@ const cur = (p: string) => (p === '/' ? path === '/' : path.startsWith(p)) ? 'pa
     (function () {
       var head = document.querySelector('.site-head'), bar = document.getElementById('site-bar');
       if (!head || !bar || !('IntersectionObserver' in window)) return;
+      // Shown when the reader scrolls up, hidden while they scroll down. On
+      // iPhone, scrolling up also brings Safari's own toolbar back, so the
+      // bar is never under the collapsed address strip that eats a tap.
+      var root = document.documentElement, on = false, headOut = false, last = window.scrollY, ticking = false;
+      function set(v) {
+        if (v === on) return;
+        on = v;
+        root.classList.toggle('bar-on', v);
+        if (v) bar.removeAttribute('inert'); else bar.setAttribute('inert', '');
+      }
       new IntersectionObserver(function (e) {
-        var on = !e[0].isIntersecting;
-        document.documentElement.classList.toggle('bar-on', on);
-        if (on) bar.removeAttribute('inert'); else bar.setAttribute('inert', '');
+        headOut = !e[0].isIntersecting;
+        if (!headOut) set(false);
       }).observe(head);
-      // iPhone Safari can swallow the first tap on a fixed bar after scrolling.
-      // A touch that lifts without moving is a tap: open the link at once.
-      var sx = 0, sy = 0, moved = false;
-      bar.addEventListener('touchstart', function (e) {
-        var t = e.touches[0]; sx = t.clientX; sy = t.clientY; moved = false;
+      addEventListener('scroll', function () {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(function () {
+          var y = window.scrollY, d = y - last;
+          if (Math.abs(d) > 6) { set(headOut && d < 0); last = y; }
+          ticking = false;
+        });
       }, { passive: true });
-      bar.addEventListener('touchmove', function (e) {
-        var t = e.touches[0];
-        if (Math.abs(t.clientX - sx) > 10 || Math.abs(t.clientY - sy) > 10) moved = true;
-      }, { passive: true });
-      bar.addEventListener('touchend', function (e) {
-        if (moved || e.changedTouches.length !== 1) return;
-        var a = e.target.closest && e.target.closest('a[href]');
-        if (!a) return;
-        e.preventDefault();
-        window.location.href = a.href;
-      });
     })();
   </script>
   <script is:inline>
