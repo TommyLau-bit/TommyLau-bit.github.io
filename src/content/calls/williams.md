@@ -10,7 +10,7 @@ keyPoints:
   - "The October claim holds. Williams brought its first plant into service in late July, which its chief executive put at under 18 months from commercialisation, by doing what the piece describes: it bought its machines ahead, with US$777 million of long-lead equipment held at the end of June, reimbursed by its customers if an order is cancelled."
   - "The power plants are a good business. At the 5 times build multiple Williams cites, they earn about US$0.70 million a year per installed megawatt on my estimate, roughly 5.7 times PJM's capacity price, and about 17 per cent a year before tax on capital over the contract alone."
   - "They are also small against the pipes. On my estimates they make about 11 per cent of 2028 Adjusted EBITDA. At US$74.35 the market pays about 13.8 times my 2027 EBITDA for the whole company, and the dividend alone needs about 10 per cent growth a year for a decade at an 8 per cent cost of equity."
-  - "My call: no call, with medium conviction. A sum of the parts gives US$77.72, 4.5 per cent above the price. I would revisit below about US$67.60, or on a 2027 guide of US$10.3 billion or more of Adjusted EBITDA, 7.5 per cent above my estimate."
+  - "My call: no call, with medium conviction. A sum of the parts gives US$77.72, 4.5 per cent above the price. I would revisit below about US$67.60, or on a 2027 guide of US$10.3 billion or more of Adjusted EBITDA, about 7 per cent above my estimate."
 files:
   pdf: "/research/2026-11-02_Williams_Initiation.pdf"
   xlsx: "/research/2026-11-02_Williams_Model.xlsx"
@@ -26,7 +26,7 @@ call:
   target: null
   horizon: "12 months, to October 2027"
   conviction: "Medium"
-  revisitIf: "A price below about US$67.60, where my base value would sit 15 per cent above it; or a 2027 guide with an Adjusted EBITDA midpoint of US$10.3 billion or more, 7.5 per cent above my estimate, which would lift my value enough for a long."
+  revisitIf: "A price below about US$67.60, where my base value would sit 15 per cent above it; or a 2027 guide with an Adjusted EBITDA midpoint of US$10.3 billion or more, about 7 per cent above my estimate, which would lift my value enough for a long."
   wrongIf: "The shares close above US$93 or below US$56 in October 2027, a quarter above or below the price; or 2026 Adjusted EBITDA lands below the US$8.3 billion bottom of Williams' guide; or Socrates North is not in service by 31 March 2027."
 charts:
   - id: power

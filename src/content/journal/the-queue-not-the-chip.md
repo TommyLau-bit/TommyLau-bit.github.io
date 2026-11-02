@@ -203,7 +203,7 @@ The strongest case against comes from Malaysia's own Parliament. On 28 October 2
 
 It is the same draw counted against a smaller booking. Against the 6 gigawatts booked at 45 operating sites, which ministers gave on 13 October, the same draw is about 23%. Against the maximum demand in Tenaga's system, which my test reads, it was about 22% in June. Every count still leaves a large share of booked power idle.
 
-The concession is real, though. Once a Johor campus is connected, its tenants' chips and licences set how fast it fills, so my first claim holds for Singapore and for campuses still waiting, not for halls already plugged in. Malaysia's grid spending is also less about data centres than it looks: only 13% of its base allowance for 2025 to 2027 is labelled demand growth. And Singapore can make more power, with five new gas power stations by 2031, yet it still rations data centres by call.
+The concession is real, though. Once a Johor campus is connected, its tenants' chips and licences set how fast it fills, so the plug binds in Singapore and for campuses still waiting, not for halls already plugged in. Malaysia's grid spending is also less about data centres than it looks: only 13% of its base allowance for 2025 to 2027 is labelled demand growth. And Singapore can make more power, with five new gas power stations by 2031, yet it still rations data centres by call.
 
 <a id="johor-waits-on-the-treatment-plant"></a>
 

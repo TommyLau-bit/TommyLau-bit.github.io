@@ -214,7 +214,7 @@ A(cols(datatable(
     ],
     num_cols={2, 3, 4, 5, 6, 7}, total_row_idx=3,
 ), [9, 37, 10, 10, 8, 9, 10, 7]))
-A(caption(f"Normal revenue: bear US${sb['nrev']:.1f}bn at a {pc(SCEN[0][2], 0)} margin; base US${sm['nrev']:.1f}bn at "
+A(caption(f"Normal revenue: bear US${sb['nrev']:.1f}bn at an {pc(SCEN[0][2], 0)} margin; base US${sm['nrev']:.1f}bn at "
           f"{pc(SCEN[1][2], 0)}; bull US${su['nrev']:.1f}bn at {pc(SCEN[2][2], 0)}. Fiscal 2027 and the cash at October 2027 are "
           "the same in all three on purpose: 2027 prices are set in contracts, so a price turn shows from fiscal 2028. The bear is not "
           f"fanciful: revenue fell {abs(FY23_REV_FALL) * 100:.0f}% in fiscal 2023, and the shares are already "
