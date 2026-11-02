@@ -1,11 +1,11 @@
 ---
 title: "Hong Kong has the plug: its grid builds to demand, and the chip needs a licence"
-date: 2026-10-30
+date: 2026-11-02T11:38:50+08:00
 summary: "Hong Kong's main utility is obliged to meet demand for electricity, had about a quarter more capacity than its highest demand last year, and is building substations for data centres faster than ever. Its one AI megasite, Sandy Ridge, drew a single bid, and the utility's date for it is the earliest anyone gives. What Hong Kong cannot supply is the chip: under American rules it is treated as China, so the hall's address helps decide the licence."
 category: "Analysis"
 cover: "/covers/hong-kong-has-the-plug.svg"
 tags: ["grid", "power", "hong-kong", "export-controls"]
-draft: true
+draft: false
 ---
 
 Hong Kong's only AI megasite, Sandy Ridge, was put out to tender to the whole industry. It drew a single bid.
