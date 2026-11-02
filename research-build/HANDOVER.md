@@ -2,7 +2,20 @@
 
 Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. Newest day on top. Rewrite START HERE at the end of each session.
 
-## START HERE (as of Mon 2 Nov 2026)
+## START HERE (as of Mon 2 Nov 2026, late evening)
+
+- **Six new initiation notes are live: 25 in all (8 long, 1 short, 16 no call).** Tommy, 2 Nov, before going out: draft every note worth doing, "don't wait for my approval, follow your draft views", then double-check everything and update this file. So these six calls are Claude's draft views, adopted by Tommy's standing instruction for this batch; they were not individually reviewed by him. Each was drafted to BRIEF-note.md, independently fact-checked (with fixes), then published.
+  - CLP Holdings (0002), NO CALL, medium, HK$77.75. Rests on hong-kong-has-the-plug. The Scheme of Control pays 8% on net fixed assets, so data centre demand barely moves earnings.
+  - SpaceX (SPCX), NO CALL, medium, US$134.72. Rests on data-centres-in-space. Its "Where I was wrong": Shotwell said on the 20 Oct call (IR transcript) that Starmind satellites fly from 2027, not 2028; and the AI1 page gives "75 kW / ton" (basis unstated). The piece now carries a dated correction; the claim stands.
+  - SK Hynix (000660), LONG, target KRW 2,000,000, medium, KRW 1,472,000. Rests on memory-not-maths.
+  - Nvidia (NVDA), LONG, target US$245, low, US$204.64. Rests on contracted-energised-running, memory-not-maths, powering-the-rack, the-plug-stays. Results 17 Nov.
+  - Seagate (STX), NO CALL, low, US$644.58. Rests on the-chip-supply-chain.
+  - Samsung Electronics (005930), LONG, target KRW 270,000, low, KRW 229,000. Rests on memory-not-maths. Its "Where I was wrong": Micron named TSMC as its HBM4E base die maker in its own prepared remarks of 23 Sep 2025; the memory piece now says so openly.
+  - Open item for Tommy (not fixed, because notes are never rewritten): the SK Hynix note's own estimates put its HBM share at 58% (2025) and 55% (2026), below IDC's 63.2% for 2025 in the same prospectus, and Samsung's tripling implies the 2026 shares sum to more than 100%. The Samsung note says so openly.
+  - Held, not drafted, under "journal piece first": Infineon, Mitsubishi Heavy, Kinder Morgan, Entergy and Williams appear in pieces but no claim names them. A note on any of them needs a claim first (an update or piece). Private companies (Crusoe, Jane Street, TerraPower, DayOne) cannot carry calls.
+  - Every Research notes line on the pieces these rest on now links the new notes.
+- **Also tonight:** the descent's orbit stop is an illustrated scene (sun, solar wings, compute module, radiators shedding heat, laser link, the kilogram), checked in light, dark and phone. The space piece dropped the "runs the other way" tic (STORY-RULES 18c). The research table prints yen and won without decimals. Two en dashes in numbers.ts are gone.
+- **Double-checked before this update:** all 13 pieces and 25 notes pass the checkers; the six PDFs have no DRAFT, dashes or mention of Claude; every model has cached values; all six use the five house sections; every new page returns 200 on the live site.
 
 - **Mon 2 Nov, evening: 13 live pieces, a new map layer, and one update.** All on Tommy's go; each scouted, drafted and independently fact-checked by separate agents.
   - NEW: data-centres-in-space, "Data centres in orbit: the plug is free and the heat is the bill" (1d5b78b, live 16:55). Tommy asked for it as an emerging topic (memory: topic-taste-emerging). Its own last map layer `orbit` (Tommy's choice over cooling) with a 10th descent stop ("Off the planet"), kept out of the grid-to-chip funnel. Claim: by 31 Dec 2028 no operator reports an AI compute satellite at SpaceX's 100 kW per metric ton, and no launch provider publishes a LEO price at or below $200/kg. Watch SpaceX 10-Qs, the two Suncatcher prototypes (2027), Starcloud's FCC file.
