@@ -159,7 +159,7 @@ A(para("<strong class='lead'>Supply, not demand, sets the pace.</strong> Infineo
        "negotiating, multi-year capacity reservation agreements worth a high single-digit billion euros in total, with some prepayment. "
        "It opened its Smart Power Fab in Dresden this summer and pulled €500m of AI investment into fiscal 2026. The backlog rose from "
        "about €21bn in December 2025 to about €25bn in March and close to €30bn in June. The piece's statements about Infineon match the "
-       "company's own releases, so nothing in it needs correcting."))
+       "company's own releases."))
 
 A(section("Variant perception: what the market prices in, and where I differ"))
 A(para(f"At {eur(PRICE, 2)} Infineon is worth €{MCAP:.1f}bn. Net debt was €{NET_DEBT_JUN26:,}m in June; less the fourth-quarter "

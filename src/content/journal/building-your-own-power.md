@@ -165,7 +165,7 @@ Laid side by side, from first decision to first power, the routes I can date fro
 <figcaption>Hollow dot: approval, open season, sanction, signing or sale; for Socrates it is the siting board's approval of Socrates North only. Solid dot: the date the owner gives. Ohio Power Siting Board and Williams; Transco's FERC application; Pennsylvania DEP and Homer City; Entergy's filings; Kinder Morgan, 21 October 2026; GE Vernova, 28 October 2026. A turbine shipped in 2032 still needs about 18 months on site, and the second Entergy deal awaits a vote.</figcaption>
 </figure>
 
-The fastest route I can date from primary sources was built by a pipeline company, and it is small. Ohio's siting board approved Socrates North on 18 September 2025: 200 MW of gas generation "not physically connected to the electric power grid", run by Williams' Will-Power for Sidecat, a Meta affiliate. Williams commits 400 MW from two Socrates plants to its customer; its 2026 quarterly filings put the two plants together at "an expected 556 MW of capacity", due in the second half of 2026, the first phase done "within budget and on time". Williams builds and runs the plants, and is itself a pipeline company.
+The fastest route I can date from primary sources was built by a pipeline company, and it is small. Ohio's siting board approved Socrates North on 18 September 2025: 200 MW of gas generation "not physically connected to the electric power grid", run by Williams' Will-Power for Sidecat, a Meta affiliate. Williams commits 400 MW from two Socrates plants to its customer; its 2026 quarterly filings put the two plants together at "an expected 556 MW of capacity", due in the second half of 2026, the first phase done "within budget and on time". Williams builds and runs the plants itself.
 
 <a id="hyperion-the-plant-outlasts-the-lease"></a>
 
@@ -175,9 +175,9 @@ So for gas, the fuel clock runs alongside the plant, not behind it. Pipe bid for
 
 ## What could open the queue
 
-The case against is real. Signings slowed to 11 GW in the third quarter, from about 20 GW in each of the two before, while shipments rose to 5 GW. Reservations can lapse. If output reaches 30 GW in 2030 and signings keep slowing, years of output would fall even while the pile holds. Mitsubishi Heavy expects to double its turbine capacity against its 2024 financial year. And a small off-grid plant like Socrates can go from approval to its due date in about a year.
+The case against starts in GE Vernova's own figures. Signings slowed to 11 GW in the third quarter, from about 20 GW in each of the two before, while shipments rose to 5 GW. Reservations can lapse. If output reaches 30 GW in 2030 and signings keep slowing, years of output would fall even while the pile holds. Mitsubishi Heavy expects to double its turbine capacity against its 2024 financial year. And a small off-grid plant like Socrates can go from approval to its due date in about a year.
 
-None of this yet frees a large campus. Signings still run at twice the rate of shipments, so the pile grows, and Mitsubishi Heavy says it books orders while checking how much of that capacity it can bring on. Socrates' 400 MW for its customer is under a fifth of Hyperion's first three plants.
+A large campus is still not free of the queue. Signings still run at twice the rate of shipments, so the pile grows, and Mitsubishi Heavy says it books orders while checking how much of that capacity it can bring on. Socrates' 400 MW for its customer is under a fifth of Hyperion's first three plants.
 
 <a id="plans-outrun-the-build"></a>
 
@@ -234,7 +234,7 @@ GE Vernova's count at the end of 2026, expected at 130 GW or more, is the first 
 
 The first test is GE Vernova's count at the end of 2027 against the end of 2026. Shipping about 20 GW a year, it holds level only if it signs as much as it ships, net of lapses. A fall would mean buyers no longer queue faster than the machine ships, though faded demand, lapsed reservations and faster output would all fit.
 
-The second is the fast lane. Since the start of 2025 GE Vernova has ordered 124 more aeroderivatives than it shipped, about 2.3 years of recent shipments. If that backlog is a year of shipments or less by the end of 2027, the fast lane has room.
+The second is the fast lane. Since the start of 2025 GE Vernova has taken orders for 124 more aeroderivatives than it shipped, about 2.3 years of recent shipments. If that backlog is a year of shipments or less by the end of 2027, the fast lane has room.
 
 ## Research notes
 
@@ -267,7 +267,7 @@ Claim: "Bloom Energy's customers are paying for an earlier switch-on date, not f
 
 Breaks if: "Bloom keeps winning sites where a grid connection is available on schedule, or its deployment times stretch towards turbine and grid timelines, or its gross margin holds while grid waits shorten."
 
-Where later evidence bears on it: the margin test is weak. Bloom's gross margin rose mainly from product mix; product margin sat near 35% for two years, so buyers paid in volume, not price. Oracle intends, rather than has committed, to procure up to 2.8 GW, 1.2 GW contracted. The claim stands; its margin test is weak.
+Where later evidence bears on it: Bloom's gross margin rose mainly from product mix; product margin sat near 35% for two years, so buyers paid in volume, not price. Oracle intends, rather than has committed, to procure up to 2.8 GW, 1.2 GW contracted. The claim stands; its margin test is weak.
 
 **GE Vernova's customers are paying years in advance for a place in its queue** (9 October 2026)
 

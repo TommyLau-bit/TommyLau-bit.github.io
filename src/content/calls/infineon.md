@@ -99,11 +99,11 @@ A simple check on size. At its own average content of US$175 per kilowatt, €1.
 
 Infineon is also short of supply. It says it is in allocation, with demand above what it can make. Customers have signed, or are negotiating, multi-year capacity reservation agreements worth a high single-digit billion euros in total, with some prepayment. It opened its new Smart Power Fab in Dresden this summer and pulled €500 million of AI investment forward into fiscal 2026. The order backlog rose from about €21 billion in December to close to €30 billion in June.
 
-The piece's statements about Infineon match the company's own releases, so nothing in it needs correcting.
+The piece's statements about Infineon match the company's own releases.
 
 ## What the market prices in, and where I differ
 
-At €50.56 Infineon is worth about €65.8 billion on 1,302 million shares. Net debt was €5.19 billion at the end of June. Taking off the fourth-quarter free cash flow implied by the full-year guide, I estimate about €4.6 billion at the end of September, for an enterprise value of about €70.4 billion.
+At €50.56 Infineon is worth about €65.8 billion on 1,302 million shares. Net debt was €5.19 billion at the end of June. Taking off the fourth-quarter free cash flow implied by the full-year guide, I estimate about €4.6 billion at the end of September, for an enterprise value of about €70.5 billion.
 
 The shares trade at 28.9 times the fiscal 2026 consensus of €1.75 and 17.6 times the fiscal 2027 consensus of €2.87, compiled by S&P Global and shown by stockanalysis.com (updated 21 October). Infineon's forward P/E there is 19.1 times. The median of eight chip peers is 19.2 times. Analog and power makers such as Texas Instruments, Analog Devices and Monolithic Power trade at 26 to 28 times. At the June peak, the shares traded at 30.7 times today's fiscal 2027 consensus.
 

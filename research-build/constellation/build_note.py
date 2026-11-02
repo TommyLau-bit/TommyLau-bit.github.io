@@ -138,7 +138,7 @@ A(para("<b>The connection was the hard part.</b> The 10-Q says PJM's first study
        "Eddystone Units 3 and 4, roughly 50-year-old oil and gas units of 380 MW each, were due to retire on 31 May 2025 and now run only "
        "under federal emergency orders, as energy-only resources. FERC agreed on 1 June 2026 that their 760 MW of capacity "
        "interconnection rights can move to Crane, which it said could let Crane be fully operational before 31 December 2030."))
-A(para("<b>Nothing in Constellation's filings shows the piece was wrong.</b> Its 2027 date, its 2030 date, the 760 MW and the emergency "
+A(para("<b>The claim holds on Constellation's filings.</b> Its 2027 date, its 2030 date, the 760 MW and the emergency "
        "orders all match the 10-Q and the waiver request. The claim's own test, power at full output by the end of 2028, is still open."))
 A(para(f"<b>Crane is the proof, not the profit.</b> At a {CRANE_CF * 100:.0f}% capacity factor, my assumption, 835 MW makes about "
        f"{CRANE_TWH:.1f} TWh a year, {CRANE_TWH / NUC_TWH_26 * 100:.1f}% of the {NUC_TWH_26} TWh Constellation expects its nuclear fleet "
@@ -289,7 +289,7 @@ A('</div>')
 A(section("Conclusion"))
 A(para("The October piece argued that the fastest nuclear power for AI comes from reactors that already hold a place on the grid. "
        "Constellation's filings agree: a fresh connection for Crane was not fully deliverable before the end of 2030, and borrowing "
-       "760 MW of Eddystone's rights keeps 2027 alive. Nothing I found says the piece was wrong. For the shares, Crane is the proof, not "
+       "760 MW of Eddystone's rights keeps 2027 alive. For the shares, Crane is the proof, not "
        f"the profit, and the market already pays for the rest of the fleet: {PE_C27:.1f} times a 2027 consensus that sits "
        f"{CONS_GAP27 * 100:.0f}% above the company's own framework. {my_call}: {view_txt}; base value {usd(BASE_VALUE)}, range "
        f"{usd(bear)} to {usd(bull)}."))

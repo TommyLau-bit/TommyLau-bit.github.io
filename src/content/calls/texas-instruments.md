@@ -208,7 +208,7 @@ Only three of the nine cells sit above today's price. To make money from here, T
 
 **What would change my view.** A price below about US$244 would put my base case 15 per cent above it and make this a call. So would third quarter results showing data centre at 15 per cent or more of revenue while industrial still grows. In the other direction, a fall in industrial orders before mid-2027 would bring the bear case forward.
 
-TI reports third quarter results on Wednesday 21 October 2026, with a call at 3:30pm Central time, as TI announced on 1 October.
+TI set its third quarter results for Wednesday 21 October 2026, with a call at 3:30pm Central time, as it announced on 1 October.
 
 ## Conclusion
 

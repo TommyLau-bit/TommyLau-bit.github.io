@@ -95,7 +95,7 @@ charts:
 
 Nebius closed at US$232.57 on 5 October 2026, more than ten times its price when trading resumed in October 2024. In that time it went from a leftover of Yandex with one data centre in Finland to a supplier of AI capacity to Microsoft and Meta.
 
-In September I argued that Nebius is paid for megawatts that are switched on, not megawatts it has signed. This pitch asks a narrower question. If that is how Nebius gets paid, what is a share worth, and does the price already know?
+In September I argued that Nebius is paid for megawatts that are switched on, not megawatts it has signed. This note asks a narrower question. If that is how Nebius gets paid, what is a share worth, and does the price already know?
 
 My answer is that the mechanism is right and the price knows it. At US$233 the shares assume that Nebius switches on most of its contracted power quickly, at the new, higher contract prices.
 
@@ -111,7 +111,7 @@ That matters, because it changes what the number I watch actually measures. Nebi
 
 **The test is active power.** Connected power is the building, finished and equipped. Active power is the chips running and billing, which is what customers pay for, and it trails connection by several months. Nebius's contract value per megawatt and its run-rate guide, set out below, do not fit together unless much of its connected power is not yet billing, and its own definitions confirm that. The edge the claim describes is still speed, but the right test is active power, not connected. Nebius does not report active megawatts each quarter, so I read them through annualised revenue divided by the fleet price per megawatt. Hitting 800 megawatts connected by the end of 2026 is necessary. It is not yet revenue.
 
-This also resolves a gap that has sat open in my notes since September. Nebius says its large second quarter deals carry annual contract value of US$20 to 25 million per megawatt. Multiply that by 800 megawatts and you get US$16 to 20 billion a year. Yet Nebius guides to annualised revenue of only US$7 to 9 billion at the end of 2026.
+This also resolves a gap in Nebius's own figures. Nebius says its large second quarter deals carry annual contract value of US$20 to 25 million per megawatt. Multiply that by 800 megawatts and you get US$16 to 20 billion a year. Yet Nebius guides to annualised revenue of only US$7 to 9 billion at the end of 2026.
 
 Three things in Nebius's own words close the gap. First, its annualised revenue is December's revenue multiplied by twelve, so it captures only what is billing that month. Second, the US$20 to 25 million applies to the new deals, against an approximate base of US$12 million for the 2026 fleet. Third, Nebius says most of those new deals were signed against capacity arriving in late 2026 and will mainly earn in 2027.
 

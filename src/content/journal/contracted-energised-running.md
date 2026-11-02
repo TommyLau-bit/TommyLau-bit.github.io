@@ -186,7 +186,7 @@ The case against is that the stages may follow each other quickly almost everywh
 
 Malaysia's gap may also be timing, not idle halls. Campuses book for their finished size and fill in phases, and the deputy minister told Parliament on 13 October 2026 that data centres book more than they use. Nobody splits the gap between ramp, overbooking and licensed chips, so I hang nothing on any one of them.
 
-None of this makes a signed gigawatt into computing. Even on the fastest path, at Abilene, more than two years passed between the start of work and three quarters of the campus handed over. My claim tests the fast cases directly: if Nebius connects 800 MW and is still not billing that much six months later, the lag is longer than months.
+A signed gigawatt is still not computing. Even on the fastest path, at Abilene, more than two years passed between the start of work and three quarters of the campus handed over. My claim tests the fast cases directly: if Nebius connects 800 MW and is still not billing that much six months later, the lag is longer than months.
 
 ## Count the lit windows
 
@@ -209,9 +209,9 @@ Counting lit windows from outside has a catch. Nebius has reported active power 
 
 So the meter everyone reads can run ahead of the chips. On my arithmetic, US$9.6 billion of annualised revenue is 800 MW at the old base, but only about 384 to 480 MW at new-deal prices. If those prices turn into billing, anyone dividing revenue by the old rate could count up to about twice the megawatts actually running. That is also why my own test is generous to me: Nebius can pass it with far fewer than 800 MW at work.
 
-The higher price is the queue showing up in a contract. Later buyers pay more for the same megawatt, as gas turbine buyers do in [Building your own power](/journal/building-your-own-power/). About 70% of Nebius's second quarter deals also carried prepayments covering 50 to 60% of the related capital spending. The builder gains twice, and the late buyer pays twice, in price and in cash up front. The risk of lateness falls on the builder: Microsoft's US$17.4 billion agreement pays only for services deployed and available, so a late hall earns nothing. The same caution applies in Johor, where [a hall can be let and earning while it draws little](/journal/the-queue-not-the-chip/).
+The higher price is the queue showing up in a contract. Later buyers pay more for the same megawatt, as gas turbine buyers do in [Building your own power](/journal/building-your-own-power/). Most of Nebius's second quarter deals also came with prepayments. The builder gains twice, and the late buyer pays twice, in price and in cash up front. The risk of lateness falls on the builder: Microsoft's US$17.4 billion agreement pays only for services deployed and available, so a late hall earns nothing. Revenue is a loose meter in Johor too, where [a hall can be let and earning while it draws little](/journal/the-queue-not-the-chip/).
 
-The readings to take are Nebius's year-end 2026 letter, for connected power, and its figures at 30 June 2027, for active power or revenue. When they arrive, divide revenue by the new-deal price as well as the old one. The honest count sits between the two, and the gap lasts as long as new deals price above the old base. Until then, the builder whose revenue grows fastest may simply be the one charging most per megawatt.
+The readings to take are Nebius's year-end 2026 letter, for connected power, and its figures at 30 June 2027, for active power or revenue. When they arrive, divide revenue by the new-deal price as well as the old one. The honest count sits between the two, and the gap lasts as long as new deals price above the old base. Read on the old rate alone, the builder whose revenue grows fastest may simply be the one charging most per megawatt.
 
 ## What would prove me wrong
 

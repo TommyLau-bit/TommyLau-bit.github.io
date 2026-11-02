@@ -151,8 +151,8 @@ A(para("<b>Is engine capacity the limit?</b> On Wärtsilä's words, yes for now.
        "lengthen the queue rather than lift sales. In October it named a new source of an old risk: \"price pressure, including from the "
        "ongoing expansion in gas engine and turbine manufacturing capacity\". The queue is real, and so is the competition to "
        "shorten it."))
-A(para("The piece's claim holds at Wärtsilä. Its 27 October quote and the 282 MW order of fifteen engines match the report, and "
-       "nothing I found shows the piece was wrong. The claim itself is tested on GE Vernova; Wärtsilä is the fast lane's evidence."))
+A(para("The piece's claim holds at Wärtsilä. Its 27 October quote and the 282 MW order of fifteen engines match the report. "
+       "The claim itself is tested on GE Vernova; Wärtsilä is the fast lane's evidence."))
 
 A(section("Variant perception: what the market prices in, and where I differ"))
 A(para(f"At {eur(PRICE)} Wärtsilä is worth about €{MCAP:.1f}bn on {SHARES:,.1f}m shares. Less €{NET_CASH / 1000:.2f}bn of net "
@@ -296,8 +296,8 @@ A('</div>')
 
 A(section("Conclusion"))
 A(para(f"The fast lane is queued too, and Wärtsilä's own figures say so: engine lead times still rising, Energy orders {EN_BTB_9M:.2f} times sales, "
-       f"and about {DC_SHARE_9M26 * 100:.0f}% of the megawatts named data centre orders. Nothing I found says the piece was "
-       f"wrong. At {eur(PRICE)} the market pays about {EN_IMPLIED_X:.1f} times for Energy if Marine gets 14 times. "
+       f"and about {DC_SHARE_9M26 * 100:.0f}% of the megawatts named data centre orders. "
+       f"At {eur(PRICE)} the market pays about {EN_IMPLIED_X:.1f} times for Energy if Marine gets 14 times. "
        f"{my_call}: {CALL['direction']}, {conv} conviction, target {eur(tgt)}; base value {eur(BASE_VALUE)}, range {eur(bear)} "
        f"to {eur(bull)}."))
 

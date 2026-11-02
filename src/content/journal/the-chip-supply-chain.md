@@ -265,10 +265,6 @@ Breaks if: "The first half fails if, by its fiscal first quarter 2028 results (a
 
 Where later evidence bears on it: both halves hold, on Micron's September remarks.
 
-**Proposed, never published: Seagate sells the terabyte**
-
-Drafted in October 2026 and never published, so it is not on record. Seagate's 27 October results support it, and the drives stay on watch.
-
 </details>
 
 <details class="evidence">

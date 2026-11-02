@@ -145,8 +145,8 @@ A(para(f"The backlog was US$3.0bn at the end of 2023 and US$14.4bn at the end of
        "the transcript published by Earnings Whispers, management said both run at least 20 years."))
 A(para("<b>The claim holds.</b> The piece said pipe \"sanctioned in October 2026 lands in 2030, level with heavy turbines sold out to "
        "2030\". The release gives exactly those dates, and every Kinder Morgan figure in the piece matches it: the US$14.4bn backlog, the "
-       "share above 75%, Permian Link's capacity, customer and date, and the Southeast Connector's phases. Nothing I found says the piece "
-       "was wrong. Take-or-pay adds one point: if the hyperscaler's turbines come late, the pipe is still paid for. The turbine queue is "
+       "share above 75%, Permian Link's capacity, customer and date, and the Southeast Connector's phases. "
+       "Take-or-pay adds one point: if the hyperscaler's turbines come late, the pipe is still paid for. The turbine queue is "
        "the buyer's timing risk, not the pipe owner's."))
 A(para(f"<b>What it is worth, and when.</b> Kinder Morgan says the US$13.7bn of the backlog that is mainly take-or-pay should cost about 5.7 times "
        f"the EBITDA it earns in its first full year: about US${BACKLOG_EBITDA / 1000:.1f}bn a year once complete, by my arithmetic, a quarter "
@@ -277,7 +277,7 @@ A('</div>')
 
 A(section("Conclusion"))
 A(para("The piece argued that own gas power trades the grid's queue for the makers', and that the pipe lands with the turbine. Kinder Morgan's "
-       "filings agree, and nothing I found says the piece was wrong. The demand is contracted and the backlog is the largest in the company's "
+       "filings agree. The demand is contracted and the backlog is the largest in the company's "
        "history. But the market re-priced Kinder Morgan for it in 2024, and at the old multiple today's price holds all of the backlog before "
        f"most of it opens. {my_call}: {direction}, {conv} conviction; base value {usd(BASE_VALUE)}, range {usd(bear)} to {usd(bull)}."))
 

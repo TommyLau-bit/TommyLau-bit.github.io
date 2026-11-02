@@ -142,8 +142,8 @@ A(para("<strong>HBM is now a small slice.</strong> SK Hynix's last HBM figure I 
        "19.7% to 24.3% of revenue. Micron says its 2027 HBM prices narrow \"the gross margin gap with conventional DRAM\", so HBM earns "
        f"the lower margin today. At my {pc(HBM_OPM26, 0)} HBM margin it is about {pc(HBM_OP26_SHARE, 0)} of 2026 operating profit."))
 A(para("<strong>Custom HBM decides how durable that slice is.</strong> On 28 October SK Hynix's head of HBM sales said \"we are seeing "
-       "growing importance of custom HBM\", and SK Hynix runs joint projects with major customers. The piece did not cite the July "
-       "prospectus, which defines custom HBM as integrating \"certain functions of GPUs and ASICs into the HBM base die\" and lists custom "
+       "growing importance of custom HBM\", and SK Hynix runs joint projects with major customers. Its July "
+       "prospectus defines custom HBM as integrating \"certain functions of GPUs and ASICs into the HBM base die\" and lists custom "
        "base die integration in its HBM4E work. None of it gives a date for volume, so the piece's claim stays open. A base die drawn by the "
        "buyer ties each stack to one chip, which protects the leader's tenth; but Nvidia says NVHBM will be \"available from multiple "
        "memory providers\", so pricing power moves to the buyer, as the piece argued."))

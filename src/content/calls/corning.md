@@ -217,7 +217,7 @@ Three of the nine cells sit above today's price. Each needs earnings above my ba
 
 **What would change my view.** A price below about US$127 would put my base case 15 per cent above it and make this a call. So would fourth quarter results showing optical at US$2.4 billion or more in the quarter, at a margin of 23 per cent or more, with the share sale largely unused. A falling optical margin before mid-2027 would bring the bear case forward.
 
-Corning reports third quarter results on Tuesday 27 October 2026, with a call at 8:30am Eastern time, as listed on its investor relations events page. The 10-Q that follows will show whether any shares were sold under the programme.
+Corning's next results after this note, for the third quarter, were set for Tuesday 27 October 2026, with a call at 8:30am Eastern time, as listed on its investor relations events page. The 10-Q that follows them shows whether any shares were sold under the programme.
 
 ## Conclusion
 

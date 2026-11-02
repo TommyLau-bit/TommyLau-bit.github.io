@@ -178,7 +178,7 @@ A(para(f"<strong class='lead'>Where I differ.</strong> If the claim holds, the s
        "heavier per kilowatt than the target and launch will still cost far more than US$200 a kilogram, so orbit cannot earn "
        f"its share of the gap within any horizon I can value. I credit US$100bn to all unreported options together, which leaves "
        f"about US${GAP_AFTER_OPTIONS / 1000:.0f}bn, roughly US${GAP_AFTER_OPTIONS / SHARES:.0f} a share, for orbit and the other "
-       "bets to earn. That argues for caution, not a short: the price sits 17% above my base, not twice it, and the bigger "
+       "bets to earn. That argues for caution, not a short: the price sits about 20% above my base, not twice it, and the bigger "
        "twelve-month swing is the ground business, whether SI reaches its guide, at what margin, and whether Customer B stays."))
 A('<div class="keeptogether">')
 A(f'<div class="chartsrow"><div class="col left"><img class="chart" src="file://{D}/chart_price.png"></div><div class="col">')

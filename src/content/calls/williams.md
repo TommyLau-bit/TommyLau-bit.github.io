@@ -94,7 +94,7 @@ Williams' filings give Socrates 556 megawatts of expected capacity since May 202
 
 **The claim holds, and Williams shows the mechanism.** Williams moved fast because it joined the makers' queues early and paid. At the end of June its leverage measure left out US$777 million of cash spent on long-lead power equipment, which also sits outside its capex guide because customers reimburse it if an order is cancelled. On the second quarter call, according to a third-party transcript, Williams' operating chief said it had "locked up the turbines to be able to support our backlog". He added that equipment timing is "really going to be setting some of the pace".
 
-The result was speed. Ohio's siting board approved Socrates North on 18 September 2025, and Socrates South entered service in late July 2026. On the second quarter call, by a third-party transcript, Williams' chief executive put it at 200 megawatts "in under 18 months since commercialization". Williams says phase one was completed "within budget and on time", and expects Socrates North later in the fourth quarter. Nothing here contradicts the piece. It confirms that the fast lane goes to whoever holds the machines.
+The result was speed. Ohio's siting board approved Socrates North on 18 September 2025, and Socrates South entered service in late July 2026. On the second quarter call, by a third-party transcript, Williams' chief executive put it at 200 megawatts "in under 18 months since commercialization". Williams says phase one was completed "within budget and on time", and expects Socrates North later in the fourth quarter. It confirms that the fast lane goes to whoever holds the machines.
 
 **The returns are high because speed is scarce.** Blackstone's US$4.4 billion for 49 per cent of the growth capex implies about US$9.0 billion before capitalised interest, from Williams' own July filing. On the second quarter call an analyst put the five at US$9.6 billion from Williams' slides, and its chief financial officer said capitalised interest is most of the gap. On the first quarter call its chief executive said that, "like our other power innovation projects", Williams expects to build Neo at "an attractive 5x build multiple", meaning cost over yearly EBITDA. At about 5 times, the five projects earn about US$1.8 billion of EBITDA a year at full output, my estimate.
 
@@ -183,7 +183,7 @@ Williams' third quarter results were not out when I wrote this: nothing was on E
 
 ## Conclusion
 
-The October piece argued that building your own gas power swaps the grid's queue for the makers' queues. Williams agrees in its own words: it bought the machines first, and the timing of equipment sets its pace. Its first plant for Meta entered service in late July, and four more are due by the end of 2028. Nothing I found says the piece was wrong.
+The October piece argued that building your own gas power swaps the grid's queue for the makers' queues. Williams agrees in its own words: it bought the machines first, and the timing of equipment sets its pace. Its first plant for Meta entered service in late July, and four more are due by the end of 2028.
 
 The power business earns well, about 5 times build multiples on contracts of 10 to 12.5 years. But it is about a ninth of Williams' EBITDA by 2028, and the price already pays today's full multiple for the pipes. My sum of the parts gives US$77.72, inside a range of US$55.22 to US$95.80.
 

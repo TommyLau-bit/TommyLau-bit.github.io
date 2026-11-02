@@ -325,7 +325,7 @@ A('</div>')
 A(section("Conclusion"))
 A(para("The September piece argued that building your own power swaps the grid's queue for the turbine makers'. MHI's figures confirm "
        "it at a second maker: about five years of GTCC revenue on order, new talks for 2030 to 2031, prices not falling, and buyers "
-       "paying ahead. I found nothing in MHI's disclosures that shows the piece wrong. But the queue that makes GTCC's revenue visible "
+       "paying ahead. But the queue that makes GTCC's revenue visible "
        f"also paces it, and much of MHI's cash belongs to the buyers in it. {my_call}: {dirw}, {conv} conviction; base value "
        f"{yen(BASE_VALUE)}, range {yen(bear)} to {yen(bull)}."))
 

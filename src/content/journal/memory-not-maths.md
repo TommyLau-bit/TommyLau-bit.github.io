@@ -158,11 +158,11 @@ SK Hynix expects demand to outrun supply "through 2030", citing "the long lead t
 
 ## What could loosen the memory limit
 
-The case against is real. First, smaller numbers: each halving of the number format halves the bytes per weight, and software keeps finding savings. Second, overflow: Micron says SSDs are now used "for KV cache offload", and SK Hynix is showing high bandwidth flash as a cheaper tier. Both ease capacity more than bandwidth, since the weights still have to be read for every word.
+Two things could ease the limit. First, smaller numbers: each halving of the number format halves the bytes per weight, and software keeps finding savings. Second, overflow: Micron says SSDs are now used "for KV cache offload", and SK Hynix is showing high bandwidth flash as a cheaper tier. Both ease capacity more than bandwidth, since the weights still have to be read for every word.
 
 The custom half is weaker still. NVHBM has one named chip partner, Amazon's Annapurna Labs, "starting with Trainium4", and no date. The HBM4 standard stays backward compatible with HBM3 controllers, and Nvidia measures NVHBM against "standard HBM4E", which remains on sale. Custom memory could stay one buyer's niche through 2027. That is exactly what the test below checks.
 
-None of this lets the maths stop waiting. The chef is still faster than the hatch. What has changed is who designs the hatch: the biggest kitchen now draws its own, and the memory makers build it to order.
+The maths still waits. The chef is still faster than the hatch. What has changed is who designs the hatch: the biggest kitchen now draws its own, and the memory makers build it to order.
 
 ## The stack is tied to the buyer, but the buyer is not tied to the maker
 
@@ -232,7 +232,7 @@ That matters more because the makers commit to buildings years ahead. SK Hynix's
 
 So a line planned today will run stacks for chips a generation or two after Rubin. My reading: under standard HBM, the maker planned that line against a published standard. From HBM4E, part of what it builds is set by a buyer, one generation at a time, after the plant is already standing.
 
-For now the shortage hides that risk. Micron has agreed most of its 2027 HBM already, as [the chip supply chain](/journal/the-chip-supply-chain/) shows, and SK Hynix expects demand to outrun supply through 2030. The risk shows only when that ends. The first signs will come in Micron's quarterly remarks as HBM4E ramps through 2027, at Nvidia's GTC in March 2027, on the claim's watch list, for an NVHBM date or second partner, and in Samsung's and SK Hynix's own results.
+For now the shortage hides that risk. Micron has agreed most of its 2027 HBM already, as [the chip supply chain](/journal/the-chip-supply-chain/) shows, and SK Hynix expects demand to outrun supply through 2030. The risk shows only when that ends. The first signs will come in Micron's quarterly remarks as HBM4E ramps through 2027, at Nvidia's GTC in March 2027, for an NVHBM date or a second partner, and in Samsung's and SK Hynix's own results.
 
 When the shortage does end, the biggest buyer holds a part shaped to its chip and a choice of makers, while chip designers without the volume to commission a stack stay on standard parts. The makers will carry the plants; Nvidia will carry the choice.
 

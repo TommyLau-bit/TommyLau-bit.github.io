@@ -87,7 +87,7 @@ A('<p class="lede">Coherent is paid every time the plug is bought again. At US$2
 A(para("Coherent builds the optical plugs that link the racks of an AI cluster, and grows the indium phosphide lasers inside them. "
        "My piece of 4 September argued that the plug survives co-packaged optics and is bought again at every speed step, from "
        "800 gigabits to 1.6 terabits. Coherent is the company most paid by that claim, and most hurt if it fails."))
-A(para(f"The claim holds so far. Coherent's datacentre business grew {DC_GROWTH26 * 100:.0f}% in fiscal 2026, 1.6T is ramping and 800G "
+A(para(f"The claim holds so far. Coherent's data centre business grew {DC_GROWTH26 * 100:.0f}% in fiscal 2026, 1.6T is ramping and 800G "
        f"still grows. Yet the shares have fallen {abs(OFF_HIGH) * 100:.0f}% from their June record, to {PE_C28:.1f} times consensus "
        "fiscal 2028 earnings, as fear of co-packaging and of a laser glut has spread across optics."))
 A(para(f"<b>{my_call}: {CALL['direction']}, {tgt_word} {usd(tgt)}, {conv} conviction.</b> Twenty-two times my fiscal 2028 EPS of "
@@ -140,7 +140,7 @@ A(para("<b>Paid at every speed step.</b> On the 12 August call, by third-party t
        "growth engines, and the 10-K shows research on 400 gigabit per lane parts for 3.2T and 6.4T. Each step needs new plugs and "
        "faster lasers, so Coherent is paid again each time."))
 A(para("<b>The constraint is the laser, and Coherent is adding it.</b> Management said on the call that laser output, not assembly, "
-       "caps datacentre revenue, and that it made about 80% more indium phosphide lasers in the June quarter than a year earlier. "
+       "caps data centre revenue, and that it made about 80% more indium phosphide lasers in the June quarter than a year earlier. "
        "The deck says internal output is on track to double by the end of 2026 and more than double again by 2027. Its six-inch lines "
        "in Texas and Sweden make EMLs, continuous lasers and photodiodes at higher yields than three-inch lines; the finance chief "
        "put a six-inch wafer at about four times the output for half the cost."))
@@ -297,7 +297,7 @@ A('</div>')
 
 A(section("Conclusion"))
 A(para("My September piece argued that the plug between racks survives co-packaging and is bought again at every speed step. Coherent "
-       f"builds that plug and grows its laser, and its results agree: datacentre revenue up {DC_GROWTH26 * 100:.0f}%, 1.6T pulled in, "
+       f"builds that plug and grows its laser, and its results agree: data centre revenue up {DC_GROWTH26 * 100:.0f}%, 1.6T pulled in, "
        f"laser output doubling. At {usd(PRICE, 2)} the price pays 22 times my fiscal 2027 earnings and nothing for the next step. "
        f"{my_call}: {CALL['direction']}, {tgt_word} {usd(tgt)}, {conv} conviction; base value {usd(BASE_VALUE)}, range {usd(bear)} to {usd(bull)}."))
 

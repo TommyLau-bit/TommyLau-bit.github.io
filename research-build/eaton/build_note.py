@@ -145,7 +145,7 @@ A(para("My reading is the bakery's: orders priced months earlier were still ship
 A(para("Eaton is also changing shape. It bought Boyd Thermal, a liquid cooling maker, for US$9.55bn in March 2026 and Ultra PCS, aerospace "
        "electronics, for US$1.53bn in January. It plans to combine Mobility, its truck and car parts business, with Dana in Q1 2027, "
        "receiving about US$1.1bn in cash while its shareholders own at least 50.1% of the combined company."))
-A(para("<b>Nothing in Eaton's filings shows the piece was wrong.</b> The ratio has risen five quarters running, orders run ahead of "
+A(para("<b>The claim holds on Eaton's filings.</b> The ratio has risen five quarters running, orders run ahead of "
        "sales, and the plants the piece named are still due in 2027. One caveat strengthens it: the June 2025 backlog included Fibrebond, "
        "bought on 1 April 2025, while that date's trailing sales held only one quarter of it, so the rise since is if anything understated. "
        f"On my Q3 sales estimate of about US$4.0bn, the September backlog needs to exceed about US$15.8bn for the ratio to keep rising."))
@@ -273,8 +273,8 @@ A('</div>')
 
 A(section("Conclusion"))
 A(para(f"The October piece argued that Eaton's queue in the Americas keeps lengthening even as it ships more. Its filings agree: "
-       f"{EA_MONTHS[-1]:.1f} months of sales on order in June, up from {EA_MONTHS[2]:.1f}, with orders 1.3 times sales. Nothing I found "
-       "says the piece was wrong. The queue cut this year's margin, because orders priced months ago met higher metal costs; Eaton expects "
+       f"{EA_MONTHS[-1]:.1f} months of sales on order in June, up from {EA_MONTHS[2]:.1f}, with orders 1.3 times sales. "
+       "The queue cut this year's margin, because orders priced months ago met higher metal costs; Eaton expects "
        f"that gap to close in the second half. At {usd(PRICE, 2)} the market pays {PE_E27:.1f} times my 2027 and {PE_E28:.1f} times my 2028 earnings. {my_call}: "
        f"{CALL['direction']}, {tgt_word} {usd(tgt)}, {conv} conviction; base value {usd(BASE_VALUE)}, range {usd(bear)} to {usd(bull)}."))
 

@@ -173,7 +173,7 @@ On 16 September Google, Nvidia and Emerald AI formed an alliance seeking faster 
 <a id="what-the-battery-is-really-for"></a>
 <a id="california-still-shifts-the-sun"></a>
 
-Batteries were the obvious candidate, and the record says they are mostly doing something else. California's fleet earns about four times as much from shifting cheap midday power into the evening as from steadying the grid, and on its twelve hardest summer evenings of 2026, gas led every time. That is a time-shifter. Nobody publishes how many batteries sit at data centres, so they stay a line in this story, not a beat.
+Batteries were the obvious candidate, and the record says they are mostly doing something else. California's fleet earns about four times as much from shifting cheap midday power into the evening as from steadying the grid, and on its twelve hardest summer evenings of 2026, gas led every time. That is a time-shifter. Nobody publishes how many batteries sit at data centres.
 
 ## What could leave the rationing on paper
 
@@ -244,7 +244,7 @@ July's morning reads differently once the two rules are put together. About 3,80
 
 Load that can leave in seconds is a reserve, if it leaves on the grid's call rather than at the first flicker. The two rules together make that so: a site must hold on through a fault, and come off when the grid asks. As PJM's transmission owners describe its interim tier, no capacity is bought for such a site, so it adds nothing to the auction households pay for. PJM's market monitor put $6.3 billion of the last one on data centre load.
 
-The first readings come soon: PJM's filings to FERC in November 2026 and its 2029/2030 auction in December. Households are spared that bill, and the site pays instead: it must own the backup, or chips that slow, as with Google's 1 GW of deals. In July the reserve left by accident. The new rules ask it to leave on cue.
+For a site on that tier, households are spared the bill and the site pays instead: it must own the backup, or chips that slow, as with Google's 1 GW of deals. The first readings come soon: PJM's filings to FERC in November 2026 and its 2029/2030 auction in December. In July the reserve left by accident. The new rules ask it to leave on cue.
 
 ## What would prove me wrong
 
@@ -283,7 +283,7 @@ Claim: "Large batteries are increasingly bought as connection equipment that let
 
 Breaks if: "New storage stops clustering where computing load is and spreads out with renewable generation instead, or connection waits shorten enough that opening early stops being worth paying for."
 
-Where later evidence bears on it: California's 17.3 GW fleet is a time-shifter, earning about four times as much from shifting energy as from balancing. My count of the 2026 summer narrows the claim to, at most, the newest buyers beside data centres. The Texas figure I relied on counts grid batteries, which also trade, and no one publishes the share at data centre sites. The nearest primary case, storage behind Google's Michigan site, is utility supply, not a connection condition.
+Where later evidence bears on it: California's 17.3 GW fleet is a time-shifter, earning about four times as much from shifting energy as from balancing. My count of the 2026 summer narrows the claim to, at most, the newest buyers beside data centres. Texas's planned 12.9 GW counts grid batteries, which also trade, and no one publishes the share at data centre sites. The nearest primary case, storage behind Google's Michigan site, is utility supply, not a connection condition.
 
 </details>
 

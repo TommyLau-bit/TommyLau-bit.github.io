@@ -9,7 +9,7 @@ keyPoints:
   - "Vertiv makes the power and cooling equipment inside AI data centres, and each AI megawatt needs more of it, and more complex versions of it, than an ordinary one."
   - "The proof is margin, not volume: adjusted operating margin has beaten the same quarter a year earlier every quarter since Q3 2025, reaching 22.6 per cent in Q2 2026."
   - "The shares have fallen a third since May on a sales miss, supply congestion and a dropped backlog figure. I read congestion with a rising margin as too little capacity, not too little demand."
-  - "At 37.9 times the 2026 guide the market prices Vertiv like a diversified industrial. Twenty-eight times my 2028 estimate of US$10.65 gives US$300."
+  - "At 37.9 times the 2026 guide the market prices Vertiv like a diversified industrial. Twenty-eight times my 2028 estimate of US$10.65 gives about US$298, and my target is US$300."
   - "Service is not the proof: stripped of acquisitions and currency, it grew more slowly than products in nine of the last ten quarters, so the call rests on margin alone."
 files:
   pdf: "/research/2026-10-06_Vertiv_Initiation.pdf"
@@ -174,12 +174,12 @@ Most of the range sits above today's price. The call loses money mainly if earni
 
 **What would change my view the other way.** A margin above the 24 to 25 per cent guide in the third quarter, together with a 2026 backlog well above US$15.0 billion, would move the base case towards the bull case.
 
-The third quarter results are due in late October. Vertiv has not yet announced the date.
+The third quarter results were due in late October; Vertiv had not announced the date when I wrote this.
 
 ## Conclusion
 
 The September piece argued that each AI megawatt holds more of what Vertiv makes. A year of margins says that is happening. The market has spent five months treating Vertiv as a volume story near its peak, and has cut the multiple of this year's earnings from about 60 times to about 38.
 
-The price now pays for the volume but not for the richer content. My call is LONG, with medium conviction and a twelve-month target of US$300, which is 28 times my 2028 estimate and 18 per cent above the price. Medium, not high, because the bear case is a 29 per cent fall and the third quarter results land within weeks. The call is wrong if margin falls while sales grow, if 2026 earnings land below Vertiv's own guide, or if the 2026 backlog comes in below US$15.0 billion.
+The price now pays for the volume but not for the richer content. My call is LONG, with medium conviction and a twelve-month target of US$300, which is about 28 times my 2028 estimate and 18 per cent above the price. Medium, not high, because the bear case is a 29 per cent fall and the third quarter results land within weeks. The call is wrong if margin falls while sales grow, if 2026 earnings land below Vertiv's own guide, or if the 2026 backlog comes in below US$15.0 billion.
 
 <p class="sources">Sources: Vertiv quarterly results releases on Form 8-K, Exhibit 99.1, from 24 April 2024 to 29 July 2026, for sales, organic growth by products and services, adjusted operating profit and margin, adjusted earnings per share, orders and backlog. Vertiv Form 10-Q for the quarter to 30 June 2026, filed 29 July 2026, for cash, debt, share count and regional sales. Vertiv 2025 Form 10-K, filed 13 February 2026. Vertiv 2026 Investor Conference presentation, 19 May 2026, for 2030 targets. Vertiv Form 8-K of 2 September 2026 on UtilityInnovation Group. Vertiv fourth quarter 2025 earnings call, 11 February 2026, on ending quarterly backlog disclosure. Consensus earnings from MarketBeat and peer multiples from stockanalysis.com, both retrieved 6 October 2026. Share prices are Yahoo Finance closes, retrieved 6 October 2026. Estimates for 2027 and 2028 are the author's own. Personal research, not investment advice.</p>

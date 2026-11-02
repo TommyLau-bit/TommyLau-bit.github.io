@@ -162,7 +162,7 @@ The case against is real, and Nvidia is funding it. On 21 October 2026 it said S
 
 The translator in the plug is contested too. Broadcom's chief executive said on 2 September 2026, by a third-party transcript, "We're now the leader in leading edge optical DSPs".
 
-None of this retires the plug by itself. A target is not a factory, and even a co-packaged switch keeps its lasers in front-panel modules. What it does threaten is the DSP: where the switch drives the engine directly, the translator leaves the plug. If a Feynman blueprint picks a co-packaged switch before the end of 2028, my claim breaks.
+That alone does not retire the plug. A target is not a factory, and even a co-packaged switch keeps its lasers in front-panel modules. What it does threaten is the DSP: where the switch drives the engine directly, the translator leaves the plug. If a Feynman blueprint picks a co-packaged switch before the end of 2028, my claim breaks.
 
 ## The glass stays, and so does the plug
 
@@ -251,7 +251,7 @@ Claim: "Marvell is paid every time AI chips talk, through the signal processor i
 
 Breaks if: "The translation moves off the plug at scale, through linear pluggable or co-packaged optics, or Marvell's interconnect growth stalls while clusters keep growing."
 
-Where later evidence bears on it: holding on the co-packaged leg for scale-out, since Nvidia's own reference design picks the pluggable switch. The main way that leg could break is SPIL's 15-fold target, if it is built. Two points cut against the piece. Hock Tan said on Broadcom's call of 2 September 2026, by a third-party transcript, "We're now the leader in leading edge optical DSPs", so the DSP is contested. And Marvell's filings describe its US$1 billion of prepayments as capacity reservations with foundries and partners for the whole business, not for optical DSPs alone.
+Where later evidence bears on it: holding on the co-packaged leg for scale-out, since Nvidia's own reference design picks the pluggable switch. The main way that leg could break is SPIL's 15-fold target, if it is built. Two points cut against the claim. Hock Tan said on Broadcom's call of 2 September 2026, by a third-party transcript, "We're now the leader in leading edge optical DSPs", so the DSP is contested. And Marvell's filings describe its US$1 billion of prepayments as capacity reservations with foundries and partners for the whole business, not for optical DSPs alone.
 
 **Broadcom is paid whether the cloud giants stay with Nvidia or leave** (2 October 2026)
 
@@ -259,7 +259,7 @@ Claim: "Broadcom is paid whether the cloud giants stay with Nvidia or leave for 
 
 Breaks if: "Custom chip customers move work to other designers, as Google has partly done with MediaTek, or Nvidia's own networking wins inside its clusters."
 
-Where later evidence bears on it: holding, but the stay half has shrunk to 27% of AI revenue. Broadcom's 8-K of 6 April 2026 shows Anthropic accesses Google's TPU design through Broadcom, rather than designing its own chips.
+Where later evidence bears on it: holding, but networking, the half paid if the cloud giants stay with Nvidia, has shrunk to 27% of AI revenue. Broadcom's 8-K of 6 April 2026 shows Anthropic accesses Google's TPU design through Broadcom, rather than designing its own chips.
 
 **Corning makes the glass AI chips talk through** (1 October 2026)
 

@@ -145,7 +145,7 @@ A(para("The capacity plan matches the claim too. On the July call the chief exec
        "2031 sold."))
 A(para("<b>The claim holds on every test it set.</b> The queue sits at 5.8 years against a floor of four. There is no new heavy-duty "
        "factory. Deposits are rising and so is price: first half equipment orders were priced more than 20% above those of the fourth "
-       "quarter of 2025. Nothing in the filings shows the piece was wrong."))
+       "quarter of 2025."))
 A(para(f"The claim's floor does rise. Four years of output is {NEED_GW['2026']} gigawatts today, {NEED_GW['2028']} from 2028 and "
        f"{NEED_GW['2030']} from 2030. To stay above it in 2030, GE Vernova must keep signing contracts for 2033 and beyond while "
        "shipping 30 gigawatts a year. On the July call it said it needs more time before it can say when 2032 will be contracted."))
@@ -301,10 +301,8 @@ A('</div>')
 
 A(section("Conclusion"))
 A(para("The October piece argued that GE Vernova's customers are paying for a place in a queue that will stay years long. Its filings "
-       f"say so: 116 gigawatts under contract, almost six years of output, and US${CL_POWER[-1]:.1f}bn of deposits in Power. Nothing I "
-       "found says the piece was wrong. One simplification: the piece called Power \"its gas turbine segment\" and read the deposits "
-       "as gas turbine deposits, while Power also holds Nuclear and Hydro Power; the filing ties the rise to gas orders and slot "
-       "reservations, so the claim stands. But the same choice that keeps the queue long sets the volume to 2028, and the higher prices "
+       f"say so: 116 gigawatts under contract, almost six years of output, and US${CL_POWER[-1]:.1f}bn of deposits in Power. "
+       "But the same choice that keeps the queue long sets the volume to 2028, and the higher prices "
        f"signed this year mostly arrive after it. At US${PRICE:,.2f} the shares already pay for GE Vernova reaching its own 2028 "
        f"outlook. {my_call}: {CALL['direction']}, {conv} conviction; base value {usd(BASE_VALUE)}, range {usd(bear)} to {usd(bull)}."))
 

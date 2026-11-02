@@ -1,13 +1,13 @@
 ---
 title: "Caterpillar's engines and turbines are booked into 2029. At US$623, the shares pay a fair price for them and a cyclical one for the rest."
-summary: "Caterpillar makes the quick machines a data centre uses to build its own power, gas engines and smaller turbines, and its order book says the queue in my September piece reaches the fast lane too: a US$78 billion backlog and turbine orders into 2030. Power Generation is about a fifth of its 2026 segment profit on my estimates, and the rest is diggers and mining trucks. After a 42 per cent fall from June, the price pays about 28 times my 2028 power earnings if the rest earns 16 times, and my base value sits 4 per cent below it."
+summary: "Caterpillar makes the quick machines a data centre uses to build its own power, gas engines and smaller turbines, and its order book says the queue in my piece on building your own power reaches the fast lane too: a US$78 billion backlog and turbine orders into 2030. Power Generation is about a fifth of its 2026 segment profit on my estimates, and the rest is diggers and mining trucks. After a 42 per cent fall from June, the price pays about 28 times my 2028 power earnings if the rest earns 16 times, and my base value sits 4 per cent below it."
 company: "Caterpillar"
 ticker: "CAT"
 exchange: "NYSE"
 claims: ["building-your-own-power"]
 keyPoints:
   - "Caterpillar makes construction and mining machines, engines, locomotives and, through Solar Turbines, gas turbines of up to 38 MW. Its Power Generation sales, the engines and turbines that data centres buy, rose from US$7.8 billion in 2024 to US$10.3 billion in 2025 and US$3.4 billion in the third quarter of 2026 alone, up 30 per cent."
-  - "The September claim holds in the fast lane. Caterpillar's backlog reached US$78.1 billion in September, up 96 per cent in a year and equal to a year of sales. Its chief executive says it is taking large engine orders into 2029 and turbine orders into 2030, and customer advances rose 61 per cent in nine months."
+  - "The claim holds in the fast lane. Caterpillar's backlog reached US$78.1 billion in September, up 96 per cent in a year and equal to a year of sales. Its chief executive says it is taking large engine orders into 2029 and turbine orders into 2030, and customer advances rose 61 per cent in nine months."
   - "The boom is a part of Caterpillar, not the whole. On my estimates Power Generation earns 21 per cent of 2026 segment profit and 27 per cent of 2028; the rest is construction, mining and oil and gas equipment that follows its own cycles."
   - "At US$622.75 the shares are 42 per cent below their June record. If the rest of Caterpillar earns 16 times my 2028 estimate, the price pays about 28 times for Power Generation, against about 78 times in June. My base value is US$600, 4 per cent below the price, within a range of US$379 to US$792."
   - "My call: no call, with medium conviction. I would revisit below about US$520, or if fourth quarter results on 2 February 2027 show Power Generation up 25 per cent or more for a second year with the backlog still rising."
@@ -71,7 +71,7 @@ charts:
 
 Caterpillar's shares closed at US$622.75 on 30 October 2026. That is 42 per cent below their record close of US$1,064.90 on 30 June. They fell 24 per cent in July with no results, rose on the second quarter, and then fell 28 per cent from 6 to 30 October, including 9.3 per cent on the day of the third quarter results. They are still up 9 per cent in 2026.
 
-My September piece argued that an AI campus building its own gas power does not skip the queue. It swaps the grid's queue for the makers' queues, and even the fast lane, the gas engines and smaller turbines that can be bought sooner, is queued. Caterpillar is the largest maker in that fast lane. The piece cited its third quarter: Power Generation sales up 30 per cent, mainly in turbines and large engines for data centres.
+My piece on building your own power argued that an AI campus building its own gas power does not skip the queue. It swaps the grid's queue for the makers' queues, and even the fast lane, the gas engines and smaller turbines that can be bought sooner, is queued. Caterpillar is the largest maker in that fast lane. The piece cites its third quarter: Power Generation sales up 30 per cent, mainly in turbines and large engines for data centres.
 
 The claim holds at Caterpillar. This note asks a different question: how much of Caterpillar's value the data centre power boom now carries, against a construction and mining business that moves with its own cycles. My answer is about a quarter of its 2028 earnings and about two fifths of the price.
 
@@ -99,7 +99,7 @@ I split the price in two. If the rest of Caterpillar earns its old cyclical mult
 
 **The rest is worth about US$380 a share.** On my estimates the rest of Caterpillar earns US$23.73 a share in 2028. At 16 times, near Caterpillar's own 2021 to 2024 average and the 15.2 times median of five machinery and truck makers, that is US$380.
 
-**So the price pays about 28 times for the power business.** That leaves US$243 for US$8.80 of 2028 Power Generation earnings, 27.6 times. At the June record it left US$685, about 78 times, and power was 64 per cent of the price against 39 per cent today. The three power equipment makers I compare with, GE Vernova, Siemens Energy and Wartsila, trade at 20 to 37 times forward earnings, with a median of 21.8.
+**So the price pays about 28 times for the power business.** That leaves US$243 for US$8.80 of 2028 Power Generation earnings, 27.6 times. At the June record it left US$685, about 78 times, and power was 64 per cent of the price against 39 per cent today. The three power equipment makers I compare with, GE Vernova, Siemens Energy and Wärtsilä, trade at 20 to 37 times forward earnings, with a median of 21.8.
 
 **Where I differ.** The market has stopped paying an AI premium on Caterpillar, and I think it was right to. But I also sit below consensus. My 2027 estimate of US$29.95 a share is 7 per cent under the US$32.17 consensus. I assume Construction Industries barely grows after a 21 per cent year that included a dealer stock build, and Caterpillar said on the call, per the third-party transcript, that it expects fourth quarter construction volume to be down modestly. I also assume Caterpillar only starts to lift its margin off the bottom of its target range in 2027, as its chief executive put it on the call. The power queue is visible years ahead. The diggers' cycle is not. That leaves the price close to fair, not cheap.
 
@@ -166,7 +166,7 @@ The fourth quarter results are due on 2 February 2027, on Caterpillar's publishe
 
 ## Conclusion
 
-The September piece argued that building your own power swaps the grid's queue for the makers' queues, and that the fast lane is queued too. Caterpillar confirms it: a US$78.1 billion backlog, a year of sales, with large engine orders into 2029, turbine orders into 2030 and customers paying ahead. Nothing I found says the piece was wrong.
+The piece argued that building your own power swaps the grid's queue for the makers' queues, and that the fast lane is queued too. Caterpillar confirms it: a US$78.1 billion backlog, a year of sales, with large engine orders into 2029, turbine orders into 2030 and customers paying ahead. The claim holds on Caterpillar's filings.
 
 But Caterpillar is not a pure power stock. On my estimates Power Generation earns about a fifth of its 2026 segment profit and a quarter of 2028's, and the rest is a construction and mining business after a strong year. In June the price paid about 78 times my 2028 power earnings, if the rest earned 16 times. Today it pays about 28 times, close to what the power peers command.
 

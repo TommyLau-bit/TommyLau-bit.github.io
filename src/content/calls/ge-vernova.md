@@ -87,7 +87,7 @@ The deposits show up where the piece said they would. In Power, the segment that
 
 The capacity plan matches the claim too. On the July call the chief executive set out 20 gigawatts a year now, 24 in 2028 and 30 in 2030, using lean methods and new machinery "in our existing factory footprint", all funded by customer down payments. He expects at least 125 gigawatts under contract by the end of 2026, mostly sold out through 2030 and more than half of 2031 sold.
 
-So the claim holds on every test it set. The queue sits at 5.8 years against a floor of four. There is no new heavy-duty factory. Deposits are rising and so is price: first half equipment orders were priced more than 20 per cent above those of the fourth quarter of 2025. Nothing in the filings shows the piece was wrong.
+So the claim holds on every test it set. The queue sits at 5.8 years against a floor of four. There is no new heavy-duty factory. Deposits are rising and so is price: first half equipment orders were priced more than 20 per cent above those of the fourth quarter of 2025.
 
 The claim's floor does rise, and that matters for later. Four years of output is 80 gigawatts today, 96 from 2028 and 120 from 2030. To stay above it in 2030, GE Vernova must keep signing contracts for 2033 and beyond while shipping 30 gigawatts a year. On the July call it said it needs more time before it can say when 2032 will be contracted.
 
@@ -166,11 +166,11 @@ Six of the nine cells sit above the price, but only three sit 15 per cent or mor
 
 **What would change my view.** A price below about US$910 would put my base value 15 per cent above it and turn my call long on unchanged estimates. So would GE Vernova raising its 2028 outlook above US$60 billion of revenue at a 20 per cent margin. A price above about US$1,400 would put my base value 25 per cent below it and raise the case for a short.
 
-The third quarter results are due on 28 October 2026, at 7:30 am New York time, as GE Vernova's investor page confirms. The fourth quarter results and the 2027 guide follow in early 2027; no date is announced yet. The chief financial officer also changes: on 25 August GE Vernova said Kenneth Parks will retire and Claire McDonough, now finance chief of Rivian, becomes chief financial officer on 1 January 2027, ahead of the results that carry the 2027 guide.
+GE Vernova's next results after this note, for the third quarter, were set for 28 October 2026, at 7:30 am New York time, as its investor page confirmed. The fourth quarter results and the 2027 guide follow in early 2027. The chief financial officer also changes: on 25 August GE Vernova said Kenneth Parks will retire and Claire McDonough, now finance chief of Rivian, becomes chief financial officer on 1 January 2027, ahead of the results that carry the 2027 guide.
 
 ## Conclusion
 
-The October piece argued that GE Vernova's customers are paying for a place in a queue that will stay years long. Its filings say so: 116 gigawatts under contract, almost six years of output, and US$27.7 billion of deposits in Power. Nothing I found says the piece was wrong. One simplification: the piece called Power "its gas turbine segment" and read the US$27.7 billion as gas turbine deposits, while Power also holds Nuclear and Hydro Power; the filing ties the rise to gas orders and slot reservations, so the claim stands.
+The October piece argued that GE Vernova's customers are paying for a place in a queue that will stay years long. Its filings say so: 116 gigawatts under contract, almost six years of output, and US$27.7 billion of deposits in Power.
 
 But the same choice that keeps the queue long sets the volume to 2028, and the higher prices signed this year mostly arrive after it. At US$999.35 the shares already pay for GE Vernova reaching its own 2028 outlook. My base case is worth about US$1,048, 5 per cent above the price, inside a range of US$560 to US$1,529. My call is no call, with medium conviction. I would revisit below about US$910, or if the 2028 outlook rises above US$60 billion at a 20 per cent margin.
 

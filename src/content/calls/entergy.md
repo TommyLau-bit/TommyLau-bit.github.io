@@ -1,6 +1,6 @@
 ---
 title: "Entergy bought its place in the turbine queue early, and Meta pays for the plants. At US$110 the shares already price the plan."
-summary: "Entergy's Louisiana utility is building gas plants for Meta's Hyperion campus, paid for through minimum bills and backed by Meta's guaranty. My October piece argued that building your own power swaps the grid's queue for the turbine makers' queue, and Entergy's own filings show it reserved one turbine slot a quarter years ahead. The growth is real and well protected, but at 21.6 times next year's earnings my base value sits about 11 per cent above the price, too little for a call."
+summary: "Entergy's Louisiana utility is building gas plants for Meta's Hyperion campus, paid for through minimum bills and backed by Meta's guaranty. My piece on building your own power argued that it swaps the grid's queue for the turbine makers' queue, and Entergy's own filings show it reserved one turbine slot a quarter years ahead. The growth is real and well protected, but at 21.6 times next year's earnings my base value sits about 11 per cent above the price, too little for a call."
 company: "Entergy"
 ticker: "ETR"
 exchange: "NYSE"
@@ -67,7 +67,7 @@ charts:
 
 Entergy's shares closed at US$110.11 on 30 October 2026, more than double their level at the start of 2024. In that time Entergy went from a sleepy Gulf Coast utility to one of the main builders of power for AI.
 
-My October piece argued that a campus building its own gas power does not escape a queue. It swaps the grid's queue for the turbine makers'. Entergy is the other side of that trade. It builds the plants for Meta's Hyperion campus in Louisiana, and it reserved its place in the makers' queue before most of its rivals.
+My piece on building your own power argued that a campus building its own gas power does not escape a queue. It swaps the grid's queue for the turbine makers'. Entergy is the other side of that trade. It builds the plants for Meta's Hyperion campus in Louisiana, and it reserved its place in the makers' queue before most of its rivals.
 
 The question for the shares is not whether the plan is real. It is whether the price already pays for it. I think it does, and the reason sits in a regulatory vote due in December.
 
@@ -169,7 +169,7 @@ The Form 10-Q for the third quarter, due in November, should give the terms of t
 
 ## Conclusion
 
-The October piece argued that building your own gas power swaps the grid's queue for the turbine makers'. Entergy's filings show it from the buyer's side: an exclusive agreement for one slot a quarter, a minimum order raised from 15 sets to 27 in a year, and plants for Meta that arrive in 2028 and 2029 because they were ordered early. Nothing in the filings says the piece was wrong.
+The piece argued that building your own gas power swaps the grid's queue for the turbine makers'. Entergy's filings show it from the buyer's side: an exclusive agreement for one slot a quarter, a minimum order raised from 15 sets to 27 in a year, and plants for Meta that arrive in 2028 and 2029 because they were ordered early.
 
 The shares already pay for that. At 21.6 times next year's consensus, and about three and a half turns above the large utilities on a like for like forward measure, the market prices Entergy's outlook to 2030, and the second Meta agreement is already inside it.
 

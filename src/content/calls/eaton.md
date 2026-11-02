@@ -89,7 +89,7 @@ Electrical Americas earned 59 per cent of Eaton's segment profit in 2025. Each p
 
 Eaton is also changing shape. It bought Boyd Thermal, a liquid cooling maker, for US$9.55 billion in March 2026, and Ultra PCS, an aerospace electronics business, for US$1.53 billion in January. It plans to combine its Mobility business, truck and car parts, with Dana in the first quarter of 2027. Eaton receives about US$1.1 billion in cash and its shareholders own at least 50.1 per cent of the combined company. After that, Eaton is electrical equipment and aerospace.
 
-**Nothing in Eaton's filings shows the piece was wrong.** The ratio has risen five quarters running, orders run ahead of sales, and the plants the piece named are still due in 2027. The third quarter results on 3 November give the next reading. On my estimate of about US$4.0 billion of third quarter sales, the September backlog needs to be above about US$15.8 billion for the ratio to keep rising.
+**The claim holds on Eaton's filings.** The ratio has risen five quarters running, orders run ahead of sales, and the plants the piece named are still due in 2027. The third quarter results on 3 November give the next reading. On my estimate of about US$4.0 billion of third quarter sales, the September backlog needs to be above about US$15.8 billion for the ratio to keep rising.
 
 ## What the market prices in, and where I differ
 
@@ -162,7 +162,7 @@ The third quarter results are due on 3 November 2026, before the New York market
 
 ## Conclusion
 
-The October piece argued that Eaton's queue in the Americas keeps lengthening even as it ships more. Its filings agree: 12.6 months of sales on order in June, up from 11.2 a year earlier, with orders running 1.3 times sales. Nothing I found says the piece was wrong.
+The October piece argued that Eaton's queue in the Americas keeps lengthening even as it ships more. Its filings agree: 12.6 months of sales on order in June, up from 11.2 a year earlier, with orders running 1.3 times sales.
 
 The queue cut this year's margin, because orders priced months ago met higher metal costs. Eaton expects that gap to close in the second half, and the same queue then carries newer prices. At US$366.11 the market pays 22.7 times my 2027 earnings and 19.4 times my 2028 earnings for Eaton without Mobility. My base value is US$434, inside a range of US$270 to US$534.
 

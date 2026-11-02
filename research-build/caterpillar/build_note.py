@@ -82,7 +82,7 @@ A(statbox([
 A('</div><div class="maincol">')
 A('<p class="lede">Caterpillar sells the quick machines that let a data centre make its own power, and they are booked into 2029. '
   'At US$623 the price pays a fair multiple for that business and a cyclical one for the rest.</p>')
-A(para("My September piece argued that a campus building its own gas power swaps the grid's queue for the makers' queues, and that even "
+A(para("My piece on building your own power argued that a campus building its own gas power swaps the grid's queue for the makers' queues, and that even "
        "the fast lane of engines and smaller turbines is queued. Caterpillar is the largest maker in that fast lane. Its backlog reached "
        f"US$78.1bn in September, and its chief executive says it is taking turbine orders into 2030."))
 A(para(f"The claim holds. The question for the shares is how much of Caterpillar's value the boom now carries. On my estimates Power "
@@ -199,7 +199,7 @@ A(para(f"<strong class='lead'>The rest is worth about {usd(REST_VAL)} a share.</
 A(para(f"<strong class='lead'>So the price pays about {IMPLIED_PG_PE:.0f} times for the power business.</strong> That leaves "
        f"{usd(PRICE - REST_VAL)} for US${PG_EPS:.2f} of 2028 Power Generation earnings. At the June record it left {usd(HI_CLOSE - REST_VAL)}, "
        f"about {IMPLIED_PG_PE_PEAK:.0f} times; power was then {PG_SHARE_PEAK * 100:.0f}% of the price, against {PG_SHARE_PRICE * 100:.0f}% today. "
-       "The three power peers I use, GE Vernova, Siemens Energy and Wartsila, trade at 20 to 37 times forward earnings, median 21.8."))
+       "The three power peers I use, GE Vernova, Siemens Energy and Wärtsilä, trade at 20 to 37 times forward earnings, median 21.8."))
 A(para("<strong class='lead'>Where I differ from the market, and from consensus.</strong> The market has stopped paying an AI premium on "
        "Caterpillar, and I think it was right to. But I also sit below consensus: my 2027 EPS of "
        f"US${E27:.2f} is {abs(E27 / CONS_EPS27 - 1) * 100:.0f}% under the US${CONS_EPS27:.2f} consensus. I assume Construction Industries barely "
@@ -263,7 +263,7 @@ A(cols(datatable(
     num_cols={2, 3},
 ), [16, 15, 11, 10, 48]))
 A(caption("Forward P/E and trailing EV/EBIT from stockanalysis.com (S&amp;P Global data), retrieved 2 November 2026. Power peers (GE Vernova, "
-          "Siemens Energy, Wartsila) median 21.8x; machinery and truck peers (Cummins, Paccar, Komatsu, Volvo, Deere) median 15.2x. Deere's "
+          "Siemens Energy, Wärtsilä) median 21.8x; machinery and truck peers (Cummins, Paccar, Komatsu, Volvo, Deere) median 15.2x. Deere's "
           "multiple is high because its earnings are near a cyclical low. Multiples are used only to set the range; no view on the peers' "
           "shares is expressed."))
 A('</div>')
@@ -298,14 +298,14 @@ A(para("<strong>Upside risk.</strong> If capacity arrives early, Power Generatio
 
 A('<div class="keeptogether">')
 A(section("What would change my mind"))
-A(para(f"<strong>Into long:</strong> a price below about {usd(LONG_BELOW)}, where my base value would sit 15% above it, or fourth quarter "
+A(para(f"<strong>Into long:</strong> a price below about US$520, where my base value would sit 15% above it, or fourth quarter "
        "results showing Power Generation up 25% or more for a second year with the backlog still rising. <strong>Into short:</strong> a "
        f"price above about {usd(SHORT_ABOVE)} on unchanged estimates, or a fall in the backlog with construction volumes falling."))
 A(para(f"<strong>{my_call} is wrong if:</strong> {WRONG_IF}"))
 A('</div>')
 
 A(section("Conclusion"))
-A(para("The September piece argued that building your own power swaps the grid's queue for the makers' queues, and that the fast lane is "
+A(para("The piece argued that building your own power swaps the grid's queue for the makers' queues, and that the fast lane is "
        "queued too. Caterpillar confirms it: a US$78.1bn backlog, orders into 2029 for large engines and into 2030 for turbines, and "
        f"customers paying ahead. Power Generation is about {pct(Y26['pg_share'], 0)}% of 2026 segment profit on my estimates, rising to "
        f"{pct(Y28['pg_share'], 0)}%, and the rest is a cyclical machinery business. At {usd(PRICE, 2)} the market pays about "

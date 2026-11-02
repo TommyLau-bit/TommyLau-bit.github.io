@@ -152,7 +152,7 @@ A(para("The plan matches the claim. At its investor day on 10 June, Hitachi show
        "who runs the business, said Hitachi invests only with a bankable business case and is \"not building over-capacity\", "
        "according to Hitachi's translated summary of the Q&amp;A. Hitachi states the plan figures at its 2026 budget exchange rate."))
 A(para("<b>The claim holds on both of its tests.</b> The ratio is 3.06, above the 2.5 floor, and orders have run well ahead of revenue "
-       "every year. Nothing in Hitachi's disclosures shows the piece was wrong."))
+       "every year."))
 A(para("The claim has a consequence. If factories follow orders, revenue grows at the pace new capacity allows: Hitachi's own plan "
        "implies about 12% a year from fiscal 2025 to 2030 (at Hitachi's 2026 budget rate). The rest of the value comes from margin, and here the record is good. The "
        "adjusted EBITA margin rose from 11.1% in fiscal 2024 to 13.4% in fiscal 2025; Hitachi forecasts 14.8% for fiscal 2026, more than "
@@ -312,8 +312,7 @@ A('</div>')
 A(section("Conclusion"))
 A(para("The October piece argued that Hitachi Energy is building just fast enough to keep its queue, not to clear it. Hitachi's figures "
        f"say so: US$63.6bn of backlog, {RATIO_JUN26:.2f} times a year of revenue, a plan to hold the ratio at 2.5 to 3 times through 2030, "
-       "and orders well ahead of revenue. Nothing I found says the piece was wrong. One simplification: the piece said Hitachi Energy "
-       "\"is spending more than $9 billion\", but about US$3bn of it was spent from 2020 to 2023; this does not affect the claim. But "
+       "and orders well ahead of revenue. But "
        f"the queue that makes Hitachi Energy's revenue so visible also caps it, and Hitachi Energy is under half of Hitachi. {my_call}: "
        f"{CALL['direction']}, {conv} conviction; base value {yen(BASE_VALUE)}, range {yen(bear)} to {yen(bull)}."))
 

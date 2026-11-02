@@ -158,8 +158,8 @@ A(para(f"<b>The claim holds on every test it set.</b> Grid's orders were {GT_BTB
        f"€33bn in September 2024 to €42bn a year later, then €45bn, €49bn and €{GT_BL[-1]}bn in the three quarters since. Even if Grid "
        f"booked nothing in the September quarter, its fiscal 2026 orders of €{GT_9M_ORD / 1000:.1f}bn to June already exceed my "
        f"estimate of the full year's revenue, €{REV26['GT'] / 1000:.1f}bn. In the transcript it published of its pre-close call on 30 September, Siemens Energy "
-       "said Grid booked no HVDC project in that quarter, so orders stayed \"similar to previous quarters\". Nothing I found shows "
-       "the piece was wrong."))
+       "said Grid booked no HVDC project in that quarter, so orders stayed \"similar to previous quarters\". The claim holds on "
+       "Siemens Energy's own figures."))
 A(para("The piece's caveat still stands. Grid's backlog is global and includes long HVDC projects, while the chart covers transformers "
        "in Europe and North America. The pre-close call supports the link: order momentum is \"led by the product business, "
        "particularly large power transformers\", with Europe and North America the strongest regions."))
@@ -321,7 +321,7 @@ A('</div>')
 A(section("Conclusion"))
 A(para(f"The October piece argued that Siemens Energy's own chart shows the transformer shortage narrowing but never closing, so Grid's "
        f"pile keeps growing. Its figures say so: orders at {GT_9M_BTB:.2f} times revenue in the nine months, a backlog of €{GT_BL[-1]}bn "
-       "rising every quarter, and fiscal 2026 orders that already exceed the year's revenue. Nothing I found says the piece was wrong. "
+       "rising every quarter, and fiscal 2026 orders that already exceed the year's revenue. "
        f"The market has de-rated the shares on doubts about AI spending, and at {eur(PRICE, 2)} it pays about {GT_IMPLIED_X:.0f} times "
        f"for Grid if Gas Services gets a below-peer multiple. {my_call}: {CALL['direction']}, {conv} conviction, target {eur(tgt)}; base "
        f"value {eur(BASE_VALUE)}, range {eur(bear)} to {eur(bull)}."))

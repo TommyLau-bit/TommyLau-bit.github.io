@@ -86,7 +86,7 @@ A(para("Nebius builds AI computing centres and rents them out to companies such 
        "once the power is on and the chips are running, and its new contracts pay roughly twice what the existing fleet "
        "earns per megawatt. Both engines are real. At US$232.57 the shares already assume Nebius switches on most of its "
        "contracted power quickly, at the new, higher prices."))
-A(para("<strong class='lead'>We initiate at NO CALL, with medium conviction.</strong> There is no target price. My base case "
+A(para("<strong class='lead'>I initiate at NO CALL, with medium conviction.</strong> There is no target price. My base case "
        "for October 2027 is worth about US$229, 1% below the price; the probability-weighted value is about US$242, 4% "
        "above it; the bear case is US$78, a 66% fall. That is a stock where the market already agrees with the thesis."))
 A('<div class="callbox">')
@@ -148,7 +148,7 @@ A(para("That changes what the number I watch actually measures. Nebius defines c
        "from here."))
 
 A(section("The reconciliation: US$20 to 25m per MW, yet only US$7 to 9bn of run-rate"))
-A(para("A gap sat open in my notes from September. Nebius says its large second quarter deals carry annual contract value of "
+A(para("Nebius's own figures leave a gap. Nebius says its large second quarter deals carry annual contract value of "
        "US$20 to 25m per megawatt. Multiply that by 800 MW and you get US$16 to 20bn a year. Yet Nebius guides to annualised "
        "revenue of only US$7 to 9bn at the end of 2026. Three things in Nebius's own words close the gap."))
 A(datatable(
@@ -414,11 +414,10 @@ A(section("About this note"))
 A('<p class="aboutnote">I wrote this note and built the accompanying model, 2026-10-06_Nebius_Model.xlsx, independently. The '
   'model carries live formulas off blue input cells across its tabs, including the run-rate reconciliation, unit economics, '
   'the if-converted share bridge, scenarios and sensitivity, and every output was recalculated and checked against an '
-  'independent rebuild before publication. The note sets out at initiation depth the call published on 6 October 2026 at '
-  '<a href="https://thephysicallayer.fyi/research/">thephysicallayer.fyi/research</a>; the figures, the call and the '
-  're-look levels are unchanged from that pitch. It builds on my journal piece of 30 September 2026, '
+  'independent rebuild before publication. The call was published on 6 October 2026; all notes and their track record are at '
+  '<a href="https://thephysicallayer.fyi/research/">thephysicallayer.fyi/research</a>. It builds on my journal piece of 30 September 2026, '
   '<a href="https://thephysicallayer.fyi/journal/nebius-paid-for-what-is-switched-on/">thephysicallayer.fyi/journal/'
-  'nebius-paid-for-what-is-switched-on</a>, which stays as published. Figures from Nebius filings are labelled as such; '
+  'nebius-paid-for-what-is-switched-on</a>. Figures from Nebius filings are labelled as such; '
   'everything else, including the estimates, scenarios and the call, is my own view. I hold no position in Nebius. Personal research, not '
   'investment advice.</p>')
 A('<p class="signoff">Tommy Lau | The Physical Layer | thephysicallayer.fyi</p>')

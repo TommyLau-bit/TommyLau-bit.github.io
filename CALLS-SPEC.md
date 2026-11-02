@@ -66,7 +66,7 @@ Tommy found the first build (a long web pitch with charts, merged into the claim
 - **Menu:** Journal, Map, **Research**, Glossary, About. Claims moved to the footer. `/claims` is back to the plain claims list, with one line pointing to Research.
 - **`/research`:** a library list, newest first. Each entry has page one of the note as a thumbnail, the date, "Initiation", the call, the company and ticker, the one-line title, and links to the PDF, the Excel model and the summary page. Below it is a compact track record table (`#scorecard`).
 - **The note:** a PDF initiation note in Tommy's house style (`~/Desktop/jobs/research coverage/_note_template/`, matched to his MarcoPolo, EGP and Concord notes), with a live-formula Excel model. Both sit in `public/research/<date>_<Company>_Initiation.pdf` and `_Model.xlsx`. Build scripts are in `research-build/<slug>/`.
-- **`/research/<slug>/`:** a short summary page with the call box, two download buttons, three to five key points (`keyPoints`), the claim it rests on, and a "Where I was wrong" line (`correction`) when the note finds the piece was wrong. No charts and no long body on the web; the Markdown body is the note's text of record. `/calls/...` redirects here.
+- **`/research/<slug>/`:** a short summary page with the call box, two download buttons, three to five key points (`keyPoints`), and the claim it rests on, if any. No charts and no long body on the web; the Markdown body is the note's text of record. `/calls/...` redirects here.
 - **Journal pieces:** if a note rests on a piece's claim, the claim box under the piece links to it.
 - **Drafts** render only under `npm run dev`. The build fails a non-draft note without Tommy's call (`src/lib/calls.ts`).
 - **No call** is a decided verdict (`direction: "NO CALL"`, no target, `revisitIf` required). It is marked monthly with the price move shown.
@@ -75,7 +75,6 @@ Tommy found the first build (a long web pitch with charts, merged into the claim
 - **Notes and pieces are independent** (Tommy, 2 Nov 2026, permanent; replaces "journal piece first"): a note may cover a company the journal never mentions and need not rest on a claim (`claims` may be empty). Notes and pieces do not need to match.
 - **No dated corrections, ever** (2 Nov 2026, permanent): a wrong fact in a piece or note is edited so it is right. No "Where I was wrong", no `correction` field, no "Correction" paragraphs.
 - **Monthly marks:** the scheduled task `research-monthly-marks` prepares them early each month for Tommy's approval.
-- **Corrections:** do not change what was said before. Say it was wrong and what changed the view, in the note, in `correction`, and in a "Where I was wrong" passage in the PDF.
 
 ## Briefs for agents (in research-build/)
 - `BRIEF-note.md`: drafting an initiation note (text of record, PDF, model). `BRIEF-note-factcheck.md`: the read-only fact-check of a note.

@@ -184,7 +184,7 @@ Eight of the nine cells sit above the price, but only three sit 15 per cent or m
 
 ## Conclusion
 
-The September piece argued that building your own power swaps the grid's queue for the turbine makers'. MHI's figures confirm it at a second maker. Its gas turbine order book holds about five years of revenue, new talks are for 2030 to 2031, prices are not falling, and buyers pay in advance. I found nothing in MHI's disclosures that shows the piece wrong.
+The September piece argued that building your own power swaps the grid's queue for the turbine makers'. MHI's figures confirm it at a second maker. Its gas turbine order book holds about five years of revenue, new talks are for 2030 to 2031, prices are not falling, and buyers pay in advance.
 
 But the queue that makes GTCC's revenue so visible also paces it, and a large part of MHI's cash belongs to the buyers in it. At ¥3,363 the market values gas turbines at about 16 times my fiscal 2027 estimate, or defence at about 12 times, a discount but not a deep one. My call is no call, with medium conviction. My base value is ¥3,713, 10 per cent above the price, inside a range of ¥2,617 to ¥4,693. The view is wrong if the shares close above ¥4,200 or below ¥2,500 in October 2027, if MHI books fewer than 25 large turbines in fiscal 2026, or if the Energy Systems margin lands below 14 per cent.
 

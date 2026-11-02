@@ -129,7 +129,7 @@ PEERS = [  # company, ticker, forward P/E, trailing EV/EBIT, what they make, gro
     ("Caterpillar", "NYSE: CAT", 20.77, 21.80, "Construction and mining machines, engines, gas turbines, locomotives", "self"),
     ("GE Vernova", "NYSE: GEV", 37.17, 58.92, "Heavy and aeroderivative gas turbines, grid equipment, wind", "power"),
     ("Siemens Energy", "ETR: ENR", 21.81, 26.41, "Gas turbines, grid technology, wind", "power"),
-    ("Wartsila", "HEL: WRT1V", 19.91, 15.52, "Gas engines and power plants, marine engines", "power"),
+    ("Wärtsilä", "HEL: WRT1V", 19.91, 15.52, "Gas engines and power plants, marine engines", "power"),
     ("Cummins", "NYSE: CMI", 15.22, 18.71, "Diesel and gas engines, generator sets, power systems", "cycle"),
     ("Paccar", "NASDAQ: PCAR", 15.62, 18.39, "Heavy trucks and engines", "cycle"),
     ("Komatsu", "TYO: 6301", 13.14, 11.66, "Construction and mining machines", "cycle"),

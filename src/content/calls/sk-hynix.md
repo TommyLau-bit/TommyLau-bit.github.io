@@ -114,7 +114,7 @@ So how much of the earnings rest on HBM? About a tenth of revenue, and less of p
 
 **Custom HBM decides how durable that slice is.** On 28 October SK Hynix's head of HBM sales said "we are seeing growing importance of custom HBM", optimised for each customer's systems. SK Hynix runs joint projects with major customers. HBM4E samples shipped in the second quarter.
 
-The piece did not cite SK Hynix's prospectus of 10 July 2026. It defines custom HBM as integrating "certain functions of GPUs and ASICs into the HBM base die", and lists custom base die integration among its HBM4E work. None of that gives a date for volume, so the piece's claim, that two of the three makers ship custom HBM in volume by the end of 2027, is still open.
+SK Hynix's prospectus of 10 July 2026 defines custom HBM as integrating "certain functions of GPUs and ASICs into the HBM base die", and lists custom base die integration among its HBM4E work. None of that gives a date for volume, so the piece's claim, that two of the three makers ship custom HBM in volume by the end of 2027, is still open.
 
 Is custom a moat or a capex trap? Both, for different halves of the business. A base die drawn by the buyer ties each stack to one customer's chip. That makes qualification slower to win and harder to lose, which protects the leader's tenth.
 

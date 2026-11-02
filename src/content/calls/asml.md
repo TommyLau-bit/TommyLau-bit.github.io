@@ -228,7 +228,7 @@ In June, Bloomberg reported that US officials had raised concerns with ASML that
 
 The view is wrong if, by October 2027, ASML says 2027 low NA shipments will fall more than 10 per cent short of about 85 because customers pushed out or cancelled orders, which points to my bear case. It is also wrong if ASML confirms 2028 low NA capacity of 110 or more and says 2028 is close to fully covered, which points to my bull case.
 
-ASML reports third quarter results on 14 October 2026, a date in its own financial calendar. I will watch its words on 2027 and 2028 coverage, China, and the fourth quarter implied by the €43 billion to €45 billion guide. Fourth quarter results usually follow in late January; the 2027 date is not yet confirmed.
+ASML's next results after this note, for the third quarter, were set for 14 October 2026 in its own financial calendar. The points to watch are its words on 2027 and 2028 coverage, China, and the fourth quarter implied by the €43 billion to €45 billion guide. Fourth quarter results usually follow in late January.
 
 ## Conclusion
 

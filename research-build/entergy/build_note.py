@@ -76,7 +76,7 @@ A(statbox([
 ]))
 A('</div><div class="maincol">')
 A('<p class="lede">Entergy bought its place in the turbine queue early, and Meta pays for the plants. At US$110 the shares already price the plan.</p>')
-A(para("Entergy Louisiana builds the gas plants for Meta's Hyperion campus. My October piece argued that building your own gas power "
+A(para("Entergy Louisiana builds the gas plants for Meta's Hyperion campus. My piece on building your own power argued that a campus building its own gas power "
        "swaps the grid's queue for the turbine makers'. Entergy's filings show that queue from the buyer's side: an exclusive "
        "agreement guarantees it one manufacturing slot a quarter, and it raised its minimum order from 15 to 27 sets in a year."))
 A(para(f"The growth is real and well protected: Meta pays minimum bills, funds part of the build and owes an exit fee. But at "
@@ -283,9 +283,9 @@ A(para(f"<strong>{my_call} is wrong if:</strong> {WRONG_IF}"))
 A('</div>')
 
 A(section("Conclusion"))
-A(para("The October piece argued that building your own gas power swaps the grid's queue for the turbine makers'. Entergy's filings "
+A(para("The piece argued that building your own gas power swaps the grid's queue for the turbine makers'. Entergy's filings "
        "show it from the buyer's side: one slot a quarter, a minimum order raised from 15 sets to 27 in a year, and plants for Meta that "
-       "arrive in 2028 and 2029 because they were ordered early. Nothing in the filings says the piece was wrong. The shares already pay "
+       "arrive in 2028 and 2029 because they were ordered early. The shares already pay "
        f"for it: {PE_C27:.1f} times next year's consensus, and the second Meta agreement is already inside the outlook. {my_call}: "
        f"{view_txt}; base value {usd(BASE_VALUE)}, range {usd(bear)} to {usd(bull)}."))
 

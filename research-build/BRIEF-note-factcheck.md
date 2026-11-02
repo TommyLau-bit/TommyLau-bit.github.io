@@ -3,7 +3,7 @@
 You are auditing a research note that is live or drafted on Tommy Lau's site, The Physical Layer. Do NOT edit, create or delete any file in /Users/tommylau/Desktop/journal. Report only.
 
 Materials for your note (slug and Company given in your instructions):
-- Text of record: /Users/tommylau/Desktop/journal/src/content/calls/<slug>.md (frontmatter: call box, keyPoints, correction, revisitIf, wrongIf; body: full argument and sources line)
+- Text of record: /Users/tommylau/Desktop/journal/src/content/calls/<slug>.md (frontmatter: call box, keyPoints, revisitIf, wrongIf; body: full argument and sources line)
 - PDF: /Users/tommylau/Desktop/journal/public/research/<DATE>_<Company>_Initiation.pdf (extract text with pypdfium2)
 - Model: /Users/tommylau/Desktop/journal/public/research/<DATE>_<Company>_Model.xlsx (openpyxl; cached values present)
 - Figures file: /Users/tommylau/Desktop/journal/research-build/<slug>/data.py (or *_data.py)
@@ -14,7 +14,7 @@ Check, in this order:
 2. **Market data.** The reference close and its date, 52-week high/low, and any consensus or peer multiple (check the stated source and date is plausible; Yahoo chart API or stockanalysis.com).
 3. **Arithmetic.** Recompute every derived figure: market value, EV, multiples, growth rates, scenario values, weighted value, sensitivity grid, upside percentages, unit economics. Check the md, the PDF and the model agree with each other.
 4. **Dates and events.** Next results date, deal dates, quotes and who said them.
-5. **The "Where I was wrong" passage.** Is the correction itself accurate, and does it fairly describe what the journal piece said (quote the piece)?
+5. **No correction framing.** The note must carry no "Where I was wrong" passage and no `correction` field (Tommy, 2 Nov 2026). If it states a fact that differs from a journal piece, check which is right and report the piece's exact sentence so it can be fixed in place.
 6. **Internal consistency and presentation.** Contradictions between sections, the call box vs the conclusion, keyPoints vs body, labels (own estimate vs company figure), anything a PM would catch. Typos.
 
 Report back (under 500 words), grouped:

@@ -173,8 +173,6 @@ Then, on 11 August 2026, it gave the phases dates. The 800 VDC power rack arrive
 
 The rest of the record points the same way. The solid-state transformer specification Nvidia cites had reached only version 0.3 by July 2026. More than 80 manufacturers are building to the 800 VDC specification, and Nvidia, Google and Microsoft published a joint white paper in March 2026. The ecosystem is real; the building-wide step is simply last in line.
 
-This is not what I first expected. My research note of 17 September, which is not on this site, led with the building design, grid power converted straight to 800 volts at the perimeter. It treated a power rack beside each compute rack as the downside case, a sign the move would stall and stay partial. Nvidia has since made that cabinet its first product, so it is phase one, not the failure mode. I changed my view of the order, not of the direction.
-
 <a id="every-megawatt-got-harder"></a>
 
 ## Rack first puts more gear in every megawatt
@@ -197,7 +195,7 @@ TI names both drivers: "When there is more power density, there is more opportun
 
 ## What could bring the building forward
 
-The case against is real. Nvidia said in May 2025 that full-scale production would coincide with Kyber in 2027. Foxconn's 40 MW Kaohsiung-1 site is being built for 800 VDC. CoreWeave, Lambda, Nebius, Oracle Cloud Infrastructure and Together AI are "designing for" 800 volt data centres. Vertiv's range includes central rectifiers, and Infineon's SiC transformer block is in development. A hall fed from the building could open before 2028.
+The case against is that the building may not wait long. Nvidia said in May 2025 that full-scale production would coincide with Kyber in 2027. Foxconn's 40 MW Kaohsiung-1 site is being built for 800 VDC. CoreWeave, Lambda, Nebius, Oracle Cloud Infrastructure and Together AI are "designing for" 800 volt data centres. Vertiv's range includes central rectifiers, and Infineon's SiC transformer block is in development. A hall fed from the building could open before 2028.
 
 Each of these is a design, not a running hall. Nvidia's own calendar dates the rack and the row and leaves the building open, and the transformer specification is still at version 0.3. Foxconn's site is the one to watch: if it opens on a central rectifier, the building did not wait for the rack, and the claim below breaks.
 
@@ -232,7 +230,7 @@ That trades something scarce for something plentiful. Inside the rack, every slo
 <figcaption>Nvidia Technical Blog, 20 May 2025 (up to 64 U at megawatt scale); Nvidia blog, 11 August 2026 (power rack, row power centre, undated DC power block). SST is a solid-state transformer. My framing: the order is Nvidia's; reading it as power supplies moving onto spare floor is mine.</figcaption>
 </figure>
 
-Read that way, Nvidia's order looks less like hesitation and more like the cheapest path. Each step moves the conversion further from the chips, and each lands somewhere harder to change. The last ends in the power room, whose transformers and switchgear makers hold years of orders, as [the equipment queue](/journal/the-equipment-queue/) shows. My inference from those order books, not any maker's statement: a hall opening in 2028 has probably already booked gear for an AC power room.
+Read that way, Nvidia's order looks less like hesitation and more like the cheapest path. Each step moves the conversion further from the chips, and each lands somewhere harder to change. The last ends in the power room, whose transformer and switchgear makers hold years of orders, as [the equipment queue](/journal/the-equipment-queue/) shows. My inference from those order books, not any maker's statement: a hall opening in 2028 has probably already booked gear for an AC power room.
 
 The makers of power racks and rectifiers sell into every hall that goes rack first, while makers of 54 volt shelves and in-rack copper bar lose their place inside the rack. The hall pays in floor, which is cheap where power runs out first, as at Jane Street. A hall drawn tight around dense racks, with no room for a cabinet beside them, pays more.
 
@@ -246,7 +244,7 @@ That would change more than the timing. A building-first switch would pull SiC d
 
 ## Research notes
 
-[Vertiv](/research/vertiv/) and [Texas Instruments](/research/texas-instruments/), each resting on its live claim below. [Nvidia](/research/nvidia/) and [Infineon](/research/infineon/) rest on this piece's claim too. Whether any of this is already in share prices is a question for these notes, not for the journal.
+[Vertiv](/research/vertiv/) and [Texas Instruments](/research/texas-instruments/) have initiation notes, each resting on its own claim below. [Nvidia](/research/nvidia/) and [Infineon](/research/infineon/) rest on this piece's claim too. Whether any of this is already in share prices is a question for these notes, not for the journal.
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>

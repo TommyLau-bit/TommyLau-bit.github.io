@@ -131,7 +131,7 @@ for key, lab, src in [("PG27", "Power Generation growth, 2027", "Capacity paced;
                       ("SH27", "Diluted shares, 2027", "About US$6bn a year of buybacks."), ("SH28", "Diluted shares, 2028", "")]:
     unit = "%" if key[:2] in ("PG", "OG", "IN", "PE", "CI", "RI") else ("m" if key.startswith("SH") else "US$m")
     rows.append((key.lower(), lab, G[key], unit, "MY ASSUMPTION. " + src))
-rows += [("pg_pe", "Multiple on 2028E Power Generation earnings", PG_PE, "x", "MY ASSUMPTION. Power peers (GE Vernova, Siemens Energy, Wartsila) median 21.8x forward; GE Vernova 37.2x."),
+rows += [("pg_pe", "Multiple on 2028E Power Generation earnings", PG_PE, "x", "MY ASSUMPTION. Power peers (GE Vernova, Siemens Energy, Wärtsilä) median 21.8x forward; GE Vernova 37.2x."),
          ("rest_pe", "Multiple on 2028E earnings of the rest of Caterpillar", REST_PE, "x", "MY ASSUMPTION. Caterpillar's 2021 to 2024 average forward P/E 16.3x; machinery and truck peers median 15.2x.")]
 for r_ in rows:
     if r_[1] is not None and (r_[4] or "").startswith("MY"):
@@ -391,7 +391,7 @@ for i, (co, tk, pe_, eve, what, grp) in enumerate(PEERS):
     for j, v in enumerate([pe_, eve]):
         c = ws.cell(row=rr, column=3 + j, value=v); c.number_format = MULTF; c.font = F_IN
     ws.cell(row=rr, column=5, value=what).alignment = WRAP
-ws["A16"] = "Power peers median (GE Vernova, Siemens Energy, Wartsila)"; ws["C16"] = "=MEDIAN(C6:C8)"
+ws["A16"] = "Power peers median (GE Vernova, Siemens Energy, Wärtsilä)"; ws["C16"] = "=MEDIAN(C6:C8)"
 ws["A17"] = "Machinery and truck peers median (Cummins to Deere)"; ws["C17"] = "=MEDIAN(C9:C13)"
 ws["A18"] = "Caterpillar forward P/E, 2021 to 2024 average"; ws["C18"] = f"=AVERAGE({','.join(str(v) for v in list(HIST_FWD_PE.values())[:4])})"
 for c_ in ("A16", "A17", "A18"): ws[c_].font = F_B

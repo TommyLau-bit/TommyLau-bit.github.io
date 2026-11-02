@@ -1,6 +1,6 @@
 ---
 title: "Coherent is paid every time the optical plug is bought again. At US$210, the shares pay for this year's speed step and none after it."
-summary: "Coherent builds the optical plugs that link the racks of an AI cluster and grows the indium phosphide lasers inside them, so it is paid again at every speed step. Its datacentre revenue grew 40 per cent in fiscal 2026 and 1.6 terabit plugs are ramping early. Yet the shares have halved since June, and at 22 times my fiscal 2027 earnings the price assumes growth stops after this year's step."
+summary: "Coherent builds the optical plugs that link the racks of an AI cluster and grows the indium phosphide lasers inside them, so it is paid again at every speed step. Its data centre revenue grew 40 per cent in fiscal 2026 and 1.6 terabit plugs are ramping early. Yet the shares have halved since June, and at 22 times my fiscal 2027 earnings the price assumes growth stops after this year's step."
 company: "Coherent"
 ticker: "COHR"
 exchange: "NYSE"
@@ -55,7 +55,7 @@ charts:
     refs:
       - value: 42
         label: "Coherent's gross margin target"
-    note: "Gross margin has risen in six of the past seven quarters. The call is wrong if it falls below 39 per cent while revenue grows."
+    note: "Gross margin has risen in six of the past seven quarters. The call is wrong if it falls below 39 per cent in any quarter to June 2027."
     source: "Coherent quarterly results releases, 6 November 2024 to 12 August 2026; fiscal 2025 as recast. The 42 per cent target is from the 12 August 2026 call, by third-party transcript."
   - id: price
     title: "Coherent share price, month-end close, US$"
@@ -87,7 +87,7 @@ The numbers show the shop busy. Datacenter and Communications revenue rose 40 pe
 
 **Paid at every speed step.** On the call of 12 August, by third-party transcripts, management said growth would come from both 800 gigabit and 1.6 terabit plugs, and that the 1.6T ramp had pulled in. The results deck lists 1.6T, 3.2T and 6.4T transceivers among its existing growth engines. The 10-K shows research on 400 gigabit per lane parts for 3.2T and 6.4T. Each step needs new plugs with faster lasers, so Coherent is paid again each time.
 
-**The limit is the laser, and Coherent is adding it.** Management said on the call that laser output, not assembly, caps datacentre revenue. It made about 80 per cent more indium phosphide lasers in the June quarter than a year earlier. The deck says internal output is on track to double by the end of 2026 and to more than double again by 2027. Its six-inch lines in Sherman, Texas, and in Sweden make EMLs, continuous lasers and photodiodes at higher yields than three-inch lines. The finance chief put a six-inch wafer at about four times the output of a three-inch one, at about half the cost.
+**The limit is the laser, and Coherent is adding it.** Management said on the call that laser output, not assembly, caps data centre revenue. It made about 80 per cent more indium phosphide lasers in the June quarter than a year earlier. The deck says internal output is on track to double by the end of 2026 and to more than double again by 2027. Its six-inch lines in Sherman, Texas, and in Sweden make EMLs, continuous lasers and photodiodes at higher yields than three-inch lines. The finance chief put a six-inch wafer at about four times the output of a three-inch one, at about half the cost.
 
 **Nvidia is committed.** It bought 7,788,161 new shares at US$256.80 on 2 March 2026, with a multi-billion-dollar purchase commitment and capacity rights, according to Coherent's Form 8-K. The same filing gives Nvidia access to five more Coherent product families related to co-packaged optics. On the call Coherent said fiscal 2027 is effectively booked, with orders reaching into calendar 2028.
 
@@ -173,7 +173,7 @@ The next results, for the quarter to September 2026, are due on Wednesday 4 Nove
 
 ## Conclusion
 
-My September piece argued that the plug between racks survives co-packaging and is bought again at every speed step. Coherent builds that plug and grows its laser, and its results agree: datacentre revenue up 40 per cent, 1.6T pulled in, and laser output on course to double. Co-packaging is the larger risk for Coherent than for a pure laser maker, and it has hedged by selling into both designs.
+My September piece argued that the plug between racks survives co-packaging and is bought again at every speed step. Coherent builds that plug and grows its laser, and its results agree: data centre revenue up 40 per cent, 1.6T pulled in, and laser output on course to double. Co-packaging is the larger risk for Coherent than for a pure laser maker, and it has hedged by selling into both designs.
 
 At US$210.32 the shares pay 22 times my fiscal 2027 earnings and nothing for the next step. My call is long, with a target of US$275 and low conviction. The base value is US$276 and the range runs from US$105 to US$426. Conviction is low because results come in two days, revenue has fallen before, and Coherent is spending ahead of demand.
 

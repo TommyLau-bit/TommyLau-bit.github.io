@@ -7,7 +7,7 @@ exchange: "HKEX"
 claims: ["hong-kong-has-the-plug"]
 keyPoints:
   - "CLP Holdings earns 82 per cent of its segment profit in Hong Kong, where CLP Power must meet all demand and is paid a permitted return of 8 per cent a year on its average net fixed assets, about HK$145 billion in 2025."
-  - "The November claim holds. CLP had finished eight data centre substations in its 2024 to 2028 plan by June 2026, against three in the previous plan, and targets Sandy Ridge operating from mid-2027. Nothing I found says the piece was wrong."
+  - "The claim holds on CLP's filings. CLP had finished eight data centre substations in its 2024 to 2028 plan by June 2026, against three in the previous plan, and targets Sandy Ridge operating from mid-2027."
   - "Data centres reach the shares only through the assets they add, not the power they use. On my arithmetic each extra HK$1 billion of regulated assets adds about HK$0.026 a share a year, and a long would need about HK$22 billion more by 2028, 42 per cent of the whole HK$52.9 billion plan."
   - "At HK$77.75 the shares trade at 16.7 times my 2027 estimate and yield 4.1 per cent. A sum of the parts on my 2028 estimates gives about HK$79.10, 2 per cent above the price."
   - "My call: no call, with medium conviction. I would revisit below about HK$68.80, or if the Government approves about HK$22 billion of extra regulated assets by 2028."
@@ -88,7 +88,7 @@ The engine is visible in the results. Hong Kong operating earnings rose 7.3 per 
 
 CLP does not disclose what its data centre substations cost. As an illustration only, if data centres held the same share of the asset base as of sales, 6.6 per cent, they would account for about HK$9.6 billion of it. That is about HK$0.25 of earnings a share, 5 per cent of my 2028 estimate. The data centre is a real part of the growth, but a small part of the whole.
 
-**Nothing in CLP's filings shows the piece was wrong.** The eight substations, the 260 MVA, the three in the previous plan, the mid-2027 target for Sandy Ridge and the 6.6 per cent share of sales all match CLP's announcements. The 18 traces to CLP's 2023 results, which aimed to supply "up to 18 large-scale data centres by 2028", against four in the previous period. CLP's 2025 results count three for that period, and the piece uses the later count. The claim's two tests, 18 substations by the end of 2028 and Sandy Ridge energised by the end of 2027, are still open.
+**The claim holds on CLP's filings.** The eight substations, the 260 MVA, the three in the previous plan, the mid-2027 target for Sandy Ridge and the 6.6 per cent share of sales all match CLP's announcements. The 18 traces to CLP's 2023 results, which aimed to supply "up to 18 large-scale data centres by 2028", against four in the previous period. CLP's 2025 results count three for that period, and the piece uses the later count. The claim's two tests, 18 substations by the end of 2028 and Sandy Ridge energised by the end of 2027, are still open.
 
 ## What the market prices in, and where I differ
 
@@ -173,7 +173,7 @@ The 2026 annual results are usually published in late February. CLP has not yet 
 
 ## Conclusion
 
-The November piece argued that Hong Kong's grid builds to its data centres, and CLP's filings agree. It had eight substations by June, plans 18 by 2028 and gives Sandy Ridge the earliest date of anyone. Nothing I found says the piece was wrong.
+The November piece argued that Hong Kong's grid builds to its data centres, and CLP's filings agree. It had eight substations by June, plans 18 by 2028 and gives Sandy Ridge the earliest date of anyone.
 
 For the shares, the Scheme of Control turns that buildout into earnings only through the asset base, and the asset base is set by a plan approved in 2023. At about 17.7 times my 2028 Hong Kong earnings, the price already pays for it. The yield is the return here; the AI story is not.
 

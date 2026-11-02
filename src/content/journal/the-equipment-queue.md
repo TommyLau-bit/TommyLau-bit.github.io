@@ -138,13 +138,13 @@ A queue sounds like pure profit for the seller, but orders priced months ago are
 
 ## What could shorten the wait
 
-The case against is real. A narrowing gap can lower years of work while the pile still grows: if orders run 10% above output and output grows 6% a year, Siemens Energy's ratio drifts from 3.96 to about 3.7 within two years. Eaton's ratio rose by only 0.01 in its latest quarter. And price rises, early bookings and a stronger euro can hold a ratio up with no longer real wait, since no maker splits its backlog into price and volume.
+The case against starts with arithmetic. A narrowing gap can lower years of work while the pile still grows: if orders run 10% above output and output grows 6% a year, Siemens Energy's ratio drifts from 3.96 to about 3.7 within two years. Eaton's ratio rose by only 0.01 in its latest quarter. And price rises, early bookings and a stronger euro can hold a ratio up with no longer real wait, since no maker splits its backlog into price and volume.
 
 <a id="schneider-sells-the-finished-system"></a>
 
 Some buyers also route around the queue. Schneider Electric sells more power rooms built and tested in its factories, which cut the work electricians must do on site; my [claim on that](/claims/#schneider-sells-the-finished-system) is close to its line.
 
-None of this ends the wait. A queue of three and a half years in 2028 binds a data centre developer as surely as four years today, and the makers' own plans are built to keep it. The second chair has arrived, and the diary still runs years ahead.
+The wait does not end. A queue of three and a half years in 2028 binds a data centre developer as surely as four years today, and the makers' own plans are built to keep it. The second chair has arrived, and the diary still runs years ahead.
 
 ## The gear outlives the chip it was ordered for
 
@@ -256,7 +256,7 @@ Three of the four makers publish a backlog for the business that sells this gear
 
 The ratios are not like for like. The two grid makers carry HVDC links, high voltage direct current lines that take years to build. Eaton's gear mostly ships within a year. Direction matters, not comparison.
 
-The ratio rises when prices go up before deliveries catch up, when buyers book earlier for later delivery, and, for Hitachi's dollar figures, when the euro strengthens. None of the three splits backlog into price and volume. It can also fall while the pile grows, as the test below shows.
+The ratio rises when prices go up before deliveries catch up, when buyers book earlier for later delivery, and, for Hitachi's dollar figures, when the euro strengthens. None of the three splits backlog into price and volume. It can also fall while the pile grows, as the claim above allows.
 
 The factories, with each maker's own dates:
 

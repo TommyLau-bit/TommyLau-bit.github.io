@@ -182,7 +182,7 @@ None of the nine cells reaches the price. The highest, cheap plants and dear pow
 
 **What would change my view.** Towards a higher conviction short: Oklo disclosing an Aurora-INL cost that implies more than about US$10,000 a kilowatt, or another share sale below my weighted value. Out of the short: a binding PPA of 500 MW or more, a disclosed cost at or below about US$6,000 a kilowatt with the NRC accepting a licence application for a commercial site, or a close above US$60. Below about US$14, my base value, the short would have done its work and I would close it.
 
-The third quarter results have no date yet. Last year Oklo announced the date on 29 October and reported on 11 November. The Centrus definitive agreement, the plutonium allocation and the remaining Department of Energy steps for Aurora-INL are the other dates to watch.
+When I wrote this, Oklo had not set a date for its third quarter results. Last year it announced the date on 29 October and reported on 11 November. The Centrus definitive agreement, the plutonium allocation and the remaining Department of Energy steps for Aurora-INL are the other dates to watch.
 
 ## Conclusion
 

@@ -276,7 +276,7 @@ A(para(f"<strong>Few, large buyers.</strong> One customer took about 73% of seco
        "and a securities lawsuit are outstanding."))
 
 A('<div class="keeptogether">')
-A(section("What would change our mind"))
+A(section("What would change my mind"))
 A(para(f"<strong>Into a short:</strong> a price above about US${REVISIT_SHORT:.0f}, which would put my base case 25% below it, or "
        "a 2027 guide in February of less than 40% growth. <strong>Into a long:</strong> a price below about "
        f"US${REVISIT_LONG:.0f}, or product gross margin of 38% or more in two quarters running, which would show Bloom pricing the "

@@ -34,7 +34,7 @@ no storyline. The structure of every deep piece is now `research-build/deep-piec
 - Two to four inline SVG charts at the turns of the argument, each titled with the sentence it proves.
 - After the story: `## Claims on record` (the piece's claim in full; earlier claims word for word inside
   `<details class="claims-earlier">`), `## What would prove me wrong`, `## Research notes`, evidence
-  tables and corrections inside `<details class="evidence">`, the exposure map (§3.4, up to six
+  tables and method notes inside `<details class="evidence">` (no corrections: wrong facts are fixed in place), the exposure map (§3.4, up to six
   groups) and the sources line (one paragraph, ending "Personal research, not investment advice.").
 - Every `<a id="<old-slug>"></a>` anchor from merged pieces survives at the beat where that idea now sits.
 

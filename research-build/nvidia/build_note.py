@@ -164,8 +164,7 @@ A(para("<strong>The other three claims: Nvidia holds the rest of the chain.</str
        "power centre to 2027, the building step undated, so new racks can go into halls whose power rooms already exist. On the network, "
        "its Vera Rubin blueprints still specify pluggable switches; networking was US$14.8bn of US$75.2bn of Data Center revenue in the "
        "quarter to April, the last quarter with the split."))
-A(para("I checked each Nvidia fact the four pieces rely on against Nvidia's filings and releases, and none needs correcting. The pieces "
-       "and claims stay exactly as published."))
+A(para("Each of the four claims holds on Nvidia's filings and releases."))
 
 A(section("Variant perception: what the market prices in, and where I differ"))
 A(para(f"At US${PRICE:,.2f} Nvidia is worth about US${MCAP / 1000:.2f} trillion, with US${NETCASH:.1f}bn more cash and debt securities "

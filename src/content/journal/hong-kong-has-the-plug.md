@@ -150,7 +150,7 @@ The rule of 15 January 2026 changed the review policy for one class of chip, "th
 <figcaption>15 CFR 742.6(b)(10)(iii)(A)(1), as revised 15 January 2026; 85 FR 83765 (23 December 2020). My reading of the rule text. Case by case needs the exporter to certify the rule's conditions.</figcaption>
 </figure>
 
-Read together, the rules invert Johor's picture for this one class. An H200-class shipment to a Chinese-headquartered tenant's hall in Hong Kong gets case-by-case review; the same shipment to that tenant's hall in Johor is presumed refused. For anything better, Hong Kong is presumed refused for every tenant. That reading of the rule text is mine, and it is the mechanism this piece adds.
+Read together, the rules invert Johor's picture for this one class. An H200-class shipment to a Chinese-headquartered tenant's hall in Hong Kong gets case-by-case review; the same shipment to that tenant's hall in Johor is presumed refused. For anything better, Hong Kong is presumed refused for every tenant. That reading of the rule text is mine.
 
 The conditions are heavy, and what has shipped is small. The exporter must certify that US supply is sufficient and that exports to China and Macau stay within 50% of what was shipped for use in America. Nvidia said on 26 August 2026 that its Hopper data centre shipments to China were less than 1% of its data centre revenue, and its outlook assumes none.
 
@@ -205,7 +205,7 @@ So the one door left ajar points at a chip that ages while the halls are built. 
 
 That moves the cost onto the tenant, not the landlord. Range sells racks, space, power and cooling, and its customers bring the chips. A tenant capped at the H200 class needs more chips, and so more racks, for the same work than one on the frontier. The rack seller's business survives the cap; the tenant's bill for each unit of work is what grows.
 
-Johor sharpens the contrast. [In Johor](/journal/the-queue-not-the-chip/), a tenant headquartered in China is presumed refused even the H200 class. In Hong Kong an exporter may seek a licence for that tenant, but only up to a ceiling that falls further behind each year. Three things would move the ceiling: any change to 15 CFR 742.6, any H200-class licence naming a Hong Kong user, and Range's filings on which chips Sandy Ridge will run. Until one does, the halls can open on time and still receive a chip three years old, and the gap widens with every launch.
+Johor sharpens the contrast. [In Johor](/journal/the-queue-not-the-chip/), a tenant headquartered in China is presumed refused even the H200 class. In Hong Kong an exporter may seek a licence for that tenant, but only up to a ceiling that falls further behind each year. Three things would move the ceiling: any change to 15 CFR 742.6, any H200-class licence naming a Hong Kong user, and Range's filings on which chips Sandy Ridge will run. Short of that, the halls can open on time and still receive a chip three years old, and the gap widens with every launch.
 
 ## What would prove me wrong
 

@@ -151,7 +151,7 @@ A(para(f"CLP does not disclose what the data centre substations cost. As an illu
        f"the asset base as of sales, 6.6%, they would account for about HK${DC_ANFA_ILLUS:.1f}bn of it and about "
        f"HK${DC_EPS_ILLUS:.2f} of earnings a share, {DC_EPS_ILLUS / EPS_E['2028'] * 100:.0f}% of my 2028 estimate. The data centre is a "
        "real part of the growth, but a small part of the whole."))
-A(para("<b>Nothing in CLP's filings shows the piece was wrong.</b> The eight substations, the 260 MVA, the three in the previous plan, "
+A(para("<b>The claim holds on CLP's filings.</b> The eight substations, the 260 MVA, the three in the previous plan, "
        "the mid-2027 target for Sandy Ridge and the 6.6% share of sales all match CLP's announcements. The 18 traces to CLP's 2023 "
        "results, which aimed to supply \"up to 18 large-scale data centres by 2028\", against four in the previous period; CLP's 2025 "
        "results count three, and the piece uses the later count. The claim's tests, 18 substations by the end of 2028 and Sandy Ridge "
@@ -291,7 +291,7 @@ A('</div>')
 
 A(section("Conclusion"))
 A(para("My November piece argued that Hong Kong's grid builds to its data centres, and CLP's filings agree: eight substations by June, "
-       "18 planned by 2028 and the earliest date for Sandy Ridge. Nothing I found says the piece was wrong. For the shares, the Scheme of "
+       "18 planned by 2028 and the earliest date for Sandy Ridge. For the shares, the Scheme of "
        "Control turns that buildout into earnings only through the asset base, and the asset base is set by a plan approved in 2023. "
        f"At {IMPLIED_HK_MULT:.1f} times my 2028 Hong Kong earnings the price already pays for it. {my_call}: {view_txt}; base value "
        f"{hkd(BASE_VALUE)}, range {hkd(bear)} to {hkd(bull)}."))

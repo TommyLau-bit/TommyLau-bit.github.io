@@ -207,7 +207,7 @@ Only three of the nine cells sit above today's price. To make money from here, T
 
 **What would change my view.** A price below about US$400 would put my base case about 16 per cent above the price and make this a call. So would third quarter results on 15 October showing gross margin at or above the 67 per cent top of the guide despite the 2 nanometre ramp. In the other direction, TSMC calling packaging supply balanced before 2028 would bring the bear case forward.
 
-The third quarter results and call are on Thursday 15 October 2026, at 2pm Taiwan time, as TSMC has announced. September revenue usually follows around the tenth of the month; TSMC has not confirmed the date.
+TSMC set its third quarter results and call for Thursday 15 October 2026, at 2pm Taiwan time. September revenue was due around the tenth of the month.
 
 ## Conclusion
 

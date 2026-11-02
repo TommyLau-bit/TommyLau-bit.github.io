@@ -36,7 +36,7 @@ Then there is the fare. Google, which is designing its own orbital system, estim
 
 Google cites $200 a kilogram as the point where launch could stop being the limit, and sees prices reaching it around 2035 if rockets keep getting cheaper at their past pace.
 
-None of this says orbit cannot work. It says the free plug is paid for in kilograms, and no compute satellite in service has yet been weighed.
+Orbit can still work. The free plug is simply paid for in kilograms, and no compute satellite in service has yet been weighed.
 
 <hr class="layer">
 <p class="layer-label">For investors</p>

@@ -158,7 +158,7 @@ A(para(f"Over the contract alone, with nothing after it, a 5 times build multipl
        "return; distributions above it cut their balance, and Williams can buy them out at that balance from July 2033."))
 A(para("<b>The pipe's clock still runs.</b> Transco's Southeast Supply Enhancement, 1,597,000 dekatherms a day, received its FERC "
        "certificate in January 2026. Williams' 10-Q now says \"as early as the third quarter of 2027\", against the 1 November 2027 target "
-       "in the original application the piece cites. Nothing I found says the piece was wrong."))
+       "in the original application the piece cites."))
 
 A(section("Variant perception: what the market prices in, and where I differ"))
 A(para(f"At {usd(PRICE)} Williams is worth US${MCAP:.1f}bn on {SHARES:,.0f}m shares, including 26.9m issued for Momentum Midstream on "
@@ -299,7 +299,7 @@ A('</div>')
 A(section("Conclusion"))
 A(para(f"The October piece argued that building your own gas power swaps the grid's queue for the makers' queues. Williams agrees in its "
        "own words: it bought the machines first, and equipment timing sets its pace. Its first plant for Meta entered service in late July, "
-       "and four more are due by the end of 2028. Nothing I found says the piece was wrong. The power business earns well, but it is about "
+       "and four more are due by the end of 2028. The power business earns well, but it is about "
        f"a ninth of Williams' EBITDA by 2028, and the price already pays today's full multiple for the pipes. {my_call}: "
        f"{CALL['direction']}, {conv} conviction; base value {usd(BASE_VALUE)}, range {usd(bear)} to {usd(bull)}."))
 

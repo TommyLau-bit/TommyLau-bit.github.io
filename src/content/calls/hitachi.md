@@ -69,7 +69,7 @@ Hitachi Energy is that joiner at the scale of national grids. At the end of June
 
 The plan matches the claim. At its investor day on 10 June, Hitachi showed Hitachi Energy's backlog rising from about US$60 billion in fiscal 2025 to about US$100 billion in fiscal 2030. Over the same years revenue rises from US$20 billion to US$36 billion. Hitachi states these plan figures at its 2026 budget exchange rate. The slide says the ratio of backlog to revenue is "expected to remain stable at 2.5 - 3x". The investment programme, more than US$9 billion across more than 40 factories, goes only to "bankable business cases". Asked whether investment would grow on the way to 2030, Andreas Schierenbeck, who runs the business, said Hitachi invests only with a bankable business case and is "not building over-capacity", according to Hitachi's translated summary of the Q&A.
 
-So the claim holds on both of its tests. The ratio is 3.06, above the 2.5 floor, and orders have run well ahead of revenue every year. Nothing in Hitachi's disclosures shows the piece was wrong.
+So the claim holds on both of its tests. The ratio is 3.06, above the 2.5 floor, and orders have run well ahead of revenue every year.
 
 The claim has a consequence the piece did not dwell on. If factories follow orders, Hitachi Energy's revenue grows at the pace its new capacity allows. Hitachi's own plan implies about 12 per cent a year from fiscal 2025 to 2030. The rest of the value has to come from margin. Here the record is good. The adjusted EBITA margin, earnings before interest, tax and the amortisation of acquired intangibles, rose from 11.1 per cent in fiscal 2024 to 13.4 per cent in fiscal 2025. Hitachi forecasts 14.8 per cent for fiscal 2026, more than 15 per cent for fiscal 2027 and 16 to 20 per cent by fiscal 2030.
 
@@ -163,11 +163,11 @@ Eight of the nine cells sit above the price, but only two sit 15 per cent or mor
 
 **What would change my view.** A price below about ¥5,600 would put my base value 15 per cent above it and turn my view long on unchanged estimates. So would Hitachi raising its fiscal 2027 target for Hitachi Energy above US$28 billion of revenue at a 16 per cent margin. A price above about ¥8,580 would put my base value 25 per cent below it and raise the case for a short.
 
-The second quarter results are due on 28 October 2026, with a webcast from 17:00 to 18:00 Tokyo time, as Hitachi's investor relations page confirms. The third quarter and the fiscal 2026 results follow in early 2027 and late April 2027; no dates are announced yet. Hitachi also plans ¥550 billion of share buybacks in fiscal 2026, of which ¥147.9 billion was done in the June quarter.
+Hitachi's next results after this note, for the second quarter, were set for 28 October 2026, with a webcast from 17:00 to 18:00 Tokyo time, as its investor relations page confirmed. The third quarter and the fiscal 2026 results follow in early 2027 and late April 2027. Hitachi also plans ¥550 billion of share buybacks in fiscal 2026, of which ¥147.9 billion was done in the June quarter.
 
 ## Conclusion
 
-The October piece argued that Hitachi Energy is building just fast enough to keep its queue, not to clear it. Hitachi's figures say so: US$63.6 billion of backlog, 3.06 times a year of revenue, a plan to hold the ratio at 2.5 to 3 times through 2030, and orders well ahead of revenue. Nothing I found says the piece was wrong. One simplification: the piece said Hitachi Energy "is spending more than $9 billion", but about US$3 billion of it was spent from 2020 to 2023. This does not affect the claim.
+The October piece argued that Hitachi Energy is building just fast enough to keep its queue, not to clear it. Hitachi's figures say so: US$63.6 billion of backlog, 3.06 times a year of revenue, a plan to hold the ratio at 2.5 to 3 times through 2030, and orders well ahead of revenue.
 
 But the queue that makes Hitachi Energy's revenue so visible also caps it, and Hitachi Energy is under half of Hitachi. At ¥5,840 the market values it at about 16 times my fiscal 2027 estimate, and pays a premium for the group as a whole. My base case is worth about ¥6,430, 10 per cent above the price, inside a range of ¥4,930 to ¥7,970. My call is no call, with medium conviction. I would revisit below about ¥5,600, or if the fiscal 2027 target for Hitachi Energy rises above US$28 billion at a 16 per cent margin.
 

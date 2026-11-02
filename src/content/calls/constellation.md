@@ -7,7 +7,7 @@ exchange: "Nasdaq"
 claims: ["constellation-restarts-the-reactor"]
 keyPoints:
   - "Constellation runs about 22 gigawatts of nuclear plants, and since January the Calpine gas fleet as well. It is restarting the 835 megawatt Crane reactor, the former Three Mile Island Unit 1, under a 20-year contract with Microsoft, and still targets the second half of 2027."
-  - "The October claim holds. Constellation's own FERC filing shows a fresh connection would not have been fully deliverable before 31 December 2030, and FERC let it borrow 760 megawatts of grid rights from two Eddystone units in June. Nothing I found says the piece was wrong."
+  - "The October claim holds. Constellation's own FERC filing shows a fresh connection would not have been fully deliverable before 31 December 2030, and FERC let it borrow 760 megawatts of grid rights from two Eddystone units in June."
   - "Crane is the proof, not the profit. It adds about 3.8 per cent to Constellation's nuclear output. The money is in pricing the rest of a fleet that already holds its grid places, and Google's deal of 6 October is the first large step."
   - "At US$264.58 the shares trade at 22.0 times the 2026 guide and 19.9 times the 2027 consensus of US$13.32. Constellation's own March framework points to about US$12.24 for 2027, so the consensus already runs 9 per cent ahead of the company's plan. Twenty times my 2028 estimate of US$14.52 gives about US$290, 10 per cent above the price."
   - "My call: no call, with medium conviction. I would revisit below about US$253, or if the 2027 guide due early next year has a midpoint of US$13.00 or more."
@@ -80,7 +80,7 @@ The connection was the hard part. Constellation's 10-Q says PJM's first study ti
 
 So Constellation borrowed a connection. Eddystone Units 3 and 4, two roughly 50-year-old oil and gas units near Philadelphia of 380 megawatts each, were due to retire on 31 May 2025. They now run only under federal emergency orders, as energy-only resources. FERC agreed on 1 June 2026 that their 760 megawatts of capacity interconnection rights can move to Crane. In its words, that could let Crane be "fully operational before December 31, 2030".
 
-**Nothing in Constellation's filings shows the piece was wrong.** Its 2027 date, its 2030 date, the 760 megawatts and the emergency orders all match the 10-Q and the waiver request. The claim's own test, power at full output by the end of 2028, is still open.
+**The claim holds on Constellation's filings.** Its 2027 date, its 2030 date, the 760 megawatts and the emergency orders all match the 10-Q and the waiver request. The claim's own test, power at full output by the end of 2028, is still open.
 
 Here is what the piece implies for a shareholder. Crane is about 835 megawatts. At a 93 per cent capacity factor, my assumption, that is about 6.8 terawatt hours a year, 3.8 per cent of the 179 terawatt hours Constellation expects its nuclear fleet to make in 2026. Crane is the proof of the mechanism, not the profit. Each US$10 per megawatt hour of margin on its output is worth about US$0.14 a share a year after tax, on my arithmetic.
 
@@ -160,7 +160,7 @@ Constellation's investor site lists its third quarter results for 9 November 202
 
 ## Conclusion
 
-The October piece argued that the fastest nuclear power for AI comes from reactors that already hold a place on the grid. Constellation's filings agree: a fresh connection for Crane was not fully deliverable before the end of 2030, and borrowing 760 megawatts of Eddystone's rights is what keeps 2027 alive. Nothing I found says the piece was wrong.
+The October piece argued that the fastest nuclear power for AI comes from reactors that already hold a place on the grid. Constellation's filings agree: a fresh connection for Crane was not fully deliverable before the end of 2030, and borrowing 760 megawatts of Eddystone's rights is what keeps 2027 alive.
 
 For the shares, Crane is the proof, not the profit. The profit is pricing the rest of a fleet that already holds its grid places, and the market knows it. At US$264.58 it pays 19.9 times the 2027 consensus, and that consensus sits 9 per cent above Constellation's own framework. My base value is about US$290, inside a range of US$184 to US$381.
 

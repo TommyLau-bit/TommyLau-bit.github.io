@@ -7,7 +7,7 @@ exchange: "NYSE"
 claims: ["building-your-own-power"]
 keyPoints:
   - "Kinder Morgan's project backlog jumped to US$14.4 billion in the third quarter, and more than 75 per cent of it serves power plants and local gas utilities. The two largest new pipes, Permian Link for an A-rated hyperscaler and the Southeast Connector, are take-or-pay and open from late 2030."
-  - "The claim holds. The pipe for own power runs on the same clock as the turbines: announced as sanctioned on 21 October 2026, in service in 2030. Nothing in Kinder Morgan's filings says the piece was wrong."
+  - "The claim holds. The pipe for own power runs on the same clock as the turbines: announced as sanctioned on 21 October 2026, in service in 2030."
   - "The money is real but late. On Kinder Morgan's own 5.7 times build multiple, the mainly take-or-pay US$13.7 billion of the backlog adds about US$2.4 billion of EBITDA a year once complete, against about US$8.9 billion today after one-offs. The two AI-linked pipes are about US$0.8 billion of that, from 2031."
   - "At US$33.87 the shares trade at 11.9 times trailing EBITDA, up from 9.6 times at the end of 2023, and yield 3.5 per cent against 6.4 per cent then. At the old multiple, today's price would need all of the backlog's EBITDA already earned."
   - "My call: no call, with medium conviction. Eleven and a half times my 2028 EBITDA of US$9.75 billion gives about US$34.64, 2 per cent above the price. I would revisit below about US$30, or on a 2027 budget of US$9.7 billion of EBITDA or more."
@@ -186,7 +186,7 @@ The next catalyst is Kinder Morgan's 2027 budget. Last year it published its exp
 
 ## Conclusion
 
-The piece argued that own gas power trades the grid's queue for the makers' queues, and that the pipe lands with the turbine. Kinder Morgan's filings agree: Permian Link was sanctioned in October 2026 for a hyperscaler's power plants and opens in the third quarter of 2030. Nothing I found says the piece was wrong.
+The piece argued that own gas power trades the grid's queue for the makers' queues, and that the pipe lands with the turbine. Kinder Morgan's filings agree: Permian Link was sanctioned in October 2026 for a hyperscaler's power plants and opens in the third quarter of 2030.
 
 The demand is contracted and the backlog is the largest in the company's history. But the market re-priced Kinder Morgan for that demand in 2024, and at today's price it pays, at the old multiple, for all of the backlog before most of it opens. My call is no call, with medium conviction: a base value of US$34.64, 2 per cent above the price, inside a range of US$25.92 to US$43.48. I would revisit below about US$30, or on a 2027 budget of US$9.7 billion of EBITDA or more.
 

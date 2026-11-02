@@ -203,13 +203,13 @@ The strongest case against comes from Malaysia's own Parliament. On 28 October 2
 
 It is the same draw counted against a smaller booking. Against the 6 gigawatts booked at 45 operating sites, which ministers gave on 13 October, the same draw is about 23%. Against the maximum demand in Tenaga's system, which my test reads, it was about 22% in June. Every count still leaves a large share of booked power idle.
 
-The concession is real, though. Once a Johor campus is connected, its tenants' chips and licences set how fast it fills, so my first claim holds for Singapore and for campuses still waiting, not for halls already plugged in. Malaysia's grid spending is also less about data centres than I first wrote: only 13% of its base allowance for 2025 to 2027 is labelled demand growth. And Singapore can make more power, with five new gas power stations by 2031, yet it still rations data centres by call.
+The concession is real, though. Once a Johor campus is connected, its tenants' chips and licences set how fast it fills, so my first claim holds for Singapore and for campuses still waiting, not for halls already plugged in. Malaysia's grid spending is also less about data centres than it looks: only 13% of its base allowance for 2025 to 2027 is labelled demand growth. And Singapore can make more power, with five new gas power stations by 2031, yet it still rations data centres by call.
 
 <a id="johor-waits-on-the-treatment-plant"></a>
 
 Water is not the hidden gate. Johor's reserve margin of treatment capacity, 14.3% in 2025, sits inside the regulator's target band of 10 to 15%.
 
-None of this moves the scarcity off the plug. Malaysia's idle bookings and Singapore's turned-away bidders were never opposite problems. In the old block there are no spare sockets, so the landlord chooses his tenants. In the new block every flat was wired before anyone moved in, and the lights come on as the furniture arrives. In both, the socket decided who got a flat.
+The scarcity stays on the plug. Malaysia's idle bookings and Singapore's turned-away bidders were never opposite problems. In the old block there are no spare sockets, so the landlord chooses his tenants. In the new block every flat was wired before anyone moved in, and the lights come on as the furniture arrives. In both, the socket decided who got a flat.
 
 ## Malaysia has more power booked and idle than Singapore has data centres
 
@@ -312,6 +312,7 @@ Tenaga publishes the fill quarterly. Every draw figure is Malaysia-wide; Tenaga 
 | June 2026 | 1,256 MW | 5.65 GW in system, 42 projects | about 22% | Tenaga briefing, 28 August 2026 |
 | August 2026 | about 1.37 GW | 6 GW at 45 operating sites; 8.771 GW signed by 62 projects | about 23% | Dewan Rakyat Hansard, 13 October 2026 |
 | August 2026 | about 1,374 MW | 2,346 MW contracted | 58.5% | Dewan Rakyat Hansard, 28 October 2026 |
+
 At June 2026, 2.21 GW was under construction and 0.49 GW signed, 8.35 GW across 61 projects in all. The 13 October Hansard share, 1.37 GW of 6 GW, is my arithmetic; the 58.5% is the minister's.
 
 The three clocks, with the evidence for each:

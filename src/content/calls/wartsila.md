@@ -75,7 +75,7 @@ The other half matters as much. Balancing plants, which back up wind and solar, 
 
 The queue also has a price. In July Wärtsilä said the gross margin of the Energy equipment order book had risen more than 500 basis points since the start of 2025. In October it named a new source of an old risk: "price pressure, including from the ongoing expansion in gas engine and turbine manufacturing capacity". The queue is real, and so is the competition to shorten it.
 
-The piece's claim holds at Wärtsilä. Its 27 October quote and the order of fifteen 50SG engines match the interim report word for word. Nothing I found shows the piece was wrong. The dated claim is tested on GE Vernova; Wärtsilä is evidence for its fast-lane half.
+The piece's claim holds at Wärtsilä. Its 27 October quote and the order of fifteen 50SG engines match the interim report word for word. The dated claim is tested on GE Vernova; Wärtsilä is evidence for its fast-lane half.
 
 ## What the market prices in, and where I differ
 
@@ -163,7 +163,7 @@ The Capital Markets Day is on 3 November 2026 in Helsinki, with a visit to the V
 
 ## Conclusion
 
-The September piece argued that building your own gas power only swaps one queue for another, and that the fast lane is queued too. Wärtsilä's own figures say so: engine lead times still rising, Energy orders at 2.50 times sales, and about 46 per cent of the megawatts ordered this year named data centre orders. Nothing I found says the piece was wrong.
+The September piece argued that building your own gas power only swaps one queue for another, and that the fast lane is queued too. Wärtsilä's own figures say so: engine lead times still rising, Energy orders at 2.50 times sales, and about 46 per cent of the megawatts ordered this year named data centre orders.
 
 The market has marked the shares down 35 per cent from April while orders set records. At €25.64 it pays about 12.5 times my 2027 estimate for Energy if Marine gets 14 times. My base case is worth about €30.36, 18 per cent above the price, inside a range of €19.36 to €38.64. My call is long, with low conviction and a target of €30. The view is wrong if Energy's orders fall below its sales over the four quarters to September 2027, its 2027 margin lands below 16 per cent, or the shares close below €20 at a month end.
 

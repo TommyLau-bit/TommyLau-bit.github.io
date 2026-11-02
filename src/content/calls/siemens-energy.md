@@ -69,7 +69,7 @@ For an investor the water level is visibility. Each litre in the bath is revenue
 
 The claim holds on every test it set. Grid's orders were 2.25 times its revenue in fiscal 2024, 1.90 times in fiscal 2025 and 1.88 times in the nine months to June 2026. Its backlog rose from €33 billion in September 2024 to €42 billion a year later, then €45 billion, €49 billion and €51 billion in the three quarters since.
 
-Even if Grid booked nothing in the September quarter, its fiscal 2026 orders of €18.3 billion to June already exceed my estimate of the full year's revenue, €13.8 billion. In the transcript it published of its pre-close call on 30 September, Siemens Energy said Grid booked no HVDC project in that quarter, so orders stayed "similar to previous quarters". Nothing I found shows the piece was wrong.
+Even if Grid booked nothing in the September quarter, its fiscal 2026 orders of €18.3 billion to June already exceed my estimate of the full year's revenue, €13.8 billion. In the transcript it published of its pre-close call on 30 September, Siemens Energy said Grid booked no HVDC project in that quarter, so orders stayed "similar to previous quarters". The claim holds on Siemens Energy's own figures.
 
 The piece's own caveat still stands. Grid's backlog is global and includes long HVDC projects, while the chart covers transformers in Europe and North America. The pre-close call supports the link: Grid's order momentum is "led by the product business, particularly large power transformers", with Europe and North America the strongest regions.
 
@@ -164,7 +164,7 @@ The fiscal 2026 results are due on 11 November 2026, as Siemens Energy's financi
 
 ## Conclusion
 
-The October piece argued that Siemens Energy's own chart shows the transformer shortage narrowing but never closing, so Grid's pile keeps growing. Its figures say so: orders at 1.88 times revenue in the nine months, a backlog of €51 billion rising every quarter, and fiscal 2026 orders that already exceed the year's revenue. Nothing I found says the piece was wrong.
+The October piece argued that Siemens Energy's own chart shows the transformer shortage narrowing but never closing, so Grid's pile keeps growing. Its figures say so: orders at 1.88 times revenue in the nine months, a backlog of €51 billion rising every quarter, and fiscal 2026 orders that already exceed the year's revenue.
 
 The market has de-rated the shares on doubts about AI spending. At €128.58 it pays about 13 times my fiscal 2027 estimate for Grid if Gas Services gets a below-peer multiple. My base case is worth about €163, 27 per cent above the price, inside a range of €98 to €218. My call is long, with medium conviction and a target of €160. The view is wrong if Grid's fiscal 2027 margin lands below 18 per cent, its orders fall below revenue, Siemens Gamesa burns more than €2 billion in fiscal 2027, or the shares close below €105 at a month end.
 

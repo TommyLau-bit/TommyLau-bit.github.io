@@ -88,7 +88,7 @@ charts:
 
 SpaceX's shares closed at US$134.72 on 30 October 2026, a few cents below the US$135 they were sold at in June. At that price the company is worth about US$1.83 trillion, or US$1.78 trillion after US$51 billion of net cash.
 
-Today, my journal piece argued that data centres in orbit are a contest of weight. In orbit the power is nearly free, but heat leaves only by glowing off radiators, and every kilogram must be launched. The claim: by the end of 2028 no operator will report a compute satellite in service at SpaceX's own target of 100 kilowatts per tonne launched, and no rocket company will publish a price at or below US$200 a kilogram.
+My journal piece of 2 November argued that data centres in orbit are a contest of weight. In orbit the power is nearly free, but heat leaves only by glowing off radiators, and every kilogram must be launched. The claim: by the end of 2028 no operator will report a compute satellite in service at SpaceX's own target of 100 kilowatts per tonne launched, and no rocket company will publish a price at or below US$200 a kilogram.
 
 This note asks what that means for the shares. SpaceX does not report orbital compute as a business. So the useful question is how much of the price the three businesses it does report can explain, and how much is left for orbit and everything else.
 
@@ -122,7 +122,7 @@ Put the gap in the piece's own units. My SI value works out at about US$65 billi
 
 So here is where I differ. If the claim holds, the satellites SpaceX flies by the end of 2028 will be heavier per kilowatt than its target, and launch will still cost far more than US$200 a kilogram. Then orbital compute cannot earn its share of the gap within the horizon anyone can value. I credit US$100 billion to all of SpaceX's unreported options together. That leaves about US$304 billion, roughly US$22 a share, which the price asks orbit and the other bets to earn.
 
-What the claim does not do is make the shares a short. The gap is real, but the price sits 17 per cent above my base, not twice it, and the three businesses are growing faster than any I value elsewhere. The bigger swing factor over twelve months is the ground business: whether SI's revenue reaches the guide, at what margin, and whether a 34.5 per cent customer stays.
+What the claim does not do is make the shares a short. The gap is real, but the price sits about 20 per cent above my base, not twice it, and the three businesses are growing faster than any I value elsewhere. The bigger swing factor over twelve months is the ground business: whether SI's revenue reaches the guide, at what margin, and whether a 34.5 per cent customer stays.
 
 ## Valuation, with the working
 

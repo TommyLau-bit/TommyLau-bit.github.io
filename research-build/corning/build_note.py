@@ -267,7 +267,7 @@ A(para("<strong>Buyers take a bigger share.</strong> The Nvidia warrant shows th
        "memory prices as a headwind for glass in July, and the solar ramp had a costly shutdown in the second quarter."))
 
 A('<div class="keeptogether">')
-A(section("What would change our mind"))
+A(section("What would change my mind"))
 A(para(f"<strong>Into a call:</strong> a price below about US${REVISIT:.0f}, which would put my base case 15% above it; or fourth "
        "quarter results showing optical sales of US$2.4bn or more in the quarter at a segment margin of 23% or more, with the share "
        "sale largely unused. A falling optical margin before mid-2027 would bring the bear case forward."))

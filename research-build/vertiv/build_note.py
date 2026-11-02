@@ -67,7 +67,7 @@ A(para("Vertiv makes the power and cooling equipment inside AI data centres. Its
 A(para("My answer comes from the claim I made in September: Vertiv is paid per megawatt, and AI has made every megawatt harder to build. "
        "The number to watch is not how many megawatts get built but how much Vertiv earns on each one. That number is still rising, "
        "and the shares no longer pay for it."))
-A(para("<b>We initiate at LONG with a twelve-month target of US$300</b>, 28 times my 2028 earnings estimate of US$10.65 and 18% above "
+A(para("<b>I initiate at LONG with a twelve-month target of US$300</b>, about 28 times my 2028 earnings estimate of US$10.65 and 18% above "
        "the price. Conviction is Medium, not High, because the bear case is a 29% fall and the third quarter results land within weeks."))
 A('</div></div>')
 
@@ -222,7 +222,7 @@ A(section("Catalysts"))
 A(datatable(
     ["When", "Event", "What I watch"],
     [
-        ["Late October 2026 (date not yet announced)", "Third quarter 2026 results",
+        ["Late October 2026", "Third quarter 2026 results",
          "Adjusted operating margin against the 24 to 25% Q3 guide, and against the same quarter of 2025; any change to the full year guide"],
         ["Second half of 2026", "800 VDC power line", "Whether Vertiv's 800 VDC equipment, designed alongside Nvidia since May 2025, ships on Nvidia's timetable ahead of its 2027 rack generation"],
         ["February 2027", "2026 Form 10-K and full year results", "Year-end backlog against US$15.0bn a year earlier; full year 2026 adjusted EPS against the US$6.65 bottom of the guide"],
@@ -287,10 +287,9 @@ A('<p class="sourceline">Vertiv quarterly results releases on Form 8-K, Exhibit 
 
 A(section("About this note"))
 A('<p class="aboutnote">I wrote this note and built the accompanying model independently. It is not a product of any bank or broker. It '
-  're-presents, at initiation depth, the call published on The Physical Layer on 6 October 2026, and changes none of its figures or '
-  'arguments. The call tests a claim from my journal piece of 25 September 2026, '
+  'tests a claim from my journal piece of 25 September 2026, '
   '<a href="https://thephysicallayer.fyi/journal/every-megawatt-got-harder/">thephysicallayer.fyi/journal/every-megawatt-got-harder</a>; '
-  'all calls and their scorecard are at <a href="https://thephysicallayer.fyi/research/">thephysicallayer.fyi/research</a>. Figures '
+  'all notes and their track record are at <a href="https://thephysicallayer.fyi/research/">thephysicallayer.fyi/research</a>. Figures '
   'taken from company filings are labelled as such; derived figures are marked; the forecasts, target and call are my own estimates and my '
   'own view. I hold no position in Vertiv. Personal research, not investment advice.</p>')
 A('<p class="signoff">Tommy Lau | The Physical Layer | thephysicallayer.fyi</p>')
