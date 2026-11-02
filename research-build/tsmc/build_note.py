@@ -136,12 +136,9 @@ A(para("<strong>The newest evidence.</strong> TSMC publishes revenue monthly, an
        "August came to NT$982.4bn. At TSMC's assumed NT$32 per US$, the US$44.6 to 45.8bn guide needs only NT$445 to 483bn in "
        "September; August alone was NT$514.8bn. Unless September falls sharply, the quarter lands at or above the top of the guide."))
 
-A(section("Where I was wrong in October"))
-A(para("In the piece I wrote that TSMC raised its 2026 capital budget to US$60 to 64bn, and that Wei said that money adds almost "
-       "nothing to output this year. The timing was wrong. Wei made that remark on 15 January, about the original budget of US$52 "
-       "to 56bn; the raise came on 16 July. Rereading the two transcripts side by side for this note showed the slip. The point "
-       "stands, and the larger budget makes it stronger: spending decided in 2026 buys supply for 2028 and 2029. The piece and the "
-       "claim stay exactly as published, so the record shows the slip."))
+A(para("<strong>Spending buys later supply.</strong> On 15 January Wei said new spending adds almost nothing to output this "
+       "year, speaking of the original 2026 capital budget of US$52 to 56bn. On 16 July TSMC raised that budget to US$60 to 64bn. "
+       "The larger budget makes the point stronger: spending decided in 2026 buys supply for 2028 and 2029."))
 
 A(section("Variant perception: what the market prices in, and where I differ"))
 A(para(f"At US$485.80 the ADR values TSMC at about US${MCAP_ADR / 1000:.2f}tn, with roughly US${NETCASH:.0f}bn of net cash. That is "

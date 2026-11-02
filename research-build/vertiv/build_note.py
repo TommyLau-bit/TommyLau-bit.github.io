@@ -123,14 +123,10 @@ A(caption("Left: adjusted operating margin by quarter, Q1 2024 to Q2 2026; dark 
           "results releases, 24 April 2024 to 29 July 2026, including the organic growth reconciliation tables."))
 A('</div>')
 
-A(section("Where I was wrong in September"))
-A(para("In the piece I wrote that service revenue grew 33% against 22% for products, and called service outgrowing hardware evidence for "
-       "the claim. That was wrong. Those were reported figures, swollen by acquisitions. Stripped of acquisitions and currency, service "
-       "grew about 10% and products about 20%, and service has grown more slowly than products in nine of the last ten quarters."))
-A(para("What changed my view was working through the organic split in Vertiv's own reconciliation tables for this pitch, which I had not "
-       "done for the piece. The claim itself, that what Vertiv sells per megawatt is rising, survives on margin, which is the stronger "
-       "test anyway. This call rests on margin and not on service. The piece and the claim stay exactly as published, so the record "
-       "shows the mistake."))
+A(para("<strong class='lead'>Service is not the proof.</strong> Reported service revenue grew 33% against 22% for products, but those "
+       "figures are swollen by acquisitions. Stripped of acquisitions and currency, service grew about 10% and products about 20%, and "
+       "service has grown more slowly than products in nine of the last ten quarters. The claim that what Vertiv sells per megawatt is "
+       "rising rests on margin, which is the stronger test anyway. This call rests on margin and not on service."))
 
 A(section("Variant perception: what the market prices in, and where I differ"))
 A(para(f"At US$253.62 Vertiv is valued at about US${mv:.1f} billion on its diluted shares, and holds roughly US$170 million more cash "

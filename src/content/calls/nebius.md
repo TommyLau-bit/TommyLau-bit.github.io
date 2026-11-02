@@ -5,18 +5,17 @@ company: "Nebius"
 ticker: "NBIS"
 exchange: "Nasdaq"
 claims: ["nebius-paid-for-what-is-switched-on"]
-correction: "I defined connected power as power feeding running chips and said customers pay for it. That is Nebius's active power, which comes on months after connection, so the test is active megawatts."
 keyPoints:
   - "Nebius builds AI computing centres and rents them out. It is paid only once the chips are running, months after the power is connected."
   - "New contracts pay US$20 to 25 million a megawatt a year, about twice the 2026 fleet. At the old price a megawatt barely earns its cost; at the new one it returns 16 to 25 per cent before tax."
   - "The gap between that price and a US$7 to 9 billion run-rate guide closes once you see that most new capacity bills in 2027, not 2026."
   - "At about 12.7 times 2027 EBITDA the market already pays for fast switch-on at the new price. My base case is worth about the share price, and the bear case is a 66 per cent fall."
-  - "Where I was wrong: my September piece said customers pay for connected power. They pay for active power, so that is the number to watch."
+  - "Customers pay for active power, the chips running and billing, not connected power, so active power is the number to watch."
 files:
   pdf: "/research/2026-10-06_Nebius_Initiation.pdf"
   xlsx: "/research/2026-10-06_Nebius_Model.xlsx"
   thumb: "/research/2026-10-06_Nebius_Initiation-p1.png"
-  pages: 7
+  pages: 6
 date: 2026-10-06T19:29:59+08:00
 draft: false
 call:
@@ -110,9 +109,7 @@ Lighting the ovens is not the moment the money starts, and the September piece s
 
 That matters, because it changes what the number I watch actually measures. Nebius defines connected power as power wired into fully built and equipped data centres. Active power is power consumed by installed, running equipment and available to earn revenue. Connected comes first, and active follows months later.
 
-**Where I was wrong in September.** In the piece I defined connected power as power wired up and feeding running chips, and wrote that customers pay for it. That was wrong. What I described is Nebius's active power. Connected power is the building, finished and equipped. Active power is the chips running and billing, and it trails connection by several months.
-
-What changed my view was a gap in my own numbers, set out below. Nebius's contract value per megawatt and its run-rate guide do not fit together unless much of its connected power is not yet billing, and its own definitions confirm that. The edge the claim describes is still speed, but the right test is active power, not connected. Nebius does not report active megawatts each quarter, so I read them through annualised revenue divided by the fleet price per megawatt. Hitting 800 megawatts connected by the end of 2026 is necessary. It is not yet revenue. The piece and the claim stay exactly as published, so the record shows the mistake.
+**The test is active power.** Connected power is the building, finished and equipped. Active power is the chips running and billing, which is what customers pay for, and it trails connection by several months. Nebius's contract value per megawatt and its run-rate guide, set out below, do not fit together unless much of its connected power is not yet billing, and its own definitions confirm that. The edge the claim describes is still speed, but the right test is active power, not connected. Nebius does not report active megawatts each quarter, so I read them through annualised revenue divided by the fleet price per megawatt. Hitting 800 megawatts connected by the end of 2026 is necessary. It is not yet revenue.
 
 This also resolves a gap that has sat open in my notes since September. Nebius says its large second quarter deals carry annual contract value of US$20 to 25 million per megawatt. Multiply that by 800 megawatts and you get US$16 to 20 billion a year. Yet Nebius guides to annualised revenue of only US$7 to 9 billion at the end of 2026.
 

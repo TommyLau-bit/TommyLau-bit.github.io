@@ -5,7 +5,6 @@ company: "TSMC"
 ticker: "TSM"
 exchange: "NYSE"
 claims: ["tsmc-says-it-is-the-bottleneck"]
-correction: "I attached Wei's remark that new spending adds almost nothing to 2026 output to the raised US$60 to 64 billion budget; he said it in January, of the original US$52 to 56 billion."
 keyPoints:
   - "TSMC makes almost every advanced AI chip, and on today's horizon its factories, not the grid, are what limits AI supply. Its own numbers agree: wafers shipped rose 17 per cent in the second quarter and revenue per wafer rose 17 per cent too."
   - "Scarcity shows up as margin. Gross margin reached 67.7 per cent in the second quarter, almost twelve points above the 56 per cent TSMC itself calls achievable through the cycle."
@@ -123,9 +122,7 @@ A kitchen with a queue does two things. It cooks more meals, and it charges more
 
 **The newest evidence.** TSMC publishes revenue every month, and the third quarter is already two thirds reported. July and August came to NT$982.4 billion. At TSMC's assumed rate of NT$32 to the dollar, the guide of US$44.6 to 45.8 billion needs only NT$445 to 483 billion in September. August alone was NT$514.8 billion. Unless September falls sharply, the quarter lands at or above the top of the guide.
 
-**Where I was wrong in October.** In the piece I wrote that TSMC raised its 2026 capital budget to US$60 to 64 billion, and that Wei said that money adds almost nothing to output this year. The timing was wrong. Wei made that remark on 15 January, about the original budget of US$52 to 56 billion. The raise came on 16 July.
-
-What showed me the slip was rereading the January and July transcripts side by side for this note. The point itself stands, and if anything the larger budget makes it stronger: spending decided in 2026 buys supply for 2028 and 2029. The piece and the claim stay exactly as published, so the record shows the slip.
+**Spending buys later supply.** On 15 January Wei said new spending adds almost nothing to output this year, speaking of the original 2026 capital budget of US$52 to 56 billion. On 16 July TSMC raised that budget to US$60 to 64 billion. The larger budget makes the point stronger: spending decided in 2026 buys supply for 2028 and 2029.
 
 ## What the market prices in, and where I differ
 

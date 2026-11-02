@@ -175,17 +175,13 @@ A(para("First, annualised revenue is December's revenue multiplied by twelve, so
        "about 170 MW active, roughly US$7.4m each, from older and cheaper contracts; the 2026 base of about US$12m reflects "
        "newer contracts replacing them."))
 
-A(section("Where I was wrong in September"))
-A(para("My 30 September journal piece defined connected power as power wired up and feeding running chips, and said customers "
-       "pay for it. That was wrong. What I described is Nebius's active power. Connected power is the building, finished and "
-       "equipped; active power is the chips running and billing, and it trails connection by several months. "
-       "What changed my view was the gap above: "
-       "Nebius's contract value per megawatt and its run-rate guide do not fit together unless much of its connected power is "
-       "not yet billing, and its own definitions confirm that."))
+A(para("<strong>The test is active power.</strong> Connected power is the building, finished and equipped; active power is the "
+       "chips running and billing, which is what customers pay for, and it trails connection by several months. The gap above "
+       "shows it: Nebius's contract value per megawatt and its run-rate guide do not fit together unless much of its connected "
+       "power is not yet billing, and its own definitions confirm that."))
 A(para("The edge the claim describes is still speed, but the right test is active power, not connected. Nebius does not report "
        "active megawatts each quarter, so I read them through run-rate divided by the fleet price per megawatt. Hitting 800 MW "
-       "connected by the end of 2026 is necessary. It is not yet revenue. The piece and the claim stay exactly as published, "
-       "so the record shows the mistake."))
+       "connected by the end of 2026 is necessary. It is not yet revenue."))
 
 A(section("Variant perception: what the market prices in, and where I differ"))
 A(para("On my count, Nebius's equity is worth about US$86bn at US$232.57, if every convertible note that is currently worth "

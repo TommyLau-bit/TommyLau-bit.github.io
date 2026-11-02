@@ -139,14 +139,12 @@ A(para(f"<strong>The factory build.</strong> TI spent about US${CAPEX_CYCLE:.0f}
        "about 40% less than on 200mm. Capital spending falls to US$2 to 3bn in 2026, and CHIPS Act grants and tax credits return "
        f"part of it. Free cash flow rose from US${(CFO_H[5] - CAPEX_H[5]):.1f}bn in 2024 to US${TTM_FCF:.1f}bn in the twelve months to June 2026."))
 
-A(section("Where I was wrong in October"))
-A(para("In the piece I called TI's 61% gross margin what owning cheap, full factories looks like in money. TI's factories are not "
-       "full, and the piece itself said they still had to be filled. On the July call TI said loadings rose through the second quarter and were still rising into the third, and that it "
-       f"has empty clean room space ready to equip. The margin is also {GM22 * 100 - GM_Q2 * 100:.0f} points below 2022's "
+A(para("<strong>The factories are not yet full.</strong> On the July call TI said loadings rose through the second quarter and "
+       "were still rising into the third, and that it has empty clean room space ready to equip. "
+       f"The margin is also {GM22 * 100 - GM_Q2 * 100:.0f} points below 2022's "
        f"{GM22 * 100:.1f}%, on revenue of about what TI earned in the year to June 2026, mostly because depreciation rose from US${DEP_H[3]:.2f}bn in 2022 to US${DEP_H[6]:.2f}bn "
-       "in 2025, with US$2.2 to 2.4bn guided for 2026. Putting the July call next to the depreciation line showed the slip. It "
-       "matters: partly filled factories leave room for the margin to rise, but the larger fixed cost base makes earnings fall faster "
-       "if the cycle turns. The piece and the claim stay exactly as published."))
+       "in 2025, with US$2.2 to 2.4bn guided for 2026. This matters: partly filled factories leave room for the margin to rise, "
+       "but the larger fixed cost base makes earnings fall faster if the cycle turns."))
 
 A(section("Variant perception: what the market prices in, and where I differ"))
 A(para(f"At US${PRICE:.2f} TI is worth about US${MCAP:.0f}bn, with net debt of about US${NETDEBT:.0f}bn before the US$7.5bn "

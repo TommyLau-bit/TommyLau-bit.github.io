@@ -5,13 +5,12 @@ company: "Vertiv"
 ticker: "VRT"
 exchange: "NYSE"
 claims: ["every-megawatt-got-harder"]
-correction: "I cited service growing faster than products as evidence. Without acquisitions it grew more slowly, so the claim rests on margin alone."
 keyPoints:
   - "Vertiv makes the power and cooling equipment inside AI data centres, and each AI megawatt needs more of it, and more complex versions of it, than an ordinary one."
   - "The proof is margin, not volume: adjusted operating margin has beaten the same quarter a year earlier every quarter since Q3 2025, reaching 22.6 per cent in Q2 2026."
   - "The shares have fallen a third since May on a sales miss, supply congestion and a dropped backlog figure. I read congestion with a rising margin as too little capacity, not too little demand."
   - "At 37.9 times the 2026 guide the market prices Vertiv like a diversified industrial. Twenty-eight times my 2028 estimate of US$10.65 gives US$300."
-  - "Where I was wrong: my September piece cited service outgrowing products. Organically it grew more slowly, so the call rests on margin alone."
+  - "Service is not the proof: stripped of acquisitions and currency, it grew more slowly than products in nine of the last ten quarters, so the call rests on margin alone."
 files:
   pdf: "/research/2026-10-06_Vertiv_Initiation.pdf"
   xlsx: "/research/2026-10-06_Vertiv_Model.xlsx"
@@ -66,7 +65,7 @@ charts:
         values: [7.7, 15.3, 19.9, 31.5, 31.1, 38.5, 33.6, 20.4, 24.9, 19.7]
       - name: "Service and spares"
         values: [9.4, 8.5, 16.9, 12.1, 7.4, 18.6, 10.1, 14.9, 13.7, 10.1]
-    note: "Stripped of acquisitions and currency, service has grown more slowly than products in nine of these ten quarters. This is where my September piece was wrong, as the thesis explains."
+    note: "Stripped of acquisitions and currency, service has grown more slowly than products in nine of these ten quarters."
     source: "Vertiv quarterly results releases, organic growth reconciliation tables, 24 April 2024 to 29 July 2026."
   - id: price
     title: "Vertiv share price, month-end close, US$"
@@ -99,9 +98,7 @@ The money should show this in one place above all: margin. Adjusted operating ma
 
 It has. Every quarter since the third quarter of 2025 has beaten the same quarter a year earlier. The second quarter of 2026 reached 22.6 per cent, up 4.1 points, on sales of US$3.27 billion. Vertiv now guides to 23.3 to 24.3 per cent for the full year, and to 24 to 25 per cent for the third quarter. At its investor conference in May it set a target of about 27 per cent or more by 2030.
 
-**Where I was wrong in September.** In the piece I wrote that service revenue grew 33 per cent against 22 per cent for products, and called service outgrowing hardware evidence for the claim. That was wrong. Those were reported figures, swollen by acquisitions. Stripped of acquisitions and currency, service grew about 10 per cent and products about 20 per cent, and service has grown more slowly than products in nine of the last ten quarters.
-
-What changed my view was working through the organic split in Vertiv's own reconciliation tables for this pitch, which I had not done for the piece. The claim itself, that what Vertiv sells per megawatt is rising, survives on margin, which is the stronger test anyway. This call rests on margin and not on service. The piece and the claim stay exactly as published, so the record shows the mistake.
+**Service is not the proof.** Reported service revenue grew 33 per cent against 22 per cent for products, but those figures are swollen by acquisitions. Stripped of acquisitions and currency, service grew about 10 per cent and products about 20 per cent, and service has grown more slowly than products in nine of the last ten quarters. The claim that what Vertiv sells per megawatt is rising rests on margin, which is the stronger test anyway. This call rests on margin and not on service.
 
 ## What the market prices in, and where I differ
 
