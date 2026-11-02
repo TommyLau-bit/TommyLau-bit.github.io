@@ -204,6 +204,8 @@ On the ground, the hall and its [grid gear outlast three or four chip generation
 
 So the launch bill becomes rent. The radiator, the solar wings and the frame go up again with every replacement, not once. A compute satellite flown in 2028, SpaceX's earliest date, would on that life wear out around 2033. Google's own curve does not reach $200 a kilogram until about 2035.
 
+Correction, 2 November 2026: I called 2028 SpaceX's earliest date, from its prospectus ("as early as 2028"). On its third-quarter call of 20 October, before this piece, Gwynne Shotwell had already said SpaceX will "begin flying Mobile V2 and Starmind satellites in 2027". A satellite flown in 2027 would wear out around 2032, still before Google's curve reaches $200 a kilogram, so the argument and the claim stand. SpaceX's web page for its first AI satellite also gives a design "vehicle efficiency" of "75 kW / ton", without saying whether that is compute or solar power, or per ton launched. No satellite in service has yet been weighed.
+
 <figure class="chart">
 <p class="chart-title">On Google's numbers, a compute satellite launched in 2028 wears out before launch reaches $200 a kilogram</p>
 <p class="chart-sub">Dated plans for orbital compute, a five-year satellite life, and Google's projection for launch prices</p>
@@ -246,7 +248,7 @@ SpaceX's 10-Qs and 10-K, Planet's and Google's prototypes, and any Starcloud rel
 
 ## Research notes
 
-No initiation note rests on this claim. The ground-side mechanisms it leans on are in [Heat and water](/journal/heat-and-water/) and [America rations the plug](/journal/america-rations-the-plug/). Whether any of this is already in share prices is a question for the notes, not for the journal.
+SpaceX has an initiation note resting on this claim: [SpaceX](/research/spacex/). The ground-side mechanisms it leans on are in [Heat and water](/journal/heat-and-water/) and [America rations the plug](/journal/america-rations-the-plug/). Whether any of this is already in share prices is a question for the notes, not for the journal.
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
