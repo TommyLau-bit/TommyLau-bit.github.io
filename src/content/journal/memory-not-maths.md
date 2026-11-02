@@ -244,7 +244,7 @@ A pass would show that buyers treat memory as a part worth designing, not prove 
 
 ## Research notes
 
-[Micron](/research/micron/) has an initiation note, resting on its own claim about HBM wafers, and [SK hynix](/research/sk-hynix/) has one resting on this piece's claim. How far ahead each year's HBM is sold is in [the chip supply chain](/journal/the-chip-supply-chain/). Whether any of this is already in share prices is a question for these notes, not for the journal.
+[Micron](/research/micron/) has an initiation note, resting on its own claim about HBM wafers, and [SK Hynix](/research/sk-hynix/) has one resting on this piece's claim. How far ahead each year's HBM is sold is in [the chip supply chain](/journal/the-chip-supply-chain/). Whether any of this is already in share prices is a question for these notes, not for the journal.
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
