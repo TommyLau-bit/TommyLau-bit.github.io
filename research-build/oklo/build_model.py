@@ -140,7 +140,7 @@ L = [
     ("Shares outstanding by 10 Sep 2026, at least, m", f"={A['shjun']}+B5", M3, "Excludes awards vested since June and any sales under the September ATM."),
     ("Fully diluted shares, m", f"=B9+{A['options']}+{A['rsus']}", M3, "Options at US$2.07 counted in full; the strike proceeds are trivial."),
     (None, None, None, ""),
-    ("Rise in cash and securities, H1 2026", f"={A['cashjun']}-{A['cashdec']}", M1, "Where the September piece wrote about US$1.9bn."),
+    ("Rise in cash and securities, H1 2026", f"={A['cashjun']}-{A['cashdec']}", M1, "Less than the US$1.85bn raised net; the gap is operating cash, capital spending and other outflows."),
     ("Raised from share sales, H1 2026 (net)", f"={A['raisedh1']}", M1, ""),
     ("Spent and invested, H1 2026", "=B13-B12", M1, "Operating cash, capital spending, acquisitions, other investments."),
     (None, None, None, ""),

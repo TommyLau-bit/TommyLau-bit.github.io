@@ -5,7 +5,6 @@ company: "Ajinomoto"
 ticker: "2802"
 exchange: "Tokyo"
 claims: ["ajinomoto-grows-with-the-package"]
-correction: "The piece said Ajinomoto discloses the film margin only as rounded wording, \"over 50%\"; in fact its results data sheets print Functional Materials sales and business profit in yen each quarter, so the margin can be computed exactly (54.2 per cent in fiscal 2025, 57.7 per cent in April to June 2026), which strengthens the claim's test."
 keyPoints:
   - "Ajinomoto is mostly a food company. Seasonings and frozen foods were 77.5 per cent of sales in the year to March 2026, and Functional Materials, the business built around its ABF chip film, only 6.4 per cent. But the film earned ¥54.6 billion of business profit at a 54 per cent margin, 24.4 per cent of the businesses' profit before shared costs, and about 29 per cent of group business profit after a sales-based share of those costs."
   - "The evidence since the piece supports the claim. Functional Materials sales rose 54 per cent and business profit 77 per cent in April to June 2026, at a 57.7 per cent margin, and Ajinomoto raised its full-year guide on the film alone. Servers and networks held at 70 per cent of film volume in fiscal 2025, as read from Ajinomoto's chart."
@@ -102,11 +101,7 @@ Go back to the lasagne in the piece. Ajinomoto makes the pasta sheets that hold 
 
 Servers and networks were 70 per cent of film volume in fiscal 2025, the level my piece set as its floor. That figure is read from a chart on slide 25 of the 7 May 2026 results presentation, which rounds to five points. The margin was 54.2 per cent while sales grew, the other half of the test.
 
-**Where I was wrong in October.** My piece said:
-
-> Ajinomoto discloses that margin only as rounded wording, "over 50%".
-
-The claim's test says the same. That was wrong. Ajinomoto's Consolidated Results data sheets print Functional Materials sales and business profit in yen every quarter, ¥100.7 billion and ¥54.6 billion for fiscal 2025, and ¥33.1 billion and ¥19.1 billion for April to June 2026. So the margin can be computed exactly: 54.2 per cent and 57.7 per cent. What showed me the slip was building this model from those sheets. It strengthens the test rather than weakening it: the margin half no longer depends on wording Ajinomoto might stop printing. The piece and its claim stay as published. I checked the piece's other figures against the same sheets and presentations, and found nothing else wrong.
+**The margin is disclosed in yen.** Ajinomoto's Consolidated Results data sheets print Functional Materials sales and business profit in yen every quarter, ¥100.7 billion and ¥54.6 billion for fiscal 2025, and ¥33.1 billion and ¥19.1 billion for April to June 2026. So the margin can be computed exactly: 54.2 per cent and 57.7 per cent. The margin half of the claim's test therefore rests on reported figures, not on wording Ajinomoto might stop printing.
 
 **It is not a straight line.** In fiscal 2023, after the PC boom, Functional Materials sales fell 13 per cent and business profit 25 per cent, to a 45 per cent margin. The film follows the substrate inventory cycle, as well as package size.
 

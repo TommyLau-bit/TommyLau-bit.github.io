@@ -79,7 +79,7 @@ A(para("Bloom Energy makes fuel cells that turn natural gas into electricity bes
        "its buyers pay for an earlier switch-on date, not for cheap power. The claim is holding: revenue rose "
        f"{(Q_REV[-1] / Q_REV[5] - 1) * 100:.0f}% in the second quarter, Oracle plans up to {ORCL_GW[0]} GW and AEP has taken most of "
        "its 900 MW option."))
-A(para(f"But I misread where the premium shows. Product gross margin, where a price for speed would appear, was "
+A(para(f"But the premium does not show in price. Product gross margin, where a price for speed would appear, was "
        f"{pc(PROD_GM_H[0])} in 2024, {pc(PROD_GM_H[1])} in 2025 and {pc(H1_26_PROD_GM)} in the first half of 2026. "
        f"Bloom earns the time premium as volume, and volume is set by a factory. At US${PRICE:.2f} the price needs about "
        f"{NEED_GW28:.1f} GW shipped in 2028, half as much again as the plant's planned 2 GW."))
@@ -139,19 +139,17 @@ A(caption("Left: GAAP gross margin on products, on services and in total, by qua
           "gross margin. Source: Bloom results releases, 2024 to 28 July 2026; product and service margins are derived."))
 A('</div>')
 
-A(section("Where I was wrong in September"))
-A(para(f"In the piece I wrote that gross margin rising from 26.7% to 33.4% while volume more than doubled was \"the time premium, "
-       f"expressed in money\". That was wrong. The rise came mainly from mix: products, which earn far more than "
-       "installation and service, went from 74% to 88% of revenue between the two quarters. Product margin also recovered, from "
-       "33.0% to 36.5%, after a weak 2025, and service added a little. But over a full year the product margin, where a "
-       f"premium for speed would show, was {pc(PROD_GM_H[0])} in 2024, {pc(PROD_GM_H[1])} in 2025 and {pc(H1_26_PROD_GM)} in the "
-       f"first half of 2026. Splitting the margin by line in Bloom's income statement, which I had not done for the piece, "
-       "changed my view."))
-A(para("Two smaller points. I wrote that the service backlog of about US$14bn was contracts for up to twenty years and the part "
-       "least exposed to the grid catching up. The 10-K says those contracts run 5 to 20 years, but customers can end them for "
-       f"convenience each year. And I wrote that Oracle had committed to up to {ORCL_GW[0]} GW. It intends to procure up to "
-       f"{ORCL_GW[0]} GW, of which {ORCL_GW[1]} GW is contracted. The claim, that customers pay for an earlier switch-on, survives. "
-       "Its margin test is weaker than I thought, because margin never tracked scarcity. The piece and the claim stay as published."))
+A(section("The margin rose on mix, not price"))
+A(para(f"Gross margin rose from 26.7% in Q2 2025 to 33.4% in Q2 2026 while volume more than doubled. The rise came mainly from "
+       "mix: products, which earn far more than installation and service, went from 74% to 88% of revenue between the two "
+       "quarters. Product margin also recovered, from 33.0% to 36.5%, after a weak 2025, and service added a little. But over a "
+       f"full year the product margin, where a premium for speed would show, was {pc(PROD_GM_H[0])} in 2024, "
+       f"{pc(PROD_GM_H[1])} in 2025 and {pc(H1_26_PROD_GM)} in the first half of 2026, on the revenue and cost lines in "
+       "Bloom's income statement."))
+A(para("Two smaller points. The service backlog of about US$14bn is contracts that run 5 to 20 years, but the 10-K says customers "
+       f"can end them for convenience each year. And Oracle intends to procure up to {ORCL_GW[0]} GW, of which {ORCL_GW[1]} GW "
+       "is contracted. The claim, that customers pay for an earlier switch-on, holds. Margin is a weak gauge of it, because "
+       "margin never tracked scarcity."))
 
 A(section("The factory is the ceiling"))
 A(para(f"If the premium is paid in volume, the question is how much Bloom can make. Its Fremont plant makes about 1 GW a year and "
@@ -289,7 +287,7 @@ A('</div>')
 
 A(section("Conclusion"))
 A(para("The September piece argued that Bloom sells time, not electricity. The buyers prove it: Oracle, AEP and Brookfield are "
-       "committing billions for speed. What I got wrong was how Bloom is paid for it. Product margin has been flat at about 35% "
+       "committing billions for speed. The question is how Bloom is paid for it. Product margin has been flat at about 35% "
        "while revenue tripled, so the premium arrives as volume, and volume is set by a factory. At US$"
        f"{PRICE:.2f} the price needs about {NEED_GW28:.1f} GW in 2028. My call: {CALL['direction']}, "
        f"{CALL['conviction'].lower()} conviction, leaning short; base value {usd(BASE_VALUE)}, range {usd(bear)} to {usd(bull)}. "

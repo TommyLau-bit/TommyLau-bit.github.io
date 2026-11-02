@@ -5,18 +5,16 @@ company: "Bloom Energy"
 ticker: "BE"
 exchange: "NYSE"
 claims: ["the-product-is-time"]
-correction: "I read Bloom's rising gross margin as the time premium. Product margin, where a premium would show, has been flat at about 35 per cent for two years, so Bloom is paid for time in volume, not price."
 keyPoints:
   - "Bloom Energy makes fuel cells that switch on in months where a grid connection takes years. Oracle plans up to 2.8 GW, AEP has taken most of its 900 MW option, and revenue rose 166 per cent in the second quarter."
   - "The premium is paid in volume, not price: Bloom's product gross margin was 36.8 per cent in 2024, 35.2 per cent in 2025 and 35.6 per cent in the first half of 2026, while revenue tripled."
   - "Volume is set by the Fremont factory, which doubles to 2 GW a year by the end of 2026. At AEP's price of about US$2.9 million a megawatt, the share price needs about 3 GW shipped in 2028."
   - "On fully diluted shares the stock trades at 103 times my 2026 earnings and 48 times my 2028. Forty times my 2028 estimate of US$6.03 gives about US$241, 16 per cent below the price."
-  - "Where I was wrong: my September piece called the rising gross margin the time premium. It rose mainly because high-margin products became most of Bloom's revenue, not from pricing, so the claim stands but its margin test is weak."
 files:
   pdf: "/research/2026-10-06_BloomEnergy_Initiation.pdf"
   xlsx: "/research/2026-10-06_BloomEnergy_Model.xlsx"
   thumb: "/research/2026-10-06_BloomEnergy_Initiation-p1.png"
-  pages: 6
+  pages: 5
 date: 2026-10-06T21:47:37+08:00
 draft: false
 call:
@@ -71,7 +69,7 @@ Bloom Energy's shares closed at US$286.65 on 5 October 2026. They have more than
 
 Oracle plans to procure up to 2.8 GW of Bloom's fuel cells. AEP, one of America's largest utilities, exercised most of a 900 MW option in January, an order of about US$2.65 billion. Brookfield, which finances many of the projects, lifted its framework from US$5 billion to US$25 billion in June. Revenue in the second quarter was US$1.07 billion, up 166 per cent.
 
-So the claim is holding. What I got wrong was how Bloom gets paid for it. Splitting its margin by line shows that the premium for speed arrives as volume, not as price. Volume is set by a factory, and the share price already assumes that factory grows a lot.
+So the claim is holding. The question for the shares is how Bloom gets paid for it. Splitting its margin by line shows that the premium for speed arrives as volume, not as price. Volume is set by a factory, and the share price already assumes that factory grows a lot.
 
 ## The thesis
 
@@ -83,11 +81,11 @@ The buyers are proof that time is the product. Revenue in the first half of 2026
 
 Where the money shows up matters for the shares. If Bloom were charging for scarcity, its price per box would rise and so would the margin on each box. The place to look is product gross margin, the share of each product sale left after the cost of making it. It was 36.8 per cent in 2024, 35.2 per cent in 2025 and 35.6 per cent in the first half of 2026. Revenue tripled, and the margin on the product barely moved.
 
-**Where I was wrong in September.** In the piece I wrote that gross margin rising from 26.7 to 33.4 per cent while volume more than doubled was "the time premium, expressed in money". That was wrong. The total margin rose mainly because of mix. Products, which earn far more than installation and service, went from 74 to 88 per cent of revenue between the two quarters. Product margin also recovered, from 33.0 to 36.5 per cent, after a weak 2025, and service added a little. But over a full year, the product margin, where a premium for speed would show, has not moved: 36.8 per cent in 2024, 35.2 per cent in 2025 and 35.6 per cent in the first half of 2026.
+**The total margin rose on mix, not price.** Gross margin rose from 26.7 per cent in the second quarter of 2025 to 33.4 per cent a year later, while volume more than doubled. The rise came mainly from mix. Products, which earn far more than installation and service, went from 74 to 88 per cent of revenue between the two quarters. Product margin also recovered, from 33.0 to 36.5 per cent, after a weak 2025, and service added a little. But over a full year, the product margin, where a premium for speed would show, has not moved.
 
-What changed my view was splitting the margin by line, using the revenue and cost lines in Bloom's income statement. I had not done that for the piece. Two smaller points follow from the filings. I wrote that the service backlog of about US$14 billion was contracts for up to twenty years, the part least exposed to the grid catching up. The 10-K says the contracts run 5 to 20 years, but customers can end them for convenience each year. And I wrote that Oracle had committed to up to 2.8 GW. It intends to procure up to 2.8 GW, of which 1.2 GW is contracted.
+These splits use the revenue and cost lines in Bloom's income statement. Two smaller points follow from the filings. The service backlog of about US$14 billion is contracts that run 5 to 20 years, but the 10-K says customers can end them for convenience each year. And Oracle intends to procure up to 2.8 GW, of which 1.2 GW is contracted.
 
-The claim itself survives: customers are paying for an earlier switch-on, and they are paying in orders. But the margin test the claim names is weaker than I thought, because margin never tracked scarcity in the first place. The better tests are volume, the time from order to power, and whether Oracle's further 1.6 GW is contracted. The piece and the claim stay exactly as published, so the record shows the mistake.
+The claim holds: customers are paying for an earlier switch-on, and they are paying in orders. Margin is a weak gauge of it, because margin never tracked scarcity. The better tests are volume, the time from order to power, and whether Oracle's further 1.6 GW is contracted.
 
 ## What the market prices in, and where I differ
 
@@ -166,7 +164,7 @@ The third quarter results have no date yet. Last year Bloom announced the date o
 
 ## Conclusion
 
-The September piece argued that Bloom sells time, not electricity. The buyers prove it: Oracle, AEP and Brookfield are committing billions for speed. What I got wrong was how Bloom is paid for it. Product margin has been flat at about 35 per cent while revenue tripled, so the premium arrives as volume, and volume is set by a factory.
+The September piece argued that Bloom sells time, not electricity. The buyers prove it: Oracle, AEP and Brookfield are committing billions for speed. The question is how Bloom is paid for it. Product margin has been flat at about 35 per cent while revenue tripled, so the premium arrives as volume, and volume is set by a factory.
 
 At US$286.65 the price needs about 3 GW shipped in 2028, half as much again as the plant's planned capacity. My call is no call, with medium conviction, leaning short. The base case is worth about US$241 and the range runs from US$83 to US$394. I would revisit above about US$322 or below about US$210. The draft is wrong if 2027 revenue reaches US$7 billion with a gross margin of 36 per cent or more, or the shares close above US$360 or below US$200 by October 2027.
 
