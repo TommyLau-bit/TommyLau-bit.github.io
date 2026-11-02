@@ -988,7 +988,7 @@ const n = (i: number) => String(i).padStart(2, '0');
   .fband small { font-weight: 400; color: var(--ink-3); white-space: nowrap; }
   .fband--energy { background: color-mix(in srgb, var(--accent) 14%, var(--bg)); border-left: 3px solid var(--accent); }
   .fband--compute { background: color-mix(in srgb, var(--accent-2) 12%, var(--bg)); border-left: 3px solid var(--accent-2); }
-  .fband:hover { background: color-mix(in srgb, var(--ink) 8%, var(--bg)); }
+  @media (hover: hover) { .fband:hover { background: color-mix(in srgb, var(--ink) 8%, var(--bg)); } }
   .funnel .panel-foot { align-self: flex-start; }
 
   /* without JavaScript: every scene shown in order */
