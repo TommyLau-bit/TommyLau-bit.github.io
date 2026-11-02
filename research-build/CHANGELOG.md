@@ -2,6 +2,16 @@
 
 Calls, targets, scenario values and revisit levels are never changed after publication. Only factual slips, arithmetic and presentation are corrected, and each correction is logged here.
 
+## 2 November 2026, plant dates checked against the companies' own releases
+
+**Hitachi** (no change to the call, scenarios or revisit levels):
+- "Hitachi expects the South Boston, Virginia transformer plant to operate by 2028" was a trade press quote, not Hitachi's. Hitachi Energy's groundbreaking release (29 June 2026) gives no start date. The text now says so and labels 2028 as trade press. Mississippi (production 2029, release of 15 September 2026) is unchanged.
+
+**Siemens Energy** (no change to the call, scenarios or revisit levels):
+- "The Charlotte transformer plant slipped by a year to 2027" rested on a press report. Siemens Energy's own last stated date is "early 2026" (release of 14 February 2024; its 3 February 2026 release gives none). The text now gives both and labels the slip as press-reported.
+
+Both PDFs rebuilt (6 pages each).
+
 ## 6 October 2026, fact-check of the day's notes
 
 **All models:** five of the six models (all except Nebius) were recalculated so their values are cached. They had shown blank in Mail and Gmail previews. No formula or input changed.

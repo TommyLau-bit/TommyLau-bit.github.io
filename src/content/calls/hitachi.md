@@ -159,7 +159,7 @@ Eight of the nine cells sit above the price, but only two sit 15 per cent or mor
 
 **The Middle East.** Hitachi says the situation in the Middle East cost it about ¥16.0 billion of revenue and ¥7.0 billion of adjusted EBITA in the June quarter. Its forecast allows for ¥10.0 billion more of each for the rest of the year.
 
-**Capacity timing.** Hitachi expects the South Boston, Virginia transformer plant to operate by 2028 and the Mississippi plant to start production in 2029. A slip delays revenue the plan needs, though it would also keep the queue long.
+**Capacity timing.** Hitachi Energy broke ground on the South Boston, Virginia transformer plant on 29 June 2026 without a start date (trade press reports 2028), and expects the Mississippi plant to start production in 2029. A slip delays revenue the plan needs, though it would also keep the queue long.
 
 **What would change my view.** A price below about ¥5,600 would put my base value 15 per cent above it and turn my view long on unchanged estimates. So would Hitachi raising its fiscal 2027 target for Hitachi Energy above US$28 billion of revenue at a 16 per cent margin. A price above about ¥8,580 would put my base value 25 per cent below it and raise the case for a short.
 

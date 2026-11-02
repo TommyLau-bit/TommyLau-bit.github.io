@@ -307,7 +307,7 @@ A(para(f"<strong>The cash is partly customers' money.</strong> Contract liabilit
 A(para("<strong>Currency and policy.</strong> Siemens Energy reports in euros and much of its order growth is in the US, so a weaker "
        "dollar cuts reported growth. A US executive order on bulk-power equipment is not yet detailed. Siemens AG held 5.54% of "
        "the voting rights after a sale, according to its notice of 2 April 2026 published via Deutsche Boerse."))
-A(para("<strong>Capacity timing.</strong> The Charlotte plant slipped by a year to 2027 and Nuremberg's expansion runs to 2028. A slip "
+A(para("<strong>Capacity timing.</strong> Siemens Energy last dated Charlotte to early 2026; a press report says it slipped by a year to 2027. Nuremberg's expansion runs to 2028. A slip "
        "delays revenue, though it also keeps the pile growing."))
 
 A('<div class="keeptogether">')

@@ -16,7 +16,7 @@ Astro static site, live at https://thephysicallayer.fyi. Built and deployed by `
 | `src/pages/`, `src/components/`, `src/layouts/`, `src/styles/` | The site itself. |
 | `public/covers/`, `public/og/` | Cover art and social cards, one per live piece. `public/research/` holds note PDFs and models. |
 | `brand/` | Checkers (`check-piece.py`, `check-call.py`), card and banner makers, `add-redirects.py`, `linkedin-posts.md` (every post and its slot). |
-| `research-build/deep-pieces/` | Working area: agent briefs, each piece's sidecar (verified sources), gap notes, `updates/` (approved update copies waiting for their publish date). |
+| `research-build/deep-pieces/` | Working area: agent briefs, each piece's sidecar (verified sources), gap notes, `updates/` (review copies of updates while they await approval; finished ones move to `research-build/archive/deep-piece-updates/`). |
 | `research-build/<company>/` | Build scripts and sources for each research note. `BRIEF-note*.md` are the note briefs; `CHANGELOG.md` logs post-publication corrections to notes. |
 | `research-build/archive/` | History, never edited: the original short pieces (`pieces/`), their old drafts and sidecars, pre-merge deep drafts, video transcripts, retired briefs and template, old images. |
 

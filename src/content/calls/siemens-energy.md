@@ -156,7 +156,7 @@ Eight of the nine cells sit above the price, and six sit 15 per cent or more abo
 
 **Currency and policy.** Siemens Energy reports in euros, and much of its order growth is in the US, so a weaker dollar cuts reported growth. A US executive order on bulk-power equipment is not yet detailed. Siemens AG held 5.54 per cent of the voting rights after a sale, according to its notice of 2 April 2026 published via Deutsche Boerse.
 
-**Capacity timing.** The Charlotte transformer plant slipped by a year to 2027, and the Nuremberg expansion runs to 2028. A slip delays revenue, though it also keeps the pile growing.
+**Capacity timing.** Siemens Energy's last stated date for the Charlotte transformer plant was early 2026; a press report says it slipped by a year to 2027. The Nuremberg expansion runs to 2028. A slip delays revenue, though it also keeps the pile growing.
 
 **What would change my view.** A price above about €141.50 would put my base value less than 15 per cent above it and turn my view to no call on unchanged estimates. So would a fiscal 2027 Grid outlook on 11 November below high-teens growth or an 18 per cent margin. Grid's orders falling below its revenue, or a turn in gas orders large enough to cut my fiscal 2027 Gas Services profit by a third, would point towards a short.
 

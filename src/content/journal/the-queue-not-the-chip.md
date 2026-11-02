@@ -1,7 +1,7 @@
 ---
 title: "Johor and Singapore: the plug, not the chip, decides who gets to build"
 date: 2026-07-27
-summary: "Malaysia's data centres draw less than a quarter of the grid power they have booked, while Singapore turns most would-be builders away. Both show the same thing: in Johor and Singapore a grid connection, not a supply of chips, decides who gets to build. Building your own power plant does not get round it, because Singapore rations the computing load a hall may run and Malaysia steers data centres to solar."
+summary: "Malaysia's data centres draw less than a quarter of the grid power they have booked, while Singapore turns most would-be builders away. Both show the same thing: in Johor and Singapore a grid connection, not a supply of chips, decides who gets to build. Building your own power plant does not get round it: Singapore rations the computing load a hall may run, and Malaysia lets a hall build its own only once the grid's spare margin is gone, and only with a permit."
 category: "Analysis"
 cover: "/covers/the-queue-not-the-chip.svg"
 tags: ["grid", "power", "johor", "singapore"]
@@ -28,7 +28,7 @@ Only the first clock answers to a government, and Malaysia squeezed it hard. Its
 
 Singapore cannot do that. It is short of land and of green power, so it hands out capacity in small batches to operators that pass strict efficiency and clean energy tests. A new law, expected in force in 2027, will license the megawatts of every large hall, old ones included.
 
-American AI labs have found a way round their own grid queues: they build gas power on site. Singapore allows that too, but it buys nothing, because what Singapore rations is the computing load a hall may run, not the electricity. Malaysia steers its data centres towards solar for their own use, with nothing sold back to the grid.
+American AI labs have found a way round their own grid queues: they build gas power on site. Singapore allows that too, but it buys nothing, because what Singapore rations is the computing load a hall may run, not the electricity. Malaysia gives data centres grid power only from Tenaga's spare margin, and beyond that lets them build their own only with a permit.
 
 So chips decide how fast a finished Johor hall fills. Whether a hall may be built at all is settled at the plug. A booked megawatt is a place in line, not a computer at work.
 
@@ -169,9 +169,13 @@ The gas risk belongs to the system, not the campus. Pipelines carry about half o
 
 What a campus cannot build for itself is permission. Under the Bill, a hall's licence will state the critical IT load it may run, and new capacity comes only through a call. A turbine in the yard adds megawatts of electricity, not one megawatt of licensed computing.
 
-Malaysia closes the route from the other side. On 28 October 2026 its Deputy Prime Minister told Parliament that data centres are encouraged to generate their own power through solar for their own use, exporting nothing to the grid, and that the Energy Commission is still drafting the framework. Gas stays with the grid: Tenaga is retiring 6.6 gigawatts of its own plant by 2030, and new gas plants, tendered as NEWGEN26, are due from 2029 to 2031.
+Malaysia narrows the route from the other side. On 28 October 2026 its Deputy Prime Minister told Parliament that data centres are encouraged to generate their own power through solar for their own use, exporting nothing to the grid, and that the Energy Commission is still drafting the framework. The grid's own gas is spoken for: Tenaga is retiring 6.6 gigawatts of its own plant by 2030, and new gas plants, tendered as NEWGEN26, are due from 2029 to 2031.
 
-So the American escape does not travel. Own power gets round a scarce connection. It does not get round a licensed megawatt or a solar-only steer.
+<a id="malaysia-grants-only-the-spare-margin"></a>
+
+Later that day, the investment minister said the grid now answers first. A data centre gets grid power only if Tenaga's reserve margin has room to spare after other industry. If not, it must build its own power off the grid, approved by the energy ministry through its regulator. Of the 117 data centres Malaysia has approved, 27 will take their power that way. Asked about a moratorium, he said there is no plan for one "at this moment": "our moratorium is the way we process". Meanwhile 24 new applications wait for an answer until the 117 settle.
+
+So the American escape travels only halfway. In Singapore, own power does not get round a licensed megawatt. In Malaysia, it is the route left once Tenaga's spare margin runs out, and the permit still decides.
 
 ## What could loosen the plug's hold
 
@@ -308,7 +312,6 @@ Tenaga publishes the fill quarterly. Every draw figure is Malaysia-wide; Tenaga 
 | June 2026 | 1,256 MW | 5.65 GW in system, 42 projects | about 22% | Tenaga briefing, 28 August 2026 |
 | August 2026 | about 1.37 GW | 6 GW at 45 operating sites; 8.771 GW signed by 62 projects | about 23% | Dewan Rakyat Hansard, 13 October 2026 |
 | August 2026 | about 1,374 MW | 2,346 MW contracted | 58.5% | Dewan Rakyat Hansard, 28 October 2026 |
-
 At June 2026, 2.21 GW was under construction and 0.49 GW signed, 8.35 GW across 61 projects in all. The 13 October Hansard share, 1.37 GW of 6 GW, is my arithmetic; the 58.5% is the minister's.
 
 The three clocks, with the evidence for each:

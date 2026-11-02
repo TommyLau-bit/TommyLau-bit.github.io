@@ -4,6 +4,14 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 
 ## START HERE (as of Mon 2 Nov 2026)
 
+- **Mon 2 Nov, afternoon: Tommy's open items cleared on his word ("take on the initiative and fix them").**
+  - Update 2 (Malaysia): the 28 Oct Hansard was read in full. The press line about paying for unused allocated capacity is not in it, so that update is dropped. Johari's speech carries new primary facts, now live in the-queue-not-the-chip (anchor `malaysia-grants-only-the-spare-margin`): grid power only from Tenaga's spare margin, else off grid by permit; 27 of 117 approved halls off grid; 24 applications unanswered. The summary and the own-power lines now say own power in Malaysia is the route left once the margin runs out, and the permit still decides. Fact-checked against the whole day's record; no claim reworded; no LinkedIn post. Record: research-build/archive/deep-piece-updates/the-queue-not-the-chip.HANSARD-28OCT.CHANGES.md.
+  - claims.ts: watch item added to america-rations-the-plug (whether PJM refiles its cut-first service after ER26-3515, and which states designate who is cut).
+  - Research notes hitachi.md and siemens-energy.md: the South Boston "by 2028" and Charlotte "slipped to 2027" lines were press, not the companies; corrected, labelled, PDFs rebuilt, logged in research-build/CHANGELOG.md (2 Nov). Calls unchanged.
+  - research-build/deep-pieces/updates/ moved to research-build/archive/deep-piece-updates/ (BRIEF-UPDATE still writes new review copies to updates/).
+  - Scheduled tasks: only the two monthly jobs remain; the Hong Kong job and the two old job-hunt reminders are gone.
+  - Not fixable here: Watch Later's 14 videos all show as unavailable on YouTube's side; the November results (Eaton, Nebius, Constellation, Oklo, Lumentum, Siemens Energy FY, Tenaga) land this month and are the December sweep's job.
+
 - **October sweep done: research-build/sweeps/2026-11.md.** Tommy took forward update 1 and Taiwan, and held update 2 (Malaysia capacity charges, press only until the 28 Oct Hansard is read). Update 1, FERC's 9 Oct rejection of PJM's IRAS in ER26-3515, is a fact-checked review copy in deep-pieces/updates/america-rations-the-plug.md (+ CHANGES.md). Tommy said publish (2 Nov): it is live in america-rations-the-plug (anchor `ferc-keeps-the-bill-shared`), source added to its sidecar, no `updated` line and no LinkedIn post. Taiwan is HOLD in gap-taiwan.notes.md: a new piece once MOEA, Taipower and TSMC primaries can be read (their sites blocked the scout). The anchor is the Energy Management Act Art. 10(4), in force 23 Sep 2026, confirmed at primary.
 
 - **Mon 2 Nov: Hong Kong is live and the LinkedIn queue is full to 21 Dec.** hong-kong-has-the-plug went live at 11:38 (commit ec32b1d), and the "Hong Kong is the mirror" link in the-queue-not-the-chip is restored. On Tommy's word the same day, LinkedIn posts 49, 50 and 51 were scheduled at once (Wed 9, Mon 14, Wed 16 Dec, 11:30) instead of by the 4, 6 and 9 Nov jobs, which were then deleted. No publish or LinkedIn jobs remain. LinkedIn's desktop scheduled list loads past ten when scrolled to the bottom.
@@ -26,7 +34,7 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 |---|---|
 | Top level | CLAUDE.md (rule book), WRITING-FORMAT.md (piece spec), CALLS-SPEC.md (notes spec), README.md (folder map), plus the site's own folders (src, public, brand) |
 | research-build/HANDOVER.md | This file |
-| research-build/deep-pieces/ | Live working area: the four agent briefs, one sidecar per deep piece (verified sources), gap-*.notes.md, updates/ (history now: the three updates are live; can move to archive/) |
+| research-build/deep-pieces/ | Live working area: the four agent briefs, one sidecar per deep piece (verified sources), gap-*.notes.md, updates/ (review copies only while awaiting approval; finished ones in archive/deep-piece-updates/) |
 | research-build/<company>/, BRIEF-note*.md, CHANGELOG.md | Research notes: build scripts and sources, briefs, post-publication corrections |
 | research-build/archive/ | History, never edited: pieces/ (61 originals), journal-drafts/ (their old drafts and sidecars), deep-drafts/ (pre-merge deep piece drafts), sources/ (Watch Later and video transcripts), old-images/ (191 unused covers and cards), misc/, plus CONSOLIDATION-PLAN.md, RETIRED-RULES.md, the old short-piece briefs and TEMPLATE-short-skeleton.md |
 | public/covers, public/og | Only images a live or scheduled piece uses (11 covers, 11 cards) |
@@ -45,10 +53,10 @@ LinkedIn company page queue (11:30): posts 38 to 47 Mon 2 Nov to Wed 2 Dec; Fri 
 ### Open flags for Tommy (not acted on)
 - CLOSED 2 Nov: LinkedIn post 52 (memory) confirmed in the scheduled list, Mon 21 Dec 11:30, link resolves to memory-not-maths. Same check: all 14 queued posts (4 Nov to 21 Dec) match the log text and resolve to the right live piece; post 38 went out 2 Nov. Three link cards (posts 39, 43, 45) carried pre-rewrite titles: on Tommy's go, Post Inspector refreshed the three URLs and the posts were re-scheduled in the same slots with the old copies deleted; the list shows 14 posts, all with current titles. Lesson: after a piece's title changes, run Post Inspector on its URL before its post goes out.
 - Memory replaced the "Memory deep piece" candidate flag: it is live (31 Oct).
-- Research notes hitachi.md (line 162) and siemens-energy.md (line 159) carry corrected dates; confirm the wording.
+- CLOSED 2 Nov: hitachi.md and siemens-energy.md plant-date wording corrected to the companies' own releases (CHANGELOG, 2 Nov).
 - CLOSED 30 Oct: the press-only 72.76% Johor utilisation figure no longer appears as fact in claims.ts watch lists (Tommy: "Yes, fix them"). The two watch items now read as Malaysia's contracted against used load (Hansard, Aug 2026) and as whether the press figure is confirmed at source.
 - The 17 Sep 800 VDC note is reversed by powering-the-rack (briefing in its sidecar). Re-read before any call that touches it.
-- Two old one-off scheduled tasks from the job-hunt side (linkedin-connections-reminder-5oct, marvell-investor-day-check) are finished but still listed; the app refused deleting them from here. Tommy can delete them in the Scheduled section.
+- CLOSED 2 Nov: the old one-off scheduled tasks are no longer listed.
 
 ## Sat 31 Oct 2026 (overnight, Tommy's go for everything): what was done
 

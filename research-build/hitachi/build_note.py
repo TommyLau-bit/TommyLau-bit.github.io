@@ -298,8 +298,8 @@ A(para("<strong>The rest of the group.</strong> Digital Systems and Services fac
        "fiscal 2026."))
 A(para("<strong>The Middle East.</strong> Hitachi says the situation cost it about ¥16.0bn of revenue and ¥7.0bn of adjusted EBITA in the "
        "June quarter, and its forecast allows for ¥10.0bn more of each for the rest of the year."))
-A(para("<strong>Capacity timing.</strong> Hitachi expects South Boston, Virginia to operate by 2028 and Mississippi to start production in "
-       "2029. A slip delays revenue the plan needs, though it would also keep the queue long."))
+A(para("<strong>Capacity timing.</strong> Hitachi Energy broke ground at South Boston, Virginia on 29 June 2026 without a start date (trade press reports 2028), "
+       "and expects Mississippi to start production in 2029. A slip delays revenue the plan needs, though it would also keep the queue long."))
 
 A('<div class="keeptogether">')
 A(section("What would change my mind"))
