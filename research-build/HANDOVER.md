@@ -4,6 +4,14 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 
 ## START HERE (as of Mon 2 Nov 2026)
 
+- **For the next monthly sweep (Tue 1 Dec 2026, covers November; writes research-build/sweeps/2026-12.md).** Read research-build/sweeps/2026-11.md first so nothing is proposed twice. Where November left off:
+  - Carry-over calendar, not yet out at 2 Nov: Eaton Q3 (Electrical Americas backlog ratio for the-equipment-queue), Nebius Q3 (connected MW against 800 MW), Constellation Q3 (Crane), Oklo Q3, Lumentum, Siemens Energy FY2026 (Grid backlog, 11 Nov, Charlotte date), Tenaga 3Q (data centre load against booked maximum demand), PJM's ride-through filing and EL26-67 refiles (November), ERCOT audit reports (by 10 Dec), PJM 2029/2030 auction (December).
+  - Watch for a PJM refile of its cut-first service after ER26-3515 (new watch item on america-rations-the-plug).
+  - Taiwan: HOLD (gap-taiwan.notes.md). Retry the MOEA 2026 supply and demand report tables, the 5 MW siting rule and the Article 10 threshold regulation (due about March 2027) through readable mirrors (data.gov.tw, ey.gov.tw, ly.gov.tw). moea.gov.tw, moeaea.gov.tw and taipower.com.tw block us even in a real browser; never bypass. Draft only when the claim's numbers are primary.
+  - Gap ideas not yet scouted: Japan's and Australia's grids (Tommy, 2 Nov: fine to scout if the sweep has room).
+  - Watch Later: empty by design (Tommy deletes videos once transcripts are pulled). Report only videos saved since 1 Nov.
+  - Tommy's standard (2 Nov): every new fact must be real, read at the primary source and independently fact-checked before it goes live; press-only figures are dropped, as the Malaysia capacity-charge line was. He approved pushing back on weak candidates: fewer, stronger.
+
 - **Mon 2 Nov, afternoon: Tommy's open items cleared on his word ("take on the initiative and fix them").**
   - Update 2 (Malaysia): the 28 Oct Hansard was read in full. The press line about paying for unused allocated capacity is not in it, so that update is dropped. Johari's speech carries new primary facts, now live in the-queue-not-the-chip (anchor `malaysia-grants-only-the-spare-margin`): grid power only from Tenaga's spare margin, else off grid by permit; 27 of 117 approved halls off grid; 24 applications unanswered. The summary and the own-power lines now say own power in Malaysia is the route left once the margin runs out, and the permit still decides. Fact-checked against the whole day's record; no claim reworded; no LinkedIn post. Record: research-build/archive/deep-piece-updates/the-queue-not-the-chip.HANSARD-28OCT.CHANGES.md.
   - claims.ts: watch item added to america-rations-the-plug (whether PJM refiles its cut-first service after ER26-3515, and which states designate who is cut).
