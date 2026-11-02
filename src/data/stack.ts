@@ -44,7 +44,7 @@ export const STACK: Layer[] = [
     name: 'Cooling',
     kind: 'energy',
     what: 'Almost every watt that goes into a chip comes back out as heat, and liquid now carries most of it away.',
-    constraint: 'Air stops working somewhere between 30 and 50 kilowatts per rack.',
+    constraint: 'Air-cooled racks ran 10 to 40 kilowatts; the AI racks replacing them draw 140.',
     pieces: ['heat-and-water'],
   },
   {

@@ -185,3 +185,7 @@ check-piece.py on a scratch copy after fixes: 0 failures, 1 warning (sources lin
 
 - hyperion, permian and golden-pass drafts link `/journal/ge-vernova-sells-the-wait/`, `/journal/the-way-out-has-its-own-queue/` and `/journal/permian-gas-follows-the-oil-rig/`; they leave `src/content/journal/` at merge, so nothing to fix. No other journal piece links the absorbed slugs.
 - The GE Vernova note and Bloom note keep their `claims` ids; their "the October piece" / "my September piece" wording still reads correctly through the redirects.
+
+## Update, 2 Nov 2026
+
+EIA 860M planned vs building gas, EIA-860 grid-only reporting, MHI and Wartsila queues, Caterpillar Power Generation, Homer City date note. Scout: gap-own-power-update.notes.md. Changes and sources: updates/building-your-own-power.CHANGES.md. Independently fact-checked (nine fixes).

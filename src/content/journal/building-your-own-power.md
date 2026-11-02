@@ -24,7 +24,7 @@ Making power on your own side of the utility's meter is called going behind the 
 
 The biggest machine, the heavy-duty gas turbine, is the cheapest at scale and the slowest to get. Its makers sell paid places in their factory line years ahead. After it ships, it needs about another year and a half on site before it makes power.
 
-The quicker machines have queues of their own. A turbine built around a jet engine ships about two years sooner and runs within months, but its maker now takes orders far faster than it ships them. Fuel cells arrive by lorry, and their maker is doubling its factory to keep up.
+The quicker machines have queues of their own. A turbine built around a jet engine ships about two years sooner and runs within months, but its maker now takes orders far faster than it ships them. Big gas engines are queued as well: one maker says its lead times are still lengthening. Fuel cells arrive by lorry, and their maker is doubling its factory to keep up.
 
 Supply cannot simply catch up. GE Vernova is raising output inside the factories it already has, paid for by its customers' deposits, and its next step waits on castings due in 2027.
 
@@ -83,6 +83,10 @@ GE Vernova counts firm orders and slot reservations, paid holds on future produc
 
 The queue is hardening as it grows. In the third quarter GE Vernova turned 13 GW of reservations into orders, so firm orders now exceed reservations. It sold "multiple slots for 2032 delivery", and it expects at least 130 GW under contract by the end of 2026. A turbine in one of those slots would make power no earlier than 2033.
 
+<a id="a-second-maker-books-years-out"></a>
+
+The queue is not one maker's. On 6 August Mitsubishi Heavy Industries' finance chief said combined cycle projects now under discussion "will generally be delivered around 2030 to 2031", and that "Order pricing has not declined". A buyer who switches maker still waits years, at no lower price.
+
 ## The maker is paid to keep the queue, not to clear it
 
 GE Vernova is not building its way out of the queue, and its plan says so. Output rises from 20 GW a year now to 24 GW in 2028 and 30 GW in 2030, through "lean and incremental machinery in our existing factory footprint", "all funded by customer down payments". No new heavy-duty factory has been announced. Even at 30 GW a year, today's 122 GW would still be four years of work.
@@ -115,6 +119,10 @@ The smaller machines were meant to be the way round the queue, and they are queu
 
 On 28 October its chief executive said fourth-quarter aeroderivative orders would be lighter, "not because the demand is softer" but because GE Vernova is "now going out so far in the future before we have availability". Crusoe, which builds AI campuses, ordered 29 of them in December 2024 and mid-2025, nearly 1 GW. I found no statement that they are running, nor whether as primary power.
 
+<a id="the-engines-queue-too"></a>
+
+Big gas engines, another quick machine, are queuing too. On 27 October Wärtsilä said "lead times for our engines continue to increase", in a quarter when it won a 282 MW on-site power order for a US data centre, fifteen engines. Caterpillar's Power Generation sales rose 30% in the third quarter, "mainly in turbines and turbine-related services and in large reciprocating engines", chiefly for data centres. Both makers point to the same buyers.
+
 <a id="the-product-is-time"></a>
 
 Fuel cells are the other fast route, and buyers pay for them in volume, not price. Bloom Energy's third quarter product revenue rose 179%, to $1,073.6 million. Oracle intends to procure up to 2.8 GW, 1.2 GW of it contracted. Yet Bloom's product margin sat near 35% for two years before reaching 37.9% in the third quarter, one quarter and not yet a trend.
@@ -127,7 +135,7 @@ Either route still needs transformers and switchgear, and those have [their own 
 
 An air permit can decide whether a big plant gets built at all. On the site of a Pennsylvania coal station, Homer City Generation is building up to 4,678 MW of gas plant beside which Amazon Web Services has filed plans for 39 data centres. A new source of NOx, a smog-forming gas, that size would normally face full federal and state review.
 
-Homer City avoided it by netting: counting the coal boilers' recent cut against the new plant's rise. The plant adds 1,142.8 tons of NOx a year; retiring the boilers removed 2,031.8. A cut counts only within five years, so a coal site shut long ago has none to spend. Even here, the plant must buy 369 tons a year of credits for another pollutant before it runs, and first power is targeted for early 2028.
+Homer City avoided it by netting: counting the coal boilers' recent cut against the new plant's rise. The plant adds 1,142.8 tons of NOx a year; retiring the boilers removed 2,031.8. A cut counts only within five years, so a coal site shut long ago has none to spend. Even here, the plant must buy 369 tons a year of credits for another pollutant before it runs. Homer City targets first power in early 2028, though its entry in EIA's inventory, unchanged since September 2025, lists the first units for July 2028.
 
 <a id="permian-gas-follows-the-oil-rig"></a>
 <a id="golden-pass-joins-the-gas-queue"></a>
@@ -167,9 +175,15 @@ So for gas, the fuel clock runs alongside the plant, not behind it. Pipe bid for
 
 ## What could open the queue
 
-The case against is real. Signings slowed to 11 GW in the third quarter, from about 20 GW in each of the two before, while shipments rose to 5 GW. Reservations can lapse. If output reaches 30 GW in 2030 and signings keep slowing, years of output would fall even while the pile holds. And a small off-grid plant like Socrates can go from approval to its due date in about a year.
+The case against is real. Signings slowed to 11 GW in the third quarter, from about 20 GW in each of the two before, while shipments rose to 5 GW. Reservations can lapse. If output reaches 30 GW in 2030 and signings keep slowing, years of output would fall even while the pile holds. Mitsubishi Heavy expects to double its turbine capacity against its 2024 financial year. And a small off-grid plant like Socrates can go from approval to its due date in about a year.
 
-None of this yet frees a large campus. Signings still run at twice the rate of shipments, so the pile grows. Socrates is 400 MW, under a fifth of Hyperion's first three plants. And the claim I made in September, that own generation is not faster than a comparable grid connection, has no primary head-to-head of energisation dates to test it. I concede that limb is open.
+None of this yet frees a large campus. Signings still run at twice the rate of shipments, so the pile grows, and Mitsubishi Heavy says it books orders while checking how much of that capacity it can bring on. Socrates is 400 MW, under a fifth of Hyperion's first three plants.
+
+<a id="plans-outrun-the-build"></a>
+
+A flood of new gas plans can look like supply arriving, and the federal count says it is not. In EIA's Preliminary Monthly Electric Generator Inventory, the nameplate capacity of planned gas generators rose from 40.5 GW in September 2025 to 71.1 GW in September 2026. The part under construction or built and awaiting commercial operation rose only from 9.6 GW to 13.1 GW, by my arithmetic. Fermi America's Project Matador in Texas alone lists 11.7 GW of gas, of which 0.3 GW is under construction.
+
+That count cannot settle my September claim that own generation is not faster than a comparable grid connection. EIA's survey covers only plants "connected to the local or regional electric power grid", so an off-grid plant like Socrates is not in it. No federal series sets off-grid energisation dates beside grid ones, and I concede that limb is open.
 
 The big drilling firm is still booked for years, the lighter rig's diary is filling, and the pipe was booked by the neighbours before the well was dug. Building your own power buys a place in a queue. What it buys is a date, not power.
 
@@ -201,7 +215,7 @@ Hyperion's first plants are not caught: approved in 2025, they land before the l
 
 ## Every clock is paid for before it starts
 
-Then look at who pays for the wait: the buyers, before anything is built. GE Vernova's Power deposits doubled in nine months, to $33.2 billion. Three power companies signed 93% of Transco's new pipe before it was laid. Kinder Morgan's newest pipes are take-or-pay, and one was signed by a hyperscaler.
+Then look at who pays for the wait: the buyers, before anything is built. GE Vernova's Power deposits doubled in nine months, to $33.2 billion. Mitsubishi Heavy raised its free cash flow forecast in August mainly because "advances received in GTCC have increased more than expected", GTCC being its gas turbine combined cycle plants. Three power companies signed 93% of Transco's new pipe before it was laid. Kinder Morgan's newest pipes are take-or-pay, and one was signed by a hyperscaler.
 
 <figure class="chart">
 <p class="chart-title">Every clock is paid for by its buyers before it starts</p>
@@ -245,7 +259,7 @@ Claim: "Building your own power on site does not escape the queue. Turbines, tra
 
 Breaks if: "Turbine lead times fall while the backlog is still being worked through, or large sites energise on their own generation faster than comparable sites get a grid connection, or transformers and switchgear stop being the constraint."
 
-Where later evidence bears on it: its figures came from a trade magazine; GE Vernova's own filings now confirm them, and Siemens Energy's is left out, unconfirmed at source. The second limb, own generation against comparable grid connections, is untested: I have no primary head-to-head of energisation dates. Williams' Socrates now gives the fast end with primary dates, 200 MW off the grid approved 18 September 2025 and due by end 2026, but no grid date beside it.
+Where later evidence bears on it: its figures came from a trade magazine; GE Vernova's own filings now confirm them, and Siemens Energy's is left out, unconfirmed at source. The second limb, own generation against comparable grid connections, is untested: I have no primary head-to-head of energisation dates. Williams' Socrates now gives the fast end with primary dates, 200 MW off the grid approved 18 September 2025 and due by end 2026, but no grid date beside it. Federal data cannot supply one: EIA's generator survey (Form EIA-860) covers only plants "connected to the local or regional electric power grid", so off-grid plants such as Socrates are not counted, and the head-to-head cannot be measured from it (2 November 2026).
 
 **Bloom Energy is not selling electricity. It is selling time.** (24 September 2026)
 
@@ -302,6 +316,25 @@ Bloom Energy: product gross margin was 36.8% in 2024, 35.2% in 2025 and 35.6% in
 
 Homer City: seven GE Vernova 7HA.02 combined cycle units and ten Mitsubishi FT8 aeroderivatives. NOx figures are tons a year on a 2021 to 2022 baseline. Without netting, a new NOx source in Pennsylvania's ozone region faces the lowest achievable emission rate and credits for 1.15 tons of cuts elsewhere for each ton added. The 369 tons are volatile organic compound credits. Pennsylvania DEP, plan approval 32-00457A, 18 November 2025.
 
+Homer City's dates: its release of 26 March 2026 gave "its target of delivering first power in early 2028"; its release of 20 October 2026 gives no date. Its entry in EIA's September 2026 inventory lists 4,396 MW in fourteen units, the first four (1,256 MW) for July 2028, then November 2028, March, July and November 2029; the September 2025 inventory gave the same dates, so the July 2028 entry predates the March target. EIA still lists every unit as "Planned for installation, but regulatory approvals not initiated", although Pennsylvania DEP approved the plan on 18 November 2025, so EIA's statuses can lag the permits.
+
+EIA's count of planned gas generators, nameplate MW, all states, energy source natural gas:
+
+| EIA status | Sep 2025 | Sep 2026 |
+|---|---|---|
+| Planned, regulatory approvals not initiated (P) | 15,562 | 39,707 |
+| Regulatory approvals pending, not under construction (L) | 12,343 | 12,710 |
+| Regulatory approvals received, not under construction (T) | 2,982 | 5,539 |
+| Under construction, 50% or less complete (U) | 3,283 | 8,710 |
+| Under construction, more than 50% complete (V) | 5,408 | 1,944 |
+| Construction complete, not yet in commercial operation (TS) | 878 | 2,492 |
+| Other (OT) | 26 | 0 |
+| All planned gas | 40,482 | 71,102 |
+
+Source: EIA, Preliminary Monthly Electric Generator Inventory (Form EIA-860M), "Planned" sheet, September 2025 and September 2026 data, the latter released 23 October 2026. The sums by status are my arithmetic; U, V and TS together are 9,569 MW and 13,146 MW. EIA calls the capacities preliminary estimates. Only plants connected to the grid report (Form EIA-860 instructions), and non-coal, non-nuclear plants only within five years of commercial operation. Fermi America's Project Matador Gas Plant (reporting entity Fermi America, Carson County, ERCOT) lists 11,679 MW of gas: 300 MW under construction (six 50 MW units due December 2027), 120 MW with approvals received and 11,259 MW with approvals not initiated, due September 2027 to December 2030. Williams' Socrates plants are not in it.
+
+Other makers: Mitsubishi Heavy Industries' Q&A summary of its first quarter results briefing (6 August 2026) says it booked ten large frame gas turbines in the quarter, four for the United States, for delivery mostly between 2028 and 2030, and that capacity is "expected to double" against FY2024, while it builds "the order book while carefully monitoring progress on the capacity expansion". Wärtsilä's interim report of 27 October 2026: "Equipment delivery times continued to increase"; the 282 MW order uses 15 Wärtsilä 50SG engines. Caterpillar's Power Generation sales were $3,421 million in the third quarter of 2026 against $2,634 million a year earlier (Form 8-K, 29 October 2026).
+
 The Permian Basin:
 
 | Permian Basin | Q1 2025 | Q1 2026 |
@@ -332,8 +365,8 @@ Chart dates: Socrates starts at the siting board's approval of Socrates North an
 <h3>Who is exposed if building your own power means joining the makers' queues</h3>
 <p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares. Figures in the piece are disclosures used as evidence for the mechanism.</p>
 <dl>
-<dt>Turbines</dt>
-<dd><span class="names">GE Vernova</span>, <span class="names">Siemens Energy</span>, <span class="names">Mitsubishi Power</span> and <span class="names">Ansaldo Energia</span> make gas turbines.</dd>
+<dt>Turbines and engines</dt>
+<dd><span class="names">GE Vernova</span>, <span class="names">Siemens Energy</span>, <span class="names">Mitsubishi Heavy</span> and <span class="names">Ansaldo Energia</span> make gas turbines; <span class="names">Caterpillar</span> makes turbines and gas engines, and <span class="names">Wärtsilä</span> gas engines.</dd>
 <dt>Blades and fuel cells</dt>
 <dd><span class="names">Howmet Aerospace</span> casts turbine blades, and <span class="names">Bloom Energy</span> makes fuel cells.</dd>
 <dt>Plants, campuses and fuel</dt>
@@ -347,4 +380,4 @@ Chart dates: Socrates starts at the siting board's approval of Socrates North an
 
 ---
 
-<p class="sources">Sources: GE Vernova results releases and calls of 22 April, 22 July and 28 October 2026, its 2025 Form 10-K and Forms 10-Q to 30 September 2026; GE Vernova and Crusoe (22 July 2025) and Crusoe (18 March 2025); Howmet Aerospace's 2025 Form 10-K, Technology and Markets Day (10 March 2026) and releases of 6 August and 29 October 2026; Siemens Energy, 11 February 2026; Bloom Energy with Oracle (24 July 2025, 13 April 2026) and American Electric Power (November 2024), and its releases to 22 October 2026; Pennsylvania DEP plan approval 32-00457A (18 November 2025) and Homer City releases of 26 March and 20 October 2026; Meta's and Entergy's 2025 Forms 10-K, Entergy's Form 10-Q of 31 July 2026 and LPSC docket U-37425; EIA Short-Term Energy Outlooks of September and October 2026, Today in Energy (23 April 2026) and monthly gas data (30 September 2026); Kinder Morgan, 22 April and 21 October 2026; Transco's FERC application, docket CP25-10 (28 October 2024); Williams, 3 August 2026, and its Socrates project page; Ohio Power Siting Board case 25-188-EL-BGN (18 September 2025). Leads came from Leo Cui's videos on GE Vernova and the energy sector. Personal research, not investment advice.</p>
+<p class="sources">Sources: GE Vernova releases and calls of 22 April, 22 July and 28 October 2026, 2025 Form 10-K and Forms 10-Q to 30 September 2026; Crusoe (18 March and 22 July 2025); Howmet Aerospace 2025 Form 10-K, 10 March 2026 and releases to 29 October 2026; Siemens Energy, 11 February 2026; Mitsubishi Heavy Industries, Q&amp;A of 6 August 2026; Wärtsilä, 27 October 2026; Caterpillar Form 8-K, 29 October 2026; Bloom Energy releases, November 2024 to 22 October 2026; Pennsylvania DEP plan approval 32-00457A (18 November 2025) and Homer City releases of 26 March and 20 October 2026; Meta and Entergy 2025 Forms 10-K, Entergy Form 10-Q of 31 July 2026, LPSC docket U-37425; EIA generator inventory (Form EIA-860M) for September 2025 and 2026 (released 23 October 2026), Form EIA-860 instructions, Short-Term Energy Outlooks (September, October 2026), Today in Energy (23 April 2026) and gas data (30 September 2026); Kinder Morgan, 22 April and 21 October 2026; Transco, FERC docket CP25-10 (28 October 2024); Williams, 3 August 2026, and its Socrates page; Ohio Power Siting Board case 25-188-EL-BGN (18 September 2025). Leads came from Leo Cui's videos on GE Vernova and the energy sector. Personal research, not investment advice.</p>
