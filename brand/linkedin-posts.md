@@ -682,7 +682,7 @@ https://thephysicallayer.fyi/journal/contracted-energised-running/
 
 ---
 
-## 48 · Hong Kong has the plug (site live Mon 2 Nov 2026, scheduled; LinkedIn Mon 7 Dec, 11:30)
+## 48 · Hong Kong has the plug (site live Mon 2 Nov 2026; LinkedIn Mon 7 Dec, 11:30, scheduled)
 
 Hong Kong's main utility has finished eight substations for data centres since 2024, nearly three times as many as in the six years before, and plans 18 by 2028.
 
