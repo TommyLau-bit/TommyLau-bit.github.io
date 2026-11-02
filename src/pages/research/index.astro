@@ -1,19 +1,10 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { getCollection } from 'astro:content';
 import { SCORECARD_REFRESHED } from '../../data/calls';
 import { getPitches, latest, fmtMoney, fmtPct, callLabel } from '../../lib/calls';
 import { fmtDate } from '../../utils';
-import { claimOf, homeOf, claimHref } from '../../data/claims';
 const pitches = await getPitches();
-const posts = await getCollection('journal', ({ data }) => !data.draft);
 const rows = pitches.map((p) => ({ p, ...latest(p) }));
-// The deep piece each note rests on: the piece that carries its first claim today.
-const restsOn = (p: (typeof pitches)[number]) => {
-  const c = claimOf(p.data.claims[0]);
-  const piece = c && posts.find((x) => x.id === homeOf(c));
-  return c && piece ? { href: claimHref(c), title: piece.data.title } : undefined;
-};
 const longs = pitches.filter((p) => p.data.call.direction === 'LONG').length;
 const shorts = pitches.filter((p) => p.data.call.direction === 'SHORT').length;
 const noCalls = pitches.filter((p) => p.data.call.direction === 'NO CALL').length;
@@ -65,34 +56,8 @@ const dirClass = (p: (typeof pitches)[number]) => `note-call note-call--${(p.dat
         </div>
       </section>
 
-      <section aria-labelledby="notes-h">
-        <h2 class="research-sec-h" id="notes-h">The notes</h2>
-        <ol class="library">
-          {pitches.map((p) => {
-            const d = p.data;
-            const rests = restsOn(p);
-            return (
-              <li class="note-row">
-                <p class="note-meta">
-                  {d.date && <time datetime={d.date.toISOString()}>{fmtDate(d.date)}</time>}
-                  <span class={dirClass(p)}>{callLabel(p)}</span>
-                </p>
-                <div class="note-body">
-                  <h3><a href={`/research/${p.id}/`}>{d.company} <span>{d.exchange}: {d.ticker}</span></a></h3>
-                  <p class="note-title">{d.title}</p>
-                  <p class="note-links">
-                    <a href={d.files.pdf}>Note <small>PDF{d.files.pages && `, ${d.files.pages} pp`}</small></a>
-                    <a href={d.files.xlsx}>Model <small>Excel</small></a>
-                    {rests && <span class="note-rests">Rests on <a href={rests.href}>{rests.title}</a></span>}
-                  </p>
-                </div>
-              </li>
-            );
-          })}
-        </ol>
-      </section>
     </>
   )}
 
-  <p class="research-foot">Each call rests on a claim made first in the journal. <a href="/claims/">See every claim and what would prove it wrong</a>. These notes are the author's own analysis, not investment advice. The author holds no position in any company covered unless a note says so.</p>
+  <p class="research-foot">The journal's own claims, and what would prove each wrong, are on <a href="/claims/">the claims page</a>. These notes are the author's own analysis, not investment advice. The author holds no position in any company covered unless a note says so.</p>
 </Base>
