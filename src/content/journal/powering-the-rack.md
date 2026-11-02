@@ -246,7 +246,7 @@ That would change more than the timing. A building-first switch would pull SiC d
 
 ## Research notes
 
-[Vertiv](/research/vertiv/) and [Texas Instruments](/research/texas-instruments/), each resting on its live claim below. Both notes already record where the September and October pieces were wrong. Whether any of this is already in share prices is a question for these notes, not for the journal.
+[Vertiv](/research/vertiv/) and [Texas Instruments](/research/texas-instruments/), each resting on its live claim below. [Nvidia](/research/nvidia/) rests on this piece's claim among others. Both notes already record where the September and October pieces were wrong. Whether any of this is already in share prices is a question for these notes, not for the journal.
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>

@@ -230,7 +230,7 @@ The second is a statement of mix: Nvidia or Broadcom saying most AI switches it 
 
 ## Research notes
 
-Four initiation notes rest on these claims: [Marvell](/research/marvell/), [Broadcom](/research/broadcom/), [Corning](/research/corning/) and [Lumentum](/research/lumentum/). Each records where its piece was wrong. Whether any of this is already in share prices is a question for these notes, not for the journal.
+Five initiation notes rest on these claims: [Marvell](/research/marvell/), [Broadcom](/research/broadcom/), [Corning](/research/corning/), [Lumentum](/research/lumentum/) and [Nvidia](/research/nvidia/). The first four each record where their piece was wrong. Whether any of this is already in share prices is a question for these notes, not for the journal.
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>

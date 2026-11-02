@@ -221,7 +221,7 @@ The second is Nebius at 30 June 2027, six months after its connected guide falls
 
 ## Research notes
 
-The [Nebius initiation note](/research/nebius/) (6 October 2026) rests on the Nebius claim and already carries the correction from connected to active power. No note rests on the Jane Street claim or the new claim. Whether any of this is already in share prices is a question for these notes, not for the journal.
+The [Nebius initiation note](/research/nebius/) (6 October 2026) rests on the Nebius claim and already carries the correction from connected to active power. The [Nvidia note](/research/nvidia/) rests on this piece's own claim. No note rests on the Jane Street claim. Whether any of this is already in share prices is a question for these notes, not for the journal.
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
