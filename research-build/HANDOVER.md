@@ -2,10 +2,11 @@
 
 Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. Newest day on top. Rewrite START HERE at the end of each session.
 
-## START HERE (as of Sat 31 Oct 2026, evening)
+## START HERE (as of Mon 2 Nov 2026)
 
+- **Mon 2 Nov: Hong Kong is live and the LinkedIn queue is full to 21 Dec.** hong-kong-has-the-plug went live at 11:38 (commit ec32b1d), and the "Hong Kong is the mirror" link in the-queue-not-the-chip is restored. On Tommy's word the same day, LinkedIn posts 49, 50 and 51 were scheduled at once (Wed 9, Mon 14, Wed 16 Dec, 11:30) instead of by the 4, 6 and 9 Nov jobs, which were then deleted. No publish or LinkedIn jobs remain. LinkedIn's desktop scheduled list loads past ten when scrolled to the bottom.
 - **Every piece now ends on a jolt, not a recap** (Tommy, 31 Oct). He read the equipment queue: the claims at the end read as a summary of the article, so a strong start finished poorly. Every ending is now one or two forward headings, each built on one non-obvious idea with its own diagram, then "What would prove me wrong", Research notes, and all claims word for word in one `<details class="claims-record">` at the foot. STORY-RULES.md 18a and 18b; the checker accepts the fold. Pieces carry up to 5 charts. Briefs: BRIEF-ENDING.md and BRIEF-ENDING-CHECK.md. Every ending was independently checked. Share-price questions stay out (one line in Research notes points there).
-- **Late 31 Oct, Tommy: "no weakness whatsoever".** A phrasing pass removed the stock moves repeated across endings ("turns the usual picture round", "Here is the...", "Three dates will show", meta lines on framing or novelty); every forward section now ends on its sharpest sentence. STORY-RULES.md 18c bans them; grep all pieces before publishing an ending. Same evening: the equipment queue now says the three-to-four-year books are the grid makers' (Eaton is about one year), and the Johor piece's link to Hong Kong was unlinked until it is live; the Mon 2 Nov publish job restores it ("Hong Kong is the mirror"). Check that job's report on Monday.
+- **Late 31 Oct, Tommy: "no weakness whatsoever".** A phrasing pass removed the stock moves repeated across endings ("turns the usual picture round", "Here is the...", "Three dates will show", meta lines on framing or novelty); every forward section now ends on its sharpest sentence. STORY-RULES.md 18c bans them; grep all pieces before publishing an ending. Same evening: the equipment queue now says the three-to-four-year books are the grid makers' (Eaton is about one year), and the Johor piece's link to Hong Kong was unlinked until it went live (restored 2 Nov).
 - **The "Updated / Rewritten" line under titles was removed from every piece** (Tommy, 31 Oct: unnecessary). Do not add `updated`/`updateNote` back for format changes.
 - PDFs of all 12 pieces for Tommy's own notes: ~/Desktop/Physical Layer PDFs (reprint the same way when pieces change and he asks).
 
@@ -23,10 +24,10 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 |---|---|
 | Top level | CLAUDE.md (rule book), WRITING-FORMAT.md (piece spec), CALLS-SPEC.md (notes spec), README.md (folder map), plus the site's own folders (src, public, brand) |
 | research-build/HANDOVER.md | This file |
-| research-build/deep-pieces/ | Live working area: the four agent briefs, one sidecar per deep piece (verified sources), gap-*.notes.md, updates/ (approved copies waiting for 4, 6, 9 Nov; can move to archive/ after 9 Nov) |
+| research-build/deep-pieces/ | Live working area: the four agent briefs, one sidecar per deep piece (verified sources), gap-*.notes.md, updates/ (history now: the three updates are live; can move to archive/) |
 | research-build/<company>/, BRIEF-note*.md, CHANGELOG.md | Research notes: build scripts and sources, briefs, post-publication corrections |
 | research-build/archive/ | History, never edited: pieces/ (61 originals), journal-drafts/ (their old drafts and sidecars), deep-drafts/ (pre-merge deep piece drafts), sources/ (Watch Later and video transcripts), old-images/ (191 unused covers and cards), misc/, plus CONSOLIDATION-PLAN.md, RETIRED-RULES.md, the old short-piece briefs and TEMPLATE-short-skeleton.md |
-| public/covers, public/og | Only images a live or scheduled piece uses (11 covers, 10 cards; Hong Kong's card is made at publish) |
+| public/covers, public/og | Only images a live or scheduled piece uses (11 covers, 11 cards) |
 
 ### Scheduled jobs (scheduled-tasks; 8:00 Singapore time unless shown, only while the app is open)
 
@@ -34,14 +35,10 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 |---|---|---|
 | Sun 1 Nov 09:00 | research-monthly-marks | Monthly track-record marks for the research notes, for Tommy's approval |
 | Sun 1 Nov 09:30 | journal-monthly-sweep | Writes research-build/sweeps/2026-11.md; proposes only |
-| Mon 2 Nov | publish-hong-kong-piece | Flips the rewritten hong-kong-has-the-plug live, stamps the claim date, makes its card, schedules LinkedIn post 48 (Mon 7 Dec) |
-| Wed 4 Nov | publish-queue-own-power-update | LinkedIn only: schedules post 49 (Wed 9 Dec). The update itself went live in the 31 Oct rewrite |
-| Fri 6 Nov | publish-gas-pipe-update | LinkedIn only: post 50 (Mon 14 Dec) |
-| Mon 9 Nov | publish-nuclear-fuel-update | LinkedIn only: post 51 (Wed 16 Dec) |
 
-The old hash guards are gone: the three update jobs no longer touch the pieces. research-build/deep-pieces/updates/ is history now and can move to archive/.
+These two monthly jobs repeat on the 1st. The one-time publish and LinkedIn jobs are all done: Hong Kong ran on 2 Nov; the 4, 6 and 9 Nov LinkedIn jobs were deleted on 2 Nov after their posts were scheduled by hand. The Hong Kong job itself is disabled but still listed (a session cannot delete the job that launched it); delete it from any other session. research-build/deep-pieces/updates/ is history now and can move to archive/.
 
-LinkedIn company page queue (11:30): posts 38 to 47 Mon 2 Nov to Wed 2 Dec; Fri 4 Dec left empty (post 34 retired 1 Nov, Tommy's word: Constellation is now a section of Nuclear for AI); then 48 to 51 above; memory post 52 (see the day record).
+LinkedIn company page queue (11:30): posts 38 to 47 Mon 2 Nov to Wed 2 Dec; Fri 4 Dec left empty (post 34 retired 1 Nov, Tommy's word: Constellation is now a section of Nuclear for AI); then Hong Kong 48 Mon 7 Dec, updates 49 Wed 9 Dec, 50 Mon 14 Dec and 51 Wed 16 Dec, and memory post 52 Mon 21 Dec. All checked in LinkedIn's scheduled list on 2 Nov (14 posts, Wed 4 Nov to Mon 21 Dec).
 
 ### Open flags for Tommy (not acted on)
 - LinkedIn post 52 (memory): scheduled by Tommy on his phone for Mon 21 Dec, 11:30 (31 Oct). Not checked by Claude, since Chrome was not connected; confirm it in the company page's scheduled list at the next Chrome session.
