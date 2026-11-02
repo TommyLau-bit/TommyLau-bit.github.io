@@ -68,7 +68,7 @@ A(para("My answer comes from the claim I made in September: Vertiv is paid per m
        "The number to watch is not how many megawatts get built but how much Vertiv earns on each one. That number is still rising, "
        "and the shares no longer pay for it."))
 A(para("<b>I initiate at LONG with a twelve-month target of US$300</b>, about 28 times my 2028 earnings estimate of US$10.65 and 18% above "
-       "the price. Conviction is Medium, not High, because the bear case is a 29% fall and the third quarter results land within weeks."))
+       "the price. Conviction is medium, not high, because the bear case is a 29% fall and the third quarter results land within weeks."))
 A('</div></div>')
 
 A('<div class="fullwidth">')
@@ -117,8 +117,8 @@ A(para("It has. Every quarter since the third quarter of 2025 has beaten the sam
 A('<div class="keeptogether">')
 A(f'<div class="chartsrow"><div class="col left"><img class="chart" src="file://{D}/chart_qmargin.png"></div>'
   f'<div class="col"><img class="chart" src="file://{D}/chart_mix.png"></div></div>')
-A(caption("Left: adjusted operating margin by quarter, Q1 2024 to Q2 2026; dark bars are the four quarters that beat the same quarter a "
-          "year earlier. The first quarter is always the softest. Right: organic growth, products against service and spares; stripped of "
+A(caption("Left: adjusted operating margin by quarter, Q1 2024 to Q2 2026; dark bars are the four quarters since Q3 2025, each of which beat the "
+          "same quarter a year earlier. The first quarter is always the softest. Right: organic growth, products against service and spares; stripped of "
           "acquisitions and currency, service grew more slowly than products in nine of these ten quarters. Source: Vertiv quarterly "
           "results releases, 24 April 2024 to 29 July 2026, including the organic growth reconciliation tables."))
 A('</div>')

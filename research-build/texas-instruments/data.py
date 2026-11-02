@@ -199,7 +199,7 @@ if __name__ == "__main__":
     for s, v in zip(SCEN, VALS):
         p = project(*s[1:5]); print(s[0], round(p["rev28"], 2), round(p["eps28"], 2), round(v, 1), f"{v / PRICE - 1:+.1%}")
     print("weighted", round(WEIGHTED, 1), f"{WEIGHTED / PRICE - 1:+.1%}", "revisit", round(REVISIT))
-    print("grid", [[round(e * m) for m in SENS_PE] for e in SENS_EPS])
+    print("grid", [[int(e * m + 0.5) for m in SENS_PE] for e in SENS_EPS])
     print(f"mcap {MCAP:.1f} netdebt {NETDEBT:.2f} EV {EV:.1f} FCF25 {FCF25:.3f} yield {DIV_YIELD:.2%} GM22 {GM22:.3f} OM22 {OM22:.3f} GMQ2 {GM_Q2:.3f} OMQ2 {OM_Q2:.3f}")
     print(f"capex cycle {CAPEX_CYCLE:.2f}; FCF26 {FCF26_MID:.2f} per share {FCF26_PS:.2f} yield {FCF26_PS / PRICE:.2%}; EPS27 vs cons {EPS27 / CONS_EPS_27 - 1:+.1%}")
     print(f"need EPS28 {NEED_EPS28:.2f} OP {NEED_OP28:.2f} rev28 {NEED_REV28:.2f} vs 2022 peak {NEED_REV28 / REV_H[3] - 1:+.1%}")

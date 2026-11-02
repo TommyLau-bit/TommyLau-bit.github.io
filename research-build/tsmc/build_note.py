@@ -173,8 +173,8 @@ A(para("TSMC has offset all of this with price, which works only while customers
 A(section("Valuation, with the working"))
 A(para("I value TSMC on earnings per ADR, because it sells mostly in US dollars, carries net cash and pays a steady, rising "
        "dividend (NT$24 a share in 2026). The horizon is twelve months, to October 2027, so the year I value is 2028. Non-operating "
-       "items jumped to NT$95.8bn in the second quarter from NT$28.8bn in the first, the quarter TSMC sold part of its stake in "
-       "Vanguard International. I treat the jump as non-recurring: on my working it added about US$0.34 to second quarter EPS per "
+       "items jumped to NT$95.8bn in the second quarter, the quarter TSMC sold part of its stake in Vanguard International, from "
+       "NT$28.8bn in the first. I treat the jump as non-recurring: on my working it added about US$0.34 to second quarter EPS per "
        "ADR. Ahead, non-operating income is 2.5% of revenue, its first quarter level."))
 A(para(f"<strong class='lead'>The multiple.</strong> I use 20 times 2028 earnings for the base case. That is TSMC's own forward "
        f"multiple today ({FWD_PE_SA:.1f}x), below the 22 to 24 times of GlobalFoundries and UMC, and it assumes no rerating either "

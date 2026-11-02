@@ -289,11 +289,11 @@ A(para(f"<strong>The pipes' multiple.</strong> The largest risk to the value: at
 
 A('<div class="keeptogether">')
 A(section("What would change my mind"))
-A(para(f"<strong>Into a long:</strong> a price below about {usd(LONG_BELOW)}, where my base value would sit 15% above it; or a 2027 guide "
+A(para(f"<strong>Into a long:</strong> a price below about {usd(round(LONG_BELOW, 1))}, where my base value would sit 15% above it; or a 2027 guide "
        "of US$10.3bn or more of Adjusted EBITDA, which would lift my pipes estimate by about US$720m. New power contracts help less than "
        f"they sound: each further GW at a 5 times build multiple adds about US$1.70 a share at my 8 times. <strong>Into a short:</strong> a "
-       f"price above about {usd(SHORT_ABOVE)}."))
-A(para(f"<strong>{my_call} is wrong if:</strong> {WRONG_IF}"))
+       f"price above about {usd(round(SHORT_ABOVE, 1))}."))
+A(para(f"<strong>{my_call} is wrong if:</strong> {WRONG_IF[0].lower() + WRONG_IF[1:]}"))
 A('</div>')
 
 A(section("Conclusion"))

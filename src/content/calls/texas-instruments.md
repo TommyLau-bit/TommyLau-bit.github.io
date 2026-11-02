@@ -186,7 +186,7 @@ Weighted 25, 50 and 25 per cent, the three cases give about US$274, 7 per cent b
 |---|---|---|---|
 | US$9.50 | US$200 | US$238 | US$276 |
 | US$11.20 | US$235 | US$280 | US$325 |
-| US$12.50 | US$262 | US$312 | US$362 |
+| US$12.50 | US$263 | US$313 | US$363 |
 
 Only three of the nine cells sit above today's price. To make money from here, TI needs earnings above my base and a multiple close to today's.
 

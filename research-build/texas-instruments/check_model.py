@@ -43,14 +43,16 @@ checks = [
     ("DC swing", S["I21"].value, 1.58, 2), ("Rest swing", S["I22"].value, 3.90, 2), ("Ratio", S["I23"].value, 2.5, 1),
     ("Grid cells above price", G["B9"].value, 3, 0),
 ]
-grid = [[200, 238, 276], [235, 280, 325], [262, 312, 362]]
+grid = [[200, 238, 276], [235, 280, 325], [263, 313, 363]]
 for i in range(3):
     for j in range(3):
         checks.append((f"Grid r{i+1}c{j+1}", G.cell(row=5 + i, column=2 + j).value, grid[i][j], 0))
 
+from decimal import Decimal, ROUND_HALF_UP
+rh = lambda x, dp: Decimal(repr(x)).quantize(Decimal(1).scaleb(-dp), ROUND_HALF_UP)  # Excel-style half-up
 bad = 0
 for name, got, want, dp in checks:
-    ok = (got == want) if dp is None else (got is not None and round(got, dp) == round(want, dp))
+    ok = (got == want) if dp is None else (got is not None and rh(got, dp) == rh(want, dp))
     bad += not ok
     print(f"{'OK ' if ok else 'BAD'} {name:30s} model={got!r:>24}  note={want}")
 print("formula errors:", errs or "none")

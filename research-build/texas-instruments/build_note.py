@@ -208,7 +208,7 @@ A(section("Sensitivity: 2028 EPS against the multiple"))
 A('<div class="chartsrow"><div class="col left">')
 A(datatable(
     ["2028 EPS"] + [f"{m}x" for m in SENS_PE],
-    [[usd(e, 2)] + [(f"<b>{usd(v)}</b>" if (i == 1 and j == 1) else usd(v)) for j, v in enumerate(r)]
+    [[usd(e, 2)] + [(f"<b>{usd(int(v + 0.5))}</b>" if (i == 1 and j == 1) else usd(int(v + 0.5))) for j, v in enumerate(r)]
      for i, (e, r) in enumerate(zip(SENS_EPS, grid))],
     num_cols={1, 2, 3},
 ))

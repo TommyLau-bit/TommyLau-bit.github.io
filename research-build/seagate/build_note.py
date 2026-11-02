@@ -130,7 +130,7 @@ A(para("Think of a removals firm with a fixed fleet. As bookings grow, it does n
        "customers book their move a year or more ahead. For two years that meant more boxes at the same price per box. Now the "
        "firm is also charging more per box. The question for an investor is whether that lasts once a rival buys more vans."))
 A(para(f"<strong>More terabytes, not more drives.</strong> Seagate shipped {Q_NL[8]} exabytes of nearline drives in the quarter to "
-       f"2 October, up about 24% on a year, and {FY26['nl_eb']} in fiscal 2026 against 497 the year before. In the December "
+       f"2 October, up about 25% on a year, and {FY26['nl_eb']} in fiscal 2026 against 497 the year before. In the December "
        "2025 quarter it shipped 26% more exabytes than a year earlier \"on similar number of units\". On 27 October it said it meets exabyte growth "
        "\"by increasing capacity per drive rather than increasing drive unit production\", and on the call it put capital spending at "
        "4 to 6% of revenue, enough for exabyte supply growth in the mid 20s %. Its HAMR drives, which heat each bit with a laser so it "

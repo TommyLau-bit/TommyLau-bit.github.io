@@ -154,7 +154,7 @@ I value TSMC on earnings per ADR, because it earns most of its revenue in US dol
 
 The estimates below are mine except where marked. I build earnings from revenue and operating margin. Non-operating income adds 2.5 per cent of revenue, its level in the first quarter of 2026. Tax and minorities take 17 per cent of pre-tax profit, close to the first half of 2026. Each ADR is five of TSMC's 25.93 billion shares.
 
-One adjustment matters. Non-operating items jumped to NT$95.8 billion in the second quarter, from NT$28.8 billion in the first, the quarter TSMC sold part of its stake in Vanguard International. I treat that jump as non-recurring and leave it out of my estimates. It added roughly US$0.34 to second quarter earnings per ADR, on my working.
+One adjustment matters. Non-operating items jumped to NT$95.8 billion in the second quarter, the quarter TSMC sold part of its stake in Vanguard International, from NT$28.8 billion in the first. I treat that jump as non-recurring and leave it out of my estimates. It added roughly US$0.34 to second quarter earnings per ADR, on my working.
 
 | | 2024 | 2025 | 2026 mine | 2027 mine | 2028 mine |
 |---|---|---|---|---|---|
