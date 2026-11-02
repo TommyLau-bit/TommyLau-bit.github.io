@@ -696,7 +696,7 @@ https://thephysicallayer.fyi/journal/hong-kong-has-the-plug/
 
 ---
 
-## 49 · Update: Johor and Singapore, own power (update live 31 Oct 2026 in the rewrite; LinkedIn Wed 9 Dec, 11:30, to be scheduled 4 Nov)
+## 49 · Update: Johor and Singapore, own power (update live 31 Oct 2026; LinkedIn Wed 9 Dec, 11:30, scheduled)
 
 A 100 MW data centre running on its own gas turbines in Singapore would burn 1 to 2% of its LNG terminal's capacity, and still would not add a single megawatt of computing.
 
@@ -710,7 +710,7 @@ https://thephysicallayer.fyi/journal/the-queue-not-the-chip/
 
 ---
 
-## 50 · Update: Building your own power, the gas pipe (update live 31 Oct 2026 in the rewrite; LinkedIn Mon 14 Dec, 11:30, to be scheduled 6 Nov)
+## 50 · Update: Building your own power, the gas pipe (update live 31 Oct 2026; LinkedIn Mon 14 Dec, 11:30, scheduled)
 
 The newest Permian gas pipe, 2.8 billion cubic feet a day for one hyperscaler's own power plants, lands in the third quarter of 2030.
 
@@ -724,7 +724,7 @@ https://thephysicallayer.fyi/journal/building-your-own-power/
 
 ---
 
-## 51 · Update: Nuclear for AI, fuel contracts (update live 31 Oct 2026 in the rewrite; LinkedIn Wed 16 Dec, 11:30, to be scheduled 9 Nov)
+## 51 · Update: Nuclear for AI, fuel contracts (update live 31 Oct 2026; LinkedIn Wed 16 Dec, 11:30, scheduled)
 
 America's reactor owners have not yet bought about half the uranium they expect to need to 2035.
 
