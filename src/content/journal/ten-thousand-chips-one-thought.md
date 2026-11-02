@@ -230,7 +230,7 @@ The second is a statement of mix: Nvidia or Broadcom saying most AI switches it 
 
 ## Research notes
 
-Five initiation notes rest on these claims: [Marvell](/research/marvell/), [Broadcom](/research/broadcom/), [Corning](/research/corning/), [Lumentum](/research/lumentum/) and [Nvidia](/research/nvidia/). Whether any of this is already in share prices is a question for these notes, not for the journal.
+Six initiation notes rest on these claims: [Marvell](/research/marvell/), [Broadcom](/research/broadcom/), [Corning](/research/corning/), [Lumentum](/research/lumentum/), [Nvidia](/research/nvidia/) and [Coherent](/research/coherent/). Whether any of this is already in share prices is a question for these notes, not for the journal.
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
@@ -313,9 +313,9 @@ The SPIL multiple of about 30 is my arithmetic from Nvidia's "15-fold" and "anot
 <dt>Switches</dt>
 <dd><span class="names">Broadcom</span>, <span class="names">Nvidia</span> and <span class="names">Marvell</span> make switch chips. <span class="names">Arista</span> and <span class="names">Cisco</span> build the boxes.</dd>
 <dt>Inside the plug</dt>
-<dd><span class="names">Marvell</span> and <span class="names">Broadcom</span> make optical DSPs; <span class="names">Lumentum</span> and <span class="names">Coherent</span>, lasers. <span class="names">Innolight</span>, <span class="names">Eoptolink</span> and <span class="names">Fabrinet</span> build transceivers. <span class="names">TSMC</span> and <span class="names">SPIL</span> make co-packaged engines.</dd>
+<dd><span class="names">Marvell</span> and <span class="names">Broadcom</span> make optical DSPs; <span class="names">Lumentum</span> and <span class="names">Coherent</span>, lasers. <span class="names">Coherent</span>, <span class="names">Innolight</span>, <span class="names">Eoptolink</span> and <span class="names">Fabrinet</span> build transceivers. <span class="names">TSMC</span> and <span class="names">SPIL</span> make co-packaged engines.</dd>
 <dt>Glass and mirrors</dt>
-<dd><span class="names">Corning</span>, <span class="names">Prysmian</span> and <span class="names">Fujikura</span> make fibre. <span class="names">Google</span> and <span class="names">Lumentum</span> make optical circuit switches. <span class="names">Ciena</span> links distant sites.</dd>
+<dd><span class="names">Corning</span>, <span class="names">Prysmian</span> and <span class="names">Fujikura</span> make fibre. <span class="names">Google</span>, <span class="names">Lumentum</span> and <span class="names">Coherent</span> make optical circuit switches. <span class="names">Ciena</span> links distant sites.</dd>
 </dl>
 <dl class="against">
 <dt>On the other side</dt>
