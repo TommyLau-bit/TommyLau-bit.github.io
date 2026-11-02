@@ -61,6 +61,18 @@ const cur = (p: string) => (p === '/' ? path === '/' : path.startsWith(p)) ? 'pa
       <p class="site-tag">{SITE.tagline}</p>
     </div>
   </header>
+  <div class="site-bar" id="site-bar" inert>
+    <div class="wrap row">
+      <a class="site-name" href="/">{SITE.name.split(' ').slice(0,-1).join(' ')} <span>{SITE.name.split(' ').slice(-1)}</span></a>
+      <nav class="site-nav" aria-label="Main, while scrolling">
+        <a href="/" aria-current={cur('/')}>Journal</a>
+        <a href="/research/" aria-current={cur('/research') ?? cur('/calls')}>Research</a>
+        <a href="/claims/" aria-current={cur('/claims')}>Claims</a>
+        <a href="/glossary" aria-current={cur('/glossary')}>Glossary</a>
+        <a href="/about" aria-current={cur('/about')}>About</a>
+      </nav>
+    </div>
+  </div>
   <main class={wide ? "wrap wrap--wide" : "wrap"}><slot /></main>
   <footer class="site-foot">
     <div class="wrap" style="display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;width:100%">
@@ -68,6 +80,18 @@ const cur = (p: string) => (p === '/' ? path === '/' : path.startsWith(p)) ? 'pa
       <span><a href="/claims/">Claims</a> · <a href="/numbers/">Numbers</a> · <a href="/companies/">Companies</a> · <a href="/rss.xml">RSS</a> · <a href={SITE.linkedinPage}>LinkedIn</a> · <a href={`mailto:${SITE.email}`}>Email</a></span>
     </div>
   </footer>
+  <script is:inline>
+    // the slim menu bar: shown once the full header has scrolled out of view
+    (function () {
+      var head = document.querySelector('.site-head'), bar = document.getElementById('site-bar');
+      if (!head || !bar || !('IntersectionObserver' in window)) return;
+      new IntersectionObserver(function (e) {
+        var on = !e[0].isIntersecting;
+        document.documentElement.classList.toggle('bar-on', on);
+        if (on) bar.removeAttribute('inert'); else bar.setAttribute('inert', '');
+      }).observe(head);
+    })();
+  </script>
   <script is:inline>
     (function () {
       var root = document.documentElement;

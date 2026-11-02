@@ -48,6 +48,15 @@ a:hover { text-decoration-color: var(--accent); }
 .site-nav a { text-decoration: none; color: var(--ink-2); }
 .site-nav a:hover, .site-nav a[aria-current="page"] { color: var(--ink); }
 .site-nav { align-items: center; }
+/* the slim menu bar that slides in once the header scrolls away */
+html { scroll-padding-top: 3.25rem; }
+.site-bar { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: var(--bg); border-bottom: 1px solid var(--rule); transform: translateY(-100%); visibility: hidden; transition: transform .2s ease, visibility 0s linear .2s; }
+.site-bar .row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-top: 0.6rem; padding-bottom: 0.6rem; }
+.site-bar .site-name { font-size: 0.95rem; }
+.bar-on .site-bar { transform: none; visibility: visible; transition: transform .2s ease; }
+.bar-on { --bar-off: 2.6rem; }
+@media (max-width: 560px) { .site-bar .site-name { display: none; } .site-bar .row { justify-content: flex-start; } .site-bar .site-nav { gap: 0.9rem; } }
+@media (prefers-reduced-motion: reduce) { .site-bar, .bar-on .site-bar { transition: none; } }
 .theme-toggle {
   appearance: none; background: none; border: 0; padding: 0.35rem; margin: -0.35rem 0 -0.35rem 0.1rem;
   color: var(--ink-3); cursor: pointer; line-height: 0; border-radius: 6px;
@@ -308,7 +317,7 @@ details.analogy > p:first-of-type { margin-top: 0.1rem; }
 
 /* ── map ───────────────────────────────────────────────────────── */
 .stack-layout { display: grid; grid-template-columns: 17rem minmax(0, 1fr); gap: 2.5rem; align-items: start; margin-bottom: 1rem; }
-.stack { position: sticky; top: 1rem; display: flex; flex-direction: column; gap: 0.35rem; }
+.stack { position: sticky; top: calc(1rem + var(--bar-off, 0px)); display: flex; flex-direction: column; gap: 0.35rem; }
 .stack-end { font-family: var(--sans); font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); margin: 0.2rem 0; }
 .stack-band {
   display: grid; grid-template-columns: 1.6rem 1fr; grid-template-rows: auto auto; column-gap: 0.4rem;

@@ -814,7 +814,7 @@ const n = (i: number) => String(i).padStart(2, '0');
   .scene--html { aspect-ratio: auto; max-width: 40rem; }
 
   .rail {
-    position: absolute; top: 1.1rem; right: 2rem; display: flex; align-items: center; gap: 0.6rem;
+    position: absolute; top: calc(1.1rem + var(--bar-off, 0px)); right: 2rem; display: flex; align-items: center; gap: 0.6rem;
     font-family: var(--sans); font-size: 0.75rem; color: var(--ink-3); opacity: 0; transition: opacity .4s;
   }
   .rail.shown { opacity: 1; }
@@ -1005,7 +1005,7 @@ const n = (i: number) => String(i).padStart(2, '0');
     .descent { --col: 100%; }
     .d-stage { padding: 2.6rem 16px 0; align-items: start; }
     .scene { width: 100%; }
-    .rail { top: 0.7rem; left: 16px; right: 16px; font-size: 0.7rem; gap: 0.4rem; }
+    .rail { top: calc(0.7rem + var(--bar-off, 0px)); left: 16px; right: 16px; font-size: 0.7rem; gap: 0.4rem; }
     .rail-dots { margin-left: auto; }
     .rail-dots i { width: 8px; }
     .step { align-items: flex-end; padding: 0 16px 4svh; }
