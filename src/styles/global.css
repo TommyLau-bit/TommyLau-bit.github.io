@@ -413,6 +413,12 @@ details.analogy > p:first-of-type { margin-top: 0.1rem; }
 .track th, .track td { text-align: left; padding: 0.55rem 0.9rem 0.55rem 0; border-bottom: 1px solid var(--rule); white-space: nowrap; }
 .track th { color: var(--ink-3); font-weight: 600; font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; }
 .track .up { color: var(--good); } .track .down { color: var(--bad); }
+.track tbody .track-group th { position: static; padding: 1.4rem 0 0.5rem; border-bottom: 1px solid var(--ink-3); white-space: normal; text-transform: none; letter-spacing: 0; font-size: 0.9rem; color: var(--ink); }
+.track tbody:first-of-type .track-group th { padding-top: 0.6rem; }
+.track-group-in { position: sticky; left: 0; max-width: min(100%, calc(100vw - 2rem)); }
+.track-group-when { font-weight: 700; }
+.track-group-title { color: var(--ink-2); font-weight: 500; }
+.track-group-layers { display: block; margin-top: 0.2rem; font-size: 0.74rem; font-weight: 400; color: var(--ink-3); }
 .research-foot { font-family: var(--sans); font-size: 0.85rem; color: var(--ink-3); border-top: 1px solid var(--rule); padding: 1.2rem 0 1rem; max-width: var(--measure); }
 .scorecard-empty { font-family: var(--sans); font-size: 0.92rem; color: var(--ink-3); border: 1px dashed var(--rule); border-radius: 6px; padding: 0.9rem 1rem; }
 .draft-banner { font-family: var(--sans); font-size: 0.88rem; background: color-mix(in srgb, var(--accent) 12%, var(--bg-elev)); border: 1px dashed var(--accent); border-radius: 6px; padding: 0.6rem 0.9rem; margin: 1.5rem 0 0; }

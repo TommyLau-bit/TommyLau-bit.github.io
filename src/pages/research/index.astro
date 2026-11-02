@@ -1,10 +1,48 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { SCORECARD_REFRESHED } from '../../data/calls';
+import { SCORECARD_REFRESHED, LAUNCHES } from '../../data/calls';
+import { claimOf, homeOf } from '../../data/claims';
+import { STACK, layerOf } from '../../data/stack';
 import { getPitches, latest, fmtMoney, fmtPct, callLabel } from '../../lib/calls';
 import { fmtDate } from '../../utils';
 const pitches = await getPitches();
 const rows = pitches.map((p) => ({ p, ...latest(p) }));
+
+// Group the calls by launch, then order each group by the note's layer on the
+// map (the layer of the piece carrying its first claim), then by company.
+const sgDay = (d: Date) => d.toLocaleDateString('en-CA', { timeZone: 'Asia/Singapore' });
+const layerIdx = (p: (typeof pitches)[number]) => {
+  if (p.data.layer && STACK.some((l) => l.id === p.data.layer)) return STACK.findIndex((l) => l.id === p.data.layer);
+  const c = p.data.claims[0] ? claimOf(p.data.claims[0]) : undefined;
+  const l = c ? layerOf(homeOf(c)) : undefined;
+  return l ? STACK.indexOf(l) : STACK.length;
+};
+const dayLong = (iso: string) => fmtDate(new Date(`${iso}T12:00:00+08:00`));
+const span = (a: string, b: string) => {
+  if (a === b) return dayLong(a);
+  const [ya, ma] = a.split('-'), [yb, mb] = b.split('-');
+  return ya === yb && ma === mb ? `${Number(a.slice(8))} to ${dayLong(b)}` : `${dayLong(a)} to ${dayLong(b)}`;
+};
+type Row = (typeof rows)[number];
+const groups: { key: string; when: string; title: string; rows: Row[] }[] = [];
+for (const r of rows) {
+  const day = r.p.data.date ? sgDay(r.p.data.date) : '';
+  const l = LAUNCHES.find((x) => day >= x.from && day <= x.to);
+  const key = l ? `L${l.from}` : `M${day.slice(0, 7)}`;
+  let g = groups.find((x) => x.key === key);
+  if (!g) {
+    const when = l ? span(l.from, l.to) : new Date(`${day.slice(0, 7)}-15T12:00:00+08:00`).toLocaleDateString('en-GB', { month: 'long', year: 'numeric' });
+    groups.push((g = { key, when, title: l ? l.title : 'Later notes', rows: [] }));
+  }
+  g.rows.push(r);
+}
+groups.sort((a, b) => b.key.slice(1).localeCompare(a.key.slice(1)));
+for (const g of groups) g.rows.sort((a, b) => layerIdx(a.p) - layerIdx(b.p) || a.p.data.company.localeCompare(b.p.data.company));
+const layersOf = (g: (typeof groups)[number]) => {
+  const n = new Map<string, number>();
+  for (const r of g.rows) { const i = layerIdx(r.p); const name = STACK[i]?.name ?? 'Other'; n.set(name, (n.get(name) ?? 0) + 1); }
+  return [...n.entries()].map(([k, v]) => `${k}\u00a0${v}`).join(' · ');
+};
 const longs = pitches.filter((p) => p.data.call.direction === 'LONG').length;
 const shorts = pitches.filter((p) => p.data.call.direction === 'SHORT').length;
 const noCalls = pitches.filter((p) => p.data.call.direction === 'NO CALL').length;
@@ -30,12 +68,14 @@ const dirClass = (p: (typeof pitches)[number]) => `note-call note-call--${(p.dat
 
       <section class="track" id="scorecard" aria-labelledby="book-h">
         <h2 id="book-h">The calls</h2>
-        <p class="track-intro">Each call against the closing price on the day it was published. Returns are signed so that a call going the right way is positive.</p>
+        <p class="track-intro">Coverage was launched in sector batches, newest first, and each batch is ordered by layer, from the grid to the chip. Every call is measured against the closing price on the day it was published. Returns are signed so that a call going the right way is positive.</p>
         <div class="track-wrap">
           <table>
             <thead><tr><th>Company</th><th>Published</th><th>Call</th><th>Price then</th><th>Target</th><th>Latest</th><th>Return</th><th>Status</th><th>Files</th></tr></thead>
+            {groups.map((g) => (
             <tbody>
-              {rows.map(({ p, mark, ret, move, score }) => {
+              <tr class="track-group"><th colspan="9"><div class="track-group-in"><span class="track-group-when">{g.when}</span> <span class="track-group-title">{g.title}, {g.rows.length} {g.rows.length === 1 ? 'note' : 'notes'}</span><span class="track-group-layers">{layersOf(g)}</span></div></th></tr>
+              {g.rows.map(({ p, mark, ret, move, score }) => {
                 const c = p.data.call;
                 return (
                   <tr>
@@ -52,6 +92,7 @@ const dirClass = (p: (typeof pitches)[number]) => `note-call note-call--${(p.dat
                 );
               })}
             </tbody>
+            ))}
           </table>
         </div>
       </section>

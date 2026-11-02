@@ -56,6 +56,9 @@ def check(path):
     for k in ('price', 'priceDate', 'horizon', 'wrongIf'):
         if not field(k, call):
             fails.append(f'missing call.{k}')
+    lay = re.search(r'^layer:\s*"?([a-z-]+)"?', fm, re.M)
+    if lay and f"id: '{lay.group(1)}'" not in open(os.path.join(ROOT, 'src/data/stack.ts')).read():
+        fails.append(f'layer "{lay.group(1)}" is not a layer in src/data/stack.ts')
     ids = re.findall(r"[a-z0-9-]+", (re.search(r'^claims:\s*\[([^\]]*)\]', fm, re.M) or [None, ''])[1])
     if re.search(r'^correction:', fm, re.M):
         fails.append('correction field: fix the piece in place instead (2 Nov 2026)')

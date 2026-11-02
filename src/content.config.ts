@@ -46,6 +46,8 @@ const calls = defineCollection({
     // the claim ids it rests on, if any: a note may cover a company the journal
     // never mentions (Tommy, 2 Nov 2026)
     claims: z.array(z.string()).default([]),
+    // the map layer the research table files the note under, when its first claim's layer does not fit
+    layer: z.string().optional(),
     keyPoints: z.array(z.string()).min(3).max(5),  // the thesis in three to five sentences
     files: z.object({
       pdf: z.string(),                          // /research/<date>_<Company>_Initiation.pdf

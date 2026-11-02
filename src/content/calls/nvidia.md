@@ -5,6 +5,7 @@ company: "Nvidia"
 ticker: "NVDA"
 exchange: "Nasdaq"
 claims: ["contracted-energised-running", "memory-not-maths", "powering-the-rack", "the-plug-stays"]
+layer: "chips"
 keyPoints:
   - "Nvidia designs the chips, racks and networks inside AI data centres. Data Center revenue was US$89.0 billion in the quarter to 26 July 2026, up 117 per cent, and 92.5 per cent of the total."
   - "Its own filings now treat power as the constraint. Nvidia has guaranteed up to US$108.5 billion of land, power and building costs for customers, mostly for a 4.25 gigawatt campus in Ohio that OpenAI will lease, ready from 2028."

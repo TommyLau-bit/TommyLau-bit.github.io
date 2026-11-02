@@ -28,4 +28,14 @@ export const SCORECARD_REFRESHED: string | null = null;   // YYYY-MM-DD of the l
 
 export const SCORES: Score[] = [];
 
+// Coverage was launched in sector batches. The research table groups notes by
+// launch (dates inclusive, Singapore time); a note outside every launch is
+// grouped by its month. Each note keeps its own publication date and price.
+export type Launch = { from: string; to: string; title: string };
+export const LAUNCHES: Launch[] = [
+  { from: '2026-10-06', to: '2026-10-09', title: 'Launch of coverage' },
+  { from: '2026-10-22', to: '2026-10-30', title: 'Grid equipment and nuclear' },
+  { from: '2026-11-02', to: '2026-11-02', title: 'Second wave' },
+];
+
 export const scoreOf = (id: string) => SCORES.find((s) => s.id === id);

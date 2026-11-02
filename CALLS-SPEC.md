@@ -73,6 +73,7 @@ Tommy found the first build (a long web pitch with charts, merged into the claim
 - **Scorecard data:** `src/data/calls.ts`. Monthly, add one `Mark` per open call and set `SCORECARD_REFRESHED`. A resolved call gets `resolved` with a short post-mortem. Never delete.
 - **Checker:** `python3 brand/check-call.py`.
 - **Notes and pieces are independent** (Tommy, 2 Nov 2026, permanent; replaces "journal piece first"): a note may cover a company the journal never mentions and need not rest on a claim (`claims` may be empty). Notes and pieces do not need to match.
+- **Research table grouped by launch** (Tommy, 2 Nov 2026): `/research/` shows one table, grouped into the coverage launches in `LAUNCHES` (src/data/calls.ts), newest first, each ordered by map layer. A note outside every launch is grouped by its month automatically; name a new launch only when several notes on one sector go out together. A note whose first claim's layer misfiles it may set `layer:` (Nvidia: chips). Publication dates are never changed.
 - **No dated corrections, ever** (2 Nov 2026, permanent): a wrong fact in a piece or note is edited so it is right. No "Where I was wrong", no `correction` field, no "Correction" paragraphs.
 - **Monthly marks:** the scheduled task `research-monthly-marks` prepares them early each month for Tommy's approval.
 
