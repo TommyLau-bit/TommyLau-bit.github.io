@@ -238,7 +238,7 @@ The second is the fast lane. Since the start of 2025 GE Vernova has ordered 124 
 
 ## Research notes
 
-Two initiation notes rest on these claims: [GE Vernova](/research/ge-vernova/) and [Bloom Energy](/research/bloom-energy/). Whether any of this is already in share prices is a question for these notes, not for the journal.
+Initiation notes cover the companies in this piece: [GE Vernova](/research/ge-vernova/), [Bloom Energy](/research/bloom-energy/), [Mitsubishi Heavy](/research/mitsubishi-heavy/), [Caterpillar](/research/caterpillar/), [Wärtsilä](/research/wartsila/), [Kinder Morgan](/research/kinder-morgan/), [Williams](/research/williams/) and [Entergy](/research/entergy/). Whether any of this is already in share prices is a question for these notes, not for the journal.
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
