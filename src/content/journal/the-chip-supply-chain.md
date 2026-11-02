@@ -218,7 +218,7 @@ Seagate and TSMC stay on the watch list: one grows without new plant, the other 
 
 ## Research notes
 
-Four initiation notes rest on these claims, unchanged: [TSMC](/research/tsmc/), [ASML](/research/asml/), [Ajinomoto](/research/ajinomoto/) and [Micron](/research/micron/). Whether any of this is already in share prices is a question for these notes, not for the journal.
+Four initiation notes rest on these claims, unchanged: [TSMC](/research/tsmc/), [ASML](/research/asml/), [Ajinomoto](/research/ajinomoto/) and [Micron](/research/micron/). [Seagate](/research/seagate/) has one resting on the claim that watches it. Whether any of this is already in share prices is a question for these notes, not for the journal.
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
