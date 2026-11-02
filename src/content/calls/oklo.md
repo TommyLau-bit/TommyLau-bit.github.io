@@ -129,7 +129,7 @@ Oklo has no earnings, so a multiple of them means nothing. I value it plant by p
 
 **One plant.** A 75 MW Aurora runs at 90 per cent of capacity, sells power at US$110 a megawatt hour and costs US$35 a megawatt hour to run, fuel and decommissioning included. Both rise 2 per cent a year for 40 years. Discounted at 8 per cent, the margin is worth about US$8.85 million a megawatt. At my base cost of US$7,500 a kilowatt, that leaves US$1.35 million a megawatt. The break-even cost at that price is about US$8,850 a kilowatt.
 
-**The fleet.** Aurora-INL first runs in mid-2028, with US$400 million still to spend after September 2027. Meta's 1.2 GW follows from 2030 to 2034, then 300 MW a year to 2040. I discount each plant's value at 10 per cent from its first year back to October 2027, and multiply by a 60 per cent chance that Aurora-INL reaches commercial operation on that timetable. If it does not, I assume the fleet does not follow.
+**The fleet.** Aurora-INL first runs in mid-2028, with US$400 million still to spend after September 2027. Meta's 1.2 GW follows from 2030 to 2034, alongside 300 MW a year more from 2033 to 2040. I discount each plant's value at 10 per cent from its first year back to October 2027, and multiply by a 60 per cent chance that Aurora-INL reaches commercial operation on that timetable. If it does not, I assume the fleet does not follow.
 
 **The company.** To the risked fleet I add my cash at September 2027, about US$2.38 billion, and subtract the present value of corporate, fuel, recycling and isotope spending, about US$1.24 billion. I divide by 201.8 million fully diluted shares, including 5.7 million options and 3.7 million share units. I model no tax and no tax credits.
 
@@ -149,7 +149,7 @@ The 2026 and 2027 cash figures add the US$315 million net raised from July to Se
 | Case | What happens | Price, cost | Value | Change |
 |---|---|---|---|---|
 | Bear | Aurora-INL slips past 2029 and the numbers do not close; no fleet, spending winds down | US$95, US$10,000/kW | US$9.87 | down 73% |
-| Base | 60% chance Aurora-INL runs in 2028; Meta's 1.2 GW by 2034, then 300 MW a year | US$110, US$7,500/kW | US$13.51 | down 62% |
+| Base | 60% chance Aurora-INL runs in 2028; Meta's 1.2 GW by 2034, plus 300 MW a year from 2033 | US$110, US$7,500/kW | US$13.51 | down 62% |
 | Bull | 80% chance; cheap plants; Switch and others contract 900 MW a year from 2033 | US$125, US$6,000/kW | US$76.81 | up 114% |
 
 Weighted 25, 50 and 25 per cent, the three cases give about US$28.43, 21 per cent below the price. The bear case is close to cash: Oklo would still hold about US$11.81 a share in September 2027, which limits how far the value falls in my three cases, though grid cells where new units do not pay go lower, to about US$6. The bull case reaches 8.5 GW by 2040, and even that needs 7.2 GW beyond Meta, 60 per cent of the Switch agreement, turned into contracts.

@@ -157,7 +157,7 @@ I could not verify a 2028 consensus. The cost and revenue of Cognite and AiDASH,
 
 **The multiple.** I use 22 times. On 2026 consensus Schneider trades at 25.0 times, against a 25.9 times median for five peers on stockanalysis.com: Vertiv at 37.6 times, Eaton 32.8, ABB 25.9, Legrand 24.7 and Siemens 24.3. My 2026 estimate at that median gives €265.
 
-One year forward, Schneider trades at 21.0 times today and traded at 24.5 before the deal. I sit between, because leverage rises by about 60 per cent and EPS growth slows to about 8 per cent in 2028.
+One year forward, Schneider trades at 21.0 times today and traded at 24.5 before the deal. I sit between, because leverage rises by about 62 per cent and EPS growth slows to about 8 per cent in 2028.
 
 **Three cases, twelve months out.** All three include PTC from closing.
 
@@ -179,7 +179,7 @@ Weighted 25, 50 and 25 per cent, the cases give about €272, 4 per cent above t
 | 20.7% | €228 | €278 | €329 |
 | 21.7% | €240 | €293 | €347 |
 
-Six of the nine cells sit above the price, but only three clear it by 15 per cent or more, and all three need 26 times. At 22 times, even a margin a point above my base gives €293, 12 per cent above. The three cells below the price all sit at 18 times, and none is 25 per cent below it.
+Six of the nine cells sit above the price, but only three clear it by 15 per cent or more, and all three need 26 times. At 22 times, even a margin a point above my base gives €293, 13 per cent above. The three cells below the price all sit at 18 times, and none is 25 per cent below it.
 
 <div class="charts-slot"></div>
 

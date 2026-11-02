@@ -162,7 +162,7 @@ Microsoft has gone further by design. Since August 2024 all its new designs evap
 
 ## What could make water a limit on how many
 
-The case against is real, and it starts with the lab's own numbers. Its AI specialised halls in 2023 had the best PUE, 1.14, and nearly twice the hyperscale water per kWh, 0.61 litres against 0.32. It projects the national average rising from just over 0.36 litres to between 0.45 and 0.48, partly from "the increased water consumption of liquid-cooled systems".
+The strongest objection starts with the lab's own numbers. Its AI specialised halls in 2023 had the best PUE, 1.14, and nearly twice the hyperscale water per kWh, 0.61 litres against 0.32. It projects the national average rising from just over 0.36 litres to between 0.45 and 0.48, partly from "the increased water consumption of liquid-cooled systems".
 
 The totals are rising too. Google's water consumption rose 34% in 2025, to 10.9 billion gallons, across data centres and offices. Henderson, in a dry desert basin, consumed 239.4 million gallons, and Google does not publish how it rates that source, so "dry region" and "high risk" in its framework are not the same thing.
 

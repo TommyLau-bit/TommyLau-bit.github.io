@@ -107,7 +107,7 @@ A(datatable(
         ["Adjusted EBITDA", "7,080", "7,750", m(EB26), m(EB27), m(EB28)],
         ["Growth (%)", "", f"{(7750 / 7080 - 1) * 100:.1f}", f"{(EB26 / 7750 - 1) * 100:.1f}", f"{(EB27 / EB26 - 1) * 100:.1f}", f"{(EB28 / EB27 - 1) * 100:.1f}"],
         ["AFFO per share (US$)", "4.40", "4.78", "5.15", f"{AFFO27 / SHARES:.2f}", f"{AFFO28 / SHARES:.2f}"],
-        ["Dividend per share (US$)", "1.90", "2.00", "2.10", f"{DPS27:.2f}", f"{DPS28:.2f}"],
+        ["Dividend per share (US$)", "1.90", "2.00", "2.10", f"{DPS27:.2f}", f"{DPS28 + 1e-9:.2f}"],  # 2.315 shown half up, as in the published table
         ["Net debt / Adjusted EBITDA (x)", "", "", f"{ND26 / (EB26 + MOM27 * 8 / 12):.2f}", f"{ND27 / EB27:.2f}", ""],
         [f"EV / Adjusted EBITDA at {usd(PRICE)} (x)", "", "", f"{EV_EB26:.1f}", f"{EV_EB27:.1f}", ""],
     ],
@@ -187,7 +187,7 @@ A(para(f"<strong class='lead'>The power business is too small to carry the premi
        "is the 6 GW backlog Williams talks about but has not signed."))
 A(para(f"<strong class='lead'>The price pays for the pipes in full, and the power plants only in part.</strong> If I value the pipes, "
        f"gathering and Momentum at {CORE_MULT} times my 2028 EBITDA, the price implies about {IMPL_PI_MULT:.1f} times run-rate EBITDA for "
-       f"the five power projects. A {CONTRACT_YRS:.1f}-year level stream is worth {CONTRACT_PV:.1f} times at 8%, so the market pays less than "
+       f"the five power projects. An {CONTRACT_YRS:.1f}-year level stream is worth {CONTRACT_PV:.1f} times at 8%, so the market pays less than "
        "the contracts are worth and nothing for renewals or the backlog. That is the part I think it undervalues."))
 A(para(f"<strong class='lead'>But the pipes' multiple decides the value.</strong> Each turn on the pipes moves my value about "
        f"{usd(turn_pipes)} a share; each turn on power about {usd(turn_power)}. Williams' year-end EV was about 13.4 times its Adjusted "

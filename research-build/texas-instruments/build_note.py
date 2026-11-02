@@ -258,7 +258,7 @@ A(para("<strong>The data centre share is my estimate.</strong> TI gives rates, n
        "About US$0.8bn of revenue and up to US$5bn of new borrowing, neither in my numbers."))
 
 A('<div class="keeptogether">')
-A(section("What would change our mind"))
+A(section("What would change my mind"))
 A(para(f"<strong>Into a call:</strong> a price below about US${REVISIT:.0f}, which would put my base case 15% above it; or third "
        "quarter results showing data centre at 15% or more of revenue while industrial still grows; or a gross margin of 65% or more."))
 A(para("<strong>The call is wrong if</strong> full year 2027 revenue reaches US$26bn or more with data centre above 15% of it, or "

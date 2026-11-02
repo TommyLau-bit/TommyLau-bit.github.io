@@ -245,11 +245,18 @@ A(para(f"With my 2027 results and net cash at base, {n_above} of the nine cells 
 A('</div></div>')
 A('</div>')
 
+from decimal import Decimal, ROUND_HALF_UP
+
+
+def _r1(x):  # round half up, as the text quotes the figures
+    return Decimal(str(x)).quantize(Decimal("0.1"), rounding=ROUND_HALF_UP)
+
+
 A('<div class="keeptogether">')
 A(section("Peer landscape"))
 A(cols(datatable(
     ["Company", "Ticker", "Forward P/E", "EV/EBIT", "What they make"],
-    [[c, t, f"{p:.1f}x", f"{e:.1f}x", w] for c, t, p, e, w, g in PEERS],
+    [[c, t, f"{_r1(p)}x", f"{_r1(e)}x", w] for c, t, p, e, w, g in PEERS],
     num_cols={2, 3},
 ), [18, 14, 12, 10, 46]))
 A(caption("Forward P/E and trailing EV/EBIT from stockanalysis.com (S&amp;P Global data), retrieved 2 November 2026. Engine maker "

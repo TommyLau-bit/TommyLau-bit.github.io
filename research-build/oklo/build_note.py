@@ -187,7 +187,7 @@ A(para("Oklo has no earnings, so I value it plant by plant, twelve months out. <
        f"US${B[1]}/MWh, US${OPEX_MWH}/MWh to run including fuel and decommissioning, both rising 2% a year for 40 years, "
        f"discounted at 8%: about US${margin_mw(B[1]) * pvf():.2f}m a megawatt, less US${B[2]:,}/kW. Break-even is about "
        f"US${BREAKEVEN_CAPEX:,.0f}/kW. <b>The fleet:</b> Aurora-INL in mid-2028 with US${INL_REM}m still to spend after September "
-       "2027; Meta's 1.2 GW from 2030 to 2034; then 300 MW a year to 2040. Each plant is discounted at 10% back to October "
+       "2027; Meta's 1.2 GW from 2030 to 2034; and 300 MW a year more from 2033 to 2040. Each plant is discounted at 10% back to October "
        f"2027 and multiplied by a {B[3] * 100:.0f}% chance that Aurora-INL reaches commercial operation on that timetable. "
        f"<b>The company:</b> plus my cash at September 2027, US${CASH_SEP27 / 1000:.2f}bn, less US${PV_CORP / 1000:.2f}bn of "
        f"corporate, fuel, recycling and isotope spending in present value, over {FD:.1f}m diluted shares. No tax or tax credits."))
@@ -198,7 +198,7 @@ A(cols(datatable(
     [
         ["Bear", "Aurora-INL slips past 2029 and the numbers do not close; no fleet; spending winds down", "US$95, US$10,000/kW", "n/a",
          usd(bear), chg(bear), "25%"],
-        ["Base", "Aurora-INL in 2028; Meta's 1.2 GW by 2034; then 300 MW a year; 3.7 GW by 2040", "US$110, US$7,500/kW",
+        ["Base", "Aurora-INL in 2028; Meta's 1.2 GW by 2034; 300 MW a year from 2033; 3.7 GW by 2040", "US$110, US$7,500/kW",
          f"{SCEN[1][3] * 100:.0f}%", usd(base), chg(base), "50%"],
         ["Bull", f"Cheap plants; Switch and others contract 900 MW a year from 2033; {gw_2040(SCEN[2][4]):.1f} GW by 2040",
          "US$125, US$6,000/kW", f"{SCEN[2][3] * 100:.0f}%", usd(bull), chg(bull), "25%"],

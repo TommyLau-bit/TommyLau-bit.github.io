@@ -98,7 +98,7 @@ At HK$77.75 CLP is worth about HK$196.4 billion. Net debt was HK$62.2 billion at
 
 **Where I differ: the AI demand is already inside an approved plan.** The data centre buildout is real, and my piece rests on it. But it is being built within a HK$52.9 billion plan agreed three years ago. On my path through that plan, the asset base grows about 2.9 per cent a year to 2028.
 
-Each HK$1 billion of assets above that path adds about HK$0.026 a share a year, worth about HK$0.47 a share at 18 times. To lift my base value 15 per cent would take about HK$22 billion more by 2028, 42 per cent of the whole five-year plan. A story about AI does not change that arithmetic; only an approved change to the plan does.
+Each HK$1 billion of assets above that path adds about HK$0.026 a share a year, worth about HK$0.47 a share at 18 times. To lift my base value to 15 per cent above the price would take about HK$22 billion more by 2028, 42 per cent of the whole five-year plan. A story about AI does not change that arithmetic; only an approved change to the plan does.
 
 **Where the market may be ahead of me.** The 2027 consensus of HK$4.95, last updated on 17 September, sits 6 per cent above my HK$4.67. Some of that may be basis, since the consensus figure for 2025 matches operating earnings after fair value movements. Some is a kinder view of the businesses outside Hong Kong than mine. EnergyAustralia lost about 125,000 retail accounts in the year to September, and its generation margins fell with wholesale prices.
 

@@ -366,7 +366,7 @@ A(para("<strong class='lead'>Customer concentration.</strong> Three unnamed cust
 A(para("<strong class='lead'>Ageing chips.</strong> A switched-on hall of older chips earns less each year. Nebius must keep "
        "replacing them, which is why I depreciate chips over five years rather than longer."))
 
-A(section("What would change our mind"))
+A(section("What would change my mind"))
 A(datatable(
     ["Direction", "Trigger"],
     [

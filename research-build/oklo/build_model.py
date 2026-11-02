@@ -252,7 +252,7 @@ ws = sheet("Scenarios", "BEAR / BASE / BULL, TWELVE MONTHS OUT", [22, 12, 13, 12
 head(ws, 4, ["Case", "Price US$/MWh", "Cost US$/kW", "P(first plant)", "MW a year after Meta", "Weight",
              "NPV per MW, US$m", "Risked fleet, US$m", "Value per share", "Change vs price", "GW by 2040", "", "What happens"])
 desc = ["Aurora-INL slips past 2029 and the cost does not close against the power price; no fleet; spending winds down",
-        "Aurora-INL runs in 2028 with 60% probability; Meta's 1.2 GW by 2034, then 300 MW a year",
+        "Aurora-INL runs in 2028 with 60% probability; Meta's 1.2 GW by 2034, plus 300 MW a year from 2033",
         "Aurora-INL on time; costs fall fast; Switch and others contract: 900 MW a year from 2033"]
 for i, (nm, pr, cx, p, rate, w) in enumerate(SCEN):
     rr = 5 + i

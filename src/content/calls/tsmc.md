@@ -42,7 +42,7 @@ charts:
     refs:
       - value: 45.2
         label: "Q3 2026 guide, midpoint"
-    note: "Revenue more than doubled in two years. The third quarter guide of US$44.6 to 45.8 billion would add another 12 per cent on the second quarter."
+    note: "Revenue nearly doubled in two years. The third quarter guide of US$44.6 to 45.8 billion would add another 12 per cent on the second quarter."
     source: "TSMC quarterly results releases on Form 6-K, 18 April 2024 to 16 July 2026."
   - id: margin
     title: "Gross margin by quarter, per cent"

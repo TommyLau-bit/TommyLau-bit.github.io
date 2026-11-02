@@ -176,7 +176,7 @@ A(para(f"<strong class='lead'>What the price implies.</strong> If I value the ov
 A(para(f"<strong class='lead'>Where I differ: the AI demand is already inside an approved plan.</strong> The data centre buildout is "
        f"real, and my piece rests on it. But it is being built within a HK$52.9bn plan agreed three years ago, so my asset base grows only "
        f"about {ANFA_CAGR * 100:.1f}% a year to 2028. Each HK$1bn of assets above that path is worth about HK${PER_BN_VALUE:.2f} a share at "
-       f"18 times. To lift my base value 15% would take about HK${ANFA_FOR_LONG:.0f}bn more by 2028. A story about AI does not change "
+       f"18 times. To lift my base value to 15% above the price would take about HK${ANFA_FOR_LONG:.0f}bn more by 2028. A story about AI does not change "
        "that arithmetic; only an approved change to the plan does."))
 A(para(f"<strong class='lead'>Where the market may be ahead.</strong> The 2027 consensus of HK${CONS_EPS27:.2f} sits "
        f"{CONS_GAP27 * 100:.0f}% above my HK${EPS_E['2027']:.2f}. Some of that may be basis, since the consensus appears to include fair "

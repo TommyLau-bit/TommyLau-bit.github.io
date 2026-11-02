@@ -140,7 +140,7 @@ The other slow steps moved the same way through 2026. Each was sold further ahea
 <figcaption>ASML results and transcript, 15 July and 14 October 2026; Seagate supplementals, 27 January, 28 April and 27 October 2026; Micron remarks, 17 December 2025 and 30 September 2026. Wording differs by maker, from "close to being fully covered" to "will not fully meet the demand"; each is quoted in the figures below.</figcaption>
 </figure>
 
-Seagate went from allocated through 2026 in January to the vast majority through 2028 in October, about a year added every six months. Micron had agreed all its 2026 HBM by December 2025, and "the vast majority of our calendar 2027 HBM bit supply" by 30 September 2026. Buyers commit this early because they know the clock: Nvidia's 10-K describes "extended lead times" of more than 12 months, and it secures supply with deposits and long-term capacity commitments.
+Seagate went from allocated through 2026 in January to the vast majority through 2028 in October, two years added in nine months. Micron had agreed all its 2026 HBM by December 2025, and "the vast majority of our calendar 2027 HBM bit supply" by 30 September 2026. Buyers commit this early because they know the clock: Nvidia's 10-K describes "extended lead times" of more than 12 months, and it secures supply with deposits and long-term capacity commitments.
 
 ## What could shorten the horizons
 
@@ -231,7 +231,7 @@ Claim: "In the AI chip supply chain, the parts that only one or a few qualified 
 
 Breaks if: "ASML, in its results published between 1 December 2027 and 31 March 2028, says its 2029 low NA EUV capacity exceeds customer orders, or does not describe 2029 as close to fully covered or short of demand; or Micron, by its fiscal first quarter 2029 results (around December 2028), has not said most of its calendar 2029 HBM supply is agreed, or reports unsold HBM and attributes it to customer demand. A shortfall caused by late cleanrooms or suppliers supports the claim rather than breaking it."
 
-Four earlier claims on the chip's slow parts, and one proposed:
+Four earlier claims on the chip's slow parts:
 
 **TSMC's chief says the AI bottleneck is its factories, not the power grid** (2 October 2026)
 

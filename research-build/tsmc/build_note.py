@@ -254,7 +254,7 @@ A(para("<strong>Taiwan's electricity.</strong> In January Wei said his first wor
        "I found no sign of a large AI accelerator moving away, but packaging is where a second source is easiest."))
 
 A('<div class="keeptogether">')
-A(section("What would change our mind"))
+A(section("What would change my mind"))
 A(para("<strong>Into a call:</strong> a price below about US$400, which would put my base case about 16% above it; or third quarter "
        "results showing gross margin at or above the 67% top of the guide despite the 2 nanometre ramp; or TSMC raising its "
        "through-the-cycle margin floor above 56%."))

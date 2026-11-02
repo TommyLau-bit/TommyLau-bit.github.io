@@ -265,7 +265,7 @@ A('</div>')
 
 A(section("Risks: what would hurt the view"))
 A(para("<strong>The December vote.</strong> The commission decides without a formal recommendation from the administrative law judge; "
-       f"the release names a settlement with staff only. A rejection, delay or cost-shifting conditions cut a plan the price already assumes: the bear case, a "
+       f"the release names a settlement with staff only. A rejection, delay or cost-shifting conditions cut a plan the price already assumes: the bear case, an "
        f"{abs(bear / PRICE - 1) * 100:.0f}% fall."))
 A(para("<strong>Other customers and politics.</strong> Staff and intervenors pressed on who pays for data centre plants in three proceedings "
        "this year. If bills rise faster than Entergy has promised, the next approval gets harder."))

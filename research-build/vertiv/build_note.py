@@ -247,7 +247,7 @@ A(para("<strong>Weak spots in the evidence.</strong> Europe, the Middle East and
        "discloses no single customer's share of sales, and the backlog figure is now annual."))
 
 A('<div class="keeptogether">')
-A(section("What would change our mind"))
+A(section("What would change my mind"))
 A(para("<strong>The call is wrong if</strong> adjusted operating margin falls year on year in any quarter to mid 2027 while sales are still "
        "growing, or full year 2026 adjusted earnings per share land below the US$6.65 bottom of Vertiv's own guide, or the 2026 annual "
        "report shows backlog below the US$15.0 billion of a year earlier."))
