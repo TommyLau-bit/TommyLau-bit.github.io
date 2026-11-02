@@ -99,7 +99,7 @@ SpaceX assumes far more. In the 9 June transcript, Elon Musk puts SpaceX's figur
 <figcaption>The curve is my arithmetic: two faces, emissivity 0.92, no sunlight or Earth glow, by the Stefan-Boltzmann law. Starcloud white paper (September 2024); SpaceX interview transcript filed with the SEC (9 June 2026); NASA ISS Active Thermal Control System overview (undated), my arithmetic from 70 kW over six radiator units. The coolant must run warmer than the panel.</figcaption>
 </figure>
 
-Going from 20°C to 67°C raises absolute temperature by about 16%, but sheds about 1.8 times the heat per square metre. That is the lever [Heat and water](/journal/heat-and-water/) found on the ground, run the other way. There, a warm loop at ASHRAE class W45 lets a dry cooler replace a cooling tower. In orbit, the warmer the coolant the chips accept, the smaller the radiator.
+Going from 20°C to 67°C raises absolute temperature by about 16%, but sheds about 1.8 times the heat per square metre. That is the lever [Heat and water](/journal/heat-and-water/) found on the ground, pulled for a different prize. There, a warm loop at ASHRAE class W45 lets a dry cooler replace a cooling tower. In orbit, the warmer the coolant the chips accept, the smaller the radiator.
 
 The International Space Station sits at the cold end. Its ammonia supply is set at 37°F, about 3°C, because it cools a crew. On my arithmetic its six main radiator units reject about 147 W per square metre of panel as designed.
 
@@ -109,7 +109,9 @@ Because mass is the cost, SpaceX states its goal as power per mass. Its prospect
 
 The first design is smaller. In the same transcript, Musk described a draft version-one satellite of 150 kW peak and 120 kW sustained, about one GB300 rack. The solar assumption is 250 W/m².
 
-On my arithmetic, 120 kW needs about 86 m² of radiator at 1,400 W/m², and about 480 m² of solar array. At 10 kg per kW, the whole satellite could weigh no more than about 1.2 tonnes.
+On my arithmetic, 120 kW needs about 86 m² of radiator at 1,400 W/m², and about 480 m² of solar array.
+
+At 10 kg per kW, the whole satellite could weigh no more than about 1.2 tonnes. Radiator, panels, chips and frame must all fit inside it.
 
 Johnsen put the first generation at "About 5 megawatts per launch", or "roughly 200 launches for every gigawatt". At the 100 tonnes a launch SpaceX targets over time, that is 50 kW per tonne, half the goal. SpaceX has not said what the first launches will carry.
 
@@ -198,9 +200,9 @@ So the plug in orbit is nearly free, as promised. The flask still needs its fin,
 
 <a id="data-centres-in-space"></a>
 
-On the ground, the hall and its [grid gear outlast three or four chip generations](/journal/the-equipment-queue/). In orbit it runs the other way. SpaceX's risk factors say "the useful life of our satellites is inherently shorter than that of the information technology systems and infrastructure they host", so it "must periodically launch replacement satellites". Google spreads Starlink's launch cost over a five-year life.
+On the ground, the hall and its [grid gear outlast three or four chip generations](/journal/the-equipment-queue/). In orbit the hardware gives out first. SpaceX's risk factors say "the useful life of our satellites is inherently shorter than that of the information technology systems and infrastructure they host", so it "must periodically launch replacement satellites". Google spreads Starlink's launch cost over a five-year life.
 
-That turns the launch bill into rent. The radiator, the solar wings and the frame go up again with every replacement, not once. A compute satellite flown in 2028, SpaceX's earliest date, would on that life wear out around 2033. Google's own curve does not reach $200 a kilogram until about 2035.
+So the launch bill becomes rent. The radiator, the solar wings and the frame go up again with every replacement, not once. A compute satellite flown in 2028, SpaceX's earliest date, would on that life wear out around 2033. Google's own curve does not reach $200 a kilogram until about 2035.
 
 <figure class="chart">
 <p class="chart-title">On Google's numbers, a compute satellite launched in 2028 wears out before launch reaches $200 a kilogram</p>
