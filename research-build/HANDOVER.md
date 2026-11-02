@@ -4,6 +4,14 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 
 ## START HERE (as of Mon 2 Nov 2026)
 
+- **Mon 2 Nov, evening: 13 live pieces, a new map layer, and one update.** All on Tommy's go; each scouted, drafted and independently fact-checked by separate agents.
+  - NEW: data-centres-in-space, "Data centres in orbit: the plug is free and the heat is the bill" (1d5b78b, live 16:55). Tommy asked for it as an emerging topic (memory: topic-taste-emerging). Its own last map layer `orbit` (Tommy's choice over cooling) with a 10th descent stop ("Off the planet"), kept out of the grid-to-chip funnel. Claim: by 31 Dec 2028 no operator reports an AI compute satellite at SpaceX's 100 kW per metric ton, and no launch provider publishes a LEO price at or below $200/kg. Watch SpaceX 10-Qs, the two Suncatcher prototypes (2027), Starcloud's FCC file.
+  - UPDATE: building-your-own-power (059448e): EIA 860M planned gas 40.5 to 71.1 GW vs under construction 9.6 to 13.1 GW, EIA-860 cannot see off-grid plants, MHI and Wartsila queues, Caterpillar, Homer City date note. No updated/updateNote line (removed site-wide 31 Oct). Siemens Energy FY26 (11 Nov) can refresh it later.
+  - The unsourced "30 to 50 kW" air band is gone from the cooling layer and the descent label.
+  - LinkedIn: post 53 (space) Fri 4 Dec and post 54 (update) Wed 23 Dec, 11:30, both confirmed in the scheduled list. The desktop list now showed all 16 queued posts, not only ten. Next free slots: Fri 11 Dec, Fri 18 Dec, Fri 25 Dec, Mon 28 Dec.
+  - Company page (marketing role, memory: linkedin-growth-role): About now names the research notes, size 0-1, founded 2026, eight specialties, Featured = descent video + Johor post; 50 follow invites sent (credits refill 30 Nov; only ~20 uninvited connections left).
+  - Tommy passed on co-location as a topic.
+
 - **For the next monthly sweep (Tue 1 Dec 2026, covers November; writes research-build/sweeps/2026-12.md).** Read research-build/sweeps/2026-11.md first so nothing is proposed twice. Where November left off:
   - Carry-over calendar, not yet out at 2 Nov: Eaton Q3 (Electrical Americas backlog ratio for the-equipment-queue), Nebius Q3 (connected MW against 800 MW), Constellation Q3 (Crane), Oklo Q3, Lumentum, Siemens Energy FY2026 (Grid backlog, 11 Nov, Charlotte date), Tenaga 3Q (data centre load against booked maximum demand), PJM's ride-through filing and EL26-67 refiles (November), ERCOT audit reports (by 10 Dec), PJM 2029/2030 auction (December).
   - Watch for a PJM refile of its cut-first service after ER26-3515 (new watch item on america-rations-the-plug).

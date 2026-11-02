@@ -751,3 +751,31 @@ The piece covers the memory wall in Nvidia's own spec sheets, how the base die b
 https://thephysicallayer.fyi/journal/memory-not-maths/
 
 #AIInfrastructure #Semiconductors #Memory
+
+---
+
+## 53 · Data centres in orbit (site live Mon 2 Nov 2026; LinkedIn Fri 4 Dec, 11:30, scheduled)
+
+SpaceX wants AI satellites that weigh 10 kilograms for every kilowatt of computing, and a radiator as heavy as the space station's would use all of it on its own.
+
+In the right orbit the sun almost never sets and there is no queue for the grid, so the power is nearly free. But in a vacuum heat leaves only by glowing off a radiator, and every kilogram has to be launched. The SEC asked SpaceX for the total mass of its system; the prospectus said it is still being refined.
+
+The piece covers the radiator physics, the launch price that would make the sums work, and why a satellite flown in 2028 wears out before launch gets cheap.
+
+https://thephysicallayer.fyi/journal/data-centres-in-space/
+
+#DataCentres #AIInfrastructure #Space
+
+---
+
+## 54 · Update: Building your own power, plans outrun machines (update live Mon 2 Nov 2026; LinkedIn Wed 23 Dec, 11:30, scheduled)
+
+In a year, planned US gas power grew from 40.5 GW to 71.1 GW. The part actually being built grew from 9.6 GW to 13.1 GW.
+
+That is my sum from EIA's monthly generator inventory, and it is the gap behind every campus that plans to build its own power. The plans arrive faster than the machines. Mitsubishi Heavy now quotes deliveries around 2030 to 2031 for projects under discussion, and Wärtsilä says its engine lead times keep rising.
+
+The update also covers why federal data cannot see off-grid plants at all, and a gap between Homer City's stated target and its EIA entry.
+
+https://thephysicallayer.fyi/journal/building-your-own-power/
+
+#NaturalGas #DataCentres #EnergyInfrastructure
