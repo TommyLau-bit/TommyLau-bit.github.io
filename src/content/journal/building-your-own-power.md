@@ -142,7 +142,7 @@ Homer City avoided it by netting: counting the coal boilers' recent cut against 
 
 The gas itself is plentiful; the pipe is the clock. Most Permian gas flows out of oil wells, so oil drilling sets how much is made. From early 2025 to early 2026 rigs fell by a fifth while marketed gas rose by a twelfth, to 28.4 billion cubic feet a day. At the coast, power plants share it with export: Golden Pass LNG shipped its first cargo in April 2026.
 
-A pipe is booked by the gas buyers before it is built. Shippers sign long-term firm contracts first; Kinder Morgan's newest are take-or-pay, paid whether or not gas flows. Transco's Southeast Supply Enhancement shows the length. Its open season, when buyers bid for space, ran in June and July 2023, and its target in service date is 1 November 2027. That is about four years for 55 miles of new pipe beside an existing line, and 93% of it was signed by three power companies.
+A pipe is booked by the gas buyers before it is built. Shippers sign long-term firm contracts first; Kinder Morgan's newest are take-or-pay, paid whether or not gas flows. Transco's Southeast Supply Enhancement shows the length. Its open season, when buyers bid for space, ran in June and July 2023, and its application targeted service on 1 November 2027; Williams now says "as early as the third quarter of 2027". That is about four years for 55 miles of new pipe beside an existing line, and 93% of it was signed by three power companies.
 
 The buyers are increasingly power plants. More than 75% of Kinder Morgan's $14.4 billion project backlog supports power generation and local gas utilities. Its Permian Link, about 2.8 billion cubic feet a day, will serve new power generation for an "A-rated hyperscaler" from the third quarter of 2030.
 
@@ -165,7 +165,7 @@ Laid side by side, from first decision to first power, the routes I can date fro
 <figcaption>Hollow dot: approval, open season, sanction, signing or sale; for Socrates it is the siting board's approval of Socrates North only. Solid dot: the date the owner gives. Ohio Power Siting Board and Williams; Transco's FERC application; Pennsylvania DEP and Homer City; Entergy's filings; Kinder Morgan, 21 October 2026; GE Vernova, 28 October 2026. A turbine shipped in 2032 still needs about 18 months on site, and the second Entergy deal awaits a vote.</figcaption>
 </figure>
 
-The fastest route I can date from primary sources was built by a pipeline company, and it is small. Ohio's siting board approved Socrates North on 18 September 2025: 200 MW of gas generation "not physically connected to the electric power grid", run by Williams' Will-Power for Sidecat, a Meta affiliate. Williams lists two 200 MW Socrates plants due in the second half of 2026, the first phase done "within budget and on time". Williams builds and runs the plants, and is itself a pipeline company.
+The fastest route I can date from primary sources was built by a pipeline company, and it is small. Ohio's siting board approved Socrates North on 18 September 2025: 200 MW of gas generation "not physically connected to the electric power grid", run by Williams' Will-Power for Sidecat, a Meta affiliate. Williams commits 400 MW from two Socrates plants to its customer, which its 2026 quarterly filings put at "an expected 556 MW of capacity", due in the second half of 2026, the first phase done "within budget and on time". Williams builds and runs the plants, and is itself a pipeline company.
 
 <a id="hyperion-the-plant-outlasts-the-lease"></a>
 
@@ -177,7 +177,7 @@ So for gas, the fuel clock runs alongside the plant, not behind it. Pipe bid for
 
 The case against is real. Signings slowed to 11 GW in the third quarter, from about 20 GW in each of the two before, while shipments rose to 5 GW. Reservations can lapse. If output reaches 30 GW in 2030 and signings keep slowing, years of output would fall even while the pile holds. Mitsubishi Heavy expects to double its turbine capacity against its 2024 financial year. And a small off-grid plant like Socrates can go from approval to its due date in about a year.
 
-None of this yet frees a large campus. Signings still run at twice the rate of shipments, so the pile grows, and Mitsubishi Heavy says it books orders while checking how much of that capacity it can bring on. Socrates is 400 MW, under a fifth of Hyperion's first three plants.
+None of this yet frees a large campus. Signings still run at twice the rate of shipments, so the pile grows, and Mitsubishi Heavy says it books orders while checking how much of that capacity it can bring on. Socrates' 400 MW for its customer is under a fifth of Hyperion's first three plants.
 
 <a id="plans-outrun-the-build"></a>
 
@@ -353,7 +353,7 @@ New pipe:
 | Kinder Morgan Permian Link | About 2.8 Bcf/d | An A-rated hyperscaler, for new power generation | Q3 2030 |
 | Kinder Morgan Southeast Connector | Up to 2.6 Bcf/d | Take-or-pay shippers | In phases from Q4 2030 |
 
-Sources: Transco's FERC application (CP25-10), 28 October 2024, whose open season ran 19 June to 14 July 2023; Kinder Morgan, 21 October 2026. A dekatherm (Dth) is roughly a thousand cubic feet of gas. The 93% is 1,480,000 of 1,596,900 Dth a day, my arithmetic.
+Sources: Transco's FERC application (CP25-10), 29 October 2024, whose open season ran 19 June to 14 July 2023; Kinder Morgan, 21 October 2026. A dekatherm (Dth) is roughly a thousand cubic feet of gas. The 93% is 1,480,000 of 1,596,900 Dth a day, my arithmetic.
 
 Hyperion: Meta's power agreement with Entergy Louisiana carries minimum charges and an exit fee; its term is redacted. The campus, majority owned by Blue Owl funds, is leased to Meta from 2029 for four years, renewable to 20 (Meta 2025 Form 10-K). The second agreement's vote is set for December 2026 (Entergy Form 10-Q, 31 July 2026).
 
