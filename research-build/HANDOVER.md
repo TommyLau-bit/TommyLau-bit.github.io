@@ -2,7 +2,17 @@
 
 Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. Newest day on top. Rewrite START HERE at the end of each session.
 
-## START HERE (as of Mon 2 Nov 2026, late evening)
+## START HERE (as of Mon 2 Nov 2026, ~19:25; session stopped at its usage limit)
+
+- **Two permanent rules (Tommy, 2 Nov):** no dated corrections anywhere (fix in place), and notes and pieces are independent (no "journal piece first"). Both are in CLAUDE.md, CALLS-SPEC.md, BRIEF-note.md; check-call.py fails a `correction` field. Every piece and all 25 earlier notes were cleaned and pushed (fc31150, 6b36e0f, 302f97f, e956eda).
+- **Third batch of notes, published on Tommy's instruction to follow the draft views:** Mitsubishi Heavy NO CALL medium (54fd38e), Infineon NO CALL low (6c3ba35), Kinder Morgan NO CALL medium (5431a75).
+- **UNFINISHED, do first next session.** These were in fact-check (fact-checker also applies the publish steps) or drafting when the session stopped; their files may be finalised locally but are NOT committed. For each: check `draft: false`, banner, `python3 brand/check-call.py src/content/calls/<slug>.md`, then commit and push. If still `draft: true`, run the fact-check and publish steps.
+  - coherent (draft LONG, target US$275, low). Also fix ten-thousand-chips-one-thought's exposure map in place if the fact-checker confirmed it from the FY26 10-K: add Coherent to the transceiver builders and to optical circuit switch makers.
+  - williams (draft NO CALL, medium). Also fix building-your-own-power in place: Williams' 2026 10-Qs give Socrates "an expected 556 MW of capacity" (400 MW committed to the customer per the 2025 10-K), so "Socrates is 400 MW, under a fifth of Hyperion's first three plants" needs rewording; and Transco SSE's 10-Q now says in service "as early as the third quarter of 2027".
+  - wartsila (draft LONG, target €30, low; turns NO CALL above €26.40).
+  - caterpillar (draft NO CALL, medium).
+  - entergy (still drafting at stop).
+  - Then add the new notes to each piece's Research notes line (building-your-own-power for MHI, KMI, Entergy, Williams, Caterpillar, Wärtsilä; powering-the-rack for Infineon; ten-thousand-chips for Coherent), run every checker, build, push, and log in CALLS-SPEC's published list.
 
 - **Six new initiation notes are live: 25 in all (8 long, 1 short, 16 no call).** Tommy, 2 Nov, before going out: draft every note worth doing, "don't wait for my approval, follow your draft views", then double-check everything and update this file. So these six calls are Claude's draft views, adopted by Tommy's standing instruction for this batch; they were not individually reviewed by him. Each was drafted to BRIEF-note.md, independently fact-checked (with fixes), then published.
   - CLP Holdings (0002), NO CALL, medium, HK$77.75. Rests on hong-kong-has-the-plug. The Scheme of Control pays 8% on net fixed assets, so data centre demand barely moves earnings.
