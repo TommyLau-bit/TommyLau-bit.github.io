@@ -542,7 +542,7 @@ https://thephysicallayer.fyi/journal/water-is-a-siting-problem/
 
 ---
 
-## 38 · Johor and Singapore: the plug, not the chip (site live 30 Oct 2026; LinkedIn Mon 2 Nov, 11:30, scheduled)
+## 38 · Johor and Singapore: the plug, not the chip (site live 30 Oct 2026; LinkedIn posted Mon 2 Nov, 11:30)
 
 Malaysia's data centres draw less than a quarter of the power they have booked from the grid.
 
