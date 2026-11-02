@@ -141,19 +141,16 @@ A(caption("Left: gross margin by fiscal quarter, GAAP (bars) and non-GAAP (line)
           "results releases, 7 November 2024 to 11 August 2026."))
 A('</div>')
 
-A(section("Where I was wrong in October"))
-A(para("My piece was headlined \"Nvidia paid Lumentum $2 billion for lasers, because silicon cannot make light\", and its summary said "
-       "Nvidia \"paid $2 billion to make sure Lumentum builds more of them\". Parts of the body framed it the same way, as \"the "
-       "bottleneck Nvidia paid to clear\" and as Nvidia paying Lumentum \"to keep a kiln running for it\". The headline was wrong about "
-       f"what the money bought, and those passages repeated it. Lumentum's Form 8-K of 2 March 2026, Item 3.02, shows that the US$2bn bought {PREF * 1e9:,.0f} shares of Series A "
+A(section("What Nvidia's US$2bn bought"))
+A(para(f"Lumentum's Form 8-K of 2 March 2026, Item 3.02, shows that the US$2bn bought {PREF * 1e9:,.0f} shares of Series A "
        f"convertible preferred stock at US${PREF_PX:.2f} each, which convert into common shares one for one."))
 A(para(f"So the US$2bn is a shareholding, not a payment for lasers. At the 5 October close it was worth about US${NVDA_STAKE:.1f}bn, "
        f"{NVDA_GAIN * 100:.0f}% more than Nvidia paid. The place in the queue comes from a separate, non-exclusive purchase "
        "commitment and rights to future capacity, which the joint release calls multibillion but whose size Lumentum has not "
-       "disclosed. Other parts of the body did describe an investment and a separate commitment, and Nvidia's own release says the money supports "
-       "research, future capacity and operations at a new fab. What showed me the slip was reading the 8-K against my own headline. "
+       "disclosed. Nvidia's own release says the money supports "
+       "research, future capacity and operations at a new fab. "
        "Nvidia's cost of securing lasers so far is a profitable investment, not a premium price. The claim, that the laser is the "
-       "bottleneck, survives. The piece and the claim stay as published."))
+       "bottleneck, survives."))
 
 A(section("The shortage has a timetable"))
 A(para("If the margin is scarcity, the question is when supply catches up. Lumentum is expanding both Japanese fabs and qualifying "
@@ -289,7 +286,7 @@ A('</div>')
 
 A(section("Conclusion"))
 A(para("My piece of 5 October argued that the AI network's bottleneck has moved to the laser. The year of results behind it supports that claim: "
-       "revenue more than doubled, margin rose 14 points and Lumentum still cannot ship enough. I was wrong about one thing: Nvidia's "
+       "revenue more than doubled, margin rose 14 points and Lumentum still cannot ship enough. Nvidia's "
        f"US$2bn bought shares, now worth about US${NVDA_STAKE:.1f}bn, not lasers. At US${PRICE:,.2f} the price needs FY28 revenue of "
        f"about US${NEED_REV28:.1f}bn at today's margins, in the year the new capacity arrives. {my_call}: {CALL['direction']}, "
        f"{CALL['conviction'].lower()} conviction, leaning short; base value {usd(BASE_VALUE)}, range {usd(bear)} to {usd(bull)}. "

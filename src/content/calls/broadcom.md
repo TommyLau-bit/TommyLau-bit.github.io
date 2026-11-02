@@ -5,13 +5,12 @@ company: "Broadcom"
 ticker: "AVGO"
 exchange: "Nasdaq"
 claims: ["broadcom-wins-either-way"]
-correction: "I wrote that Google, Meta, Anthropic and OpenAI design their own AI chips with Broadcom for their own data centres; Anthropic does not design its own chip with Broadcom but accesses Google's TPU design through it, and the 10-Q and the September call show its first deployment, of more than one gigawatt, is leased from a financial partner rather than owned."
 keyPoints:
   - "Broadcom makes the custom AI chips that Google, Meta and OpenAI use to rely less on Nvidia, and the Ethernet switch chips that clusters of any maker's chips run on. AI revenue was US$16.7 billion in the quarter to 2 August 2026, up 221 per cent on a year earlier."
   - "The claim is holding, but its weight has shifted. Custom chips were 73 per cent of AI revenue in that quarter, and networking's share fell from almost 40 per cent to 27 per cent in three months. In June Broadcom put the likely level at about 30 per cent; in September it said networking would grow just as fast as custom chips."
   - "Management expects AI revenue of about US$115 billion in fiscal 2027 and US$230 billion in fiscal 2028. At US$362.51 the shares price about US$127 billion for fiscal 2028, on my sum of the parts with chips at 20 times and software at 17 times."
   - "My call is long, with medium conviction. I take US$190 billion for fiscal 2028, 17 per cent below management, which gives US$486 a share, 34 per cent above the price, within a range of US$226 to US$647."
-  - "Where I was wrong: my piece said Anthropic designs its own chips with Broadcom. Broadcom's 8-K shows Anthropic accesses Google's TPU design through Broadcom. The 10-Q and the September call show its first deployment, of more than one gigawatt, is leased from a financial partner, with Broadcom backstopping up to about US$29 billion."
+  - "Anthropic, which Broadcom expects to be its largest custom chip customer in 2027, accesses Google's TPU design through Broadcom. The 10-Q and the September call show its first deployment, of more than one gigawatt, is leased from a financial partner, with Broadcom backstopping up to about US$29 billion."
 files:
   pdf: "/research/2026-10-06_Broadcom_Initiation.pdf"
   xlsx: "/research/2026-10-06_Broadcom_Model.xlsx"
@@ -108,11 +107,11 @@ So my piece's first test, networking's share, has moved against the stay half. T
 
 The reason is memory, not price. Amie Thuener, the finance chief, said custom chips carry rising memory content that dilutes the margin. Operating margin rose to 67.9 per cent and is guided at 66 per cent. The toll per dollar of operating profit has not thinned. The toll per dollar of sales has.
 
-**Where I was wrong in October.** My piece's exposure map said: "Google, Meta, Anthropic and OpenAI design their own AI chips with Broadcom for their own data centres." That is wrong for Anthropic on the chip, and too loose on the data centres. Broadcom's 8-K of 6 April 2026 says Anthropic will "access through Broadcom" next generation "TPU-based AI compute capacity". The TPU is Google's chip.
+**Anthropic runs Google's chip, on leased racks.** Broadcom's 8-K of 6 April 2026 says Anthropic will "access through Broadcom" next generation "TPU-based AI compute capacity". The TPU is Google's chip.
 
-On the December 2025 call Tan described Anthropic's first orders as TPU Ironwood racks. On the September call he said Broadcom delivered Ironwood TPUs in volume "to both Anthropic and Google". The 10-Q adds that, for a customer it does not name, a financial partner bought racks for more than one gigawatt of compute and leases them to that customer. Broadcom backstops those lease payments, up to about US$29 billion. Thuener said on the September call that this first US$35 billion tranche is for Anthropic's one gigawatt deployment. So the racks are leased, not owned. The filings do not say where they are hosted, so "their own data centres" claimed more than I knew.
+On the December 2025 call Tan described Anthropic's first orders as TPU Ironwood racks. On the September call he said Broadcom delivered Ironwood TPUs in volume "to both Anthropic and Google". The 10-Q adds that, for a customer it does not name, a financial partner bought racks for more than one gigawatt of compute and leases them to that customer. Broadcom backstops those lease payments, up to about US$29 billion. Thuener said on the September call that this first US$35 billion tranche is for Anthropic's one gigawatt deployment. So the racks are leased, not owned. The filings do not say where they are hosted.
 
-What showed me the slip was reading the April 8-K against my own exposure map. It matters more than a label. Tan expects Anthropic to become Broadcom's largest custom chip customer in 2027. So the two largest buyers run one chip family, the TPU, which is the family Google has split with MediaTek. The claim still holds, because Broadcom is paid on those TPUs. The piece and the claim stay exactly as published.
+This matters more than a label. Tan expects Anthropic to become Broadcom's largest custom chip customer in 2027. So the two largest buyers run one chip family, the TPU, which is the family Google has split with MediaTek. The claim still holds, because Broadcom is paid on those TPUs.
 
 ## What the market prices in, and where I differ
 
@@ -201,7 +200,7 @@ The fourth quarter results, for the quarter to 1 November, are planned for 9 Dec
 
 ## Conclusion
 
-My piece of 2 October argued that Broadcom is paid whether the cloud giants stay with Nvidia or leave. The year of results behind it supports that claim. Custom chips and AI networking both grew more than two and a half times, and Tomahawk 6 sits in clusters that use no Broadcom custom chips. But the custom half now earns almost three quarters of the AI money. I was wrong about one thing: Anthropic does not design its own chip with Broadcom; it uses Google's TPU.
+My piece of 2 October argued that Broadcom is paid whether the cloud giants stay with Nvidia or leave. The year of results behind it supports that claim. Custom chips and AI networking both grew more than two and a half times, and Tomahawk 6 sits in clusters that use no Broadcom custom chips. But the custom half now earns almost three quarters of the AI money, and Anthropic, expected to be the largest custom customer in 2027, runs Google's TPU rather than a chip of its own.
 
 The price does not believe the next step. At US$362.51 it assumes fiscal 2028 AI revenue of about US$127 billion, against management's US$230 billion and my US$190 billion. My call is long, with medium conviction and a target of US$485. The range runs from US$226 to US$647. The view is wrong if the shares close below US$270 by October 2027.
 

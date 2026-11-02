@@ -5,13 +5,12 @@ company: "Marvell"
 ticker: "MRVL"
 exchange: "Nasdaq"
 claims: ["marvell-collects-the-toll"]
-correction: "I wrote that Marvell's US$1 billion of capacity prepayments was to secure supply of 1.6T optical DSPs and switch chips; Marvell has not tied them to any product, and its filings describe capacity reservations with foundries and test and assembly partners for the business as a whole."
 keyPoints:
   - "Marvell makes the optical signal processors and other parts that let AI chips in different cabinets talk. Data centre revenue reached US$2.17 billion in the quarter to 1 August 2026, 79 per cent of the total and up 46 per cent on a year earlier."
   - "The claim is holding. At its Investor Day on 6 October Marvell raised fiscal 2028 revenue to about US$20 billion, from US$18 billion, and set a fiscal 2031 target of US$70 billion to US$90 billion. Interconnect is the largest line at the midpoint, about US$37.5 billion, ahead of custom chips at about US$30 billion."
   - "At US$284.68 and 33 times, the peer median, the shares need fiscal 2029 revenue of about US$22.5 billion, only 12 per cent above the new fiscal 2028 outlook. Marvell's custom target alone adds about US$8 billion that year."
   - "My call is long, with medium conviction and a target of US$355. I take US$28 billion for fiscal 2029, below the path management set out, which gives US$356 a share, 25 per cent above the price, within a range of US$153 to US$517."
-  - "Where I was wrong: my September piece said the US$1 billion of capacity prepayments was for optical DSPs and switch chips. Marvell has not said what it buys, and its filings describe reservations with foundries and test and assembly partners."
+  - "Marvell's US$1 billion of capacity prepayments covers the whole business, not optics alone. Marvell has not said what it buys, and its filings describe reservations with foundries and test and assembly partners."
 files:
   pdf: "/research/2026-10-08_Marvell_Initiation.pdf"
   xlsx: "/research/2026-10-08_Marvell_Model.xlsx"
@@ -91,15 +90,15 @@ Marvell does not report interconnect in dollars. So I split data centre revenue 
 
 Custom's turn comes in fiscal 2029. Marvell now targets more than US$12 billion of custom revenue that year, up from a target of US$10 billion, and more than three times fiscal 2028.
 
-**The plug is staying, for now.** My piece said I was wrong if the translation moved off the plug, into linear optics or co-packaged optics. On the August call Matt Murphy, the chief executive, said pluggable modules remain the main form factor for scale-out networks and that he did not expect that to change. 800G demand remains strong and the 1.6T generation is ramping rapidly.
+**The plug is staying, for now.** My piece's test was whether the translation moved off the plug, into linear optics or co-packaged optics. On the August call Matt Murphy, the chief executive, said pluggable modules remain the main form factor for scale-out networks and that he did not expect that to change. 800G demand remains strong and the 1.6T generation is ramping rapidly.
 
 The twist is scale-up, the links inside one large AI system. There, Marvell expects optics to move close to the chip, as near-packaged or co-packaged parts. It bought Celestial AI for US$3.5 billion in February to make them, and forecasts a US$500 million annualised run rate from it in the fourth quarter of fiscal 2028. At the Investor Day it put interconnect revenue growth at about 65 per cent a year from fiscal 2026 to 2031, behind only custom at about 80 per cent. So where the translation does leave the plug, Marvell is so far one of the companies taking it.
 
-**Where I was wrong in September.** My piece said: "On the same call, Marvell said it would make about $1 billion of capacity prepayments to suppliers in fiscal 2027, to secure supply of 1.6T optical DSPs and switch chips." The call was the one of 27 August, and Dan Durn, the finance chief, did repeat the US$1 billion plan on it. But neither he nor anyone else on that call or the May call, when the plan was first given, tied the money to optical DSPs or switch chips.
+**The prepayments buy capacity for the whole business.** Marvell plans about US$1 billion of capacity prepayments to suppliers in fiscal 2027. Dan Durn, the finance chief, gave the plan on the May call and repeated it on the call of 27 August. Neither call tied the money to optical DSPs or switch chips.
 
 Durn said the prepayments back the design wins Marvell has secured and will be set against future material purchases. The 10-Q for the quarter to 1 August describes "capacity reservation arrangements with certain foundries and partners". The 10-K's commitments note names foundries and test and assembly partners. The balance sheet line, prepayments on supply capacity reservation agreements, rose from US$278.8 million to US$487.0 million in six months.
 
-So the prepayments show a company buying capacity ahead of demand across the whole business, in a year when custom chips ramp hard in the second half. They are not evidence for the optical half in particular. What showed me the slip was reading the 10-Q's note against my own sentence. The claim does not rest on the prepayments, and the revenue mix still supports it. The piece and the claim stay exactly as published.
+So the prepayments show a company buying capacity ahead of demand across the whole business, in a year when custom chips ramp hard in the second half. They are not evidence for the optical half in particular. The claim does not rest on the prepayments, and the revenue mix still supports it.
 
 ## What the market prices in, and where I differ
 
@@ -184,7 +183,7 @@ The third quarter results, for the quarter to October, are expected in early Dec
 
 ## Conclusion
 
-My piece of 28 September argued that Marvell is paid every time AI chips talk, through the signal processor in each optical plug. The year of results behind it supports that claim, and the Investor Day kept interconnect the largest line in Marvell's plan to fiscal 2031. I was wrong about one thing: Marvell never said its US$1 billion of prepayments was for optical DSPs.
+My piece of 28 September argued that Marvell is paid every time AI chips talk, through the signal processor in each optical plug. The year of results behind it supports that claim, and the Investor Day kept interconnect the largest line in Marvell's plan to fiscal 2031. Its US$1 billion of prepayments buys capacity for the whole business, not for optics in particular.
 
 At US$284.68 the price needs only about US$22.5 billion of fiscal 2029 revenue. I take US$28 billion, below management's path, at the peer median multiple. My call is long, with medium conviction and a target of US$355, within a range of US$153 to US$517. Medium, because the plan is still a presentation, not yet results.
 

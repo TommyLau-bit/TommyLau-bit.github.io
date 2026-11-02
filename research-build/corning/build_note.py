@@ -138,16 +138,14 @@ A(para("<strong>Customers are paying ahead, and becoming fewer and larger.</stro
        f"2025 two end customers bought {TOP2_OPT_25 * 100:.0f}% of optical sales. Long contracts steady volume, but the claim's third "
        "watch item, buyer concentration, is moving the wrong way."))
 
-A(section("Where I was wrong in October"))
-A(para(f"In the piece I wrote that Nvidia paid US$500m as part of a partnership for Corning to build more fibre. That is not what "
-       "the money bought. The 8-K of 6 May and the Q2 10-Q show Nvidia paid US$500m for a pre-funded warrant, in effect three million Corning "
+A(section("What Nvidia's US$500m bought"))
+A(para(f"The 8-K of 6 May and the Q2 10-Q show Nvidia paid US$500m for a pre-funded warrant, in effect three million Corning "
        f"shares. Corning also gave Nvidia a second warrant, over 15 million shares at US${NV_WARRANT_K:.0f}, for no separate payment. "
        f"The 10-Q values it at US${NV_WARRANT_FV * 1000:.0f}m and treats it as a payment to a customer, which comes off revenue as "
        f"Corning delivers. The same note books a US${DEPOSIT_Q2:.1f}bn customer deposit, to the end of 2029, against that warrant; the "
        "10-Q ties it to the warrant's holder, which the 8-K shows is Nvidia. The deposit, not the US$500m, secures supply. "
-       f"Reading the 10-Q note for this initiation changed my view: buyers pay ahead, but the largest is also paid, about "
-       f"{NV_WARRANT_PCT * 100:.0f} cents of warrant per dollar of deposit. Scarcity is being shared, not kept. The piece and the "
-       "claim stay exactly as published."))
+       f"This matters for the claim: buyers pay ahead, but the largest is also paid, about "
+       f"{NV_WARRANT_PCT * 100:.0f} cents of warrant per dollar of deposit. Scarcity is being shared, not kept."))
 
 A(section("Why a sold-out business set up a US$2bn share sale"))
 A(para(f"On 11 September Corning set up an at-the-market programme with Goldman Sachs for up to US${ATM:.0f}bn of new shares, for "

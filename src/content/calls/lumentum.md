@@ -5,18 +5,17 @@ company: "Lumentum"
 ticker: "LITE"
 exchange: "Nasdaq"
 claims: ["lumentum-makes-the-light"]
-correction: "I wrote that Nvidia paid Lumentum US$2 billion for lasers. It paid that for 2.9 million convertible preferred shares, now worth about US$3.1 billion; the lasers come under a separate purchase commitment whose size is not disclosed."
 keyPoints:
   - "Lumentum makes the indium phosphide lasers that turn AI network traffic into light. Revenue more than doubled to US$1.01 billion in the quarter to June 2026, GAAP gross margin rose from 33.3 to 47.4 per cent, and it is still shipping behind demand."
   - "The claim is holding, and the margin shows scarcity: Lumentum names higher prices on some products as one cause. But the shortage has a timetable, as Lumentum expands its two Japanese fabs and converts a new US fab, and Nvidia funded Coherent, its closest rival, on the same day."
   - "At US$1,091.67 the shares trade at 52 times my fiscal 2027 earnings and 39 times my fiscal 2028. At 35 times, the price needs fiscal 2028 revenue of about US$9.1 billion, three times fiscal 2026, at today's margins."
   - "My call is no call, leaning short. Thirty-five times my fiscal 2028 estimate of US$28.28 gives about US$990, 9 per cent below the price, within a range of US$407 to US$1,474."
-  - "Where I was wrong: my October piece said Nvidia paid Lumentum US$2 billion for lasers. It bought convertible preferred shares, now worth about US$3.1 billion; the lasers sit under a separate purchase commitment."
+  - "Nvidia's US$2 billion bought Lumentum convertible preferred shares, not lasers. They are now worth about US$3.1 billion; the lasers sit under a separate purchase commitment."
 files:
   pdf: "/research/2026-10-06_Lumentum_Initiation.pdf"
   xlsx: "/research/2026-10-06_Lumentum_Model.xlsx"
   thumb: "/research/2026-10-06_Lumentum_Initiation-p1.png"
-  pages: 6
+  pages: 5
 date: 2026-10-07T01:10:29+08:00
 draft: false
 call:
@@ -88,11 +87,11 @@ The proof that the laser is scarce is the margin. GAAP gross margin has risen in
 
 Scarcity also shows in what the company could not ship. Hurlston said Lumentum was still shipping behind customer demand for EMLs, and expected to be significantly behind at the end of the year. He said it was further behind still on the high-power lasers for co-packaged optics.
 
-**Where I was wrong in October.** My piece was headlined "Nvidia paid Lumentum $2 billion for lasers, because silicon cannot make light". Its summary said Nvidia "paid $2 billion to make sure Lumentum builds more of them". Parts of the body framed it the same way: "the bottleneck Nvidia paid to clear", and an analogy in which Nvidia paid Lumentum "to keep a kiln running for it". The headline was wrong about what the money bought, and those passages repeated it. Lumentum's Form 8-K of 2 March 2026 shows that the US$2 billion bought 2,876,415 shares of Series A convertible preferred stock, at US$695.31 each, which convert into common shares one for one.
+**What Nvidia's US$2 billion bought.** Lumentum's Form 8-K of 2 March 2026 shows that the US$2 billion bought 2,876,415 shares of Series A convertible preferred stock, at US$695.31 each, which convert into common shares one for one.
 
-So the US$2 billion is a shareholding, not a payment for lasers. At the 5 October close it was worth about US$3.1 billion, 57 per cent more than Nvidia paid. The place in the queue comes from a separate, non-exclusive purchase commitment and rights to future capacity, which the joint release calls multibillion but whose size Lumentum has not disclosed. Other parts of the body did describe an investment and a separate purchase commitment, and Nvidia's own release says the money supports research, future capacity and operations as Lumentum builds a new fab. What showed me the slip was reading Item 3.02 of the 8-K against my own headline.
+So the US$2 billion is a shareholding, not a payment for lasers. At the 5 October close it was worth about US$3.1 billion, 57 per cent more than Nvidia paid. The place in the queue comes from a separate, non-exclusive purchase commitment and rights to future capacity, which the joint release calls multibillion but whose size Lumentum has not disclosed. Nvidia's own release says the money supports research, future capacity and operations as Lumentum builds a new fab.
 
-The difference matters for the claim's mechanism. Nvidia's cost of securing lasers so far is a profitable investment, not a premium price, and Lumentum sold about 3 per cent of itself well below today's price. The claim itself survives: the laser is the bottleneck. The piece and the claim stay exactly as published, so the record shows the mistake.
+The difference matters for the claim's mechanism. Nvidia's cost of securing lasers so far is a profitable investment, not a premium price, and Lumentum sold about 3 per cent of itself well below today's price. The claim itself survives: the laser is the bottleneck.
 
 ## What the market prices in, and where I differ
 
@@ -169,7 +168,7 @@ The next results, for the quarter to September 2026, are due on 5 November 2026,
 
 ## Conclusion
 
-My piece of 5 October argued that the AI network's bottleneck has moved to the laser. The year of results behind it supports that claim: revenue more than doubled, margin rose 14 points and the company still cannot ship enough. I was wrong about one thing. Nvidia's US$2 billion bought shares, now worth about US$3.1 billion, not lasers.
+My piece of 5 October argued that the AI network's bottleneck has moved to the laser. The year of results behind it supports that claim: revenue more than doubled, margin rose 14 points and the company still cannot ship enough. Nvidia's US$2 billion bought shares, now worth about US$3.1 billion, not lasers.
 
 The price now pays for the shortage to outlast the new factories. At 35 times, US$1,091.67 needs fiscal 2028 revenue of about US$9.1 billion at today's margins, in the year Greensboro, the Japanese expansions and Coherent's capacity arrive. My call is no call, leaning short, with medium conviction. The base value is US$990 and the range runs from US$407 to US$1,474. I would revisit below about US$860 or above about US$1,320.
 

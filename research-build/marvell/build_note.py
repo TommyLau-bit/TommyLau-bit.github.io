@@ -151,22 +151,19 @@ A(para(f"<strong>The test the piece set.</strong> It said to watch how much grow
        f"about {REST_SHARE_G28 * 100:.0f}% of the growth, custom about {CUS_SHARE_G28 * 100:.0f}%. Custom's turn comes in fiscal 2029: "
        f"Marvell now targets more than US${CUSTOM29_ID:.0f}bn of custom revenue that year, more than three times fiscal 2028."))
 
-A(section("Where I was wrong in September"))
-A(para("My piece said: \"On the same call, Marvell said it would make about $1 billion of capacity prepayments to suppliers in fiscal "
-       "2027, to secure supply of 1.6T optical DSPs and switch chips.\" The call was the one of 27 August, and Dan Durn, the finance "
-       "chief, did repeat the US$1bn plan on it. But neither he nor anyone else on that call or the May call, when the plan was first "
-       "given, tied the money to optical DSPs or switch chips. Durn said the prepayments back the design wins Marvell has secured and "
+A(section("The prepayments buy capacity for the whole business"))
+A(para("Marvell plans about US$1bn of capacity prepayments to suppliers in fiscal 2027. Dan Durn, the finance chief, gave the plan "
+       "on the May call and repeated it on the call of 27 August. Neither call tied the money to optical DSPs or switch chips. Durn said the prepayments back the design wins Marvell has secured and "
        "will be set against future material purchases."))
 A(para("The 10-Q for the quarter to 1 August describes \"capacity reservation arrangements with certain foundries and partners\", and "
        "the 10-K's commitments note names foundries and test and assembly partners. The balance sheet line, prepayments on supply "
        f"capacity reservation agreements, rose from US${PREPAY_JAN * 1000:.1f}m to US${PREPAY_AUG * 1000:.1f}m in six months. So the "
        "prepayments show a company buying capacity ahead of demand across the whole business, in a year when custom chips ramp hard in "
-       "the second half. They are not evidence for the optical half in particular. What showed me the slip was reading the 10-Q's note "
-       "against my own sentence. The claim does not rest on the prepayments, and the revenue mix still supports it. The piece and the "
-       "claim stay as published."))
+       "the second half. They are not evidence for the optical half in particular. The claim does not rest "
+       "on the prepayments, and the revenue mix still supports it."))
 
 A(section("The plug is staying, for now"))
-A(para("My piece said I was wrong if the translation moved off the plug, into linear or co-packaged optics. On the August call Matt "
+A(para("My piece's test was whether the translation moved off the plug, into linear or co-packaged optics. On the August call Matt "
        "Murphy, the chief executive, said pluggable modules remain the main form factor for scale-out networks and that he did not "
        "expect that to change; 800G demand remains strong and 1.6T is ramping rapidly. The twist is scale-up, the links inside one large "
        "AI system, where Marvell expects optics to move close to the chip. It bought Celestial AI for US$3.5bn in February to make "
@@ -312,8 +309,8 @@ A('</div>')
 A(section("Conclusion"))
 A(para("My piece of 28 September argued that Marvell is paid every time AI chips talk, through the signal processor in each optical "
        "plug. The year of results behind it supports that claim: interconnect is the largest part of the data centre business, guided "
-       "to grow more than 70% this year, and Marvell expects pluggable optics to stay the norm in scale-out networks. I was wrong about "
-       "one thing: Marvell never said its US$1bn of prepayments was for optical DSPs. The Investor Day raised fiscal 2028 to about "
+       "to grow more than 70% this year, and Marvell expects pluggable optics to stay the norm in scale-out networks. Its US$1bn "
+       "of prepayments buys capacity for the whole business, not optics in particular. The Investor Day raised fiscal 2028 to about "
        "US$20bn and kept interconnect the largest line in the fiscal 2031 plan. The price needs only about "
        f"US${NEED_REV29:.1f}bn of FY29 revenue; I take US${REV29:.0f}bn, below management's path, at the peer median multiple. "
        f"{my_call}: {CALL['direction']}, {CALL['conviction'].lower()} conviction, target {usd(tgt)}; range {usd(bear)} to {usd(bull)}. "

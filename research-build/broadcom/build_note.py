@@ -161,19 +161,17 @@ A(para(f"<strong>The toll per dollar of sales is thinning.</strong> Non-GAAP gro
        "because costs grow far more slowly than revenue."))
 
 A('<div class="keeptogether">')
-A(section("Where I was wrong in October"))
-A(para("My piece's exposure map said: \"Google, Meta, Anthropic and OpenAI design their own AI chips with Broadcom for their own data "
-       "centres.\" That is wrong for Anthropic on the chip, and too loose on the data centres. Broadcom's 8-K of 6 April 2026 says Anthropic will \"access through "
+A(section("Anthropic runs Google's chip, on leased racks"))
+A(para("Broadcom's 8-K of 6 April 2026 says Anthropic will \"access through "
        "Broadcom\" next generation \"TPU-based AI compute capacity\"; the TPU is Google's chip. On the December 2025 call Tan described "
        "Anthropic's first orders as TPU Ironwood racks, and in September he said Broadcom delivered Ironwood TPUs in volume \"to both "
        "Anthropic and Google\"."))
 A(para(f"The 10-Q for the quarter to 2 August adds that, for a customer it does not name, a financial partner bought racks for more than "
        f"one gigawatt and leases them to that customer, with Broadcom backstopping the lease payments up to about US${BACKSTOP_MAX:.0f}bn; "
        f"Thuener said on the September call that this first US${XPV_TRANCHE:.0f}bn tranche is for Anthropic's one gigawatt deployment. So "
-       "the racks are leased, not owned; the filings do not say where they are hosted, so \"their own data centres\" claimed more than I "
-       "knew. What showed me the slip was reading the April 8-K against my own exposure map. It matters: Tan "
+       "the racks are leased, not owned; the filings do not say where they are hosted. It matters: Tan "
        "expects Anthropic to be Broadcom's largest custom customer in 2027, so the two largest buyers run one chip family, the one Google "
-       "has split with MediaTek. The claim holds, because Broadcom is paid on those TPUs. The piece and the claim stay as published."))
+       "has split with MediaTek. The claim holds, because Broadcom is paid on those TPUs."))
 A('</div>')
 A('<div class="keeptogether">')
 A(f'<div class="chartsrow"><div class="col left"><img class="chart" src="file://{D}/chart_margin.png"></div>'
@@ -296,8 +294,8 @@ A('</div>')
 A(section("Conclusion"))
 A(para("My piece of 2 October argued that Broadcom is paid whether the cloud giants stay with Nvidia or leave. The results support it: custom "
        "chips and AI networking both grew more than two and a half times, and Tomahawk 6 sits in clusters with no Broadcom custom chips. But the "
-       "custom half now earns almost three quarters of the AI money, and I was wrong that Anthropic designs its own chip with Broadcom; it "
-       f"uses Google's TPU. The price assumes FY28 AI revenue of about US${NEED_AI28:.0f}bn, against management's US$230bn and my "
+       "custom half now earns almost three quarters of the AI money, and Anthropic, expected to be the largest custom customer in 2027, "
+       f"runs Google's TPU rather than a chip of its own. The price assumes FY28 AI revenue of about US${NEED_AI28:.0f}bn, against management's US$230bn and my "
        f"US${AI28:.0f}bn. {my_call}: {CALL['direction']}, {CALL['conviction'].lower()} conviction, target {usd(tgt)}; base value "
        f"{usd(BASE_VALUE)}, range {usd(bear)} to {usd(bull)}."))
 

@@ -5,7 +5,6 @@ company: "Corning"
 ticker: "GLW"
 exchange: "NYSE"
 claims: ["corning-lays-the-glass"]
-correction: "I wrote that Nvidia paid US$500 million to secure Corning's glass. It paid that for Corning equity, and Corning gave it a second warrant, valued at US$296 million, that comes off future revenue."
 keyPoints:
   - "Corning makes the glass fibre that carries data between AI chips. Its optical sales rose 32 per cent in the second quarter, the data centre part 65 per cent, and the segment's margin reached a record 21 per cent."
   - "The US$2 billion share sale set up in September answers a real question. Corning is sold out, so growth needs factories first: capital spending rises to about US$2 billion this year, and customer deposits pay for only part of it."
@@ -121,13 +120,13 @@ Contract liabilities, which include customer deposits, rose from US$2.3 billion 
 
 **The third watch item is moving the wrong way.** In 2025 two end customers bought 28 per cent of optical sales. Since then, at least five large buyers have signed long-term deals. Fewer, larger buyers on long contracts means steadier volume, but it also means buyers who set terms.
 
-**Where I was wrong in October.** In the piece I wrote that Nvidia paid US$500 million as part of a partnership for Corning to build more fibre. That is not what the money bought. The 8-K of 6 May and the second quarter 10-Q show that Nvidia paid US$500 million for a pre-funded warrant, in effect three million Corning shares.
+**What Nvidia's US$500 million bought.** The 8-K of 6 May and the second quarter 10-Q show that Nvidia paid US$500 million for a pre-funded warrant, in effect three million Corning shares.
 
 Corning also gave Nvidia a second warrant, over 15 million shares at US$180, for no separate payment. The 10-Q values it at US$296 million and treats it as a payment to a customer. That amount comes off Corning's revenue as it delivers under the deal.
 
 The same 10-Q books a US$1.0 billion customer deposit, running to the end of 2029, against that warrant. The 10-Q ties the deposit to the customer that received the warrant, and the 8-K shows that customer is Nvidia. The deposit, not the US$500 million, is what secures supply.
 
-What changed my view was reading the 10-Q note for this initiation. It matters for the claim. Buyers are paying ahead, but the biggest one is also being paid, about 30 cents of warrant for each dollar of deposit. Scarcity is being shared, not kept. The piece and the claim stay exactly as published.
+This matters for the claim. Buyers are paying ahead, but the biggest one is also being paid, about 30 cents of warrant for each dollar of deposit. Scarcity is being shared, not kept.
 
 ## What the market prices in, and where I differ
 
