@@ -176,7 +176,7 @@ All forecasts below are mine. Figures are in KRW trillion unless per share. I va
 
 **The rest.** Phones, at 10 times after-tax profit on a normal operating profit of KRW 12 trillion, the 2023 to 2025 average, give KRW 91 trillion. Display, TVs and appliances, and Harman add KRW 47 trillion. Foundry and System LSI, which report no profit, I put at 1.5 times sales, KRW 41 trillion. Investments of KRW 97.2 trillion count at three quarters.
 
-**The base value.** Net cash adds KRW 514 trillion, memory above normal KRW 438 trillion, and 12 times normal memory earnings KRW 1,065 trillion. The rest adds KRW 252 trillion. The gross is KRW 2,268 trillion, or KRW 348,400 a share. Less 20 per cent, it is KRW 278,700.
+**The base value.** Net cash adds KRW 514 trillion, memory above normal KRW 438 trillion, and 12 times normal memory earnings KRW 1,065 trillion. The rest adds KRW 252 trillion. The gross is KRW 2,269 trillion, or KRW 348,400 a share. Less 20 per cent, it is KRW 278,700.
 
 **Three cases, twelve months out.**
 

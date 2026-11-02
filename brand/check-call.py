@@ -59,6 +59,33 @@ def check(path):
     ids = re.findall(r"[a-z0-9-]+", (re.search(r'^claims:\s*\[([^\]]*)\]', fm, re.M) or [None, ''])[1])
     if re.search(r'^correction:', fm, re.M):
         fails.append('correction field: fix the piece in place instead (2 Nov 2026)')
+    # error classes found in the deep checks of 2 Nov 2026, scanned in the md and the PDF
+    texts = {'md': raw}
+    pdf_rel = re.search(r'^\s*pdf:\s*"([^"]+)"', fm, re.M)
+    if pdf_rel and os.path.exists(os.path.join(ROOT, 'public', pdf_rel.group(1).lstrip('/'))):
+        try:
+            import pypdfium2
+            doc = pypdfium2.PdfDocument(os.path.join(ROOT, 'public', pdf_rel.group(1).lstrip('/')))
+            texts['pdf'] = ' '.join(pg.get_textpage().get_text_range() for pg in doc).replace('\r\n', ' ')
+            pg_field = re.search(r'^\s*pages:\s*(\d+)', fm, re.M)
+            if pg_field and int(pg_field.group(1)) != len(doc):
+                fails.append(f'pages: {pg_field.group(1)} but the PDF has {len(doc)}')
+        except ImportError:
+            warns.append('pypdfium2 missing: PDF text not checked')
+    NOTE_BANNED = [
+        (r'\bwhere I was wrong\b|\bI was wrong\b|\bshows the piece was wrong\b|\bwhat showed me the slip\b|\bI withdraw\b', 'correction framing', re.I),
+        (r'\bWhat would change our mind\b|\b[Ww]e initiate\b|\bour view\b', '"we/our" instead of "I/my"', 0),
+        (r'\b[Aa] (?:8|11|18|8\d)(?:[.,]\d+)?(?:%|x\b| per cent| times\b)', '"a" before a number read with a vowel sound', 0),
+        (r'[\u2014\u2013\u2212]', 'an em or en dash or minus sign', 0),
+        (r'\bdraft view\b|\bDRAFT\b', 'draft wording', 0),
+        (r'\bClaude\b|\bpaper portfolio\b', 'a mention of Claude or a paper portfolio', 0),
+    ]
+    for where, t in texts.items():
+        t = t if where == 'pdf' else re.sub(r'^draft:.*$', '', t, flags=re.M)
+        for pat, label, flags in NOTE_BANNED:
+            n = len(re.findall(pat, t, flags))
+            if n and not (where == 'md' and label == 'draft wording' and draft):
+                fails.append(f'{label} in the {where} ({n}x)')
     for i in ids:
         if i not in CLAIM_IDS:
             fails.append(f'claim "{i}" is not in src/data/claims.ts')

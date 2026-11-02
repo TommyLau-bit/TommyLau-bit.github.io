@@ -38,7 +38,7 @@ charts:
     series:
       - name: "Net sales"
         values: [1.64, 1.95, 2.07, 2.35, 2.04, 2.64, 2.68, 2.88, 2.65, 3.27]
-    note: "Sales doubled in two years. The first quarter is always the softest, so compare each quarter with the same one a year earlier."
+    note: "Sales rose by about two thirds in two years. The first quarter is always the softest, so compare each quarter with the same one a year earlier."
     source: "Vertiv quarterly results releases, Exhibit 99.1, 24 April 2024 to 29 July 2026."
   - id: margin
     title: "Adjusted operating margin by quarter, per cent"

@@ -258,7 +258,7 @@ A('</div>')
 A(section("Conclusion"))
 A(para("The September piece argued that each AI megawatt holds more of what Vertiv makes. A year of margins says that is happening. The "
        "market has spent five months treating Vertiv as a volume story near its peak, and has cut the multiple of this year's earnings "
-       "from about 60 times to about 38. The price now pays for the volume but not for the richer content. LONG, Medium conviction, "
+       "from about 60 times to about 38. The price now pays for the volume but not for the richer content. LONG, medium conviction, "
        "twelve-month target US$300."))
 
 A('<div class="keeptogether">')

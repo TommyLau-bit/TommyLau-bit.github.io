@@ -1,5 +1,5 @@
 ---
-title: "Schneider Electric is still selling the finished system. After the PTC sell-off, at €260.50 the price is close to fair."
+title: "Schneider Electric is still selling AI data centres the finished system. After the PTC sell-off, at €260.50 the price is close to fair."
 summary: "Schneider Electric makes the switchgear, UPS, prefabricated power rooms and cooling inside data centres. Its Systems business grew 28 per cent organic in the second quarter of 2026, against 13 per cent for its catalogue products. Then it agreed to buy PTC, a design software company, for US$22.6 billion, and the shares fell 14 per cent in two days. On my numbers the deal costs about €11 a share, and the price now sits close to my base value of €278."
 company: "Schneider Electric"
 ticker: "SU"

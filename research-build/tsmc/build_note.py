@@ -118,7 +118,7 @@ A(para("Go back to the shared kitchen from the October piece. Every famous resta
 A(para("<strong>More wafers.</strong> TSMC shipped 4.34 million twelve-inch-equivalent wafers in the second quarter of 2026, 17% "
        "more than a year earlier, from fabs that were already full. <strong>More per wafer.</strong> Revenue in Taiwan dollars rose "
        "36%, so revenue per wafer rose about 17% too, part mix towards the newest processes and part price. <strong>More of each "
-       "sale kept.</strong> Gross margin reached 67.7%, against 53.1% two years earlier and TSMC's own target of 56% and higher "
+       "sale kept.</strong> Gross margin reached 67.7%, against 53.2% two years earlier and TSMC's own target of 56% and higher "
        "through the cycle."))
 A(para("<strong>Where the pull comes from.</strong> High-performance computing, which holds AI accelerators, was 66% of revenue in "
        "the second quarter, against 46% at the start of 2024. AI accelerators alone were in the high teens as a share of 2025 "
@@ -267,7 +267,7 @@ A(section("Conclusion"))
 A(para("The October piece argued that, today, TSMC's factories bind before the grid does. A quarter of TSMC's own numbers says that "
        "is right: more wafers, more per wafer, and a margin almost twelve points above its own floor. The shares know it. At US$485.80 the "
        "ADR needs the scarcity margin to survive into 2028, when new capacity lands and the longer horizon of my claim begins to be "
-       f"tested. My call: {CALL['direction']}, {CALL['conviction']} conviction. Revisit below about US$400."))
+       f"tested. My call: {CALL['direction']}, {CALL['conviction'].lower()} conviction. Revisit below about US$400."))
 
 A('<div class="keeptogether">')
 A(section("Appendix: forecast assumptions"))

@@ -35,6 +35,15 @@ BANNED = [
     (r'\bmarket (?:cap|capitali[sz]ation|value)\b', 'market value'),
     (r'\bshare price\b|\bstock price\b', 'a share price'),
     (r'\bpriced for perfection\b|\bpriced in\b', 'a valuation call'),
+    # error classes found in the deep checks of 2 Nov 2026: no dated corrections or
+    # self-references to older claims or pieces in the text (fix in place instead)
+    (r'\bI (?:was|got (?:it|that)) wrong\b|\bwhere I was wrong\b|\bI withdraw\b|\bI once (?:wrote|said|argued)\b|\bthe piece said\b|\bI first (?:wrote|expected)\b', 'self-correction framing'),
+    (r'\b[Cc]orrections? (?:to|,) |\bCorrection\.', 'a dated correction'),
+    (r'\bmy (?:January|February|March|April|May|June|July|August|September|October|November|December) (?:claim|piece|explainer|note)\b', 'a reference to an older claim or piece'),
+    (r'\bmy [A-Z][A-Za-z]+ claim\b|\bmy first claim\b|\bmy claim on that\b', 'a reference to an older claim'),
+    (r'\b[Aa] (?:8|11|18|8\d)(?:[.,]\d+)?(?:%|x\b| per cent| times\b)', '"a" before a number read with a vowel sound'),
+    (r'\bruns the other way\b|\bturns the usual picture\b', 'a banned stock move (STORY-RULES 18c)'),
+    (r'^(?:None of this|The case against is real)\b', 'a stock opener used across pieces'),
 ]
 # WRITING-FORMAT §3.4: the one whole-stack orientation map, exempt from the against block.
 WHOLE_STACK_MAPS = {'the-two-seconds-after-you-hit-send'}
@@ -240,7 +249,7 @@ def check(path):
     # ── style
     prose = re.sub(r'<[^>]+>', '', storyline(body))
     for pat, label in BANNED:
-        hits = re.findall(pat, re.sub(r'<[^>]+>', '', body), re.I)
+        hits = re.findall(pat, re.sub(r'<[^>]+>', '', body), (0 if pat.startswith(('\\b[Cc]', '\\bmy [A-Z]', '\\b[Aa] ')) else re.I) | re.M)
         if hits:
             fails.append(f'{label} appears {len(hits)}x')
     # length and numbers budget, measured on the reading body only (WRITING-FORMAT §4, §4b);

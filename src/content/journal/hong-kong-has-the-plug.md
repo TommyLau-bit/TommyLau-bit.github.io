@@ -201,7 +201,7 @@ The licence rule quietly fixes one thing in place: the chip. The class Washingto
 <figcaption>Nvidia spec pages, as in <a href="/journal/memory-not-maths/">Memory, not maths</a>; 15 CFR 742.6, as revised 15 January 2026; Sandy Ridge dates as in the timeline above. My framing. Open circles are not announced chips, and the ceiling holds only until the rule changes.</figcaption>
 </figure>
 
-So the one door left ajar points at a chip that ages while the halls are built. When Sandy Ridge's first phase runs, the best chip it may hope for will sit at least three flagships behind. On the figures in [Memory, not maths](/journal/memory-not-maths/), Rubin has four times the H200's memory bandwidth. Its peak maths is about 17 times higher, though that sets Rubin's 4-bit sums against the H200's 8-bit, the smallest format each supports.
+So the one door left ajar points at a chip that ages while the halls are built. When Sandy Ridge's first phase runs, the best chip it may hope for will sit at least three flagships behind. On the figures in [Memory, not maths](/journal/memory-not-maths/), Rubin has four times the H200's memory bandwidth. Its peak maths is about 17 and a half times higher, though that sets Rubin's 4-bit sums against the H200's 8-bit, the smallest format each supports.
 
 That moves the cost onto the tenant, not the landlord. Range sells racks, space, power and cooling, and its customers bring the chips. A tenant capped at the H200 class needs more chips, and so more racks, for the same work than one on the frontier. The rack seller's business survives the cap; the tenant's bill for each unit of work is what grows.
 

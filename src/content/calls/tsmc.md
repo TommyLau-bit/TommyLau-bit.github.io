@@ -114,7 +114,7 @@ A kitchen with a queue does two things. It cooks more meals, and it charges more
 
 **More per wafer.** Revenue in Taiwan dollars rose 36 per cent in the same quarter, so revenue per wafer rose about 17 per cent as well. Part of that is mix, as more wafers move to the newest processes. Part is price. Either way, each wafer is earning more because customers are queuing for the scarce ones.
 
-**More of each sale kept.** Gross margin, the share of each sale left after the cost of making it, reached 67.7 per cent in the second quarter. Two years earlier it was 53.1 per cent. TSMC's own long-term target is 56 per cent and higher through the cycle, so today's margin sits almost twelve points above the floor its management calls normal.
+**More of each sale kept.** Gross margin, the share of each sale left after the cost of making it, reached 67.7 per cent in the second quarter. Two years earlier it was 53.2 per cent. TSMC's own long-term target is 56 per cent and higher through the cycle, so today's margin sits almost twelve points above the floor its management calls normal.
 
 **Where the pull comes from.** High-performance computing, the platform that holds AI accelerators, was 66 per cent of revenue in the second quarter, against 46 per cent at the start of 2024. TSMC said AI accelerators alone were in the high teens as a share of 2025 revenue. It expects that business to grow at a mid to high 50s per cent rate a year from 2024 to 2029.
 

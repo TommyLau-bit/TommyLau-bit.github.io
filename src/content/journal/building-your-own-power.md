@@ -183,7 +183,7 @@ A large campus is still not free of the queue. Signings still run at twice the r
 
 A flood of new gas plans can look like supply arriving, and the federal count says it is not. In EIA's Preliminary Monthly Electric Generator Inventory, the nameplate capacity of planned gas generators rose from 40.5 GW in September 2025 to 71.1 GW in September 2026. The part under construction or built and awaiting commercial operation rose only from 9.6 GW to 13.1 GW, by my arithmetic. Fermi America's Project Matador in Texas alone lists 11.7 GW of gas, of which 0.3 GW is under construction.
 
-That count cannot test the claim that own generation is not faster than a comparable grid connection. EIA's survey covers only plants "connected to the local or regional electric power grid", so an off-grid plant like Socrates is not in it. No federal series sets off-grid energisation dates beside grid ones, so that limb stays open.
+That count cannot test whether own generation is faster than a comparable grid connection. EIA's survey covers only plants "connected to the local or regional electric power grid", so an off-grid plant like Socrates is not in it. No federal series sets off-grid energisation dates beside grid ones, so that question stays open.
 
 The big drilling firm is still booked for years, the lighter rig's diary is filling, and the pipe was booked by the neighbours before the well was dug. Building your own power buys a place in a queue. What it buys is a date, not power.
 

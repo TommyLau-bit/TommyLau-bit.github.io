@@ -142,7 +142,7 @@ So the order of events is the argument. Nvidia announced co-packaged switches, s
 
 ## What could retire the plug
 
-The case against is real, and Nvidia is funding it. On 21 October 2026 it said SPIL targets a 15-fold rise in co-packaged optical engine capacity by mid-2027, and another doubling by the end of 2028. Nvidia also lists "Spectrum-class optical scale-out" in Feynman, its next platform, without a date.
+Nvidia itself is funding the case against. On 21 October 2026 it said SPIL targets a 15-fold rise in co-packaged optical engine capacity by mid-2027, and another doubling by the end of 2028. Nvidia also lists "Spectrum-class optical scale-out" in Feynman, its next platform, without a date.
 
 <figure class="chart">
 <p class="chart-title">The case against: capacity for co-packaged engines is set to rise about thirtyfold</p>

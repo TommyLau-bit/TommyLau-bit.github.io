@@ -1,5 +1,5 @@
 ---
-title: "Nvidia already sells about twelve gigawatts of AI a year. The price assumes the power stops growing after 2027."
+title: "Nvidia already sells about twelve gigawatts of AI a year. Consensus needs half as much again next year; the price assumes the power stops growing after that."
 summary: "Nvidia makes the chips, racks and networks inside AI data centres, and its own filings now say that securing land, power and buildings is the next critical phase of the buildout. On Nvidia's own yardstick its revenue this year equips about 12 gigawatts of computers. Consensus needs half as much again next year, which the grid and equipment queues on this site make hard, but the price pays for only one more year of growth."
 company: "Nvidia"
 ticker: "NVDA"

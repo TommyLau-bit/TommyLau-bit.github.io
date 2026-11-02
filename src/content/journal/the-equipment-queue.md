@@ -190,7 +190,7 @@ The box it moves into decides who waits. In "kept on purpose", the developers wh
 
 The test fails if, at 30 June 2028, Siemens Energy's grid backlog is below 3.6 years of its sales or Eaton's Electrical Americas backlog is below one year. That is a genuine risk. The drift worked out above already takes Siemens Energy close to the line, and Eaton's new plants should be running well before the date.
 
-A pass would not prove a longer wait on its own, since price, early bookings, currency and HVDC contracts can hold a ratio up. Hitachi Energy is left out because its own claim already tests its ratio, at 2.5, to 2031. Schneider publishes no backlog, so it cannot be tested this way.
+A pass would not prove a longer wait on its own, since price, early bookings, currency and HVDC contracts can hold a ratio up. Hitachi Energy is left out; its own plan, set out above, keeps its ratio at 2.5 to 3 times revenue. Schneider publishes no backlog, so it cannot be tested this way.
 
 ## Research notes
 
