@@ -26,14 +26,15 @@ work on notes, calls, the research page or share prices, read `CALLS-SPEC.md`.
   SHORT or NO CALL). The build fails a non-draft note without it.
 - Notes are never rewritten after publication. The monthly mark goes in
   `src/data/calls.ts`, with Tommy's approval.
-- When a later note finds a journal claim was wrong, the note says so openly
-  ("Where I was wrong", and what changed the view). The claim is never edited
-  or deleted, and the archived original text of a piece is never edited. The
-  page itself may be deepened (30 Oct 2026), and says openly where a later
-  finding cuts against a claim on record.
-- **Journal piece first, always** (Tommy, 6 Oct 2026). A note or call is only
-  written on a company that already has its own section and claim in a deep
-  piece. If Tommy asks for a note on a company with none, write that first.
+- **Errors are fixed in the text** (Tommy, 2 Nov 2026, replaces "say so
+  openly"). When a later note or check finds a fact in a piece is wrong, edit
+  the piece so it is simply right: fix the sentence, the chart and the
+  evidence table. No dated "Correction" paragraphs and no "Where I was wrong"
+  framing in pieces or notes. The claims in claims.ts keep their wording, and
+  the archived original text of merged pieces is never edited.
+- **Notes on any company in a piece** (Tommy, 2 Nov 2026, replaces "journal
+  piece first"). A note may rest on a piece's claim even when the claim does
+  not name the company, as long as the company is in the piece.
 - When a journal piece publishes, ask Tommy whether to draft a note on it.
 - Once a month (scheduled task `research-monthly-marks`) the track record
   marks are prepared for Tommy to approve; nothing is pushed without his go.
@@ -138,8 +139,8 @@ A new piece is not published until the site around it is updated. Every time:
   list keeps no statuses (Open, Holding and so on) and no reviews: Tommy
   decided it is a plain list of claims. Do not add status tracking to it or
   suggest it. Scoring lives only in the research track record, for calls. If a note
-  disagrees with a published claim, the pitch says so openly and, if needed,
-  a new dated claim is added beside the old one. Never a silent fix.
+  finds a published claim wrong, a new dated claim may be added beside the
+  old one; a wrong fact in a piece's text is simply fixed (2 Nov 2026).
 - **The numbers.** If the piece rests on a new structural figure, add it to
   `src/data/numbers.ts`. Physical figures only, never anything about shares.
 - **Companies** build themselves from the exposure map. Spell company names

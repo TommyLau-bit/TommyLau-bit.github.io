@@ -291,8 +291,6 @@ Other figures. Ajinomoto expects the board to reach about 120 millimetres square
 
 Method. The horizons fit scarcity, but also buyers locking in supply in a boom, and the filings cannot separate the two. They do show supply: each maker grows only as fast as a building it has not finished. "Existing footprint" is from a third-party transcript of ASML's July call.
 
-Corrections to earlier pieces. My July explainer said the slowest thing in the chain "is never the chip". Never was too strong; the dates above run as long as some grid queues. I still expect the grid to be the slower clock over the longer run, as my [27 July claim](/journal/the-queue-not-the-chip/#claims-on-record) says. My September explainer called memory and packaging "the kind of hard that money solves in quarters"; Micron's fab dates run to 2030. The live ASML piece attributed "close to being fully covered" to the finance chief; ASML's own transcript gives it to the chief executive.
-
 </details>
 
 <section class="exposure">

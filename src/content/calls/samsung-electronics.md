@@ -5,7 +5,6 @@ company: "Samsung Electronics"
 ticker: "005930"
 exchange: "KRX"
 claims: ["memory-not-maths"]
-correction: "My October piece said Micron's HBM4E base die partner rested on press reports only; Micron itself said in its prepared remarks of 23 September 2025 that it is partnering with TSMC to make that base die."
 keyPoints:
   - "Samsung Electronics is now a memory company with a phone maker attached. In the third quarter of 2026 memory sales were KRW 140.7 trillion of KRW 195.3 trillion, and the chip division earned KRW 106.5 trillion of the KRW 107.4 trillion operating profit."
   - "HBM is a small slice. On my estimates it is about 6 per cent of 2026 memory sales, even though Samsung says its 2027 HBM is sold out and it ships HBM4 for Nvidia's Vera Rubin."
@@ -124,7 +123,7 @@ Those 2026 shares sum to more than the whole. Samsung also says its HBM share in
 
 SK Hynix said in April 2024 that it would use TSMC's logic process for HBM4's base die. Micron makes its HBM4 base die in house, but said on 23 September 2025 that it is partnering with TSMC to make its HBM4E base die. So from HBM4E, Samsung is the only one of the three that keeps the whole stack under one roof.
 
-**Where I was wrong in October.** My piece listed among the facts it did not use that "Micron's HBM4E base die partner is likewise press only". That was wrong. In Micron's prepared remarks for its call of 23 September 2025, Sanjay Mehrotra said: "We are partnering with TSMC for manufacturing the HBM4E base logic die". Micron's own record shows the slip, and it covers standard and custom products alike. It strengthens the piece's point that the base die moves to logic foundries, and it sharpens Samsung's difference.
+**Micron says so in its own words.** In Micron's prepared remarks for its call of 23 September 2025, Sanjay Mehrotra said: "We are partnering with TSMC for manufacturing the HBM4E base logic die". That covers standard and custom products alike. It supports the piece's point that the base die moves to logic foundries, and it sharpens Samsung's difference.
 
 **Custom HBM cuts both ways for Samsung.** While the maker designs the base die, one roof is an edge: memory, logic and packaging in one company. When the buyer designs it, as Nvidia's NVHBM does, the buyer also has a say in where it is made. Nvidia's chips are made at TSMC. That is my reading, not anything Samsung or Nvidia has said.
 

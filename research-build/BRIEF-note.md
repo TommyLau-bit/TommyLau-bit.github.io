@@ -7,7 +7,7 @@ You are drafting ONE initiation note for Tommy's site. Tommy decides the call; y
 - /Users/tommylau/Desktop/journal/CLAUDE.md (house style: British spelling, NEVER an em dash or en dash anywhere, short sentences)
 - The journal piece your note rests on (path below) and its entry in src/data/claims.ts.
 - Worked example, copy its structure exactly:
-  - Text of record: src/content/calls/vertiv.md (frontmatter fields: title, summary, company, ticker, exchange, claims, correction (only if needed), keyPoints, files, draft, call, draftView, charts; body sections in this exact order: "## The thesis", "## What the market prices in, and where I differ", "## Valuation, with the working", `<div class="charts-slot"></div>`, "## Risks, and what would change my view", "## Conclusion", then `<p class="sources">Sources: ... Personal research, not investment advice.</p>`). Also src/content/calls/nebius.md for a NO CALL example (call.revisitIf).
+  - Text of record: src/content/calls/vertiv.md (frontmatter fields: title, summary, company, ticker, exchange, claims, keyPoints, files, draft, call, draftView, charts; body sections in this exact order: "## The thesis", "## What the market prices in, and where I differ", "## Valuation, with the working", `<div class="charts-slot"></div>`, "## Risks, and what would change my view", "## Conclusion", then `<p class="sources">Sources: ... Personal research, not investment advice.</p>`). Also src/content/calls/nebius.md for a NO CALL example (call.revisitIf).
   - PDF + model build: research-build/vertiv/ (data.py single source of figures, build_charts.py, build_model.py, check_model.py, build_note.py, common.py, render.py) and research-build/nebius/. Template docs: ~/Desktop/jobs/research coverage/_note_template/README.md.
   - Look at public/research/2026-10-06_Vertiv_Initiation.pdf (5 pages) for the target depth and look.
 
@@ -18,7 +18,7 @@ You are drafting ONE initiation note for Tommy's site. Tommy decides the call; y
 
 ## The analysis
 - Thesis in the journal's analogy style, at buy-side depth, built on the piece's claim.
-- **Claims and notes must agree.** Check the claim and the piece's evidence against what you find. If the piece got something wrong, the note says so openly in a "**Where I was wrong in September**" (or "...in October") passage: what was wrong, and what changed the view. Add a one-sentence `correction` in frontmatter. NEVER edit the journal piece or claims.ts. If nothing was wrong, omit both.
+- **Claims and notes must agree.** Check the claim and the piece's evidence against what you find. If the piece got a fact wrong, do NOT write a "Where I was wrong" passage or a `correction` field (Tommy, 2 Nov 2026). State the right fact plainly in the note, and report the exact sentence in the piece, the right wording and the primary source in your report so the main session can fix the piece in place. NEVER edit the journal piece or claims.ts yourself.
 - Variant perception: what the price implies vs your view, with numbers.
 - Valuation with the working: the method that fits the business, a key financials table (history, guidance, your estimates), bear/base/bull with probabilities (25/50/25 unless you justify otherwise), a 3x3 sensitivity grid, peers.
 - Risks, catalysts with dates (verify the next results date; if unconfirmed say so), what would change the view.
@@ -45,11 +45,11 @@ You are drafting ONE initiation note for Tommy's site. Tommy decides the call; y
 - Touch only your own files. Other agents are building other companies in the same folders at the same time.
 
 ## Report back (under 400 words)
-Company, price and date, draft view (direction, target, conviction) with the 3-line reasoning, bear/base/bull values, the main variant point, any "where I was wrong" finding, next results date, page count, and anything you could not verify.
+Company, price and date, draft view (direction, target, conviction) with the 3-line reasoning, bear/base/bull values, the main variant point, any fact in the piece that is wrong (exact sentence, fix, source), next results date, page count, and anything you could not verify.
 
 ## Lessons from the batch 1 fact-check (follow these too)
 - **Never mention Claude, a paper portfolio, a radar or any "earlier read" in the note, the md or the model.** If a research input raised a question, ask the question in your own words ("The obvious objection is...", "The piece left one question unanswered...").
-- **"Where I was wrong" must be exactly right.** Quote the piece's actual sentence, read it in context (e.g. "the same quarter" means the quarter named just before), and prove the mechanism from primary line items (income statement lines, segment tables), not summaries. Say "what showed me the slip" rather than "what changed my view" if the view did not change. Do not claim the piece "left out" something without checking it is not there.
+- **Any error you report in a piece must be exactly right.** Quote the piece's actual sentence, read it in context, and prove it from primary sources (line items, the company's own words), not summaries.
 - Cite the exact filing for each fact (8-K vs 10-Q vs 10-Q/A vs shareholder letter vs call). If a 10-Q/A exists, use it.
 - Every arithmetic statement about the sensitivity grid must match the grid (e.g. "either X or Y" vs "both").
 - Dates of highs/lows: check intraday high date vs highest close date separately.

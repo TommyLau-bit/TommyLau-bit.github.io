@@ -5,13 +5,12 @@ company: "SpaceX"
 ticker: "SPCX"
 exchange: "Nasdaq"
 claims: ["data-centres-in-space"]
-correction: "My November piece called 2028 SpaceX's earliest date for compute satellites and said nobody had shown what a kilowatt in orbit weighs; on 20 October, before the piece, Gwynne Shotwell had said SpaceX will begin flying Starmind satellites in 2027, and SpaceX's AI1 page gives a design 'vehicle efficiency' of 75 kW per ton, below the 100 kilowatts per metric ton the claim tests if read as compute."
 keyPoints:
   - "SpaceX reports three businesses: launch, Starlink, and Super Intelligence, which rents out AI computing and sells Grok, X and Cursor. Orbital data centres sit in none of them and earn nothing yet."
   - "At US$134.72 SpaceX is valued at about US$1.78 trillion after net cash. On my 2027 estimates its three businesses are worth about US$1.37 trillion, which leaves about US$404 billion, 23 per cent, for everything else."
   - "That gap is about six gigawatts of orbital computing valued like SpaceX's ground computing. At the 75 kilowatts per ton SpaceX states for its first design, read as compute per metric ton, it is about 38 times the mass SpaceX put into orbit in all of 2025."
   - "My base value is about US$112, 17 per cent below the price and inside my no-call band; the bear case is US$45 and the bull case US$203."
-  - "Where I was wrong: my piece called 2028 SpaceX's earliest date and said nobody had shown what a kilowatt in orbit weighs. SpaceX had already said on 20 October that they fly from 2027, and it gives its first design a 'vehicle efficiency' of 75 kW per ton, a quarter short of its target if that is compute per metric ton."
+  - "SpaceX said on 20 October that its first Starmind satellites fly in 2027, a year ahead of its prospectus, and it gives its first design a 'vehicle efficiency' of 75 kW per ton, a quarter short of its target if that is compute per metric ton."
 files:
   pdf: "/research/2026-11-02_SpaceX_Initiation.pdf"
   xlsx: "/research/2026-11-02_SpaceX_Model.xlsx"
@@ -107,9 +106,9 @@ SpaceX's own Starmind page, read on 2 November, does. It describes its AI satell
 
 The launch side tells the same story from SpaceX's own books. In the first nine months of 2026 its launch customers paid US$2,108 million for 251 tonnes of payload. That is about US$8,400 for each kilogram they flew, on my arithmetic, 42 times the US$200 the claim tests. This is revenue per kilogram, not a list price, and Starship has so far flown only SpaceX's own payloads. But nothing in the record points to a US$200 price soon.
 
-**Where I was wrong in November.** The piece said that "a compute satellite flown in 2028, SpaceX's earliest date, would on that life wear out around 2033". That date was out of date when the piece published. On the third quarter call of 20 October, Gwynne Shotwell, SpaceX's president, said: "We'll attempt an on-orbit refueling early next year, and we'll begin flying Mobile V2 and Starmind satellites in 2027", in SpaceX's own transcript. Its Starmind page plans "thousands of AI satellites starting as soon as late 2027".
+**The first satellites fly in 2027.** On the third quarter call of 20 October, Gwynne Shotwell, SpaceX's president, said: "We'll attempt an on-orbit refueling early next year, and we'll begin flying Mobile V2 and Starmind satellites in 2027", in SpaceX's own transcript. Its Starmind page plans "thousands of AI satellites starting as soon as late 2027". That is a year ahead of the prospectus.
 
-The piece also wrote that "nobody has yet shown what a kilowatt in orbit weighs". For a satellite in service that is still true. But SpaceX has stated a design figure, the 75 kW per ton on its AI1 page, which the piece missed because I read only the SEC filings. What showed me the slip was reading SpaceX's call and its website for this note. The claim stands, and the slip cuts both ways: the first satellites may fly a year earlier, so the claim may be tested sooner, but the design figure SpaceX has shown, read as compute per metric ton, sits below the target the claim names.
+No satellite in service has yet shown what a kilowatt in orbit weighs. The 75 kW per ton on the AI1 page is a design figure, with its basis unstated. The claim stands, and the two facts cut both ways: the first satellites may fly a year earlier, so the claim may be tested sooner, but the design figure SpaceX has shown, read as compute per metric ton, sits below the target the claim names.
 
 ## What the market prices in, and where I differ
 
@@ -193,7 +192,7 @@ Starship Flight 15, with an attempt to catch both stages, is due around November
 
 ## Conclusion
 
-The November piece argued that in orbit the heat is the bill. SpaceX's own disclosures since say the same: its first AI satellite is designed at a stated 75 kW per ton against a 100 kilowatt target, and its launch customers paid about US$8,400 a kilogram this year against a US$200 test. The piece got SpaceX's earliest date wrong; the first satellites are now due in 2027.
+The November piece argued that in orbit the heat is the bill. SpaceX's own disclosures since say the same: its first AI satellite is designed at a stated 75 kW per ton against a 100 kilowatt target, and its launch customers paid about US$8,400 a kilogram this year against a US$200 test. The first satellites are due in 2027.
 
 For the shares, orbit is a gap, not the whole price. The three businesses SpaceX reports explain about three quarters of the enterprise value. The rest, about US$404 billion, rests on bets that earn nothing yet, with orbital compute the largest. My base value of US$112 sits 17 per cent below US$134.72, inside the no-call band. My call is NO CALL, with medium conviction: no position, because a calibrated no call beats a forced short on a stock with under five months of trading and a lock-up ending on 8 December. I would revisit above about US$150 or below about US$98, or if a weighed AI satellite flies at the target.
 

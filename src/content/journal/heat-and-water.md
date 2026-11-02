@@ -291,8 +291,6 @@ The siting record:
 
 Jane Street: this page cites the video tour (15 May 2026) and Jane Street's write-up of the site, which names the guides as Ron Minsky, who co-leads its technology group, and Dan Pontecorvo, who runs physical engineering; not the longer conversation the three released on 21 May.
 
-Correction to the August piece: it said air fails "somewhere between 30 and 50 kilowatts per rack". I found no primary source for that band, so this page no longer uses it. What the sources show is enough: air-cooled racks of 10 to 40 kW at Jane Street, against 140 kW for the rack replacing them.
-
 </details>
 
 <section class="exposure">

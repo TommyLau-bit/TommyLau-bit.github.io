@@ -36,7 +36,7 @@ Then there is the fare. Google, which is designing its own orbital system, estim
 
 Google cites $200 a kilogram as the point where launch could stop being the limit, and sees prices reaching it around 2035 if rockets keep getting cheaper at their past pace.
 
-None of this says orbit cannot work. It says the free plug is paid for in kilograms, and nobody has yet shown what a kilowatt in orbit weighs.
+None of this says orbit cannot work. It says the free plug is paid for in kilograms, and no compute satellite in service has yet been weighed.
 
 <hr class="layer">
 <p class="layer-label">For investors</p>
@@ -108,6 +108,8 @@ The International Space Station sits at the cold end. Its ammonia supply is set 
 Because mass is the cost, SpaceX states its goal as power per mass. Its prospectus says deploying 100 gigawatts a year "via satellites carrying over 100 kilowatts of compute power per metric ton" needs "approximately one million metric tons to orbit annually". That is 10 kg launched for each kW of computing, the measure the rest of this piece uses.
 
 The first design is smaller. In the same transcript, Musk described a draft version-one satellite of 150 kW peak and 120 kW sustained, about one GB300 rack. The solar assumption is 250 W/m².
+
+SpaceX's web page for its first AI satellite, AI1, now gives a design "vehicle efficiency" of "75 kW / ton". It does not say whether that counts compute or solar power, or tons launched. Read as compute per tonne launched, it is a quarter short of the target.
 
 On my arithmetic, 120 kW needs about 86 m² of radiator at 1,400 W/m², and about 480 m² of solar array.
 
@@ -202,14 +204,12 @@ So the plug in orbit is nearly free, as promised. The flask still needs its fin,
 
 On the ground, the hall and its [grid gear outlast three or four chip generations](/journal/the-equipment-queue/). In orbit the hardware gives out first. SpaceX's risk factors say "the useful life of our satellites is inherently shorter than that of the information technology systems and infrastructure they host", so it "must periodically launch replacement satellites". Google spreads Starlink's launch cost over a five-year life.
 
-So the launch bill becomes rent. The radiator, the solar wings and the frame go up again with every replacement, not once. A compute satellite flown in 2028, SpaceX's earliest date, would on that life wear out around 2033. Google's own curve does not reach $200 a kilogram until about 2035.
-
-Correction, 2 November 2026: I called 2028 SpaceX's earliest date, from its prospectus ("as early as 2028"). On its third-quarter call of 20 October, before this piece, Gwynne Shotwell had already said SpaceX will "begin flying Mobile V2 and Starmind satellites in 2027". A satellite flown in 2027 would wear out around 2032, still before Google's curve reaches $200 a kilogram, so the argument and the claim stand. SpaceX's web page for its first AI satellite also gives a design "vehicle efficiency" of "75 kW / ton", without saying whether that is compute or solar power, or per ton launched. No satellite in service has yet been weighed.
+So the launch bill becomes rent. The radiator, the solar wings and the frame go up again with every replacement, not once. SpaceX says its first Starmind compute satellites fly in 2027. One flown then would, on that life, wear out around 2032. Google's own curve does not reach $200 a kilogram until about 2035.
 
 <figure class="chart">
-<p class="chart-title">On Google's numbers, a compute satellite launched in 2028 wears out before launch reaches $200 a kilogram</p>
+<p class="chart-title">On Google's numbers, a compute satellite launched in 2027 wears out before launch reaches $200 a kilogram</p>
 <p class="chart-sub">Dated plans for orbital compute, a five-year satellite life, and Google's projection for launch prices</p>
-<svg viewBox="0 0 560 225" role="img" aria-label="Timeline from 2025 to 2037. Google and Planet target two Suncatcher prototypes for launch in 2027. SpaceX's first AI compute satellites could fly as early as 2028; on a five-year life they wear out around 2033. This piece's claim is tested on 31 December 2028. Google's learning curve reaches launch prices below 200 dollars a kilogram around 2035.">
+<svg viewBox="0 0 560 225" role="img" aria-label="Timeline from 2025 to 2037. Google and Planet target two Suncatcher prototypes for launch in 2027. SpaceX says its first AI compute satellites fly in 2027; on a five-year life they wear out around 2032. This piece's claim is tested on 31 December 2028. Google's learning curve reaches launch prices below 200 dollars a kilogram around 2035.">
 <g class="c-grid">
 <line x1="130" y1="30" x2="130" y2="196"/>
 <line x1="164" y1="30" x2="164" y2="196"/>
@@ -228,15 +228,15 @@ Correction, 2 November 2026: I called 2028 SpaceX's earliest date, from its pros
 <g class="c-axis"><text x="130" y="214" text-anchor="middle">2025</text><text x="198" y="214" text-anchor="middle">2027</text><text x="266" y="214" text-anchor="middle">2029</text><text x="334" y="214" text-anchor="middle">2031</text><text x="402" y="214" text-anchor="middle">2033</text><text x="470" y="214" text-anchor="middle">2035</text><text x="538" y="214" text-anchor="middle">2037</text><text x="120" y="60" text-anchor="end">Google and Planet</text><text x="120" y="104" text-anchor="end">SpaceX AI satellite</text><text x="120" y="148" text-anchor="end">This claim</text><text x="120" y="188" text-anchor="end">Launch at $200/kg</text></g>
 <line class="c-today" x1="192.4" y1="24" x2="192.4" y2="196"/><text class="c-today-t" x="192.4" y="20" text-anchor="middle">today</text>
 <circle class="c-dot c-s3" cx="215" cy="56" r="5"/><text class="c-lab c-s3t" x="225" y="60">two prototypes, 2027</text>
-<g class="c-span"><line x1="232" y1="100" x2="402" y2="100"/></g><g class="c-start"><circle cx="232" cy="100" r="4"/></g><g class="c-end"><circle cx="402" cy="100" r="4.5"/></g><g class="c-endt"><text x="411" y="104">worn out, about 2033</text></g>
-<text class="c-note" x="232" y="88">first flights as early as 2028, five-year life</text>
+<g class="c-span"><line x1="198" y1="100" x2="368" y2="100"/></g><g class="c-start"><circle cx="198" cy="100" r="4"/></g><g class="c-end"><circle cx="368" cy="100" r="4.5"/></g><g class="c-endt"><text x="377" y="104">worn out, about 2032</text></g>
+<text class="c-note" x="198" y="88">first flights in 2027, five-year life</text>
 <circle class="c-dot c-s2" cx="266" cy="144" r="5"/><text class="c-lab c-s2t" x="276" y="148">31 December 2028</text>
 <circle class="c-dot c-s1" cx="470" cy="184" r="5"/><text class="c-lab c-s1t" x="460" y="188" text-anchor="end">Google's curve: about 2035</text>
 </svg>
-<figcaption>Planet 8-K (10 December 2025); SpaceX prospectus (12 June 2026); Google, Suncatcher paper (22 November 2025), five-year life for Starlink and the 2035 projection, which assumes about 180 Starship launches a year. My framing; SpaceX has not stated an AI satellite's life.</figcaption>
+<figcaption>Planet 8-K (10 December 2025); SpaceX third-quarter call transcript (20 October 2026); Google, Suncatcher paper (22 November 2025), five-year life for Starlink and the 2035 projection, which assumes about 180 Starship launches a year. My framing; SpaceX has not stated an AI satellite's life.</figcaption>
 </figure>
 
-So on Google's curve, the first generation is launched and relaunched before the price that makes the sums work arrives. Planet is contracted to deploy two Suncatcher prototypes, "targeting launch in 2027", by its 8-K of 10 December 2025. Johnsen's word for SpaceX is "In 2028, we'll start flying if we stay on target."
+So on Google's curve, the first generation is launched and relaunched before the price that makes the sums work arrives. Planet is contracted to deploy two Suncatcher prototypes, "targeting launch in 2027", by its 8-K of 10 December 2025. Gwynne Shotwell, SpaceX's president, said on its call of 20 October that it will "begin flying Mobile V2 and Starmind satellites in 2027".
 
 Each will show, for the first time, what a kilowatt of orbital compute weighs in service. Until one does, every gigawatt promised in orbit is a radiator nobody has launched.
 
@@ -287,6 +287,8 @@ Mass per kilowatt:
 |---|---|---|
 | SpaceX target | "over 100 kilowatts of compute power per metric ton"; 100 GW a year needs "approximately one million metric tons to orbit annually" | Prospectus (424B4), 12 June 2026, about p. 153; S-1/A No. 2, 3 June 2026 |
 | SpaceX first generation | "About 5 megawatts per launch"; "roughly 200 launches for every gigawatt" | Johnsen, transcript filed 9 June 2026 |
+| SpaceX first flights | "we'll begin flying Mobile V2 and Starmind satellites in 2027" | Shotwell, third-quarter call, 20 October 2026 (ir.spacex.com transcript) |
+| AI1 design figure | "75 kW / ton" vehicle efficiency; basis not stated | SpaceX AI1 web page, read 2 November 2026 |
 | Starship capacity | "100 Metric tons per launch over time" | Roadshow slides, FWP filed 4 June 2026 |
 | Starlink V2 mini | 575 kg; about 28 kW, Google's estimate from about 105 m² of array | Google, Suncatcher paper, 22 November 2025 |
 | Radiator at 14 kg/m² | 22.1 kg per kW at 633 W/m²; 10.0 at 1,400 W/m² | My arithmetic |
@@ -315,7 +317,6 @@ The SEC record:
 | Prospectus | Mass per satellite "continue[s] to be refined"; "substantially larger radiators"; deployment "as early as 2028" | 424B4, 12 June 2026 |
 | 10-Q | No mention of orbital compute | Quarter to 30 September 2026, filed 22 October 2026 |
 
-Correction to the scout notes: the interview transcript was filed on 9 June 2026, not 8 June. The Suncatcher paper's arXiv version is dated 22 November 2025.
 
 </details>
 

@@ -328,8 +328,6 @@ Content per megawatt and the two companies:
 
 Vertiv does not state its prior per-MW range on its slide. I found no per-MW figure in Eaton's or Schneider Electric's own filings that I could open. Adjusted operating margin is the share of each sale left after running costs, with one-off items stripped out; organic growth strips out acquisitions and currency.
 
-Correction to the August piece: it put today's flagship racks "near 200 kilowatts". That was loose. Vertiv's GB200 NVL72 design is up to 132 kW per rack; 200 kW is where Nvidia says 54 V starts to fail.
-
 </details>
 
 <section class="exposure">

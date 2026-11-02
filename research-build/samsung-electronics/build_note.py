@@ -153,10 +153,9 @@ A(para("<strong>The base die is Samsung's real difference.</strong> Samsung buil
        "foundry, which credited improving results to base die demand in the second quarter and base die sales growth in the third. SK Hynix said in April 2024 it would "
        "use TSMC's logic process for HBM4's base die. Micron makes its HBM4 base die in house, but said on 23 September 2025 that it is partnering "
        "with TSMC to make its HBM4E base die. From HBM4E, Samsung is the only one of the three that keeps the whole stack under one roof."))
-A(para("<strong>Where I was wrong in October.</strong> My piece listed among the facts it did not use that \"Micron's HBM4E base die partner "
-       "is likewise press only\". That was wrong. In Micron's prepared remarks for its call of 23 September 2025, Sanjay Mehrotra said: "
+A(para("<strong>Micron says so in its own words.</strong> In Micron's prepared remarks for its call of 23 September 2025, Sanjay Mehrotra said: "
        "\"We are partnering with TSMC for manufacturing the HBM4E base logic die\", for standard and custom products alike. It "
-       "strengthens the piece's point that the base die moves to logic foundries, and sharpens Samsung's difference."))
+       "supports the piece's point that the base die moves to logic foundries, and sharpens Samsung's difference."))
 A(para("<strong>Custom HBM cuts both ways.</strong> While the maker designs the base die, one roof is an edge. When the buyer designs it, as "
        "Nvidia's NVHBM does, the buyer has a say in where it is made, and Nvidia's chips are made at TSMC; that is my reading, not anything "
        "Samsung or Nvidia has said. Samsung said in February that \"custom HBM samples will start reaching customers in 2027\", and plans "

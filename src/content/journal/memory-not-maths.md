@@ -97,7 +97,7 @@ AMD sells on it directly: its own slide says "Highest memory bandwidth & capacit
 
 Wider memory needs a cleverer base die, the chip at the foot of each stack that talks to the processor. From HBM4 it moves towards logic processes, the kind used for processors in chip foundries.
 
-The three makers have taken three routes. SK Hynix said in April 2024 that, for HBM4, it planned to "adopt TSMC's advanced logic process for HBM4's base die", so it could "produce customized HBM". Samsung makes its base die in its own foundry: its foundry business credited improving earnings to "HBM base-die demand" in July and to "HBM base-die sales growth" in October, on a 4 nanometre process. Micron, as [the chip supply chain piece](/journal/the-chip-supply-chain/) notes, makes its HBM4 base die in-house.
+The three makers have taken three routes. SK Hynix said in April 2024 that, for HBM4, it planned to "adopt TSMC's advanced logic process for HBM4's base die", so it could "produce customized HBM". Samsung makes its base die in its own foundry: its foundry business credited improving earnings to "HBM base-die demand" in July and to "HBM base-die sales growth" in October, on a 4 nanometre process. Micron, as [the chip supply chain piece](/journal/the-chip-supply-chain/) notes, makes its HBM4 base die in-house. For HBM4E it moves to TSMC, "for both standard and customized products", as it said in September 2025.
 
 So at Samsung, and at SK Hynix if its 2024 plan held, a stack of memory now passes through a logic factory before it is finished. Samsung's foundry results already move with HBM.
 
@@ -278,7 +278,7 @@ There are no earlier claims on this subject; this is the first.
 
 Maths per byte is peak dense operations divided by bytes a second, my arithmetic. Nvidia publishes sparse figures by default and states that dense is half. The A100 is shown at 16-bit because 8-bit integer maths was not its usual format for models; at 8-bit its maths per byte would be about 306. Rubin at 16-bit (4 PFLOPS dense) gives about 210 against about 280 to 310 for Blackwell Ultra (Nvidia's HGX and rack pages imply 2.25 to 2.5 PFLOPS dense), so at fixed format Rubin narrowed the gap, which fits the story of HBM4 catching up a step. The V100 of 2017 is left off because Nvidia no longer publishes its specification page.
 
-Not used: market shares and any report that SK Hynix's shipping HBM4 base die is made by TSMC, which rest on press and research firms; SK Hynix's own words are its plan of April 2024. Micron's HBM4E base die partner is likewise press only. Correction, 2 November 2026: that was wrong. Micron named its partner in its own prepared remarks of 23 September 2025: "We are partnering with TSMC for manufacturing the HBM4E base logic die for both standard and customized products." The [Samsung Electronics note](/research/samsung-electronics/) found it. The claim is unchanged.
+Not used: market shares and any report that SK Hynix's shipping HBM4 base die is made by TSMC, which rest on press and research firms; SK Hynix's own words are its plan of April 2024. Micron names its own: "We are partnering with TSMC for manufacturing the HBM4E base logic die for both standard and customized products" (prepared remarks, 23 September 2025).
 
 </details>
 

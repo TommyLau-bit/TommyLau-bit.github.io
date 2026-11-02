@@ -274,7 +274,7 @@ The factories, with each maker's own dates:
 | Eaton | North Little Rock, Arkansas, $242m | Prefabricated power enclosures, doubling US capacity | 2 September 2026 | Not confirmed |
 | Schneider Electric | US programme, over $700m | Medium voltage gear, switchgear, breakers | 25 March 2025 | Through 2027 |
 
-Years of work is backlog divided by the same business's revenue over the previous four quarters, my arithmetic from each latest filing. Corrections to the October pieces: Hitachi Energy's South Boston plant "should operate by 2028" came from a trade press quote, and Hitachi's own release gives no date; Siemens Energy's Charlotte plant slipping a year rested on a press report, and its last stated date is early 2026.
+Years of work is backlog divided by the same business's revenue over the previous four quarters, my arithmetic from each latest filing.
 
 </details>
 

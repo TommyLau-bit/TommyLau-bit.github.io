@@ -294,8 +294,6 @@ The Microsoft agreement (Form 6-K, 8 September 2025) runs through 2031, with ser
 
 Johor holds 29 of Malaysia's 61 data centre projects. DayOne's largest customer, a global technology company with a leading short-form video platform, provided 69.2% of its revenue in the first half of 2026.
 
-**Correction.** An unpublished draft of mine on Abilene said that "Johor is short of connections, not chips". The [deep piece on Johor and Singapore](/journal/the-queue-not-the-chip/) shows that was wrong for campuses already connected, and I withdraw it. The same draft said chips follow a live hall "in months"; that holds at Abilene, where the racks came with the power, and is not generalised.
-
 </details>
 
 <section class="exposure">

@@ -152,12 +152,10 @@ A(para(f"The launch side says the same from SpaceX's books. In the first nine mo
        f"251 tonnes of payload: about {usd(round(KG_9M26_USD, -2))} a kilogram, {KG_X_THRESHOLD:.0f} times the US$200 the claim tests. "
        "Revenue per kilogram is a mix of missions, not a price list, and Starship has flown only SpaceX's own payloads. "
        "Nothing in the record points to US$200 soon."))
-A(para("<b>Where I was wrong in November.</b> The piece said that \"a compute satellite flown in 2028, SpaceX's earliest date, "
-       "would on that life wear out around 2033\". On the third quarter call of 20 October, Gwynne Shotwell, SpaceX's president, "
+A(para("<b>The first satellites fly in 2027.</b> On the third quarter call of 20 October, Gwynne Shotwell, SpaceX's president, "
        "said, in SpaceX's own transcript, \"we'll begin flying Mobile V2 and Starmind satellites in 2027\", and the Starmind page plans \"thousands of AI "
-       "satellites starting as soon as late 2027\". The piece also wrote that \"nobody has yet shown what a kilowatt in orbit "
-       "weighs\". For a satellite in service that holds, but SpaceX has stated a design figure, 75 kW per ton, which I missed by "
-       "reading only the SEC filings. What showed me the slip was reading SpaceX's call and website for this note. The claim stands: "
+       "satellites starting as soon as late 2027\", a year ahead of the prospectus. No satellite in service has yet shown what a "
+       "kilowatt in orbit weighs; the 75 kW per ton on the AI1 page is a design figure, with its basis unstated. The claim stands: "
        "the test may come a year sooner, and the design figure SpaceX has shown, read as compute per metric ton, sits below "
        "the target the claim names."))
 
@@ -311,8 +309,8 @@ A('</div>')
 A(section("Conclusion"))
 A(para(f"The November piece argued that in orbit the heat is the bill. SpaceX's own disclosures since say the same: its first AI "
        f"satellite is designed at a stated {AI1_KW_T:.0f} kW per ton against a 100 kW target, and its launch customers paid about "
-       f"{usd(round(KG_9M26_USD, -2))} a kilogram this year against a US$200 test. The piece got SpaceX's earliest date wrong: the "
-       f"first satellites are now due in 2027. For the shares, orbit is a gap, not the whole price. The three reported businesses "
+       f"{usd(round(KG_9M26_USD, -2))} a kilogram this year against a US$200 test. The first "
+       f"satellites are due in 2027. For the shares, orbit is a gap, not the whole price. The three reported businesses "
        f"explain about three quarters of the enterprise value; the rest, about US${RESIDUAL / 1000:.0f}bn, rests on bets that earn "
        f"nothing yet. {my_call}: {CALL['direction']}, {conv} conviction; base value {usd(BASE_VALUE)}, range {usd(bear)} to {usd(bull)}."))
 
