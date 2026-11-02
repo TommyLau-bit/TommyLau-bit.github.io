@@ -44,8 +44,12 @@ export function latest(p: Pitch) {
   return { score: s, mark, ret: mark ? callReturn(p, mark.price) : null, move };
 }
 
-export const fmtMoney = (cur: string, n: number) =>
-  `${cur}${n.toLocaleString('en-GB', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+// yen and won have no minor unit, so they print without decimals
+const wholeUnits = (cur: string) => /^(¥|KRW|₩)/.test(cur.trim());
+export const fmtMoney = (cur: string, n: number) => {
+  const d = wholeUnits(cur) ? 0 : 2;
+  return `${cur}${n.toLocaleString('en-GB', { minimumFractionDigits: d, maximumFractionDigits: d })}`;
+};
 export const fmtPct = (r: number) => `${r >= 0 ? '+' : ''}${(r * 100).toFixed(1)}%`;
 
 // "Long, target US$300" / "No call" / "Short, target US$40"
