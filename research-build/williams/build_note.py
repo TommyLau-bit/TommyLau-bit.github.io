@@ -87,7 +87,7 @@ A(statbox([
 A('</div><div class="maincol">')
 A('<p class="lede">Williams owns the gas main and now builds the power plant beside the data centre. At US$74, the price pays for the pipes in full and the power plants only in part.</p>')
 A(para("Williams moves about a third of America's gas through Transco and its other pipes. Since late July it has also run its own gas "
-       "power plant for Meta in Ohio, off the grid, the first of five such projects. My October piece argued that building your own "
+       "power plant for Meta in Ohio, off the grid, the first of five such projects. My September piece argued that building your own "
        "power swaps the grid's queue for the machine makers' queues. Williams got ahead by buying its machines first."))
 A(para(f"The power plants earn well, about 5 times build multiples on contracts of 10 to 12.5 years. But on my estimates they make "
        f"about {pi_share28 * 100:.0f}% of 2028 Adjusted EBITDA, and the price already pays today's full multiple for the pipes."))
@@ -297,7 +297,7 @@ A(para(f"<strong>{my_call} is wrong if:</strong> {WRONG_IF[0].lower() + WRONG_IF
 A('</div>')
 
 A(section("Conclusion"))
-A(para(f"The October piece argued that building your own gas power swaps the grid's queue for the makers' queues. Williams agrees in its "
+A(para(f"The September piece argued that building your own gas power swaps the grid's queue for the makers' queues. Williams agrees in its "
        "own words: it bought the machines first, and equipment timing sets its pace. Its first plant for Meta entered service in late July, "
        "and four more are due by the end of 2028. The power business earns well, but it is about "
        f"a ninth of Williams' EBITDA by 2028, and the price already pays today's full multiple for the pipes. {my_call}: "

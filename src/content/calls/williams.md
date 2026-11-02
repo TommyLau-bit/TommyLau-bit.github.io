@@ -1,6 +1,6 @@
 ---
 title: "Williams owns the gas main and now builds the power plant beside the data centre. At US$74, the price pays for the pipes in full and the power plants only in part."
-summary: "Williams moves a third of America's gas, and since July it has run its own gas power plant for Meta in Ohio, off the grid. My October piece argued that building your own power swaps the grid's queue for the machine makers' queues; Williams got ahead by buying its machines first. At US$74.35 my base value sits about 5 per cent above the price, too little for a call."
+summary: "Williams moves a third of America's gas, and since July it has run its own gas power plant for Meta in Ohio, off the grid. My September piece argued that building your own power swaps the grid's queue for the machine makers' queues; Williams got ahead by buying its machines first. At US$74.35 my base value sits about 5 per cent above the price, too little for a call."
 company: "Williams"
 ticker: "WMB"
 exchange: "NYSE"
@@ -183,7 +183,7 @@ Williams' third quarter results were not out when I wrote this: nothing was on E
 
 ## Conclusion
 
-The October piece argued that building your own gas power swaps the grid's queue for the makers' queues. Williams agrees in its own words: it bought the machines first, and the timing of equipment sets its pace. Its first plant for Meta entered service in late July, and four more are due by the end of 2028.
+The September piece argued that building your own gas power swaps the grid's queue for the makers' queues. Williams agrees in its own words: it bought the machines first, and the timing of equipment sets its pace. Its first plant for Meta entered service in late July, and four more are due by the end of 2028.
 
 The power business earns well, about 5 times build multiples on contracts of 10 to 12.5 years. But it is about a ninth of Williams' EBITDA by 2028, and the price already pays today's full multiple for the pipes. My sum of the parts gives US$77.72, inside a range of US$55.22 to US$95.80.
 
