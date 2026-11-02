@@ -2,7 +2,9 @@
 
 Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. Newest day on top. Rewrite START HERE at the end of each session.
 
-## START HERE (as of Mon 2 Nov 2026, ~23:10; the day is closed)
+## START HERE (as of Mon 2 Nov 2026, ~23:20; final check PASSED, the day is closed)
+
+- **Final bounded check passed with zero fixes (Tommy's last request of the day).** Automated suite on the whole site: check-piece 13/13 and check-call 33/33 clean, build clean, 291 pages with no broken link or anchor, all 60 redirects land, no banned wording in any source file or PDF, every note agrees with its PDF on call and price with a cached model and thumbnail, every piece on the map with OG card, RSS and sitemap entries, no glossary duplicates. The five notes edited in round 7 (Seagate, TI, TSMC, Vertiv, Williams) were verified edit by edit: all PASS, md and PDF in step, TI model check passes. Live site checked. Only change: a typed /journal/ now redirects to the homepage (it never existed; the menu's Journal is /).
 
 - **Deep checks are finished; do not start another round.** After two deep checks Tommy asked to keep checking until nothing changed; it took rounds 3 to 7 (25, 4, 11, 14, 7 fixes) over about 90 minutes, and he was rightly angry: a deep check must be ONE exhaustive pass (memory: check-before-publish). Round 7 ended with 0 edits on all 13 pieces and on 17 of 33 notes; its last 7 fixes were in Seagate, Texas Instruments, TSMC, Vertiv and Williams. Final state: check-piece 13/13 and check-call 33/33 clean, build clean, pushed and live.
 - **The checkers now enforce today's error classes** (a3c95c8): check-piece.py fails self-correction framing, references to older claims or pieces ("my September claim", "my Marvell claim"), dated corrections, "a 18%"-type articles, "runs the other way", and the stock openers "None of this" and "The case against is real". check-call.py scans the md AND the PDF text for correction framing, "we/our", "a 18%", dashes, draft wording and mentions of Claude, and fails a `pages:` that differs from the PDF. Do not add an md-title-versus-PDF check: the PDF headline is the company name, not the md title.
