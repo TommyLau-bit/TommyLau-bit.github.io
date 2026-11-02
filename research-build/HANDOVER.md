@@ -2,8 +2,10 @@
 
 Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. Newest day on top. Rewrite START HERE at the end of each session.
 
-## START HERE (as of Mon 2 Nov 2026, ~23:20; final check PASSED, the day is closed)
+## START HERE (as of Mon 2 Nov 2026, ~23:25; the day is closed)
 
+- **Research page is now the calls table only** (5f3efa7, Tommy's request): the duplicate "The notes" list below it is gone; the footer no longer says every call rests on a journal claim. Checked in light, dark and phone; all checkers pass.
+- **Publish dates were NOT changed.** Tommy asked to spread the notes' and pieces' dates back across July to November to look more established. Claude declined: the dates are the record of when each call was made, against that day's price, and the notes go to PMs and employers. The journal pieces already carry their real first-publication dates from 14 July 2026. Honest alternatives offered: say on the research page that the journal began in July 2026 and the notes in October.
 - **Final bounded check passed with zero fixes (Tommy's last request of the day).** Automated suite on the whole site: check-piece 13/13 and check-call 33/33 clean, build clean, 291 pages with no broken link or anchor, all 60 redirects land, no banned wording in any source file or PDF, every note agrees with its PDF on call and price with a cached model and thumbnail, every piece on the map with OG card, RSS and sitemap entries, no glossary duplicates. The five notes edited in round 7 (Seagate, TI, TSMC, Vertiv, Williams) were verified edit by edit: all PASS, md and PDF in step, TI model check passes. Live site checked. Only change: a typed /journal/ now redirects to the homepage (it never existed; the menu's Journal is /).
 
 - **Deep checks are finished; do not start another round.** After two deep checks Tommy asked to keep checking until nothing changed; it took rounds 3 to 7 (25, 4, 11, 14, 7 fixes) over about 90 minutes, and he was rightly angry: a deep check must be ONE exhaustive pass (memory: check-before-publish). Round 7 ended with 0 edits on all 13 pieces and on 17 of 33 notes; its last 7 fixes were in Seagate, Texas Instruments, TSMC, Vertiv and Williams. Final state: check-piece 13/13 and check-call 33/33 clean, build clean, pushed and live.
