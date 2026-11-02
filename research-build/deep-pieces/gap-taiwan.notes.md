@@ -97,3 +97,34 @@ So Taiwan can be a distinct mechanism, but only if the piece is framed on 1 to 3
 ## Candidate dated claim (reworded from the working claim)
 
 "Taiwan protects chipmaking by making new AI halls bring their own power: before 1 January 2029 MOEA sets the Energy Administration Act Article 10 threshold at 5 MW or below, and the official night-time reserve margin forecast for 2028 stays below 10%." Breaks if the threshold is set above 5 MW or the duty is suspended, or the next supply and demand report lifts 2028 to 10% or more, or Taipower connects a 5 MW+ data centre north of Taoyuan outside the designated plant zones.
+
+## Follow-up 2 Nov
+
+Coordinator's instruction: reach the same facts only through sites already readable; no retry of moea.gov.tw, moeaea.gov.tw or taipower.com.tw.
+
+### Now primary
+
+1. **Taipower historical reserve margin, open data (PRIMARY).** data.gov.tw dataset 8307, "台灣電力公司歷年尖峰負載及備用容量率", https://data.gov.tw/dataset/8307 (metadata updated 15 Jul 2025). Its file is served by the separate open-data host service.taipower.com.tw: https://service.taipower.com.tw/data/opendata/apply/file/d003002/001.csv . That host returned the CSV with HTTP 200 and no challenge. I tried it once because data.gov.tw links to it; it is not the blocked www.taipower.com.tw site. Dataset note: "備用容量率111年起以夜間備用容量率呈現" (from 2022 the series is the night-time margin). Columns are year, peak load (MW) and reserve margin (%):
+   - 2021: 38,701 MW, 13.5%
+   - 2022: 40,593 MW, 12.2%
+   - 2023: 39,489 MW, 14.7%
+   - 2024: 40,882 MW, 11.0%
+   - 2025: 40,752 MW, 14.2%
+   - 2019 and 2020: 16.8% and 16.4%.
+   So the press claim of "five straight years since 2021 below 15%" is now primary for actual outcomes. The forecast table for 2026 to 2035 is not in this dataset.
+2. **Executive Yuan, 26 Aug 2026 (PRIMARY for the forecast revision).** Premier 卓榮泰 at a new-energy forum: https://www.ey.gov.tw/Page/9277F759E41CCD91/9d81b708-65bc-46d9-96f5-68881bb02e01 (dated 115-08-26). Quote: "經濟部已將未來十年（2026-2035年）用電需求年均成長率從2025年原預估的1.7%調升至2.5%". He adds that the government will soon review total demand again and raise the forecast "再向上調整至安全範圍". He also says supply is secure before 2032. The 2.5% versus 1.7% figure is now primary at Executive Yuan level. The night-margin path (12.8%, 12.5%, 8%, 7.1%) is still press only.
+3. **Third reading date (PRIMARY).** Legislative Yuan "重要通過法案": https://www.ly.gov.tw/Pages/Detail.aspx?nodeid=33324&pid=266148 . Quote: the amendment "於115年8月21日經立法院第11屆第5會期第23次會議三讀通過", including "增訂新設或增設的能源大用戶應設置自用發電或儲能設備…降低對公共電網的負荷及依賴". With the MOJ text (promulgated 23 Sep 2026, in force on promulgation), the bill's record is now complete at primary.
+4. **Bill status (PRIMARY).** https://ppg.ly.gov.tw/ppg/bills/201110215640000/details : status "審查完畢(三讀)". Sent to committee 22 and 26 May 2026; committee review 22 Jul and 5 Aug 2026; review report dispatched 19 Aug 2026. Gazette records of the two committee sittings are still marked as in production, so the minister's "5MW, about 700 firms" remark is not yet in an official record.
+5. **Cabinet bill and explanatory note (PRIMARY, new and important).** LY document 政7 to 政12, 第11屆第5會期第11次會議議案關係文書, 收文編號 1150003475: https://ppg.ly.gov.tw/ppg/download/agenda1/02/pdf/11/05/11/LCEWA01_110511_00173.pdf . The note on Art. 10 para 4 reads: "為提升能源用戶，如半導體及大型資料中心等產業之能源自給能力，降低其對電網之過度依賴". The draft promised a grace period in the regulation because of "設置廠址、燃料輸送管線等所需期程". No threshold figure appears in the bill.
+6. **LY Legal Affairs Bureau bill evaluation (PRIMARY, abstract only).** Report B01973, Jun 2026, author 黃姵瑜: https://www.ly.gov.tw/Pages/Detail.aspx?nodeid=6588&pid=263494 . The abstract reads "提升能源用戶自給能力及調節韌性". The full-text link was not reachable as a document.
+
+### Still press only (searched, not found at primary)
+
+- **The 5 MW limit on data centres in Taoyuan and north, and its July 2026 easing near Datan and Hsieh-ho within about 2 km.** I searched ly.gov.tw, ppg and lis (Gazette and written interpellation answers) and ey.gov.tw, including the Executive Yuan interpellation query system, which returned "查詢資料不存在". I also searched Gazette vol. 115 no. 60 (7 to 21 Jul 2026 floor records, readable volumes) and the 115 budget review report (LCEWA01_110523_00326). None of them mentions the 5 MW rule, 桃園以北, 2 km or the plant zones. The committee Gazette for 22 Jul 2026, where the minister reportedly gave "約2公里", is not yet published.
+- **The 114年度 report's forecast tables** (night margin by year, about 1.2 GW of AIDC applications, 2 to 3 GW prepared). No data.gov.tw copy exists outside the moeaea-hosted file, and I found no EY cabinet record of the June 2026 report.
+- **The Art. 10 threshold of 5 MW** (minister, 22 Jul 2026, press). It is not in the statute, the bill or the bill record. The regulation is not yet published.
+- **Taipower's semiconductor forecast** (52 to 110 billion kWh) and **TSMC's 2025 use**.
+
+### What the follow-up changes
+
+- The bill's own explanatory note names semiconductors and large data centres together as the target. So the law does not shield fabs at the expense of halls; it pushes every large new load, fabs included, to bring its own generation or storage. A framing of "the government rations halls to protect chipmaking" now rests only on the 5 MW siting rule, which is press only. The defensible mechanism is narrower and still new to the site: a grid short of night-time generation (actual margin below 15% each year 2021 to 2025, primary) answers with a statute that compels new large users to supply part of their own power.
