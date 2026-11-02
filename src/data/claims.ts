@@ -318,6 +318,14 @@ export const CLAIMS: Claim[] = [
     date: '2026-10-31T00:02:15+08:00',
     home: 'memory-not-maths',
   },
+  {
+    id: 'data-centres-in-space',
+    date: '2026-11-02T16:55:31+08:00',
+    home: 'data-centres-in-space',
+    claim: 'In orbit the power is nearly free and the heat is the bill: by 31 December 2028 no operator will report an AI compute satellite in service at SpaceX\'s own target of 100 kilowatts of compute power per metric ton launched, and no launch provider will publish a price to low Earth orbit at or below Google\'s $200 per kilogram threshold.',
+    breaksIf: 'By 31 December 2028, SpaceX, Starcloud, Google or any other operator discloses in a filing, release or regulator\'s record an orbital AI compute satellite in service at 100 kilowatts or more of compute power per metric ton of launched mass, or a launch provider publishes a list or contract price to low Earth orbit of $200 per kilogram or less.',
+    watch: ['SpaceX\'s 10-Qs and 10-K for AI compute satellite mass, power and first flights ("as early as 2028"; mass per satellite "continue[s] to be refined", 12 June 2026)', 'Google and Planet\'s two Suncatcher prototypes, targeting launch in 2027 (Planet 8-K, 10 December 2025)', 'Starcloud\'s releases and FCC filings on satellite mass, power and radiators', 'FCC action on SpaceX\'s application SAT-LOA-20260108-00016 (up to one million satellites) and Starcloud\'s (up to 88,000)', 'Any published launch price per kilogram to low Earth orbit, Falcon 9 or Starship (Google\'s current estimate $3,600/kg)', 'Measured radiator areal density or heat flux from any compute satellite in orbit (ISS heritage 14 kg per m²)'],
+  },
 ];
 
 export const claimOf = (id: string) => CLAIMS.find((c) => c.id === id);

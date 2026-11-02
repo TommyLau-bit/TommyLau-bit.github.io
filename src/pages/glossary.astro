@@ -242,6 +242,14 @@ const groups = [
     ['Exabyte', 'A billion gigabytes. Hard drive makers report how much storage they ship in exabytes.'],
     ['Supply allocation', 'A maker’s commitment of future output to named customers. Seagate reports how far ahead its drive output is allocated.'],
   ]},
+  { name: 'Data centres in orbit', terms: [
+    ['Dawn-dusk sun-synchronous orbit', 'A low orbit that follows the line between day and night, so a satellite\'s solar panels face the sun almost all the time. Every orbital compute design files for it.'],
+    ['Radiator (in space)', 'A panel that sheds heat by glowing it into cold space, the only way heat leaves a satellite. The heat it sheds rises with its absolute temperature to the fourth power.'],
+    ['Stefan-Boltzmann law', 'The physical law that heat radiated by a surface rises with its absolute temperature to the fourth power, so a slightly hotter radiator can be much smaller.'],
+    ['Emissivity', 'How well a surface radiates heat compared with a perfect black surface, from 0 to 1. Starcloud\'s sums use 0.92.'],
+    ['Areal density', 'Mass per square metre of a panel. The space station\'s radiators are about 14 kg per m².'],
+    ['Launched power price', 'Google\'s measure of the launch cost of each kilowatt of satellite power, spread over the satellite\'s life, in dollars per kW per year.'],
+  ]},
 ];
 const gid = (n: string) => n.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 ---

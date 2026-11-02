@@ -12,8 +12,8 @@ const L = (id: string) => STACK.find((l) => l.id === id)!;
 const reads = (ids: string[]) => ids.map((id) => byId[id]).filter(Boolean).map((p) => ({ href: `/journal/${p.id}/`, title: p.data.title }));
 // a section of a deep piece, by the anchor of the piece merged into it (CLAUDE.md, "Merging keeps the record")
 const at = (id: string, anchor: string, title: string) => (byId[id] ? [{ href: `/journal/${id}/#${anchor}`, title }] : []);
-const grid = L('grid'), onsite = L('onsite'), dist = L('distribution'), cool = L('cooling'), net = L('network'), mem = L('memory'), chips = L('chips'), ops = L('operators');
-const funnel = STACK.filter((l) => l.id !== 'operators').map((l, i) => ({ ...l, n: l.pieces.filter((id) => byId[id]).length, w: 100 - i * 8 }));
+const grid = L('grid'), onsite = L('onsite'), dist = L('distribution'), cool = L('cooling'), net = L('network'), mem = L('memory'), chips = L('chips'), ops = L('operators'), orb = L('orbit');
+const funnel = STACK.filter((l) => l.id !== 'operators' && l.id !== 'orbit').map((l, i) => ({ ...l, n: l.pieces.filter((id) => byId[id]).length, w: 100 - i * 8 }));
 
 // ── 1 · grid ──
 const PY = [30, 170, 310];
@@ -507,6 +507,18 @@ const n = (i: number) => String(i).padStart(2, '0');
         <p class="panel-foot">Each band opens that layer below, with its deep pieces.</p>
       </div>
     </div>
+
+    <!-- 10 · OFF THE PLANET ─────────────────────────────────────────── -->
+    <div class="scene scene--html" data-name="Off the planet" data-scale="Low Earth orbit">
+      <div class="panel" data-at="18">
+        <p class="panel-h">The same hall, moved into orbit</p>
+        <div class="orow orow--h"><p></p><p>On the ground</p><p>In orbit</p></div>
+        <div class="orow"><p class="oname">Power</p><p>A grid connection, years in the queue</p><p>Near-constant sun, no queue</p></div>
+        <div class="orow"><p class="oname">Heat</p><p>Carried off by air and water</p><p>Only glowed away from a radiator</p></div>
+        <div class="orow orow--ck"><p class="oname">What binds</p><p>Wires, transformers, turbines</p><p>Every kilogram of radiator has to be launched</p></div>
+        <p class="panel-foot">SpaceX's own target is 100 kW of computing per tonne launched (prospectus, June 2026). From <a href="/journal/data-centres-in-space/">Data centres in orbit</a>.</p>
+      </div>
+    </div>
   </div>
 
   <div class="d-steps">
@@ -625,6 +637,14 @@ const n = (i: number) => String(i).padStart(2, '0');
       <p>{ops.what}</p>
       <p class="binds"><strong>What binds.</strong> {ops.constraint}</p>
       <ul class="reads">{reads(ops.pieces).map((r) => <li><a href={r.href}>{r.title}</a></li>)}</ul>
+    </div></div>
+
+    <div class="step" data-scene="9"><div class="card">
+      <p class="kick kick--energy">{n(10)} · {orb.name}</p>
+      <h2>Or take the whole hall off the planet</h2>
+      <p>{orb.what}</p>
+      <p class="binds"><strong>What binds.</strong> {orb.constraint}</p>
+      <ul class="reads">{reads(orb.pieces).map((r) => <li><a href={r.href}>{r.title}</a></li>)}</ul>
     </div></div>
   </div>
 </div>
@@ -884,6 +904,13 @@ const n = (i: number) => String(i).padStart(2, '0');
   .rrow:nth-child(3) i { transition-delay: .15s; } .rrow:nth-child(4) i { transition-delay: .3s; } .rrow:nth-child(5) i { transition-delay: .45s; }
   .rclock { margin: 0; font-size: 0.78rem; color: var(--ink-2); }
   .rrow--ck .rclock { color: var(--bad); font-weight: 700; }
+
+  .orow { display: grid; grid-template-columns: 0.8fr 1fr 1fr; gap: 0.8rem; padding: 0.7rem 0; border-top: 1px solid var(--rule); }
+  .orow p { margin: 0; font-size: 0.82rem; color: var(--ink-2); }
+  .orow--h { border-top: 0; padding-top: 0; }
+  .orow--h p { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-3); }
+  .orow .oname { font-weight: 600; color: var(--ink); }
+  .orow--ck p:last-child { color: var(--bad); font-weight: 700; }
 
   .funnel { display: flex; flex-direction: column; align-items: center; gap: 4px; }
   .funnel .panel-h { align-self: flex-start; }

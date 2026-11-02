@@ -79,6 +79,14 @@ export const STACK: Layer[] = [
     constraint: 'Buyers pay for megawatts switched on, not megawatts signed.',
     pieces: ['contracted-energised-running'],
   },
+  {
+    id: 'orbit',
+    name: 'Data centres in orbit',
+    kind: 'energy',
+    what: 'Satellites in near-constant sunlight run AI chips on solar power and shed the heat by radiating it into cold space.',
+    constraint: 'Every kilogram of radiator and solar panel must be launched, so the weight of each kilowatt decides the cost.',
+    pieces: ['data-centres-in-space'],
+  },
 ];
 
 export const layerOf = (id: string) => STACK.findLast((l) => l.pieces.includes(id));
