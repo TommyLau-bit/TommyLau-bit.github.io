@@ -4,6 +4,8 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 
 ## START HERE (as of Fri 6 Nov 2026, ~15:10; the day is closed)
 
+**★ NEXT ON THE JOURNAL (Tommy, 6 Nov 2026):** BWXT and microreactors (Max Hopkins's pointers). Tommy studies it FIRST, then a piece is drafted, and it is published only on his word. Brief: research-build/topics/BWXT-MICROREACTORS.md. After that, Tommy relearns the other 13 pieces one by one. No other new pieces until then.
+
 **★ READ FIRST, JOURNAL ONLY (Tommy, 6 Nov 2026 ~17:30, permanent until he says otherwise).** After the Max Hopkins (CLSA) call: the pieces are good but Tommy could not back them up, and 33 notes was far too many. The site is the journal and About only. The Research page, the paper book and all initiation notes and models are OFF the site (source, PDFs and models archived in research-build/archive/research-page-2026-11-06/; old /research, /calls and /companies URLs land on the homepage). Pieces carry no "Research notes" section and no note links. Both scheduled tasks (`physical-layer-book-daily`, `journal-daily-scan`) are DISABLED: nothing is published, drafted onto the site or scheduled without Tommy. Depth over breadth: Tommy must be able to defend every piece from his own head; never add a page, note or feature he has not asked for. Company notes return only if Tommy writes them himself (BWXT first). Show output only, never how the site is run.
 
 Everything below about the book, notes, idea bench and automatic publishing is HISTORY as of 6 Nov ~17:30.
