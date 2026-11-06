@@ -97,7 +97,7 @@ const tabs = [
   </div>
 
   <div class="sheet-panel" id="watch" data-panel="watch" role="tabpanel">
-    <p class="sheet-intro">Companies the book will buy once the price turns. Each card gives the price to buy above, where the book would sell at a loss (the stop) and where it would take its profit (the target). Levels as of {day(book.pricesAt)}, re-set every morning.</p>
+    <p class="sheet-intro">Companies the book will buy once the price turns. Each card gives the price to buy above, where the book would sell at a loss (the stop) and where it would take its profit (the target). Levels as of {day(book.pricesAt)}.</p>
     <p class="bar-key" aria-label="How to read the bar"><span class="k k--stop">Stop: sell at a loss</span><span class="k k--now">Now: today's price</span><span class="k k--buy">Buy: the entry price</span><span class="k k--target">Target: take profit</span></p>
     <div class="cards">{watch.map((w: any) => {
       const risk = w.signal != null && w.stop != null ? w.signal - w.stop : null;
@@ -139,7 +139,7 @@ const tabs = [
   </div>
 
   <div class="sheet-panel" id="bench" data-panel="bench" role="tabpanel">
-    <p class="sheet-intro">New companies being scouted. Each morning the book adds one or two physical-layer names it does not yet cover; each Sunday the strongest, once the work is done, gets a full initiation note and Excel model and joins the book's universe. A name on the bench is never bought.</p>
+    <p class="sheet-intro">New companies under study that the notes do not yet cover. A name joins the book only once it has a full initiation note and Excel model; a name on the bench is never bought.</p>
     <div class="cards">{book.bench.map((n: any) => (
       <article class="card">
         <header><span class="card-name">{n.name}</span> <span class="card-tk">{n.exchange}: {n.ticker}</span><span class="card-side">{n.status}</span></header>
@@ -161,12 +161,12 @@ const tabs = [
 
   <div class="sheet-panel" id="how" data-panel="how" role="tabpanel">
     <div class="how">
-      <p><strong>What this is.</strong> A {usd(book.capital)} paper portfolio, run every morning by fixed rules, on the companies covered by the notes. Every price is a closing price on a named exchange and date. Nothing is ever deleted, right or wrong.</p>
-      <p><strong>Every position has a stop and a target.</strong> The stop is the price that shows the timing was wrong, so the book sells at a small loss. The target is where the book takes its profit, set from the note's own valuation. Both act on the close, with no one at the desk.</p>
+      <p><strong>What this is.</strong> A {usd(book.capital)} paper portfolio on the companies covered by the notes. Every price is a closing price on a named exchange and date. Nothing is ever deleted, right or wrong.</p>
+      <p><strong>Every position has a stop and a target.</strong> The stop is the price that shows the timing was wrong, so the book sells at a small loss. The target is where the book takes its profit, set from the note's own valuation. Both act on the close.</p>
       <p><strong>Reward against risk.</strong> The book only buys when the possible gain is at least twice the possible loss. {firstOk && <>Take {firstOk.company}: bought at {fmtMoney(firstOk.currency, firstOk.signal)}, it would lose {fmtMoney(firstOk.currency, firstOk.signal - firstOk.stop)} a share if the stop at {fmtMoney(firstOk.currency, firstOk.stop)} is hit, and make {fmtMoney(firstOk.currency, firstOk.target - firstOk.signal)} if the target at {fmtMoney(firstOk.currency, firstOk.target)} is hit: {times(firstOk.rr)} times the risk. </>}At two times, the book can be wrong on two trades in three and still not lose money.</p>
       <p><strong>When it buys.</strong> Not into a falling price. It waits until the lowest close of the last month is at least three days old, then buys on a close above the highest close of the previous week. The stop sits just under that low.</p>
       <p><strong>How much.</strong> 4 to 12 per cent of the book a position, by conviction; never more than 15 per cent in one company, 10 positions or 80 per cent invested. Half size when results are close. If the book falls 10 per cent from its peak, it stops buying until the losses are reviewed.</p>
-      <p><strong>New companies.</strong> Scouted daily onto the idea bench; the strongest gets a full initiation note and Excel model on Sunday, and only then can it be bought.</p>
+      <p><strong>New companies.</strong> Studied on the idea bench first; a company can be bought only once it has a full initiation note and Excel model.</p>
     </div>
   </div>
 </section>

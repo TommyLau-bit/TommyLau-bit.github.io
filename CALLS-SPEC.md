@@ -79,6 +79,8 @@ Tommy found the first build (a long web pitch with charts, merged into the claim
 
 ## Research page: the book is the record, the notes are the reasoning (Tommy, 6 Nov 2026, permanent)
 
+- **Output only, never how it runs (Tommy, 6 Nov 2026, permanent).** No public text (log, story, cards, bench, intros, notes) may describe how the site or the book is run: never "every morning", "daily", "each Sunday", "on its own", "automatic", "fixed rules", "no one at the desk", and never any mention of AI or Claude running it. Show results only: prices, dates, positions, stops, targets, what moved.
+
 Tommy found the page messy: two scorecards (the notes' own calls and the book) and no obvious place to start. Now one record and one library:
 - /research/ is a PM's morning sheet, like the Radar dashboard (Tommy, 6 Nov 2026: the tables were still hard to read): one intro line; a masthead (equity, change, cash, open, closed); "This morning" (a headline and three bullets, `story` in book.json); then tabs: The book (position cards with a stop-to-target bar, closed trades with post-mortems, morning log), Watchlist (cards: buy above X, risk Y to make Z, "N times the risk", a bar), Idea bench, Calendar (`catalysts`), Notes, How it works (plain English, including reward against risk with a live example). All in src/components/Book.astro; the notes table is passed in as a slot. **The notes tab** is a library grouped by layer: company, published, price then, base value (src/data/notes.ts), gap, where it stands in the book, note and model links. No call, target, stop, return or status columns.
 - Each note page shows "What the note found" (price at publication, base value, where it stands in the book, what would prove the thesis wrong) instead of a call box.
