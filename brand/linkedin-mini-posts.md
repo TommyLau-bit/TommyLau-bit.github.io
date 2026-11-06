@@ -802,7 +802,7 @@ Source in the piece: "The figures behind the charts" (Sandy Ridge's terms); Inno
 
 ---
 
-## M64 · Thu 04 Feb 2027 08:30 SGT · america-rations-the-plug · Slowing the chips instead of buying a battery · NOT YET SCHEDULED: LinkedIn window ended Wed 3 Feb; schedule from about 7 to 8 Nov
+## M64 · MOVED to Tue 26 Jan 2027 17:30 SGT · america-rations-the-plug · Slowing the chips instead of buying a battery · SCHEDULED (verified 6 Nov)
 At an Oracle site in Phoenix, software cut the power of 256 Nvidia chips by 25% for three hours. No battery was involved.
 
 That is the idea behind a new kind of flexibility. Load that can drop in seconds is useful to the grid, as long as it drops when the grid asks. By 19 March 2026 Google had deals with five utilities, covering 1 GW, to "limit or shift a portion" of its machine learning work at peak.
@@ -816,7 +816,7 @@ Source in the piece: "Cut-first power goes to sites that can slow their chips or
 
 ---
 
-## M65 · Fri 05 Feb 2027 08:30 SGT · data-centres-in-space · The space station's radiators are cold because of the crew · NOT YET SCHEDULED: LinkedIn window ended Wed 3 Feb; schedule from about 7 to 8 Nov
+## M65 · MOVED to Thu 28 Jan 2027 17:30 SGT · data-centres-in-space · The space station's radiators are cold because of the crew · SCHEDULED (verified 6 Nov)
 The International Space Station's cooling loop runs at about 3°C, because it cools people, not chips.
 
 That makes its radiators big and heavy for the work they do. On my arithmetic, its six main radiator units reject about 147 watts per square metre. Each unit weighs 1,122.64 kg, and together they handle 70 kW: about 96 kg for every kilowatt.
