@@ -191,10 +191,6 @@ The first readings come before either test: PJM's filings to FERC in November 20
 
 The paper objection would not. Developers want firm service, and the proposal of CAISO, California's grid operator, records that they "would only agree to be flexible temporarily". CHILLS has been accepted since June, yet no site is shown running on it, and nobody has published what riding through costs, so PJM's exceptions could swallow its rule. That is why the test counts sites actually switched on and transfers actually avoided, not tiers and rules written.
 
-## Research notes
-
-No initiation note rests on these claims. The power a site brings itself is the subject of the notes on [GE Vernova](/research/ge-vernova/) and [Bloom Energy](/research/bloom-energy/). The protection and power gear inside the site are covered by [Vertiv](/research/vertiv/), [Schneider Electric](/research/schneider-electric/) and [Eaton](/research/eaton/), each resting on its own claim. Whether any of this is already in share prices is a question for these notes, not for the journal.
-
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
 

@@ -182,10 +182,6 @@ Google's per-site table, published each year, would move me before the test if M
 
 Rising water totals would not move me. The lab's AI specialised halls in 2023 had the best PUE, 1.14, and nearly twice the hyperscale water per kWh, 0.61 litres against 0.32. It projects the national average rising from just over 0.36 litres to between 0.45 and 0.48, partly from "the increased water consumption of liquid-cooled systems". Google's water consumption rose 34% in 2025, to 10.9 billion gallons, across data centres and offices. Henderson, its Nevada campus in a dry desert basin, consumed 239.4 million gallons, and Google does not publish how it rates that source. Liquid makes going without water cheap; it does not make it happen, and many halls still evaporate where water is plentiful. The water margin in Johor, the Malaysian data centre hub beside Singapore, is set by treatment plants and is covered in [the plug, not the chip](/journal/the-queue-not-the-chip/#johor-waits-on-the-treatment-plant). But I have found no powered campus stopped outright by water. In Santiago, Chile, Google filed in 2022 to replace water cooling towers with air-cooled chillers, though a court still partly annulled the permit in 2024. Where water is short, the operators so far redesign the roof rather than abandon the site.
 
-## Research notes
-
-No initiation note rests on this claim yet. Liquid cooling equipment is part of the notes on [Vertiv](/research/vertiv/), [Schneider Electric](/research/schneider-electric/) and [Eaton](/research/eaton/), which rest on their own claims. Whether any of this is already in share prices is a question for these notes, not for the journal.
-
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
 

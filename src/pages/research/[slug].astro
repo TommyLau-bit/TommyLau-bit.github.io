@@ -1,78 +1,13 @@
 ---
-import Base from '../../layouts/Base.astro';
-import { getCollection } from 'astro:content';
-import { SITE } from '../../config';
-import { fmtDate } from '../../utils';
-import { claimOf, homeOf, claimHref, claimSection } from '../../data/claims';
-import { getPitches, fmtMoney, fmtPct } from '../../lib/calls';
-import { bookStatus } from '../../lib/book';
-import { BASE_VALUE } from '../../data/notes';
+// Initiation notes were taken off the site (Tommy, 6 Nov 2026). Every old note
+// URL still resolves, to the homepage. Source archived in
+// research-build/archive/research-page-2026-11-06/.
+import { getPitches } from '../../lib/calls';
 export async function getStaticPaths() {
   const pitches = await getPitches();
-  return pitches.map((p) => ({ params: { slug: p.id }, props: { p } }));
+  return pitches.map((p) => ({ params: { slug: p.id } }));
 }
-const { p } = Astro.props;
-const d = p.data, c = d.call;
-const posts = await getCollection('journal', ({ data }) => !data.draft);
-// The piece is the one that carries the claim now (its deep piece once merged);
-// the date is the claim's own.
-const claims = d.claims.map((id) => claimOf(id)).filter((c) => c != null)
-  .map((claim) => ({ claim, piece: posts.find((x) => x.id === homeOf(claim)) })).filter((x) => x.piece)
-  .map((x) => ({ ...x, date: x.claim.date ? new Date(x.claim.date) : x.piece!.data.date, section: claimSection(x.claim, x.piece!.body) }));
-const base = BASE_VALUE[p.id];
-const gap = base != null ? base / c.price - 1 : null;
-const inBook = bookStatus(p.id);
 ---
-<Base title={`${d.company} (${d.ticker}): initiation`} description={d.summary} type="article" canonical={`${SITE.url}/research/${p.id}/`}>
-  <article class="pitch">
-    {d.draft && <p class="draft-banner"><strong>Draft, not published.</strong> Visible only in local preview.</p>}
-    <header class="article-head">
-      <p class="pitch-kicker"><a href="/research/">Research</a> · Initiation · {d.date ? fmtDate(d.date) : 'Unpublished'}</p>
-      <h1>{d.company} <span class="pitch-ticker">{d.exchange}: {d.ticker}</span></h1>
-      <p class="pitch-title">{d.title}</p>
-    </header>
-
-    <section class="callbox" aria-label="What the note found">
-      <div class="callbox-head">
-        <span class="callbox-co">What the note found</span>
-      </div>
-      <dl>
-        <div><dt>Price at publication</dt><dd>{fmtMoney(c.currency, c.price)}<small>close, {fmtDate(c.priceDate)}</small></dd></div>
-        {base != null && <div><dt>Base value</dt><dd>{fmtMoney(c.currency, base)}<small>{fmtPct(gap!)} against that price</small></dd></div>}
-        <div><dt>In the book now</dt><dd>{inBook.label}<small>{inBook.kind === 'avoid' ? 'see the reason below' : inBook.detail ?? <a href="/research/#book">the book</a>}</small></dd></div>
-      </dl>
-      {inBook.kind === 'avoid' && <p class="callbox-wrong"><span>Why the book is not buying</span>{inBook.detail}</p>}
-      <p class="callbox-wrong"><span>What would prove the thesis wrong</span>{c.wrongIf}</p>
-    </section>
-
-    <div class="downloads">
-      <a class="download download--main" href={d.files.pdf}>
-        <strong>Read the full note</strong><span>PDF{d.files.pages && `, ${d.files.pages} pages`}: thesis, valuation, scenarios, risks and sources</span>
-      </a>
-      <a class="download" href={d.files.xlsx}>
-        <strong>Open the model</strong><span>Excel, live formulas: change an assumption and the target moves</span>
-      </a>
-    </div>
-
-    <section class="keypoints">
-      <h2>The note in brief</h2>
-      <ol>{d.keyPoints.map((k) => <li>{k}</li>)}</ol>
-    </section>
-
-    {claims.map(({ claim, date, piece, section }) => (
-      <aside class="claim-box">
-        <p class="claim-box-label">The claim it rests on, made {fmtDate(date)}</p>
-        <p class="claim-box-claim">{claim!.claim}</p>
-        <p class="claim-box-rests"><span>Rests on:</span> <a href={claimHref(claim)}>{section ? <>{section}, in {piece!.data.title}</> : piece!.data.title}</a></p>
-        <p class="claim-box-rests"><span>Later evidence on this claim:</span> <a href={claimHref(claim)}>the same section as it stands now</a>{piece!.data.updated && <> (piece updated {fmtDate(piece!.data.updated)})</>}, with anything the deep piece has added since the note.</p>
-      </aside>
-    ))}
-
-    <aside class="pitch-disclaimer">
-      This is the author's own analysis, not investment advice. {c.position} Prices are closing prices on the dates given. The note is fixed on the day it is published; positions taken on it are run in <a href="/research/#book">the book</a>.
-    </aside>
-    <footer class="article-foot">
-      Written by {SITE.author}. If you think the note is wrong, I would genuinely like to hear why: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
-    </footer>
-  </article>
-</Base>
+<meta http-equiv="refresh" content="0; url=/" />
+<link rel="canonical" href="/" />
+<a href="/">The Physical Layer</a>

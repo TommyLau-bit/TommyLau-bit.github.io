@@ -172,9 +172,7 @@ Signs will come before the test: an NVHBM date or a second partner at GTC, Nvidi
 
 Two things would not move me. Smaller number formats halve the bytes per weight, but with the maths already at four bits, few halvings are left. Overflow is the other release: Micron says SSDs, flash storage drives, are now used "for KV cache offload", and SK Hynix is showing high bandwidth flash as a cheaper tier. Both ease capacity more than bandwidth, since the weights still have to be read for every word.
 
-## Research notes
-
-[Micron](/research/micron/) has an initiation note, resting on its own claim about HBM wafers, and [SK Hynix](/research/sk-hynix/), [Samsung Electronics](/research/samsung-electronics/) and [Nvidia](/research/nvidia/) have notes resting on this piece's claim. How far ahead each year's HBM is sold is in [the chip supply chain](/journal/the-chip-supply-chain/). Whether any of this is already in share prices is a question for these notes, not for the journal.
+How far ahead each year's HBM is sold is in [the chip supply chain](/journal/the-chip-supply-chain/).
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>

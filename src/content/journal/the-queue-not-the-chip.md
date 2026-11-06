@@ -216,12 +216,6 @@ Nor would the rest of the case against. Once a Johor campus is connected, its te
 
 Nor is water the hidden gate. Johor's reserve margin of treatment capacity, 14.3% in 2025, sits inside the regulator's target band of 10 to 15%.
 
-## Research notes
-
-No initiation note rests on these claims yet. The plant clock in this piece is the subject of the notes on [Hitachi](/research/hitachi/) and [Siemens Energy](/research/siemens-energy/), which rest on their own claims. Whether any of this is already in share prices is a question for these notes, not for the journal.
-
-<a id="claims-on-record"></a>
-
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
 

@@ -163,10 +163,6 @@ Two readings together would move me before the test: years of work falling at th
 
 Two things would not move me. Hitachi Energy sits outside the test, and its own plan keeps its ratio at 2.5 to 3 times revenue. Some buyers route around the queue: Schneider Electric, another maker of this gear, sells more power rooms built and tested in its factories, which cut the work electricians must do on site. That shortens the install, not the order book, and Schneider publishes no backlog to test. A pass, for its part, would not prove a longer wait on its own: price rises, early bookings, a stronger euro and HVDC contracts can hold a ratio up, and no maker splits its backlog into price and volume.
 
-## Research notes
-
-Each maker has an initiation note: [Hitachi](/research/hitachi/), [Siemens Energy](/research/siemens-energy/), [Eaton](/research/eaton/) and [Schneider Electric](/research/schneider-electric/). Whether any of this is already in share prices is a question for these notes, not for the journal.
-
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
 

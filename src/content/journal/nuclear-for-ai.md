@@ -150,10 +150,6 @@ Two events would move me before either test: Centrus agreeing with the Energy De
 
 Three things would not move me. Oklo's Aurora-INL alone, at 75 MW on government stock, cannot reach the 100 MW test. The old fleet has a fuel gap of its own, but a smaller one. Russia sold 26% of the enrichment American owners bought in 2025, and the waivers that let them keep buying end by 1 January 2028, but that gap is bridgeable: US-origin supply was 23%, Urenco, the European enricher whose Eunice plant in New Mexico serves American reactors, adds about a fifth of the Russian volume by early 2027, and owners held 118 million pounds of uranium against 40.9 million loaded that year. Nor does the half of 2026 to 2035 uranium still unbought, 186 million pounds, signal a shortage. A year earlier the figure was 184 million: it is how utilities buy.
 
-## Research notes
-
-Two initiation notes rest on these claims: [Constellation](/research/constellation/), on the Crane claim, and [Oklo](/research/oklo/), on the Oklo claim. Whether any of this is already in share prices is a question for these notes, not for the journal.
-
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
 

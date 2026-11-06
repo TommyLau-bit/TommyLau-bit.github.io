@@ -156,10 +156,6 @@ Nvidia already lists "Spectrum-class optical scale-out" in Feynman, without a da
 
 Two things would not. SPIL's thirtyfold is a target, not a factory, and even a co-packaged switch keeps its lasers in front-panel modules. And Broadcom's claim to be "the leader in leading edge optical DSPs", by a third-party transcript, contests who sells the translator, not whether the plug stays.
 
-## Research notes
-
-Six initiation notes rest on these claims: [Marvell](/research/marvell/), [Broadcom](/research/broadcom/), [Corning](/research/corning/), [Lumentum](/research/lumentum/), [Nvidia](/research/nvidia/) and [Coherent](/research/coherent/). Whether any of this is already in share prices is a question for these notes, not for the journal.
-
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
 

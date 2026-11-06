@@ -181,9 +181,7 @@ A CLP reserve margin below 15% in its Ten-year Summary, its yearly table of syst
 
 Three things would not move me. CLP's margin is for its whole system, not the grid of the Northern Metropolis, the development zone where Sandy Ridge sits, but no record I read shows a Hong Kong data centre waiting for the grid, and the utility's date is the earliest on offer. Hong Kong Electric, the island's other utility, does not mention data centres in its 2025 annual or 2026 interim results; CLP is the utility the data centres have gone to. And slow filling would not break the claim, since Range's own delivery date is 2028. The single bid was not a verdict on the plug.
 
-## Research notes
-
-One initiation note rests on this claim: [CLP Holdings](/research/clp-holdings/). The contrast with [Johor and Singapore](/journal/the-queue-not-the-chip/), where the connection is the scarce thing, is the subject of that deep piece. Whether any of this is already in share prices is a question for these notes, not for the journal.
+The contrast with [Johor and Singapore](/journal/the-queue-not-the-chip/), where the connection is the scarce thing, is the subject of that deep piece.
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>

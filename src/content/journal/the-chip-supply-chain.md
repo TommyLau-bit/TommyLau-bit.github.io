@@ -162,10 +162,6 @@ Two dates come before the tests. ASML is already studying a 2028 step beyond its
 
 Three things would not move me. Buyers in a boom order early and sometimes twice, and the filings cannot separate hoarding from scarcity, but a double order does not create a second ASML, and a hoarded scanner still had to be built in the same cleanroom. Seagate stretching without a building would not either. Its nearline shipments, the big drives data centres buy, rose to 695 exabytes in its year to 3 July 2026, from 497, and it meets that growth "by increasing capacity per drive rather than increasing drive unit production". That shows few makers and qualification at work, but it cannot test the building clock. Nor does the thin evidence elsewhere: Ajinomoto aims its current expansion at demand to 2030, so its film is not shown to bind before the Gifu plant opens, and TSMC publishes no packaging capacity or lead time. Seagate and TSMC stay on watch.
 
-## Research notes
-
-Four initiation notes rest on these claims: [TSMC](/research/tsmc/), [ASML](/research/asml/), [Ajinomoto](/research/ajinomoto/) and [Micron](/research/micron/). [Seagate](/research/seagate/) has one resting on this piece's own claim, and [Samsung Electronics](/research/samsung-electronics/) one on the claim in [Memory, not maths](/journal/memory-not-maths/). Whether any of this is already in share prices is a question for these notes, not for the journal.
-
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
 

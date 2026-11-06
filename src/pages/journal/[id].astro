@@ -60,9 +60,6 @@ const companies = [...new Set(exposureOf(p).flatMap((r) => r.names))].filter((n)
       <aside class="claim-box">
         <p class="claim-box-label">The claim this piece makes</p>
         <p class="claim-box-claim">{claim.claim}</p>
-        <p class="claim-box-meta">
-          {notes.map((n) => <a href={`/research/${n.id}/`}>Research note: {n.data.company}</a>)}
-        </p>
       </aside>
     )}
 

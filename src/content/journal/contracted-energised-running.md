@@ -197,10 +197,6 @@ The first reading comes before either test: Nebius's year-end 2026 letter, for c
 
 Two things would not move me. Nebius moving fast is already in the claim: it reached about 170 MW active at the end of 2025 against a target of 100 MW, and had delivered every Microsoft tranche by 12 August 2026. Even at Abilene, the fastest path, more than two years passed between the start of work and three quarters of the campus handed over. Nor would Malaysia's gap proving to be timing. Campuses book for their finished size and fill in phases, and the deputy minister told Parliament on 13 October 2026 that data centres book more than they use. Nobody splits the gap between ramp, overbooking and licensed chips, so I hang nothing on any one of them. Either way, a signed gigawatt is not computing.
 
-## Research notes
-
-The [Nebius initiation note](/research/nebius/) (6 October 2026) rests on the Nebius claim and measures it by active power. The [Nvidia note](/research/nvidia/) rests on this piece's own claim. No note rests on the Jane Street claim. Whether any of this is already in share prices is a question for these notes, not for the journal.
-
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
 

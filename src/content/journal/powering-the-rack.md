@@ -181,10 +181,6 @@ Two events would move me before the test: Nvidia giving its DC power block a dat
 
 Plans to go building-first would not move me. Nvidia said in May 2025 that full-scale production would coincide with Kyber in 2027. Foxconn's 40 MW Kaohsiung-1 is being built for 800 VDC, and CoreWeave, Lambda, Nebius, Oracle Cloud Infrastructure and Together AI, all cloud providers selling AI computing, are "designing for" 800 volt data centres. Vertiv's range includes central rectifiers, and Infineon's SiC transformer block is in development. Each of these is a design, not a running hall, and the transformer specification is still at version 0.3.
 
-## Research notes
-
-[Vertiv](/research/vertiv/) and [Texas Instruments](/research/texas-instruments/) have initiation notes, each resting on its own claim below. [Nvidia](/research/nvidia/) and [Infineon](/research/infineon/) rest on this piece's claim too. Whether any of this is already in share prices is a question for these notes, not for the journal.
-
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
 

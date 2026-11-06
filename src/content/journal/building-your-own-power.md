@@ -186,10 +186,6 @@ Two signals would move me before the tests. Signings slowed to 11 GW in the thir
 
 A flood of new gas plans would not move me. In the EIA's generator inventory, planned gas capacity rose from 40.5 GW in September 2025 to 71.1 GW in September 2026, while the part under construction or built rose only from 9.6 GW to 13.1 GW, by my arithmetic. Fermi America's Project Matador, a planned Texas campus, alone lists 11.7 GW, of which 0.3 GW is under construction. Nor does Socrates: a small off-grid plant can go from approval to its due date in about a year, but its 400 MW is under a fifth of Hyperion's first three plants, and signings still run at twice the rate of shipments. Whether own generation beats a comparable grid connection stays open, since EIA's survey leaves off-grid plants out.
 
-## Research notes
-
-Initiation notes cover the companies in this piece: [GE Vernova](/research/ge-vernova/), [Bloom Energy](/research/bloom-energy/), [Mitsubishi Heavy](/research/mitsubishi-heavy/), [Caterpillar](/research/caterpillar/), [Wärtsilä](/research/wartsila/), [Kinder Morgan](/research/kinder-morgan/), [Williams](/research/williams/) and [Entergy](/research/entergy/). Whether any of this is already in share prices is a question for these notes, not for the journal.
-
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
 

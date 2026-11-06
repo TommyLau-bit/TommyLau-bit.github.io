@@ -10,5 +10,5 @@ export async function getStaticPaths() {
   return companyIndex(posts).map((c) => ({ params: { slug: c.slug }, props: { note: notes.get(c.slug) } }));
 }
 const { note } = Astro.props;
-return Astro.redirect(note ? `/research/${note}/` : '/research/#notes', 301);
+return Astro.redirect('/', 301);
 ---

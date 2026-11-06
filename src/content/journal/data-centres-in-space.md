@@ -202,9 +202,7 @@ The first weighings come in 2027. Planet, the satellite imaging company, is cont
 
 The case against my claim rests on designs and tests, and those would not move me. The station's radiators were designed decades ago for a crew, with a cold loop and rotating joints, so 14 kg per m² is a heritage ceiling, not a law. A preprint (Gaalema, Indyk and Staley, arXiv, 9 April 2026; not peer reviewed) argues integrated panels could reach "about 500 W/kg", or 2 kg per kW. Its 16 MW, 150 tonne satellite would just beat SpaceX's target, at about 107 kW per tonne, though it assumes "custom solutions for all components". Google's Trillium TPU showed memory irregularities in a proton beam only after 2 krad(Si), almost three times the 750 rad(Si) a shielded five-year mission expects. SpaceX calls its 1,400 W/m² a very achievable goal. The preprint is a design, Google's result is a ground test and SpaceX's figure is an assumption. The claim asks for a satellite in service at the target, or a published price, and on 2 November 2026 neither exists.
 
-## Research notes
-
-SpaceX has an initiation note resting on this claim: [SpaceX](/research/spacex/). The ground-side mechanisms it leans on are in [Heat and water](/journal/heat-and-water/) and [America rations the plug](/journal/america-rations-the-plug/). Whether any of this is already in share prices is a question for the notes, not for the journal.
+The ground-side mechanisms it leans on are in [Heat and water](/journal/heat-and-water/) and [America rations the plug](/journal/america-rations-the-plug/).
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
