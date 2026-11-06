@@ -1,6 +1,6 @@
 # Brief: draft a research initiation for The Physical Layer (Tommy Lau)
 
-You are drafting ONE initiation note for Tommy's site. Tommy decides the call; you draft everything and give a draft view. Nothing is published, committed or pushed by you.
+You are drafting ONE initiation note for Tommy's site. Since 6 Nov 2026 two paths exist: (a) the Sunday run of the scheduled task `physical-layer-book-daily` promotes an idea-bench company to a note and publishes it automatically (Tommy's instruction); the run, not Tommy, then decides the `call` fields from your draft view; (b) Tommy asks for a note in a session and decides the call himself. Either way you draft everything and give a draft view; you never commit, push or publish yourself, the run or session that launched you does.
 
 ## Read first (all of it)
 - /Users/tommylau/Desktop/journal/CALLS-SPEC.md (process, rules, the redesign section)
@@ -23,7 +23,8 @@ You are drafting ONE initiation note for Tommy's site. Tommy decides the call; y
 - Valuation with the working: the method that fits the business, a key financials table (history, guidance, your estimates), bear/base/bull with probabilities (25/50/25 unless you justify otherwise), a 3x3 sensitivity grid, peers.
 - Risks, catalysts with dates (verify the next results date; if unconfirmed say so), what would change the view.
 - Draft view: LONG, SHORT or NO CALL, a 12-month target (none for NO CALL, then give `revisitIf`), conviction High/Medium/Low, and one-paragraph reasoning. Be honest: a calibrated NO CALL beats a forced LONG. The scorecard is public.
-- `call` block: direction null, target null, conviction null (Tommy decides), price and priceDate filled, horizon "12 months, to October 2027", wrongIf filled. `draft: true`. No `date` field.
+- `call` block: direction null, target null, conviction null (set at publish by the run or by Tommy), price and priceDate filled, horizon "12 months from the price date", wrongIf filled. `draft: true`. No `date` field. The site no longer shows the call (6 Nov 2026): what it shows is the price and the BASE VALUE, so state the base value per share as one plain number in the body and in your report.
+- Also give: `layer:` (the stack.ts layer id the company belongs to, since a note may rest on no claim), the Yahoo Finance symbol, and a one-line plain "what it does". The publisher adds the base value and symbol to src/data/notes.ts (BASE_VALUE, SYMBOL).
 - keyPoints: 3 to 5 plain sentences (the web summary page shows only these plus the call box).
 - Body 1,500 to 3,200 words.
 

@@ -22,10 +22,13 @@ work on notes, calls, the research page or share prices, read `CALLS-SPEC.md`.
   are built from it with the template in `~/Desktop/jobs/research
   coverage/_note_template/` (scripts kept in `research-build/<slug>/`) and
   saved in `public/research/`. A draft has `draft: true`, the call fields null
-  and Claude's view in `draftView`. **Only Tommy decides the call** (LONG,
-  SHORT or NO CALL). The build fails a non-draft note without it.
-- Notes are never rewritten after publication. The biweekly mark goes in
-  `src/data/calls.ts`, with Tommy's approval.
+  and Claude's view in `draftView`. The call (LONG, SHORT or NO CALL) is set
+  at publish by the book's Sunday run or by Tommy in a session (6 Nov 2026);
+  the site no longer shows it, but the build fails a non-draft note without it.
+  **Every new note adds its base value and Yahoo symbol to `src/data/notes.ts`
+  and sets `layer:`**, or the book cannot trade it.
+- Notes are never rewritten after publication. Notes are no longer marked;
+  `src/data/calls.ts` is frozen history.
 - **No dated corrections, ever** (Tommy, 2 Nov 2026, permanent). When a fact
   in a piece or a note is found wrong, edit it so it is simply right: the
   sentence, the chart, the evidence table, the PDF. No "Correction" paragraphs,

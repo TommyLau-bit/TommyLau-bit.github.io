@@ -24,7 +24,7 @@ The site does two jobs.
   8. **Conclusion.**
 - **A calls scorecard** on the same page: every call ever made, dated, marked against its target and falsifier. Right or wrong, nothing is ever deleted.
 
-## The process (non-negotiable)
+## The process (6 Oct 2026; superseded 6 Nov 2026 by "The book" and "Research page" below: new notes are published by the book's Sunday run, and the site shows no calls)
 
 1. **Claude drafts the full pitch:** data, charts, valuation, thesis, a draft view.
 2. **Claude gives Tommy the summary and breakdown.** Tommy reads everything and decides the call: direction, target and conviction. **The final call is Tommy's.** He must be able to defend it in 20 seconds without notes.
@@ -116,11 +116,11 @@ Tommy: a call without a stop and an exit is not how a PM runs a book; investors 
 ## Briefs for agents (in research-build/)
 - `BRIEF-note.md`: drafting an initiation note (text of record, PDF, model). `BRIEF-note-factcheck.md`: the read-only fact-check of a note.
 - Journal pieces use the deep-piece briefs in `research-build/deep-pieces/` (`BRIEF-DEEP.md`, `BRIEF-DEEP-FACTCHECK.md`, `BRIEF-UPDATE.md`).
-Process: one company at a time; draft, then an independent fact-check, then fix, then Tommy decides the call.
+Process: one company at a time; draft, then an independent fact-check, then fix, then the call is set (by the Sunday run, or by Tommy in a session).
 
-## To publish a note (only with Tommy's explicit go)
+## To publish a note (by the book's Sunday run automatically, or by a session on Tommy's word; since 6 Nov 2026)
 
-1. Tommy sets `call.direction`, `call.target`, `call.conviction`, and confirms `call.wrongIf`.
+1. The Sunday run (from the draft view) or Tommy sets `call.direction`, `call.target`, `call.conviction`, and confirms `call.wrongIf`. Add the note's base value and Yahoo symbol to src/data/notes.ts (BASE_VALUE, SYMBOL) and set `layer:`; without them the book cannot trade it.
 2. Refresh `call.price` and `call.priceDate` to the latest close, and rework any figure that moved with it.
 3. Rewrite the conclusion (and title, if needed) to match his call. Delete `draftView`.
 4. Set `draft: false` and `date` to the real go-live time, `+08:00`.

@@ -39,3 +39,42 @@ export const BASE_VALUE: Record<string, number> = {
   'wartsila': 30,
   'williams': 77.7,
 };
+
+// The Yahoo Finance symbol the daily book run prices each note by. Every new
+// note adds its line here and in BASE_VALUE in the same change; a note missing
+// from either is not traded and the run flags it.
+export const SYMBOL: Record<string, string> = {
+  'ajinomoto': '2802.T',
+  'asml': 'ASML.AS',
+  'bloom-energy': 'BE',
+  'broadcom': 'AVGO',
+  'caterpillar': 'CAT',
+  'clp-holdings': '0002.HK',
+  'coherent': 'COHR',
+  'constellation': 'CEG',
+  'corning': 'GLW',
+  'eaton': 'ETN',
+  'entergy': 'ETR',
+  'ge-vernova': 'GEV',
+  'hitachi': '6501.T',
+  'infineon': 'IFX.DE',
+  'kinder-morgan': 'KMI',
+  'lumentum': 'LITE',
+  'marvell': 'MRVL',
+  'micron': 'MU',
+  'mitsubishi-heavy': '7011.T',
+  'nebius': 'NBIS',
+  'nvidia': 'NVDA',
+  'oklo': 'OKLO',
+  'samsung-electronics': '005930.KS',
+  'schneider-electric': 'SU.PA',
+  'seagate': 'STX',
+  'siemens-energy': 'ENR.DE',
+  'sk-hynix': '000660.KS',
+  'spacex': 'SPCX',
+  'texas-instruments': 'TXN',
+  'tsmc': 'TSM',
+  'vertiv': 'VRT',
+  'wartsila': 'WRT1V.HE',
+  'williams': 'WMB',
+};
