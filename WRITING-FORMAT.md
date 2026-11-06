@@ -53,7 +53,7 @@ value:
 1. **The calendar.** Each deep piece's companies, grid operators and regulators publish on a known
    schedule: quarterly results and filings, regulator orders and dockets (FERC, PJM, ERCOT, NERC, EMA,
    IMDA, Energy Commission, Tenaga, SPAN, NRC), statistical releases (EIA, CAISO). These test the claims
-   on record and feed updates. A monthly sweep lists what landed for each piece.
+   on record and feed updates. The daily scan (task `journal-daily-scan`, since 6 Nov 2026) logs what lands for each piece in research-build/topics/BENCH.md.
 2. **The claims' own watch lists.** Every claim in claims.ts names the evidence to watch; that list is the
    standing to-do for updates.
 3. **Videos and podcasts Tommy saves** (YouTube Watch Later). Claude pulls the transcripts, maps each one to

@@ -2,7 +2,9 @@
 
 Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. Newest day on top. Rewrite START HERE at the end of each session.
 
-## START HERE (as of Fri 6 Nov 2026, ~14:40)
+## START HERE (as of Fri 6 Nov 2026, ~14:50)
+
+- **Articles now have a daily scan** (Tommy chose: daily search, his go before anything publishes). Task `journal-daily-scan`, weekdays 08:10, Auto mode: logs new evidence and new topics to research-build/topics/BENCH.md; Wednesdays drafts at most one piece or update and asks Tommy "Publish this?". The monthly sweep task `journal-monthly-sweep` is deleted (its Watch Later check moved to the first Wednesday of each month). The morning sheet is live (5badb66).
 
 - **Research is now a Radar-style morning sheet with tabs** (Tommy: still confusing, the Radar's format was easier on the eyes). Masthead, "This morning" story, tabs for the book, watchlist (cards with a stop-to-target bar and "risk X to make Y, N times the risk"), idea bench, calendar, notes and how it works. Reward to risk is rounded down so a 1.97 never reads as 2.0.
 - **Daily scouting is back** (the Radar's idea bench): weekday runs add one or two new names to the bench; Sundays promote the strongest to a full note and model, fact-checked and published automatically (Tommy chose automatic). Bench seeded with Centrus Energy (LEU) and Howmet Aerospace (HWM).
@@ -113,10 +115,10 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 
 | Date | Job | What it does |
 |---|---|---|
-| Sun to Fri 07:30 | physical-layer-book-daily | Runs the US$100,000 book on /research and publishes it; every second Friday also marks the notes |
-| Sun 1 Nov 09:30 | journal-monthly-sweep | Writes research-build/sweeps/2026-11.md; proposes only |
+| Sun to Fri 07:30 | physical-layer-book-daily | Runs the US$100,000 book on /research and publishes it; scouts the idea bench; Sundays promotes one name to a published note |
+| Mon to Fri 08:10 | journal-daily-scan | Scans for new evidence and topics; Wednesdays drafts one piece or update for Tommy's go; never publishes |
 
-The sweep repeats on the 1st; the book runs daily. The one-time publish and LinkedIn jobs are all done: Hong Kong ran on 2 Nov; the 4, 6 and 9 Nov LinkedIn jobs were deleted on 2 Nov after their posts were scheduled by hand. The Hong Kong job itself is disabled but still listed (a session cannot delete the job that launched it); delete it from any other session. research-build/deep-pieces/updates/ is history now and can move to archive/.
+The book runs daily; the journal scan runs on weekdays. No monthly jobs remain. The one-time publish and LinkedIn jobs are all done: Hong Kong ran on 2 Nov; the 4, 6 and 9 Nov LinkedIn jobs were deleted on 2 Nov after their posts were scheduled by hand. The Hong Kong job itself is disabled but still listed (a session cannot delete the job that launched it); delete it from any other session. research-build/deep-pieces/updates/ is history now and can move to archive/.
 
 LinkedIn company page queue (11:30): posts 38 to 47 Mon 2 Nov to Wed 2 Dec; Fri 4 Dec left empty (post 34 retired 1 Nov, Tommy's word: Constellation is now a section of Nuclear for AI); then Hong Kong 48 Mon 7 Dec, updates 49 Wed 9 Dec, 50 Mon 14 Dec and 51 Wed 16 Dec, and memory post 52 Mon 21 Dec. All checked in LinkedIn's scheduled list on 2 Nov (14 posts, Wed 4 Nov to Mon 21 Dec).
 

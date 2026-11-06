@@ -41,6 +41,10 @@ work on notes, calls, the research page or share prices, read `CALLS-SPEC.md`.
 - **The research page is the book plus the notes** (Tommy, 6 Nov 2026): the book is the only scorecard; the notes are a library showing what each found (base value in src/data/notes.ts) and where it stands in the book. The notes' own calls are no longer shown or marked. CALLS-SPEC.md "Research page".
 - The notes are no longer marked; the book is marked daily by `physical-layer-book-daily` (Tommy, 6 Nov 2026).
 
+## Finding new work: the daily scan (Tommy, 6 Nov 2026; replaces the monthly sweep)
+
+Scheduled task `journal-daily-scan`, weekdays 08:10. Every weekday it scans for new evidence on the live pieces (their companies, regulators, grid operators, claims' watch lists) and for new topics, and logs each against the three-part quality bar in `research-build/topics/BENCH.md`. On Wednesdays it drafts at most one new piece or update (story rules incl. 18a, separate fact-check) as a draft or review copy and asks Tommy "Publish this?". It never publishes or posts. **Every new piece and update goes live only on Tommy's go**, then an interactive session publishes it by WRITING-FORMAT.md §8, including the LinkedIn post. Searching is daily; publishing stays rare (quality over quantity).
+
 ## Before writing or editing any piece, read `WRITING-FORMAT.md`
 
 It is the complete spec and it is not optional: the deep piece format (§D),
