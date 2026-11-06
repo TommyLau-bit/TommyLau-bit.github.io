@@ -1,7 +1,7 @@
 ---
 title: "Nuclear power for AI comes from old reactors first. The new ones wait on fuel."
 date: 2026-09-29T12:49:48+08:00
-summary: "AI companies want nuclear power because it runs day and night without carbon. This decade it will come mostly from reactors that already exist, restarted or upgraded, because they already hold a licensed site, a grid connection and ordinary fuel. The new small and advanced reactors have permits and buyers, but most need a richer uranium fuel that America has stopped making, and what stands behind it is government stock or promises."
+summary: "AI companies want nuclear power because it runs day and night without carbon. This decade it will come mostly from reactors that already exist, restarted or upgraded, because they already hold a licensed site, a grid connection and ordinary fuel. The new small and advanced reactors have permits and buyers, but most need a richer uranium fuel that America makes on only one small line, and what stands behind it is government stock or promises."
 category: "Analysis"
 cover: "/covers/nuclear-for-ai.svg"
 tags: ["power", "nuclear", "grid", "supply-chain"]
@@ -12,19 +12,19 @@ Some of the earliest new nuclear power for AI in America is due from a reactor t
 
 Constellation is restarting it, the former Three Mile Island Unit 1, for Microsoft, and upgrading eleven more reactors for Google. Holtec and NextEra are restarting two others. Meanwhile the new reactors, from Oklo, TerraPower and Kairos Power, have permits, ground broken and buyers signed.
 
-Yet the old reactors come first, because nuclear power for AI arrives in the order of what each project already holds. An old reactor has a licensed site, a place on the grid and ordinary fuel. Most of the new ones lack a fuel that America has almost stopped making.
+Yet the old reactors come first, because nuclear power for AI arrives in the order of what each project already holds. An old reactor has a licensed site, a place on the grid and ordinary fuel. Most of the new ones need a fuel that America makes on only one small line.
 
 <details class="analogy">
 <summary>The analogy</summary>
 <p>You want a cooker working this month. The old one in the garage still has its socket on the wall and its gas pipe in place, so it needs only a service and a safety check.</p>
-<p>The new model is better, but it runs on cartridges only one shop sold, and that shop has stopped. The new cooker is the future. The old one cooks dinner first.</p>
+<p>The new model is better, but it runs on cartridges only one small shop makes, a few at a time. The new cooker is the future. The old one cooks dinner first.</p>
 </details>
 
 A reactor needs four things before it can power an AI campus: a place on the grid, a working reactor, a licence and fuel. Each runs on its own clock. A restart means repairs and inspections. An uprate, which raises a running reactor's output, means new turbines fitted during refuelling shutdowns.
 
 A new reactor starts every clock at zero. The newest designs also need HALEU, high-assay low-enriched uranium, concentrated to just under 20 per cent of the kind of atom that splits. Ordinary reactors use up to about 5.
 
-Enrichment means spinning uranium gas through long lines of fast centrifuges. The only American line that has made HALEU at the level these reactors need is a demonstration of sixteen centrifuges in Ohio. Its contracted production finished in mid-June 2026, and the next contracted tonne is due by July 2032. Nobody builds a bigger plant until enough reactors exist to burn its output.
+Enrichment means spinning uranium gas through long lines of fast centrifuges. The only American line that has made HALEU at the level these reactors need is a demonstration of sixteen centrifuges in Ohio. Its government-contracted production finished in mid-June 2026, and the next government tonne is due by July 2032. Since then it has enriched for commercial buyers, in volumes not disclosed. Nobody builds a bigger plant until enough reactors exist to burn its output.
 
 Even the old reactors lean on Russia, which sold American reactor owners about a quarter of their enrichment last year. That gap can be bridged from Europe and from stockpiles. The HALEU gap, for now, cannot.
 
@@ -37,7 +37,7 @@ Crane, the restarted reactor, needs none of it. It is 835 megawatts on ordinary 
 
 <a id="nuclear-for-ai"></a>
 
-The nuclear megawatts that reach AI campuses before 2031 come from reactors that already exist. Of the projects on the ladder below, about 3,440 MW runs on ordinary fuel. Only 470 MW needs HALEU, the richer uranium the new designs burn, and America has stopped making it. The gate is not the reactor design. It is what each project already holds: a grid place, a licence and fuel.
+The nuclear megawatts that reach AI campuses before 2031 come from reactors that already exist. Of the projects on the ladder below, about 3,440 MW runs on ordinary fuel. Only 470 MW needs HALEU, the richer uranium the new designs burn, and America makes it on one small line. The gate is not the reactor design. It is what each project already holds: a grid place, a licence and fuel.
 
 <figure class="chart">
 <p class="chart-title">Seven in every eight megawatts on the ladder run on ordinary fuel</p>
@@ -105,12 +105,12 @@ Oklo, a start-up that plans to own its small reactors and sell the electricity, 
 
 Kairos Power, a reactor developer working with Google, went furthest on selling and least on fuel. TVA, the federal power company for Tennessee and its neighbours, agreed on 18 August 2025 to buy up to 50 MW from Hermes 2 at Oak Ridge from 2030. Yet Kairos's permits cover two test reactors of 35 thermal megawatts each, which cannot make 50 electrical megawatts. Its government HALEU contract covers only Hermes 1, its demonstration reactor. Hermes 2's fuel source is still unnamed.
 
-## America stopped making HALEU in June 2026, and its next tonne is due in 2032
+## America makes HALEU on one small line, and its next government tonne is due in 2032
 
-Why is fuel the gate? The proof sits in the filing of Centrus, the only American company that has made HALEU, on a demonstration line of sixteen centrifuges in Ohio. Centrus says its contracted production finished in mid-June 2026, and on 30 June the Energy Department, its only customer for it, ordered maintenance and storage only. Its new federal task order asks for one tonne by July 2032.
+Why is fuel the gate? The proof sits in the filing of Centrus, the only American company that has made HALEU, on a demonstration line of sixteen centrifuges in Ohio. Centrus says its contracted production finished in mid-June 2026, and on 30 June the Energy Department, its only customer for it, ordered maintenance and storage only. Its new federal task order asks for one tonne by July 2032. On 4 November 2026 Centrus said the same sixteen centrifuges now enrich HALEU for the commercial market. It gave no volume, and the Energy Department has budgeted no funding to run them in 2027.
 
 <figure class="chart">
-<p class="chart-title">America's only HALEU line has stopped, and what stands behind it is stock or promises</p>
+<p class="chart-title">America's only HALEU line is sixteen centrifuges, and what stands behind it is stock or promises</p>
 <p class="chart-sub">HALEU for American advanced reactors: dated selections, letters, orders and deliveries, against the reactors' own target dates</p>
 <svg viewBox="0 0 560 288" role="img" aria-label="Timeline of HALEU for American advanced reactors, against the reactors' own target dates: Aurora-INL 2028, Kemmerer 1 and Hermes 2 2030. Centrus's demonstration cascade in Ohio finished its contracted production in mid-June 2026. Kairos Power, selected for government stock on 9 April 2025, contracted on 20 January 2026 for Hermes 1 only. Centrus signed a letter of intent with Oklo on 18 June 2026 for deliveries from 2029. Centrus's federal task order of 1 July 2026 asks for one tonne by July 2032. ASP Isotopes is contracted for up to 150 tonnes to TerraPower from 2028 to 2037 and has not yet enriched uranium.">
 <g class="c-grid"><line x1="236" y1="16" x2="236" y2="258"/><line x1="311" y1="16" x2="311" y2="258"/><line x1="386" y1="16" x2="386" y2="258"/><line x1="461" y1="16" x2="461" y2="258"/><line x1="536" y1="16" x2="536" y2="258"/></g>
@@ -177,7 +177,7 @@ Claim: "Oklo is a seller of electricity, not reactors, and the model stands or f
 
 Breaks if: "Oklo starts selling reactors outright to raise cash, or Aurora in Idaho slips well past 2028 or produces power uncompetitive with gas, or the letters of intent stay letters."
 
-Where later evidence bears on it: Oklo's quarterly report calls Meta's arrangement a mechanism for Meta to prepay, discloses no amount, and does not call it a power purchase agreement. Centrus's contracted HALEU production finished in mid-June 2026, the Energy Department has since ordered only maintenance, and its next contracted tonne is due by July 2032. Its supply to Oklo is a letter of intent, deliveries from 2029. The first half of the claim holds: Oklo still sells power, not reactors, and still targets 2028. But the limb "the letters of intent stay letters" currently points towards a break: no customer megawatt is under a binding power purchase agreement, and Oklo's fuel beyond its first core rests on a letter of intent too.
+Where later evidence bears on it: Oklo's quarterly report calls Meta's arrangement a mechanism for Meta to prepay, discloses no amount, and does not call it a power purchase agreement. Centrus's contracted HALEU production finished in mid-June 2026, the Energy Department then ordered only maintenance, the line now enriches for commercial buyers with no volume given, and its next contracted tonne is due by July 2032. Its supply to Oklo is a letter of intent, deliveries from 2029. The first half of the claim holds: Oklo still sells power, not reactors, and still targets 2028. But the limb "the letters of intent stay letters" currently points towards a break: no customer megawatt is under a binding power purchase agreement, and Oklo's fuel beyond its first core rests on a letter of intent too.
 
 </details>
 
@@ -210,7 +210,7 @@ Enrichment, for old reactors and new:
 | Orano, France | Ordinary | 2.5 million SWU extension | First production 2028 (10 October 2024) |
 | Orano, Oak Ridge | Ordinary | Not stated | NRC review due by 30 April 2027 |
 | Centrus, Piketon | Ordinary | New centrifuges | First online 2029 (6 August 2026) |
-| Centrus, demonstration cascade | HALEU | 16 centrifuges; 900 kg in phase two alone, to June 2025 | Contracted production finished mid-June 2026; maintenance only since 30 June |
+| Centrus, demonstration cascade | HALEU | 16 centrifuges; 900 kg in phase two alone, to June 2025 | Contracted production finished mid-June 2026; enriching for the commercial market, volume not disclosed (4 November 2026) |
 | Energy Department stock | HALEU | Ten conditional selections in three rounds; no tonnage published | Latest round 23 July 2026; Kairos's contract, for Hermes 1, 20 January 2026 |
 | Centrus, federal task order | HALEU | 1 tonne by July 2032 | Signed 1 July 2026 |
 | General Matter | HALEU | Federal task order | Awarded 5 January 2026 |

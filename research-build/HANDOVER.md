@@ -2,6 +2,8 @@
 
 Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. Newest day on top. Rewrite START HERE at the end of each session.
 
+- **6 Nov evening: nuclear-for-ai HALEU fact fixed in place** (Tommy delegated the call). Centrus Q3 release, 4 Nov 2026: the 16-centrifuge cascade now enriches HALEU for the commercial market, no volume, no DOE funding for FY2027. Heading, summary, intro, analogy, section text, chart title, table row and Oklo evidence line updated. Claim and test NOT reworded. The 16 Nov LinkedIn teaser ("its contracted production stopped") is still true and was left.
+
 ## START HERE (as of Fri 6 Nov 2026, evening; the day is closed)
 
 **★ NEXT ON THE JOURNAL (Tommy, 6 Nov 2026):** BWXT and microreactors (Max Hopkins's pointers). Tommy studies it FIRST, then a piece is drafted, and it is published only on his word. Brief: research-build/topics/BWXT-MICROREACTORS.md. After that, Tommy relearns the other 13 pieces one by one. No other new pieces until then.
