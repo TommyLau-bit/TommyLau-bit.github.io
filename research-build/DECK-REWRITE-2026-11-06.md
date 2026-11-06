@@ -60,7 +60,9 @@ Kept: every claim and Breaks if word for word (checker), every old anchor (verif
 - ten-thousand-chips-one-thought: Lumentum GAAP gross margin 51.0% (results **2 Nov**, not 5 Nov). Also folded in: Marvell agreed to buy Lumentum (8-K, 2 Nov), with no deal terms.
 - the-queue-not-the-chip: the Bill passed on 7 Oct. The 58.5% series is traced to Hansard 5 Nov 2025 (603 of 1,276 MW declared, 47%, target 85%). 30% renewable rule (Hansard 28 Oct).
 
-## TSMC (Tommy's decision, 6 Nov, relayed by the jobs session: "Keep it word for word")
+## TSMC: REVERSED 6 Nov night. Tommy: "you might as well just name TSMC." The journal names TSMC again (commit after fc270a6); claims.ts, Descent.astro and numbers.ts are back to main. The old rule came from the job hunt (no view on TSMC or foundry; not named on CVs or emails), which stays. Old note below is history.
+
+## TSMC (old decision, 6 Nov, relayed by the jobs session: "Keep it word for word")
 TSMC now appears once on the whole built site: the 2 Nov claim sentence in the-chip-supply-chain's claims fold. Its Breaks if and watch list, the Ajinomoto claim's watch list, numbers.ts and the homepage descent (Descent.astro) all say "the leading foundry".
 
 ## Checks run on the branch
