@@ -41,9 +41,9 @@ work on notes, calls, the research page or share prices, read `CALLS-SPEC.md`.
 - **The research page is the book plus the notes** (Tommy, 6 Nov 2026): the book is the only scorecard; the notes are a library showing what each found (base value in src/data/notes.ts) and where it stands in the book. The notes' own calls are no longer shown or marked. CALLS-SPEC.md "Research page".
 - The notes are no longer marked; the book is marked daily by `physical-layer-book-daily` (Tommy, 6 Nov 2026).
 
-## Finding new work: the daily scan (Tommy, 6 Nov 2026; replaces the monthly sweep)
+## Finding and publishing new work: the daily scan (Tommy, 6 Nov 2026; replaces the monthly sweep)
 
-Scheduled task `journal-daily-scan`, weekdays 08:10. Every weekday it scans for new evidence on the live pieces (their companies, regulators, grid operators, claims' watch lists) and for new topics, and logs each against the three-part quality bar in `research-build/topics/BENCH.md`. On Wednesdays it drafts at most one new piece or update (story rules incl. 18a, separate fact-check) as a draft or review copy and asks Tommy "Publish this?". It never publishes or posts. **Every new piece and update goes live only on Tommy's go**, then an interactive session publishes it by WRITING-FORMAT.md §8, including the LinkedIn post. Searching is daily; publishing stays rare (quality over quantity).
+Scheduled task `journal-daily-scan`, weekdays 08:10. It scans for new evidence on the live pieces and for new topics, checks **Leo Cui's YouTube channel** (@Leo-cui-phd-cfa, Tommy's main inspiration; videos are leads, never evidence) for new videos daily and Watch Later on Wednesdays, and logs everything in `research-build/topics/`. **It publishes on its own, without Tommy's approval** (his instruction, 6 Nov 2026), but only what clears the three-part quality bar, at most one new deep piece and two updates in any seven days, and only after a separate fact-check, the checkers, a clean build and a link check all pass; then WRITING-FORMAT.md §8 in full, including the LinkedIn post on the company page. Publishing nothing is the normal day.
 
 ## Before writing or editing any piece, read `WRITING-FORMAT.md`
 
