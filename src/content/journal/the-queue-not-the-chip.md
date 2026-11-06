@@ -5,6 +5,8 @@ summary: "Malaysia's data centres draw less than a quarter of the grid power the
 category: "Analysis"
 cover: "/covers/the-queue-not-the-chip.svg"
 tags: ["grid", "power", "johor", "singapore"]
+updated: 2026-11-06
+updateNote: "Now traces one campus from application to a working hall, with evidence to 6 November 2026."
 draft: false
 ---
 
@@ -12,23 +14,68 @@ On their utility's count, Malaysia's data centres have booked more than four tim
 
 One side has power booked and sitting idle. The other turns builders away. They look like opposite problems.
 
-They are the same one. In Johor and Singapore, a connection to the grid, not a supply of chips, decides who gets to build. Singapore rations it. Johor hands it out years before the halls fill, so booked power is a poor guide to computing at work.
+They are the same one. In Johor and Singapore, a connection to the grid, not a supply of chips, decides who gets to build.
+
+Part of the confusion is one word. "Megawatts" is three different numbers. Booked is the most a campus may draw, signed in its supply contract for its finished size. Licensed is the computing load a regulator lets a hall run. Drawn is the power actually flowing. Headlines quote the first. Singapore rations the second, and Johor lives in the gap between the first and the third.
 
 <details class="analogy">
 <summary>The analogy</summary>
-<p>Two blocks of flats face each other. The old block has no spare sockets, so the landlord gives the few he has to tenants with efficient fridges.</p>
-<p>In the new block, every flat is wired before anyone moves in, and lights come on only as furniture arrives. Counting sockets tells you who may move in. Counting lit windows tells you who has.</p>
+<p>Think of a restaurant. A party books a table for forty months ahead: that is the booked megawatt. The fire code caps how many may sit in the room, whatever the bookings say: that is Singapore's licence. The diners actually eating are the drawn power, and they are what the kitchen cooks for.</p>
+<p>Johor has tables booked for forty and about nine people eating. Singapore's room is full, so the owner gives the last few seats to the most efficient kitchens. Bringing your own gas cylinder does not help, because the limit is on seats, not on gas.</p>
 </details>
 
-A data centre needs more than electricity made somewhere. It needs a connection: a substation, where high voltage power is stepped down, a transformer feeding it, and a signed place in the utility's plans.
+Follow one campus from application to a working hall and the choke point shows itself. There are five steps, and only one is handed out by a government.
 
-Every new campus passes three clocks. The first is permission: studies, approvals and a supply contract. The second is plant, the heavy gear built to order in factories that already have years of orders waiting. The third is filling the hall, which runs on the tenant's chips and, for a tenant based in China, an American export licence.
+First, the operator asks the utility for supply. Second, the government decides whether it may plug in at all: Singapore only through a call, Malaysia now only from the grid's spare margin. Third, the operator signs a contract that books its finished size, years before the halls fill. Fourth, the plant is built: a substation, where high voltage power is stepped down, the transformer feeding it, and cable. Fifth, the tenant fills the hall with chips, at its own pace and, for a tenant based in China, under an American export licence.
 
-Only the first clock answers to a government, and Malaysia squeezed it hard. Its utility, Tenaga Nasional, cut the time to connect a data centre from up to four years to one. Campuses connected quickly, and their bookings ran far ahead of use. In June 2026 the data centres in Tenaga's system had booked 5.65 gigawatts and drew 1.26, a little over a fifth.
+<figure class="chart">
+<p class="chart-title">Only one step decides who builds, and a government hands it out</p>
+<p class="chart-sub">One campus in Johor or Singapore, from application to a working hall</p>
+<svg viewBox="0 0 560 196" role="img" aria-label="Diagram of five steps in order. One, apply: the operator asks the utility for supply, weeks to months. Two, allocate: the government decides who may plug in; in Singapore only through a call, in Malaysia only from the grid's spare margin. This is the choke point. Three, book: a supply contract for the campus's finished size, years before it fills. Four, plant: substation, transformer and cable, done in 12 months under Malaysia's Green Lane. Five, fill: the tenant racks its chips; Malaysia's operating halls draw about 23% of their booked load.">
+<rect class="c-box" x="5.0" y="44" width="100.4" height="106" rx="4"/>
+<text class="c-box-t" x="13.0" y="66">1. Apply</text>
+<text class="c-note" x="13.0" y="88">Ask the utility</text>
+<text class="c-note" x="13.0" y="106">for supply</text>
+<text class="c-note" x="13.0" y="124">Weeks to</text>
+<text class="c-note" x="13.0" y="142">months</text>
+<line class="c-arrow" x1="106.4" y1="97" x2="111.4" y2="97"/><polygon class="c-arrow-head" points="116.4,97 110.4,93 110.4,101"/>
+<rect class="c-zone" x="113.4" y="14" width="108.4" height="144" rx="4"/>
+<text class="c-zone-t" x="167.6" y="30" text-anchor="middle">THE CHOKE POINT</text>
+<rect class="c-box" x="117.4" y="44" width="100.4" height="106" rx="4"/>
+<text class="c-box-t" x="125.4" y="66">2. Allocate</text>
+<text class="c-note" x="125.4" y="88">Government</text>
+<text class="c-note" x="125.4" y="106">says who</text>
+<text class="c-note" x="125.4" y="124">may plug in</text>
+<text class="c-note" x="125.4" y="142">SG: by call</text>
+<line class="c-arrow" x1="218.8" y1="97" x2="223.8" y2="97"/><polygon class="c-arrow-head" points="228.8,97 222.8,93 222.8,101"/>
+<rect class="c-box" x="229.8" y="44" width="100.4" height="106" rx="4"/>
+<text class="c-box-t" x="237.8" y="66">3. Book</text>
+<text class="c-note" x="237.8" y="88">Contract for</text>
+<text class="c-note" x="237.8" y="106">the finished</text>
+<text class="c-note" x="237.8" y="124">size, years</text>
+<text class="c-note" x="237.8" y="142">before fill</text>
+<line class="c-arrow" x1="331.2" y1="97" x2="336.2" y2="97"/><polygon class="c-arrow-head" points="341.2,97 335.2,93 335.2,101"/>
+<rect class="c-box" x="342.2" y="44" width="100.4" height="106" rx="4"/>
+<text class="c-box-t" x="350.2" y="66">4. Plant</text>
+<text class="c-note" x="350.2" y="88">Substation,</text>
+<text class="c-note" x="350.2" y="106">transformer,</text>
+<text class="c-note" x="350.2" y="124">cable</text>
+<text class="c-note" x="350.2" y="142">MY: 12 months</text>
+<line class="c-arrow" x1="443.6" y1="97" x2="448.6" y2="97"/><polygon class="c-arrow-head" points="453.6,97 447.6,93 447.6,101"/>
+<rect class="c-box" x="454.6" y="44" width="100.4" height="106" rx="4"/>
+<text class="c-box-t" x="462.6" y="66">5. Fill</text>
+<text class="c-note" x="462.6" y="88">Tenant racks</text>
+<text class="c-note" x="462.6" y="106">its chips</text>
+<text class="c-note" x="462.6" y="124">MY: about</text>
+<text class="c-note" x="462.6" y="142">23% drawn</text>
+<text class="c-lab c-s2t" x="117.4" y="180" text-anchor="start">Malaysia since 28 Oct: grid power only from spare margin</text>
+</svg>
+<figcaption>Tenaga's Green Lane release (9 August 2023); EDB and IMDA (21 August 2026); Dewan Rakyat Hansard of 13 and 28 October 2026. My framing of the chain. Plant evidence is in The equipment queue.</figcaption>
+</figure>
 
-Singapore cannot do that. It is short of land and of green power, so it hands out capacity in small batches to operators that pass strict efficiency and clean energy tests. A new law, expected in force in 2027, will license the megawatts of every large hall, old ones included.
+The second step binds. Malaysia's fast track has the plant built within a year, and chips set only how fast a built hall fills. Allocation alone decides who builds. Singapore has rationed it for years, and since October 2026 Malaysia rations it too.
 
-American AI labs have found a way round their own grid queues: they build gas power on site. Singapore allows that too, but it buys nothing, because what Singapore rations is the computing load a hall may run, not the electricity. Malaysia gives data centres grid power only from Tenaga's spare margin, and beyond that lets them build their own only with a permit.
+American AI labs get round their own grid queues by building gas power on site. That buys nothing in Singapore, where the ration is on computing load, not electricity. Malaysia lets a data centre build its own power only once the grid's spare margin is gone, and only with a permit.
 
 So chips decide how fast a finished Johor hall fills. Whether a hall may be built at all is settled at the plug. A booked megawatt is a place in line, not a computer at work.
 
@@ -68,44 +115,11 @@ On both sides of the causeway the scarce thing is the plug. In June 2026 Malaysi
 
 That idle power cannot cross. A booked megawatt belongs to its site and its supply agreement, and only a tenant with chips lights it. Singapore chooses who may plug in. Johor hands out plugs years before its halls fill.
 
-## Malaysia cut the one clock a government controls, and bookings ran ahead of use
+## Malaysia sped up the steps a government controls, and bookings ran ahead of use
 
-The gap starts with how a campus gets built. Every campus passes three clocks, and only permission answers to a government. Plant answers to the makers' factories. Fill answers to tenants, chip supply and American export licences.
+The gap starts with the chain above. Of its five steps, only allocation and the paperwork around it answer to a government. Plant answers to the makers' factories. Fill answers to tenants, chip supply and American export licences.
 
-<figure class="chart">
-<p class="chart-title">Only the first of the three clocks answers to a government</p>
-<p class="chart-sub">What every new campus in Johor or Singapore passes, in order, and who sets each pace</p>
-<svg viewBox="0 0 560 220" role="img" aria-label="Diagram of three clocks in order. One, permission: studies, approvals and the supply contract, set by the utility, which policy can shorten; in Malaysia the Green Lane cut 36 to 48 months to 12. Two, plant: transformers, cable and converter stations, set by the factories, which only new plants can speed up. Three, fill: chips bought, racked and tested, set by tenants and US export licences; Malaysia's halls draw under a quarter of the power they booked.">
-<rect class="c-box" x="5" y="20" width="165" height="128" rx="4"/>
-<text class="c-box-t" x="17" y="46">1. Permission</text>
-<text class="c-note" x="17" y="72">Studies, approvals,</text>
-<text class="c-note" x="17" y="91">the supply contract</text>
-<text class="c-note" x="17" y="110">Set by the utility</text>
-<text class="c-note" x="17" y="129">Policy can shorten it</text>
-<rect class="c-box" x="197.5" y="20" width="165" height="128" rx="4"/>
-<text class="c-box-t" x="209.5" y="46">2. Plant</text>
-<text class="c-note" x="209.5" y="72">Transformers, cable,</text>
-<text class="c-note" x="209.5" y="91">converter stations</text>
-<text class="c-note" x="209.5" y="110">Set by the factories</text>
-<text class="c-note" x="209.5" y="129">Only new plants help</text>
-<rect class="c-box" x="390" y="20" width="165" height="128" rx="4"/>
-<text class="c-box-t" x="402" y="46">3. Fill</text>
-<text class="c-note" x="402" y="72">Chips bought, racked</text>
-<text class="c-note" x="402" y="91">and tested</text>
-<text class="c-note" x="402" y="110">Set by tenants and</text>
-<text class="c-note" x="402" y="129">US export licences</text>
-<line class="c-arrow" x1="172" y1="84" x2="188.5" y2="84"/><polygon class="c-arrow-head" points="195.5,84 187.5,79.5 187.5,88.5"/>
-<line class="c-arrow" x1="364.5" y1="84" x2="381" y2="84"/><polygon class="c-arrow-head" points="388,84 380,79.5 380,88.5"/>
-<text class="c-lab c-s2t" x="87.5" y="176" text-anchor="middle">Malaysia: 36 to 48</text>
-<text class="c-lab c-s2t" x="87.5" y="194" text-anchor="middle">months cut to 12</text>
-<text class="c-lab c-s3t" x="472.5" y="176" text-anchor="middle">Malaysia: under a</text>
-<text class="c-lab c-s3t" x="472.5" y="194" text-anchor="middle">quarter of booked</text>
-<text class="c-lab c-s3t" x="472.5" y="212" text-anchor="middle">power drawn</text>
-</svg>
-<figcaption>Tenaga's Green Lane release (9 August 2023) and briefing of 28 August 2026; plant evidence in The equipment queue. The plant clock is shared with every market that buys the same transformers.</figcaption>
-</figure>
-
-Malaysia squeezed that first clock hard. Tenaga's Green Lane Pathway, a fast track launched on 8 August 2023 for data centres taking supply at 132 or 275 kilovolts, cut the implementation period from 36 to 48 months to 12, plant included. The transformer makers on the plant clock, such as [Hitachi Energy](/journal/the-equipment-queue/#hitachi-energy-plans-the-queue) and [Siemens Energy](/journal/the-equipment-queue/#siemens-energy-measures-the-shortage) also serve Johor. Malaysia has not yet had to show their factories can keep up.
+Malaysia squeezed those steps hard. Tenaga's Green Lane Pathway, a fast track launched on 8 August 2023 for data centres taking supply at 132 or 275 kilovolts, cut the implementation period from 36 to 48 months to 12, plant included. The transformer makers on the plant step, such as [Hitachi Energy](/journal/the-equipment-queue/#hitachi-energy-plans-the-queue) and [Siemens Energy](/journal/the-equipment-queue/#siemens-energy-measures-the-shortage), also serve Johor. Malaysia has not yet had to show their factories can keep up.
 
 Campuses connected faster than their halls could fill. In the year to June 2026 the load drawn roughly doubled, to 1,256 megawatts, while booked maximum demand grew by about 60%. The share drawn crept from about 17% to about 22%.
 
@@ -152,35 +166,26 @@ Nor can imported green power ease the ration in time. Singapore aims to import a
 
 <a id="singapore-licenses-the-old-halls"></a>
 
-The ration is now reaching halls already running. The Digital Infrastructure Bill, Singapore's new data centre licensing law, debated on 6 and 7 October 2026, makes every large hall's megawatts a licensed quantity. Any hall with 3 megawatts or more of critical IT load, own-use halls included, needs a licence stating that load, and the regulator can enforce by a fine or by cutting it. About 70 data centres are in scope, Senior Minister of State Tan Kiat How said on 7 October, and the Act is expected in force in 2027.
+The ration is now reaching halls already running. The Digital Infrastructure Bill, Singapore's new data centre licensing law, passed on 7 October 2026 and makes every large hall's megawatts a licensed quantity. Any hall with 3 megawatts or more of critical IT load, own-use halls included, needs a licence stating that load, and the regulator can enforce by a fine or by cutting it. About 70 data centres are in scope, Senior Minister of State Tan Kiat How said in the debate, and the law is expected in force in 2027.
 
 ## Building your own power gets round a queue, not a ration
 
 America's AI labs escape their grid queues by building gas power on site, and in Singapore that is legal and the fuel is there. Under the Energy Market Authority, Singapore's power regulator, an embedded unit of 1 megawatt to under 10 needs a Wholesaler (Generation) Licence; one of 10 megawatts or more needs a Generation Licence and is dispatched by the grid operator. Its LNG regasification capacity, the terminal that turns shipped liquefied gas back into gas, rises from 10 to 15 million tonnes a year by 2030, and by my arithmetic a 100 megawatt campus running all year on its own plant would burn 1 to 2% of today's capacity.
 
-<figure class="chart">
-<p class="chart-title">One campus burning its own gas would use 1 to 2% of Singapore's LNG terminal</p>
-<p class="chart-sub">Liquefied natural gas, million tonnes a year</p>
-<svg viewBox="0 0 560 215" role="img" aria-label="Bar chart in million tonnes of LNG a year. Singapore's terminal capacity is 10 today and is planned to reach 15 by 2030. A 100 MW campus running all year on its own plant would burn about 0.18 on simple-cycle turbines or about 0.13 at combined-cycle efficiency, 1 to 2% of today's capacity.">
-<g class="c-axis"><text x="215" y="40" text-anchor="end">Terminal capacity today</text><text x="215" y="88" text-anchor="end">Planned by 2030</text><text x="215" y="136" text-anchor="end">100 MW campus, simple cycle</text><text x="215" y="184" text-anchor="end">100 MW campus, combined cycle</text></g>
-<rect class="c-bar c-mute" x="225" y="20" width="180" height="28" rx="2"/>
-<text class="c-lab c-s1t" x="413" y="40">10 Mt</text>
-<rect class="c-bar c-mute" x="225" y="68" width="270" height="28" rx="2"/>
-<text class="c-lab c-s1t" x="503" y="88">15 Mt</text>
-<rect class="c-bar" x="225" y="116" width="3.2" height="28" rx="2"/>
-<text class="c-lab c-s2t" x="236.2" y="136">0.18 Mt</text>
-<rect class="c-bar" x="225" y="164" width="2.3" height="28" rx="2"/>
-<text class="c-lab c-s2t" x="235.3" y="184">0.13 Mt</text>
-<line class="c-base" x1="225" y1="12" x2="225" y2="200"/>
-</svg>
-<figcaption>Terminal capacity: SLNG (read 30 October 2026) and EMA (26 October 2026). Campus figures are my arithmetic: 100 MW run all year, about 50% efficiency in combined cycle and about 35% in simple cycle, at about 50 GJ a tonne.</figcaption>
-</figure>
-
 What a campus cannot build is permission. Under the Bill, its licence states the critical IT load it may run, and new capacity comes only through a call. A turbine in the yard adds megawatts of electricity, not one megawatt of licensed computing.
 
 <a id="malaysia-grants-only-the-spare-margin"></a>
 
-Malaysia makes own power the route left once the grid says no. On 28 October 2026 Malaysia's investment minister told Parliament that a data centre gets grid power only if Tenaga's reserve margin has room to spare after other industry; otherwise it must build its own off the grid, with the energy ministry's approval. Of the 117 data centres Malaysia has approved, 27 will take their power that way, and 24 new applications wait until the 117 settle. Asked about a moratorium, he said: "our moratorium is the way we process". The grid's own gas is spoken for: Tenaga is retiring 6.6 gigawatts of its plant by 2030, and new gas plants tendered as NEWGEN26 are due from 2029 to 2031.
+Malaysia makes own power the route left once the grid says no. On 28 October 2026 Malaysia's investment minister told Parliament that a data centre gets grid power only if Tenaga's reserve margin has room to spare after other industry; otherwise it must build its own off the grid, with the energy ministry's approval. Of the 117 data centres Malaysia has approved, 27 will take their power that way, and 24 new applications wait until the 117 settle. Asked about a moratorium, he said: "our moratorium is the way we process". The same day the Deputy Prime Minister said the government had approved a rule that data centres take at least 30% of their capacity or energy from renewables, under a framework the Energy Commission, Malaysia's power regulator, is still drafting. The grid's own gas is spoken for: Tenaga is retiring 6.6 gigawatts of its plant by 2030, and new gas plants tendered as NEWGEN26 are due from 2029 to 2031.
+
+<a id="phantom-load"></a>
+## Idle bookings may be using up the margin on paper
+
+The question I am now testing is where those idle bookings bite. An engineer sizing a grid does not add up every customer's maximum, because loads rarely peak together; the allowance is called the diversity factor. An allocation queue does add them up, because each booked megawatt is a promise the planner must be ready to keep.
+
+If Malaysia's spare-margin test counts bookings rather than draw, the 4.4 gigawatts booked and idle in June 2026 could use up the margin on paper while wires and turbines sit half used. The record fits that reading without proving it. In November 2025 ministers told Parliament that the Energy Commission had found a likelihood of speculative applications and cut its projections to avoid stranded assets. In October 2026 the 24 new applications were parked until the 117 already approved settle.
+
+If that is right, the cheapest new gigawatt in Johor is a reclaimed booking, not a new substation. It also cuts against my own test. A clawback shrinks the bottom of Tenaga's ratio, so the share could cross 40% without one more chip racked; I would mark the test broken and say why. What would kill the idea is simple: if the Commission's planning counts expected draw, not bookings, idle bookings block nothing. AI training halls also run flatter and peak together more than cloud halls, which shrinks the diversity allowance as they arrive.
 
 ## What would prove me wrong
 
@@ -188,7 +193,7 @@ Two tests break the claim. If Tenaga's quarterly briefing for June 2027 shows Ma
 
 Two events would move me before either test. Singapore reviews its next call 18 to 24 months from August 2026, and one without those conditions would show the ration easing. IMDA's first efficiency rules, to be paced with "investment and depreciation cycles", will show how hard the licence reaches the old halls.
 
-The strongest figure against me would not move me. On 28 October 2026 Malaysia's Deputy Prime Minister said data centres had contracted 2,346 megawatts by August 2026 and used about 1,374, or 58.5%. That is the same draw against a smaller booking: against the 6 gigawatts booked at 45 operating sites, which ministers gave on 13 October, it is about 23%.
+The strongest figure against me would not move me. On 28 October 2026 Malaysia's Deputy Prime Minister said data centres had contracted 2,346 megawatts by August 2026 and used about 1,374, or 58.5%. That is the same draw against a smaller booking. The series counts demand declared for each phase: in November 2025 the same Parliament heard 603 megawatts drawn against 1,276 declared, about 47%, with a target of 85%. Against the 6 gigawatts booked at 45 operating sites, which ministers gave on 13 October, the draw is about 23%. Different questions need different bottoms, and mine asks what a booking says about computing at work.
 
 <figure class="chart">
 <p class="chart-title">Counted against what they contracted, halls use more than half; against what they booked, under a quarter</p>
@@ -219,7 +224,7 @@ Nor is water the hidden gate. Johor's reserve margin of treatment capacity, 14.3
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
 
-The test this piece stands behind, quoted word for word from the claims page:
+The test this piece stands behind, quoted word for word:
 
 **Johor and Singapore, the plug, not the chip** (30 October 2026)
 
@@ -263,6 +268,7 @@ Tenaga publishes the fill quarterly. Every draw figure is Malaysia-wide; Tenaga 
 | As at | Load drawn | Booked maximum demand | Share drawn | Source |
 |---|---|---|---|---|
 | June 2025 | 603 MW | 3.5 GW in system, 24 projects | about 17% | Tenaga briefing, 2QFY2025 |
+| June 2025 | 603 MW | 1,276 MW declared maximum demand | about 47%, target 85% | Dewan Rakyat Hansard, 5 November 2025 |
 | September 2025 | 710 MW | not given | | Tenaga briefing, 28 August 2026 |
 | December 2025 | 850 MW | about 4.5 GW in operation | about 19% | Tenaga briefing, 4QFY2025 |
 | March 2026 | 1,054 MW | about 4.5 GW in system | about 23% | Tenaga briefing, 1QFY2026 |
@@ -308,7 +314,7 @@ Singapore's Digital Infrastructure Bill, Bill No. 20 of 2026:
 | Efficiency duty | Minimum efficiency "as may be prescribed", measured by PUE | 35 |
 | Enforcement | A fine, or a cut to licensed critical IT load | 39(2)(b), 40 |
 
-The Bill holds no PUE level and no date. The minister's closing speech refers to "the approved Act". Singapore's import goal is from EMA (30 May 2025); its 13 conditional projects, with developers' dates from 2028 to 2035, are as at 7 August 2026. The five gas power stations by 2031 and the regasification expansion are from EMA's five-year plan (26 October 2026).
+The Bill passed on 7 October 2026. It holds no PUE level and no commencement date. Singapore's import goal is from EMA (30 May 2025); its 13 conditional projects, with developers' dates from 2028 to 2035, are as at 7 August 2026. The five gas power stations by 2031 and the regasification expansion are from EMA's five-year plan (26 October 2026).
 
 Own power in Singapore: EMA's Information Guide for Embedded Generation (February 2014) sets the licence tiers; the 30% hydrogen-ready rule is EMA's emission standards determination (26 October 2023). The gas arithmetic is mine: 100 MW run all year at about 50% combined-cycle efficiency burns about 0.13 Mt of LNG, and at about 35% on simple-cycle turbines about 0.18 Mt, at about 50 GJ a tonne, against SLNG's 10 Mtpa. SLNG says its terminal supplies about half of the gas for power. Indonesia's energy ministry gave the cut as 31 of the 409.55 billion British thermal units a day it pipes to neighbours. Malaysia's solar steer is from the Dewan Rakyat Hansard of 28 October 2026; Tenaga's retirements and NEWGEN26 dates are from its briefing of 28 August 2026.
 
@@ -335,4 +341,4 @@ Own power in Singapore: EMA's Information Guide for Embedded Generation (Februar
 
 ---
 
-<p class="sources">Sources: Tenaga's Green Lane release (9 August 2023), briefings to 28 August 2026, October 2026 deck, Connection Charge Book 2025 and charges terms; Energy Commission tariffs from 1 July 2025; Dewan Rakyat Hansard of 13, 15 and 28 October 2026, Dewan Negara Hansard of 8 December 2025 and a water ministry answer (12 November 2019); SPAN's Fact Book 2025; DayOne's Form F-1 (5 October 2026); US Commerce Department guidance (31 May 2026) and Malaysia's trade ministry (14 July 2025); EDB and IMDA fact sheets (1 December 2025, 21 August 2026); Energy Market Authority releases (5 September 2024, 30 May 2025, 7 August 2026, 26 October 2026), embedded generation guide (2014) and emission standards (26 October 2023); SLNG; Indonesia's energy ministry (26 October 2026); the Digital Infrastructure Bill and MDDI statements (3 March, 8 September, 6 and 7 October 2026); Hitachi (10 June 2026) and Siemens Energy (20 November 2025) disclosures. The power-gated and chip-gated framing, "the grid is sold out" (March 2024, repeated 30 December 2025), the on-site gas lead and the ByteDance identification are SemiAnalysis's, from its free articles of 13 March 2024, 30 June 2025, 30 December 2025 and 25 September 2026. Personal research, not investment advice.</p>
+<p class="sources">Sources: Tenaga's Green Lane release (9 August 2023), briefings to 28 August 2026, October 2026 deck, Connection Charge Book 2025 and charges terms; Energy Commission tariffs from 1 July 2025; Dewan Rakyat Hansard of 5 November 2025 and 13, 15 and 28 October 2026, Dewan Negara Hansard of 8 December 2025 and a water ministry answer (12 November 2019); SPAN's Fact Book 2025; DayOne's Form F-1 (5 October 2026); US Commerce Department guidance (31 May 2026) and Malaysia's trade ministry (14 July 2025); EDB and IMDA fact sheets (1 December 2025, 21 August 2026); Energy Market Authority releases (September 2024 to October 2026), embedded generation guide (2014) and emission standards (26 October 2023); SLNG; Indonesia's energy ministry (26 October 2026); the Digital Infrastructure Bill and MDDI statements (3 March, 8 September, 6 and 7 October 2026); Hitachi (10 June 2026) and Siemens Energy (20 November 2025) disclosures. The power-gated and chip-gated framing, "the grid is sold out" (March 2024, repeated 30 December 2025), the on-site gas lead and the ByteDance identification are SemiAnalysis's, from its free articles of 13 March 2024, 30 June 2025, 30 December 2025 and 25 September 2026. Personal research, not investment advice.</p>
