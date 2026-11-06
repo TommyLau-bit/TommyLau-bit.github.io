@@ -2,7 +2,13 @@
 
 Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. Newest day on top. Rewrite START HERE at the end of each session.
 
-## START HERE (as of Fri 6 Nov 2026, ~14:50)
+## START HERE (as of Fri 6 Nov 2026, ~15:10; the day is closed)
+
+**How the site runs now (all set on 6 Nov; detail in the bullets below and in CLAUDE.md / CALLS-SPEC.md):**
+- Journal: 13 pieces, investor layers cut to message, proof, what would and would not change the view, with a context clause for every name (STORY-RULES 18a). Task `journal-daily-scan`, weekdays 08:10: sources, claims' watch lists, Leo Cui's YouTube daily, Watch Later Wednesdays; publishes on its own after the quality bar, a separate fact-check, checkers, build and link check; at most one new piece and two updates a week; LinkedIn post on the company page.
+- Research: a Radar-style morning sheet. The book (US$100,000 paper, opened 6 Nov in cash) is the only scorecard; Claude makes every call; stops and targets act on the close. Task `physical-layer-book-daily`, Sun to Fri 07:30: marks, exits, entries, watchlist, story, calendar, idea bench; Sundays one bench name becomes a published note and model. Notes are the library (base values in src/data/notes.ts); their October calls are no longer shown.
+- No monthly tasks remain. First runs: book Sun 8 Nov (review, no entries), journal Mon 9 Nov.
+- Watchlist cards: red stop cap, black "Now", amber "Buy", green target cap, a colour key, "needs to rise/fall X%"; short cards read "Sell short below"; a card with no trade carries a `plan`.
 
 - **Articles are now fully automatic** (Tommy, 6 Nov ~15:00, reversing his earlier choice: "publish without my approval"). Task `journal-daily-scan`, weekdays 08:10, Auto mode: scans sources, Leo Cui's channel daily (@Leo-cui-phd-cfa; parse the videos page, the RSS feed 404s; log in research-build/topics/LEO.md) and Watch Later on Wednesdays; publishes a piece or update when it clears the bar, at most one new piece and two updates a week, after a separate fact-check, checkers, build and link check; schedules the LinkedIn post on the company page (identity check) or reports NOT DONE. The monthly sweep task `journal-monthly-sweep` is deleted (its Watch Later check moved to the first Wednesday of each month). The morning sheet is live (5badb66).
 
