@@ -5,9 +5,9 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 ## START HERE (as of Fri 6 Nov 2026, ~15:10; the day is closed)
 
 **How the site runs now (all set on 6 Nov; detail in the bullets below and in CLAUDE.md / CALLS-SPEC.md):**
-- Journal: 13 pieces, investor layers cut to message, proof, what would and would not change the view, with a context clause for every name (STORY-RULES 18a). Task `journal-daily-scan`, weekdays 08:10: sources, claims' watch lists, Leo Cui's YouTube daily, Watch Later Wednesdays; publishes on its own after the quality bar, a separate fact-check, checkers, build and link check; at most one new piece and two updates a week; LinkedIn post on the company page.
-- Research: a Radar-style morning sheet. The book (US$100,000 paper, opened 6 Nov in cash) is the only scorecard; Claude makes every call; stops and targets act on the close. Task `physical-layer-book-daily`, Sun to Fri 07:30: marks, exits, entries, watchlist, story, calendar, idea bench; Sundays one bench name becomes a published note and model. Notes are the library (base values in src/data/notes.ts); their October calls are no longer shown.
-- No monthly tasks remain. First runs: book Sun 8 Nov (review, no entries), journal Mon 9 Nov.
+- Journal: 13 pieces, investor layers cut to message, proof, what would and would not change the view, with a context clause for every name (STORY-RULES 18a). Task `journal-daily-scan`, every day 08:10: three tiers (primary sources, Claude's own deep search, Leo Cui's YouTube as an addition), Watch Later Wednesdays; publishes on its own after the quality bar, a separate fact-check, checkers, build and link check; at most one new piece and two updates a week; LinkedIn post on the company page.
+- Research: a Radar-style morning sheet. The book (US$100,000 paper, opened 6 Nov in cash) is the only scorecard; Claude makes every call; stops and targets act on the close. Task `physical-layer-book-daily`, every day 07:30: marks, exits, entries, watchlist, story, calendar, idea bench; Sundays one bench name becomes a published note and model. Notes are the library (base values in src/data/notes.ts); their October calls are no longer shown.
+- No monthly tasks remain. First runs: book Sat 7 Nov, journal Sat 7 Nov. Both send Tommy a one-line push notification each run.
 - **Article headers tidied** (Tommy, 6 Nov ~15:25): hashtags removed; read time counts only the article (folds, charts, exposure map and sources left out; 11 to 16 min at his 130 words a minute); the analogy box is labelled "The analogy" (checker updated); the homepage links to the book under its intro.
 - **Claims, Glossary, Numbers and Companies pages removed** (Tommy, 6 Nov ~15:20: "amateur"). Old URLs redirect (claims, glossary, numbers to the homepage; company pages to the company's research note or the notes tab). Each piece keeps its claim box and claims fold; claims.ts stays (checker needs it). Top menu is Journal, Research, About. Specs and the journal task updated; never add these pages back.
 - Watchlist cards: red stop cap, black "Now", amber "Buy", green target cap, a colour key, "needs to rise/fall X%"; short cards read "Sell short below"; a card with no trade carries a `plan`.
@@ -123,8 +123,8 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 
 | Date | Job | What it does |
 |---|---|---|
-| Sun to Fri 07:30 | physical-layer-book-daily | Runs the US$100,000 book on /research and publishes it; scouts the idea bench; Sundays promotes one name to a published note |
-| Mon to Fri 08:10 | journal-daily-scan | Scans for new evidence and topics; Wednesdays drafts one piece or update for Tommy's go; never publishes |
+| Every day 07:30 | physical-layer-book-daily | Runs the US$100,000 book on /research and publishes it; scouts the idea bench; Sundays promotes one name to a published note |
+| Every day 08:10 | journal-daily-scan | Three-tier scan (primary sources, Claude's deep search, Leo Cui as an addition); publishes worthy pieces and updates on its own after full checks; push notification |
 
 The book runs daily; the journal scan runs on weekdays. No monthly jobs remain. The one-time publish and LinkedIn jobs are all done: Hong Kong ran on 2 Nov; the 4, 6 and 9 Nov LinkedIn jobs were deleted on 2 Nov after their posts were scheduled by hand. The Hong Kong job itself is disabled but still listed (a session cannot delete the job that launched it); delete it from any other session. research-build/deep-pieces/updates/ is history now and can move to archive/.
 
