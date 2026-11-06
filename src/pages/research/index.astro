@@ -26,12 +26,11 @@ for (const g of groups) g.rows.sort((a, b) => (b.data.date?.valueOf() ?? 0) - (a
 <Base title="Research" description="A US$100,000 paper book run every morning with stops and targets, and the initiation notes behind it, on the companies in the physical layer of AI." wide>
   <header class="research-head">
     <h1>Research</h1>
-    <p>Two parts. <a href="#book">The book</a> is the record: a paper portfolio run every morning by fixed rules, with every trade dated and priced at a close. <a href="#notes">The notes</a> are the reasoning: an initiation note and Excel model on each company the book can trade. The journal's {CLAIMS.length} dated claims, each with what would prove it wrong, are on <a href="/claims/">the claims page</a>.</p>
+    <p>A paper portfolio run every morning on the companies that build the physical layer of AI, with the notes and models behind every name. Start with the book; open the Notes tab for the reasoning. The journal's {CLAIMS.length} dated claims are on <a href="/claims/">the claims page</a>.</p>
   </header>
 
-  <Book />
-
-  <section class="track" id="notes" aria-labelledby="notes-h">
+  <Book>
+  <section class="track" slot="notes" id="notes-list" aria-labelledby="notes-h">
     <h2 id="notes-h">The notes</h2>
     <p class="track-intro">{pitches.length} initiation notes, grouped by layer from the grid to the chip, newest first. Each sets its own base value per share against the price on the day it was published; the book uses that value as its target. Open a note for the thesis, the valuation, the risks and what would prove it wrong.</p>
     <div class="track-wrap">
@@ -62,6 +61,7 @@ for (const g of groups) g.rows.sort((a, b) => (b.data.date?.valueOf() ?? 0) - (a
       </table>
     </div>
   </section>
+  </Book>
 
   <p class="research-foot">These notes and the book are the author's own analysis, not investment advice. The book is paper money. The author holds no position in any company covered unless a note says so.</p>
 </Base>

@@ -2,7 +2,10 @@
 
 Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. Newest day on top. Rewrite START HERE at the end of each session.
 
-## START HERE (as of Fri 6 Nov 2026, ~14:30)
+## START HERE (as of Fri 6 Nov 2026, ~14:40)
+
+- **Research is now a Radar-style morning sheet with tabs** (Tommy: still confusing, the Radar's format was easier on the eyes). Masthead, "This morning" story, tabs for the book, watchlist (cards with a stop-to-target bar and "risk X to make Y, N times the risk"), idea bench, calendar, notes and how it works. Reward to risk is rounded down so a 1.97 never reads as 2.0.
+- **Daily scouting is back** (the Radar's idea bench): weekday runs add one or two new names to the bench; Sundays promote the strongest to a full note and model, fact-checked and published automatically (Tommy chose automatic). Bench seeded with Centrus Energy (LEU) and Howmet Aerospace (HWM).
 
 - **Research page rebuilt as two parts** (Tommy: "extremely messy", investors would not know where to start). The book is the only scorecard; the notes are a library (layer, published, price then, base value from src/data/notes.ts, gap, where it stands in the book, note and model). Note pages show "What the note found". Tommy chose to DROP the October initiation calls from the page (Claude advised keeping them as closed trades; he decided). calls.ts is frozen history; the daily task no longer marks notes. Journal pieces' Research notes lines no longer name a call.
 - First daily book run (Run now, 14:00): priced everything, no signal, nothing changed, correctly published nothing (report research-build/book/2026-11-06.md).

@@ -36,7 +36,8 @@
    "stop": 24.69,
    "rr": 2.77,
    "status": "Waiting: still making new lows",
-   "why": "Base value €30, 20 per cent above the price; the 2026 full year report is on 5 February."
+   "why": "Base value €30, 20 per cent above the price; the 2026 full year report is on 5 February.",
+   "what": "Finnish maker of large gas engines used for on-site power."
   },
   {
    "slug": "schneider-electric",
@@ -55,7 +56,8 @@
    "stop": 225.57,
    "rr": 2.52,
    "status": "Waiting: still making new lows",
-   "why": "Third quarter organic growth 16.9 per cent and the full year target raised; base value €278."
+   "why": "Third quarter organic growth 16.9 per cent and the full year target raised; base value €278.",
+   "what": "French maker of power and cooling equipment for buildings and data centres."
   },
   {
    "slug": "nebius",
@@ -74,7 +76,8 @@
    "stop": 119.17,
    "rr": 2.2,
    "status": "Waiting: still making new lows",
-   "why": "Base case about US$231 against US$120, but the bear case is a 66 per cent fall; third quarter results on 12 November."
+   "why": "Base case about US$231 against US$120, but the bear case is a 66 per cent fall; third quarter results on 12 November.",
+   "what": "Builds and rents out AI data centres; paid only once capacity is switched on."
   },
   {
    "slug": "hitachi",
@@ -93,7 +96,8 @@
    "stop": 4724.28,
    "rr": 2.02,
    "status": "Waiting: still making new lows",
-   "why": "Hitachi Energy raised its margin forecast to 15.7 per cent and its backlog to US$66.9 billion; base value ¥6,430."
+   "why": "Hitachi Energy raised its margin forecast to 15.7 per cent and its backlog to US$66.9 billion; base value ¥6,430.",
+   "what": "Owns Hitachi Energy, a leading maker of transformers and grid links."
   },
   {
    "slug": "broadcom",
@@ -112,7 +116,8 @@
    "stop": 288.61,
    "rr": 1.97,
    "status": "Waiting: still making new lows",
-   "why": "No cut to the fiscal 2027 AI outlook and no Backstop payment; the price fell with the AI sell-off, not on news of its own."
+   "why": "No cut to the fiscal 2027 AI outlook and no Backstop payment; the price fell with the AI sell-off, not on news of its own.",
+   "what": "Designs custom AI chips and the network switches between them."
   },
   {
    "slug": "siemens-energy",
@@ -131,7 +136,8 @@
    "stop": 112.7,
    "rr": 1.9,
    "status": "Waiting: still making new lows",
-   "why": "Base value €163, 43 per cent above the price; fiscal 2026 results on 11 November."
+   "why": "Base value €163, 43 per cent above the price; fiscal 2026 results on 11 November.",
+   "what": "German maker of gas turbines, transformers and grid links."
   },
   {
    "slug": "samsung-electronics",
@@ -150,7 +156,8 @@
    "stop": 199485.0,
    "rr": 1.68,
    "status": "Waiting: still making new lows",
-   "why": "Base value KRW 278,700, 38 per cent above the price; the 2026 shareholder return is finalised in late January."
+   "why": "Base value KRW 278,700, 38 per cent above the price; the 2026 shareholder return is finalised in late January.",
+   "what": "Korean maker of memory chips and electronics."
   },
   {
    "slug": "coherent",
@@ -169,7 +176,8 @@
    "stop": 168.06,
    "rr": 1.53,
    "status": "Waiting: still making new lows",
-   "why": "First quarter gross margin held at 40.6 per cent and growth above 60 per cent is guided; the price fell with optics after the Marvell and Lumentum deal."
+   "why": "First quarter gross margin held at 40.6 per cent and growth above 60 per cent is guided; the price fell with optics after the Marvell and Lumentum deal.",
+   "what": "Makes the lasers and optical parts that carry data between AI chips."
   },
   {
    "slug": "sk-hynix",
@@ -188,7 +196,8 @@
    "stop": 1210770.0,
    "rr": 1.52,
    "status": "Waiting: still making new lows",
-   "why": "Base value KRW 2,033,000, 61 per cent above the price; memory fell across the board in the sell-off."
+   "why": "Base value KRW 2,033,000, 61 per cent above the price; memory fell across the board in the sell-off.",
+   "what": "Korean memory maker and the largest supplier of HBM for AI chips."
   },
   {
    "slug": "tsmc",
@@ -207,7 +216,8 @@
    "stop": 349.57,
    "rr": 1.41,
    "status": "Waiting: still making new lows",
-   "why": "Third quarter gross margin 66.4 per cent and the floor unchanged; base value about US$486."
+   "why": "Third quarter gross margin 66.4 per cent and the floor unchanged; base value about US$486.",
+   "what": "Makes most of the world's advanced chips, including Nvidia's, under contract."
   },
   {
    "slug": "asml",
@@ -226,7 +236,8 @@
    "stop": 1237.5,
    "rr": 1.39,
    "status": "Waiting: still making new lows",
-   "why": "The only maker of the scanners for the finest chips says 2027 and 2028 supply will not meet demand; base value €1,697 is 36 per cent above the price."
+   "why": "The only maker of the scanners for the finest chips says 2027 and 2028 supply will not meet demand; base value €1,697 is 36 per cent above the price.",
+   "what": "Makes the scanners that print the finest chips; the only maker of EUV machines."
   },
   {
    "slug": "nvidia",
@@ -245,7 +256,8 @@
    "stop": 179.78,
    "rr": 1.21,
    "status": "Waiting: still making new lows",
-   "why": "Base value US$244; no business test can be read before the October quarter report on 17 November."
+   "why": "Base value US$244; no business test can be read before the October quarter report on 17 November.",
+   "what": "Designs the leading AI chips and the racks they run in."
   },
   {
    "slug": "constellation",
@@ -264,7 +276,8 @@
    "stop": 237.25,
    "rr": 1.06,
    "status": "Waiting: still making new lows",
-   "why": "The largest US nuclear owner, now below the level where the note's base value sits 15 per cent above the price; Crane still targets 2027."
+   "why": "The largest US nuclear owner, now below the level where the note's base value sits 15 per cent above the price; Crane still targets 2027.",
+   "what": "America's largest owner of nuclear plants; restarting Crane for Microsoft."
   },
   {
    "slug": "vertiv",
@@ -283,7 +296,8 @@
    "stop": 174.96,
    "rr": 0.95,
    "status": "Waiting: still making new lows",
-   "why": "Third quarter margin up 2.9 points and the guide raised; base value about US$300."
+   "why": "Third quarter margin up 2.9 points and the guide raised; base value about US$300.",
+   "what": "Makes the power and cooling gear inside data centres; paid per megawatt built."
   },
   {
    "slug": "ge-vernova",
@@ -302,7 +316,8 @@
    "stop": 762.8,
    "rr": 0.84,
    "status": "Waiting: still making new lows",
-   "why": "Gas turbine backlog and slots rose to 122 GW and the margin guide was raised; base value US$1,048."
+   "why": "Gas turbine backlog and slots rose to 122 GW and the margin guide was raised; base value US$1,048.",
+   "what": "Makes gas turbines and grid equipment; the biggest turbine order book."
   },
   {
    "slug": "eaton",
@@ -321,7 +336,8 @@
    "stop": 323.75,
    "rr": 0.59,
    "status": "Waiting: still making new lows",
-   "why": "Electrical Americas margin 29.8 per cent and the 2026 guide raised on 3 November; the price fell with the grid names."
+   "why": "Electrical Americas margin 29.8 per cent and the 2026 guide raised on 3 November; the price fell with the grid names.",
+   "what": "Makes switchgear, transformers and power distribution for data centres and the grid."
   },
   {
    "slug": "mitsubishi-heavy",
@@ -340,7 +356,8 @@
    "stop": 3021.48,
    "rr": 0.45,
    "status": "Waiting: still making new lows",
-   "why": "Below the ¥3,200 revisit level, but the Energy Systems margin forecast was cut to 14.3 per cent; low conviction."
+   "why": "Below the ¥3,200 revisit level, but the Energy Systems margin forecast was cut to 14.3 per cent; low conviction.",
+   "what": "Japanese maker of large gas turbines and power plants."
   },
   {
    "slug": "infineon",
@@ -359,7 +376,8 @@
    "stop": 45.49,
    "rr": 0.39,
    "status": "Waiting: still making new lows",
-   "why": "Below the €48 level the note says points long; the fiscal 2027 AI revenue guide lands on 10 November."
+   "why": "Below the €48 level the note says points long; the fiscal 2027 AI revenue guide lands on 10 November.",
+   "what": "German maker of power chips, including those that feed AI servers."
   },
   {
    "slug": "williams",
@@ -378,7 +396,8 @@
    "stop": 63.61,
    "rr": 0.14,
    "status": "Waiting: still making new lows",
-   "why": "Below the US$67.60 revisit level; 2026 Adjusted EBITDA tracking toward the upper half of its guide."
+   "why": "Below the US$67.60 revisit level; 2026 Adjusted EBITDA tracking toward the upper half of its guide.",
+   "what": "Owns Transco, the big East Coast gas pipeline, and builds gas plants for data centres."
   },
   {
    "slug": "micron",
@@ -397,7 +416,8 @@
    "stop": 649.83,
    "rr": -0.21,
    "status": "Waiting: still making new lows",
-   "why": "Below the US$726 level the note says points long; results for the quarter to November come in December."
+   "why": "Below the US$726 level the note says points long; results for the quarter to November come in December.",
+   "what": "American maker of memory chips, including the HBM beside AI processors."
   },
   {
    "slug": "oklo",
@@ -416,7 +436,8 @@
    "stop": null,
    "rr": null,
    "status": "Waiting: still making new lows",
-   "why": "Base value about US$13, 32 per cent below the price; the short re-arms on a failed bounce (a close back below the 5-day closing low after a high holds 3 days)."
+   "why": "Base value about US$13, 32 per cent below the price; the short re-arms on a failed bounce (a close back below the 5-day closing low after a high holds 3 days).",
+   "what": "A start-up planning small reactors whose electricity it would sell; none built yet."
   }
  ],
  "avoid": [
@@ -504,6 +525,101 @@
   {
    "date": "2026-11-06",
    "text": "Book opened with US$100,000 of paper cash. No entries: all twenty-one candidates are still making new lows after the October and November AI and power sell-off. Entry signals and stops are re-set every morning; positions open on their own when a low holds and the price turns."
+  }
+ ],
+ "story": {
+  "headline": "The book opened in cash after the AI and power sell-off",
+  "bullets": [
+   "Every candidate closed at or near a fresh 20-day low on 5 November, so no buy signal has formed.",
+   "Nearest signals: Wärtsilä above €26.10, Schneider Electric above €240.45, Nebius above US$154.14.",
+   "This week: Oklo results on 6 November, then Constellation, Infineon, Siemens Energy and Nebius."
+  ]
+ },
+ "catalysts": [
+  {
+   "date": "2026-11-06",
+   "event": "Oklo third quarter results",
+   "names": [
+    "oklo"
+   ]
+  },
+  {
+   "date": "2026-11-09",
+   "event": "Constellation third quarter results (date to confirm)",
+   "names": [
+    "constellation"
+   ]
+  },
+  {
+   "date": "2026-11-09",
+   "event": "Ajinomoto first half results (date to confirm)",
+   "names": [
+    "ajinomoto"
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "event": "Infineon fiscal 2026 results and fiscal 2027 AI revenue guide",
+   "names": [
+    "infineon"
+   ]
+  },
+  {
+   "date": "2026-11-11",
+   "event": "Siemens Energy fiscal 2026 results",
+   "names": [
+    "siemens-energy"
+   ]
+  },
+  {
+   "date": "2026-11-12",
+   "event": "Nebius third quarter results",
+   "names": [
+    "nebius"
+   ]
+  },
+  {
+   "date": "2026-11-17",
+   "event": "Nvidia October quarter results",
+   "names": [
+    "nvidia"
+   ]
+  },
+  {
+   "date": "2026-11-18",
+   "event": "Louisiana commission vote on the second Meta agreement (or December)",
+   "names": [
+    "entergy"
+   ]
+  },
+  {
+   "date": "2026-12-10",
+   "event": "Broadcom fourth quarter results (about)",
+   "names": [
+    "broadcom"
+   ]
+  }
+ ],
+ "bench": [
+  {
+   "date": "2026-11-06",
+   "name": "Centrus Energy",
+   "ticker": "LEU",
+   "exchange": "NYSE American",
+   "what": "The only American company that has made HALEU, the richer uranium new reactors need.",
+   "why": "The nuclear piece rests on its filings: contracted HALEU production finished in June 2026 and its next federal tonne is due by July 2032.",
+   "work": "Valuation, the ordinary enrichment business at Piketon, and whether the cascade will run privately.",
+   "status": "Scouting"
+  },
+  {
+   "date": "2026-11-06",
+   "name": "Howmet Aerospace",
+   "ticker": "HWM",
+   "exchange": "NYSE",
+   "what": "Casts the hottest turbine blades for jet engines and gas turbines.",
+   "why": "The own-power piece finds the turbine makers' planned output rise waits on castings like Howmet's.",
+   "work": "How much of its revenue is gas turbines, its capacity plans and valuation.",
+   "status": "Scouting"
   }
  ]
 }

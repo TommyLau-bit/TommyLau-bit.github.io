@@ -1,142 +1,170 @@
 ---
-// The book: a US$100,000 paper portfolio run by fixed rules on the notes below
-// (Tommy, 6 Nov 2026, the Physical Layer Radar carried onto the site). The daily
-// run (scheduled task physical-layer-book-daily) rewrites src/data/book.json;
-// this component only reads it. Rules: CALLS-SPEC.md "The book".
+// The book as a PM's morning sheet (Tommy, 6 Nov 2026: the Physical Layer Radar
+// dashboard carried onto the site in the house style). A one-line masthead, the
+// morning story, then tabs: the book, the watchlist, the idea bench, the
+// calendar, the notes (passed in as a slot) and how it works. The daily run
+// (scheduled task physical-layer-book-daily) rewrites src/data/book.json; this
+// component only reads it. Rules: CALLS-SPEC.md "The book".
 import book from '../data/book.json';
 import { fmtMoney, fmtPct } from '../lib/calls';
 import { fmtDate } from '../utils';
 
 const usd = (n: number) => `US$${Math.round(n).toLocaleString('en-GB')}`;
 const day = (iso: string) => fmtDate(new Date(`${iso}T12:00:00+08:00`));
-const pnl = book.equity - book.capital;
-const invested = book.positions.reduce((s: number, p: any) => s + (p.value ?? 0), 0);
-const wins = book.closed.filter((t: any) => t.result > 0).length;
-const losses = book.closed.length - wins;
+const short = (iso: string) => new Date(`${iso}T12:00:00+08:00`).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
 const pct = (n: number) => `${Math.round(n * 100)}%`;
-const next = book.watch.filter((w: any) => w.rr != null).sort((a: any, b: any) => b.rr - a.rr).slice(0, 5);
+// Rounded down, so a trade just under the 2 times rule never reads as 2.0.
+const times = (r: number) => (Math.floor(r * 10) / 10).toFixed(1);
+const pnl = book.equity - book.capital;
+const wins = book.closed.filter((t: any) => t.result > 0).length;
+const watch = [...book.watch].sort((a: any, b: any) => (b.rr ?? -1) - (a.rr ?? -1));
+const firstOk = watch.find((w: any) => w.signal != null && w.stop != null) as any;
 
-// Equity line, drawn once the book has two or more days.
-const curve = book.equityCurve;
-const W = 560, H = 120, pad = 6;
-let line = '';
-if (curve.length > 1) {
-  const ys = curve.map((c: any) => c.equity);
-  const lo = Math.min(...ys, book.capital), hi = Math.max(...ys, book.capital);
-  const x = (i: number) => pad + (i * (W - 2 * pad)) / (curve.length - 1);
-  const y = (v: number) => H - pad - ((v - lo) / (hi - lo || 1)) * (H - 2 * pad);
-  line = curve.map((c: any, i: number) => `${i ? 'L' : 'M'}${x(i).toFixed(1)},${y(c.equity).toFixed(1)}`).join(' ');
-}
+// Where a price sits between the stop (0) and the target (1), for the bars.
+const at = (v: number, stop: number, target: number) => Math.max(0, Math.min(1, (v - stop) / (target - stop))) * 100;
+
+const tabs = [
+  { id: 'book', label: 'The book' },
+  { id: 'watch', label: `Watchlist (${book.watch.length})` },
+  { id: 'bench', label: `Idea bench (${book.bench.length})` },
+  { id: 'calendar', label: 'Calendar' },
+  { id: 'notes', label: 'Notes' },
+  { id: 'how', label: 'How it works' },
+];
 ---
-<section class="track book" id="book" aria-labelledby="book-title">
-  <h2 id="book-title">The book</h2>
-  <p class="track-intro">A {usd(book.capital)} paper portfolio, run every morning by fixed rules on the companies in the notes. Each position has a stop and a target that act on the close, entries need a target at least twice as far as the stop, and no position is more than {pct(book.rules.maxPosition)} of the book. Opened {day(book.start)}; prices are closes, last {day(book.pricesAt)}. Nothing is ever deleted.</p>
+<section class="sheet" id="book" aria-label="The book">
+  <div class="sheet-mast">
+    <div>
+      <p class="sheet-label">The book · paper, opened {day(book.start)}</p>
+      <p class="sheet-equity">{usd(book.equity)} <span class={pnl > 0 ? 'up' : pnl < 0 ? 'down' : ''}>{fmtPct(pnl / book.capital)}</span></p>
+    </div>
+    <ul class="sheet-facts">
+      <li><strong>{pct(book.cash / book.equity)}</strong> cash</li>
+      <li><strong>{book.positions.length}</strong> open</li>
+      <li><strong>{book.closed.length}</strong> closed{book.closed.length > 0 && `, ${wins} won`}</li>
+      <li>Prices: closes to {day(book.pricesAt)}</li>
+    </ul>
+  </div>
 
-  <ul class="stat-strip" aria-label="The book at a glance">
-    <li><strong>{usd(book.equity)}</strong> equity</li>
-    <li><strong class={pnl > 0 ? 'up' : pnl < 0 ? 'down' : ''}>{fmtPct(pnl / book.capital)}</strong> since {day(book.start)}</li>
-    <li><strong>{pct(book.cash / book.equity)}</strong> cash</li>
-    <li><strong>{book.positions.length}</strong> open</li>
-    <li><strong>{book.closed.length}</strong> closed{book.closed.length > 0 && <>, {wins} won, {losses} lost</>}</li>
-  </ul>
+  <div class="sheet-story">
+    <p class="sheet-label">This morning, {day(book.asOf)}</p>
+    <h2>{book.story.headline}</h2>
+    <ul>{book.story.bullets.map((b: string) => <li>{b}</li>)}</ul>
+  </div>
 
-  {line && (
-    <figure class="chart book-curve">
-      <p class="chart-title">Equity since the book opened</p>
-      <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`Book equity from ${usd(curve[0].equity)} on ${day(curve[0].date)} to ${usd(curve.at(-1).equity)} on ${day(curve.at(-1).date)}`}>
-        <path class="c-line c-s1" d={line} fill="none" />
-      </svg>
-    </figure>
-  )}
+  <nav class="sheet-tabs" role="tablist" aria-label="Research sections">
+    {tabs.map((t, i) => <a role="tab" href={`#${t.id}`} data-tab={t.id} aria-selected={i === 0 ? 'true' : 'false'}>{t.label}</a>)}
+  </nav>
 
-  <h3 class="book-h">Open positions</h3>
-  {book.positions.length === 0 ? (
-    <p class="book-empty">None. {book.exposure}</p>
-  ) : (
-    <div class="track-wrap"><table>
-      <thead><tr><th>Company</th><th>Side</th><th>Opened</th><th>Entry</th><th>Size</th><th>Latest</th><th>P&amp;L</th><th>Stop</th><th>Target</th></tr></thead>
-      <tbody>{book.positions.map((p: any) => (
-        <tr>
-          <td class="track-co"><a href={`/research/${p.slug}/`}>{p.company}</a> <span>{p.ticker}</span></td>
-          <td>{p.direction === 'LONG' ? 'Long' : 'Short'}<span class="track-conv">, {p.conviction.toLowerCase()}</span></td>
-          <td>{day(p.entryDate)}</td>
-          <td>{fmtMoney(p.currency, p.entryPrice)}</td>
-          <td>{usd(p.sizeUsd)}<small class="track-at">{pct(p.sizeUsd / book.capital)}</small></td>
-          <td>{fmtMoney(p.currency, p.last)}</td>
-          <td class={p.result >= 0 ? 'up' : 'down'}>{fmtPct(p.result)}<small class="track-at">{usd(p.pnlUsd)}</small></td>
-          <td>{fmtMoney(p.currency, p.stop)}</td>
-          <td>{fmtMoney(p.currency, p.target)}</td>
-        </tr>
-      ))}</tbody>
-    </table></div>
-  )}
+  <div class="sheet-panel" data-panel="book" role="tabpanel">
+    <h3 class="sheet-h">Open positions</h3>
+    {book.positions.length === 0 ? (
+      <p class="sheet-empty">None yet. {book.exposure}</p>
+    ) : (
+      <div class="cards">{book.positions.map((p: any) => (
+        <article class="card">
+          <header><a href={`/research/${p.slug}/`}>{p.company}</a> <span class="card-tk">{p.ticker}</span><span class={`card-side card-side--${p.direction.toLowerCase()}`}>{p.direction === 'LONG' ? 'Long' : 'Short'} · {usd(p.sizeUsd)}</span></header>
+          <p class="card-what">{p.what ?? p.thesis}</p>
+          <p class="card-big"><span class={p.result >= 0 ? 'up' : 'down'}>{fmtPct(p.result)}</span> <small>{usd(p.pnlUsd)} · bought {fmtMoney(p.currency, p.entryPrice)} on {short(p.entryDate)}, now {fmtMoney(p.currency, p.last)}</small></p>
+          <div class="bar" aria-hidden="true"><span class="bar-fill" style={`width:${at(p.last, p.stop, p.target)}%`}></span><span class="bar-mark bar-mark--entry" style={`left:${at(p.entryPrice, p.stop, p.target)}%`}></span></div>
+          <p class="bar-ends"><span>Stop {fmtMoney(p.currency, p.stop)}</span><span>Target {fmtMoney(p.currency, p.target)}</span></p>
+          <details><summary>Why</summary><p>{p.why}</p><p><strong>Wrong if:</strong> {p.wrongIf}</p></details>
+        </article>
+      ))}</div>
+    )}
 
-  <h3 class="book-h">Next entries</h3>
-  <p class="book-note">The five names nearest a buy signal. A position opens on its own when the stock closes above its 5-day closing high at least three days after its lowest close of the last 20, and the target is still at least twice as far away as the stop, which sits just under that low. Levels as of {day(book.pricesAt)}, re-set every morning.</p>
-  <div class="track-wrap"><table>
-    <thead><tr><th>Company</th><th>Side</th><th>Size</th><th>Close</th><th>Signal above</th><th>Stop</th><th>Target</th><th>Reward to risk</th><th>Status</th></tr></thead>
-    <tbody>{next.map((w: any) => (
-      <tr>
-        <td class="track-co"><a href={`/research/${w.slug}/`}>{w.company}</a> <span>{w.ticker}</span></td>
-        <td>{w.direction === 'LONG' ? 'Long' : 'Short'}<span class="track-conv">, {w.conviction.toLowerCase()}</span></td>
-        <td>{pct(w.size)}</td>
-        <td>{fmtMoney(w.currency, w.close)}</td>
-        <td>{w.signal != null ? fmtMoney(w.currency, w.signal) : 'n/a'}</td>
-        <td>{w.stop != null ? fmtMoney(w.currency, w.stop) : 'n/a'}</td>
-        <td>{fmtMoney(w.currency, w.target)}<small class="track-at">{w.targetFrom}</small></td>
-        <td class={w.rr != null && w.rr >= 2 ? 'up' : ''}>{w.rr != null ? `${w.rr.toFixed(1)} : 1` : 'n/a'}</td>
-        <td class="book-status">{w.status}</td>
-      </tr>
-    ))}</tbody>
-  </table></div>
-  <details class="book-why">
-    <summary>The full watchlist ({book.watch.length} names) and why each is on it</summary>
-    <div class="track-wrap"><table>
-      <thead><tr><th>Company</th><th>Side</th><th>Size</th><th>Close</th><th>Signal above</th><th>Stop</th><th>Target</th><th>Reward to risk</th><th>Status</th></tr></thead>
-      <tbody>{book.watch.map((w: any) => (
-      <tr>
-        <td class="track-co"><a href={`/research/${w.slug}/`}>{w.company}</a> <span>{w.ticker}</span></td>
-        <td>{w.direction === 'LONG' ? 'Long' : 'Short'}<span class="track-conv">, {w.conviction.toLowerCase()}</span></td>
-        <td>{pct(w.size)}</td>
-        <td>{fmtMoney(w.currency, w.close)}</td>
-        <td>{w.signal != null ? fmtMoney(w.currency, w.signal) : 'n/a'}</td>
-        <td>{w.stop != null ? fmtMoney(w.currency, w.stop) : 'n/a'}</td>
-        <td>{fmtMoney(w.currency, w.target)}<small class="track-at">{w.targetFrom}</small></td>
-        <td class={w.rr != null && w.rr >= 2 ? 'up' : ''}>{w.rr != null ? `${w.rr.toFixed(1)} : 1` : 'n/a'}</td>
-        <td class="book-status">{w.status}</td>
-      </tr>
-      ))}</tbody>
-    </table></div>
-    <ul>{book.watch.map((w: any) => <li><strong>{w.company}.</strong> {w.why}</li>)}</ul>
-  </details>
-  <details class="book-why">
-    <summary>Not buying ({book.avoid.length} names) and why</summary>
-    <ul>{book.avoid.map((a: any) => <li><a href={`/research/${a.slug}/`}>{a.company}</a>: {a.read}</li>)}</ul>
-  </details>
+    {book.closed.length > 0 && (
+      <>
+        <h3 class="sheet-h">Closed trades</h3>
+        <ul class="ledger">{book.closed.map((t: any) => (
+          <li>
+            <span class={t.result >= 0 ? 'up' : 'down'}>{fmtPct(t.result)}</span>
+            <span><a href={`/research/${t.slug}/`}>{t.company}</a>, {t.direction === 'LONG' ? 'long' : 'short'} {fmtMoney(t.currency, t.entryPrice)} to {fmtMoney(t.currency, t.exitPrice)}, {short(t.entryDate)} to {short(t.exitDate)}: {t.exitReason.toLowerCase()}.
+            <details><summary>Post-mortem</summary><p>{t.postMortem}</p></details></span>
+          </li>
+        ))}</ul>
+      </>
+    )}
 
-  {book.closed.length > 0 && (
-    <>
-      <h3 class="book-h">Closed trades</h3>
-      <div class="track-wrap"><table>
-        <thead><tr><th>Company</th><th>Side</th><th>Entry</th><th>Exit</th><th>Result</th><th>Why it closed</th></tr></thead>
-        <tbody>{book.closed.map((t: any) => (
-          <tr>
-            <td class="track-co"><a href={`/research/${t.slug}/`}>{t.company}</a> <span>{t.ticker}</span></td>
-            <td>{t.direction === 'LONG' ? 'Long' : 'Short'}</td>
-            <td>{fmtMoney(t.currency, t.entryPrice)}<small class="track-at">{day(t.entryDate)}</small></td>
-            <td>{fmtMoney(t.currency, t.exitPrice)}<small class="track-at">{day(t.exitDate)}</small></td>
-            <td class={t.result >= 0 ? 'up' : 'down'}>{fmtPct(t.result)}<small class="track-at">{usd(t.pnlUsd)}</small></td>
-            <td class="track-out">{t.exitReason}</td>
-          </tr>
-        ))}</tbody>
-      </table></div>
-      <details class="book-why">
-        <summary>Post-mortems</summary>
-        <ul>{book.closed.map((t: any) => <li><strong>{t.company}, {day(t.exitDate)}.</strong> {t.postMortem}</li>)}</ul>
-      </details>
-    </>
-  )}
+    <h3 class="sheet-h">Morning log</h3>
+    <ul class="ledger">{book.log.slice(-5).reverse().map((l: any) => <li><span>{short(l.date)}</span><span>{l.text}</span></li>)}</ul>
+  </div>
 
-  <h3 class="book-h">The morning log</h3>
-  <ul class="book-log">{book.log.slice(-3).reverse().map((l: any) => <li><span>{day(l.date)}</span> {l.text}</li>)}</ul>
+  <div class="sheet-panel" data-panel="watch" role="tabpanel">
+    <p class="sheet-intro">Companies the book will buy once the price turns. Each card gives the price to buy above, where the book would sell at a loss (the stop) and where it would take its profit (the target). The bar runs from the stop on the left to the target on the right: the dark mark is today's price, the amber one the buy price. Levels as of {day(book.pricesAt)}, re-set every morning.</p>
+    <div class="cards">{watch.map((w: any) => {
+      const risk = w.signal != null && w.stop != null ? w.signal - w.stop : null;
+      const reward = w.signal != null ? w.target - w.signal : null;
+      return (
+        <article class="card">
+          <header><a href={`/research/${w.slug}/`}>{w.company}</a> <span class="card-tk">{w.ticker}</span><span class={`card-side card-side--${w.direction.toLowerCase()}`}>{w.direction === 'LONG' ? 'Long' : 'Short'} · {pct(w.size)}</span></header>
+          <p class="card-what">{w.what}</p>
+          {risk != null && reward != null ? (
+            <>
+              <p class="card-plan">Buy above <strong>{fmtMoney(w.currency, w.signal)}</strong>. Risk <strong>{fmtMoney(w.currency, risk)}</strong> a share to make <strong>{fmtMoney(w.currency, reward)}</strong>: <span class={w.rr >= 2 ? 'up' : 'down'}>{times(w.rr)} times the risk</span>.</p>
+              <div class="bar" aria-hidden="true"><span class="bar-mark bar-mark--now" style={`left:${at(w.close, w.stop, w.target)}%`}></span><span class="bar-mark bar-mark--buy" style={`left:${at(w.signal, w.stop, w.target)}%`}></span></div>
+              <p class="bar-ends"><span>Stop {fmtMoney(w.currency, w.stop)}</span><span>Now {fmtMoney(w.currency, w.close)}</span><span>Target {fmtMoney(w.currency, w.target)}</span></p>
+            </>
+          ) : <p class="card-plan">Target {fmtMoney(w.currency, w.target)}, the note's base value. Now {fmtMoney(w.currency, w.close)}.</p>}
+          <p class="card-status">{w.status}</p>
+          <details><summary>Why</summary><p>{w.why}</p></details>
+        </article>
+      );
+    })}</div>
+    <h3 class="sheet-h">Not buying</h3>
+    <ul class="ledger ledger--plain">{book.avoid.map((a: any) => <li><span><a href={`/research/${a.slug}/`}>{a.company}</a>: {a.read}</span></li>)}</ul>
+  </div>
+
+  <div class="sheet-panel" data-panel="bench" role="tabpanel">
+    <p class="sheet-intro">New companies being scouted. Each morning the book adds one or two physical-layer names it does not yet cover; each Sunday the strongest, once the work is done, gets a full initiation note and Excel model and joins the book's universe. A name on the bench is never bought.</p>
+    <div class="cards">{book.bench.map((n: any) => (
+      <article class="card">
+        <header><span class="card-name">{n.name}</span> <span class="card-tk">{n.exchange}: {n.ticker}</span><span class="card-side">{n.status}</span></header>
+        <p class="card-what">{n.what}</p>
+        <p class="card-plan">{n.why}</p>
+        <p class="card-status">Work before a note: {n.work} Added {short(n.date)}.</p>
+      </article>
+    ))}</div>
+  </div>
+
+  <div class="sheet-panel" data-panel="calendar" role="tabpanel">
+    <p class="sheet-intro">Results and decisions ahead that can move a company the book covers. The book halves a new position when results are due within ten trading days, because a result can jump the price straight past a stop.</p>
+    <ul class="ledger">{book.catalysts.map((c: any) => <li><span>{short(c.date)}</span><span>{c.event}</span></li>)}</ul>
+  </div>
+
+  <div class="sheet-panel" data-panel="notes" role="tabpanel">
+    <slot name="notes" />
+  </div>
+
+  <div class="sheet-panel" data-panel="how" role="tabpanel">
+    <div class="how">
+      <p><strong>What this is.</strong> A {usd(book.capital)} paper portfolio, run every morning by fixed rules, on the companies covered by the notes. Every price is a closing price on a named exchange and date. Nothing is ever deleted, right or wrong.</p>
+      <p><strong>Every position has a stop and a target.</strong> The stop is the price that shows the timing was wrong, so the book sells at a small loss. The target is where the book takes its profit, set from the note's own valuation. Both act on the close, with no one at the desk.</p>
+      <p><strong>Reward against risk.</strong> The book only buys when the possible gain is at least twice the possible loss. {firstOk && <>Take {firstOk.company}: bought at {fmtMoney(firstOk.currency, firstOk.signal)}, it would lose {fmtMoney(firstOk.currency, firstOk.signal - firstOk.stop)} a share if the stop at {fmtMoney(firstOk.currency, firstOk.stop)} is hit, and make {fmtMoney(firstOk.currency, firstOk.target - firstOk.signal)} if the target at {fmtMoney(firstOk.currency, firstOk.target)} is hit: {times(firstOk.rr)} times the risk. </>}At two times, the book can be wrong on two trades in three and still not lose money.</p>
+      <p><strong>When it buys.</strong> Not into a falling price. It waits until the lowest close of the last month is at least three days old, then buys on a close above the highest close of the previous week. The stop sits just under that low.</p>
+      <p><strong>How much.</strong> 4 to 12 per cent of the book a position, by conviction; never more than 15 per cent in one company, 10 positions or 80 per cent invested. Half size when results are close. If the book falls 10 per cent from its peak, it stops buying until the losses are reviewed.</p>
+      <p><strong>New companies.</strong> Scouted daily onto the idea bench; the strongest gets a full initiation note and Excel model on Sunday, and only then can it be bought.</p>
+    </div>
+  </div>
 </section>
+
+<script>
+  // Tabs: without script every panel shows; with it, one at a time, kept in the URL hash.
+  const sheet = document.querySelector('.sheet');
+  if (sheet) {
+    const tabs = [...sheet.querySelectorAll<HTMLAnchorElement>('[data-tab]')];
+    const panels = [...sheet.querySelectorAll<HTMLElement>('[data-panel]')];
+    const show = (id: string) => {
+      if (!panels.some((p) => p.dataset.panel === id)) id = 'book';
+      tabs.forEach((t) => t.setAttribute('aria-selected', String(t.dataset.tab === id)));
+      panels.forEach((p) => (p.hidden = p.dataset.panel !== id));
+    };
+    tabs.forEach((t) => t.addEventListener('click', (e) => {
+      e.preventDefault();
+      show(t.dataset.tab!);
+      history.replaceState(null, '', `#${t.dataset.tab}`);
+    }));
+    show(location.hash.slice(1) || 'book');
+    addEventListener('hashchange', () => show(location.hash.slice(1) || 'book'));
+  }
+</script>
