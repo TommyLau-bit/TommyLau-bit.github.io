@@ -433,11 +433,13 @@
    "targetFrom": "base value",
    "close": 19.2,
    "signal": null,
-   "stop": null,
+   "stop": 35.05,
    "rr": null,
-   "status": "Waiting: still making new lows",
+   "status": "Waiting for a bounce",
    "why": "Base value about US$13, 32 per cent below the price; the short re-arms on a failed bounce (a close back below the 5-day closing low after a high holds 3 days).",
-   "what": "A start-up planning small reactors whose electricity it would sell; none built yet."
+   "what": "A start-up planning small reactors whose electricity it would sell; none built yet.",
+   "plan": "No short yet. The price has already fallen 47 per cent since the call in October and closed on its 60-day low, so there is no room left to a target. The short re-arms after a bounce: a close back below the 5-day low, with the stop above the bounce high and the target at the note's base value of about US$13.",
+   "stopFrom": "just above the October high"
   }
  ],
  "avoid": [

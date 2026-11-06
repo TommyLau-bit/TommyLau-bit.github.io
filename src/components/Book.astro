@@ -108,16 +108,27 @@ const tabs = [
           <p class="card-what">{w.what}</p>
           {risk != null && reward != null ? (
             <>
-              <p class="card-plan">Buy above <strong>{fmtMoney(w.currency, w.signal)}</strong>. Risk <strong>{fmtMoney(w.currency, risk)}</strong> a share to make <strong>{fmtMoney(w.currency, reward)}</strong>: <span class={w.rr >= 2 ? 'up' : 'down'}>{times(w.rr)} times the risk</span>.</p>
+              <p class="card-plan">{w.direction === 'SHORT' ? 'Sell short below' : 'Buy above'} <strong>{fmtMoney(w.currency, w.signal)}</strong>. Risk <strong>{fmtMoney(w.currency, risk)}</strong> a share to make <strong>{fmtMoney(w.currency, reward)}</strong>: <span class={w.rr >= 2 ? 'up' : 'down'}>{times(w.rr)} times the risk</span>.</p>
               <div class="bar-box">
-                <span class="bar-tag bar-tag--buy" style={tag(at(w.signal, w.stop, w.target))}>Buy {fmtMoney(w.currency, w.signal)}</span>
+                <span class="bar-tag bar-tag--buy" style={tag(at(w.signal, w.stop, w.target))}>{w.direction === 'SHORT' ? 'Short' : 'Buy'} {fmtMoney(w.currency, w.signal)}</span>
                 <div class="bar" aria-hidden="true"><span class="bar-mark bar-mark--now" style={`left:${at(w.close, w.stop, w.target)}%`}></span><span class="bar-mark bar-mark--buy" style={`left:${at(w.signal, w.stop, w.target)}%`}></span></div>
                 <span class="bar-tag bar-tag--now" style={tag(at(w.close, w.stop, w.target))}>Now {fmtMoney(w.currency, w.close)}</span>
               </div>
               <p class="bar-ends"><span class="bar-end--stop">Stop {fmtMoney(w.currency, w.stop)}<small>sell at a loss</small></span><span class="bar-end--target">Target {fmtMoney(w.currency, w.target)}<small>take profit</small></span></p>
-              <p class="card-gap">{w.close < w.signal ? <>Needs to rise <strong>{fmtPct(w.signal / w.close - 1).replace('+', '')}</strong> to reach the buy price.</> : <>At or above the buy price; buys once the low has held three days.</>}</p>
+              <p class="card-gap">{w.direction === 'SHORT'
+                ? (w.close > w.signal ? <>Needs to fall <strong>{fmtPct(1 - w.signal / w.close).replace('+', '')}</strong> to reach the short price.</> : <>At or below the short price; sells short once the high has held three days.</>)
+                : (w.close < w.signal ? <>Needs to rise <strong>{fmtPct(w.signal / w.close - 1).replace('+', '')}</strong> to reach the buy price.</> : <>At or above the buy price; buys once the low has held three days.</>)}</p>
             </>
-          ) : <p class="card-plan">Target {fmtMoney(w.currency, w.target)}, the note's base value. Now {fmtMoney(w.currency, w.close)}.</p>}
+          ) : w.stop != null ? (
+            <>
+              <p class="card-plan">{w.plan}</p>
+              <div class="bar-box">
+                <div class="bar" aria-hidden="true"><span class="bar-mark bar-mark--now" style={`left:${at(w.close, w.stop, w.target)}%`}></span></div>
+                <span class="bar-tag bar-tag--now" style={tag(at(w.close, w.stop, w.target))}>Now {fmtMoney(w.currency, w.close)}</span>
+              </div>
+              <p class="bar-ends"><span class="bar-end--stop">{fmtMoney(w.currency, w.stop)}<small>{w.stopFrom ? `${w.stopFrom}, the stop` : 'the stop'}</small></span><span class="bar-end--target">{fmtMoney(w.currency, w.target)}<small>{w.targetFrom}, the target</small></span></p>
+            </>
+          ) : <p class="card-plan">{w.plan ?? `Target ${fmtMoney(w.currency, w.target)}. Now ${fmtMoney(w.currency, w.close)}.`}</p>}
           <p class="card-status">{w.status}</p>
           <details><summary>Why</summary><p>{w.why}</p></details>
         </article>
