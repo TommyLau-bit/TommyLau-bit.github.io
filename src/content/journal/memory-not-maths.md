@@ -218,7 +218,7 @@ If memory is built to the buyer's design, three positions are paid, on different
 
 So a line planned today will run stacks for chips a generation or two after Rubin, and from HBM4E part of what it builds is set by a buyer, after the plant is standing: steadier orders, less freedom. For now the shortage hides the cost. Micron has agreed most of its 2027 HBM already, and SK Hynix has sold more than half of 2027 and 2028 ahead. When the shortage ends, the makers will carry the plants; Nvidia will carry the choice.
 
-**The base-die foundries.** From HBM4 the base die moves towards the logic processes used for processors, so memory now pays logic fabs, and each maker took its own route. SK Hynix said in April 2024 that it planned to use the leading foundry's advanced logic process for HBM4's base die, to "produce customized HBM". Samsung, which also makes chips for others, has its own foundry, which credited its October 2026 results to "HBM base-die sales growth". Micron, the American maker, makes its HBM4 base die in-house and named the leading foundry for its HBM4E base die in September 2025, "for both standard and customized products".
+**The base-die foundries.** From HBM4 the base die moves towards the logic processes used for processors, so memory now pays logic fabs, and each maker took its own route. SK Hynix said in April 2024 that it planned to use the advanced logic process of TSMC, the Taiwanese chip foundry, for HBM4's base die, to "produce customized HBM". Samsung, which also makes chips for others, has its own foundry, which credited its October 2026 results to "HBM base-die sales growth". Micron, the American maker, makes its HBM4 base die in-house and named TSMC for its HBM4E base die in September 2025, "for both standard and customized products".
 
 **The buyer who designs.** Custom HBM is not new; what is new is who draws the base die. NVHBM is Nvidia's design, "available from multiple memory providers", so Nvidia can move it between makers, and Micron has signed up, working with Nvidia on "the industry's first custom-HBM4E implementation, NVHBM, to be adopted on next generation of GPUs". Its first named chip partner is Annapurna Labs, Amazon's in-house chip designer, "starting with Trainium4", Amazon's next AI chip. The maker cannot, as I read it, sell that stack as standard HBM if the design's demand falls: that is how a foundry works, not how memory has worked.
 
@@ -240,7 +240,7 @@ Two arguments would not move me. Smaller number formats halve the bytes per weig
 
 ## The buyer reportedly picks the base die's factory as well
 
-Press reports in October 2026, carried by TrendForce, a research firm, citing the Seoul Economic Daily, said Nvidia had asked all three makers to put NVHBM base dies on the leading foundry's 3 nanometre process, and that Samsung's memory arm agreed despite owning a foundry. If they hold, the maker supplies the memory floors and the stacking around a die designed by one firm and made by another, closer to a contract assembler than a commodity maker.
+Press reports in October 2026, carried by TrendForce, a research firm, citing the Seoul Economic Daily, said Nvidia had asked all three makers to put NVHBM base dies on TSMC's 3 nanometre process, and that Samsung's memory arm agreed despite owning a foundry. If they hold, the maker supplies the memory floors and the stacking around a die designed by one firm and made by another, closer to a contract assembler than a commodity maker.
 
 I concede this is press reporting, not company statements, so I do not rely on it. But the companies' own words point the same way: Micron's foundry-made HBM4E base die and Samsung's foundry earning on base dies. The test is unchanged.
 
@@ -301,7 +301,7 @@ Maths per byte is peak dense operations divided by bytes a second, my arithmetic
 
 Rubin's bandwidth is the Vera Rubin NVL72 spec page figure, 19.2 TB/s per GPU, re-read 6 November 2026. A Nvidia platform blog gives "up to 22 TB/s"; the piece uses the product spec page. Memory per chip, which the table shows, has no chart of its own.
 
-Base dies, in each maker's own words. SK Hynix: its plan of April 2024 to use the leading foundry's logic process for HBM4's base die; any report of who makes its shipping HBM4 base die rests on press and research firms. Samsung: its foundry's results of 30 July and 29 October 2026. Micron: its Form 10-K (9 October 2026) says the HBM4 base logic die is "designed and manufactured in-house"; its prepared remarks of 23 September 2025 say it is partnering with the leading foundry to make the HBM4E base logic die "for both standard and customized products". The report that Nvidia asked all three makers for 3 nanometre NVHBM base dies at the leading foundry is TrendForce's (19 October 2026), citing the Seoul Economic Daily, and is press only.
+Base dies, in each maker's own words. SK Hynix: its plan of April 2024 to use TSMC's logic process for HBM4's base die; any report of who makes its shipping HBM4 base die rests on press and research firms. Samsung: its foundry's results of 30 July and 29 October 2026. Micron: its Form 10-K (9 October 2026) says the HBM4 base logic die is "designed and manufactured in-house"; its prepared remarks of 23 September 2025 say it is partnering with TSMC to make the HBM4E base logic die "for both standard and customized products". The report that Nvidia asked all three makers for 3 nanometre NVHBM base dies at TSMC is TrendForce's (19 October 2026), citing the Seoul Economic Daily, and is press only.
 
 Groq 3 LPX: Nvidia's LPX page (read 6 November 2026) and developer blog (16 March 2026). Per chip, 500 MB of SRAM and 150 TB/s; per rack, 256 chips and 128 GB of SRAM. Nvidia claims up to 35 times the throughput per megawatt of GB200 NVL72 at 400 tokens a second per user. 150 against 19.2 TB/s, and 70 GB over 0.5 GB, are my arithmetic.
 
@@ -318,7 +318,7 @@ Not used: market shares, HBM prices, yields and any Nvidia and Groq deal value, 
 <dt>The memory makers</dt>
 <dd><span class="names">SK Hynix</span>, <span class="names">Samsung</span> and <span class="names">Micron</span> make HBM, the stacked memory beside AI chips.</dd>
 <dt>The base die</dt>
-<dd>The leading foundry, which makes logic base dies and packages the stacks beside the processor, and <span class="names">Samsung</span>'s own foundry.</dd>
+<dd>TSMC, which makes logic base dies and packages the stacks beside the processor, and <span class="names">Samsung</span>'s own foundry.</dd>
 <dt>The buyers who design it</dt>
 <dd><span class="names">Nvidia</span> and <span class="names">AMD</span> design AI chips; <span class="names">Amazon</span>'s Annapurna Labs is the first named NVHBM partner.</dd>
 </dl>

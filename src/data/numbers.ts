@@ -69,7 +69,7 @@ export const NUMBERS: Num[] = [
   { layer: 'memory', value: '+26% on flat units', what: 'How much more hard drive storage Seagate shipped in a year on a similar number of drives. Supply grows by packing each drive, not by making more.', piece: 'the-chip-supply-chain', asOf: 'December quarter 2025' },
 
   // chips and factories
-  { layer: 'chips', value: '2 to 3 + 1 to 2 yrs', what: 'The leading foundry\'s time to build a new chip factory, then to bring it to full output. The slowest clock on the chip side.', piece: 'the-chip-supply-chain', asOf: 'January 2026' },
+  { layer: 'chips', value: '2 to 3 + 1 to 2 yrs', what: 'TSMC\'s time to build a new chip factory, then to bring it to full output. The slowest clock on the chip side.', piece: 'the-chip-supply-chain', asOf: 'January 2026' },
   { layer: 'chips', value: '~65 → ~85', what: 'ASML\'s capacity for standard (low NA) EUV machines in 2026, all expected to ship, and its plan for 2027, already close to fully ordered by July 2026. Every leading-edge chip factory needs them.', piece: 'the-chip-supply-chain', asOf: 'July 2026' },
   { layer: 'chips', value: '70 → 120 mm', what: 'Ajinomoto\'s estimate of how the base of an advanced chip package grows: about 70 millimetres square with nine wiring layers up to 2023, about 100 with eleven in 2026, about 120 with thirteen from 2031. Each layer needs its own sheet of insulating film.', piece: 'the-chip-supply-chain', asOf: 'May 2026' },
   { layer: 'chips', value: '2029 and 2030', what: 'Years for which some of ASML\'s customers already want to order EUV machines, as ASML said its planned supply for 2027 and 2028 will not fully meet demand. ASML is the only maker.', piece: 'the-chip-supply-chain', asOf: 'October 2026' },

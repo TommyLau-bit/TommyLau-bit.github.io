@@ -351,7 +351,7 @@ The scale-up ratio is my arithmetic: Nvidia gives Blackwell's NVLink as 1.8 TB/s
 <dt>Switches</dt>
 <dd><span class="names">Broadcom</span>, <span class="names">Nvidia</span> and <span class="names">Marvell</span> make switch chips. <span class="names">Arista</span> and <span class="names">Cisco</span> build the boxes.</dd>
 <dt>Inside the plug</dt>
-<dd><span class="names">Marvell</span> and <span class="names">Broadcom</span> make optical DSPs; <span class="names">Lumentum</span> and <span class="names">Coherent</span>, lasers. <span class="names">Coherent</span>, <span class="names">Innolight</span>, <span class="names">Eoptolink</span> and <span class="names">Fabrinet</span> build transceivers. The leading foundry and <span class="names">SPIL</span> make co-packaged engines.</dd>
+<dd><span class="names">Marvell</span> and <span class="names">Broadcom</span> make optical DSPs; <span class="names">Lumentum</span> and <span class="names">Coherent</span>, lasers. <span class="names">Coherent</span>, <span class="names">Innolight</span>, <span class="names">Eoptolink</span> and <span class="names">Fabrinet</span> build transceivers. TSMC and <span class="names">SPIL</span> make co-packaged engines.</dd>
 <dt>Glass and mirrors</dt>
 <dd><span class="names">Corning</span>, <span class="names">Prysmian</span> and <span class="names">Fujikura</span> make fibre. <span class="names">Google</span>, <span class="names">Lumentum</span> and <span class="names">Coherent</span> make optical circuit switches. <span class="names">Ciena</span> links distant sites.</dd>
 </dl>
