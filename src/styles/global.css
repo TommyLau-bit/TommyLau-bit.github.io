@@ -596,3 +596,11 @@ details.analogy > p:first-of-type { margin-top: 0.1rem; }
 .how strong { color: var(--ink); }
 .book-in--held { color: var(--good); font-weight: 600; }
 .book-in--avoid { color: var(--ink-3); }
+
+/* Labelled marks on the stop-to-target bar (6 Nov 2026) */
+.bar-box { position: relative; padding: 1.15rem 0 1.15rem; }
+.bar-box .bar { margin: 0; }
+.bar-tag { position: absolute; white-space: nowrap; font-size: 0.72rem; font-weight: 700; font-variant-numeric: tabular-nums; line-height: 1; }
+.bar-tag--buy { top: 0; color: var(--accent); }
+.bar-tag--now { bottom: 0; color: var(--ink); }
+.card-gap { margin: 0; font-size: 0.82rem; color: var(--ink-2); }
