@@ -141,6 +141,9 @@ html { scroll-padding-top: 3.25rem; }
   .site-head .row { row-gap: 0.55rem; }
   .site-tag { display: none; }
   .theme-toggle { position: absolute; top: -0.45rem; right: 0.5rem; margin: 0; }
+  /* The menu always takes its own line on phones, so it never runs under the
+     theme button pinned beside the site name (6 Nov 2026). */
+  .site-head .site-nav { flex-basis: 100%; }
 }
 @media (max-width: 480px) {
   body { font-size: 1.06rem; }
