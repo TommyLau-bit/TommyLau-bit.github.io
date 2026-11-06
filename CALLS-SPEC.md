@@ -1,5 +1,8 @@
 # Claims and Calls: the second core of the site
 
+**★ JOURNAL ONLY (Tommy, 6 Nov 2026 ~17:30, permanent until he says otherwise).** After the Max Hopkins (CLSA) call: the pieces are good but Tommy could not back them up, and 33 notes was far too many. The site is the journal and About only. The Research page, the paper book and all initiation notes and models are OFF the site (source, PDFs and models archived in research-build/archive/research-page-2026-11-06/; old /research, /calls and /companies URLs land on the homepage). Pieces carry no "Research notes" section and no note links. Both scheduled tasks (`physical-layer-book-daily`, `journal-daily-scan`) are DISABLED: nothing is published, drafted onto the site or scheduled without Tommy. Depth over breadth: Tommy must be able to defend every piece from his own head; never add a page, note or feature he has not asked for. Company notes return only if Tommy writes them himself (BWXT first). Show output only, never how the site is run.
+
+
 Agreed with Tommy on 6 Oct 2026. **Read this before any work on pitches, calls or the claims page.**
 Status: LIVE 6 Oct 2026. First two pitches published with Tommy's calls: Vertiv LONG, target US$300, medium conviction; Nebius NO CALL, medium conviction.
 
