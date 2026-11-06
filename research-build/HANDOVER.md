@@ -2,9 +2,8 @@
 
 Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. Newest day on top. Rewrite START HERE at the end of each session.
 
-- **6 Nov evening: nuclear-for-ai HALEU fact fixed in place** (Tommy delegated the call). Centrus Q3 release, 4 Nov 2026: the 16-centrifuge cascade now enriches HALEU for the commercial market, no volume, no DOE funding for FY2027. Heading, summary, intro, analogy, section text, chart title, table row and Oklo evidence line updated. Claim and test NOT reworded. The 16 Nov LinkedIn teaser ("its contracted production stopped") is still true and was left.
-
 - **6 Nov late evening: all 13 pieces rewritten in the study-deck teaching style, on branch `deck-style-rewrite` (NOT merged, NOT pushed).** Each piece now has the split up front, the five-step chain with a choke-point diagram, one mapped analogy, plain falsifiers and an out-of-the-box beat. Every DECK_FINDINGS fact is fixed in place. TSMC now appears only in the fixed 2 Nov claim sentence (Tommy: "Keep it word for word"). Full record: research-build/DECK-REWRITE-2026-11-06.md.
+- **6 Nov evening: nuclear-for-ai HALEU fact fixed in place** (Tommy delegated the call). Centrus Q3 release, 4 Nov 2026: the 16-centrifuge cascade now enriches HALEU for the commercial market, no volume, no DOE funding for FY2027. Heading, summary, intro, analogy, section text, chart title, table row and Oklo evidence line updated. Claim and test NOT reworded. The 16 Nov LinkedIn teaser ("its contracted production stopped") is still true and was left.
 
 ## START HERE (as of Fri 6 Nov 2026, late evening)
 
