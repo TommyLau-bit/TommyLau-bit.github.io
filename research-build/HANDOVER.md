@@ -2,9 +2,13 @@
 
 Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. Newest day on top. Rewrite START HERE at the end of each session.
 
-## START HERE (as of Fri 6 Nov 2026, ~15:10; the day is closed)
+## START HERE (as of Fri 6 Nov 2026, evening; the day is closed)
 
 **★ NEXT ON THE JOURNAL (Tommy, 6 Nov 2026):** BWXT and microreactors (Max Hopkins's pointers). Tommy studies it FIRST, then a piece is drafted, and it is published only on his word. Brief: research-build/topics/BWXT-MICROREACTORS.md. After that, Tommy relearns the other 13 pieces one by one. No other new pieces until then.
+
+**★ LINKEDIN MINI POSTS (6 Nov 2026 evening):** 65 drafts, 5 per piece, in brand/linkedin-mini-posts.md (proposed Tue/Thu/Fri 08:30 SGT from 17 Nov, rotating across pieces). NOT SCHEDULED: Tommy reviews the text first (review PDF in jobs/interview prep/). On his OK: company page only, never the personal profile; schedule up to about 3 months ahead, record each as scheduled in that file. The Mon/Wed 11:30 teaser posts (40 to 54 in linkedin-posts.md) are unchanged.
+
+**★ BWXT STUDY GUIDE:** research-build/topics/BWXT_MICROREACTORS_STUDY.md (and PDF in jobs/interview prep/). Tommy studies from it starting Sat 7 Nov. Still no piece until he says.
 
 **★ READ FIRST, JOURNAL ONLY (Tommy, 6 Nov 2026 ~17:30, permanent until he says otherwise).** After the Max Hopkins (CLSA) call: the pieces are good but Tommy could not back them up, and 33 notes was far too many. The site is the journal and About only. The Research page, the paper book and all initiation notes and models are OFF the site (source, PDFs and models archived in research-build/archive/research-page-2026-11-06/; old /research, /calls and /companies URLs land on the homepage). Pieces carry no "Research notes" section and no note links. Both scheduled tasks (`physical-layer-book-daily`, `journal-daily-scan`) are DISABLED: nothing is published, drafted onto the site or scheduled without Tommy. Depth over breadth: Tommy must be able to defend every piece from his own head; never add a page, note or feature he has not asked for. Company notes return only if Tommy writes them himself (BWXT first). Show output only, never how the site is run.
 
