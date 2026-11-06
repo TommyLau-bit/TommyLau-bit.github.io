@@ -1,4 +1,22 @@
-# The deck-style rewrite of all 13 pieces (6 Nov 2026, evening)
+# The deck-style rewrite of all 13 pieces (6 Nov 2026, evening and night)
+
+## Second pass, 6 Nov night: the article IS the deck (commits 9b3957b, b703be2)
+Tommy: "Why don't I just make the articles in that PowerPoint slide format, but obviously in a more written professional style? ... don't overcomplicate things." Every investor layer now follows its own deck slide by slide: anchor with the anchor chart; why it is scarce or slow (the deck's six cards as bold-led paragraphs); why the market misses it; the terms; the number to own, decoded; where the value sits (prose; the exposure map keeps the names); What would prove me wrong (falsifiers, two legs where the deck has them, the pre-committed disagreement); each development as its own section, concede then push; out of the box; one idea at several scales. Top layers already ran primer, chain, analogy, diagram, choke point and were mostly left. Dropped from decks: your numbers, analogy restatements, likely questions, write pages, coaching, what changed.
+
+New facts in this pass, each checked at its primary source or labelled press:
+- america-rations-the-plug: 10 July 2024, six faults in 82 seconds, about 1,500 MW to backup (NERC incident review, 8 Jan 2025, checked in the PDF).
+- the-equipment-queue: the US order is EO 14421 (Federal Register, signed 26 Aug 2026), not 14420; deck 03 fixed too. DOE 2012 transformer report facts; Wood Mackenzie; Holland & Knight.
+- nuclear-for-ai: Centrus backlog (4 Nov release); Oklo metal fuel (10-Q); Kairos TRISO with Los Alamos (20 Jan 2026); Talen 1,920 MW to Amazon (8-K, 11 Jun 2025); NRC uprate fact sheet.
+- memory-not-maths and the-chip-supply-chain: SK Hynix LTAs with 14 customers, over 50% of 2027 and 2028 (release, 28 Oct). "Sold out through 2029" labelled press.
+- powering-the-rack: Innoscience AI/data centre shipments up 183% in H1 2026 (HKEX interim, 28 Aug). Infineon Villach labelled press (electrive, 28 Oct). Inspectors unfamiliar with 800 VDC: a sponsored trade article, labelled so.
+- hong-kong-has-the-plug: chip limits from the 15 Jan 2026 rule (govinfo). Remote-access and server-price points labelled press (CNBC, Reuters, 5 Nov).
+- ten-thousand-chips-one-thought: Lumentum switch demand (2 Nov release). NVL576 labelled press (The Register).
+- data-centres-in-space: Suncatcher paper quotes (arXiv 2511.19468); Musk quote (SEC filing, 9 Jun 2026).
+- contracted-energised-running: Vineland 328/250 MW and Malaysia's 12.3 GW approved, both labelled press and added to sources.
+- heat-and-water: Heatmap's count of 20+ cancelled projects in Q1 2026 (6 May), labelled as theirs, added to sources.
+Cut material stays in the evidence and claims folds. Checks: check-piece 13/13 clean, build 229 pages, 583 internal links 0 broken, 277 redirects land, every anchor kept, TSMC only in the 2 Nov claim.
+
+## First pass (6 Nov evening)
 
 Branch `deck-style-rewrite` (commits 66d5973 Johor, 257d82a the other 12). NOT merged, NOT pushed, NOT live. Publish only on Tommy's word.
 
