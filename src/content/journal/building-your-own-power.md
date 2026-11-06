@@ -15,7 +15,7 @@ Many have taken it, and now they queue beside the utilities for the same machine
 So building your own power does not skip the queue. It changes which queue you stand in, and the new one is about six years long and still growing.
 
 <details class="analogy">
-<summary>Explain it like I don't work in finance</summary>
+<summary>The analogy</summary>
 <p>Your street's water main is too small, and the council's new one is years away. So you decide to sink your own well. The big drilling firm is booked for years, because every house had the same idea.</p>
 <p>A smaller firm with a lighter rig can come sooner, but its diary is filling too. And either well still needs a pump, made by someone else.</p>
 </details>

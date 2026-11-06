@@ -15,7 +15,7 @@ The plug was not the problem. Hong Kong's main utility, CLP Power, is bound by i
 In Hong Kong the grid is building for its data centres, not holding them back. What Hong Kong cannot supply is the chip. Washington has treated it as China since 2020, so the address of the hall helps decide whether the best AI chips may go in at all.
 
 <details class="analogy">
-<summary>Explain it like I don't work in finance</summary>
+<summary>The analogy</summary>
 <p>A landlord must by law wire every flat that gets let. His fuse box carries a quarter more than the building's busiest hour. Lighting the flats is easy.</p>
 <p>Filling them is not. The best fridges come from one maker abroad, whose government approves them one by one. It judges the street address and the tenant's family. Counting sockets says nothing about what is inside.</p>
 </details>

@@ -19,7 +19,7 @@ The memory in question is HBM, high-bandwidth memory: towers of memory chips sta
 The gap shows in the makers' own spec sheets. Since 2020, the peak maths in Nvidia's top chip has grown about 112 times. The speed of the memory feeding it has grown about nine times.
 
 <details class="analogy">
-<summary>Explain it like I don't work in finance</summary>
+<summary>The analogy</summary>
 <p>A chef gets faster at chopping every year, but the ingredients still come through one hatch from the pantry. Past a point, a faster chef just stands at the hatch, and the kitchen serves only as many plates as the hatch allows.</p>
 <p>So kitchens widen the hatch and build bigger pantries. The busiest kitchen has now gone further: it designs its own hatch, made to fit its kitchen and no other.</p>
 </details>

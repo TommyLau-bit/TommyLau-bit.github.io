@@ -21,7 +21,7 @@ Then the heat has to leave the building, and that is where the water is decided.
 This is where liquid cooling changes the trade. Chips tolerate warm coolant, so the water leaving the hall is warm too, and for most of the year in many climates the outside air is cooler. Lawrence Berkeley National Laboratory simulated a large liquid-cooled hall both ways. With a cooling tower, it evaporated about 2 litres of water per kilowatt-hour of computing. With a dry cooler, almost none, and the hall's energy efficiency barely moved.
 
 <details class="analogy">
-<summary>Explain it like I don't work in finance</summary>
+<summary>The analogy</summary>
 <p>Ninety hairdryers in a shut wardrobe: no fan clears that, so you run cold water through pipes pressed against each one.</p>
 <p>The pipes come out warm. Wrap them in a wet flannel on the balcony, which costs no electricity but dries the flannel, or put a fan on a radiator, which uses no water and a little more power.</p>
 </details>

@@ -21,7 +21,7 @@ Money buys the building, but not the time to build it. TSMC's chief says a new c
 Buyers know this, so they commit early. Nvidia's annual report describes lead times of more than a year, which it secures with deposits and capacity commitments. Micron has already agreed most of next year's stacked memory, and Seagate has allocated most of its data centre hard drives through 2028.
 
 <details class="analogy">
-<summary>Explain it like I don't work in finance</summary>
+<summary>The analogy</summary>
 <p>Think of a kitchen refit. Cupboards, taps and paint come from any shop this week. The stone worktop comes from one cutter with one saw, booked a year ahead, and a second saw means building a new workshop.</p>
 <p>Hiring more fitters does not help. The kitchen is finished when the worktop arrives. An AI chip has five or six worktops, each from a different cutter.</p>
 </details>

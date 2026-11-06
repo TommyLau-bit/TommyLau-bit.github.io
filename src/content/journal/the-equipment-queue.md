@@ -21,7 +21,7 @@ The wait cannot simply be bought away, for three reasons. A new factory takes tw
 The clearest measure of the wait is in the makers' own order books. Take the orders a maker has signed but not yet delivered, and divide by a year of its sales. That gives the years its factories would need to clear the pile if no new order arrived. At Hitachi Energy it is about three. At Siemens Energy's grid business it is about four, and at Eaton, which makes the gear inside the fence, about one. All three have risen while the new factories were being announced.
 
 <details class="analogy">
-<summary>Explain it like I don't work in finance</summary>
+<summary>The analogy</summary>
 <p>A popular hairdresser is booked weeks ahead. She adds a second chair, but only once the bookings justify it, and the diary still runs weeks ahead.</p>
 <p>Counting her chairs tells you she is growing. Counting the weeks in her diary tells you whether you will get a cut sooner. For grid equipment, the diary runs in years.</p>
 </details>

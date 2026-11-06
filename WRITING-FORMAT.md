@@ -160,7 +160,7 @@ text and never changes.
 
 ```html
 <details class="analogy">
-<summary>Explain it like I don't work in finance</summary>
+<summary>The analogy</summary>
 <p>The everyday comparison. Domestic scale, household objects.</p>
 <p>Why the obvious fix does not work.</p>
 <p>The one image that carries the whole argument.</p>

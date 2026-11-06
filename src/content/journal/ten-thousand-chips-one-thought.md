@@ -21,7 +21,7 @@ How they talk depends on distance. Inside a rack, dozens of chips are tied toget
 Each new chip generation needs faster links, from 800 gigabits a second to 1.6 terabits. The plugs are replaced. The fibre usually is not, and neither are the mirror switches, because they never read the data.
 
 <details class="analogy">
-<summary>Explain it like I don't work in finance</summary>
+<summary>The analogy</summary>
 <p>A house is wired once. Want a brighter room and you buy new bulbs, while the wires in the walls stay put.</p>
 <p>In an AI data centre the wires are glass fibre and the bulbs are lasers in plugs. Sealing bulbs into the ceiling saves power, but a dead one means taking the ceiling down. So builders kept the bulbs reachable.</p>
 </details>

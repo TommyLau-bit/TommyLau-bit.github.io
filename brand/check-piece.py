@@ -17,7 +17,7 @@ import sys, os, re, glob, datetime
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CATEGORIES = {'Explainer', 'Analysis', 'Note'}
 SGT = datetime.timezone(datetime.timedelta(hours=8))
-ANALOGY_SUMMARY = "<summary>Explain it like I don't work in finance</summary>"
+ANALOGY_SUMMARY = "<summary>The analogy</summary>"
 # The disclaimer must open with this exact sentence pair. A piece may add a
 # further statement after it, as the memory piece does.
 EXPOSURE_NOTE = ('This maps who operates in each layer. It is not a recommendation, '

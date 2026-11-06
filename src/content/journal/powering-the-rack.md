@@ -21,7 +21,7 @@ The building is the slow part. Its power room is designed years ahead and runs f
 So the change starts beside the computers. The first product is a power rack: a cabinet of converters that stands next to the computer racks, takes alternating current from the old power room and feeds them 800 volts. Nvidia dates it to the second half of 2026, and a unit serving a whole row of racks to 2027. The step that turns a whole building over to 800 volts it describes, but does not date.
 
 <details class="analogy">
-<summary>Explain it like I don't work in finance</summary>
+<summary>The analogy</summary>
 <p>A house was wired for a kettle and a few lamps. Add a heat pump, an oven and a car charger, and the fuse box, the cables and the sockets all have to grow.</p>
 <p>A thicker supply cable is the lasting fix, but the walls are already plastered. So the new supply runs along the outside first, beside the old one, and the full rewire comes later.</p>
 </details>

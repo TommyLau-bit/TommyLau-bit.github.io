@@ -17,7 +17,7 @@ So orbit is a contest of weight, because radiators and solar panels must be laun
 In orbit the plug is free, and the heat is the bill.
 
 <details class="analogy">
-<summary>Explain it like I don't work in finance</summary>
+<summary>The analogy</summary>
 <p>Picture a laptop sealed inside a vacuum flask on a sunny windowsill. The sun charges it for nothing, but the flask that keeps tea hot also traps the laptop's heat.</p>
 <p>The only way out is a large black fin poking out of the flask, glowing the heat away. A hotter fin can be smaller. And every fin goes up by courier, charged by the kilogram.</p>
 </details>

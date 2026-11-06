@@ -617,3 +617,8 @@ details.analogy > p:first-of-type { margin-top: 0.1rem; }
 .bar-key { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; margin: 0 0 1rem; font-size: 0.8rem; color: var(--ink-2); }
 .bar-key .k::before { content: ''; display: inline-block; width: 4px; height: 12px; border-radius: 2px; margin-right: 0.4rem; vertical-align: -1px; }
 .k--stop::before { background: var(--bad); } .k--now::before { background: var(--ink); } .k--buy::before { background: var(--accent); } .k--target::before { background: var(--good); }
+
+/* Homepage pointer to the book (6 Nov 2026) */
+.hero p.hero-book { margin-top: 0.8rem; font-family: var(--sans); font-size: 0.92rem; }
+.hero-book a { color: var(--accent); font-weight: 600; text-decoration: none; }
+@media (hover: hover) { .hero-book a:hover { text-decoration: underline; } }

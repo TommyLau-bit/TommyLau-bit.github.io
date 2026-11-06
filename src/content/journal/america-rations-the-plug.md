@@ -21,7 +21,7 @@ So grids are starting to sell the connection in tiers. The full tier still waits
 The second rule points the other way. A site must ride through a disturbance, staying connected through a brief dip or swell in voltage rather than fleeing to its generators. The grid wants data centres to stay on when it wobbles and to come off only when it asks. That makes what backs a site up, a generator, a battery or software that slows its chips, part of the connection itself.
 
 <details class="analogy">
-<summary>Explain it like I don't work in finance</summary>
+<summary>The analogy</summary>
 <p>Picture a block of flats whose fuse box is full, with the electrician booked for years. The landlord still lets new tenants in, on terms: your heater goes off first when the fuse runs hot, or you bring a camping stove.</p>
 <p>And when a bulb flickers, you may not yank every plug at once. Nobody gets a bigger fuse sooner. The landlord only decides who goes dark first.</p>
 </details>

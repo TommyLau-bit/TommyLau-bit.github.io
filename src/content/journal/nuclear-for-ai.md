@@ -15,7 +15,7 @@ Constellation is restarting it, the former Three Mile Island Unit 1, for Microso
 Yet the old reactors come first, because nuclear power for AI arrives in the order of what each project already holds. An old reactor has a licensed site, a place on the grid and ordinary fuel. Most of the new ones lack a fuel that America has almost stopped making.
 
 <details class="analogy">
-<summary>Explain it like I don't work in finance</summary>
+<summary>The analogy</summary>
 <p>You want a cooker working this month. The old one in the garage still has its socket on the wall and its gas pipe in place, so it needs only a service and a safety check.</p>
 <p>The new model is better, but it runs on cartridges only one shop sold, and that shop has stopped. The new cooker is the future. The old one cooks dinner first.</p>
 </details>

@@ -21,7 +21,7 @@ Jane Street, the trading firm, shows what that does to a builder's order of work
 After energised, the tenant sets the pace. At Crusoe's campus at Abilene, Texas, the tenant's chips arrived in the same months as the power, and the buildings filled one by one. Where a hall is let before its tenant's chips are bought, it can stand live and quiet for much longer.
 
 <details class="analogy">
-<summary>Explain it like I don't work in finance</summary>
+<summary>The analogy</summary>
 <p>A new housing estate is sold off plan, built, connected to the mains, handed over and lived in. Five dates, one house.</p>
 <p>On some streets the family moves in the week the keys arrive, because the removal van was booked with the house. On others, wired houses stand empty for months while the furniture waits at customs. Count houses sold and you count hopes. Count lit windows and you count homes.</p>
 </details>

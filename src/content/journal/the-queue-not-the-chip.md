@@ -15,7 +15,7 @@ One side has power booked and sitting idle. The other turns builders away. They 
 They are the same one. In Johor and Singapore, a connection to the grid, not a supply of chips, decides who gets to build. Singapore rations it. Johor hands it out years before the halls fill, so booked power is a poor guide to computing at work.
 
 <details class="analogy">
-<summary>Explain it like I don't work in finance</summary>
+<summary>The analogy</summary>
 <p>Two blocks of flats face each other. The old block has no spare sockets, so the landlord gives the few he has to tenants with efficient fridges.</p>
 <p>In the new block, every flat is wired before anyone moves in, and lights come on only as furniture arrives. Counting sockets tells you who may move in. Counting lit windows tells you who has.</p>
 </details>
