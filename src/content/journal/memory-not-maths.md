@@ -24,9 +24,9 @@ So memory, not maths, sets the pace of AI. And from the next generation, the big
 <p>So kitchens widen the hatch, and a wider hatch needs a proper frame: that frame is the base die. The busiest kitchen now draws the frame itself and lets any builder make it. A frame cut to its wall fits no other kitchen.</p>
 </details>
 
-Trace one word from question to screen and the wait has a single cause.
+The chain has five links. First, an answer is written one word at a time, and for every word the chip reads each of the model's weights out of memory again. Second, reading is slow next to the maths: since 2020 the peak maths in Nvidia's top chip has grown about 112 times, the memory feeding it about nine. Third, so the chip mostly waits. Fourth, memory became the figure chips are sold on, and this year's HBM4, the latest high-bandwidth memory towers beside the chip, doubled the wires to each tower, which needed a logic chip at its foot, the base die. Fifth, once the base is a logic chip, the buyer can design it. Nvidia's NVHBM puts its own memory controller, the circuit that runs the memory, into that base die from the next generation, and Micron, one of the three memory makers, says it is building the first.
 
-First, the chip reads the question in one pass, reusing each of the model's weights many times. Second, to write a word, it streams every weight out of the memory towers beside it, called HBM, high-bandwidth memory. Third, it reads that conversation's own notes, the KV cache, which grow with every word. Fourth, it does the sums, about two for each weight. Fifth, it adds the word and starts again.
+Inside a single word, five stages run in turn, and only one is slow.
 
 <figure class="chart">
 <p class="chart-title">Every word waits on one step: reading the whole model from memory</p>
@@ -73,9 +73,7 @@ First, the chip reads the question in one pass, reusing each of the model's weig
 <figcaption>Nvidia technical blog (17 November 2023) for the memory-bound step and the KV cache. Timings are my arithmetic: a 70 billion weight model at eight bits, 8 TB/s of HBM, ignoring caching and overlap. My framing of the chain.</figcaption>
 </figure>
 
-The second step binds. A model of 70 billion weights fills about 70 gigabytes, and at 8 terabytes a second one full read takes about nine milliseconds, by my arithmetic. The sums fill a sliver of that, so one conversation tops out near 110 words a second, however fast the maths. And the gap has widened: since 2020 the peak maths in Nvidia's top chip has grown about 112 times, the memory feeding it about nine.
-
-Widening the pipe changed what memory is. This year's HBM4 doubled the wires between each tower and the chip, which needed a smarter chip at the foot of each tower, the base die, made like a processor. In August Nvidia announced NVHBM, which moves its own memory controller, the circuit that runs the memory, into that base die. Micron, one of the three memory makers, says it is working with Nvidia on the first.
+The second stage binds, because it is the only one that costs the whole model on every word. A model of 70 billion weights fills about 70 gigabytes, and at 8 terabytes a second one full read takes about nine milliseconds, by my arithmetic. The sums fill a sliver of that, so one conversation tops out near 110 words a second, however fast the maths.
 
 That matters beyond engineering. Memory has long been a standard part that swings from glut to shortage. A part built to one buyer's design cannot be sold elsewhere if that buyer's demand falls, so it behaves like a chip made to order.
 
@@ -89,7 +87,7 @@ My test: by the end of 2027, at least two of the three makers, SK Hynix, Samsung
 
 <a id="memory-not-maths"></a>
 
-Since 2020 the maths in the top chip of Nvidia, the biggest buyer of AI memory, has outrun the memory feeding it. On Nvidia's own spec sheets, maths per byte, the operations a chip can do for each byte its memory delivers, rose from about 150 on the A100 of 2020 to about 1,900 on Blackwell Ultra, its flagship of 2025, more than twelvefold. The higher it climbs, the longer the chip waits. So memory is now the part that sells the chip. And from HBM4E, the next generation of stacked memory, Nvidia's own controller moves into the base of the memory stack.
+Since 2020 the maths in the top chip of Nvidia, the biggest buyer of AI memory, has outrun the memory feeding it. On Nvidia's own spec sheets, maths per byte, the operations a chip can do for each byte its memory delivers, rose from about 150 on the A100 of 2020 to about 1,900 on Blackwell Ultra, its flagship of 2025, more than twelvefold. The higher it climbs, the longer the chip waits. And from HBM4E, the next generation of high-bandwidth memory, Nvidia's own controller moves into the base of each memory stack.
 
 <figure class="chart">
 <p class="chart-title">Since 2020 the maths has grown about twelve times faster than the memory feeding it</p>
@@ -107,29 +105,31 @@ Since 2020 the maths in the top chip of Nvidia, the biggest buyer of AI memory, 
 <figcaption>Nvidia spec pages and technical blog, read 30 October 2026. Peak maths is dense, in the smallest number format each chip supports: 16-bit for the A100 (312 TFLOPS), 8-bit for the H100 (about 2 PFLOPS), 4-bit for Blackwell (10), Blackwell Ultra (15) and Rubin (35, Nvidia's dense training figure). Bandwidth 2.0, 3.35, 8, 8 and 19.2 TB/s. Halving the number format also halves the bytes per weight, so in numbers moved the gap is narrower than shown.</figcaption>
 </figure>
 
-The chart flatters the gap a little, since newer chips count maths in smaller numbers, but the caveat does not reverse the direction. Held at 16-bit, peak maths rose about seven to eight times from the A100 to Blackwell Ultra while bandwidth rose about four.
+A fund has two reasons to care. Bandwidth and capacity per chip, not headline maths, set how fast a chip answers and how many people it serves. And memory has been a standard part priced through glut and shortage; if the biggest buyer designs part of it, the makers build plants years ahead for one customer's design, and the buyer keeps the choice of maker.
 
-## Every word the model writes rereads the whole model
+## Six physical limits keep the pipe to memory narrow
 
-The chip waits because of how a model answers. It reads the question in one pass, then writes one word at a time, reading every weight from memory for each word. Nvidia's engineers call that step "a memory-bound operation", and even after every software trick, "still very likely to be memory bound".
+HBM is a tower of 12 or 16 memory dies, wired vertically through each die, on a base die that sends the data across a slab of silicon, the interposer, into the processor. The maths speeds up with every chip process; the pipe to the tower does not.
 
-A rough sum shows how hard that caps the speed. A model of 70 billion weights stored at eight bits fills about 70 gigabytes. At 8 terabytes a second, one full read takes about nine milliseconds, so a single conversation tops out near 110 words a second, however fast the maths. That is my arithmetic, and it ignores overlap and caching.
+**The coastline.** Wires leave a chip only along its edges. The maths grows with a chip's area, the edge only with its side, so doubling the side gives four times the maths and twice the coastline.
 
-Memory sets a second limit through capacity. Every conversation keeps its own working memory, the KV cache. Nvidia's own example puts it at about 2 gigabytes for one 4,096-token conversation on a small 7 billion weight model. So bandwidth sets the speed of each answer, and capacity sets how many conversations fit on one chip. The memory makers agree. At SK Hynix, the Korean memory maker, the head of memory systems research told the Open Compute summit in October that processor-centric designs "face a bottleneck known as the 'memory wall'".
+**Wire density.** HBM4 runs 2,048 data wires per stack across the interposer. Wiring that dense works only over millimetres, so the tower must stand beside the chip.
 
-## HBM4 held the line, and memory became the headline specification
+**The height cap.** A stack must fit a fixed height, raised from 720 to 775 microns for HBM4, as SemiEngineering, a trade publication, reports. More floors in the same height means thinner dies and riskier stacking.
 
-The industry's answer was wider memory. Rubin, Nvidia's 2026 chip, is the first generation in this run where maths per byte did not rise: about 1,820, against 1,875 for Blackwell Ultra. Its bandwidth jumped 2.4 times, to 19.2 terabytes a second, on HBM4; that is the figure on Nvidia's product spec page, and I use it over the "up to 22" in one of its platform blogs. JEDEC, the body that sets memory standards, published HBM4 in April 2025: it doubles each stack's interface to 2,048 bits, for up to 2 terabytes a second per stack.
+**Heat.** The cooler sits on top, so heat from the base die climbs through every memory floor above it, and DRAM leaks its charge faster when hot and must refresh more often.
 
-Memory per chip has become a headline specification too. Nvidia's went from 80 gigabytes on the H100 of 2022 to 288 on Rubin, 3.6 times, and AMD, Nvidia's nearest GPU rival, projects 432 for its MI400. AMD sells on it directly: its own slide says "Highest memory bandwidth & capacity drives performance".
+**Energy per bit.** Moving a byte off the chip costs far more energy than doing a sum on it, and pushing each wire faster raises the power bill. So HBM goes wide and slow.
 
-## The base die became a logic chip, and each maker found its own route to make it
+**Everyone at once.** HBM is sold ahead. SK Hynix, the Korean memory maker, has long-term agreements with 14 major customers covering more than half its production capacity for 2027 and 2028, and expects demand to exceed supply through 2030.
 
-Wider memory changed the chip at the bottom of the stack. From HBM4 the base die, the chip at the foot of each stack that talks to the processor, moves towards the logic processes used for processors, but the three makers took different routes. SK Hynix said in April 2024 that it planned to use the leading foundry's advanced logic process for HBM4's base die, to "produce customized HBM". Samsung, which also makes chips for others, has its own foundry, which credited its results to "HBM base-die demand" in July 2026 and "HBM base-die sales growth" in October. Micron, the American maker, makes its HBM4 base die in-house, its annual report says, as [the chip supply chain piece](/journal/the-chip-supply-chain/) notes, and named the leading foundry for its HBM4E base die in September 2025, "for both standard and customized products".
+## Launches lead with maths, while answers run on memory
 
-## Nvidia now draws the base die, and any maker may build it
+The number on a launch slide is peak maths: 35 petaflops for Rubin, Nvidia's 2026 chip, about 112 times the A100. While a model writes, most of that sits idle, so it overstates how fast a chip answers. The number that sets the pace sits lower: 19.2 terabytes a second, about nine times the A100. Training, the story of 2023 and 2024, reuses each weight many times and keeps the maths busy; serving answers became the volume business, and that is where memory binds.
 
-Once the base die became a logic chip, the buyer could design it. On 26 August 2026 Nvidia announced NVHBM, its own memory design. Standard HBM places "the memory controller on the XPU die", the processor, using space that could do maths. NVHBM "integrates NVIDIA's custom memory controller into the HBM base die".
+The chip designers already sell on the lower line. Nvidia's memory per chip went from 80 gigabytes on the H100 of 2022 to 288 on Rubin, 3.6 times, and AMD, Nvidia's nearest GPU rival, projects 432 for its MI400.
+
+The second miss is who designs the memory, which no spec sheet shows. On 26 August 2026 Nvidia announced NVHBM, its own memory design. Standard HBM places "the memory controller on the XPU die", the processor, using space that could do maths. NVHBM "integrates NVIDIA's custom memory controller into the HBM base die", and Nvidia claims up to 30% more bandwidth and 15% lower memory power than standard HBM4E. The market still values memory as a commodity cycle; a part drawn by its buyer is closer to a chip made to order.
 
 <figure class="chart">
 <p class="chart-title">With NVHBM, Nvidia's design moves into the memory stack</p>
@@ -170,13 +170,29 @@ Once the base die became a logic chip, the buyer could design it. On 26 August 2
 <figcaption>Nvidia blog, 26 August 2026. Nvidia's own figures against standard HBM4E: up to 30% more memory bandwidth, 15% lower HBM power, up to 25% more room on the processor die. Not to scale.</figcaption>
 </figure>
 
-The gains are large on Nvidia's own figures: it claims up to 30% more bandwidth and 15% lower memory power than standard HBM4E. And a maker has signed up. Micron named itself a month later, working with Nvidia on "the industry's first custom-HBM4E implementation, NVHBM, to be adopted on next generation of GPUs". Its HBM4E ramps in volume in calendar 2027. Press reports in October 2026, carried by TrendForce, a research firm, said Nvidia had also asked all three makers to put NVHBM base dies on the leading foundry's 3 nanometre process, and that Samsung agreed; no company has confirmed it, so I do not rely on it.
+## The argument runs on four terms
 
-That changes the trade. Custom HBM is not new: SK Hynix spoke of "customized HBM" in 2024. What is new is who draws the base die. NVHBM is Nvidia's design, "available from multiple memory providers", so Nvidia can move it between makers. The maker gets no such freedom: if demand for that design falls, the stack, as I read it, cannot be sold as standard HBM. That is how a foundry works, and it is not how memory has worked.
+**Gigabytes and terabytes a second.** Gigabytes are capacity, the size of the fridge; terabytes a second are bandwidth, the width of the kitchen door. Rubin has 288 gigabytes at 19.2 terabytes a second.
 
-## The makers build plants years ahead for a design set one generation at a time
+**Prefill and decode.** Prefill reads the whole prompt in one parallel pass, like reading an order once, and keeps the maths busy. Decode writes the answer one token, a piece of a word, at a time, re-reading the weights for each, like cooking every plate from scratch.
 
-That design risk lands on plants the makers commit to years ahead. SK Hynix's new HBM capacity before 2028 is in Korea, where its M15X memory fab in Cheongju runs at full capacity by the end of 2026. P&T7, its HBM packaging plant in the same city, packages by February 2028, and its American HBM packaging and test plant, in Indiana, opens its cleanroom by October 2028 and starts mass production in the second half of 2029, it said on 28 August 2026. Micron's Singapore HBM packaging plant starts output in early 2027. Nvidia has launched a new flagship every year since 2024.
+**KV cache.** Each conversation's working notes, kept so the model need not redo past work, like order tickets on a kitchen rail. Nvidia's own example puts it at about 2 gigabytes for one 4,096-token conversation on a small 7 billion weight model. The rail is HBM, and it holds only so many tickets.
+
+**Maths per byte.** The peak operations a chip can do for each byte its memory delivers, like shots a player can release for every ball the rebounder returns. If the work needs fewer than the chip offers, the chip waits.
+
+## Maths per byte rose twelvefold, and the trap sits in the number format
+
+The ratio is peak dense maths divided by bytes delivered a second. The A100 does 312 trillion operations against 2.04 trillion bytes, about 153. Blackwell Ultra does 15,000 trillion against 8 trillion, about 1,875. Rubin, at about 1,820, is the first generation in this run where the ratio did not rise, because its bandwidth jumped 2.4 times on HBM4. JEDEC, the body that sets memory standards, gave HBM4 a 2,048-bit interface per stack, for up to 2 terabytes a second. The 19.2 is Nvidia's product spec page; a platform blog says "up to 22".
+
+What the work asks for is far less. At one user, writing a word needs about two operations per weight, a multiply and an add. With weights stored at 4 bits that is about four operations per byte against 1,875 on offer, so the maths is busy well under 1% of the time, an order of magnitude by my estimate. Operators fill it by batching users on one read of the weights, but each user's KV cache is private and must fit in HBM. At Nvidia's 2 gigabytes a conversation, Rubin's 288 gigabytes hold about 140 such chats before the model itself, by my arithmetic. Capacity caps the batch, and the batch caps how busy the maths can get.
+
+The trap is the number format. Newer chips quote maths at 4 bits, the A100 at 16, and halving the format also halves the bytes per weight. Held at 16-bit, peak maths rose about seven to eight times from the A100 to Blackwell Ultra while bandwidth rose about four. The gap is narrower than the chart shows, and it points the same way. At fixed 16-bit, Rubin narrowed it, which fits HBM4 catching up a step.
+
+## The value sits with the makers' plants, the logic fabs and the buyer who draws the die
+
+If memory is built to the buyer's design, three positions are paid, on different terms.
+
+**The memory makers.** SK Hynix, Samsung and Micron make HBM, and they commit to plants years ahead. SK Hynix's M15X memory fab in Cheongju reaches full capacity by the end of 2026, its P&T7 packaging plant there packages by February 2028, and its Indiana HBM plant starts mass production in the second half of 2029, it said on 28 August 2026. Micron's Singapore HBM packaging plant starts output in early 2027. Nvidia has launched a new flagship every year since 2024.
 
 <figure class="chart">
 <p class="chart-title">The new memory plants come on stream one to three chip launches after Rubin</p>
@@ -200,28 +216,56 @@ That design risk lands on plants the makers commit to years ahead. SK Hynix's ne
 <figcaption>Nvidia spec pages; Rubin Ultra by 2027 from Nvidia's blog of 13 October 2025, as in <a href="/journal/powering-the-rack/">Powering the rack</a>; Micron prepared remarks and Form 10-K (30 September and 9 October 2026); SK Hynix releases listed in the sources, Indiana from its release of 28 August 2026. Open circles are not announced chips or plant milestones; a year with no month is placed at its middle.</figcaption>
 </figure>
 
-So a line planned today will run stacks for chips a generation or two after Rubin. My reading: under standard HBM, the maker planned against a published standard. From HBM4E, part of what it builds is set by a buyer, one generation at a time, after the plant is standing. For now the shortage hides that risk. Micron has agreed most of its 2027 HBM already, and SK Hynix expects demand to outrun supply "through 2030". When the shortage ends, the makers will carry the plants; Nvidia will carry the choice.
+So a line planned today will run stacks for chips a generation or two after Rubin, and from HBM4E part of what it builds is set by a buyer, after the plant is standing: steadier orders, less freedom. For now the shortage hides the cost. Micron has agreed most of its 2027 HBM already, and SK Hynix has sold more than half of 2027 and 2028 ahead. When the shortage ends, the makers will carry the plants; Nvidia will carry the choice.
+
+**The base-die foundries.** From HBM4 the base die moves towards the logic processes used for processors, so memory now pays logic fabs, and each maker took its own route. SK Hynix said in April 2024 that it planned to use the leading foundry's advanced logic process for HBM4's base die, to "produce customized HBM". Samsung, which also makes chips for others, has its own foundry, which credited its October 2026 results to "HBM base-die sales growth". Micron, the American maker, makes its HBM4 base die in-house and named the leading foundry for its HBM4E base die in September 2025, "for both standard and customized products".
+
+**The buyer who designs.** Custom HBM is not new; what is new is who draws the base die. NVHBM is Nvidia's design, "available from multiple memory providers", so Nvidia can move it between makers, and Micron has signed up, working with Nvidia on "the industry's first custom-HBM4E implementation, NVHBM, to be adopted on next generation of GPUs". Its first named chip partner is Annapurna Labs, Amazon's in-house chip designer, "starting with Trainium4", Amazon's next AI chip. The maker cannot, as I read it, sell that stack as standard HBM if the design's demand falls: that is how a foundry works, not how memory has worked.
+
+How far ahead each year's HBM is sold is in [the chip supply chain](/journal/the-chip-supply-chain/).
+
+## What would prove me wrong
+
+Three tests can break it, each hitting a different part.
+
+The first is the claim's own test, by date. If, by the end of 2027, fewer than two of the three makers say in their own words that they ship HBM built to a customer's design in volume, it breaks. That is a genuine risk. Micron's HBM4E ramps only in 2027, NVHBM has one named partner and no date, and Samsung and SK Hynix have said nothing dated about custom volume in releases I could open. Standard HBM4E remains on sale.
+
+The second is memory per chip. If the chips after Rubin and AMD's MI400 stop raising it, the memory wall argument weakens. GTC, Nvidia's annual developer conference, in March 2027 will show the next flagship's figures, and any NVHBM date or second partner.
+
+The third is decode leaving HBM. If SRAM chips, flash tiers or SSD offload take most of the work of writing answers, HBM matters less per answer. Nvidia has already moved part of it, as set out below.
+
+The argument stands on two legs. The memory wall is physics, held up by geometry, wire density, the height cap and heat, and the second and third tests attack it. The buyer designing the base die is commercial and dated, and the first test attacks it; it can fail while the wall holds, if custom memory stays one buyer's niche through 2027. The wall is why a buyer would bother; the design is the business consequence.
+
+Two arguments would not move me. Smaller number formats halve the bytes per weight, but each halving helps once, and with the maths already at four bits few are left. Overflow is the other: Micron says SSDs, flash storage drives, are used "for KV cache offload", and SK Hynix shows high bandwidth flash as a cheaper tier. Both ease capacity more than bandwidth, since the weights must still be read for every word.
+
+## The buyer reportedly picks the base die's factory as well
+
+Press reports in October 2026, carried by TrendForce, a research firm, citing the Seoul Economic Daily, said Nvidia had asked all three makers to put NVHBM base dies on the leading foundry's 3 nanometre process, and that Samsung's memory arm agreed despite owning a foundry. If they hold, the maker supplies the memory floors and the stacking around a die designed by one firm and made by another, closer to a contract assembler than a commodity maker.
+
+I concede this is press reporting, not company statements, so I do not rely on it. But the companies' own words point the same way: Micron's foundry-made HBM4E base die and Samsung's foundry earning on base dies. The test is unchanged.
+
+## Nvidia moved part of decode onto SRAM, which is evidence for the wall
+
+The strongest development against me is real. Nvidia's Groq 3 LPX, an inference rack of 256 chips, keeps part of each word's work in SRAM, very fast memory built into the chip: 500 megabytes and 150 terabytes a second per chip, about eight times one Rubin GPU's HBM. In Nvidia's design, published on 16 March 2026, Rubin GPUs keep attention over the KV cache on HBM, while the LPX chips run the feed-forward layers.
+
+I concede that HBM is no longer the only answer to the memory wall. It does not move me. A chip built around memory bandwidth is evidence that the wall binds. And SRAM is tiny: at 500 megabytes a chip, a 70 gigabyte model needs about 140 of them just to hold it, by my arithmetic. Attention and the KV cache stay on HBM. SRAM buys a premium speed tier; HBM still carries the capacity.
 
 <a id="heat-wall"></a>
 ## A custom base die may turn the memory wall into a heat wall
 
-An open question is where NVHBM's heat goes. Nvidia's design moves the memory controller off the processor and into the base die. In a chip package the cooler presses on top, so the base die is the layer furthest from it, under as many as 16 thinned memory dies in an HBM4 stack. Samsung told Hot Chips, the chip design conference, in August 2026 that base-die power density climbs from 0.5 to over 2 watts per square millimetre over the next generations, as ServeTheHome reported its slides, and proposed a dedicated heat path to cope.
+My hypothesis is that NVHBM's open question is not who designs the controller but where its heat goes. Nvidia's design moves the memory controller off the processor and into the base die. In a chip package the cooler presses on top, so the base die is the layer furthest from it, under as many as 16 thinned memory dies in an HBM4 stack. Samsung told Hot Chips, the chip design conference, in August 2026 that base-die power density climbs from 0.5 to over 2 watts per square millimetre over the next generations, as ServeTheHome, a hardware site, reported its slides.
 
-Heat costs memory speed. DRAM, the memory cells in every HBM die, leaks charge faster when hot, and Micron's DDR4 datasheets double the refresh rate above 85°C. My inference: refresh is time a die cannot serve reads, so a hot stack gives back some of the bandwidth it was built for. And under NVHBM the heat source is the buyer's design while the memory that suffers is the maker's, so when a stack fails a customer's tests, who owns the fault is not settled in anything I have read.
+Heat costs memory speed. DRAM leaks charge faster when hot, and Micron's DDR4 datasheets double the refresh rate above 85°C. My inference: refresh is time a die cannot serve reads, so a hot stack gives back some of the bandwidth it was built for. Heat has decided qualification before: Reuters reported in May 2024 that Samsung's HBM had failed Nvidia's tests on heat and power, which Samsung denied. Under NVHBM the heat source is the buyer's design and the memory that suffers is the maker's, so who owns a failure is unsettled.
 
-The test runs through 2027: custom HBM4E qualification news, any thermal derating of 16-high stacks, and new cooling aimed at the stack itself. What would kill the idea: NVHBM ships on time at full height with no derating. The fair counter is already on record. Nvidia claims 15% lower HBM power overall, and Samsung judged the heat of moving the controller into the base die acceptable, so the net heat there may not rise. That is the first thing to check.
+The test runs through 2027: custom HBM4E qualification news, any thermal derating of 16-high stacks, and new cooling aimed at the stack itself. What would kill the idea: NVHBM ships on time at full height with no derating, or Nvidia's 15% lower HBM power turns out to mean a cooler base die. That is the first thing to check.
 
-## What would prove me wrong
+## From die to industry, whoever designs the slowest pipe sets the terms
 
-The claim's test is simple. If, by the end of 2027, fewer than two of the three makers say in their own words that they ship HBM built to a customer's design in volume, it breaks. That is a genuine risk. Micron's HBM4E ramps only in 2027, and NVHBM has one named chip partner, Annapurna Labs, Amazon's in-house chip designer, "starting with Trainium4", Amazon's next AI chip, and no published date. Samsung and SK Hynix have said nothing dated about custom volume in releases I could open. HBM4 stays backward compatible with HBM3 controllers, and standard HBM4E remains on sale, so custom memory could stay one buyer's niche through 2027.
+At the scale of a die, the maths outran the memory about twelvefold since 2020. Rubin held the ratio only by widening each stack, which put a logic chip at its foot for the buyer to design.
 
-Three signs would move me before the deadline: an NVHBM date or a second partner at GTC, Nvidia's annual developer conference, in March 2027; Micron's quarterly remarks as HBM4E ramps through 2027; and Samsung's and SK Hynix's own results. A pass would show that buyers treat memory as worth designing, not prove the memory limit itself. That wider argument weakens if the chips after Rubin and AMD's MI400 stop raising memory per chip.
+At the scale of a rack, bandwidth sets how fast each answer is written and capacity sets how many conversations fit. In principle, more memory per chip serves the same users with fewer chips, fewer racks and fewer megawatts, so memory is a power question too, the one [Powering the rack](/journal/powering-the-rack/) follows into the building.
 
-The strongest point against me is real, and I concede part of it. Nvidia's Groq 3 LPX, an inference rack of 256 chips, keeps part of each word's work in SRAM, very fast memory built into the chip: 500 megabytes and 150 terabytes a second per chip, about eight times one Rubin GPU's HBM. In Nvidia's design, published on 16 March 2026, Rubin GPUs keep attention over the KV cache on HBM, while the LPX chips run the feed-forward layers. So HBM is not the only answer to the memory wall. It does not move me on the claim. A chip built around memory bandwidth is evidence for the wall, and at 500 megabytes a chip, a 70 gigabyte model needs about 140 of them just to hold it, by my arithmetic.
-
-Two other releases would not move me either. Smaller number formats halve the bytes per weight, but with the maths already at four bits, few halvings are left. Overflow is the other: Micron says SSDs, flash storage drives, are now used "for KV cache offload", and SK Hynix is showing high bandwidth flash as a cheaper tier. Both ease capacity more than bandwidth, since the weights still have to be read for every word.
-
-How far ahead each year's HBM is sold is in [the chip supply chain](/journal/the-chip-supply-chain/).
+At the scale of the industry, memory was a part defined by a standards body. From HBM4E the biggest buyer designs the base die, and reportedly picks its factory, while the makers build plants years ahead.
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
@@ -288,4 +332,4 @@ Not used: market shares, HBM prices, yields and any Nvidia and Groq deal value, 
 
 ---
 
-<p class="sources">Sources: Nvidia spec pages for the A100, H100, H200, DGX B200, HGX and Vera Rubin NVL72 (read 30 October 2026), its technical blogs of 17 November 2023 and 22 August 2025, its NVHBM blog (26 August 2026), Groq 3 LPX page and blog (16 March 2026) and Form 10-K (25 February 2026); AMD's MI300X page, its release of 2 June 2024 and Advancing AI deck (12 June 2025); JEDEC's HBM4 release (16 April 2025); SK Hynix releases of 3, 19 and 24 April 2024, 12 September 2025, 22 April, 28 August, 16 October and 28 October 2026; Samsung results of 30 April, 30 July and 29 October 2026; Micron's prepared remarks (23 September 2025 and 30 September 2026), Form 10-K (9 October 2026) and DDR4 datasheets; Samsung's Hot Chips talk as reported by ServeTheHome (23 August 2026); TrendForce (19 October 2026, press). Maths per byte and the read-time sum are my arithmetic. Personal research, not investment advice.</p>
+<p class="sources">Sources: Nvidia spec pages for the A100, H100, H200, DGX B200, HGX and Vera Rubin NVL72 (read 30 October 2026), its technical blogs of 17 November 2023 and 22 August 2025, its NVHBM blog (26 August 2026), Groq 3 LPX page and blog (16 March 2026) and Form 10-K (25 February 2026); AMD's MI300X page, its release of 2 June 2024 and Advancing AI deck (12 June 2025); JEDEC's HBM4 release (16 April 2025); SK Hynix releases of 3, 19 and 24 April 2024, 12 September 2025, 22 April, 28 August, 16 October and 28 October 2026; Samsung results of 30 April, 30 July and 29 October 2026; Micron's prepared remarks (23 September 2025 and 30 September 2026), Form 10-K (9 October 2026) and DDR4 datasheets; Samsung's Hot Chips talk as reported by ServeTheHome (23 August 2026); TrendForce (19 October 2026), SemiEngineering and Reuters (23 May 2024), all press. Maths per byte and the read-time sum are my arithmetic. Personal research, not investment advice.</p>

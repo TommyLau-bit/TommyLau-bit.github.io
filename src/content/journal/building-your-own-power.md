@@ -18,13 +18,15 @@ So building your own power does not skip the queue. It changes which queue you s
 
 The word "power" hides three separate problems. The plug is the grid connection, and its queue is the one a campus is trying to leave. The machine is the generator on the campus's own side of the utility's meter, which is called going behind the meter. The fuel is the gas and the pipe that brings it. Leaving the plug's queue puts a campus straight into the machine's, and the machine is what this piece is about.
 
+The chain is short. The grid's waiting list is years long, so a campus decides to make its own power. That skips the list but not the need for a machine, and at scale the cheapest machine is the heavy gas turbine. Every campus and utility had the same idea, so they all queue at the same few makers. Those makers do not build to clear the line: GE Vernova is raising output inside the factories it already has, paid for by its customers' deposits. And the quicker machines are booked too: a turbine built around a jet engine ships about two years sooner, but its maker takes orders far faster than it ships them.
+
 <details class="analogy">
 <summary>The analogy</summary>
 <p>Picture a new restaurant whose street gas main is full for years: that is the grid connection. So the owner buys a stove for the kitchen: that is the turbine on site. Every restaurant in town has the same idea that week, and the famous stove maker's diary now runs six years ahead: that is GE Vernova's queue.</p>
 <p>A camping-stove shop sells smaller burners sooner, but its diary is filling too: those are the engines, fuel cells and smaller turbines. And any stove still needs a gas line into the kitchen, booked years ahead from an installer: that is the pipe.</p>
 </details>
 
-Follow one heavy turbine from the day a campus decides to make its own power, and five steps stand between the decision and the first electricity.
+Follow one heavy turbine from decision to first electricity, and there are five steps.
 
 First, the buyer pays a deposit for a place in a maker's line. Second, it waits while the factory works through every order ahead of it. Third, the turbine ships and is installed and commissioned, which takes about another year and a half. Fourth, the plant needs an air permit, granted site by site. Fifth, the gas has to arrive, through a pipe signed before it is built.
 
@@ -75,10 +77,6 @@ First, the buyer pays a deposit for a place in a maker's line. Second, it waits 
 
 The second step binds. A permit and a pipe take years, but once, for one site, and they run alongside the machine. The factory line is shared by every buyer at once, and its speed is set for years by a few foundries casting the hottest blades.
 
-The quicker machines have queues of their own. A turbine built around a jet engine ships about two years sooner and runs within months, but its maker now takes orders far faster than it ships them. Big gas engines are queued as well: one maker says its lead times are still lengthening. Fuel cells arrive by lorry, and their maker is doubling its factory to keep up.
-
-Supply cannot simply catch up. GE Vernova is raising output inside the factories it already has, paid for by its customers' deposits, and its next step waits on castings due in 2027.
-
 So a paid place in a turbine queue is not power. It is a date, and GE Vernova is now selling places for 2032.
 
 <hr class="layer">
@@ -123,66 +121,33 @@ A campus that leaves [the grid's queue](/journal/america-rations-the-plug/) join
 <figcaption>GE Vernova results releases to 28 October 2026. Years of output are my arithmetic at its present 20 GW a year. The dashed line is GE Vernova's own expectation for the end of 2026.</figcaption>
 </figure>
 
-The queue is hardening as it grows. In the third quarter GE Vernova turned 13 GW of reservations into orders, so firm orders now exceed reservations, and it expects at least 130 GW under contract by the end of 2026.
+The wait does not disappear; it changes owner. A grid queue is a utility's study list, while a turbine queue is a factory line its maker can price: GE Vernova expects 2026 orders to be priced about 50% above 2025's per kilowatt, paid partly up front in deposits. The risk stays with the buyer. Meta, building its Hyperion AI campus in Louisiana, has a power agreement with Entergy, the state's utility, that carries minimum charges and an exit fee. If AI demand cools, a reservation can lapse, but a take-or-pay pipe and a minimum charge are still owed.
 
-<a id="a-second-maker-books-years-out"></a>
+## Six physical reasons keep a heavy turbine years away
 
-Switching maker does not help. On 6 August the finance chief of Mitsubishi Heavy Industries, another big turbine maker, said combined cycle projects now under discussion "will generally be delivered around 2030 to 2031", and that "Order pricing has not declined".
-
-## The maker is paid to keep the queue, not to clear it
-
-The queue will not clear, because the maker is not building to clear it. GE Vernova's plan raises output from 20 GW a year now to 24 GW in 2028 and 30 GW in 2030, through "lean and incremental machinery in our existing factory footprint", "all funded by customer down payments". No new heavy-duty factory has been announced. Even at 30 GW a year, today's 122 GW would still be four years of work.
-
-Instead the buyers pay to stand in line. In GE Vernova's Power segment, its turbine business, which also holds nuclear and hydro, contract liabilities and current deferred income doubled from $16.5 billion at the end of 2025 to $33.2 billion at 30 September 2026, mainly down payments on orders and reservations. Mitsubishi Heavy raised its free cash flow forecast in August mainly because "advances received in GTCC have increased more than expected", GTCC being its gas turbine combined cycle plants. GE Vernova expects 2026 orders to be priced about 50% above 2025's per kilowatt, and about 20% of its roughly 100 gas customers are data centres.
+A heavy-duty gas turbine is slow for reasons a bigger order book cannot remove.
 
 <a id="howmet-casts-the-queue"></a>
 
-Even the planned output rise waits on castings the maker does not control. GE Vernova's chief executive said he could "see clearly the castings and forgings arriving in '27" for the 2028 step. Howmet Aerospace, which casts the hottest turbine blades and calls itself "the largest manufacturer of gas turbine blades in the world" by its own account, grew gas turbine revenue 45% in the third quarter. It is not the only gate: several of its largest customers have their own furnaces, and Siemens Energy, another turbine maker, is adding blade capacity in Florida.
+**The hottest blades.** The blades nearest the flame come from a few foundries. Howmet Aerospace, which casts them and calls itself "the largest manufacturer of gas turbine blades in the world" by its own account, grew gas turbine revenue 45% in the third quarter. Several of its largest customers have their own furnaces, and Siemens Energy, another turbine maker, is adding blade capacity in Florida.
 
-## The fast lane takes orders faster than it can ship them
+**Big forgings.** Rotors and discs are large forgings from a few presses. GE Vernova's chief executive said he could "see clearly the castings and forgings arriving in '27" for the next step in output.
 
-<a id="the-way-out-has-its-own-queue"></a>
-<a id="crusoe-borrows-the-jet-engine"></a>
+**No new factory.** GE Vernova's plan raises output from 20 GW a year now to 24 GW in 2028 and 30 GW in 2030, through "lean and incremental machinery in our existing factory footprint". No new heavy-duty factory has been announced. Even at 30 GW a year, today's 122 GW would be four years of work.
 
-The smaller machines were meant to be the way round the heavy-turbine queue. An aeroderivative, a turbine of about 35 MW built around a jet engine, ships about 24 months sooner than a heavy-duty one and needs about six months on site. In the first nine months of 2026 GE Vernova took orders for 127 and shipped 39.
+**Eighteen months on site.** After it ships, a heavy unit needs about 18 months to be installed and commissioned. A slot delivered in 2032 makes power in 2033 at the earliest.
 
-<figure class="chart">
-<p class="chart-title">Even the fast lane takes orders faster than it can ship them</p>
-<p class="chart-sub">GE Vernova aeroderivative gas turbines, units ordered and units shipped</p>
-<svg viewBox="0 0 560 204" role="img" aria-label="Bar chart of GE Vernova aeroderivative gas turbines. In 2025 it took orders for 63 units and shipped 27. In the first nine months of 2026 it took orders for 127 and shipped 39. Units ordered less units shipped since January 2025 came to 124 at 30 September 2026, about 2.3 years of its shipments over the previous twelve months.">
-<g class="c-axis"><text x="140" y="55" text-anchor="end">2025</text><text x="140" y="125" text-anchor="end">Jan to Sep 2026</text></g>
-<rect class="c-bar" x="150" y="24" width="135" height="22" rx="2"/><text class="c-lab c-s2t" x="293" y="40">63 ordered</text><rect class="c-bar c-alt" x="150" y="52" width="57.9" height="22" rx="2"/><text class="c-lab c-s3t" x="215.9" y="68">27 shipped</text><rect class="c-bar" x="150" y="94" width="272.1" height="22" rx="2"/><text class="c-lab c-s2t" x="430.1" y="110">127 ordered</text><rect class="c-bar c-alt" x="150" y="122" width="83.6" height="22" rx="2"/><text class="c-lab c-s3t" x="241.6" y="138">39 shipped</text>
-<line class="c-base" x1="150" y1="14" x2="150" y2="158"/>
-<text class="c-note" x="150" y="178">Ordered less shipped since January 2025: 124 units,</text>
-<text class="c-note" x="150" y="194">about 2.3 years of its shipments</text>
-</svg>
-<figcaption>GE Vernova 2025 Form 10-K and Form 10-Q to 30 September 2026. The backlog in years is my arithmetic: 124 units against its shipments in the twelve months to September 2026.</figcaption>
-</figure>
+<a id="a-second-maker-books-years-out"></a>
 
-On 28 October its chief executive said fourth-quarter aeroderivative orders would be lighter, "not because the demand is softer" but because GE Vernova is "now going out so far in the future before we have availability". The buyers are the campuses themselves: Crusoe, which builds AI campuses, ordered 29 of them in December 2024 and mid-2025, nearly 1 GW. I found no statement that they are running.
+**Everyone at once.** Utilities and campuses want the same machines, and about 20% of GE Vernova's roughly 100 gas customers are data centres. Switching maker does not help. On 6 August the finance chief of Mitsubishi Heavy Industries, another big turbine maker, said combined cycle projects now under discussion "will generally be delivered around 2030 to 2031", and that "Order pricing has not declined".
 
-<a id="the-engines-queue-too"></a>
+**Buyers pay first.** The expansion is "all funded by customer down payments", so the maker has no reason to overbuild. In GE Vernova's Power segment, its turbine business, which also holds nuclear and hydro, contract liabilities and current deferred income doubled from $16.5 billion at the end of 2025 to $33.2 billion at 30 September 2026, mainly down payments on orders and reservations.
 
-The other quick machines are queuing too. On 27 October Wärtsilä, a maker of big gas engines, said "lead times for our engines continue to increase", in a quarter when it won a 282 MW on-site power order for a US data centre. That order shows the fast lane's length: announced on 5 October, its engines are due for delivery in 2028 and the plant fully running in 2029. Caterpillar, which makes both turbines and engines, saw Power Generation sales rise 30% in the third quarter, chiefly for data centres.
+## The headlines show the fast case, and the queue is the slow one
 
-<a id="the-product-is-time"></a>
+Own power is fast for the first few hundred megawatts and slow for the next gigawatt, and headlines show the first. Ohio's siting board approved Socrates North, a gas plant, on 18 September 2025, 200 MW off the grid for a Meta affiliate, run by Williams, the pipeline company. Williams commits 400 MW from two Socrates plants to its customer. Socrates South entered service in late July 2026, and on 2 November Williams said Socrates North was on track for service by mid-November, about fourteen months after its approval.
 
-Fuel cells are the other fast route, and buyers pay for them in volume, not price. At Bloom Energy, the fuel cell maker, third quarter product revenue rose 179%, to $1,073.6 million, and Oracle, the cloud company, intends to procure up to 2.8 GW from it, 1.2 GW of it contracted. Bloom's product margin sat near 35% for two years before reaching 37.9% in the third quarter, one quarter and not yet a trend. Either route still needs transformers and switchgear, which have [their own queue](/journal/the-equipment-queue/).
-
-## The permit and the pipe run on clocks of their own
-
-<a id="homer-city-inherits-the-air"></a>
-
-Beyond the machine, a big plant needs an air permit, and that can decide whether it gets built at all. Homer City Generation, a developer, is building up to 4,678 MW of gas plant on a Pennsylvania coal site, beside which Amazon Web Services, Amazon's cloud arm, has filed plans for 39 data centres. It avoided full review for NOx, a smog-forming gas, by netting the coal plant's cut against the new plant's rise: the plant adds 1,142.8 tons a year, and retiring the coal boilers removed 2,031.8. A cut counts only within five years, so a coal site shut long ago has none to spend. Homer City targets first power in early 2028; the inventory of the EIA, the federal energy statistics agency, lists July 2028.
-
-<a id="permian-gas-follows-the-oil-rig"></a>
-<a id="golden-pass-joins-the-gas-queue"></a>
-
-The fuel is the last clock. The gas is plentiful; the pipe sets the date. From early 2025 to early 2026 rigs in the Permian, the oil basin of west Texas and New Mexico whose wells also yield gas, fell by a fifth while marketed gas rose by a twelfth, to 28.4 billion cubic feet a day, and at the coast power plants now share it with export, as Golden Pass LNG, a new export terminal, shipped its first cargo in April 2026. Getting it to a plant takes a pipe, booked before it is built. Transco's Southeast Supply Enhancement, an expansion of Williams' big East Coast pipeline, shows the pipe's length: open season in June and July 2023, service as early as the third quarter of 2027. That is about four years for 55 miles beside an existing line, and three power companies signed 93% of it first. Nuclear is the opposite case, where [the fuel runs years behind the new reactors](/journal/nuclear-for-ai/).
-
-The buyers are increasingly power plants. More than 75% of the $14.4 billion project backlog at Kinder Morgan, another pipeline company, supports power generation and local gas utilities, and its newest pipes are take-or-pay. Its Permian Link, about 2.8 billion cubic feet a day, will serve new power generation for an "A-rated hyperscaler" from the third quarter of 2030, level with heavy turbines sold out to 2030.
-
-## Every route lands years out, and a turbine ordered today lands last
+Even quick machines are years out at scale. On 5 October Wärtsilä, a maker of big gas engines, announced a 282 MW on-site power order for a US data centre, with its engines due for delivery in 2028 and the plant fully running in 2029.
 
 <figure class="chart">
 <p class="chart-title">Own power still takes years, and a turbine slot sold today comes last</p>
@@ -199,34 +164,115 @@ The buyers are increasingly power plants. More than 75% of the $14.4 billion pro
 <figcaption>Hollow dot: approval, open season, sanction, signing or sale; for Socrates it is the siting board's approval of Socrates North only. Solid dot: the date the owner gives. Ohio Power Siting Board and Williams; Transco's FERC application; Pennsylvania DEP and Homer City; Entergy's filings; Kinder Morgan, 21 October 2026; GE Vernova, 28 October 2026. A turbine shipped in 2032 still needs about 18 months on site, and the second Entergy deal awaits a vote.</figcaption>
 </figure>
 
-Laid side by side, from first decision to first power, own power still takes years, and the fastest dated route is small. Ohio's siting board approved Socrates North, a gas plant, on 18 September 2025, 200 MW off the grid for a Meta affiliate, run by Williams, the pipeline company. Williams commits 400 MW from two Socrates plants to its customer. Socrates South entered service in late July 2026, and on 2 November Williams said Socrates North was on track for service by mid-November, about fourteen months after its approval.
-
 <a id="hyperion-the-plant-outlasts-the-lease"></a>
 
-The big routes take far longer. For Meta's Hyperion AI campus in Louisiana, three plants from Entergy, the state's utility, 2,262 MW, were approved in August 2025 for 2028 and 2029. A second Meta agreement, signed in March 2026, adds 5,278 MW for 2030 and 2031, with the regulator's vote due in December. Meta's lease on Hyperion runs from 2029 for four years, renewable up to 20, so a turbine ordered today makes power about when that first term ends.
+The gigawatt routes run on the heavy-turbine clock. For Hyperion, three Entergy plants, 2,262 MW, were approved in August 2025 for 2028 and 2029; Socrates' 400 MW is under a fifth of that. A second Meta agreement, awaiting a vote, adds 5,278 MW for 2030 and 2031.
 
-Across every clock, the buyers carry the risk while the makers are paid up front. Meta's agreement with Entergy carries minimum charges and an exit fee. If AI demand cools, a reservation can lapse, but a take-or-pay pipe and a minimum charge are still owed.
+<a id="homer-city-inherits-the-air"></a>
+
+A big plant also needs an air permit, and that can decide whether it gets built at all. Homer City Generation, a developer, is building up to 4,678 MW of gas plant on a Pennsylvania coal site. It avoided full review for NOx, a smog-forming gas, by netting the coal plant's cut against the new plant's rise: the plant adds 1,142.8 tons a year, and retiring the coal boilers removed 2,031.8. A cut counts only within five years, so a coal site shut long ago has none to spend. It targets first power in early 2028.
+
+## Four terms carry the argument
+
+**Behind the meter.** Power made on the customer's side of the utility's meter, a well of one's own beside the water main. It can keep a grid tie as backup or run islanded, fully off the grid, as Socrates does.
+
+**Heavy-duty and aeroderivative.** A lorry engine against a jet engine. A heavy-duty unit gives hundreds of megawatts, costs least per megawatt and comes slowest, with about 18 months on site. An aeroderivative, about 35 MW and built around a jet engine, ships about 24 months sooner and needs about six months on site.
+
+**Firm order and slot reservation.** A paid meal against a paid table booking. A firm order is a contract for a machine. A slot reservation is a paid place in the production line that can later turn into an order, or lapse.
+
+**Simple and combined cycle.** An oven against an oven that also boils the kettle. Simple cycle is the turbine alone, quick and less efficient. Combined cycle uses the exhaust heat to drive a steam turbine too: more power from the same gas, for more steel and time on site.
+
+## The 122 GW is one maker's pile, set against one factory's speed
+
+The number that carries the claim is GE Vernova's alone, not the industry's: 64 GW of firm orders plus 58 GW of slot reservations at 30 September, both paid for.
+
+Set against the factory, it is 6.1 years of output at today's 20 GW a year, about 5.1 years at the 24 GW planned for 2028 and about 4.1 at 2030's 30 GW, all by my arithmetic. It is long because buyers sign faster than the line ships: in the first three quarters of 2026 GE Vernova signed 52 GW and shipped 12 GW.
+
+The weak spot is the softer half of the pile. Reservations can lapse, and signings slowed to 11 GW in the third quarter from about 20 GW in each of the two before. But the pile is hardening: 13 GW of reservations became firm orders in the quarter, so firm orders now exceed reservations, and third-quarter signings were still more than twice the 5 GW shipped.
+
+## The makers, the contracted pipe and the sellers of time are paid first
+
+If the claim holds, value sits with whoever holds a queue, not the campus standing in it. The heavy-turbine makers are paid up front, at rising prices, before they cut metal. The blade casters behind them sell into every step of expansion.
+
+<a id="permian-gas-follows-the-oil-rig"></a>
+<a id="golden-pass-joins-the-gas-queue"></a>
+
+The pipe is paid whether AI demand holds or not. The gas itself is plentiful: from early 2025 to early 2026 marketed gas in the Permian, the oil basin of west Texas and New Mexico, rose by a twelfth even as rigs fell by a fifth, though power plants now share it with export terminals such as Golden Pass LNG, which shipped its first cargo in April 2026. The pipe sets the date. Transco's Southeast Supply Enhancement, an expansion of Williams' big East Coast pipeline, runs from open season in mid-2023 to service as early as the third quarter of 2027, about four years for 55 miles beside an existing line, and three power companies signed 93% of it first.
+
+Power plants sign before the pipe is laid. More than 75% of the $14.4 billion project backlog at Kinder Morgan, another pipeline company, supports power generation and local gas utilities, and its newest pipes are take-or-pay. Its Permian Link, about 2.8 billion cubic feet a day, will serve new power generation for an "A-rated hyperscaler" from the third quarter of 2030. Nuclear is the opposite case, where [the fuel runs years behind the new reactors](/journal/nuclear-for-ai/).
+
+<a id="the-product-is-time"></a>
+
+The quieter winners sell time. Makers whose machines arrive sooner are paid for an earlier date, and paid in volume rather than price. At Bloom Energy, the fuel cell maker, third quarter product revenue rose 179%, to $1,073.6 million, and Oracle, the cloud company, intends to procure up to 2.8 GW from it, 1.2 GW of it contracted. Every route still needs transformers and switchgear, which have [their own queue](/journal/the-equipment-queue/).
+
+## What would prove me wrong
+
+Three tests can break the claim, and the third is already moving.
+
+The first is the pile. If GE Vernova's count at the end of 2027 is below its count at the end of 2026, buyers no longer queue faster than the machine ships. The first reading is the end of 2026, expected at 130 GW or more.
+
+The second is the fast lane. Since the start of 2025 GE Vernova has taken orders for 124 more aeroderivatives than it shipped, about 2.3 years of recent shipments. If that backlog is a year of shipments or less by the end of 2027, the shortcut has room.
+
+The third is signings. They fell to 11 GW in the third quarter. If output reaches 30 GW in 2030 and signings keep slowing, years of output fall even while the pile holds.
+
+The claim stands on two legs. One is what money can move: buyers can switch machines, Mitsubishi Heavy expects to double its turbine capacity against its 2024 financial year, and a permit can be netted against an old coal plant. The second and third tests attack it. The other is what physics and time gate: few furnaces and presses, about 18 months on site, about four years for a pipe. Money fixes those only over years, so the first test reaches this leg only indirectly.
+
+The view I would argue against is that on-site gas is the fast route that solves AI power. It is fast for the first few hundred megawatts. For gigawatts, the slot, the pipe and the permit land between 2028 and 2033. Whether that beats a comparable grid connection stays open, since the survey of the EIA, the federal energy statistics agency, leaves off-grid plants out.
+
+## The fast lane is filling, and its machines now quote years
+
+<a id="the-way-out-has-its-own-queue"></a>
+<a id="crusoe-borrows-the-jet-engine"></a>
+
+The smaller machines were meant to be the way round the heavy-turbine queue, and they now have queues of their own. In the first nine months of 2026 GE Vernova took orders for 127 aeroderivatives and shipped 39.
+
+<figure class="chart">
+<p class="chart-title">Even the fast lane takes orders faster than it can ship them</p>
+<p class="chart-sub">GE Vernova aeroderivative gas turbines, units ordered and units shipped</p>
+<svg viewBox="0 0 560 204" role="img" aria-label="Bar chart of GE Vernova aeroderivative gas turbines. In 2025 it took orders for 63 units and shipped 27. In the first nine months of 2026 it took orders for 127 and shipped 39. Units ordered less units shipped since January 2025 came to 124 at 30 September 2026, about 2.3 years of its shipments over the previous twelve months.">
+<g class="c-axis"><text x="140" y="55" text-anchor="end">2025</text><text x="140" y="125" text-anchor="end">Jan to Sep 2026</text></g>
+<rect class="c-bar" x="150" y="24" width="135" height="22" rx="2"/><text class="c-lab c-s2t" x="293" y="40">63 ordered</text><rect class="c-bar c-alt" x="150" y="52" width="57.9" height="22" rx="2"/><text class="c-lab c-s3t" x="215.9" y="68">27 shipped</text><rect class="c-bar" x="150" y="94" width="272.1" height="22" rx="2"/><text class="c-lab c-s2t" x="430.1" y="110">127 ordered</text><rect class="c-bar c-alt" x="150" y="122" width="83.6" height="22" rx="2"/><text class="c-lab c-s3t" x="241.6" y="138">39 shipped</text>
+<line class="c-base" x1="150" y1="14" x2="150" y2="158"/>
+<text class="c-note" x="150" y="178">Ordered less shipped since January 2025: 124 units,</text>
+<text class="c-note" x="150" y="194">about 2.3 years of its shipments</text>
+</svg>
+<figcaption>GE Vernova 2025 Form 10-K and Form 10-Q to 30 September 2026. The backlog in years is my arithmetic: 124 units against its shipments in the twelve months to September 2026.</figcaption>
+</figure>
+
+On 28 October its chief executive said fourth-quarter aeroderivative orders would be lighter, "not because the demand is softer" but because GE Vernova is "now going out so far in the future before we have availability". The buyers are the campuses themselves: Crusoe, which builds AI campuses, ordered 29 of them in December 2024 and mid-2025, nearly 1 GW.
+
+<a id="the-engines-queue-too"></a>
+
+The engines are queuing too. On 27 October Wärtsilä said "lead times for our engines continue to increase", in the quarter it won its 282 MW data centre order.
+
+I concede the fast lane is still faster. An engine ordered this year arrives in 2028, against 2032 for a heavy slot sold now, and Bloom is doubling its fuel cell factory to 2 GW a year by the end of 2026. But the gap narrows as every campus takes the shortcut at once: Wärtsilä's order runs about three years from signing to a running plant. The fast lane buys a year or three, not a decade.
+
+## Signings have slowed, and the makers are starting to build
+
+<a id="plans-outrun-the-build"></a>
+
+This development cuts against the claim. Signings fell by almost half in the third quarter while shipments rose, and Mitsubishi Heavy is doubling its turbine capacity. If signings keep falling while output climbs to 30 GW, the queue in years shortens.
+
+It is my live risk. Three points still hold. The pile shrinks only when signings fall below shipments, and 11 GW a quarter is 44 GW a year, above even the 30 GW planned for 2030. The new capacity lands from 2028 to 2030, the same years existing slots deliver, so it does not help a campus deciding today. And there is no slack in the plans: in EIA's generator inventory, planned gas capacity rose from 40.5 GW in September 2025 to 71.1 GW in September 2026, while the part under construction or built rose only from 9.6 GW to 13.1 GW, by my arithmetic.
 
 <a id="an-island-buys-its-own-bench"></a>
-## An island campus has to build more machine than it uses
+## An island campus may have to build more machine than it uses
 
-A campus off the grid may need more generating plant than load, and I hold that as a hypothesis, not a finding. On the grid, thousands of plants cover for one that trips, and the whole system absorbs a sudden swing. An island campus must carry that cover itself: spare units, margin for hot days and something to soak up swings.
+A campus off the grid may need more generating plant than load, and I hold that as a hypothesis, not a finding. On the grid, thousands of plants cover for one that trips and absorb a sudden swing. An island campus must carry that cover itself: spare units, margin for hot days and something to soak up swings.
 
 Socrates is the one dated point. Williams' 2025 annual report, filed in February 2026, said the project would give its customer a combined 400 MW; its quarterly reports since May give the two plants an expected 556 MW of capacity, about 1.39 MW built for each MW committed, by my arithmetic. Heat counts too: on Wärtsilä's own comparison, an aeroderivative loses nearly 26% of its output at 45°C against standard conditions and its engines under 2%, a maker's figure. And AI loads swing hard: NERC, the body that sets reliability standards for North America's grid, recorded 1,800 MW of data centre load dropping off at once after one transmission fault in February 2025.
 
 If that holds, each megawatt of island load draws more than a megawatt from the makers' queues, so 122 GW serves fewer campus megawatts than it appears to. That step is mine: Williams does not say why it builds the margin, and one site is not a ratio.
 
-I will test it by setting installed against committed capacity at every off-grid site I can date, and noting which add batteries. If island sites run near one to one, or keep a grid tie as their spare, the margin is small and the idea is dead.
+The test is to set installed against committed capacity at every off-grid site I can date, and to note which add batteries. If island sites run near one to one, or keep a grid tie as their spare, the margin is small and the idea is dead.
 
-## What would prove me wrong
+## At every scale, going round a queue puts the buyer in another
 
-Two tests break the claim. If GE Vernova's count at the end of 2027 is below its count at the end of 2026, buyers no longer queue faster than the machine ships; shipping about 20 GW a year, it holds level only if it signs as much as it ships, net of lapses. Since the start of 2025 it has taken orders for 124 more aeroderivatives than it shipped, about 2.3 years of recent shipments. If that backlog is a year of shipments or less by the end of 2027, the fast lane has room.
+At the scale of the machine, the bottleneck inside the bottleneck is metal. A heavy turbine waits on blades and forgings from a few furnaces and presses, and GE Vernova's 2028 step waits on castings due in 2027.
 
-Two signals would move me before the tests. Signings slowed to 11 GW in the third quarter, from about 20 GW in each of the two before, while shipments rose to 5 GW; if output reaches 30 GW in 2030 and signings keep slowing, years of output fall even while the pile holds. And Mitsubishi Heavy expects to double its turbine capacity against its 2024 financial year. GE Vernova's count at the end of 2026, expected at 130 GW or more, is the first reading.
+At the scale of a campus, leaving the grid takes a slot, a pipe, an air permit and, if the site is islanded, spare machines. Each is a queue of its own, and the fastest dated route, Socrates, is 400 MW.
 
-<a id="plans-outrun-the-build"></a>
-
-A flood of new gas plans would not move me. In the EIA's generator inventory, planned gas capacity rose from 40.5 GW in September 2025 to 71.1 GW in September 2026, while the part under construction or built rose only from 9.6 GW to 13.1 GW, by my arithmetic. Fermi America's Project Matador, a planned Texas campus, alone lists 11.7 GW, of which 0.3 GW is under construction. Nor does Socrates landing on time. A small off-grid plant going from approval to service in about fourteen months is the fast end working as sold, but its 400 MW is under a fifth of Hyperion's first three plants, and signings still run at twice the rate of shipments. Whether own generation beats a comparable grid connection stays open, since EIA's survey leaves off-grid plants out.
+At the scale of a country, a gas build-out moves at the speed of a few factory lines, all booked to 2030 and beyond. The bottleneck does not vanish when a buyer goes round it. It moves to whoever makes the thing the buyer now needs.
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>

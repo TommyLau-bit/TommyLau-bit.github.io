@@ -117,21 +117,31 @@ Nebius, which rents out AI computing and publishes power at each stage, expects 
 <figcaption>Nebius shareholder letters of 12 February, 13 May and 12 August 2026. The billing range is my arithmetic: its guide of US$7 to 9 billion of annualised revenue at the end of 2026, at its stated 2026 base of US$12 million a year per megawatt. Nebius has never reported connected and active power for the same date.</figcaption>
 </figure>
 
-## The slow stages are bought first, because the electrical kit takes more than a year
+<a id="nebius-paid-for-what-is-switched-on"></a>
+
+A fund cares because revenue follows the last stage, not the first. Nebius defines active power as "power being consumed by installed, operational IT equipment and available for revenue generation". Its US$17.4 billion agreement with Microsoft, a buyer of its computing, is "subject to the satisfaction of the deployment and availability of the GPU Services", with damages for late delivery and a right to end a service delivered late. A late hall earns nothing, so any model sizing revenue or chip demand from contracted gigawatts runs early by quarters or years.
+
+## Energising a campus takes more than a year, and money buys only part of the wait
 
 <a id="power-first-chips-last"></a>
 
-The order a builder commits in shows which stage binds. Jane Street, the trading firm that builds its own AI halls, buys power first. Its head of physical engineering, Dan Pontecorvo, said on Dwarkesh Patel's podcast on 21 May 2026 that generators, transformers and some liquid cooling kit can take more than a year. So the firm commits to a site early, holds slightly more power than it needs, and picks a chip once the building is nearly ready.
+The order a builder commits in shows which stage binds. Jane Street, the trading firm that builds its own AI halls, buys power first. Its head of physical engineering, Dan Pontecorvo, said on Dwarkesh Patel's podcast on 21 May 2026 that generators, transformers and some liquid cooling kit can take more than a year. So the firm commits to a site early, holds slightly more power than it needs, and picks a chip once the building is nearly ready. Six things make the stage that stubborn.
 
-Its sharpest saving follows from that wait. It backed up only the core of the system with generators, rather than the whole site, and switched its chips on six months sooner. A training job can restart from its last saved point, so an outage costs hours, while waiting for a generator costs months. Power, not space, now limits the hall: its Texas site counts 4,032 GPUs in 56 racks, and Patel says those racks take the whole grid connection in [a small fraction of the floor](/journal/heat-and-water/#room-to-spare) first set aside.
+**Made to order.** Each large transformer is designed for the voltages of one substation. None comes off a shelf.
 
-Builders are also attacking the slow stage head on, by making power on site. Nebius said in its letter of 12 August 2026 that it had agreed in May with Bloom Energy, a fuel-cell maker, to deploy behind-the-meter fuel cells, power generated on site rather than drawn from the grid, this year. Press reports of Bloom's results call on 22 October 2026 say the first power block at Nebius's site in Vineland, New Jersey, is ready for customer use; Bloom gave no size. A power block ready is still the energised stage. It moves the queue to fuel cells, gas supply and permits, and counts as computing only when Nebius reports it connected and active.
+**Two owners of one clock.** The line and the substation connection run on the utility's studies and schedule. Money speeds only the builder's side.
 
-## When the chips come with the power, delivery follows within a quarter or two
+**Backup queues too.** Generators and their switchgear are long-lead items as well. Jane Street backed up only the core of its system rather than the whole site, and switched its chips on six months sooner. A training job restarts from its last saved point, so an outage costs hours, while waiting for a generator costs months.
+
+**Everyone orders at once.** Every campus and utility wants the same transformers, breakers and generators in the same years, from a few factories that are slow to add capacity.
+
+**Testing is physics.** Protection relays are set and tested, and the utility switches a site in blocks. A fault at high voltage destroys equipment, so nobody skips commissioning.
+
+**Design locks early.** Pontecorvo said chip choice changes the building, because it sets the cooling and the power per rack. A hall designed for one chip can suit another badly, so a late change costs time.
 
 <a id="abilene-switched-on-in-stages"></a>
 
-Once power is live, the tenant's chips set the pace, and Abilene, Texas, is the fast case. Crusoe, the campus builder, builds it; Oracle leases it and runs the cloud inside; and OpenAI, its customer, uses the computing. Work on the first two buildings began in June 2024, and Crusoe says they were energised within a year. The first racks of Nvidia GB200 chips arrived in June 2025, in the window Crusoe had given for energising them, and the first phase was running by 30 September.
+The fastest case still arrived building by building. At Abilene, Texas, Crusoe, the campus builder, builds; Oracle leases the campus and runs the cloud inside; and OpenAI, its customer, uses the computing. Work on the first two buildings began in June 2024, and Crusoe says they were energised within a year. The first racks of GB200 chips from Nvidia, the AI chip designer, arrived in June 2025, and the first phase was running by 30 September.
 
 <figure class="chart">
 <p class="chart-title">Abilene arrived building by building, and the chips arrived with the power</p>
@@ -153,23 +163,31 @@ Once power is live, the tenant's chips set the pace, and Abilene, Texas, is the 
 <figcaption>Crusoe releases (21 May 2025, 30 September 2025, 27 March 2026); Oracle's results calls of 10 June and 10 September 2026, as transcribed by The Motley Fool, since I found no primary copy. Crusoe gives no energisation date for phase two. Oracle reports handover, not chips at work, by site.</figcaption>
 </figure>
 
-After that, Oracle reported handover building by building on its results calls, as transcribed: 42% of capacity by 10 June 2026, and six of eight buildings, 618 MW, by 10 September. Here energised set the pace.
+Oracle then reported handover building by building on its results calls, as transcribed: 42% of capacity by 10 June 2026, and six of eight buildings, 618 MW, by 10 September. The chips came with the power, so energised set the pace, and more than two years still passed between the start of work and three quarters of the campus handed over.
 
-## Buyers pay only for the last stage, and the later megawatt costs more
+## The headline counts signatures, and the meter counts work
 
-<a id="nebius-paid-for-what-is-switched-on"></a>
+Contracted power is the figure every AI cloud quotes, because it grows fastest and costs only a signature. Nebius's rose from more than 2 GW in February 2026 to more than 3.5 GW in May and a 5 GW target for the year end. Its only active figure, about 170 MW at the end of 2025, is a year older, and Nebius has never reported connected and active power for the same date.
 
-Running chips are also the stage buyers pay for. Nebius defines active power as "power being consumed by installed, operational IT equipment and available for revenue generation". Its US$17.4 billion agreement with Microsoft, a buyer of its computing, is "subject to the satisfaction of the deployment and availability of the GPU Services", with a right to end a service delivered late. A late hall earns nothing.
+The gap does not rest on that mismatch of dates. For the same year end, Nebius's own connected guide of 800 MW to 1 GW sits five to six and a quarter times below the 5 GW contracted.
 
-Because the last stage is scarce, buyers also pay to hold a place in the queue. About 70% of the deals Nebius signed in the second quarter of 2026 included prepayments covering 50 to 60% of the related capital spending. Its new deals price at US$20 to 25 million a megawatt a year, against a 2026 base of US$12 million. Later buyers pay more for the same megawatt, as gas turbine buyers do in [Building your own power](/journal/building-your-own-power/), and pay in cash up front.
+## Four pairs of terms keep the stages apart
 
-## Even at Nebius, signed power runs at least five times ahead of connected, and billing lags again
+**Contracted, connected and active.** Signed, plugged in and playing. Contracted is "power secured by contracted land and power commitments"; connected is power wired into fully built and equipped halls; active is power drawn by installed chips and available for revenue. At Abilene the same stages are called energised, delivered and running.
 
-If buyers pay only for running chips, signed power is a poor guide to them. Nebius's 5 GW contracted is five times the top of the 800 MW to 1 GW it expects to connect, wired into finished halls, and six and a quarter times the bottom.
+**Critical IT load and utility load.** Critical IT load is what the chips and servers draw, the phone on charge. Utility load is what the site takes from the grid, the wall socket, cooling and losses included; the ratio is PUE, power usage effectiveness. Crusoe's 1.2 GW for Abilene and Oracle's 618 MW for six buildings do not say which they count, so I do not compare them.
 
-Connected power overstates running chips too. Annualised revenue, last month's revenue times twelve, counts only what is billing. On my arithmetic, not a figure Nebius reports, its year-end revenue guide means about 580 to 750 MW billing in December, below the 800 MW it guides to connect. Most new deals were signed "against capacity arriving in late 2026" and will earn "primarily" in 2027.
+**Maximum demand and consumption.** Maximum demand is the most a site may draw at once, booked with the utility, like a gym's memberships. Consumption is what it actually draws, the people on the treadmills at peak hour. Malaysia's gap sits between the two.
 
-The later megawatt's higher price then distorts that meter. On my arithmetic, US$9.6 billion of annualised revenue is 800 MW at the old base, but only about 384 to 480 MW at new-deal prices.
+**Annualised revenue and contract value.** Annualised revenue is last month's revenue times twelve, so it counts only what is billing. Annual contract value counts what is signed. Nebius's US$20 to 25 million a megawatt a year on new deals is contract value, not billing.
+
+## About 580 to 750 MW billing is a range, because the price per megawatt is moving
+
+Nebius does not report active power each quarter, so revenue divided by price is the best public meter. On my arithmetic, not a figure Nebius reports, its guide of US$7 to 9 billion of annualised revenue at the end of 2026, at its stated 2026 base of US$12 million a megawatt a year, means about 583 to 750 MW billing in December.
+
+That is below the 800 MW it guides to connect, so some live halls will not yet earn. Nebius says most new deals were signed "against capacity arriving in late 2026" and will earn "primarily" in 2027.
+
+The trap is the price. New deals price at US$20 to 25 million a megawatt a year, so US$9.6 billion of annualised revenue is 800 MW at the old base but only about 384 to 480 MW at new-deal prices.
 
 <figure class="chart">
 <p class="chart-title">The same revenue could mean about half the running megawatts at new-deal prices</p>
@@ -180,38 +198,62 @@ The later megawatt's higher price then distorts that meter. On my arithmetic, US
 <figcaption>My framing and arithmetic: US$9.6 billion, the revenue limb of my test, divided by Nebius's stated 2026 base and by the US$20 to 25 million of annual contract value its new deals price at (letter, 12 August 2026). Contract value is not billing, so this is a range, not a reading.</figcaption>
 </figure>
 
-If those prices turn into billing, anyone dividing revenue by the old rate could count up to about twice the megawatts actually running. That makes my own test generous to me: Nebius can pass it with far fewer than 800 MW at work.
+If those prices turn into billing, dividing revenue by the old rate could count up to about twice the megawatts actually running. That makes my own test generous to me: Nebius can pass it with far fewer than 800 MW at work.
 
-## Where the chips are not ordered with the hall, the connection runs far ahead of them
+## While halls wait for chips, the slow stages are paid first
 
-Abilene's tenant ordered its chips with the campus, and Nebius installs its own; where neither holds, the gap is far wider. Malaysia's data centres draw well below what they booked on every measure its government and utility publish, though the share depends on what the draw is divided by, so I name the bottom each time.
+If only running capacity counts, value sits with whoever is paid during the gap.
 
-The broadest bottoms give about a fifth. In June 2026 the data centre projects in the system of Tenaga Nasional, Malaysia's national power utility, drew 1,256 MW against 5.65 GW of maximum demand, the most power a site may draw at once: about 22%. Ministers told Parliament on 13 October 2026 that the 45 data centres operating in August drew about 1.37 GW against about 6 GW of maximum load, about 23% on my arithmetic.
+**The long-lead kit.** The makers of transformers and generators are paid at the slow stages, before anything computes. Every campus buys from them.
 
-The narrowest bottom gives more than half. On 28 October 2026 the Deputy Prime Minister put the same draw, 1,374 MW, at 58.5% of 2,346 MW contracted. That series counts demand declared phase by phase: in November 2025 it stood at 603 MW of 1,276 MW, about 47%, against a government target of 85%. [The Johor piece decodes the three](/journal/the-queue-not-the-chip/). Johor, the state next to Singapore, holds 5.6 of Malaysia's 8.35 GW of secured data centre capacity.
+**Builders who close the gap.** Operators whose chips arrive with the power, and who disclose stage by stage, turn energised megawatts into billing fastest, and buyers pay them to hold a place. About 70% of the deals Nebius signed in the second quarter of 2026 included prepayments covering 50 to 60% of the related capital spending. Later buyers pay more for the same megawatt, as gas turbine buyers do in [Building your own power](/journal/building-your-own-power/). A landlord can be paid before the work too. DayOne, which runs campuses in Johor, counts energised and in-service capacity as separate stages, and its long contracts pay for capacity while power is billed as used, so a Johor hall [can be energised, let and earning while drawing little](/journal/the-queue-not-the-chip/).
 
-The national gap matters most in Johor, because a Johor hall [can be energised, let and earning while drawing little](/journal/the-queue-not-the-chip/). DayOne, which runs campuses there, counts energised and in-service capacity as separate stages, and its long contracts pay for capacity while power is billed as used. Chips for any tenant headquartered in China or Macau also need an American export licence, which Abilene's American tenant does not.
+**Kit that shrinks a stage.** Prefabricated power modules and power made on site cut the builder's slow stage. They sell time, not megawatts.
+
+## What would prove me wrong
+
+Three tests can break the claim. At Abilene, Oracle's June timetable put the last buildings in its quarter to 30 November 2026. If the campus is energised but Oracle has still not reported all eight buildings delivered by its March 2027 results, fitting out, not power, is setting the pace. At Nebius, if it connects at least 800 MW by the end of 2026 but has fewer than 800 MW active at 30 June 2027, or, without an active figure, annualised revenue below US$9.6 billion, its halls are waiting more than months for chips. Neither result would by itself say why: a slip could be chips, fit-out or customers starting late.
+
+The third comes from my earlier Jane Street claim. If transformer and generator lead times fall back to months while chips become the longest wait again, energised stops being the choke point, and the order of power first and chips last breaks.
+
+The claim stands on two legs. The first is the builder's stage, energised: money shortens part of it, while factories, the utility's line and testing gate the rest. The third test attacks this leg. The second is the tenant's stage, running: chips ordered, racks fitted, customers started. A decision can fix it, which is why Abilene and Nebius are fast, and a decision can break it as quickly. The first two tests attack this leg. Malaysia shows it failing: halls let before their tenants' chips stand live and quiet, and under US Commerce Department guidance of 31 May 2026 chips for any tenant headquartered in China or Macau need an American export licence.
+
+Two readings come before either test. Nebius's third-quarter letter, due on 12 November 2026, gives connected power against the guide. Oracle's December results are the next word on Abilene's last two buildings.
+
+What would not move me is the view that contracted gigawatts are fine because everything gets built eventually. Eventually is the whole trade: revenue, the payback on capital spending and chip demand all hang on the stage. Nor would Nebius moving fast, which the claim already assumes: it beat its 100 MW active target in 2025 and had delivered every Microsoft tranche by 12 August 2026.
+
+## Fuel cells at Vineland shorten the builder's stage and move its queue on site
+
+Nebius said in its letter of 12 August 2026 that it had agreed in May with Bloom Energy, a fuel-cell maker, to deploy behind-the-meter fuel cells, power generated on site rather than drawn from the grid, this year. Press reports of Bloom's results call on 22 October 2026 say the first power block at Nebius's site in Vineland, New Jersey, is ready for customer use. Bloom gave no size. Press reports of a Nebius filing of May 2026 put the plan at about 328 MW of fuel cells installed and about 250 MW guaranteed.
+
+I concede that power made on site can energise a hall sooner, because it skips the utility's half of the clock. But it moves the choke point rather than removing it. Fuel cells run on natural gas, so a grid queue becomes a queue for fuel-cell output, a gas connection and local permits. Even the reported plan has a stage gap, guaranteed power being about three quarters of installed. A power block ready is still the energised stage, and Vineland counts as computing only when Nebius reports it connected and active.
+
+## Malaysia's ratio runs from about a fifth to more than half, depending on what it is divided by
+
+Malaysia's data centres draw well below their bookings on every published measure, but the share depends on the bottom of the ratio. All the figures are Malaysia-wide, and Johor, the state next to Singapore, holds 5.6 of Malaysia's 8.35 GW of secured data centre capacity.
+
+The broadest bottoms give about a fifth. In June 2026 the data centre projects in the system of Tenaga Nasional, Malaysia's national power utility, drew 1,256 MW against 5.65 GW of maximum demand: about 22%. Ministers told Parliament on 13 October 2026 that the 45 data centres operating in August drew about 1.37 GW against about 6 GW of maximum load, about 23% on my arithmetic. A written reply to Parliament on 20 October 2026, as reported by The Star, put the supply capacity approved for data centre projects at 12.3 GW, against which the draw is about a ninth.
+
+The narrowest bottom gives more than half. On 28 October 2026 the Deputy Prime Minister put the same draw, 1,374 MW, at 58.5% of 2,346 MW contracted. That series counts demand declared phase by phase: in November 2025 it stood at 603 MW of 1,276 MW, about 47%, against a government target of 85%. [The Johor piece decodes the three](/journal/the-queue-not-the-chip/).
+
+I concede that "about a fifth" overstates idleness if heard as four fifths of halls standing empty. Against contracted demand, operating halls draw 58.5%, and draw more than doubled in about 14 months as halls filled in phases. But every bottom still shows a gap, and the government now charges for it. Tenaga's connected load charge bills a new customer RM8.50 for every kilowatt by which its peak falls below 85% of its declared demand in its first four years. Nobody splits the gap between ramp, overbooking and licensed chips, so I hang nothing on any one of them.
 
 <a id="headroom-option"></a>
 ## Some booked megawatts may be an option on denser chips
 
-Part of Malaysia's idle booking may be headroom, not waste, though I hold that loosely. A hall books for its worst hour: the hottest day, with every chip flat out. And power now runs out before floor does: on Patel's account, Jane Street's Texas racks take the whole connection in a small fraction of the floor, and the firm holds slightly more power than it needs. Nvidia said in May 2025 that its racks will reach 1 MW and beyond from 2027, [several times today's](/journal/powering-the-rack/).
+A hypothesis I am testing, not a claim: part of Malaysia's idle booking may be headroom, not waste. A hall books for its worst hour, the hottest day with every chip flat out, so even a full hall draws well under its booking. And power now runs out before floor does. Jane Street's Texas site counts 4,032 GPUs in 56 racks, and Patel says those racks take the whole grid connection in [a small fraction of the floor](/journal/heat-and-water/#room-to-spare) first set aside. Nvidia said in May 2025 that its racks will reach 1 MW and beyond from 2027, [several times today's](/journal/powering-the-rack/).
 
-My inference is that a hall's spare booked megawatts are the cheapest way to use its empty floor later. Without them, a refit for denser racks becomes a new supply request and a new place in the queue. Tenaga already charges RM8.50 for every kilowatt by which a new customer's peak falls below 85% of its declared demand in its first four years. That is right for today's grid, but it pushes operators to book tight, and could send tomorrow's refits back into the queue.
+My inference is that a hall's spare booked megawatts are the cheapest way to use its empty floor later. Without them, a refit for denser racks becomes a new supply request and a new place in the queue. The connected load charge pushes operators to book tight, and could send tomorrow's refits back into the queue.
 
-The test is whether Malaysian operators trim declared demand as the charge bites, and whether older sites later apply for more supply when they refit. What would kill it: in November 2025 ministers told Parliament the Energy Commission, Malaysia's power regulator, had found a likelihood of speculative applications. If the headroom is mostly speculation rather than engineering, the idle bookings simply [use up the grid's margin on paper](/journal/the-queue-not-the-chip/#phantom-load).
+The test is whether Malaysian operators trim declared demand as the charge bites, and whether older sites later apply for more supply when they refit. What would kill it: in November 2025 ministers told Parliament that the Energy Commission, Malaysia's power regulator, had found a likelihood of speculative applications. If the headroom is mostly speculation rather than engineering, the idle bookings simply [use up the grid's margin on paper](/journal/the-queue-not-the-chip/#phantom-load).
 
-## What would prove me wrong
+## At rack, campus and country, the count depends on the divisor
 
-Two tests break the claim, one on each fast case. At Abilene: Oracle's June timetable put the last buildings in its quarter to 30 November 2026, and Crusoe expects the campus complete by the end of 2026. If it is energised but Oracle has still not reported all eight buildings delivered by its March 2027 results, fitting out, not power, is setting the pace. At Nebius: if it connects at least 800 MW by the end of 2026 but has fewer than 800 MW active at 30 June 2027, or, without an active figure, annualised revenue below US$9.6 billion, its halls are waiting more than months for chips. Neither result would by itself say why: a slip could be chips, fit-out or customers starting late.
+At the scale of a rack, the divisor is the connection, not the floor. Racks fill a hall's power before its space, so an unused booked megawatt may be the next chip's room.
 
-Two readings come before either test, and either could move me first. Nebius's third-quarter letter, due on 12 November 2026, and then its year-end letter give connected power against the guide; divide any revenue by the new-deal price as well as the old, since the honest count sits between the two. Oracle's December results are the next word on Abilene's last two buildings.
+At the scale of a campus, the divisor is buildings delivered, not the campus announced. Abilene was announced as one campus and arrived as two buildings, then 42% of its capacity, then 75%, and only chips racked in a delivered hall earn.
 
-Three things would not move me. Nebius moving fast is already in the claim: it reached about 170 MW active at the end of 2025 against a target of 100 MW, and had delivered every Microsoft tranche by 12 August 2026. Even at Abilene, the fastest path, more than two years passed between the start of work and three quarters of the campus handed over.
-
-Nor would on-site power. A fuel-cell block like Vineland's shortens the builder's stage but does not remove it, and a block ready is not a chip running.
-
-Nor would Malaysia's gap shrinking on a narrower bottom, or proving to be timing. Against contracted demand its halls draw 58.5%, and campuses book for their finished size and fill in phases; the deputy minister told Parliament on 13 October 2026 that data centres book more than they use. Nobody splits the gap between ramp, overbooking and licensed chips, so I hang nothing on any one of them. On every bottom, a signed gigawatt is not computing.
+At the scale of a country, the divisor is whichever booking a minister chooses, and Malaysia's runs from 2.3 GW contracted to 12.3 GW approved. At every scale the honest count is the stage each megawatt has reached, divisor named.
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
@@ -320,4 +362,4 @@ Johor holds 29 of Malaysia's 61 data centre projects. DayOne's largest customer,
 
 ---
 
-<p class="sources">Sources: Crusoe releases (18 March 2025, 21 May 2025, 30 September 2025, 27 March 2026); Oracle's results release (10 September 2026) and its results calls of 10 June and 10 September 2026, as transcribed by The Motley Fool; Nebius shareholder letters (12 February, 13 May and 12 August 2026) and its Form 6-K on the Microsoft agreement (8 September 2025); Jane Street's podcast conversation with Dwarkesh Patel (21 May 2026) and its write-up of its Texas data centre; CoreWeave's release (15 April 2026); Tenaga Nasional's analyst briefing (28 August 2026) and charges terms; Dewan Rakyat Hansard (5 November 2025, 13 and 28 October 2026); Nvidia's technical blog (20 May 2025); press reports of Bloom Energy's results call (22 October 2026); Nebius's results-date notice (30 October 2026); DayOne's Form F-1 (5 October 2026); US Commerce Department guidance (31 May 2026). The lead on Abilene's stages came from the video "State of AI data centres 2026". Personal research, not investment advice.</p>
+<p class="sources">Sources: Crusoe releases (18 March 2025, 21 May 2025, 30 September 2025, 27 March 2026); Oracle's results release (10 September 2026) and its results calls of 10 June and 10 September 2026, as transcribed by The Motley Fool; Nebius shareholder letters (12 February, 13 May and 12 August 2026) and its Form 6-K on the Microsoft agreement (8 September 2025); Jane Street's podcast conversation with Dwarkesh Patel (21 May 2026) and its write-up of its Texas data centre; CoreWeave's release (15 April 2026); Tenaga Nasional's analyst briefing (28 August 2026) and charges terms; Dewan Rakyat Hansard (5 November 2025, 13 and 28 October 2026); Nvidia's technical blog (20 May 2025); press reports of Bloom Energy's results call (22 October 2026); press reports of a Nebius filing (May 2026); The Star on a written parliamentary reply (20 October 2026); Nebius's results-date notice (30 October 2026); DayOne's Form F-1 (5 October 2026); US Commerce Department guidance (31 May 2026). The lead on Abilene's stages came from the video "State of AI data centres 2026". Personal research, not investment advice.</p>

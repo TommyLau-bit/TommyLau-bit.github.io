@@ -88,12 +88,15 @@ That money goes to a laser maker, and every co-packaged switch now shipping keep
 <hr class="layer">
 <p class="layer-label">For investors</p>
 
+
 <a id="ten-thousand-chips-one-thought"></a>
 ## The glass is bought once, the light is bought again, so the plug stays between racks
 
 <a id="the-plug-stays"></a>
 
-The plug survives its replacement. Broadcom and Nvidia, both makers of AI network switches, ship switches with co-packaged optics, the light-making parts fixed onto the switch, yet both kept the laser in a module a hand can pull out. In September 2026 both of Nvidia's DGX SuperPOD blueprints for Vera Rubin, its newest systems, picked plug-in switches, though Nvidia sells a co-packaged twin of the same 102.4 Tb/s. The reason is the split below: the parts that make or read light are bought again at every speed step, while the glass that carries it stays for years.
+The plug stays the default between racks through 2028, and the popular story that co-packaged optics kills the transceiver is wrong. Broadcom and Nvidia, both makers of AI network switches, both ship switches with co-packaged optics, the light-making parts fixed onto the switch, yet both kept the laser in a module a hand can pull out. In September 2026 both of Nvidia's DGX SuperPOD blueprints for Vera Rubin, its newest systems, picked plug-in switches. If that holds, the plug, the laser and the glass keep getting paid, and the casualty is narrow: the translator chip inside the plug.
+
+The reason is a split by job. The parts that make or read light are bought again at every speed step, while the parts that only carry it stay for years.
 
 <figure class="chart">
 <p class="chart-title">Only the parts that make or read the light are bought again</p>
@@ -125,51 +128,67 @@ The plug survives its replacement. Broadcom and Nvidia, both makers of AI networ
 
 ## Distance sets the medium, and only light crosses a hall
 
-That split starts with distance, because each distance needs its own medium. Inside a rack it is copper: Nvidia's GB200 NVL72 rack joins 72 GPUs in one NVLink domain, its chip-to-chip copper network, at 130 TB/s. Google's TPU v4, its own AI chip, joins 64 chips per cube the same way. Across a hall it is light. One Broadcom Tomahawk 6 switch chip moves 102.4 Tb/s, and Broadcom says two tiers of them join more than 100,000 chips, through a plug at each end of each fibre.
+Each distance needs its own medium, because an electrical signal gives up within a few metres. Loss in a wire rises with frequency, and every speed step raises the frequency, so copper's useful reach shrinks. That is why Nvidia's GB200 NVL72 rack packs 72 GPUs into one NVLink domain, its chip-to-chip copper network, at 130 TB/s.
 
-<a id="optics-comes-for-scale-up"></a>
-
-The copper island is starting to shrink, and that cuts against the neat split by distance. Nvidia's technical blog of 16 March 2026 says Vera Rubin Ultra's NVL576 will join eight racks into one NVLink domain "with copper and direct optical connections". Kyber, the rack that Nvidia calls the foundation for its Feynman generation, is to reach 1,152 GPUs with direct optical links between racks.
-
-That would multiply the lasers per GPU. Each Blackwell GPU has 1.8 TB/s of NVLink; counted as both directions, that is about nine times an 800 gigabit plug each way, by my arithmetic. No date for a blueprint with optical scale-up has been given.
+Across a hall it is light. Light in glass barely fades over a hall, but a GPU speaks electricity, so every fibre needs a converter at each end. That converter is the plug: a translator chip, the DSP, to clean and re-time the signal, a laser to send and a detector to receive. One Broadcom Tomahawk 6 switch chip moves 102.4 Tb/s, and Broadcom says two tiers of them join more than 100,000 chips, through a plug at each end of each fibre.
 
 <a id="fairwater-spans-two-states"></a>
 
-Beyond the hall, between sites, the limit is physics. Light in fibre covers about 200 kilometres a millisecond. Microsoft's Fairwater AI campuses in Wisconsin and near Atlanta are about 1,000 km apart by my straight-line reckoning, so a message takes at least 5 ms one way. Only the least talkative work, such as averaging between copies of the model, can cross. I have found no Microsoft or lab statement that a named model was trained across both sites.
-
-## Every speed step buys the switch, the translator and the laser again
-
-Within the hall, three parts read or make the signal, and each is replaced at a speed step. In 2026 all three were selling strongly, and the laser faster than it could be made.
-
-<a id="broadcom-wins-either-way"></a>
-
-The switch chip comes first. Broadcom said on 12 March 2026 that Tomahawk 6 was shipping in production volume, and on 2 September that it is deployed at pretty much every AI customer building custom chips with Broadcom.
-
-<a id="marvell-collects-the-toll"></a>
-
-The translator comes next. An optical DSP, a digital signal processor, sits inside each plug and turns the switch's electrical signal into light and back, so DSP volume follows plug volume. Marvell, which bought this business with Inphi in 2021, had data centre revenue of US$2.17 billion in the quarter to 1 August 2026, 79% of its total. Its chief executive said on 27 August that plugs remain the main form for links between racks.
+Beyond the hall, even light is slow. It covers about 200 kilometres a millisecond in fibre. Fairwater, Microsoft's pair of AI campuses in Wisconsin and near Atlanta, are about 1,000 km apart by my straight-line reckoning, so a message takes at least 5 ms one way. Only the least talkative work, such as averaging between copies of the model, can cross. I have found no Microsoft or lab statement that a named model was trained across both sites.
 
 <a id="lumentum-makes-the-light"></a>
+## Six physical facts make the laser the hardest part to add
 
-The laser is the hardest to add. Data centre lasers are grown on indium phosphide, on small, brittle wafers that few factories can yield well. Lumentum makes EMLs, the fast-switching lasers in today's plugs, and its 200 gigabit EMLs passed a quarter of its EML revenue in the June 2026 quarter. It was still shipping behind demand on 11 August, when it put part of a year's rise in gross margin, the share of each sale left after the cost of making it, down to higher prices. In the quarter to 26 September its GAAP gross margin reached 51.0%, against 34.0% a year earlier. The laser starts to look like the slow parts in [the chip supply chain](/journal/the-chip-supply-chain/): few makers, and more output only from a new fab.
+Of everything in the plug, the laser is the part supply cannot quickly follow.
 
-## The glass and the mirrors are bought once
+**The wrong material.** Silicon is poor at emitting light, so data centre lasers are grown on indium phosphide, a different crystal with its own fabs, tools and know-how.
 
-<a id="corning-lays-the-glass"></a>
+**Small, brittle wafers.** Indium phosphide wafers are small and break easily, so each yields fewer chips and loses more along the way. Coherent, a maker of lasers and transceivers, is moving to six-inch wafers to fix that.
 
-The other side of the split, the parts that only carry or steer light, does not care how fast the chips are. Meta agreed in January 2026 to buy up to US$6 billion of fibre and cable from Corning, the glass and fibre maker, through 2030, and Amazon signed in June. Corning's optical sales rose 44% in the third quarter of 2026, with the data centre side up 84%: glass grows with new campuses, not with speed steps.
+**Few factories.** A handful of makers yield fast lasers well: Lumentum, a US maker of lasers and optical parts, Coherent and Broadcom, which says its indium phosphide factories are more than tripling capacity. More output comes from a new fab, not a new shift.
 
-<a id="google-steers-the-light"></a>
+**Years to build.** Lumentum's new fab in Greensboro, North Carolina, expects first revenue in early 2028.
 
-Mirrors behave like glass. Google joins the cubes of its TPU pods with Palomar, its own optical circuit switch, whose tilting mirrors steer light between 136 fibres. Nothing in the box reads the data, so a faster chip sends more through the same mirrors, and Google's Ironwood pods of 9,216 chips still use them. Lumentum shipped more than US$90 million of such switches in its year to June 2026, so Google is no longer the only maker.
+**Heat.** The Optical Internetworking Forum, the industry body that sets standards for optical links, listed in March 2023 that lasers "require lower temp than Si and SiPho", silicon and silicon photonics, and that their reliability turns on temperature, current and power.
 
-## Co-packaging moved the optics onto the switch, and kept the laser in a plug
+**Everyone orders at once.** Lumentum's 200 gigabit EMLs, the fast-switching lasers in today's plugs, passed a quarter of its EML revenue in the June 2026 quarter. On 11 August it was still shipping behind demand, and further behind on lasers for co-packaged optics. It put part of a year's rise in gross margin, the share of each sale left after the cost of making it, down to higher prices. In the quarter to 26 September its GAAP gross margin reached 51.0%, against 34.0% a year earlier. The laser starts to look like the slow parts in [the chip supply chain](/journal/the-chip-supply-chain/).
 
 <a id="the-optics-you-cannot-unplug"></a>
+## The headline retired the plug, and the spec sheet kept it
 
-Co-packaging was built to retire the plug. It mounts optical engines on the switch package itself, which Nvidia claims makes its switches 3.5 times more power efficient. Broadcom said on 8 October 2025 it was shipping Tomahawk 6 Davisson, its co-packaged switch, and Nvidia sells its own. But neither went all the way. Nvidia's Spectrum-X engines are soldered on, while its lasers sit in removable modules for easy replacement. Davisson ships with "Field-Replaceable ELSFP Laser Modules". A failed engine means replacing the whole switch, so the laser, which Nvidia calls one of the most persistent reliability problems in data centre optics, was kept reachable.
+Read fast, co-packaging ends the plug and everyone who makes it. It mounts optical engines on the switch package, which Nvidia claims makes its switches 3.5 times more power efficient, and that saving is why it exists. Broadcom said on 8 October 2025 it was shipping Tomahawk 6 Davisson, its co-packaged switch, and Nvidia sells its own.
 
-Nor does scale change that. On 21 October 2026 Nvidia said SPIL, a Taiwanese chip packaging firm, targets a 15-fold rise in co-packaged optical engine capacity by mid-2027, and another doubling by the end of 2028.
+The spec sheets tell a narrower story. Davisson ships with "Field-Replaceable ELSFP Laser Modules". Nvidia's Spectrum-X engines are soldered on, while its lasers sit in removable modules for easy replacement. A failed engine means replacing the whole switch, so the laser, which Nvidia calls one of the most persistent reliability problems in data centre optics, was kept reachable.
+
+The blueprint went further. Nvidia's results release of 26 August 2026 offers Spectrum-6, a switch in its Spectrum-X range, "supporting both pluggable and co-packaged optics". Yet its DGX SuperPOD reference architectures for Vera Rubin, created 15 September 2026, specify plug-in switches in both versions: the SN6600-LD for Spectrum-X and the Quantum-X800 Q3400-RD for InfiniBand, its other network standard. A reference architecture is the blueprint customers copy, so its choice is the default. Nvidia's switch manual lists a co-packaged twin of the Spectrum-X pick, the SN6810-LD, at the same 102.4 Tb/s and with the same liquid cooling, so neither capacity nor cooling forced the choice.
+
+<figure class="chart">
+<p class="chart-title">Co-packaged switches arrived, and the newest blueprints still picked the plug</p>
+<p class="chart-sub">Dated steps in moving optics onto the switch, by maker</p>
+<svg viewBox="0 0 560 260" role="img" aria-label="Timeline. Nvidia announced co-packaged optics switches on 18 March 2025. On 26 August 2025 it said their lasers sit in removable modules. On 8 October 2025 Broadcom said it was shipping Tomahawk 6 Davisson with field-replaceable laser modules. On 26 August 2026 Nvidia sold Spectrum-6 with either pluggable or co-packaged optics. On 15 September 2026 both Vera Rubin reference architectures picked pluggable switches. The shaded span runs from today to the end of 2028, when the claim is tested.">
+<rect class="c-zone" x="355.3" y="20" width="184.7" height="200"/>
+<text class="c-zone-t" x="377.3" y="38">Tested to 2028</text>
+<g class="c-grid"><line x1="200" y1="20" x2="200" y2="220"/><line x1="285" y1="20" x2="285" y2="220"/><line x1="370" y1="20" x2="370" y2="220"/><line x1="455" y1="20" x2="455" y2="220"/><line x1="540" y1="20" x2="540" y2="220"/></g>
+<g class="c-axis"><text x="200" y="240" text-anchor="middle">2025</text><text x="285" y="240" text-anchor="middle">2026</text><text x="370" y="240" text-anchor="middle">2027</text><text x="455" y="240" text-anchor="middle">2028</text><text x="540" y="240" text-anchor="middle">2029</text><text x="190" y="64" text-anchor="end">Nvidia co-packaged switch</text><text x="190" y="102" text-anchor="end">Nvidia, where lasers go</text><text x="190" y="140" text-anchor="end">Broadcom Davisson</text><text x="190" y="178" text-anchor="end">Nvidia Spectrum-6</text><text x="190" y="216" text-anchor="end">Vera Rubin blueprints</text></g>
+<g class="c-end"><circle cx="217.9" cy="60" r="4.5"/><circle cx="255.2" cy="98" r="4.5"/><circle cx="265.2" cy="136" r="4.5"/><circle cx="340.2" cy="174" r="4.5"/><circle cx="344.8" cy="212" r="4.5"/></g>
+<g class="c-endt"><text x="226.9" y="64">announced</text><text x="264.2" y="102">removable modules</text><text x="274.2" y="140">ships, lasers replaceable</text><text x="349.2" y="178">sold both ways</text><text x="353.8" y="216">both pick the plug</text></g>
+</svg>
+<figcaption>Nvidia releases of 18 March 2025 and 26 August 2026, technical blog of 26 August 2025 and DGX SuperPOD Vera Rubin reference architectures (15 September 2026); Broadcom release of 8 October 2025. Shaded: from today to the end of 2028, the date in my claim.</figcaption>
+</figure>
+
+## Four terms carry the argument
+
+**Scale-up, scale-out, scale-across.** Teammates, the league and away games. Scale-up joins GPUs inside a rack into one machine over copper NVLink. Scale-out joins racks across a hall over Ethernet or InfiniBand, the two network standards Nvidia sells, through optics. Scale-across joins campuses by long fibre.
+
+**CPO and NPO.** A bulb plastered into the ceiling, and a lamp on the desk. Co-packaged optics puts the optical engines on the switch package; near-packaged optics puts them on the board beside it, easier to replace. Both attack the DSP. Neither removes the laser.
+
+**Gb/s and GB/s.** Coins and eight-coin rolls. Network links are quoted in bits, GPU links in bytes, and NVLink's 1.8 TB/s per Blackwell GPU counts both directions while an 800 gigabit plug is quoted each way. Converted, that is 7.2 Tb/s each way, about nine times an 800 gigabit link, by my arithmetic.
+
+**EML and continuous laser.** A flicked torch and a lamp left on. An EML switches its own light on and off fast, as in today's plugs. A continuous laser just shines, and a modulator on the engine does the switching. Co-packaged engines need the second kind, at high power.
+
+## Fifteen times measures engines, against a base nobody gave
+
+The figure thrown against this claim is SPIL's. On 21 October 2026 Nvidia said SPIL, a Taiwanese chip packaging firm, targets a 15-fold rise in co-packaged optical engine capacity by mid-2027, and another doubling by the end of 2028.
 
 <figure class="chart">
 <p class="chart-title">The case against: capacity for co-packaged engines is set to rise about thirtyfold</p>
@@ -187,50 +206,69 @@ Nor does scale change that. On 21 October 2026 Nvidia said SPIL, a Taiwanese chi
 <figcaption>Nvidia release, 21 October 2026: a 15-fold rise by mid-2027 and another doubling by the end of 2028. About 30 times is my arithmetic. These are targets, not built factories, and no laser capacity is mentioned.</figcaption>
 </figure>
 
-That plan moves the translator, not the laser. Where the switch drives its engines directly, the DSP leaves the plug, and Marvell's optical DSPs sell only while it stays. Each engine still needs continuous lasers fed from outside, and Lumentum said on 11 August it was further behind demand on those than on its plug lasers. Nvidia's SPIL release gave no figure for the lasers those engines need. The nearest dated new laser fab I have found, Lumentum's in Greensboro, North Carolina, expects first revenue in early 2028.
+It measures capacity to build engines, the part fixed onto the switch, not switches shipped, lasers made or demand. It is a multiple of October 2026's level, about 30 times by the end of 2028 on my arithmetic, and Nvidia gave no base, so fifteen times a small number can still be small. And it is a target, not a factory.
 
-<a id="the-money-buys-lasers"></a>
+The trap is that engines need torches. Each takes continuous lasers fed from a removable front-panel module, Nvidia's release gave no figure for them, and Lumentum said in August it was further behind demand on exactly those lasers than on its plug lasers. If the plan is built, what moves is the translator. Where the switch drives its engines directly, the DSP leaves the plug.
 
-The first big money in co-packaging has gone to a laser maker. On 2 November 2026 Lumentum reported "our second major NPO/CPO win, backed by purchase commitments exceeding $5 billion". NPO, near-packaged optics, puts the engines on the board beside the switch rather than on its package as CPO, co-packaged optics, does, and the release gives no split between the two. The same day Marvell, the DSP seller, agreed to buy Lumentum, citing its indium phosphide manufacturing and high-power lasers; the deal is expected to close in the first half of 2028.
+## The value sits with the light, the glass and the mirrors
 
-## Nvidia sells both switches, and its newest blueprints pick the plug
+Sorting parts by whether they read light or only carry it shows who is paid per speed step and who per campus.
 
-The strongest evidence comes from the company with the most to gain from co-packaging. Nvidia's results release of 26 August 2026 offers Spectrum-6, a switch in its Spectrum-X range, "supporting both pluggable and co-packaged optics". Yet its DGX SuperPOD reference architectures for Vera Rubin, created 15 September 2026, specify plug-in switches in both versions: the SN6600-LD for Spectrum-X and the Quantum-X800 Q3400-RD for InfiniBand. A reference architecture is the blueprint customers copy, so its choice is the default. Nvidia's own switch manual lists a co-packaged twin of the Spectrum-X pick, the SN6810-LD, with the same 102.4 Tb/s and the same liquid cooling, so neither capacity nor cooling forced the choice.
+**The light, paid at every speed step.** Lasers come from Lumentum, Coherent and Broadcom's fabs, and plugs from assemblers such as Coherent, Innolight, Eoptolink and Fabrinet. Laser makers are paid on both routes, an EML in a plug or a continuous laser in a front-panel module.
 
-<figure class="chart">
-<p class="chart-title">Co-packaged switches arrived, and the newest blueprints still picked the plug</p>
-<p class="chart-sub">Dated steps in moving optics onto the switch, by maker</p>
-<svg viewBox="0 0 560 260" role="img" aria-label="Timeline. Nvidia announced co-packaged optics switches on 18 March 2025. On 26 August 2025 it said their lasers sit in removable modules. On 8 October 2025 Broadcom said it was shipping Tomahawk 6 Davisson with field-replaceable laser modules. On 26 August 2026 Nvidia sold Spectrum-6 with either pluggable or co-packaged optics. On 15 September 2026 both Vera Rubin reference architectures picked pluggable switches. The shaded span runs from today to the end of 2028, when the claim is tested.">
-<rect class="c-zone" x="355.3" y="20" width="184.7" height="200"/>
-<text class="c-zone-t" x="377.3" y="38">Tested to 2028</text>
-<g class="c-grid"><line x1="200" y1="20" x2="200" y2="220"/><line x1="285" y1="20" x2="285" y2="220"/><line x1="370" y1="20" x2="370" y2="220"/><line x1="455" y1="20" x2="455" y2="220"/><line x1="540" y1="20" x2="540" y2="220"/></g>
-<g class="c-axis"><text x="200" y="240" text-anchor="middle">2025</text><text x="285" y="240" text-anchor="middle">2026</text><text x="370" y="240" text-anchor="middle">2027</text><text x="455" y="240" text-anchor="middle">2028</text><text x="540" y="240" text-anchor="middle">2029</text><text x="190" y="64" text-anchor="end">Nvidia co-packaged switch</text><text x="190" y="102" text-anchor="end">Nvidia, where lasers go</text><text x="190" y="140" text-anchor="end">Broadcom Davisson</text><text x="190" y="178" text-anchor="end">Nvidia Spectrum-6</text><text x="190" y="216" text-anchor="end">Vera Rubin blueprints</text></g>
-<g class="c-end"><circle cx="217.9" cy="60" r="4.5"/><circle cx="255.2" cy="98" r="4.5"/><circle cx="265.2" cy="136" r="4.5"/><circle cx="340.2" cy="174" r="4.5"/><circle cx="344.8" cy="212" r="4.5"/></g>
-<g class="c-endt"><text x="226.9" y="64">announced</text><text x="264.2" y="102">removable modules</text><text x="274.2" y="140">ships, lasers replaceable</text><text x="349.2" y="178">sold both ways</text><text x="353.8" y="216">both pick the plug</text></g>
-</svg>
-<figcaption>Nvidia releases of 18 March 2025 and 26 August 2026, technical blog of 26 August 2025 and DGX SuperPOD Vera Rubin reference architectures (15 September 2026); Broadcom release of 8 October 2025. Shaded: from today to the end of 2028, the date in my claim.</figcaption>
-</figure>
+<a id="broadcom-wins-either-way"></a>
 
-So the order of events is the argument. Nvidia announced co-packaged switches, shipped them, sold them alongside plugs, and then, for its own flagship clusters, chose plugs.
+The switch chip is bought again too. Tomahawk 6 reached volume production in March 2026, and Broadcom said on 2 September it is deployed at pretty much every AI customer building custom chips with Broadcom.
 
-<a id="heat-decides-the-laser"></a>
-## Heat decides where the laser lives, so the translator is the part at risk
+<a id="marvell-collects-the-toll"></a>
 
-The real debate may not be plug against no plug, but where the laser can sit, and that is a view still on trial. It stands on three facts. The Optical Internetworking Forum, the industry body that wrote the standard for external laser modules, listed in March 2023 that lasers "require lower temp than Si and SiPho", silicon and silicon photonics, and that their reliability turns on temperature, current and power. Its same slides gave the pluggable laser box a "hot swap" role if one laser fails. And Broadcom's Davisson and Nvidia's co-packaged switches both feed their engines from removable laser modules.
+**The translator, paid while the plug keeps it.** The optical DSP sits inside each plug, so its volume follows plug volume. Marvell, a chip designer that bought this business with Inphi in 2021, had data centre revenue of US$2.17 billion in the quarter to 1 August 2026, 79% of its total. Its chief executive said on 27 August that plugs remain the main form for links between racks. This is the one position co-packaging puts at risk.
 
-The inference is mine. The closer optics move to a hot switch or GPU chip, the further the laser must move away, into a box that can be cooled and swapped. On that reading the plug does not die, it changes contents: from a DSP and a laser to lasers alone. The translator is the casualty, and Marvell's agreement to buy Lumentum, a laser maker, fits that reading without proving it.
+<a id="corning-lays-the-glass"></a>
 
-The test is one question put to every new co-packaged switch and optical NVLink design: where are the lasers? What would kill the idea is a standard product with lasers on the package that survive its heat, such as lasers grown on silicon. Two points cut against it: the same OIF slides expected a co-packaged switch to need 4 to 16 laser modules, against 32 or 64 plugs, and I have no laser failure data of my own.
+**The glass, paid per campus.** Fibre does not care how fast the chips are. Meta, the owner of Facebook, agreed in January 2026 to buy up to US$6 billion of fibre and cable from Corning, the glass and fibre maker, through 2030, and Amazon, the online retailer and cloud provider, signed in June. Corning's optical sales rose 44% in the third quarter of 2026, with the data centre side up 84%: glass grows with new halls, not with speed steps.
+
+<a id="google-steers-the-light"></a>
+
+**The mirrors, which never read the data.** Google joins the cubes of its TPU pods with Palomar, its own optical circuit switch, whose tilting mirrors steer light between 136 fibres. A faster chip sends more through the same mirrors, and Google's Ironwood pods of 9,216 chips still use them. Lumentum shipped more than US$90 million of such switches in its year to June 2026, and on 2 November its chief executive said demand visibility for them had "expanded significantly in recent months".
 
 ## What would prove me wrong
 
-Three tests break the claim by the end of 2028. If the reference design for Feynman, Nvidia's next platform, or any newer system makes a co-packaged switch the default or only option for the compute fabric, the plug has lost the hall. If Nvidia or Broadcom says most AI switches it ships are co-packaged, the same. If either ships a standard co-packaged switch with its lasers fixed to the package, the repair limit I rest on was not binding.
+Three tests break the claim by the end of 2028. The first is the blueprint: if the reference design for Feynman, Nvidia's next platform, or any newer system makes a co-packaged switch the default or only option for the compute fabric, the plug has lost the hall. Nvidia already lists "Spectrum-class optical scale-out" in Feynman, undated, so a dated Feynman blueprint would move me first.
 
-Two things would move me before the tests. Nvidia already lists "Spectrum-class optical scale-out" in Feynman, without a date, and a dated Feynman blueprint would show which switch it picks. A split of Lumentum's commitments showing mostly co-packaged optics with lasers on the package would hit the third test early.
+The second is the mix: if Nvidia or Broadcom says most AI switches it ships are co-packaged, the same. It is the only test that also covers cloud giants building their own designs on Davisson, which no blueprint shows. The third is the laser moving in: if either ships a standard co-packaged switch with its lasers fixed to the package, the repair limit I rest on was not binding, and the mechanism is wrong, not just the timing.
 
-Four things would not. SPIL's thirtyfold is a target, not a factory, and even a co-packaged switch keeps its lasers in front-panel modules. Lumentum's more than $5 billion of commitments is real money moving to co-packaging, and the plug's share of new optics spend will shrink, but it pays a laser maker and lumps near-packaged with co-packaged.
+The claim stands on two legs. One is economic: the makers and readers of light are bought again at each speed step, and power savings are the money that could tip customers to co-packaging. The first two tests attack it, and it can fail on timing. The other is physical: lasers fail more than other optical parts and want to run cooler than silicon, so they are kept where they can be swapped. Money cannot repeal that; only a laser that survives the package's heat can, and the third test attacks it.
 
-Optical scale-up is the fairest point against me. If Feynman-era racks are joined by co-packaged NVLink, some traffic between racks never touches a plug; my tests name the scale-out switch in the blueprint, which that plan leaves alone, so the claim would stand, but thinner. And Broadcom's claim to be "the leader in leading edge optical DSPs", by a third-party transcript, contests who sells the translator, not whether the plug stays.
+When someone says co-packaged optics kills the transceiver, I disagree. It moves the translator onto the switch. On every co-packaged switch shipping, the laser stays in a plug a hand can pull, and Nvidia's newest blueprint picked the plug switch. Broadcom's claim to be "the leader in leading edge optical DSPs", by a third-party transcript of 2 September, contests who sells the translator, not whether the plug stays.
+
+<a id="optics-comes-for-scale-up"></a>
+## Optics is coming for the rack, copper's last island
+
+Nvidia plans to stretch the GPU's own network across racks with light. Its technical blog of 16 March 2026 says Vera Rubin Ultra's NVL576 will join eight racks into one NVLink domain "with copper and direct optical connections", and Kyber, the rack Nvidia calls the foundation for its Feynman generation, is to reach 1,152 GPUs with direct optical links between racks. Scale-up carries about nine times the bandwidth per GPU of scale-out, so if it goes optical the lasers per GPU multiply. No date for a blueprint with optical scale-up has been given.
+
+I concede that "copper inside the rack" is a 2026 statement, and some traffic between racks may never touch a plug. But my claim and its tests name the scale-out switch, which this plan leaves alone. The Register, a technology news site, reported in April that NVL576 keeps copper inside the rack and pluggable optics on its spine layer. And every optical route needs lasers from the same few indium phosphide fabs, in the year Greensboro first earns revenue. Marvell's purchase of Celestial AI, completed on 2 February 2026 for "optical interconnect technology for scale-up connectivity", is a bet on exactly this.
+
+<a id="the-money-buys-lasers"></a>
+## Real money has moved to co-packaging, and it bought lasers
+
+The first big money in co-packaging is real. On 2 November 2026 Lumentum reported "our second major NPO/CPO win, backed by purchase commitments exceeding $5 billion". The same day Marvell, the DSP seller, agreed to buy Lumentum, citing its indium phosphide manufacturing and high-power lasers; the deal is expected to close in the first half of 2028.
+
+I concede the plug's share of new optics spend will shrink. But the money went to a laser maker, which is what the claim expects, and the release lumps near-packaged optics, which keep engines replaceable on the board, with co-packaged, giving no split. What would worry me is a split showing mostly co-packaged optics with lasers fixed on the package: that would hit the third test early.
+
+<a id="heat-decides-the-laser"></a>
+## Heat may decide where the laser lives, so the plug follows the optics
+
+The debate is framed as plug against no plug; my hypothesis is that it is really about where the laser can sit. It stands on the OIF's heat finding, the same slides' "hot swap" role for a pluggable laser box if one laser fails, and the removable laser modules feeding every co-packaged switch I have read.
+
+The inference is mine. Switch and GPU chips run hotter each generation, so the closer optics move to them, the further the laser must move away, into a box that can be cooled and swapped. The plug does not die; its contents change from a DSP and a laser to lasers alone, and if scale-up goes optical that box multiplies.
+
+The test is one question put to every new co-packaged switch and optical NVLink design: where are the lasers? What would kill the idea is a standard product with lasers on the package that survive its heat, such as lasers grown on silicon. Two points cut against it: the OIF slides expected a co-packaged switch to need 4 to 16 laser modules, against 32 or 64 plugs, and I have no laser failure data of my own.
+
+## The same sort works at the plug, the rack and the campus
+
+Inside one plug, the DSP, laser and detector are all bought again at each speed step, and co-packaging so far takes only the translator. At the rack, 72 GPUs act as one because copper reaches a few metres, each speed step shrinks that island, and every optical route out of it needs lasers. At the campus, glass is laid once per hall and Corning grows with new sites, while between sites even light costs 5 ms, so only the quietest work crosses. One question sorts all three: does a part make or read the light, or only carry it.
+
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
