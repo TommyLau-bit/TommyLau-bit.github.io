@@ -75,7 +75,34 @@ Tommy found the first build (a long web pitch with charts, merged into the claim
 - **Notes and pieces are independent** (Tommy, 2 Nov 2026, permanent; replaces "journal piece first"): a note may cover a company the journal never mentions and need not rest on a claim (`claims` may be empty). Notes and pieces do not need to match.
 - **Research table grouped by launch** (Tommy, 2 Nov 2026): `/research/` shows one table, grouped into the coverage launches in `LAUNCHES` (src/data/calls.ts), newest first, each ordered by map layer. A note outside every launch is grouped by its month automatically; name a new launch only when several notes on one sector go out together. A note whose first claim's layer misfiles it may set `layer:` (Nvidia: chips). Publication dates are never changed.
 - **No dated corrections, ever** (2 Nov 2026, permanent): a wrong fact in a piece or note is edited so it is right. No "Where I was wrong", no `correction` field, no "Correction" paragraphs.
-- **Biweekly marks** (Tommy, 6 Nov 2026): the scheduled task `research-biweekly-reprice` re-prices every call, views and no-views, every second Friday from 6 Nov 2026 and reports for Tommy's approval; it never publishes. The monthly task `research-monthly-marks` is retired (its 1 Nov run stalled on a permission prompt, so no marks were made before 6 Nov).
+- **Biweekly marks** (Tommy, 6 Nov 2026): every second Friday from 6 Nov 2026 the daily task `physical-layer-book-daily` also marks every note in calls.ts and publishes it. The tasks `research-biweekly-reprice` and `research-monthly-marks` are retired (the monthly one's 1 Nov run stalled on a permission prompt, so no marks were made before 6 Nov).
+
+## The book: a US$100,000 paper portfolio on the site (Tommy, 6 Nov 2026, permanent)
+
+Tommy: the Physical Layer Radar paper book (Oct 2026, ~/Desktop/jobs/lanes/paper_portfolio/) was the perfected version; carry it onto the website exactly, on top of the initiation notes and models, which continue as before. His choices: Claude makes every call, the book starts fresh on 6 Nov 2026, it runs daily and publishes on its own, and it tops the Research page.
+
+- Data: `src/data/book.json` (equity, cash, positions, closed, watch, avoid, equityCurve, exposure, log); shown by `src/components/Book.astro` at the top of /research/.
+- Daily run: scheduled task `physical-layer-book-daily`, Sunday to Friday 07:30 SGT (Sundays: weekly review, no entries). It prices every name at verified closes, takes exits, marks, takes entries, rebuilds the watchlist, writes a log line, and commits and pushes book.json (and calls.ts every second Friday) on its own. Reports in research-build/book/.
+- Calls: Claude makes every call (Radar rule). Tommy may disagree in one line; it is logged, the call stays Claude's.
+- Sizes: HIGH 12 per cent, MEDIUM 7, LOW 4 of equity; max 15 per cent in a name, 10 open positions, 80 per cent invested; half size if results are within 10 trading days.
+- Entry (long; shorts mirrored): the note's base value at least 15 per cent above the close (short: 25 per cent below); the 20-session closing low is at least 3 sessions old; the close is above the previous 5-session closing high (Tommy's ICC break and continuation); stop 1 per cent under that 20-session low; target the lower of the base value and the 60-session closing high; reward to risk at least 2:1. Fill at the close.
+- Exit: first close through the target ("Target hit") or the stop ("Stopped out"), or a non-price wrongIf leg ("Thesis broken"). Stops never widen; at +1R the stop moves to entry. Every exit gets a post-mortem scored on process.
+- Drawdown: 10 per cent below peak equity stops new entries until a review is logged.
+- Never backdated: the book opened in cash on 6 Nov 2026 because every candidate was at a fresh 20-day low after the October and November sell-off.
+- The initiation calls (Tommy's, in calls.ts) keep their own record and the stop and target rules below.
+
+## Risk management: every view has a stop and a target (Tommy, 6 Nov 2026, permanent)
+
+Tommy: a call without a stop and an exit is not how a PM runs a book; investors ask why he is still in. Adapted from his ICC trading rules (~/Desktop/trading/ICC_Trading_Strategy_v9.pdf: stops and targets at structure, closes not wicks, 2:1 minimum, a drawdown that forces a review) to twelve month equity calls.
+
+- **Target:** the note's target. The first daily close at or through it takes the call out: "Out: target hit", measured at that close. To stay in, Tommy writes a dated new target and reason (a re-underwrite) before the next mark.
+- **Stop:** set at publication and stored in `src/data/calls.ts` (`risk`). It sits at the most recent weekly closing swing low (a weekly close below the two weeks either side) that lies 5 to 20 per cent below the call price; if none, 20 per cent below. If the note's wrong-if names a tighter price level, that level is the stop. Shorts are mirrored (swing high above). The first daily close through it takes the call out: "Out: stopped out", measured at that close.
+- **2:1 at publication:** a new view needs its target at least twice as far from the price as its stop (Tommy's minimum reward to risk). A view that cannot clear 2:1 is a no call.
+- **Drawdown review:** if the open views together are down 10 per cent or more on average since their calls, every open view is reviewed before the next mark (Tommy's max drawdown rule).
+- **No calls** carry no position, so no stop. Their price bands and revisit levels are reported, not traded.
+- **Exits** are recorded as `exit` {date, price, reason} with a `resolved` post-mortem (Right for a target hit, Wrong for a stop). The research table shows the stop, the exit price and "Out: target hit / stopped out, date"; returns of a call that is out are measured at its exit.
+- **How the first application was done (6 Nov 2026):** levels written in a note counted from its date (Oklo out at its US$28 target on 16 Oct, +22.2%; Marvell out at its US$230 level on 16 Oct, -20.0%). Stops set under this rule counted from 6 Nov; a call already through its new stop left at the 5 Nov close (Broadcom, Coherent, Eaton, Nvidia, SK Hynix, Vertiv). This is stated on the research page. Never backdate a new stop as if it had been set earlier: that would turn the record into a backtest.
+- **Exits are automatic** (Tommy, 6 Nov 2026): the daily task `physical-layer-book-daily` checks every close against each stop and target and publishes exits and marks on its own.
 
 ## Briefs for agents (in research-build/)
 - `BRIEF-note.md`: drafting an initiation note (text of record, PDF, model). `BRIEF-note-factcheck.md`: the read-only fact-check of a note.

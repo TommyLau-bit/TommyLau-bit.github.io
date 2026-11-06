@@ -37,12 +37,20 @@ export function callReturn(p: Pitch, price: number): number | null {
   return c.direction === 'SHORT' ? -r : r;
 }
 
+// A call that has left (target hit or stopped out) is measured at its exit
+// price; an open call at its latest mark.
 export function latest(p: Pitch) {
   const s = scoreOf(p.id);
   const mark = s?.marks.at(-1);
-  const move = mark ? mark.price / p.data.call.price - 1 : null;
-  return { score: s, mark, ret: mark ? callReturn(p, mark.price) : null, move };
+  const exit = s?.exit;
+  const at = exit ? exit.price : mark?.price;
+  const move = at != null ? at / p.data.call.price - 1 : null;
+  return { score: s, mark, exit, risk: s?.risk, ret: at != null ? callReturn(p, at) : null, move };
 }
+
+// "Out: target hit, 16 Oct 2026" / "Out: stopped out, 5 Nov 2026" / "Open"
+export const statusLabel = (exit: { date: string; reason: string } | undefined, fmt: (d: Date) => string) =>
+  exit ? `Out: ${exit.reason.toLowerCase()}, ${fmt(new Date(exit.date))}` : 'Open';
 
 // yen and won have no minor unit, so they print without decimals
 const wholeUnits = (cur: string) => /^(¥|KRW|₩)/.test(cur.trim());

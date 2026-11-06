@@ -37,8 +37,10 @@ work on notes, calls, the research page or share prices, read `CALLS-SPEC.md`.
   mentions, and need not rest on a claim (`claims` may be empty). Notes and
   pieces do not need to match or reference each other.
 - When a journal piece publishes, ask Tommy whether to draft a note on it.
-- Every second Friday (scheduled task `research-biweekly-reprice`, from 6 Nov 2026) the track record
-  marks are prepared for Tommy to approve; nothing is pushed without his go.
+- **The book** (Tommy, 6 Nov 2026): a US$100,000 paper portfolio, the Physical Layer Radar carried onto /research, run daily by Claude (task `physical-layer-book-daily`), publishing on its own. Rules in CALLS-SPEC.md "The book".
+- **Every view has a stop and a target** (Tommy, 6 Nov 2026): a close through either takes the call out, shown on the research page. Rules in CALLS-SPEC.md "Risk management".
+- Every second Friday (inside the daily task `physical-layer-book-daily`, from 6 Nov 2026) the track record
+  marks are written and published automatically (Tommy, 6 Nov 2026).
 
 ## Before writing or editing any piece, read `WRITING-FORMAT.md`
 

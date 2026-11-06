@@ -59,3 +59,6 @@ Company, price and date, draft view (direction, target, conviction) with the 3-l
 
 ## Draft view rule (added 7 Oct 2026)
 Apply the band to the BASE value consistently: LONG if the base value is 15% or more above the price, SHORT if 25% or more below, NO CALL in between. If you depart from it, say so explicitly with the reason. For a directional call set draftView.target and write wrongIf as a thesis test for that direction (not just the bear or bull values); revisitIf only for NO CALL; revisit levels and wrongIf thresholds must not coincide or contradict.
+
+## Risk (6 Nov 2026, CALLS-SPEC.md "Risk management")
+A LONG or SHORT draft view must state its stop (weekly closing swing low 5 to 20 per cent from the price, else 20 per cent, or a tighter wrong-if price level) and show reward to risk of at least 2:1 against the target. If it cannot clear 2:1, the draft view is NO CALL. The stop goes into `src/data/calls.ts` as `risk` when the note publishes.

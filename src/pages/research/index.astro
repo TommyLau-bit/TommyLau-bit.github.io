@@ -1,9 +1,10 @@
 ---
 import Base from '../../layouts/Base.astro';
+import Book from '../../components/Book.astro';
 import { SCORECARD_REFRESHED, LAUNCHES } from '../../data/calls';
 import { claimOf, homeOf } from '../../data/claims';
 import { STACK, layerOf } from '../../data/stack';
-import { getPitches, latest, fmtMoney, fmtPct, callLabel } from '../../lib/calls';
+import { getPitches, latest, fmtMoney, fmtPct, callLabel, statusLabel } from '../../lib/calls';
 import { fmtDate } from '../../utils';
 const pitches = await getPitches();
 const rows = pitches.map((p) => ({ p, ...latest(p) }));
@@ -46,36 +47,43 @@ const layersOf = (g: (typeof groups)[number]) => {
 const longs = pitches.filter((p) => p.data.call.direction === 'LONG').length;
 const shorts = pitches.filter((p) => p.data.call.direction === 'SHORT').length;
 const noCalls = pitches.filter((p) => p.data.call.direction === 'NO CALL').length;
+const views = rows.filter((r) => r.p.data.call.direction !== 'NO CALL');
+const outTarget = views.filter((r) => r.exit?.reason === 'Target hit').length;
+const outStop = views.filter((r) => r.exit?.reason === 'Stopped out').length;
+const openViews = views.length - outTarget - outStop;
 const dirClass = (p: (typeof pitches)[number]) => `note-call note-call--${(p.data.call.direction ?? '').toLowerCase().replace(' ', '')}`;
 ---
-<Base title="Research" description="Initiation notes on companies in the physical layer of AI, each with the model behind it and a call that is marked every two weeks, right or wrong." wide>
+<Base title="Research" description="A US$100,000 paper book run every morning with stops and targets, and the initiation notes behind it, on the companies in the physical layer of AI." wide>
   <header class="research-head">
     <h1>Research</h1>
-    <p>Initiation notes on the companies that build the physical layer of AI. Each comes with its Excel model, and every call is dated and marked every two weeks against its target. None is ever deleted.</p>
+    <p>A paper book run every morning on the companies that build the physical layer of AI, and the initiation notes behind it. Each note comes with its Excel model; every call and every trade is dated, priced at a close and never deleted.</p>
   </header>
 
   {pitches.length === 0 ? (
     <p class="scorecard-empty">The first notes are being written.</p>
   ) : (
     <>
-      <ul class="stat-strip" aria-label="The book at a glance">
+      <Book />
+
+      <ul class="stat-strip" aria-label="The notes at a glance">
         <li><strong>{pitches.length}</strong> initiation notes</li>
         <li><strong>{longs}</strong> long</li>
         {shorts > 0 && <li><strong>{shorts}</strong> short</li>}
         <li><strong>{noCalls}</strong> no call</li>
+        <li><strong>{openViews}</strong> views open, <strong>{outTarget}</strong> out at target, <strong>{outStop}</strong> stopped out</li>
         <li>Marked every two weeks{SCORECARD_REFRESHED ? <>, last on {fmtDate(new Date(SCORECARD_REFRESHED))}</> : ', from November 2026'}</li>
       </ul>
 
       <section class="track" id="scorecard" aria-labelledby="book-h">
-        <h2 id="book-h">The calls</h2>
-        <p class="track-intro">Coverage was launched in sector batches, newest first, and each batch is ordered by layer, from the grid to the chip. Every call is measured against the closing price on the day it was published. Returns are signed so that a call going the right way is positive.</p>
+        <h2 id="book-h">The initiation calls</h2>
+        <p class="track-intro">Coverage was launched in sector batches, newest first, and each batch is ordered by layer, from the grid to the chip. Every call is measured against the closing price on the day it was published. Returns are signed so that a call going the right way is positive. Every view carries a stop and a target: a close through either takes the call out, and a call that is out is measured at its exit. Levels written in a note count from its date; stops set under the risk rule of 6 November 2026 count from that day, so a call already through its new stop left at the 5 November close.</p>
         <div class="track-wrap">
           <table>
-            <thead><tr><th>Company</th><th>Published</th><th>Call</th><th>Price then</th><th>Target</th><th>Latest</th><th>Return</th><th>Status</th><th>Files</th></tr></thead>
+            <thead><tr><th>Company</th><th>Published</th><th>Call</th><th>Price then</th><th>Target</th><th>Stop</th><th>Latest</th><th>Return</th><th>Status</th><th>Files</th></tr></thead>
             {groups.map((g) => (
             <tbody>
-              <tr class="track-group"><th colspan="9"><div class="track-group-in"><span class="track-group-when">{g.when}</span> <span class="track-group-title">{g.title}, {g.rows.length} {g.rows.length === 1 ? 'note' : 'notes'}</span><span class="track-group-layers">{layersOf(g)}</span></div></th></tr>
-              {g.rows.map(({ p, mark, ret, move, score }) => {
+              <tr class="track-group"><th colspan="10"><div class="track-group-in"><span class="track-group-when">{g.when}</span> <span class="track-group-title">{g.title}, {g.rows.length} {g.rows.length === 1 ? 'note' : 'notes'}</span><span class="track-group-layers">{layersOf(g)}</span></div></th></tr>
+              {g.rows.map(({ p, mark, ret, move, exit, risk }) => {
                 const c = p.data.call;
                 return (
                   <tr>
@@ -84,9 +92,10 @@ const dirClass = (p: (typeof pitches)[number]) => `note-call note-call--${(p.dat
                     <td><span class={dirClass(p)}>{callLabel(p, false)}</span>{c.conviction && <span class="track-conv">, {c.conviction.toLowerCase()}</span>}</td>
                     <td>{fmtMoney(c.currency, c.price)}</td>
                     <td>{c.target != null ? fmtMoney(c.currency, c.target) : 'None'}</td>
-                    <td>{mark ? fmtMoney(c.currency, mark.price) : 'Not yet marked'}</td>
+                    <td>{risk ? fmtMoney(c.currency, risk.stop) : 'None'}</td>
+                    <td>{exit ? <>{fmtMoney(c.currency, exit.price)}<small class="track-at">exit</small></> : mark ? fmtMoney(c.currency, mark.price) : 'Not yet marked'}</td>
                     <td class={ret == null ? '' : ret >= 0 ? 'up' : 'down'}>{ret != null ? fmtPct(ret) : move != null ? `n/a (price ${fmtPct(move)})` : 'n/a'}</td>
-                    <td>{score?.resolved ? `${score.resolved.outcome}, ${fmtDate(new Date(score.resolved.date))}` : 'Open'}</td>
+                    <td class={exit ? (exit.reason === 'Target hit' ? 'track-out up' : 'track-out down') : ''}>{statusLabel(exit, fmtDate)}</td>
                     <td class="track-files"><a href={p.data.files.pdf}>Note</a> <a href={p.data.files.xlsx}>Model</a></td>
                   </tr>
                 );
