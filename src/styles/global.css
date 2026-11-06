@@ -604,3 +604,16 @@ details.analogy > p:first-of-type { margin-top: 0.1rem; }
 .bar-tag--buy { top: 0; color: var(--accent); }
 .bar-tag--now { bottom: 0; color: var(--ink); }
 .card-gap { margin: 0; font-size: 0.82rem; color: var(--ink-2); }
+
+/* Colour-keyed bar ends and key (6 Nov 2026) */
+.bar { background: var(--rule); }
+.bar::before, .bar::after { content: ''; position: absolute; top: -4px; width: 4px; height: 16px; border-radius: 2px; }
+.bar::before { left: -2px; background: var(--bad); }
+.bar::after { right: -2px; background: var(--good); }
+.bar-ends { align-items: flex-start; }
+.bar-ends small { display: block; font-weight: 400; color: var(--ink-3); }
+.bar-end--stop { color: var(--bad); font-weight: 600; }
+.bar-end--target { color: var(--good); font-weight: 600; text-align: right; }
+.bar-key { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; margin: 0 0 1rem; font-size: 0.8rem; color: var(--ink-2); }
+.bar-key .k::before { content: ''; display: inline-block; width: 4px; height: 12px; border-radius: 2px; margin-right: 0.4rem; vertical-align: -1px; }
+.k--stop::before { background: var(--bad); } .k--now::before { background: var(--ink); } .k--buy::before { background: var(--accent); } .k--target::before { background: var(--good); }
