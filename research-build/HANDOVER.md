@@ -6,7 +6,7 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 
 **★ NEXT ON THE JOURNAL (Tommy, 6 Nov 2026):** BWXT and microreactors (Max Hopkins's pointers). Tommy studies it FIRST, then a piece is drafted, and it is published only on his word. Brief: research-build/topics/BWXT-MICROREACTORS.md. After that, Tommy relearns the other 13 pieces one by one. No other new pieces until then.
 
-**★ LINKEDIN MINI POSTS (6 Nov 2026 evening):** 65 drafts, 5 per piece, in brand/linkedin-mini-posts.md (proposed Tue/Thu/Fri 08:30 SGT from 17 Nov, rotating across pieces). NOT SCHEDULED: Tommy reviews the text first (review PDF in jobs/interview prep/). On his OK: company page only, never the personal profile; schedule up to about 3 months ahead, record each as scheduled in that file. The Mon/Wed 11:30 teaser posts (40 to 54 in linkedin-posts.md) are unchanged.
+**★ LINKEDIN MINI POSTS (6 Nov 2026 evening, approved by Tommy):** 65 in brand/linkedin-mini-posts.md. M01 to M63 SCHEDULED on the company page, every weekday 08:30 SGT, Mon 9 Nov 2026 to Wed 3 Feb 2027 (verified in the scheduled list: 63 at 8:30 plus the 15 teaser posts at 11:30, 78 in all). M64 (Thu 4 Feb) and M65 (Fri 5 Feb) did NOT fit LinkedIn's ~3-month window: schedule them from about 7 to 8 Nov. Company page only, never the personal profile.
 
 **★ BWXT STUDY GUIDE:** research-build/topics/BWXT_MICROREACTORS_STUDY.md (and PDF in jobs/interview prep/). Tommy studies from it starting Sat 7 Nov. Still no piece until he says.
 

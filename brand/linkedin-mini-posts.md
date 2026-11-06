@@ -1,8 +1,8 @@
 # The Physical Layer: mini posts (65 drafts, 6 Nov 2026)
 
-**NOT SCHEDULED. Tommy approves the text first.** Company page only. Proposed slots: Tue, Thu, Fri 08:30 SGT from Tue 17 Nov (the Mon/Wed 11:30 teaser slots stay as they are). LinkedIn schedules about 3 months ahead, so posts after mid-February are scheduled in a later session. The "Source in the piece" line is for Tommy only and is never posted.
+**APPROVED by Tommy 6 Nov 2026: schedule all 65.** Company page only. Every weekday 08:30 SGT, Mon 9 Nov 2026 to Thu 4 Feb 2027 (fits LinkedIn's ~3-month window); the Mon/Wed 11:30 teaser posts stay as they are. The "Source in the piece" line is for Tommy only and is never posted.
 
-## M01 · Tue 17 Nov 2026 08:30 · the-queue-not-the-chip · Four years cut to one
+## M01 · Mon 09 Nov 2026 08:30 SGT · the-queue-not-the-chip · Four years cut to one · SCHEDULED (verified 6 Nov)
 Malaysia cut the time to connect a data centre to its grid from up to four years to one.
 
 Tenaga's Green Lane Pathway, launched on 8 August 2023, cut the implementation period from 36 to 48 months to 12, plant included. Campuses then connected faster than their halls could fill. In the year to June 2026 the power drawn roughly doubled, to 1,256 megawatts, while bookings grew by about 60%. The share drawn crept from about 17% to about 22%.
@@ -15,7 +15,7 @@ Source in the piece: "Malaysia cut the one clock a government controls, and book
 
 ---
 
-## M02 · Thu 19 Nov 2026 08:30 · contracted-energised-running · Back up less, switch on sooner
+## M02 · Tue 10 Nov 2026 08:30 SGT · contracted-energised-running · Back up less, switch on sooner · SCHEDULED (verified 6 Nov)
 Jane Street, the trading firm that builds its own AI halls, switched its chips on six months sooner by backing up less.
 
 It put generators behind only the core of the system, not the whole site. The reasoning: a training job can restart from its last saved point, so an outage costs hours. Waiting for a generator costs months.
@@ -27,7 +27,7 @@ Source in the piece: "The slow stages are bought first, because the electrical k
 
 ---
 
-## M03 · Fri 20 Nov 2026 08:30 · the-equipment-queue · Years of work
+## M03 · Wed 11 Nov 2026 08:30 SGT · the-equipment-queue · Years of work · SCHEDULED (verified 6 Nov)
 At 30 June 2026, Siemens Energy's grid business had about four years of work waiting. Eaton's electrical business in the Americas had about one.
 
 That is a simple sum: signed orders not yet delivered, divided by a year of sales. It gives the years the factories would need to clear the pile if no new order arrived. Think of a popular hairdresser. Counting her chairs tells you she is growing. Counting the weeks in her diary tells you whether you get a cut sooner. For grid gear, the diary runs in years.
@@ -40,7 +40,7 @@ Source in the piece: intro and "The makers are building to keep the equipment qu
 
 ---
 
-## M04 · Tue 24 Nov 2026 08:30 · building-your-own-power · Buyers pay to stand in the queue
+## M04 · Thu 12 Nov 2026 08:30 SGT · building-your-own-power · Buyers pay to stand in the queue · SCHEDULED (verified 6 Nov)
 Money paid up front to GE Vernova's Power segment, its turbine business, which also holds nuclear and hydro, doubled in nine months: from $16.5 billion at the end of 2025 to $33.2 billion at 30 September 2026.
 
 It is mainly down payments on turbine orders and reserved places in the factory line. It is like paying a large deposit to a restaurant booked years ahead, just to keep your table.
@@ -52,7 +52,7 @@ Source in the piece: "The maker is paid to keep the queue, not to clear it"; GE 
 
 ---
 
-## M05 · Thu 26 Nov 2026 08:30 · nuclear-for-ai · Crane borrowed a plug
+## M05 · Fri 13 Nov 2026 08:30 SGT · nuclear-for-ai · Crane borrowed a plug · SCHEDULED (verified 6 Nov)
 Restarting a reactor can be quicker than plugging it back into the grid.
 
 Crane, the former Three Mile Island Unit 1, closed in 2019 and lost its place on the grid. A fresh connection was tied to hundreds of miles of new lines, with full delivery no sooner than 31 December 2030. The reactor itself could generate in the second half of 2027. So Constellation borrowed a plug from its own fleet. On 1 June 2026 the federal energy regulator let 760 MW of grid rights move to Crane from Eddystone Units 3 and 4, two Constellation oil and gas units. That buys about three years.
@@ -65,7 +65,7 @@ Source in the piece: "The grid place sets a restart's date, and Crane borrowed o
 
 ---
 
-## M06 · Fri 27 Nov 2026 08:30 · powering-the-rack · 18,500 amps or 1,250
+## M06 · Mon 16 Nov 2026 08:30 SGT · powering-the-rack · 18,500 amps or 1,250 · SCHEDULED (verified 6 Nov)
 Delivering one megawatt at 54 volts takes about 18,500 amps. At 800 volts it takes about 1,250.
 
 Current, not power, sets the size of the copper. Current is power divided by voltage, so the same megawatt at 800 volts needs about a fifteenth of the current, and more current means thicker copper and more power lost as heat. Think of a hose: at low pressure it must be very wide to move a lot of water, at high pressure a thin one will do. Real systems add losses and safety margins, but that ratio is why the AI rack is changing voltage.
@@ -78,7 +78,7 @@ Source in the piece: "Only a higher voltage shrinks the copper"; the physics in 
 
 ---
 
-## M07 · Tue 01 Dec 2026 08:30 · heat-and-water · Ninety hairdryers in a fridge-sized box
+## M07 · Tue 17 Nov 2026 08:30 SGT · heat-and-water · Ninety hairdryers in a fridge-sized box · SCHEDULED (verified 6 Nov)
 One cabinet of Nvidia's current flagship AI chips draws about 140 kilowatts at peak. That is roughly ninety hairdryers in a box the size of a fridge.
 
 A traditional air-cooled cabinet draws 10 to 40 kW, on the tour of Jane Street's Texas site. Air cannot carry that much heat away, so the industry now runs liquid through a metal plate on each chip.
@@ -90,7 +90,7 @@ Source in the piece: "Rack power has outrun air, and the industry has already mo
 
 ---
 
-## M08 · Thu 03 Dec 2026 08:30 · memory-not-maths · A speed limit of about 110 words a second
+## M08 · Wed 18 Nov 2026 08:30 SGT · memory-not-maths · A speed limit of about 110 words a second · SCHEDULED (verified 6 Nov)
 However fast the maths, a 70 billion weight model on one chip tops out near 110 words a second in a single conversation.
 
 Here is the rough sum, my arithmetic. Stored at eight bits, the model fills about 70 gigabytes. At 8 terabytes a second, one full read from memory takes about nine milliseconds. The model is read once for every word it writes, so the memory sets the ceiling, not the maths. Picture a chef who chops instantly but waits nine milliseconds at the pantry hatch before every plate. The sum ignores overlap and caching, so treat it as a rough cap.
@@ -103,7 +103,7 @@ Source in the piece: "Every word the model writes rereads the whole model"; the 
 
 ---
 
-## M09 · Fri 04 Dec 2026 08:30 · the-chip-supply-chain · The factory clock and the chip clock
+## M09 · Thu 19 Nov 2026 08:30 SGT · the-chip-supply-chain · The factory clock and the chip clock · SCHEDULED (verified 6 Nov)
 A chip factory started today reaches full output around when Nvidia's third to fifth chip after Rubin would be on sale, if the current pace holds.
 
 The leading chipmaker's chief said in January 2026 that a new fab takes two to three years to build, and in April that it needs one to two more to ramp. Nvidia launched Blackwell in 2024, Blackwell Ultra in 2025 and Rubin in 2026. The chip runs on a one-year clock, the factory on a three-to-five-year one. So supply goes first to the buyers who commit first.
@@ -116,7 +116,7 @@ Source in the piece: "A slow step grows only as fast as a building"; the leading
 
 ---
 
-## M10 · Tue 08 Dec 2026 08:30 · ten-thousand-chips-one-thought · Five milliseconds apart
+## M10 · Fri 20 Nov 2026 08:30 SGT · ten-thousand-chips-one-thought · Five milliseconds apart · SCHEDULED (verified 6 Nov)
 Two AI campuses about 1,000 km apart can never be closer than 5 milliseconds.
 
 Light in fibre covers about 200 kilometres a millisecond. Microsoft's Fairwater campuses in Wisconsin and near Atlanta are about 1,000 km apart by my straight-line reckoning, so a message takes at least 5 ms one way. For chips that swap results to produce every word, that is an age. So only the least talkative work, such as averaging between copies of the model, can cross. I have found no Microsoft or lab statement that a named model was trained across both sites.
@@ -129,7 +129,7 @@ Source in the piece: "Distance sets the medium, and only light crosses a hall"; 
 
 ---
 
-## M11 · Thu 10 Dec 2026 08:30 · hong-kong-has-the-plug · A small load on a big system
+## M11 · Mon 23 Nov 2026 08:30 SGT · hong-kong-has-the-plug · A small load on a big system · SCHEDULED (verified 6 Nov)
 Hong Kong's data centres drew about 283 megawatts on average in the first nine months of 2026.
 
 That is my arithmetic from CLP Power's own figures: data centres were 6.6% of its 28,131 GWh of sales over those nine months. Set against CLP's highest local demand in 2025, 7,455 megawatts, the average draw is under 4% of the peak. Think of one extra kettle in a busy kitchen: you see it on the bill, not at the fuse box. The load is growing, though. CLP's sales to data centres rose 12.8% on a year earlier.
@@ -142,7 +142,7 @@ Source in the piece: "Hong Kong's grid builds to its data centres, so the chip l
 
 ---
 
-## M12 · Fri 11 Dec 2026 08:30 · america-rations-the-plug · Seventeen sites, then the gate shut
+## M12 · Tue 24 Nov 2026 08:30 SGT · america-rations-the-plug · Seventeen sites, then the gate shut · SCHEDULED (verified 6 Nov)
 By 20 August 2026, only 17 large sites in Texas had cleared every check except the final approval to switch on. Together they came to 6,608 MW.
 
 Then ERCOT, which runs most of the state's grid, paused that last approval for data centres and crypto mines of 75 MW or more while it audits every request. Its reports are due by 10 December 2026.
@@ -156,7 +156,7 @@ Source in the piece: "America is rationing the grid connection, not speeding it 
 
 ---
 
-## M13 · Tue 15 Dec 2026 08:30 · data-centres-in-space · A little hotter sheds far more heat
+## M13 · Wed 25 Nov 2026 08:30 SGT · data-centres-in-space · A little hotter sheds far more heat · SCHEDULED (verified 6 Nov)
 In space, heat leaves only by glowing off a radiator. And the heat a panel sheds rises with its temperature to the fourth power.
 
 Starcloud, a start-up, works out about 633 watts per square metre for a panel at 20°C. SpaceX assumes about 1,400, which on my arithmetic means a panel near 67°C.
@@ -168,7 +168,7 @@ Source in the piece: "Heat leaves only as light, so the radiator's temperature s
 
 ---
 
-## M14 · Thu 17 Dec 2026 08:30 · the-queue-not-the-chip · Paid for the plug, not the power
+## M14 · Thu 26 Nov 2026 08:30 SGT · the-queue-not-the-chip · Paid for the plug, not the power · SCHEDULED (verified 6 Nov)
 A Johor data centre can be switched on, let and earning while drawing little power.
 
 That is because the operator is paid for the plug, not the power. DayOne, one of Johor's largest operators, describes in its US listing filing of 5 October 2026 long take-or-pay contracts that pay for capacity, with power passed through at what customers actually consume. Like renting a parking space: you pay for the bay whether or not the car is in it.
@@ -181,7 +181,7 @@ Source in the piece: "A Johor hall earns on its plug, while the tenant's licence
 
 ---
 
-## M15 · Fri 18 Dec 2026 08:30 · contracted-energised-running · The later megawatt costs up to twice as much
+## M15 · Fri 27 Nov 2026 08:30 SGT · contracted-energised-running · The later megawatt costs up to twice as much · SCHEDULED (verified 6 Nov)
 Nebius, which rents out AI computing, prices its new deals at US$20 to 25 million a megawatt a year. Its 2026 base is US$12 million.
 
 Buyers also pay up front to hold their place. About 70% of the deals it signed in the second quarter of 2026 included prepayments covering 50 to 60% of the related capital spending.
@@ -193,7 +193,7 @@ Source in the piece: "Buyers pay only for the last stage, and the later megawatt
 
 ---
 
-## M16 · Tue 22 Dec 2026 08:30 · the-equipment-queue · More than half again in under two years
+## M16 · Mon 30 Nov 2026 08:30 SGT · the-equipment-queue · More than half again in under two years · SCHEDULED (verified 6 Nov)
 Siemens Energy's grid order backlog grew from €33bn in September 2024 to €51bn in June 2026.
 
 That is more than half again in under two years, while the industry was announcing new factories. But a plant takes two to three years from announcement to first product, so most of the new floor space arrives from 2027 on. Until those plants run, every extra order can only lengthen the queue.
@@ -206,7 +206,7 @@ Source in the piece: "By Siemens Energy's own count, demand still outruns every 
 
 ---
 
-## M17 · Thu 24 Dec 2026 08:30 · building-your-own-power · Even the bigger factory stays four years behind
+## M17 · Tue 01 Dec 2026 08:30 SGT · building-your-own-power · Even the bigger factory stays four years behind · SCHEDULED (verified 6 Nov)
 GE Vernova plans to raise gas turbine output from 20 GW a year now to 24 GW in 2028 and 30 GW in 2030.
 
 Even at 30 GW a year, the 122 GW it held under contract at the end of September would still be four years of work.
@@ -218,7 +218,7 @@ Source in the piece: "The maker is paid to keep the queue, not to clear it"; GE 
 
 ---
 
-## M18 · Fri 25 Dec 2026 08:30 · nuclear-for-ai · A held plug is not a quick restart
+## M18 · Wed 02 Dec 2026 08:30 SGT · nuclear-for-ai · A held plug is not a quick restart · SCHEDULED (verified 6 Nov)
 Keeping a reactor's place on the grid makes a restart possible. It does not make it quick.
 
 Palisades, an 800 MW plant in Michigan, kept its place on the Midwest grid to 1 March 2027 and reconnected its switchyard on 11 September 2026. Then fuel loading stopped when a fuel assembly tilted. Holtec, which is restarting it, recovered the assembly by 21 October and gave no new date. Its power contracts can be ended if the plant is not running by March 2027. The plug was ready. The reactor set the pace.
@@ -231,7 +231,7 @@ Source in the piece: "The grid place sets a restart's date, and Crane borrowed o
 
 ---
 
-## M19 · Tue 29 Dec 2026 08:30 · powering-the-rack · Tenfold, then tenfold again
+## M19 · Thu 03 Dec 2026 08:30 SGT · powering-the-rack · Tenfold, then tenfold again · SCHEDULED (verified 6 Nov)
 Rack power has already risen tenfold within one wiring design. The next step is tenfold again.
 
 Google's 48 volt design scaled from 10 kW racks to 100 kW. Vertiv's reference design for Nvidia's GB200 NVL72 rack runs up to 132 kW. Nvidia says 54 volt racks start "to hit physical limits" above 200 kW, and its next rack, Kyber, is to house 576 Rubin Ultra GPUs by 2027, at around a megawatt. It is a house wired for a kettle and a few lamps being asked to run a heat pump, an oven and a car charger.
@@ -244,7 +244,7 @@ Source in the piece: "800 volts reaches the rack years before the building, so e
 
 ---
 
-## M20 · Thu 31 Dec 2026 08:30 · heat-and-water · Most of a data centre's water is spent at the power station
+## M20 · Fri 04 Dec 2026 08:30 SGT · heat-and-water · Most of a data centre's water is spent at the power station · SCHEDULED (verified 6 Nov)
 American data centres consumed about 66 billion litres of water on site in 2023. The power stations feeding them consumed "nearly 800 billion liters".
 
 That is about twelve to one, on estimates from Lawrence Berkeley National Laboratory, a US government lab. Both figures count water lost for good, mostly as vapour.
@@ -256,7 +256,7 @@ Source in the piece: "Most of a hall's water is spent at the power station, so t
 
 ---
 
-## M21 · Fri 01 Jan 2027 08:30 · memory-not-maths · Every conversation needs its own memory
+## M21 · Mon 07 Dec 2026 08:30 SGT · memory-not-maths · Every conversation needs its own memory · SCHEDULED (verified 6 Nov)
 One conversation with a small AI model can take about 2 gigabytes of memory, just to keep track of itself.
 
 That is Nvidia's own example: one 4,096-token conversation on a 7 billion weight model needs about 2 gigabytes of working memory, called the KV cache. So memory sets two limits, not one. Bandwidth, how fast the memory delivers, sets how quickly each answer comes. Capacity, how much it holds, sets how many conversations fit on one chip at once. In a kitchen, the hatch sets how fast plates come out, and the counter space sets how many orders you can keep going.
@@ -269,7 +269,7 @@ Source in the piece: "Every word the model writes rereads the whole model"; Nvid
 
 ---
 
-## M22 · Tue 05 Jan 2027 08:30 · the-chip-supply-chain · Six years from land to film
+## M22 · Tue 08 Dec 2026 08:30 SGT · the-chip-supply-chain · Six years from land to film · SCHEDULED (verified 6 Nov)
 Ajinomoto bought the land for its next chip film plant in May 2026. The plant is due to operate in fiscal 2032.
 
 That is six to nearly seven years from land to output, for the insulating film inside chip packages. Money buys the building, but not the time to build it. Think of a kitchen refit: cupboards and taps come from any shop this week, but the stone worktop comes from one cutter with one saw, and a second saw means building a new workshop.
@@ -282,7 +282,7 @@ Source in the piece: intro and "A slow step grows only as fast as a building"; A
 
 ---
 
-## M23 · Thu 07 Jan 2027 08:30 · ten-thousand-chips-one-thought · Copper inside, light outside
+## M23 · Wed 09 Dec 2026 08:30 SGT · ten-thousand-chips-one-thought · Copper inside, light outside · SCHEDULED (verified 6 Nov)
 Inside one Nvidia rack, 72 chips are tied together so tightly they act as one machine.
 
 Nvidia's GB200 NVL72 joins its 72 GPUs over copper at 130 TB/s. But copper fades within a few metres at today's speeds. So between racks the signal becomes light, through a plug the size of a chewing gum packet at each end of every fibre, holding a laser, a detector and a translator chip. Distance, not fashion, picks the medium.
@@ -295,7 +295,7 @@ Source in the piece: intro and "Distance sets the medium, and only light crosses
 
 ---
 
-## M24 · Fri 08 Jan 2027 08:30 · hong-kong-has-the-plug · Three dates, and the utility's comes first
+## M24 · Thu 10 Dec 2026 08:30 SGT · hong-kong-has-the-plug · Three dates, and the utility's comes first · SCHEDULED (verified 6 Nov)
 Ask three parties when Hong Kong's AI megasite opens and you get three answers. The power company's is the earliest.
 
 CLP, which is building the power supply for Sandy Ridge, targets operations in phases from mid-2027. Range, the winning bidder, expects its park to be delivered within 2028. The government told legislators on 22 April 2026 to expect operations in 2029. If the grid were the thing holding Hong Kong back, it would show up first in these dates. It does not. In Johor and Singapore, by contrast, the connection is the scarce thing.
@@ -308,7 +308,7 @@ Source in the piece: "At Sandy Ridge, the utility gives the earliest date"; CLP 
 
 ---
 
-## M25 · Tue 12 Jan 2027 08:30 · america-rations-the-plug · "Interim" can mean seven years
+## M25 · Fri 11 Dec 2026 08:30 SGT · america-rations-the-plug · "Interim" can mean seven years · SCHEDULED (verified 6 Nov)
 The Southwest Power Pool, which runs the grid across America's central states, accepted a cut-first tier called CHILLS on 5 June 2026. A site gets power as available, for up to seven years.
 
 That is the trade on offer: switch on sooner, but the grid may cut you first while the new wires are built. And the wires wait on gear: Siemens Energy's grid business holds about four years of work, Hitachi Energy about three.
@@ -320,7 +320,7 @@ Source in the piece: "Every organised grid is adding a plug it may cut beneath t
 
 ---
 
-## M26 · Thu 14 Jan 2027 08:30 · data-centres-in-space · The fare to orbit, per kilowatt
+## M26 · Mon 14 Dec 2026 08:30 SGT · data-centres-in-space · The fare to orbit, per kilowatt · SCHEDULED (verified 6 Nov)
 Google estimates today's launch price at about $3,600 a kilogram, on a reusable Falcon 9.
 
 At that price, spread over a five-year life, a Starlink-class satellite comes to $14,700 per kilowatt per year in launch cost alone. An American AI hall's power bill, on Google's own range, is $570 to $3,000 per kilowatt per year.
@@ -332,7 +332,7 @@ Source in the piece: "At today's launch price, orbital power costs several times
 
 ---
 
-## M27 · Fri 15 Jan 2027 08:30 · the-queue-not-the-chip · Who pays for idle wires
+## M27 · Tue 15 Dec 2026 08:30 SGT · the-queue-not-the-chip · Who pays for idle wires · SCHEDULED (verified 6 Nov)
 In Malaysia, a new high voltage customer that draws well below what it declared pays a charge on the gap.
 
 Tenaga charges RM8.50 per kilowatt of shortfall below 85% of phased declared demand, in years one to four. But the shared network behind a waiting hall stays in the tariff that every customer pays. So the campus carries only part of the cost of the wires built for it. Malaysia's energy regulator will study a user-pays basis for 2028 to 2032, the energy minister told Parliament in October 2026.
@@ -345,7 +345,7 @@ Source in the piece: "A Johor hall earns on its plug..." and the "Who pays for t
 
 ---
 
-## M28 · Tue 19 Jan 2027 08:30 · contracted-energised-running · Same revenue, half the megawatts
+## M28 · Wed 16 Dec 2026 08:30 SGT · contracted-energised-running · Same revenue, half the megawatts · SCHEDULED (verified 6 Nov)
 Divide Nebius's revenue by its price per megawatt and you get the megawatts at work. But which price?
 
 On my arithmetic, US$9.6 billion of annualised revenue is 800 MW at its 2026 base of US$12 million a megawatt a year. At its new-deal prices of US$20 to 25 million, the same revenue is only about 384 to 480 MW.
@@ -357,7 +357,7 @@ Source in the piece: "Even at Nebius, signed power runs five times ahead of conn
 
 ---
 
-## M29 · Thu 21 Jan 2027 08:30 · the-equipment-queue · A long queue has a cost
+## M29 · Thu 17 Dec 2026 08:30 SGT · the-equipment-queue · A long queue has a cost · SCHEDULED (verified 6 Nov)
 A long order book is not free money. In the second quarter of 2026, Eaton's Electrical Americas margin fell two points year on year, to 27.5%.
 
 The reason: higher metal costs met orders that had been priced months earlier. When a customer books today for delivery later, the maker carries the risk that its materials cost more by the time it builds. Like a builder who agreed a fixed price in spring and buys the timber in autumn.
@@ -370,7 +370,7 @@ Source in the piece: "The makers size their factories to the order book, not to 
 
 ---
 
-## M30 · Fri 22 Jan 2027 08:30 · building-your-own-power · The turbine waits on its blades
+## M30 · Fri 18 Dec 2026 08:30 SGT · building-your-own-power · The turbine waits on its blades · SCHEDULED (verified 6 Nov)
 GE Vernova's next step up in output depends on parts it does not make. Its chief executive said he could "see clearly the castings and forgings arriving in '27" for the 2028 step.
 
 The hottest turbine blades are cast by specialists. Howmet Aerospace, which calls itself "the largest manufacturer of gas turbine blades in the world", grew gas turbine revenue 45% in the third quarter of 2026.
@@ -382,7 +382,7 @@ Source in the piece: "The maker is paid to keep the queue, not to clear it"; GE 
 
 ---
 
-## M31 · Tue 26 Jan 2027 08:30 · nuclear-for-ai · New is not the same as slow
+## M31 · Mon 21 Dec 2026 08:30 SGT · nuclear-for-ai · New is not the same as slow · SCHEDULED (verified 6 Nov)
 A brand new reactor can keep pace with the old ones, as long as it burns ordinary fuel.
 
 In Canada, Ontario Power Generation is building the first 300 MW BWRX-300, a small reactor designed by GE Vernova, beside its existing Darlington nuclear station. Its new grid line is only 22 km, inside an existing corridor. It was licensed to build on 4 April 2025, and GE Vernova spoke of operation by the end of 2029, the same years as the American restarts. What divides the fast projects from the slow is not their age. It is the fuel and the plug.
@@ -395,7 +395,7 @@ Source in the piece: "Ordinary fuel, not age, divides the fast projects from the
 
 ---
 
-## M32 · Thu 28 Jan 2027 08:30 · powering-the-rack · Less copper per watt, not less copper
+## M32 · Tue 22 Dec 2026 08:30 SGT · powering-the-rack · Less copper per watt, not less copper · SCHEDULED (verified 6 Nov)
 Moving a row of AI racks from 415 volts AC to 800 volts DC carries 85% more power through the same size of conductor, and cuts copper by 45%.
 
 Those are Nvidia's own figures, from May 2025. But less copper for each unit of power does not mean less copper overall. Power per rack is rising faster than the saving. It is like a car that becomes more efficient just as you start driving it much further: the fuel bill still goes up.
@@ -408,7 +408,7 @@ Source in the piece: "Only a higher voltage shrinks the copper"; Nvidia Technica
 
 ---
 
-## M33 · Fri 29 Jan 2027 08:30 · heat-and-water · Going dry can cost water elsewhere
+## M33 · Wed 23 Dec 2026 08:30 SGT · heat-and-water · Going dry can cost water elsewhere · SCHEDULED (verified 6 Nov)
 Drop the cooling tower from a midsize air-cooled hall and it saves about 2.9 litres of water per kWh on the roof. But it then needs more electricity, and that spends about 1.4 litres again at the power station.
 
 In a large liquid-cooled hall, dropping the tower saves about 2 litres and keeps it, because power use barely moves.
@@ -420,7 +420,7 @@ Source in the piece: "Most of a hall's water is spent at the power station, so t
 
 ---
 
-## M34 · Tue 02 Feb 2027 08:30 · memory-not-maths · Memory is now the headline number
+## M34 · Thu 24 Dec 2026 08:30 SGT · memory-not-maths · Memory is now the headline number · SCHEDULED (verified 6 Nov)
 Nvidia's H100 of 2022 carried 80 gigabytes of memory. Rubin, its 2026 chip, carries 288.
 
 That is 3.6 times since the H100, and AMD's engineering projection for its next chip, the MI400, is 432 gigabytes. Memory per chip has become the headline specification, the number chips are sold on, like a van sold on its load space rather than its engine. AMD, Nvidia's nearest GPU rival, says so on its own slide: "Highest memory bandwidth & capacity drives performance".
@@ -433,7 +433,7 @@ Source in the piece: "HBM4 held the line, and memory became the headline specifi
 
 ---
 
-## M35 · Thu 04 Feb 2027 08:30 · the-chip-supply-chain · Bigger loaves, same ovens
+## M35 · Fri 25 Dec 2026 08:30 SGT · the-chip-supply-chain · Bigger loaves, same ovens · SCHEDULED (verified 6 Nov)
 Seagate shipped 695 exabytes of data centre hard drives in its year to 3 July 2026, up from 497. It did not do it by making many more drives.
 
 It meets that growth, in its own words, "by increasing capacity per drive rather than increasing drive unit production". In the December quarter of 2025 it shipped 26% more exabytes on a similar number of units. Like a bakery that cannot add ovens, so it bakes bigger loaves. Seagate is one of only three hard drive makers.
@@ -446,7 +446,7 @@ Source in the piece: "What would prove me wrong" and the figures section; Seagat
 
 ---
 
-## M36 · Fri 05 Feb 2027 08:30 · ten-thousand-chips-one-thought · The laser is the scarce part
+## M36 · Mon 28 Dec 2026 08:30 SGT · ten-thousand-chips-one-thought · The laser is the scarce part · SCHEDULED (verified 6 Nov)
 In a year, the gross margin of Lumentum, a maker of the lasers in AI network plugs, rose from 33.3% to 47.4%.
 
 That is what a hard-to-make part looks like. Data centre lasers are grown on indium phosphide, small and brittle wafers that few factories can yield well. On 11 August 2026 Lumentum said it was still shipping behind demand, and the margin rose partly on higher prices. More output needs a new fab: its Greensboro, North Carolina factory expects first revenue in early 2028.
@@ -459,7 +459,7 @@ Source in the piece: "Every speed step buys the switch, the translator and the l
 
 ---
 
-## M37 · Tue 09 Feb 2027 08:30 · hong-kong-has-the-plug · Three flagships behind
+## M37 · Tue 29 Dec 2026 08:30 SGT · hong-kong-has-the-plug · Three flagships behind · SCHEDULED (verified 6 Nov)
 When Sandy Ridge's first phase runs, the best Nvidia chip it can hope for will sit at least three flagships behind.
 
 US rules review chips up to the class of Nvidia's H200, a chip of 2024, case by case when shipped from America to a user in Hong Kong. Anything better is presumed refused. Meanwhile Nvidia has launched a new flagship about every year: Blackwell in 2024, Blackwell Ultra in 2025, Rubin in 2026. Rubin has four times the H200's memory bandwidth. It is like opening a new garage in 2027 under a rule that caps you at a car from 2024.
@@ -472,7 +472,7 @@ Source in the piece: "The chip licence follows the hall's address, and its ceili
 
 ---
 
-## M38 · Thu 11 Feb 2027 08:30 · america-rations-the-plug · The last megawatt sets everyone's price
+## M38 · Wed 30 Dec 2026 08:30 SGT · america-rations-the-plug · The last megawatt sets everyone's price · SCHEDULED (verified 6 Nov)
 PJM, which runs the grid from Chicago to Virginia, pays power stations to stand ready for future years, and the last megawatt needed sets the price for all. That price has sat at the cap for three auctions running.
 
 For 2024/25 it was $28.92 per megawatt a day. For 2028/29 it was $325, the cap.
@@ -484,7 +484,7 @@ Source in the piece: "Households pay for the power stations the rationing does n
 
 ---
 
-## M39 · Fri 12 Feb 2027 08:30 · data-centres-in-space · SpaceX's own numbers fall short of its goal
+## M39 · Thu 31 Dec 2026 08:30 SGT · data-centres-in-space · SpaceX's own numbers fall short of its goal · SCHEDULED (verified 6 Nov)
 SpaceX targets 100 kilowatts of computing for every tonne it launches. Its own stated designs do not reach it yet.
 
 Its web page for AI1, its first AI satellite, gives "75 kW / ton", a quarter short if read as compute per tonne launched. Its finance chief's "About 5 megawatts per launch", at the 100 tonnes a launch SpaceX targets over time, is 50 kW per tonne: half the goal.
@@ -496,7 +496,7 @@ Source in the piece: "Every kilogram is a launch bill, and no design yet meets 1
 
 ---
 
-## M40 · Tue 16 Feb 2027 08:30 · the-queue-not-the-chip · A licensed number of megawatts
+## M40 · Fri 01 Jan 2027 08:30 SGT · the-queue-not-the-chip · A licensed number of megawatts · SCHEDULED (verified 6 Nov)
 Singapore is about to put a number on every large data centre's licence.
 
 Under the Digital Infrastructure Bill, debated on 6 and 7 October 2026, any hall with 3 megawatts or more of critical IT load needs a licence stating that load, own-use halls included. The regulator can enforce by a fine or by cutting the licensed load. About 70 data centres are in scope, and the Act is expected in force in 2027. So the ration now reaches halls already running, not just new ones.
@@ -509,7 +509,7 @@ Source in the piece: "Singapore rations the plug, and from 2027 the ration reach
 
 ---
 
-## M41 · Thu 18 Feb 2027 08:30 · contracted-energised-running · A late hall earns nothing
+## M41 · Mon 04 Jan 2027 08:30 SGT · contracted-energised-running · A late hall earns nothing · SCHEDULED (verified 6 Nov)
 Nebius's US$17.4 billion agreement with Microsoft is "subject to the satisfaction of the deployment and availability of the GPU Services".
 
 In plain terms, Microsoft pays for chips that are installed and running, not for a building with the power on. If Nebius misses a delivery date after a grace period and cannot offer other capacity, Microsoft may end that service, and late delivery carries damages.
@@ -521,7 +521,7 @@ Source in the piece: "Buyers pay only for the last stage, and the later megawatt
 
 ---
 
-## M42 · Fri 19 Feb 2027 08:30 · the-equipment-queue · Three or four chip generations
+## M42 · Tue 05 Jan 2027 08:30 SGT · the-equipment-queue · Three or four chip generations · SCHEDULED (verified 6 Nov)
 A transformer ordered today joins a pile of work that would take three or four AI chip generations to clear.
 
 Nvidia has launched a new flagship about once a year: Blackwell in 2024, Blackwell Ultra in 2025, Rubin in 2026. The big grid makers have three to four years of signed orders on their books. That is backlog over a year of sales, not a quoted lead time, and a new order need not wait behind the whole pile. But a data centre's real start date is set when its transformer is booked, years before its chips are on sale.
@@ -534,7 +534,7 @@ Source in the piece: "The transformer is booked before the chip it will power is
 
 ---
 
-## M43 · Tue 23 Feb 2027 08:30 · building-your-own-power · An old coal plant's pollution is worth something
+## M43 · Wed 06 Jan 2027 08:30 SGT · building-your-own-power · An old coal plant's pollution is worth something · SCHEDULED (verified 6 Nov)
 Homer City is building up to 4,678 MW of gas plant on a Pennsylvania coal site. It avoided a full air review by netting.
 
 The new plant adds 1,142.8 tons a year of NOx, a smog-forming gas. Retiring the old coal boilers removed 2,031.8 tons. The cut outweighs the rise, so the permit got easier.
@@ -548,7 +548,7 @@ Source in the piece: "The permit and the pipe run on clocks of their own"; Penns
 
 ---
 
-## M44 · Thu 25 Feb 2027 08:30 · nuclear-for-ai · Sold at 50, permitted at 35 thermal
+## M44 · Thu 07 Jan 2027 08:30 SGT · nuclear-for-ai · Sold at 50, permitted at 35 thermal · SCHEDULED (verified 6 Nov)
 A reactor sold to deliver up to 50 megawatts of electricity is, so far, permitted as two test reactors of 35 thermal megawatts each.
 
 TVA agreed on 18 August 2025 to buy up to 50 MW from Kairos Power's Hermes 2 at Oak Ridge from 2030. But Kairos's permits cover two test reactors of 35 thermal megawatts each, a measure of heat, which cannot make 50 electrical megawatts. The permits were issued under the research section of the law, which caps energy sales at half the plant's yearly running costs. The NRC has not ruled on a larger reactor.
@@ -561,7 +561,7 @@ Source in the piece: "The advanced reactors have permits and buyers, and no fuel
 
 ---
 
-## M45 · Fri 26 Feb 2027 08:30 · powering-the-rack · Version 0.3
+## M45 · Fri 08 Jan 2027 08:30 SGT · powering-the-rack · Version 0.3 · SCHEDULED (verified 6 Nov)
 The specification for the solid-state transformer, the electronic part that would bring 800 volts to a whole building, had reached only version 0.3 by July 2026.
 
 Nvidia has dated the first steps: a power rack beside the computers in the second half of 2026, and a row power centre of up to 2 MW per row in 2027. The power block that would convert power for a whole hall is described, but carries no date. My test: if a hall of 10 MW or more goes into service before 2028 fed by a central rectifier or solid-state transformer, the building did not wait for the rack, and I am wrong.
@@ -574,7 +574,7 @@ Source in the piece: "Nvidia's own calendar puts the rack first and leaves the b
 
 ---
 
-## M46 · Tue 02 Mar 2027 08:30 · heat-and-water · The same plug, 60% more computing
+## M46 · Mon 11 Jan 2027 08:30 SGT · heat-and-water · The same plug, 60% more computing · SCHEDULED (verified 6 Nov)
 Under a fixed grid allowance, a hall's cooling decides how much computing the plug can run.
 
 PUE is total power entering the building over power reaching the computers. In Lawrence Berkeley National Laboratory's simulations, a large liquid-cooled hall with a dry cooler sits at about 1.1. A midsize air-cooled hall with no water on site sits at about 1.8.
@@ -586,7 +586,7 @@ Source in the piece: "Most of a hall's water is spent at the power station, so t
 
 ---
 
-## M47 · Thu 04 Mar 2027 08:30 · memory-not-maths · The bottom of the memory tower became a processor chip
+## M47 · Tue 12 Jan 2027 08:30 SGT · memory-not-maths · The bottom of the memory tower became a processor chip · SCHEDULED (verified 6 Nov)
 Samsung's chip foundry now credits its results to a part of the memory stack.
 
 At the foot of every tower of high-bandwidth memory sits a base die, the chip that talks to the processor. From HBM4 it is moving to the logic processes used to make processors. Samsung's foundry credited its earnings to "HBM base-die demand" in July 2026 and "HBM base-die sales growth" in October, on a 4 nanometre process. SK Hynix planned in April 2024 to make its HBM4 base die on a leading foundry's advanced logic process. The humble floor of the memory tower is now made like a processor.
@@ -599,7 +599,7 @@ Source in the piece: "The base die became a logic chip, made in a foundry"; Sams
 
 ---
 
-## M48 · Fri 05 Mar 2027 08:30 · the-chip-supply-chain · Two years added in nine months
+## M48 · Wed 13 Jan 2027 08:30 SGT · the-chip-supply-chain · Two years added in nine months · SCHEDULED (verified 6 Nov)
 In nine months of 2026, Seagate's sold-ahead horizon moved out by two whole years.
 
 In January it had allocated its data centre drive supply through 2026. By October, the vast majority was allocated through 2028. Micron had agreed all its 2026 stacked memory by December 2025, and the vast majority of its 2027 by 30 September 2026. Through 2026 these makers did not just stay booked. They kept selling further ahead.
@@ -612,7 +612,7 @@ Source in the piece: "The only maker of the scanner says it cannot meet two year
 
 ---
 
-## M49 · Tue 09 Mar 2027 08:30 · ten-thousand-chips-one-thought · Glass grows with campuses, not speed
+## M49 · Thu 14 Jan 2027 08:30 SGT · ten-thousand-chips-one-thought · Glass grows with campuses, not speed · SCHEDULED (verified 6 Nov)
 The data centre side of Corning's optical sales rose 84% in the third quarter of 2026, and not because chips got faster.
 
 Fibre only carries light. It does not care whether the plug at each end runs at 800 gigabits or 1.6 terabits, so it usually stays when the plugs are replaced. It grows when new campuses are built. Meta agreed in January 2026 to buy up to US$6 billion of fibre and cable from Corning through 2030, and Amazon signed in June. Like a house: you change the bulbs, not the wires in the walls.
@@ -625,7 +625,7 @@ Source in the piece: "The glass and the mirrors are bought once"; Corning result
 
 ---
 
-## M50 · Thu 11 Mar 2027 08:30 · hong-kong-has-the-plug · Hong Kong over Johor, for one class of chip
+## M50 · Fri 15 Jan 2027 08:30 SGT · hong-kong-has-the-plug · Hong Kong over Johor, for one class of chip · SCHEDULED (verified 6 Nov)
 On my reading of the US rule text, an H200-class chip has an easier path into a Chinese company's hall in Hong Kong than into the same company's hall in Johor.
 
 Since 15 January 2026, that class shipped straight from America to a user in Hong Kong is reviewed case by case. The same shipment to a China-headquartered tenant's hall in Johor is presumed refused. The door is heavy, though. The exporter must certify that US supply is sufficient and that exports to China and Macau stay within 50% of what was shipped for use in America. Nvidia said on 26 August 2026 that its Hopper shipments to China were less than 1% of its data centre revenue.
@@ -636,7 +636,7 @@ Source in the piece: "The chip licence follows the hall's address, and its ceili
 
 ---
 
-## M51 · Fri 12 Mar 2027 08:30 · america-rations-the-plug · Hold on for one full second
+## M51 · Mon 18 Jan 2027 08:30 SGT · america-rations-the-plug · Hold on for one full second · SCHEDULED (verified 6 Nov)
 A data centre is built never to lose power, so at the first flicker it runs to its own generators. PJM now wants the opposite.
 
 Its proposal of 6 October 2026 says sites of 50 MW or more must stay connected through set dips and swells, including a full second at up to 120% of normal voltage. Switching to backup does not "by itself" count as compliance.
@@ -648,7 +648,7 @@ Source in the piece: "One morning's 3,800 MW drop made holding on a condition of
 
 ---
 
-## M52 · Tue 16 Mar 2027 08:30 · data-centres-in-space · The plan's own risk: cheaper power on the ground
+## M52 · Tue 19 Jan 2027 08:30 SGT · data-centres-in-space · The plan's own risk: cheaper power on the ground · SCHEDULED (verified 6 Nov)
 The case for data centres in orbit rests on the queue for power on the ground. SpaceX says so itself.
 
 Its risk factors warn that if "advances in nuclear energy" or similar "alleviate infrastructure constraints", the viability of its orbital compute "may be materially diminished". Starcloud's filing says the buildout of terrestrial energy in the western world "has not kept pace with the demand for AI".
@@ -660,7 +660,7 @@ Source in the piece: "The sun has no queue, which is why the designs go up"; Spa
 
 ---
 
-## M53 · Thu 18 Mar 2027 08:30 · the-queue-not-the-chip · Same draw, two answers
+## M53 · Wed 20 Jan 2027 08:30 SGT · the-queue-not-the-chip · Same draw, two answers · SCHEDULED (verified 6 Nov)
 Malaysia's data centres use 58.5% of the power they contracted, or about 23% of what they booked. Same draw, two answers.
 
 On 28 October 2026 Malaysia's Deputy Prime Minister said data centres had contracted 2,346 megawatts by August 2026 and used about 1,374, or 58.5%. Against the 6 gigawatts booked at 45 operating sites, which ministers gave on 13 October, the same draw is about 23%. Before trusting any share, ask what it is a share of.
@@ -673,7 +673,7 @@ Source in the piece: "What would prove me wrong"; Dewan Rakyat Hansard (28 Octob
 
 ---
 
-## M54 · Fri 19 Mar 2027 08:30 · contracted-energised-running · Even the fast case took two years
+## M54 · Thu 21 Jan 2027 08:30 SGT · contracted-energised-running · Even the fast case took two years · SCHEDULED (verified 6 Nov)
 Abilene, Texas, is the fastest AI campus the piece could date. Work on the first two buildings began in June 2024.
 
 The first racks of Nvidia GB200 chips arrived in June 2025 and the first phase was running by 30 September 2025. By 10 September 2026 Oracle said six of eight buildings, 618 MW, were with its customer, as transcribed from its results call.
@@ -685,7 +685,7 @@ Source in the piece: "When the chips come with the power, delivery follows withi
 
 ---
 
-## M55 · Tue 23 Mar 2027 08:30 · the-equipment-queue · Shorter install, same wait
+## M55 · Fri 22 Jan 2027 08:30 SGT · the-equipment-queue · Shorter install, same wait · SCHEDULED (verified 6 Nov)
 Some buyers are getting round part of the equipment queue by having the power room built in a factory. It shortens the job, not the wait.
 
 A data centre cannot switch on without switchgear, and every piece must be installed and tested on site by electricians, who are scarce too. Schneider Electric sells more power rooms built and tested in its own factories, which cuts the work on site. That shortens the install. It does not shorten the order book.
@@ -698,7 +698,7 @@ Source in the piece: intro and "What would prove me wrong"; Schneider Electric r
 
 ---
 
-## M56 · Thu 25 Mar 2027 08:30 · building-your-own-power · The turbine arrives as the lease ends
+## M56 · Mon 25 Jan 2027 08:30 SGT · building-your-own-power · The turbine arrives as the lease ends · SCHEDULED (verified 6 Nov)
 Meta's lease on its Hyperion AI campus in Louisiana runs from 2029 for four years, renewable up to 20.
 
 A heavy gas turbine slot GE Vernova sells now ships in 2032. It then needs about 18 months on site, so it makes power no earlier than 2033.
@@ -710,7 +710,7 @@ Source in the piece: "Every route lands years out, and a turbine ordered today l
 
 ---
 
-## M57 · Fri 26 Mar 2027 08:30 · nuclear-for-ai · The Russian gap can be bridged
+## M57 · Tue 26 Jan 2027 08:30 SGT · nuclear-for-ai · The Russian gap can be bridged · SCHEDULED (verified 6 Nov)
 Russia sold 26% of the enrichment American reactor owners bought in 2025, and the waivers that let them keep buying end by 1 January 2028.
 
 That sounds like a cliff. It is a gap that can be bridged. US-origin supply was 23%. Urenco's Eunice plant in New Mexico adds about a fifth of the Russian volume by early 2027. And at the end of 2025 owners held 118 million pounds of uranium, against 40.9 million loaded that year. Like a household with a full larder when one shop shuts. The gap that cannot be bridged for now is HALEU, the richer fuel the new reactors need.
@@ -723,7 +723,7 @@ Source in the piece: "What would prove me wrong" (the Eunice paragraph); EIA (Au
 
 ---
 
-## M58 · Tue 30 Mar 2027 08:30 · powering-the-rack · Where the evidence moved against me
+## M58 · Wed 27 Jan 2027 08:30 SGT · powering-the-rack · Where the evidence moved against me · SCHEDULED (verified 6 Nov)
 One piece of evidence for my September claim on Vertiv has gone: service revenue.
 
 Vertiv's reported growth was swollen by acquisitions. Stripping those out, services and spares grew 18.1% in the third quarter of 2026, against 63.6% for products. Its adjusted operating margin did widen 2.9 points to 25.2%, with orders more than doubling, but that fits a business spreading its costs over far more sales as well as one selling richer gear. So the claim now rests on Vertiv's own estimate of what it can sell into each megawatt, up about 10 to 15% on its earlier range.
@@ -736,7 +736,7 @@ Source in the piece: "Rack first puts more gear in every megawatt" and the claim
 
 ---
 
-## M59 · Thu 01 Apr 2027 08:30 · heat-and-water · Liquid cooling makes going dry cheap, not automatic
+## M59 · Thu 28 Jan 2027 08:30 SGT · heat-and-water · Liquid cooling makes going dry cheap, not automatic · SCHEDULED (verified 6 Nov)
 Most people assume AI halls, now moving to liquid, use less water. On a US government lab's model, in 2023 they used more.
 
 Lawrence Berkeley National Laboratory puts AI specialised halls, a mix of liquid and air, at 0.61 litres of water per kWh, nearly twice the 0.32 of hyperscale halls, even with the best PUE, 1.14. Many still run cooling towers where water is plentiful.
@@ -750,7 +750,7 @@ Source in the piece: "What would prove me wrong"; Lawrence Berkeley National Lab
 
 ---
 
-## M60 · Fri 02 Apr 2027 08:30 · memory-not-maths · Plants for years, designs for one generation
+## M60 · Fri 29 Jan 2027 08:30 SGT · memory-not-maths · Plants for years, designs for one generation · SCHEDULED (verified 6 Nov)
 SK Hynix's HBM packaging plant in Indiana starts mass production in the second half of 2028. Nvidia has launched a new flagship every year since 2024.
 
 That mismatch is the risk, on my reading. Memory plants are committed years ahead. SK Hynix's P&T7 plant in Cheongju packages by February 2028, and Micron's Singapore packaging plant starts output in early 2027. A line planned today will run stacks for chips a generation or two after Rubin, and from HBM4E part of what it builds is set by one buyer's design. For now the shortage hides that: SK Hynix expects demand to outrun supply "through 2030".
@@ -763,7 +763,7 @@ Source in the piece: "The makers build plants years ahead for a design set one g
 
 ---
 
-## M61 · Tue 06 Apr 2027 08:30 · the-chip-supply-chain · A double order does not build a second factory
+## M61 · Mon 01 Feb 2027 08:30 SGT · the-chip-supply-chain · A double order does not build a second factory · SCHEDULED (verified 6 Nov)
 Buyers in a boom order early and sometimes twice. That still does not create a second ASML.
 
 The filings cannot separate hoarding from real scarcity. But a hoarded scanner still had to be built in the same cleanroom as every other one. A booking alone is not proof of scarcity. A part that only one maker can build, and only in a new building, is booked early for a reason.
@@ -776,7 +776,7 @@ Source in the piece: intro and "What would prove me wrong"; ASML results (14 Oct
 
 ---
 
-## M62 · Thu 08 Apr 2027 08:30 · ten-thousand-chips-one-thought · A switch that never reads the data
+## M62 · Tue 02 Feb 2027 08:30 SGT · ten-thousand-chips-one-thought · A switch that never reads the data · SCHEDULED (verified 6 Nov)
 Part of Google's AI network is a box of tilting mirrors that never reads a single bit.
 
 Palomar, Google's own optical circuit switch, steers light between 136 fibres. Because nothing inside reads the data, a faster chip simply sends more through the same mirrors, and Google's Ironwood pods of 9,216 chips still use them. The mirrors take milliseconds to settle, so they set the pod's shape before a job rather than routing each packet. Lumentum shipped more than US$90 million of such switches in its year to June 2026.
@@ -789,7 +789,7 @@ Source in the piece: "The glass and the mirrors are bought once" and the layer t
 
 ---
 
-## M63 · Fri 09 Apr 2027 08:30 · hong-kong-has-the-plug · Thirty-six times Hong Kong
+## M63 · Wed 03 Feb 2027 08:30 SGT · hong-kong-has-the-plug · Thirty-six times Hong Kong · SCHEDULED (verified 6 Nov)
 Hong Kong's one AI megasite is meant to hold 36 times the computing power the whole city has now.
 
 The government's figure for Sandy Ridge is 180,000 petaflops by 2032, against a base of 5,000 petaflops today, 3,000 of them at Cyberport's AI Supercomputing Centre. The site has 250,000 square metres of floor area, and the investment is HK$23.8 billion to its third year of operation. So who decides what runs there? In the government's words to legislators: "the operator according to its business plan and market demand".
@@ -802,7 +802,7 @@ Source in the piece: "The figures behind the charts" (Sandy Ridge's terms); Inno
 
 ---
 
-## M64 · Tue 13 Apr 2027 08:30 · america-rations-the-plug · Slowing the chips instead of buying a battery
+## M64 · Thu 04 Feb 2027 08:30 SGT · america-rations-the-plug · Slowing the chips instead of buying a battery · NOT YET SCHEDULED: LinkedIn window ended Wed 3 Feb; schedule from about 7 to 8 Nov
 At an Oracle site in Phoenix, software cut the power of 256 Nvidia chips by 25% for three hours. No battery was involved.
 
 That is the idea behind a new kind of flexibility. Load that can drop in seconds is useful to the grid, as long as it drops when the grid asks. By 19 March 2026 Google had deals with five utilities, covering 1 GW, to "limit or shift a portion" of its machine learning work at peak.
@@ -816,7 +816,7 @@ Source in the piece: "Cut-first power goes to sites that can slow their chips or
 
 ---
 
-## M65 · Thu 15 Apr 2027 08:30 · data-centres-in-space · The space station's radiators are cold because of the crew
+## M65 · Fri 05 Feb 2027 08:30 SGT · data-centres-in-space · The space station's radiators are cold because of the crew · NOT YET SCHEDULED: LinkedIn window ended Wed 3 Feb; schedule from about 7 to 8 Nov
 The International Space Station's cooling loop runs at about 3°C, because it cools people, not chips.
 
 That makes its radiators big and heavy for the work they do. On my arithmetic, its six main radiator units reject about 147 watts per square metre. Each unit weighs 1,122.64 kg, and together they handle 70 kW: about 96 kg for every kilowatt.
