@@ -62,27 +62,20 @@ const companies = [...new Set(exposureOf(p).flatMap((r) => r.names))].filter((n)
         <p class="claim-box-label">The claim this piece makes</p>
         <p class="claim-box-claim">{claim.claim}</p>
         <p class="claim-box-meta">
-          <a href={`/claims/#${claim.id}`}>See it alongside every other claim on the site</a>
           {notes.map((n) => <a href={`/research/${n.id}/`}>Research note: {n.data.company}</a>)}
         </p>
       </aside>
     )}
 
-    {(layer || companies.length > 0) && (
+    {layer && (
       <nav class="related" aria-label="Related">
         {layer && (
           <p><span class="related-label">On the map</span> <a href={`/#${layer.id}`}>{layer.name}</a></p>
-        )}
-        {companies.length > 0 && (
-          <p><span class="related-label">Companies named</span>
-            {companies.map((n, i) => <>{i > 0 && ', '}<a href={`/companies/${slugify(n)}/`}>{n}</a></>)}
-          </p>
         )}
       </nav>
     )}
 
     <footer class="article-foot">
-      Unfamiliar term? The <a href="/glossary">glossary</a> explains every one of them in a line.<br />
       Written by {SITE.author}. If you think the argument is wrong, I would genuinely like to hear it: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
     </footer>
   </article>

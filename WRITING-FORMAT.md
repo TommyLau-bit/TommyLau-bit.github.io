@@ -184,7 +184,7 @@ Headings are short and plain, sentence case, no numbering.
 - **How it works.** The physical mechanism, with any jargon defined in the sentence where it
   appears. It includes, in two or three sentences, why supply cannot simply catch up.
 - **What would prove me wrong** (investor layer, §D). Names the observable that would kill the
-  claim. Same test as the claims page, said plainly.
+  claim. Same test as in claims.ts, said plainly.
 
 Where a section lists options, use bold lead-ins rather than bullets:
 
@@ -222,7 +222,7 @@ Just before the closing `---`.
   figures are disclosures used as evidence for the mechanism.
 - Three or four `<dt>` groups (up to six in a deep piece, §D), one short line each, about 120 words for the whole map. Each `<dd>`
   says **what the company makes**, and nothing else. When trimming, merge groups rather than drop
-  names: company pages are built from these names.
+  names, spelled consistently.
 - Company names go inside `<span class="names">`.
 - The `<dl class="against">` block is **mandatory for any piece making a
   directional claim**, which is every Analysis piece and almost every Explainer.
@@ -272,7 +272,7 @@ Voice:
   space heaters", but "120 kilowatts" and "30 to 50 kilowatts".
 - Units spelled out on first use, abbreviated after. Kilowatts, then kW.
 - **Every piece of jargon is defined in the sentence where it first appears**,
-  even when it is in the glossary. "a unit called a CDU, the coolant
+  in the piece itself. "a unit called a CDU, the coolant
   distribution unit, which is effectively the rack's heart".
 
 Never appears in a journal piece, or anywhere on the site except pitch pages
@@ -347,7 +347,7 @@ an accounting booklet has failed, however accurate it is.
   comparisons, guidance and deal arithmetic go in the investor layer or the research note, never
   in the top layer.
 - A falsifier may still name one disclosed figure as its test, stated once and
-  plainly. The precise wording lives on the claims page.
+  plainly. The precise wording lives in claims.ts and the piece's claims fold.
 - If you need a number to make the point land, use it. If the point lands
   without it, cut it.
 
@@ -377,11 +377,12 @@ the mechanism is still physical.
 
 ---
 
-## 6. The glossary is part of the job
+## 6. Terms are explained in place (the glossary was removed, 6 Nov 2026)
 
-Any term a new reader could stumble on must exist in `src/pages/glossary.astro`,
-grouped under one of the four existing headings. Adding a piece that introduces
-a term without adding the glossary entry is an incomplete publish.
+There is no glossary page. Every term, company, plant, regulator and acronym a
+new reader could stumble on is explained in the sentence where it first
+appears, in the top and again on first mention in the investor layer
+(STORY-RULES 18a).
 
 ---
 
@@ -392,8 +393,8 @@ and two of them need a line from you. The checker fails the piece until they
 have it.
 
 **The map, `src/data/stack.ts`. Every piece.** Add the slug to the `pieces`
-list of the one layer it explains. The map, the "On the map" line under the
-piece and the company pages all read from this. If no layer genuinely fits, add
+list of the one layer it explains. The map and the "On the map" line under the
+piece read from this. If no layer genuinely fits, add
 a new layer to `STACK` in its physical place in the chain, with a plain `what`
 and `constraint` sentence, rather than forcing the piece into the nearest one.
 
@@ -403,43 +404,32 @@ layer** appears in the layer index and the closing funnel on its own, but its ow
 descent (a drawing, in its physical place in the chain, plus its step cards) is drawn by hand
 as part of publishing that piece. The stop counter counts drawn stops itself.
 
-**The claims page, `src/data/claims.ts`. Every Analysis piece.** Add one
-entry: `claim` is the thesis in one sentence, `breaksIf` is the falsifier from
-"What would prove me wrong", and `watch` is its list of evidence. The page
-lists every claim with its date, newest first. The claim and the test are fixed
-on the day the piece goes live and are never reworded afterwards.
+**The claim, `src/data/claims.ts`. Every Analysis piece.** Add one entry:
+`claim` is the thesis in one sentence, `breaksIf` is the falsifier from "What
+would prove me wrong", and `watch` is its list of evidence. It shows in the
+piece's claim box and claims fold; there is no claims page (removed 6 Nov
+2026). The claim and the test are fixed on the day the piece goes live and are
+never reworded afterwards. No statuses, no reviews.
 
-There are no statuses and no reviews. The page is a plain, dated record of what
-was claimed and what would prove it wrong, by decision. Do not add status
-tracking back.
-
-**The numbers, `src/data/numbers.ts`. Optional.** If the piece rests on a
-structural figure that is not already there, add it: power, distance, time or
-capacity, never anything about the shares. When a figure is overtaken, update
-it there with a `note`, and give the piece `updated` and `updateNote` in its
-frontmatter rather than quietly editing history.
+**No numbers or company pages** (removed 6 Nov 2026). Figures live in the piece
+with their sources.
 
 **Editing a published piece for length or clarity needs no update line** (Tommy, 8 Oct
 2026). Shortening, tidying or rewording a piece without changing what it says is
 just editing: no `updated`, no `updateNote`. The update line is only for a figure
-that was overtaken and corrected. The claim and test on the claims page are
+that was overtaken and corrected. The claim and test in claims.ts are
 still never reworded.
 
 **No email sign-ups.** The site has no newsletter or sign-up form, by
 decision. Do not add one. LinkedIn and RSS are how readers follow.
 
-**Companies. Automatic.** The company list is built from the names in each
-exposure box's `<span class="names">`. A company gets a page of its own only if it has a research
-note, a heading in a piece's investor layer, or at least two mentions in a piece's running prose
-outside the exposure map; every other company URL redirects to `/companies/` (Tommy, 30 Oct 2026;
-`companyPages` in `src/lib/exposure.ts`). Spell a company the same way each
-time; `ALIAS` in `src/lib/exposure.ts` catches the odd variant. Tags show as
-plain labels on the piece; there are no topic pages, because the map does that
-job.
+**Companies.** Spell a company the same way each time in the exposure box's
+`<span class="names">`; `ALIAS` in `src/lib/exposure.ts` catches the odd
+variant. There are no company or topic pages.
 
-**The top menu is fixed at five: Journal, Research, Claims, Glossary, About**
-(Tommy, 30 Oct 2026). Do not add a sixth. The homepage is the map. A new
-reference page goes in the footer, the way Numbers and Companies are.
+**The top menu is fixed at three: Journal, Research, About** (Tommy, 6 Nov
+2026). Do not add to it or add reference pages to the footer. The homepage is
+the map.
 
 ---
 
@@ -481,7 +471,7 @@ In order:
 
 1. `src/content/journal/<slug>.md` written and complete, both blocks present.
 2. `public/covers/<slug>.svg` in place, then `brand/check-piece.py` passes.
-3. Any new terms added to the glossary. The slug added to a layer in
+3. Every new term explained where it first appears. The slug added to a layer in
    `src/data/stack.ts`, and for an Analysis piece, its entry in
    `src/data/claims.ts` (§6a).
 4. Regenerate the social cards. They are written to
@@ -577,8 +567,8 @@ Run it before you build. Every published piece passes with no failures.
 - [ ] No share price, valuation, target, rating or recommendation anywhere
 - [ ] Any financial figure is the company's own, dated, sourced, and tied to the mechanism
 - [ ] Sources paragraph, ending "Personal research, not investment advice."
-- [ ] Every jargon term defined in place, and present in the glossary
-- [ ] On the map in `stack.ts`; if Analysis, on the claims page in `claims.ts`
+- [ ] Every jargon term and company explained in place
+- [ ] On the map in `stack.ts`; if Analysis, its claim in `claims.ts`
 - [ ] No em dashes. British spelling. Top layer about 400 to 600 words; investor storyline about 900 to 2,000 (STORY-RULES.md)
 - [ ] Numbers (§4b): top layer within its budget; every investor-layer number primary-sourced and dated
 - [ ] Claims on record quote every merged claim word for word with its original date (§D)

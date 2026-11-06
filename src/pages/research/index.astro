@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Book from '../../components/Book.astro';
-import { CLAIMS, claimOf, homeOf } from '../../data/claims';
+import { claimOf, homeOf } from '../../data/claims';
 import { STACK, layerOf } from '../../data/stack';
 import { BASE_VALUE } from '../../data/notes';
 import { getPitches, fmtMoney, fmtPct } from '../../lib/calls';
@@ -26,7 +26,7 @@ for (const g of groups) g.rows.sort((a, b) => (b.data.date?.valueOf() ?? 0) - (a
 <Base title="Research" description="A US$100,000 paper book run every morning with stops and targets, and the initiation notes behind it, on the companies in the physical layer of AI." wide>
   <header class="research-head">
     <h1>Research</h1>
-    <p>A paper portfolio run every morning on the companies that build the physical layer of AI, with the notes and models behind every name. Start with the book; open the Notes tab for the reasoning. The journal's {CLAIMS.length} dated claims are on <a href="/claims/">the claims page</a>.</p>
+    <p>A paper portfolio run every morning on the companies that build the physical layer of AI, with the notes and models behind every name. Start with the book; open the Notes tab for the reasoning.</p>
   </header>
 
   <Book>

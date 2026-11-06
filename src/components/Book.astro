@@ -96,7 +96,7 @@ const tabs = [
     <ul class="ledger">{book.log.slice(-5).reverse().map((l: any) => <li><span>{short(l.date)}</span><span>{l.text}</span></li>)}</ul>
   </div>
 
-  <div class="sheet-panel" data-panel="watch" role="tabpanel">
+  <div class="sheet-panel" id="watch" data-panel="watch" role="tabpanel">
     <p class="sheet-intro">Companies the book will buy once the price turns. Each card gives the price to buy above, where the book would sell at a loss (the stop) and where it would take its profit (the target). Levels as of {day(book.pricesAt)}, re-set every morning.</p>
     <p class="bar-key" aria-label="How to read the bar"><span class="k k--stop">Stop: sell at a loss</span><span class="k k--now">Now: today's price</span><span class="k k--buy">Buy: the entry price</span><span class="k k--target">Target: take profit</span></p>
     <div class="cards">{watch.map((w: any) => {
@@ -138,7 +138,7 @@ const tabs = [
     <ul class="ledger ledger--plain">{book.avoid.map((a: any) => <li><span><a href={`/research/${a.slug}/`}>{a.company}</a>: {a.read}</span></li>)}</ul>
   </div>
 
-  <div class="sheet-panel" data-panel="bench" role="tabpanel">
+  <div class="sheet-panel" id="bench" data-panel="bench" role="tabpanel">
     <p class="sheet-intro">New companies being scouted. Each morning the book adds one or two physical-layer names it does not yet cover; each Sunday the strongest, once the work is done, gets a full initiation note and Excel model and joins the book's universe. A name on the bench is never bought.</p>
     <div class="cards">{book.bench.map((n: any) => (
       <article class="card">
@@ -150,16 +150,16 @@ const tabs = [
     ))}</div>
   </div>
 
-  <div class="sheet-panel" data-panel="calendar" role="tabpanel">
+  <div class="sheet-panel" id="calendar" data-panel="calendar" role="tabpanel">
     <p class="sheet-intro">Results and decisions ahead that can move a company the book covers. The book halves a new position when results are due within ten trading days, because a result can jump the price straight past a stop.</p>
     <ul class="ledger">{book.catalysts.map((c: any) => <li><span>{short(c.date)}</span><span>{c.event}</span></li>)}</ul>
   </div>
 
-  <div class="sheet-panel" data-panel="notes" role="tabpanel">
+  <div class="sheet-panel" id="notes" data-panel="notes" role="tabpanel">
     <slot name="notes" />
   </div>
 
-  <div class="sheet-panel" data-panel="how" role="tabpanel">
+  <div class="sheet-panel" id="how" data-panel="how" role="tabpanel">
     <div class="how">
       <p><strong>What this is.</strong> A {usd(book.capital)} paper portfolio, run every morning by fixed rules, on the companies covered by the notes. Every price is a closing price on a named exchange and date. Nothing is ever deleted, right or wrong.</p>
       <p><strong>Every position has a stop and a target.</strong> The stop is the price that shows the timing was wrong, so the book sells at a small loss. The target is where the book takes its profit, set from the note's own valuation. Both act on the close, with no one at the desk.</p>

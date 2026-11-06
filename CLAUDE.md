@@ -139,24 +139,19 @@ A new piece is not published until the site around it is updated. Every time:
   no exceptions. The descent at the top of the homepage reads the same file; a new
   layer also needs its own stop drawn in `src/components/Descent.astro`. If no layer fits, add a new layer in its physical place in
   the chain rather than forcing the piece into the nearest one.
-- **The claims page.** For an Analysis piece, add an entry to
-  `src/data/claims.ts`: the thesis in one sentence, the falsifier, and the
-  evidence watched. The claim and test are never reworded later. The claims
-  list keeps no statuses (Open, Holding and so on) and no reviews: Tommy
-  decided it is a plain list of claims. Do not add status tracking to it or
-  suggest it. Scoring lives only in the research track record, for calls. A wrong fact
-  in a piece's text is simply fixed in place (2 Nov 2026).
-- **The numbers.** If the piece rests on a new structural figure, add it to
-  `src/data/numbers.ts`. Physical figures only, never anything about shares.
-- **Companies** build themselves from the exposure map. Spell company names
-  consistently. A company gets a page of its own only if it has a research
-  note, a heading in a piece's investor layer, or at least two mentions in a
-  piece's running prose outside the exposure map; every other company URL
-  redirects to `/companies/` (Tommy, 30 Oct 2026; `companyPages` in
-  `src/lib/exposure.ts`). There are no topic pages; the map does that job.
+- **The claim.** For an Analysis piece, add an entry to `src/data/claims.ts`:
+  the thesis in one sentence, the falsifier, and the evidence watched. It shows
+  in the piece's claim box and claims fold (there is no claims page since
+  6 Nov 2026), and the checker needs it. The claim and test are never reworded
+  later; no statuses. A wrong fact in a piece's text is simply fixed in place.
+- **No glossary, numbers or company pages** (Tommy, 6 Nov 2026: "amateur";
+  removed, old URLs redirect). Every term and name is explained in the piece
+  where it first appears (STORY-RULES 18a). Do not add these pages back.
+  Spell company names consistently in the exposure map.
 
-**The top menu is fixed at five: Journal, Research, Claims, Glossary, About**
-(Tommy, 30 Oct 2026). Tommy found nine items too crowded. Do not add to it.
+**The top menu is fixed at three: Journal, Research, About** (Tommy, 6 Nov
+2026; Claims, Glossary, Numbers and Companies were removed as amateur). Do not
+add to it, and do not add reference pages to the footer.
 The homepage is the map: under the hero, a compact list of every deep piece
 by layer (grid to chip, anchored `/#<layer>`), then the descent below it as the
 guided walk. `/map/` redirects to `/` (`/map/#<layer>` lands on `/#<layer>`).
@@ -165,14 +160,12 @@ Start here was removed and `/start/` redirects to `/`.
 **Investor first, on every page** (Tommy, 30 Oct 2026). A visitor finds what
 they came for at once: lists and tables before decoration, counts at the top,
 no thumbnails in lists, no "In plain English" boxes on index pages (pieces keep
-theirs), jump links where a page is long. Research leads with the calls table;
-Claims are grouped by layer; each deep piece shows "For investors" jump links
-under its summary. Keep new pages to this standard.
-Numbers and Companies live in the footer, with
-Claims also there; any new reference page goes in the footer too.
+theirs), jump links where a page is long. Research opens on the book's morning
+sheet; each deep piece shows "For investors" jump links under its summary.
+Keep new pages to this standard.
 
 The checker fails a piece missing from the map, or an Analysis piece missing
-from the claims page. See WRITING-FORMAT.md §6a.
+from `claims.ts`. See WRITING-FORMAT.md §6a.
 
 **No email sign-ups.** Tommy has decided against a newsletter or sign-up form
 anywhere on the site. Do not add one or suggest one. Readers follow via the
