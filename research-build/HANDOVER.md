@@ -4,7 +4,15 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 
 - **6 Nov evening: nuclear-for-ai HALEU fact fixed in place** (Tommy delegated the call). Centrus Q3 release, 4 Nov 2026: the 16-centrifuge cascade now enriches HALEU for the commercial market, no volume, no DOE funding for FY2027. Heading, summary, intro, analogy, section text, chart title, table row and Oklo evidence line updated. Claim and test NOT reworded. The 16 Nov LinkedIn teaser ("its contracted production stopped") is still true and was left.
 
-## START HERE (as of Fri 6 Nov 2026, evening; the day is closed)
+- **6 Nov late evening: all 13 pieces rewritten in the study-deck teaching style, on branch `deck-style-rewrite` (NOT merged, NOT pushed).** Each piece now has the split up front, the five-step chain with a choke-point diagram, one mapped analogy, plain falsifiers and an out-of-the-box beat. Every DECK_FINDINGS fact is fixed in place. TSMC now appears only in the fixed 2 Nov claim sentence (Tommy: "Keep it word for word"). Full record: research-build/DECK-REWRITE-2026-11-06.md.
+
+## START HERE (as of Fri 6 Nov 2026, late evening)
+
+**★ WAITING ON TOMMY: the deck-style rewrite of all 13 pieces is on branch `deck-style-rewrite`, not live.** Show him Johor first (the-queue-not-the-chip, the model, for his SemiAnalysis call Wed 11 Nov), then the other 12. Preview: `cd ~/Desktop/journal && git checkout deck-style-rewrite && npx astro dev --port 4322`, then open /journal/the-queue-not-the-chip/. Diff: `git diff main deck-style-rewrite -- src/content/journal/the-queue-not-the-chip.md`. On his word: merge to main, set each piece's `updated` to the real publish day (now 2026-11-06), run the checkers and build, then push. What changed per piece, the facts fixed and the open items are in research-build/DECK-REWRITE-2026-11-06.md. If it goes live after 11 or 12 Nov, re-check the Siemens Energy and Nebius figures first.
+
+**Study decks moved (6 Nov):** decks, json, DECK_FINDINGS.md, DECK_BRIEF.md and the builder now sit in research-build/study-decks/, excluded from git via .git/info/exclude. Never commit them and never put them back in the jobs folder.
+
+## Earlier START HERE (6 Nov evening, before the rewrite)
 
 **★ NEXT ON THE JOURNAL (Tommy, 6 Nov 2026):** BWXT and microreactors (Max Hopkins's pointers). Tommy studies it FIRST, then a piece is drafted, and it is published only on his word. Brief: research-build/topics/BWXT-MICROREACTORS.md. After that, Tommy relearns the other 13 pieces one by one. No other new pieces until then.
 
