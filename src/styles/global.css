@@ -529,6 +529,13 @@ details.analogy > p:first-of-type { margin-top: 0.1rem; }
 @media (max-width: 560px) { .chart svg { min-width: 470px; } }
 /* Charts run wider than the text on laptop and desktop screens (Tommy, 7 Nov 2026): the text keeps its reading width, figures get room. */
 @media (min-width: 64rem) { .prose > figure.chart { width: 54rem; max-width: calc(100vw - 4rem); margin-left: calc((100% - min(54rem, 100vw - 4rem)) / 2); } }
+/* Laptop and desktop (Tommy, 7 Nov 2026: the column used only about 40% of his screen). A wider column with larger type and looser line spacing fills more of the screen; charts take the full column. */
+@media (min-width: 80rem) {
+  .wrap { max-width: 54rem; }
+  .prose { font-size: 1.35rem; line-height: 1.75; }
+  .prose > figure.chart { width: auto; margin-left: 0; }
+  .chart-title { font-size: 1.15rem; } .chart-sub { font-size: 0.92rem; } .chart figcaption { font-size: 0.85rem; }
+}
 .c-bar.c-alt { fill: var(--accent-2); }
 .c-bar.c-mute { fill: var(--ink-3); opacity: 0.55; }
 .c-note { fill: var(--ink-3); font-size: 12px; }
