@@ -48,10 +48,10 @@ const shorts = pitches.filter((p) => p.data.call.direction === 'SHORT').length;
 const noCalls = pitches.filter((p) => p.data.call.direction === 'NO CALL').length;
 const dirClass = (p: (typeof pitches)[number]) => `note-call note-call--${(p.data.call.direction ?? '').toLowerCase().replace(' ', '')}`;
 ---
-<Base title="Research" description="Initiation notes on companies in the physical layer of AI, each with the model behind it and a call that is marked every month, right or wrong." wide>
+<Base title="Research" description="Initiation notes on companies in the physical layer of AI, each with the model behind it and a call that is marked every two weeks, right or wrong." wide>
   <header class="research-head">
     <h1>Research</h1>
-    <p>Initiation notes on the companies that build the physical layer of AI. Each comes with its Excel model, and every call is dated and marked monthly against its target. None is ever deleted.</p>
+    <p>Initiation notes on the companies that build the physical layer of AI. Each comes with its Excel model, and every call is dated and marked every two weeks against its target. None is ever deleted.</p>
   </header>
 
   {pitches.length === 0 ? (
@@ -63,7 +63,7 @@ const dirClass = (p: (typeof pitches)[number]) => `note-call note-call--${(p.dat
         <li><strong>{longs}</strong> long</li>
         {shorts > 0 && <li><strong>{shorts}</strong> short</li>}
         <li><strong>{noCalls}</strong> no call</li>
-        <li>Marked monthly{SCORECARD_REFRESHED ? <>, last on {fmtDate(new Date(SCORECARD_REFRESHED))}</> : ', from November 2026'}</li>
+        <li>Marked every two weeks{SCORECARD_REFRESHED ? <>, last on {fmtDate(new Date(SCORECARD_REFRESHED))}</> : ', from November 2026'}</li>
       </ul>
 
       <section class="track" id="scorecard" aria-labelledby="book-h">

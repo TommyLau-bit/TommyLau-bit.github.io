@@ -2,7 +2,14 @@
 
 Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. Newest day on top. Rewrite START HERE at the end of each session.
 
-## START HERE (as of Tue 3 Nov 2026, ~00:25; the day is closed)
+## START HERE (as of Fri 6 Nov 2026, ~13:30)
+
+- **Every piece's investor layer was cut and given context** (Tommy, 6 Nov, after rereading three pieces he sent to Max Hopkins at CLSA). New shape, now STORY-RULES 18a: state the message, prove it with numbers and charts, then "What would prove me wrong" as the claim's tests, what would move me first, and what would not. The 31 Oct "jolt" endings are retired (Tommy: a silly idea; BRIEF-ENDING*.md moved to archive/retired-briefs/). Every name gets a short "what it is" clause on first mention, and paragraphs tie back to the argument. Model: nuclear-for-ai (approved by Tommy). Investor arguments now 719 to 1,319 words, down from 1,052 to 2,227. Unchanged: every plain-English top, everything from Research notes down (claims and Breaks if word for word, evidence, sources), every anchor; no new numbers. Nine "my framing" charts in the cut closing sections were dropped (their facts are in the text); twelve sibling links restored. check-piece 13/13 clean, 292 pages, 3,152 internal links, 0 broken.
+- **First call marks are live** (33, at the 5 Nov close, Yahoo checked against every note's own call price). Oklo SHORT passed its US$28 target on 16 Oct (US$19.20, +46.6%). Price wrongIf triggered: Marvell (below US$230, 16 Oct; on 2 Nov it agreed to buy Lumentum for 4.5 shares each), Bloom (below US$200, 23 Oct), Corning (below US$110, 5 Nov), Lumentum (below US$750, 2 Nov). Revisit crossed on no-calls: ASML, Constellation, GE Vernova, Hitachi, Infineon, Micron, MHI, Nebius, Schneider, TSMC, Williams. No results-based leg triggered. No `resolved` entry yet: Tommy decides those.
+- **Marks are now biweekly.** research-monthly-marks is deleted: its 1 Nov run stalled on its first shell calls (a permission prompt with nobody there), so no marks existed before 6 Nov. research-biweekly-reprice fires Fridays 09:08, works only every second Friday from 6 Nov (first live run Fri 20 Nov), re-prices views and no-views, drafts marks, reports, never publishes. Tommy should click Run now once on it to pre-approve its tools. Site text now says "marked every two weeks".
+- Due soon: Oklo Q3 (6 Nov US), Constellation and Ajinomoto (about 9 Nov), Infineon (10 Nov), Siemens Energy (11 Nov), Nebius (12 Nov), Nvidia (17 Nov), Entergy LPSC vote (18 Nov or December).
+
+## Tue 3 Nov 2026, ~00:25 (the day was closed)
 
 - **Slim bar now shows on scroll-up only** (Tommy: after scrolling, the bar still needed two taps on his iPhone, and the 00:20 touch handler made taps feel slower, so it is removed). Cause: once Safari collapses its address bar into a strip at the top edge, the first tap there goes to Safari. The bar (Base.astro script) is now hidden while scrolling down and slides in when the reader scrolls up more than 6 px, which is also when Safari restores its toolbar, so a single tap reaches the link. Hidden again near the top (full header visible). Tested in phone emulation: hidden on scroll-down, shown on scroll-up, one tap opened Research. Awaiting Tommy's check on his iPhone; if it still fails, move the bar to the bottom of the screen.
 - **Phone double-tap fixed** (Tommy: on his phone the menu links needed two taps). Every `:hover` rule (26, in global.css and Descent.astro) now sits inside `@media (hover: hover)`, so touch screens never enter a hover state that can swallow the first tap, and `html` has `touch-action: manipulation`. Desktop hover unchanged. Tested in phone emulation (one tap on Research in the header and on Claims in the slim bar each opened the page); a real iPhone check by Tommy is the final proof. Keep new hover styles inside `@media (hover: hover)`.
@@ -98,10 +105,10 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 
 | Date | Job | What it does |
 |---|---|---|
-| Sun 1 Nov 09:00 | research-monthly-marks | Monthly track-record marks for the research notes, for Tommy's approval |
+| Every 2nd Fri from 6 Nov, 09:08 | research-biweekly-reprice | Re-prices every call, drafts marks, reports to Tommy; never publishes |
 | Sun 1 Nov 09:30 | journal-monthly-sweep | Writes research-build/sweeps/2026-11.md; proposes only |
 
-These two monthly jobs repeat on the 1st. The one-time publish and LinkedIn jobs are all done: Hong Kong ran on 2 Nov; the 4, 6 and 9 Nov LinkedIn jobs were deleted on 2 Nov after their posts were scheduled by hand. The Hong Kong job itself is disabled but still listed (a session cannot delete the job that launched it); delete it from any other session. research-build/deep-pieces/updates/ is history now and can move to archive/.
+The sweep repeats on the 1st; the re-pricing every second Friday. The one-time publish and LinkedIn jobs are all done: Hong Kong ran on 2 Nov; the 4, 6 and 9 Nov LinkedIn jobs were deleted on 2 Nov after their posts were scheduled by hand. The Hong Kong job itself is disabled but still listed (a session cannot delete the job that launched it); delete it from any other session. research-build/deep-pieces/updates/ is history now and can move to archive/.
 
 LinkedIn company page queue (11:30): posts 38 to 47 Mon 2 Nov to Wed 2 Dec; Fri 4 Dec left empty (post 34 retired 1 Nov, Tommy's word: Constellation is now a section of Nuclear for AI); then Hong Kong 48 Mon 7 Dec, updates 49 Wed 9 Dec, 50 Mon 14 Dec and 51 Wed 16 Dec, and memory post 52 Mon 21 Dec. All checked in LinkedIn's scheduled list on 2 Nov (14 posts, Wed 4 Nov to Mon 21 Dec).
 

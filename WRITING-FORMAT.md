@@ -29,8 +29,9 @@ no storyline. The structure of every deep piece is now `research-build/deep-piec
 - One spine and one claim, stated by paragraph three of a plain-English top that opens on a tension.
 - Then `<hr class="layer">` and `<p class="layer-label">For investors</p>`, and an investor storyline
   of six to nine beats whose headings are steps in the argument, never company names or topic labels.
-  Companies appear inside beats as evidence. Mechanism before evidence; a climax about two thirds in;
-  one named counter-evidence beat; an ending that answers the opening.
+  Companies appear inside beats as evidence. Since 6 Nov 2026 (STORY-RULES 18a): state the message,
+  prove it, then close with what would change the view and what would not; every name gets a short
+  context clause on first mention; no recap and no forward "jolt" headings.
 - Two to four inline SVG charts at the turns of the argument, each titled with the sentence it proves.
 - After the story: `## Claims on record` (the piece's claim in full; earlier claims word for word inside
   `<details class="claims-earlier">`), `## What would prove me wrong`, `## Research notes`, evidence

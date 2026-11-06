@@ -33,11 +33,12 @@ A megawatt the grid may cut is not the same product as a firm one. For anyone bu
 <hr class="layer">
 <p class="layer-label">For investors</p>
 
-## Texas has far more asking than it can connect
+## America is rationing the grid connection, not speeding it up
 
+<a id="america-rations-the-plug"></a>
 <a id="ercot-rations-the-plug"></a>
 
-The clearest picture of the rationing is the Texas queue, measured at each gate a request must pass. The Governor's 474 GW is the top. ERCOT told the state Senate on 29 July that only about 205 GW had the studies to enter its first batch. By 20 August, 6,608 MW across 17 sites had cleared every check except approval to switch on.
+Texas shows the scale. The Governor put requests to connect to ERCOT, which runs most of the state's grid, at over 474 GW. ERCOT told the state Senate on 29 July that only about 205 GW had the studies to enter its first batch. By 20 August, 6,608 MW across 17 sites had cleared every check except approval to switch on, and ERCOT then paused that approval for data centres and crypto mines of 75 MW or more.
 
 <figure class="chart">
 <p class="chart-title">Texas has been asked for 474 gigawatts, and has cleared 6.6</p>
@@ -59,25 +60,42 @@ The clearest picture of the rationing is the Texas queue, measured at each gate 
 <figcaption>Office of the Texas Governor (3 August 2026); ERCOT's Senate briefing (29 July 2026, preliminary) and its presentation to the Texas regulator (20 August 2026). The three figures are from different dates in the same summer.</figcaption>
 </figure>
 
-Then ERCOT paused even that last approval for data centres and crypto mines of 75 MW or more, while it audits every request. Under a seventieth of the queue reached the final gate, and the gate is shut while the audit runs; ERCOT aims to file its reports by 10 December 2026.
+So under a seventieth of the queue reached the final gate, and the gate is shut while ERCOT audits every request, with its reports due by 10 December 2026. What Texas offers instead is a lower plug. A Provisional Controllable Load Resource connects early if ERCOT may reduce it "during periods of localized stress". A Withdrawal-Limited Private Use Network brings its own plant and takes only a capped amount from the grid.
 
-What Texas offers instead is a lower plug. A Provisional Controllable Load Resource connects early if ERCOT may reduce it "during periods of localized stress". A Withdrawal-Limited Private Use Network brings its own plant and takes only a capped amount from the grid. ERCOT is not clearing the queue. It is writing the terms on which most of it may connect.
-
-## The regulator is pressing the same split on six grids
+## Every organised grid is adding a plug it may cut beneath the firm one
 
 <a id="ferc-asks-for-a-softer-plug"></a>
 
-The federal regulator is putting the same question to every organised grid it oversees. On 18 June 2026 FERC told six regional grid operators, PJM among them, to defend their rules for large loads or change them. PJM's tariff "appears to be unjust and unreasonable", it said, and it asked whether PJM could manage without an interim, non-firm service while network upgrades are built.
+Texas is not alone. On 18 June 2026 FERC, the federal power regulator, told six regional grid operators, among them PJM, which runs the grid from Chicago to Virginia, to defend their rules for large loads or change them. PJM's tariff "appears to be unjust and unreasonable", it said, and it asked whether PJM could manage without an interim, non-firm service while network upgrades are built. The answers are converging on a lower tier. At Southwest Power Pool, which runs the grid across the central states, that tier, CHILLS, was accepted on 5 June: power as available, for up to seven years. On 9 October PJM's transmission owners said capacity "will not be procured" for interim customers until their upgrades are built. The New England and New York grid operators, ISO New England and NYISO, are designing non-firm services.
 
-The grids are converging on a menu. Southwest Power Pool's lower tier, CHILLS, was accepted on 5 June: power as available, for up to seven years. On 9 October PJM's transmission owners told members that capacity "will not be procured" for interim customers until their upgrades are built. ISO New England and NYISO are designing non-firm services, and PJM files its answer in November 2026.
+"Interim" can mean most of a decade. The upgrades a cut-first site waits on need transformers and switchgear, and among the makers of that gear, Siemens Energy's grid business holds about four years of work, Hitachi Energy about three.
 
-The firm plug is not getting faster. A cheaper one the grid may cut is being added beneath it, grid by grid.
+<figure class="chart">
+<p class="chart-title">The cut-first tier's term runs past the makers' order books</p>
+<p class="chart-sub">SPP's CHILLS term from its acceptance, against each maker's years of work on its books, from its latest filing</p>
+<svg viewBox="0 0 560 242" role="img" aria-label="Timeline from 2026 to 2034. SPP's CHILLS tier, accepted on 5 June 2026, lets a site take power as available for up to seven years, to mid 2033. The makers whose gear the grid's upgrades need hold, from their latest filings, about 4 years of work at Siemens Energy's grid business, running to mid 2030; about 3.1 years at Hitachi Energy, running to late 2029; and about 1 year at Eaton's Electrical Americas, inside the fence, running to mid 2027.">
+<g class="c-grid"><line x1="150" y1="30" x2="150" y2="214"/><line x1="199" y1="30" x2="199" y2="214"/><line x1="248" y1="30" x2="248" y2="214"/><line x1="297" y1="30" x2="297" y2="214"/><line x1="346" y1="30" x2="346" y2="214"/><line x1="395" y1="30" x2="395" y2="214"/><line x1="444" y1="30" x2="444" y2="214"/><line x1="493" y1="30" x2="493" y2="214"/><line x1="542" y1="30" x2="542" y2="214"/></g>
+<g class="c-axis"><text x="150" y="232" text-anchor="middle">2026</text><text x="199" y="232" text-anchor="middle">2027</text><text x="248" y="232" text-anchor="middle">2028</text><text x="297" y="232" text-anchor="middle">2029</text><text x="346" y="232" text-anchor="middle">2030</text><text x="395" y="232" text-anchor="middle">2031</text><text x="444" y="232" text-anchor="middle">2032</text><text x="493" y="232" text-anchor="middle">2033</text><text x="542" y="232" text-anchor="middle">2034</text><text x="140" y="77" text-anchor="end">SPP's CHILLS tier</text><text x="140" y="131" text-anchor="end">Siemens Energy</text><text x="140" y="167" text-anchor="end">Hitachi Energy</text><text x="140" y="203" text-anchor="end">Eaton Americas</text></g>
+<line class="c-today" x1="190.8" y1="22" x2="190.8" y2="214"/><text class="c-today-t" x="194.8" y="20">today</text>
+<rect class="c-bar c-alt" x="170.4" y="62" width="343.0" height="20" rx="2"/>
+<text class="c-lab c-s3t" x="170.4" y="54">up to seven years, from June 2026</text>
+<rect class="c-bar" x="174.5" y="116" width="194.0" height="20" rx="2"/>
+<text class="c-lab c-s2t" x="374.5" y="131">about 4 years</text>
+<rect class="c-bar" x="186.8" y="152" width="151.9" height="20" rx="2"/>
+<text class="c-lab c-s2t" x="344.7" y="167">about 3.1 years</text>
+<rect class="c-bar" x="174.5" y="188" width="51.5" height="20" rx="2"/>
+<text class="c-lab c-s2t" x="232.0" y="203">about 1 year</text>
+</svg>
+<figcaption>SPP's CHILLS, accepted 5 June 2026; years of work from <a href="/journal/the-equipment-queue/">The equipment queue</a> (Siemens Energy and Eaton at 30 June 2026, Hitachi at 30 September 2026). My framing. Years of work is backlog over a year of sales, not a quoted lead time, and seven years is CHILLS's limit, not a forecast. The bar starts at acceptance; that each site's term runs from its own switch-on is my reading.</figcaption>
+</figure>
 
-## Households pay for the power stations that are not built
+If CHILLS's seven years run from a site's own switch-on, which is my reading of SPP's order rather than its words, a data centre that switches on under it now could still be cut-first in 2033. The gear that sets a site's start date in [the equipment queue](/journal/the-equipment-queue/) also sets how long it lives on terms the grid may take away.
+
+## Households pay for the power stations the rationing does not build
 
 <a id="pjm-sends-the-bill"></a>
 
-Where the plug is rationed, everyone else pays for the shortfall in power stations. PJM serves 67 million people across 13 states and Washington DC. Its capacity auction pays power stations to stand ready in a future year, and the last megawatt needed sets the price for all.
+Rationing the plug does not ration the bill. PJM serves 67 million people across 13 states and Washington DC, and its capacity auction pays power stations to stand ready in a future year. The last megawatt needed sets the price for all, and it has sat at the cap for three auctions running.
 
 <figure class="chart">
 <p class="chart-title">PJM's auction has sat at its price cap for three auctions running</p>
@@ -109,25 +127,21 @@ Where the plug is rationed, everyone else pays for the shortfall in power statio
 <figcaption>PJM auction reports and releases (30 July 2024, 22 July 2025, December 2025, 14 July 2026). The cap differs slightly each year. Shortfalls are against PJM's own reliability requirement.</figcaption>
 </figure>
 
-The cap has not called up new plant. The 2028/2029 auction cleared only 525 MW of new plant and upgrades, against a shortfall of 6,831 MW. PJM's market monitor attributes $6.3 billion, 38.2% of that auction, to data centre load.
-
-The tiers meet the bill here. PJM's interim tier buys no capacity for a site, so a site the grid may cut adds nothing to the auction until its upgrades land.
+The cap has not called up new plant. The 2028/2029 auction cleared only 525 MW of new plant and upgrades, against a shortfall of 6,831 MW. PJM's independent market monitor attributes $6.3 billion, 38.2% of that auction, to data centre load. PJM's interim tier buys no capacity for a site, so a site the grid may cut adds nothing to the auction until its upgrades land.
 
 <a id="ferc-keeps-the-bill-shared"></a>
 
-PJM tried to make new large loads, mostly data centres, bring their own capacity or be cut first, and the regulator said no for now. In August it asked to let sites of 50 MW or more switching on after June 2027 connect "without bringing their own capacity". In return they would cut their draw or switch to backup in a grid emergency. It also asked to drop them from the demand behind its auction, starting with the one in December 2026. On 9 October FERC accepted only a definition and a register of large loads, and left PJM free to refile. Its tariff wording appeared to reach into retail customers, whose curtailment belongs to the states. Nor had PJM given enough evidence that new large loads should be treated differently from other load growth. So for now a new data centre on firm service still counts in the auction households pay for. Deciding who is cut stays with the states.
+A firm data centre still adds to it, and the regulator has kept it that way for now. In August PJM asked to let sites of 50 MW or more switching on after June 2027 connect "without bringing their own capacity", cutting their draw in a grid emergency, and to drop them from the demand behind its auction. On 9 October FERC accepted only a definition and a register of large loads. The wording appeared to reach retail customers, whose curtailment belongs to the states, and PJM had not shown enough evidence that new large loads differ from other load growth. So a new data centre on firm service still counts in the auction households pay for.
 
 <a id="virginia-bills-the-empty-site"></a>
 
-Virginia guards against the opposite risk, the site that never fills. Data centres took 28% of Dominion Energy's Virginia sales in 2025, and from January 2027 its largest customers sign 14 year terms with minimum bills, backed by collateral. Dominion's stated aim is "to minimize both cross-rate class subsidies and stranded costs". The floor protects households from the empty site, not the full one.
+Virginia guards only against the site that never fills. Data centres took 28% of the Virginia sales of Dominion Energy, the state's main utility, in 2025, and from January 2027 its largest customers sign 14 year terms with minimum bills, backed by collateral. The floor protects households from the empty site, not the full one.
 
-## The sites the grid cannot cut are leaving on their own
+## One morning's 3,800 MW drop made holding on a condition of the plug
 
 <a id="the-power-it-drops"></a>
 
-The strongest evidence that rationing must run both ways is PJM's own account of one summer morning. At 07:56 on 22 July 2026 a fault on a 230 kV line in Dominion's zone cleared properly, with no relay misoperations. Still, about 3,800 MW of data centre load switched to backup generators.
-
-The first wave of transfers raised the voltage, and the higher voltage set off a second. Frequency rose to 60.092 Hz, a sign the grid suddenly had more power than demand.
+Rationing also has to run the other way, because the sites the grid cannot cut leave on their own. At 07:56 on 22 July 2026 a fault on a 230 kV line in Dominion's zone cleared properly, with no relay misoperations. Still, about 3,800 MW of data centre load switched to backup generators. The first wave of transfers raised the voltage, the higher voltage set off a second, and frequency rose to 60.092 Hz.
 
 <figure class="chart">
 <p class="chart-title">July's drop was the largest load transfer in PJM's history, and not its first</p>
@@ -152,105 +166,30 @@ The first wave of transfers raised the voltage, and the higher voltage set off a
 <figcaption>PJM's event review to its System Operations Subcommittee (31 July 2026) and Inside Lines (11 August 2026). PJM gives the earlier two events as about 1,500 MW each.</figcaption>
 </figure>
 
-The backup that protects each building is what threw the load at the grid. A data centre is built never to lose power, so at the first flicker it leaves. One site doing that protects its servers. A zone full of them doing it together moved more than seven times the new plant PJM's last auction added, in one morning, with no warning.
+That was more than seven times the new plant PJM's last auction added, moved in one morning with no warning. A data centre is built never to lose power, so at the first flicker it leaves; a zone of them leaving together is the grid's problem.
 
-## So the grid will now decide when a site may leave
+The fix is to make the building hold on, and the rule is being written. PJM proposed on 6 October that sites of 50 MW or more, with at least 25 MW behind power electronics, ride through set dips and swells, staying connected rather than fleeing to backup. They must stay on for a full second at up to 120% of normal voltage. Switching to backup does not "by itself" count as compliance. New projects must comply from 16 January 2027 and existing sites by 16 January 2028, with limited exceptions. FERC has ordered NERC, which writes the grid's reliability standards, to file binding standards by 31 December 2026. The grid now decides whom it may cut, and forbids the rest to leave on their own.
 
-The fix is to make the building hold on, and the rule is being written. PJM proposed on 6 October that sites of 50 MW or more, with at least 25 MW behind power electronics, ride through set dips and swells. A site must stay on for a full second at up to 120% of normal voltage, the kind of swell that set off July's second wave.
-
-Switching to backup power does not "by itself" count as compliance. New projects must comply from 16 January 2027, and existing sites by 16 January 2028, with limited exceptions where a site shows it cannot. ERCOT's own rule exempts sites approved before 14 November 2025.
-
-The national rule is following. NERC's alert of 4 May 2026 "does not create a mandatory obligation", but FERC has ordered NERC to file binding standards by 31 December 2026. Rationing now has two halves: the grid decides whom it may cut, and forbids the rest to leave on their own.
-
-## What backs a site up is now part of its connection
+## Cut-first power goes to sites that can slow their chips or bring their own
 
 <a id="google-lets-the-grid-slow-its-chips"></a>
 
-A site that may be cut, or must hold on, needs something to lean on, and the newest answer is the chip itself. By 19 March 2026 Google had deals with five utilities, covering 1 GW, to "limit or shift a portion" of its machine learning work at peak. At an Oracle site in Phoenix, software cut the power of 256 Nvidia chips by 25% for three hours, with no battery.
+A site that may be cut, or must hold on, needs something to lean on, and load that can leave in seconds is a reserve if it leaves on the grid's call. By 19 March 2026 Google had deals with five utilities, covering 1 GW, to "limit or shift a portion" of its machine learning work at peak. At an Oracle site in Phoenix, software cut the power of 256 Nvidia chips by 25% for three hours, with no battery. On 16 September Google, Nvidia and Emerald AI, which makes software that slows AI work, formed an alliance seeking faster connections for "credible, verifiable flexibility commitments". No public record yet shows a connection approved on a slowed chip.
 
-On 16 September Google, Nvidia and Emerald AI formed an alliance seeking faster connections for "credible, verifiable flexibility commitments". No public record yet shows a connection approved on a slowed chip.
+So the winners are sites that can live with being cut: chips that can slow, or plant of their own, as in [building your own power](/journal/building-your-own-power/). The losers are sites whose customers need firm power from the first day.
 
 <a id="what-the-battery-is-really-for"></a>
 <a id="california-still-shifts-the-sun"></a>
 
-Batteries were the obvious candidate, and the record says they are mostly doing something else. California's fleet earns about four times as much from shifting cheap midday power into the evening as from steadying the grid, and on its twelve hardest summer evenings of 2026, gas led every time. That is a time-shifter. Nobody publishes how many batteries sit at data centres.
-
-## What could leave the rationing on paper
-
-The case against is that tiers can be written and never used. Developers want firm service, and CAISO's own proposal records that they "would only agree to be flexible temporarily". SPP's CHILLS has been accepted since June, yet no site is shown running on it. And nobody has published what riding through costs, so PJM's limited exceptions could swallow its rule.
-
-Each objection is a reason to test use rather than paperwork, and the claim below does. It counts only a site of 50 MW or more actually switched on under a tier the grid may cut first, in at least two grids, by the end of 2027. Texas's power to shed every large load in an emergency does not count, because that is load shedding, not a tier.
-
-For holding on, the test is the outcome. Another transfer of 1,500 MW or more in 2028, after existing sites were due to comply, would show the rule changed nothing on the ground.
-
-## Nobody gets a bigger fuse sooner
-
-Texas has more data centres asking than it can carry, and Virginia had data centres leaving that nobody asked to go. Both are answered by terms, not wires. The fuse box is still full and the electrician still booked, so the landlord now writes the tenancy: whose heater goes off first, who must not yank every plug at once, and who pays the bill meanwhile. For a data centre in America, the terms of the connection are now part of the product.
-
-## The cut-first plug can outlast the gear queue it waits on
-
-<a id="america-rations-the-plug"></a>
-
-The word "interim" hides a long wait. A site on a cut-first tier waits for the grid's upgrades, and those upgrades need transformers and switchgear from makers with years of orders on their books. SPP's CHILLS lets a site take power as available for up to seven years. Siemens Energy's grid business holds about four years of work, and Hitachi Energy about three.
-
-<figure class="chart">
-<p class="chart-title">The cut-first tier's term runs past the makers' order books</p>
-<p class="chart-sub">SPP's CHILLS term from its acceptance, against each maker's years of work on its books, from its latest filing</p>
-<svg viewBox="0 0 560 242" role="img" aria-label="Timeline from 2026 to 2034. SPP's CHILLS tier, accepted on 5 June 2026, lets a site take power as available for up to seven years, to mid 2033. The makers whose gear the grid's upgrades need hold, from their latest filings, about 4 years of work at Siemens Energy's grid business, running to mid 2030; about 3.1 years at Hitachi Energy, running to late 2029; and about 1 year at Eaton's Electrical Americas, inside the fence, running to mid 2027.">
-<g class="c-grid"><line x1="150" y1="30" x2="150" y2="214"/><line x1="199" y1="30" x2="199" y2="214"/><line x1="248" y1="30" x2="248" y2="214"/><line x1="297" y1="30" x2="297" y2="214"/><line x1="346" y1="30" x2="346" y2="214"/><line x1="395" y1="30" x2="395" y2="214"/><line x1="444" y1="30" x2="444" y2="214"/><line x1="493" y1="30" x2="493" y2="214"/><line x1="542" y1="30" x2="542" y2="214"/></g>
-<g class="c-axis"><text x="150" y="232" text-anchor="middle">2026</text><text x="199" y="232" text-anchor="middle">2027</text><text x="248" y="232" text-anchor="middle">2028</text><text x="297" y="232" text-anchor="middle">2029</text><text x="346" y="232" text-anchor="middle">2030</text><text x="395" y="232" text-anchor="middle">2031</text><text x="444" y="232" text-anchor="middle">2032</text><text x="493" y="232" text-anchor="middle">2033</text><text x="542" y="232" text-anchor="middle">2034</text><text x="140" y="77" text-anchor="end">SPP's CHILLS tier</text><text x="140" y="131" text-anchor="end">Siemens Energy</text><text x="140" y="167" text-anchor="end">Hitachi Energy</text><text x="140" y="203" text-anchor="end">Eaton Americas</text></g>
-<line class="c-today" x1="190.8" y1="22" x2="190.8" y2="214"/><text class="c-today-t" x="194.8" y="20">today</text>
-<rect class="c-bar c-alt" x="170.4" y="62" width="343.0" height="20" rx="2"/>
-<text class="c-lab c-s3t" x="170.4" y="54">up to seven years, from June 2026</text>
-<rect class="c-bar" x="174.5" y="116" width="194.0" height="20" rx="2"/>
-<text class="c-lab c-s2t" x="374.5" y="131">about 4 years</text>
-<rect class="c-bar" x="186.8" y="152" width="151.9" height="20" rx="2"/>
-<text class="c-lab c-s2t" x="344.7" y="167">about 3.1 years</text>
-<rect class="c-bar" x="174.5" y="188" width="51.5" height="20" rx="2"/>
-<text class="c-lab c-s2t" x="232.0" y="203">about 1 year</text>
-</svg>
-<figcaption>SPP's CHILLS, accepted 5 June 2026; years of work from <a href="/journal/the-equipment-queue/">The equipment queue</a> (Siemens Energy and Eaton at 30 June 2026, Hitachi at 30 September 2026). My framing. Years of work is backlog over a year of sales, not a quoted lead time, and seven years is CHILLS's limit, not a forecast. The bar starts at acceptance; that each site's term runs from its own switch-on is my reading.</figcaption>
-</figure>
-
-So the waiting room's lease is as long as the queue it waits on. If the seven years run from a site's own switch-on, which is my reading of SPP's order rather than its words, a data centre that switches on under CHILLS now could still be cut-first in 2033. In [the equipment queue](/journal/the-equipment-queue/), the gear, not the chip, sets a site's start date. Here the same gear sets how long a site lives on terms the grid may take away.
-
-That decides who gains. The winners are sites that can live with being cut: chips that can slow, or plant of their own, as in [building your own power](/journal/building-your-own-power/). The losers are sites whose customers need firm power from the first day.
-
-## The load that fell off by accident is the reserve PJM could not buy
-
-July's morning reads differently once the two rules are put together. About 3,800 MW of data centre load left Virginia's grid in one morning, by accident. PJM's latest auction came 6,831 MW short of its reliability target and bought only 525 MW of new plant and upgrades.
-
-<figure class="chart">
-<p class="chart-title">The load that left in one morning was seven times the new plant PJM's auction bought</p>
-<p class="chart-sub">Megawatts: PJM's shortfall and new plant in the 2028/2029 auction, against load that can leave or slow</p>
-<svg viewBox="0 0 560 236" role="img" aria-label="Bar chart in megawatts. PJM's 2028/2029 capacity auction fell 6,831 MW short of its reliability target. About 3,800 MW of data centre load left the grid for backup generators on the morning of 22 July 2026, by accident. Google has flexibility deals covering 1 GW with five utilities, not all in PJM. The same auction bought 525 MW of new plant and upgrades.">
-<g class="c-axis"><text x="215" y="38" text-anchor="end">PJM's shortfall, 2028/29</text><text x="215" y="90" text-anchor="end">Load that left, 22 July 2026</text><text x="215" y="142" text-anchor="end">Google's flexibility deals</text><text x="215" y="194" text-anchor="end">New plant bought, 2028/29</text></g>
-<text class="c-note" x="215" y="54" text-anchor="end">against its reliability target</text>
-<rect class="c-bar c-mute" x="225" y="24" width="218.6" height="28" rx="2"/>
-<text class="c-lab c-s1t" x="451.6" y="43">6,831 MW</text>
-<text class="c-note" x="215" y="106" text-anchor="end">by accident, in one morning</text>
-<rect class="c-bar" x="225" y="76" width="121.6" height="28" rx="2"/>
-<text class="c-lab c-s2t" x="354.6" y="95">about 3,800 MW</text>
-<text class="c-note" x="215" y="158" text-anchor="end">five utilities, not all in PJM</text>
-<rect class="c-bar c-alt" x="225" y="128" width="32.0" height="28" rx="2"/>
-<text class="c-lab c-s3t" x="265.0" y="147">1 GW</text>
-<text class="c-note" x="215" y="210" text-anchor="end">new plant and upgrades</text>
-<rect class="c-bar c-mute" x="225" y="180" width="16.8" height="28" rx="2"/>
-<text class="c-lab c-s1t" x="249.8" y="199">525 MW</text>
-<line class="c-base" x1="225" y1="14" x2="225" y2="230"/>
-</svg>
-<figcaption>PJM auction report (14 July 2026) and event review (31 July 2026); Google (19 March 2026). My framing: the four are different measures, set side by side for scale. Google's deals are with five utilities, not all in PJM.</figcaption>
-</figure>
-
-Load that can leave in seconds is a reserve, if it leaves on the grid's call rather than at the first flicker. The two rules together make that so: a site must hold on through a fault, and come off when the grid asks. As PJM's transmission owners describe its interim tier, no capacity is bought for such a site, so it adds nothing to the auction households pay for. PJM's market monitor put $6.3 billion of the last one on data centre load.
-
-For a site on that tier, households are spared the bill and the site pays instead: it must own the backup, or chips that slow, as with Google's 1 GW of deals. The first readings come soon: PJM's filings to FERC in November 2026 and its 2029/2030 auction in December. In July the reserve left by accident. The new rules ask it to leave on cue.
+Batteries were the obvious thing to lean on, and they are mostly doing something else. California's fleet earns about four times as much from shifting cheap midday power into the evening as from steadying the grid, and on its twelve hardest summer evenings of 2026, gas led every time. Nobody publishes how many batteries sit at data centres.
 
 ## What would prove me wrong
 
-The first test is use, not paperwork. If fewer than two grids have a real site of 50 MW or more on an early tier the grid may cut first by the end of 2027, the rationing is on paper only.
+Two tests break the claim. If fewer than two grids have a real site of 50 MW or more switched on under a tier the grid may cut first by the end of 2027, the rationing is on paper only; Texas's power to shed every large load in an emergency is load shedding, not a tier, and does not count. If PJM sees another transfer of 1,500 MW or more in 2028, after existing sites were due to comply, holding on changed nothing on the ground; its earlier transfers were about 1,500 MW each.
 
-The second is whether holding on works. PJM's earlier transfers were about 1,500 MW each. If one that size recurs in 2028, after existing sites were due to comply, the rule did not change how the fleet behaves.
+The first readings come before either test: PJM's filings to FERC in November 2026, its 2029/2030 auction in December, and ERCOT's audit reports. A PJM filing that drops its interim tier, or an ERCOT audit that reopens the final gate without a lower plug, would move me early.
+
+The paper objection would not. Developers want firm service, and the proposal of CAISO, California's grid operator, records that they "would only agree to be flexible temporarily". CHILLS has been accepted since June, yet no site is shown running on it, and nobody has published what riding through costs, so PJM's exceptions could swallow its rule. That is why the test counts sites actually switched on and transfers actually avoided, not tiers and rules written.
 
 ## Research notes
 

@@ -33,9 +33,11 @@ So the new factories, when they open from 2027, will meet a queue that has kept 
 <hr class="layer">
 <p class="layer-label">For investors</p>
 
-## Every queue is longer than when the building began
+## The makers are building to keep the equipment queue, not to clear it
 
-The three makers that publish a backlog for this business all show the same thing: more years of work waiting, not fewer.
+<a id="the-equipment-queue"></a>
+
+Every maker of this gear that publishes a backlog has more years of work waiting, signed orders over a year of sales, than when its factory building began. Hitachi Energy, Hitachi's grid business and by its own estimate the maker of one in six of the world's installed transformers, has $66.9bn of orders waiting, about 3.1 years of work. Siemens Energy's grid business, which makes transformers and HVDC links, has €51bn, about four years. Eaton's Electrical Americas, which sells the switchgear and power rooms inside the fence, passed a full year of sales at the end of 2025.
 
 <figure class="chart">
 <p class="chart-title">The wait is getting longer, and the new factories are still to come</p>
@@ -66,17 +68,13 @@ The three makers that publish a backlog for this business all show the same thin
 <figcaption>Years of work is backlog divided by the same business's sales over the previous four quarters, my arithmetic from each company's filings to 30 September 2026. Siemens Energy's figure includes long HVDC links, so compare the direction, not the levels. Plant dates are each maker's own: Eaton's Jonesville and Bellevue plants in 2027, Siemens Energy's Nuremberg expansion by 2028, Hitachi Energy's Gallman plant in 2029.</figcaption>
 </figure>
 
-<a id="hitachi-energy-plans-the-queue"></a>
-<a id="siemens-energy-measures-the-shortage"></a>
 <a id="eaton-order-book-outruns-it"></a>
 
-Hitachi Energy, by its own estimate the maker of one in six of the world's installed transformers, has $66.9bn of orders waiting, about 3.1 years of work. Siemens Energy's grid business has €51bn, about four years. Eaton's Electrical Americas, which sells the switchgear and power rooms inside the fence, passed a full year of sales at the end of 2025.
+The three ratios are not comparable, and the direction is the point. The two grid makers carry HVDC links, high voltage direct current lines that take years to build, so their ratios sit higher by design. All three rose together, in the same two years the factory programmes were announced.
 
-The levels are not comparable, and the direction is the point. The two grid makers carry HVDC links, high voltage direct current lines that take years to build, so their ratios sit higher by design. What matters is that all three rose together, in the same two years the factory programmes were announced.
+## The new plants land from 2027, into a pile that keeps growing
 
-## The new factories land from 2027
-
-The building is real, and most of it is still ahead. A plant takes two to three years from announcement to first product, so the floor space announced since 2024 mostly arrives from 2027 on.
+That rise came while the new plants were being announced, and a plant takes two to three years from announcement to first product, so the floor space announced since 2024 mostly arrives from 2027 on.
 
 <figure class="chart">
 <p class="chart-title">Most of the new floor space lands from 2027 on</p>
@@ -104,17 +102,21 @@ The building is real, and most of it is still ahead. A plant takes two to three 
 
 Until those plants run, extra orders can only lengthen the queue. When they do, they add output to a pile that has grown in the meantime.
 
-## The makers will not overbuild
+## The makers size their factories to the order book, not to the wait
 
-The makers are not racing to empty the queue, and they say so. At its investor day on 10 June 2026, Hitachi showed its energy backlog growing towards about $100bn by fiscal 2030 and expected it to "remain stable at 2.5-3x" revenue. Hitachi Energy is "not building over-capacity", in Hitachi's own summary of the session.
+<a id="hitachi-energy-plans-the-queue"></a>
+
+The makers say they will not build enough to clear the queue. At its investor day on 10 June 2026, Hitachi, Hitachi Energy's parent, showed its energy backlog growing towards about $100bn by fiscal 2030 and expected it to "remain stable at 2.5-3x" revenue. Hitachi Energy is "not building over-capacity", in Hitachi's own summary of the session.
 
 The money is large and paced to orders. Hitachi Energy plans over $6bn of factory spending from 2024 to 2027, double the previous four years. Siemens Energy added about 20% capacity for €600m and is putting over €2bn more into transformers and switchgear by fiscal 2028. Both are building to the order book they can see, not to the one they hope for.
 
-The industry's memory explains why. A transformer plant runs for decades, and the makers lived through long years when it stood half empty. Capacity sized to today's orders is safe; capacity sized to clear the queue would be idle the day demand cools.
+The reason is history. A transformer plant runs for decades, and the makers lived through long years when it stood half empty. Capacity sized to clear the queue would be idle the day demand cools. A long queue carries risk as well: in the second quarter of 2026, Eaton's Electrical Americas margin fell two points year on year, to 27.5%, as higher metal costs met orders priced months earlier.
 
-## By a maker's own count, the gap narrows but never closes
+## By Siemens Energy's own count, demand still outruns every maker in 2030
 
-The strongest evidence that the wait lasts comes from a maker measuring the whole industry. At its capital market day on 20 November 2025, Siemens Energy set demand for large and medium power transformers in Europe and North America against the capacity of every maker in the region.
+<a id="siemens-energy-measures-the-shortage"></a>
+
+The strongest evidence that the wait lasts is a maker's count of the whole industry. At its capital market day on 20 November 2025, Siemens Energy set demand for large and medium power transformers in Europe and North America against the capacity of every maker in the region. Demand ran about 40% ahead in fiscal 2025 and is still about 10% ahead in fiscal 2030.
 
 <figure class="chart">
 <p class="chart-title">Siemens Energy's own forecast: the shortage narrows, but never closes</p>
@@ -132,25 +134,9 @@ The strongest evidence that the wait lasts comes from a maker measuring the whol
 
 Read as yearly flows, each year's shortfall joins the pile. That reading is mine; if the chart counts only factories in the region, imports fill part of the gap. Either way, Siemens Energy's own grid backlog grew from €33bn in September 2024 to €51bn in June 2026, by more than half in under two years.
 
-## The wait already costs the makers
+## The transformer is booked before the chip it will power is on sale
 
-A queue sounds like pure profit for the seller, but orders priced months ago are delivered at today's costs. In the second quarter of 2026, Eaton's Electrical Americas margin fell two points year on year, to 27.5%, as higher metal costs met orders priced months earlier. The makers carry the risk of a long diary as well as its comfort, which is one more reason they will not build far ahead of it.
-
-## What could shorten the wait
-
-The case against starts with arithmetic. A narrowing gap can lower years of work while the pile still grows: if orders run 10% above output and output grows 6% a year, Siemens Energy's ratio drifts from 3.96 to about 3.7 within two years. Eaton's ratio rose by only 0.01 in its latest quarter. And price rises, early bookings and a stronger euro can hold a ratio up with no longer real wait, since no maker splits its backlog into price and volume.
-
-<a id="schneider-sells-the-finished-system"></a>
-
-Some buyers also route around the queue. Schneider Electric sells more power rooms built and tested in its factories, which cut the work electricians must do on site.
-
-The wait does not end. A queue of three and a half years in 2028 binds a data centre developer as surely as four years today, and the makers' own plans are built to keep it. The second chair has arrived, and the diary still runs years ahead.
-
-## The gear outlives the chip it was ordered for
-
-<a id="the-equipment-queue"></a>
-
-Count the wait in chips rather than years. Nvidia has launched a new flagship AI chip about every year: Blackwell in 2024, Blackwell Ultra in 2025 and Rubin in 2026. The grid makers' order books for the gear that powers them run three to four years. Measured in chip launches, a transformer ordered from them today joins a pile of work that would take three or four generations to clear.
+The queue looks longer still against the chips the halls are built for. Nvidia, the designer of the flagship AI chips, has launched a new one about every year: Blackwell in 2024, Blackwell Ultra in 2025 and Rubin in 2026. Against order books of three to four years, a transformer ordered today joins a pile of work that would take three or four chip generations to clear.
 
 <figure class="chart">
 <p class="chart-title">The grid makers' order books outlast three or four chip generations</p>
@@ -165,32 +151,17 @@ Count the wait in chips rather than years. Nvidia has launched a new flagship AI
 <figcaption>Nvidia spec pages, as in <a href="/journal/memory-not-maths/">Memory, not maths</a>; years of work from the filings in the table at the foot (Eaton and Siemens Energy at 30 June 2026, Hitachi at 30 September 2026). Years of work is backlog over a year of sales, not a quoted lead time: a new order need not wait behind the whole pile. Open circles are not announced chips.</figcaption>
 </figure>
 
-So an AI build runs backwards from the way it is usually told. The chip is the part a buyer can change late; the electrical gear is the part that must be settled first. A data centre's real start date is set when its transformer is booked, years before the chips it will run are on sale.
-
-## Two readings decide which way it breaks
-
-Whether the queue holds comes down to two things: whether the makers' years of work keep rising, and whether their new plants open on time. Put them together and every quarterly result lands in one box.
-
-<figure class="chart">
-<p class="chart-title">Every quarter from now lands in one of four boxes</p>
-<p class="chart-sub">Two readings: whether the makers' years of work keep rising, and whether their new plants open on time</p>
-<svg viewBox="0 0 560 290" role="img" aria-label="A two by two diagram. Across: new plants open late, or on time. Up: years of work rising, or falling. Rising and on time is the queue kept on purpose, my claim at its strongest. Falling and on time is the queue clearing, which would prove me wrong. Rising and late is stuck, worse than I say. Falling and late is cooling, orders fading rather than supply catching up. Today, at June 2026, years of work are rising and the first plants are not due until 2027, so the marker sits at the top, between the two upper boxes.">
-<rect class="c-box" x="110" y="40" width="209.0" height="99.0" rx="4"/><text class="c-box-t" x="214.5" y="85.5" text-anchor="middle"><tspan font-weight="600">Stuck</tspan></text><text class="c-note" x="214.5" y="104.5" text-anchor="middle">worse than I say</text><rect class="c-box" x="331.0" y="40" width="209.0" height="99.0" rx="4"/><text class="c-box-t" x="435.5" y="85.5" text-anchor="middle"><tspan font-weight="600">Kept on purpose</tspan></text><text class="c-note" x="435.5" y="104.5" text-anchor="middle">my claim, at its strongest</text><rect class="c-box" x="110" y="151.0" width="209.0" height="99.0" rx="4"/><text class="c-box-t" x="214.5" y="196.5" text-anchor="middle"><tspan font-weight="600">Cooling</tspan></text><text class="c-note" x="214.5" y="215.5" text-anchor="middle">demand fading first</text><rect class="c-box" x="331.0" y="151.0" width="209.0" height="99.0" rx="4"/><text class="c-box-t" x="435.5" y="196.5" text-anchor="middle"><tspan font-weight="600">Clearing</tspan></text><text class="c-note" x="435.5" y="215.5" text-anchor="middle">the new plants work: I am wrong</text>
-<g class="c-axis"><text x="110" y="272">new plants late</text><text x="540" y="272" text-anchor="end">new plants on time</text><text x="100" y="52" text-anchor="end">years of</text><text x="100" y="67" text-anchor="end">work rising</text><text x="100" y="232" text-anchor="end">years of</text><text x="100" y="247" text-anchor="end">work falling</text></g>
-<circle class="c-dot c-s2" cx="325.0" cy="40" r="7"/><text class="c-lab c-s2t" x="325.0" y="24" text-anchor="middle">June 2026: rising, plants not yet open</text>
-</svg>
-<figcaption>My framing, not a maker's. The readings are each maker's backlog over a year of its sales, and the plant dates in the table at the foot.</figcaption>
-</figure>
-
-Today the marker sits at the top, between two boxes. Years of work are still rising, and the first plants are not due until 2027. My test draws the line: at 30 June 2028, Siemens Energy's grid business should still hold at least 3.6 years of work, and Eaton's Electrical Americas at least one.
-
-The box it moves into decides who waits. In "kept on purpose", the developers who booked early switch on first and the late planners queue behind them. In "clearing", the advantage passes back to the buyers. Either way the same gear sits behind the grid stories in [America rations the plug](/journal/america-rations-the-plug/) and [the plug, not the chip](/journal/the-queue-not-the-chip/): a utility can clear a site's place in the grid queue, and the site still waits for its transformer.
+So a grid connection alone does not start a hall. A utility can clear a site's place in the grid queue, as in [America rations the plug](/journal/america-rations-the-plug/) and [the plug, not the chip](/journal/the-queue-not-the-chip/), and the site still waits for its transformer. A data centre's real start date is set when that transformer is booked, years before the chips it will run are on sale.
 
 ## What would prove me wrong
 
-The test fails if, at 30 June 2028, Siemens Energy's grid backlog is below 3.6 years of its sales or Eaton's Electrical Americas backlog is below one year. That is a genuine risk. The drift worked out above already takes Siemens Energy close to the line, and Eaton's new plants should be running well before the date.
+The test fails if, at 30 June 2028, Siemens Energy's grid backlog is below 3.6 years of its sales or Eaton's Electrical Americas backlog is below one year. That is a genuine risk. A narrowing gap can lower years of work while the pile still grows: if orders run 10% above output and output grows 6% a year, Siemens Energy's ratio drifts from 3.96 to about 3.7 within two years. Eaton's ratio rose by only 0.01 in its latest quarter, and its new plants should be running well before the date.
 
-A pass would not prove a longer wait on its own, since price, early bookings, currency and HVDC contracts can hold a ratio up. Hitachi Energy is left out; its own plan, set out above, keeps its ratio at 2.5 to 3 times revenue. Schneider publishes no backlog, so it cannot be tested this way.
+Two readings together would move me before the test: years of work falling at the makers while their first plants open on time from 2027. That is the queue clearing. Falling years with late plants would mean demand fading instead.
+
+<a id="schneider-sells-the-finished-system"></a>
+
+Two things would not move me. Hitachi Energy sits outside the test, and its own plan keeps its ratio at 2.5 to 3 times revenue. Some buyers route around the queue: Schneider Electric, another maker of this gear, sells more power rooms built and tested in its factories, which cut the work electricians must do on site. That shortens the install, not the order book, and Schneider publishes no backlog to test. A pass, for its part, would not prove a longer wait on its own: price rises, early bookings, a stronger euro and HVDC contracts can hold a ratio up, and no maker splits its backlog into price and volume.
 
 ## Research notes
 

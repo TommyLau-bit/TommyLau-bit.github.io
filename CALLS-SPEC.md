@@ -35,11 +35,11 @@ The site does two jobs.
 
 - Notes and pieces are independent and need not agree; a wrong fact is fixed in place, never flagged with a correction.
 
-## Updates: monthly, not daily
+## Updates: every two weeks, not daily (biweekly since 6 Nov 2026)
 
 - Pitches are **never reposted or rewritten** after publication, so readers never wonder why they are seeing the same piece again.
-- **Once a month** the scorecard alone gets one dated refresh: latest prices, target and falsifier checks, any call that has resolved. A resolved call gets a short dated post-mortem on the scorecard.
-- Each monthly refresh and each new pitch goes live only with Tommy's approval, since it republishes the public site.
+- **Every two weeks** the scorecard alone gets one dated refresh: latest prices, target and falsifier checks, any call that has resolved. A resolved call gets a short dated post-mortem on the scorecard.
+- Each refresh and each new pitch goes live only with Tommy's approval, since it republishes the public site.
 
 ## Rule changes this needs (to make in the build session)
 
@@ -69,13 +69,13 @@ Tommy found the first build (a long web pitch with charts, merged into the claim
 - **`/research/<slug>/`:** a short summary page with the call box, two download buttons, three to five key points (`keyPoints`), and the claim it rests on, if any. No charts and no long body on the web; the Markdown body is the note's text of record. `/calls/...` redirects here.
 - **Journal pieces:** if a note rests on a piece's claim, the claim box under the piece links to it.
 - **Drafts** render only under `npm run dev`. The build fails a non-draft note without Tommy's call (`src/lib/calls.ts`).
-- **No call** is a decided verdict (`direction: "NO CALL"`, no target, `revisitIf` required). It is marked monthly with the price move shown.
-- **Scorecard data:** `src/data/calls.ts`. Monthly, add one `Mark` per open call and set `SCORECARD_REFRESHED`. A resolved call gets `resolved` with a short post-mortem. Never delete.
+- **No call** is a decided verdict (`direction: "NO CALL"`, no target, `revisitIf` required). It is marked every two weeks with the price move shown, and the report says whether its revisit level is crossed.
+- **Scorecard data:** `src/data/calls.ts`. Every two weeks, add one `Mark` per open call and set `SCORECARD_REFRESHED`. A resolved call gets `resolved` with a short post-mortem. Never delete.
 - **Checker:** `python3 brand/check-call.py`.
 - **Notes and pieces are independent** (Tommy, 2 Nov 2026, permanent; replaces "journal piece first"): a note may cover a company the journal never mentions and need not rest on a claim (`claims` may be empty). Notes and pieces do not need to match.
 - **Research table grouped by launch** (Tommy, 2 Nov 2026): `/research/` shows one table, grouped into the coverage launches in `LAUNCHES` (src/data/calls.ts), newest first, each ordered by map layer. A note outside every launch is grouped by its month automatically; name a new launch only when several notes on one sector go out together. A note whose first claim's layer misfiles it may set `layer:` (Nvidia: chips). Publication dates are never changed.
 - **No dated corrections, ever** (2 Nov 2026, permanent): a wrong fact in a piece or note is edited so it is right. No "Where I was wrong", no `correction` field, no "Correction" paragraphs.
-- **Monthly marks:** the scheduled task `research-monthly-marks` prepares them early each month for Tommy's approval.
+- **Biweekly marks** (Tommy, 6 Nov 2026): the scheduled task `research-biweekly-reprice` re-prices every call, views and no-views, every second Friday from 6 Nov 2026 and reports for Tommy's approval; it never publishes. The monthly task `research-monthly-marks` is retired (its 1 Nov run stalled on a permission prompt, so no marks were made before 6 Nov).
 
 ## Briefs for agents (in research-build/)
 - `BRIEF-note.md`: drafting an initiation note (text of record, PDF, model). `BRIEF-note-factcheck.md`: the read-only fact-check of a note.

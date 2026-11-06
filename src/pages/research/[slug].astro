@@ -44,7 +44,7 @@ const { mark, ret, move } = latest(p);
       </dl>
       <p class="callbox-wrong"><span>{c.direction === 'NO CALL' ? 'What would prove the thesis wrong' : 'What proves it wrong'}</span>{c.wrongIf}</p>
       {c.revisitIf && <p class="callbox-wrong"><span>What would turn this into a call</span>{c.revisitIf}</p>}
-      {mark && <p class="callbox-wrong"><span>Latest monthly mark</span>{fmtMoney(c.currency, mark.price)} on {fmtDate(new Date(mark.date))}, {ret != null ? `${fmtPct(ret)} for the call` : `price ${fmtPct(move!)} since publication`}. {mark.falsifier}</p>}
+      {mark && <p class="callbox-wrong"><span>Latest mark</span>{fmtMoney(c.currency, mark.price)} on {fmtDate(new Date(mark.date))}, {ret != null ? `${fmtPct(ret)} for the call` : `price ${fmtPct(move!)} since publication`}. {mark.falsifier}</p>}
     </section>
 
     <div class="downloads">

@@ -24,7 +24,7 @@ work on notes, calls, the research page or share prices, read `CALLS-SPEC.md`.
   saved in `public/research/`. A draft has `draft: true`, the call fields null
   and Claude's view in `draftView`. **Only Tommy decides the call** (LONG,
   SHORT or NO CALL). The build fails a non-draft note without it.
-- Notes are never rewritten after publication. The monthly mark goes in
+- Notes are never rewritten after publication. The biweekly mark goes in
   `src/data/calls.ts`, with Tommy's approval.
 - **No dated corrections, ever** (Tommy, 2 Nov 2026, permanent). When a fact
   in a piece or a note is found wrong, edit it so it is simply right: the
@@ -37,7 +37,7 @@ work on notes, calls, the research page or share prices, read `CALLS-SPEC.md`.
   mentions, and need not rest on a claim (`claims` may be empty). Notes and
   pieces do not need to match or reference each other.
 - When a journal piece publishes, ask Tommy whether to draft a note on it.
-- Once a month (scheduled task `research-monthly-marks`) the track record
+- Every second Friday (scheduled task `research-biweekly-reprice`, from 6 Nov 2026) the track record
   marks are prepared for Tommy to approve; nothing is pushed without his go.
 
 ## Before writing or editing any piece, read `WRITING-FORMAT.md`

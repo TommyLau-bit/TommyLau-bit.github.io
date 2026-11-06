@@ -41,23 +41,49 @@ Orbit can still work. The free plug is simply paid for in kilograms, and no comp
 <hr class="layer">
 <p class="layer-label">For investors</p>
 
-## The plug in orbit is the sun, and it has no queue
+## In orbit the power is nearly free, and the heat is the bill
 
-The designs converge on one orbit, because it nearly removes the night. Google's Suncatcher paper (arXiv, 22 November 2025) puts its satellites in "dawn-dusk, sun-synchronous low-Earth orbit" to "enable near-continuous power generation". Starcloud's FCC application of 4 February 2026 asks for up to 88,000 satellites "with a nominal 06:00 crossing time", the same dawn-dusk line.
+<a id="data-centres-in-space"></a>
 
-SpaceX's application is far larger. The FCC's Space Bureau accepted it for filing on 4 February 2026 (DA 26-113): up to one million satellites, between 500 and 2,000 km, in 30 degree and sun-synchronous orbits. Its finance chief, Bret Johnsen, said in an interview SpaceX filed with the SEC on 9 June 2026 that cells there get "roughly five times, if not more, energy per cell than they get terrestrially".
+SpaceX, the rocket company planning AI compute satellites, sets a goal of 100 kilowatts of computing per tonne launched: 10 kg for each kW. At the radiator weight of the International Space Station, whose radiators were designed decades ago, 14 kg per m², a radiator shedding SpaceX's assumed 1,400 W/m² uses all 10 kg on its own. At the 633 W/m² of Starcloud, a start-up with its own orbital plan, it needs about 22. Nobody has published what a compute satellite weighs, and the SEC, the US securities regulator, asked.
 
-The pull is the plug on the ground. Starcloud's filing says the buildout of terrestrial energy in the western world "has not kept pace with the demand for AI". SpaceX's own risk factors tie the case to the same thing. If "advances in nuclear energy" or similar "alleviate infrastructure constraints", the viability of its orbital compute "may be materially diminished".
+<figure class="chart">
+<p class="chart-title">At the space station's weight, the radiator alone uses SpaceX's whole budget</p>
+<p class="chart-sub">Kilograms launched per kilowatt</p>
+<svg viewBox="0 0 560 280" role="img" aria-label="Bar chart in kilograms launched per kilowatt. SpaceX's target for a whole AI compute satellite is 10, from 100 kilowatts per metric ton. A radiator alone at the space station's areal density of 14 kilograms per square metre, shedding SpaceX's 1,400 watts per square metre, is 10. A whole Starlink V2 mini satellite is about 20.5, on Google's estimate. A radiator alone at station density shedding Starcloud's 633 watts per square metre is about 22.1. The station's own radiator wings as flown are about 96 kilograms per kilowatt, off the scale.">
+<g class="c-grid">
+<line x1="270" y1="14" x2="270" y2="228"/>
+<line x1="320" y1="14" x2="320" y2="228"/>
+<line x1="370" y1="14" x2="370" y2="228"/>
+<line x1="420" y1="14" x2="420" y2="228"/>
+<line x1="470" y1="14" x2="470" y2="228"/>
+<line x1="520" y1="14" x2="520" y2="228"/>
+</g>
+<g class="c-axis"><text x="260" y="38" text-anchor="end">SpaceX target, whole satellite</text><text x="260" y="90" text-anchor="end">Radiator alone, ISS weight, at 1,400 W/m²</text><text x="260" y="142" text-anchor="end">Starlink V2 mini, whole satellite</text><text x="260" y="194" text-anchor="end">Radiator alone, ISS weight, at 633 W/m²</text><text x="270" y="246" text-anchor="middle">0</text><text x="320" y="246" text-anchor="middle">5</text><text x="370" y="246" text-anchor="middle">10</text><text x="420" y="246" text-anchor="middle">15</text><text x="470" y="246" text-anchor="middle">20</text><text x="520" y="246" text-anchor="middle">25</text></g>
+<rect class="c-bar" x="270" y="18" width="100" height="30" rx="2"/>
+<text class="c-lab c-s2t" x="378" y="38">10 kg</text>
+<rect class="c-bar c-mute" x="270" y="70" width="100" height="30" rx="2"/>
+<text class="c-lab c-s1t" x="378" y="90">10 kg</text>
+<rect class="c-bar c-alt" x="270" y="122" width="205" height="30" rx="2"/>
+<text class="c-lab c-s3t" x="483" y="142">20.5 kg</text>
+<rect class="c-bar c-mute" x="270" y="174" width="221" height="30" rx="2"/>
+<text class="c-lab c-s1t" x="499" y="194">22.1 kg</text>
+<line class="c-today" x1="370" y1="14" x2="370" y2="228"/>
+<line class="c-base" x1="270" y1="14" x2="270" y2="228"/>
+<text class="c-note" x="270" y="268">ISS radiator wings as flown: about 96 kg per kW, off this scale</text>
+</svg>
+<figcaption>SpaceX prospectus (12 June 2026); Google, Suncatcher paper (22 November 2025); NASA, IEEE Aerospace 2022 lunar habitat paper (14 kg/m²); NASA ISS thermal control overview (six units of 1,122.64 kg for 70 kW). Radiator bars are my arithmetic and treat heat to reject as equal to compute power, which understates it.</figcaption>
+</figure>
 
-That is the [American plug queue](/journal/america-rations-the-plug/) seen from above. Spectrum is not the gate either. Both ask for Ka-band radio only "on a non-interference, unprotected basis", and both move their data mainly by laser.
+## The sun has no queue, which is why the designs go up
+
+Power is the reason to go up at all, so the designs converge on one orbit that nearly removes the night. Google's Suncatcher paper (arXiv, 22 November 2025), a research design for orbital computing, puts its satellites in "dawn-dusk, sun-synchronous low-Earth orbit". Starcloud's application of 4 February 2026 to the FCC, the US regulator of satellite radio, asks for up to 88,000 satellites on the same dawn-dusk line. SpaceX's, accepted for filing that day, asks for up to one million, between 500 and 2,000 km. SpaceX's finance chief, Bret Johnsen, said cells there get "roughly five times, if not more, energy per cell than they get terrestrially".
+
+What pushes them up is the [American plug queue](/journal/america-rations-the-plug/). Starcloud's filing says the buildout of terrestrial energy in the western world "has not kept pace with the demand for AI". SpaceX's risk factors warn that if "advances in nuclear energy" or similar "alleviate infrastructure constraints", the viability of its orbital compute "may be materially diminished".
 
 ## Heat leaves only as light, so the radiator's temperature sets its size
 
-Almost every watt a chip draws becomes heat, and in a vacuum nothing carries it off by touch. SpaceX's final prospectus (12 June 2026) says so plainly: "thermal control must be accomplished through radiation rather than convection and conduction." The law that governs radiation makes the heat shed rise with absolute temperature to the fourth power.
-
-Starcloud's white paper (September 2024) works the sum. A black plate at 20°C with an emissivity of 0.92, radiating from both faces, emits about 770 watts per square metre. After it absorbs some sunlight and the Earth's own glow, it nets 633 W/m².
-
-SpaceX assumes far more. In the 9 June transcript, Elon Musk puts SpaceX's figure at about 1,400 W/m², from radiators that radiate on both sides and sit "knife edge to the sun". On my arithmetic, a shaded two-sided panel of the same emissivity reaches 1,400 W/m² only near 67°C.
+Free power still has to leave as heat, and SpaceX's final prospectus (12 June 2026), the filing for its share listing, says it plainly: "thermal control must be accomplished through radiation rather than convection and conduction." Heat shed rises with absolute temperature to the fourth power. Starcloud's white paper (September 2024) nets 633 W/m² from a black plate at 20°C. Elon Musk, SpaceX's chief executive, puts SpaceX's figure at about 1,400 W/m², from two-sided radiators "knife edge to the sun". On my arithmetic, a shaded two-sided panel of emissivity 0.92 reaches that only near 67°C.
 
 <figure class="chart">
 <p class="chart-title">A radiator sheds heat with the fourth power of its temperature</p>
@@ -99,31 +125,23 @@ SpaceX assumes far more. In the 9 June transcript, Elon Musk puts SpaceX's figur
 <figcaption>The curve is my arithmetic: two faces, emissivity 0.92, no sunlight or Earth glow, by the Stefan-Boltzmann law. Starcloud white paper (September 2024); SpaceX interview transcript filed with the SEC (9 June 2026); NASA ISS Active Thermal Control System overview (undated), my arithmetic from 70 kW over six radiator units. The coolant must run warmer than the panel.</figcaption>
 </figure>
 
-Going from 20°C to 67°C raises absolute temperature by about 16%, but sheds about 1.8 times the heat per square metre. That is the lever [Heat and water](/journal/heat-and-water/) found on the ground, pulled for a different prize. There, a warm loop at ASHRAE class W45 lets a dry cooler replace a cooling tower. In orbit, the warmer the coolant the chips accept, the smaller the radiator.
+That gap is large because of the fourth power. Going from 20°C to 67°C raises absolute temperature by about 16%, but sheds about 1.8 times the heat per square metre. It is the lever [Heat and water](/journal/heat-and-water/) found on the ground, where a warm loop lets a dry cooler replace a cooling tower. In orbit, the warmer the coolant the chips accept, the smaller the radiator. The space station shows the other extreme: its ammonia loop runs at about 3°C because it cools a crew, and on my arithmetic its six main radiator units reject about 147 W per square metre.
 
-The International Space Station sits at the cold end. Its ammonia supply is set at 37°F, about 3°C, because it cools a crew. On my arithmetic its six main radiator units reject about 147 W per square metre of panel as designed.
+## Every kilogram is a launch bill, and no design yet meets 10 kg per kW
 
-## Every kilogram is a launch bill, so the measure is kilowatts per tonne
+Radiator area becomes weight, and weight is what launch charges for. SpaceX's prospectus says 100 gigawatts a year "via satellites carrying over 100 kilowatts of compute power per metric ton" needs "approximately one million metric tons to orbit annually". Musk's draft first satellite is 120 kW sustained, about one rack of Nvidia GB300 chips. On my arithmetic, that needs about 86 m² of radiator at 1,400 W/m² and about 480 m² of solar array. At 10 kg per kW, the whole satellite could weigh no more than about 1.2 tonnes.
 
-Because mass is the cost, SpaceX states its goal as power per mass. Its prospectus says deploying 100 gigawatts a year "via satellites carrying over 100 kilowatts of compute power per metric ton" needs "approximately one million metric tons to orbit annually". That is 10 kg launched for each kW of computing, the measure the rest of this piece uses.
+The stated designs fall short. SpaceX's web page for AI1, its first AI satellite, gives "75 kW / ton", a quarter short of the target if read as compute per tonne launched. Johnsen's "About 5 megawatts per launch", at the 100 tonnes a launch SpaceX targets over time, is 50 kW per tonne, half the goal. Google's best proxy, a Starlink V2 mini, one of SpaceX's internet satellites, is about 20.5 kg per kW on my arithmetic, twice the target for a satellite that would also carry the chips.
 
-The first design is smaller. In the 9 June transcript, Musk described a draft version-one satellite of 150 kW peak and 120 kW sustained, about one GB300 rack. The solar assumption is 250 W/m².
+## The regulator asked for the mass, and the prospectus does not give it
 
-SpaceX's web page for its first AI satellite, AI1, now gives a design "vehicle efficiency" of "75 kW / ton". It does not say whether that counts compute or solar power, or tons launched. Read as compute per tonne launched, it is a quarter short of the target.
+If the designs are short of the target, the mass is the number that matters, and the SEC's comment letter of 24 April 2026 asked for the "power-to-mass ratios" behind the 100 gigawatt goal, and for "total system mass". The final prospectus (424B4, 12 June 2026) answered on design only: "substantially larger radiators", and about "five times the solar array output compared to V3 satellite designs". On mass it says the figures "continue to be refined". Its next quarterly report, the 10-Q for the quarter to 30 September 2026, filed on 22 October, does not mention orbital compute at all.
 
-On my arithmetic, 120 kW needs about 86 m² of radiator at 1,400 W/m², and about 480 m² of solar array.
+Heritage hardware shows why the missing number matters. The station's own wings are six units of 1,122.64 kg each for 70 kW, about 96 kg per kW. The target needs radiators several times lighter per square metre than the station's, or run hotter than 67°C, or both. No filing I read says which.
 
-At 10 kg per kW, the whole satellite could weigh no more than about 1.2 tonnes. Radiator, panels, chips and frame must all fit inside it.
+## At today's launch price, orbital power costs several times a ground hall's
 
-Johnsen put the first generation at "About 5 megawatts per launch", or "roughly 200 launches for every gigawatt". At the 100 tonnes a launch SpaceX targets over time, that is 50 kW per tonne, half the goal. SpaceX has not said what the first launches will carry.
-
-Google's best proxy is Starlink. Its paper puts a Starlink V2 mini at 575 kg and, on its own photometric estimate, about 28 kW of solar power. That is about 20.5 kg per kW on my arithmetic, twice SpaceX's target for a satellite that would also carry the chips.
-
-## At today's launch price, the free plug costs more than ground power
-
-Google turns kilograms into money with a "launched power price", the launch cost of each kW spread over the satellite's life. It uses a current price of $3,600/kg, "based on Falcon 9 (reusable configuration)". Over a five-year life, a Starlink-class satellite comes to $14,700 per kW per year.
-
-Its comparison for American AI halls is power at $0.06 to $0.25 per kWh and a PUE of 1.09 to 1.4. PUE, power usage effectiveness, is total power entering a hall divided by the power reaching its computers. That gives $570 to $3,000 per kW per year.
+Every kilogram also has a fare. Google's "launched power price" spreads launch cost over the satellite's life. At $3,600/kg, "based on Falcon 9 (reusable configuration)", SpaceX's working rocket, and a five-year life, a Starlink-class satellite comes to $14,700 per kW per year. An American AI hall's power bill, on Google's range of power prices and PUE (total power over power reaching the computers), is $570 to $3,000 per kW per year.
 
 <figure class="chart">
 <p class="chart-title">At today's launch price, power in orbit costs several times a ground hall's power bill</p>
@@ -142,69 +160,9 @@ Its comparison for American AI halls is power at $0.06 to $0.25 per kWh and a PU
 <figcaption>Google, Suncatcher paper (22 November 2025), Table 1 and text. The $3,600 per kilogram is Google's estimate for Falcon 9, not a published price; the ground range is Google's, from reported power prices and PUE. Launch cost only: chips, solar arrays and the satellite itself are excluded on both sides.</figcaption>
 </figure>
 
-At $200/kg the same satellite falls to $810, inside the ground range. Google notes that $200/kg "is often cited, by SpaceX and others", as the point where launch stops being the limiting cost. It projects prices could fall below it by about 2035 if SpaceX's learning rate holds, which it says would take about 180 Starship launches a year.
+At $200/kg, the figure Google says "is often cited, by SpaceX and others" as the point where launch stops being the limiting cost, the same satellite falls to $810, inside the ground range. Google projects prices could fall below it by about 2035 if SpaceX's learning rate holds, which it says would take about 180 launches a year of Starship, SpaceX's next, larger rocket. I found no launch provider's published price per kilogram for a whole rocket to low Earth orbit; the $3,600 is Google's estimate.
 
-The case is very sensitive to that price. Starcloud's white paper assumes about $30/kg in the long term, roughly a 120th of Google's current figure. I found no launch provider's published price per kilogram for a whole rocket to low Earth orbit; the $3,600 is Google's estimate.
-
-## The regulator asked for the mass, and the prospectus does not give it
-
-The SEC's staff went straight to the lever. Its comment letter of 24 April 2026 on SpaceX's draft registration asked for the "power-to-mass ratios" behind the 100 gigawatt goal. It asked SpaceX to discuss "the total estimated solar collection area, total system mass, and on-orbit assembly requirements". It also asked for "the material differences between connectivity satellites and AI compute satellites".
-
-The final prospectus (424B4, 12 June 2026) answered on design, not on mass. AI compute satellites need "substantially larger radiators for thermal management". They need about "five times the solar array output compared to V3 satellite designs". On the number asked for, it says: "The precise solar collection area, total system mass per satellite, and on-orbit assembly requirements associated with this goal continue to be refined."
-
-The next quarterly report did not fill the gap. SpaceX's 10-Q for the quarter to 30 September 2026, filed on 22 October, does not mention orbital compute at all.
-
-Heritage hardware shows why the missing number matters. NASA's lunar habitat study (IEEE Aerospace, 2022) sizes radiators at the station's areal density, 14 kg per m². At Starcloud's 633 W/m², that is about 22 kg of radiator for each kW. At SpaceX's 1,400 W/m², it is exactly 10.
-
-<figure class="chart">
-<p class="chart-title">At the space station's weight, the radiator alone uses SpaceX's whole budget</p>
-<p class="chart-sub">Kilograms launched per kilowatt</p>
-<svg viewBox="0 0 560 280" role="img" aria-label="Bar chart in kilograms launched per kilowatt. SpaceX's target for a whole AI compute satellite is 10, from 100 kilowatts per metric ton. A radiator alone at the space station's areal density of 14 kilograms per square metre, shedding SpaceX's 1,400 watts per square metre, is 10. A whole Starlink V2 mini satellite is about 20.5, on Google's estimate. A radiator alone at station density shedding Starcloud's 633 watts per square metre is about 22.1. The station's own radiator wings as flown are about 96 kilograms per kilowatt, off the scale.">
-<g class="c-grid">
-<line x1="270" y1="14" x2="270" y2="228"/>
-<line x1="320" y1="14" x2="320" y2="228"/>
-<line x1="370" y1="14" x2="370" y2="228"/>
-<line x1="420" y1="14" x2="420" y2="228"/>
-<line x1="470" y1="14" x2="470" y2="228"/>
-<line x1="520" y1="14" x2="520" y2="228"/>
-</g>
-<g class="c-axis"><text x="260" y="38" text-anchor="end">SpaceX target, whole satellite</text><text x="260" y="90" text-anchor="end">Radiator alone, ISS weight, at 1,400 W/m²</text><text x="260" y="142" text-anchor="end">Starlink V2 mini, whole satellite</text><text x="260" y="194" text-anchor="end">Radiator alone, ISS weight, at 633 W/m²</text><text x="270" y="246" text-anchor="middle">0</text><text x="320" y="246" text-anchor="middle">5</text><text x="370" y="246" text-anchor="middle">10</text><text x="420" y="246" text-anchor="middle">15</text><text x="470" y="246" text-anchor="middle">20</text><text x="520" y="246" text-anchor="middle">25</text></g>
-<rect class="c-bar" x="270" y="18" width="100" height="30" rx="2"/>
-<text class="c-lab c-s2t" x="378" y="38">10 kg</text>
-<rect class="c-bar c-mute" x="270" y="70" width="100" height="30" rx="2"/>
-<text class="c-lab c-s1t" x="378" y="90">10 kg</text>
-<rect class="c-bar c-alt" x="270" y="122" width="205" height="30" rx="2"/>
-<text class="c-lab c-s3t" x="483" y="142">20.5 kg</text>
-<rect class="c-bar c-mute" x="270" y="174" width="221" height="30" rx="2"/>
-<text class="c-lab c-s1t" x="499" y="194">22.1 kg</text>
-<line class="c-today" x1="370" y1="14" x2="370" y2="228"/>
-<line class="c-base" x1="270" y1="14" x2="270" y2="228"/>
-<text class="c-note" x="270" y="268">ISS radiator wings as flown: about 96 kg per kW, off this scale</text>
-</svg>
-<figcaption>SpaceX prospectus (12 June 2026); Google, Suncatcher paper (22 November 2025); NASA, IEEE Aerospace 2022 lunar habitat paper (14 kg/m²); NASA ISS thermal control overview (six units of 1,122.64 kg for 70 kW). Radiator bars are my arithmetic and treat heat to reject as equal to compute power, which understates it.</figcaption>
-</figure>
-
-So a radiator of the station's weight, run as hot as SpaceX assumes, would use the whole 100 kW per tonne budget on its own. The station's own wings are far heavier: six units of 1,122.64 kg each for 70 kW, about 96 kg per kW. The target needs radiators several times lighter per square metre than the station's, or run hotter than 67°C, or both. No filing I read says which.
-
-## What could make orbit cheaper than I think
-
-The case against is strong and specific. The station's radiators were designed decades ago for a crew, with a cold loop, eight panels to a unit and rotating joints. A compute radiator need not carry all of that, so 14 kg per m² is a heritage ceiling, not a law.
-
-An independent preprint goes further (Gaalema, Indyk and Staley, arXiv, 9 April 2026; not peer reviewed). It argues that panels combining solar cells, chips and radiator could reach "about 500 W/kg", or 2 kg per kW. Its 16 MW, 150 tonne satellite would just beat SpaceX's target, at about 107 kW per tonne, though it assumes "custom solutions for all components".
-
-The chips may cope with space too. Google put its Trillium TPU in a proton beam: the memory showed irregularities only after 2 krad(Si), almost three times the 750 rad(Si) a shielded five-year mission expects. And SpaceX calls its 1,400 W/m² a very achievable goal.
-
-These are limits on my reading, not yet evidence against it. The preprint is a design, Google's result is a ground test and SpaceX's figure is an assumption. The claim asks for a satellite in service at the target, or a published price, and on 2 November 2026 neither exists.
-
-So the plug in orbit is nearly free, as promised. The flask still needs its fin, and every fin goes up by the kilogram. Until someone weighs a working one, the heat is the bill.
-
-## In orbit the building wears out before the chip
-
-<a id="data-centres-in-space"></a>
-
-On the ground, the hall and its [grid gear outlast three or four chip generations](/journal/the-equipment-queue/). In orbit the hardware gives out first. SpaceX's risk factors say "the useful life of our satellites is inherently shorter than that of the information technology systems and infrastructure they host", so it "must periodically launch replacement satellites". Google spreads Starlink's launch cost over a five-year life.
-
-So the launch bill becomes rent. The radiator, the solar wings and the frame go up again with every replacement, not once. SpaceX says its first Starmind compute satellites fly in 2027. One flown then would, on that life, wear out around 2032. Google's own curve does not reach $200 a kilogram until about 2035.
+The fare is not paid once, because the short life turns the launch bill into rent. SpaceX's risk factors say its satellites' useful life "is inherently shorter" than that of the systems they host, so it "must periodically launch replacement satellites". On the ground, the hall and its [grid gear outlast three or four chip generations](/journal/the-equipment-queue/). SpaceX says Starmind, its first compute satellites, fly in 2027. On the five-year life Google uses, one flown then would wear out around 2032, before Google's curve reaches $200 a kilogram.
 
 <figure class="chart">
 <p class="chart-title">On Google's numbers, a compute satellite launched in 2027 wears out before launch reaches $200 a kilogram</p>
@@ -236,15 +194,13 @@ So the launch bill becomes rent. The radiator, the solar wings and the frame go 
 <figcaption>Planet 8-K (10 December 2025); SpaceX third-quarter call transcript (20 October 2026); Google, Suncatcher paper (22 November 2025), five-year life for Starlink and the 2035 projection, which assumes about 180 Starship launches a year. My framing; SpaceX has not stated an AI satellite's life.</figcaption>
 </figure>
 
-So on Google's curve, the first generation is launched and relaunched before the price that makes the sums work arrives. Planet is contracted to deploy two Suncatcher prototypes, "targeting launch in 2027", by its 8-K of 10 December 2025. Gwynne Shotwell, SpaceX's president, said on its call of 20 October that it will "begin flying Mobile V2 and Starmind satellites in 2027".
-
-Each will show, for the first time, what a kilowatt of orbital compute weighs in service. Until one does, every gigawatt promised in orbit is a radiator nobody has launched.
-
 ## What would prove me wrong
 
 Two observations break the claim. An operator discloses, in a filing, a release or a regulator's record, an AI compute satellite in service at 100 kW or more of compute power per tonne launched, by 31 December 2028. Or a launch provider publishes a price to low Earth orbit of $200 per kilogram or less by then.
 
-SpaceX's 10-Qs and 10-K, Planet's and Google's prototypes, and any Starcloud release will show the first. A published price sheet or contract would show the second. Better radiators in a paper do not break it; one weighed in service does.
+The first weighings come in 2027. Planet, the satellite imaging company, is contracted to deploy two Suncatcher prototypes, "targeting launch in 2027", and Gwynne Shotwell, SpaceX's president, said on its call of 20 October that it will begin flying Starmind satellites in 2027. A satellite mass in SpaceX's quarterly or annual reports, or a published price sheet or contract, would move me before the test date.
+
+The case against my claim rests on designs and tests, and those would not move me. The station's radiators were designed decades ago for a crew, with a cold loop and rotating joints, so 14 kg per m² is a heritage ceiling, not a law. A preprint (Gaalema, Indyk and Staley, arXiv, 9 April 2026; not peer reviewed) argues integrated panels could reach "about 500 W/kg", or 2 kg per kW. Its 16 MW, 150 tonne satellite would just beat SpaceX's target, at about 107 kW per tonne, though it assumes "custom solutions for all components". Google's Trillium TPU showed memory irregularities in a proton beam only after 2 krad(Si), almost three times the 750 rad(Si) a shielded five-year mission expects. SpaceX calls its 1,400 W/m² a very achievable goal. The preprint is a design, Google's result is a ground test and SpaceX's figure is an assumption. The claim asks for a satellite in service at the target, or a published price, and on 2 November 2026 neither exists.
 
 ## Research notes
 
