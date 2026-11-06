@@ -4,7 +4,9 @@ import { getCollection } from 'astro:content';
 import { SITE } from '../../config';
 import { fmtDate } from '../../utils';
 import { claimOf, homeOf, claimHref, claimSection } from '../../data/claims';
-import { getPitches, latest, fmtMoney, fmtPct } from '../../lib/calls';
+import { getPitches, fmtMoney, fmtPct } from '../../lib/calls';
+import { bookStatus } from '../../lib/book';
+import { BASE_VALUE } from '../../data/notes';
 export async function getStaticPaths() {
   const pitches = await getPitches();
   return pitches.map((p) => ({ params: { slug: p.id }, props: { p } }));
@@ -17,9 +19,9 @@ const posts = await getCollection('journal', ({ data }) => !data.draft);
 const claims = d.claims.map((id) => claimOf(id)).filter((c) => c != null)
   .map((claim) => ({ claim, piece: posts.find((x) => x.id === homeOf(claim)) })).filter((x) => x.piece)
   .map((x) => ({ ...x, date: x.claim.date ? new Date(x.claim.date) : x.piece!.data.date, section: claimSection(x.claim, x.piece!.body) }));
-const dirSlug = (c.direction ?? 'open').toLowerCase().replace(' ', '');
-const upside = c.target != null ? (c.direction === 'SHORT' ? c.price / c.target - 1 : c.target / c.price - 1) : null;
-const { mark, ret, move, exit, risk, score } = latest(p);
+const base = BASE_VALUE[p.id];
+const gap = base != null ? base / c.price - 1 : null;
+const inBook = bookStatus(p.id);
 ---
 <Base title={`${d.company} (${d.ticker}): initiation`} description={d.summary} type="article" canonical={`${SITE.url}/research/${p.id}/`}>
   <article class="pitch">
@@ -30,23 +32,17 @@ const { mark, ret, move, exit, risk, score } = latest(p);
       <p class="pitch-title">{d.title}</p>
     </header>
 
-    <section class="callbox" aria-label="The call">
+    <section class="callbox" aria-label="What the note found">
       <div class="callbox-head">
-        <span class="callbox-co">The call</span>
-        {c.direction
-          ? <span class={`callbox-dir callbox-dir--${dirSlug}`}>{c.direction === 'NO CALL' ? 'No call' : c.direction}</span>
-          : <span class="callbox-dir callbox-dir--open">Undecided</span>}
+        <span class="callbox-co">What the note found</span>
       </div>
       <dl>
         <div><dt>Price at publication</dt><dd>{fmtMoney(c.currency, c.price)}<small>close, {fmtDate(c.priceDate)}</small></dd></div>
-        <div><dt>Target</dt><dd>{c.target != null ? <>{fmtMoney(c.currency, c.target)}<small>{fmtPct(upside!)} · {c.horizon}</small></> : <>None<small>no position at this price</small></>}</dd></div>
-        {risk && <div><dt>Stop</dt><dd>{fmtMoney(c.currency, risk.stop)}<small>{risk.basis}</small></dd></div>}
-        <div><dt>Conviction</dt><dd>{c.conviction ?? 'Undecided'}</dd></div>
+        {base != null && <div><dt>Base value</dt><dd>{fmtMoney(c.currency, base)}<small>{fmtPct(gap!)} against that price</small></dd></div>}
+        <div><dt>In the book now</dt><dd>{inBook.label}<small>{inBook.kind === 'avoid' ? 'see the reason below' : inBook.detail ?? <a href="/research/#book">the book</a>}</small></dd></div>
       </dl>
-      <p class="callbox-wrong"><span>{c.direction === 'NO CALL' ? 'What would prove the thesis wrong' : 'What proves it wrong'}</span>{c.wrongIf}</p>
-      {c.revisitIf && <p class="callbox-wrong"><span>What would turn this into a call</span>{c.revisitIf}</p>}
-      {exit && <p class={`callbox-out callbox-out--${exit.reason === 'Target hit' ? 'target' : 'stop'}`}><span>{exit.reason === 'Target hit' ? 'Out: target hit' : 'Out: stopped out'}</span>{fmtMoney(c.currency, exit.price)} on {fmtDate(new Date(exit.date))}, {fmtPct(ret!)} for the call. {score?.resolved?.postmortem}</p>}
-      {mark && <p class="callbox-wrong"><span>Latest mark</span>{fmtMoney(c.currency, mark.price)} on {fmtDate(new Date(mark.date))}, {ret != null ? `${fmtPct(ret)} for the call` : `price ${fmtPct(move!)} since publication`}. {mark.falsifier}</p>}
+      {inBook.kind === 'avoid' && <p class="callbox-wrong"><span>Why the book is not buying</span>{inBook.detail}</p>}
+      <p class="callbox-wrong"><span>What would prove the thesis wrong</span>{c.wrongIf}</p>
     </section>
 
     <div class="downloads">
@@ -59,7 +55,7 @@ const { mark, ret, move, exit, risk, score } = latest(p);
     </div>
 
     <section class="keypoints">
-      <h2>The call in brief</h2>
+      <h2>The note in brief</h2>
       <ol>{d.keyPoints.map((k) => <li>{k}</li>)}</ol>
     </section>
 
@@ -73,10 +69,10 @@ const { mark, ret, move, exit, risk, score } = latest(p);
     ))}
 
     <aside class="pitch-disclaimer">
-      This is the author's own analysis, not investment advice. {c.position} Prices are closing prices on the dates given. The call is fixed on the day it is published and is never rewritten; it is marked every two weeks in the <a href="/research/#scorecard">track record</a>, right or wrong.
+      This is the author's own analysis, not investment advice. {c.position} Prices are closing prices on the dates given. The note is fixed on the day it is published; positions taken on it are run in <a href="/research/#book">the book</a>.
     </aside>
     <footer class="article-foot">
-      Written by {SITE.author}. If you think the call is wrong, I would genuinely like to hear why: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
+      Written by {SITE.author}. If you think the note is wrong, I would genuinely like to hear why: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
     </footer>
   </article>
 </Base>

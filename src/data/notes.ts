@@ -1,0 +1,41 @@
+// What each initiation note found at publication: its base value per share,
+// in the note's currency (Tommy, 6 Nov 2026: the notes are the reasoning, the
+// book is the record). Stated in the note, or implied by its own rule where the
+// note gives the value as a gap to the price (e.g. "base value would sit 15 per
+// cent above it" at the revisit level). The research table sets it against the
+// price on the day the note was published.
+export const BASE_VALUE: Record<string, number> = {
+  'ajinomoto': 4369,
+  'asml': 1697,
+  'bloom-energy': 241.5,
+  'broadcom': 485,
+  'caterpillar': 600,
+  'clp-holdings': 79.3,
+  'coherent': 275,
+  'constellation': 291,
+  'corning': 146,
+  'eaton': 432,
+  'entergy': 122.6,
+  'ge-vernova': 1048,
+  'hitachi': 6430,
+  'infineon': 55.1,
+  'kinder-morgan': 34.5,
+  'lumentum': 990,
+  'marvell': 355,
+  'micron': 835,
+  'mitsubishi-heavy': 3713,
+  'nebius': 231,
+  'nvidia': 244,
+  'oklo': 13,
+  'samsung-electronics': 278700,
+  'schneider-electric': 278,
+  'seagate': 529,
+  'siemens-energy': 163,
+  'sk-hynix': 2033000,
+  'spacex': 112,
+  'texas-instruments': 280,
+  'tsmc': 485.8,
+  'vertiv': 300,
+  'wartsila': 30,
+  'williams': 77.7,
+};

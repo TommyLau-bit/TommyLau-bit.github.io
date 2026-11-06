@@ -1,113 +1,67 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Book from '../../components/Book.astro';
-import { SCORECARD_REFRESHED, LAUNCHES } from '../../data/calls';
-import { claimOf, homeOf } from '../../data/claims';
+import { CLAIMS, claimOf, homeOf } from '../../data/claims';
 import { STACK, layerOf } from '../../data/stack';
-import { getPitches, latest, fmtMoney, fmtPct, callLabel, statusLabel } from '../../lib/calls';
+import { BASE_VALUE } from '../../data/notes';
+import { getPitches, fmtMoney, fmtPct } from '../../lib/calls';
+import { bookStatus } from '../../lib/book';
 import { fmtDate } from '../../utils';
 const pitches = await getPitches();
-const rows = pitches.map((p) => ({ p, ...latest(p) }));
 
-// Group the calls by launch, then order each group by the note's layer on the
-// map (the layer of the piece carrying its first claim), then by company.
-const sgDay = (d: Date) => d.toLocaleDateString('en-CA', { timeZone: 'Asia/Singapore' });
+// Two parts (Tommy, 6 Nov 2026): the book is the record, the notes are the
+// reasoning. The library carries no calls, targets or returns of its own; it
+// shows what each note found and where that company stands in the book.
 const layerIdx = (p: (typeof pitches)[number]) => {
   if (p.data.layer && STACK.some((l) => l.id === p.data.layer)) return STACK.findIndex((l) => l.id === p.data.layer);
   const c = p.data.claims[0] ? claimOf(p.data.claims[0]) : undefined;
   const l = c ? layerOf(homeOf(c)) : undefined;
   return l ? STACK.indexOf(l) : STACK.length;
 };
-const dayLong = (iso: string) => fmtDate(new Date(`${iso}T12:00:00+08:00`));
-const span = (a: string, b: string) => {
-  if (a === b) return dayLong(a);
-  const [ya, ma] = a.split('-'), [yb, mb] = b.split('-');
-  return ya === yb && ma === mb ? `${Number(a.slice(8))} to ${dayLong(b)}` : `${dayLong(a)} to ${dayLong(b)}`;
-};
-type Row = (typeof rows)[number];
-const groups: { key: string; when: string; title: string; rows: Row[] }[] = [];
-for (const r of rows) {
-  const day = r.p.data.date ? sgDay(r.p.data.date) : '';
-  const l = LAUNCHES.find((x) => day >= x.from && day <= x.to);
-  const key = l ? `L${l.from}` : `M${day.slice(0, 7)}`;
-  let g = groups.find((x) => x.key === key);
-  if (!g) {
-    const when = l ? span(l.from, l.to) : new Date(`${day.slice(0, 7)}-15T12:00:00+08:00`).toLocaleDateString('en-GB', { month: 'long', year: 'numeric' });
-    groups.push((g = { key, when, title: l ? l.title : 'Later notes', rows: [] }));
-  }
-  g.rows.push(r);
-}
-groups.sort((a, b) => b.key.slice(1).localeCompare(a.key.slice(1)));
-for (const g of groups) g.rows.sort((a, b) => layerIdx(a.p) - layerIdx(b.p) || a.p.data.company.localeCompare(b.p.data.company));
-const layersOf = (g: (typeof groups)[number]) => {
-  const n = new Map<string, number>();
-  for (const r of g.rows) { const i = layerIdx(r.p); const name = STACK[i]?.name ?? 'Other'; n.set(name, (n.get(name) ?? 0) + 1); }
-  return [...n.entries()].map(([k, v]) => `${k}\u00a0${v}`).join(' · ');
-};
-const longs = pitches.filter((p) => p.data.call.direction === 'LONG').length;
-const shorts = pitches.filter((p) => p.data.call.direction === 'SHORT').length;
-const noCalls = pitches.filter((p) => p.data.call.direction === 'NO CALL').length;
-const views = rows.filter((r) => r.p.data.call.direction !== 'NO CALL');
-const outTarget = views.filter((r) => r.exit?.reason === 'Target hit').length;
-const outStop = views.filter((r) => r.exit?.reason === 'Stopped out').length;
-const openViews = views.length - outTarget - outStop;
-const dirClass = (p: (typeof pitches)[number]) => `note-call note-call--${(p.data.call.direction ?? '').toLowerCase().replace(' ', '')}`;
+const groups = STACK.map((l, i) => ({ layer: l, rows: pitches.filter((p) => layerIdx(p) === i) }))
+  .concat([{ layer: { id: 'other', name: 'Other' } as any, rows: pitches.filter((p) => layerIdx(p) >= STACK.length) }])
+  .filter((g) => g.rows.length > 0);
+for (const g of groups) g.rows.sort((a, b) => (b.data.date?.valueOf() ?? 0) - (a.data.date?.valueOf() ?? 0));
 ---
 <Base title="Research" description="A US$100,000 paper book run every morning with stops and targets, and the initiation notes behind it, on the companies in the physical layer of AI." wide>
   <header class="research-head">
     <h1>Research</h1>
-    <p>A paper book run every morning on the companies that build the physical layer of AI, and the initiation notes behind it. Each note comes with its Excel model; every call and every trade is dated, priced at a close and never deleted.</p>
+    <p>Two parts. <a href="#book">The book</a> is the record: a paper portfolio run every morning by fixed rules, with every trade dated and priced at a close. <a href="#notes">The notes</a> are the reasoning: an initiation note and Excel model on each company the book can trade. The journal's {CLAIMS.length} dated claims, each with what would prove it wrong, are on <a href="/claims/">the claims page</a>.</p>
   </header>
 
-  {pitches.length === 0 ? (
-    <p class="scorecard-empty">The first notes are being written.</p>
-  ) : (
-    <>
-      <Book />
+  <Book />
 
-      <ul class="stat-strip" aria-label="The notes at a glance">
-        <li><strong>{pitches.length}</strong> initiation notes</li>
-        <li><strong>{longs}</strong> long</li>
-        {shorts > 0 && <li><strong>{shorts}</strong> short</li>}
-        <li><strong>{noCalls}</strong> no call</li>
-        <li><strong>{openViews}</strong> views open, <strong>{outTarget}</strong> out at target, <strong>{outStop}</strong> stopped out</li>
-        <li>Marked every two weeks{SCORECARD_REFRESHED ? <>, last on {fmtDate(new Date(SCORECARD_REFRESHED))}</> : ', from November 2026'}</li>
-      </ul>
+  <section class="track" id="notes" aria-labelledby="notes-h">
+    <h2 id="notes-h">The notes</h2>
+    <p class="track-intro">{pitches.length} initiation notes, grouped by layer from the grid to the chip, newest first. Each sets its own base value per share against the price on the day it was published; the book uses that value as its target. Open a note for the thesis, the valuation, the risks and what would prove it wrong.</p>
+    <div class="track-wrap">
+      <table>
+        <thead><tr><th>Company</th><th>Published</th><th>Price then</th><th>Base value</th><th>Gap then</th><th>In the book</th><th>Files</th></tr></thead>
+        {groups.map((g) => (
+          <tbody>
+            <tr class="track-group"><th colspan="7"><div class="track-group-in"><span class="track-group-when">{g.layer.name}</span> <span class="track-group-title">{g.rows.length} {g.rows.length === 1 ? 'note' : 'notes'}</span></div></th></tr>
+            {g.rows.map((p) => {
+              const c = p.data.call;
+              const base = BASE_VALUE[p.id];
+              const gap = base != null ? base / c.price - 1 : null;
+              const s = bookStatus(p.id);
+              return (
+                <tr>
+                  <td class="track-co"><a href={`/research/${p.id}/`}>{p.data.company}</a> <span>{p.data.ticker}</span></td>
+                  <td>{p.data.date && fmtDate(p.data.date)}</td>
+                  <td>{fmtMoney(c.currency, c.price)}</td>
+                  <td>{base != null ? fmtMoney(c.currency, base) : 'n/a'}</td>
+                  <td class={gap == null ? '' : gap >= 0 ? 'up' : 'down'}>{gap != null ? fmtPct(gap) : ''}</td>
+                  <td class={`book-in book-in--${s.kind}`}>{s.label}{s.kind === 'watch' && s.detail && <small class="track-at">{s.detail}</small>}</td>
+                  <td class="track-files"><a href={p.data.files.pdf}>Note</a> <a href={p.data.files.xlsx}>Model</a></td>
+                </tr>
+              );
+            })}
+          </tbody>
+        ))}
+      </table>
+    </div>
+  </section>
 
-      <section class="track" id="scorecard" aria-labelledby="book-h">
-        <h2 id="book-h">The initiation calls</h2>
-        <p class="track-intro">Coverage was launched in sector batches, newest first, and each batch is ordered by layer, from the grid to the chip. Every call is measured against the closing price on the day it was published. Returns are signed so that a call going the right way is positive. Every view carries a stop and a target: a close through either takes the call out, and a call that is out is measured at its exit. Levels written in a note count from its date; stops set under the risk rule of 6 November 2026 count from that day, so a call already through its new stop left at the 5 November close.</p>
-        <div class="track-wrap">
-          <table>
-            <thead><tr><th>Company</th><th>Published</th><th>Call</th><th>Price then</th><th>Target</th><th>Stop</th><th>Latest</th><th>Return</th><th>Status</th><th>Files</th></tr></thead>
-            {groups.map((g) => (
-            <tbody>
-              <tr class="track-group"><th colspan="10"><div class="track-group-in"><span class="track-group-when">{g.when}</span> <span class="track-group-title">{g.title}, {g.rows.length} {g.rows.length === 1 ? 'note' : 'notes'}</span><span class="track-group-layers">{layersOf(g)}</span></div></th></tr>
-              {g.rows.map(({ p, mark, ret, move, exit, risk }) => {
-                const c = p.data.call;
-                return (
-                  <tr>
-                    <td class="track-co"><a href={`/research/${p.id}/`}>{p.data.company}</a> <span>{p.data.ticker}</span></td>
-                    <td>{p.data.date && fmtDate(p.data.date)}</td>
-                    <td><span class={dirClass(p)}>{callLabel(p, false)}</span>{c.conviction && <span class="track-conv">, {c.conviction.toLowerCase()}</span>}</td>
-                    <td>{fmtMoney(c.currency, c.price)}</td>
-                    <td>{c.target != null ? fmtMoney(c.currency, c.target) : 'None'}</td>
-                    <td>{risk ? fmtMoney(c.currency, risk.stop) : 'None'}</td>
-                    <td>{exit ? <>{fmtMoney(c.currency, exit.price)}<small class="track-at">exit</small></> : mark ? fmtMoney(c.currency, mark.price) : 'Not yet marked'}</td>
-                    <td class={ret == null ? '' : ret >= 0 ? 'up' : 'down'}>{ret != null ? fmtPct(ret) : move != null ? `n/a (price ${fmtPct(move)})` : 'n/a'}</td>
-                    <td class={exit ? (exit.reason === 'Target hit' ? 'track-out up' : 'track-out down') : ''}>{statusLabel(exit, fmtDate)}</td>
-                    <td class="track-files"><a href={p.data.files.pdf}>Note</a> <a href={p.data.files.xlsx}>Model</a></td>
-                  </tr>
-                );
-              })}
-            </tbody>
-            ))}
-          </table>
-        </div>
-      </section>
-
-    </>
-  )}
-
-  <p class="research-foot">The journal's own claims, and what would prove each wrong, are on <a href="/claims/">the claims page</a>. These notes are the author's own analysis, not investment advice. The author holds no position in any company covered unless a note says so.</p>
+  <p class="research-foot">These notes and the book are the author's own analysis, not investment advice. The book is paper money. The author holds no position in any company covered unless a note says so.</p>
 </Base>

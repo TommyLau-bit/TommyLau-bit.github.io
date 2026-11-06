@@ -77,6 +77,14 @@ Tommy found the first build (a long web pitch with charts, merged into the claim
 - **No dated corrections, ever** (2 Nov 2026, permanent): a wrong fact in a piece or note is edited so it is right. No "Where I was wrong", no `correction` field, no "Correction" paragraphs.
 - **Biweekly marks** (Tommy, 6 Nov 2026): every second Friday from 6 Nov 2026 the daily task `physical-layer-book-daily` also marks every note in calls.ts and publishes it. The tasks `research-biweekly-reprice` and `research-monthly-marks` are retired (the monthly one's 1 Nov run stalled on a permission prompt, so no marks were made before 6 Nov).
 
+## Research page: the book is the record, the notes are the reasoning (Tommy, 6 Nov 2026, permanent)
+
+Tommy found the page messy: two scorecards (the notes' own calls and the book) and no obvious place to start. Now one record and one library:
+- /research/ opens with one line pointing to the book, the notes and the claims page; then **the book** (src/components/Book.astro: stat strip, open positions, the five names nearest an entry, the full watchlist and "Not buying" folded, closed trades with post-mortems, the last three log lines); then **the notes** as a library grouped by layer: company, published, price then, base value (src/data/notes.ts), gap, where it stands in the book, note and model links. No call, target, stop, return or status columns.
+- Each note page shows "What the note found" (price at publication, base value, where it stands in the book, what would prove the thesis wrong) instead of a call box.
+- **The notes' own calls are no longer shown or scored.** Tommy chose to drop the October initiation calls (Oklo out at target, Marvell and six others stopped out) from the page rather than keep them as closed trades; their record stays in src/data/calls.ts and git history, frozen. The PDFs keep their original text.
+- A new note adds its base value to src/data/notes.ts (the book's target source); the `call` fields in front matter stay for the PDF and the checker, but the site does not display them.
+
 ## The book: a US$100,000 paper portfolio on the site (Tommy, 6 Nov 2026, permanent)
 
 Tommy: the Physical Layer Radar paper book (Oct 2026, ~/Desktop/jobs/lanes/paper_portfolio/) was the perfected version; carry it onto the website exactly, on top of the initiation notes and models, which continue as before. His choices: Claude makes every call, the book starts fresh on 6 Nov 2026, it runs daily and publishes on its own, and it tops the Research page.
@@ -89,9 +97,9 @@ Tommy: the Physical Layer Radar paper book (Oct 2026, ~/Desktop/jobs/lanes/paper
 - Exit: first close through the target ("Target hit") or the stop ("Stopped out"), or a non-price wrongIf leg ("Thesis broken"). Stops never widen; at +1R the stop moves to entry. Every exit gets a post-mortem scored on process.
 - Drawdown: 10 per cent below peak equity stops new entries until a review is logged.
 - Never backdated: the book opened in cash on 6 Nov 2026 because every candidate was at a fresh 20-day low after the October and November sell-off.
-- The initiation calls (Tommy's, in calls.ts) keep their own record and the stop and target rules below.
+- The notes' own calls (calls.ts) are frozen history since 6 Nov 2026 and not shown; see "Research page" above. The section below applied to them for one day.
 
-## Risk management: every view has a stop and a target (Tommy, 6 Nov 2026, permanent)
+## Risk management: every view has a stop and a target (Tommy, 6 Nov 2026; now applied through the book, see above)
 
 Tommy: a call without a stop and an exit is not how a PM runs a book; investors ask why he is still in. Adapted from his ICC trading rules (~/Desktop/trading/ICC_Trading_Strategy_v9.pdf: stops and targets at structure, closes not wicks, 2:1 minimum, a drawdown that forces a review) to twelve month equity calls.
 

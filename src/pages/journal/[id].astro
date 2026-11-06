@@ -4,7 +4,7 @@ import { getCollection, render } from 'astro:content';
 import { SITE, OG_VERSION } from '../../config';
 import { fmtDate, readingTime } from '../../utils';
 import { claimOf, claimsHomedAt } from '../../data/claims';
-import { getPitches, pitchesFor, callLabel } from '../../lib/calls';
+import { getPitches, pitchesFor } from '../../lib/calls';
 import { layerOf } from '../../data/stack';
 import { exposureOf, slugify, companyPages } from '../../lib/exposure';
 export async function getStaticPaths() {
@@ -63,7 +63,7 @@ const companies = [...new Set(exposureOf(p).flatMap((r) => r.names))].filter((n)
         <p class="claim-box-claim">{claim.claim}</p>
         <p class="claim-box-meta">
           <a href={`/claims/#${claim.id}`}>See it alongside every other claim on the site</a>
-          {notes.map((n) => <a href={`/research/${n.id}/`}>Research note: {n.data.company}, {callLabel(n).toLowerCase()}</a>)}
+          {notes.map((n) => <a href={`/research/${n.id}/`}>Research note: {n.data.company}</a>)}
         </p>
       </aside>
     )}

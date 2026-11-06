@@ -14,6 +14,7 @@ const invested = book.positions.reduce((s: number, p: any) => s + (p.value ?? 0)
 const wins = book.closed.filter((t: any) => t.result > 0).length;
 const losses = book.closed.length - wins;
 const pct = (n: number) => `${Math.round(n * 100)}%`;
+const next = book.watch.filter((w: any) => w.rr != null).sort((a: any, b: any) => b.rr - a.rr).slice(0, 5);
 
 // Equity line, drawn once the book has two or more days.
 const curve = book.equityCurve;
@@ -29,7 +30,7 @@ if (curve.length > 1) {
 ---
 <section class="track book" id="book" aria-labelledby="book-title">
   <h2 id="book-title">The book</h2>
-  <p class="track-intro">A {usd(book.capital)} paper portfolio run on these notes by fixed rules, every morning. Each position has a stop and a target that act on the close, entries need a target at least twice as far as the stop, and no position is more than {pct(book.rules.maxPosition)} of the book. Opened {day(book.start)}; prices are closes, last {day(book.pricesAt)}. Nothing is ever deleted.</p>
+  <p class="track-intro">A {usd(book.capital)} paper portfolio, run every morning by fixed rules on the companies in the notes. Each position has a stop and a target that act on the close, entries need a target at least twice as far as the stop, and no position is more than {pct(book.rules.maxPosition)} of the book. Opened {day(book.start)}; prices are closes, last {day(book.pricesAt)}. Nothing is ever deleted.</p>
 
   <ul class="stat-strip" aria-label="The book at a glance">
     <li><strong>{usd(book.equity)}</strong> equity</li>
@@ -70,11 +71,11 @@ if (curve.length > 1) {
     </table></div>
   )}
 
-  <h3 class="book-h">Waiting to enter</h3>
-  <p class="book-note">A position opens on its own when the stock closes above its 5-day closing high at least three days after its lowest close of the last 20, and the target is still at least twice as far from that close as the stop, which sits just under that low. Levels below are as of {day(book.pricesAt)} and are re-set every morning.</p>
+  <h3 class="book-h">Next entries</h3>
+  <p class="book-note">The five names nearest a buy signal. A position opens on its own when the stock closes above its 5-day closing high at least three days after its lowest close of the last 20, and the target is still at least twice as far away as the stop, which sits just under that low. Levels as of {day(book.pricesAt)}, re-set every morning.</p>
   <div class="track-wrap"><table>
     <thead><tr><th>Company</th><th>Side</th><th>Size</th><th>Close</th><th>Signal above</th><th>Stop</th><th>Target</th><th>Reward to risk</th><th>Status</th></tr></thead>
-    <tbody>{book.watch.map((w: any) => (
+    <tbody>{next.map((w: any) => (
       <tr>
         <td class="track-co"><a href={`/research/${w.slug}/`}>{w.company}</a> <span>{w.ticker}</span></td>
         <td>{w.direction === 'LONG' ? 'Long' : 'Short'}<span class="track-conv">, {w.conviction.toLowerCase()}</span></td>
@@ -89,8 +90,28 @@ if (curve.length > 1) {
     ))}</tbody>
   </table></div>
   <details class="book-why">
-    <summary>Why each name is on the list</summary>
+    <summary>The full watchlist ({book.watch.length} names) and why each is on it</summary>
+    <div class="track-wrap"><table>
+      <thead><tr><th>Company</th><th>Side</th><th>Size</th><th>Close</th><th>Signal above</th><th>Stop</th><th>Target</th><th>Reward to risk</th><th>Status</th></tr></thead>
+      <tbody>{book.watch.map((w: any) => (
+      <tr>
+        <td class="track-co"><a href={`/research/${w.slug}/`}>{w.company}</a> <span>{w.ticker}</span></td>
+        <td>{w.direction === 'LONG' ? 'Long' : 'Short'}<span class="track-conv">, {w.conviction.toLowerCase()}</span></td>
+        <td>{pct(w.size)}</td>
+        <td>{fmtMoney(w.currency, w.close)}</td>
+        <td>{w.signal != null ? fmtMoney(w.currency, w.signal) : 'n/a'}</td>
+        <td>{w.stop != null ? fmtMoney(w.currency, w.stop) : 'n/a'}</td>
+        <td>{fmtMoney(w.currency, w.target)}<small class="track-at">{w.targetFrom}</small></td>
+        <td class={w.rr != null && w.rr >= 2 ? 'up' : ''}>{w.rr != null ? `${w.rr.toFixed(1)} : 1` : 'n/a'}</td>
+        <td class="book-status">{w.status}</td>
+      </tr>
+      ))}</tbody>
+    </table></div>
     <ul>{book.watch.map((w: any) => <li><strong>{w.company}.</strong> {w.why}</li>)}</ul>
+  </details>
+  <details class="book-why">
+    <summary>Not buying ({book.avoid.length} names) and why</summary>
+    <ul>{book.avoid.map((a: any) => <li><a href={`/research/${a.slug}/`}>{a.company}</a>: {a.read}</li>)}</ul>
   </details>
 
   {book.closed.length > 0 && (
@@ -116,9 +137,6 @@ if (curve.length > 1) {
     </>
   )}
 
-  <h3 class="book-h">Not buying</h3>
-  <ul class="book-avoid">{book.avoid.map((a: any) => <li><a href={`/research/${a.slug}/`}>{a.company}</a> <span>{a.ticker}</span>: {a.read}</li>)}</ul>
-
   <h3 class="book-h">The morning log</h3>
-  <ul class="book-log">{book.log.slice(-5).reverse().map((l: any) => <li><span>{day(l.date)}</span> {l.text}</li>)}</ul>
+  <ul class="book-log">{book.log.slice(-3).reverse().map((l: any) => <li><span>{day(l.date)}</span> {l.text}</li>)}</ul>
 </section>

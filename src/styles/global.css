@@ -554,3 +554,6 @@ details.analogy > p:first-of-type { margin-top: 0.1rem; }
 .book-log { list-style: none; padding-left: 0; }
 .book-log span { font-weight: 600; color: var(--ink); margin-right: 0.4rem; }
 .book-curve { margin: 0 0 1rem; }
+
+.book-in--held { color: var(--good); font-weight: 600; }
+.book-in--avoid { color: var(--ink-3); }
