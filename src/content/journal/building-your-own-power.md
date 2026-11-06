@@ -5,6 +5,8 @@ summary: "AI campuses that cannot wait years for a grid connection are building 
 category: "Analysis"
 cover: "/covers/building-your-own-power.svg"
 tags: ["power", "data-centres", "grid"]
+updated: 2026-11-06
+updateNote: "Now follows one turbine from deposit to first power and tests whether an off-grid campus must build more machine than load, with evidence to 6 November 2026."
 draft: false
 ---
 
@@ -14,21 +16,68 @@ Many have taken it, and now they queue beside the utilities for the same machine
 
 So building your own power does not skip the queue. It changes which queue you stand in, and the new one is about six years long and still growing.
 
+The word "power" hides three separate problems. The plug is the grid connection, and its queue is the one a campus is trying to leave. The machine is the generator on the campus's own side of the utility's meter, which is called going behind the meter. The fuel is the gas and the pipe that brings it. Leaving the plug's queue puts a campus straight into the machine's, and the machine is what this piece is about.
+
 <details class="analogy">
 <summary>The analogy</summary>
-<p>Your street's water main is too small, and the council's new one is years away. So you decide to sink your own well. The big drilling firm is booked for years, because every house had the same idea.</p>
-<p>A smaller firm with a lighter rig can come sooner, but its diary is filling too. And either well still needs a pump, made by someone else.</p>
+<p>Picture a new restaurant whose street gas main is full for years: that is the grid connection. So the owner buys a stove for the kitchen: that is the turbine on site. Every restaurant in town has the same idea that week, and the famous stove maker's diary now runs six years ahead: that is GE Vernova's queue.</p>
+<p>A camping-stove shop sells smaller burners sooner, but its diary is filling too: those are the engines, fuel cells and smaller turbines. And any stove still needs a gas line into the kitchen, booked years ahead from an installer: that is the pipe.</p>
 </details>
 
-Making power on your own side of the utility's meter is called going behind the meter. It skips the grid's waiting list. It does not skip the need for a machine.
+Follow one heavy turbine from the day a campus decides to make its own power, and five steps stand between the decision and the first electricity.
 
-The biggest machine, the heavy-duty gas turbine, is the cheapest at scale and the slowest to get. Its makers sell paid places in their factory line years ahead. After it ships, it needs about another year and a half on site before it makes power.
+First, the buyer pays a deposit for a place in a maker's line. Second, it waits while the factory works through every order ahead of it. Third, the turbine ships and is installed and commissioned, which takes about another year and a half. Fourth, the plant needs an air permit, granted site by site. Fifth, the gas has to arrive, through a pipe signed before it is built.
+
+<figure class="chart">
+<p class="chart-title">The maker's line, not the permit or the pipe, sets the date</p>
+<p class="chart-sub">One heavy gas turbine, from the day a campus decides to make its own power</p>
+<svg viewBox="0 0 560 196" role="img" aria-label="Diagram of five steps in order. One, reserve: the buyer pays a deposit for a place in the maker's line. Two, wait: GE Vernova has 122 gigawatts of gas turbines under contract and ships about 20 gigawatts a year, about six years of output, and is selling slots for 2032. This is the choke point, shared by every buyer. Three, build: the turbine ships and is installed and commissioned, about 18 months on site. Four, permit: an air permit, site by site, which can decide whether the plant is built at all. Five, pipe: a new gas pipe is signed before it is built and takes about four years from first bids.">
+<rect class="c-box" x="5.0" y="44" width="100.4" height="106" rx="4"/>
+<text class="c-box-t" x="13.0" y="66">1. Reserve</text>
+<text class="c-note" x="13.0" y="88">Pay a deposit</text>
+<text class="c-note" x="13.0" y="106">for a place</text>
+<text class="c-note" x="13.0" y="124">in the line</text>
+<text class="c-note" x="13.0" y="142">Day one</text>
+<line class="c-arrow" x1="106.4" y1="97" x2="111.4" y2="97"/><polygon class="c-arrow-head" points="116.4,97 110.4,93 110.4,101"/>
+<rect class="c-zone" x="113.4" y="14" width="108.4" height="144" rx="4"/>
+<text class="c-zone-t" x="167.6" y="30" text-anchor="middle">THE CHOKE POINT</text>
+<rect class="c-box" x="117.4" y="44" width="100.4" height="106" rx="4"/>
+<text class="c-box-t" x="125.4" y="66">2. Wait</text>
+<text class="c-note" x="125.4" y="88">122 GW ahead</text>
+<text class="c-note" x="125.4" y="106">20 GW a year</text>
+<text class="c-note" x="125.4" y="124">About 6 years</text>
+<text class="c-note" x="125.4" y="142">Slots for 2032</text>
+<line class="c-arrow" x1="218.8" y1="97" x2="223.8" y2="97"/><polygon class="c-arrow-head" points="228.8,97 222.8,93 222.8,101"/>
+<rect class="c-box" x="229.8" y="44" width="100.4" height="106" rx="4"/>
+<text class="c-box-t" x="237.8" y="66">3. Build</text>
+<text class="c-note" x="237.8" y="88">Ship, install,</text>
+<text class="c-note" x="237.8" y="106">commission</text>
+<text class="c-note" x="237.8" y="124">About 18</text>
+<text class="c-note" x="237.8" y="142">months on site</text>
+<line class="c-arrow" x1="331.2" y1="97" x2="336.2" y2="97"/><polygon class="c-arrow-head" points="341.2,97 335.2,93 335.2,101"/>
+<rect class="c-box" x="342.2" y="44" width="100.4" height="106" rx="4"/>
+<text class="c-box-t" x="350.2" y="66">4. Permit</text>
+<text class="c-note" x="350.2" y="88">Air permit,</text>
+<text class="c-note" x="350.2" y="106">site by site</text>
+<text class="c-note" x="350.2" y="124">Can decide</text>
+<text class="c-note" x="350.2" y="142">if it is built</text>
+<line class="c-arrow" x1="443.6" y1="97" x2="448.6" y2="97"/><polygon class="c-arrow-head" points="453.6,97 447.6,93 447.6,101"/>
+<rect class="c-box" x="454.6" y="44" width="100.4" height="106" rx="4"/>
+<text class="c-box-t" x="462.6" y="66">5. Pipe</text>
+<text class="c-note" x="462.6" y="88">New gas pipe,</text>
+<text class="c-note" x="462.6" y="106">signed before</text>
+<text class="c-note" x="462.6" y="124">it is built</text>
+<text class="c-note" x="462.6" y="142">About 4 years</text>
+<text class="c-lab c-s2t" x="117.4" y="180" text-anchor="start">Shared by every buyer; output rises only in steps</text>
+</svg>
+<figcaption>GE Vernova releases and calls, 22 July and 28 October 2026; Pennsylvania DEP plan approval 32-00457A (18 November 2025); Transco's FERC application (29 October 2024). Years of output are my arithmetic. My framing of the chain.</figcaption>
+</figure>
+
+The second step binds. A permit and a pipe take years, but once, for one site, and they run alongside the machine. The factory line is shared by every buyer at once, and its speed is set for years by a few foundries casting the hottest blades.
 
 The quicker machines have queues of their own. A turbine built around a jet engine ships about two years sooner and runs within months, but its maker now takes orders far faster than it ships them. Big gas engines are queued as well: one maker says its lead times are still lengthening. Fuel cells arrive by lorry, and their maker is doubling its factory to keep up.
 
 Supply cannot simply catch up. GE Vernova is raising output inside the factories it already has, paid for by its customers' deposits, and its next step waits on castings due in 2027.
-
-The gas has a clock as well. A new pipe is paid for by its buyers under long contracts signed before it is built, and a recent one is due about four years after its first bids. The newest pipe from the Permian, contracted to fuel new power plants for one tech giant, opens in 2030. The heavy turbines are sold out to the same year.
 
 So a paid place in a turbine queue is not power. It is a date, and GE Vernova is now selling places for 2032.
 
@@ -114,7 +163,7 @@ On 28 October its chief executive said fourth-quarter aeroderivative orders woul
 
 <a id="the-engines-queue-too"></a>
 
-The other quick machines are queuing too. On 27 October Wärtsilä, a maker of big gas engines, said "lead times for our engines continue to increase", in a quarter when it won a 282 MW on-site power order for a US data centre. Caterpillar, which makes both turbines and engines, saw Power Generation sales rise 30% in the third quarter, chiefly for data centres.
+The other quick machines are queuing too. On 27 October Wärtsilä, a maker of big gas engines, said "lead times for our engines continue to increase", in a quarter when it won a 282 MW on-site power order for a US data centre. That order shows the fast lane's length: announced on 5 October, its engines are due for delivery in 2028 and the plant fully running in 2029. Caterpillar, which makes both turbines and engines, saw Power Generation sales rise 30% in the third quarter, chiefly for data centres.
 
 <a id="the-product-is-time"></a>
 
@@ -150,31 +199,24 @@ The buyers are increasingly power plants. More than 75% of the $14.4 billion pro
 <figcaption>Hollow dot: approval, open season, sanction, signing or sale; for Socrates it is the siting board's approval of Socrates North only. Solid dot: the date the owner gives. Ohio Power Siting Board and Williams; Transco's FERC application; Pennsylvania DEP and Homer City; Entergy's filings; Kinder Morgan, 21 October 2026; GE Vernova, 28 October 2026. A turbine shipped in 2032 still needs about 18 months on site, and the second Entergy deal awaits a vote.</figcaption>
 </figure>
 
-Laid side by side, from first decision to first power, own power still takes years, and the fastest dated route is small. Ohio's siting board approved Socrates North, a gas plant, on 18 September 2025, 200 MW off the grid for a Meta affiliate, run by Williams, the pipeline company. Williams commits 400 MW from two Socrates plants, due in the second half of 2026.
+Laid side by side, from first decision to first power, own power still takes years, and the fastest dated route is small. Ohio's siting board approved Socrates North, a gas plant, on 18 September 2025, 200 MW off the grid for a Meta affiliate, run by Williams, the pipeline company. Williams commits 400 MW from two Socrates plants to its customer. Socrates South entered service in late July 2026, and on 2 November Williams said Socrates North was on track for service by mid-November, about fourteen months after its approval.
 
 <a id="hyperion-the-plant-outlasts-the-lease"></a>
 
 The big routes take far longer. For Meta's Hyperion AI campus in Louisiana, three plants from Entergy, the state's utility, 2,262 MW, were approved in August 2025 for 2028 and 2029. A second Meta agreement, signed in March 2026, adds 5,278 MW for 2030 and 2031, with the regulator's vote due in December. Meta's lease on Hyperion runs from 2029 for four years, renewable up to 20, so a turbine ordered today makes power about when that first term ends.
 
-<figure class="chart">
-<p class="chart-title">A turbine ordered today makes power about when a four-year lease would end</p>
-<p class="chart-sub">A heavy turbine slot sold now, against the plants and the lease at Meta's Hyperion campus</p>
-<svg viewBox="0 0 560 236" role="img" aria-label="Timeline from 2025 to 2034. A heavy-duty gas turbine slot GE Vernova is selling now ships in 2032 and, after about 18 months on site, makes power no earlier than 2033. Entergy's three gas plants for Meta's Hyperion campus were approved in August 2025 and are due in 2028 and 2029. Meta's lease of the Hyperion campus runs from 2029 for four years, to 2033, renewable up to 20 years. The shaded year, 2033, is when the turbine could first make power and the lease's first term ends.">
-<rect class="c-zone" x="507.2" y="22" width="37.8" height="178"/>
-<g class="c-grid"><line x1="242.8" y1="22" x2="242.8" y2="200"/><line x1="318.3" y1="22" x2="318.3" y2="200"/><line x1="393.9" y1="22" x2="393.9" y2="200"/><line x1="469.4" y1="22" x2="469.4" y2="200"/><line x1="545" y1="22" x2="545" y2="200"/></g>
-<g class="c-axis"><text x="242.8" y="218" text-anchor="middle">2026</text><text x="318.3" y="218" text-anchor="middle">2028</text><text x="393.9" y="218" text-anchor="middle">2030</text><text x="469.4" y="218" text-anchor="middle">2032</text><text x="545" y="218" text-anchor="middle">2034</text><text x="190" y="52" text-anchor="end">Turbine slot sold now</text><text x="190" y="116" text-anchor="end">Entergy plants, Hyperion</text><text x="190" y="174" text-anchor="end">Meta's lease, Hyperion</text></g>
-<line class="c-today" x1="272.7" y1="22" x2="272.7" y2="200"/><text class="c-today-t" x="272.7" y="16" text-anchor="middle">today</text>
-<g class="c-span"><line x1="272.7" y1="48" x2="469.4" y2="48"/><line x1="228.6" y1="112" x2="375" y2="112"/></g>
-<g class="c-start"><circle cx="272.7" cy="48" r="4"/><circle cx="228.6" cy="112" r="4"/></g>
-<g class="c-plant"><line x1="469.4" y1="48" x2="526.1" y2="48" stroke-dasharray="3 3"/><line x1="526.1" y1="42" x2="526.1" y2="54"/></g>
-<g class="c-end"><circle cx="469.4" cy="48" r="4.5"/><circle cx="337.2" cy="112" r="4.5"/><circle cx="375" cy="112" r="4.5"/></g>
-<g class="c-endt"><text x="469.4" y="36" text-anchor="middle">ships 2032</text><text x="545" y="70" text-anchor="end">18 months on site: power 2033 at the earliest</text><text x="384" y="116">due 2028, 2029</text></g>
-<rect class="c-bar c-alt" x="375" y="160" width="151.1" height="20" rx="2"/><text class="c-lab c-s3t" x="367" y="175" text-anchor="end">from 2029</text><text class="c-note" x="526.1" y="198" text-anchor="end">four firm years, renewable up to 20</text>
-</svg>
-<figcaption>GE Vernova call, 28 October 2026, and 22 July 2026 for the 18 months on site; Louisiana regulator's approval and Entergy's filings; Meta 2025 Form 10-K for the lease. Years without a month sit mid-year, except the turbine row, which shows the earliest case: shipped at the start of 2032. My framing: the turbine row is not Hyperion's; the chart sets one sale beside one lease.</figcaption>
-</figure>
-
 Across every clock, the buyers carry the risk while the makers are paid up front. Meta's agreement with Entergy carries minimum charges and an exit fee. If AI demand cools, a reservation can lapse, but a take-or-pay pipe and a minimum charge are still owed.
+
+<a id="an-island-buys-its-own-bench"></a>
+## An island campus has to build more machine than it uses
+
+A campus off the grid may need more generating plant than load, and I hold that as a hypothesis, not a finding. On the grid, thousands of plants cover for one that trips, and the whole system absorbs a sudden swing. An island campus must carry that cover itself: spare units, margin for hot days and something to soak up swings.
+
+Socrates is the one dated point. Williams' 2025 annual report, filed in February 2026, said the project would give its customer a combined 400 MW; its quarterly reports since May give the two plants an expected 556 MW of capacity, about 1.39 MW built for each MW committed, by my arithmetic. Heat counts too: on Wärtsilä's own comparison, an aeroderivative loses nearly 26% of its output at 45°C against standard conditions and its engines under 2%, a maker's figure. And AI loads swing hard: NERC, the body that sets reliability standards for North America's grid, recorded 1,800 MW of data centre load dropping off at once after one transmission fault in February 2025.
+
+If that holds, each megawatt of island load draws more than a megawatt from the makers' queues, so 122 GW serves fewer campus megawatts than it appears to. That step is mine: Williams does not say why it builds the margin, and one site is not a ratio.
+
+I will test it by setting installed against committed capacity at every off-grid site I can date, and noting which add batteries. If island sites run near one to one, or keep a grid tie as their spare, the margin is small and the idea is dead.
 
 ## What would prove me wrong
 
@@ -184,12 +226,12 @@ Two signals would move me before the tests. Signings slowed to 11 GW in the thir
 
 <a id="plans-outrun-the-build"></a>
 
-A flood of new gas plans would not move me. In the EIA's generator inventory, planned gas capacity rose from 40.5 GW in September 2025 to 71.1 GW in September 2026, while the part under construction or built rose only from 9.6 GW to 13.1 GW, by my arithmetic. Fermi America's Project Matador, a planned Texas campus, alone lists 11.7 GW, of which 0.3 GW is under construction. Nor does Socrates: a small off-grid plant can go from approval to its due date in about a year, but its 400 MW is under a fifth of Hyperion's first three plants, and signings still run at twice the rate of shipments. Whether own generation beats a comparable grid connection stays open, since EIA's survey leaves off-grid plants out.
+A flood of new gas plans would not move me. In the EIA's generator inventory, planned gas capacity rose from 40.5 GW in September 2025 to 71.1 GW in September 2026, while the part under construction or built rose only from 9.6 GW to 13.1 GW, by my arithmetic. Fermi America's Project Matador, a planned Texas campus, alone lists 11.7 GW, of which 0.3 GW is under construction. Nor does Socrates landing on time. A small off-grid plant going from approval to service in about fourteen months is the fast end working as sold, but its 400 MW is under a fifth of Hyperion's first three plants, and signings still run at twice the rate of shipments. Whether own generation beats a comparable grid connection stays open, since EIA's survey leaves off-grid plants out.
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
 
-The test this piece stands behind, quoted word for word from the claims page:
+The test this piece stands behind, quoted word for word:
 
 **Building your own power** (30 October 2026)
 
@@ -279,7 +321,7 @@ EIA's count of planned gas generators, nameplate MW, all states, energy source n
 
 Source: EIA, Preliminary Monthly Electric Generator Inventory (Form EIA-860M), "Planned" sheet, September 2025 and September 2026 data, the latter released 23 October 2026. The sums by status are my arithmetic; U, V and TS together are 9,569 MW and 13,146 MW. EIA calls the capacities preliminary estimates. Only plants connected to the grid report (Form EIA-860 instructions), and non-coal, non-nuclear plants only within five years of commercial operation. Fermi America's Project Matador Gas Plant (reporting entity Fermi America, Carson County, ERCOT) lists 11,679 MW of gas: 300 MW under construction (six 50 MW units due December 2027), 120 MW with approvals received and 11,259 MW with approvals not initiated, due September 2027 to December 2030. Williams' Socrates plants are not in it.
 
-Other makers: Mitsubishi Heavy Industries' Q&A summary of its first quarter results briefing (6 August 2026) says it booked ten large frame gas turbines in the quarter, four for the United States, for delivery mostly between 2028 and 2030, and that capacity is "expected to double" against FY2024, while it builds "the order book while carefully monitoring progress on the capacity expansion". Wärtsilä's interim report of 27 October 2026: "Equipment delivery times continued to increase"; the 282 MW order uses 15 Wärtsilä 50SG engines. Caterpillar's Power Generation sales were $3,421 million in the third quarter of 2026 against $2,634 million a year earlier (Form 8-K, 29 October 2026).
+Other makers: Mitsubishi Heavy Industries' Q&A summary of its first quarter results briefing (6 August 2026) says it booked ten large frame gas turbines in the quarter, four for the United States, for delivery mostly between 2028 and 2030, and that capacity is "expected to double" against FY2024, while it builds "the order book while carefully monitoring progress on the capacity expansion". Wärtsilä's interim report of 27 October 2026: "Equipment delivery times continued to increase"; the 282 MW order uses 15 Wärtsilä 50SG engines, "scheduled for delivery in 2028", the plant "expected to become fully operational in 2029" (release, 5 October 2026). Caterpillar's Power Generation sales were $3,421 million in the third quarter of 2026 against $2,634 million a year earlier (Form 8-K, 29 October 2026).
 
 The Permian Basin:
 
@@ -302,6 +344,8 @@ New pipe:
 Sources: Transco's FERC application (CP25-10), 29 October 2024, whose open season ran 19 June to 14 July 2023; Williams Form 10-Q, 3 August 2026; Kinder Morgan, 21 October 2026. A dekatherm (Dth) is roughly a thousand cubic feet of gas. The 93% is 1,480,000 of 1,596,900 Dth a day, my arithmetic.
 
 Hyperion: Meta's power agreement with Entergy Louisiana carries minimum charges and an exit fee; its term is redacted. The campus, majority owned by Blue Owl funds, is leased to Meta from 2029 for four years, renewable to 20 (Meta 2025 Form 10-K). The second agreement's vote is set for December 2026 (Entergy Form 10-Q, 31 July 2026).
+
+Socrates: Williams' 2025 Form 10-K (24 February 2026) says the project "is expected to provide a combined 400 megawatts of onsite power generation capacity to the customer"; its Forms 10-Q of 4 May and 2 November 2026 say the two plants "together have an expected 556 MW of capacity". 556 against 400 is 1.39, my arithmetic; Williams gives no reason for the difference. Socrates South was "placed into service in late July 2026" (Form 10-Q, 2 November 2026), and Williams' third-quarter release of 2 November 2026 says Socrates North is "on track for in-service by mid-November". Heat: Wärtsilä's engines-versus-aeroderivatives comparison, at 45°C against ISO reference conditions. Load swings: NERC 2026 State of Reliability overview (24 June 2026), 1,800 MW of data centre customer-initiated load reduction in a February 2025 event in the Eastern Interconnection, which "occurred due to a transmission fault".
 
 Chart dates: Socrates starts at the siting board's approval of Socrates North and ends at Williams' second half of 2026; Hyperion at the regulator's approval in August 2025; the second Entergy deal at its signing in March 2026; Permian Link at Kinder Morgan's release of 21 October 2026; the turbine slot at GE Vernova's call of 28 October 2026. Years given without a month are placed mid-year.
 
@@ -326,4 +370,4 @@ Chart dates: Socrates starts at the siting board's approval of Socrates North an
 
 ---
 
-<p class="sources">Sources: GE Vernova releases and calls of 22 April, 22 July and 28 October 2026, 2025 Form 10-K and Forms 10-Q to 30 September 2026; Crusoe (18 March and 22 July 2025); Howmet Aerospace 2025 Form 10-K, 10 March 2026 and releases to 29 October 2026; Siemens Energy, 11 February 2026; Mitsubishi Heavy Industries, Q&amp;A of 6 August 2026; Wärtsilä, 27 October 2026; Caterpillar Form 8-K, 29 October 2026; Bloom Energy releases, November 2024 to 22 October 2026; Pennsylvania DEP plan approval 32-00457A (18 November 2025) and Homer City releases of 26 March and 20 October 2026; Meta and Entergy 2025 Forms 10-K, Entergy Form 10-Q of 31 July 2026, LPSC docket U-37425; EIA generator inventory (Form EIA-860M) for September 2025 and 2026 (released 23 October 2026), Form EIA-860 instructions, Short-Term Energy Outlooks (September, October 2026), Today in Energy (23 April 2026) and gas data (30 September 2026); Kinder Morgan, 22 April and 21 October 2026; Transco, FERC docket CP25-10 (29 October 2024); Williams' 10-K, 10-Qs and Socrates page; Ohio Power Siting Board case 25-188-EL-BGN (18 September 2025). Leads came from Leo Cui's videos on GE Vernova and the energy sector. Personal research, not investment advice.</p>
+<p class="sources">Sources: GE Vernova releases and calls of 22 April, 22 July and 28 October 2026, 2025 Form 10-K and Forms 10-Q to 30 September 2026; Crusoe (18 March and 22 July 2025); Howmet Aerospace filings and releases to 29 October 2026; Siemens Energy, 11 February 2026; Mitsubishi Heavy Industries, Q&amp;A of 6 August 2026; Wärtsilä, 5 and 27 October 2026 and its engines-versus-aeroderivatives comparison; Caterpillar Form 8-K, 29 October 2026; Bloom Energy releases to 22 October 2026; Pennsylvania DEP plan approval 32-00457A (18 November 2025) and Homer City releases (March, October 2026); Meta and Entergy 2025 Forms 10-K, Entergy Form 10-Q of 31 July 2026, LPSC docket U-37425; EIA generator inventory (Form EIA-860M, September 2025 and 2026), Form EIA-860 instructions, Short-Term Energy Outlooks, Today in Energy and gas data to October 2026; Kinder Morgan, 22 April and 21 October 2026; Transco, FERC docket CP25-10 (29 October 2024); Williams' 10-K, 10-Qs to 2 November 2026, release of 2 November 2026 and Socrates page; NERC 2026 State of Reliability (24 June 2026); Ohio Power Siting Board case 25-188-EL-BGN (18 September 2025). Leads came from Leo Cui's videos on GE Vernova and the energy sector. Personal research, not investment advice.</p>

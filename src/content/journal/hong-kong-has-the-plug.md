@@ -5,6 +5,8 @@ summary: "Hong Kong's main utility is obliged to meet demand for electricity, ha
 category: "Analysis"
 cover: "/covers/hong-kong-has-the-plug.svg"
 tags: ["grid", "power", "hong-kong", "export-controls"]
+updated: 2026-11-06
+updateNote: "Now traces Sandy Ridge from tender to a working hall and shows the chip gate with a second hand on it in Beijing, with evidence to 6 November 2026."
 draft: false
 ---
 
@@ -12,23 +14,68 @@ Hong Kong's only AI megasite, Sandy Ridge, was put out to tender to the whole in
 
 The plug was not the problem. Hong Kong's main utility, CLP Power, is bound by its deal with the government to meet demand for electricity, and last year it had about a quarter more capacity than its busiest hour. It has finished more substations for data centres since 2024 than in the six years before.
 
-In Hong Kong the grid is building for its data centres, not holding them back. What Hong Kong cannot supply is the chip. Washington has treated it as China since 2020, so the address of the hall helps decide whether the best AI chips may go in at all.
+In Hong Kong the grid is building for its data centres, not holding them back. What Hong Kong cannot supply is the chip.
+
+The word "capacity" hides three separate gates. Generation is the power stations making electricity for the whole city. Connection is the substation and cable that carry it to one site. The chip is what actually runs in the hall. Johor and Singapore ration the second. Hong Kong has the first two to spare, and this piece is about the third.
 
 <details class="analogy">
 <summary>The analogy</summary>
-<p>A landlord must by law wire every flat that gets let. His fuse box carries a quarter more than the building's busiest hour. Lighting the flats is easy.</p>
-<p>Filling them is not. The best fridges come from one maker abroad, whose government approves them one by one. It judges the street address and the tenant's family. Counting sockets says nothing about what is inside.</p>
+<p>Picture a new food court. By law the gas company must lay a pipe to every stall that opens, and the street's supply carries a quarter more than the busiest lunchtime. The supply is CLP's generation and the pipes are its substations. The stalls are the data halls, and the stoves that cook in them are the chips.</p>
+<p>The best stoves come from one maker abroad, and its government approves each one, judging the address and the cook's family. Only last year's model qualifies. Lately crates of them sit stacked in the yard, cleared by one government and waiting on another. Counting gas pipes tells you nothing about the cooking.</p>
 </details>
 
-Hong Kong's two power companies work under a Scheme of Control, an agreement with the government. It obliges them to supply enough electricity to meet demand at the lowest reasonable cost. In return they earn a regulated return on what they build. Building for new demand is the job, not a favour.
+Trace Sandy Ridge from tender to a working hall and there are five steps. Four of them are local and moving.
 
-So CLP builds substations, the yards where high voltage power is stepped down, as data centres ask for them. It plans 18 for data centres by 2028, and by June it had finished eight. Its sales to data centres are growing faster this year than last, yet on my arithmetic they still average under 300 megawatts, a small load on its system.
+First, the government awards the site, which it did in March 2026. Second, CLP builds the plug: the substations, where high voltage power is stepped down, with operations targeted from mid-2027. Third, the tenant builds the halls and cooling, which it expects to finish within 2028. Fourth, an exporter asks Washington for a licence to ship the chips. Fifth, the racks run, which the government expects in 2029.
 
-At Sandy Ridge, the utility is the one party promising to be early. CLP, which is building its power supply, says the site is targeted to start operating in phases from mid-2027. The winning bidder, a mainland group, expects to deliver its park within 2028, and the government has told legislators 2029.
+<figure class="chart">
+<p class="chart-title">Four steps are local and moving; the chip licence is decided elsewhere</p>
+<p class="chart-sub">Sandy Ridge, Hong Kong's one AI megasite, from tender to a working hall</p>
+<svg viewBox="0 0 560 196" role="img" aria-label="Diagram of five steps in order. One, tender: the site was awarded on 2 March 2026 to a single bidder. Two, plug: CLP builds the substations and targets operations in phases from mid-2027. Three, halls: the tenant builds halls and cooling, which Range expects within 2028. Four, licence: an American export licence, for H200-class chips at best, and for chips bound for the mainland, Beijing's import approval too. This is the choke point, and neither CLP nor Hong Kong decides it. Five, running: the government expects operations in 2029.">
+<rect class="c-box" x="5.0" y="44" width="100.4" height="106" rx="4"/>
+<text class="c-box-t" x="13.0" y="66">1. Tender</text>
+<text class="c-note" x="13.0" y="88">Site awarded</text>
+<text class="c-note" x="13.0" y="106">2 Mar 2026</text>
+<text class="c-note" x="13.0" y="124">One bid</text>
+<line class="c-arrow" x1="106.4" y1="97" x2="111.4" y2="97"/><polygon class="c-arrow-head" points="116.4,97 110.4,93 110.4,101"/>
+<rect class="c-box" x="117.4" y="44" width="100.4" height="106" rx="4"/>
+<text class="c-box-t" x="125.4" y="66">2. Plug</text>
+<text class="c-note" x="125.4" y="88">CLP builds the</text>
+<text class="c-note" x="125.4" y="106">substations</text>
+<text class="c-note" x="125.4" y="124">Operations</text>
+<text class="c-note" x="125.4" y="142">from mid-2027</text>
+<line class="c-arrow" x1="218.8" y1="97" x2="223.8" y2="97"/><polygon class="c-arrow-head" points="228.8,97 222.8,93 222.8,101"/>
+<rect class="c-box" x="229.8" y="44" width="100.4" height="106" rx="4"/>
+<text class="c-box-t" x="237.8" y="66">3. Halls</text>
+<text class="c-note" x="237.8" y="88">Tenant builds</text>
+<text class="c-note" x="237.8" y="106">halls, cooling</text>
+<text class="c-note" x="237.8" y="124">Range: within</text>
+<text class="c-note" x="237.8" y="142">2028</text>
+<line class="c-arrow" x1="331.2" y1="97" x2="336.2" y2="97"/><polygon class="c-arrow-head" points="341.2,97 335.2,93 335.2,101"/>
+<rect class="c-zone" x="338.2" y="14" width="108.4" height="144" rx="4"/>
+<text class="c-zone-t" x="392.4" y="30" text-anchor="middle">THE CHOKE POINT</text>
+<rect class="c-box" x="342.2" y="44" width="100.4" height="106" rx="4"/>
+<text class="c-box-t" x="350.2" y="66">4. Licence</text>
+<text class="c-note" x="350.2" y="88">US licence,</text>
+<text class="c-note" x="350.2" y="106">H200 class</text>
+<text class="c-note" x="350.2" y="124">at best; then</text>
+<text class="c-note" x="350.2" y="142">Beijing too</text>
+<line class="c-arrow" x1="443.6" y1="97" x2="448.6" y2="97"/><polygon class="c-arrow-head" points="453.6,97 447.6,93 447.6,101"/>
+<rect class="c-box" x="454.6" y="44" width="100.4" height="106" rx="4"/>
+<text class="c-box-t" x="462.6" y="66">5. Running</text>
+<text class="c-note" x="462.6" y="88">Racks run</text>
+<text class="c-note" x="462.6" y="106">Government</text>
+<text class="c-note" x="462.6" y="124">says 2029</text>
+<text class="c-lab c-s2t" x="442.6" y="180" text-anchor="end">Neither CLP nor Hong Kong decides this step</text>
+</svg>
+<figcaption>ITIB release (2 March 2026); CLP quarterly statement (12 October 2026); Range interim report (28 August 2026); LegCo reply (22 April 2026); 15 CFR 742.6 as revised 15 January 2026; Beijing's approval as reported by Reuters (5 November 2026). My framing of the chain.</figcaption>
+</figure>
 
-The chips are another matter. Under American export rules, advanced AI chips need a licence to go into a Hong Kong hall, and the best ones are presumed refused. Since January, a defined class of chip up to Nvidia's H200, shipped straight from America to a user in Hong Kong, is judged case by case. The same chip for a Chinese company's hall abroad is still presumed refused.
+The fourth step binds. The plug is a legal duty, and the utility gives the earliest date of anyone. The licence has no owner in Hong Kong. Washington treats the city as China: the best AI chips are presumed refused, and a class up to Nvidia's H200, a chip of 2024, is judged case by case when shipped straight from America.
 
-Neither CLP nor Hong Kong's government decides that. The power is there and growing. What runs on it is settled in Washington, chip by chip.
+Washington may not be the only hand on that step. Reuters reported on 5 November, citing two sources, that about 600,000 H200s sit in Hong Kong awaiting Beijing's approval to enter the mainland.
+
+Neither CLP nor Hong Kong's government decides any of that. The power is there and growing. What runs on it is settled by licences: in Washington, chip by chip, and for chips bound for the mainland, in Beijing too.
 
 <hr class="layer">
 <p class="layer-label">For investors</p>
@@ -37,7 +84,7 @@ Neither CLP nor Hong Kong's government decides that. The power is there and grow
 
 <a id="hong-kong-has-the-plug"></a>
 
-CLP Power, the utility for Kowloon and the New Territories, had 9,258 megawatts of capacity for Hong Kong customers at the end of 2025, against a highest local demand of 7,455. Its data centre customers drew an average of about 283 megawatts in the first nine months of 2026, on my arithmetic. It had eight data centre substations of its 2024 to 2028 plan energised by June 2026, and it gives the earliest date for Sandy Ridge, the government's new data centre site in North District. What limits Hong Kong's halls is Washington's chip rule, pegged at Nvidia's H200, a chip of 2024.
+CLP Power, the utility for Kowloon and the New Territories, had 9,258 megawatts of capacity for Hong Kong customers at the end of 2025, against a highest local demand of 7,455. Its data centre customers drew an average of about 283 megawatts in the first nine months of 2026, on my arithmetic. It had eight data centre substations of its 2024 to 2028 plan energised by June 2026, and it gives the earliest date for Sandy Ridge, the government's new data centre site in North District. What limits Hong Kong's halls is Washington's chip rule, pegged at Nvidia's H200, a chip of 2024; for chips bound for the mainland, Beijing's import approval is a second gate, on press reports of 5 November 2026.
 
 <figure class="chart">
 <p class="chart-title">Data centres are a small load on a system with a quarter to spare</p>
@@ -92,51 +139,17 @@ The pace still has to rise. The plan is for 18 by 2028, which CLP described as a
 
 The test case is Sandy Ridge, where the grid would show first if it were the gate. On 12 October 2026, CLP said its power infrastructure for the site is "progressing at pace in close collaboration with the project developer", with operations targeted "in phases from mid-2027". Every other party gives a later date. The tender allowed operations within 42 months of the award on 2 March 2026. The tenant's interim report expects the park delivered within 2028, and the government told the Legislative Council on 22 April 2026 to expect operations in 2029.
 
-<figure class="chart">
-<p class="chart-title">The utility gives Sandy Ridge the earliest date of anyone</p>
-<p class="chart-sub">Dates given for Sandy Ridge, from the award on 2 March 2026</p>
-<svg viewBox="0 0 560 232" role="img" aria-label="Timeline from the Sandy Ridge award on 2 March 2026. CLP targets operations in phases from mid-2027. Range Intelligent Computing expects the park delivered within 2028. The government told LegCo to expect operations in 2029. The tender allows operations within 42 months of award, about September 2029.">
-<g class="c-grid"><line x1="200" y1="20" x2="200" y2="200"/><line x1="275" y1="20" x2="275" y2="200"/><line x1="350" y1="20" x2="350" y2="200"/><line x1="425" y1="20" x2="425" y2="200"/><line x1="500" y1="20" x2="500" y2="200"/></g>
-<g class="c-axis"><text x="237.5" y="222" text-anchor="middle">2026</text><text x="312.5" y="222" text-anchor="middle">2027</text><text x="387.5" y="222" text-anchor="middle">2028</text><text x="462.5" y="222" text-anchor="middle">2029</text><text x="190" y="44" text-anchor="end">CLP: operations, phased</text><text x="190" y="88" text-anchor="end">Range: park delivered</text><text x="190" y="132" text-anchor="end">Government to LegCo</text><text x="190" y="176" text-anchor="end">Tender: operations within</text></g>
-<line class="c-today" x1="262.2" y1="14" x2="262.2" y2="200"/><text class="c-today-t" x="262.2" y="11" text-anchor="middle">today</text>
-<g class="c-span"><line x1="212.5" y1="40" x2="312.5" y2="40"/><line x1="212.5" y1="84" x2="387.5" y2="84"/><line x1="212.5" y1="128" x2="462.5" y2="128"/><line x1="212.5" y1="172" x2="475" y2="172"/></g>
-<g class="c-start"><circle cx="212.5" cy="40" r="4"/><circle cx="212.5" cy="84" r="4"/><circle cx="212.5" cy="128" r="4"/><circle cx="212.5" cy="172" r="4"/></g>
-<g class="c-end"><circle cx="312.5" cy="40" r="4.5"/><circle cx="387.5" cy="84" r="4.5"/><circle cx="462.5" cy="128" r="4.5"/><circle cx="475" cy="172" r="4.5"/></g>
-<g class="c-endt"><text x="321.5" y="44">from mid-2027</text><text x="396.5" y="88">within 2028</text><text x="471.5" y="132">2029</text><text x="484" y="176">42 months</text></g>
-</svg>
-<figcaption>Hollow dot: award. Solid dot: each party's own date. CLP quarterly statement (12 October 2026); Range interim report (28 August 2026); LegCo reply (22 April 2026); ITIB release (2 March 2026). A year without a month is placed at mid-year.</figcaption>
-</figure>
-
-No filing I read gives a megawatt figure for Sandy Ridge, so the dates are the only measure. On them, the utility's comes first.
+No filing I read gives a megawatt figure for Sandy Ridge, so the dates are the only measure. On them, the utility's comes first, as the chain at the top of the piece shows.
 
 ## The chip licence follows the hall's address, and its ceiling is a chip of 2024
 
 If the plug is not the gate, the chip is. Since 23 December 2020 the US Bureau of Industry and Security, which writes American export rules on chips, has treated Hong Kong "the same as China" under its export rules. The rule of 15 January 2026 moved one class, "the Nvidia H200 and its equivalents, as well as less advanced chips", to case-by-case review when exported from America to an end user in China, Hong Kong included. Every other route, and every better chip, stays under a presumption of denial.
 
-<figure class="chart">
-<p class="chart-title">For H200-class chips, a Hong Kong address is the one door left ajar</p>
-<p class="chart-sub">US licence review policy for advanced AI chips, by route, since 15 January 2026</p>
-<svg viewBox="0 0 560 215" role="img" aria-label="Grid of US licence review policies. For chips of the H200 class or below: shipped from the US to a user in Hong Kong, case by case; re-exported or moved within Hong Kong, presumed refused; to a hall in Johor for a tenant based in China, presumed refused. For chips above the H200 class, every route is presumed refused.">
-<g class="c-axis"><text x="220" y="58" text-anchor="end">Shipped from the US</text><text x="220" y="75" text-anchor="end">to a user in Hong Kong</text><text x="220" y="116" text-anchor="end">Re-exported, or moved</text><text x="220" y="133" text-anchor="end">within Hong Kong</text><text x="220" y="174" text-anchor="end">To a hall in Johor for</text><text x="220" y="191" text-anchor="end">a tenant based in China</text></g>
-<text class="c-box-t" x="307.0" y="22" text-anchor="middle">H200 class or below</text>
-<text class="c-box-t" x="465.0" y="22" text-anchor="middle">Above the H200 class</text>
-<rect class="c-box" x="232" y="36" width="150" height="48" rx="4"/>
-<text class="c-lab c-s2t" x="307.0" y="65" text-anchor="middle">Case by case</text>
-<rect class="c-box" x="390" y="36" width="150" height="48" rx="4"/>
-<text class="c-note" x="465.0" y="65" text-anchor="middle">Presumed refused</text>
-<rect class="c-box" x="232" y="94" width="150" height="48" rx="4"/>
-<text class="c-note" x="307.0" y="123" text-anchor="middle">Presumed refused</text>
-<rect class="c-box" x="390" y="94" width="150" height="48" rx="4"/>
-<text class="c-note" x="465.0" y="123" text-anchor="middle">Presumed refused</text>
-<rect class="c-box" x="232" y="152" width="150" height="48" rx="4"/>
-<text class="c-note" x="307.0" y="181" text-anchor="middle">Presumed refused</text>
-<rect class="c-box" x="390" y="152" width="150" height="48" rx="4"/>
-<text class="c-note" x="465.0" y="181" text-anchor="middle">Presumed refused</text>
-</svg>
-<figcaption>15 CFR 742.6(b)(10)(iii)(A)(1), as revised 15 January 2026; 85 FR 83765 (23 December 2020). My reading of the rule text. Case by case needs the exporter to certify the rule's conditions.</figcaption>
-</figure>
+On my reading of the rule text, that inverts the picture in Johor, Malaysia's data centre hub, for this one class. An H200-class shipment to a Chinese-headquartered tenant's hall in Hong Kong gets case-by-case review; the same shipment to that tenant's hall in Johor is presumed refused. The conditions are heavy: the exporter must certify that US supply is sufficient and that exports to China and Macau stay within 50% of what was shipped for use in America.
 
-On my reading of the rule text, that inverts the picture in Johor, Malaysia's data centre hub, for this one class. An H200-class shipment to a Chinese-headquartered tenant's hall in Hong Kong gets case-by-case review; the same shipment to that tenant's hall in Johor is presumed refused. The conditions are heavy: the exporter must certify that US supply is sufficient and that exports to China and Macau stay within 50% of what was shipped for use in America. Little has moved through it. Nvidia said on 26 August 2026 that its shipments to China of Hopper, the generation that includes the H200, to China were less than 1% of its data centre revenue, and its outlook assumes none.
+<a id="the-second-gate-is-beijing"></a>
+
+How much has moved through that door is unclear, and a second gate now stands behind it. Nvidia said on 26 August 2026 that its shipments of Hopper, the generation that includes the H200, to China were less than 1% of its data centre revenue, and its outlook assumes none. Reuters reported on 5 November 2026, citing two sources, that about 600,000 H200s are stored in Hong Kong awaiting Beijing's approval to import them to the mainland. Citing one source, it added that several large Chinese internet companies have each obtained about 10,000. The reporting does not say whose the stored chips are, or under what licence they came.
 
 Even where the door is open, the ceiling ages while the halls are built. Nvidia has launched a new flagship about every year: Blackwell in 2024, Blackwell Ultra in 2025 and Rubin in 2026. When Sandy Ridge's first phase runs, the best chip it may hope for will sit at least three flagships behind.
 
@@ -166,27 +179,38 @@ Even where the door is open, the ceiling ages while the halls are built. Nvidia 
 <circle class="c-dot c-s1" cx="517.5" cy="180" r="5"/>
 <text class="c-lab c-s1t" x="517.5" y="166" text-anchor="middle">Government</text>
 </svg>
-<figcaption>Nvidia spec pages, as in <a href="/journal/memory-not-maths/">Memory, not maths</a>; 15 CFR 742.6, as revised 15 January 2026; Sandy Ridge dates as in the timeline above. My framing. Open circles are not announced chips, and the ceiling holds only until the rule changes.</figcaption>
+<figcaption>Nvidia spec pages, as in <a href="/journal/memory-not-maths/">Memory, not maths</a>; 15 CFR 742.6, as revised 15 January 2026; Sandy Ridge dates from CLP (12 October 2026), Range (28 August 2026) and LegCo (22 April 2026). My framing. Open circles are not announced chips, and the ceiling holds only until the rule changes.</figcaption>
 </figure>
 
 The gap is wide. On the figures in [Memory, not maths](/journal/memory-not-maths/), Rubin has four times the H200's memory bandwidth. Its peak maths is about 17 and a half times higher, though that sets Rubin's 4-bit sums against the H200's 8-bit, the smallest format each supports.
 
 The cost lands on the tenant, not the landlord. Sandy Ridge drew one bid, and the award names Range Intelligent Computing Technology Group as the ultimate holding company, the foreign name of a Shenzhen-listed company. Its strategy abroad, Hong Kong included, is the "IDC rack business", renting data centre racks: it sells space, power and cooling, and its customers bring the chips. Its filings name no Hong Kong customer and say nothing about which chips will run there, and its top three customers, unnamed, were 93.7% of its 2025 revenue. A tenant capped at the H200 class needs more chips, and so more racks, for the same work than one on the frontier. SemiAnalysis, the chip research firm, sorts places into power-gated and chip-gated; Hong Kong is chip-gated, on a grid obliged to build.
 
+<a id="gates-in-series"></a>
+## Open the chip gate and the plug is the next one to test
+
+Hong Kong's plug may look abundant partly because the chip gate is shut. Gates sit in series, and each one hides the next. CLP's data centre customers draw about 283 megawatts on average, against about 1,800 megawatts of capacity left over at the 2025 peak.
+
+The chips Reuters reported waiting in Hong Kong show what sits behind the gate. If all 600,000 were plugged in here, they would draw up to about a gigawatt on my estimate: about three and a half times CLP's whole data centre load, and more than half its spare at peak. The estimate rests on Nvidia's own figures, up to 700 watts per H200 and 10.2 kilowatts at most for an eight-chip Hopper server; the arithmetic is in the figures below.
+
+The test is CLP's plan. Its latest two data centre substations added 260 MVA of transformer capacity between them, a fraction of that load, so a gigawatt would show as a much faster substation pace and a falling reserve margin. The idea dies if those chips are bound for mainland halls, which is what the reporting implies, or if any load arrives slowly enough for a utility obliged to build to keep up.
+
 ## What would prove me wrong
 
-Two tests break the claim. If CLP's interim or annual results show fewer than 18 data centre substations completed by 31 December 2028, the claim breaks. The 18 is CLP's own "up to" figure, so demand that never arrives would miss it too, and about nine remain for 2027 and 2028 if CLP meets its 2026 target. If Sandy Ridge's first phase is not energised by the end of 2027, the claim breaks, whether the delay sits in the grid or the building.
+The claim stands on two dated tests. If CLP's interim or annual results show fewer than 18 data centre substations completed by 31 December 2028, the claim breaks. The 18 is CLP's own "up to" figure, so demand that never arrives would miss it too, and about nine remain for 2027 and 2028 if CLP meets its 2026 target. If Sandy Ridge's first phase is not energised by the end of 2027, the claim breaks, whether the delay sits in the grid or the building.
 
-A CLP reserve margin below 15% in its Ten-year Summary, its yearly table of system figures, would warn me first that the plug was tightening. The licence is mechanism, not forecast, so it sits outside the tests. Three things would move its ceiling: any change to 15 CFR 742.6, the rule that sets the class, any H200-class licence naming a Hong Kong user, and Range's filings on which chips Sandy Ridge will run.
+A CLP reserve margin below 15% in its Ten-year Summary, its yearly table of system figures, would warn me first that the plug was tightening. The licence is mechanism, not forecast, so it sits outside the tests. Three things would move its ceiling: any change to 15 CFR 742.6, the rule that sets the class, any H200-class licence naming a Hong Kong user, and Range's filings on which chips Sandy Ridge will run. Any sign that the H200s stored in Hong Kong are going into Hong Kong halls would also move me, since it would turn a waiting room into a load on CLP.
 
 Three things would not move me. CLP's margin is for its whole system, not the grid of the Northern Metropolis, the development zone where Sandy Ridge sits, but no record I read shows a Hong Kong data centre waiting for the grid, and the utility's date is the earliest on offer. Hong Kong Electric, the island's other utility, does not mention data centres in its 2025 annual or 2026 interim results; CLP is the utility the data centres have gone to. And slow filling would not break the claim, since Range's own delivery date is 2028. The single bid was not a verdict on the plug.
+
+Remote access would not move me either. CNBC reported on 5 November 2026, citing people familiar with the talks, that Moonshot AI, a Beijing AI lab, discussed renting clusters of 8,000 or more Blackwell chips from cloud providers in Europe, and that current law gives regulators little reach over such access. That leak takes frontier work to wherever both gates are open, which for Blackwell is never a Hong Kong hall. The halls here still rest on the H200 class.
 
 The contrast with [Johor and Singapore](/journal/the-queue-not-the-chip/), where the connection is the scarce thing, is the subject of that deep piece.
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
 
-The test this piece stands behind, quoted word for word from the claims page:
+The test this piece stands behind, quoted word for word:
 
 **Hong Kong has the plug, and the chip needs a licence** (30 October 2026)
 
@@ -237,7 +261,7 @@ Sandy Ridge's terms:
 | Computing power | 180,000 petaflops by 2032, "36 times the current computing power in Hong Kong" | same; 2026 Policy Address, 16 September 2026 |
 | Who decides how it is used | "the operator according to its business plan and market demand" | LegCo reply, 22 April 2026 |
 
-The 5,000 petaflops base, 3,000 of them at Cyberport's AI Supercomputing Centre, is from the Secretary for Innovation, Technology and Industry (16 January 2026). The Sandy Ridge timeline places "within 2028" and "2029" at mid-year; the tender's 42 months from 2 March 2026 ends in early September 2029.
+The 5,000 petaflops base, 3,000 of them at Cyberport's AI Supercomputing Centre, is from the Secretary for Innovation, Technology and Industry (16 January 2026). The chip ceiling chart places "within 2028" and "2029" at mid-year; the tender's 42 months from 2 March 2026 ends in early September 2029.
 
 Range Intelligent Computing Technology Group is the foreign name the Shenzhen-listed company 300442 gives itself in its interim report of 28 August 2026, which defines the Hong Kong park as its Sandy Ridge intelligent computing centre project, held through two Hong Kong subsidiaries.
 
@@ -261,6 +285,10 @@ The US licence by chip and route:
 
 The class is defined by performance and memory bandwidth limits; the rule does not name Hong Kong, which is inside China under 85 FR 83765. Beyond the supply and 50% conditions, the consignee must screen remote users, and every shipment is tested by an independent laboratory in the US first.
 
+Chips waiting in Hong Kong, press reports only: Reuters (5 November 2026) reported about 600,000 H200s stored in Hong Kong awaiting Beijing's import approval, citing two people, and several large Chinese internet companies each holding about 10,000, citing one. CNBC (5 November 2026) reported Moonshot AI's talks on 8,000 or more Blackwell chips in Europe, citing one of four people.
+
+The gigawatt is my estimate, not a measurement: 600,000 H200s in eight-chip servers is 75,000 servers. At the 10.2 kW maximum Nvidia gives for its eight-chip DGX H100, a Hopper server like the H200's (the H200 SXM is rated up to 700 W, the same board power), that is about 765 MW at the servers. With cooling and losses at a power usage effectiveness of about 1.3, an assumption for a hot, humid site, it is about 1 GW at the meter, before networking and storage. Servers rarely run at their maximum, so it is an upper figure. Against CLP: 1 GW is about 3.5 times the 283 MW average data centre draw, and about 55% of the 1,803 MW between capacity (9,258 MW) and the 2025 peak (7,455 MW).
+
 </details>
 
 <section class="exposure">
@@ -282,4 +310,4 @@ The class is defined by performance and memory bandwidth limits; the rule does n
 
 ---
 
-<p class="sources">Sources: CLP Power Hong Kong's offering circular (1 April 2026) and CLP's Ten-year Summary of Scheme of Control statistics (2025); CLP Holdings' interim and annual results and quarterly statements (26 February 2024, 4 August 2025, 20 October 2025, 26 February 2026, 18 May 2026, 6 August 2026, 12 October 2026) and results presentation (26 February 2026); Hong Kong Electric's results (17 March and 11 August 2026); the Innovation, Technology and Industry Bureau (2 March 2026), the Secretary for Innovation, Technology and Industry (16 January 2026), Legislative Council replies (1 and 22 April 2026) and the 2026 Policy Address (16 September 2026); Range Intelligent Computing Technology Group's annual, interim and third quarter reports (10 April, 28 August and 23 October 2026); the US Bureau of Industry and Security's rules of 23 December 2020 and 15 January 2026 and 15 CFR 742.6; Nvidia's CFO commentary and results release (26 August 2026). The power-gated and chip-gated framing is SemiAnalysis's, from its free articles of 13 March 2024 and 30 December 2025. Personal research, not investment advice.</p>
+<p class="sources">Sources: CLP Power Hong Kong's offering circular (1 April 2026) and CLP's Ten-year Summary of Scheme of Control statistics (2025); CLP Holdings' interim and annual results and quarterly statements (26 February 2024, 4 August 2025, 20 October 2025, 26 February 2026, 18 May 2026, 6 August 2026, 12 October 2026) and results presentation (26 February 2026); Hong Kong Electric's results (17 March and 11 August 2026); the Innovation, Technology and Industry Bureau (2 March 2026), the Secretary for Innovation, Technology and Industry (16 January 2026), Legislative Council replies (1 and 22 April 2026) and the 2026 Policy Address (16 September 2026); Range Intelligent Computing Technology Group's annual, interim and third quarter reports (10 April, 28 August and 23 October 2026); the US Bureau of Industry and Security's rules of 23 December 2020 and 15 January 2026 and 15 CFR 742.6; Nvidia's CFO commentary and results release (26 August 2026), H200 specification page and DGX H100 user guide; Reuters (5 November 2026) and CNBC (5 November 2026), as press reports. The power-gated and chip-gated framing is SemiAnalysis's, from its free articles of 13 March 2024 and 30 December 2025. Personal research, not investment advice.</p>

@@ -140,8 +140,8 @@ export const CLAIMS: Claim[] = [
     date: '2026-10-02T12:49:47+08:00',
     home: 'the-chip-supply-chain',
     claim: 'On today\'s horizon, TSMC\'s factories bind before the grid does. Over the longer run, I still expect the grid to be the slower clock.',
-    breaksIf: 'For today: TSMC\'s tightness eases while data centres with chips on order still wait for power. For the longer run: TSMC still calls capacity tight in 2028 while grid connection waits shorten.',
-    watch: ['Whether TSMC keeps calling packaging capacity tight', 'Whether Arizona\'s second fab reaches volume in the second half of 2027', 'High-performance computing as a share of TSMC\'s revenue', 'How TSMC describes Taiwan\'s electricity supply'],
+    breaksIf: 'For today: the leading foundry\'s tightness eases while data centres with chips on order still wait for power. For the longer run: the leading foundry still calls capacity tight in 2028 while grid connection waits shorten.',
+    watch: ['Whether the leading foundry keeps calling packaging capacity tight', 'Whether its second Arizona fab reaches volume in the second half of 2027', 'High-performance computing as a share of the leading foundry\'s revenue', 'How the leading foundry describes Taiwan\'s electricity supply'],
   },
   {
     id: 'lumentum-makes-the-light',
@@ -293,7 +293,7 @@ export const CLAIMS: Claim[] = [
     home: 'the-chip-supply-chain',
     claim: 'In the AI chip supply chain, the parts that only one or a few qualified makers can supply, and that grow only through new cleanrooms, stay sold more than a year ahead. In its results published between 1 December 2027 and 31 March 2028, ASML will describe its 2029 low NA EUV supply as close to fully covered by orders or short of demand, and by its fiscal first quarter 2029 results, around December 2028, Micron will have said most of its calendar 2029 HBM supply is agreed.',
     breaksIf: 'ASML, in its results published between 1 December 2027 and 31 March 2028, says its 2029 low NA EUV capacity exceeds customer orders, or does not describe 2029 as close to fully covered or short of demand; or Micron, by its fiscal first quarter 2029 results (around December 2028), has not said most of its calendar 2029 HBM supply is agreed, or reports unsold HBM and attributes it to customer demand. A shortfall caused by late cleanrooms or suppliers supports the claim rather than breaking it.',
-    watch: ['How ASML describes 2028 and 2029 low NA EUV supply against demand, and the size of its 2028 capacity step (Capital Markets Day, 10 June 2027)', 'Whether Micron says most of next year\'s HBM is agreed, each autumn, and whether ID1 starts wafer output in mid 2027', 'How far ahead Seagate says data centre nearline supply is allocated (vast majority through calendar 2028 at 27 October 2026)', 'Whether TSMC publishes any CoWoS capacity or lead time figure', 'Whether Ajinomoto\'s Kani City film plant starts construction in 2028'],
+    watch: ['How ASML describes 2028 and 2029 low NA EUV supply against demand, and the size of its 2028 capacity step (Capital Markets Day, 10 June 2027)', 'Whether Micron says most of next year\'s HBM is agreed, each autumn, and whether ID1 starts wafer output in mid 2027', 'How far ahead Seagate says data centre nearline supply is allocated (vast majority through calendar 2028 at 27 October 2026)', 'Whether the leading foundry publishes any packaging capacity or lead time figure', 'Whether Ajinomoto\'s Kani City film plant starts construction in 2028'],
   },
   {
     id: 'contracted-energised-running',

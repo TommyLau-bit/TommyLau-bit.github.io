@@ -5,30 +5,82 @@ summary: "An AI rack now draws so much power that the copper and power supplies 
 category: "Analysis"
 cover: "/covers/powering-the-rack.svg"
 tags: ["power", "data-centres", "800VDC"]
+updated: 2026-11-06
+updateNote: "Now traces one megawatt from the grid to the chip and shows why the power room changes last, with evidence to 6 November 2026."
 draft: false
 ---
 
-Nvidia has done something unusual for a company with a product to sell. It has written down why its own design cannot go on. A rack of its AI chips, wired the way racks are wired today, would need up to 200 kilograms of copper bar to carry one megawatt.
+Nvidia has done something unusual for a chipmaker. It has written down why its own design cannot go on. Wired as racks are today, a rack of its AI chips would need up to 200 kilograms of copper bar to carry one megawatt.
 
-Its power supplies would fill up to 64 of the rack's slots. That leaves, in Nvidia's words, no room for the computers the rack exists to hold.
+Its power supplies would fill up to 64 of the rack's slots, leaving, in Nvidia's words, no room for the computers.
 
-The fix is a higher voltage, and the industry is moving the rack from 54 volts to 800. But the building around the rack cannot change at the same pace. So 800 volts reaches the rack before it reaches the building, and that order decides what gets bought while the building waits.
+The fix is to move the rack from 54 volts to 800. The building around it cannot change as fast.
 
-The physics is simple. For the same power, a lower voltage needs more current, and more current needs thicker copper and wastes more as heat. A megawatt at today's rack voltage is about 18,500 amps. At 800 volts it is about 1,250, a fifteenth as much.
+So 800 volts reaches the rack before it reaches the building, and that order decides what gets bought while the building waits.
 
-The building is the slow part. Its power room is designed years ahead and runs for decades. Transformers step the grid's high voltage down, a large battery system called a UPS rides through dips, and cables carry alternating current out to the racks. Rebuilding all of that for racks that change with each chip generation is slow and costly.
-
-So the change starts beside the computers. The first product is a power rack: a cabinet of converters that stands next to the computer racks, takes alternating current from the old power room and feeds them 800 volts. Nvidia dates it to the second half of 2026, and a unit serving a whole row of racks to 2027. The step that turns a whole building over to 800 volts it describes, but does not date.
+"800 volts" is three products, not one. A power rack is a cabinet of converters beside the computers, fed from the building's old power room. A row power centre serves a whole row. A building block turns the grid's supply into the new voltage at the building's edge, and the old power room shrinks. They differ in where the grid's alternating current becomes the direct current chips use, and this piece is about their order.
 
 <details class="analogy">
 <summary>The analogy</summary>
-<p>A house was wired for a kettle and a few lamps. Add a heat pump, an oven and a car charger, and the fuse box, the cables and the sockets all have to grow.</p>
-<p>A thicker supply cable is the lasting fix, but the walls are already plastered. So the new supply runs along the outside first, beside the old one, and the full rewire comes later.</p>
+<p>A busy restaurant's new ovens draw far more power than its kitchen was wired for. Closing to rewire is out, so the electrician wheels a power cabinet beside each oven, fed from the old fuse board: that is the power rack. One bigger cabinet for a whole line of ovens is the row power centre.</p>
+<p>The lasting fix is a new mains supply into the building, the building block, and it waits for the next full refit. Until then the restaurant pays for both: the old fuse board stays, and every oven gets its cabinet too.</p>
 </details>
 
-Rack first means more gear, not less. The old power room stays, and the power racks are added to it. Vertiv, which sells power and cooling equipment for data centres, estimates it can now sell about US$3.25 million to 3.75 million of gear into each megawatt, up by a tenth or more on its earlier range.
+Trace one megawatt from the street to the chip and the order explains itself. It passes five conversions, and only one is slow to change.
 
-The chips nearest the processor are selling faster too, before 800 volts has arrived. For anyone building or supplying an AI hall, the new voltage is coming as an extra cabinet beside the rack, not as a new building.
+First, the grid delivers it at medium voltage, where a megawatt needs only about 16 amps. Second, the building's power room steps it down with a transformer, while a large battery system called a UPS rides through dips. Third, a power supply at the rack turns it into direct current: 54 volts today, 800 tomorrow, which cuts the current fifteenfold. Fourth, a converter on each tray steps it down again. Fifth, power stages around the processor deliver under a volt: by my estimate, more than a million amps.
+
+<figure class="chart">
+<p class="chart-title">The power room changes last, because it is bought years ahead and kept for decades</p>
+<p class="chart-sub">One megawatt traced from the grid to the chip, with the current it needs at each step</p>
+<svg viewBox="0 0 560 196" role="img" aria-label="Diagram of five conversions in order, carrying one megawatt. One, grid: 35 kilovolts AC, about 16 amps per phase. Two, the AC power room: transformer and UPS, 415 volts AC, about 1,390 amps per phase. This is the choke point: it is booked years ahead and the specification for its 800 volt replacement was at version 0.3 in July 2026. Three, the rack: 54 volts DC is about 18,500 amps, 800 volts DC is 1,250 amps; it changes with each chip generation. Four, the tray: stepped to 12 volts, about 83,000 amps; new 800 volt designs use GaN switches for this step. Five, the chip: below 1 volt; at an assumed 0.8 volts, about 1.25 million amps.">
+<rect class="c-box" x="5.0" y="44" width="100.4" height="106" rx="4"/>
+<text class="c-box-t" x="13.0" y="66">1. Grid</text>
+<text class="c-note" x="13.0" y="88">35 kV AC</text>
+<text class="c-note" x="13.0" y="106">about 16 A</text>
+<text class="c-note" x="13.0" y="124">per phase</text>
+<line class="c-arrow" x1="106.4" y1="97" x2="111.4" y2="97"/><polygon class="c-arrow-head" points="116.4,97 110.4,93 110.4,101"/>
+<rect class="c-zone" x="113.4" y="14" width="108.4" height="144" rx="4"/>
+<text class="c-zone-t" x="167.6" y="30" text-anchor="middle">THE CHOKE POINT</text>
+<rect class="c-box" x="117.4" y="44" width="100.4" height="106" rx="4"/>
+<text class="c-box-t" x="125.4" y="66">2. AC room</text>
+<text class="c-note" x="125.4" y="88">Transformer</text>
+<text class="c-note" x="125.4" y="106">and UPS</text>
+<text class="c-note" x="125.4" y="124">415 V AC</text>
+<text class="c-note" x="125.4" y="142">about 1,390 A</text>
+<line class="c-arrow" x1="218.8" y1="97" x2="223.8" y2="97"/><polygon class="c-arrow-head" points="228.8,97 222.8,93 222.8,101"/>
+<rect class="c-box" x="229.8" y="44" width="100.4" height="106" rx="4"/>
+<text class="c-box-t" x="237.8" y="66">3. Rack</text>
+<text class="c-note" x="237.8" y="88">54 V: 18,500 A</text>
+<text class="c-note" x="237.8" y="106">800 V: 1,250 A</text>
+<text class="c-note" x="237.8" y="124">Changes each</text>
+<text class="c-note" x="237.8" y="142">chip cycle</text>
+<line class="c-arrow" x1="331.2" y1="97" x2="336.2" y2="97"/><polygon class="c-arrow-head" points="341.2,97 335.2,93 335.2,101"/>
+<rect class="c-box" x="342.2" y="44" width="100.4" height="106" rx="4"/>
+<text class="c-box-t" x="350.2" y="66">4. Tray</text>
+<text class="c-note" x="350.2" y="88">Steps to 12 V</text>
+<text class="c-note" x="350.2" y="106">about 83,000 A</text>
+<text class="c-note" x="350.2" y="124">GaN in new</text>
+<text class="c-note" x="350.2" y="142">800 V designs</text>
+<line class="c-arrow" x1="443.6" y1="97" x2="448.6" y2="97"/><polygon class="c-arrow-head" points="453.6,97 447.6,93 447.6,101"/>
+<rect class="c-box" x="454.6" y="44" width="100.4" height="106" rx="4"/>
+<text class="c-box-t" x="462.6" y="66">5. Chip</text>
+<text class="c-note" x="462.6" y="88">Below 1 V</text>
+<text class="c-note" x="462.6" y="106">about 1.25m A</text>
+<text class="c-note" x="462.6" y="124">at 0.8 V,</text>
+<text class="c-note" x="462.6" y="142">my estimate</text>
+<text class="c-lab c-s2t" x="117.4" y="180" text-anchor="start">Booked years ahead; 800 V spec at version 0.3</text>
+</svg>
+<figcaption>Voltages from Nvidia's Technical Blog (13 October 2025); specification version from Nvidia's blog (11 August 2026). Currents are my arithmetic at one megawatt, ignoring losses; three-phase AC per phase; the chip voltage of 0.8 V is my assumption. My framing of the chain.</figcaption>
+</figure>
+
+The second step binds. The rack and tray are products, redesigned with each chip generation. The power room is designed years ahead and runs for decades, its makers hold years of orders, and the standard for its replacement is unfinished.
+
+So the change starts beside the computers, and Nvidia's own dates follow that order: the power rack in the second half of 2026, a unit for a whole row in 2027, and the building step described but not dated.
+
+Rack first means more gear, not less, because the old power room stays. Vertiv, which sells power and cooling equipment for data centres, estimates that the gear it can sell into each megawatt has risen by a tenth or more.
+
+The chips nearest the processor are selling faster too. For anyone building or supplying an AI hall, the new voltage arrives as an extra cabinet beside the rack, not a new building.
 
 <hr class="layer">
 <p class="layer-label">For investors</p>
@@ -37,7 +89,7 @@ The chips nearest the processor are selling faster too, before 800 volts has arr
 
 <a id="powering-the-rack"></a>
 
-Rack power has risen tenfold within one wiring design, and the next step is tenfold again. Google's 48 volt architecture, which it pushed through the industry, scaled from 10 kW racks to 100 kW. Vertiv, a maker of data centre power and cooling gear, has a reference design for Nvidia's GB200 NVL72, the AI chip leader's current rack, that runs up to 132 kW. Nvidia's next rack, Kyber, is to house 576 Rubin Ultra GPUs by 2027, at around a megawatt. Nvidia dates an 800 VDC power rack, a cabinet of converters beside the computers, to the second half of 2026 and a row power centre to 2027, but gives the building-wide step no date.
+Rack power has risen tenfold within one wiring design, and the next step is tenfold again. Google, which designs its own AI chips and data centres, pushed its 48 volt architecture through the industry, and it scaled from 10 kW racks to 100 kW. Vertiv, a maker of data centre power and cooling gear, has a reference design for Nvidia's GB200 NVL72, the AI chip leader's current rack, that runs up to 132 kW. Nvidia's next rack, Kyber, is to house 576 Rubin Ultra GPUs by 2027, at around a megawatt. Nvidia dates an 800 VDC power rack, a cabinet of converters beside the computers, to the second half of 2026 and a row power centre to 2027, but gives the building-wide step no date.
 
 <figure class="chart">
 <p class="chart-title">The rack is heading far past what its wiring can carry</p>
@@ -75,19 +127,7 @@ That megawatt is what breaks today's wiring, and Nvidia made the case itself in 
 
 The fix is voltage, because current, not power, sets the size of the copper. Hold the power at a megawatt and the current falls fifteenfold between 54 volts and 800.
 
-<figure class="chart">
-<p class="chart-title">At 800 volts, a megawatt needs a fifteenth of the current</p>
-<p class="chart-sub">Current needed to deliver one megawatt, in amps</p>
-<svg viewBox="0 0 560 130" role="img" aria-label="Bar chart. Delivering one megawatt at 54 volts takes about 18,500 amps. At 800 volts it takes about 1,250 amps, about a fifteenth as much.">
-<g class="c-axis"><text x="100" y="43" text-anchor="end">54 V today</text><text x="100" y="99" text-anchor="end">800 V</text></g>
-<rect class="c-bar c-mute" x="110" y="24" width="270.0" height="30" rx="2"/>
-<text class="c-lab c-s2t" x="390" y="44">about 18,500 amps</text>
-<rect class="c-bar" x="110" y="80" width="18.2" height="30" rx="2"/>
-<text class="c-lab c-s2t" x="138.2" y="100">about 1,250 amps</text>
-<line class="c-base" x1="110" y1="14" x2="110" y2="120"/>
-</svg>
-<figcaption>Physics: current equals power divided by voltage, so 1,000,000 W over 54 V is 18,519 A and over 800 V is 1,250 A. Real systems add losses and safety margins.</figcaption>
-</figure>
+The same arithmetic traced down the chain shows why every design converts to low voltage as late, and as close to the chip, as it can. By my arithmetic at one megawatt, ignoring losses, the current is about 16 amps per phase on a 35 kV feed and about 1,390 amps per phase at 415 volts. It is about 18,500 amps at 54 volts, 1,250 at 800 and about 83,000 at 12 volts. At an assumed 0.8 volts at the cores it is about 1.25 million amps, spread over thousands of power stages, each millimetres from the silicon.
 
 Nvidia puts the gain for a whole row of racks in its own terms. Moving the row from 415 volts AC to 800 volts DC carries 85% more power through the same conductor size and cuts copper by 45%, its May 2025 post says. Less copper per unit of power does not mean less copper, though: power per rack is rising faster than the saving.
 
@@ -129,7 +169,13 @@ Changing the voltage is quick inside the rack and slow in the building, so the c
 <figcaption>Voltages and steps from Nvidia's Technical Blog (20 May and 13 October 2025) and its blog of 11 August 2026. SST is a solid-state transformer. At 54 V the tray steps down to 12 V; at 800 V one converter steps to 12 V, or to 6 V in Texas Instruments' design (16 March 2026), before the last step to below 1 V.</figcaption>
 </figure>
 
-Each phase also decides which chip material switches. The phased framing and this split come from SemiAnalysis, a chip and AI research firm, in the free part of its "Inside the 800VDC Revolution, Part 1" (26 May 2026); the makers' own releases place them. Silicon carbide, SiC, a chip material for high voltages, belongs at the top, where voltages run to kilovolts: Infineon, a German power chip maker, and SolarEdge, a solar inverter maker, are developing a 2 to 5 MW solid-state transformer block, an electronic replacement for the power room's transformer, on Infineon's SiC switches. Gallium nitride, GaN, a faster-switching material, belongs at or below the 800 volt bus, and takes 800 volts by stacking parts rated at 650. Texas Instruments, a maker of the small power chips beside the processor, has an 800 to 6 volt converter that uses GaN at 97.6% peak efficiency. So a rack-first transition pulls GaN and tray-level converters forward, and leaves SiC for solid-state transformers until buildings follow.
+Each phase also decides which chip material switches. The phased framing and this split come from SemiAnalysis, a chip and AI research firm, in the free part of its "Inside the 800VDC Revolution, Part 1" (26 May 2026); the makers' own releases place them.
+
+The reason is the bandgap, the energy an electron needs to break loose and conduct. Silicon carbide's and gallium nitride's are about three times silicon's, so they hold about ten times the electric field before breaking down. A switch blocking 800 volts can then be about a tenth as thick, so it loses less when on and switches faster, which lets the transformers and inductors around it shrink. Silicon carbide also moves heat about three times better than silicon; gallium nitride switches fastest but moves heat slightly worse.
+
+Silicon carbide, SiC, belongs at the top, where voltages run to kilovolts and heat is the enemy. Infineon, a German power chip maker, and SolarEdge, a solar inverter maker, are developing a 2 to 5 MW solid-state transformer block, an electronic replacement for the power room's transformer, on Infineon's SiC switches. Gallium nitride, GaN, belongs at or below the 800 volt bus, and takes 800 volts by stacking parts rated at 650. Texas Instruments, a maker of the small power chips beside the processor, has an 800 to 6 volt converter that uses GaN at 97.6% peak efficiency.
+
+So a rack-first transition pulls GaN and tray-level converters forward, and leaves SiC for solid-state transformers until buildings follow. The GaN supply is changing hands at the same moment. Navitas, a GaN chip maker, said in a filing of 1 July 2025 that the leading foundry will end GaN production in July 2027, and that moving its 650 volt parts to Powerchip, a Taiwanese foundry, would take about 12 to 24 months.
 
 ## Nvidia's own calendar puts the rack first and leaves the building undated
 
@@ -163,9 +209,11 @@ The building step also waits on standards: the solid-state transformer specifica
 
 <a id="every-megawatt-got-harder"></a>
 
-Rack first adds equipment before it removes any: the AC room stays and the power racks join it. The power supplies that would fill up to 64 rack slots at a megawatt move into a cabinet on the floor beside the rack. The floor is there: Jane Street's refitted Texas site, in [heat and water](/journal/heat-and-water/#room-to-spare), fills its whole grid allowance with racks that take a small fraction of the floor once set aside for chips. Makers of 54 volt shelves and in-rack copper bar lose their place inside it.
+Rack first adds equipment before it removes any: the AC room stays and the power racks join it. The power supplies that would fill up to 64 rack slots at a megawatt move into a cabinet on the floor beside the rack. The floor is there: the refitted Texas site of Jane Street, the trading firm, in [heat and water](/journal/heat-and-water/#room-to-spare), fills its whole grid allowance with racks that take a small fraction of the floor once set aside for chips. Makers of 54 volt shelves and in-rack copper bar lose their place inside it.
 
-That extra gear shows in what a megawatt holds, and Vertiv is the one maker to put a figure on what a megawatt holds. Its management estimated in May 2026 that it could sell about US$3.25 million to 3.75 million of power and cooling gear into each megawatt of IT power, up about 10 to 15% on its earlier range. That is an estimate of opportunity, not reported revenue. Its results show demand, not yet the cause. In the third quarter of 2026 Vertiv's sales grew 55.0% organically and its adjusted operating margin widened 2.9 points to 25.2%, with organic orders more than doubling. A margin widening on that much volume fits operating leverage as well as richer gear. Vertiv says its own 800 VDC range, from central rectifiers to rack converters, is scheduled for the second half of 2026.
+That extra gear shows in what a megawatt holds, and Vertiv is the one maker to put a figure on what a megawatt holds. Its management estimated in May 2026 that it could sell about US$3.25 million to 3.75 million of power and cooling gear into each megawatt of IT power, up about 10 to 15% on its earlier range. That is an estimate of opportunity, not reported revenue. Its results show demand, not yet the cause. In the third quarter of 2026 Vertiv's sales grew 55.0% organically and its adjusted operating margin widened 2.9 points to 25.2%, with organic orders more than doubling. A margin widening on that much volume fits operating leverage as well as richer gear.
+
+Vertiv's own 800 VDC range, from central rectifiers to rack converters, was scheduled for launch in the second half of 2026, but revenue comes later. On its third-quarter call of 28 October 2026, per a transcript, chief executive Giordano Albertazzi called 2027 the customer validation phase, with first revenue that year, and put deployment into the market in 2028. He described the road as 800 volts to the rack first, fed by medium or low voltage AC, before an end-to-end 800 volt system.
 
 ## The chips beside the processor are growing before 800 volts arrives
 
@@ -173,18 +221,31 @@ That extra gear shows in what a megawatt holds, and Vertiv is the one maker to p
 
 The same holds at the other end of the chain, where density, not voltage, is driving sales so far. TI makes the power stages, converters and electronic fuses on the board. Its data centre business was 9% of revenue in 2025, about US$1.5bn. It doubled in the second quarter of 2026 and grew about 95% in the third, to about 13% of revenue, in management's words on the call. But racks shipping in volume today run at 48 and 54 volts, and TI said in July that 800 volts will be phased in. TI names both density and voltage as drivers, and so far the first one is paying.
 
+<a id="the-off-switch"></a>
+## The off switch, not the converter, may set the building's pace
+
+A view I am testing is that protection, not conversion, decides when buildings switch over. Alternating current passes through zero 100 or 120 times a second, and a mechanical breaker uses that moment to put out its arc. Direct current never does. "Without a natural current zero, mechanical interruption faces challenges with arcing," Infineon said on 9 September 2026, announcing a solid-state breaker with SolarEdge, built on its SiC switches and designed to cut a fault within a few microseconds.
+
+The inference is mine. Beside the rack, each power rack's converters limit how much current a fault can draw. On a building-wide 800 volt bus fed by megawatt transformers, batteries and capacitors, a fault can draw on all of them at once. If that is right, rack first is also the safer order, the building step waits on a new class of breaker as much as on the converter, and SiC enters data halls early, inside breakers, before solid-state transformers bring volume.
+
+The test is whether building-fed systems publish their fault protection and breaker ratings, and whether rules for solid-state breakers settle. What would kill the idea is a hall of 10 MW or more on a building bus, signed off quickly with ordinary DC fuses and breakers.
+
 ## What would prove me wrong
 
-The test is a named hall. If Foxconn's Kaohsiung-1, the Taiwanese electronics maker's AI data centre, or any hall of 10 MW or more, goes into service before 2028 fed by a central rectifier or solid-state transformer, the building did not wait for the rack. A building-first switch would pull SiC demand for solid-state transformers forward and shrink the UPS, the battery system that rides through dips, sooner.
+The test is a named hall. If, before 2028, Nvidia, an operator or its supplier says a hall of 10 MW or more is in service on 800 volts made by a central rectifier or solid-state transformer, the building did not wait for the rack. Foxconn's 40 MW Kaohsiung-1, the Taiwanese electronics maker's AI data centre, is one to watch. A building-first switch would pull SiC demand for solid-state transformers forward and shrink the UPS, the battery system that rides through dips, sooner.
 
-Two events would move me before the test: Nvidia giving its DC power block a date before 2028, or the solid-state transformer specification it cites reaching a finished version.
+Three events would move me before the test. Nvidia giving its DC power block a date before 2028, or the solid-state transformer specification it cites reaching a finished version, would show the building catching up. And if power racks ship but Vertiv cuts its per-megawatt estimate, more gear first is wrong even if the order holds.
 
-Plans to go building-first would not move me. Nvidia said in May 2025 that full-scale production would coincide with Kyber in 2027. Foxconn's 40 MW Kaohsiung-1 is being built for 800 VDC, and CoreWeave, Lambda, Nebius, Oracle Cloud Infrastructure and Together AI, all cloud providers selling AI computing, are "designing for" 800 volt data centres. Vertiv's range includes central rectifiers, and Infineon's SiC transformer block is in development. Each of these is a design, not a running hall, and the transformer specification is still at version 0.3.
+The closest case yet would not move me, though it sits one disclosure from breaking the claim. On 2 November 2026 Envision, a Chinese wind turbine, battery and energy software group, said in its own release that an 800 VDC system on solid-state transformers, converting 10 kV straight to an 800 volt bus, is "now powering live computing workloads" at its Ulanqab campus in Inner Mongolia. That is an operator, a building-level converter and live load. It gives no size for the 800 volt system, and the 3 GW it cites is the plan for the whole campus.
+
+If Envision states 10 MW or more before 2028, the claim breaks. Until then it shows who can skip the queue: one owner building its own system, with storage and direct renewable supply, on a new campus that began operating in August 2026. The typical hall, fed through an AC room ordered years ahead, still goes rack first, and Vertiv, which sells into those halls, gives the same order.
+
+Plans would not move me either. Nvidia said in May 2025 that full-scale production would coincide with Kyber in 2027. Kaohsiung-1 is being built for 800 VDC, and CoreWeave, Lambda, Nebius, Oracle Cloud Infrastructure and Together AI, all cloud providers selling AI computing, are "designing for" 800 volt data centres. Vertiv's range includes central rectifiers, and Infineon's SiC transformer block is in development. Each of these is a design, not a running hall, and the transformer specification is still at version 0.3.
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
 
-The test this piece stands behind, quoted word for word from the claims page:
+The test this piece stands behind, quoted word for word:
 
 **Powering the rack** (30 October 2026)
 
@@ -227,6 +288,21 @@ Every watt an AI chip uses passes through the same chain of conversions, each ma
 | Board to chip | 12 V to below 1 V | 12 V or 6 V to below 1 V | Power stages, many per processor | TI, Monolithic Power, Infineon, Renesas, Analog Devices |
 
 The voltages and steps are Nvidia's (20 May and 13 October 2025). The 800 V to 6 V step is Texas Instruments' design (16 March 2026). On materials: Infineon and SolarEdge's SST block converts 13.8 to 34.5 kV to 800 to 1,500 V DC (5 November 2025); Navitas sells SiC from 650 V to 6,500 V; its GTC board (March 2026) uses 16 of its 650 V GaN switches in a stacked full bridge with 25 V silicon switches on the output side; its 100 V GaN is "optimised for the lower-voltage DC-DC stages on GPU power boards" (October 2025). Infineon sells all three materials and expects the share of power semiconductors in an 800 VDC design to be similar to or higher than in today's AC one (May 2025).
+
+The same megawatt traced in current, my arithmetic at 1 MW, ignoring losses (three-phase AC per phase at unity power factor; current equals power divided by voltage):
+
+| Point in the chain | Voltage | Current |
+|---|---|---|
+| Grid feed | 35 kV AC | about 16.5 A |
+| Power room output | 415 V AC | about 1,391 A |
+| Rack today | 54 V DC | 18,519 A |
+| Rack at 800 V | 800 V DC | 1,250 A |
+| Tray output | 12 V DC | 83,333 A |
+| GPU cores | about 0.8 V, my assumption; core voltages run below 1 V and vary by chip and load | about 1,250,000 A |
+
+Material values, room temperature: bandgap 1.12 eV for silicon, 3.26 for 4H-SiC, 3.4 for GaN; critical breakdown field about 0.3, 2.8 and 3.3 MV/cm; thermal conductivity 1.5, 4.9 and 1.3 W/cm.K (halbleiter.org, read 6 November 2026). A layer blocking a given voltage scales inversely with the field, hence about a tenth as thick.
+
+Since the claim, and against it: Envision's release (PR Newswire, 2 November 2026) gives 10 kV medium voltage to an 800 V DC bus, battery storage for second-scale support and minute-scale backup, campus operations from August 2026, a planned 3 GW campus and no size for the 800 V system. Vertiv's chief executive on the third-quarter call (28 October 2026, per a published transcript): "revenue generating during 2027, and 2027 being the validation phase, customer validation", with deployment "in '28". Infineon's release (9 September 2026): the SolarEdge solid-state breaker sits between the solid-state transformer and the compute rack. Navitas Form 8-K (1 July 2025): the leading foundry "will end GaN production in July 2027"; 650 V parts move to Powerchip "over the next approximately 12-24 months".
 
 Nvidia's own dated statements on timing:
 
@@ -284,4 +360,4 @@ Vertiv does not state its prior per-MW range on its slide. I found no per-MW fig
 
 ---
 
-<p class="sources">Sources: Nvidia Technical Blog and Nvidia blog posts of 20 May 2025, 13 October 2025 and 11 August 2026; Google Cloud blog on 1 MW racks and liquid cooling (30 April 2025); Vertiv releases of 15 October 2024 and 19 May 2025, its 2026 Investor Conference presentation (19 May 2026), and its third quarter 2026 results on Form 8-K (28 October 2026); Texas Instruments' Form 10-K for 2025, its release of 16 March 2026, its third quarter 2026 results (21 October 2026) and its earnings calls of 27 January, 22 July and 21 October 2026; Infineon releases of May and 5 November 2025; Navitas releases of October 2025 and March 2026. The phased framing of the 800 VDC transition and the SiC and GaN split are SemiAnalysis's, from the free part of "Inside the 800VDC Revolution, Part 1" (26 May 2026). Personal research, not investment advice.</p>
+<p class="sources">Sources: Nvidia Technical Blog and Nvidia blog posts of 20 May 2025, 13 October 2025 and 11 August 2026; Google Cloud blog (30 April 2025); Vertiv releases of 15 October 2024 and 19 May 2025, its 2026 Investor Conference presentation (19 May 2026), its third quarter 2026 Form 8-K and call transcript (28 October 2026); Texas Instruments' Form 10-K for 2025, its release of 16 March 2026, its third quarter 2026 results and its calls of 27 January, 22 July and 21 October 2026; Infineon releases of May 2025, 5 November 2025 and 9 September 2026; Navitas releases of October 2025 and March 2026 and its Form 8-K (1 July 2025); Envision's release (2 November 2026); halbleiter.org material values. The phased framing and the SiC and GaN split are SemiAnalysis's, from the free part of "Inside the 800VDC Revolution, Part 1" (26 May 2026). Personal research, not investment advice.</p>

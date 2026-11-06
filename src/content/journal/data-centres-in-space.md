@@ -5,38 +5,83 @@ summary: "SpaceX, Google and a start-up called Starcloud plan AI data centres in
 category: "Analysis"
 cover: "/covers/data-centres-in-space.svg"
 tags: ["cooling", "data-centres", "space", "power"]
+updated: 2026-11-06
+updateNote: "Now follows one watt from sunlight to deep space and tests whether a heat pump can shrink the radiator, with evidence to 6 November 2026."
 draft: false
 ---
 
-SpaceX has told American regulators it wants to put AI data centres into orbit. The Federal Communications Commission has accepted its application for up to one million satellites for review.
+SpaceX has told American regulators it wants to put AI data centres into orbit. The Federal Communications Commission has accepted for review its application for up to one million satellites.
 
-The pitch is power. In the right orbit the sun almost never sets, and there is no queue for the grid. But every watt a chip uses comes back out as heat, and in a vacuum there is no air or water to carry it away. Heat can leave only by glowing off a radiator, a panel that faces cold space.
+The pitch is power. In the right orbit the sun almost never sets, and there is no queue for the grid. But every watt a chip uses comes back out as heat, and a vacuum has no air or water to carry it.
 
-So orbit is a contest of weight, because radiators and solar panels must be launched and launch is priced by the kilogram. My claim: by the end of 2028, nobody will report a compute satellite in service at SpaceX's own target for power per tonne launched, and no rocket company will publish a price low enough to make the sums easy.
+So orbit is a contest of weight, because radiators and solar panels are launched, priced by the kilogram. My claim: by the end of 2028, nobody will report a compute satellite in service at SpaceX's own target for power per tonne launched, and no rocket company will publish a price low enough to make the sums easy.
 
 In orbit the plug is free, and the heat is the bill.
 
+"Cooling" is three jobs. Off the chip: heat moves from silicon into a liquid. Across the building: the liquid carries it to the edge. Out to the world: the heat is thrown away for good. On the ground, air and evaporating water do that last job cheaply. In orbit only light can, and this piece is about that job.
+
 <details class="analogy">
 <summary>The analogy</summary>
-<p>Picture a laptop sealed inside a vacuum flask on a sunny windowsill. The sun charges it for nothing, but the flask that keeps tea hot also traps the laptop's heat.</p>
-<p>The only way out is a large black fin poking out of the flask, glowing the heat away. A hotter fin can be smaller. And every fin goes up by courier, charged by the kilogram.</p>
+<p>Picture a laptop sealed in a vacuum flask on a sunny windowsill. The sunshine charges it for nothing: that is the solar array. The flask is the vacuum, which keeps tea hot and here traps the laptop's heat.</p>
+<p>The only way out is a black fin poking through the lid, glowing the heat away: that is the radiator. A hotter fin can be smaller, so how hot the laptop may run sets the fin's size. And every fin goes up by courier, charged by the kilogram: that is the launch fare.</p>
 </details>
 
-The orbit these plans favour is called dawn-dusk sun-synchronous. The satellite rides the line between day and night, so its panels face the sun almost all the time. SpaceX's finance chief says a solar cell there gets about five times the energy it would on the ground.
+Follow one watt from sunlight to deep space and the costly step stands out. First, the solar array turns sunlight into electricity. Second, wires step the voltage down, losing a little as heat. Third, the chip turns every watt into heat. Fourth, a pumped liquid carries that heat to the edge. Fifth, a radiator facing cold space glows it away as light.
 
-The radiator is the hard part. The heat a panel sheds rises with its temperature to the fourth power, so a slightly hotter panel sheds far more. Starcloud, a start-up, works out about 633 watts per square metre for a panel at 20°C with the sun on one face. SpaceX assumes 1,400, which on my arithmetic means a panel near 67°C.
+<figure class="chart">
+<p class="chart-title">Only the last step has no air or water to help, and it sets the satellite's weight</p>
+<p class="chart-sub">One watt on a SpaceX-style compute satellite, from sunlight to deep space</p>
+<svg viewBox="0 0 560 196" role="img" aria-label="Diagram of five steps in order. One, sun: the solar array turns sunlight into electricity, about 250 watts per square metre on SpaceX's design figure. Two, bus: wires and converters step the voltage down, and their losses become heat. Three, chip: every watt of computing comes back out as heat. Four, loop: a pumped liquid carries the heat to the edge of the satellite. Five, radiator: a panel glows the heat into space as light, about 1,400 watts per square metre on SpaceX's figure, which needs a panel near 67°C. This is the choke point.">
+<rect class="c-box" x="5.0" y="44" width="100.4" height="106" rx="4"/>
+<text class="c-box-t" x="13.0" y="66">1. Sun</text>
+<text class="c-note" x="13.0" y="88">Array turns</text>
+<text class="c-note" x="13.0" y="106">sunlight into</text>
+<text class="c-note" x="13.0" y="124">power, about</text>
+<text class="c-note" x="13.0" y="142">250 W/m²</text>
+<line class="c-arrow" x1="106.4" y1="97" x2="111.4" y2="97"/><polygon class="c-arrow-head" points="116.4,97 110.4,93 110.4,101"/>
+<rect class="c-box" x="117.4" y="44" width="100.4" height="106" rx="4"/>
+<text class="c-box-t" x="125.4" y="66">2. Bus</text>
+<text class="c-note" x="125.4" y="88">Wires step</text>
+<text class="c-note" x="125.4" y="106">the voltage</text>
+<text class="c-note" x="125.4" y="124">down; losses</text>
+<text class="c-note" x="125.4" y="142">become heat</text>
+<line class="c-arrow" x1="218.8" y1="97" x2="223.8" y2="97"/><polygon class="c-arrow-head" points="228.8,97 222.8,93 222.8,101"/>
+<rect class="c-box" x="229.8" y="44" width="100.4" height="106" rx="4"/>
+<text class="c-box-t" x="237.8" y="66">3. Chip</text>
+<text class="c-note" x="237.8" y="88">Every watt</text>
+<text class="c-note" x="237.8" y="106">of compute</text>
+<text class="c-note" x="237.8" y="124">comes back</text>
+<text class="c-note" x="237.8" y="142">as heat</text>
+<line class="c-arrow" x1="331.2" y1="97" x2="336.2" y2="97"/><polygon class="c-arrow-head" points="341.2,97 335.2,93 335.2,101"/>
+<rect class="c-box" x="342.2" y="44" width="100.4" height="106" rx="4"/>
+<text class="c-box-t" x="350.2" y="66">4. Loop</text>
+<text class="c-note" x="350.2" y="88">Pumped liquid</text>
+<text class="c-note" x="350.2" y="106">carries heat</text>
+<text class="c-note" x="350.2" y="124">to the edge</text>
+<text class="c-note" x="350.2" y="142">of the craft</text>
+<line class="c-arrow" x1="443.6" y1="97" x2="448.6" y2="97"/><polygon class="c-arrow-head" points="453.6,97 447.6,93 447.6,101"/>
+<rect class="c-zone" x="450.6" y="14" width="108.4" height="144" rx="4"/>
+<text class="c-zone-t" x="504.8" y="30" text-anchor="middle">THE CHOKE POINT</text>
+<rect class="c-box" x="454.6" y="44" width="100.4" height="106" rx="4"/>
+<text class="c-box-t" x="462.6" y="66">5. Radiator</text>
+<text class="c-note" x="462.6" y="88">Glows heat</text>
+<text class="c-note" x="462.6" y="106">into space</text>
+<text class="c-note" x="462.6" y="124">1,400 W/m²</text>
+<text class="c-note" x="462.6" y="142">near 67°C</text>
+<text class="c-lab c-s2t" x="555.0" y="180" text-anchor="end">Heat leaves only as light, and every m² is launched</text>
+</svg>
+<figcaption>SpaceX interview transcript filed with the SEC (9 June 2026) for 250 and 1,400 W/m²; the 67°C is my arithmetic. My framing of the chain.</figcaption>
+</figure>
 
-That is the same lever as on the ground. [Warm coolant lets a hall stop using water](/journal/heat-and-water/); in orbit, warm coolant shrinks the radiator.
+The fifth step binds. Solar arrays have flown for decades, and pumped loops work without gravity. Only the last loses the air and water it leans on down here. The heat a panel sheds rises with the fourth power of its absolute temperature, so the chip's heat limit sets the radiator's size.
 
-Weight is where the sums turn. SpaceX targets 100 kilowatts of computing for every tonne it launches. Radiators as heavy for their size as the International Space Station's, even at SpaceX's 1,400, would use that whole budget alone, before a single chip or solar panel.
+Starcloud, a start-up, works out about 633 watts shed per square metre for a panel at 20°C. SpaceX assumes 1,400, which on my arithmetic means a panel near 67°C. It is the [same lever as warm water on the ground](/journal/heat-and-water/).
 
-The regulator noticed. In April the Securities and Exchange Commission asked SpaceX to disclose the total mass of its system. The final prospectus said the mass of each satellite was still being refined.
+Weight is where the sums turn. SpaceX targets 100 kilowatts of computing per tonne launched. Radiators as heavy as the International Space Station's would use that whole budget alone. In April American regulators asked SpaceX for its system's mass; the answer was that it is still being refined.
 
-Then there is the fare. Google, which is designing its own orbital system, estimates today's launch price at about $3,600 a kilogram. At that price its own sums put power in orbit at several times what an American hall pays for electricity.
+Then there is the fare. Google, designing its own orbital system, estimates today's launch price at about $3,600 a kilogram. It sees $200, where launch could stop being the limit, around 2035.
 
-Google cites $200 a kilogram as the point where launch could stop being the limit, and sees prices reaching it around 2035 if rockets keep getting cheaper at their past pace.
-
-Orbit can still work. The free plug is simply paid for in kilograms, and no compute satellite in service has yet been weighed.
+Orbit can still work. But the free plug is paid for in kilograms, and no compute satellite has been weighed in public.
 
 <hr class="layer">
 <p class="layer-label">For investors</p>
@@ -127,6 +172,8 @@ Free power still has to leave as heat, and SpaceX's final prospectus (12 June 20
 
 That gap is large because of the fourth power. Going from 20°C to 67°C raises absolute temperature by about 16%, but sheds about 1.8 times the heat per square metre. It is the lever [Heat and water](/journal/heat-and-water/) found on the ground, where a warm loop lets a dry cooler replace a cooling tower. In orbit, the warmer the coolant the chips accept, the smaller the radiator. The space station shows the other extreme: its ammonia loop runs at about 3°C because it cools a crew, and on my arithmetic its six main radiator units reject about 147 W per square metre.
 
+The first data-centre chips in orbit already run to a heat budget. Google and Planet, the satellite imaging company that co-developed the mission, launched a Suncatcher prototype on a SpaceX rideshare on 1 October 2026. NPR reported the next day that it carries four of Google's TPU chips and runs Gemma, Google's open model, "15 minutes at a time due to heat management constraints". Travis Beals, who leads the project, told NPR the radiators are "one of the heaviest components". Google said on 30 October that the satellite had sent down its first answer, a haiku, with in-orbit thermal and radiation tests still to come; it gave no mass.
+
 ## Every kilogram is a launch bill, and no design yet meets 10 kg per kW
 
 Radiator area becomes weight, and weight is what launch charges for. SpaceX's prospectus says 100 gigawatts a year "via satellites carrying over 100 kilowatts of compute power per metric ton" needs "approximately one million metric tons to orbit annually". Musk's draft first satellite is 120 kW sustained, about one rack of Nvidia GB300 chips. On my arithmetic, that needs about 86 m² of radiator at 1,400 W/m² and about 480 m² of solar array. At 10 kg per kW, the whole satellite could weigh no more than about 1.2 tonnes.
@@ -162,52 +209,33 @@ Every kilogram also has a fare. Google's "launched power price" spreads launch c
 
 At $200/kg, the figure Google says "is often cited, by SpaceX and others" as the point where launch stops being the limiting cost, the same satellite falls to $810, inside the ground range. Google projects prices could fall below it by about 2035 if SpaceX's learning rate holds, which it says would take about 180 launches a year of Starship, SpaceX's next, larger rocket. I found no launch provider's published price per kilogram for a whole rocket to low Earth orbit; the $3,600 is Google's estimate.
 
-The fare is not paid once, because the short life turns the launch bill into rent. SpaceX's risk factors say its satellites' useful life "is inherently shorter" than that of the systems they host, so it "must periodically launch replacement satellites". On the ground, the hall and its [grid gear outlast three or four chip generations](/journal/the-equipment-queue/). SpaceX says Starmind, its first compute satellites, fly in 2027. On the five-year life Google uses, one flown then would wear out around 2032, before Google's curve reaches $200 a kilogram.
+A seat may bind before the fare. Philip Johnston, Starcloud's chief executive, told TechCrunch on 21 August 2026 that launch "is pretty constrained right now" because Falcon 9 "is scheduled to end in 2028"; I found no such date in SpaceX's filings. The same report has Starcloud's next two satellites, of 8 kW each, on rideshares in 2027. On my reading, scarce seats make a published $200 a kilogram less likely by 2028, and favour the one company that owns both the big rocket and a compute satellite of its own.
 
-<figure class="chart">
-<p class="chart-title">On Google's numbers, a compute satellite launched in 2027 wears out before launch reaches $200 a kilogram</p>
-<p class="chart-sub">Dated plans for orbital compute, a five-year satellite life, and Google's projection for launch prices</p>
-<svg viewBox="0 0 560 225" role="img" aria-label="Timeline from 2025 to 2037. Google and Planet target two Suncatcher prototypes for launch in 2027. SpaceX says its first AI compute satellites fly in 2027; on a five-year life they wear out around 2032. This piece's claim is tested on 31 December 2028. Google's learning curve reaches launch prices below 200 dollars a kilogram around 2035.">
-<g class="c-grid">
-<line x1="130" y1="30" x2="130" y2="196"/>
-<line x1="164" y1="30" x2="164" y2="196"/>
-<line x1="198" y1="30" x2="198" y2="196"/>
-<line x1="232" y1="30" x2="232" y2="196"/>
-<line x1="266" y1="30" x2="266" y2="196"/>
-<line x1="300" y1="30" x2="300" y2="196"/>
-<line x1="334" y1="30" x2="334" y2="196"/>
-<line x1="368" y1="30" x2="368" y2="196"/>
-<line x1="402" y1="30" x2="402" y2="196"/>
-<line x1="436" y1="30" x2="436" y2="196"/>
-<line x1="470" y1="30" x2="470" y2="196"/>
-<line x1="504" y1="30" x2="504" y2="196"/>
-<line x1="538" y1="30" x2="538" y2="196"/>
-</g>
-<g class="c-axis"><text x="130" y="214" text-anchor="middle">2025</text><text x="198" y="214" text-anchor="middle">2027</text><text x="266" y="214" text-anchor="middle">2029</text><text x="334" y="214" text-anchor="middle">2031</text><text x="402" y="214" text-anchor="middle">2033</text><text x="470" y="214" text-anchor="middle">2035</text><text x="538" y="214" text-anchor="middle">2037</text><text x="120" y="60" text-anchor="end">Google and Planet</text><text x="120" y="104" text-anchor="end">SpaceX AI satellite</text><text x="120" y="148" text-anchor="end">This claim</text><text x="120" y="188" text-anchor="end">Launch at $200/kg</text></g>
-<line class="c-today" x1="192.4" y1="24" x2="192.4" y2="196"/><text class="c-today-t" x="192.4" y="20" text-anchor="middle">today</text>
-<circle class="c-dot c-s3" cx="215" cy="56" r="5"/><text class="c-lab c-s3t" x="225" y="60">two prototypes, 2027</text>
-<g class="c-span"><line x1="198" y1="100" x2="368" y2="100"/></g><g class="c-start"><circle cx="198" cy="100" r="4"/></g><g class="c-end"><circle cx="368" cy="100" r="4.5"/></g><g class="c-endt"><text x="377" y="104">worn out, about 2032</text></g>
-<text class="c-note" x="198" y="88">first flights in 2027, five-year life</text>
-<circle class="c-dot c-s2" cx="266" cy="144" r="5"/><text class="c-lab c-s2t" x="276" y="148">31 December 2028</text>
-<circle class="c-dot c-s1" cx="470" cy="184" r="5"/><text class="c-lab c-s1t" x="460" y="188" text-anchor="end">Google's curve: about 2035</text>
-</svg>
-<figcaption>Planet 8-K (10 December 2025); SpaceX third-quarter call transcript (20 October 2026); Google, Suncatcher paper (22 November 2025), five-year life for Starlink and the 2035 projection, which assumes about 180 Starship launches a year. My framing; SpaceX has not stated an AI satellite's life.</figcaption>
-</figure>
+The fare is not paid once, because the short life turns the launch bill into rent. SpaceX's risk factors say its satellites' useful life "is inherently shorter" than that of the systems they host, so it "must periodically launch replacement satellites". On the ground, the hall and its [grid gear outlast three or four chip generations](/journal/the-equipment-queue/). SpaceX says Starmind, its first compute satellites, fly in 2027. On the five-year life Google uses, one flown then would wear out around 2032, before Google's curve reaches $200 a kilogram. That timing is my framing; SpaceX has not stated an AI satellite's life.
+
+<a id="heat-pump-trade"></a>
+## A heat pump cannot buy back the radiator, because solar is the weaker surface
+
+The obvious fix for a big radiator is a heat pump, and the view I am testing is that it costs more surface than it saves. Starcloud's white paper says pumps that raise the radiator's temperature lift its output "due to the T4 term", "albeit at an added energy cost". That energy comes from the array. Musk's design figures give about 250 W per square metre collected by the array against about 1,400 shed by the radiator, 5.6 times as much.
+
+On my arithmetic, an estimate, lifting 1 kW of heat from a 45°C loop to a 100°C panel at half the ideal efficiency takes about 0.35 kW of work. The hotter two-sided panel, shedding about 2,023 W/m² instead of 1,069, saves about 0.27 m² of radiator even after shedding the pump's own heat. The extra power needs about 1.4 m² of array. Even a perfect pump adds about twice the area it saves.
+
+If that holds, the radiator's size is a chip-design decision: the temperature the chip lets its coolant reach. It is a seed, not a finding, because launch bills kilograms, not square metres. The test is published mass per square metre for flown arrays and radiators. If thin arrays weigh under about a fifth as much per square metre as radiators, a pump can still save mass; a panel that is array and radiator at once would also change the sums.
 
 ## What would prove me wrong
 
 Two observations break the claim. An operator discloses, in a filing, a release or a regulator's record, an AI compute satellite in service at 100 kW or more of compute power per tonne launched, by 31 December 2028. Or a launch provider publishes a price to low Earth orbit of $200 per kilogram or less by then.
 
-The first weighings come in 2027. Planet, the satellite imaging company, is contracted to deploy two Suncatcher prototypes, "targeting launch in 2027", and Gwynne Shotwell, SpaceX's president, said on its call of 20 October that it will begin flying Starmind satellites in 2027. A satellite mass in SpaceX's quarterly or annual reports, or a published price sheet or contract, would move me before the test date.
+The satellites that could be weighed against the target fly in 2027. Google's first prototype is up, but no mass has been published for it. Planet is contracted to deploy two Suncatcher prototypes, "targeting launch in 2027", which Google now calls "twin interconnected satellites", and Gwynne Shotwell, SpaceX's president, said on its call of 20 October that it will begin flying Starmind satellites in 2027. A satellite mass in SpaceX's quarterly or annual reports, a published mass for Google's 2027 pair, or a published price sheet or contract would move me before the test date.
 
-The case against my claim rests on designs and tests, and those would not move me. The station's radiators were designed decades ago for a crew, with a cold loop and rotating joints, so 14 kg per m² is a heritage ceiling, not a law. A preprint (Gaalema, Indyk and Staley, arXiv, 9 April 2026; not peer reviewed) argues integrated panels could reach "about 500 W/kg", or 2 kg per kW. Its 16 MW, 150 tonne satellite would just beat SpaceX's target, at about 107 kW per tonne, though it assumes "custom solutions for all components". Google's Trillium TPU showed memory irregularities in a proton beam only after 2 krad(Si), almost three times the 750 rad(Si) a shielded five-year mission expects. SpaceX calls its 1,400 W/m² a very achievable goal. The preprint is a design, Google's result is a ground test and SpaceX's figure is an assumption. The claim asks for a satellite in service at the target, or a published price, and on 2 November 2026 neither exists.
+The case against my claim rests on designs and tests, and those would not move me. The station's radiators were designed decades ago for a crew, with a cold loop and rotating joints, so 14 kg per m² is a heritage ceiling, not a law. A preprint (Gaalema, Indyk and Staley, arXiv, 9 April 2026; not peer reviewed) argues integrated panels could reach "about 500 W/kg", or 2 kg per kW. Its 16 MW, 150 tonne satellite would just beat SpaceX's target, at about 107 kW per tonne, though it assumes "custom solutions for all components". Google's Trillium TPU showed memory irregularities in a proton beam only after 2 krad(Si), almost three times the 750 rad(Si) a shielded five-year mission expects. SpaceX calls its 1,400 W/m² a very achievable goal. The preprint is a design, Google's result is a ground test and SpaceX's figure is an assumption. The claim asks for a satellite in service at the target, or a published price, and on 6 November 2026 neither exists.
 
 The ground-side mechanisms it leans on are in [Heat and water](/journal/heat-and-water/) and [America rations the plug](/journal/america-rations-the-plug/).
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
 
-The test this piece stands behind, quoted word for word from the claims page:
+The test this piece stands behind, quoted word for word:
 
 **In orbit the plug is free and the heat is the bill** (2 November 2026)
 
@@ -271,6 +299,17 @@ The SEC record:
 | Prospectus | Mass per satellite "continue[s] to be refined"; "substantially larger radiators"; deployment "as early as 2028" | 424B4, 12 June 2026 |
 | 10-Q | No mention of orbital compute | Quarter to 30 September 2026, filed 22 October 2026 |
 
+The first prototype and the launch seat:
+
+| Measure | Figure | Source |
+|---|---|---|
+| Suncatcher prototype | Co-developed with Planet; Transporter-18 rideshare with SpaceX; next, two satellites in 2027 to test laser links | Google blog, 24 September 2026 |
+| Launch and first answer | Launched 1 October; Gemma answer downlinked over Svalbard; thermal and radiation tests next; "twin interconnected satellites in 2027"; no mass given | Google blog, 30 October 2026 |
+| Run time | Four TPUs; Gemma "15 minutes at a time due to heat management constraints"; radiators "one of the heaviest components" | NPR, 2 October 2026 (press report) |
+| Launch seats | Falcon 9 "scheduled to end in 2028"; Starcloud's two 8 kW satellites on rideshares in 2027 | Starcloud's chief executive, TechCrunch, 21 August 2026 (press report) |
+
+The heat pump arithmetic is mine and an estimate: loop at 45°C (318 K), panel at 100°C (373 K), the panel taken at loop temperature in both cases. Ideal work per unit of heat lifted is (373 minus 318) / 318 = 0.173; at half of ideal, about 0.35. Without a pump, 1 kW at 1,069 W/m² needs 0.94 m²; with one, 1.35 kW at 2,023 W/m² needs 0.67 m², a saving of 0.27 m². The pump's 0.35 kW at 250 W/m² of array needs 1.4 m². With an ideal pump the saving is 0.36 m² against 0.69 m² of array. Sunlight on the radiator is ignored, as for a panel flown edge-on.
+
 
 </details>
 
@@ -283,7 +322,7 @@ The SEC record:
 <dt>The chips</dt>
 <dd><span class="names">Google</span> designs the TPU chips its Suncatcher prototypes would carry. <span class="names">Nvidia</span> makes the GB300 and Rubin chips in SpaceX's reference design.</dd>
 <dt>The satellite maker</dt>
-<dd><span class="names">Planet Labs</span> builds satellites, including the two Suncatcher prototypes.</dd>
+<dd><span class="names">Planet Labs</span> builds satellites, including Google's Suncatcher prototypes.</dd>
 </dl>
 <dl class="against">
 <dt>On the other side</dt>
@@ -293,4 +332,4 @@ The SEC record:
 
 ---
 
-<p class="sources">Sources: Google, "Towards a future space-based, highly scalable AI infrastructure system design" (arXiv 2511.19468, 22 November 2025); SpaceX's SEC record: roadshow free writing prospectus (4 June 2026), interview transcripts (9 June 2026), S-1/A No. 2 (3 June 2026), final prospectus (12 June 2026), SEC staff comment letters (24 April and 19 May 2026) and 10-Q for the quarter to 30 September 2026 (22 October 2026); SpaceX's third-quarter call transcript (20 October 2026) and its AI1 web page (read 2 November 2026); FCC public notice DA 26-113 (4 February 2026) and Starcloud's FCC application narrative (4 February 2026); Starcloud (Lumen Orbit) white paper, version 1.03 (September 2024); NASA's ISS Active Thermal Control System overview and Schunk and others, IEEE Aerospace 2022; Planet Labs' 8-K (10 December 2025); Gaalema, Indyk and Staley (arXiv 2604.07760, 9 April 2026). Figures as stated on the dates cited. Personal research, not investment advice.</p>
+<p class="sources">Sources: Google, "Towards a future space-based, highly scalable AI infrastructure system design" (arXiv 2511.19468, 22 November 2025); SpaceX's SEC record: roadshow free writing prospectus (4 June 2026), interview transcripts (9 June 2026), S-1/A No. 2 (3 June 2026), final prospectus (12 June 2026), SEC staff comment letters (24 April and 19 May 2026) and 10-Q for the quarter to 30 September 2026 (22 October 2026); SpaceX's third-quarter call transcript (20 October 2026) and its AI1 web page (read 2 November 2026); FCC public notice DA 26-113 (4 February 2026) and Starcloud's FCC application narrative (4 February 2026); Starcloud (Lumen Orbit) white paper, version 1.03 (September 2024); NASA's ISS Active Thermal Control System overview and Schunk and others, IEEE Aerospace 2022; Planet Labs' 8-K (10 December 2025); Google's Suncatcher blog posts (24 September and 30 October 2026); NPR (2 October 2026) and TechCrunch (21 August 2026), as press reports; Gaalema, Indyk and Staley (arXiv 2604.07760, 9 April 2026). Figures as stated on the dates cited. Personal research, not investment advice.</p>

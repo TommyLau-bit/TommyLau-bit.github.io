@@ -181,7 +181,7 @@ Malaysia makes own power the route left once the grid says no. On 28 October 202
 <a id="phantom-load"></a>
 ## Idle bookings may be using up the margin on paper
 
-The question I am now testing is where those idle bookings bite. An engineer sizing a grid does not add up every customer's maximum, because loads rarely peak together; the allowance is called the diversity factor. An allocation queue does add them up, because each booked megawatt is a promise the planner must be ready to keep.
+Where those idle bookings bite is the question I cannot yet answer. An engineer sizing a grid does not add up every customer's maximum, because loads rarely peak together; the allowance is called the diversity factor. An allocation queue does add them up, because each booked megawatt is a promise the planner must be ready to keep.
 
 If Malaysia's spare-margin test counts bookings rather than draw, the 4.4 gigawatts booked and idle in June 2026 could use up the margin on paper while wires and turbines sit half used. The record fits that reading without proving it. In November 2025 ministers told Parliament that the Energy Commission had found a likelihood of speculative applications and cut its projections to avoid stranded assets. In October 2026 the 24 new applications were parked until the 117 already approved settle.
 

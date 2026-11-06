@@ -5,28 +5,81 @@ summary: "Most of the companies behind an AI chip could be replaced within month
 category: "Analysis"
 cover: "/covers/the-chip-supply-chain.svg"
 tags: ["the-stack", "supply-chain", "memory"]
+updated: 2026-11-06
+updateNote: "Now follows one B200 from printed die to rack and shows the step where every slow part meets, with evidence to 6 November 2026."
 draft: false
 ---
 
-In October, ASML told its investors something few suppliers say in a boom. ASML is the only company that builds the machines that print the finest chips, and it said its planned supply for 2027 and 2028 "will not fully meet the demand" of its customers. Some want to order for 2029 and even 2030.
+In October, ASML told investors something few suppliers say in a boom. It is the only company that builds the machines that print the finest chips, and it said its planned supply for 2027 and 2028 "will not fully meet the demand" of its customers. Some want to order for 2029 and even 2030.
 
-Nvidia designs the B200, one of the chips behind today's AI boom, but makes none of it. Dozens of companies in at least five countries do. Most of them could be replaced within months. A handful could not.
+Nvidia designs the B200, one of the chips behind the AI boom, but makes none of it. Dozens of companies in at least five countries do, and most could be replaced within months. A handful could not.
 
-Those few sell their output a year or more before they make it, because the only way to make more is a new building. The chip side of AI grows at the pace of its slowest cleanrooms, and they are booked years ahead.
+Those few sell their output a year or more before they make it, because the only way to make more is a new building.
 
-The slow parts share three traits. There is one maker, or very few. A rival's part must pass qualification, the months or years of testing a customer runs before trusting it. And more output needs new plant: a cleanroom, the dust-free hall where chips are made, or a whole factory.
+The chip side of AI grows at the pace of its slowest cleanrooms.
 
-Money buys the building, but not the time to build it. TSMC's chief says a new chip factory takes two to three years just to build. Ajinomoto, which makes the insulating film inside chip packages, will open its next film plant six to nearly seven years after it bought the land.
-
-Buyers know this, so they commit early. Nvidia's annual report describes lead times of more than a year, which it secures with deposits and capacity commitments. Micron has already agreed most of next year's stacked memory, and Seagate has allocated most of its data centre hard drives through 2028.
+"Sold out" covers three different things. Booked means output promised ahead, and buyers in a boom book early and sometimes twice. Short means the maker turns customers away. Stuck means only one or a few qualified makers exist, and more output needs a new cleanroom, the dust-free hall where chips are made. This piece is about stuck, because stuck is why booked and short last.
 
 <details class="analogy">
 <summary>The analogy</summary>
-<p>Think of a kitchen refit. Cupboards, taps and paint come from any shop this week. The stone worktop comes from one cutter with one saw, booked a year ahead, and a second saw means building a new workshop.</p>
-<p>Hiring more fitters does not help. The kitchen is finished when the worktop arrives. An AI chip has five or six worktops, each from a different cutter.</p>
+<p>Think of a kitchen refit. Cupboards, taps and paint come from any shop this week: those are the connectors and racks. The stone worktop comes from one cutter with one saw, booked a year ahead: that is a stuck step, like the scanner or the memory. A second saw means a new workshop, which is the new cleanroom.</p>
+<p>The fitter can start only once the worktop, the sink and the hob have all arrived. That fitting day is packaging, where every slow part meets. More fitters do not help: the kitchen waits for its last delivery.</p>
 </details>
 
-Those are horizons this journal usually finds in [grid connections and transformers](/journal/the-queue-not-the-chip/), not in chips. A booking is not proof of scarcity on its own, because buyers in a boom order early and sometimes twice. But a part that only one maker can build, and only in a new building, is booked early for a reason.
+Follow the B200 from printed die to rack. It is a worked example from Nvidia's Blackwell generation, the one before this year's Rubin.
+
+First, a scanner prints the chip's dies on a silicon wafer, and only ASML makes the scanner for the finest layers. Second, memory makers stack HBM, towers of memory chips that sit beside the processor, and there are three of them. Third, the board under the chip, the substrate, is built up from an insulating film Ajinomoto supplies for nearly all high-end processors. Fourth, packaging joins dies, memory and board, and for the B200 the leading foundry, the contract maker that also prints the dies, is in practice the only source. Fifth, many makers add boards and racks, swappable within months.
+
+<figure class="chart">
+<p class="chart-title">Every slow part meets at the package, and the package binds today</p>
+<p class="chart-sub">One Nvidia B200, from printed die to rack, with how far ahead each step is sold</p>
+<svg viewBox="0 0 560 196" role="img" aria-label="Diagram of five steps in order. One, print: ASML's EUV scanner prints the dies; ASML says its planned supply for 2027 and 2028 will not fully meet demand. Two, stack: HBM memory from three makers; Micron has agreed the vast majority of its 2027 HBM. Three, board: the substrate, built up from Ajinomoto's film, whose next plant operates in fiscal 2032. Four, package: the dies, memory and board are joined; for the B200 the leading foundry is in practice the only source, and it says packaging limits its customers' growth. This is the choke point. Five, rack: boards, cables and connectors from many makers, replaceable within months.">
+<rect class="c-box" x="5.0" y="44" width="100.4" height="106" rx="4"/>
+<text class="c-box-t" x="13.0" y="66">1. Print</text>
+<text class="c-note" x="13.0" y="88">ASML scanner</text>
+<text class="c-note" x="13.0" y="106">prints dies</text>
+<text class="c-note" x="13.0" y="124">Supply short</text>
+<text class="c-note" x="13.0" y="142">to 2028</text>
+<line class="c-arrow" x1="106.4" y1="97" x2="111.4" y2="97"/><polygon class="c-arrow-head" points="116.4,97 110.4,93 110.4,101"/>
+<rect class="c-box" x="117.4" y="44" width="100.4" height="106" rx="4"/>
+<text class="c-box-t" x="125.4" y="66">2. Stack</text>
+<text class="c-note" x="125.4" y="88">HBM memory,</text>
+<text class="c-note" x="125.4" y="106">three makers</text>
+<text class="c-note" x="125.4" y="124">Micron: 2027</text>
+<text class="c-note" x="125.4" y="142">mostly agreed</text>
+<line class="c-arrow" x1="218.8" y1="97" x2="223.8" y2="97"/><polygon class="c-arrow-head" points="228.8,97 222.8,93 222.8,101"/>
+<rect class="c-box" x="229.8" y="44" width="100.4" height="106" rx="4"/>
+<text class="c-box-t" x="237.8" y="66">3. Board</text>
+<text class="c-note" x="237.8" y="88">Substrate of</text>
+<text class="c-note" x="237.8" y="106">Ajinomoto film</text>
+<text class="c-note" x="237.8" y="124">Next plant</text>
+<text class="c-note" x="237.8" y="142">fiscal 2032</text>
+<line class="c-arrow" x1="331.2" y1="97" x2="336.2" y2="97"/><polygon class="c-arrow-head" points="341.2,97 335.2,93 335.2,101"/>
+<rect class="c-zone" x="338.2" y="14" width="108.4" height="144" rx="4"/>
+<text class="c-zone-t" x="392.4" y="30" text-anchor="middle">THE CHOKE POINT</text>
+<rect class="c-box" x="342.2" y="44" width="100.4" height="106" rx="4"/>
+<text class="c-box-t" x="350.2" y="66">4. Package</text>
+<text class="c-note" x="350.2" y="88">Dies, memory</text>
+<text class="c-note" x="350.2" y="106">and board meet</text>
+<text class="c-note" x="350.2" y="124">B200: one</text>
+<text class="c-note" x="350.2" y="142">source</text>
+<line class="c-arrow" x1="443.6" y1="97" x2="448.6" y2="97"/><polygon class="c-arrow-head" points="453.6,97 447.6,93 447.6,101"/>
+<rect class="c-box" x="454.6" y="44" width="100.4" height="106" rx="4"/>
+<text class="c-box-t" x="462.6" y="66">5. Rack</text>
+<text class="c-note" x="462.6" y="88">Boards, cables</text>
+<text class="c-note" x="462.6" y="106">connectors</text>
+<text class="c-note" x="462.6" y="124">Many makers,</text>
+<text class="c-note" x="462.6" y="142">months</text>
+<text class="c-lab c-s2t" x="442.6" y="180" text-anchor="end">The foundry says packaging limits its customers</text>
+</svg>
+<figcaption>ASML results, 14 October 2026; Micron prepared remarks, 30 September 2026; Ajinomoto Kani City release, 7 May 2026; the leading foundry's calls of 16 July and 15 October 2026, which publish no packaging capacity or lead time. My framing of the chain.</figcaption>
+</figure>
+
+The fourth step binds today. A package needs every slow part at the same moment, it has one source for this chip, and the foundry itself says packaging is limiting its customers' growth. The scanner's shortfall is still a forecast.
+
+Money buys the building, but not the time to build it. The foundry's chief says a new chip factory takes two to three years just to build, and Ajinomoto will open its next film plant six to nearly seven years after buying the land. So buyers commit early: Nvidia describes lead times of more than a year.
+
+Those are horizons this journal usually finds in [grid connections and transformers](/journal/the-queue-not-the-chip/), not in chips. A part that only one maker can build, and only in a new building, is booked early for a reason.
 
 <hr class="layer">
 <p class="layer-label">For investors</p>
@@ -37,61 +90,28 @@ Those are horizons this journal usually finds in [grid connections and transform
 
 <a id="the-chip-supply-chain"></a>
 
-Most of an AI chip can be bought this year; a few steps cannot. ASML, the only maker of EUV scanners, the machines that print the finest chips, said in October that its planned supply for 2027 and 2028 "will not fully meet the demand" of its customers. Micron, one of three makers of HBM, the stacked memory beside AI chips, has agreed "the vast majority" of its 2027 HBM. Seagate, one of three hard drive makers, has allocated the vast majority of its data centre drives through 2028. And a new fab at TSMC, which makes the AI chips themselves, takes three to five years to reach full output.
-
-<figure class="chart">
-<p class="chart-title">Behind one AI chip, each slow step has one maker or a handful</p>
-<p class="chart-sub">The steps behind an Nvidia B200, with how far ahead each is sold, in its maker's words</p>
-<svg viewBox="0 0 560 222" role="img" aria-label="Diagram of the steps behind one Nvidia B200. ASML's EUV scanner, with planned supply short of demand through 2028, prints TSMC's wafer, for which TSMC gives no lead time. TSMC packages the chip, a step tight enough to limit customers' growth. Ajinomoto's build-up film goes into the package, with its next plant operating in fiscal 2032. Micron's HBM, one of three makers, goes into the package, with most of 2027 agreed. The finished B200 goes to Nvidia, the buyer, and the data it produces is stored on hard drives from makers such as Seagate, allocated through 2028.">
-<rect class="c-box" x="10" y="30" width="125" height="56" rx="4"/>
-<text class="c-box-t" x="72.5" y="54" text-anchor="middle">ASML scanner</text>
-<text class="c-note" x="72.5" y="73" text-anchor="middle">short to 2028</text>
-<rect class="c-box" x="148" y="30" width="125" height="56" rx="4"/>
-<text class="c-box-t" x="210.5" y="54" text-anchor="middle">TSMC wafer</text>
-<text class="c-note" x="210.5" y="73" text-anchor="middle">no figure given</text>
-<rect class="c-box" x="286" y="30" width="125" height="56" rx="4"/>
-<text class="c-box-t" x="348.5" y="54" text-anchor="middle">TSMC package</text>
-<text class="c-note" x="348.5" y="73" text-anchor="middle">limits customers</text>
-<rect class="c-box" x="424" y="30" width="125" height="56" rx="4"/>
-<text class="c-box-t" x="486.5" y="54" text-anchor="middle">Nvidia B200</text>
-<text class="c-note" x="486.5" y="73" text-anchor="middle">the buyer</text>
-<rect class="c-box" x="148" y="146" width="125" height="56" rx="4"/>
-<text class="c-box-t" x="210.5" y="170" text-anchor="middle">Ajinomoto film</text>
-<text class="c-note" x="210.5" y="189" text-anchor="middle">plant fiscal 2032</text>
-<rect class="c-box" x="286" y="146" width="125" height="56" rx="4"/>
-<text class="c-box-t" x="348.5" y="170" text-anchor="middle">Micron HBM</text>
-<text class="c-note" x="348.5" y="189" text-anchor="middle">2027 mostly agreed</text>
-<rect class="c-box" x="424" y="146" width="125" height="56" rx="4"/>
-<text class="c-box-t" x="486.5" y="170" text-anchor="middle">Seagate drives</text>
-<text class="c-note" x="486.5" y="189" text-anchor="middle">allocated to 2028</text>
-<line class="c-arrow" x1="135" y1="58" x2="142" y2="58"/><polygon class="c-arrow-head" points="148,58 141,62 141,54"/>
-<line class="c-arrow" x1="273" y1="58" x2="280" y2="58"/><polygon class="c-arrow-head" points="286,58 279,62 279,54"/>
-<line class="c-arrow" x1="411" y1="58" x2="418" y2="58"/><polygon class="c-arrow-head" points="424,58 417,62 417,54"/>
-<line class="c-arrow" x1="261" y1="146" x2="296.7" y2="91"/><polygon class="c-arrow-head" points="300,86 299.5,94 292.8,89.7"/>
-<line class="c-arrow" x1="348.5" y1="146" x2="348.5" y2="92"/><polygon class="c-arrow-head" points="348.5,86 352.5,93 344.5,93"/>
-<line class="c-arrow" x1="486.5" y1="86" x2="486.5" y2="140"/><polygon class="c-arrow-head" points="486.5,146 482.5,139 490.5,139"/>
-</svg>
-<figcaption>ASML results, 14 October 2026; TSMC calls of 16 July and 15 October 2026; Ajinomoto release, 7 May 2026; Micron prepared remarks, 30 September 2026; Seagate supplemental, 27 October 2026. Micron is one of three HBM makers, with SK Hynix and Samsung; Seagate one of three hard drive makers, with Western Digital and Toshiba. TSMC publishes no lead time for wafers or packaging.</figcaption>
-</figure>
-
-The chart shows why only a few steps matter. Nvidia's B200, one of the chips behind the AI boom, holds 208 billion transistors on two dies made by TSMC, with memory from Micron and the other two HBM makers, SK Hynix and Samsung. My own rough sort runs from parts swapped in months, such as rack assembly and connectors, to steps with no second source, EUV machines first and the film from Ajinomoto, the insulating sheet inside chip packages, close by. At those steps a second maker cannot be bought at any price. There is one, or a few, and a new one must first pass the customer's qualification.
-
-<a id="tsmc-says-it-is-the-bottleneck"></a>
-## A slow step grows only as fast as a building
-
-Each slow step adds supply on a construction clock, not an order clock. TSMC's chief, C.C. Wei, said on 15 January 2026 that a new fab takes two to three years to build, and on 16 April that it needs one to two more to ramp. The scanner is bound the same way. ASML's output is "limited by the production capacity" of Carl Zeiss SMT, sole supplier of its critical optics. Its planned step of about 30% for 2027 fits its "existing footprint", in a third-party transcript of its July call; a larger step may need new cleanroom space.
+Most of an AI chip can be bought this year; a few steps cannot. ASML, the only maker of EUV scanners, the machines that print the finest chips, said in October that its planned supply for 2027 and 2028 "will not fully meet the demand" of its customers. Micron, one of three makers of HBM, the stacked memory beside AI chips, has agreed "the vast majority" of its 2027 HBM, and SK Hynix, another, has more than half of its 2027 and 2028 capacity under long-term agreements. Seagate, one of three hard drive makers, has allocated the vast majority of its data centre drives through 2028. Against those bookings, new supply arrives from 2027 into the 2030s, because a new fab at the leading foundry, the contract maker of the AI chips themselves, takes three to five years to reach full output.
 
 <figure class="chart">
 <p class="chart-title">New supply for the slow steps arrives from 2027 into the 2030s</p>
 <p class="chart-sub">When each maker's added capacity starts, by its own dates</p>
-<svg viewBox="0 0 560 286" role="img" aria-label="Timeline of new supply. ASML plans about 30 per cent more low NA EUV capacity for 2027 within its existing buildings. Micron's Idaho fab ID1 starts output in mid 2027, ID2 in late 2028, and its New York fab in 2030. A new TSMC fab begun today would take two to three years to build and one to two more to ramp, three to five years in all. Ajinomoto bought land at Kani City in May 2026 for a film plant operating in fiscal 2032, which runs from April 2032 to March 2033.">
+<svg viewBox="0 0 560 286" role="img" aria-label="Timeline of new supply. ASML plans about 30 per cent more low NA EUV capacity for 2027 within its existing buildings. Micron's Idaho fab ID1 starts output in mid 2027, ID2 in late 2028, and its New York fab in 2030. A new fab at the leading foundry begun today would take two to three years to build and one to two more to ramp, three to five years in all. Ajinomoto bought land at Kani City in May 2026 for a film plant operating in fiscal 2032, which runs from April 2032 to March 2033.">
 <g class="c-grid"><line x1="200" y1="20" x2="200" y2="246"/><line x1="248.6" y1="20" x2="248.6" y2="246"/><line x1="297.1" y1="20" x2="297.1" y2="246"/><line x1="345.7" y1="20" x2="345.7" y2="246"/><line x1="394.3" y1="20" x2="394.3" y2="246"/><line x1="442.9" y1="20" x2="442.9" y2="246"/><line x1="491.4" y1="20" x2="491.4" y2="246"/><line x1="540" y1="20" x2="540" y2="246"/></g>
-<g class="c-axis"><text x="200" y="266" text-anchor="middle">2026</text><text x="297.1" y="266" text-anchor="middle">2028</text><text x="394.3" y="266" text-anchor="middle">2030</text><text x="491.4" y="266" text-anchor="middle">2032</text><text x="190" y="44" text-anchor="end">ASML, about 30% more</text><text x="190" y="80" text-anchor="end">Micron Idaho ID1</text><text x="190" y="116" text-anchor="end">Micron Idaho ID2</text><text x="190" y="152" text-anchor="end">Micron New York</text><text x="190" y="188" text-anchor="end">A TSMC fab begun now</text><text x="190" y="224" text-anchor="end">Ajinomoto, Kani City</text></g>
+<g class="c-axis"><text x="200" y="266" text-anchor="middle">2026</text><text x="297.1" y="266" text-anchor="middle">2028</text><text x="394.3" y="266" text-anchor="middle">2030</text><text x="491.4" y="266" text-anchor="middle">2032</text><text x="190" y="44" text-anchor="end">ASML, about 30% more</text><text x="190" y="80" text-anchor="end">Micron Idaho ID1</text><text x="190" y="116" text-anchor="end">Micron Idaho ID2</text><text x="190" y="152" text-anchor="end">Micron New York</text><text x="190" y="188" text-anchor="end">A new fab begun now</text><text x="190" y="224" text-anchor="end">Ajinomoto, Kani City</text></g>
 <line class="c-today" x1="240.2" y1="14" x2="240.2" y2="246"/><text class="c-today-t" x="240.2" y="12" text-anchor="middle">today</text>
 <g class="c-span"><line x1="240.2" y1="184" x2="483" y2="184"/><line x1="216.8" y1="220" x2="503.6" y2="220"/></g><g class="c-start"><circle cx="240.2" cy="184" r="4"/><circle cx="216.8" cy="220" r="4"/></g><g class="c-end"><circle cx="248.6" cy="40" r="4.5"/><circle cx="272.9" cy="76" r="4.5"/><circle cx="338.4" cy="112" r="4.5"/><circle cx="418.6" cy="148" r="4.5"/><circle cx="385.9" cy="184" r="4.5"/><circle cx="483" cy="184" r="4.5"/><circle cx="503.6" cy="220" r="4.5"/></g><g class="c-endt"><text x="257.6" y="44">2027, same buildings</text><text x="281.9" y="80">mid 2027</text><text x="347.4" y="116">late 2028</text><text x="427.6" y="152">2030</text><text x="483" y="175" text-anchor="end">3 to 5 years</text><text x="503.6" y="211" text-anchor="end">fiscal 2032</text></g>
 </svg>
-<figcaption>ASML results, 15 July 2026; Micron prepared remarks of 30 September 2026 and Form 10-K (9 October 2026); TSMC calls of 15 January and 16 April 2026; Ajinomoto Kani City release, 7 May 2026. Hollow dot: land bought, or today. The TSMC row is my arithmetic from its stated ranges, not a named plant. Ajinomoto's fiscal 2032 runs from April 2032 to March 2033.</figcaption>
+<figcaption>ASML results, 15 July 2026; Micron prepared remarks of 30 September 2026 and Form 10-K (9 October 2026); the leading foundry's calls of 15 January and 16 April 2026; Ajinomoto Kani City release, 7 May 2026. Hollow dot: land bought, or today. The new-fab row is my arithmetic from its stated ranges, not a named plant. Ajinomoto's fiscal 2032 runs from April 2032 to March 2033.</figcaption>
 </figure>
+
+Only a few steps matter, because only a few have no ready substitute. Nvidia's B200, a Blackwell-generation chip and the worked example here, holds 208 billion transistors on two dies made by the leading foundry, with memory from Micron and the other two HBM makers, SK Hynix and Samsung. My own rough sort runs from parts swapped in months, such as rack assembly and connectors, to steps with no second source, EUV machines first and Ajinomoto's film, the insulating sheet inside chip packages, close by.
+
+At those steps a second maker cannot be bought at any price. There is one, or a few, and a new one must first pass the customer's qualification, the months or years of testing before a customer trusts a part.
+
+<a id="tsmc-says-it-is-the-bottleneck"></a>
+## A slow step grows only as fast as a building
+
+Each slow step adds supply on a construction clock, not an order clock. The leading foundry's chief said on 15 January 2026 that a new fab takes two to three years to build, and on 16 April that it needs one to two more to ramp. The scanner is bound the same way. ASML's output is "limited by the production capacity" of Carl Zeiss SMT, sole supplier of its critical optics. Its planned step of about 30% for 2027 fits its "existing footprint", in a third-party transcript of its July call; a larger step may need new cleanroom space.
 
 The chip runs on a much faster clock. Nvidia launched Blackwell in 2024, Blackwell Ultra in 2025 and Rubin in 2026. A fab begun today reaches full output when Rubin's third to fifth successors would be on sale, if that pace holds. So supply goes first to the buyers who commit first, and a designer that books only once its chip is finished joins the back of the line. On 24 June 2026 Micron even named "the need for enhanced energy infrastructure" among the limits on new fabs, so the chip's clock leans on the grid's.
 
@@ -122,7 +142,11 @@ That squeeze spills over, because both kinds come out of the same cleanrooms. Mi
 
 <a id="ajinomoto-grows-with-the-package"></a>
 
-The film shows the same pattern, because it is sold by area, not by chip. Ajinomoto's ABF film lines each copper wiring layer of the board under the processor. That board grew from about 70 millimetres square with nine layers up to 2023 to about 100 with eleven in 2026. By my arithmetic, area times layers, it takes about two and a half times the film. Servers and networks were 70% of Ajinomoto's film volume in fiscal 2025, against 40% in fiscal 2017. TSMC's own factories are turning the same way: high performance computing, which includes AI processors, was 68% of its third quarter revenue, against 57% a year before, and Wei said packaging capacity was limiting customers' growth.
+The film shows the same pattern, because it is sold by area, not by chip. Ajinomoto's ABF film lines each copper wiring layer of the board under the processor. That board grew from about 70 millimetres square with nine layers up to 2023 to about 100 with eleven in 2026. By my arithmetic, area times layers, it takes about two and a half times the film.
+
+Servers and networks were 70% of Ajinomoto's film volume in fiscal 2025, against 40% in fiscal 2017. The leading foundry is turning the same way: high performance computing, which includes AI processors, was 68% of its third quarter revenue, against 57% a year before. Its chief said packaging capacity was limiting customers' growth.
+
+That makes packaging the binding step, and the one nobody outside the foundry can count, because it publishes no capacity or lead time. Rather than guess a number, I would box it in from four sides. From above, buyers' spending on AI chips divided into packages; from below, packaging plants, capital spending and tool orders; as a tracer, HBM, since every stack ends up in a package and its makers say how much is booked; as a ceiling, the substrates and film no package can do without. Where the four disagree is where the research lies, and the answer is a range, not a point.
 
 <a id="asml-booked-ahead"></a>
 ## The only maker of the scanner says it cannot meet two years of demand
@@ -147,25 +171,42 @@ The strongest evidence that these steps are sold ahead comes from the one compan
 <text class="c-lab c-s1t" x="414.1" y="166">Seagate drives</text>
 <text class="c-lab c-s3t" x="390.5" y="218">Micron HBM</text>
 </svg>
-<figcaption>ASML results and transcript, 15 July and 14 October 2026; Seagate supplementals, 27 January, 28 April and 27 October 2026; Micron remarks, 17 December 2025 and 30 September 2026. Wording differs by maker, from "close to being fully covered" to "will not fully meet the demand"; each is quoted in the figures below.</figcaption>
+<figcaption>ASML results and transcript, 15 July and 14 October 2026; Seagate supplementals, 27 January, 28 April and 27 October 2026; Micron remarks, 17 December 2025 and 30 September 2026. Wording differs by maker, from "close to being fully covered" to "will not fully meet the demand"; each is quoted in the figures below. SK Hynix is not drawn: its release of 28 October 2026 puts more than half of its 2027 and 2028 capacity under long-term agreements, and press accounts of its call report memory effectively sold out through 2029.</figcaption>
 </figure>
 
-The other slow steps moved the same way through 2026. Seagate went from allocated through 2026 in January to the vast majority through 2028 in October, two years added in nine months. Micron had agreed all its 2026 HBM by December 2025, and "the vast majority of our calendar 2027 HBM bit supply" by 30 September 2026. Buyers commit this early because they know the clock: Nvidia's annual report describes "extended lead times" of more than 12 months, secured with deposits and long-term capacity commitments.
+The other slow steps moved the same way through 2026. Seagate went from allocated through 2026 in January to the vast majority through 2028 in October, two years added in nine months. Micron had agreed all its 2026 HBM by December 2025, and "the vast majority of our calendar 2027 HBM bit supply" by 30 September 2026.
+
+SK Hynix, another of the three HBM makers, turned bookings into contracts. Its results release of 28 October 2026 says long-term agreements with 14 major customers cover more than 50% of its 2027 and 2028 capacity, and it expects demand to exceed supply through 2030. Press accounts of its call report it describing DRAM and HBM as effectively sold out through 2029, a year past the end of the chart above. Buyers commit this early because they know the clock: Nvidia's annual report describes "extended lead times" of more than 12 months, secured with deposits and long-term capacity commitments.
+
+<a id="the-board-underneath"></a>
+## More packaging pulls harder on the board underneath
+
+The bottleneck may walk down the package, to the board it sits on; I treat that as a lead to test. Ajinomoto's film is sold by area times layers, not by chip, and Ajinomoto expects the board under a high-end package to reach about 120 millimetres square with thirteen layers from 2031. The leading foundry plans to bring packages of 9.5 times the largest area a scanner prints in one shot to volume production in 2027, on its release of 23 April 2025. Press reports of its slides put the board under a package of about nine such fields beyond 120 millimetres square.
+
+If that roadmap ships on time, my inference is that the largest boards reach the film maker's 2031 size about four years early. A second packager would not relieve that, because it needs the same boards. Intel, which sells its EMIB packaging to other chipmakers, said on its call of 29 October 2026 that EMIB sees "significant external customer traction", and its chief expects customers ready to announce within two quarters. On the same call Intel named an industry-wide shortage of advanced organic substrates as a limit on that packaging.
+
+I would test the view in Ajinomoto's half-year results, for its volume split and any capacity brought forward; in the substrate makers' capital spending; and in whether the 9.5-field package reaches volume in 2027. It dies if that class stays a small share of packages, so that 2031 describes the typical board, or if Ajinomoto adds film inside existing plants faster than board area grows. Until then the film is not shown to bind before 2030, and I watch it.
 
 ## What would prove me wrong
 
-The claim rests on the two steps that state a horizon and grow only by cleanroom. It breaks if ASML, in results published between December 2027 and March 2028, does not describe its 2029 supply of low NA EUV, its current scanner type, as close to fully covered or short of demand, or if Micron, by around December 2028, has not said most of its 2029 HBM is agreed. Both are a year or more ahead of the supply they describe, and memory has a long record of gluts, so either could fail.
+The claim rests on the two steps that state a horizon and grow only by cleanroom, and it breaks in one of two ways. If ASML, in results published between December 2027 and March 2028, does not describe its 2029 supply of low NA EUV, its current scanner type, as close to fully covered or short of demand, it breaks. It also breaks if Micron, by around December 2028, has not said most of its 2029 HBM is agreed, or reports unsold HBM and blames demand. Both are a year or more ahead of the supply they describe, and memory has a long record of gluts, so either could fail.
 
-Two dates come before the tests. ASML is already studying a 2028 step beyond its 30%, and its Capital Markets Day, an investor day, on 10 June 2027 is where I expect to learn how big it is. The memory squeeze should last until Micron's new memory fabs in Idaho open, the first in mid 2027 and the second in late 2028, which is why the test asks about 2029.
+Two dates would move me before the tests. ASML is already studying a 2028 step beyond its 30%, and its Capital Markets Day, an investor day, on 10 June 2027 is where I expect to learn how big it is. The memory squeeze should last until Micron's new memory fabs in Idaho open, the first in mid 2027 and the second in late 2028, which is why the test asks about 2029.
 
 <a id="seagate-sells-the-terabyte"></a>
 
-Three things would not move me. Buyers in a boom order early and sometimes twice, and the filings cannot separate hoarding from scarcity, but a double order does not create a second ASML, and a hoarded scanner still had to be built in the same cleanroom. Seagate stretching without a building would not either. Its nearline shipments, the big drives data centres buy, rose to 695 exabytes in its year to 3 July 2026, from 497, and it meets that growth "by increasing capacity per drive rather than increasing drive unit production". That shows few makers and qualification at work, but it cannot test the building clock. Nor does the thin evidence elsewhere: Ajinomoto aims its current expansion at demand to 2030, so its film is not shown to bind before the Gifu plant opens, and TSMC publishes no packaging capacity or lead time. Seagate and TSMC stay on watch.
+Four things would not move me. Buyers in a boom order early and sometimes twice, and the filings cannot separate hoarding from scarcity, but a double order does not create a second ASML, and a hoarded scanner still had to be built in the same cleanroom. Nor would SK Hynix's own numbers: only just over half of its 2027 and 2028 capacity is contracted, and its third quarter operating margin of 80% invites new supply, but that supply runs on the building clock, dated in advance, so a glut would show first in plant openings.
+
+A second packager would not move me either. Intel's customers mean the leading foundry is in practice the only packaging source for the B200, not for every custom chip. But the newcomer passed years of qualification and is itself short of substrates: the single source cracks, the building clock does not.
+
+Seagate stretching without a building would not move me. Its nearline shipments, the big drives data centres buy, rose to 695 exabytes in its year to 3 July 2026, from 497, and it meets that growth "by increasing capacity per drive rather than increasing drive unit production". That shows few makers and qualification at work, but it cannot test the building clock.
+
+The thin evidence elsewhere cuts neither way. Ajinomoto aims its current expansion at demand to 2030, so its film is not shown to bind before the Gifu plant opens, and the leading foundry publishes no packaging capacity or lead time. Seagate and the foundry stay on watch.
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
 
-The test this piece stands behind, quoted word for word from the claims page:
+The test this piece stands behind, quoted word for word:
 
 **The chip supply chain's slow parts stay sold more than a year ahead** (30 October 2026)
 
@@ -175,13 +216,13 @@ Breaks if: "ASML, in its results published between 1 December 2027 and 31 March 
 
 Four earlier claims on the chip's slow parts:
 
-**TSMC's chief says the AI bottleneck is its factories, not the power grid** (2 October 2026)
+**The leading foundry's chief says the AI bottleneck is its factories, not the power grid** (2 October 2026)
 
 Claim: "On today's horizon, TSMC's factories bind before the grid does. Over the longer run, I still expect the grid to be the slower clock."
 
-Breaks if: "For today: TSMC's tightness eases while data centres with chips on order still wait for power. For the longer run: TSMC still calls capacity tight in 2028 while grid connection waits shorten."
+Breaks if: "For today: the leading foundry's tightness eases while data centres with chips on order still wait for power. For the longer run: the leading foundry still calls capacity tight in 2028 while grid connection waits shorten."
 
-Where later evidence bears on it: the near half holds. On TSMC's 15 October 2026 call Wei said the gap between demand and supply is "still quite big", the finance chief called tool supply tight, and Wei said TSMC's own checks on US data centre power were "so far so good". ASML's warning is a forecast of tool supply and does not test the 2028 half, which is still open.
+Where later evidence bears on it: the near half holds. On the leading foundry's 15 October 2026 call its chief said the gap between demand and supply is "still quite big", the finance chief called tool supply tight, and the chief said the foundry's own checks on US data centre power were "so far so good". ASML's warning is a forecast of tool supply and does not test the 2028 half, which is still open.
 
 **ASML's EUV machines are booked a year or two ahead, like a grid connection** (7 October 2026)
 
@@ -217,7 +258,7 @@ Each slow step, with what is committed ahead in the company's own words:
 | Step | Who can make it | Committed ahead, in the company's words | What adds supply, and when | Source, dated |
 |---|---|---|---|---|
 | EUV scanner | ASML only; optics from ZEISS only | Expects to ship around 65 low NA machines, its 2026 capacity; supply planned for 2027 and 2028 "will not fully meet the demand" | About 30% more for 2027 in existing buildings; 2028 under study | ASML, 15 July and 14 October 2026 |
-| Wafers and CoWoS packaging | TSMC, in practice the only source for the B200 | No lead time published; packaging tight enough to limit customers' growth | A new fab: two to three years to build, one to two to ramp | TSMC calls, 15 January, 16 April, 16 July 2026 |
+| Wafers and packaging | The leading foundry, in practice the only packaging source for the B200; Intel's EMIB courts custom chips | No lead time published; packaging tight enough to limit customers' growth | A new fab: two to three years to build, one to two to ramp | The leading foundry's calls, 15 January, 16 April, 16 July 2026; Intel call, 29 October 2026 |
 | Substrate film | Ajinomoto, "product of choice for nearly all high-performance CPUs" | No order horizon published | Gunma line 2025; Kani City, Gifu, operating fiscal 2032 | Ajinomoto, 7 May and September 2026 |
 | HBM wafers | Micron, SK Hynix, Samsung | All of 2026 agreed by December 2025; "the vast majority" of 2027 by September 2026 | Idaho ID1 mid 2027, ID2 late 2028, New York 2030 | Micron, 17 December 2025, 30 September 2026 |
 | Nearline hard drives | Seagate, Western Digital, Toshiba | "Vast majority" of data centre nearline supply allocated through 2028 | More terabytes per drive, not more drives | Seagate, 27 October 2026 |
@@ -225,7 +266,7 @@ Each slow step, with what is committed ahead in the company's own words:
 
 The horizon chart, point by point. Seagate: allocated through 2026 (supplemental, 27 January 2026), largely through 2027 (28 April), the vast majority of data centre nearline supply through 2028, with some cloud agreements through 2030 (27 October). ASML: "close to being fully covered with orders" for 2027 (chief executive, ASML's own transcript, 15 July 2026); 2027 and 2028 "will not fully meet the demand" (14 October). Micron: all 2026 HBM agreed (December 2025); "the vast majority of our calendar 2027 HBM bit supply" (30 September 2026).
 
-Other figures. Ajinomoto expects the board to reach about 120 millimetres square with thirteen layers from 2031. Its Functional Materials business earned a business profit margin of 54.2% in fiscal 2025 and 57.7% in April to June 2026, on its results data sheets of 7 May and 6 August 2026; its ASV Report 2026 says customer trust "serves as a barrier for new entrants", and how long a rival takes to qualify is unpublished. Micron's 10-K says the base logic die under each HBM4 stack is "designed and manufactured in-house", so its stacks meet TSMC only at packaging. Micron expects DRAM to stay supply constrained in 2027 and 2028. Seagate shipped 26% more exabytes in the December quarter of 2025 "on similar number of units". On 15 October 2026 TSMC's finance chief said "the tool supply is tight".
+Other figures. Ajinomoto expects the board to reach about 120 millimetres square with thirteen layers from 2031. Its Functional Materials business earned a business profit margin of 54.2% in fiscal 2025 and 57.7% in April to June 2026, on its results data sheets of 7 May and 6 August 2026; its ASV Report 2026 says customer trust "serves as a barrier for new entrants", and how long a rival takes to qualify is unpublished. Micron's 10-K says the base logic die under each HBM4 stack is "designed and manufactured in-house", so its HBM4 stacks meet the leading foundry only at packaging; for HBM4E, which ramps in 2027, Micron said on 23 September 2025 that the leading foundry will make the base die, for standard and custom versions. SK Hynix said in April 2024 it would use the leading foundry's logic process for its HBM4 base die; Samsung makes its own in its foundry. Micron expects DRAM to stay supply constrained in 2027 and 2028. Seagate shipped 26% more exabytes in the December quarter of 2025 "on similar number of units". On 15 October 2026 the leading foundry's finance chief said "the tool supply is tight". SK Hynix's third quarter 2026: revenue of 104.6 trillion won, operating profit of 83.3 trillion, an 80% margin, with long-term agreements with 14 major customers (release, 28 October 2026); "sold out through 2029" is from press accounts of its call. Intel's EMIB remarks are from its call of 29 October 2026; reported names of custom chips moving to it are press only and not used. The leading foundry's 9.5-field package is from its release of 23 April 2025; the board beyond 120 millimetres is from press reports of its 2024 slides.
 
 Method. The horizons fit scarcity, but also buyers locking in supply in a boom, and the filings cannot separate the two. They do show supply: each maker grows only as fast as a building it has not finished. "Existing footprint" is from a third-party transcript of ASML's July call.
 
@@ -238,7 +279,7 @@ Method. The horizons fit scarcity, but also buyers locking in supply in a boom, 
 <dt>The one-maker steps</dt>
 <dd><span class="names">ASML</span> makes EUV scanners, <span class="names">ZEISS</span> their optics, <span class="names">Trumpf</span> their lasers. <span class="names">Ajinomoto</span> makes build-up film.</dd>
 <dt>Factories and packaging</dt>
-<dd><span class="names">TSMC</span> makes and packages AI chips. <span class="names">Ibiden</span> and <span class="names">Unimicron</span> make package substrates.</dd>
+<dd>The leading foundry makes and packages AI chips; <span class="names">Intel</span> offers its EMIB packaging to others. <span class="names">Ibiden</span> and <span class="names">Unimicron</span> make package substrates.</dd>
 <dt>Memory and storage</dt>
 <dd><span class="names">Micron</span>, <span class="names">SK Hynix</span> and <span class="names">Samsung</span> make HBM. <span class="names">Seagate</span>, <span class="names">Western Digital</span> and <span class="names">Toshiba</span> make hard drives.</dd>
 <dt>The buyer</dt>
@@ -254,4 +295,4 @@ Method. The horizons fit scarcity, but also buyers locking in supply in a boom, 
 
 ---
 
-<p class="sources">Sources: ASML Annual Report 2025 on Form 20-F (25 February 2026) and its results of 15 July and 14 October 2026; TSMC earnings calls of 15 January, 16 April, 16 July and 15 October 2026 and its third quarter management report (15 October 2026); Ajinomoto's results presentation and Kani City release (7 May 2026), ASV Report 2026 (September 2026) and results data sheets; Micron's earnings calls and prepared remarks of 20 March 2024, 17 December 2025, 24 June and 30 September 2026, and its Form 10-K (9 October 2026); Seagate's supplemental information of 27 January, 28 April and 27 October 2026, its call of 28 July 2026 and Form 10-K (4 August 2026); Nvidia's Blackwell pages and Form 10-K (25 February 2026). Personal research, not investment advice.</p>
+<p class="sources">Sources: ASML Annual Report 2025 on Form 20-F (25 February 2026) and its results of 15 July and 14 October 2026; the leading foundry's earnings calls of 15 January, 16 April, 16 July and 15 October 2026, its third quarter management report (15 October 2026) and its symposium release (23 April 2025); SK Hynix's third quarter results release (28 October 2026); Intel's earnings call (29 October 2026); Ajinomoto's results presentation and Kani City release (7 May 2026), ASV Report 2026 (September 2026) and results data sheets; Micron's earnings calls and prepared remarks of 20 March 2024, 23 September and 17 December 2025, 24 June and 30 September 2026, and its Form 10-K (9 October 2026); Seagate's supplemental information of 27 January, 28 April and 27 October 2026, its call of 28 July 2026 and Form 10-K (4 August 2026); Nvidia's Blackwell pages and Form 10-K (25 February 2026). Personal research, not investment advice.</p>
