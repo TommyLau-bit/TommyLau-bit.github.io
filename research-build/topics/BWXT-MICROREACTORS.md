@@ -2,6 +2,8 @@
 
 Set 6 Nov 2026, after the Max Hopkins (CLSA, nuclear analyst) call. Max pointed Tommy to two things as "what's coming": BWXT and microreactors.
 
+**SPLIT (Tommy, 6 Nov night): these are two separate things, never merged.** Max named them side by side; he did not say they belong together. Microreactors is the journal topic (the 14th piece, deck `09 Microreactors.pptx`). BWXT is a company Tommy studies on his own (`BWXT company study.pptx`); it appears in the microreactors piece only as one company in the chain, and a BWXT note exists only if Tommy writes it himself. The old combined deck is in research-build/study-decks/archive/.
+
 ## The rule for this topic
 1. Tommy LEARNS it first, before anything is written for the site. This is the first thing he studies, before relearning the other 13 pieces.
 2. Only when Tommy says he can explain and defend it from his own head is a piece drafted.
