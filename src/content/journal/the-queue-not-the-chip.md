@@ -115,6 +115,10 @@ On both sides of the causeway the scarce thing is the plug. In June 2026 Malaysi
 
 That idle power cannot cross. A booked megawatt belongs to its site and its supply agreement, and only a tenant with chips lights it. Singapore chooses who may plug in. Johor hands out plugs years before its halls fill.
 
+Allocation is the scarce step because of what sits behind it, and none of it moves with money spent on a campus. Malaysia gives data centres only the grid's spare margin, while Tenaga retires 6.6 gigawatts of its own plant by 2030 and its new gas plants, tendered as NEWGEN26, arrive from 2029 to 2031. Singapore is short of land, makes about 95% of its electricity from gas, and waits on subsea cable for imported green power.
+
+The gap is easy to miss because of what gets counted. Pipelines and press releases quote secured capacity: 8.35 gigawatts across 61 Malaysian projects at June 2026. The draw sits in Tenaga's quarterly analyst briefing and in answers to Malaysia's Parliament, given for the whole country rather than Johor, so a Johor reader finds the pipeline and stops there. Nothing is hidden. The error is in which number people read.
+
 ## Malaysia sped up the steps a government controls, and bookings ran ahead of use
 
 The gap starts with the chain above. Of its five steps, only allocation and the paperwork around it answer to a government. Plant answers to the makers' factories. Fill answers to tenants, chip supply and American export licences.
@@ -176,7 +180,7 @@ What a campus cannot build is permission. Under the Bill, its licence states the
 
 <a id="malaysia-grants-only-the-spare-margin"></a>
 
-Malaysia makes own power the route left once the grid says no. On 28 October 2026 Malaysia's investment minister told Parliament that a data centre gets grid power only if Tenaga's reserve margin has room to spare after other industry; otherwise it must build its own off the grid, with the energy ministry's approval. Of the 117 data centres Malaysia has approved, 27 will take their power that way, and 24 new applications wait until the 117 settle. Asked about a moratorium, he said: "our moratorium is the way we process". The same day the Deputy Prime Minister said the government had approved a rule that data centres take at least 30% of their capacity or energy from renewables, under a framework the Energy Commission, Malaysia's power regulator, is still drafting. The grid's own gas is spoken for: Tenaga is retiring 6.6 gigawatts of its plant by 2030, and new gas plants tendered as NEWGEN26 are due from 2029 to 2031.
+Malaysia makes own power the route left once the grid says no. On 28 October 2026 Malaysia's investment minister told Parliament that a data centre gets grid power only if Tenaga's reserve margin has room to spare after other industry; otherwise it must build its own off the grid, with the energy ministry's approval. Of the 117 data centres Malaysia has approved, 27 will take their power that way, and 24 new applications wait until the 117 settle. Asked about a moratorium, he said: "our moratorium is the way we process". There is no ban, the Green Lane still runs, and 117 approved projects keep Johor's pipeline large for years. But the rule has changed from connecting fast to connecting from what is spare, and the next applicant now pays for its own power. The same day the Deputy Prime Minister said the government had approved a rule that data centres take at least 30% of their capacity or energy from renewables, under a framework the Energy Commission, Malaysia's power regulator, is still drafting.
 
 <a id="phantom-load"></a>
 ## Idle bookings may be using up the margin on paper
@@ -193,7 +197,7 @@ Two tests break the claim. If Tenaga's quarterly briefing for June 2027 shows Ma
 
 Two events would move me before either test. Singapore reviews its next call 18 to 24 months from August 2026, and one without those conditions would show the ration easing. IMDA's first efficiency rules, to be paced with "investment and depreciation cycles", will show how hard the licence reaches the old halls.
 
-The strongest figure against me would not move me. On 28 October 2026 Malaysia's Deputy Prime Minister said data centres had contracted 2,346 megawatts by August 2026 and used about 1,374, or 58.5%. That is the same draw against a smaller booking. The series counts demand declared for each phase: in November 2025 the same Parliament heard 603 megawatts drawn against 1,276 declared, about 47%, with a target of 85%. Against the 6 gigawatts booked at 45 operating sites, which ministers gave on 13 October, the draw is about 23%. Different questions need different bottoms, and mine asks what a booking says about computing at work.
+The strongest figure against me would not move me. On 28 October 2026 Malaysia's Deputy Prime Minister said data centres had contracted 2,346 megawatts by August 2026 and used about 1,374, or 58.5%. That is the same draw against a smaller booking. The series counts demand declared for each phase: in November 2025 the same Parliament heard 603 megawatts drawn against 1,276 declared, about 47%, with a target of 85%. Against the 6 gigawatts booked at 45 operating sites, which ministers gave on 13 October, the draw is about 23%. Different questions need different bottoms, and mine asks what a booking says about computing at work. The fill is real, and I concede it: draw more than doubled in the 14 months to August 2026. On the full booking, though, the share moved only from about 17% to about 22% in a year, because bookings grew too.
 
 <figure class="chart">
 <p class="chart-title">Counted against what they contracted, halls use more than half; against what they booked, under a quarter</p>
@@ -314,7 +318,7 @@ Singapore's Digital Infrastructure Bill, Bill No. 20 of 2026:
 | Efficiency duty | Minimum efficiency "as may be prescribed", measured by PUE | 35 |
 | Enforcement | A fine, or a cut to licensed critical IT load | 39(2)(b), 40 |
 
-The Bill passed on 7 October 2026. It holds no PUE level and no commencement date. Singapore's import goal is from EMA (30 May 2025); its 13 conditional projects, with developers' dates from 2028 to 2035, are as at 7 August 2026. The five gas power stations by 2031 and the regasification expansion are from EMA's five-year plan (26 October 2026).
+The Bill passed on 7 October 2026. It holds no PUE level and no commencement date. Singapore's import goal is from EMA (30 May 2025); its 13 conditional projects, with developers' dates from 2028 to 2035, are as at 7 August 2026. The five gas power stations by 2031, the regasification expansion and gas at about 95% of Singapore's electricity are from EMA's five-year plan (26 October 2026).
 
 Own power in Singapore: EMA's Information Guide for Embedded Generation (February 2014) sets the licence tiers; the 30% hydrogen-ready rule is EMA's emission standards determination (26 October 2023). The gas arithmetic is mine: 100 MW run all year at about 50% combined-cycle efficiency burns about 0.13 Mt of LNG, and at about 35% on simple-cycle turbines about 0.18 Mt, at about 50 GJ a tonne, against SLNG's 10 Mtpa. SLNG says its terminal supplies about half of the gas for power. Indonesia's energy ministry gave the cut as 31 of the 409.55 billion British thermal units a day it pipes to neighbours. Malaysia's solar steer is from the Dewan Rakyat Hansard of 28 October 2026; Tenaga's retirements and NEWGEN26 dates are from its briefing of 28 August 2026.
 
