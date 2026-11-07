@@ -1,0 +1,14 @@
+<svg viewBox="0 0 560 250" role="img" aria-label="Timeline of the Abilene campus. Phase one, two buildings: construction began in June 2024, the first Nvidia GB200 racks arrived in June 2025, and it was running by 30 September 2025. Phase two, six buildings: construction began in March 2025 and Crusoe expects completion by the end of 2026. Handover to Oracle's customer: 42 per cent of capacity by 10 June 2026, 75 per cent, six of eight buildings, by 10 September 2026, and the rest due in the quarter ending 30 November 2026.">
+<g class="c-grid"><line x1="175" y1="20" x2="175" y2="205"/><line x1="293.3" y1="20" x2="293.3" y2="205"/><line x1="411.7" y1="20" x2="411.7" y2="205"/><line x1="530" y1="20" x2="530" y2="205"/></g>
+<g class="c-axis"><text x="175" y="226" text-anchor="middle">2024</text><text x="293.3" y="226" text-anchor="middle">2025</text><text x="411.7" y="226" text-anchor="middle">2026</text><text x="530" y="226" text-anchor="middle">2027</text>
+<text x="165" y="54" text-anchor="end">Phase one, 2 buildings</text>
+<text x="165" y="114" text-anchor="end">Phase two, 6 buildings</text>
+<text x="165" y="174" text-anchor="end">Handed to the customer</text>
+</g>
+<line class="c-today" x1="509.9" y1="14" x2="509.9" y2="205"/><text class="c-today-t" x="509.9" y="12" text-anchor="middle">today</text>
+<g class="c-span"><line x1="224.3" y1="50" x2="381.8" y2="50"/><line x1="313.1" y1="110" x2="530" y2="110"/><line x1="463.9" y1="170" x2="519.8" y2="170"/></g>
+<g class="c-start"><circle cx="224.3" cy="50" r="4"/><circle cx="313.1" cy="110" r="4"/></g>
+<g class="c-end"><circle cx="381.8" cy="50" r="4.5"/><circle cx="530" cy="110" r="4.5"/><circle cx="463.9" cy="170" r="4.5"/><circle cx="493.5" cy="170" r="4.5"/><circle cx="519.8" cy="170" r="4.5"/></g>
+<g class="c-plant"><line x1="347.2" y1="56" x2="347.2" y2="66"/><text x="347.2" y="80" text-anchor="middle">first racks, June 2025</text></g>
+<g class="c-endt"><text x="390.8" y="54">running by 30 Sep 2025</text><text x="530" y="96" text-anchor="end">complete by end 2026, expected</text><text x="463.9" y="156" text-anchor="middle">42%</text><text x="493.5" y="156" text-anchor="middle">75%</text><text x="519.8" y="192" text-anchor="end">the rest due by 30 Nov 2026</text></g>
+</svg>
