@@ -271,6 +271,14 @@ export const CLAIMS: Claim[] = [
     watch: ['GE Vernova gigawatts under contract each quarter (122 GW at 30 September 2026; at least 130 GW expected at 31 December 2026)', 'GE Vernova aeroderivative units ordered and shipped, each 10-Q and 10-K (cumulative backlog since 1 January 2025: 124 units at 30 September 2026, about 2.3 years of trailing twelve-month shipments)', 'Power segment contract liabilities and current deferred income (US$33.2bn at 30 September 2026)', 'Earliest delivery year of heavy-duty slots sold (2032, October 2026), the 24 GW step in 2028, and any new heavy-duty factory', 'Howmet and Siemens Energy casting capacity dates', 'Permian rig count and Texas LNG exports against Texas power burn (EIA)'],
   },
   {
+    id: 'nuclear-order-of-holdings',
+    date: '2026-11-07T16:40:12+08:00',
+    home: 'nuclear-for-ai-depth',
+    claim: 'Nuclear power for AI in America arrives in the order of what each project already holds: restarts and uprates of existing reactors, which keep a licensed site, a grid place and ordinary fuel, reach the grid this decade, while new reactors fuelled with HALEU together deliver power from less than 100 MW of capacity to American grids by 31 December 2030, because beyond a few first cores from government stock, their fuel has no running source: one demonstration line and enrichment plants not yet built.',
+    breaksIf: 'Reactors fuelled with HALEU together send electricity to American grids from 100 MW or more of capacity on or before 31 December 2030; or fewer than two of Crane, Palisades and Duane Arnold have delivered power to the grid by 31 December 2029.',
+    watch: ['Crane (second half of 2027), Palisades (no date since its fuel loading stopped in September 2026) and Duane Arnold (first quarter 2029 at the latest): first power to the grid', 'The first AI-funded extended uprate filed with the NRC (Constellation lists one for the fourth quarter of 2026) and uprate megawatts in service', 'First electricity to a grid from Aurora-ID (2028 to 2029), Kemmerer 1 (2030) and Hermes 2 (2030)', 'HALEU actually delivered by Centrus, the Piketon lease (fixed to end 1 October 2027) and whether the 12 tonne a year build-out is contracted', 'ASP Isotopes enriching its first uranium-235 at Pelindaba', 'Russian enrichment imports after both the US ban waivers and Russia\'s own export curbs end at the close of 2027', 'PJM\'s studies of Crane\'s deliverability with Eddystone\'s 760 MW of rights'],
+  },
+  {
     id: 'nuclear-for-ai',
     date: '2026-10-30T14:20:52+08:00',
     home: 'nuclear-for-ai',
