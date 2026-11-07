@@ -18,7 +18,13 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 3. Done: CVs updated ("grid to chip" wording; nuclear line to the depth figures); LinkedIn profile not changed.
 4. Done: article decks archived (study-decks/archive/article-decks-retired-2026-11-07/), not deleted.
 
-## START HERE (as of Sun 8 Nov 2026, ~01:30 SGT)
+## START HERE (as of Sun 8 Nov 2026, night)
+
+- **Nine journal briefs replace the old notes on every email (8 Nov night; Tommy: "go ahead without my approval").** One one-page brief per live piece in ~/Desktop/jobs/research coverage/briefs/ (2026-11-08_*_Brief.pdf), built by research coverage/_note_template/brief_common.py plus one script per piece in examples/build_brief_<slug>.py. Each reads the claim and test word for word from src/data/claims.ts and one chart from the live piece source. **When a live piece, its chart or its claim changes, rebuild that brief and run ~/Desktop/jobs/_SEND/refresh.sh.** All nine are one page, have no dashes and had their figures checked against the pieces.
+- **The jobs side (details in ~/Desktop/jobs/STATE_OF_PLAY.md top block).** CV 2T was polished: the Physical Layer section went from six bullets to five, cooling stayed, and it now says "nine in-depth pieces". 31 scheduled emails were edited: 12 now carry a brief, the commodity emails carry the CV alone, and no old note or CV 2D remains. The Gmail API shows 38 scheduled at their original times (10 to 12 Nov), 0 drafts and nothing sent. The old notes (market views, ai infrastructure, _SEND/_offthesis_marine, _stale) were moved to the macOS Trash folder old-notes-2026-11-08. _SEND now holds CV 2T, CV 3 and the nine briefs. **All future emails: CV plus at most one matching brief.**
+- No site change this session; site, scheduled tasks and LinkedIn queue as below.
+
+## Earlier START HERE (as of Sun 8 Nov 2026, ~01:30 SGT)
 
 - **CV 2D merged into 2T; first journal brief built (8 Nov, Tommy: "yes to both").** Two live CVs: 2T (all data centre, power, research and buy-side seats; profile now ends 'a data centre, power or market research role in Singapore or Hong Kong') and CV 3 (backup). 2D archived in ~/Desktop/jobs/Tommy's CV/_archive/2026-11-08-merged-2D/. Email attachments move from the old separate notes to one-page briefs of journal pieces: first one ~/Desktop/jobs/research coverage/briefs/2026-11-08_JohorSingapore_Brief.pdf, built by research coverage/_note_template/examples/build_brief_johor_singapore.py from the-queue-not-the-chip (claim, test and chart read from the live source; findings checked against the piece). **When the-queue-not-the-chip or the johor-singapore-rights claim changes, rebuild the brief.** Waiting on Tommy's verdict before briefs for the equipment queue, nuclear and building your own power.
 
