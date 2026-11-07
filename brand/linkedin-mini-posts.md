@@ -90,7 +90,7 @@ Source in the piece: "Rack power has outrun air, and the industry has already mo
 
 ---
 
-## M08 · Wed 18 Nov 2026 08:30 SGT · memory-not-maths · A speed limit of about 110 words a second · SCHEDULED (verified 6 Nov)
+## M08 · Wed 18 Nov 2026 08:30 SGT · memory-not-maths · A speed limit of about 110 words a second · DELETED 7 Nov 2026 (piece retired)
 However fast the maths, a 70 billion weight model on one chip tops out near 110 words a second in a single conversation.
 
 Here is the rough sum, my arithmetic. Stored at eight bits, the model fills about 70 gigabytes. At 8 terabytes a second, one full read from memory takes about nine milliseconds. The model is read once for every word it writes, so the memory sets the ceiling, not the maths. Picture a chef who chops instantly but waits nine milliseconds at the pantry hatch before every plate. The sum ignores overlap and caching, so treat it as a rough cap.
@@ -103,7 +103,7 @@ Source in the piece: "Every word the model writes rereads the whole model"; the 
 
 ---
 
-## M09 · Thu 19 Nov 2026 08:30 SGT · the-chip-supply-chain · The factory clock and the chip clock · SCHEDULED (verified 6 Nov)
+## M09 · Thu 19 Nov 2026 08:30 SGT · the-chip-supply-chain · The factory clock and the chip clock · DELETED 7 Nov 2026 (piece retired)
 A chip factory started today reaches full output around when Nvidia's third to fifth chip after Rubin would be on sale, if the current pace holds.
 
 The leading chipmaker's chief said in January 2026 that a new fab takes two to three years to build, and in April that it needs one to two more to ramp. Nvidia launched Blackwell in 2024, Blackwell Ultra in 2025 and Rubin in 2026. The chip runs on a one-year clock, the factory on a three-to-five-year one. So supply goes first to the buyers who commit first.
@@ -116,7 +116,7 @@ Source in the piece: "A slow step grows only as fast as a building"; the leading
 
 ---
 
-## M10 · Fri 20 Nov 2026 08:30 SGT · ten-thousand-chips-one-thought · Five milliseconds apart · SCHEDULED (verified 6 Nov)
+## M10 · Fri 20 Nov 2026 08:30 SGT · ten-thousand-chips-one-thought · Five milliseconds apart · DELETED 7 Nov 2026 (piece retired)
 Two AI campuses about 1,000 km apart can never be closer than 5 milliseconds.
 
 Light in fibre covers about 200 kilometres a millisecond. Microsoft's Fairwater campuses in Wisconsin and near Atlanta are about 1,000 km apart by my straight-line reckoning, so a message takes at least 5 ms one way. For chips that swap results to produce every word, that is an age. So only the least talkative work, such as averaging between copies of the model, can cross. I have found no Microsoft or lab statement that a named model was trained across both sites.
@@ -256,7 +256,7 @@ Source in the piece: "Most of a hall's water is spent at the power station, so t
 
 ---
 
-## M21 · Mon 07 Dec 2026 08:30 SGT · memory-not-maths · Every conversation needs its own memory · SCHEDULED (verified 6 Nov)
+## M21 · Mon 07 Dec 2026 08:30 SGT · memory-not-maths · Every conversation needs its own memory · DELETED 7 Nov 2026 (piece retired)
 One conversation with a small AI model can take about 2 gigabytes of memory, just to keep track of itself.
 
 That is Nvidia's own example: one 4,096-token conversation on a 7 billion weight model needs about 2 gigabytes of working memory, called the KV cache. So memory sets two limits, not one. Bandwidth, how fast the memory delivers, sets how quickly each answer comes. Capacity, how much it holds, sets how many conversations fit on one chip at once. In a kitchen, the hatch sets how fast plates come out, and the counter space sets how many orders you can keep going.
@@ -269,7 +269,7 @@ Source in the piece: "Every word the model writes rereads the whole model"; Nvid
 
 ---
 
-## M22 · Tue 08 Dec 2026 08:30 SGT · the-chip-supply-chain · Six years from land to film · SCHEDULED (verified 6 Nov)
+## M22 · Tue 08 Dec 2026 08:30 SGT · the-chip-supply-chain · Six years from land to film · DELETED 7 Nov 2026 (piece retired)
 Ajinomoto bought the land for its next chip film plant in May 2026. The plant is due to operate in fiscal 2032.
 
 That is six to nearly seven years from land to output, for the insulating film inside chip packages. Money buys the building, but not the time to build it. Think of a kitchen refit: cupboards and taps come from any shop this week, but the stone worktop comes from one cutter with one saw, and a second saw means building a new workshop.
@@ -282,7 +282,7 @@ Source in the piece: intro and "A slow step grows only as fast as a building"; A
 
 ---
 
-## M23 · Wed 09 Dec 2026 08:30 SGT · ten-thousand-chips-one-thought · Copper inside, light outside · SCHEDULED (verified 6 Nov)
+## M23 · Wed 09 Dec 2026 08:30 SGT · ten-thousand-chips-one-thought · Copper inside, light outside · DELETED 7 Nov 2026 (piece retired)
 Inside one Nvidia rack, 72 chips are tied together so tightly they act as one machine.
 
 Nvidia's GB200 NVL72 joins its 72 GPUs over copper at 130 TB/s. But copper fades within a few metres at today's speeds. So between racks the signal becomes light, through a plug the size of a chewing gum packet at each end of every fibre, holding a laser, a detector and a translator chip. Distance, not fashion, picks the medium.
@@ -420,7 +420,7 @@ Source in the piece: "Most of a hall's water is spent at the power station, so t
 
 ---
 
-## M34 · Thu 24 Dec 2026 08:30 SGT · memory-not-maths · Memory is now the headline number · SCHEDULED (verified 6 Nov)
+## M34 · Thu 24 Dec 2026 08:30 SGT · memory-not-maths · Memory is now the headline number · DELETED 7 Nov 2026 (piece retired)
 Nvidia's H100 of 2022 carried 80 gigabytes of memory. Rubin, its 2026 chip, carries 288.
 
 That is 3.6 times since the H100, and AMD's engineering projection for its next chip, the MI400, is 432 gigabytes. Memory per chip has become the headline specification, the number chips are sold on, like a van sold on its load space rather than its engine. AMD, Nvidia's nearest GPU rival, says so on its own slide: "Highest memory bandwidth & capacity drives performance".
@@ -433,7 +433,7 @@ Source in the piece: "HBM4 held the line, and memory became the headline specifi
 
 ---
 
-## M35 · Fri 25 Dec 2026 08:30 SGT · the-chip-supply-chain · Bigger loaves, same ovens · SCHEDULED (verified 6 Nov)
+## M35 · Fri 25 Dec 2026 08:30 SGT · the-chip-supply-chain · Bigger loaves, same ovens · DELETED 7 Nov 2026 (piece retired)
 Seagate shipped 695 exabytes of data centre hard drives in its year to 3 July 2026, up from 497. It did not do it by making many more drives.
 
 It meets that growth, in its own words, "by increasing capacity per drive rather than increasing drive unit production". In the December quarter of 2025 it shipped 26% more exabytes on a similar number of units. Like a bakery that cannot add ovens, so it bakes bigger loaves. Seagate is one of only three hard drive makers.
@@ -446,7 +446,7 @@ Source in the piece: "What would prove me wrong" and the figures section; Seagat
 
 ---
 
-## M36 · Mon 28 Dec 2026 08:30 SGT · ten-thousand-chips-one-thought · The laser is the scarce part · SCHEDULED (verified 6 Nov)
+## M36 · Mon 28 Dec 2026 08:30 SGT · ten-thousand-chips-one-thought · The laser is the scarce part · DELETED 7 Nov 2026 (piece retired)
 In a year, the gross margin of Lumentum, a maker of the lasers in AI network plugs, rose from 33.3% to 47.4%.
 
 That is what a hard-to-make part looks like. Data centre lasers are grown on indium phosphide, small and brittle wafers that few factories can yield well. On 11 August 2026 Lumentum said it was still shipping behind demand, and the margin rose partly on higher prices. More output needs a new fab: its Greensboro, North Carolina factory expects first revenue in early 2028.
@@ -586,7 +586,7 @@ Source in the piece: "Most of a hall's water is spent at the power station, so t
 
 ---
 
-## M47 · Tue 12 Jan 2027 08:30 SGT · memory-not-maths · The bottom of the memory tower became a processor chip · SCHEDULED (verified 6 Nov)
+## M47 · Tue 12 Jan 2027 08:30 SGT · memory-not-maths · The bottom of the memory tower became a processor chip · DELETED 7 Nov 2026 (piece retired)
 Samsung's chip foundry now credits its results to a part of the memory stack.
 
 At the foot of every tower of high-bandwidth memory sits a base die, the chip that talks to the processor. From HBM4 it is moving to the logic processes used to make processors. Samsung's foundry credited its earnings to "HBM base-die demand" in July 2026 and "HBM base-die sales growth" in October, on a 4 nanometre process. SK Hynix planned in April 2024 to make its HBM4 base die on a leading foundry's advanced logic process. The humble floor of the memory tower is now made like a processor.
@@ -599,7 +599,7 @@ Source in the piece: "The base die became a logic chip, made in a foundry"; Sams
 
 ---
 
-## M48 · Wed 13 Jan 2027 08:30 SGT · the-chip-supply-chain · Two years added in nine months · SCHEDULED (verified 6 Nov)
+## M48 · Wed 13 Jan 2027 08:30 SGT · the-chip-supply-chain · Two years added in nine months · DELETED 7 Nov 2026 (piece retired)
 In nine months of 2026, Seagate's sold-ahead horizon moved out by two whole years.
 
 In January it had allocated its data centre drive supply through 2026. By October, the vast majority was allocated through 2028. Micron had agreed all its 2026 stacked memory by December 2025, and the vast majority of its 2027 by 30 September 2026. Through 2026 these makers did not just stay booked. They kept selling further ahead.
@@ -612,7 +612,7 @@ Source in the piece: "The only maker of the scanner says it cannot meet two year
 
 ---
 
-## M49 · Thu 14 Jan 2027 08:30 SGT · ten-thousand-chips-one-thought · Glass grows with campuses, not speed · SCHEDULED (verified 6 Nov)
+## M49 · Thu 14 Jan 2027 08:30 SGT · ten-thousand-chips-one-thought · Glass grows with campuses, not speed · DELETED 7 Nov 2026 (piece retired)
 The data centre side of Corning's optical sales rose 84% in the third quarter of 2026, and not because chips got faster.
 
 Fibre only carries light. It does not care whether the plug at each end runs at 800 gigabits or 1.6 terabits, so it usually stays when the plugs are replaced. It grows when new campuses are built. Meta agreed in January 2026 to buy up to US$6 billion of fibre and cable from Corning through 2030, and Amazon signed in June. Like a house: you change the bulbs, not the wires in the walls.
@@ -750,7 +750,7 @@ Source in the piece: "What would prove me wrong"; Lawrence Berkeley National Lab
 
 ---
 
-## M60 · Fri 29 Jan 2027 08:30 SGT · memory-not-maths · Plants for years, designs for one generation · SCHEDULED (verified 6 Nov)
+## M60 · Fri 29 Jan 2027 08:30 SGT · memory-not-maths · Plants for years, designs for one generation · DELETED 7 Nov 2026 (piece retired)
 SK Hynix's HBM packaging plant in Indiana starts mass production in the second half of 2028. Nvidia has launched a new flagship every year since 2024.
 
 That mismatch is the risk, on my reading. Memory plants are committed years ahead. SK Hynix's P&T7 plant in Cheongju packages by February 2028, and Micron's Singapore packaging plant starts output in early 2027. A line planned today will run stacks for chips a generation or two after Rubin, and from HBM4E part of what it builds is set by one buyer's design. For now the shortage hides that: SK Hynix expects demand to outrun supply "through 2030".
@@ -763,7 +763,7 @@ Source in the piece: "The makers build plants years ahead for a design set one g
 
 ---
 
-## M61 · Mon 01 Feb 2027 08:30 SGT · the-chip-supply-chain · A double order does not build a second factory · SCHEDULED (verified 6 Nov)
+## M61 · Mon 01 Feb 2027 08:30 SGT · the-chip-supply-chain · A double order does not build a second factory · DELETED 7 Nov 2026 (piece retired)
 Buyers in a boom order early and sometimes twice. That still does not create a second ASML.
 
 The filings cannot separate hoarding from real scarcity. But a hoarded scanner still had to be built in the same cleanroom as every other one. A booking alone is not proof of scarcity. A part that only one maker can build, and only in a new building, is booked early for a reason.
@@ -776,7 +776,7 @@ Source in the piece: intro and "What would prove me wrong"; ASML results (14 Oct
 
 ---
 
-## M62 · Tue 02 Feb 2027 08:30 SGT · ten-thousand-chips-one-thought · A switch that never reads the data · SCHEDULED (verified 6 Nov)
+## M62 · Tue 02 Feb 2027 08:30 SGT · ten-thousand-chips-one-thought · A switch that never reads the data · DELETED 7 Nov 2026 (piece retired)
 Part of Google's AI network is a box of tilting mirrors that never reads a single bit.
 
 Palomar, Google's own optical circuit switch, steers light between 136 fibres. Because nothing inside reads the data, a faster chip simply sends more through the same mirrors, and Google's Ironwood pods of 9,216 chips still use them. The mirrors take milliseconds to settle, so they set the pod's shape before a job rather than routing each packet. Lumentum shipped more than US$90 million of such switches in its year to June 2026.
