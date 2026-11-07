@@ -570,7 +570,7 @@ https://thephysicallayer.fyi/journal/america-rations-the-plug/
 
 ---
 
-## 40 · The equipment queue (site live 30 Oct 2026; LinkedIn Mon 9 Nov, 11:30, scheduled)
+## 40 · The equipment queue (site live 30 Oct 2026; LinkedIn Mon 9 Nov, 11:30, scheduled; DELETED 7 Nov 2026, superseded by the depth launch posts)
 
 Hitachi Energy had $66.9 billion of orders waiting at the end of September, about three years of work, and it plans to keep it that way through 2030.
 
@@ -584,7 +584,7 @@ https://thephysicallayer.fyi/journal/the-equipment-queue/
 
 ---
 
-## 41 · Building your own power (site live 30 Oct 2026; LinkedIn Wed 11 Nov, 11:30, scheduled)
+## 41 · Building your own power (site live 30 Oct 2026; LinkedIn Wed 11 Nov, 11:30, scheduled; DELETED 7 Nov 2026, superseded by the depth launch posts)
 
 GE Vernova has 122 gigawatts of gas turbines under contract and ships about 20 gigawatts a year.
 
@@ -598,7 +598,7 @@ https://thephysicallayer.fyi/journal/building-your-own-power/
 
 ---
 
-## 42 · Nuclear for AI (site live 30 Oct 2026; LinkedIn Mon 16 Nov, 11:30, scheduled)
+## 42 · Nuclear for AI (site live 30 Oct 2026; LinkedIn Mon 16 Nov, 11:30, scheduled; DELETED 7 Nov 2026, superseded by the depth launch posts)
 
 The only American plant that has made the near-20% uranium the new reactors need delivered 900 kilograms in one contract phase, and in June its contracted production stopped.
 
@@ -612,7 +612,7 @@ https://thephysicallayer.fyi/journal/nuclear-for-ai/
 
 ---
 
-## 43 · Powering the rack (site live 30 Oct 2026; LinkedIn Wed 18 Nov, 11:30, scheduled)
+## 43 · Powering the rack (site live 30 Oct 2026; LinkedIn Wed 18 Nov, 11:30, scheduled; DELETED 7 Nov 2026, superseded by the depth launch posts)
 
 Nvidia says a one megawatt AI rack, wired the way racks are today, would need up to 200 kilograms of copper bar.
 
@@ -626,7 +626,7 @@ https://thephysicallayer.fyi/journal/powering-the-rack/
 
 ---
 
-## 44 · Heat and water (site live 30 Oct 2026; LinkedIn Mon 30 Nov, 11:30, scheduled)
+## 44 · Heat and water (site live 30 Oct 2026; LinkedIn Mon 30 Nov, 11:30, scheduled; DELETED 7 Nov 2026, superseded by the depth launch posts)
 
 A liquid-cooled AI hall can go from about 2 litres of water per kilowatt-hour to almost none, and barely change its power use.
 
@@ -640,7 +640,7 @@ https://thephysicallayer.fyi/journal/heat-and-water/
 
 ---
 
-## 45 · Ten thousand chips, one thought (site live 30 Oct 2026; LinkedIn Mon 23 Nov, 11:30, scheduled)
+## 45 · Ten thousand chips, one thought (site live 30 Oct 2026; LinkedIn Mon 23 Nov, 11:30, scheduled; DELETED 7 Nov 2026, superseded by the depth launch posts)
 
 Google's whole optical layer, mirror switches, plugs and fibre, came to under 3 per cent of a 4,096-chip AI pod's power.
 
@@ -668,7 +668,7 @@ https://thephysicallayer.fyi/journal/the-chip-supply-chain/
 
 ---
 
-## 47 · Contracted, energised, running (site live 30 Oct 2026; LinkedIn Wed 2 Dec, 11:30, scheduled)
+## 47 · Contracted, energised, running (site live 30 Oct 2026; LinkedIn Wed 2 Dec, 11:30, scheduled; DELETED 7 Nov 2026, superseded by the depth launch posts)
 
 Nebius has signed rights to 5 gigawatts of power for the end of 2026. It expects 0.8 to 1 gigawatt connected, and at the end of 2025 about 170 megawatts were running chips.
 
@@ -682,7 +682,7 @@ https://thephysicallayer.fyi/journal/contracted-energised-running/
 
 ---
 
-## 48 · Hong Kong has the plug (site live Mon 2 Nov 2026; LinkedIn Mon 7 Dec, 11:30, scheduled)
+## 48 · Hong Kong has the plug (site live Mon 2 Nov 2026; LinkedIn Mon 7 Dec, 11:30, scheduled; DELETED 7 Nov 2026, superseded by the depth launch posts)
 
 Hong Kong's main utility has finished eight substations for data centres since 2024, nearly three times as many as in the six years before, and plans 18 by 2028.
 
@@ -696,7 +696,7 @@ https://thephysicallayer.fyi/journal/hong-kong-has-the-plug/
 
 ---
 
-## 49 · Update: Johor and Singapore, own power (update live 31 Oct 2026; LinkedIn Wed 9 Dec, 11:30, scheduled)
+## 49 · Update: Johor and Singapore, own power (update live 31 Oct 2026; LinkedIn Wed 9 Dec, 11:30, scheduled; DELETED 7 Nov 2026, superseded by the depth launch posts)
 
 A 100 MW data centre running on its own gas turbines in Singapore would burn 1 to 2% of its LNG terminal's capacity, and still would not add a single megawatt of computing.
 
@@ -710,7 +710,7 @@ https://thephysicallayer.fyi/journal/the-queue-not-the-chip/
 
 ---
 
-## 50 · Update: Building your own power, the gas pipe (update live 31 Oct 2026; LinkedIn Mon 14 Dec, 11:30, scheduled)
+## 50 · Update: Building your own power, the gas pipe (update live 31 Oct 2026; LinkedIn Mon 14 Dec, 11:30, scheduled; DELETED 7 Nov 2026, superseded by the depth launch posts)
 
 The newest Permian gas pipe, 2.8 billion cubic feet a day for one hyperscaler's own power plants, lands in the third quarter of 2030.
 
@@ -724,7 +724,7 @@ https://thephysicallayer.fyi/journal/building-your-own-power/
 
 ---
 
-## 51 · Update: Nuclear for AI, fuel contracts (update live 31 Oct 2026; LinkedIn Wed 16 Dec, 11:30, scheduled)
+## 51 · Update: Nuclear for AI, fuel contracts (update live 31 Oct 2026; LinkedIn Wed 16 Dec, 11:30, scheduled; DELETED 7 Nov 2026, superseded by the depth launch posts)
 
 America's reactor owners have not yet bought about half the uranium they expect to need to 2035.
 
@@ -754,7 +754,7 @@ https://thephysicallayer.fyi/journal/memory-not-maths/
 
 ---
 
-## 53 · Data centres in orbit (site live Mon 2 Nov 2026; LinkedIn Fri 4 Dec, 11:30, scheduled)
+## 53 · Data centres in orbit (site live Mon 2 Nov 2026; LinkedIn Fri 4 Dec, 11:30, scheduled; DELETED 7 Nov 2026, superseded by the depth launch posts)
 
 SpaceX wants AI satellites that weigh 10 kilograms for every kilowatt of computing, and a radiator as heavy as the space station's would use all of it on its own.
 
@@ -768,7 +768,7 @@ https://thephysicallayer.fyi/journal/data-centres-in-space/
 
 ---
 
-## 54 · Update: Building your own power, plans outrun machines (update live Mon 2 Nov 2026; LinkedIn Wed 23 Dec, 11:30, scheduled)
+## 54 · Update: Building your own power, plans outrun machines (update live Mon 2 Nov 2026; LinkedIn Wed 23 Dec, 11:30, scheduled; DELETED 7 Nov 2026, superseded by the depth launch posts)
 
 In a year, planned US gas power grew from 40.5 GW to 71.1 GW. The part actually being built grew from 9.6 GW to 13.1 GW.
 
@@ -784,7 +784,7 @@ https://thephysicallayer.fyi/journal/building-your-own-power/
 
 # The depth launch (7 Nov 2026): one post per rebuilt piece, Mon/Wed/Fri 11:30, replacing the 13 teasers of the old versions
 
-## 55 · Microreactors (site live 7 Nov 2026; LinkedIn Mon 9 Nov, 11:30, pending)
+## 55 · Microreactors (site live 7 Nov 2026; LinkedIn Mon 9 Nov, 11:30, scheduled, verified 7 Nov)
 
 Five new American test reactors reached criticality this summer, and none has sold a single kilowatt-hour.
 
@@ -798,7 +798,7 @@ https://thephysicallayer.fyi/journal/microreactors/
 
 ---
 
-## 56 · Johor and Singapore, in depth (rebuilt 7 Nov 2026; LinkedIn Wed 11 Nov, 11:30, pending)
+## 56 · Johor and Singapore, in depth (rebuilt 7 Nov 2026; LinkedIn Wed 11 Nov, 11:30, scheduled, verified 7 Nov)
 
 In June 2026 Malaysia's data centres were connected to 5.65 gigawatts of grid supply and drew 1.26 of it.
 
@@ -812,7 +812,7 @@ https://thephysicallayer.fyi/journal/the-queue-not-the-chip/
 
 ---
 
-## 57 · Nuclear for AI, in depth (rebuilt 7 Nov 2026; LinkedIn Fri 13 Nov, 11:30, pending)
+## 57 · Nuclear for AI, in depth (rebuilt 7 Nov 2026; LinkedIn Fri 13 Nov, 11:30, scheduled, verified 7 Nov)
 
 The earliest new nuclear power Microsoft has bought for AI comes from a reactor that shut in 2019.
 
@@ -826,7 +826,7 @@ https://thephysicallayer.fyi/journal/nuclear-for-ai/
 
 ---
 
-## 58 · America rations the plug, in depth (rebuilt 7 Nov 2026; LinkedIn Mon 16 Nov, 11:30, pending)
+## 58 · America rations the plug, in depth (rebuilt 7 Nov 2026; LinkedIn Mon 16 Nov, 11:30, scheduled, verified 7 Nov)
 
 Dominion has about 54 gigawatts of data centres under contract in Virginia, and bills 4.8.
 
@@ -840,7 +840,7 @@ https://thephysicallayer.fyi/journal/america-rations-the-plug/
 
 ---
 
-## 59 · The equipment queue, in depth (rebuilt 7 Nov 2026; LinkedIn Wed 18 Nov, 11:30, pending)
+## 59 · The equipment queue, in depth (rebuilt 7 Nov 2026; LinkedIn Wed 18 Nov, 11:30, scheduled, verified 7 Nov)
 
 Hitachi Energy is building or expanding more than 40 factories, and expects its signed orders to still be worth two and a half to three years of sales when they open.
 
@@ -854,7 +854,7 @@ https://thephysicallayer.fyi/journal/the-equipment-queue/
 
 ---
 
-## 60 · Building your own power, in depth (rebuilt 7 Nov 2026; LinkedIn Fri 20 Nov, 11:30, pending)
+## 60 · Building your own power, in depth (rebuilt 7 Nov 2026; LinkedIn Fri 20 Nov, 11:30, scheduled, verified 7 Nov)
 
 GE Vernova had 122 gigawatts of gas turbines under contract at the end of September, and ships about 20 a year.
 
@@ -868,7 +868,7 @@ https://thephysicallayer.fyi/journal/building-your-own-power/
 
 ---
 
-## 61 · Powering the rack, in depth (rebuilt 7 Nov 2026; LinkedIn Mon 23 Nov, 11:30, pending)
+## 61 · Powering the rack, in depth (rebuilt 7 Nov 2026; LinkedIn Mon 23 Nov, 11:30, scheduled, verified 7 Nov)
 
 Nvidia has written down why its own rack design cannot go on: at one megawatt, today's wiring would need up to 200 kilograms of copper bar.
 
@@ -882,7 +882,7 @@ https://thephysicallayer.fyi/journal/powering-the-rack/
 
 ---
 
-## 62 · Heat and water, in depth (rebuilt 7 Nov 2026; LinkedIn Wed 25 Nov, 11:30, pending)
+## 62 · Heat and water, in depth (rebuilt 7 Nov 2026; LinkedIn Wed 25 Nov, 11:30, scheduled, verified 7 Nov)
 
 A US government lab finds a liquid-cooled AI hall can stop evaporating water for almost no extra power over a year.
 
@@ -896,7 +896,7 @@ https://thephysicallayer.fyi/journal/heat-and-water/
 
 ---
 
-## 63 · Data centres in orbit, in depth (rebuilt 7 Nov 2026; LinkedIn Fri 27 Nov, 11:30, pending)
+## 63 · Data centres in orbit, in depth (rebuilt 7 Nov 2026; LinkedIn Fri 27 Nov, 11:30, scheduled, verified 7 Nov)
 
 SpaceX told American regulators one of its AI computing satellites would weigh 3,000 kilograms.
 
