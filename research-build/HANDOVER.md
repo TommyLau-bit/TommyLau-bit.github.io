@@ -11,6 +11,13 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 - **6 Nov late evening: all 13 pieces rewritten in the study-deck teaching style, on branch `deck-style-rewrite` (NOT merged, NOT pushed).** Each piece now has the split up front, the five-step chain with a choke-point diagram, one mapped analogy, plain falsifiers and an out-of-the-box beat. Every DECK_FINDINGS fact is fixed in place. TSMC now appears only in the fixed 2 Nov claim sentence (Tommy: "Keep it word for word"). Full record: research-build/DECK-REWRITE-2026-11-06.md.
 - **6 Nov evening: nuclear-for-ai HALEU fact fixed in place** (Tommy delegated the call). Centrus Q3 release, 4 Nov 2026: the 16-centrifuge cascade now enriches HALEU for the commercial market, no volume, no DOE funding for FY2027. Heading, summary, intro, analogy, section text, chart title, table row and Oklo evidence line updated. Claim and test NOT reworded. The 16 Nov LinkedIn teaser ("its contracted production stopped") is still true and was left.
 
+## TOMMY'S CHECKLIST (pinned 7 Nov 2026, his words condensed; work through in order)
+
+1. **Finish deepening all nine articles**, then publish them live, all at the same time. Tommy has authorised the publish itself; double and triple check before it (check-piece, fact-check per piece, build, link check, redirects, preview).
+2. **Clean up the LinkedIn scheduled posts**: delete what points at retired or folded pieces, and add posts for the new depth pieces. Deeper pieces mean more topics, so schedule more posts (company page only).
+3. **Fix Tommy's CVs and LinkedIn profile if needed** ("grid to chip" wording; Johor figures after the rebuild; check the company page and his profile).
+4. **The study decks (PowerPoints) may be deleted or updated**: each depth piece should explain everything, so the decks are no longer needed. Archive rather than hard-delete.
+
 ## START HERE (as of Sat 7 Nov 2026, ~15:30 SGT; retirements added ~15:30)
 
 **New direction (Tommy, 7 Nov): depth over breadth.** The journal is now for investors and analysts: every piece read once with every question answered, every term explained, detailed visuals in the style of the homepage map. He would rather have five or six perfect pieces than fourteen surface ones. Spec: research-build/deep-pieces/DEPTH-FORMAT.md (PILOT until he approves). Memory: depth-first-journal.
