@@ -11,6 +11,9 @@ const journal = defineCollection({
     cover: z.string().optional(),              // /covers/name.svg or .jpg — optional, a styled fallback renders without it
     tags: z.array(z.string()).default([]),
     draft: z.boolean().default(false),
+    // 'depth' (Tommy, 7 Nov 2026): one continuous piece for investors, every question answered,
+    // question headings listed at the top as "In this piece"
+    format: z.enum(['depth']).optional(),
     updated: z.coerce.date().optional(),       // when a figure in the piece was overtaken and corrected
     updateNote: z.string().optional(),         // one sentence: what changed. Shown under the title.
   }),

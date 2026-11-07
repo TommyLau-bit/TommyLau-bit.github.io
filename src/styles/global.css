@@ -634,3 +634,47 @@ details.analogy > p:first-of-type { margin-top: 0.1rem; }
 .hero p.hero-book { margin-top: 0.8rem; font-family: var(--sans); font-size: 0.92rem; }
 .hero-book a { color: var(--accent); font-weight: 600; text-decoration: none; }
 @media (hover: hover) { .hero-book a:hover { text-decoration: underline; } }
+
+/* Depth pieces (Tommy, 7 Nov 2026): the questions the piece answers, listed under the summary */
+.depth-contents { margin: 1.1rem 0 0; padding: 0.8rem 0 0; border-top: 1px solid var(--rule); font-family: var(--sans); }
+.depth-contents-label { margin: 0 0 0.4rem; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+.depth-contents ol { margin: 0; padding-left: 1.4rem; font-size: 0.9rem; line-height: 1.45; columns: 2 18rem; column-gap: 2rem; }
+.depth-contents li { margin: 0 0 0.3rem; break-inside: avoid; color: var(--ink-3); }
+.depth-contents a { color: var(--ink-2); text-decoration-color: var(--rule); }
+@media (hover: hover) { .depth-contents a:hover { color: var(--accent); text-decoration-color: currentColor; } }
+
+/* Illustrations: hand-drawn line art in the style of the homepage descent. They show the
+   physical thing (a core, a fuel particle, a supply chain), not a sentence; charts prove sentences. */
+.illo { margin: 2.25rem 0; overflow-x: auto; -webkit-overflow-scrolling: touch; --hot: #b91c1c; --cool: #0e7490; --fuel: #b45309; --metal: color-mix(in srgb, var(--ink) 8%, var(--bg)); }
+:root[data-theme="dark"] .illo { --hot: #f87171; --cool: #22d3ee; --fuel: #f59e0b; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .illo { --hot: #f87171; --cool: #22d3ee; --fuel: #f59e0b; } }
+.illo svg { display: block; width: 100%; height: auto; font-family: var(--sans); }
+@media (max-width: 560px) { .illo svg { min-width: 520px; } }
+.illo .illo-title { font-family: var(--sans); font-weight: 650; font-size: 1rem; line-height: 1.3; margin: 0; color: var(--ink); }
+.illo .illo-sub { font-family: var(--sans); font-size: 0.82rem; color: var(--ink-3); margin: 0.2rem 0 0.6rem; }
+.illo figcaption { font-family: var(--sans); font-size: 0.78rem; line-height: 1.5; color: var(--ink-3); margin-top: 0.5rem; }
+@media (min-width: 64rem) { .prose > figure.illo { width: 54rem; max-width: calc(100vw - 4rem); margin-left: calc((100% - min(54rem, 100vw - 4rem)) / 2); } }
+@media (min-width: 80rem) { .prose > figure.illo { width: auto; margin-left: 0; } .illo .illo-title { font-size: 1.15rem; } .illo .illo-sub { font-size: 0.92rem; } .illo figcaption { font-size: 0.85rem; } }
+.i-line { fill: none; stroke: var(--ink-2); stroke-width: 1.6; stroke-linejoin: round; stroke-linecap: round; }
+.i-thin { fill: none; stroke: var(--ink-3); stroke-width: 0.9; }
+.i-faint { fill: none; stroke: var(--ink-3); stroke-width: 1; opacity: 0.4; }
+.i-dash { fill: none; stroke: var(--ink-3); stroke-width: 1; stroke-dasharray: 4 3; }
+.i-fill { fill: var(--bg-elev); stroke: var(--ink-2); stroke-width: 1.2; }
+.i-metal { fill: var(--metal); stroke: var(--ink-2); stroke-width: 1.2; }
+.i-ground { fill: color-mix(in srgb, var(--ink) 4%, var(--bg)); }
+.i-fuel { fill: var(--fuel); }
+.i-fuel-soft { fill: color-mix(in srgb, var(--fuel) 22%, var(--bg)); stroke: var(--fuel); stroke-width: 1.2; }
+.i-hot { fill: none; stroke: var(--hot); stroke-width: 1.8; stroke-linecap: round; }
+.i-hot-f { fill: var(--hot); }
+.i-cool { fill: none; stroke: var(--cool); stroke-width: 1.8; stroke-linecap: round; }
+.i-cool-f { fill: var(--cool); }
+.i-choke { fill: color-mix(in srgb, var(--hot) 8%, transparent); stroke: var(--hot); stroke-width: 1.4; stroke-dasharray: 5 3; }
+.i-t { fill: var(--ink); font-size: 14px; font-weight: 600; }
+.i-n { fill: var(--ink-3); font-size: 12.5px; }
+.i-n2 { fill: var(--ink-2); font-size: 13px; }
+.i-k { fill: var(--ink-3); font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+.i-hot-t { fill: var(--hot); font-size: 12px; font-weight: 700; }
+.i-fuel-t { fill: var(--fuel); font-size: 12px; font-weight: 700; }
+.i-cool-t { fill: var(--cool); font-size: 12px; font-weight: 700; }
+.i-lead { fill: none; stroke: var(--ink-3); stroke-width: 0.8; }
+.i-head { fill: var(--ink-3); }

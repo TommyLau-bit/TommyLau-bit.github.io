@@ -135,6 +135,29 @@ def deep_checks(slug, body, draft):
             fails.append(f'no anchor <a id="{c["id"]}"></a> for the merged claim')
     return fails
 
+# Depth pieces (Tommy, 7 Nov 2026): one continuous piece for investors and analysts,
+# read once with every question answered. Marked `format: "depth"` in the frontmatter.
+# Question headings, no layer divider, no word caps; at least three figures, of which
+# illustrations (<figure class="illo">) show the physical thing and charts prove sentences.
+def depth_checks(slug, body):
+    fails, warns = [], []
+    if LAYER_HR in body:
+        fails.append('a depth piece is one continuous piece: no <hr class="layer"> divider')
+    figs = body.count('<figure class="chart">') + body.count('<figure class="illo">')
+    if not 3 <= figs <= 12:
+        fails.append(f'{figs} figures; a depth piece carries 3 to 12 charts and illustrations')
+    if not re.search(r'^## What would prove me wrong\s*$', body, re.M):
+        fails.append('missing "## What would prove me wrong"')
+    record = re.search(r'<details class="claims-record">(.*?)</details>', body, re.S)
+    flat = lambda t: re.sub(r'\s+', ' ', re.sub(r'<[^>]+>|[*_]', '', t)).replace('\u2019', "'").strip()
+    for c in claims_homed_at(slug):
+        if c['claim'] and not (record and flat(c['claim']) in flat(record.group(1))):
+            fails.append(f'claim "{c["id"]}" is not quoted word for word in the claims-record fold')
+    words = len(re.sub(r'<[^>]+>', ' ', storyline(body).split('<section class="exposure">')[0]).split())
+    if words > 12000:
+        warns.append(f'{words} words before the exposure map; check every paragraph still earns its place')
+    return fails, warns
+
 def check(path):
     fails, warns = [], []
     raw = open(path).read()
@@ -144,6 +167,7 @@ def check(path):
         return [f'{slug}: no frontmatter'], []
     fm, body = parts[1], '---'.join(parts[2:])
     deep = LAYER_HR in body
+    depth = bool(re.search(r'^format:\s*"?depth"?\s*$', fm, re.M))
 
     def field(k):
         m = re.search(rf'^{k}:\s*(.+?)\s*$', fm, re.M)
@@ -227,7 +251,10 @@ def check(path):
 
     # ── shape
     h2 = re.findall(r'^## (.+)$', body, re.M)
-    if deep:
+    if depth:
+        f2, w2 = depth_checks(slug, body)
+        fails += f2; warns += w2
+    elif deep:
         fails += deep_checks(slug, body, field('draft') == 'true')
     elif not 2 <= len(h2) <= 4:
         warns.append(f'{len(h2)} ## sections; the format asks for 3')
@@ -239,7 +266,7 @@ def check(path):
     if field('draft') != 'true':
         if slug not in STACK_IDS:
             fails.append('not on the map: add the slug to one layer in src/data/stack.ts')
-        if deep and not claims_homed_at(slug):
+        if (deep or depth) and not claims_homed_at(slug):
             fails.append('deep piece carries no claim: no entry in src/data/claims.ts has this id or home')
         if not deep and cat == 'Analysis' and slug not in CLAIM_IDS:
             fails.append('Analysis piece has no entry in src/data/claims.ts')
@@ -255,7 +282,9 @@ def check(path):
     # length and numbers budget, measured on the reading body only (WRITING-FORMAT §4, §4b);
     # in a deep piece, on the plain-English top only (§D)
     rb = reading_text(storyline(body.split(LAYER_HR)[0]))
-    if deep:
+    if depth:
+        pass  # no length or figure budget: every question answered (Tommy, 7 Nov 2026)
+    elif deep:
         words = len(rb.split())
         lo, hi = DEEP_TOP_WORDS
         if not lo <= words <= hi:
@@ -283,7 +312,9 @@ def check(path):
         elif figures > 15:
             warns.append(f'{figures} figures in the body; §4b asks for 15 at most')
     money = len(re.findall(r'(?:(?:US|S|HK)?\$|€|£|¥)\s?\d[\d.,]*(?:\s*(?:billion|million|bn)\b)?|(?<![\d.,$€£¥])\d[\d.,]*\s*(?:billion|million|bn)\b', rb))
-    if money > 4:
+    if depth:
+        pass  # financials appear as evidence in the text (§4a); never a view on shares
+    elif money > 4:
         fails.append(f'{money} money figures; the journal allows 3 company financial figures (§4b), the numbers live in the research note')
     elif money > 3:
         warns.append(f'{money} money figures; §4b allows 3')

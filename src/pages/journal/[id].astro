@@ -8,7 +8,8 @@ import { getPitches, pitchesFor } from '../../lib/calls';
 import { layerOf } from '../../data/stack';
 import { exposureOf, slugify, companyPages } from '../../lib/exposure';
 export async function getStaticPaths() {
-  const posts = await getCollection('journal', ({ data }) => !data.draft);
+  // drafts render in `astro dev` only, so a draft can be read before it publishes; never in a build
+  const posts = await getCollection('journal', ({ data }) => !data.draft || import.meta.env.DEV);
   const paged = companyPages(posts, (await getPitches()).map((n) => n.data.company)).map((c) => c.slug);
   return posts.map((p) => ({ params: { id: p.id }, props: { p, paged } }));
 }
@@ -19,6 +20,8 @@ const { Content, headings } = await render(p);
 const body = p.body ?? '';
 const cut = body.indexOf('<hr class="layer"');
 const below = cut >= 0 ? body.slice(cut) : '';
+const isDepth = p.data.format === 'depth';
+const questions = isDepth ? headings.filter((h) => h.depth === 2) : [];
 const investorTo = cut >= 0 ? headings.filter((h) => h.depth === 2 && below.includes(`## ${h.text}`)) : [];
 // An ordinary piece shows its one claim here. A deep piece that other claims
 // have merged into shows none: its body carries the "Claims on record" block.
@@ -47,6 +50,12 @@ const companies = [...new Set(exposureOf(p).flatMap((r) => r.names))].filter((n)
         <p class="label">In plain English</p>
         <p>{p.data.summary}</p>
       </aside>
+      {questions.length > 0 && (
+        <nav class="depth-contents" aria-label="In this piece">
+          <p class="depth-contents-label">In this piece</p>
+          <ol>{questions.map((h) => <li><a href={`#${h.slug}`}>{h.text}</a></li>)}</ol>
+        </nav>
+      )}
       {investorTo.length > 0 && (
         <nav class="investor-jump" aria-label="For investors">
           <span class="investor-jump-label">For investors</span>

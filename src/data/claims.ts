@@ -17,6 +17,13 @@ export type Claim = {
 
 export const CLAIMS: Claim[] = [
   {
+    id: 'microreactors',
+    date: '2026-11-07T14:46:52+08:00',
+    claim: 'America\'s microreactors are paced by fuel, not by building reactors: HALEU and the TRISO fuel made from it are produced in kilograms and handed out by the government, so the first microreactors to run at power will serve military and government sites, and no US data centre will draw power from a microreactor under a commercial contract before 2031.',
+    breaksIf: 'A US data centre receives electricity from a microreactor under a commercial supply contract on or before 31 December 2030; or the first microreactor in America to deliver sustained electricity to a customer is at a site that is neither military nor on government land.',
+    watch: ['DOE approval of Standard Nuclear\'s SN-TN and SN-ID TRISO plants (targeted Q4 2026)', 'Crusoe and Aalo\'s 2027 demonstration at INL, on ordinary LEU', 'The NRC\'s final microreactor rule (Part 57, proposed 1 May 2026)', 'The first Janus reactor against September 2028, and Radiant\'s full-power test at DOME', 'Centrus HALEU volumes and any fourth DOE allocation round'],
+  },
+  {
     id: 'the-queue-not-the-chip',
     date: '2026-07-27',
     claim: 'In Johor and Singapore, a finished grid connection, not chip supply, is the scarce thing holding the AI buildout back.',
