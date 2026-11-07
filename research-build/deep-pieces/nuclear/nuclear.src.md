@@ -51,7 +51,7 @@ An **uprate** lets a running reactor make more heat, and so more electricity, un
 
 A **new build** starts from bare ground, and it comes in three kinds. A **large reactor**, such as the two finished at Vogtle in Georgia in 2023 and 2024, makes about 1,100 MW. A **small modular reactor** (SMR), up to about 300 MW, is designed to be built largely from factory-made parts. An **advanced reactor** uses a different coolant or fuel from today's water-cooled fleet, and most of those need HALEU.
 
-**HALEU**, high-assay low-enriched uranium, is the fuel that divides the field. Natural uranium is only about 0.7 per cent uranium-235, the kind of atom that splits. Concentrating it is called **enrichment**, and it is done by spinning uranium as a gas in fast centrifuges, so the slightly heavier atoms drift outward. Today's reactors burn fuel enriched to about 5 per cent. HALEU is concentrated to just under 20 per cent, which lets a small or fast-neutron core run for years. Making it takes roughly five times the enrichment work per kilogram of ordinary 5 per cent fuel, and almost nobody makes it yet.
+**HALEU**, high-assay low-enriched uranium, is the fuel that divides the field. Natural uranium is only about 0.7 per cent uranium-235, the kind of atom that splits. Today's reactors burn fuel concentrated to about 5 per cent. HALEU is concentrated to just under 20 per cent, which lets a small or fast-neutron core run for years. Making it takes roughly five times the enrichment work per kilogram of ordinary 5 per cent fuel, and almost nobody makes it yet.
 
 ## What does a nuclear project need before it can sell a kilowatt-hour?
 
@@ -197,11 +197,13 @@ Because most of them need HALEU, and America makes it on one line of sixteen cen
 
 <a id="terrapower-waits-on-the-fuel"></a>
 
-The [microreactors piece](/journal/microreactors/) follows that fuel from mine to core, step by step. Here only four facts matter. The only American line that has made HALEU is Centrus Energy's cascade of sixteen centrifuges in Piketon, Ohio. By June 2026 it had made more than 1,900 kg of HALEU as gas, about 1.3 tonnes of uranium, in all its years of running (my conversion).
+**Enrichment** is the step that concentrates uranium-235, by spinning uranium as a gas in fast centrifuges so the slightly heavier atoms drift outward. A line of linked centrifuges is a **cascade**. The only American cascade to have made HALEU belongs to Centrus Energy, in Piketon, Ohio. It has sixteen machines. By June 2026 it had made more than 1,900 kg of HALEU as gas, about 1.3 tonnes of uranium, in all its years of running (my conversion).
 
-Its government work has run out. The Energy Department ordered maintenance and storage only from 30 June 2026. Centrus said on 4 November that the cascade now enriches for commercial buyers, with no volume given, and the government's 2027 budget proposal does not fund it. Its lease on the site is fixed to end on 1 October 2027.
+Its government work then ran out. Its contracted production finished in mid-June 2026, and on 30 June the Energy Department ordered maintenance and storage only. On 4 November Centrus said the cascade now enriches HALEU for commercial buyers, with no volume given, and that the government's budget proposal for 2027 does not fund it. Its lease on the Piketon site is fixed to end on 1 October 2027.
 
-What comes next is planned, not built. Centrus owes the government one tonne of uranium as HALEU by July 2032, and its build-out, with first new centrifuges in 2029, includes 12 tonnes a year of HALEU capacity, contingent on customers. Against that, the Energy Department expects "more than 40 metric tons" to be needed by 2030, and its own stock, about 21 tonnes by 2028, goes out by allocation to a few first cores.
+What is coming is planned, not built. Centrus's new government order, signed on 1 July 2026, requires one tonne of uranium as HALEU by July 2032. Its first new centrifuges should start in 2029, in a build-out that includes 12 tonnes a year of HALEU capacity. Customers have signed: Oklo, X-energy and Radiant. Centrus counts US$5.4 billion of commitments for ordinary fuel and HALEU, contingent on building the plant.
+
+Against that, the need is large. The Energy Department expects "more than 40 metric tons" of HALEU to be needed by 2030. Its own stock, recovered from old reactor fuel and weapons material, should reach about 21 tonnes by 2028, and it is handing that out by allocation to a few first cores. The [microreactors piece](/journal/microreactors/) follows that fuel chain step by step.
 
 <!--FIG:advanced-->
 
@@ -209,7 +211,7 @@ Each of the reactors linked to AI buyers meets that wall. **TerraPower** won an 
 
 **Oklo** broke ground on its 75 MW Aurora at the Idaho National Laboratory in September 2025. Its quarterly report of 6 November 2026 targets its first powerhouse in 2028 to 2029. That first core rests on five tonnes of government HALEU. **Kairos Power's** Hermes 2 has no named fuel source. **X-energy**, Amazon's partner, finished its NRC safety review for a four-reactor plant in Texas on 30 October 2026, and expects power in the early 2030s.
 
-Test reactors have gone critical in 2026, as the microreactors piece describes, but all at zero or very low power, and none is connected to a grid.
+Small reactors have gone critical, which can sound like more than it is. Between June and August 2026 four reactors in the Energy Department's pilot programme reached **criticality**, a steady self-sustaining chain reaction. All were physics tests at zero or very low power. None is connected to a grid.
 
 The fuel loop has its first cracks. X-energy and Radiant agreed prepayments with Centrus in August and September 2026, and Meta's first payment under its Oklo framework left escrow on 2 November 2026 and went straight to Centrus, as a credit towards fuel orders. Buyers, not the government, are now paying for HALEU before the reactors exist. But no tonnage is public, and new centrifuges take years. The crack moves fuel in the 2030s, not this decade.
 
@@ -263,7 +265,7 @@ Two tests break the claim. If reactors fuelled with HALEU together send electric
 
 Some events would move me before either test. Centrus contracting its 12 tonne a year build-out with firm customers, or ASP Isotopes enriching its first uranium-235, would start a commercial HALEU supply that does not wait for the reactors. A large HALEU allocation from the Energy Department beyond first cores would do the same. And a second restart stalling as Palisades has would weaken the first limb.
 
-Three things would not move me. More signings with new reactor developers: a framework or option is not a delivery contract. More test reactors going critical: a zero-power physics test proves a reactor, not a fuel supply. And Darlington: it burns ordinary fuel, it is in Canada, and if it runs on time it supports the claim that fuel, not the reactor, is what holds the advanced designs back.
+Three things would not move me. More signings with new reactor developers: a framework or option is not a delivery contract. More criticalities: a zero-power physics test proves a reactor, not a fuel supply. And Darlington: it burns ordinary fuel, it is in Canada, and if it runs on time it supports the claim that fuel, not the reactor, is what holds the advanced designs back.
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
