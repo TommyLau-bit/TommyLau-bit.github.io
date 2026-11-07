@@ -5,7 +5,7 @@
 ## M01 · Mon 09 Nov 2026 08:30 SGT · the-queue-not-the-chip · Four years cut to one · SCHEDULED (verified 6 Nov)
 Malaysia cut the time to connect a data centre to its grid from up to four years to one.
 
-Tenaga's Green Lane Pathway, launched on 8 August 2023, cut the implementation period from 36 to 48 months to 12, plant included. Campuses then connected faster than their halls could fill. In the year to June 2026 the power drawn roughly doubled, to 1,256 megawatts, while bookings grew by about 60%. The share drawn crept from about 17% to about 22%.
+Tenaga's Green Lane Pathway, launched on 8 August 2023, cut the implementation period from 36 to 48 months to 12, plant included. Campuses then connected faster than their halls could fill. In the year to June 2026 the power drawn roughly doubled, to 1,256 megawatts, while connected demand grew by about 60%. The share drawn crept from about 17% to about 22%.
 
 From the piece: Johor and Singapore: the plug, not the chip
 
@@ -41,7 +41,7 @@ Source in the piece: intro and "The makers are building to keep the equipment qu
 ---
 
 ## M04 · Thu 12 Nov 2026 08:30 SGT · building-your-own-power · Buyers pay to stand in the queue · SCHEDULED (verified 6 Nov)
-Money paid up front to GE Vernova's Power segment, its turbine business, which also holds nuclear and hydro, doubled in nine months: from $16.5 billion at the end of 2025 to $33.2 billion at 30 September 2026.
+Money paid up front to GE Vernova's Power segment, its turbine business, which also holds nuclear, hydro and steam, doubled in nine months: from $16.5 billion at the end of 2025 to $33.2 billion at 30 September 2026.
 
 It is mainly down payments on turbine orders and reserved places in the factory line. It is like paying a large deposit to a restaurant booked years ahead, just to keep your table.
 
@@ -55,9 +55,9 @@ Source in the piece: "The maker is paid to keep the queue, not to clear it"; GE 
 ## M05 · Fri 13 Nov 2026 08:30 SGT · nuclear-for-ai · Crane borrowed a plug · SCHEDULED (verified 6 Nov)
 Restarting a reactor can be quicker than plugging it back into the grid.
 
-Crane, the former Three Mile Island Unit 1, closed in 2019 and lost its place on the grid. A fresh connection was tied to hundreds of miles of new lines, with full delivery no sooner than 31 December 2030. The reactor itself could generate in the second half of 2027. So Constellation borrowed a plug from its own fleet. On 1 June 2026 the federal energy regulator let 760 MW of grid rights move to Crane from Eddystone Units 3 and 4, two Constellation oil and gas units. That buys about three years.
+Crane, the former Three Mile Island Unit 1, closed in 2019 and lost its place on the grid. A fresh connection was tied to long new power lines, and Constellation told the regulator that full delivery could be at risk until the end of 2030. The reactor itself could generate in the second half of 2027. So Constellation borrowed a plug from its own fleet. On 1 June 2026 the federal energy regulator let 760 MW of grid rights move to Crane from Eddystone Units 3 and 4, two Constellation oil and gas units. The regulator said that could bring full delivery sooner, but the grid operator's own studies still decide.
 
-From the piece: Nuclear power for AI comes from old reactors first. The new ones wait on fuel.
+From the piece: Nuclear for AI: the old reactors come first because they already own the hard parts
 
 #NuclearEnergy #DataCentres #Grid
 
@@ -79,9 +79,9 @@ Source in the piece: "Only a higher voltage shrinks the copper"; the physics in 
 ---
 
 ## M07 · Tue 17 Nov 2026 08:30 SGT · heat-and-water · Ninety hairdryers in a fridge-sized box · SCHEDULED (verified 6 Nov)
-One cabinet of Nvidia's current flagship AI chips draws about 140 kilowatts at peak. That is roughly ninety hairdryers in a box the size of a fridge.
+One cabinet of Nvidia's GB200 NVL72 AI chips draws about 120 kilowatts, on Nvidia's own user guide. That is roughly eighty hairdryers on full, in a box the size of a wardrobe.
 
-A traditional air-cooled cabinet draws 10 to 40 kW, on the tour of Jane Street's Texas site. Air cannot carry that much heat away, so the industry now runs liquid through a metal plate on each chip.
+Jane Street's head of physical engineering recalls when a rack of 10 to 15 kW counted as dense. Air cannot carry that much heat away, so the industry now runs liquid through a metal plate on each chip.
 
 And it keeps rising. Google's engineers say their rack power design scaled from 10 to 100 kilowatts, and they expect machine learning to need more than 500 kW per rack before 2030.
 
@@ -134,7 +134,7 @@ Hong Kong's data centres drew about 283 megawatts on average in the first nine m
 
 That is my arithmetic from CLP Power's own figures: data centres were 6.6% of its 28,131 GWh of sales over those nine months. Set against CLP's highest local demand in 2025, 7,455 megawatts, the average draw is under 4% of the peak. Think of one extra kettle in a busy kitchen: you see it on the bill, not at the fuse box. The load is growing, though. CLP's sales to data centres rose 12.8% on a year earlier.
 
-From the piece: Hong Kong has the plug: its grid builds to demand, and the chip needs a licence
+From the piece: Johor and Singapore: the plug, not the chip
 
 #DataCentres #HongKong #EnergyInfrastructure
 
@@ -159,7 +159,7 @@ Source in the piece: "America is rationing the grid connection, not speeding it 
 ## M13 · Wed 25 Nov 2026 08:30 SGT · data-centres-in-space · A little hotter sheds far more heat · SCHEDULED (verified 6 Nov)
 In space, heat leaves only by glowing off a radiator. And the heat a panel sheds rises with its temperature to the fourth power.
 
-Starcloud, a start-up, works out about 633 watts per square metre for a panel at 20°C. SpaceX assumes about 1,400, which on my arithmetic means a panel near 67°C.
+Starcloud, a start-up, works out about 633 watts per square metre for a panel at 20°C. Elon Musk, SpaceX's chief executive, cites about 1,400, which on my arithmetic means a panel near 67°C.
 
 That move from 20°C to 67°C raises absolute temperature by only about 16%, but sheds about 1.8 times the heat per square metre. Like a stove ring: a bit hotter and you feel it from across the kitchen. In orbit, the warmer the chips' coolant, the smaller the radiator.
 
@@ -223,7 +223,7 @@ Keeping a reactor's place on the grid makes a restart possible. It does not make
 
 Palisades, an 800 MW plant in Michigan, kept its place on the Midwest grid to 1 March 2027 and reconnected its switchyard on 11 September 2026. Then fuel loading stopped when a fuel assembly tilted. Holtec, which is restarting it, recovered the assembly by 21 October and gave no new date. Its power contracts can be ended if the plant is not running by March 2027. The plug was ready. The reactor set the pace.
 
-From the piece: Nuclear power for AI comes from old reactors first. The new ones wait on fuel.
+From the piece: Nuclear for AI: the old reactors come first because they already own the hard parts
 
 #NuclearEnergy #EnergyInfrastructure #Grid
 
@@ -232,9 +232,9 @@ Source in the piece: "The grid place sets a restart's date, and Crane borrowed o
 ---
 
 ## M19 · Thu 03 Dec 2026 08:30 SGT · powering-the-rack · Tenfold, then tenfold again · SCHEDULED (verified 6 Nov)
-Rack power has already risen tenfold within one wiring design. The next step is tenfold again.
+Rack power has already risen tenfold within one wiring design. The target is tenfold again.
 
-Google's 48 volt design scaled from 10 kW racks to 100 kW. Vertiv's reference design for Nvidia's GB200 NVL72 rack runs up to 132 kW. Nvidia says 54 volt racks start "to hit physical limits" above 200 kW, and its next rack, Kyber, is to house 576 Rubin Ultra GPUs by 2027, at around a megawatt. It is a house wired for a kettle and a few lamps being asked to run a heat pump, an oven and a car charger.
+Google's 48 volt design scaled from 10 kW racks to 100 kW. Vertiv's reference design for Nvidia's GB200 NVL72 rack runs up to 132 kW. Nvidia says 54 volt racks start "to hit physical limits" above 200 kW. In May 2025 it said 800 volts would serve racks of a megawatt and more from 2027, with its next rack, Kyber, which it has since shown again with no power figure and no date. It is a house wired for a kettle and a few lamps being asked to run a heat pump, an oven and a car charger.
 
 From the piece: Powering the rack: 800 volts reaches the AI rack before it reaches the building
 
@@ -300,7 +300,7 @@ Ask three parties when Hong Kong's AI megasite opens and you get three answers. 
 
 CLP, which is building the power supply for Sandy Ridge, targets operations in phases from mid-2027. Range, the winning bidder, expects its park to be delivered within 2028. The government told legislators on 22 April 2026 to expect operations in 2029. If the grid were the thing holding Hong Kong back, it would show up first in these dates. It does not. In Johor and Singapore, by contrast, the connection is the scarce thing.
 
-From the piece: Hong Kong has the plug: its grid builds to demand, and the chip needs a licence
+From the piece: Johor and Singapore: the plug, not the chip
 
 #DataCentres #HongKong #Grid
 
@@ -358,7 +358,7 @@ Source in the piece: "Even at Nebius, signed power runs five times ahead of conn
 ---
 
 ## M29 · Thu 17 Dec 2026 08:30 SGT · the-equipment-queue · A long queue has a cost · SCHEDULED (verified 6 Nov)
-A long order book is not free money. In the second quarter of 2026, Eaton's Electrical Americas margin fell two points year on year, to 27.5%.
+A long order book is not free money. In the second quarter of 2026, Eaton's Electrical Americas margin fell to 27.5%, and in the third it recovered only to 29.8%, below the 30.3% of a year earlier.
 
 The reason: higher metal costs met orders that had been priced months earlier. When a customer books today for delivery later, the maker carries the risk that its materials cost more by the time it builds. Like a builder who agreed a fixed price in spring and buys the timber in autumn.
 
@@ -385,9 +385,9 @@ Source in the piece: "The maker is paid to keep the queue, not to clear it"; GE 
 ## M31 · Mon 21 Dec 2026 08:30 SGT · nuclear-for-ai · New is not the same as slow · SCHEDULED (verified 6 Nov)
 A brand new reactor can keep pace with the old ones, as long as it burns ordinary fuel.
 
-In Canada, Ontario Power Generation is building the first 300 MW BWRX-300, a small reactor designed by GE Vernova, beside its existing Darlington nuclear station. Its new grid line is only 22 km, inside an existing corridor. It was licensed to build on 4 April 2025, and GE Vernova spoke of operation by the end of 2029, the same years as the American restarts. What divides the fast projects from the slow is not their age. It is the fuel and the plug.
+In Canada, Ontario Power Generation is building the first 300 MW BWRX-300, a small reactor designed by GE Vernova and Hitachi, beside its existing Darlington nuclear station. Its new grid line is only 22 km, inside an existing corridor. It was licensed to build on 4 April 2025, and Ontario Power Generation targets connection to the grid by the end of 2030, while the American uprates are still arriving. What divides the fast projects from the slow is not their age. It is the fuel and the plug.
 
-From the piece: Nuclear power for AI comes from old reactors first. The new ones wait on fuel.
+From the piece: Nuclear for AI: the old reactors come first because they already own the hard parts
 
 #NuclearEnergy #SMR #EnergyInfrastructure
 
@@ -396,9 +396,9 @@ Source in the piece: "Ordinary fuel, not age, divides the fast projects from the
 ---
 
 ## M32 · Tue 22 Dec 2026 08:30 SGT · powering-the-rack · Less copper per watt, not less copper · SCHEDULED (verified 6 Nov)
-Moving a row of AI racks from 415 volts AC to 800 volts DC carries 85% more power through the same size of conductor, and cuts copper by 45%.
+Moving a row of AI racks from 415 volts AC to 800 volts DC carries 157% more power through the same size of wire.
 
-Those are Nvidia's own figures, from May 2025. But less copper for each unit of power does not mean less copper overall. Power per rack is rising faster than the saving. It is like a car that becomes more efficient just as you start driving it much further: the fuel bill still goes up.
+That is Nvidia's own comparison, from October 2025. Its May 2025 post, on a different basis, gave 85% more power and 45% less copper. But less copper for each unit of power does not mean less copper overall. Power per rack is rising faster than the saving. It is like a car that becomes more efficient just as you start driving it much further: the fuel bill still goes up.
 
 From the piece: Powering the rack: 800 volts reaches the AI rack before it reaches the building
 
@@ -413,7 +413,7 @@ Drop the cooling tower from a midsize air-cooled hall and it saves about 2.9 lit
 
 In a large liquid-cooled hall, dropping the tower saves about 2 litres and keeps it, because power use barely moves.
 
-Counted whole, a large liquid hall with a dry cooler uses about 5.0 litres per kWh, about half the 9.7 of a midsize air hall with a tower. The sum is mine, built only from the lab's figures.
+Counted whole, a large liquid hall with a dry cooler, backed by an air-cooled chiller, uses about 5.0 litres per kWh, about half the 9.8 of a midsize air hall with a tower. Size accounts for part of that gap. The sum is mine, built only from the lab's figures.
 
 #DataCentres #Water #Cooling
 Source in the piece: "Most of a hall's water is spent at the power station, so the dry liquid hall uses about half"; Lawrence Berkeley National Laboratory (December 2024), Figure 4.4, my arithmetic as the piece states.
@@ -460,11 +460,11 @@ Source in the piece: "Every speed step buys the switch, the translator and the l
 ---
 
 ## M37 · Tue 29 Dec 2026 08:30 SGT · hong-kong-has-the-plug · Three flagships behind · SCHEDULED (verified 6 Nov)
-When Sandy Ridge's first phase runs, the best Nvidia chip it can hope for will sit at least three flagships behind.
+When Sandy Ridge's first phase runs, the best Nvidia chip it can hope for will sit about two generations behind.
 
-US rules review chips up to the class of Nvidia's H200, a chip of 2024, case by case when shipped from America to a user in Hong Kong. Anything better is presumed refused. Meanwhile Nvidia has launched a new flagship about every year: Blackwell in 2024, Blackwell Ultra in 2025, Rubin in 2026. Rubin has four times the H200's memory bandwidth. It is like opening a new garage in 2027 under a rule that caps you at a car from 2024.
+US rules review chips up to the class of Nvidia's H200, a chip of 2024, case by case when shipped from America to a user in Hong Kong. Anything better is presumed refused. Since then Nvidia has moved two generations on: Blackwell in 2024, then Rubin in 2026, with Blackwell Ultra between them. Rubin has four times the H200's memory bandwidth. It is like opening a new garage in 2027 under a rule that caps you at a car from 2024.
 
-From the piece: Hong Kong has the plug: its grid builds to demand, and the chip needs a licence
+From the piece: Johor and Singapore: the plug, not the chip
 
 #DataCentres #HongKong #ExportControls
 
@@ -489,7 +489,7 @@ SpaceX targets 100 kilowatts of computing for every tonne it launches. Its own s
 
 Its web page for AI1, its first AI satellite, gives "75 kW / ton", a quarter short if read as compute per tonne launched. Its finance chief's "About 5 megawatts per launch", at the 100 tonnes a launch SpaceX targets over time, is 50 kW per tonne: half the goal.
 
-It is like a car advertised at 100 miles per gallon whose brochure, page by page, says 75 and then 50. Nobody has yet weighed a compute satellite in service.
+It is like a car advertised at 100 miles per gallon whose brochure, page by page, says 75 and then 50. No computing satellite that has flown comes near the target yet.
 
 #Space #DataCentres #AIInfrastructure
 Source in the piece: "Every kilogram is a launch bill, and no design yet meets 10 kg per kW"; SpaceX AI1 web page (read 2 November 2026), Johnsen transcript (9 June 2026), roadshow slides (4 June 2026).
@@ -514,7 +514,7 @@ Nebius's US$17.4 billion agreement with Microsoft is "subject to the satisfactio
 
 In plain terms, Microsoft pays for chips that are installed and running, not for a building with the power on. If Nebius misses a delivery date after a grace period and cannot offer other capacity, Microsoft may end that service, and late delivery carries damages.
 
-Like a landlord paid only once the tenant has the keys and the lights work. Nebius defines active power as power "available for revenue generation". That is the stage buyers pay for.
+Like a landlord paid only once the tenant has the keys and the lights work. Nebius defines active power as "power being consumed by IT equipment". That is the stage buyers pay for, and Nebius said in August it had delivered every tranche to Microsoft.
 
 #DataCentres #AIInfrastructure #Neocloud
 Source in the piece: "Buyers pay only for the last stage, and the later megawatt costs more"; Nebius Form 6-K on the Microsoft agreement (8 September 2025) and letter (13 May 2026).
@@ -551,9 +551,9 @@ Source in the piece: "The permit and the pipe run on clocks of their own"; Penns
 ## M44 · Thu 07 Jan 2027 08:30 SGT · nuclear-for-ai · Sold at 50, permitted at 35 thermal · SCHEDULED (verified 6 Nov)
 A reactor sold to deliver up to 50 megawatts of electricity is, so far, permitted as two test reactors of 35 thermal megawatts each.
 
-TVA agreed on 18 August 2025 to buy up to 50 MW from Kairos Power's Hermes 2 at Oak Ridge from 2030. But Kairos's permits cover two test reactors of 35 thermal megawatts each, a measure of heat, which cannot make 50 electrical megawatts. The permits were issued under the research section of the law, which caps energy sales at half the plant's yearly running costs. The NRC has not ruled on a larger reactor.
+TVA agreed on 18 August 2025 to buy up to 50 MW from Kairos Power's Hermes 2 at Oak Ridge from 2030. But Kairos's permits cover two test reactors of 35 thermal megawatts each, a measure of heat, which cannot make 50 electrical megawatts. The permits were issued under the research section of the law, which caps energy sales at half the plant's yearly running costs. The NRC has not yet been asked to license a larger one.
 
-From the piece: Nuclear power for AI comes from old reactors first. The new ones wait on fuel.
+From the piece: Nuclear for AI: the old reactors come first because they already own the hard parts
 
 #NuclearEnergy #DataCentres #EnergyInfrastructure
 
@@ -564,7 +564,7 @@ Source in the piece: "The advanced reactors have permits and buyers, and no fuel
 ## M45 · Fri 08 Jan 2027 08:30 SGT · powering-the-rack · Version 0.3 · SCHEDULED (verified 6 Nov)
 The specification for the solid-state transformer, the electronic part that would bring 800 volts to a whole building, had reached only version 0.3 by July 2026.
 
-Nvidia has dated the first steps: a power rack beside the computers in the second half of 2026, and a row power centre of up to 2 MW per row in 2027. The power block that would convert power for a whole hall is described, but carries no date. My test: if a hall of 10 MW or more goes into service before 2028 fed by a central rectifier or solid-state transformer, the building did not wait for the rack, and I am wrong.
+Nvidia has dated the first steps: a power rack beside the computers in the second half of 2026, and a row power centre of up to 2 MW per row in 2027. The power block that would convert power for a whole hall carries no date of its own, and the next generation solid-state transformer is dated only "toward 2029". My test: if a hall of 10 MW or more goes into service before 2028 fed by a central rectifier or solid-state transformer, the building did not wait for the rack, and I am wrong.
 
 From the piece: Powering the rack: 800 volts reaches the AI rack before it reaches the building
 
@@ -641,7 +641,7 @@ A data centre is built never to lose power, so at the first flicker it runs to i
 
 Its proposal of 6 October 2026 says sites of 50 MW or more must stay connected through set dips and swells, including a full second at up to 120% of normal voltage. Switching to backup does not "by itself" count as compliance.
 
-It is like being told you may not yank every plug in the house when a bulb flickers. New projects must comply from 16 January 2027, existing sites by 16 January 2028, with limited exceptions.
+It is like being told you may not yank every plug in the house when a bulb flickers. New projects would comply from 16 January 2027, and existing sites by the later of 16 January 2028 or a year after switching on, with limited exceptions.
 
 #Grid #DataCentres #Power
 Source in the piece: "One morning's 3,800 MW drop made holding on a condition of the plug"; PJM's ride-through proposal (6 October 2026).
@@ -699,11 +699,11 @@ Source in the piece: intro and "What would prove me wrong"; Schneider Electric r
 ---
 
 ## M56 · Mon 25 Jan 2027 08:30 SGT · building-your-own-power · The turbine arrives as the lease ends · SCHEDULED (verified 6 Nov)
-Meta's lease on its Hyperion AI campus in Louisiana runs from 2029 for four years, renewable up to 20.
+Meta's lease on its Hyperion AI campus in Louisiana runs from 2029 for an initial four years, renewable up to 20.
 
-A heavy gas turbine slot GE Vernova sells now ships in 2032. It then needs about 18 months on site, so it makes power no earlier than 2033.
+A heavy gas turbine slot GE Vernova sells now ships in 2032. It then needs about 18 months on site, so it makes power around 2034.
 
-So a turbine ordered today makes power about when that first lease term ends. And the risk sits with the buyer: Meta's power agreement with Entergy carries minimum charges and an exit fee, owed whether or not AI demand holds up.
+So a turbine ordered today makes power just after that first four-year term ends. And the risk sits with the buyer: Meta's power agreement with Entergy carries minimum charges and an exit fee, and Meta guarantees part of the campus's value for 16 years if it leaves.
 
 #GasTurbines #DataCentres #Power
 Source in the piece: "Every route lands years out, and a turbine ordered today lands last"; GE Vernova call (28 October 2026), Meta 2025 Form 10-K, Entergy filings.
@@ -713,9 +713,9 @@ Source in the piece: "Every route lands years out, and a turbine ordered today l
 ## M57 · Tue 26 Jan 2027 08:30 SGT · nuclear-for-ai · The Russian gap can be bridged · SCHEDULED (verified 6 Nov)
 Russia sold 26% of the enrichment American reactor owners bought in 2025, and the waivers that let them keep buying end by 1 January 2028.
 
-That sounds like a cliff. It is a gap that can be bridged. US-origin supply was 23%. Urenco's Eunice plant in New Mexico adds about a fifth of the Russian volume by early 2027. And at the end of 2025 owners held 118 million pounds of uranium, against 40.9 million loaded that year. Like a household with a full larder when one shop shuts. The gap that cannot be bridged for now is HALEU, the richer fuel the new reactors need.
+That sounds like a cliff. It is a squeeze on price and timing, not a wall. US-origin supply was 23%. Urenco's Eunice plant in New Mexico adds about a fifth of the Russian volume by early 2027. And at the end of 2025 owners held 118 million pounds of uranium, against 40.9 million loaded that year. Much of it still needs enriching, but 51.8 million pounds was already enriched and 7.8 million was finished fuel. Like a household with a stocked larder when one shop shuts. The gap that cannot be bridged for now is HALEU, the richer fuel the new reactors need.
 
-From the piece: Nuclear power for AI comes from old reactors first. The new ones wait on fuel.
+From the piece: Nuclear for AI: the old reactors come first because they already own the hard parts
 
 #NuclearEnergy #Uranium #EnergyInfrastructure
 
@@ -726,7 +726,7 @@ Source in the piece: "What would prove me wrong" (the Eunice paragraph); EIA (Au
 ## M58 · Wed 27 Jan 2027 08:30 SGT · powering-the-rack · Where the evidence moved against me · SCHEDULED (verified 6 Nov)
 One piece of evidence for my September claim on Vertiv has gone: service revenue.
 
-Vertiv's reported growth was swollen by acquisitions. Stripping those out, services and spares grew 18.1% in the third quarter of 2026, against 63.6% for products. Its adjusted operating margin did widen 2.9 points to 25.2%, with orders more than doubling, but that fits a business spreading its costs over far more sales as well as one selling richer gear. So the claim now rests on Vertiv's own estimate of what it can sell into each megawatt, up about 10 to 15% on its earlier range.
+Vertiv's reported growth was swollen by acquisitions. Stripping those out, services and spares grew 18.1% in the third quarter of 2026, against 63.6% for products. Its adjusted operating margin did widen 2.9 points to 25.2%, with orders more than doubling, but Vertiv's finance chief credited sales volume, operating leverage and productivity, not richer gear. So the claim now rests on Vertiv's own estimate of what it can sell into each megawatt, up about 10 to 15% on its earlier range.
 
 From the piece: Powering the rack: 800 volts reaches the AI rack before it reaches the building
 
@@ -794,7 +794,7 @@ Hong Kong's one AI megasite is meant to hold 36 times the computing power the wh
 
 The government's figure for Sandy Ridge is 180,000 petaflops by 2032, against a base of 5,000 petaflops today, 3,000 of them at Cyberport's AI Supercomputing Centre. The site has 250,000 square metres of floor area, and the investment is HK$23.8 billion to its third year of operation. So who decides what runs there? In the government's words to legislators: "the operator according to its business plan and market demand".
 
-From the piece: Hong Kong has the plug: its grid builds to demand, and the chip needs a licence
+From the piece: Johor and Singapore: the plug, not the chip
 
 #DataCentres #HongKong #AIInfrastructure
 
