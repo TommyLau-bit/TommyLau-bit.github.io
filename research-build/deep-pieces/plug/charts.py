@@ -80,7 +80,7 @@ A = [('2024/25', 28.92, 'c-bar c-mute', '$28.92', ''), ('2025/26', 269.92, 'c-ba
      ('2026/27', 329.17, 'c-bar', '$329.17', 'cap'), ('2027/28', 333.44, 'c-bar', '$333.44', 'cap'),
      ('2028/29', 325.00, 'c-bar', '$325', 'cap'), ('2029/30', 337.83, None, 'cap $337.83', 'December')]
 for i, (yr, v, cls, vt, note) in enumerate(A):
-    cx = 100 + i * 84
+    cx = 95 + i * 80
     if cls:
         o.append(f'<rect class="{cls}" x="{cx-26}" y="{Y(v):.1f}" width="52" height="{base-Y(v):.1f}" rx="2"/>')
     else:
@@ -88,7 +88,7 @@ for i, (yr, v, cls, vt, note) in enumerate(A):
     o.append(f'<text class="c-lab c-s2t" x="{cx}" y="{Y(v)-8:.1f}" text-anchor="middle">{vt}</text>')
     o.append(f'<text class="c-box-t" x="{cx}" y="{base+18}" text-anchor="middle">{yr}</text>')
     if note: o.append(f'<text class="c-note" x="{cx}" y="{base+33}" text-anchor="middle">{note}</text>')
-cx = 100 + 4 * 84
+cx = 95 + 4 * 80
 o.append(f'<rect class="c-bar c-mute" x="{cx-26}" y="{Y(554.72):.1f}" width="52" height="{Y(325)-Y(554.72):.1f}" rx="2" style="opacity:.35"/>')
 o.append(f'<text class="c-note" x="{cx-34}" y="{Y(554.72)+4:.1f}" text-anchor="end">$554.72 without the cap, reported</text>')
 o.append(f'<line class="c-base" x1="{x0}" y1="{base}" x2="{x1}" y2="{base}"/>')

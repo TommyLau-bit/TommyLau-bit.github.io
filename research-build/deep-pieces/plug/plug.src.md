@@ -218,7 +218,7 @@ The market monitor attributes $6.3 billion, 38.2% of the 2028/29 auction, to dat
 
 <!--FIG:bill-chart-->
 
-In the first half of 2026, PJM's total wholesale cost was $114.50 per megawatt-hour, 50% more than a year earlier. Energy, the power actually used, was 63.5% of it and rose 48%, mostly with gas prices. Capacity tripled, to 17.1% of the total. The monitor puts the data centre effect on capacity at $11.11 per megawatt-hour, 9.7% of the wholesale cost.
+In the first half of 2026, PJM's total wholesale cost was $114.50 per megawatt-hour, 50% more than a year earlier. Energy, the power actually used, was 63.5% of it and rose 48%. Capacity tripled, to 17.1% of the total. The monitor puts the data centre effect on capacity at $11.11 per megawatt-hour, 9.7% of the wholesale cost.
 
 What reaches a household depends on its state. In Pennsylvania, where retail prices follow wholesale costs, the regulator tied June 2026 rises of about 3% to 10% to PJM's capacity costs, as reported. Virginia's legislative auditor estimated in December 2024 that data centre growth could add $14 to $37 a month to a typical household's generation and transmission costs by 2040, in 2024 dollars.
 

@@ -65,7 +65,7 @@ save('path', W, gy + 92, ''.join(o), 'The five steps from application to running
 # ---------- 2. The dip: what the grid sees, what the site does, and PJM's new rule ----------
 W = 940; o = []; a = o.append
 # left panel: voltage at the site over about a minute and a half, not to scale in time
-px0, px1, vy0, vy1 = 70, 560, 40, 190          # voltage plot box (1.2 pu at top, 0 at bottom)
+px0, px1, vy0, vy1 = 70, 548, 40, 190          # voltage plot box (1.2 pu at top, 0 at bottom)
 V = lambda pu: vy1 - pu / 1.2 * (vy1 - vy0)
 a(f'<text class="i-head" x="10" y="18">What the site sees on the line, and what it does</text>')
 for pu, lab in ((1.0, 'normal'), (0.5, 'half')):
@@ -89,7 +89,7 @@ for k, x in enumerate(dips):
     a(f'<circle class="{"i-hot-f" if k == 2 else "i-fill"}" cx="{x+8}" cy="{ly+34}" r="11"/><text class="i-t" x="{x+8}" y="{ly+39}" text-anchor="middle">{k+1}</text>')
 a(f'<text class="i-n" x="{px0}" y="{ly+66}">The UPS counts the dips. A common setting: three within a minute,</text>')
 a(f'<text class="i-n" x="{px0}" y="{ly+82}">and the site moves to its generators until staff switch it back.</text>')
-a(f'<text class="i-hot-t" x="{dips[-1]+24}" y="{ly+4}">the site leaves the grid</text>')
+a(f'<text class="i-hot-t" x="{dips[-1]+26}" y="{ly+39}">the site leaves the grid</text>')
 # right panel: PJM's proposed envelope, how long a site must stay on at each voltage
 rx0 = 640; rw = 280
 a(f'<text class="i-head" x="{rx0-20}" y="18">PJM\'s proposed rule: stay on for at least</text>')
