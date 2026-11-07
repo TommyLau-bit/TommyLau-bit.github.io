@@ -44,7 +44,7 @@ export const CLAIMS: Claim[] = [
     home: 'the-queue-not-the-chip',
     claim: 'A grid connection queue is really two queues. Governments can shorten the paperwork one, but the equipment one sets the pace.',
     breaksIf: 'Connection timelines keep compressing across the board, or equipment lead times normalise faster than utility spending is committed. Also if building power on site removes the constraint rather than moving it.',
-    watch: ['Transformer and high-voltage cable lead times', 'The Green Lane project count beyond 33', 'Whether the press-reported 72.76 per cent Johor-Singapore zone utilisation is confirmed at source', 'Who wins Singapore\'s capacity award under the 1.25 ceiling'],
+    watch: ['Transformer and high-voltage cable lead times', 'The Green Lane project count beyond 33', 'Whether the press-reported 72.76 per cent Johor-Singapore zone utilisation is confirmed at source', 'Who won Singapore\'s capacity award under the 1.25 ceiling (four operators, 50 MW each, 21 August 2026)'],
   },
   {
     id: 'two-governments-one-confession',
@@ -52,7 +52,7 @@ export const CLAIMS: Claim[] = [
     home: 'the-queue-not-the-chip',
     claim: 'Malaysia building more grid and Singapore rationing who may connect are opposite answers to the same shortage of connection capacity.',
     breaksIf: 'Malaysia\'s spending turns out to be ordinary renewal weighted towards generation rather than connection, or Singapore\'s efficiency ceiling moves on a fixed schedule rather than with scarcity, or a third constrained market does neither.',
-    watch: ['The Green Lane project count beyond 33', 'Who wins the Singapore capacity award', 'Whether Johor\'s 72.76 per cent utilisation figure is restated or explained'],
+    watch: ['The Green Lane project count beyond 33', 'Who won the Singapore capacity award (four operators, 50 MW each, 21 August 2026)', 'Whether Johor\'s 72.76 per cent utilisation figure is restated or explained'],
   },
   {
     id: 'the-power-it-drops',
