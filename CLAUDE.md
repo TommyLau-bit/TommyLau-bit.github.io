@@ -36,7 +36,7 @@ work on notes, calls, the research page or share prices, read `CALLS-SPEC.md`.
   in a piece or a note is found wrong, edit it so it is simply right: the
   sentence, the chart, the evidence table, the PDF. No "Correction" paragraphs,
   no "Where I was wrong", no `correction` field (check-call.py fails one). The
-  claim sentences in claims.ts keep their wording; the archived original text
+  claims in claims.ts are corrected in place when a fact in them is wrong (Tommy, 7 Nov 2026), never otherwise reworded; the archived original text
   of merged pieces is never edited.
 - **Notes and pieces are independent** (Tommy, 2 Nov 2026, permanent; replaces
   "journal piece first"). A note may cover a company the journal never
