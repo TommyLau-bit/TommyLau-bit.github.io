@@ -204,7 +204,7 @@ https://thephysicallayer.fyi/journal/every-megawatt-got-harder/
 
 Jane Street's new AI training centre in Texas has empty floor it cannot use.
 
-The trading firm runs 4,032 Nvidia GPUs there, cooled by liquid, in a building designed for air. Each cabinet draws about 140 kW against 10 to 40 for an air-cooled one, so the power the utility agreed to supply now fills a fraction of the room. Its engineers run as close to that limit as they dare, with their own software ready to shut machines down before a breaker trips, because an idle GPU costs more than the hardware.
+The trading firm runs 4,032 Nvidia GPUs there, cooled by liquid, in a building designed for air. Each AI cabinet draws over 100 kW, against about 7.5 kW for a typical rack, so the power the utility agreed to supply now fills a fraction of the room. Its engineers run as close to that limit as they dare, with their own software ready to shut machines down before a breaker trips, because an idle GPU costs more than the hardware.
 
 The piece covers why the floor went quiet, what it takes to put water where water was forbidden, and why power is so much harder to move around than cooling.
 
