@@ -11,7 +11,7 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 - **6 Nov late evening: all 13 pieces rewritten in the study-deck teaching style, on branch `deck-style-rewrite` (NOT merged, NOT pushed).** Each piece now has the split up front, the five-step chain with a choke-point diagram, one mapped analogy, plain falsifiers and an out-of-the-box beat. Every DECK_FINDINGS fact is fixed in place. TSMC now appears only in the fixed 2 Nov claim sentence (Tommy: "Keep it word for word"). Full record: research-build/DECK-REWRITE-2026-11-06.md.
 - **6 Nov evening: nuclear-for-ai HALEU fact fixed in place** (Tommy delegated the call). Centrus Q3 release, 4 Nov 2026: the 16-centrifuge cascade now enriches HALEU for the commercial market, no volume, no DOE funding for FY2027. Heading, summary, intro, analogy, section text, chart title, table row and Oklo evidence line updated. Claim and test NOT reworded. The 16 Nov LinkedIn teaser ("its contracted production stopped") is still true and was left.
 
-## START HERE (as of Sat 7 Nov 2026, ~15:30 SGT)
+## START HERE (as of Sat 7 Nov 2026, ~15:30 SGT; retirements added ~15:30)
 
 **New direction (Tommy, 7 Nov): depth over breadth.** The journal is now for investors and analysts: every piece read once with every question answered, every term explained, detailed visuals in the style of the homepage map. He would rather have five or six perfect pieces than fourteen surface ones. Spec: research-build/deep-pieces/DEPTH-FORMAT.md (PILOT until he approves). Memory: depth-first-journal.
 
@@ -19,7 +19,9 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 
 Also on the branch: checker depth mode (`format: "depth"`), "In this piece" contents list, illustration CSS (.illo, .i-*).
 
-**Tommy's question, open:** which of the 13 live pieces to rebuild in depth, keep or retire. Claude recommended an energy-first core (see the 7 Nov session); nothing retired yet. The 63 scheduled LinkedIn mini posts reference live topics, so check them before retiring any piece.
+**The plan (Tommy, 7 Nov: "Yes, that plan").** Rebuild in depth, in this order: Johor and Singapore (fold in Hong Kong has the plug and the Malaysia part of contracted-energised-running; first, for the SemiAnalysis call Wed 11 Nov), Nuclear for AI (fix the stale facts below; do not repeat microreactors), Building your own power, The equipment queue, America rations the plug. Contracted-energised-running folds into the six. Powering the rack, Heat and water and Data centres in space stay as they are.
+
+**Retired 7 Nov (live after the merge):** memory-not-maths, the-chip-supply-chain, ten-thousand-chips-one-thought. Text archived as research-build/archive/pieces/<slug>--deep-retired-2026-11-07.md; their URLs, the 15 merged-anchor URLs that pointed into them, and their old /companies and /topics URLs all land on the homepage. Their layers stay in stack.ts with no pieces (the descent walk still passes through them; the homepage list and funnel hide empty layers). Their claims stay in claims.ts as the record. **Open: 15 scheduled LinkedIn mini posts on these pieces (M08 18 Nov, M09, M10, M21 to M23, M34 to M36, M47 to M49, M60 to M62) point at retired pages; delete only on Tommy's word.**
 
 **nuclear-for-ai has stale HALEU facts** (from the 7 Nov research): Centrus made about 1.8 t of HALEU gas by mid-2026, not "0.9 t in phase two, earlier not stated"; government stock is published (21.2 t by 2028); 20 Oct 2026 HALEU transfer agreement missing; SWU ratio is ~5.2 against 4.95% fuel. Fix when it is rebuilt.
 

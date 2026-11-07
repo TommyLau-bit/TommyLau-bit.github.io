@@ -3,7 +3,9 @@
 import { getCollection } from 'astro:content';
 export async function getStaticPaths() {
   const posts = await getCollection('journal');
-  return [...new Set(posts.flatMap((p) => p.data.tags.map((t) => t.toLowerCase())))].map((tag) => ({ params: { tag } }));
+  // Tags used only by the three chip pieces retired on 7 Nov 2026 keep their old URLs.
+  const retired = ['memory','networking','optics','the-stack'];
+  return [...new Set([...posts.flatMap((p) => p.data.tags.map((t) => t.toLowerCase())), ...retired])].map((tag) => ({ params: { tag } }));
 }
 return Astro.redirect('/');
 ---

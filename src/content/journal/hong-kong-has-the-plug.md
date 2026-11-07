@@ -123,7 +123,7 @@ A substation is slow but certain once a utility must build it; a licence is quic
 
 **The route.** Case-by-case review applies only to chips shipped straight from America; re-exports from abroad and transfers within China stay presumed refused. On my reading of the rule text, that inverts the picture in Johor, Malaysia's data centre hub, for this one class. An H200-class shipment to a Chinese-headquartered tenant's hall in Hong Kong gets case-by-case review; the same shipment to that tenant's hall in Johor is presumed refused.
 
-**The ceiling ages.** Nvidia has launched a new flagship about every year: Blackwell in 2024, Blackwell Ultra in 2025 and Rubin in 2026. When Sandy Ridge's first phase runs, the best chip it may hope for will sit at least three flagships behind, and Rubin already has four times the H200's memory bandwidth, on the figures in [Memory, not maths](/journal/memory-not-maths/).
+**The ceiling ages.** Nvidia has launched a new flagship about every year: Blackwell in 2024, Blackwell Ultra in 2025 and Rubin in 2026. When Sandy Ridge's first phase runs, the best chip it may hope for will sit at least three flagships behind, and Rubin already has four times the H200's memory bandwidth, on Nvidia's published specifications.
 
 <figure class="chart">
 <p class="chart-title">Hong Kong's chip ceiling stands still while Nvidia launches a flagship a year</p>
@@ -151,7 +151,7 @@ A substation is slow but certain once a utility must build it; a licence is quic
 <circle class="c-dot c-s1" cx="517.5" cy="180" r="5"/>
 <text class="c-lab c-s1t" x="517.5" y="166" text-anchor="middle">Government</text>
 </svg>
-<figcaption>Nvidia spec pages, as in <a href="/journal/memory-not-maths/">Memory, not maths</a>; 15 CFR 742.6, as revised 15 January 2026; Sandy Ridge dates from CLP (12 October 2026), Range (28 August 2026) and LegCo (22 April 2026). My framing. Open circles are not announced chips, and the ceiling holds only until the rule changes.</figcaption>
+<figcaption>Nvidia spec pages; 15 CFR 742.6, as revised 15 January 2026; Sandy Ridge dates from CLP (12 October 2026), Range (28 August 2026) and LegCo (22 April 2026). My framing. Open circles are not announced chips, and the ceiling holds only until the rule changes.</figcaption>
 </figure>
 
 ## Megawatts are counted and licences are not

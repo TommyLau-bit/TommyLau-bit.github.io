@@ -53,7 +53,7 @@ export const STACK: Layer[] = [
     kind: 'compute',
     what: 'Thousands of chips swap partial results constantly, over copper inside the rack and light everywhere else.',
     constraint: 'A slow link leaves the most expensive silicon in the building waiting.',
-    pieces: ['ten-thousand-chips-one-thought'],
+    pieces: [], // retired 7 Nov 2026; the layer stays for the descent walk
   },
   {
     id: 'memory',
@@ -61,7 +61,7 @@ export const STACK: Layer[] = [
     kind: 'compute',
     what: 'Stacked memory sits beside each processor, feeding it the model\'s numbers.',
     constraint: 'For most of the time a model is answering, the chip is waiting on memory, not maths.',
-    pieces: ['memory-not-maths'],
+    pieces: [], // retired 7 Nov 2026; the layer stays for the descent walk
   },
   {
     id: 'chips',
@@ -69,7 +69,7 @@ export const STACK: Layer[] = [
     kind: 'compute',
     what: 'The processors that do the work, and the few factories able to make and package them.',
     constraint: 'A new chip factory takes two to three years to build and one to two more to fill.',
-    pieces: ['the-chip-supply-chain'],
+    pieces: [], // retired 7 Nov 2026; the layer stays for the descent walk
   },
   {
     id: 'operators',

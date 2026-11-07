@@ -272,7 +272,7 @@ At the scale of a part, a bushing from Sweden waits 135 weeks and one American m
 
 At the scale of a factory, the makers add halls only as fast as signed orders justify. Years of work rose while the plants were announced, and the halls land from 2027 into a bigger pile.
 
-At the scale of the grid, a connection alone does not start a hall. A utility can clear a site's place in the grid queue, as in [America rations the plug](/journal/america-rations-the-plug/) and [the plug, not the chip](/journal/the-queue-not-the-chip/), and the site still waits for its transformer. Nvidia, the designer of the flagship AI chips, has launched a new one about every year, as [Memory, not maths](/journal/memory-not-maths/) traces. A transformer ordered today joins a pile that would take three or four of those generations to clear, so a data centre's real start date is set years before the chips it will run are on sale.
+At the scale of the grid, a connection alone does not start a hall. A utility can clear a site's place in the grid queue, as in [America rations the plug](/journal/america-rations-the-plug/) and [the plug, not the chip](/journal/the-queue-not-the-chip/), and the site still waits for its transformer. Nvidia, the designer of the flagship AI chips, has launched a new one about every year. A transformer ordered today joins a pile that would take three or four of those generations to clear, so a data centre's real start date is set years before the chips it will run are on sale.
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>

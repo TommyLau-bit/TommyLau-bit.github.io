@@ -7,7 +7,10 @@ import { getPitches } from '../../lib/calls';
 export async function getStaticPaths() {
   const posts = await getCollection('journal', ({ data }) => !data.draft);
   const notes = new Map((await getPitches()).map((n) => [slugify(n.data.company), n.id]));
-  return companyIndex(posts).map((c) => ({ params: { slug: c.slug }, props: { note: notes.get(c.slug) } }));
+  // Companies named only in the three chip pieces retired on 7 Nov 2026 keep their old URLs.
+  const retired = ['ajinomoto','arista','asml','broadcom','ciena','cisco','coherent','corning','eoptolink','fabrinet','fujikura','ibiden','innolight','intel','lumentum','marvell','micron','samsung','seagate','sk-hynix','spil','toshiba','trumpf','unimicron','western-digital','zeiss'];
+  const live = companyIndex(posts).map((c) => c.slug);
+  return [...new Set([...live, ...retired])].map((slug) => ({ params: { slug }, props: { note: notes.get(slug) } }));
 }
 const { note } = Astro.props;
 return Astro.redirect('/', 301);

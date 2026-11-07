@@ -12,12 +12,11 @@ const byId = Object.fromEntries(all.map((p) => [p.id, p]));
 // A piece listed under two layers shows once, under its home layer (layerOf).
 // Every layer keeps its section (and its #id anchor, which the descent and the
 // rest of the site link to), even one whose only piece lives under another layer.
-const layers = STACK.map((l, i) => ({
+const layers = STACK.map((l) => ({
   ...l,
-  n: String(i + 1).padStart(2, '0'),
   posts: posts.filter((p) => layerOf(p.id)?.id === l.id),
   also: l.pieces.map((id) => byId[id]).filter((p) => p && layerOf(p.id)?.id !== l.id),
-})).filter((l) => l.posts.length > 0 || l.also.length > 0);
+})).filter((l) => l.posts.length > 0 || l.also.length > 0).map((l, i) => ({ ...l, n: String(i + 1).padStart(2, '0') }));
 const mapped = new Set(STACK.flatMap((l) => l.pieces));
 const other = posts.filter((p) => !mapped.has(p.id));
 const homeOf = (id: string) => layers.find((l) => l.id === layerOf(id)?.id);
