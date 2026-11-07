@@ -45,7 +45,7 @@ rows = [
   ('H', 'Liquid-cooled hall, large'),
   ('With a cooling tower', 1.13, 2.0, True),
   ('Dry cooler, adiabatic assist', 1.10, 0.13, True),
-  ('Dry cooler', 1.10, 0.0, True),
+  ('Dry cooler, chiller backup', 1.10, 0.0, True),
 ]
 o = []; y = 52; x0 = 172; pw = 160; gx = x0 + pw + 34; ww = W - gx - 36
 P = lambda v: x0 + (v - 1.0) / 1.0 * pw          # PUE 1.0 to 2.0
@@ -65,7 +65,7 @@ for r in rows:
     y += 30
 g = '<g class="c-grid">' + ''.join(f'<line x1="{P(t):.1f}" y1="{y0-10}" x2="{P(t):.1f}" y2="{y-8}"/>' for t in (1.0, 1.5, 2.0)) + ''.join(f'<line x1="{Wt(t):.1f}" y1="{y0-10}" x2="{Wt(t):.1f}" y2="{y-8}"/>' for t in (0, 1, 2, 3)) + '</g>'
 ax = '<g class="c-axis">' + ''.join(f'<text x="{P(t):.1f}" y="{y+8}" text-anchor="middle">{t:g}</text>' for t in (1.0, 1.5, 2.0)) + ''.join(f'<text x="{Wt(t):.1f}" y="{y+8}" text-anchor="middle">{t:g}</text>' for t in (0, 1, 2, 3)) + '</g>'
-save('lbnl-chart', g + ax + ''.join(o), y + 18, 'Paired bar charts of simulated yearly medians from Lawrence Berkeley National Laboratory. Midsize air-cooled hall: with a cooling tower, PUE about 1.52 and about 2.9 litres of water evaporated per kilowatt-hour; with an air-cooled chiller, about 1.83 and near zero water; with a dry cooler backed by an air-cooled chiller, about 1.6 and near zero. Large liquid-cooled hall: with a cooling tower, about 1.13 and 2.0 litres; dry cooler with adiabatic assist, about 1.10 and 0.13 litres; dry cooler alone, about 1.10 and no water.')
+save('lbnl-chart', g + ax + ''.join(o), y + 18, 'Paired bar charts of simulated yearly medians from Lawrence Berkeley National Laboratory. Midsize air-cooled hall: with a cooling tower, PUE about 1.52 and about 2.9 litres of water evaporated per kilowatt-hour; with an air-cooled chiller, about 1.83 and near zero water; with a dry cooler backed by an air-cooled chiller, about 1.6 and near zero. Large liquid-cooled hall: with a cooling tower, about 1.13 and 2.0 litres; dry cooler with adiabatic assist, about 1.10 and 0.13 litres; dry cooler backed by an air-cooled chiller, about 1.10 and no water.')
 
 # 3 whole water: power station plus roof
 rows = [
@@ -93,11 +93,11 @@ save('whole-chart', leg + g + ax + ''.join(o) + f'<line class="c-base" x1="{x0}"
 b, H, sx, top, bot = hbars([
   ('The Dalles, Oregon', 'water judged not high risk', 469.0, 'c-bar c-mute', '469.0'),
   ('Henderson, Nevada', 'desert; rating not published', 239.4, 'c-bar c-mute', '239.4'),
-  ('Quilicura, Santiago', 'water-cooled', 143.0, 'c-bar c-mute', '143.0'),
+  ('Quilicura, Santiago', 'evaporates water', 143.0, 'c-bar c-mute', '143.0'),
   ('Mesa, Arizona', 'Google named it high risk', 9.7, 'c-bar c-alt', '9.7'),
 ], 500, x0=170, ticks=(0, 100, 200, 300, 400, 500), right=56, y=44)
 lx = sx(50)
 b += f'<line class="c-today" x1="{lx:.1f}" y1="{top}" x2="{lx:.1f}" y2="{bot}"/>'
 b += f'<text class="c-note" x="{lx+6:.1f}" y="{bot+16}">the claim\'s line: 50 million gallons a year</text>'
-save('sites-chart', b, bot + 24, 'Bar chart of water consumed in 2025 at four Google campuses, in millions of gallons. The Dalles, Oregon, where Google judged the water not at high risk, 469.0. Henderson, Nevada, a desert site whose source rating Google does not publish, 239.4. Quilicura, Santiago, Chile, water-cooled, 143.0. Mesa, Arizona, which Google named as high water risk, 9.7. A dashed line marks the claim\'s limit of 50 million gallons a year.')
+save('sites-chart', b, bot + 24, 'Bar chart of water consumed in 2025 at four Google campuses, in millions of gallons. The Dalles, Oregon, where Google judged the water not at high risk, 469.0. Henderson, Nevada, a desert site whose source rating Google does not publish, 239.4. Quilicura, Santiago, Chile, which evaporates water, 143.0. Mesa, Arizona, which Google named as high water risk, 9.7. A dashed line marks the claim\'s limit of 50 million gallons a year.')
 print('ok')
