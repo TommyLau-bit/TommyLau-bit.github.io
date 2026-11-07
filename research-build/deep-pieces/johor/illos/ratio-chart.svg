@@ -1,0 +1,14 @@
+<svg viewBox="0 0 560 215" role="img" aria-label="Bar chart. The same data centre draw, about 1.37 GW in August 2026, is 58.5% of the 2,346 MW contracted (Hansard, 28 October 2026) and about 23% of the 6 GW booked at 45 operating sites (Hansard, 13 October 2026). In June 2026, 1,256 MW was about 22% of the 5.65 GW maximum demand in Tenaga's system. The claim's test line is 40% of Tenaga's series.">
+<g class="c-axis"><text x="215" y="46" text-anchor="end">Against contracted demand</text><text x="215" y="102" text-anchor="end">Against booked demand at</text><text x="215" y="158" text-anchor="end">Against maximum demand</text></g>
+<text class="c-note" x="215" y="62" text-anchor="end">Aug 2026, Hansard 28 Oct</text>
+<rect class="c-bar" x="225" y="34" width="234" height="30" rx="2"/>
+<text class="c-lab c-s2t" x="467" y="54">58.5%</text>
+<text class="c-note" x="215" y="118" text-anchor="end">45 operating sites, Aug 2026</text>
+<rect class="c-bar c-alt" x="225" y="90" width="91.2" height="30" rx="2"/>
+<text class="c-lab c-s3t" x="324.2" y="110">about 23%</text>
+<text class="c-note" x="215" y="174" text-anchor="end">in Tenaga's system, Jun 2026</text>
+<rect class="c-bar c-alt" x="225" y="146" width="88.8" height="30" rx="2"/>
+<text class="c-lab c-s3t" x="321.8" y="166">about 22%</text>
+<line class="c-today" x1="385" y1="24" x2="385" y2="206"/><text class="c-today-t" x="385" y="18" text-anchor="middle">40%, the test's line</text>
+<line class="c-base" x1="225" y1="24" x2="225" y2="206"/>
+</svg>

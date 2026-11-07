@@ -1,0 +1,11 @@
+<svg viewBox="0 0 560 190" role="img" aria-label="Bar chart in megawatts. CLP Power had 9,258 MW of capacity for Hong Kong customers at the end of 2025 against a highest local demand of 7,455 MW in 2025. Its data centre customers drew an average of about 283 MW in the first nine months of 2026.">
+<g class="c-axis"><text x="215" y="40" text-anchor="end">Capacity, end 2025</text><text x="215" y="94" text-anchor="end">Highest demand, 2025</text><text x="215" y="140" text-anchor="end">Data centres, average</text></g>
+<rect class="c-bar c-mute" x="225" y="20" width="240.7" height="30" rx="2"/>
+<text class="c-lab c-s1t" x="473.7" y="40">9,258 MW</text>
+<rect class="c-bar c-mute" x="225" y="74" width="193.8" height="30" rx="2"/>
+<text class="c-lab c-s1t" x="426.8" y="94">7,455 MW</text>
+<text class="c-note" x="215" y="156" text-anchor="end">first nine months of 2026</text>
+<rect class="c-bar" x="225" y="128" width="7.4" height="30" rx="2"/>
+<text class="c-lab c-s2t" x="240.4" y="148">about 283 MW</text>
+<line class="c-base" x1="225" y1="12" x2="225" y2="182"/>
+</svg>

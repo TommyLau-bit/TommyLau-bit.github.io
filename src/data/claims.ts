@@ -24,6 +24,14 @@ export const CLAIMS: Claim[] = [
     watch: ['DOE approval of Standard Nuclear\'s SN-TN and SN-ID TRISO plants (targeted Q4 2026)', 'Crusoe and Aalo\'s 2027 demonstration at INL, on ordinary LEU', 'The NRC\'s final microreactor rule (Part 57, proposed 1 May 2026)', 'The first Janus reactor against September 2028, and Radiant\'s full-power test at DOME', 'Centrus HALEU volumes and any fourth DOE allocation round'],
   },
   {
+    id: 'johor-singapore-rights',
+    date: '2026-11-07T15:52:33+08:00',
+    home: 'johor-singapore-depth',
+    claim: 'In Johor and Singapore the right to draw grid power, not the supply of chips, decides who gets to build, and both governments now ration it: Malaysia\'s data centres will draw less than 40% of the maximum demand of the data centre projects in Tenaga\'s system at June 2027, and Malaysia will still give new data centres grid power only from the spare reserve margin at 31 December 2027.',
+    breaksIf: 'Tenaga\'s figures for June 2027 show Malaysia\'s data centre load at 40% or more of the maximum demand of the data centre projects in its system; or, before 31 December 2027, the Malaysian government announces that new data centres may connect to the grid without the spare reserve margin test stated in Parliament on 28 October 2026.',
+    watch: ['Tenaga\'s quarterly data centre draw against maximum demand in its system (1,256 MW of 5.65 GW, June 2026)', 'Any Johor-only figure for data centre draw', 'Whether the Energy Focus Group\'s margin test counts bookings, staggered demand or expected draw', 'Singapore\'s next call (review 18 to 24 months from August 2026) and any published award under the Strategic Digital Infrastructure Scheme', 'US rules on remote access to controlled chips (Remote Access Security Act)', 'Sedenak West 500/275/132 kV substation and the 500 kV backbone to Kulai East (by 2030)'],
+  },
+  {
     id: 'the-queue-not-the-chip',
     date: '2026-07-27',
     claim: 'In Johor and Singapore, a finished grid connection, not chip supply, is the scarce thing holding the AI buildout back.',

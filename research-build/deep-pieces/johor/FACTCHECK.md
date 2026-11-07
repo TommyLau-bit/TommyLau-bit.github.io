@@ -1,0 +1,109 @@
+# Fact-check: johor-singapore-depth.md (adversarial pass, 7 November 2026)
+
+Scope: body, summary, all figure titles, labels, aria text and captions, the claims record, the evidence fold, the exposure map and the sources line. Primary documents re-opened for this pass: Tenaga Green Lane release (9 Aug 2023), Tenaga Connection Charge Book 2025 (pp. 15 to 18, 44 to 48), Dewan Rakyat Hansard 28 Oct 2026 (pp. 6, 9, 98 to 100). Web checks: DC-CFA2 closing date, Johari's portfolio, BIS 31 May 2026 guidance, Sembcorp 26 Oct 2026 approval, Reuters H200 story, CLP substations. Everything else was checked against the three research slices (which cite primaries read on 7 Nov 2026) and by arithmetic.
+
+Style sweep: no em or en dashes anywhere in the file; no mention of Claude or AI assistance; no share prices, valuations, targets or views on shares; British spelling throughout; no "correction" language. Linked pieces `/journal/building-your-own-power/` and `/journal/the-equipment-queue/` exist and are not drafts.
+
+Counts: WRONG 4, OVERSTATED 9, UNVERIFIED 10, STYLE 7, OK 52.
+
+## WRONG and OVERSTATED (fix before publish)
+
+| # | Quote from piece | Verdict | What is right, source | Suggested replacement |
+|---|---|---|---|---|
+| 1 | Summary: "since October 2026 both governments ration that right" | WRONG | Singapore has rationed since the 2019 pause and the 2022 pilot call (EDB and IMDA, 20 Jul 2022; IMDA and EDB, 14 Jul 2023). Only Malaysia's ration dates from 28 Oct 2026. The body (line 19) says "both governments now ration", which is fine. | "...decides who gets to build, and both governments now ration that right: Singapore since its 2019 pause, Malaysia since October 2026." |
+| 2 | Five-steps illustration, step 4: "Johor: 12 months on the Green Lane, at a premium" | WRONG (and OVERSTATED) | The Green Lane is national, for "Malaysia's data centre market" at 132/275 kV, not Johor's (Tenaga release, 9 Aug 2023, https://www.tnb.com.my/assets/press_releases/2023080944_ENG.pdf). No document links Green Lane customers to the Fast Track premium; the Charge Book says only that Fast Track "eligibility is subject to TNB approval" (CCB 2025, p. 46). | Step 4 note: "Malaysia: 12 months on the Green Lane; faster delivery now priced". Aria text: "12 months on Malaysia's Green Lane". |
+| 3 | Line 206: "or a 25 per cent deposit lost if it draws under 75 per cent of its final demand within six years" | WRONG | The deposit is not an alternative to the charge. Only where the 15-year return exceeds project cost (charge = RM0) does the customer post a *refundable* connection charge of 25% of project cost, returned if it reaches 75% of final MD within six years, forfeited if not (CCB 2025, p. 44). | "And the campus pays for its own connection: the project's cost less 15 years of the margin Tenaga expects to earn from its load. If that comes to nothing, it posts a refundable deposit of 25 per cent of the project's cost, lost if it fails to reach 75 per cent of its final demand within six years." |
+| 4 | Claims record, "Two governments" note: "the allowance is grid, not generation, but only 13% of it is labelled demand growth, and most of the rest is closer to renewal ... That weakens the Malaysian half." | WRONG (contradicts the body) | Body line 229 shows actual first-half 2026 network spending was RM2.3 bn demand growth of about RM5.5 bn, about 42% (Tenaga briefing 2QFY2026, slide 12). Also the RM26.55 bn is RP4 allowed capex for all regulated businesses, not a grid-only allowance (Tenaga investor deck Oct 2026, slide 6). | "Where later evidence bears on it: only 13% of the regulated base allowance for 2025 to 2027 is labelled demand growth, but in the first half of 2026 demand growth took about 42% of actual network spending, with data centre work funded from a contingent allowance released on signed supply agreements. That supports the Malaysian half more than it did. Singapore is building five gas power stations by 2031, but still rations data centres." |
+| 5 | Summary: "Malaysia's data centres draw about a fifth of the grid power they have booked" | OVERSTATED (inconsistent with the piece's own terms) | The piece defines "booked" as maximum demand in supply contracts, which is 8.35 GW; 1,256 / 8,350 = 15%. The 22% is of the 5.65 GW connected ("in system"). | "Malaysia's data centres draw about a fifth of the grid power they have connected, ..." |
+| 6 | Analogy: "Johor has tables booked for forty and about nine people eating." | OVERSTATED | 9/40 = 22.5% is the Malaysia-wide ratio. The piece itself says no Johor-only draw is published (line 131). | "Malaysia, mostly Johor, has tables booked for forty and about nine people eating." |
+| 7 | Line 15: "About 4.4 gigawatts sat booked and unused, most of it in Johor" | OVERSTATED | 5.65 minus 1.26 = 4.39 GW is right. Johor's two thirds is of the 8.35 GW secured pipeline, not of the 5.65 GW in system, and no Johor draw exists; "most of it in Johor" is an inference the piece later labels as one. | "About 4.4 gigawatts sat connected and unused, probably most of it in Johor, which holds two thirds of the bookings." |
+| 8 | Line 17: "In the same summer Singapore received more than 20 proposals for 200 megawatts of new data centre capacity and chose four." | OVERSTATED (timing) | DC-CFA2 applications closed on 31 March 2026 (law firm notes on the call, e.g. Withers; IMDA call page https://www.imda.gov.sg/proposal-submission/call-for-application-data-centre-2). Proposals were received by spring; the choice was announced 21 Aug 2026. | "That August Singapore chose four of more than 20 proposals for 200 megawatts of new data centre capacity." |
+| 9 | Line 146: "about 1,374 megawatts against 2,346 megawatts contracted for their current phase" | OVERSTATED | Hansard says only "permintaan elektrik pusat data yang dikontrakkan berjumlah 2,346 megawatt" as at August 2026 (DR-28102026, p. 9). "For their current phase" is not in the record. Same issue in the chart title "Counted against what they declared". | "...using about 1,374 megawatts against 2,346 megawatts of contracted demand at August 2026: 58.5 per cent, his figure." Chart title: "Counted against contracted demand, halls use more than half; against what is connected, under a quarter". |
+| 10 | Line 176: "DayOne's Johor halls alone would draw about a gigawatt if run flat out ... All of Malaysia's data centres together drew about 1.37 gigawatts ... the direction is plain: capacity that is billing is not capacity that is running." | OVERSTATED (logic) | 789 x 1.3 = 1,026 MW is right, but it is below the 1.37 GW national draw, so the comparison alone does not show DayOne's halls are underused. It shows only that they would be three quarters of national draw, leaving about 0.35 GW for every other operator. | "At a PUE of about 1.3, DayOne's Johor halls alone would draw about a gigawatt if run flat out, on my arithmetic: three quarters of the 1.37 gigawatts all of Malaysia's data centres drew in August, leaving about 0.35 gigawatts for every other operator in the country. The bases differ (a rating against a measured draw, slightly different dates), so this is a pointer, not proof: capacity that is billing need not be capacity that is running." |
+| 11 | Line 206: "The Green Lane promised twelve months; Tenaga's Connection Charge Book of 2025 prices it." | OVERSTATED | The Book prices Fast Track delivery in general (15% / 10% / 5% of project cost for 0 to 12 / 13 to 18 / 19 to 24 months, CCB 2025 p. 46); it never mentions the Green Lane. Whether Green Lane customers pay is an open question in the research slice. | "Speed now has a price as well. Tenaga's Connection Charge Book of 2025 charges for fast delivery: ... It does not say whether Green Lane customers pay it." |
+| 12 | Line 69: "The data centres came for land and a fast plug, and Singapore's ministers say so plainly: 'we do not need to host every megawatt'" | OVERSTATED | The 7 Oct 2026 closing speech says workloads "will naturally locate where land and energy are more abundant" and "we do not need to host every megawatt"; the minister denied pushing capacity out and did not say why they came to Johor. | "The data centres came for land and a fast plug. Singapore's ministers accept the overflow: some workloads 'will naturally locate where land and energy are more abundant', and 'we do not need to host every megawatt', the Senior Minister of State for digital development told Parliament on 7 October 2026." |
+| 13 | Line 192: "on 1 October 2026 the US Justice Department charged a Californian" | OVERSTATED (date) | Indictment returned 29 Sep 2026; arrest and announcement 1 Oct 2026 (https://www.justice.gov/opa/pr/california-man-arrested-smuggling-more-300-million-export-controlled-computer-servers-china). | "on 1 October 2026 the US Justice Department announced charges against a Californian for smuggling..." |
+
+## UNVERIFIED
+
+| # | Quote | Verdict | Note and source | Suggested text |
+|---|---|---|---|---|
+| 14 | Line 290: "Reuters reported on 5 November 2026 ... about 600,000 H200s were stored in Hong Kong awaiting Beijing's approval" | UNVERIFIED | Not found by search. August 2026 coverage (FT, relayed by Reuters) put a Hong Kong stockpile estimate near 500,000 and said Beijing wanted licensed chips kept outside the mainland. Open the Reuters story and confirm figure and date before publish. | Keep only if the Reuters text is opened; otherwise "Press reports in August 2026 put hundreds of thousands of H200s in Hong Kong, kept there while Beijing limits their import to the mainland." |
+| 15 | Map: "Existing 500 kV, Yong Peng East from 2022" | UNVERIFIED | Press only (Energy Commission statement as reported). | Keep, or drop the label. |
+| 16 | Map: "AirTrunk JHB1 to JHB4" all at Iskandar Puteri and Nusajaya | UNVERIFIED | JHB3 and JHB4 at Iskandar Puteri is NST (press). JHB2's site not confirmed in a primary. | "AirTrunk JHB1 and JHB2 (JHB3, JHB4 planned)" or keep with caption "operators' releases and press". |
+| 17 | Map and line 227: "Tanjung Bin coal, 2,100 MW, retires 2031" | UNVERIFIED (press) and precision | The Edge (14 Aug 2026), citing grid operator data. Note the site also holds the separate 1,000 MW Tanjung Bin Energy unit, which is not in that retirement. | Body: "the original 2,100 megawatt Tanjung Bin coal station". Map unchanged is acceptable. |
+| 18 | Line 131: "4.43 gigawatts of data centre peak demand by 2030" | UNVERIFIED (press) | Bernama BM, 19 Oct 2026, 4,428 MW; written answer not located. Labelled correctly in text. | None. |
+| 19 | Line 227: "planning committee had projected a 2026 peak of 21.3 gigawatts" | UNVERIFIED (press) | NST, 1 Jul 2026. Labelled. | None. |
+| 20 | Line 247 and 249: 384 MLD by 2030; Semanggar and Layang 2 adding about 210 MLD by 2027 | UNVERIFIED (press) | EdgeProp 19 Nov 2025; The Star 19 Nov 2025. Labelled "as reported". | None. |
+| 21 | Line 227: NEWGEN26 bids "all outside Johor" | UNVERIFIED (press) | The Edge, 14 Aug 2026. Labelled. | None. |
+| 22 | Line 265: "finished eight data centre substations by June 2026 and plans up to 18 by 2028" | UNVERIFIED this pass | Matches the live Hong Kong piece and its earlier check; CLP's interim presentation returned 403. A search snippet suggested older CLP material counted 18 data *centres*, so re-open CLP's 2026 interim results text to confirm the unit. | Confirm, then use the claim's own wording: "...and plans 18 in its 2024 to 2028 Development Plan". |
+| 23 | Evidence table: "June 2025 ... 3.5 GW in system, 24 projects" | UNVERIFIED | 3.5 GW confirmed in slice; "24 projects" not in the research files. | Confirm on 2QFY2025 slide or drop "24 projects". |
+
+## STYLE and precision
+
+| # | Quote | Verdict | Note | Suggested text |
+|---|---|---|---|---|
+| 24 | Chart "If every approved data centre were built...": subtitle "Peninsular Malaysia, gigawatts" | STYLE (inconsistent) | The 1.37 GW drawn, 8.77 GW booked and the 117 centres are Malaysia-wide; peak and installed are Peninsular. | Subtitle: "Malaysia's data centres against Peninsular Malaysia's grid, gigawatts". |
+| 25 | Exposure map: "Tenaga Nasional, SP Group and CLP Power run the Malaysian, Singapore and Kowloon grids" | STYLE (overbroad) | Tenaga runs Peninsular Malaysia's grid (Sarawak Energy runs Sarawak's); CLP serves Kowloon, the New Territories and Lantau. | "run the Peninsular Malaysian, Singapore and Kowloon and New Territories grids." |
+| 26 | Line 190: operators of data centres "are not required to cease the ongoing use" | STYLE (dropped qualifier) | Guidance says "bona fide operators of data centers" (BIS, 31 May 2026; law firm summaries e.g. Holland & Knight, 5 Jun 2026). | "bona fide operators of data centres 'are not required to cease the ongoing use'..." |
+| 27 | Line 216: "he said 'our moratorium is the way we process'" | STYLE | The Hansard is Malay: "perancangan kita moratorium cara kita proses". Mark as translation. | "...he said, in effect, that 'our moratorium is the way we process' (my translation)." |
+| 28 | Line 194: "For halls already plugged in, I agree that Johor is limited by chips." | STYLE | "I agree" with whom is unclear; and line 176 attributes the billing-not-drawing gap to contracts and ramp, not to chips. | "For halls already plugged in, chips do set the pace of filling. For anyone hoping to build next, the limit is the plug." |
+| 29 | Line 237: "The same day the Deputy Prime Minister added two conditions." | STYLE | Follows the phantom-load section, so "the same day" has no antecedent. | "On 28 October the Deputy Prime Minister also added two conditions." |
+| 30 | Line 265 vs claim: "plans up to 18 by 2028" vs "the 18 data centre substations in its 2024 to 2028 Development Plan" | STYLE (consistency) | Same figure, two wordings. | Use the claim's wording (see #22). |
+
+## OK (checked)
+
+| # | Quote | Verdict | Source / arithmetic |
+|---|---|---|---|
+| 31 | 5.65 GW in system, 42 projects; 2.21 GW / 16 building; 0.49 GW / 3 signed; 61 projects, 8.35 GW; Johor 29 projects, 5.6 GW | OK | Tenaga 2QFY2026 briefing slide 4 (28 Aug 2026). 5.6/8.35 = 67%. |
+| 32 | Draw 603, 710, 850, 1,054, 1,256 MW; 1.9 to 4.0 TWh; 6% of units sold | OK | Same briefing, slide 3. |
+| 33 | Line chart coordinates and shares 17%, 19%, 23%, 22% | OK | 603/3,500 = 17.2%; 850/4,500 = 18.9%; 1,054/4,500 = 23.4%; 1,256/5,650 = 22.2%. Plot y-values match a 0 to 6 GW scale. |
+| 34 | "load roughly doubled ... maximum demand grew by about 60 per cent" | OK | 1,256/603 = 2.08; 5.65/3.5 = 1.61. |
+| 35 | 58.5% (1,374 of 2,346), Aug 2026, Deputy Prime Minister | OK | DR-28102026 p. 9, Fadillah Yusof (DPM and energy transition minister). 1,374/2,346 = 58.6%, noted in evidence. |
+| 36 | 45 operating, 1.37 of 6 GW, about 23% | OK | DR-13102026 p. 31; 1.37/6 = 22.8%. Bar widths match. |
+| 37 | 603 vs 1,276 MW declared, about 47%, target 85%, "speculative" | OK | DR-05112025 pp. 14 to 15; 603/1,276 = 47.3%. |
+| 38 | Johari: grid only from spare margin, else off-grid; 117 approved, 27 off-grid, 24 held | OK | DR-28102026 pp. 98 to 100 ("kita cuma bagi data center ini kalau ada excess. Kalau tak ada excess, kita buat off-grid"). |
+| 39 | "about 23,000 or 23,500 megawatts" | OK | DR-28102026 p. 98 (printed p. 103 of PDF), oral. Bar 23.25 GW at scale matches. |
+| 40 | Johari is "investment minister" | OK | Appointed Minister of Investment, Trade and Industry, 16 Dec 2025 (NST, Bernama). |
+| 41 | 300 MW asked, 100 used, pays for 200 | OK | DR-28102026 (Johari). |
+| 42 | Water: low water reserve margin areas "will not be considered"; two days storage | OK | DR-28102026 p. 6 ("tidak akan dipertimbangkan"). |
+| 43 | 30% renewables; Energy Focus Group with Energy Commission secretariat | OK | DR-28102026 p. 7. |
+| 44 | Peak 22,014 MW on 6 Aug 2026; installed 29.2 GW | OK | Tenaga briefing slide 2; deck Oct 2026 slide 8. |
+| 45 | 6.6 GW Tenaga retirements by 2030 | OK | Briefing slide 7. |
+| 46 | 500 kV backbone about 500 km, Paka to Kulai East, by 2030; Sedenak West 500/275/132 kV, no date | OK | Tenaga release 28 Aug 2026; briefing slide 12. |
+| 47 | 13% of base allowance demand growth; RM2.3 bn of about RM5.5 bn, about 42% | OK | 3.49/26.55 = 13.1%; 2.6+2.3+0.6 = 5.5; 2.3/5.5 = 41.8%. |
+| 48 | Green Lane launched 8 Aug 2023, 132/275 kV, 36 to 48 months to 12; first ESAs Yondr, AirTrunk, YTL's arm, GDS | OK | Tenaga release 9 Aug 2023: ESAs with Yellowwood (Yondr), AirTrunk, SIPP Power (YTL), GDS IDC Malaysia; plus an MoU with MRANTI. |
+| 49 | Connected load charge: RM8.50/kW; 85% of staggered MD years 1 to 4; 75% of final MD years 5 and 6; six years; "over declaring" | OK | CCB 2025 pp. 15 to 17. Note the line is 85%/75% of declared MD "or the highest recorded MD, whichever is higher". |
+| 50 | Staircase illustration values (declared 20/40/60/80/100/100; charge line 17/34/51/68/75/75) | OK | Plot coordinates match the rule. |
+| 51 | RM300,000 example | OK | (85,000 minus 50,000 kW) x RM8.50 = RM297,500. |
+| 52 | Fast Track 15% / 10% / 5%; damages for delay either way | OK | CCB 2025 pp. 46 to 47 (LDD applies to consumer late in taking supply or TNB late in delivering). |
+| 53 | Connection charge: project cost less 15 years of margin | OK | CCB 2025 pp. 44 to 45 (WACC 7.3%, PVIFA 8.9378). |
+| 54 | UHV 55.18/51.09 sen vs HV 44.52/40.43; RM21.76 and RM23.06/kW; "about a quarter more" | OK | Energy Commission schedule p. 7 and p. 5; HV rates also in CCB 2025 p. 45. 24% and 26%. |
+| 55 | UHV for data centres at high and extra high voltage, Senate 8 Dec 2025 | OK | DN-08122025. |
+| 56 | DayOne: F-1 5 Oct 2026; 789 MW in service in Johor; about 1.4 GW booked; 99.1% billing | OK | F-1: 47.8%+34.3% of 962 = 790; 28.8%+32.5% of 2,281 = 1,398; 953/962 = 99.1%. |
+| 57 | DayOne 69.4% (2025), 69.2% (1H 2026); 64 MW to 838 MW; take-or-pay; pass-through power; "typically" minimum power purchase | OK | F-1. |
+| 58 | 789 x 1.3 = about 1 GW | OK | 1,026 MW (logic flagged at #10). |
+| 59 | AirTrunk >420 MW "almost 100% contracted"; YTL 298 MW, plan doubled to 1.2 GW; Bridge 508 and 374 MW | OK | AirTrunk 30 Apr 2026; YTL Annual Report 2026; Bridge website. |
+| 60 | BIS: licence since 17 Nov 2023 for D:5 or Macau HQ or ultimate parent; 31 May 2026 guidance confirms all destinations; installed chips "until further notice" | OK | BIS guidance 31 May 2026; Greenberg Traurig, Hogan Lovells, Baker McKenzie summaries (June 2026). |
+| 61 | Remote Access Security Act passed House Jan 2026, not Senate | OK | Congressional Record 12 Jan 2026, 369 to 22. |
+| 62 | Malaysia and Thailand rule announced May 2025, not published by 7 Nov 2026 | OK | BIS 13 May 2025; Federal Register search. |
+| 63 | MITI permit since 14 Jul 2025; Art. 5.2.1 "align with all unilateral export controls" | OK | MITI statement; Agreement on Reciprocal Trade 26 Oct 2025. |
+| 64 | Over US$300 million via Malaysia and Singapore | OK | DOJ 1 Oct 2026 (date nuance at #13). |
+| 65 | Singapore 5.3% (2019), about 7% (Jan to Jul 2020); "temporary pause" 2019; "intensive users of resources like land, water, and energy" | OK | MCI 27 Jul 2021; EDB and IMDA 20 Jul 2022. |
+| 66 | Pilot call Jul to Nov 2022, PUE 1.3; about 80 MW to AirTrunk-ByteDance, Equinix, GDS, Microsoft; >20 proposals | OK | EDB and IMDA 20 Jul 2022; 14 Jul 2023. |
+| 67 | DC-CFA2: 1 Dec 2025, at least 200 MW, PUE 1.25, at least half green pathways; 21 Aug 2026 50 MW each to Digital Realty, Equinix, Keppel DC, STT GDC; >20 proposals; all on Jurong Island | OK | EDB and IMDA fact sheets. |
+| 68 | Jurong Island about 20 ha, up to 700 MW incl. cooling | OK | JTC and EDB 27 Oct 2025; closing speech 7 Oct 2026. |
+| 69 | Singapore about 735 km² | OK | Official land area about 735 km² (2023 to 2025). |
+| 70 | Fleet >1.6 GW maximum IT load incl. the 200 MW; 6.5 TWh 2024, "slightly more than 10%"; 740 MW | OK | MDDI 8 Sep 2026; closing speech 7 Oct 2026. 6.5 TWh / 8,784 h = 740 MW (2024 a leap year). Bar widths match. |
+| 71 | 280 MW by call | OK | 80 + 200. |
+| 72 | Digital Infrastructure Bill: 3 MW CIL, own-use included, S$1m or 10% turnover, about 70 in scope, in force 2027 | OK | Bill No. 20 of 2026; speeches 6 and 7 Oct 2026. |
+| 73 | SDIS: "awarded capacity under" it; "primarily" by call | OK | Opening speech 6 Oct 2026; MDDI 3 Mar 2026. |
+| 74 | Gas about 95%; 6 GW imports by 2035; 13 projects, 9.25 GW, six Indonesian conditional licences | OK | METI import page (as of Aug 2026). |
+| 75 | Sembcorp up to 1.3 GW, 26 Oct 2026, Vietnam wind via Malaysia | OK with note | EMA release 26 Oct 2026 (Malay Mail, The Star). "more" is fair but EMA does not say how it relates to Sembcorp's 2023 approval of about 1.2 GW from Vietnam; consider dropping "more". |
+| 76 | JS-SEZ 7 Jan 2025, eleven sectors, data centres not named, energy aim RE trading | OK | EDB release; js-sez.com.my. |
+| 77 | GB200 NVL72 about 132 kW; about 750 racks per 100 MW | OK | 100,000/132 = 758. |
+| 78 | CLP: Scheme of Control to 2033; 9,258 vs 7,455 MW, about a quarter spare; 283 MW | OK | 9,258/7,455 = 1.24; 6.6% x 28,131 GWh / 6,552 h = 283 MW (CLP 12 Oct 2026). |
+| 79 | Sandy Ridge: >110,000 m², North District, single bid, Range subsidiary (Shenzhen-listed), 2 Mar 2026, 50 years; CLP mid-2027; government 2029 | OK | ITIB 2 Mar 2026; LegCo 22 Apr 2026; CLP 12 Oct 2026. |
+| 80 | Hong Kong treated as China since Dec 2020; H200 class case by case since 15 Jan 2026 | OK | 85 FR 83765; 91 FR 1684. "About two generations behind" (Hopper vs Blackwell vs Rubin) is a fair judgement. |
+| 81 | Johor water 2,375 vs 2,034 MLD, 14.3%, about 340 MLD spare; 12 MLD reclaimed (24 Jun 2026) | OK | SPAN Fact Book 2025; (2,375 minus 2,034)/2,375 = 14.4%; DR-24062026 p. 2. |
+| 82 | "if load doubles again to about 2.5 GW while most of the 2.21 GW connects, the share is roughly a third" | OK | 2.5 / (5.65 + 2.0 to 2.21) = 32% to 33%. |
