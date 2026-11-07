@@ -92,11 +92,11 @@ b, H = hbars([
   ('Large transformer', 'from 1 January 2028', 25, 'c-bar c-mute', '25%'),
   ('Distribution transformer', 'up to 10 MVA', 25, 'c-bar c-mute', '25%'),
   ('H', 'Its inputs'),
-  ('Cores and laminations', 'cut and stacked steel', 25, 'c-bar', '25%'),
+  ('Cores and laminations', '15% if for large units', 25, 'c-bar', '25%'),
   ('Core steel strip', 'GOES and other alloy steel', 50, 'c-bar', '50%'),
   ('Copper wire', 'winding wire, stranded wire', 50, 'c-bar', '50%'),
 ], 60, x0=190, ticks=(0, 25, 50), right=60, fmt=lambda t: f'{t}%')
-save('tariff-chart', b, H, 'US Section 232 tariffs on the full value of the goods, since 6 April 2026. Large power transformers over 10 MVA: 15 per cent until the end of 2027, then 25 per cent from 1 January 2028. Distribution transformers up to 10 MVA: 25 per cent. Cores and laminations: 25 per cent. Grain-oriented electrical steel strip and other flat-rolled alloy steel: 50 per cent. Copper wire: 50 per cent.')
+save('tariff-chart', b, H, 'US Section 232 tariffs on the full value of the goods, since 6 April 2026. Large power transformers over 10 MVA: 15 per cent until the end of 2027, then 25 per cent from 1 January 2028. Distribution transformers up to 10 MVA: 25 per cent. Cores and laminations: 25 per cent, or 15 per cent since 8 June 2026 when imported to make large transformers. Grain-oriented electrical steel strip and other flat-rolled alloy steel: 50 per cent. Copper wire: 50 per cent.')
 
 # 4 prices: BLS PPI indexed to 2020 average = 100
 P = [('2020', 2020.5), ('Dec 2022', 2022.95), ('Dec 2023', 2023.95), ('Dec 2024', 2024.95), ('Dec 2025', 2025.95), ('Sep 2026', 2026.7)]
@@ -132,11 +132,11 @@ save('waits-chart', b, H, 'When orders signed now are due to ship, in each maker
 
 # 6 rack power
 b, H = hbars([
-  ('Average rack', 'Uptime survey, 2025', 9, 'c-bar c-mute', 'almost 9 kW'),
+  ('Typical rack', 'Uptime survey, 2025', 9, 'c-bar c-mute', 'almost 9 kW'),
   ('Nvidia GB200 rack', 'reference design, 2024', 132, 'c-bar', 'up to 132 kW'),
   ('Nvidia\'s plan', 'racks from 2027', 1000, 'c-bar c-alt', '1,000 kW'),
 ], 1000, x0=170, ticks=(0, 250, 500, 750, 1000), right=84, fmt=lambda t: f'{t:,}')
-save('rack-chart', b, H, 'Power drawn by one rack, in kilowatts. The average rack in the Uptime Institute\'s 2025 survey: almost 9. An Nvidia GB200 rack in the Schneider and Nvidia reference design of 2024: up to 132. Nvidia\'s plan for racks from 2027: 1,000 kilowatts, a megawatt.')
+save('rack-chart', b, H, 'Power drawn by one rack, in kilowatts. The typical rack in the Uptime Institute\'s 2025 survey: almost 9. An Nvidia GB200 rack in the Schneider and Nvidia reference design of 2024: up to 132. Nvidia\'s plan for racks from 2027: 1,000 kilowatts, a megawatt.')
 
 # 7 parts: delivery times in weeks (Hitachi Energy's component page)
 b, H = hbars([
