@@ -109,7 +109,7 @@ Why it matters: Nvidia says running colder means "diverting a larger share of th
 
 Yes, but as a refit, and the refit is the slow part.
 
-Jane Street, a trading firm, shows the refit. Its write-up of one of its new Texas data centres describes "4,032 GPUs across 56 racks, retrofitted for liquid cooling". The write-up gives no detail of the refit, but "retrofitted" means the liquid loop was added to a hall already standing. Its power comes on a fixed allocation from its utility, as told in [power first, chips last](/journal/america-rations-the-plug/#power-first-chips-last).
+Jane Street, a trading firm, shows the refit. Its write-up of one of its new Texas data centres describes "4,032 GPUs across 56 racks, retrofitted for liquid cooling". The write-up gives no detail of the refit, but "retrofitted" means the liquid loop was added to a hall already standing. It secures its power first and picks its chips last, as told in [power first, chips last](/journal/america-rations-the-plug/#power-first-chips-last).
 
 Its head of physical engineering, Dan Pontecorvo, described Jane Street's roof chillers on a podcast (25 July 2025). They blow outside air over coils, and he said they lose heat transfer ability once the returning water gets too warm. He recalled racks of 10 to 15 kW counting as dense; designs now plan for about 170 kW a rack.
 

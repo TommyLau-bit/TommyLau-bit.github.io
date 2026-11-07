@@ -18,6 +18,7 @@ export type Claim = {
 export const CLAIMS: Claim[] = [
   {
     id: 'microreactors',
+    home: 'microreactors',
     date: '2026-11-07T21:19:23+08:00',
     claim: 'America\'s microreactors are paced by fuel, not by building reactors: HALEU and the TRISO fuel made from it are produced in kilograms and handed out by the government, so the first microreactors to run at power will serve military and government sites, and no US data centre will draw power from a microreactor under a commercial contract before 2031.',
     breaksIf: 'A US data centre receives electricity from a microreactor under a commercial supply contract on or before 31 December 2030; or the first microreactor in America to deliver sustained electricity to a customer is at a site that is neither military nor on government land.',

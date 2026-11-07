@@ -334,7 +334,7 @@ They concentrate power into far fewer racks, which changes the low-voltage end o
 
 The Uptime Institute's 2025 survey found the typical rack density reported by operators averaged almost 9 kilowatts. A rack of Nvidia's GB200 chips draws up to 132 kilowatts, about fifteen times as much. Nvidia has said it will support racks of a megawatt from 2027.
 
-The physics is current. Current is power divided by voltage, so a megawatt rack fed at 54 volts would draw about 18,500 amps, my arithmetic, and Nvidia says it would need up to 200 kilograms of copper busbar. Fed at 800 volts it draws about 1,250 amps. So Nvidia plans to convert medium-voltage power to 800 volts of direct current at the edge of the hall, as [Powering the rack](/journal/powering-the-rack/) explains.
+The physics is current. Current is power divided by voltage, so a megawatt rack fed at 54 volts would draw about 18,500 amps, my arithmetic, and Nvidia says it would need up to 200 kilograms of copper busbar. Fed at 800 volts it draws about 1,250 amps. Nvidia's 2025 plan was to convert medium-voltage power to 800 volts of direct current at the edge of the hall. It now offers 800 volts as an option beside today's alternating current, arriving first in a cabinet beside the rack, as [Powering the rack](/journal/powering-the-rack/) explains.
 
 For the equipment queue the point is narrower. A 100 MW campus needs the same substation, the same medium-voltage switchgear and the same generators whether it runs 11,000 racks at 9 kilowatts or 760 at 132. What changes is the gear nearest the rack: busways, power shelves and, from 2027, rectifiers and new direct-current breakers. That reshuffles the low-voltage order book; it does not shorten the grid-side queue.
 

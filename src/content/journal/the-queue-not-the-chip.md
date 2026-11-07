@@ -32,7 +32,7 @@ To see why, the piece follows the questions in order. What it takes to plug a da
 
 Five steps, from asking the utility for supply to racks running, and in Johor and Singapore only one of them is handed out by a government.
 
-Start with the units, because every number in this piece uses them. A **watt** measures how fast energy is used; a kettle draws about 2,000 watts. A **megawatt (MW)** is a million watts, and a **gigawatt (GW)** is a thousand megawatts. One Nvidia GB200 NVL72 rack, the standard AI cabinet today, is rated at about 132 kilowatts, so 100 megawatts runs about 750 of them before cooling. A **kilovolt (kV)** is a thousand volts; the higher the voltage, the more power a line carries with less loss.
+Start with the units, because every number in this piece uses them. A **watt** measures how fast energy is used; a kettle draws about 2,000 watts. A **megawatt (MW)** is a million watts, and a **gigawatt (GW)** is a thousand megawatts. One Nvidia GB200 NVL72 rack, the standard AI cabinet today, is rated by Nvidia at about 120 kilowatts, so 100 megawatts runs about 830 of them before cooling. A **kilovolt (kV)** is a thousand volts; the higher the voltage, the more power a line carries with less loss.
 
 Power reaches a hall the way water reaches a tap. Power stations feed a high-voltage network, the motorway, running at 500, 275 and 132 kV in Peninsular Malaysia. A **substation** steps that voltage down through **transformers**, large oil-filled machines that change voltage, and a big campus has its own. Then cable carries the power into the halls, and a building's own equipment steps it down again to the racks.
 

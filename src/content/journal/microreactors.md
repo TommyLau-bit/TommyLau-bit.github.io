@@ -42,7 +42,7 @@ Those units need explaining first, because press releases mix them up. A watt me
 
 What does 20 MWe actually buy? The average American home used 865 kilowatt-hours a month in 2024, according to the Energy Information Administration (EIA), the government's energy statistics office. That is an average draw of about 1.2 kilowatts, so 20 MWe running all year would supply about 17,000 homes.
 
-In the units that matter to this site, one Nvidia GB200 NVL72 rack, the standard AI cabinet today, is rated by its builders at about 132 kilowatts. Twenty megawatts runs about 150 of them before any power is spent on cooling. A 1-gigawatt AI campus, the size large AI sites now plan, would need fifty of the very largest microreactors side by side. Hold on to that sum: it decides who buys these machines first.
+In the units that matter to this site, one Nvidia GB200 NVL72 rack, the standard AI cabinet today, is rated by Nvidia at about 120 kilowatts. Twenty megawatts runs about 165 of them before any power is spent on cooling. A 1-gigawatt AI campus, the size large AI sites now plan, would need fifty of the very largest microreactors side by side. Hold on to that sum: it decides who buys these machines first.
 
 ## How does a reactor make heat at all?
 
@@ -138,7 +138,7 @@ Then the government stopped paying for production. From 30 June 2026 the DOE con
 
 Why will nobody simply build a big HALEU plant? This is the chicken-and-egg problem at the centre of the piece. An enrichment plant takes the best part of a decade and billions of dollars to build and license. Its owner will not commit without signed buyers for years of output. The buyers, reactor companies, cannot sign for large volumes before their designs are licensed and their own customers have committed. Each side waits for the other.
 
-The government's attempt to break the loop is real but small. In January 2026 the DOE awarded $2.7 billion of enrichment task orders. Centrus and a start-up, General Matter, each received $900 million for HALEU; Orano, the French nuclear fuel group, received $900 million for ordinary LEU. But Centrus's order, signed on 1 July 2026, mainly pays to build capacity: the HALEU it must deliver is one tonne, as gas, by July 2032, with options for ten tonnes more. Orano has applied to enrich up to 8 per cent at a planned plant in Oak Ridge, Tennessee, and Urenco, the European enrichment group, is licensed to 10 per cent in New Mexico: both far below the 19.75 per cent microreactors use. General Matter aims to enrich by the end of the decade; reports of the DOE's lease of its Kentucky site gave 2034.
+The government's attempt to break the loop is real but small. In January 2026 the DOE awarded $2.7 billion of enrichment task orders. Centrus and a start-up, General Matter, each received $900 million for HALEU; Orano, the French nuclear fuel group, received $900 million for ordinary LEU. But Centrus's order, signed on 1 July 2026, mainly pays to build capacity: the HALEU it must deliver is one tonne of uranium, delivered as gas, by July 2032, with options for ten tonnes more. Orano has applied to enrich up to 8 per cent at a planned plant in Oak Ridge, Tennessee, and Urenco, the European enrichment group, is licensed to 10 per cent in New Mexico: both far below the 19.75 per cent microreactors use. General Matter aims to enrich by the end of the decade; reports of the DOE's lease of its Kentucky site gave 2034.
 
 Enrichment is not even the last gap. Once enriched, the uranium gas must be turned back into a solid, oxide or metal, before it can be made into fuel. The Government Accountability Office (GAO), Congress's auditor, in August 2026, called that step, deconversion, "a capability that does not yet exist for HALEU". And moving HALEU gas between plants needs certified containers. The standard shipping package is certified only to 5 per cent. The NRC says only one package is approved for commercial quantities of HALEU, Orano's DN30-X, and that its "manufacturing … has not yet occurred".
 
@@ -155,7 +155,7 @@ The TRISO step has its own small number of hands. BWXT, the Virginia company tha
 
 Not enough, by the government's own numbers, and the gap is widest exactly where the microreactors sit.
 
-Start with HALEU. Because there is no commercial supply, the government is releasing its own: uranium recovered from the spent fuel of EBR-II, an old Idaho test reactor (about 10 tonnes expected by December 2028, half already promised to Oklo), plus surplus highly enriched uranium blended down to under 20 per cent at Savannah River in South Carolina. The DOE told GAO it expects to provide about 21.2 tonnes by 2028. Congress had asked for 21 tonnes by mid-2026.
+Start with HALEU. Because commercial supply has only just begun, with no volume given, the government is releasing its own: uranium recovered from the spent fuel of EBR-II, an old Idaho test reactor (about 10 tonnes expected by December 2028, half already promised to Oklo), plus surplus highly enriched uranium blended down to under 20 per cent at Savannah River in South Carolina. The DOE told GAO it expects to provide about 21.2 tonnes by 2028. Congress had asked for 21 tonnes by mid-2026.
 
 The demand, in the DOE's own words, is "more than 40 metric tons" by 2030, rising to about 50 tonnes a year by 2035. The whole government stock plus the one contracted new tonne covers about half of the first figure, and under half of a single year of the second.
 
@@ -241,7 +241,7 @@ Breaks if: "A US data centre receives electricity from a microreactor under a co
 
 **Size chart.** Vogtle 3 and 4 are about 1,114 MWe each (Georgia Power). GE Vernova's BWRX-300 is 300 MWe. The microreactor range of 1 to 20 MWe is INL's (INL/RPT-24-80433, August 2024); the IAEA says microreactors are "typically up to 10 MW(e)" and the DOE's 2021 explainer gives 1 to 20 megawatts thermal, so definitions differ. Pele is 1.5 MW (BWXT). Each square in the chart is 20 MWe.
 
-**Homes and racks.** EIA: 865 kWh a month per residential customer in 2024 (Today in Energy, 12 May 2025), an average draw of 1.18 kW; 20 MWe ÷ 1.18 kW ≈ 17,000 homes (my arithmetic). GB200 NVL72: "TDP 132 kW nominal" (HPE) and 132 kW (Supermicro); I found no Nvidia specification page. 20 MWe ÷ 132 kW ≈ 150 racks before cooling.
+**Homes and racks.** EIA: 865 kWh a month per residential customer in 2024 (Today in Energy, 12 May 2025), an average draw of 1.18 kW; 20 MWe ÷ 1.18 kW ≈ 17,000 homes (my arithmetic). GB200 NVL72: Nvidia DGX GB200 User Guide (read 7 November 2026), "The rack power consumption is approximately 120kW"; builders quote up to 132 kW (HPE, Supermicro). 20 MWe ÷ 120 kW ≈ 165 racks before cooling.
 
 **Enrichment work.** Standard value function, natural feed 0.711% U-235, tails 0.25%: 4.95% needs 7.8 SWU and 10.2 kg of natural uranium per kg; 19.75% needs 41.0 SWU and 42.3 kg. The ratio is about 5.2 at tails of 0.20% or 0.30% too. My arithmetic.
 
