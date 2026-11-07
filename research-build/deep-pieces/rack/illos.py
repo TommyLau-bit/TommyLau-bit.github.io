@@ -78,7 +78,7 @@ a(f'<line class="i-cool" x1="640" y1="16" x2="670" y2="16"/><text class="i-n" x=
 a(f'<circle class="i-hot-f" cx="770" cy="16" r="6"/><text class="i-n" x="782" y="20">AC becomes DC here</text>')
 rows = [('A. Power rack', 'beside one or two racks, about 660 kW', 'in production from Q3 2026'),
         ('B. Row power centre', 'end of the row, up to 2 MW', 'as soon as Q3 2027'),
-        ('C. DC power block', 'at the building edge, about 4.8 MW', 'rectifier: no date; next SST toward 2029')]
+        ('C. DC power block', 'at the building edge, about 4.8 MW', 'rectifier: no date; next SST "toward 2029"')]
 def box(x, y, w, h, lab, cls='i-fill'):
     a(f'<rect class="{cls}" x="{x}" y="{y}" width="{w}" height="{h}" rx="3"/>')
     if lab:
@@ -134,7 +134,7 @@ for r, (t, sub, when) in enumerate(rows):
         a(f'<text class="i-n" x="740" y="{y+114}" text-anchor="middle">800 V across the hall: what my test counts</text>')
     if r < 2:
         a(f'<line class="i-faint" x1="10" y1="{y+136}" x2="{W-10}" y2="{y+136}"/>')
-save('options', W, 54 + 3 * 150 - 10, ''.join(o), 'Three rows, one for each of Nvidia\'s options for where the grid\'s alternating current becomes 800 volts DC. A, the power rack, about 660 kilowatts, in production from the third quarter of 2026: the grid feeds the existing AC power room, which sends 415 volts AC to a power rack beside the compute rack; the power rack makes 800 volts DC, which stays between the two cabinets, and a shelf inside the compute rack turns it back into 54 volts; it is certified as IT equipment. B, the row power centre, up to 2 megawatts, as soon as the third quarter of 2027: the same AC room feeds one cabinet at the end of the row, which makes 800 volts DC for an overhead busway serving a whole row of racks; the AC room is unchanged. C, the DC power block, about 4.8 megawatts, at the building edge: the grid\'s medium voltage goes straight into a rectifier or solid-state transformer, the AC room is removed, and 800 volts DC runs across the hall. Nvidia gives no date for the rectifier version and puts the next generation solid-state transformer toward 2029. Only C is what my test counts.')
+save('options', W, 54 + 3 * 150 - 10, ''.join(o), 'Three rows, one for each of Nvidia\'s options for where the grid\'s alternating current becomes 800 volts DC. A, the power rack, about 660 kilowatts, in production from the third quarter of 2026: the grid feeds the existing AC power room, which sends 415 volts AC to a power rack beside the compute rack; the power rack makes 800 volts DC, which stays between the two cabinets, and a shelf inside the compute rack turns it back into 54 volts; it is certified as IT equipment. B, the row power centre, up to 2 megawatts, as soon as the third quarter of 2027: the same AC room feeds one cabinet at the end of the row, which makes 800 volts DC for an overhead busway serving a whole row of racks; the AC room is unchanged. C, the DC power block, about 4.8 megawatts, at the building edge: the grid\'s medium voltage goes straight into a rectifier or solid-state transformer, the AC room is removed, and 800 volts DC runs across the hall. Nvidia gives no date for the rectifier version and puts the next generation solid-state transformer "toward 2029". Only C is what my test counts.')
 
 # ---------- 3. The off switch ----------
 W = 940; o = []; a = o.append

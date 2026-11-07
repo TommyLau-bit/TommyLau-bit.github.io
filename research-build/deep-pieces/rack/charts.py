@@ -45,11 +45,11 @@ save('rack-chart', b, bot + 24, 'Bar chart of power per rack in kilowatts. The t
 # 2 power per square millimetre of conductor, Nvidia's table
 b, H, sx, top, bot = hbars([
   ('415 V AC', 'today\'s row, the baseline', 0.6, 'c-bar c-mute', '0.6 kW per mm²'),
-  ('480 V AC', 'the American row', 0.6 * 1.16, 'c-bar c-mute', '16% more'),
-  ('800 V DC', 'Nvidia\'s choice', 0.6 * 2.57, 'c-bar', '157% more'),
-  ('1,500 V DC', 'held back by codes and arc flash', 0.6 * 4.82, 'c-bar c-alt', '382% more'),
-], 3.0, x0=170, ticks=(0, 1, 2, 3), right=110, y=44, fmt=lambda t: f'{t:g} kW')
-save('copper-chart', b, H + 4, 'Bar chart of power carried per square millimetre of conductor, on Nvidia\'s 48 amp wire basis. 415 volts AC, the baseline, about 0.6 kilowatts per square millimetre. 480 volts AC, 16 per cent more. 800 volts DC, Nvidia\'s choice, 157 per cent more. 1,500 volts DC, 382 per cent more, but held back by electrical codes and the danger of arc flash.')
+  ('480 V AC', 'the American row', 0.8, 'c-bar c-mute', '16% more'),
+  ('800 V DC', 'Nvidia\'s choice', 1.7, 'c-bar', '157% more'),
+  ('1,500 V DC', 'held back by codes and arc flash', 3.1, 'c-bar c-alt', '382% more'),
+], 3.2, x0=170, ticks=(0, 1, 2, 3), right=110, y=44, fmt=lambda t: f'{t:g} kW')
+save('copper-chart', b, H + 4, 'Bar chart of power carried per square millimetre of conductor, on Nvidia\'s 48 amp wire basis. 415 volts AC, the baseline, about 0.6 kilowatts per square millimetre. 480 volts AC, about 0.8, 16 per cent more. 800 volts DC, Nvidia\'s choice, about 1.7, 157 per cent more. 1,500 volts DC, about 3.1, 382 per cent more, but held back by electrical codes and the danger of arc flash.')
 
 # 3 the dates: when each maker said it, and the date it gave
 def timeline(R, t0, t1, today, years, x0=196, x1=520, rh=40, top=34):
@@ -85,7 +85,7 @@ R = [
 b, H, X = timeline(R, 2025, 2030, 2026 + 10.2/12, range(2025, 2031))
 b = f'<rect class="c-zone" x="{X(2026 + 10.2/12):.1f}" y="24" width="{X(2028)-X(2026 + 10.2/12):.1f}" height="{34 + 40*len(R) - 16 - 24}"/>' + b
 b += f'<text class="c-note" x="{X(2028)-4:.1f}" y="{H+6}" text-anchor="end">shaded: what is left of my test, to 1 January 2028</text>'
-save('dates-chart', b, H + 14, 'Timeline of dated 800 volt statements, from when each was said (hollow dot) to the date given (solid dot). Nvidia\'s power rack, said in mid-2026, due in the third quarter of 2026. Vertiv\'s sidecar, promised in 2025 for the second half of 2026, now early 2027. Nvidia\'s row power centre, as soon as the third quarter of 2027. ABB\'s solid-state transformer, said October 2026, second half of 2027. Eaton\'s 800 volt DC project shipments, said May 2026, late 2027. Vertiv\'s data hall level, deployment in 2028. The US electrical code\'s 2029 edition, completed in the third quarter of 2028. Nvidia\'s next generation solid-state transformer, toward 2029. A shaded band marks what remains of my test, to 1 January 2028.')
+save('dates-chart', b, H + 14, 'Timeline of dated 800 volt statements, from when each was said (hollow dot) to the date given (solid dot). Nvidia\'s power rack, said in mid-2026, due in the third quarter of 2026. Vertiv\'s sidecar, promised in 2025 for the second half of 2026, now early 2027. Nvidia\'s row power centre, as soon as the third quarter of 2027. ABB\'s solid-state transformer, said October 2026, second half of 2027. Eaton\'s 800 volt DC project shipments, said May 2026, late 2027. Vertiv\'s data hall level, deployment in 2028. The US electrical code\'s 2029 edition, completed in the third quarter of 2028. Nvidia\'s next generation solid-state transformer, "toward 2029". A shaded band marks what remains of my test, to 1 January 2028.')
 
 # 4 where the money is today: chip-side data centre revenue, third quarter 2026
 b, H, sx, top, bot = hbars([
