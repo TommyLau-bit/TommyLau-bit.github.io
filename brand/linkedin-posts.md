@@ -654,7 +654,7 @@ https://thephysicallayer.fyi/journal/ten-thousand-chips-one-thought/
 
 ---
 
-## 46 · The chip supply chain (site live 30 Oct 2026; LinkedIn Wed 25 Nov, 11:30, scheduled)
+## 46 · The chip supply chain (site live 30 Oct 2026; RETIRED 7 Nov 2026; LinkedIn Wed 25 Nov post DELETED 7 Nov, Tommy)
 
 ASML, the only maker of the machines that print the finest AI chips, says its planned supply for 2027 and 2028 "will not fully meet the demand" of its customers, and some want to order for 2030.
 
@@ -738,7 +738,7 @@ https://thephysicallayer.fyi/journal/nuclear-for-ai/
 
 ---
 
-## 52 · Memory, not maths (site live Sat 31 Oct 2026; LinkedIn Mon 21 Dec, 11:30, scheduled by Tommy on his phone)
+## 52 · Memory, not maths (site live Sat 31 Oct 2026; RETIRED 7 Nov 2026; LinkedIn Mon 21 Dec post DELETED 7 Nov, Tommy)
 
 Since 2020 the maths in Nvidia's top AI chip has grown about 112 times. The memory feeding it has grown about nine.
 

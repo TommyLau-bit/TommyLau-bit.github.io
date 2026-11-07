@@ -2,7 +2,7 @@
 
 Tommy's brief, after the CLSA call and studying microreactors: the journal is for investors and analysts, deep and detailed, "actual quality work", as if months went into each piece. Fewer pieces (five or six perfect ones beat fourteen surface ones). **Deep means detail, not complexity.** The test: a reader reads it once, properly, and understands everything. No question is left unanswered and no term is left unexplained.
 
-Status: PILOT. The microreactors piece is the first. Once Tommy approves it, this file replaces STORY-RULES for every rebuilt piece. Until then STORY-RULES still governs the 13 live pieces.
+Status: APPROVED (Tommy, 7 Nov 2026, on the microreactors draft: "This is exactly what I want. Exactly. It's perfect. And I expect every article to also have this level of depth and this level of quality."). The microreactors piece is the reference. This file replaces STORY-RULES for every rebuilt piece; STORY-RULES governs only live pieces not yet rebuilt. Approval of the format is not approval to publish: microreactors goes live only on Tommy's word.
 
 ## How it is written: the question chain
 
