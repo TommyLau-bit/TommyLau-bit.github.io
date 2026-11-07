@@ -779,3 +779,131 @@ The update also covers why federal data cannot see off-grid plants at all, and a
 https://thephysicallayer.fyi/journal/building-your-own-power/
 
 #NaturalGas #DataCentres #EnergyInfrastructure
+
+---
+
+# The depth launch (7 Nov 2026): one post per rebuilt piece, Mon/Wed/Fri 11:30, replacing the 13 teasers of the old versions
+
+## 55 · Microreactors (site live 7 Nov 2026; LinkedIn Mon 9 Nov, 11:30, pending)
+
+Five new American test reactors reached criticality this summer, and none has sold a single kilowatt-hour.
+
+The reactors exist. The fuel to run them for years does not, in the quantities an industry would need: uranium enriched to just under 20 per cent, sealed in ceramic grains the size of a poppy seed, made in America in hundreds of kilograms a year. So the government decides who gets it, and the first customer is the military, not the AI data centre.
+
+The piece covers how a reactor small enough for a lorry works, why it needs that fuel, and who gets the fuel first.
+
+https://thephysicallayer.fyi/journal/microreactors/
+
+#Nuclear #Microreactors #AIInfrastructure
+
+---
+
+## 56 · Johor and Singapore, in depth (rebuilt 7 Nov 2026; LinkedIn Wed 11 Nov, 11:30, pending)
+
+In June 2026 Malaysia's data centres were connected to 5.65 gigawatts of grid supply and drew 1.26 of it.
+
+About 4.4 gigawatts sat connected and unused, most of it probably in Johor. Singapore chose four of more than 20 proposals for 200 megawatts, and on 28 October Malaysia said a data centre gets grid power only if the grid has spare margin after everyone else. In both places the right to draw power, not the chip, decides who builds.
+
+The piece covers what it takes to plug a hall in, why booked, declared and drawn power are three different numbers, and how Hong Kong puts its gate somewhere else.
+
+https://thephysicallayer.fyi/journal/the-queue-not-the-chip/
+
+#DataCentres #Johor #Singapore
+
+---
+
+## 57 · Nuclear for AI, in depth (rebuilt 7 Nov 2026; LinkedIn Fri 13 Nov, 11:30, pending)
+
+The earliest new nuclear power Microsoft has bought for AI comes from a reactor that shut in 2019.
+
+Crane, the former Three Mile Island Unit 1, is due back in the second half of 2027. TerraPower, Oklo and Kairos have permits, ground broken and buyers, yet on their own dates none sends meaningful power to an American grid first. A restart keeps its licensed site, its grid place and ordinary fuel; most new designs wait on a fuel made on one demonstration line.
+
+The piece covers what every project needs before it sells a kilowatt-hour, how a closed reactor comes back, and what all of it adds up to by 2030.
+
+https://thephysicallayer.fyi/journal/nuclear-for-ai/
+
+#Nuclear #Energy #AIInfrastructure
+
+---
+
+## 58 · America rations the plug, in depth (rebuilt 7 Nov 2026; LinkedIn Mon 16 Nov, 11:30, pending)
+
+Dominion has about 54 gigawatts of data centres under contract in Virginia, and bills 4.8.
+
+America cannot build wires as fast as data centres ask for them, so its grids ration the connection instead: a firm plug for those who wait, a cheaper one the grid may cut first, and rules that make every site hold on when the voltage dips, after 3,900 megawatts left Virginia's grid in one morning. Households still share the bill for the wait.
+
+The piece covers how a site gets connected, which step takes longest, and how much of the signed power is actually running.
+
+https://thephysicallayer.fyi/journal/america-rations-the-plug/
+
+#DataCentres #Grid #Power
+
+---
+
+## 59 · The equipment queue, in depth (rebuilt 7 Nov 2026; LinkedIn Wed 18 Nov, 11:30, pending)
+
+Hitachi Energy is building or expanding more than 40 factories, and expects its signed orders to still be worth two and a half to three years of sales when they open.
+
+Siemens Energy's grid business carries about four years of signed work, up from three and a half when its building began. The makers of transformers and switchgear are building fast enough to keep the queue, not to clear it, and a data centre's real start date is often set by that queue before the site is chosen.
+
+The piece covers what a transformer does, why its steel is scarce, and where the months go in the factory.
+
+https://thephysicallayer.fyi/journal/the-equipment-queue/
+
+#Grid #Transformers #DataCentres
+
+---
+
+## 60 · Building your own power, in depth (rebuilt 7 Nov 2026; LinkedIn Fri 20 Nov, 11:30, pending)
+
+GE Vernova had 122 gigawatts of gas turbines under contract at the end of September, and ships about 20 a year.
+
+That is why building your own power beside an AI campus does not skip the queue. It swaps the grid's waiting list for the turbine maker's, now selling production slots for 2032, and the quicker machines, the gas pipe and the air permit all have clocks of their own.
+
+The piece covers how a gas turbine works, why its hottest blade is so hard to make, and what buyers pay to stand in line.
+
+https://thephysicallayer.fyi/journal/building-your-own-power/
+
+#Energy #GasTurbines #DataCentres
+
+---
+
+## 61 · Powering the rack, in depth (rebuilt 7 Nov 2026; LinkedIn Mon 23 Nov, 11:30, pending)
+
+Nvidia has written down why its own rack design cannot go on: at one megawatt, today's wiring would need up to 200 kilograms of copper bar.
+
+So the rack is moving from 54 volts to 800. But Nvidia's own white paper keeps alternating current as the default, and the new voltage arrives first in a cabinet beside the rack, fed from the old power room. Until 2028 every megawatt carries both the old gear and the new.
+
+The piece covers what volts and amps are, how power travels from the grid to the chip, and what holds the building back.
+
+https://thephysicallayer.fyi/journal/powering-the-rack/
+
+#DataCentres #Power #800VDC
+
+---
+
+## 62 · Heat and water, in depth (rebuilt 7 Nov 2026; LinkedIn Wed 25 Nov, 11:30, pending)
+
+A US government lab finds a liquid-cooled AI hall can stop evaporating water for almost no extra power over a year.
+
+Heat has forced cooling onto liquid at the chip, and Nvidia's newest rack takes that liquid at 45 degrees, warm enough for fans alone most hours in many climates. So water decides where and how each hall is cooled, not how many get built. The price of going dry is paid on the hottest afternoon.
+
+The piece covers one watt of heat from the chip to the sky, the three machines on the roof, and where most of the water really goes.
+
+https://thephysicallayer.fyi/journal/heat-and-water/
+
+#DataCentres #Cooling #Water
+
+---
+
+## 63 · Data centres in orbit, in depth (rebuilt 7 Nov 2026; LinkedIn Fri 27 Nov, 11:30, pending)
+
+SpaceX told American regulators one of its AI computing satellites would weigh 3,000 kilograms.
+
+In orbit the sunlight is free and nobody queues for the grid. But the solar array that catches it and the radiator that throws its heat away are both launched by the kilogram. On the mass SpaceX filed and the power it publishes, its satellite carries about 58 kilowatts of computing per tonne, against its target of 100.
+
+The piece covers why heat can leave only as light, what a kilowatt weighs in orbit, and what launch costs against a hall on the ground.
+
+https://thephysicallayer.fyi/journal/data-centres-in-space/
+
+#Space #DataCentres #AIInfrastructure

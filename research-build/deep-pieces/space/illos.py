@@ -31,7 +31,7 @@ a(f'<rect class="i-hot-f" x="{cx - rw / 2}" y="{ry}" width="{rw}" height="{rh}" 
 for k in range(1, 8):
     a(f'<line class="i-thin" x1="{cx - rw / 2 + 8}" y1="{ry + k * rh / 8:.0f}" x2="{cx + rw / 2 - 8}" y2="{ry + k * rh / 8:.0f}"/>')
 a(f'<text class="i-hot-t" x="{cx + rw / 2 + 12}" y="{ry + 30}">radiator, 160 m²</text>')
-a(f'<text class="i-n" x="{cx + rw / 2 + 12}" y="{ry + 48}">sheds 175 kW at about 47°C,</text>')
+a(f'<text class="i-n" x="{cx + rw / 2 + 12}" y="{ry + 48}">sheds 175 kW at 47 to 54°C,</text>')
 a(f'<text class="i-n" x="{cx + rw / 2 + 12}" y="{ry + 64}">glowing from both faces</text>')
 a(f'<text class="i-n" x="{cx - bus / 2 - 8}" y="{ry - 10}" text-anchor="end">chips: 175 kW average, 250 peak</text>')
 # tennis court for scale: 23.77 x 10.97 m
@@ -41,5 +41,5 @@ a(f'<line class="i-thin" x1="{tx + tw / 2:.0f}" y1="{ty}" x2="{tx + tw / 2:.0f}"
 a(f'<text class="i-n" x="{tx + tw / 2:.0f}" y="{ty + th + 18:.0f}" text-anchor="middle">a tennis court, for scale</text>')
 # mass note
 a(f'<text class="i-t" x="{cx}" y="{ry + rh + 56}" text-anchor="middle">Mass filed with the FCC: 3,000 kg. At 175 kW, about 58 kW per tonne; the target is 100.</text>')
-save('craft', W, ry + rh + 70, ''.join(o), 'Scale drawing of SpaceX\'s AI1 computing satellite as published on its Starmind page. Two solar wings span 75 metres and cover about 840 square metres, delivering 210 kilowatts at 250 watts per square metre. A small bus at the centre carries chips drawing 175 kilowatts on average and 250 at peak. A radiator of 160 square metres, about a fifth of the array\'s area, sheds that heat at about 47 degrees, glowing from both faces. A tennis court is drawn beside it for scale. The mass filed with the FCC is 3,000 kilograms, about 58 kilowatts per tonne against a target of 100.')
+save('craft', W, ry + rh + 70, ''.join(o), 'Scale drawing of SpaceX\'s AI1 computing satellite as published on its Starmind page. Two solar wings span 75 metres and cover about 840 square metres, delivering 210 kilowatts at 250 watts per square metre. A small bus at the centre carries chips drawing 175 kilowatts on average and 250 at peak. A radiator of 160 square metres, about a fifth of the array\'s area, sheds that heat at about 47 to 54 degrees, counting the Earth\'s glow, from both faces. A tennis court is drawn beside it for scale. The mass filed with the FCC is 3,000 kilograms, about 58 kilowatts per tonne against a target of 100.')
 print('ok')

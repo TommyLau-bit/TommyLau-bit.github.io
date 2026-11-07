@@ -64,7 +64,7 @@ b, sx, top, bot = hbars([
 ], 16, x0=170, ticks=(0, 4, 8, 12, 16), right=80, fmt=lambda t: f'{t:g} kg')
 lx = sx(10)
 b += f'<line class="c-today" x1="{lx:.1f}" y1="{top}" x2="{lx:.1f}" y2="{bot}"/><text class="c-note" x="{lx-6:.1f}" y="{bot+18}" text-anchor="end">SpaceX\'s whole budget: 10 kg per kW</text>'
-save('budget-chart', b, bot + 26, 'Range bar chart of kilograms launched per kilowatt for each part of an orbital data centre, against SpaceX\'s target of 10 kilograms for the whole craft, shown as a dashed line. Solar array, from Redwire\'s product range, 8 to 14. Radiator, at 1,400 watts per square metre, 2 to 10. Chips and rack, from a ground GB200 rack, about 11, a ceiling since a space payload sheds steel. Eclipse batteries, cells only, 1 to 2. Each part alone sits near the whole budget.')
+save('budget-chart', b, bot + 26, 'Range bar chart of kilograms launched per kilowatt for each part of an orbital data centre, against SpaceX\'s target of 10 kilograms for the whole craft, shown as a dashed line. Solar array, from Redwire\'s product range, 8 to 14. Radiator, at 1,400 watts per square metre, 2 to 10. Chips and rack, from a ground GB200 rack, about 11, a ceiling since a space payload sheds steel. Eclipse batteries, cells only, 1 to 2. The array alone, or a ground rack alone, sits near or over the whole budget.')
 
 # 4 kW per tonne
 b, sx, top, bot = hbars([
@@ -72,11 +72,11 @@ b, sx, top, bot = hbars([
   ('SpaceX page', '"vehicle efficiency"', 75, 75, 'c-bar c-mute', '75'),
   ('AI1 peak, FCC mass', '250 kW / 3 t', 83, 83, 'c-bar', '83'),
   ('AI1 average, FCC mass', '175 kW / 3 t', 58, 58, 'c-bar', '58'),
-  ('Per Starship launch', '5 MW / 100 t', 50, 50, 'c-bar', '50'),
+  ('Per Starship launch', '5 MW / 100 t, if full', 50, 50, 'c-bar', '50'),
   ('Starlink V2 mini', 'whole craft, Google', 49, 49, 'c-bar c-mute', '49'),
   ('Starcloud-1', 'at most, one H100', 12, 12, 'c-bar c-mute', '12'),
 ], 120, x0=170, ticks=(0, 25, 50, 75, 100), right=50, gap=16)
-save('kwpt-chart', b, bot + 8, 'Bar chart of kilowatts of computing per tonne launched. SpaceX\'s prospectus target, 100. SpaceX\'s page, vehicle efficiency 75. AI1 at its 250 kilowatt peak over the 3,000 kilograms filed with the FCC, about 83. AI1 at its 175 kilowatt average, about 58. Five megawatts per Starship launch of 100 tonnes, 50. Google\'s estimate for a Starlink V2 mini, whole craft, about 49. Starcloud-1, at most about 12.')
+save('kwpt-chart', b, bot + 8, 'Bar chart of kilowatts of computing per tonne launched. SpaceX\'s prospectus target, 100. SpaceX\'s page, vehicle efficiency 75. AI1 at its 250 kilowatt peak over the 3,000 kilograms filed with the FCC, about 83. AI1 at its 175 kilowatt average, about 58. Five megawatts per Starship launch, divided by the 100 tonnes SpaceX targets over time, 50. Google\'s estimate for a Starlink V2 mini, whole craft, about 49. Starcloud-1, at most about 12.')
 
 # 5 launched power price, dollars per kW per year
 b, sx, top, bot = hbars([
