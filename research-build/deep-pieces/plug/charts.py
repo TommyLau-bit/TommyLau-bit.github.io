@@ -67,7 +67,7 @@ o.append(f'<text class="c-note" x="{380+40}" y="{Y(2900)+18:.1f}">2,900</text><t
 o.append(f'<line class="c-today" x1="{x0}" y1="{Y(1500):.1f}" x2="{x1}" y2="{Y(1500):.1f}"/>')
 o.append(f'<line class="c-base" x1="{x0}" y1="{base}" x2="{x1}" y2="{base}"/>')
 o.append(f'<text class="c-note" x="{x0}" y="{base+58}">Dashed line: 1,500 MW, the size my test says must not recur in 2028</text>')
-save('events-chart', ''.join(o), base + 66, 'Bar chart of data centre load in PJM that switched to backup power after a fault the grid cleared normally, in megawatts. 10 July 2024: about 1,500, after six dips in 82 seconds. 17 February 2025: about 1,800, after four dips. 22 July 2026: about 3,900, in two waves, about 2,900 and then about 1,000 a minute later. For scale, the new plant and upgrades cleared in PJM\'s 2028/29 capacity auction: 525. A dashed line at 1,500 megawatts marks the size my test says must not recur in 2028.')
+save('events-chart', ''.join(o), base + 66, 'Bar chart of data centre load in PJM that switched to backup power after a fault the grid cleared normally, in megawatts. 10 July 2024: about 1,500, after six dips in 82 seconds. 17 February 2025: about 1,800, after four dips. 22 July 2026: about 3,900, in two waves, about 2,900 and then about 1,000 a minute later. For scale, the new plant and enlarged plants cleared in PJM\'s 2028/29 capacity auction: 525. A dashed line at 1,500 megawatts marks the size my test says must not recur in 2028.')
 
 # 3 PJM's capacity auction, with the December cap and the uncapped price
 o = []
@@ -118,7 +118,7 @@ lx = x0
 for k, t in (('Energy', 'energy'), ('Capacity', 'capacity'), ('Transmission', 'transmission')):
     o.append(f'<rect class="{cls[k]}" x="{lx}" y="178" width="12" height="12"/><text class="c-note" x="{lx+18}" y="188">{t}</text>'); lx += 110
 o.append(f'<line class="c-base" x1="{x0}" y1="30" x2="{x0}" y2="150"/>')
-save('bill-chart', ''.join(o), 200, f'Stacked bar chart of PJM\'s total wholesale cost of power, in dollars per megawatt-hour. First half of 2025: 76.16, of which energy about {v25["Energy"]:.0f}, capacity about {v25["Capacity"]:.0f} and transmission about {v25["Transmission"]:.0f}. First half of 2026: 114.50, of which energy about {v26["Energy"]:.0f}, capacity about {v26["Capacity"]:.0f} and transmission about {v26["Transmission"]:.0f}. Split by my arithmetic from the market monitor\'s shares and growth rates.')
+save('bill-chart', ''.join(o), 200, f'Stacked bar chart of PJM\'s total wholesale cost of power, in dollars per megawatt-hour. First half of 2025: 76.16, of which energy about {v25["Energy"]:.0f}, capacity about {v25["Capacity"]:.0f} and transmission about {v25["Transmission"]:.0f}. First half of 2026: 114.50, of which energy about {v26["Energy"]:.0f}, capacity about {v26["Capacity"]:.0f} and transmission about {v26["Transmission"]:.0f}. As published by PJM\'s market monitor.')
 print('bill parts 2025', {k: round(v, 2) for k, v in v25.items()}, '2026', {k: round(v, 2) for k, v in v26.items()})
 
 # 5 Dominion: contracted against billed
