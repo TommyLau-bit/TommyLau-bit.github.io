@@ -18,15 +18,15 @@ export type Claim = {
 export const CLAIMS: Claim[] = [
   {
     id: 'microreactors',
-    date: '2026-11-07T14:46:52+08:00',
+    date: '2026-11-07T21:19:23+08:00',
     claim: 'America\'s microreactors are paced by fuel, not by building reactors: HALEU and the TRISO fuel made from it are produced in kilograms and handed out by the government, so the first microreactors to run at power will serve military and government sites, and no US data centre will draw power from a microreactor under a commercial contract before 2031.',
     breaksIf: 'A US data centre receives electricity from a microreactor under a commercial supply contract on or before 31 December 2030; or the first microreactor in America to deliver sustained electricity to a customer is at a site that is neither military nor on government land.',
     watch: ['DOE approval of Standard Nuclear\'s SN-TN and SN-ID TRISO plants (targeted Q4 2026)', 'Crusoe and Aalo\'s 2027 demonstration at INL, on ordinary LEU', 'The NRC\'s final microreactor rule (Part 57, proposed 1 May 2026)', 'The first Janus reactor against September 2028, and Radiant\'s full-power test at DOME', 'Centrus HALEU volumes and any fourth DOE allocation round'],
   },
   {
     id: 'johor-singapore-rights',
-    date: '2026-11-07T15:52:33+08:00',
-    home: 'johor-singapore-depth',
+    date: '2026-11-07T21:19:23+08:00',
+    home: 'the-queue-not-the-chip',
     claim: 'In Johor and Singapore the right to draw grid power, not the supply of chips, decides who gets to build, and both governments now ration it: Malaysia\'s data centres will draw less than 40% of the maximum demand of the data centre projects in Tenaga\'s system at June 2027, and Malaysia will still give new data centres grid power only from the spare reserve margin at 31 December 2027.',
     breaksIf: 'Tenaga\'s figures for June 2027 show Malaysia\'s data centre load at 40% or more of the maximum demand of the data centre projects in its system; or, before 31 December 2027, the Malaysian government announces that new data centres may connect to the grid without the spare reserve margin test stated in Parliament on 28 October 2026.',
     watch: ['Tenaga\'s quarterly data centre draw against maximum demand in its system (1,256 MW of 5.65 GW, June 2026)', 'Any Johor-only figure for data centre draw', 'Whether the Energy Focus Group\'s margin test counts bookings, staggered demand or expected draw', 'Singapore\'s next call (review 18 to 24 months from August 2026) and any published award under the Strategic Digital Infrastructure Scheme', 'US rules on remote access to controlled chips (Remote Access Security Act)', 'Sedenak West 500/275/132 kV substation and the 500 kV backbone to Kulai East (by 2030)'],
@@ -89,7 +89,7 @@ export const CLAIMS: Claim[] = [
   {
     id: 'power-first-chips-last',
     date: '2026-09-25T14:00:00+08:00',
-    home: 'contracted-energised-running',
+    home: 'america-rations-the-plug',
     claim: 'The order builders commit in reveals the constraint, and at Jane Street power now comes first and chips last.',
     breaksIf: 'Chips become the longest wait again while transformer and generator lead times fall back to months, or dropping full generator backup proves a false saving.',
     watch: ['Published lead times for transformers and generators', 'Whether builders keep describing the building as the first decision', 'Whether partial backup spreads, or disappears after the first serious failure'],
@@ -121,7 +121,7 @@ export const CLAIMS: Claim[] = [
   {
     id: 'nebius-paid-for-what-is-switched-on',
     date: '2026-09-30T13:16:44+08:00',
-    home: 'contracted-energised-running',
+    home: 'america-rations-the-plug',
     claim: 'AI buyers pay for connected power, and Nebius\'s edge is turning contracted power into connected power faster than they can.',
     breaksIf: 'Prepayments fade, or Nebius misses 800 megawatts connected by the end of 2026, or its customers start selling their own spare capacity.',
     watch: ['Connected megawatts against the target', 'The share of new deals with prepayments', 'Whether revenue spreads beyond Microsoft and Meta', 'Whether any hyperscaler starts renting capacity out instead of in'],
@@ -272,8 +272,8 @@ export const CLAIMS: Claim[] = [
   },
   {
     id: 'nuclear-order-of-holdings',
-    date: '2026-11-07T16:40:12+08:00',
-    home: 'nuclear-for-ai-depth',
+    date: '2026-11-07T21:19:23+08:00',
+    home: 'nuclear-for-ai',
     claim: 'Nuclear power for AI in America arrives in the order of what each project already holds: restarts and uprates of existing reactors, which keep a licensed site, a grid place and ordinary fuel, reach the grid this decade, while new reactors fuelled with HALEU together deliver power from less than 100 MW of capacity to American grids by 31 December 2030, because beyond a few first cores from government stock, their fuel has no running source: one demonstration line and enrichment plants not yet built.',
     breaksIf: 'Reactors fuelled with HALEU together send electricity to American grids from 100 MW or more of capacity on or before 31 December 2030; or fewer than two of Crane, Palisades and Duane Arnold have delivered power to the grid by 31 December 2029.',
     watch: ['Crane (second half of 2027), Palisades (no date since its fuel loading stopped in September 2026) and Duane Arnold (first quarter 2029 at the latest): first power to the grid', 'The first AI-funded extended uprate filed with the NRC (Constellation lists one for the fourth quarter of 2026) and uprate megawatts in service', 'First electricity to a grid from Aurora-ID (2028 to 2029), Kemmerer 1 (2030) and Hermes 2 (2030)', 'HALEU actually delivered by Centrus, the Piketon lease (fixed to end 1 October 2027) and whether the 12 tonne a year build-out is contracted', 'ASP Isotopes enriching its first uranium-235 at Pelindaba', 'Russian enrichment imports after both the US ban waivers and Russia\'s own export curbs end at the close of 2027', 'PJM\'s studies of Crane\'s deliverability with Eddystone\'s 760 MW of rights'],
@@ -321,13 +321,14 @@ export const CLAIMS: Claim[] = [
   {
     id: 'contracted-energised-running',
     date: '2026-10-30T14:20:52+08:00',
-    home: 'contracted-energised-running',
+    home: 'america-rations-the-plug',
     claim: 'An AI campus\'s capacity arrives in stages, and energised power is the last one its builder controls: at Abilene, whose tenant ordered its chips with the campus, and at Nebius, which installs its own chips under contracts with delivery dates, computing follows the power within months, so contracted or announced gigawatts overstate it, while in Malaysia, where Johor holds two thirds of secured data centre capacity, halls can be energised and let well before they run.',
     breaksIf: 'Crusoe reports the Abilene campus energised or complete by the end of 2026 but Oracle has not reported all eight buildings delivered to its customer by its results for the quarter ending 28 February 2027, or Nebius reports at least 800 megawatts connected at the end of 2026 but, at 30 June 2027, reports active power below 800 megawatts or, if it reports no active figure, annualised revenue below US$9.6 billion, 800 megawatts at its stated 2026 base of US$12 million a megawatt.',
     watch: ['Oracle\'s Abilene delivery figures in its December 2026 and March 2027 results (Oracle reports delivery, not running, by site)', 'Any Crusoe statement that phase two is energised or complete', 'Nebius connected power at the end of 2026, and active power or annualised revenue at 30 June 2027 (about 170 MW active and US$1.25bn, end 2025; US$3.0bn, June 2026)', 'Tenaga\'s data centre load against booked maximum demand (1,256 MW against 5.65 GW, June 2026)'],
   },
   {
     id: 'hong-kong-has-the-plug',
+    home: 'the-queue-not-the-chip',
     claim: 'Hong Kong\'s grid is building to its data centres, not holding them back: CLP will have completed the 18 data centre substations in its 2024 to 2028 Development Plan by 31 December 2028, and Sandy Ridge\'s first phase will be energised by 31 December 2027.',
     breaksIf: 'CLP\'s interim or annual results show fewer than 18 data centre substations completed in its 2024 to 2028 Development Plan by 31 December 2028, or Sandy Ridge\'s first phase is not energised by 31 December 2027.',
     watch: ['Data centre substations completed in CLP\'s interim and annual results, every six months (eight by June 2026, one more targeted in the second half of 2026; 18 planned by 2028)', 'Sandy Ridge\'s first phase against CLP\'s mid-2027, Range\'s 2028 and the government\'s 2029', 'CLP\'s installed capacity and local maximum demand in the annual Ten-year Summary (9,258 MW against 7,455 MW in 2025; a margin below 15% is a warning, not a break)', 'CLP\'s quarterly sales to data centres (+12.8%, 6.6% of sales, nine months 2026)', 'Range Intelligent Computing\'s filings for Hong Kong capacity, customers and chips', 'BIS licensing of H200-class chips to end users located in China, and any change to 15 CFR 742.6 or to Hong Kong\'s treatment'],

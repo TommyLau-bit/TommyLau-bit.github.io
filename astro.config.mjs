@@ -86,10 +86,13 @@ const REDIRECTS = {
   '/journal/the-countertop-is-the-bottleneck': '/',
   '/journal/the-two-seconds-after-you-hit-send': '/',
   '/journal/tsmc-says-it-is-the-bottleneck': '/',
+  // folded into the depth pieces, 7 Nov 2026
+  '/journal/contracted-energised-running': '/journal/america-rations-the-plug/#contracted-energised-running',
+  '/journal/hong-kong-has-the-plug': '/journal/the-queue-not-the-chip/#hong-kong-has-the-plug',
   // contracted-energised-running
-  '/journal/abilene-switched-on-in-stages': '/journal/contracted-energised-running/#abilene-switched-on-in-stages',
-  '/journal/nebius-paid-for-what-is-switched-on': '/journal/contracted-energised-running/#nebius-paid-for-what-is-switched-on',
-  '/journal/power-first-chips-last': '/journal/contracted-energised-running/#power-first-chips-last',
+  '/journal/abilene-switched-on-in-stages': '/journal/america-rations-the-plug/#abilene-switched-on-in-stages',
+  '/journal/nebius-paid-for-what-is-switched-on': '/journal/america-rations-the-plug/#nebius-paid-for-what-is-switched-on',
+  '/journal/power-first-chips-last': '/journal/america-rations-the-plug/#power-first-chips-last',
 };
 
 // A redirect must never shadow a live piece: fail the build if the old .md is still there.

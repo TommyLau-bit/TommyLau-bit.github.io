@@ -1,97 +1,138 @@
 ---
 title: "The equipment queue: transformer and switchgear makers are building to keep the wait, not to end it"
 date: 2026-10-07T14:17:41+08:00
-summary: "An AI data centre cannot switch on without a transformer at the grid and switchgear inside its fence. Hitachi Energy, Siemens Energy, Eaton and Schneider Electric make much of that gear, and each is building new factories. Yet each has a bigger pile of signed orders than a year ago, and the makers add floor space only as fast as orders justify, so the wait for equipment is being kept, not cleared."
+summary: "An AI data centre cannot switch on without a transformer at the grid and switchgear inside its fence. Hitachi Energy, Siemens Energy and Eaton are all building new factories, yet each carries more signed work than when the building began, and each adds floor space only as fast as orders justify. The wait for the equipment is being kept, not cleared, and the parts, the steel and the tariffs add queues of their own."
 category: "Analysis"
+format: "depth"
 cover: "/covers/the-equipment-queue.svg"
-tags: ["grid", "power", "data-centres"]
-updated: 2026-11-06
-updateNote: "Now follows one transformer from order to switch-on and shows where the years of waiting come from, with evidence to 6 November 2026."
+tags: ["grid", "power", "data-centres", "supply-chain"]
 draft: false
+updated: 2026-11-07
+updateNote: "Rebuilt in depth: what a transformer and switchgear do, how they are made and why the wait persists, with evidence to 7 November 2026."
 ---
 
-Hitachi Energy is building or expanding more than 40 factories to make the heavy electrical gear that AI data centres need. Yet it tells investors that, as they open, it still expects two and a half to three years of orders waiting.
+<a id="the-equipment-queue"></a>
 
-Siemens Energy tells the same story: new plants, and a longer queue of orders than when it began announcing them.
+Hitachi Energy, the grid business of Japan's Hitachi, is building or expanding more than 40 factories to make the heavy electrical gear that AI data centres need. At its investor day in June 2026 it told investors what it expects when they open: a pile of signed orders still worth two and a half to three years of sales.
 
-That is not a failure to keep up. It is the plan. The makers are building fast enough to keep the queue, not to clear it, and on their own figures the wait will still be measured in years in 2030.
+Siemens Energy tells the same story from Germany. It has added factory space and is spending more than €2bn on more, and its grid business now carries about four years of signed work, up from three and a half when the building began.
 
-"The wait" hides three clocks. Build time is how long one transformer spends in the factory: months, not years. Lead time is how long a buyer waits from order to delivery, lately more than two years. Years of work is how far ahead a maker's order book runs. Headlines quote the second. This piece is about the third, which keeps the second long.
+That is the claim of this piece. The makers of transformers and switchgear are building fast enough to keep the queue, not to clear it, and on their own figures the queue will still hold years of work in 2030. A data centre's real start date is set by that queue, often before the site is chosen.
 
-The chain runs in five steps. First, a data centre cannot switch on without a transformer at the grid and switchgear inside its fence. Second, orders have outrun the makers, so each carries more years of work than when it began announcing factories. Third, a new plant takes two to three years from announcement to first product, so the floor space announced since 2024 lands mostly from 2027. Fourth, the makers size that floor space to signed orders, not to the wait: a plant runs for decades, and they remember halls standing half empty. Fifth, the new plants meet a pile that grew in the meantime. The wait may shorten a little, but it does not end this decade.
+To see why, the piece follows the questions in order. What gear a data centre needs between the grid and the chip, and what a transformer actually does. Why it cannot be bought off the shelf, why its steel is scarce, and where the months go in the factory. How long the wait is, how full the makers' order books are, and why they will not build enough to clear them. Then where America's transformers come from, what tariffs and an emergency order change, and what prices are doing. Then the gear inside the fence, what AI racks change, and whether the parts are the next queue. Finally, whether the shortage has peaked, why spares do not solve it, who holds the scarce thing, and what would prove me wrong.
 
 <details class="analogy">
 <summary>The analogy</summary>
 <p>A popular hairdresser takes forty minutes over a cut: that is the build time. Ring her today and the first free slot is weeks away: that is the lead time. Her diary, full for weeks ahead, is the years of work: the reason the slot is so far off.</p>
-<p>She adds a second chair only once the bookings justify it, so the diary still runs weeks ahead. Her chairs tell you she is growing; her diary tells you when you get a cut. For grid gear, the diary runs in years.</p>
+<p>She adds a second chair only once the bookings justify it, so the diary still runs weeks ahead. She also remembers the year the salon down the road added four chairs and closed. Her chairs tell you she is growing; her diary tells you when you get a cut. For grid gear, the diary runs in years.</p>
 </details>
 
-A large transformer is designed for its own site, by a maker the buyer has approved. Its parts arrive: core steel, copper, and bushings, the insulated plugs that carry current through the tank wall. On the heavy stations the core is stacked by hand, the copper wound and the whole dried and sealed. Every unit is tested at high voltage, then carried to site in pieces, rebuilt and tested again.
+## What electrical gear does an AI data centre need before it can switch on?
 
-<figure class="chart">
-<p class="chart-title">A transformer takes months to build; the years are the queue for the heavy stations</p>
-<p class="chart-sub">One large power transformer, from order to switch-on</p>
-<svg viewBox="0 0 560 196" role="img" aria-label="Diagram of five steps in order. One, design: each large transformer is designed for its site, by a maker the buyer has already approved. Two, parts: grain-oriented core steel, copper and bushings are bought in. Three, build: the core is stacked, the copper wound, the whole dried and sealed on fixed stations; this is the choke point, where the queue forms, because a new hall takes two to three years. Building one unit takes months: over six months, the US Department of Energy found in 2012. Four, test: every unit is tested at high voltage before it ships. Five, install: the unit is stripped down for transport, carried to site, rebuilt and tested again.">
-<rect class="c-box" x="5.0" y="44" width="100.4" height="106" rx="4"/>
-<text class="c-box-t" x="13.0" y="66">1. Design</text>
-<text class="c-note" x="13.0" y="88">One design</text>
-<text class="c-note" x="13.0" y="106">per site, from</text>
-<text class="c-note" x="13.0" y="124">a maker the</text>
-<text class="c-note" x="13.0" y="142">buyer approved</text>
-<line class="c-arrow" x1="106.4" y1="97" x2="111.4" y2="97"/><polygon class="c-arrow-head" points="116.4,97 110.4,93 110.4,101"/>
-<rect class="c-box" x="117.4" y="44" width="100.4" height="106" rx="4"/>
-<text class="c-box-t" x="125.4" y="66">2. Parts</text>
-<text class="c-note" x="125.4" y="88">Core steel,</text>
-<text class="c-note" x="125.4" y="106">copper and</text>
-<text class="c-note" x="125.4" y="124">bushings</text>
-<text class="c-note" x="125.4" y="142">bought in</text>
-<line class="c-arrow" x1="218.8" y1="97" x2="223.8" y2="97"/><polygon class="c-arrow-head" points="228.8,97 222.8,93 222.8,101"/>
-<rect class="c-zone" x="225.8" y="14" width="108.4" height="144" rx="4"/>
-<text class="c-zone-t" x="280.0" y="30" text-anchor="middle">THE CHOKE POINT</text>
-<rect class="c-box" x="229.8" y="44" width="100.4" height="106" rx="4"/>
-<text class="c-box-t" x="237.8" y="66">3. Build</text>
-<text class="c-note" x="237.8" y="88">Stack core,</text>
-<text class="c-note" x="237.8" y="106">wind copper,</text>
-<text class="c-note" x="237.8" y="124">dry and seal</text>
-<text class="c-note" x="237.8" y="142">Fixed stations</text>
-<line class="c-arrow" x1="331.2" y1="97" x2="336.2" y2="97"/><polygon class="c-arrow-head" points="341.2,97 335.2,93 335.2,101"/>
-<rect class="c-box" x="342.2" y="44" width="100.4" height="106" rx="4"/>
-<text class="c-box-t" x="350.2" y="66">4. Test</text>
-<text class="c-note" x="350.2" y="88">Every unit</text>
-<text class="c-note" x="350.2" y="106">tested at</text>
-<text class="c-note" x="350.2" y="124">high voltage</text>
-<text class="c-note" x="350.2" y="142">no skips</text>
-<line class="c-arrow" x1="443.6" y1="97" x2="448.6" y2="97"/><polygon class="c-arrow-head" points="453.6,97 447.6,93 447.6,101"/>
-<rect class="c-box" x="454.6" y="44" width="100.4" height="106" rx="4"/>
-<text class="c-box-t" x="462.6" y="66">5. Install</text>
-<text class="c-note" x="462.6" y="88">Stripped down,</text>
-<text class="c-note" x="462.6" y="106">carried, then</text>
-<text class="c-note" x="462.6" y="124">rebuilt and</text>
-<text class="c-note" x="462.6" y="142">retested</text>
-<text class="c-lab c-s2t" x="229.8" y="180" text-anchor="start">Build: months. New hall: two to three years</text>
-</svg>
-<figcaption>US Department of Energy, Large Power Transformers and the U.S. Electric Grid (June 2012); plant timing from each maker's own announcements. My framing of the chain.</figcaption>
+A chain of five or six separate machines, each from its own factory, that steps the grid's voltage down and protects every step from faults.
+
+Power arrives at a large campus at **transmission voltage**, often 115,000 to 345,000 volts, written 115 to 345 **kilovolts** (kV). A **volt** is the electrical pressure that pushes current along a wire, and those are the pressures of the long-distance lines that cross a country. A server runs on a few dozen volts. Between the two sit the machines this piece is about.
+
+<figure class="illo">
+<p class="illo-title">Between the grid and the chip sit five or six machines, each from its own factory, each with its own queue</p>
+<p class="illo-sub">The electrical chain into an AI campus, simplified, not to scale</p>
+<svg viewBox="0 0 940 390" role="img" aria-label="The electrical chain from the grid to an AI rack, simplified. Power arrives on transmission lines at 115,000 to 345,000 volts. One: a substation with circuit breakers and a large power transformer steps it down to medium voltage, 13,800 or 34,500 volts; this has the longest wait, measured in years. Two: medium-voltage switchgear, the campus fuse board, routes it to each hall. Three: unit transformers step it down to 480 volts. Four: low-voltage switchgear divides it. Five: a UPS with batteries bridges the seconds after a fault. Six: backup generators, diesel or gas, start and can run for days; some orders are booked into 2029. Seven: busways carry power into the racks, where it reaches the chips at a few dozen volts."><line class="i-ground" x1="10" y1="250" x2="930" y2="250"/><path class="i-thin" d="M10 34 V24 H250 V34"/><text class="i-k" x="130.0" y="16" text-anchor="middle">Transmission: 115 to 345 kV</text><path class="i-thin" d="M262 34 V24 H548 V34"/><text class="i-k" x="405.0" y="16" text-anchor="middle">Medium voltage: 13.8 or 34.5 kV</text><path class="i-thin" d="M560 34 V24 H930 V34"/><text class="i-k" x="745.0" y="16" text-anchor="middle">Low voltage: 480 V and below</text><path class="i-line" d="M40 250 L58 70 L76 250 M46 200 H70 M51 150 H65 M34 92 H82 M43 120 H73" style="fill:none"/><path class="i-thin" d="M82 96 C110 112 126 112 144 104"/><rect class="i-choke" x="102" y="78" width="148" height="172" rx="6"/><rect class="i-metal" x="110" y="140" width="34" height="110" rx="3"/><line class="i-thin" x1="127" y1="104" x2="127" y2="140"/><rect class="i-fill" x="156" y="130" width="80" height="120" rx="4"/><rect class="i-fill" x="164" y="100" width="10" height="30" rx="3"/><rect class="i-fill" x="188" y="100" width="10" height="30" rx="3"/><rect class="i-fill" x="212" y="100" width="10" height="30" rx="3"/><line class="i-thin" x1="240" y1="150" x2="240" y2="150"/><line class="i-thin" x1="240" y1="166" x2="240" y2="166"/><line class="i-thin" x1="240" y1="182" x2="240" y2="182"/><line class="i-thin" x1="240" y1="198" x2="240" y2="198"/><line class="i-thin" x1="240" y1="214" x2="240" y2="214"/><text class="i-t" x="176" y="272" text-anchor="middle">1. Substation</text><text class="i-n" x="176" y="288" text-anchor="middle">breakers and a large</text><text class="i-n" x="176" y="304" text-anchor="middle">power transformer</text><text class="i-hot-t" x="176" y="324" text-anchor="middle">the longest wait: years</text><path class="i-line" d="M254 200 H276"/><path class="i-line" d="M269 195 l7 5 l-7 5" style="fill:none"/><rect class="i-metal" x="282" y="130" width="28" height="120" rx="2"/><circle class="i-fill" cx="296" cy="160" r="5"/><line class="i-thin" x1="288" y1="190" x2="304" y2="190"/><rect class="i-metal" x="312" y="130" width="28" height="120" rx="2"/><circle class="i-fill" cx="326" cy="160" r="5"/><line class="i-thin" x1="318" y1="190" x2="334" y2="190"/><rect class="i-metal" x="342" y="130" width="28" height="120" rx="2"/><circle class="i-fill" cx="356" cy="160" r="5"/><line class="i-thin" x1="348" y1="190" x2="364" y2="190"/><rect class="i-metal" x="372" y="130" width="28" height="120" rx="2"/><circle class="i-fill" cx="386" cy="160" r="5"/><line class="i-thin" x1="378" y1="190" x2="394" y2="190"/><text class="i-t" x="341" y="272" text-anchor="middle">2. Medium-voltage</text><text class="i-t" x="341" y="288" text-anchor="middle">switchgear</text><text class="i-n" x="341" y="304" text-anchor="middle">the campus fuse board</text><path class="i-line" d="M406 200 H428"/><path class="i-line" d="M421 195 l7 5 l-7 5" style="fill:none"/><rect class="i-fill" x="434" y="160" width="70" height="90" rx="4"/><line class="i-thin" x1="444" y1="172" x2="494" y2="172"/><line class="i-thin" x1="444" y1="186" x2="494" y2="186"/><line class="i-thin" x1="444" y1="200" x2="494" y2="200"/><line class="i-thin" x1="444" y1="214" x2="494" y2="214"/><text class="i-t" x="469" y="272" text-anchor="middle">3. Unit</text><text class="i-t" x="469" y="288" text-anchor="middle">transformers</text><text class="i-n" x="469" y="304" text-anchor="middle">down to 480 volts</text><path class="i-line" d="M510 200 H560"/><path class="i-line" d="M553 195 l7 5 l-7 5" style="fill:none"/><rect class="i-metal" x="566" y="150" width="22" height="100" rx="2"/><line class="i-thin" x1="571" y1="170" x2="583" y2="170"/><line class="i-thin" x1="571" y1="186" x2="583" y2="186"/><rect class="i-metal" x="590" y="150" width="22" height="100" rx="2"/><line class="i-thin" x1="595" y1="170" x2="607" y2="170"/><line class="i-thin" x1="595" y1="186" x2="607" y2="186"/><rect class="i-metal" x="614" y="150" width="22" height="100" rx="2"/><line class="i-thin" x1="619" y1="170" x2="631" y2="170"/><line class="i-thin" x1="619" y1="186" x2="631" y2="186"/><text class="i-t" x="601" y="272" text-anchor="middle">4. Low-voltage</text><text class="i-t" x="601" y="288" text-anchor="middle">switchgear</text><path class="i-line" d="M644 200 H666"/><path class="i-line" d="M659 195 l7 5 l-7 5" style="fill:none"/><rect class="i-metal" x="672" y="150" width="40" height="100" rx="3"/><rect class="i-cool-f" x="722" y="160" width="26" height="16" rx="2"/><rect class="i-cool-f" x="722" y="182" width="26" height="16" rx="2"/><rect class="i-cool-f" x="722" y="204" width="26" height="16" rx="2"/><rect class="i-cool-f" x="722" y="226" width="26" height="16" rx="2"/><text class="i-t" x="710" y="272" text-anchor="middle">5. UPS and</text><text class="i-t" x="710" y="288" text-anchor="middle">batteries</text><text class="i-n" x="710" y="304" text-anchor="middle">bridge the seconds</text><rect class="i-choke" x="670" y="320" width="114" height="58" rx="6"/><rect class="i-metal" x="676" y="328" width="70" height="42" rx="4"/><circle class="i-fill" cx="762" cy="349" r="12"/><text class="i-t" x="660" y="342" text-anchor="end">6. Backup generators</text><text class="i-n" x="660" y="358" text-anchor="end">diesel or gas, run for days</text><text class="i-hot-t" x="660" y="374" text-anchor="end">some orders into 2029</text><path class="i-line" d="M756 200 H790"/><path class="i-line" d="M783 195 l7 5 l-7 5" style="fill:none"/><rect class="i-fill" x="796" y="110" width="36" height="140" rx="3"/><line class="i-thin" x1="802" y1="124" x2="826" y2="124"/><line class="i-thin" x1="802" y1="144" x2="826" y2="144"/><line class="i-thin" x1="802" y1="164" x2="826" y2="164"/><line class="i-thin" x1="802" y1="184" x2="826" y2="184"/><line class="i-thin" x1="802" y1="204" x2="826" y2="204"/><line class="i-thin" x1="802" y1="224" x2="826" y2="224"/><rect class="i-fill" x="838" y="110" width="36" height="140" rx="3"/><line class="i-thin" x1="844" y1="124" x2="868" y2="124"/><line class="i-thin" x1="844" y1="144" x2="868" y2="144"/><line class="i-thin" x1="844" y1="164" x2="868" y2="164"/><line class="i-thin" x1="844" y1="184" x2="868" y2="184"/><line class="i-thin" x1="844" y1="204" x2="868" y2="204"/><line class="i-thin" x1="844" y1="224" x2="868" y2="224"/><rect class="i-fill" x="880" y="110" width="36" height="140" rx="3"/><line class="i-thin" x1="886" y1="124" x2="910" y2="124"/><line class="i-thin" x1="886" y1="144" x2="910" y2="144"/><line class="i-thin" x1="886" y1="164" x2="910" y2="164"/><line class="i-thin" x1="886" y1="184" x2="910" y2="184"/><line class="i-thin" x1="886" y1="204" x2="910" y2="204"/><line class="i-thin" x1="886" y1="224" x2="910" y2="224"/><text class="i-t" x="856" y="272" text-anchor="middle">7. Busway and racks</text><text class="i-n" x="856" y="288" text-anchor="middle">a few dozen volts</text><text class="i-n" x="856" y="304" text-anchor="middle">at the chips</text><rect class="i-choke" x="20" y="342" width="26" height="16" rx="3"/><text class="i-n" x="54" y="355">shaded: the longest queues</text></svg>
+<figcaption>Voltages are typical American ones. The Nvidia technical blog (20 May 2025) for 13.8 kilovolts at the hall; makers' own statements for the waits; the US Department of Energy (July 2024) for the transformer. My drawing.</figcaption>
 </figure>
 
-The build step binds. A hall has only so many winding lines, ovens and crane bays, and more money buys only a new hall, which takes years. So one transformer takes months to build. The years are the queue in front of those stations.
+The first is a **substation**: a fenced yard where the grid's line ends at the campus. In it sit high-voltage **circuit breakers**, giant switches that open in a few hundredths of a second if a fault occurs, and one or more **power transformers**, which step the voltage down to **medium voltage**, in America usually 13,800 or 34,500 volts.
 
-Siemens Energy even measures that queue. In Europe and North America, demand for large transformers ran about 40% ahead of every maker's capacity in 2025, and its own chart still has demand ahead in 2030. For anyone planning a data centre, the transformer has to be booked before the site is chosen.
+Next comes **medium-voltage switchgear**: a row of steel cabinets full of breakers, the campus's main fuse board, which routes power to each data hall and cuts off any branch that fails. Smaller transformers then step the voltage down again to **low voltage**, usually 480 volts in America.
 
-<hr class="layer">
-<p class="layer-label">For investors</p>
+Inside each hall, **low-voltage switchgear** divides that power again. A **UPS**, an uninterruptible power supply, uses batteries to bridge the seconds between a grid fault and the **backup generators** starting; those are diesel or gas engines that can carry the site for days. Last come the busbars and power distribution units that carry current along the rows and into each rack.
 
-## The makers are building to keep the equipment queue, not to clear it
+Each box is a separate product, from a separate factory, with its own waiting list. The site switches on only when the last one arrives. The slowest of them, by years, is the large power transformer at the front of the chain, so the piece starts there.
 
-<a id="the-equipment-queue"></a>
+## What does a transformer actually do?
 
-Every maker of this gear that publishes a backlog has more years of work waiting, signed orders over a year of sales, than when its factory building began. Hitachi Energy, Hitachi's grid business, has $66.9bn of orders waiting, about 3.1 years of work. Siemens Energy's grid business, which makes transformers and long distance HVDC links, had €51bn at 30 June 2026, about four years. Eaton's Electrical Americas, which sells the switchgear and power rooms inside the fence, passed a full year of sales at the end of 2025 and held there through September 2026.
+It changes the voltage of alternating current, using two coils of copper wound on a shared core of special steel, with no moving parts.
 
-For a fund the queue matters twice. It is pricing power for the makers, and it is a hidden start date for every data centre that needs their gear.
+<figure class="illo">
+<p class="illo-title">A transformer is steel, copper and oil with no moving parts, and every part has its own supplier</p>
+<p class="illo-sub">A large power transformer cut open, simplified, not to scale</p>
+<svg viewBox="0 0 960 466" role="img" aria-label="A large power transformer cut open, simplified, not to scale. A steel tank full of insulating oil holds a core of grain-oriented electrical steel, stacked by hand, with three limbs. Copper windings wrapped in paper sit on each limb. The core steel and the copper each make up about a quarter of the cost, and America has one mill that makes the steel. Tall insulated bushings carry each line through the lid; some now take 135 weeks from Hitachi Energy's Swedish plant. A tap changer on the side adjusts the ratio of turns, quoted at 10 to 22 weeks. Radiators on the other side shed the oil's heat. A large unit weighs about 100 to 400 tons, while most railcars carry about 100, so it travels drained and stripped and is rebuilt on site."><line class="i-ground" x1="40" y1="402" x2="680" y2="402"/><rect class="i-line" x="190" y="150" width="380" height="240" rx="6" style="fill:none;stroke-width:2"/><rect class="i-cool-f" x="194" y="154" width="372" height="232" rx="4" opacity=".35"/><path class="i-metal" d="M230 180 H530 V360 H230 Z M260 210 H350 V330 H260 Z M410 210 H500 V330 H410 Z" style="fill-rule:evenodd"/><line class="i-thin" x1="238" y1="184" x2="238" y2="206" opacity=".5"/><line class="i-thin" x1="272" y1="184" x2="272" y2="206" opacity=".5"/><line class="i-thin" x1="306" y1="184" x2="306" y2="206" opacity=".5"/><line class="i-thin" x1="340" y1="184" x2="340" y2="206" opacity=".5"/><line class="i-thin" x1="374" y1="184" x2="374" y2="206" opacity=".5"/><line class="i-thin" x1="408" y1="184" x2="408" y2="206" opacity=".5"/><line class="i-thin" x1="442" y1="184" x2="442" y2="206" opacity=".5"/><line class="i-thin" x1="476" y1="184" x2="476" y2="206" opacity=".5"/><line class="i-thin" x1="510" y1="184" x2="510" y2="206" opacity=".5"/><rect class="i-hot-f" x="216" y="218" width="58" height="104" rx="6" opacity=".8"/><line class="i-thin" x1="216" y1="226" x2="274" y2="226" opacity=".6"/><line class="i-thin" x1="216" y1="240" x2="274" y2="240" opacity=".6"/><line class="i-thin" x1="216" y1="254" x2="274" y2="254" opacity=".6"/><line class="i-thin" x1="216" y1="268" x2="274" y2="268" opacity=".6"/><line class="i-thin" x1="216" y1="282" x2="274" y2="282" opacity=".6"/><line class="i-thin" x1="216" y1="296" x2="274" y2="296" opacity=".6"/><line class="i-thin" x1="216" y1="310" x2="274" y2="310" opacity=".6"/><rect class="i-hot-f" x="336" y="218" width="58" height="104" rx="6" opacity=".8"/><line class="i-thin" x1="336" y1="226" x2="394" y2="226" opacity=".6"/><line class="i-thin" x1="336" y1="240" x2="394" y2="240" opacity=".6"/><line class="i-thin" x1="336" y1="254" x2="394" y2="254" opacity=".6"/><line class="i-thin" x1="336" y1="268" x2="394" y2="268" opacity=".6"/><line class="i-thin" x1="336" y1="282" x2="394" y2="282" opacity=".6"/><line class="i-thin" x1="336" y1="296" x2="394" y2="296" opacity=".6"/><line class="i-thin" x1="336" y1="310" x2="394" y2="310" opacity=".6"/><rect class="i-hot-f" x="486" y="218" width="58" height="104" rx="6" opacity=".8"/><line class="i-thin" x1="486" y1="226" x2="544" y2="226" opacity=".6"/><line class="i-thin" x1="486" y1="240" x2="544" y2="240" opacity=".6"/><line class="i-thin" x1="486" y1="254" x2="544" y2="254" opacity=".6"/><line class="i-thin" x1="486" y1="268" x2="544" y2="268" opacity=".6"/><line class="i-thin" x1="486" y1="282" x2="544" y2="282" opacity=".6"/><line class="i-thin" x1="486" y1="296" x2="544" y2="296" opacity=".6"/><line class="i-thin" x1="486" y1="310" x2="544" y2="310" opacity=".6"/><rect class="i-fill" x="261" y="40" width="18" height="110" rx="3"/><ellipse class="i-fill" cx="270" cy="52" rx="16" ry="4"/><ellipse class="i-fill" cx="270" cy="67" rx="16" ry="4"/><ellipse class="i-fill" cx="270" cy="82" rx="16" ry="4"/><ellipse class="i-fill" cx="270" cy="97" rx="16" ry="4"/><ellipse class="i-fill" cx="270" cy="112" rx="16" ry="4"/><ellipse class="i-fill" cx="270" cy="127" rx="16" ry="4"/><circle class="i-metal" cx="270" cy="36" r="5"/><rect class="i-fill" x="371" y="40" width="18" height="110" rx="3"/><ellipse class="i-fill" cx="380" cy="52" rx="16" ry="4"/><ellipse class="i-fill" cx="380" cy="67" rx="16" ry="4"/><ellipse class="i-fill" cx="380" cy="82" rx="16" ry="4"/><ellipse class="i-fill" cx="380" cy="97" rx="16" ry="4"/><ellipse class="i-fill" cx="380" cy="112" rx="16" ry="4"/><ellipse class="i-fill" cx="380" cy="127" rx="16" ry="4"/><circle class="i-metal" cx="380" cy="36" r="5"/><rect class="i-fill" x="481" y="40" width="18" height="110" rx="3"/><ellipse class="i-fill" cx="490" cy="52" rx="16" ry="4"/><ellipse class="i-fill" cx="490" cy="67" rx="16" ry="4"/><ellipse class="i-fill" cx="490" cy="82" rx="16" ry="4"/><ellipse class="i-fill" cx="490" cy="97" rx="16" ry="4"/><ellipse class="i-fill" cx="490" cy="112" rx="16" ry="4"/><ellipse class="i-fill" cx="490" cy="127" rx="16" ry="4"/><circle class="i-metal" cx="490" cy="36" r="5"/><rect class="i-metal" x="524" y="104" width="96" height="26" rx="13"/><line class="i-thin" x1="550" y1="130" x2="550" y2="150"/><rect class="i-metal" x="144" y="210" width="46" height="90" rx="4"/><circle class="i-fill" cx="167" cy="226" r="4"/><circle class="i-fill" cx="167" cy="246" r="4"/><circle class="i-fill" cx="167" cy="266" r="4"/><circle class="i-fill" cx="167" cy="286" r="4"/><rect class="i-fill" x="578" y="180" width="8" height="180" rx="2"/><rect class="i-fill" x="592" y="180" width="8" height="180" rx="2"/><rect class="i-fill" x="606" y="180" width="8" height="180" rx="2"/><rect class="i-fill" x="620" y="180" width="8" height="180" rx="2"/><rect class="i-fill" x="634" y="180" width="8" height="180" rx="2"/><line class="i-thin" x1="570" y1="190" x2="646" y2="190"/><line class="i-thin" x1="570" y1="350" x2="646" y2="350"/><line class="i-lead" x1="506" y1="50" x2="682" y2="50"/><text class="i-t" x="690" y="46">Bushings</text><text class="i-n" x="690" y="63">carry each line through the lid;</text><text class="i-hot-t" x="690" y="79">some now wait 135 weeks from Sweden</text><line class="i-lead" x1="528" y1="196" x2="682" y2="196"/><text class="i-t" x="690" y="192">Core</text><text class="i-n" x="690" y="209">grain-oriented steel, stacked by hand;</text><text class="i-hot-t" x="690" y="225">about a quarter of the cost; one US mill</text><line class="i-lead" x1="514" y1="276" x2="682" y2="276"/><text class="i-t" x="690" y="272">Windings</text><text class="i-n" x="690" y="289">copper coils wrapped in paper;</text><text class="i-n" x="690" y="305">about a quarter of the cost</text><line class="i-lead" x1="560" y1="346" x2="682" y2="346"/><text class="i-t" x="690" y="342">Tank and oil</text><text class="i-n" x="690" y="359">oil insulates and carries heat</text><text class="i-n" x="690" y="375">out to the radiators and fans</text><text class="i-t" x="140" y="326" text-anchor="end">Tap changer</text><text class="i-n" x="140" y="342" text-anchor="end">adjusts the ratio</text><text class="i-n" x="140" y="358" text-anchor="end">10 to 22 weeks</text><line class="i-lead" x1="167" y1="300" x2="167" y2="312"/><text class="i-t" x="40" y="436">A large unit weighs about 100 to 400 tons</text><text class="i-n" x="40" y="454">most railcars carry about 100; it travels drained, without its bushings, and is rebuilt on site</text></svg>
+<figcaption>US Department of Energy (June 2012 and July 2024) for the parts, cost shares and weights; Hitachi Energy's component delivery page (29 October 2026) for the bushings and tap changers. My drawing.</figcaption>
+</figure>
+
+Grid power is **alternating current**: it reverses direction 60 times a second in America and 50 in Europe and most of Asia. Feed that current into one coil, and it makes a magnetic field in the steel core that swings back and forth with it. That swinging field passes through the second coil and makes a current flow in it.
+
+The trick is in the turns. If the second coil has a tenth as many turns of wire as the first, its voltage is a tenth as high. So a transformer is a lever for voltage: the ratio of turns sets the ratio of voltages, and the core carries the force between them.
+
+Why bother? Because a wire wastes power as heat, and the waste rises with the square of the current. For the same power, double the voltage and the current halves, so the heat lost falls to a quarter. That is why power stations step up to very high voltage for the long lines, and why substations step it down again for use.
+
+The US Department of Energy estimates that about 90 per cent of the electricity Americans use passes through at least one **large power transformer**, which it defines as a unit rated at 100 MVA or more. An **MVA**, a megavolt-ampere, measures how much power the unit can carry, like the bore of a pipe. A data centre's load is stated in **megawatts**, the water that actually flows; for this gear the two are close enough to read together.
+
+A large unit is mostly steel, copper and oil. The core alone holds 80 to 120 tonnes of steel in a unit of 300 to 500 MVA, the department found in 2012. The windings sit around it, wrapped in paper insulation. Both stand in a steel tank of insulating oil, which carries heat out to radiators and fans.
+
+Two more parts matter later. **Bushings** are the tall insulated plugs that carry each conductor through the tank wall to the line outside. A **tap changer** switches between points on the winding, adjusting the ratio a little to hold voltage steady as load changes. Nothing else moves, so a transformer can run for 40 years or more.
+
+## Why can't a data centre buy one off the shelf?
+
+Because nearly every large transformer is designed for one site, by a maker the buyer has approved in advance, and is built to order.
+
+The Department of Energy's 2012 study of large power transformers calls them "custom-designed equipment". Each is engineered for one substation's voltages, rating, space and route to site. An industry source told the department that only about 1.3 units are built to each design, so almost every unit is its own drawing.
+
+Buyers also limit whom they buy from. Utilities purchase only from makers they have **prequalified**, which means auditing the factory, its quality system and its test results. The department calls that "a lengthy process that can take years". A new maker, or a new factory, cannot simply start selling to a utility the day it opens.
+
+So there is no shelf stock to buy, and no spot market. A campus that needs a transformer joins the order book of a maker its utility already trusts, and waits its turn there.
+
+The wait hides three clocks, and they are easily confused. **Build time** is how long one transformer spends in the factory: months, not years. **Lead time** is how long a buyer waits from order to delivery. **Years of work** is how far ahead a maker's signed orders run at its current pace. Headlines quote the second. This piece is mostly about the third, which keeps the second long.
+
+## Why is the steel in the core so hard to get?
+
+Because it is a special grade, rolled so its crystals line up, and America has one mill that makes it.
+
+Ordinary steel is a jumble of tiny crystals pointing every way, so a magnetic field loses energy turning them back and forth. **Grain-oriented electrical steel**, or GOES, is rolled and heat-treated so the crystals line up along the strip. Magnetic flux then runs easily one way, and the core wastes far less power as heat. The best grades have their surface scored by laser to cut the loss further.
+
+In America one company makes it. The Department of Energy's report to Congress of July 2024 names Cleveland-Cliffs, through the AK Steel business it bought in 2020, as "the sole active domestic GOES supplier". Using data from 2020 to 2022, it said that mill could meet only 12 to 20 per cent of American demand. The highest grade, it added, comes only from Nippon Steel in Japan.
+
+The rest is imported, in some form. The department found that about 80 per cent of GOES used in America in 2019 was imported, counting the cut strips, the stacked cores and the steel inside finished transformers. It called the domestic supply "a major weak link" in the chain.
+
+The steel also matters for cost. The same report, citing a 2020 Commerce Department survey, says the steel and the copper windings "each account for roughly 25 percent" of the cost of making a large transformer. When either price jumps, the maker's margin on an order priced months earlier takes the hit.
+
+More is coming, slowly. On 5 October 2026 Cleveland-Cliffs announced a $200m project at its Butler Works mill in Pennsylvania to lift its output by up to 25 per cent by early 2028, backed by a $75m Department of Energy award. Even then, on the department's 2020 to 2022 figures, one mill would remain a minority supplier.
+
+## Where do the months go in the factory?
+
+Into a few fixed stations, each needing skilled hands, a clean hall and heavy cranes, which a maker cannot multiply quickly.
+
+The Department of Energy lists seven steps. Engineering and design come first. Then the core is built, stacking thousands of thin steel sheets by hand, work the department says "requires highly-skilled work force". The copper is wound and fitted around it, and the whole assembly is dried in ovens, because moisture ruins the paper insulation.
+
+The tank is made so that it is ready just as the dried assembly is, before it soaks up damp again. Final assembly happens in a clean hall: "even a tiny amount of dust or moisture can deteriorate the performance", the department found. Then every unit is tested at high voltage before it ships.
+
+The department's 2012 study put the time to make one large unit at "in excess of six months". That is build time. The binding constraint is not the hours but the stations: winding lines, drying ovens, crane bays and test bays. Its 2024 report puts it plainly: capacity "cannot easily be expanded except by building a new facility".
+
+Moving the finished unit is a project of its own. A large transformer weighs about 100 to 400 tons, while most railcars carry about 100. The heaviest ride on **Schnabel cars**, special railcars, some with 20 axles or more, that cradle the load between two arms. The department counted about 30 in North America in 2012, and its 2024 report says only about three of the largest kind are available. Clearing a route can take nine months, it says.
+
+To travel at all, the unit is drained of oil and stripped of its bushings and radiators. On site it is rebuilt, filled, dried under vacuum and tested again. So a transformer that leaves the factory in months can still take years from order to switch-on, and most of that time is spent waiting for a slot at the stations.
+
+## How long is the wait, and how is it measured?
+
+Years for a large unit, by every published measure, against months before the pandemic.
+
+No maker publishes a list price or lead time for a complete large transformer, so the wait has to be pieced together. The oldest dated benchmark is the Department of Energy's: in 2010, American makers delivered in five to 12 months from order, and foreign makers in six to 16.
+
+The department's July 2024 report gives the new normal: "36-month lead times being commonly quoted and maximum lead times reaching as much as 60 months". Before the pandemic, it notes, a large unit could be ordered with a lead time of less than a year. Siemens Energy itself, announcing its first American transformer plant in February 2024, cited waits of "up to five years".
+
+Consultants give quarterly averages. Wood Mackenzie, an energy research firm, put power transformers at 128 weeks on average in the second quarter of 2025, about two and a half years. Those are a consultant's survey figures, not a regulator's, and the piece uses them only as a cross-check.
+
+Smaller units have eased. The National Renewable Energy Laboratory reported in February 2024 that **distribution transformers**, the smaller units on poles and pads that serve streets and buildings, were taking up to two years. By the second quarter of 2025 Wood Mackenzie put them at about 30 weeks. The large units, built on the scarce stations, have not followed.
+
+## How full are the makers' order books?
+
+Every maker of this gear that publishes a backlog has more years of work waiting than when its factory building began.
+
+**Backlog** is the pile of signed orders not yet delivered: the hairdresser's diary. **Book-to-bill** is orders in a period divided by sales in the same period; above 1, the diary is growing. **Years of work** is backlog divided by the same business's sales over the previous four quarters. It is my arithmetic from each filing, and it measures how long the factories would take to clear the pile if no new order came.
 
 <figure class="chart">
 <p class="chart-title">The wait is getting longer, and the new factories are still to come</p>
 <p class="chart-sub">Signed orders not yet delivered, in years of each business's sales</p>
-<svg viewBox="0 0 560 320" role="img" aria-label="Line chart. Siemens Energy's grid business rose from 3.56 years of work in September 2024 to 3.96 in June 2026, Hitachi Energy from about 2.8 in March 2025 to about 3.1 in September 2026, and Eaton's Americas electrical business from 0.89 in December 2024 to 1.05 in June 2026, where it held in September 2026. The new transformer and switchgear plants are due from 2027 to 2029.">
+<svg viewBox="0 0 560 320" role="img" aria-label="Line chart. Siemens Energy's grid business rose from 3.56 years of work in September 2024 to about 4 in June 2026, Hitachi Energy from about 2.8 in March 2025 to about 3.1 in September 2026, and Eaton's Americas electrical business from 0.89 in December 2024 to 1.05 in June 2026, where it held in September 2026. The new transformer and switchgear plants are due from 2027 to 2029.">
 <rect class="c-zone" x="267" y="20" width="273" height="260"/>
 <text class="c-zone-t" x="280" y="40">New plants due</text>
 <g class="c-grid">
@@ -105,7 +146,7 @@ For a fund the queue matters twice. It is pricing power for the makers, and it i
 <polyline class="c-line c-s2" points="108.2,118.2 199.1,110.7 221.8,103.2 244.5,100.9"/>
 <polyline class="c-line c-s3" points="85.5,228.6 130.9,226.3 153.6,225.1 176.4,222.2 199.1,219.9 221.8,219.3 244.5,219.3"/>
 <circle class="c-dot c-s1" cx="221.8" cy="51.2" r="3.5"/><circle class="c-dot c-s2" cx="244.5" cy="100.9" r="3.5"/><circle class="c-dot c-s3" cx="244.5" cy="219.3" r="3.5"/>
-<text class="c-lab c-s1t" x="62" y="96">Siemens Energy grid, 3.96</text>
+<text class="c-lab c-s1t" x="62" y="96">Siemens Energy grid, about 4</text>
 <text class="c-lab c-s2t" x="96" y="140">Hitachi Energy, about 3.1</text>
 <text class="c-lab c-s3t" x="62" y="210">Eaton Americas, 1.05</text>
 <g class="c-plant">
@@ -117,87 +158,60 @@ For a fund the queue matters twice. It is pricing power for the makers, and it i
 <figcaption>Years of work is backlog divided by the same business's sales over the previous four quarters, my arithmetic from each company's filings to 30 September 2026; Siemens Energy's latest is 30 June 2026. Siemens Energy's figure includes long HVDC links, so compare the direction, not the levels. Plant dates are each maker's own: Eaton's Jonesville and Bellevue plants in 2027, Siemens Energy's Nuremberg expansion by 2028, Hitachi Energy's Gallman plant in 2029.</figcaption>
 </figure>
 
+Hitachi Energy had $66.9bn of orders waiting at 30 September 2026, about 3.1 years of its sales, up from about 2.8 in March 2025. Siemens Energy's grid business, Grid Technologies, had €51bn at 30 June 2026, about four years. It was 3.56 in September 2024. GE Vernova's grid business, Electrification, had $42.2bn of equipment backlog at 30 September 2026, 60 per cent more than a year earlier, including $5bn from Prolec GE, the transformer maker it bought outright in February 2026.
+
 <a id="eaton-order-book-outruns-it"></a>
 
-The three ratios are not comparable, and the direction is the point. All three rose together, in the same two years the factory programmes were announced. Eaton's has since stopped rising: 1.05 in June 2026 and 1.05 again in September, with organic orders over the past twelve months up 39% on a year earlier.
+Eaton is the inside-the-fence test. Its Electrical Americas business sells the switchgear, power rooms and distribution gear that sit between the substation and the racks. Its backlog of $16.0bn at 30 September 2026 was 1.05 years of sales, up from 0.93 in June 2025 and 0.89 at the end of 2024. Organic orders over the previous twelve months were up 39 per cent.
 
-## Six things keep a large transformer slow, and money buys only one of them
+The ratios are not comparable with each other, and the direction is the point. The two grid makers carry **HVDC** links, high-voltage direct current lines that take years to build and pad their order books. Eaton's gear mostly ships within a year: 72 per cent of its whole company backlog is due for delivery within twelve months, its September 2026 filing says. What matters is that all of them rose in the same two years the factory programmes were announced.
 
-**Custom by design.** The US Department of Energy, in its 2012 study of large power transformers, calls them "custom-designed equipment". Each is engineered for one substation's voltages, rating and route, so there is no shelf stock. Utilities buy only from makers they have prequalified, a process the department says "can take years".
+Eaton's ratio has since stopped rising: 1.049 in June 2026 and 1.050 in September. I return to that below, because it is the first sign that the inside-the-fence queue may be levelling off.
 
-**Scarce steel.** The core needs grain-oriented electrical steel, rolled so its crystals line up and magnetic flux runs easily along the strip. In America one mill makes it.
+## Why don't the makers build enough factories to clear the queue?
 
-**Craft and clean rooms.** Stacking the core and winding the copper is skilled hand work. Final assembly needs a clean hall, because "even a tiny amount of dust or moisture" can weaken the unit, the department found.
-
-**Heavy stations, slow halls.** Cranes, ovens, winding lines and test bays cap what a hall can finish in a year. This is the one constraint money can buy, and a new hall takes two to three years from announcement to first product.
-
-**Monster logistics.** A large unit weighs about 100 to 400 tons, while the heaviest load a railway normally carries is about 100. The department counted only about 30 Schnabel cars, the special railcars that carry such loads, in North America in 2012.
-
-**Everyone at once.** Grids, renewables and data centres all order the same gear in the same years, and the makers will not build halls to clear the pile.
-
-## The makers keep the queue on purpose, and they have said so
+Because a factory lasts decades and one AI cycle may not, and the makers have said in their own words that they will not build ahead of signed orders.
 
 <a id="hitachi-energy-plans-the-queue"></a>
 
-The last of those six is a choice, not physics. At its investor day on 10 June 2026, Hitachi, Hitachi Energy's parent, showed its energy backlog growing towards about $100bn by fiscal 2030 and expected it to "remain stable at 2.5-3x" revenue. Hitachi Energy is "not building over-capacity", in Hitachi's own summary of the session.
+At its investor day on 10 June 2026, Hitachi showed its energy backlog growing towards about $100bn by fiscal 2030, and said it expected the backlog to "remain stable at 2.5-3x" revenue. Hitachi says it invests only in projects whose profitability is secured. It plans more than $6bn of factory spending from 2024 to 2027, double the previous four years, and its American programme alone is now around $1.5bn.
 
-The first reason is that a hall lasts decades and one AI cycle may not. Hitachi Energy plans over $6bn of factory spending from 2024 to 2027, double the previous four years. Siemens Energy added about 20% capacity for €600m and is putting over €2bn more into transformers and switchgear by fiscal 2028.
+ABB, the Swiss maker of switchgear and power gear inside the fence, said the same thing differently in October 2026. Its capital spending will stay "around $1 billion" and it does "not expect it to rise further in the mid-term". New capacity will come partly by "selectively leveraging third-party assembly": borrowed floor space, which can be handed back.
 
-The second is memory. The makers lived through long years when their halls stood half empty, and capacity sized to clear the queue would be idle the day demand cools.
+The first reason is the life of the asset. A transformer hall runs for decades. An AI build-out that slows in 2029 would leave a hall built to clear the 2026 queue standing idle for most of its life. Sizing to signed orders, not to the wait, protects the return on every dollar spent.
 
-The third is that the queue pays. A long order book lets a maker choose its orders and price them. It carries a risk: Eaton's Electrical Americas margin fell to 27.5% in the second quarter of 2026 as higher metal costs met orders priced months earlier. In the third quarter it recovered to 29.8%, half a point below the 30.3% of a year earlier.
+The second is memory. Over the preceding decades, the Department of Energy recorded in 2012, transformer makers consolidated "to remove excess capacity and move their operations offshore". The last boom, from 2008 to 2011, ended with Korean makers accused of selling below American prices and an anti-dumping order that is still in force. Every maker in this piece remembers what too many halls did to prices.
 
-## The headlines count factories, and the order books say the wait is growing
+The third is that the queue pays. A long order book lets a maker choose its orders and price them. It carries a risk: Eaton's Electrical Americas margin fell to 27.5 per cent in the second quarter of 2026, as higher metal costs met orders priced months earlier. In the third quarter it recovered to 29.8 per cent, half a point below the 30.3 per cent of a year earlier.
 
-The visible story is the building programme. Hitachi Energy is building or expanding more than 40 factories, and Siemens Energy, Eaton and Schneider Electric, the French maker of power gear inside the fence, all have programmes of their own. It reads as a shortage being fixed.
+## When do the new factories arrive, and how much do they add?
 
-The order books say otherwise. Years of work rose in the same two years the plants were announced, and a plant takes two to three years to reach first product, so the floor space announced since 2024 mostly arrives from 2027 on.
+Mostly from 2027, and greenfield plants take two to three years from announcement to first product.
 
 <figure class="chart">
 <p class="chart-title">Most of the new floor space lands from 2027 on</p>
-<p class="chart-sub">Dated transformer and switchgear plants, from announcement to the latest start date given</p>
-<svg viewBox="0 0 560 250" role="img" aria-label="Timeline. Siemens Energy's Charlotte plant was announced in February 2024 for early 2026; a press report in June 2025 relayed a Siemens Energy board member giving early 2027 for its first transformers. Eaton's Bellevue plant, announced April 2026, is due in the first half of 2027. Eaton's Jonesville plant, announced February 2025, is due in 2027. Siemens Energy's Nuremberg expansion, announced September 2025, is due by 2028. Hitachi Energy's Gallman plant, announced September 2026, is due in 2029.">
-<g class="c-grid"><line x1="190" y1="20" x2="190" y2="215"/><line x1="248.3" y1="20" x2="248.3" y2="215"/><line x1="306.6" y1="20" x2="306.6" y2="215"/><line x1="364.9" y1="20" x2="364.9" y2="215"/><line x1="423.2" y1="20" x2="423.2" y2="215"/><line x1="481.5" y1="20" x2="481.5" y2="215"/><line x1="540" y1="20" x2="540" y2="215"/></g>
-<g class="c-axis">
-<text x="190" y="236" text-anchor="middle">2024</text><text x="248.3" y="236" text-anchor="middle">2025</text><text x="306.6" y="236" text-anchor="middle">2026</text><text x="364.9" y="236" text-anchor="middle">2027</text><text x="423.2" y="236" text-anchor="middle">2028</text><text x="481.5" y="236" text-anchor="middle">2029</text><text x="540" y="236" text-anchor="middle">2030</text>
-<text x="180" y="44" text-anchor="end">Siemens Energy, Charlotte</text>
-<text x="180" y="84" text-anchor="end">Eaton, Bellevue</text>
-<text x="180" y="124" text-anchor="end">Eaton, Jonesville</text>
-<text x="180" y="164" text-anchor="end">Siemens Energy, Nuremberg</text>
-<text x="180" y="204" text-anchor="end">Hitachi Energy, Gallman</text>
-</g>
-<line class="c-today" x1="355" y1="14" x2="355" y2="215"/><text class="c-today-t" x="355" y="12" text-anchor="middle">today</text>
-<g class="c-span">
-<line x1="197" y1="40" x2="370.7" y2="40"/><line x1="322.3" y1="80" x2="379.5" y2="80"/><line x1="255.3" y1="120" x2="394.1" y2="120"/><line x1="287.9" y1="160" x2="423.2" y2="160"/><line x1="348" y1="200" x2="510.7" y2="200"/>
-</g>
-<g class="c-start"><circle cx="197" cy="40" r="4"/><circle cx="322.3" cy="80" r="4"/><circle cx="255.3" cy="120" r="4"/><circle cx="287.9" cy="160" r="4"/><circle cx="348" cy="200" r="4"/></g>
-<g class="c-end"><circle cx="370.7" cy="40" r="4.5"/><circle cx="379.5" cy="80" r="4.5"/><circle cx="394.1" cy="120" r="4.5"/><circle cx="423.2" cy="160" r="4.5"/><circle cx="510.7" cy="200" r="4.5"/></g>
-<g class="c-endt"><text x="378" y="44">early 2027, press report</text><text x="387" y="84">first half 2027</text><text x="402" y="124">2027</text><text x="431" y="164">by 2028</text><text x="518" y="204">2029</text></g>
-<text class="c-note" x="312.4" y="30" text-anchor="middle">announced for early 2026</text>
-<line class="c-plant" x1="312.4" y1="34" x2="312.4" y2="46"/>
-</svg>
-<figcaption>Hollow dot: announced. Solid dot: the latest start date given. Charlotte was announced on 14 February 2024 for early 2026; a Reuters report of 26 June 2025 relayed Tim Holt, a Siemens Energy board member, saying its first transformers would come off the line in early 2027. No Siemens Energy release I found confirms a start. Hitachi Energy's South Boston plant and Siemens Energy's Greater Richland plant have no published start dates and are left off.</figcaption>
+<p class="chart-sub">Dated plants for transformers, switchgear, bushings and core steel, from announcement to the production date given</p>
+<svg viewBox="0 0 560 488" role="img" aria-label="Timeline of dated new plants for transformers, switchgear, bushings and core steel, from announcement to the production date each maker gives. Siemens Energy Charlotte, announced February 2024 for early 2026, early 2027 by a press report. Virginia Transformer Rincon, announced November 2025, March 2027. HD Hyundai Montgomery, ground broken March 2026, April 2027. Eaton Bellevue, April 2026, first half of 2027. Hitachi Energy Alamo bushings, August 2025, mid-2027. Eaton Jonesville, February 2025, 2027. Cleveland-Cliffs Butler Works steel, October 2026, early 2028. Siemens Energy Nuremberg, September 2025, by 2028. Hyosung Memphis, November 2025, 2028. Hitachi Energy Gallman, September 2026, 2029. Prolec GE Goldsboro, May 2025, capacity doubled by 2030."><g class="c-grid"><line x1="196.0" y1="24" x2="196.0" y2="458"/><line x1="242.3" y1="24" x2="242.3" y2="458"/><line x1="288.6" y1="24" x2="288.6" y2="458"/><line x1="334.9" y1="24" x2="334.9" y2="458"/><line x1="381.1" y1="24" x2="381.1" y2="458"/><line x1="427.4" y1="24" x2="427.4" y2="458"/><line x1="473.7" y1="24" x2="473.7" y2="458"/><line x1="520.0" y1="24" x2="520.0" y2="458"/></g><g class="c-axis"><text x="196.0" y="474" text-anchor="middle">2024</text><text x="242.3" y="474" text-anchor="middle">2025</text><text x="288.6" y="474" text-anchor="middle">2026</text><text x="334.9" y="474" text-anchor="middle">2027</text><text x="381.1" y="474" text-anchor="middle">2028</text><text x="427.4" y="474" text-anchor="middle">2029</text><text x="473.7" y="474" text-anchor="middle">2030</text><text x="520.0" y="474" text-anchor="middle">2031</text></g><line class="c-today" x1="327.9" y1="24" x2="327.9" y2="458"/><text class="c-today-t" x="327.9" y="18" text-anchor="middle">today</text><text class="c-box-t" x="0" y="42">Siemens Energy, Charlotte</text><text class="c-note" x="0" y="57">large transformers, $150m</text><g class="c-span"><line x1="201.8" y1="40" x2="339.5" y2="40"/></g><g class="c-start"><circle cx="201.8" cy="40" r="4"/></g><g class="c-end"><circle cx="339.5" cy="40" r="4.5"/></g><g class="c-endt"><text x="347.5" y="44">early 2027, press</text></g><text class="c-box-t" x="0" y="82">Virginia Transformer, Rincon</text><text class="c-note" x="0" y="97">expansion, $40m</text><g class="c-span"><line x1="282.8" y1="80" x2="344.5" y2="80"/></g><g class="c-start"><circle cx="282.8" cy="80" r="4"/></g><g class="c-end"><circle cx="344.5" cy="80" r="4.5"/></g><g class="c-endt"><text x="352.5" y="84">March 2027</text></g><text class="c-box-t" x="0" y="122">HD Hyundai, Montgomery</text><text class="c-note" x="0" y="137">second plant, about $200m</text><g class="c-span"><line x1="297.1" y1="120" x2="348.4" y2="120"/></g><g class="c-start"><circle cx="297.1" cy="120" r="4"/></g><g class="c-end"><circle cx="348.4" cy="120" r="4.5"/></g><g class="c-endt"><text x="356.4" y="124">April 2027</text></g><text class="c-box-t" x="0" y="162">Eaton, Bellevue</text><text class="c-note" x="0" y="177">switchgear, over $30m</text><g class="c-span"><line x1="301.3" y1="160" x2="334.9" y2="160"/></g><g class="c-span"><line x1="334.9" y1="160" x2="358.0" y2="160" style="stroke-width:7;opacity:.45"/></g><g class="c-start"><circle cx="301.3" cy="160" r="4"/></g><g class="c-end"><circle cx="334.9" cy="160" r="4.5"/></g><g class="c-endt"><text x="366.0" y="164">first half 2027</text></g><text class="c-box-t" x="0" y="202">Hitachi Energy, Alamo</text><text class="c-note" x="0" y="217">bushings, $106m</text><g class="c-span"><line x1="271.6" y1="200" x2="358.0" y2="200"/></g><g class="c-start"><circle cx="271.6" cy="200" r="4"/></g><g class="c-end"><circle cx="358.0" cy="200" r="4.5"/></g><g class="c-endt"><text x="366.0" y="204">mid-2027</text></g><text class="c-box-t" x="0" y="242">Eaton, Jonesville</text><text class="c-note" x="0" y="257">transformers, $340m</text><g class="c-span"><line x1="247.7" y1="240" x2="334.9" y2="240"/></g><g class="c-span"><line x1="334.9" y1="240" x2="381.1" y2="240" style="stroke-width:7;opacity:.45"/></g><g class="c-start"><circle cx="247.7" cy="240" r="4"/></g><g class="c-end"><circle cx="334.9" cy="240" r="4.5"/></g><g class="c-endt"><text x="389.1" y="244">2027</text></g><text class="c-box-t" x="0" y="282">Cleveland-Cliffs, Butler</text><text class="c-note" x="0" y="297">core steel, $200m</text><g class="c-span"><line x1="324.1" y1="280" x2="388.1" y2="280"/></g><g class="c-start"><circle cx="324.1" cy="280" r="4"/></g><g class="c-end"><circle cx="388.1" cy="280" r="4.5"/></g><g class="c-endt"><text x="396.1" y="284">early 2028</text></g><text class="c-box-t" x="0" y="322">Siemens Energy, Nuremberg</text><text class="c-note" x="0" y="337">transformers, €220m</text><g class="c-span"><line x1="273.9" y1="320" x2="381.1" y2="320"/></g><g class="c-start"><circle cx="273.9" cy="320" r="4"/></g><g class="c-end"><circle cx="381.1" cy="320" r="4.5"/></g><g class="c-endt"><text x="389.1" y="324">by 2028</text></g><text class="c-box-t" x="0" y="362">Hyosung, Memphis</text><text class="c-note" x="0" y="377">transformers, $157m</text><g class="c-span"><line x1="282.8" y1="360" x2="381.1" y2="360"/></g><g class="c-span"><line x1="381.1" y1="360" x2="427.4" y2="360" style="stroke-width:7;opacity:.45"/></g><g class="c-start"><circle cx="282.8" cy="360" r="4"/></g><g class="c-end"><circle cx="381.1" cy="360" r="4.5"/></g><g class="c-endt"><text x="435.4" y="364">2028</text></g><text class="c-box-t" x="0" y="402">Hitachi Energy, Gallman</text><text class="c-note" x="0" y="417">transformers, $528m</text><g class="c-span"><line x1="321.4" y1="400" x2="427.4" y2="400"/></g><g class="c-span"><line x1="427.4" y1="400" x2="473.7" y2="400" style="stroke-width:7;opacity:.45"/></g><g class="c-start"><circle cx="321.4" cy="400" r="4"/></g><g class="c-end"><circle cx="427.4" cy="400" r="4.5"/></g><g class="c-endt"><text x="481.7" y="404">2029</text></g><text class="c-box-t" x="0" y="442">Prolec GE, Goldsboro</text><text class="c-note" x="0" y="457">transformers, $140m</text><g class="c-span"><line x1="259.6" y1="440" x2="473.7" y2="440"/></g><g class="c-start"><circle cx="259.6" cy="440" r="4"/></g><g class="c-end"><circle cx="473.7" cy="440" r="4.5"/></g><g class="c-endt"><text x="251.6" y="444" text-anchor="end">doubled by 2030</text></g></svg>
+<figcaption>Hollow dot: announced or ground broken. Solid dot: the production date each maker gives; a thick line is a year given without a month. Charlotte was announced for early 2026; its 2027 date is a board member's, relayed by Reuters (26 June 2025). Hitachi Energy's South Boston plant and Siemens Energy's Greater Richland plant have no published dates and are left off.</figcaption>
 </figure>
 
-## Four terms carry the argument
+The Department of Energy's 2024 report says a new factory takes one to three years to build, and that winding machines and core tables alone "can take 1-2 years to obtain from suppliers". The dated plants bear that out. Eaton's Jonesville transformer plant in South Carolina, announced in February 2025, is due in 2027. Hitachi Energy's Gallman plant in Mississippi, announced in September 2026, is due in 2029.
 
-**MVA and MW.** A transformer is rated in MVA, megavolt-amperes, which is what the equipment can carry, like the size of a pipe. A data centre's load is stated in megawatts, the water that actually flows. Siemens Energy measures its market in GVA, a thousand MVA.
+Expansions on an existing site are faster. HD Hyundai Electric broke ground on a second plant at Montgomery, Alabama, in March 2026 and expects to finish it in April 2027. Virginia Transformer expects its Rincon, Georgia, expansion in March 2027, about sixteen months after it was announced. Both are company statements, and both add to sites that already have qualified lines and trained staff.
 
-**Power transformer and switchgear.** The large power transformer sits at the grid connection and steps the voltage down, like a motorway junction. Switchgear inside the fence routes power and cuts off faults, like a block of flats' fuse box.
+Some plants slip. Siemens Energy announced its Charlotte, North Carolina, plant on 14 February 2024 for production in early 2026. Reuters reported on 26 June 2025 that a Siemens Energy board member now expected the first transformers in early 2027. No company release I could find confirms a start.
 
-**Backlog, book-to-bill and years of work.** Backlog is signed orders not yet delivered: the diary. Book-to-bill is orders over sales, and above 1 the diary is growing. Years of work is backlog over the same business's sales in the previous four quarters.
+How much do they add? The base is small. The Commerce Department's 2020 survey, cited by the Department of Energy, found that American plants could make about 343 large transformers a year, while 754 were needed in 2019. Of those, 617, or 82 per cent, were imported. So America's own halls would need to double just to meet 2019's demand, before any AI campus.
 
-**Bushing and HVDC.** A bushing is the insulated tube that carries the conductor through the tank wall. HVDC, high voltage direct current, means long links that take years to build and pad the grid makers' order books.
+Not every announcement is new capacity either. Hitachi Energy's Gallman plant replaces its nearby Crystal Springs plant, whose production moves there; it will be more than twice the size of the old plant, Hitachi says, so the net gain is the difference.
 
-## Siemens Energy's 3.96 years is a diary, not a quoted wait
+## What does Siemens Energy's own chart say about the shortage?
+
+That demand for large transformers in Europe and North America runs ahead of every maker's capacity in every year to 2030, by a narrowing margin.
 
 <a id="siemens-energy-measures-the-shortage"></a>
 
-The number the claim rests on is Siemens Energy's grid business at 3.96 years. It is €51bn of signed, undelivered orders at 30 June 2026, divided by €12.9bn of Grid Technologies revenue over the previous four quarters, my arithmetic from its release. It is how long the factories would take to clear the pile if no new order came.
-
-It is not a quoted lead time. A new order can be slotted ahead of HVDC work shipping in 2030, and the HVDC links lift its level above Eaton's, so the direction matters more than the level. The quoted wait is a different number: Wood Mackenzie, an energy research firm, put power transformers at an average of 128 weeks in the second quarter of 2025. The US Department of Energy found five to 12 months from order to delivery for American makers in 2010.
-
-The trap is that the ratio can fall while the pile grows. At its capital market day on 20 November 2025, Siemens Energy set demand for large and medium power transformers in Europe and North America against the capacity of every maker in the region.
+At its capital market day on 20 November 2025, Siemens Energy set demand for large and medium power transformers in Europe and North America against the capacity of all makers in the region. It is the only published estimate of the gap from a maker itself.
 
 <figure class="chart">
 <p class="chart-title">Siemens Energy's own forecast: the shortage narrows, but never closes</p>
@@ -210,74 +224,195 @@ The trap is that the ratio can fall while the pile grows. At its capital market 
 <text class="c-lab c-s2t" x="198" y="107">about 10%</text>
 <line class="c-base" x1="108" y1="16" x2="108" y2="126"/>
 </svg>
-<figcaption>Siemens Energy, capital market day, 20 November 2025. Only the two percentages are its labels; demand and capacity are in GVA, the unit for how much power a transformer carries. By my reading of its bars, capacity nearly doubles from fiscal 2023 to fiscal 2030.</figcaption>
+<figcaption>Siemens Energy, capital market day, 20 November 2025. Only the two percentages are its labels; demand and capacity are in GVA, a thousand MVA. By my reading of its bars, capacity nearly doubles from fiscal 2023 to fiscal 2030.</figcaption>
 </figure>
 
-If orders run 10% above output and output grows 6% a year, the ratio drifts from 3.96 to about 3.83, then about 3.71, while each year's shortfall still joins the pile. If the chart counts only factories in the region, imports fill part of the gap. Price rises, early bookings and a stronger euro can lift the ratio too, and no maker splits its backlog into price and volume. In euros the pile has grown by more than half in under two years, from €33bn in September 2024 to €51bn in June 2026.
+Demand ran about 40 per cent ahead of capacity in fiscal 2025. By fiscal 2030 the gap narrows to about 10 per cent, as capacity nearly doubles from fiscal 2023, by my reading of the chart's bars. A smaller gap is still a gap: every year that demand exceeds output, the shortfall joins the pile.
 
-## The value sits with whoever owns the slowest station
+The number the claim rests on is Siemens Energy's grid ratio, about four years: €51bn of signed, undelivered orders at 30 June 2026, divided by €12.9bn of Grid Technologies revenue over the previous four quarters. The backlog is rounded to the nearest billion, so the true ratio lies between 3.92 and 4.00. The claim records it as 3.96.
 
-If the queue is kept, three positions in the chain gain.
+It is not a quoted lead time. A new order can be slotted ahead of HVDC work shipping in 2030, and the HVDC links lift the ratio above what a transformer buyer faces. That is why the direction matters more than the level.
 
-**The grid makers.** Hitachi Energy, Siemens Energy and GE Vernova, the American maker of turbines and grid equipment, make the large transformers, high voltage switchgear and HVDC links. They hold years of signed work and the choice of which orders to take.
+The trap is that the ratio can fall while the pile grows. If orders run 10 per cent above output, and output grows 6 per cent a year, the ratio drifts from about four to about 3.8, then about 3.7, while each year's shortfall still joins the pile. The real test is harder. Siemens Energy's grid revenue is growing about 25 per cent a year on its own guidance. At that pace the ratio holds only if orders run about 1.8 times sales; at the third quarter's 1.48 it would fall to about 3.4 by mid-2028. Price rises, early bookings and currency moves can lift the ratio too, and no maker splits its backlog into price and volume.
+
+## Where do America's large transformers come from?
+
+Mostly from abroad, and increasingly from Korea, while China supplies little.
+
+<figure class="chart">
+<p class="chart-title">America's imports of large transformers more than tripled in three years, and China supplies little</p>
+<p class="chart-sub">US imports of liquid-filled transformers above 10 MVA, by value</p>
+<svg viewBox="0 0 560 414" role="img" aria-label="US imports of liquid-filled transformers above 10 MVA, from UN trade data. 2022: 1.26 billion dollars. 2023: 1.93 billion. 2024: 2.98 billion. 2025: 4.15 billion, 5,021 units. In 2025 by origin: Mexico 803 million, 19 per cent, down from 31 per cent in 2022; Korea 748 million, 18 per cent, up from 7 per cent; Brazil 531 million, 13 per cent; Austria 431 million, 10 per cent; China 90 million, 2.2 per cent, and 4.7 per cent in January to August 2026."><g class="c-grid"><line x1="170.0" y1="18" x2="170.0" y2="400"/><line x1="268.0" y1="18" x2="268.0" y2="400"/><line x1="366.0" y1="18" x2="366.0" y2="400"/><line x1="464.0" y1="18" x2="464.0" y2="400"/></g><g class="c-axis"><text x="170.0" y="12" text-anchor="middle">0</text><text x="268.0" y="12" text-anchor="middle">$1.5bn</text><text x="366.0" y="12" text-anchor="middle">$3bn</text><text x="464.0" y="12" text-anchor="middle">$4.5bn</text></g><text class="c-lab c-s2t" x="0" y="46">Each year</text><text class="c-box-t" x="0" y="69">2022</text><text class="c-note" x="0" y="84"></text><rect class="c-bar c-mute" x="170" y="60" width="82.2" height="18" rx="2"/><text class="c-lab c-s1t" x="258.2" y="76">$1.26bn</text><text class="c-box-t" x="0" y="105">2023</text><text class="c-note" x="0" y="120"></text><rect class="c-bar c-mute" x="170" y="96" width="125.9" height="18" rx="2"/><text class="c-lab c-s1t" x="301.9" y="112">$1.93bn</text><text class="c-box-t" x="0" y="141">2024</text><text class="c-note" x="0" y="156"></text><rect class="c-bar c-mute" x="170" y="132" width="194.6" height="18" rx="2"/><text class="c-lab c-s1t" x="370.6" y="148">$2.98bn</text><text class="c-box-t" x="0" y="177">2025</text><text class="c-note" x="0" y="192">5,021 units</text><rect class="c-bar" x="170" y="168" width="270.8" height="18" rx="2"/><text class="c-lab c-s1t" x="446.8" y="184">$4.15bn</text><text class="c-lab c-s2t" x="0" y="220">2025, by origin</text><text class="c-box-t" x="0" y="243">Mexico</text><text class="c-note" x="0" y="258">31% in 2022</text><rect class="c-bar" x="170" y="234" width="52.5" height="18" rx="2"/><text class="c-lab c-s1t" x="228.5" y="250">$803m, 19%</text><text class="c-box-t" x="0" y="279">Korea</text><text class="c-note" x="0" y="294">7% in 2022</text><rect class="c-bar" x="170" y="270" width="48.9" height="18" rx="2"/><text class="c-lab c-s1t" x="224.9" y="286">$748m, 18%</text><text class="c-box-t" x="0" y="315">Brazil</text><text class="c-note" x="0" y="330"></text><rect class="c-bar" x="170" y="306" width="34.7" height="18" rx="2"/><text class="c-lab c-s1t" x="210.7" y="322">$531m, 13%</text><text class="c-box-t" x="0" y="351">Austria</text><text class="c-note" x="0" y="366"></text><rect class="c-bar" x="170" y="342" width="28.2" height="18" rx="2"/><text class="c-lab c-s1t" x="204.2" y="358">$431m, 10%</text><text class="c-box-t" x="0" y="387">China</text><text class="c-note" x="0" y="402">4.7% in Jan to Aug 2026</text><rect class="c-bar c-alt" x="170" y="378" width="5.9" height="18" rx="2"/><text class="c-lab c-s1t" x="181.9" y="394">$90m, 2.2%</text><line class="c-base" x1="170" y1="18" x2="170" y2="400"/></svg>
+<figcaption>UN Comtrade, US imports of HS 850423, which carries the US customs figures, read 7 November 2026. Shares are of the 2025 total; my arithmetic.</figcaption>
+</figure>
+
+United Nations trade data, which carry the American customs figures, show imports of the largest class of liquid-filled transformers, those above 10 MVA, rising from $1.26bn in 2022 to $4.15bn in 2025. That is 3.3 times in three years. In the first eight months of 2026 they grew more slowly, about 10 per cent on the same months of 2025.
+
+Mexico was the largest supplier in 2025, at 19 per cent, though its share has fallen from 31 per cent in 2022. Korea's rose from 7 to 18 per cent, then Brazil, Austria, the Netherlands, Taiwan and Canada. Korea's own customs data show its exports of these units to America rising 6.8 times from 2022 to 2025, to 57 per cent of all its exports of them.
+
+China is small in this trade: 2.2 per cent of American imports by value in 2025, and 4.7 per cent in the first eight months of 2026. The average unit imported in 2025 cost about $0.83m, so this customs line is dominated by mid-sized units, not only the very largest.
+
+The pattern matters for the claim. The queue in America is filled by imports from makers who also serve their home grids, so a boom in Europe or Asia can lengthen the American wait. And the new American halls are replacing imports as much as adding supply.
+
+## What do tariffs and the emergency order change?
+
+They raise the cost of the steel and parts more than the finished unit, and they let the government shut out some foreign gear, which together tilt the queue toward a few makers.
+
+<figure class="chart">
+<p class="chart-title">Until 2028 the finished transformer is taxed less than the steel it is made from</p>
+<p class="chart-sub">US Section 232 tariff on the full value of the goods, since 6 April 2026</p>
+<svg viewBox="0 0 560 342" role="img" aria-label="US Section 232 tariffs on the full value of the goods, since 6 April 2026. Large power transformers over 10 MVA: 15 per cent until the end of 2027, then 25 per cent from 1 January 2028. Distribution transformers up to 10 MVA: 25 per cent. Cores and laminations: 25 per cent, or 15 per cent since 8 June 2026 when imported to make large transformers. Grain-oriented electrical steel strip and other flat-rolled alloy steel: 50 per cent. Copper wire: 50 per cent."><g class="c-grid"><line x1="190.0" y1="18" x2="190.0" y2="326"/><line x1="319.2" y1="18" x2="319.2" y2="326"/><line x1="448.3" y1="18" x2="448.3" y2="326"/></g><g class="c-axis"><text x="190.0" y="12" text-anchor="middle">0%</text><text x="319.2" y="12" text-anchor="middle">25%</text><text x="448.3" y="12" text-anchor="middle">50%</text></g><text class="c-lab c-s2t" x="0" y="46">The finished unit</text><text class="c-box-t" x="0" y="69">Large transformer</text><text class="c-note" x="0" y="84">over 10 MVA, to end 2027</text><rect class="c-bar c-mute" x="190" y="60" width="77.5" height="22" rx="2"/><text class="c-lab c-s1t" x="273.5" y="76">15%</text><text class="c-box-t" x="0" y="111">Large transformer</text><text class="c-note" x="0" y="126">from 1 January 2028</text><rect class="c-bar c-mute" x="190" y="102" width="129.2" height="22" rx="2"/><text class="c-lab c-s1t" x="325.2" y="118">25%</text><text class="c-box-t" x="0" y="153">Distribution transformer</text><text class="c-note" x="0" y="168">up to 10 MVA</text><rect class="c-bar c-mute" x="190" y="144" width="129.2" height="22" rx="2"/><text class="c-lab c-s1t" x="325.2" y="160">25%</text><text class="c-lab c-s2t" x="0" y="202">Its inputs</text><text class="c-box-t" x="0" y="225">Cores and laminations</text><text class="c-note" x="0" y="240">15% if for large units</text><rect class="c-bar" x="190" y="216" width="129.2" height="22" rx="2"/><text class="c-lab c-s1t" x="325.2" y="232">25%</text><text class="c-box-t" x="0" y="267">Core steel strip</text><text class="c-note" x="0" y="282">GOES and other alloy steel</text><rect class="c-bar" x="190" y="258" width="258.3" height="22" rx="2"/><text class="c-lab c-s1t" x="454.3" y="274">50%</text><text class="c-box-t" x="0" y="309">Copper wire</text><text class="c-note" x="0" y="324">winding wire, stranded wire</text><rect class="c-bar" x="190" y="300" width="258.3" height="22" rx="2"/><text class="c-lab c-s1t" x="454.3" y="316">50%</text><line class="c-base" x1="190" y1="18" x2="190" y2="326"/></svg>
+<figcaption>Proclamation 11021 and its annexes, as reissued by Proclamation 11032 (1 June 2026). For large transformers the 15% includes the normal customs duty; the 2028 rate of 25% is added to it. Since 8 June 2026, cores imported only to make large transformers can pay 15%. Large transformers are HS 8504.23; distribution transformers 8504.21 and 8504.22.</figcaption>
+</figure>
+
+America's **Section 232** tariffs, imposed on national security grounds, now reach transformers. From 18 August 2025 large transformers and their cores paid 50 per cent on their steel content. Proclamation 11021, in force from 6 April 2026, changed the basis to the full value of the goods and set new rates.
+
+Large power transformers now pay 15 per cent, until 31 December 2027, when the rate rises to 25 per cent. Distribution transformers up to 10 MVA pay 25 per cent, and so do the cores and laminations a maker might import to build its own. The GOES strip itself, and copper wire, pay 50 per cent.
+
+The order of those rates is odd. Until the end of 2027 a finished large transformer pays 15 per cent, a third as much as the GOES strip it is built from. Since 8 June, cores imported to build these transformers in America can also pay 15 per cent, but the strip itself pays 50. That favours importing whole units, or ready-made cores, over making cores from imported steel in a new American hall. The rate on the finished unit then rises, just as the first new halls open.
+
+An older remedy is still in place. The anti-dumping order on Korean large transformers, issued in 2012 after the last boom, was continued in 2024. Its latest final results, published on 14 August 2026, set rates of zero for HD Hyundai Electric and Iljin, and 4.32 per cent for LS Electric and Hyosung Heavy Industries.
+
+Then came the emergency order. On 26 August 2026 the President signed Executive Order 14421, declaring a national emergency over the **bulk-power system**, the high-voltage network of generation and transmission. It lets the Department of Energy bar foreign-produced equipment, including substation transformers, high-voltage breakers, and even UPS systems and backup generators that support critical infrastructure, in transactions begun after that date. The bar applies where the department finds a link to a covered foreign entity and an undue risk.
+
+So it is not a blanket ban. The order gave the department 120 days to write any rules it needs, so by 24 December 2026; its request for comments closed on 9 October, and no rule had been published by 7 November. Earlier, on 20 April 2026, a presidential determination under the Defense Production Act named transformers, high-voltage breakers and "electrical core steel" essential to national defence.
+
+What the order changes is the fast lane for some buyers. Wood Mackenzie expects much of its impact to fall on data centres that bought Chinese units to cut their wait. China's share of imports was small, so the larger effect may be on parts and on the other gear the order names, and on the confidence of buyers who had a second source in mind.
+
+## What are prices doing?
+
+Rising again, faster than in 2023 and 2024, which is not what a market where the shortage is easing looks like.
+
+<figure class="chart">
+<p class="chart-title">Prices jumped in 2022, slowed, and are rising faster again</p>
+<p class="chart-sub">US producer price indexes, transformer and switchgear makers, 2020 average = 100</p>
+<svg viewBox="0 0 560 254" role="img" aria-label="US producer price indexes for transformer makers and switchgear makers, indexed to their 2020 averages. Transformers: 100 in 2020, about 161 in December 2022, 167 in December 2023, 169 in December 2024, 179 in December 2025 and 186 in September 2026, up 86 per cent. Switchgear: 100, about 133, 142, 150, 169 and 188, up 88 per cent."><g class="c-grid"><line x1="44" y1="190.7" x2="400" y2="190.7"/><line x1="44" y1="124.0" x2="400" y2="124.0"/><line x1="44" y1="57.3" x2="400" y2="57.3"/></g><g class="c-axis"><text x="38" y="194.7" text-anchor="end">100</text><text x="38" y="128.0" text-anchor="end">140</text><text x="38" y="61.3" text-anchor="end">180</text><text x="44.0" y="242" text-anchor="middle">2020</text><text x="145.7" y="242" text-anchor="middle">2022</text><text x="247.4" y="242" text-anchor="middle">2024</text><text x="349.1" y="242" text-anchor="middle">2026</text></g><polyline class="c-line c-s1" points="69.4,190.7 194.0,89.5 244.9,79.3 295.7,74.9 346.6,59.7 384.7,47.2"/><circle class="c-dot c-s1" cx="69.4" cy="190.7" r="3"/><circle class="c-dot c-s1" cx="194.0" cy="89.5" r="3"/><circle class="c-dot c-s1" cx="244.9" cy="79.3" r="3"/><circle class="c-dot c-s1" cx="295.7" cy="74.9" r="3"/><circle class="c-dot c-s1" cx="346.6" cy="59.7" r="3"/><circle class="c-dot c-s1" cx="384.7" cy="47.2" r="3"/><text class="c-lab c-s1t" x="392.7" y="63.2">Transformers, +86%</text><polyline class="c-line c-s2" points="69.4,190.7 194.0,135.8 244.9,121.2 295.7,106.6 346.6,76.5 384.7,43.8"/><circle class="c-dot c-s2" cx="69.4" cy="190.7" r="3"/><circle class="c-dot c-s2" cx="194.0" cy="135.8" r="3"/><circle class="c-dot c-s2" cx="244.9" cy="121.2" r="3"/><circle class="c-dot c-s2" cx="295.7" cy="106.6" r="3"/><circle class="c-dot c-s2" cx="346.6" cy="76.5" r="3"/><circle class="c-dot c-s2" cx="384.7" cy="43.8" r="3"/><text class="c-lab c-s2t" x="392.7" y="35.8">Switchgear, +88%</text><line class="c-base" x1="44" y1="224" x2="400" y2="224"/><text class="c-note" x="105.0" y="47.3">2020 average = 100</text></svg>
+<figcaption>Bureau of Labor Statistics series PCU335311335311 and PCU335313335313, read 7 November 2026; September 2026 is preliminary. Indexing is my arithmetic.</figcaption>
+</figure>
+
+The Bureau of Labor Statistics' producer price index for transformer makers, which tracks the prices they charge, averaged 255.3 in 2020. By September 2026 it was 475.1, 86 per cent higher. The switchgear makers' index rose 88 per cent over the same span. Both are preliminary for the latest month.
+
+The timing tells the story. Transformer prices jumped 34 per cent in 2021 and 18 per cent in 2022, then rose only about 4 per cent in 2023 and 2 per cent in 2024. In 2025 they rose 5 per cent, and in the year to September 2026 nearly 8 per cent. Switchgear prices rose 12 per cent in each of the last two years.
+
+Part of that is metal. The International Monetary Fund's copper price was $14,473 a tonne in September 2026, 2.3 times its 2020 average, and the 2025 and 2026 tariffs raised the cost of imported steel and wire. Part of it is the queue: makers with years of work can pass costs on and choose which orders to take.
+
+For the claim, prices are a check, not a test. If the shortage were clearing, the price index would flatten or fall, as it did for distribution transformers' lead times. It has done the opposite.
+
+## Does the gear inside the fence queue too?
+
+Yes, by a year or two rather than three or four, and the makers say so in their own words about when 2026's orders will ship.
+
+<figure class="chart">
+<p class="chart-title">Inside the fence, this year's orders ship in one to three years</p>
+<p class="chart-sub">When orders signed now are due, in each maker's own words, from today</p>
+<svg viewBox="0 0 560 328" role="img" aria-label="When orders signed now are due to ship, in each maker's own words, measured from today. Eaton, whole company: 72 per cent of its backlog within twelve months. Schneider Electric: backlog gives visibility into 2027 and 2028. Generac: Amazon's initial deliveries in 2027 and 2028. ABB: data centre lead times of 12 to 24 months, said on a call. Caterpillar: large engine orders accepted into 2029 and turbine orders into 2030, said on a call. A large power transformer: 36 months commonly quoted and up to 60, US Department of Energy, July 2024."><g class="c-grid"><line x1="196.0" y1="24" x2="196.0" y2="298"/><line x1="242.3" y1="24" x2="242.3" y2="298"/><line x1="288.6" y1="24" x2="288.6" y2="298"/><line x1="334.9" y1="24" x2="334.9" y2="298"/><line x1="381.1" y1="24" x2="381.1" y2="298"/><line x1="427.4" y1="24" x2="427.4" y2="298"/><line x1="473.7" y1="24" x2="473.7" y2="298"/><line x1="520.0" y1="24" x2="520.0" y2="298"/></g><g class="c-axis"><text x="196.0" y="314" text-anchor="middle">2026</text><text x="242.3" y="314" text-anchor="middle">2027</text><text x="288.6" y="314" text-anchor="middle">2028</text><text x="334.9" y="314" text-anchor="middle">2029</text><text x="381.1" y="314" text-anchor="middle">2030</text><text x="427.4" y="314" text-anchor="middle">2031</text><text x="473.7" y="314" text-anchor="middle">2032</text><text x="520.0" y="314" text-anchor="middle">2033</text></g><line class="c-today" x1="235.3" y1="24" x2="235.3" y2="298"/><text class="c-today-t" x="235.3" y="18" text-anchor="middle">today</text><text class="c-box-t" x="0" y="42">Eaton, whole company</text><text class="c-note" x="0" y="57">72% of backlog</text><g class="c-span"><line x1="235.3" y1="40" x2="274.7" y2="40"/></g><g class="c-end"><circle cx="274.7" cy="40" r="4.5"/></g><g class="c-endt"><text x="282.7" y="44">within a year</text></g><text class="c-box-t" x="0" y="82">Schneider Electric</text><text class="c-note" x="0" y="97">backlog visibility</text><g class="c-span"><line x1="235.3" y1="80" x2="242.3" y2="80"/></g><g class="c-span"><line x1="242.3" y1="80" x2="334.9" y2="80" style="stroke-width:7;opacity:.45"/></g><g class="c-end"><circle cx="242.3" cy="80" r="4.5"/></g><g class="c-endt"><text x="342.9" y="84">into 2027 and 2028</text></g><text class="c-box-t" x="0" y="122">Generac, Amazon deal</text><text class="c-note" x="0" y="137">first deliveries</text><g class="c-span"><line x1="235.3" y1="120" x2="242.3" y2="120"/></g><g class="c-span"><line x1="242.3" y1="120" x2="334.9" y2="120" style="stroke-width:7;opacity:.45"/></g><g class="c-end"><circle cx="242.3" cy="120" r="4.5"/></g><g class="c-endt"><text x="342.9" y="124">2027 and 2028</text></g><text class="c-box-t" x="0" y="162">ABB, data centre gear</text><text class="c-note" x="0" y="177">lead time 12 to 24 months</text><g class="c-span"><line x1="235.3" y1="160" x2="281.6" y2="160"/></g><g class="c-span"><line x1="281.6" y1="160" x2="327.9" y2="160" style="stroke-width:7;opacity:.45"/></g><g class="c-end"><circle cx="281.6" cy="160" r="4.5"/></g><g class="c-endt"><text x="335.9" y="164">12 to 24 months</text></g><text class="c-box-t" x="0" y="202">Caterpillar, engines</text><text class="c-note" x="0" y="217">large engines, call</text><g class="c-span"><line x1="235.3" y1="200" x2="334.9" y2="200"/></g><g class="c-span"><line x1="334.9" y1="200" x2="381.1" y2="200" style="stroke-width:7;opacity:.45"/></g><g class="c-end"><circle cx="334.9" cy="200" r="4.5"/></g><g class="c-endt"><text x="389.1" y="204">into 2029</text></g><text class="c-box-t" x="0" y="242">Caterpillar, turbines</text><text class="c-note" x="0" y="257">call</text><g class="c-span"><line x1="235.3" y1="240" x2="381.1" y2="240"/></g><g class="c-span"><line x1="381.1" y1="240" x2="427.4" y2="240" style="stroke-width:7;opacity:.45"/></g><g class="c-end"><circle cx="381.1" cy="240" r="4.5"/></g><g class="c-endt"><text x="435.4" y="244">into 2030</text></g><text class="c-box-t" x="0" y="282">Large power transformer</text><text class="c-note" x="0" y="297">DOE, July 2024</text><g class="c-span"><line x1="235.3" y1="280" x2="374.2" y2="280"/></g><g class="c-span"><line x1="374.2" y1="280" x2="466.8" y2="280" style="stroke-width:7;opacity:.45"/></g><g class="c-end"><circle cx="374.2" cy="280" r="4.5"/></g><g class="c-endt"><text x="474.8" y="284">3 to 5 years</text></g></svg>
+<figcaption>Eaton Form 10-Q (30 September 2026); Schneider Electric (16 October 2026); Generac (28 October 2026); ABB and Caterpillar calls (20 and 29 October 2026, third-party summaries); US Department of Energy (July 2024). A thick line is a range or a year given without a month.</figcaption>
+</figure>
+
+The inside-the-fence makers publish few lead times, but they say when orders will ship. ABB told analysts in October 2026 that its data centre gear has lead times of 12 to 24 months, so this year's orders ship in 2027 and 2028. Schneider Electric, the French maker of power and cooling gear, says its record backlog gives "visibility into 2027 and 2028".
+
+Generators queue longest. Generac reported a data centre backlog of about $4.5bn in October 2026, and an agreement with Amazon whose "initial deliveries are expected to total a combined $2.4 billion in 2027 and 2028". Caterpillar told analysts it is accepting some large engine orders into 2029 and turbine orders into 2030. Cummins said in August 2026 that its growth was "constrained by available capacity for larger generator-set configurations".
+
+Smaller makers show the strain in their ratios. Powell Industries, which builds switchgear and power rooms in Texas, booked a record $934m of orders in the quarter to June 2026, three times its sales, including one data centre order above $400m. Vertiv, which makes UPS, power and cooling gear, reported orders up more than 100 per cent in its third quarter, but no longer publishes its backlog each quarter.
 
 <a id="schneider-sells-the-finished-system"></a>
 
-**Prebuilt gear inside the fence.** Schneider Electric sells more power rooms built and tested in its own factories, which cut the hours scarce electricians must spend on site. That shortens the install, not the order book, and Schneider publishes no backlog to test.
+One answer to the queue is to build more of the room in the factory. Schneider sells power rooms built and tested in its own plants, delivered as modules, which cut the hours that scarce electricians must spend on site. Data centres were about a quarter of its revenue by the end of 2025, in its own words, and it sizes its content at $1.2m to $3.3m for each megawatt of new data centre.
 
-**The parts behind the parts.** Bushings, instrument transformers and core steel come from a few smaller suppliers. When a grid maker buys one outright, it shows which part it was waiting for.
+Prefabrication shortens the install, not the order book. The modules still need breakers, transformers and switchgear from the same queues, and Schneider publishes no backlog figure to test. Eaton has bought its way into the same idea, with Fibrebond, a maker of modular power enclosures, in 2025.
+
+## What do AI racks change about the gear?
+
+They concentrate power into far fewer racks, which changes the low-voltage end of the chain far more than the grid end.
+
+<figure class="chart">
+<p class="chart-title">An AI rack draws fifteen times the power of an average one, and Nvidia plans over a hundred times</p>
+<p class="chart-sub">Power drawn by one rack, kilowatts</p>
+<svg viewBox="0 0 560 156" role="img" aria-label="Power drawn by one rack, in kilowatts. The typical rack in the Uptime Institute's 2025 survey: almost 9. An Nvidia GB200 rack in the Schneider and Nvidia reference design of 2024: up to 132. Nvidia's plan for racks from 2027: 1,000 kilowatts, a megawatt."><g class="c-grid"><line x1="170.0" y1="18" x2="170.0" y2="140"/><line x1="246.5" y1="18" x2="246.5" y2="140"/><line x1="323.0" y1="18" x2="323.0" y2="140"/><line x1="399.5" y1="18" x2="399.5" y2="140"/><line x1="476.0" y1="18" x2="476.0" y2="140"/></g><g class="c-axis"><text x="170.0" y="12" text-anchor="middle">0</text><text x="246.5" y="12" text-anchor="middle">250</text><text x="323.0" y="12" text-anchor="middle">500</text><text x="399.5" y="12" text-anchor="middle">750</text><text x="476.0" y="12" text-anchor="middle">1,000</text></g><text class="c-box-t" x="0" y="39">Typical rack</text><text class="c-note" x="0" y="54">Uptime survey, 2025</text><rect class="c-bar c-mute" x="170" y="30" width="2.8" height="22" rx="2"/><text class="c-lab c-s1t" x="178.8" y="46">almost 9 kW</text><text class="c-box-t" x="0" y="81">Nvidia GB200 rack</text><text class="c-note" x="0" y="96">reference design, 2024</text><rect class="c-bar" x="170" y="72" width="40.4" height="22" rx="2"/><text class="c-lab c-s1t" x="216.4" y="88">up to 132 kW</text><text class="c-box-t" x="0" y="123">Nvidia's plan</text><text class="c-note" x="0" y="138">racks from 2027</text><rect class="c-bar c-alt" x="170" y="114" width="306.0" height="22" rx="2"/><text class="c-lab c-s1t" x="482.0" y="130">1,000 kW</text><line class="c-base" x1="170" y1="18" x2="170" y2="140"/></svg>
+<figcaption>Uptime Institute global data centre survey, 2025; Schneider Electric and Nvidia reference design (December 2024); Nvidia technical blog (20 May 2025).</figcaption>
+</figure>
+
+The Uptime Institute's 2025 survey found the typical rack density reported by operators averaged almost 9 kilowatts. A rack of Nvidia's GB200 chips draws up to 132 kilowatts, about fifteen times as much. Nvidia has said it will support racks of a megawatt from 2027.
+
+The physics is current. Current is power divided by voltage, so a megawatt rack fed at 54 volts would draw about 18,500 amps, my arithmetic, and Nvidia says it would need up to 200 kilograms of copper busbar. Fed at 800 volts it draws about 1,250 amps. So Nvidia plans to convert medium-voltage power to 800 volts of direct current at the edge of the hall, as [Powering the rack](/journal/powering-the-rack/) explains.
+
+For the equipment queue the point is narrower. A 100 MW campus needs the same substation, the same medium-voltage switchgear and the same generators whether it runs 11,000 racks at 9 kilowatts or 760 at 132. What changes is the gear nearest the rack: busways, power shelves and, from 2027, rectifiers and new direct-current breakers. That reshuffles the low-voltage order book; it does not shorten the grid-side queue.
+
+## Will the parts be the next queue?
+
+Possibly: some bushings now wait longer than a whole transformer did before the pandemic, though other parts are flowing freely.
+
+<a id="the-parts-list"></a>
+
+A transformer ships only when its slowest part arrives. Hitachi Energy publishes delivery times for the components it sells to other transformer makers, and the page is the only maker-quoted wait I know of. On 29 October 2026 it gave 135 weeks for its GSBK and ARF high-voltage bushings of 245 to 550 kilovolts from Ludvika, Sweden; other series from the same plant quote 27 to 46 weeks. In 2012 the Department of Energy heard such bushings took up to five months.
+
+<figure class="chart">
+<p class="chart-title">A high-voltage bushing from Sweden now waits longer than a whole transformer did in 2010</p>
+<p class="chart-sub">Delivery times quoted for transformer parts, weeks</p>
+<svg viewBox="0 0 560 372" role="img" aria-label="Delivery times for transformer parts, in weeks, from Hitachi Energy's component page. From Ludvika, Sweden, updated 29 October 2026: high-voltage bushings of 245 to 550 kilovolts, 135 weeks; GOH bushings 46; GOB plus and GSA bushings 40; on-load tap changers 10 to 22. From Hefei, China, updated 4 August 2026: ARF 550 bushings 16 weeks; ARF 245 and 420, 14. In 2012 the US Department of Energy heard that high-voltage bushings took up to five months, about 22 weeks."><g class="c-grid"><line x1="190.0" y1="18" x2="190.0" y2="358"/><line x1="286.7" y1="18" x2="286.7" y2="358"/><line x1="383.3" y1="18" x2="383.3" y2="358"/><line x1="480.0" y1="18" x2="480.0" y2="358"/></g><g class="c-axis"><text x="190.0" y="12" text-anchor="middle">0</text><text x="286.7" y="12" text-anchor="middle">1 yr</text><text x="383.3" y="12" text-anchor="middle">2 yr</text><text x="480.0" y="12" text-anchor="middle">3 yr</text></g><text class="c-lab c-s2t" x="0" y="46">From Sweden, Oct 2026</text><text class="c-box-t" x="0" y="69">Bushings, 245 to 550 kV</text><text class="c-note" x="0" y="84">GSBK and ARF</text><rect class="c-bar" x="190" y="60" width="251.0" height="18" rx="2"/><text class="c-lab c-s1t" x="447.0" y="76">135 weeks</text><text class="c-box-t" x="0" y="105">Bushings, GOH</text><text class="c-note" x="0" y="120"></text><rect class="c-bar c-mute" x="190" y="96" width="85.5" height="18" rx="2"/><text class="c-lab c-s1t" x="281.5" y="112">46</text><text class="c-box-t" x="0" y="141">Bushings, GOB+ and GSA</text><text class="c-note" x="0" y="156"></text><rect class="c-bar c-mute" x="190" y="132" width="74.4" height="18" rx="2"/><text class="c-lab c-s1t" x="270.4" y="148">40</text><text class="c-box-t" x="0" y="177">Tap changers</text><text class="c-note" x="0" y="192">on-load</text><rect class="c-bar c-mute" x="190" y="168" width="40.9" height="18" rx="2"/><text class="c-lab c-s1t" x="236.9" y="184">10 to 22</text><text class="c-lab c-s2t" x="0" y="220">From China, Aug 2026</text><text class="c-box-t" x="0" y="243">Bushings, ARF 550 kV</text><text class="c-note" x="0" y="258"></text><rect class="c-bar c-alt" x="190" y="234" width="29.7" height="18" rx="2"/><text class="c-lab c-s1t" x="225.7" y="250">16</text><text class="c-box-t" x="0" y="279">Bushings, ARF 245, 420</text><text class="c-note" x="0" y="294"></text><rect class="c-bar c-alt" x="190" y="270" width="26.0" height="18" rx="2"/><text class="c-lab c-s1t" x="222.0" y="286">14</text><text class="c-lab c-s2t" x="0" y="322">In 2012</text><text class="c-box-t" x="0" y="345">High-voltage bushings</text><text class="c-note" x="0" y="360">up to five months, DOE</text><rect class="c-bar c-mute" x="190" y="336" width="40.9" height="18" rx="2"/><text class="c-lab c-s1t" x="236.9" y="352">about 22</text><line class="c-base" x1="190" y1="18" x2="190" y2="358"/></svg>
+<figcaption>Hitachi Energy, delivery times for transformer components, Ludvika updated 29 October 2026 and Hefei 4 August 2026. The 2012 figure is the US Department of Energy's. Lower-voltage bushings and tap changers show the strain is not everywhere.</figcaption>
+</figure>
+
+The same family of bushings ships in 14 to 16 weeks from Hitachi Energy's plant in Hefei, China, per the same page, updated in August. Those units may not suit every American utility's specification, and the emergency order makes Chinese-made gear harder to use. Tap changers, another bought-in part, are quoted at 10 to 22 weeks from Ludvika, so the strain is not everywhere.
+
+Two moves fit the reading that the parts are binding. On 28 October 2026 GE Vernova agreed to pay about $9.0bn for Trench, which makes bushings, instrument transformers and coils, and called it "vertically integrating an existing supplier"; closing is expected in late 2027. And Hitachi Energy is spending $106m at Alamo, Tennessee, on what it calls the "largest bushings manufacturing facility in North America", due by mid-2027.
+
+Breakers face a regulatory queue of their own. Most high-voltage breakers quench their arc in sulphur hexafluoride, SF6, the most powerful greenhouse gas known. The European Union bans new switchgear using such gases in stages, reaching equipment above 52,000 volts from 2028. In June 2026 Italy, Bulgaria and the Czech Republic warned the EU's Council that if the other gas-free designs are pushed out, "only one manufacturer of dry-air solutions remains", with capacity "lower than the European demand". They were arguing for those other designs, and the rules allow time-limited exemptions.
+
+The inference is mine, and it is a hypothesis. If the parts gate output, a new hall in 2027 adds floor space before it adds transformers, and years of work stay high for a reason no factory count shows. Swedish bushing waits falling below a year, or makers saying parts no longer hold them back, would kill it.
+
+## Has the shortage peaked?
+
+The rate of increase probably has, but every order book is still growing, and a narrower gap still adds to the pile.
+
+The case for a peak is real, and I concede it. Siemens Energy's grid book-to-bill fell to 1.48 in the quarter to June 2026, from 2.28 in the quarter before. GE Vernova's Electrification orders fell 9 per cent organically in its third quarter, against a large order a year earlier. Eaton's Electrical Americas ratio went flat. Schneider said demand from its power and grid customers "declined slightly", though only because power generation fell while grid customers stayed strong.
+
+Consultants say the same. Wood Mackenzie's estimate of the power transformer shortage fell from 30 per cent for 2025 to 15 per cent for 2026. Imports of large transformers grew only about 10 per cent in the first eight months of 2026, after 39 per cent in 2025.
+
+The case against is stronger. Every book-to-bill above is still above 1, so every pile is still growing. GE Vernova's grid equipment backlog is up 60 per cent in a year, or about 40 per cent without the Prolec GE purchase. Transformer prices are rising faster than in 2023 and 2024. American investor-owned utilities plan about $239bn of capital spending in 2026, their trade body says, against $204bn in 2024. And the Ludvika bushings wait 135 weeks.
+
+The last cycle shows what a real peak looks like. The Department of Energy's 2012 study records Korean exports of large transformers to America rising from $33m in 2005 to $279m in 2011. Then demand slowed, makers cut prices to fill new halls, and the American makers filed a dumping case. A peak shows up as price cuts and idle halls. Neither is visible yet.
+
+## Why not just keep spare transformers?
+
+Because spares are few, are held for disasters rather than new load, and none of the shared schemes has yet supplied a single unit.
+
+A spare is the one thing that beats the queue. The Department of Energy's 2024 report sets out the steps to install a ready spare, from teardown to commissioning test, and they total three to four weeks. Against a three-year order, that is a bargain, and utilities do keep their own spares, often in the same substation.
+
+The shared schemes are thin. The Edison Electric Institute's Spare Transformer Equipment Program, started in 2006, triggers only after a declared terrorist attack or emergency, and "to date STEP has never been utilized", the department wrote. Grid Assurance, a company set up by utilities to hold spares in secure warehouses, "has not yet actually provided a replacement" large transformer.
+
+Spares also do not help a new campus. They exist to replace a failed unit at an existing substation. A data centre needs a new unit for a new connection, and taking a utility's spare would leave that utility exposed. So spares shorten outages, not the queue for new load.
+
+## So who holds the scarce thing, and what should an investor watch?
+
+Whoever owns the slowest station: the large transformer halls, the steel, and a few parts.
+
+If the queue is kept, three positions gain. **The grid makers**: Hitachi Energy, Siemens Energy and GE Vernova, with HD Hyundai Electric, Hyosung and LS Electric from Korea, make the large transformers and high-voltage breakers. They hold years of signed work and the choice of which orders to take.
+
+**The inside-the-fence makers**: Eaton, Schneider Electric, ABB, Siemens, Vertiv, Legrand, nVent, Hubbell and Powell make switchgear, UPS systems and power rooms, with a shorter queue. Caterpillar, Cummins, Generac and Rolls-Royce make the backup generators, where the waits run into 2029.
+
+**The parts behind the parts**: bushings, tap changers and core steel come from a few suppliers. When a grid maker buys one outright, as GE Vernova is buying Trench, it shows which part it was waiting for.
+
+Four numbers carry the story. Siemens Energy's grid ratio and Eaton's Electrical Americas ratio each quarter, which are the claim's tests. Book-to-bill at the grid makers, which shows whether the pile is still growing. And Hitachi Energy's component delivery page, which shows whether the parts are easing.
+
+At the scale of the grid, a connection alone does not start a hall. A utility can clear a site's place in the grid queue, as in [America rations the plug](/journal/america-rations-the-plug/), and the site still waits for its transformer. Nvidia launches a new flagship chip about every year. A transformer ordered today joins a pile that would take three or four of those generations to clear, so a data centre's real start date is set years before the chips it will run are on sale.
 
 ## What would prove me wrong
 
-Three tests can break the claim. The first is the ratio drifting down. If by 30 June 2028 Siemens Energy's grid order book has fallen below 3.6 years of its sales, or Eaton's Electrical Americas below one year, the first wave of new plants has shortened the queue and the claim fails. That is a genuine risk, since a narrowing gap lowers years of work while the pile still grows, and Eaton's ratio has already gone flat.
+Three tests can break the claim. The first is the ratio drifting down. If by 30 June 2028 Siemens Energy's grid order book has fallen below 3.6 years of its sales, or Eaton's Electrical Americas below one year, the first wave of new plants has shortened the queue and the claim fails. This test is closer than it looks: Siemens Energy's grid sales grow about 25 per cent a year, so at the third quarter's book-to-bill of 1.48 the ratio would reach about 3.4 by mid-2028. Orders must run about 1.8 times sales to hold it.
 
-The second is orders cooling as the plants open. If book-to-bill falls below 1 just as the 2027 halls start, the makers built into a slowdown. For now Eaton's Electrical Americas is at 1.3 over twelve months and GE Vernova's electrification business at about 1.4. Years of work falling while the first plants open on time from 2027 would move me before the test date, because that is the queue clearing.
+That is a genuine risk. A narrowing gap lowers years of work while the pile still grows, as the arithmetic above shows, and Eaton's ratio has already gone flat. Eaton's total electrical book-to-bill over twelve months was 1.2 in September 2026; Eaton's new Jonesville and Bellevue plants land in 2027, a year before the test.
 
-The third is someone breaking ranks. If makers outside this group, in Asia or through imports, add capacity to clear the queue, it empties faster. The same bushing family ships in 14 weeks from Hitachi Energy's plant in Hefei, China, against 135 weeks from Sweden. Those units may not suit every American utility, and US policy is closing that door for now.
+The second is orders cooling as the plants open. If book-to-bill falls below 1 at the grid makers just as the 2027 halls start, the makers built into a slowdown. For now Siemens Energy's grid business is at 1.48 and GE Vernova's at about 1.4. Years of work falling while the first plants open on time would move me before the test date, because that is the queue clearing.
 
-The claim stands on two legs. The first is time: halls take two to three years and steel, ovens and test bays cap output. That is physics, but it expires as the halls land from 2027, and the first test reads it in 2028. The second is choice: the makers size halls to signed orders, a business decision they can drop, and the second and third tests attack it. The wait in 2030 rests on the second leg.
+The third is someone breaking ranks. If makers outside this group, in Korea, Brazil or China, add capacity to clear the queue and American buyers accept their units, it empties faster. The Korean makers are adding capacity in Alabama and Tennessee; if they build ahead of orders, the wait shortens.
 
-The objection I would answer before it is asked is that the new factories end the shortage by 2028. They do not. By Siemens Energy's own chart the shortage narrows, but a smaller gap still adds to the pile. The wait shortens in years; it does not end this decade.
+The claim stands on two legs. The first is time: halls take two to three years, and steel, ovens and test bays cap output. That is physics, but it expires as the halls land from 2027. The second is choice: the makers size halls to signed orders, a business decision they can drop. The wait in 2030 rests on the second leg.
 
-## The US has closed part of the fast lane for foreign gear
-
-On 26 August 2026 the US President signed Executive Order 14421, declaring a national emergency over the bulk-power system, the high voltage network of transmission and generation. It lets the Department of Energy bar foreign-produced equipment in transactions begun after that date, and even put conditions on gear already installed, up to its removal, Holland & Knight, a US law firm, noted on 1 September. Wood Mackenzie expects the order to worsen the shortage. It estimates power transformers 15% short in 2026 and substations 8%, with more than $22bn of imports since 2025, from 24 nations, in the order's reach, and gives the department 120 days to set the rules.
-
-I concede it is not a blanket ban. It needs the department to act against named entities, and utilities, in Wood Mackenzie's words, "have been largely avoiding Chinese suppliers" since the first such order in 2020. It is also unclear, the firm says, whether data centre loads count as bulk power at all.
-
-It still matters, because it closes the escape valve data centres were using: Wood Mackenzie expects much of the impact to fall on data centres that bought Chinese units to cut their lead times. It also splits the queue by geography. A US buyer may be pushed from the 14-week line to the 135-week one, so the American wait can outlast Europe's and Asia's.
-
-## The shortage may have peaked, and a narrower gap still adds to the pile
-
-Several gauges say the shortage is narrowing. Wood Mackenzie's estimate of the power transformer shortage fell from 30% for 2025, in August that year, to 15% for 2026. Average lead times fell by 10 weeks to 128 in the second quarter of 2025. It forecasts the shortfall of generator step-up transformers, the units that connect power stations to the grid, narrowing from over 700 in 2025 to 140 by 2030.
-
-I concede the rate of change has turned. The shortage is narrowing, Eaton's diary has stopped lengthening, and if that spreads to the grid makers the 2028 test fails.
-
-Narrowing is still what Siemens Energy's own chart already shows, from about 40% to about 10%, and a 10% gap still adds to the pile every year. Lead times of 128 weeks are still more than twice the five to 12 months American makers quoted in 2010. The question is not whether the gap narrows but whether book-to-bill drops below 1, and at Eaton and GE Vernova it has not.
-
-<a id="the-parts-list"></a>
-## The next queue may form at the parts, not the halls
-
-This is still a hypothesis. A transformer ships only when its slowest part arrives, and the parts come from smaller firms that are not announcing 40 factories. Hitachi Energy's own delivery page, updated 29 October 2026, quotes 135 weeks for its bushings of 245 to 550 kilovolts from its Swedish plant at Ludvika. In 2012 the US Department of Energy heard that such bushings took up to five months.
-
-Two moves fit the reading. On 28 October 2026 GE Vernova agreed to pay about $9.0bn for Trench, which makes high and medium voltage bushings, instrument transformers and coils, and called it "vertically integrating an existing supplier". The core steel has one American source. Cleveland-Cliffs, a US steelmaker, calls its Butler Works mill in Pennsylvania "the sole U.S. producer" of grain-oriented electrical steel, and plans to raise its output by up to 25% by early 2028.
-
-The inference is mine. If the parts gate output, a new hall in 2027 adds floor space before it adds transformers, and years of work stay high for a reason no factory count shows. The US order may keep American buyers off the fast Chinese line, so the parts queue could stay long in America while it eases elsewhere. Tap changers, another bought-in part, are quoted at 10 to 22 weeks on the same page, so the strain is not everywhere.
-
-I would test it on that page month by month as the new halls open, and by whether more makers buy their suppliers. Swedish bushing waits falling below a year, or makers saying parts do not hold them back, would kill it.
-
-## At every scale the wait sits at the slowest station
-
-At the scale of a part, a bushing from Sweden waits 135 weeks and one American mill makes the core steel. A transformer is only as fast as its slowest part, and a grid maker has just bought its bushing supplier.
-
-At the scale of a factory, the makers add halls only as fast as signed orders justify. Years of work rose while the plants were announced, and the halls land from 2027 into a bigger pile.
-
-At the scale of the grid, a connection alone does not start a hall. A utility can clear a site's place in the grid queue, as in [America rations the plug](/journal/america-rations-the-plug/) and [the plug, not the chip](/journal/the-queue-not-the-chip/), and the site still waits for its transformer. Nvidia, the designer of the flagship AI chips, has launched a new one about every year. A transformer ordered today joins a pile that would take three or four of those generations to clear, so a data centre's real start date is set years before the chips it will run are on sale.
+Two things would not move me. More factory announcements: they are the headline, not the order book. And price rises: they show the queue holding, not clearing.
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
-
-The test this piece stands behind, quoted word for word:
 
 **The equipment queue is kept, not cleared** (30 October 2026)
 
@@ -285,7 +420,7 @@ Claim: "The first wave of new transformer and switchgear plants will not shorten
 
 Breaks if: "At 30 June 2028, as each company reports it, Siemens Energy Grid Technologies' order backlog in euros divided by its revenue over the previous four quarters is below 3.6, or Eaton Electrical Americas' backlog divided by its sales over the previous four quarters is below 1.0."
 
-Four earlier claims on this queue:
+Four earlier claims on this queue, word for word:
 
 **Schneider Electric sells AI data centres the finished system, not the parts** (7 October 2026)
 
@@ -293,7 +428,7 @@ Claim: "Schneider Electric's AI data centre growth is arriving as finished syste
 
 Breaks if: "Systems falls below 34 per cent of Schneider's group revenue, its 2025 level, for the full year 2026 or 2027 while Schneider describes Data Centre and Networks sales as growing double digit; or Products outgrows Systems on an organic basis for two quarters running while data centres remain Schneider's main growth driver."
 
-Where later evidence bears on it: not broken, but close. In the third quarter of 2026 Products grew 17% against 22% for Systems, and Schneider says Products growth was "majority volume-driven": more loose parts, not just higher prices. The nine-month Systems share is about 34% from rounded shares (33.9% to 34.9%), on the line. The share test checks the outcome, not the cause: buyers may want prefabrication for speed as much as for scarce electricians.
+Where later evidence bears on it: Not broken, but close. In the third quarter of 2026 Products grew 17% against 22% for Systems, and Schneider says Products growth was "majority volume-driven": more loose parts, not just higher prices. The nine-month Systems share is about 34% from rounded shares (33.9% to 34.9%), on the line. The share test checks the outcome, not the cause: buyers may want prefabrication for speed as much as for scarce electricians.
 
 **Hitachi Energy is spending more than $9 billion on factories, and still plans a three-year queue** (22 October 2026)
 
@@ -301,7 +436,7 @@ Claim: "Hitachi Energy is adding factories only as fast as signed orders justify
 
 Breaks if: "Hitachi Energy's order backlog divided by its revenue over the previous four quarters, both in US dollars as Hitachi reports them (about 3.06 at 30 June 2026), falls below 2.5 at two consecutive quarter ends before 31 March 2031, the end of fiscal 2030; or its orders for any full fiscal year up to fiscal 2030 fall below its revenue for that year."
 
-Where later evidence bears on it: the ratio rose to about 3.1 at 30 September 2026 (Hitachi, 28 October 2026). The claim holds. Hitachi's own release gives no date for its South Boston plant.
+Where later evidence bears on it: Holding. The ratio rose to about 3.1 at 30 September 2026 (Hitachi, 28 October 2026). Hitachi Energy's US programme is now around $1.5bn; its own releases give no date for the South Boston plant.
 
 **Eaton is shipping more electrical gear than ever, and its order book is growing faster still** (26 October 2026)
 
@@ -309,7 +444,7 @@ Claim: "Eaton is shipping more electrical gear than ever, yet its Electrical Ame
 
 Breaks if: "Electrical Americas backlog divided by the segment's sales over the previous four quarters (1.05 at June 2026, up from 1.04 in March) falls for two consecutive quarters before mid 2027, when the new plants start; or falls below 0.93, its June 2025 level, before the end of 2027; or the segment's twelve-month book-to-bill falls below 1.0 for two quarters running; or Electrical Americas margin is still falling year on year after Eaton reports price and cost back to neutral."
 
-Where later evidence bears on it: at 30 September 2026 the ratio was 1.050, flat on June's 1.049 (Form 10-Q, 3 November 2026). It has stopped rising but has not fallen, so the claim holds; some of the earlier rise may be price. The margin, 29.8% in the third quarter, was still below the 30.3% of a year earlier.
+Where later evidence bears on it: Holding, but flat. At 30 September 2026 the ratio was 1.050, against 1.049 in June (Form 10-Q, 3 November 2026). It has stopped rising but has not fallen; some of the earlier rise may be price. Twelve-month organic orders were up 39%. The margin, 29.8% in the third quarter, was still below the 30.3% of a year earlier.
 
 **Siemens Energy has measured the transformer shortage, and its own chart runs to 2030** (28 October 2026)
 
@@ -317,48 +452,63 @@ Claim: "By Siemens Energy's own estimate, demand for large and medium power tran
 
 Breaks if: "Before 30 September 2030: Grid Technologies' orders fall below its revenue for any full fiscal year; or its order backlog in euros, as Siemens Energy reports it (€51bn at 30 June 2026), falls for two consecutive quarters; or Siemens Energy publishes a revised estimate showing transformer capacity meeting demand in Europe and North America before fiscal 2030."
 
-Where later evidence bears on it: no new figures by 6 November 2026. Siemens Energy announced its Charlotte plant for early 2026; a Reuters report of 26 June 2025 relayed a board member giving early 2027, and its release of 3 February 2026 gives no date.
+Where later evidence bears on it: No new annual figures by 7 November 2026; fiscal 2026 results are due in November. Grid Technologies' book-to-bill was 1.48 in the quarter to June 2026 and 1.88 over nine months, and its backlog rose to €51bn. Siemens Energy announced its Charlotte plant for early 2026; a Reuters report of 26 June 2025 relayed a board member giving early 2027, and its release of 3 February 2026 gives no date.
 
 </details>
 
 <details class="evidence">
 <summary>The figures behind the charts</summary>
 
-Three of the four makers publish a backlog for the business that sells this gear; Schneider reports only a "record backlog". Dividing backlog by the same business's revenue over the previous four quarters gives years of work, my arithmetic from each latest filing. Siemens Energy's figures are as at 30 June 2026; its full-year figures were not out on 6 November 2026.
+**What a transformer is.** US Department of Energy, Large Power Transformers and the U.S. Electric Grid (June 2012): "custom-designed equipment"; about 1.3 units per design (industry source); core 80,000 to 120,000 kg in a 300 to 500 MVA unit; HV bushings "often have a long lead time extending up to five months"; seven build steps, core building "requires highly-skilled work force", final assembly "in a clean environment; even a tiny amount of dust or moisture can deteriorate the performance"; "a long-lead time (in excess of six months) to manufacture"; prequalification "a lengthy process that can take years"; weights about 100 to 400 tons; most railcars about 100 tons; about 30 Schnabel cars in North America; lead times in 2010 of 5 to 12 months for US makers and 6 to 16 for foreign, citing the US International Trade Commission. US Department of Energy, Large Power Transformer Resilience, report to Congress (signed 10 July 2024): about 90% of US electricity passes through at least one large power transformer; 100 MVA definition; "36-month lead times being commonly quoted and maximum lead times reaching as much as 60 months"; pre-pandemic lead times under a year; capacity "cannot easily be expanded except by building a new facility"; new factory 1 to 3 years, winding machines and core tables "can take 1-2 years to obtain from suppliers"; route clearance up to nine months; "Only about three of these specialized transport cars are available in North America" (p. 19); GOES and copper "each account for roughly 25 percent of final LPT production costs" (Commerce, 2020); Cleveland-Cliffs "the sole active domestic GOES supplier", meeting 12% to 20% of demand (2020 to 2022 data); top grade only from Nippon Steel; about 80% of GOES imported in 2019, all forms; "a major weak link"; 754 large transformers for US use in 2019, 617 (82%) imported; domestic maximum about 343 a year.
+
+**Years of work.**
 
 | Maker, business | Backlog | Revenue, previous four quarters | Years of work | Earlier point | Orders against revenue | Latest filing |
 |---|---|---|---|---|---|---|
 | Hitachi Energy | $66.9bn, 30 September 2026 | about $21.6bn | about 3.1 | about 2.8 (31 March 2025) | 1.66 times, fiscal 2025 | Hitachi results, 28 October 2026 |
-| Siemens Energy, Grid Technologies | €51bn, 30 June 2026 | €12.9bn | about 4.0 | 3.56 (30 September 2024) | 1.88 times, nine months to June 2026 | Earnings release, 5 August 2026 |
-| Eaton, Electrical Americas | $16.0bn ($15,993m), 30 September 2026 | $15.2bn ($15,229m) | 1.050, about 12.6 months | 1.049 (30 June 2026); 0.93 (30 June 2025) | book-to-bill 1.3, twelve months | Form 10-Q, 3 November 2026 |
+| Siemens Energy, Grid Technologies | €51bn, 30 June 2026 | €12,889m | about 4.0 (3.92 to 4.00 on rounding) | 3.56 (30 September 2024) | 1.48 in the quarter; 1.88 in nine months | Earnings release, 5 August 2026 |
+| Eaton, Electrical Americas | $15,993m, 30 September 2026 | $15,229m | 1.050 | 1.049 (30 June 2026); 0.93 (30 June 2025); 0.89 (31 December 2024) | twelve-month organic orders up 39% | Form 10-Q, 3 November 2026 |
+| GE Vernova, Electrification | equipment backlog $42.2bn, 30 September 2026, up $15.7bn (60%), incl. $5bn from Prolec GE | | | | book-to-bill about 1.4; orders $5,371m, down 9% organic | Release, 28 October 2026 |
 
-Eaton's four quarters are $3,506m, $3,600m, $3,951m and $4,172m to 30 September 2026. Its Electrical Americas margin was 29.8% in the third quarter of 2026 against 30.3% a year earlier, and 27.5% in the second quarter (release, 3 November 2026).
+Siemens Energy's trailing revenue is the nine months to June 2026, €9,744m, plus the fourth quarter of fiscal 2025, €3,145m (fiscal 2025 €11,305m less nine months €8,160m); €51bn is rounded to €1bn. Eaton's four quarters are $3,506m, $3,600m, $3,951m and $4,172m to 30 September 2026; whole company backlog about $26.2bn, "approximately 72%" targeted for delivery in the next twelve months (Form 10-Q). Electrical Americas margin 29.8% in the third quarter of 2026 against 30.3% a year earlier, and 27.5% in the second quarter. Total Electrical twelve-month book-to-bill 1.2 and backlog up 46% (release, 3 November 2026). Years of work is my arithmetic. The ratio rises when prices go up before deliveries catch up, when buyers book earlier, and, for Hitachi's dollar figures, when the euro strengthens.
 
-The ratios are not like for like. The two grid makers carry HVDC links, high voltage direct current lines that take years to build. Eaton's gear mostly ships within a year. Direction matters, not comparison.
+**Why they will not overbuild.** Hitachi Investor Day energy presentation, 10 June 2026: backlog towards about $100bn by fiscal 2030, "remain stable at 2.5-3x"; investment only in projects with secured profitability; more than $6bn of factory spending 2024 to 2027. Hitachi Energy release of 15 September 2026: US programme around $1.5bn. ABB Q3 2026 release, 20 October 2026: capital spending "around $1 billion and do not expect it to rise further in the mid-term"; "selectively leveraging third-party assembly". Siemens Energy: about 20% capacity added for €600m and over €2bn more for transformers and switchgear by fiscal 2028 (shareholder letter, 14 November 2025). Department of Energy (2012) on consolidation over the preceding decades and on the 2011 dumping petition.
 
-The ratio rises when prices go up before deliveries catch up, when buyers book earlier for later delivery, and, for Hitachi's dollar figures, when the euro strengthens. None of the three splits backlog into price and volume. It can also fall while the pile grows, as the claim above allows.
-
-Build time and lead time: the US Department of Energy (June 2012) gives a large power transformer "a long-lead time (in excess of six months) to manufacture", and in 2010 an average of five to 12 months from order to delivery for American makers and six to 16 months for foreign ones. Wood Mackenzie (15 October 2025) gives 128 weeks for power transformers in the second quarter of 2025.
-
-The parts: Hitachi Energy's delivery times page for transformer components, Ludvika updated 29 October 2026 (GSBK and ARF 245 to 550 kV bushings, 135 weeks; tap changers 10 to 22 weeks) and Hefei updated 4 August 2026 (ARF 245 and 420, 14 weeks; ARF 550, 16 weeks). GE Vernova's release of 28 October 2026 on Trench, closing expected late 2027. Cleveland-Cliffs' release of 5 October 2026 on its $200m Butler Works project, with a $75m Department of Energy award.
-
-The factories, with each maker's own dates:
+**The factories.** Each maker's own dates, except where marked.
 
 | Maker | Plant | What it makes | Announced | Production due |
 |---|---|---|---|---|
 | Siemens Energy | Charlotte, North Carolina, $150m | Large power transformers | 14 February 2024 | "Early 2026" as announced; early 2027 per a board member, Reuters, 26 June 2025; no company release confirms a start |
-| Siemens Energy | Charlotte expansion and a new Greater Richland, Mississippi plant, in a $1bn US programme | Large transformers; high voltage switchgear | 3 February 2026 | Not stated |
-| Siemens Energy | Nuremberg, Germany, €220m | Transformers, capacity up about 50% | 5 September 2025 | New areas by 2028 |
-| Siemens Energy | Factory network, over €2bn | Transformers and switchgear | 14 November 2025 | By fiscal 2028 |
-| Hitachi Energy | More than 40 factories: over $3bn in 2020 to 2023, over $6bn in 2024 to 2027 | Transformers, HVDC, switchgear | 10 June 2026 | Through 2027 |
-| Hitachi Energy | South Boston, Virginia, $457m | Large power transformers | Ground broken 29 June 2026 | No date in its release |
-| Hitachi Energy | Gallman, Mississippi, $528m | Transformers, more than double its current plant's capacity | 15 September 2026 | 2029 |
+| Siemens Energy | Nuremberg, Germany, €220m | Transformers, about 50% more | 5 September 2025 | By 2028 |
+| Siemens Energy | Charlotte expansion and Greater Richland, Mississippi, in a $1bn US programme | Large transformers; high-voltage switchgear | 3 February 2026 | Not stated |
+| Hitachi Energy | South Boston, Virginia, $457m | Large power transformers | Ground broken 29 June 2026 | No date in its releases |
+| Hitachi Energy | Gallman, Mississippi, $528m | Transformers; replaces Crystal Springs, more than twice its size | 15 September 2026 | 2029 |
+| Hitachi Energy | Alamo, Tennessee, $106m | Bushings up to 800 kV | 20 August 2025 | Mid-2027 |
 | Eaton | Jonesville, South Carolina, $340m | Three-phase transformers | 12 February 2025 | 2027 |
 | Eaton | Bellevue, Nebraska, over $30m | Switchgear | 8 April 2026 | First half of 2027 |
-| Eaton | North Little Rock, Arkansas, $242m | Prefabricated power enclosures, doubling US capacity | 2 September 2026 | Not confirmed |
-| Schneider Electric | US programme, over $700m | Medium voltage gear, switchgear, breakers | 25 March 2025 | Through 2027 |
+| HD Hyundai Electric | Montgomery, Alabama, second plant, about $200m | Extra-high-voltage transformers, 50% more | Ground broken 6 March 2026 | April 2027 |
+| Virginia Transformer | Rincon, Georgia, $40m | Power transformers, about 50% more | November 2025 | March 2027 |
+| Hyosung Heavy Industries | Memphis, Tennessee, $157m | Large transformers, over 50% more | November 2025 | 2028 |
+| Prolec GE | Goldsboro, North Carolina, $140m | Medium power transformers | 14 May 2025 | Capacity doubled by 2030 |
+| Cleveland-Cliffs | Butler Works, Pennsylvania, $200m | GOES, up to 25% more | 5 October 2026 | Early 2028 |
 
-Years of work is backlog divided by the same business's revenue over the previous four quarters, my arithmetic from each latest filing.
+**Siemens Energy's chart.** Capital market day, 20 November 2025: demand for large and medium power transformers in Europe and North America against the capacity of all market players, about 40% above in fiscal 2025 and about 10% in fiscal 2030; only the two percentages are its labels; the doubling of capacity is my reading of the bars. Drift arithmetic: orders 10% above output, output growing 6% a year, starting from 3.96, my arithmetic. The harder case: Grid Technologies revenue grew 28.6% comparable in the third quarter of fiscal 2026 and is guided to grow 25 to 27% in fiscal 2026 (shareholder letter, 22 May 2026). A year later the ratio is R/(1+g) plus (book-to-bill minus 1): at 25% growth and 1.48, 3.96 becomes about 3.65 after one year and about 3.40 after two; holding 3.96 needs about 1.8. My arithmetic.
+
+**Imports.** UN Comtrade, reporter United States, imports of HS 850423 (liquid dielectric transformers over 10,000 kVA), read 7 November 2026: 2022 $1,258m; 2023 $1,927m; 2024 $2,978m; 2025 $4,145m (5,021 units). 2025 by origin: Mexico $803m (19.4%), Korea $748m (18.0%), Brazil $531m (12.8%), Austria $431m (10.4%), Netherlands $260m, Taiwan $248m, Canada $213m, China $90m (2.2%). 2022: Mexico 31.2%, Korea 7.4%. January to August 2026 $3,011m against $2,743m; China 4.7%. Korea's exports of HS 850423 to the US (Korea customs via Comtrade): $109m in 2022, $738m in 2025, 57% of its exports of the line. Department of Energy (2012): Korean exports to the US $33m in 2005 and $279m in 2011.
+
+**Tariffs.** Proclamation 10947 (steel and aluminium to 50%, 4 June 2025); Bureau of Industry and Security inclusions notice, 90 FR 40326 (HS 8504.23 and cores and laminations added as steel derivatives, 18 August 2025); Proclamation 11021, 91 FR 18201, in force 6 April 2026, and its annexes: Annex III, HS 8504.23.00 at 15% in all until 31 December 2027, then the 25% derivative rate; Annex I-B, HS 8504.21 and 8504.22 and cores and laminations (8504.90.9634, 9638, 9642) at 25% of full value; Annex I-A, flat-rolled alloy steel (7225, 7226) and copper wire (7408, 7413) at 50%. Proclamation 11032 (1 June 2026, in force 8 June) left the transformer codes unchanged but added a note to Annex I-B: parts in chapters 84, 85 or 87 imported exclusively to make equipment listed in Annex III, which includes HS 8504.23, pay the Annex III rate. Anti-dumping order on large power transformers from Korea: final results, 91 FR 52670 (14 August 2026), HD Hyundai Electric 0.00%, Iljin 0.00%, LS Electric 4.32%, Hyosung Heavy Industries 4.32%; preliminary results of 2 November 2026 the same. Executive Order 14421, 91 FR 55995 (signed 26 August 2026), with rules due within 120 days; Department of Energy request for information, 91 FR 57322, comments closed 9 October 2026; no rule in the Federal Register by 7 November 2026. Presidential Determination No. 2026-10 (20 April 2026). Wood Mackenzie (31 August 2026) on the order's impact.
+
+**Prices.** Bureau of Labor Statistics producer price indexes, read 7 November 2026, September 2026 preliminary. PCU335311335311, electric power and specialty transformer manufacturing: 2020 average 255.3; December 2022 410.3; December 2023 425.9; December 2024 432.6; December 2025 455.9; September 2026 475.1. PCU335313335313, switchgear and switchboard apparatus manufacturing: 219.1; 291.2; 310.4; 329.6; 369.2; 412.2. Indexed to the 2020 average in the chart, my arithmetic. IMF global copper price (FRED PCOPPUSDM): 2020 average $6,175 a tonne; September 2026 $14,473.
+
+**Inside the fence.** ABB call, 20 October 2026 (third-party summary): data centre lead times 12 to 24 months. Schneider Electric third-quarter revenue release, 16 October 2026: "another record backlog", "visibility into 2027 and 2028"; power and grid customers "declined slightly", power generation down and grid customers strong. Schneider Capital Markets Day, 11 December 2025: pure data centre business about 25% of group revenue and networks 4%, by the end of 2025; "$1.2 million to $3.3 million per megawatt". Generac Form 8-K exhibit, 28 October 2026: data centre backlog "approximately $4.5 billion"; Amazon, "initial deliveries are expected to total a combined $2.4 billion in 2027 and 2028". Caterpillar call, 29 October 2026 (third-party summary): large engine orders into 2029, turbine orders into 2030; total backlog $78.1bn (Form 10-Q). Cummins call, 4 August 2026 (third-party summary). Powell Industries Form 8-K, 3 August 2026: "a record $934 million of new orders", book-to-bill 3.0, backlog $2.4bn, one order "exceeding $400 million". Vertiv third-quarter release, 28 October 2026: "more than 100% organic orders growth"; quarterly backlog no longer published from 2026 (fourth-quarter 2025 call). Eaton releases on Fibrebond (2025). The waits chart sets each maker's own words from today; ranges given as years are placed across the year.
+
+**AI racks.** Uptime Institute, global data centre survey, 2025: average typical (modal) rack density "almost 9 kW", about 7.5 kW without outliers. Schneider and Nvidia reference design, December 2024: GB200 NVL72 "up to 132 kW per rack". Nvidia technical blog, 20 May 2025: medium voltage converted to 800 V DC at the edge of the data centre; 1 MW racks "starting in 2027"; a 1 MW rack at 54 V "requires up to 200 kg of copper busbar". Currents are power divided by voltage, my arithmetic; racks for a 100 MW campus are 100 MW divided by rack power.
+
+**Parts.** Hitachi Energy, delivery times for transformer components, Ludvika updated 29 October 2026: GSBK and ARF bushings 245 to 550 kV, 135 weeks; GSA-OA, ARF AF and ED 245 kV, 40; GOH 46; GOB+ 40; GSA 40; GOE 27; tap changers 10 to 22. Hefei updated 4 August 2026: ARF 245 and 420, 14 weeks; ARF 550, 16 weeks. GE Vernova release, 28 October 2026: Trench for about $9.0bn, "vertically integrating an existing supplier", closing expected late 2027. Hitachi Energy release, 20 August 2025: Alamo, "largest bushings manufacturing facility in North America", operational by mid-2027. EU F-gas Regulation (EU) 2024/573, Article 13(9), as summarised by Germany's Umweltbundesamt and ESB Networks: new switchgear above 52 kV to 145 kV from 1 January 2028, above 145 kV from 1 January 2032. Council of the European Union, note ST 10693/1/26 REV 1 (24 June 2026), from Italy, Bulgaria and the Czech Republic: "If fluoronitrile-based solutions disappear from the EU market, only one manufacturer of dry-air solutions remains".
+
+**The peak.** Siemens Energy Grid Technologies book-to-bill: 1.48 in the third quarter of fiscal 2026 (5,367 over 3,624), 2.28 in the second (release of 12 May 2026). GE Vernova release, 28 October 2026: Electrification equipment backlog $42.2bn, up $15.7bn in a year, including about $5bn from Prolec GE (closed 2 February 2026); about 40% without it, my arithmetic. Eaton Form 10-Q, 3 November 2026. Wood Mackenzie (14 August 2025 and 31 August 2026): shortage 30% for 2025, 15% for 2026; 128 weeks in the second quarter of 2025 (15 October 2025). National Renewable Energy Laboratory, Major Drivers of Long-Term Distribution Transformer Demand (February 2024): distribution transformers up to 2 years; about 30 weeks by the second quarter of 2025 (Wood Mackenzie, as cited by the Congressional Research Service, report R48933, 23 April 2026). Edison Electric Institute, 9 July 2026: investor-owned utility capital spending about $239bn in 2026; $204.1bn in 2024 (2025 Financial Review).
+
+**Spares.** Department of Energy (July 2024), Table 1: a ready spare installs in three to four weeks; STEP: "to date STEP has never been utilized"; Grid Assurance "has not yet actually provided a replacement LPT".
 
 </details>
 
@@ -366,12 +516,16 @@ Years of work is backlog divided by the same business's revenue over the previou
 <h3>Who is exposed if the equipment queue is kept, not cleared</h3>
 <p class="note">This maps who operates in each layer. It is not a recommendation, and naming a company is not a view on its shares. Figures in the piece are disclosures used as evidence for the mechanism.</p>
 <dl>
-<dt>The grid side</dt>
-<dd><span class="names">Hitachi Energy</span>, <span class="names">Siemens Energy</span> and <span class="names">GE Vernova</span> make large power transformers, high voltage switchgear and HVDC systems.</dd>
+<dt>Large transformers and high-voltage gear</dt>
+<dd><span class="names">Hitachi Energy</span>, <span class="names">Siemens Energy</span>, <span class="names">GE Vernova</span>, <span class="names">HD Hyundai Electric</span>, <span class="names">Hyosung Heavy Industries</span> and <span class="names">LS Electric</span> make large power transformers and high-voltage switchgear.</dd>
 <dt>Inside the fence</dt>
-<dd><span class="names">Eaton</span>, <span class="names">Schneider Electric</span>, <span class="names">ABB</span>, <span class="names">Siemens</span> and <span class="names">Vertiv</span> make switchgear, UPS systems and prefabricated power rooms.</dd>
+<dd><span class="names">Eaton</span>, <span class="names">Schneider Electric</span>, <span class="names">ABB</span>, <span class="names">Siemens</span>, <span class="names">Legrand</span>, <span class="names">nVent</span>, <span class="names">Hubbell</span> and <span class="names">Powell Industries</span> make switchgear and power rooms; <span class="names">Vertiv</span> makes UPS, power and cooling systems.</dd>
+<dt>Backup generators</dt>
+<dd><span class="names">Caterpillar</span>, <span class="names">Cummins</span>, <span class="names">Generac</span> and <span class="names">Rolls-Royce</span> make generator sets.</dd>
+<dt>Parts and steel</dt>
+<dd><span class="names">Trench</span> (being bought by GE Vernova) and <span class="names">Hitachi Energy</span> make bushings; <span class="names">Maschinenfabrik Reinhausen</span> makes tap changers; <span class="names">Cleveland-Cliffs</span> and <span class="names">Nippon Steel</span> make grain-oriented electrical steel.</dd>
 <dt>The cable between them</dt>
-<dd><span class="names">Prysmian</span>, <span class="names">Nexans</span> and <span class="names">NKT</span> make high voltage land and subsea cable.</dd>
+<dd><span class="names">Prysmian</span>, <span class="names">Nexans</span> and <span class="names">NKT</span> make high-voltage land and subsea cable.</dd>
 </dl>
 <dl class="against">
 <dt>On the other side</dt>
@@ -381,5 +535,4 @@ Years of work is backlog divided by the same business's revenue over the previou
 
 ---
 
-<p class="sources">Sources: Hitachi results of 29 January, 27 April, 29 July and 28 October 2026, Investor Day energy presentation and Q&A summary (10 June 2026), and Hitachi Energy releases of 29 June and 15 September 2026 and its component delivery times page (29 October 2026); Siemens Energy Capital Market Day (20 November 2025), shareholder letters of 13 November 2024 and 14 November 2025, earnings releases of 11 February, 12 May and 5 August 2026, and releases of 14 February 2024, 5 September 2025 and 3 February 2026; Reuters (26 June 2025); Eaton's 2025 Form 10-K, Forms 10-Q for September 2024 to September 2026, releases of 31 July and 3 November 2026 and plant releases of 12 February 2025, 8 April and 2 September 2026; Schneider Electric results of 20 February 2025 to 16 October 2026, Capital Markets Day (11 December 2025) and release of 25 March 2025; GE Vernova (28 October 2026); Cleveland-Cliffs (5 October 2026); US Department of Energy, Large Power Transformers and the U.S. Electric Grid (June 2012); Wood Mackenzie (14 August and 15 October 2025, 31 August 2026); Holland & Knight (1 September 2026). Years of work are my arithmetic. Personal research, not investment advice.</p>
-
+<p class="sources">Sources: Hitachi results to 28 October 2026, Investor Day (10 June 2026) and Hitachi Energy releases and component delivery page (29 October 2026); Siemens Energy Capital Market Day (20 November 2025), shareholder letters and earnings releases to 5 August 2026; Eaton, GE Vernova, ABB, Schneider Electric, Generac, Caterpillar, Cummins, Powell and Vertiv filings, releases and calls to 3 November 2026; HD Hyundai Electric, Hyosung, Virginia Transformer, Prolec GE and Cleveland-Cliffs releases; Reuters (26 June 2025); US Department of Energy (June 2012 and July 2024); National Renewable Energy Laboratory (February 2024); Federal Register; UN Comtrade; Bureau of Labor Statistics; IMF; Edison Electric Institute; Uptime Institute; Nvidia; Council of the European Union; Wood Mackenzie. Years of work are my arithmetic. Personal research, not investment advice.</p>

@@ -21,7 +21,7 @@ export const STACK: Layer[] = [
     kind: 'energy',
     what: 'High-voltage power arrives from the public grid through a substation built for the site.',
     constraint: 'The wait for a connection, and the transformers and switchgear behind it, now runs to years.',
-    pieces: ['the-queue-not-the-chip', 'hong-kong-has-the-plug', 'america-rations-the-plug', 'the-equipment-queue'],
+    pieces: ['the-queue-not-the-chip', 'america-rations-the-plug', 'the-equipment-queue'],
   },
   {
     id: 'onsite',
@@ -29,7 +29,7 @@ export const STACK: Layer[] = [
     kind: 'energy',
     what: 'Turbines, fuel cells, batteries and, one day, small reactors make or store power beside the building.',
     constraint: 'Skipping the grid queue means joining the queue for the equipment instead.',
-    pieces: ['building-your-own-power', 'nuclear-for-ai'],
+    pieces: ['building-your-own-power', 'nuclear-for-ai', 'microreactors'],
   },
   {
     id: 'distribution',
@@ -77,7 +77,7 @@ export const STACK: Layer[] = [
     kind: 'compute',
     what: 'The companies that turn power, buildings and chips into computing that someone else can use.',
     constraint: 'Buyers pay for megawatts switched on, not megawatts signed.',
-    pieces: ['contracted-energised-running'],
+    pieces: [], // folded into america-rations-the-plug 7 Nov 2026; the layer stays for the descent walk
   },
   {
     id: 'orbit',

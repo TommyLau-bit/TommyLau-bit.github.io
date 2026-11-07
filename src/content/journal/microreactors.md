@@ -1,12 +1,12 @@
 ---
 title: "Microreactors: the reactor is the easy part, the fuel is the gate"
-date: 2026-11-07T14:46:52+08:00
+date: 2026-11-07T21:19:23+08:00
 summary: "Microreactors are nuclear plants small enough to build in a factory and drive to a site on a lorry, and in 2026 the first of them started working in test. What paces them is not the reactor but its fuel: uranium enriched to just under 20 per cent and sealed inside ceramic grains the size of a poppy seed, which America makes in hundreds of kilograms a year, not the tens of tonnes an industry would need. So the government hands out the fuel, and the first customer is the military, not the AI data centre."
 category: "Analysis"
 format: "depth"
 cover: "/covers/microreactors.svg"
 tags: ["power", "nuclear", "supply-chain"]
-draft: true
+draft: false
 ---
 
 Between June and August 2026, five new American test reactors reached criticality, the moment a nuclear chain reaction first sustains itself. On 24 August a critical experiment for the core of eVinci, a microreactor from Westinghouse, one of America's oldest reactor makers, followed in Nevada. Most were the first of their design, several were small enough to travel by road, and none needed a decade of concrete to build.
