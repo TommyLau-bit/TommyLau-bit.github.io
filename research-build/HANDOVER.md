@@ -18,7 +18,9 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 3. Done: CVs updated ("grid to chip" wording; nuclear line to the depth figures); LinkedIn profile not changed.
 4. Done: article decks archived (study-decks/archive/article-decks-retired-2026-11-07/), not deleted.
 
-## START HERE (as of Sun 8 Nov 2026, late; session closed by Tommy)
+## START HERE (as of Sun 8 Nov 2026, late; map redrawn after close)
+
+- **8 Nov, after close: the map descent redrawn and LIVE (Tommy: drawings had dropped in quality; "push live").** One continuous camera: grid (power station on the horizon) zooms into a substation cutaway (core, windings, oil, bushings, radiators, switchgear room), pulls back to a full nuclear plant (microreactor on a trailer, HALEU inset: 16 centrifuges), zooms into the site power yard (batteries, fuel cells, gas turbine, engines, gas pipeline), the hall (dry coolers on the roof) and the rack (power shelf and cold plate cutaways). New `data-out`/`data-in` pull-back transition in Descent.astro. Labels trace to the pieces. Commit dbfe5d8; deploy green.
 
 - **Final check (8 Nov, last thing Tommy asked): all clean.** Scheduled company posts that mention chips (M37 Sandy Ridge, M50 H200 licence) or Vertiv (M58) trace to facts in the live Johor and powering-the-rack pieces, so they stay. Reminder for Tommy: the 15 commodity emails (10 to 12 Nov) carry the CV alone but still quote his JKM, copper, silver and freight calls.
 
