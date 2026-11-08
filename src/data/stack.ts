@@ -1,6 +1,8 @@
 // ── The map of the stack ─────────────────────────────────────────────────────
 //
-// The physical layers of an AI data centre, from the grid connection inward.
+// The physical layers of an AI data centre, from the grid connection inward to the
+// rack, plus orbit. Only layers the journal covers (Tommy, 8 Nov 2026: no chip,
+// memory or network layers; semiconductors are not this site's field).
 // Every published piece belongs to exactly one layer: brand/check-piece.py
 // fails a piece that is not listed here. Companies on the map are not curated:
 // they are read from the exposure boxes of the pieces in each layer.
@@ -20,16 +22,32 @@ export const STACK: Layer[] = [
     name: 'The grid connection',
     kind: 'energy',
     what: 'High-voltage power arrives from the public grid through a substation built for the site.',
-    constraint: 'The wait for a connection, and the transformers and switchgear behind it, now runs to years.',
-    pieces: ['the-queue-not-the-chip', 'america-rations-the-plug', 'the-equipment-queue'],
+    constraint: 'The wait for a connection now runs to years, and the grid decides who is served first.',
+    pieces: ['the-queue-not-the-chip', 'america-rations-the-plug'],
+  },
+  {
+    id: 'equipment',
+    name: 'Transformers and switchgear',
+    kind: 'energy',
+    what: 'Transformers step the voltage down at the grid and switchgear routes and protects it inside the fence; a handful of makers build them.',
+    constraint: 'The makers add factories only as fast as signed orders justify, so the wait is kept, not cleared.',
+    pieces: ['the-equipment-queue'],
   },
   {
     id: 'onsite',
     name: 'Power on site',
     kind: 'energy',
-    what: 'Turbines, fuel cells, batteries and, one day, small reactors make or store power beside the building.',
-    constraint: 'Skipping the grid queue means joining the queue for the equipment instead.',
-    pieces: ['building-your-own-power', 'nuclear-for-ai', 'microreactors'],
+    what: 'Gas turbines, engines, fuel cells and batteries make or store power beside the building.',
+    constraint: 'Skipping the grid queue means joining the turbine makers\' queue instead.',
+    pieces: ['building-your-own-power'],
+  },
+  {
+    id: 'nuclear',
+    name: 'Nuclear power',
+    kind: 'energy',
+    what: 'Existing reactors, restarted or upgraded, sell power to AI campuses first; new and micro reactors follow.',
+    constraint: 'Most new reactors need a richer fuel, HALEU, that America makes on one demonstration line.',
+    pieces: ['nuclear-for-ai', 'microreactors'],
   },
   {
     id: 'distribution',
@@ -46,38 +64,6 @@ export const STACK: Layer[] = [
     what: 'Almost every watt that goes into a chip comes back out as heat, and liquid now carries most of it away.',
     constraint: 'A typical rack drew about 7.5 kilowatts in 2025; Nvidia\'s GB200 rack draws about 120, too much heat for air to carry.',
     pieces: ['heat-and-water'],
-  },
-  {
-    id: 'network',
-    name: 'The network between chips',
-    kind: 'compute',
-    what: 'Thousands of chips swap partial results constantly, over copper inside the rack and light everywhere else.',
-    constraint: 'A slow link leaves the most expensive silicon in the building waiting.',
-    pieces: [], // retired 7 Nov 2026; the layer stays for the descent walk
-  },
-  {
-    id: 'memory',
-    name: 'Memory',
-    kind: 'compute',
-    what: 'Stacked memory sits beside each processor, feeding it the model\'s numbers.',
-    constraint: 'For most of the time a model is answering, the chip is waiting on memory, not maths.',
-    pieces: [], // retired 7 Nov 2026; the layer stays for the descent walk
-  },
-  {
-    id: 'chips',
-    name: 'Chips and the factories that make them',
-    kind: 'compute',
-    what: 'The processors that do the work, and the few factories able to make and package them.',
-    constraint: 'A new chip factory takes two to three years to build and one to two more to fill.',
-    pieces: [], // retired 7 Nov 2026; the layer stays for the descent walk
-  },
-  {
-    id: 'operators',
-    name: 'Who runs the capacity',
-    kind: 'compute',
-    what: 'The companies that turn power, buildings and chips into computing that someone else can use.',
-    constraint: 'Buyers pay for megawatts switched on, not megawatts signed.',
-    pieces: [], // folded into america-rations-the-plug 7 Nov 2026; the layer stays for the descent walk
   },
   {
     id: 'orbit',

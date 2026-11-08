@@ -1,5 +1,5 @@
 ---
-// The descent: the stack told as one scroll, from a high-voltage line to the die.
+// The descent: the stack told as one scroll, from a high-voltage line to the chip the power feeds.
 // Text (what happens, what binds, the pieces) is read from src/data/stack.ts; the
 // drawings are hand-made per stop. A new layer in stack.ts appears in the closing
 // funnel on its own, but needs its own drawing to get a stop of its own.
@@ -12,8 +12,8 @@ const L = (id: string) => STACK.find((l) => l.id === id)!;
 const reads = (ids: string[]) => ids.map((id) => byId[id]).filter(Boolean).map((p) => ({ href: `/journal/${p.id}/`, title: p.data.title }));
 // a section of a deep piece, by the anchor of the piece merged into it (CLAUDE.md, "Merging keeps the record")
 const at = (id: string, anchor: string, title: string) => (byId[id] ? [{ href: `/journal/${id}/#${anchor}`, title }] : []);
-const grid = L('grid'), onsite = L('onsite'), dist = L('distribution'), cool = L('cooling'), net = L('network'), mem = L('memory'), chips = L('chips'), ops = L('operators'), orb = L('orbit');
-const funnel = STACK.filter((l) => l.id !== 'operators' && l.id !== 'orbit').map((l) => ({ ...l, n: l.pieces.filter((id) => byId[id]).length })).filter((l) => l.n > 0).map((l, i) => ({ ...l, w: 100 - i * 8 }));
+const grid = L('grid'), equip = L('equipment'), onsite = L('onsite'), nuke = L('nuclear'), dist = L('distribution'), cool = L('cooling'), orb = L('orbit');
+const funnel = STACK.filter((l) => l.id !== 'orbit').map((l) => ({ ...l, n: l.pieces.filter((id) => byId[id]).length })).filter((l) => l.n > 0).map((l, i) => ({ ...l, w: 100 - i * 8 }));
 
 // ── 1 · grid ──
 const PY = [30, 170, 310];
@@ -61,20 +61,6 @@ const caps: { x: number; y: number; w: number; h: number }[] = [];
 for (let x = 214; x <= 580; x += 13) caps.push({ x, y: 76, w: 8, h: 5 }, { x, y: 86, w: 8, h: 5 }, { x, y: 469, w: 8, h: 5 }, { x, y: 479, w: 8, h: 5 });
 for (let y = 118; y <= 436; y += 13) caps.push({ x: 200, y, w: 5, h: 8 }, { x: 595, y, w: 5, h: 8 });
 const layers8 = Array.from({ length: 8 }, (_, i) => 486 - i * 9);
-
-// ── 7 · lithography ──
-const beam = [[262, 300], [340, 210], [452, 140], [525, 88], [610, 175], [500, 240], [640, 305], [560, 370], [600, 452]];
-const mirrors = beam.slice(1, -1).map((p, i) => {
-  const a = beam[i], b = beam[i + 2];
-  const n1 = Math.hypot(p[0] - a[0], p[1] - a[1]), n2 = Math.hypot(b[0] - p[0], b[1] - p[1]);
-  const nx = (b[0] - p[0]) / n2 - (p[0] - a[0]) / n1, ny = (b[1] - p[1]) / n2 - (p[1] - a[1]) / n1;
-  return { x: p[0], y: p[1], a: (Math.atan2(ny, nx) * 180) / Math.PI + 90, mask: i === 2 };
-});
-const wafer: { x: number; y: number; on: boolean }[] = [];
-for (let x = 70; x < 230; x += 13) for (let y = 90; y < 250; y += 16) {
-  const far = Math.max(...[[x, y], [x + 12, y], [x, y + 15], [x + 12, y + 15]].map(([px, py]) => Math.hypot(px - 150, py - 170)));
-  if (far < 77) wafer.push({ x, y, on: rnd() < 0.3 });
-}
 
 // orbit stop: stars, sun rays, sunlight onto the wings, wings, radiators, heat glow
 const stars = Array.from({ length: 46 }, (_, i) => [(i * 173 + 37) % 800, (i * 97 + 11) % 330, i % 5 === 0 ? 1.4 : 0.8]).filter(([x, y]) => Math.hypot(x - 78, y - 78) > 52);
@@ -142,7 +128,7 @@ const n = (i: number) => String(i).padStart(2, '0');
           <path class="s-thin" d={Array.from({ length: 25 }, (_, i) => `M${428 + i * 8} 428 V440`).join(' ') + ' M428 428 H620'} />
           <rect class="choke-ring" x="496" y="350" width="94" height="96" rx="10" />
         </g>
-        <g data-at="2">
+        <g data-at="3">
           <rect class="s-fill" x="640" y="362" width="150" height="78" />
           {[378, 382, 386, 390, 410, 414].map((y) => <path class="s-thin" d={`M650 ${y} H780`} />)}
           <rect class="s-fill" x="706" y="418" width="16" height="22" />
@@ -165,8 +151,8 @@ const n = (i: number) => String(i).padStart(2, '0');
       <div class="lbl lbl--mid" data-at="0" style="left:21%;top:30%"><b>High-voltage lines</b><span>from the public grid</span></div>
       <div class="lbl lbl--mid" data-at="1" style="left:58%;top:41%"><b>Substation</b></div>
       <div class="lbl lbl--mid" data-at="1" style="left:68%;top:76%"><em class="ck">Choke point</em><b>Transformers and switchgear</b><span>the wait now runs to years</span></div>
-      <div class="lbl lbl--mid" data-at="2" style="left:89%;top:43%"><b>Data centre</b></div>
-      <div class="lbl" data-at="2" style="left:84%;top:74%"><b>Buried cable</b><span>into the site</span></div>
+      <div class="lbl lbl--mid" data-at="3" style="left:89%;top:43%"><b>Data centre</b></div>
+      <div class="lbl" data-at="3" style="left:84%;top:74%"><b>Buried cable</b><span>into the site</span></div>
     </div>
 
     <!-- 2 · SITE ─────────────────────────────────────────── -->
@@ -176,7 +162,7 @@ const n = (i: number) => String(i).padStart(2, '0');
         <rect class="s-ground" x="0" y="380" width="800" height="180" />
         <rect fill="url(#d-soil)" x="0" y="386" width="800" height="174" />
         <path class="s-line" d="M0 380 H800" />
-        <g data-at="3">
+        <g data-at="4">
           <path class="s-thin" d="M14 380 V322 M58 380 V322 M8 330 H64 M14 345 L58 330 M14 330 L58 345" />
           <rect class="s-fill" x="22" y="352" width="28" height="28" />
           <path class="s-power" d="M36 380 V398 H244 V380" />
@@ -196,7 +182,7 @@ const n = (i: number) => String(i).padStart(2, '0');
             </g>
           ))}
         </g>
-        <g data-at="4">
+        <g data-at="5">
           {[0, 1, 2].map((k) => (
             <g>
               <rect class="s-fill" x={92 + k * 42} y="352" width="38" height="28" />
@@ -220,10 +206,10 @@ const n = (i: number) => String(i).padStart(2, '0');
           <rect class="choke-ring" x="588" y="250" width="196" height="138" rx="10" />
         </g>
       </svg>
-      <div class="lbl" data-at="3" style="left:1%;top:53%"><b>From the grid</b></div>
-      <div class="lbl lbl--mid" data-at="3" style="left:50%;top:26%"><b>The data centre</b><span>coolers on the roof</span></div>
-      <div class="lbl lbl--mid" data-at="4" style="left:20%;top:57%"><b>Batteries</b></div>
-      <div class="lbl lbl--mid" data-at="4" style="left:86%;top:80%"><em class="ck">Choke point</em><b>Gas turbines</b><span>skip the grid queue, join the turbine queue</span></div>
+      <div class="lbl" data-at="4" style="left:1%;top:53%"><b>From the grid</b></div>
+      <div class="lbl lbl--mid" data-at="4" style="left:50%;top:26%"><b>The data centre</b><span>coolers on the roof</span></div>
+      <div class="lbl lbl--mid" data-at="5" style="left:20%;top:57%"><b>Batteries</b></div>
+      <div class="lbl lbl--mid" data-at="5" style="left:86%;top:80%"><em class="ck">Choke point</em><b>Gas turbines</b><span>skip the grid queue, join the turbine queue</span></div>
     </div>
 
     <!-- 3 · HALL ─────────────────────────────────────────── -->
@@ -233,7 +219,7 @@ const n = (i: number) => String(i).padStart(2, '0');
         <path class="s-thin" d="M20 80 H780" />
         <rect class="s-fill2" x="20" y="470" width="760" height="8" />
         <path class="s-line" d="M255 80 V470" />
-        <g data-at="5">
+        <g data-at="7">
           {[34, 64, 94, 124].map((x) => (
             <g>
               <rect class="s-fill" x={x} y="330" width="28" height="140" />
@@ -273,20 +259,12 @@ const n = (i: number) => String(i).padStart(2, '0');
           <path class="flow flow--cool" d="M728 470 V488 H290" />
           <path class="flow flow--warm" d="M306 500 H748 V470" />
         </g>
-        <g data-at="6">
-          <path class="s-thin" d="M270 92 H700 M270 124 H700" />
-          {[0, 1, 2, 3, 4].map((k) => <path class="fibre" d={`M${hallRacks[k] + 28} 250 V${100 + k * 5} H${640 + k * 8} V250`} />)}
-          {[0, 1, 2, 3, 4].map((k) => <path class="flow flow--light" d={`M${hallRacks[k] + 28} 250 V${100 + k * 5} H${640 + k * 8} V250`} />)}
-          <rect class="choke-ring" x="622" y="86" width="72" height="392" rx="8" />
-        </g>
       </svg>
-      <div class="lbl lbl--mid" data-at="5" style="left:11.5%;top:50%"><b>Switchgear</b></div>
-      <div class="lbl lbl--mid" data-at="5" style="left:25.5%;top:56%"><b>Backup</b><span>UPS and batteries</span></div>
-      <div class="lbl" data-at="5" style="left:34%;top:37%"><b>Copper busway</b><span>overhead to every rack</span></div>
-      <div class="lbl lbl--end" data-at="5" style="left:97%;top:53%"><b>Coolant unit</b></div>
-      <div class="lbl lbl--mid" data-at="5" style="left:60%;top:97%"><b>Coolant under the floor</b></div>
-      <div class="lbl lbl--mid" data-at="6" style="left:56%;top:10%"><b>Fibre between racks</b><span>light everywhere outside the rack</span></div>
-      <div class="lbl lbl--end" data-at="6" style="left:76%;top:30%"><em class="ck">Choke point</em><b>Network switches and optics</b><span>a slow link leaves the chips waiting</span></div>
+      <div class="lbl lbl--mid" data-at="7" style="left:11.5%;top:50%"><b>Switchgear</b></div>
+      <div class="lbl lbl--mid" data-at="7" style="left:25.5%;top:56%"><b>Backup</b><span>UPS and batteries</span></div>
+      <div class="lbl" data-at="7" style="left:34%;top:37%"><b>Copper busway</b><span>overhead to every rack</span></div>
+      <div class="lbl lbl--end" data-at="7" style="left:97%;top:53%"><b>Coolant unit</b></div>
+      <div class="lbl lbl--mid" data-at="7" style="left:60%;top:97%"><b>Coolant under the floor</b></div>
     </div>
 
     <!-- 4 · RACK ─────────────────────────────────────────── -->
@@ -301,7 +279,7 @@ const n = (i: number) => String(i).padStart(2, '0');
         ))}
         <path class="s-line" d="M0 540 H800" />
         {Array.from({ length: 11 }, (_, i) => i * 80).map((x) => <path class="s-faint" d={`M${x} 540 L${x + (x - 400) * 0.3} 560`} />)}
-        <g data-at="7">
+        <g data-at="8">
           <rect class="s-frame" x="300" y="30" width="200" height="500" rx="3" />
           <path class="s-thin" d="M308 34 V526 M492 34 V526" />
           <rect class="s-fill" x="304" y="530" width="12" height="6" />
@@ -328,14 +306,14 @@ const n = (i: number) => String(i).padStart(2, '0');
           ))}
           <rect class="focus-ring" x="309" y={focusTray.y - 3} width="182" height={focusTray.h + 6} rx="3" />
         </g>
-        <g data-at="8">
+        <g data-at="9">
           {rows.filter((r) => r.kind === 'P').map((r) => <rect class="hl" x="312" y={r.y} width="176" height={r.h} rx="1.5" />)}
           {rows.filter((r) => r.kind !== 'P').map((r) => <path class="tap" d={`M488 ${r.y + r.h / 2} H506`} />)}
           <rect class="copper" x="506" y="46" width="8" height="470" rx="2" />
           <path class="flow flow--v" d="M510 50 V512" />
           <rect class="choke-ring" x="500" y="40" width="20" height="482" rx="6" />
         </g>
-        <g data-at="9">
+        <g data-at="10">
           {computeRows.map((r) => (
             <>
               <path class="hose hose--cool" d={`M281 ${r.y + 4} H312`} />
@@ -348,17 +326,17 @@ const n = (i: number) => String(i).padStart(2, '0');
           <path class="flow flow--white" d="M289.5 512 V50" />
         </g>
       </svg>
-      <div class="lbl" data-at="7" style={`left:66%;top:${(computeRows[1].y / 560 * 100).toFixed(1)}%`}><b>Compute trays</b><span>Blackwell and Grace chips, 72 Blackwells in all</span></div>
-      <div class="lbl" data-at="7" style="left:66%;top:53%"><b>Switch trays</b><span>join all 72 over copper inside the rack</span></div>
-      <div class="lbl lbl--end" data-at="8" style="left:33%;top:12%"><b>Power shelves</b><span>convert power for the trays</span></div>
-      <div class="lbl" data-at="8" style="left:66%;top:80%"><em class="ck">Choke point</em><b>Copper busbar</b><span>at a megawatt per rack, it stops fitting</span></div>
-      <div class="lbl lbl--end" data-at="9" style="left:32.5%;top:46%"><b>Liquid cooling</b><span>cool in, warm out, a loop to every tray</span><em class="ck">Air racks ran 10 to 40 kW; AI racks 140</em></div>
+      <div class="lbl" data-at="8" style={`left:66%;top:${(computeRows[1].y / 560 * 100).toFixed(1)}%`}><b>Compute trays</b><span>Blackwell and Grace chips, 72 Blackwells in all</span></div>
+      <div class="lbl" data-at="8" style="left:66%;top:53%"><b>Switch trays</b><span>join all 72 over copper inside the rack</span></div>
+      <div class="lbl lbl--end" data-at="9" style="left:33%;top:12%"><b>Power shelves</b><span>convert power for the trays</span></div>
+      <div class="lbl" data-at="9" style="left:66%;top:80%"><em class="ck">Choke point</em><b>Copper busbar</b><span>at a megawatt per rack, it stops fitting</span></div>
+      <div class="lbl lbl--end" data-at="10" style="left:32.5%;top:46%"><b>Liquid cooling</b><span>cool in, warm out, a loop to every tray</span><em class="ck">Air racks ran 10 to 40 kW; AI racks 140</em></div>
     </div>
 
     <!-- 5 · TRAY ─────────────────────────────────────────── -->
     <div class="scene" data-zoom="4" data-name="One tray" data-scale="Under a metre" style="--fx:31.25%;--fy:36.6%">
       <svg viewBox="0 0 800 560">
-        <g data-at="10">
+        <g data-at="11">
           <rect class="s-frame" x="60" y="120" width="680" height="320" rx="6" />
           <rect class="s-fill2" x="60" y="120" width="36" height="320" rx="6" />
           {Array.from({ length: 8 }, (_, k) => (
@@ -391,7 +369,7 @@ const n = (i: number) => String(i).padStart(2, '0');
           <path class="tap" d="M712 262 H700 M712 298 H700" />
           <rect class="focus-ring" x={gpuX[0] - 6} y={boards[0] + 11} width="113" height="118" rx="6" />
         </g>
-        <g data-at="11">
+        <g data-at="12">
           {boards.flatMap((b) => gpuX.flatMap((gx) => [0, 1, 2, 3, 4, 5].flatMap((k) => [
             <rect class="hl" x={gx - 15} y={b + 22 + k * 16} width="11" height="11" rx="1.5" />,
             <rect class="hl" x={gx + 105} y={b + 22 + k * 16} width="11" height="11" rx="1.5" />,
@@ -410,17 +388,17 @@ const n = (i: number) => String(i).padStart(2, '0');
           ))}
         </g>
       </svg>
-      <div class="lbl lbl--mid" data-at="10" style="left:50%;top:14%"><b>Two boards, each with one Grace and two Blackwells</b></div>
-      <div class="lbl" data-at="10" style="left:2%;top:87%"><b>Network ports</b><span>light leaves here</span></div>
-      <div class="lbl lbl--mid" data-at="10" style="left:90%;top:87%"><b>Power in</b><span>from the busbar</span></div>
-      <div class="lbl lbl--mid" data-at="11" style="left:36%;top:87%"><b>Power stages</b><span>down to below one volt</span></div>
-      <div class="lbl lbl--mid" data-at="11" style="left:63%;top:87%"><b>Cold plates</b><span>coolant over every chip</span></div>
+      <div class="lbl lbl--mid" data-at="11" style="left:50%;top:14%"><b>Two boards, each with one Grace and two Blackwells</b></div>
+      <div class="lbl" data-at="11" style="left:2%;top:87%"><b>Network ports</b><span>light leaves here</span></div>
+      <div class="lbl lbl--mid" data-at="11" style="left:90%;top:87%"><b>Power in</b><span>from the busbar</span></div>
+      <div class="lbl lbl--mid" data-at="12" style="left:36%;top:87%"><b>Power stages</b><span>down to below one volt</span></div>
+      <div class="lbl lbl--mid" data-at="12" style="left:63%;top:87%"><b>Cold plates</b><span>coolant over every chip</span></div>
     </div>
 
     <!-- 6 · PACKAGE ─────────────────────────────────────────── -->
-    <div class="scene" data-zoom="6" data-name="The chip" data-scale="Centimetres" style="--fx:44.6%;--fy:50%">
+    <div class="scene" data-name="The chip" data-scale="Centimetres" style="--fx:44.6%;--fy:50%">
       <svg viewBox="0 0 800 560">
-        <g data-at="12">
+        <g data-at="13">
           <rect class="substrate" x="190" y="60" width="420" height="440" rx="10" />
           {caps.map((c) => <rect class="cap" x={c.x} y={c.y} width={c.w} height={c.h} rx="1" />)}
           <rect class="interposer" x="230" y="110" width="340" height="340" rx="3" />
@@ -431,7 +409,7 @@ const n = (i: number) => String(i).padStart(2, '0');
           <path class="leader" d="M482 170 H606 M440 300 H606 M470 400 L520 420 H606" />
           <rect class="choke-ring" x="310" y="116" width="180" height="328" rx="8" />
         </g>
-        <g data-at="13">
+        <g data-at="14">
           {[244, 492].flatMap((x) => hbmY.map((y, j) => (
             <g class="tray" style={`--d:${(x === 244 ? 0 : 4) * 60 + j * 60}ms`}>
               <rect class="hbm" x={x} y={y} width="64" height="72" rx="2" />
@@ -444,67 +422,16 @@ const n = (i: number) => String(i).padStart(2, '0');
           {[62, 80, 100, 120, 138].map((x) => <path class="tsv" d={`M${x} 418 V494`} />)}
         </g>
       </svg>
-      <div class="lbl" data-at="12" style="left:76%;top:30%"><b>Two dies</b><span>TSMC, Taiwan · joined to act as one</span></div>
-      <div class="lbl" data-at="12" style="left:76%;top:53%"><em class="ck">No second source</em><b>Printed with EUV light</b><span>ASML machines, Netherlands · ZEISS mirrors, Germany</span></div>
-      <div class="lbl" data-at="12" style="left:76%;top:75%"><b>Silicon wafers</b><span>Shin-Etsu, SUMCO · Japan</span></div>
-      <div class="lbl lbl--mid" data-at="12" style="left:50%;top:95%"><b>Design</b><span>Nvidia, California</span></div>
-      <div class="lbl lbl--end" data-at="13" style="left:23%;top:26%"><b>Eight HBM stacks</b><span>SK Hynix, Samsung · South Korea<br />Micron · United States</span></div>
-      <div class="lbl lbl--end" data-at="13" style="left:23%;top:44%"><em class="ck">Short of capacity</em><b>Packaging</b><span>TSMC CoWoS-L · Taiwan</span></div>
-      <div class="lbl lbl--end" data-at="13" style="left:23%;top:59%"><b>Substrate</b><span>Ibiden, Japan · Unimicron, Taiwan<br />on Ajinomoto film, Japan</span></div>
-      <div class="lbl lbl--cap" data-at="13" style="left:5%;top:96%"><span>One HBM stack from the side: chips piled up, wired through their own silicon</span></div>
+      <div class="lbl" data-at="13" style="left:76%;top:30%"><b>Two dies</b><span>the logic that does the work, joined to act as one</span></div>
+      <div class="lbl" data-at="13" style="left:76%;top:53%"><em class="ck">Where the power ends</em><b>About a kilowatt</b><span>into a few square centimetres of silicon</span></div>
+      <div class="lbl lbl--end" data-at="14" style="left:23%;top:26%"><b>Eight memory stacks</b><span>feeding the dies their numbers</span></div>
+      <div class="lbl lbl--end" data-at="14" style="left:23%;top:50%"><b>Every watt becomes heat</b><span>carried off by the cold plate above</span></div>
+      <div class="lbl lbl--cap" data-at="14" style="left:5%;top:96%"><span>One memory stack from the side: chips piled up, wired through their own silicon</span></div>
     </div>
 
-    <!-- 7 · LITHOGRAPHY ─────────────────────────────────────────── -->
-    <div class="scene" data-name="Printing the die" data-scale="Nanometres" style="--fx:50%;--fy:50%">
-      <svg viewBox="0 0 800 560">
-        <rect class="s-room" x="40" y="44" width="720" height="470" rx="18" />
-        <g data-at="14">
-          <rect class="s-fill" x="50" y="388" width="50" height="24" rx="2" />
-          <path class="laser" d="M100 400 H141" />
-          <rect class="s-fill" x="140" y="300" width="20" height="22" rx="2" />
-          {[0, 1, 2, 3].map((k) => <circle class="tin" cx="150" cy={334 + k * 16} r="2.2" style={`--k:${k}`} />)}
-          <path class="euv-cone" d="M101 378 L262 300 L176 450 Z" />
-          <path class="mirror mirror--big" d="M101 378 Q 108 452 176 450" />
-          <circle class="plasma" cx="150" cy="400" r="16" />
-          <circle class="plasma-core" cx="150" cy="400" r="4" />
-          <path class="beam draw" pathLength="1" d={'M' + beam.map((p) => p.join(' ')).join(' L')} />
-          {mirrors.filter((m) => !m.mask).map((m) => <rect class="mirror" x="-17" y="-3" width="34" height="6" rx="3" transform={`translate(${m.x} ${m.y}) rotate(${m.a.toFixed(1)})`} />)}
-          <rect class="s-fill2" x="455" y="54" width="140" height="14" rx="2" />
-          <rect class="mask" x="470" y="70" width="110" height="18" rx="1" />
-          <path class="mask-lines" d={Array.from({ length: 13 }, (_, i) => `M${476 + i * 8} 74 V84`).join(' ')} />
-          <rect class="optics" x="470" y="130" width="210" height="270" rx="10" />
-          <rect class="s-fill2" x="500" y="458" width="200" height="16" rx="2" />
-          <rect class="wafer-side" x="520" y="452" width="160" height="5" rx="1" />
-        </g>
-        <g data-at="15">
-          <circle class="wafer" cx="150" cy="170" r="80" />
-          {wafer.map((d) => <rect class={d.on ? 'wdie wdie--on' : 'wdie'} x={d.x} y={d.y} width="12" height="15" rx="1" />)}
-          <rect class="choke-ring" x="462" y="46" width="226" height="362" rx="12" />
-        </g>
-      </svg>
-      <div class="lbl lbl--mid" data-at="14" style="left:19%;top:88%"><b>The light source</b><span>a laser hits droplets of tin</span></div>
-      <div class="lbl lbl--mid" data-at="14" style="left:66%;top:5%"><b>The mask</b><span>one layer's pattern</span></div>
-      <div class="lbl lbl--end" data-at="14" style="left:98%;top:30%"><b>Mirrors</b><span>made by ZEISS, Germany</span></div>
-      <div class="lbl lbl--mid" data-at="14" style="left:75%;top:89%"><b>The wafer</b></div>
-      <div class="lbl lbl--mid" data-at="15" style="left:19%;top:48.5%"><b>The wafer from above</b><span>many dies printed at once</span></div>
-      <div class="lbl lbl--end" data-at="15" style="left:98%;top:58%"><em class="ck">No second source</em><b>EUV machines</b><span>ASML, Netherlands</span></div>
-    </div>
-
-    <!-- 8 · THE CLOCK ─────────────────────────────────────────── -->
-    <div class="scene scene--html" data-name="The clock" data-scale="Time to replace each part">
-      <div class="panel" data-at="16">
-        <p class="panel-h">How long would each part take to replace?</p>
-        <div class="rrow"><p class="rname">Rack assembly, connectors, much of the power hardware<span>Foxconn, Quanta, Wistron and others</span></p><div class="rbar"><i style="--w:18%"></i></div><p class="rclock">Months</p></div>
-        <div class="rrow"><p class="rname">HBM, substrates, test equipment, photoresist<span>SK Hynix, Samsung, Micron · Ibiden, Unimicron · Advantest, Teradyne</span></p><div class="rbar"><i style="--w:46%"></i></div><p class="rclock">Quarters or years to qualify</p></div>
-        <div class="rrow"><p class="rname">Chip factories and packaging lines<span>TSMC, Taiwan</span></p><div class="rbar"><i style="--w:74%"></i></div><p class="rclock">Short of capacity: a new fab takes two to three years to build</p></div>
-        <div class="rrow rrow--ck"><p class="rname">EUV machines and their mirrors<span>ASML, Netherlands · ZEISS, Germany</span></p><div class="rbar"><i style="--w:100%"></i></div><p class="rclock">No second source at all</p></div>
-        <p class="panel-foot">A rough sort. Bar lengths are relative, not measured.</p>
-      </div>
-    </div>
-
-    <!-- 9 · THE WHOLE CHAIN ─────────────────────────────────────────── -->
+    <!-- 7 · THE WHOLE CHAIN ─────────────────────────────────────────── -->
     <div class="scene scene--html" data-name="The whole chain" data-scale="From the grid to the chip">
-      <div class="panel funnel" data-at="17">
+      <div class="panel funnel" data-at="15">
         <p class="panel-h">One chain, from the grid to the chip</p>
         {funnel.map((l, i) => (
           <a class={`fband fband--${l.kind}`} href={`#${l.id}`} style={`--w:${l.w}%;--d:${i * 70}ms`}>
@@ -515,7 +442,7 @@ const n = (i: number) => String(i).padStart(2, '0');
       </div>
     </div>
 
-    <!-- 10 · OFF THE PLANET ─────────────────────────────────────────── -->
+    <!-- 8 · OFF THE PLANET ─────────────────────────────────────────── -->
     <div class="scene" data-name="Off the planet" data-scale="Low Earth orbit, about 500 to 2,000 km up" style="--fx:50%;--fy:45%">
       <svg viewBox="0 0 800 560">
         {stars.map(([x, y, r]) => <circle class="star" cx={x} cy={y} r={r} />)}
@@ -523,7 +450,7 @@ const n = (i: number) => String(i).padStart(2, '0');
         <path class="s-faint" d="M-60 548 Q 400 378 860 548" />
         <path class="s-faint orbit" d="M-40 470 Q 400 300 840 470" />
         <path class="s-thin" d="M400 476 V560" />
-        <g data-at="18">
+        <g data-at="16">
           <circle class="sun" cx="78" cy="78" r="30" />
           {rays.map((d) => <path class="ray" d={d} />)}
           {beams.map((d) => <path class="beam" d={d} />)}
@@ -547,7 +474,7 @@ const n = (i: number) => String(i).padStart(2, '0');
           <rect class="s-fill" x="410" y="296" width="40" height="14" rx="2" />
           <path class="s-thin" d="M418 310 L414 322 M442 310 L446 322" />
         </g>
-        <g data-at="19">
+        <g data-at="17">
           {rads.map(([x, y]) => (
             <g>
               <rect class="rad" x={x} y={y} width="190" height="64" />
@@ -570,13 +497,13 @@ const n = (i: number) => String(i).padStart(2, '0');
           <path class="flow flow--light" d="M430 196 L706 124" />
         </g>
       </svg>
-      <div class="lbl" data-at="18" style="left:16%;top:9%"><b>The sun</b><span>almost never sets in a dawn-dusk orbit</span></div>
-      <div class="lbl lbl--mid" data-at="18" style="left:27%;top:63%"><b>Solar wings</b><span>no grid, no queue</span></div>
-      <div class="lbl lbl--mid" data-at="18" style="left:54%;top:63%"><b>Compute module</b><span>SpaceX's AI1: 175 kW average, about one and a half AI racks</span></div>
-      <div class="lbl lbl--mid" data-at="18" style="left:50%;top:94%"><b>Earth</b></div>
-      <div class="lbl lbl--end" data-at="19" style="left:66%;top:21%"><em class="ck">Choke point</em><b>Radiators</b><span>heat leaves only as light</span></div>
-      <div class="lbl" data-at="19" style="left:79%;top:69%"><b>Every kilogram is launched</b><span>target: 100 kW per tonne</span></div>
-      <div class="lbl lbl--end" data-at="19" style="left:85%;top:10%"><b>Laser link</b><span>to the next satellite</span></div>
+      <div class="lbl" data-at="16" style="left:16%;top:9%"><b>The sun</b><span>almost never sets in a dawn-dusk orbit</span></div>
+      <div class="lbl lbl--mid" data-at="16" style="left:27%;top:63%"><b>Solar wings</b><span>no grid, no queue</span></div>
+      <div class="lbl lbl--mid" data-at="16" style="left:54%;top:63%"><b>Compute module</b><span>SpaceX's AI1: 175 kW average, about one and a half AI racks</span></div>
+      <div class="lbl lbl--mid" data-at="16" style="left:50%;top:94%"><b>Earth</b></div>
+      <div class="lbl lbl--end" data-at="17" style="left:66%;top:21%"><em class="ck">Choke point</em><b>Radiators</b><span>heat leaves only as light</span></div>
+      <div class="lbl" data-at="17" style="left:79%;top:69%"><b>Every kilogram is launched</b><span>target: 100 kW per tonne</span></div>
+      <div class="lbl lbl--end" data-at="17" style="left:85%;top:10%"><b>Laser link</b><span>to the next satellite</span></div>
     </div>
   </div>
 
@@ -591,6 +518,13 @@ const n = (i: number) => String(i).padStart(2, '0');
       <h2>The substation is the gate</h2>
       <p>{grid.what}</p>
       <p class="binds"><strong>What binds.</strong> {grid.constraint}</p>
+    </div></div>
+    <div class="step" data-scene="0"><div class="card">
+      <p class="kick kick--energy">{n(1)} · {equip.name}</p>
+      <h2>The machines at the gate</h2>
+      <p>{equip.what}</p>
+      <p class="binds"><strong>What binds.</strong> {equip.constraint}</p>
+      <ul class="reads">{reads(equip.pieces).map((r) => <li><a href={r.href}>{r.title}</a></li>)}</ul>
     </div></div>
     <div class="step" data-scene="0"><div class="card">
       <p class="kick kick--energy">{n(1)} · {grid.name}</p>
@@ -611,19 +545,19 @@ const n = (i: number) => String(i).padStart(2, '0');
       <p class="binds"><strong>What binds.</strong> {onsite.constraint}</p>
       <ul class="reads">{reads(onsite.pieces.slice(0, 3)).map((r) => <li><a href={r.href}>{r.title}</a></li>)}</ul>
     </div></div>
+    <div class="step" data-scene="1"><div class="card">
+      <p class="kick kick--energy">{n(2)} · {nuke.name}</p>
+      <h2>Or power that runs all year</h2>
+      <p>{nuke.what}</p>
+      <p class="binds"><strong>What binds.</strong> {nuke.constraint}</p>
+      <ul class="reads">{reads(nuke.pieces).map((r) => <li><a href={r.href}>{r.title}</a></li>)}</ul>
+    </div></div>
 
     <div class="step" data-scene="2"><div class="card">
       <p class="kick kick--energy">{n(3)} · {dist.name}</p>
       <h2>Inside the building</h2>
       <p>{dist.what}</p>
       <p>Switchgear and batteries fill one room. Copper busways carry power overhead to every rack, and coolant runs beneath the floor.</p>
-    </div></div>
-    <div class="step" data-scene="2"><div class="card">
-      <p class="kick kick--compute">{n(3)} · {net.name}</p>
-      <h2>Light between the racks</h2>
-      <p>{net.what}</p>
-      <p class="binds"><strong>What binds.</strong> {net.constraint}</p>
-      <ul class="reads">{reads(net.pieces.slice(0, 3)).map((r) => <li><a href={r.href}>{r.title}</a></li>)}</ul>
     </div></div>
 
     <div class="step" data-scene="3"><div class="card">
@@ -646,7 +580,7 @@ const n = (i: number) => String(i).padStart(2, '0');
     </div></div>
 
     <div class="step" data-scene="4"><div class="card">
-      <p class="kick kick--compute">{n(5)} · One tray</p>
+      <p class="kick kick--energy">{n(5)} · One tray</p>
       <h2>Four chips on a tray</h2>
       <p>Slide out one compute tray. Two boards each carry a Grace processor and two Blackwells, with network ports along the front.</p>
     </div></div>
@@ -658,52 +592,30 @@ const n = (i: number) => String(i).padStart(2, '0');
     </div></div>
 
     <div class="step" data-scene="5"><div class="card">
-      <p class="kick kick--compute">{n(6)} · The chip</p>
-      <h2>Two dies acting as one</h2>
-      <p>Lift out one B200. At its centre sit two slabs of logic made by TSMC in Taiwan, printed with light from machines only ASML in the Netherlands builds.</p>
+      <p class="kick kick--energy">{n(6)} · The chip</p>
+      <h2>Where the power ends</h2>
+      <p>Lift out one Blackwell. Two slabs of logic, flanked by stacks of memory, draw about a kilowatt between them through a package a few centimetres across.</p>
     </div></div>
     <div class="step" data-scene="5"><div class="card">
-      <p class="kick kick--compute">{n(6)} · {mem.name}</p>
-      <h2>Memory beside it, wiring beneath it</h2>
-      <p>Eight stacks of high-bandwidth memory flank the dies. Everything rests on TSMC's packaging, then on a substrate built in Japan or Taiwan around Ajinomoto's film.</p>
-      <p class="binds"><strong>What binds.</strong> {mem.constraint}</p>
-      <ul class="reads">{reads(mem.pieces).map((r) => <li><a href={r.href}>{r.title}</a></li>)}</ul>
+      <p class="kick kick--energy">{n(6)} · The chip</p>
+      <h2>And every watt comes back as heat</h2>
+      <p>Almost nothing leaves the chip as work you can touch. The kilowatt that came down from the grid goes up through the cold plate as heat, and the hall has to carry it away.</p>
     </div></div>
 
     <div class="step" data-scene="6"><div class="card">
-      <p class="kick kick--compute">{n(7)} · {chips.name}</p>
-      <h2>Printed with light</h2>
-      <p>Each layer of the die is printed by a machine that makes extreme ultraviolet light by firing a laser at droplets of tin. Mirrors carry that light to a mask, then onto the wafer.</p>
-    </div></div>
-    <div class="step" data-scene="6"><div class="card">
-      <p class="kick kick--compute">{n(7)} · {chips.name}</p>
-      <h2>Many dies at once</h2>
-      <p>Every wafer carries many dies, printed layer by layer. ASML describes the technology as unique to itself, and its mirrors come from ZEISS.</p>
-      <p class="binds"><strong>What binds.</strong> {chips.constraint}</p>
+      <p class="kick kick--energy">{n(7)} · The whole chain</p>
+      <h2>All of it, for one answer on your screen</h2>
+      <p>The grid, the machines at the gate, the turbines and reactors, the copper and the coolant: each layer exists to feed the chip. The slowest one sets the date for all the rest.</p>
     </div></div>
 
     <div class="step" data-scene="7"><div class="card">
-      <p class="kick kick--compute">{n(8)} · The clock on each part</p>
-      <h2>Where the time goes</h2>
-      <p>Some parts could be bought elsewhere within months. Others need a new factory or years of testing first. The slowest link sets the pace for everything above it.</p>
-    </div></div>
-
-    <div class="step" data-scene="8"><div class="card">
-      <p class="kick kick--compute">{n(9)} · {ops.name}</p>
-      <h2>All of it, for one answer on your screen</h2>
-      <p>{ops.what}</p>
-      <p class="binds"><strong>What binds.</strong> {ops.constraint}</p>
-      <ul class="reads">{reads(ops.pieces).map((r) => <li><a href={r.href}>{r.title}</a></li>)}</ul>
-    </div></div>
-
-    <div class="step" data-scene="9"><div class="card">
-      <p class="kick kick--energy">{n(10)} · {orb.name}</p>
+      <p class="kick kick--energy">{n(8)} · {orb.name}</p>
       <h2>Or take the whole hall off the planet</h2>
       <p>{orb.what} No grid connection, no queue, and the sun almost never sets.</p>
     </div></div>
 
-    <div class="step" data-scene="9"><div class="card">
-      <p class="kick kick--energy">{n(10)} · {orb.name}</p>
+    <div class="step" data-scene="7"><div class="card">
+      <p class="kick kick--energy">{n(8)} · {orb.name}</p>
       <h2>The sunlight is free, and the kilograms are the bill</h2>
       <p>In a vacuum there is no air or water to carry heat away, so it can only glow off radiators. Every kilogram of radiator and panel has to be launched.</p>
       <p class="binds"><strong>What binds.</strong> {orb.constraint}</p>
