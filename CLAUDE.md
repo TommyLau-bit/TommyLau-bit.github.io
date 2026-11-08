@@ -141,7 +141,7 @@ cover brief and LinkedIn post, is yours to write.
 
 A new piece is not published until the site around it is updated. Every time:
 
-- **The map.** Add the slug to one layer in `src/data/stack.ts`. Every piece,
+- **The map.** Add the slug to one layer in `src/data/stack.ts` (seven layers since 8 Nov 2026, physical layer only; no chip, memory or network layers). Every piece,
   no exceptions. The descent at the top of the homepage reads the same file; a new
   layer also needs its own stop drawn in `src/components/Descent.astro`. If no layer fits, add a new layer in its physical place in
   the chain rather than forcing the piece into the nearest one.
