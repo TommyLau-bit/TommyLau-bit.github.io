@@ -18,7 +18,10 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 3. Done: CVs updated ("grid to chip" wording; nuclear line to the depth figures); LinkedIn profile not changed.
 4. Done: article decks archived (study-decks/archive/article-decks-retired-2026-11-07/), not deleted.
 
-## START HERE (as of Sun 8 Nov 2026, night)
+## START HERE (as of Sun 8 Nov 2026, late; session closed by Tommy)
+
+Nothing is open. The site is live with the seven-layer map; the 38 job emails send 10 to 12 Nov with the new briefs; LinkedIn profile Experience is one topic line per role. Next session: read this block, then wait for Tommy.
+
 
 - **Nine journal briefs replace the old notes on every email (8 Nov night; Tommy: "go ahead without my approval").** One one-page brief per live piece in ~/Desktop/jobs/research coverage/briefs/ (2026-11-08_*_Brief.pdf), built by research coverage/_note_template/brief_common.py plus one script per piece in examples/build_brief_<slug>.py. Each reads the claim and test word for word from src/data/claims.ts and one chart from the live piece source. **When a live piece, its chart or its claim changes, rebuild that brief and run ~/Desktop/jobs/_SEND/refresh.sh.** All nine are one page, have no dashes and had their figures checked against the pieces.
 - **The jobs side (details in ~/Desktop/jobs/STATE_OF_PLAY.md top block).** CV 2T was polished: the Physical Layer section went from six bullets to five, cooling stayed, and it now says "nine in-depth pieces". 31 scheduled emails were edited: 12 now carry a brief, the commodity emails carry the CV alone, and no old note or CV 2D remains. The Gmail API shows 38 scheduled at their original times (10 to 12 Nov), 0 drafts and nothing sent. The old notes (market views, ai infrastructure, _SEND/_offthesis_marine, _stale) were moved to the macOS Trash folder old-notes-2026-11-08. _SEND now holds CV 2T, CV 3 and the nine briefs. **All future emails: CV plus at most one matching brief.**
