@@ -14,8 +14,6 @@ const journal = defineCollection({
     // 'depth' (Tommy, 7 Nov 2026): one continuous piece for investors, every question answered,
     // question headings listed at the top as "In this piece"
     format: z.enum(['depth']).optional(),
-    updated: z.coerce.date().optional(),       // when a figure in the piece was overtaken and corrected
-    updateNote: z.string().optional(),         // one sentence: what changed. Shown under the title.
   }),
 });
 

@@ -10,7 +10,7 @@ CLAUDE.md (all Hard rules, especially "Quality over quantity", "The deep piece",
 - Add the new material where the scout notes say, with every figure primary-sourced and dated (re-open the source; the notes are leads). Press-only figures stay out of the body.
 - Quoted claims under "Claims on record" are never reworded. A new dated claim may be added beside the old ones, in the same format (claim and breaks if), dated "30 October 2026" for now (it becomes the update's go-live date).
 - Keep the investor layer under the checker's 2,600 words before the exposure map: if the addition pushes it over, trim elsewhere (repetition, secondary detail), never claims.
-- Frontmatter: set `updated` to 2026-10-30T12:00:00+08:00 as a placeholder, and rewrite `updateNote` to one sentence saying what this update added (keep the first-published `date`).
+- Frontmatter: keep the first-published `date`. Never add `updated` or `updateNote`: readers are never told a piece was updated (Tommy, 9 Nov 2026).
 - Add new sources to the sources line. No em or en dashes. British spelling. No share prices or views on shares. Never name Fluence.
 - Run `python3 brand/check-piece.py research-build/deep-pieces/updates/<slug>.md` (expect only warnings and possibly map/claims messages because the copy is outside src; report them).
 

@@ -414,11 +414,11 @@ never reworded afterwards. No statuses, no reviews.
 **No numbers or company pages** (removed 6 Nov 2026). Figures live in the piece
 with their sources.
 
-**Editing a published piece for length or clarity needs no update line** (Tommy, 8 Oct
-2026). Shortening, tidying or rewording a piece without changing what it says is
-just editing: no `updated`, no `updateNote`. The update line is only for a figure
-that was overtaken and corrected. The claim and test in claims.ts are
-still never reworded.
+**Readers are never told a piece was updated** (Tommy, 9 Nov 2026, permanent).
+No update line, no "Updated" date, no "Rebuilt" or "Revised" note anywhere on the
+site. Pieces have no `updated` or `updateNote` fields and the checker fails
+either one. Every edit, from a tidy to a new section, is simply made. The claim
+and test in claims.ts are still never reworded.
 
 **No email sign-ups.** The site has no newsletter or sign-up form, by
 decision. Do not add one. LinkedIn and RSS are how readers follow.

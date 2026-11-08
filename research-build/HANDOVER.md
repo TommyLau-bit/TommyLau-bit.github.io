@@ -20,7 +20,7 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 
 ## START HERE (as of Mon 9 Nov 2026, early)
 
-- **9 Nov (Tommy):** removed the "Updated 7 November 2026. Rebuilt in depth..." line from all eight pieces that had it (frontmatter `updated`/`updateNote` deleted; template unchanged). Commit 2a0225b, deploy green, checked live on all nine. Tommy is now studying the nine pieces for SemiAnalysis (Wed 11 Nov 5pm); no site work planned.
+- **9 Nov (Tommy):** removed the "Updated 7 November 2026. Rebuilt in depth..." line from all eight pieces that had it (frontmatter `updated`/`updateNote` deleted; template unchanged). Commit 2a0225b, deploy green, checked live on all nine. Then made PERMANENT (Tommy: readers are never told a piece was updated): template block, CSS and schema fields removed; check-piece.py now FAILS any `updated` or `updateNote`; CLAUDE.md, WRITING-FORMAT.md, BRIEF-UPDATE and BRIEF-REWRITE say so. Tommy is now studying the nine pieces for SemiAnalysis (Wed 11 Nov 5pm); no site work planned.
 
 - **8 Nov, after close: the map descent redrawn and LIVE (Tommy: drawings had dropped in quality; "push live").** One continuous camera: grid (power station on the horizon) zooms into a substation cutaway (core, windings, oil, bushings, radiators, switchgear room), pulls back to a full nuclear plant (microreactor on a trailer, HALEU inset: 16 centrifuges), zooms into the site power yard (batteries, fuel cells, gas turbine, engines, gas pipeline), the hall (dry coolers on the roof) and the rack (power shelf and cold plate cutaways). New `data-out`/`data-in` pull-back transition in Descent.astro. Labels trace to the pieces. Commit dbfe5d8; deploy green.
 

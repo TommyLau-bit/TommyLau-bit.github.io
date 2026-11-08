@@ -13,7 +13,7 @@ Tommy read the merged deep pieces and found them messy: several old articles sta
 1. Write the spine in one sentence. Pick the headline claim: the claims.ts entry whose id is the slug if there is one, otherwise the strongest. Plan 6 to 9 beats and 2 to 4 charts before writing.
 2. Rewrite `src/content/journal/<slug>.md` in place.
    - Keep: `date`, `category`, `cover`, `tags`, `draft`.
-   - Set `updated: 2026-10-31T08:00:00+08:00` and `updateNote` to one sentence, e.g. "Rewritten on 31 October 2026 as one story with N charts; earlier claims are kept word for word at the end." If the piece has a pending update, the note also names what the update added.
+   - Never add `updated` or `updateNote`: readers are never told a piece was updated (Tommy, 9 Nov 2026).
    - The `title` and `summary` may be improved to match the spine. The title stays 8 to 16 words, and the slug never changes.
 3. Use only facts already in the piece, its sidecar or its approved update copy. A new figure is allowed only if you open its primary source, and you must list it in your report with URL and date. Never put press-only figures in the body.
 4. Keep every `<a id="...">` anchor from the old file. Quote every claim word for word: the headline claim in full under "## Claims on record", the rest inside `<details class="claims-earlier">`. Move evidence tables, method notes and corrections into `<details class="evidence">` at the end. Keep the exposure map, the sources line, "What would prove me wrong" and "Research notes", short and plain.

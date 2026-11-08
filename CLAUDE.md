@@ -125,7 +125,8 @@ cover brief and LinkedIn post, is yours to write.
   when new evidence lands on a mechanism the site already covers (results, a
   regulator's order, a filing, a transcript that adds a fact): a section or
   table refresh or a new dated claim beside the old ones, a separate
-  fact-check, Tommy's OK, then the piece's `updated` and `updateNote` fields.
+  fact-check and Tommy's OK. The piece never says it was updated: no
+  `updated` or `updateNote` fields, no update line (Tommy, 9 Nov 2026, permanent).
   Both tracks must clear the quality bar, and each new piece or substantial
   update gets one LinkedIn post. Sourcing method: WRITING-FORMAT.md §E.
 - **Merging keeps the record** (Tommy, 30 Oct 2026). When pieces merge, every

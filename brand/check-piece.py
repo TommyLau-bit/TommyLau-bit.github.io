@@ -270,8 +270,8 @@ def check(path):
             fails.append('deep piece carries no claim: no entry in src/data/claims.ts has this id or home')
         if not deep and cat == 'Analysis' and slug not in CLAIM_IDS:
             fails.append('Analysis piece has no entry in src/data/claims.ts')
-    if field('updated') and not field('updateNote'):
-        fails.append('updated is set without an updateNote saying what changed')
+    if field('updated') or field('updateNote'):
+        fails.append('updated/updateNote set: readers are never told a piece was updated (Tommy, 9 Nov 2026); delete both fields')
 
     # ── style
     prose = re.sub(r'<[^>]+>', '', storyline(body))

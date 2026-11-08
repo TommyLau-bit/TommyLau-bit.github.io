@@ -41,11 +41,6 @@ const companies = [...new Set(exposureOf(p).flatMap((r) => r.names))].filter((n)
         <time datetime={p.data.date.toISOString()}>{fmtDate(p.data.date)}</time>
         <span>·</span><span>{readingTime(p.body ?? '')} min read</span>
       </div>
-      {p.data.updated && (
-        <p class="updated">
-          <strong>Updated {fmtDate(p.data.updated)}.</strong> {p.data.updateNote}
-        </p>
-      )}
       <aside class="plain">
         <p class="label">In plain English</p>
         <p>{p.data.summary}</p>

@@ -276,7 +276,6 @@ details.analogy > p:first-of-type { margin-top: 0.1rem; }
 /* ── shared small parts ────────────────────────────────────────── */
 .kicker { font-family: var(--sans); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 0.5rem; }
 .kicker a { color: var(--accent); text-decoration: none; }
-.updated { font-family: var(--sans); font-size: 0.88rem; color: var(--ink-2); margin: 0.9rem 0 0; }
 .chips { display: flex; flex-wrap: wrap; gap: 0.45rem; margin: 0.5rem 0 0; }
 .chip {
   font-family: var(--sans); font-size: 0.84rem; text-decoration: none; color: var(--ink-2);
