@@ -7,8 +7,6 @@ format: "depth"
 cover: "/covers/heat-and-water.svg"
 tags: ["cooling", "data-centres", "liquid", "water"]
 draft: false
-updated: 2026-11-07
-updateNote: "Rebuilt in depth: one watt of heat from the chip to the sky, every machine explained and drawn, with evidence to 7 November 2026."
 ---
 
 <a id="heat-and-water"></a>

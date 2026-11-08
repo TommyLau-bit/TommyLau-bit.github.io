@@ -7,8 +7,6 @@ format: "depth"
 cover: "/covers/the-equipment-queue.svg"
 tags: ["grid", "power", "data-centres", "supply-chain"]
 draft: false
-updated: 2026-11-07
-updateNote: "Rebuilt in depth: what a transformer and switchgear do, how they are made and why the wait persists, with evidence to 7 November 2026."
 ---
 
 <a id="the-equipment-queue"></a>

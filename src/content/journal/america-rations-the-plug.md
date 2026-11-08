@@ -7,8 +7,6 @@ format: "depth"
 cover: "/covers/america-rations-the-plug.svg"
 tags: ["grid", "power", "data-centres"]
 draft: false
-updated: 2026-11-07
-updateNote: "Rebuilt in depth: the path from application to running explained and mapped, with Abilene and Nebius folded in, and evidence to 7 November 2026."
 ---
 
 <a id="america-rations-the-plug"></a>

@@ -7,8 +7,6 @@ format: "depth"
 cover: "/covers/building-your-own-power.svg"
 tags: ["power", "data-centres", "grid", "supply-chain"]
 draft: false
-updated: 2026-11-07
-updateNote: "Rebuilt in depth: how an off-grid campus is powered, what each machine does and why the turbine queue sets the date, with evidence to 7 November 2026."
 ---
 
 <a id="building-your-own-power"></a>

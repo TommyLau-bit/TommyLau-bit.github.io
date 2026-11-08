@@ -7,8 +7,6 @@ format: "depth"
 cover: "/covers/nuclear-for-ai.svg"
 tags: ["power", "nuclear", "grid", "supply-chain"]
 draft: false
-updated: 2026-11-07
-updateNote: "Rebuilt in depth: the fuel chain from mine to core explained step by step and drawn, with evidence to 7 November 2026."
 ---
 
 <a id="nuclear-for-ai"></a>

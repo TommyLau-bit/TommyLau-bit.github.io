@@ -7,8 +7,6 @@ format: "depth"
 cover: "/covers/powering-the-rack.svg"
 tags: ["power", "data-centres", "800VDC"]
 draft: false
-updated: 2026-11-07
-updateNote: "Rebuilt in depth: one megawatt from the grid to the chip, every step explained and drawn, with evidence to 7 November 2026."
 ---
 
 <a id="powering-the-rack"></a>

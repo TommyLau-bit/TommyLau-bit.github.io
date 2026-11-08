@@ -7,8 +7,6 @@ format: "depth"
 cover: "/covers/data-centres-in-space.svg"
 tags: ["cooling", "data-centres", "space", "power"]
 draft: false
-updated: 2026-11-07
-updateNote: "Rebuilt in depth: what an orbital data centre weighs, part by part, against the launch fare, with evidence to 7 November 2026."
 ---
 
 <a id="data-centres-in-space"></a>

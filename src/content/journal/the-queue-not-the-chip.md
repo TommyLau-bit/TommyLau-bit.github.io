@@ -7,8 +7,6 @@ format: "depth"
 cover: "/covers/the-queue-not-the-chip.svg"
 tags: ["grid", "power", "johor", "singapore"]
 draft: false
-updated: 2026-11-07
-updateNote: "Rebuilt in depth: every gate from application to a working hall explained and mapped, with Hong Kong folded in, and evidence to 7 November 2026."
 ---
 
 <a id="the-queue-not-the-chip"></a>
