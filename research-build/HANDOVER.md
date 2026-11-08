@@ -20,6 +20,8 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 
 ## START HERE (as of Sun 8 Nov 2026, late; session closed by Tommy)
 
+- **Homepage walk (the descent) rebuilt and live (8 Nov, Tommy: the whole scrolling map, diagrams included, must match what the journal covers).** Eight stops: grid, transformers and switchgear (new drawing: power transformer and switchgear lineup), nuclear power (new drawing: existing reactor with cooling tower beside a microreactor on a lorry; choke point HALEU fuel), the site, the hall, one rack, the whole chain, orbit. Tray, chip, lithography and clock stops removed; the walk ends at the rack ("from the grid to the rack"). Layer order in stack.ts: grid, equipment, nuclear, onsite, distribution, cooling, orbit. Checked desktop and phone, every stop's labels reveal, 529 links 0 broken, deploy green.
+
 Nothing is open. The site is live with the seven-layer map; the 38 job emails send 10 to 12 Nov with the new briefs; LinkedIn profile Experience is one topic line per role. Next session: read this block, then wait for Tommy.
 
 
