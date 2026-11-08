@@ -31,10 +31,10 @@ const split = (t: string) => {
   <section class="hero hero--compact">
     <h1>The AI buildout has a physical layer.</h1>
     <p>{SITE.description}</p>
-    <p class="hero-start">Read the pieces below, or <a href="#descent">follow the power down</a> from the grid to the chip.</p>
+    <p class="hero-start">Read the pieces below, or <a href="#descent">follow the power down</a> from the grid to the rack.</p>
   </section>
 
-  <section class="home-list" aria-label="The pieces, from the grid to the chip">
+  <section class="home-list" aria-label="The pieces, from the grid to the rack">
     <ol class="home-rows">
       {layers.map((l) => (
         <li class={`home-row home-row--${l.kind}`} id={l.id}>

@@ -34,20 +34,20 @@ export const STACK: Layer[] = [
     pieces: ['the-equipment-queue'],
   },
   {
-    id: 'onsite',
-    name: 'Power on site',
-    kind: 'energy',
-    what: 'Gas turbines, engines, fuel cells and batteries make or store power beside the building.',
-    constraint: 'Skipping the grid queue means joining the turbine makers\' queue instead.',
-    pieces: ['building-your-own-power'],
-  },
-  {
     id: 'nuclear',
     name: 'Nuclear power',
     kind: 'energy',
     what: 'Existing reactors, restarted or upgraded, sell power to AI campuses first; new and micro reactors follow.',
     constraint: 'Most new reactors need a richer fuel, HALEU, that America makes on one demonstration line.',
     pieces: ['nuclear-for-ai', 'microreactors'],
+  },
+  {
+    id: 'onsite',
+    name: 'Power on site',
+    kind: 'energy',
+    what: 'Gas turbines, engines, fuel cells and batteries make or store power beside the building.',
+    constraint: 'Skipping the grid queue means joining the turbine makers\' queue instead.',
+    pieces: ['building-your-own-power'],
   },
   {
     id: 'distribution',
