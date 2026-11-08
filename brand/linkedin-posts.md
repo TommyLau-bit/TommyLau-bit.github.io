@@ -312,7 +312,7 @@ https://thephysicallayer.fyi/journal/ti-feeds-the-chip/
 
 ---
 
-## 22 · TSMC says it is the bottleneck (LinkedIn Fri 30 Oct, 11:30, scheduled)
+## 22 · TSMC says it is the bottleneck (LinkedIn Fri 30 Oct, 11:30, scheduled; NOT in the live queue when checked 8 Nov 2026: deleted with the retired chip pieces)
 
 I have argued that the grid, not the chip, is what holds AI back. TSMC's chief executive disagrees.
 
@@ -412,7 +412,7 @@ https://thephysicallayer.fyi/journal/siemens-energy-measures-the-shortage/
 
 #Transformers #DataCentres #EnergyInfrastructure
 
-## 30 · Nobody makes a B200 alone (site live 7 Oct 2026; LinkedIn Fri 6 Nov, 11:30, scheduled)
+## 30 · Nobody makes a B200 alone (site live 7 Oct 2026; LinkedIn Fri 6 Nov, 11:30, scheduled; NOT in the live queue when checked 8 Nov 2026: deleted with the retired chip pieces)
 
 Nobody makes an Nvidia B200 on their own, not even Nvidia.
 
@@ -426,7 +426,7 @@ https://thephysicallayer.fyi/journal/nobody-makes-a-b200-alone/
 
 ---
 
-## 31 · Ajinomoto grows with the package (site live 7 Oct 2026; LinkedIn Mon 9 Nov, 11:30, scheduled)
+## 31 · Ajinomoto grows with the package (site live 7 Oct 2026; LinkedIn Mon 9 Nov, 11:30, scheduled; NOT in the live queue when checked 8 Nov 2026: deleted with the retired chip pieces)
 
 The company best known for monosodium glutamate makes the insulating film inside nearly all high-performance processors, by its own account.
 
@@ -440,7 +440,7 @@ https://thephysicallayer.fyi/journal/ajinomoto-grows-with-the-package/
 
 ---
 
-## 32 · ASML booked ahead (site live 7 Oct 2026; LinkedIn Wed 11 Nov, 11:30, scheduled)
+## 32 · ASML booked ahead (site live 7 Oct 2026; LinkedIn Wed 11 Nov, 11:30, scheduled; NOT in the live queue when checked 8 Nov 2026: deleted with the retired chip pieces)
 
 The machines that print the finest AI chips are booked a year or two before they are built.
 
@@ -454,7 +454,7 @@ https://thephysicallayer.fyi/journal/asml-booked-ahead/
 
 ---
 
-## 33 · Micron, three times the wafer (site live 7 Oct 2026; LinkedIn Fri 13 Nov, 11:30, scheduled)
+## 33 · Micron, three times the wafer (site live 7 Oct 2026; LinkedIn Fri 13 Nov, 11:30, scheduled; NOT in the live queue when checked 8 Nov 2026: deleted with the retired chip pieces)
 
 Each bit of AI memory uses about three times the silicon of ordinary computer memory.
 

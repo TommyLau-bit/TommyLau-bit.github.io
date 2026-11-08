@@ -10,7 +10,7 @@ GitHub Pages, live at https://thephysicallayer.fyi
 scheduled, open flags, what was done each day). Rewrite its START HERE at the
 end of the session.
 
-## Research: initiation notes and calls (read `CALLS-SPEC.md` first)
+## Research: initiation notes and calls (OFF THE SITE since 6 Nov 2026; see the JOURNAL ONLY banner. Kept for history.)
 
 The site has a second core: Tommy's initiation notes, each a PDF in his house
 style with its live Excel model, listed at `/research` like an investor-letters
@@ -47,7 +47,7 @@ work on notes, calls, the research page or share prices, read `CALLS-SPEC.md`.
 - **The research page is the book plus the notes** (Tommy, 6 Nov 2026): the book is the only scorecard; the notes are a library showing what each found (base value in src/data/notes.ts) and where it stands in the book. The notes' own calls are no longer shown or marked. CALLS-SPEC.md "Research page".
 - The notes are no longer marked; the book is marked daily by `physical-layer-book-daily` (Tommy, 6 Nov 2026).
 
-## Finding and publishing new work: the daily scan (Tommy, 6 Nov 2026; replaces the monthly sweep)
+## Finding and publishing new work: the daily scan (DISABLED since 6 Nov 2026; see the banner. Nothing publishes without Tommy.)
 
 Scheduled task `journal-daily-scan`, every day about 08:10. It searches in three tiers: primary sources first (filings, regulators, grid operators, the claims' watch lists), then Claude's own deep search for what is emerging (extended web search, trade press as leads only), then **Leo Cui's YouTube channel** (@Leo-cui-phd-cfa, Tommy's main inspiration) as an addition, never the main supply, with Watch Later on Wednesdays, and logs everything in `research-build/topics/`. **It publishes on its own, without Tommy's approval** (his instruction, 6 Nov 2026), but only what clears the three-part quality bar, at most one new deep piece and two updates in any seven days, and only after a separate fact-check, the checkers, a clean build and a link check all pass; then WRITING-FORMAT.md §8 in full, including the LinkedIn post on the company page. Publishing nothing is the normal day.
 
@@ -155,8 +155,7 @@ A new piece is not published until the site around it is updated. Every time:
   where it first appears (STORY-RULES 18a). Do not add these pages back.
   Spell company names consistently in the exposure map.
 
-**The top menu is fixed at three: Journal, Research, About** (Tommy, 6 Nov
-2026; Claims, Glossary, Numbers and Companies were removed as amateur). Do not
+**The top menu is fixed at two: Journal and About** (Research removed 6 Nov 2026 under the JOURNAL ONLY banner; Claims, Glossary, Numbers and Companies were removed as amateur). Do not
 add to it, and do not add reference pages to the footer.
 The homepage is the map: under the hero, a compact list of every deep piece
 by layer (grid to chip, anchored `/#<layer>`), then the descent below it as the
