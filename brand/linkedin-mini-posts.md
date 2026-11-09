@@ -65,7 +65,7 @@ Source in the piece: "The grid place sets a restart's date, and Crane borrowed o
 
 ---
 
-## M06 · Mon 16 Nov 2026 08:30 SGT · powering-the-rack · 18,500 amps or 1,250 · SCHEDULED (verified 6 Nov)
+## M06 · Mon 16 Nov 2026 08:30 SGT · powering-the-rack · 18,500 amps or 1,250 · DELETED 9 Nov 2026 (piece removed from the site, Tommy)
 Delivering one megawatt at 54 volts takes about 18,500 amps. At 800 volts it takes about 1,250.
 
 Current, not power, sets the size of the copper. Current is power divided by voltage, so the same megawatt at 800 volts needs about a fifteenth of the current, and more current means thicker copper and more power lost as heat. Think of a hose: at low pressure it must be very wide to move a lot of water, at high pressure a thin one will do. Real systems add losses and safety margins, but that ratio is why the AI rack is changing voltage.
@@ -78,7 +78,7 @@ Source in the piece: "Only a higher voltage shrinks the copper"; the physics in 
 
 ---
 
-## M07 · Tue 17 Nov 2026 08:30 SGT · heat-and-water · Ninety hairdryers in a fridge-sized box · SCHEDULED (verified 6 Nov)
+## M07 · Tue 17 Nov 2026 08:30 SGT · heat-and-water · Ninety hairdryers in a fridge-sized box · DELETED 9 Nov 2026 (piece removed from the site, Tommy)
 One cabinet of Nvidia's GB200 NVL72 AI chips draws about 120 kilowatts, on Nvidia's own user guide. That is roughly eighty hairdryers on full, in a box the size of a wardrobe.
 
 Jane Street's head of physical engineering recalls when a rack of 10 to 15 kW counted as dense. Air cannot carry that much heat away, so the industry now runs liquid through a metal plate on each chip.
@@ -231,7 +231,7 @@ Source in the piece: "The grid place sets a restart's date, and Crane borrowed o
 
 ---
 
-## M19 · Thu 03 Dec 2026 08:30 SGT · powering-the-rack · Tenfold, then tenfold again · SCHEDULED (verified 6 Nov)
+## M19 · Thu 03 Dec 2026 08:30 SGT · powering-the-rack · Tenfold, then tenfold again · DELETED 9 Nov 2026 (piece removed from the site, Tommy)
 Rack power has already risen tenfold within one wiring design. The target is tenfold again.
 
 Google's 48 volt design scaled from 10 kW racks to 100 kW. Vertiv's reference design for Nvidia's GB200 NVL72 rack runs up to 132 kW. Nvidia says 54 volt racks start "to hit physical limits" above 200 kW. In May 2025 it said 800 volts would serve racks of a megawatt and more from 2027, with its next rack, Kyber, which it has since shown again with no power figure and no date. It is a house wired for a kettle and a few lamps being asked to run a heat pump, an oven and a car charger.
@@ -244,7 +244,7 @@ Source in the piece: "800 volts reaches the rack years before the building, so e
 
 ---
 
-## M20 · Fri 04 Dec 2026 08:30 SGT · heat-and-water · Most of a data centre's water is spent at the power station · SCHEDULED (verified 6 Nov)
+## M20 · Fri 04 Dec 2026 08:30 SGT · heat-and-water · Most of a data centre's water is spent at the power station · DELETED 9 Nov 2026 (piece removed from the site, Tommy)
 American data centres consumed about 66 billion litres of water on site in 2023. The power stations feeding them consumed "nearly 800 billion liters".
 
 That is about twelve to one, on estimates from Lawrence Berkeley National Laboratory, a US government lab. Both figures count water lost for good, mostly as vapour.
@@ -395,7 +395,7 @@ Source in the piece: "Ordinary fuel, not age, divides the fast projects from the
 
 ---
 
-## M32 · Tue 22 Dec 2026 08:30 SGT · powering-the-rack · Less copper per watt, not less copper · SCHEDULED (verified 6 Nov)
+## M32 · Tue 22 Dec 2026 08:30 SGT · powering-the-rack · Less copper per watt, not less copper · DELETED 9 Nov 2026 (piece removed from the site, Tommy)
 Moving a row of AI racks from 415 volts AC to 800 volts DC carries 157% more power through the same size of wire.
 
 That is Nvidia's own comparison, from October 2025. Its May 2025 post, on a different basis, gave 85% more power and 45% less copper. But less copper for each unit of power does not mean less copper overall. Power per rack is rising faster than the saving. It is like a car that becomes more efficient just as you start driving it much further: the fuel bill still goes up.
@@ -408,7 +408,7 @@ Source in the piece: "Only a higher voltage shrinks the copper"; Nvidia Technica
 
 ---
 
-## M33 · Wed 23 Dec 2026 08:30 SGT · heat-and-water · Going dry can cost water elsewhere · SCHEDULED (verified 6 Nov)
+## M33 · Wed 23 Dec 2026 08:30 SGT · heat-and-water · Going dry can cost water elsewhere · DELETED 9 Nov 2026 (piece removed from the site, Tommy)
 Drop the cooling tower from a midsize air-cooled hall and it saves about 2.9 litres of water per kWh on the roof. But it then needs more electricity, and that spends about 1.4 litres again at the power station.
 
 In a large liquid-cooled hall, dropping the tower saves about 2 litres and keeps it, because power use barely moves.
@@ -561,7 +561,7 @@ Source in the piece: "The advanced reactors have permits and buyers, and no fuel
 
 ---
 
-## M45 · Fri 08 Jan 2027 08:30 SGT · powering-the-rack · Version 0.3 · SCHEDULED (verified 6 Nov)
+## M45 · Fri 08 Jan 2027 08:30 SGT · powering-the-rack · Version 0.3 · DELETED 9 Nov 2026 (piece removed from the site, Tommy)
 The specification for the solid-state transformer, the electronic part that would bring 800 volts to a whole building, had reached only version 0.3 by July 2026.
 
 Nvidia has dated the first steps: a power rack beside the computers in the second half of 2026, and a row power centre of up to 2 MW per row in 2027. The power block that would convert power for a whole hall carries no date of its own, and the next generation solid-state transformer is dated only "toward 2029". My test: if a hall of 10 MW or more goes into service before 2028 fed by a central rectifier or solid-state transformer, the building did not wait for the rack, and I am wrong.
@@ -574,7 +574,7 @@ Source in the piece: "Nvidia's own calendar puts the rack first and leaves the b
 
 ---
 
-## M46 · Mon 11 Jan 2027 08:30 SGT · heat-and-water · The same plug, 60% more computing · SCHEDULED (verified 6 Nov)
+## M46 · Mon 11 Jan 2027 08:30 SGT · heat-and-water · The same plug, 60% more computing · DELETED 9 Nov 2026 (piece removed from the site, Tommy)
 Under a fixed grid allowance, a hall's cooling decides how much computing the plug can run.
 
 PUE is total power entering the building over power reaching the computers. In Lawrence Berkeley National Laboratory's simulations, a large liquid-cooled hall with a dry cooler sits at about 1.1. A midsize air-cooled hall with no water on site sits at about 1.8.
@@ -723,7 +723,7 @@ Source in the piece: "What would prove me wrong" (the Eunice paragraph); EIA (Au
 
 ---
 
-## M58 · Wed 27 Jan 2027 08:30 SGT · powering-the-rack · Where the evidence moved against me · SCHEDULED (verified 6 Nov)
+## M58 · Wed 27 Jan 2027 08:30 SGT · powering-the-rack · Where the evidence moved against me · DELETED 9 Nov 2026 (piece removed from the site, Tommy)
 One piece of evidence for my September claim on Vertiv has gone: service revenue.
 
 Vertiv's reported growth was swollen by acquisitions. Stripping those out, services and spares grew 18.1% in the third quarter of 2026, against 63.6% for products. Its adjusted operating margin did widen 2.9 points to 25.2%, with orders more than doubling, but Vertiv's finance chief credited sales volume, operating leverage and productivity, not richer gear. So the claim now rests on Vertiv's own estimate of what it can sell into each megawatt, up about 10 to 15% on its earlier range.
@@ -736,7 +736,7 @@ Source in the piece: "Rack first puts more gear in every megawatt" and the claim
 
 ---
 
-## M59 · Thu 28 Jan 2027 08:30 SGT · heat-and-water · Liquid cooling makes going dry cheap, not automatic · SCHEDULED (verified 6 Nov)
+## M59 · Thu 28 Jan 2027 08:30 SGT · heat-and-water · Liquid cooling makes going dry cheap, not automatic · DELETED 9 Nov 2026 (piece removed from the site, Tommy)
 Most people assume AI halls, now moving to liquid, use less water. On a US government lab's model, in 2023 they used more.
 
 Lawrence Berkeley National Laboratory puts AI specialised halls, a mix of liquid and air, at 0.61 litres of water per kWh, nearly twice the 0.32 of hyperscale halls, even with the best PUE, 1.14. Many still run cooling towers where water is plentiful.

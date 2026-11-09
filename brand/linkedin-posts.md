@@ -868,7 +868,7 @@ https://thephysicallayer.fyi/journal/building-your-own-power/
 
 ---
 
-## 61 · Powering the rack, in depth (rebuilt 7 Nov 2026; LinkedIn Mon 23 Nov, 11:30, scheduled, verified 7 Nov)
+## 61 · Powering the rack, in depth (rebuilt 7 Nov 2026; was scheduled Mon 23 Nov; DELETED 9 Nov 2026, piece removed from the site, Tommy)
 
 Nvidia has written down why its own rack design cannot go on: at one megawatt, today's wiring would need up to 200 kilograms of copper bar.
 
@@ -882,7 +882,7 @@ https://thephysicallayer.fyi/journal/powering-the-rack/
 
 ---
 
-## 62 · Heat and water, in depth (rebuilt 7 Nov 2026; LinkedIn Wed 25 Nov, 11:30, scheduled, verified 7 Nov)
+## 62 · Heat and water, in depth (rebuilt 7 Nov 2026; was scheduled Wed 25 Nov; DELETED 9 Nov 2026, piece removed from the site, Tommy)
 
 A US government lab finds a liquid-cooled AI hall can stop evaporating water for almost no extra power over a year.
 
@@ -907,3 +907,17 @@ The piece covers why heat can leave only as light, what a kilowatt weighs in orb
 https://thephysicallayer.fyi/journal/data-centres-in-space/
 
 #Space #DataCentres #AIInfrastructure
+
+---
+
+## 64 · Solar and batteries (site live 9 Nov 2026; LinkedIn Mon 23 Nov, 11:30, scheduled, verified 9 Nov; queue 40 posts, no rack, cooling or orbit)
+
+PJM, the grid operator from Chicago to Virginia, counts a megawatt of tracking solar as 7 per cent of a firm one, and a four-hour battery as 57 per cent.
+
+That is the catch in powering AI with solar and batteries. They are the fastest power America builds, about a year for a battery and two for a solar farm, with no turbine queue. But an AI data centre draws nearly the same power at 3am as at 3pm, and PJM's riskiest hours are winter nights. Its preliminary ratings expect each new battery to count for less.
+
+The piece covers what a capacity factor is, why a four-hour battery reaches the evening but not the night, and how the grid prices the gap.
+
+https://thephysicallayer.fyi/journal/solar-and-batteries/
+
+#Energy #Solar #DataCentres

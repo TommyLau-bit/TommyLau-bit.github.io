@@ -1,4 +1,4 @@
-# Story plan (agreed with Tommy, 9 Nov 2026). NOT STARTED: do nothing until Tommy says go.
+# Story plan (agreed with Tommy, 9 Nov 2026). DONE: launched live 9 Nov 2026 ~19:10, commit 04190dd (Tommy: "Do it right now").
 
 Tommy wants every change made together, at once, once the plan is final. More changes may be added here first.
 
@@ -14,7 +14,7 @@ The site tells one story, in a causal order: where does the next gigawatt for AI
 | 2 | America rations the plug (america-rations-the-plug) | The grid rations: who waits, who is cut, who pays | And the grid cannot speed up, because its machines come from a few factories |
 | 3 | The equipment queue (the-equipment-queue) | A handful of factories keep the wait, not clear it | So builders skip the grid, and meet the turbine queue instead |
 | 4 | Building your own power (building-your-own-power) | Skipping the grid's queue joins GE Vernova's six-year queue | Gas is booked to 2032, so why not build solar and batteries, the fastest power there is? |
-| 5 | Solar and batteries (solar-and-batteries) NEW, DRAFT | Fast to build, but the grid counts them as a fraction of a firm megawatt, and AI runs through every winter night | So buyers want power that runs all year: reactors |
+| 5 | Solar and batteries (solar-and-batteries), live 9 Nov | Fast to build, but the grid counts them as a fraction of a firm megawatt, and AI runs through every winter night | So buyers want power that runs all year: reactors |
 | 6 | Nuclear for AI (nuclear-for-ai) | Old reactors first; new ones wait | The new reactors are small, and their fuel is the gate |
 | 7 | Microreactors (microreactors) | The reactor is the easy part; the fuel is the gate | Ending: every route to the next gigawatt runs through a queue |
 
