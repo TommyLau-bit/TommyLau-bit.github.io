@@ -82,8 +82,4 @@ export const NUMBERS: Num[] = [
   { layer: 'operators', value: '~170 MW', what: 'Active power at Nebius at the end of 2025, power drawn by running computers, against more than 2 GW contracted by February 2026.', piece: 'contracted-energised-running', asOf: 'end of 2025' },
   { layer: 'operators', value: '5,000 PFLOPS', what: 'Hong Kong\'s total computing power as counted by its government; Sandy Ridge promises 180,000 by 2032. Precision not stated.', piece: 'hong-kong-has-the-plug', asOf: 'January 2026' },
 
-  // data centres in orbit
-  { layer: 'orbit', value: '100 kW per tonne', what: 'SpaceX\'s target of compute power per metric ton launched for its AI compute satellites: 100 GW a year would need about one million tonnes to orbit annually. Mass per satellite is not disclosed.', piece: 'data-centres-in-space', asOf: '12 June 2026' },
-  { layer: 'orbit', value: '633 vs 1,400 W/m²', what: 'Heat a two-sided radiator sheds per square metre: Starcloud\'s figure at 20°C with the sun on one face, against SpaceX\'s assumption, which implies a panel near 67°C. Heat shed rises with temperature to the fourth power.', piece: 'data-centres-in-space', asOf: 'June 2026' },
-  { layer: 'orbit', value: '14 kg/m²', what: 'Areal density of the space station\'s radiators. At SpaceX\'s 1,400 W/m², a radiator this heavy alone is 10 kg per kW, the whole of SpaceX\'s satellite budget.', piece: 'data-centres-in-space', asOf: '2022' },
 ];

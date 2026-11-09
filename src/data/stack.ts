@@ -1,7 +1,7 @@
 // ── The map of the stack ─────────────────────────────────────────────────────
 //
 // The physical layers of an AI data centre, from the grid connection inward to the
-// rack, plus orbit. Only layers the journal covers (Tommy, 8 Nov 2026: no chip,
+// rack. Only layers the journal covers (Tommy, 8 Nov 2026: no chip,
 // memory or network layers; semiconductors are not this site's field).
 // Every published piece belongs to exactly one layer: brand/check-piece.py
 // fails a piece that is not listed here. Companies on the map are not curated:
@@ -64,14 +64,6 @@ export const STACK: Layer[] = [
     what: 'Almost every watt that goes into a chip comes back out as heat, and liquid now carries most of it away.',
     constraint: 'A typical rack drew about 7.5 kilowatts in 2025; Nvidia\'s GB200 rack draws about 120, too much heat for air to carry.',
     pieces: ['heat-and-water'],
-  },
-  {
-    id: 'orbit',
-    name: 'Data centres in orbit',
-    kind: 'energy',
-    what: 'Satellites in near-constant sunlight run AI chips on solar power and shed the heat by radiating it into cold space.',
-    constraint: 'Every kilogram of radiator and solar panel must be launched, so the weight of each kilowatt decides the cost.',
-    pieces: ['data-centres-in-space'],
   },
 ];
 

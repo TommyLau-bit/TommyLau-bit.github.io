@@ -16,6 +16,8 @@ const REDIRECTS = {
   '/start': '/',
   // the menu's Journal is the homepage; a typed /journal/ lands there too
   '/journal': '/',
+  // the orbit piece was removed when the site narrowed to power for AI data centres (Tommy, 9 Nov 2026)
+  '/journal/data-centres-in-space': '/',
   // the company slug once kept the umlaut as a hyphen (2 Nov 2026)
   '/companies/wa-rtsila': '/companies/wartsila/',
   // the-queue-not-the-chip

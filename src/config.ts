@@ -1,9 +1,9 @@
 // ── ONE PLACE TO CHANGE THE NAME, TAGLINE AND LINKS ──────────────────────────
 export const SITE = {
   name: 'The Physical Layer',
-  tagline: 'AI and energy infrastructure, explained plainly.',
+  tagline: 'Power for AI data centres, explained plainly.',
   description:
-    'A journal on the physical constraints behind the AI buildout: power, grid connection, data centres, cooling and the supply chains that gate them. Written to be understood by anyone.',
+    'A journal on one question: what decides how fast an AI data centre gets its power. The grid connection, the equipment, power on site, nuclear and cooling, from primary sources and written to be understood by anyone.',
   author: 'Tommy Lau',
   email: 'tommyllk2003@gmail.com',
   linkedin: 'https://www.linkedin.com/in/tommy-lau-170364253',

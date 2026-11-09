@@ -6,8 +6,8 @@ site's default share image (public/og-horizon.png, 1200x630) from the same scene
 Run: DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/lib python3 brand/make-banner.py"""
 import cairosvg
 
-SLOGAN = 'The AI buildout has a physical layer.'
-TAGLINE = 'AI AND ENERGY INFRASTRUCTURE, EXPLAINED PLAINLY'
+SLOGAN = "AI's limit is power."
+TAGLINE = 'POWER FOR AI DATA CENTRES, EXPLAINED PLAINLY'
 A, BLUE = '#f59e0b', '#60a5fa'
 FONT = 'font-family="Helvetica Neue,Helvetica,Arial,sans-serif"'
 
@@ -86,11 +86,11 @@ cairosvg.svg2png(bytestring=li.encode(), write_to='brand/linkedin-banner.png', o
 cairosvg.svg2png(bytestring=li.encode(), write_to='brand/linkedin-banner-1128.png', output_width=1128, output_height=205)
 open('brand/linkedin-banner.svg', 'w').write(li)
 
-# Site default share image: 1200 x 630, slogan stacked on two lines
-og_words = (f'<text x="72" y="150" {FONT} font-size="64" font-weight="700" fill="#f0efea" letter-spacing="-0.5">The AI buildout has</text>'
-            f'<text x="72" y="226" {FONT} font-size="64" font-weight="700" fill="#f0efea" letter-spacing="-0.5">a physical layer.</text>'
+# Site default share image: 1200 x 630, the thesis on two lines (renamed -2 on 9 Nov 2026 so LinkedIn fetches the new card)
+og_words = (f'<text x="72" y="150" {FONT} font-size="64" font-weight="700" fill="#f0efea" letter-spacing="-0.5">AI&#8217;s limit is power.</text>'
+            f'<text x="72" y="226" {FONT} font-size="40" font-weight="600" fill="#cfc8bb" letter-spacing="-0.3">Every way around the grid has a queue.</text>'
             f'<text x="74" y="276" {FONT} font-size="20" fill="#a39a8c" letter-spacing="4">{TAGLINE}</text>'
             f'<text x="74" y="580" {FONT} font-size="24" font-weight="700" fill="{A}" letter-spacing="1">thephysicallayer.fyi</text>')
 og = scene(1200, 630, 500, 1.6, [640, 820, 940, 1015, 1060], [210, 150, 108, 78, 56], 1082, og_words)
-cairosvg.svg2png(bytestring=og.encode(), write_to='public/og-horizon.png', output_width=1200, output_height=630)
-print('brand/linkedin-banner.png, public/og-horizon.png')
+cairosvg.svg2png(bytestring=og.encode(), write_to='public/og-horizon-2.png', output_width=1200, output_height=630)
+print('brand/linkedin-banner.png, public/og-horizon-2.png')
