@@ -8,13 +8,13 @@ import { STACK, layerOf } from '../data/stack';
 const all = await getCollection('journal', ({ data }) => !data.draft);
 const posts = all.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 const byId = Object.fromEntries(all.map((p) => [p.id, p]));
-// one section per layer, grid to chip; pieces newest first within each.
+// one section per layer, grid to rack; pieces in stack.ts order within each (best entry point first).
 // A piece listed under two layers shows once, under its home layer (layerOf).
 // Every layer keeps its section (and its #id anchor, which the descent and the
 // rest of the site link to), even one whose only piece lives under another layer.
 const layers = STACK.map((l) => ({
   ...l,
-  posts: posts.filter((p) => layerOf(p.id)?.id === l.id),
+  posts: posts.filter((p) => layerOf(p.id)?.id === l.id).sort((a, b) => l.pieces.indexOf(a.id) - l.pieces.indexOf(b.id)),
   also: l.pieces.map((id) => byId[id]).filter((p) => p && layerOf(p.id)?.id !== l.id),
 })).filter((l) => l.posts.length > 0 || l.also.length > 0).map((l, i) => ({ ...l, n: String(i + 1).padStart(2, '0') }));
 const mapped = new Set(STACK.flatMap((l) => l.pieces));
