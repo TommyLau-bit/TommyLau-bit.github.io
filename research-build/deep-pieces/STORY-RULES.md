@@ -23,7 +23,7 @@ These rules replace the old §D section skeleton ("How it works", "The number th
 10. **One running measure** where the piece has one (years of work, months to connect, megawatts per rack), used in every beat that carries a number.
 11. **Each section's first sentence states its point.** Skimming first sentences alone gives the whole argument.
 12. **At most three numbers a paragraph, each translated** into what it means for the spine.
-13. **Six to nine beats.** Plain-English top about 400 to 600 words; investor storyline about 900 to 2,000 words (charts, folded evidence and earlier claims do not count).
+13. **Six to nine beats.** Plain-English top about 400 to 600 words; investor storyline about 900 to 2,000 words (charts, folded evidence and earlier claims do not count). Depth-format pieces: about 3,000 to 3,500 visible words in all (Tommy, 9 Nov 2026; DEPTH-FORMAT.md).
 
 ## Charts
 

@@ -4,6 +4,8 @@ Tommy's brief, after the CLSA call and studying microreactors: the journal is fo
 
 Status: APPROVED (Tommy, 7 Nov 2026, on the microreactors draft: "This is exactly what I want. Exactly. It's perfect. And I expect every article to also have this level of depth and this level of quality."). The microreactors piece is the reference. This file replaces STORY-RULES for every rebuilt piece; STORY-RULES governs only live pieces not yet rebuilt. Approval of the format is not approval to publish: microreactors goes live only on Tommy's word.
 
+**Length (Tommy, 9 Nov 2026, replaces "every question answered").** A piece is short and to the point: about 3,000 to 3,500 visible words (folds, figures, exposure map and sources do not count; the checker warns above 3,600). An analyst wants the claim, why it holds, the mechanism, the key numbers and what would prove it wrong. Depth for Tommy's own study lives in his private study sheets, never in the piece, so never re-expand a piece to answer a study question. Below, "no question left unanswered" means the main thread's questions only; side questions are cut or go in the evidence fold.
+
 ## How it is written: the question chain
 
 1. **Ask the questions a first-time reader would ask, in the order they would ask them.** Each answer opens the next question. Microreactors: what is it, and how small? → how does a reactor make heat? → what changes when it fits on a lorry? → why can't it use ordinary fuel? → why ceramic grains? → how do the two work together? → why does nobody make it? → how much is there against how much is needed? → who gets it first, and why? → why the military, not data centres? → where does that leave AI? → what would prove me wrong?

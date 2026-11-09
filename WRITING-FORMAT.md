@@ -261,6 +261,8 @@ advice.**
 - Paragraphs short: 1 to 4 sentences.
 - Length: top layer about 400 to 550 words (a five minute read); investor layer about 1,200 to
   2,500 words (Tommy, 30 Oct 2026, §D).
+  Depth-format pieces (every live piece): about 3,000 to 3,500 visible words, short and to the
+  point for an analyst; detail sits in the folds (Tommy, 9 Nov 2026; DEPTH-FORMAT.md).
 
 Voice:
 

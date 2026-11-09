@@ -153,9 +153,12 @@ def depth_checks(slug, body):
     for c in claims_homed_at(slug):
         if c['claim'] and not (record and flat(c['claim']) in flat(record.group(1))):
             fails.append(f'claim "{c["id"]}" is not quoted word for word in the claims-record fold')
-    words = len(re.sub(r'<[^>]+>', ' ', storyline(body).split('<section class="exposure">')[0]).split())
-    if words > 12000:
-        warns.append(f'{words} words before the exposure map; check every paragraph still earns its place')
+    # visible prose only: folds, figures and everything from the exposure map on do not count
+    vis = re.sub(r'<svg.*?</svg>|<details.*?</details>|<figure.*?</figure>', '', body, flags=re.S)
+    vis = re.sub(r'<[^>]+>', ' ', vis.split('<section class="exposure">')[0])
+    words = len(re.findall(r"[A-Za-z0-9\u00a3$\u20ac%'\u2019-]+", vis))
+    if words > 3600:
+        warns.append(f'{words} visible words; a piece is short and to the point, about 3,000 to 3,500 (Tommy, 9 Nov 2026)')
     return fails, warns
 
 def check(path):
