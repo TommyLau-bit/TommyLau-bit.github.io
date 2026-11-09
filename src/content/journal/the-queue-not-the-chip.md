@@ -202,7 +202,7 @@ The minister also gave the number behind the rule. If all 117 approved centres a
 <figcaption>Dewan Rakyat Hansard (13 and 28 October 2026; the 117-centre figure is the investment minister's oral estimate); energy ministry projection as reported by Bernama (19 October 2026); Tenaga briefing and deck (August and October 2026).</figcaption>
 </figure>
 
-Supply is moving further away. Tenaga is retiring 6.6 gigawatts of its own power stations by 2030, and the 2,100 megawatt Tanjung Bin coal station in south-west Johor retires in 2031, according to grid operator data reported by The Edge. The bids reported for the gas plants to replace them, tendered as NEWGEN26, are all outside Johor. Tenaga is building a new 500 kV backbone of about 500 kilometres, from Paka on the east coast to Kulai East in Johor, due by 2030.
+Supply is moving further away. Tenaga is retiring 6.6 gigawatts of its own power stations by 2030, and the original 2,100 megawatt Tanjung Bin coal station in south-west Johor retires in 2031, according to grid operator data reported by The Edge. The bids reported for the gas plants to replace them, tendered as NEWGEN26, are all outside Johor. Tenaga is building a new 500 kV backbone of about 500 kilometres, from Paka on the east coast to Kulai East in Johor, due by 2030.
 
 <a id="phantom-load"></a>
 

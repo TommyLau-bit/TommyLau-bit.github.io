@@ -13,7 +13,7 @@ draft: false
 
 The earliest new nuclear power that Microsoft has bought for AI will come from a reactor that shut in 2019. Constellation, America's largest nuclear plant owner, is bringing the former Three Mile Island Unit 1 in Pennsylvania back to life, renamed Crane, and says it will run again in the second half of 2027.
 
-Meanwhile the new reactors have nearly everything a press release needs. TerraPower, the reactor company founded by Bill Gates, has a construction permit in Wyoming. Oklo, a start-up that plans to sell power from its own small reactors, has broken ground in Idaho and signed Meta. Kairos Power, a California reactor developer, has a utility contract to sell power for Google. Yet on their own dates, none of them will send meaningful power to an American grid before the 835 megawatts of a reactor built in the 1970s.
+Meanwhile the new reactors have nearly everything a press release needs. TerraPower, the reactor company founded by Bill Gates, has a construction permit in Wyoming. Oklo, a start-up that plans to sell power from its own small reactors, has broken ground in Idaho and signed Meta. Kairos Power, a California reactor developer, has a contract to sell power for Google. Yet on their own dates, none of them will send meaningful power to an American grid before the 835 megawatts of a reactor built in the 1970s.
 
 That is the claim of this piece. Nuclear power for AI arrives in the order of what each project already holds, not in the order of how advanced its reactor is. A restart or an upgrade of an existing reactor keeps a licensed site, a place on the grid and ordinary fuel. Most new designs need a richer fuel that America makes on one small demonstration line, so they wait.
 
@@ -44,9 +44,9 @@ America already has 94 reactors at 54 plants, with about 98 gigawatts, which mad
 
 One of three things, arriving in this order: restarting a closed reactor, squeezing more power out of a running one, or building a new one.
 
-A **restart** brings back a closed reactor. Three are under way: Crane (835 MW) in Pennsylvania, Palisades (about 800 MW) in Michigan and Duane Arnold (615 MW) in Iowa. An **uprate** lets a running reactor make more heat, and so more electricity, under a licence change from the Nuclear Regulatory Commission (NRC), the federal regulator. A **new build** starts from bare ground: a large reactor of about 1,100 MW, a **small modular reactor** (SMR) of up to about 300 MW, or an **advanced reactor** with a different coolant or fuel, most of which need HALEU.
+A **restart** brings back a closed reactor. Three are under way: Crane (835 MW) in Pennsylvania, Palisades (about 800 MW) in Michigan and Duane Arnold (615 MW) in Iowa. An **uprate** lets a running reactor make more heat, and so more power, under a licence change from the Nuclear Regulatory Commission (NRC), the federal regulator. A **new build** starts from bare ground: a large reactor of about 1,100 MW, a **small modular reactor** (SMR) of up to about 300 MW, or an **advanced reactor** with a different coolant or fuel, most of which need HALEU.
 
-**HALEU**, high-assay low-enriched uranium, is the fuel that divides the field. Natural uranium is only about 0.7 per cent uranium-235, the atom that splits. Today's reactors burn fuel concentrated to about 5 per cent; HALEU is concentrated to just under 20 per cent, which lets a small or fast-neutron core run for years. It takes roughly five times the enrichment work per kilogram.
+**HALEU**, high-assay low-enriched uranium, is the fuel that divides the field. Natural uranium is only about 0.7 per cent uranium-235, the atom that splits. Today's reactors burn fuel concentrated to about 5 per cent; HALEU is concentrated to just under 20 per cent, which lets a small or fast-neutron core run for years. It takes roughly five times the enrichment work per kilogram of ordinary 5 per cent fuel.
 
 ## What does a nuclear project need before it can sell a kilowatt-hour?
 
@@ -92,7 +92,7 @@ So Crane applied again like a new plant. PJM's first study, in October 2025, fou
 <figcaption>Constellation (20 September 2024, 6 August 2026); FERC order 195 FERC ¶ 61,162 (1 June 2026), which records Constellation's reading of PJM's first study and says the transfer could "potentially" bring full delivery sooner.</figcaption>
 </figure>
 
-So Constellation borrowed a plug from its own fleet. On 1 June 2026 the Federal Energy Regulatory Commission (FERC), which regulates interstate power markets, let it move 760 MW of rights from Eddystone Units 3 and 4, to Crane. FERC said this could "potentially" let Crane run fully before the end of 2030, and PJM's studies still decide. The reactor's own date never depended on the plug; what the borrowed rights may change is how soon all 835 MW count.
+So Constellation borrowed a plug from its own fleet. On 1 June 2026 the Federal Energy Regulatory Commission (FERC), which regulates interstate power markets, let it move 760 MW of rights from Eddystone Units 3 and 4, two of its oil and gas units near Philadelphia, to Crane. FERC said this could "potentially" let Crane run fully before the end of 2030, and PJM's studies still decide.
 
 ## If holding a grid place is enough, why is Palisades late?
 
@@ -100,7 +100,7 @@ Because a grid place makes a restart possible, not quick. Palisades kept its pla
 
 <a id="palisades-waits-on-the-reactor"></a>
 
-Palisades sits on the grid of **MISO**, the operator for much of the Midwest, There a closed plant can stay "suspended", keeping its connection, for at most 36 months in any five years; FERC extended Palisades' by 22 months, to 1 March 2027. It was reconnected to its 345 kilovolt switchyard on 11 September 2026. The reactor was harder. Its **steam generators**, the heat exchangers that boil water into steam, had worn tubes, which Holtec sleeved rather than replace.
+Palisades sits on the grid of **MISO**, the operator for much of the Midwest. There a closed plant can stay "suspended", keeping its connection, for at most 36 months in any five years; FERC extended Palisades' by 22 months, to 1 March 2027. It was reconnected to its 345 kilovolt switchyard on 11 September 2026. The reactor was harder. Its **steam generators**, the heat exchangers that boil water into steam, had worn tubes, which Holtec sleeved rather than replace.
 
 Loading fuel began on 30 August 2026. Then a fuel assembly tilted about 30 degrees after it was placed, and loading stopped. Recovering it took a month and an emergency licence amendment. Holtec has given no new restart date.
 
@@ -158,7 +158,7 @@ Almost never directly. On the PJM and MISO grids, every binding nuclear deal for
 <figcaption>FERC (1 November 2024, ER24-2172; 18 December 2025, EL25-49); Talen quarterly report for June 2026. My drawing.</figcaption>
 </figure>
 
-The first big co-location deal hit a wall. In November 2024 FERC rejected a change that would have raised the load co-located with Talen Energy's Susquehanna plant for Amazon from 300 to 480 MW. So the deal moved in front of the meter: up to 1,920 MW through 2042, delivered through the grid. In an order of 18 December 2025 FERC required a co-located data centre to take one of three transmission services; a plant adding co-located load must now be studied, pay for any grid upgrades, and wait for them.
+The first big co-location deal hit a wall. In November 2024 FERC rejected a change that would have raised the load co-located with Talen Energy's Susquehanna plant for Amazon from 300 to 480 MW. So the deal moved in front of the meter: up to 1,920 MW through 2042, delivered through the grid. In an order of 18 December 2025 FERC required a co-located data centre in PJM to take one of three transmission services; a plant adding co-located load must now be studied, pay for any grid upgrades, and wait for them.
 
 The exception is in Texas, on ERCOT's separate grid, where Vistra has a binding 20-year contract for 1,200 MW from Comanche Peak, with a campus planned beside the plant. Outside Texas, a nuclear deal for AI is a financial contract that adds carbon-free power to the same grid the data centre uses, matched on paper.
 
@@ -208,13 +208,13 @@ What is coming is planned, not built. Centrus's new government order, signed on 
 <figcaption>NRC; TerraPower (4 March 2026); Oklo quarterly report (6 November 2026); Kairos, TVA and Google (18 August 2025); X-energy (30 October 2026); ASP Isotopes (15 October 2026). Every design here burns HALEU.</figcaption>
 </figure>
 
-Each reactor linked to AI buyers meets that wall. **TerraPower** won an NRC construction permit on 4 March 2026 for Kemmerer 1, a 345 MW sodium-cooled reactor in Wyoming, and targets 2030. Its first core depends on a conditional allocation of government HALEU, its size not public, and its later fuel on ASP Isotopes, which said on 15 October 2026 it had still not applied its technology to uranium-235.
+Each reactor linked to AI buyers meets that wall. **TerraPower** won an NRC construction permit on 4 March 2026 for Kemmerer 1, a 345 MW sodium-cooled reactor in Wyoming, and targets 2030. Its first core depends on a conditional allocation of government HALEU, its size not public, and its later fuel on ASP Isotopes, a company that plans to enrich in South Africa, which said on 15 October 2026 it had still not applied its technology to uranium-235.
 
 **Oklo** broke ground on its 75 MW Aurora in Idaho in September 2025, targets 2028 to 2029, and its first core rests on five tonnes of government HALEU. **Kairos Power's** Hermes 2 has no named fuel source. **X-energy**, Amazon's partner, expects power in the early 2030s.
 
 Between June and August 2026 four reactors in the Energy Department's pilot programme reached **criticality**, a steady self-sustaining chain reaction. All were physics tests at zero or very low power. None is connected to a grid.
 
-The fuel loop has its first cracks: X-energy and Meta, through Oklo, have paid Centrus ahead for HALEU. But no tonnage is public, and new centrifuges take years. The crack moves fuel in the 2030s, not this decade.
+The fuel loop has its first cracks: X-energy agreed a prepayment with Centrus, and Meta's first payment under its Oklo framework went straight to Centrus as a credit towards fuel orders. But no tonnage is public, and new centrifuges take years. The crack moves fuel in the 2030s, not this decade.
 
 ## Is the old fleet's own fuel safe?
 

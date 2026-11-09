@@ -42,7 +42,7 @@ The site switches on only when the last one arrives. The slowest of them, by yea
 
 ## What does a transformer actually do, and why can't a data centre buy one off the shelf?
 
-It changes the voltage of alternating current with two copper coils on a shared steel core, and nearly every large one is designed for one site and built to order.
+Grid power is alternating current, which reverses direction 60 times a second in America and 50 in Europe and most of Asia. A transformer changes its voltage with two copper coils on a shared steel core, and nearly every large one is designed for one site and built to order.
 
 <figure class="illo">
 <p class="illo-title">A transformer is steel, copper and oil with no moving parts, and every part has its own supplier</p>

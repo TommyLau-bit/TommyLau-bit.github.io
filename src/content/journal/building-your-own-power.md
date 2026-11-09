@@ -211,7 +211,7 @@ A gas plant emits **nitrogen oxides** (NOx), gases that help form smog. Under th
 
 Homer City shows how a big plant got through. Its developer is building up to 4,678 MW of gas plant on the site of a Pennsylvania coal plant that closed in 2023. The new plant adds 1,142.8 tons of NOx a year; retiring the coal boilers removed 2,031.8 tons. Pennsylvania let it **net** the one against the other, so it avoided the full review. Homer City targets first power in early 2028.
 
-Texas has gone the other way. At the Texas governor's direction, the state's air regulator wrote on 19 October 2026 that it "has paused the issuance of all permits" for building infrastructure that directly supports data centres. So the permit is a clock of its own: quick on an old coal site with cuts to net, open-ended in a state that has paused permits.
+Texas has gone the other way. At the Texas governor's direction, the state's air regulator wrote on 19 October 2026 that it "has paused the issuance of all permits" for building infrastructure that directly supports data centres. So the permit is a clock of its own: it can be quick on an old coal site with fresh cuts to net, and is now open-ended in a state that has paused permits.
 
 ## Does going through the utility avoid the queue?
 

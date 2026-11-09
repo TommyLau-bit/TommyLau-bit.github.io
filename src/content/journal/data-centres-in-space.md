@@ -136,7 +136,7 @@ SpaceX's own numbers say the same. Its page gives "Vehicle efficiency 75 kW / to
 
 Sometimes, but it costs array to save radiator, and warmer chips are the cheaper lever.
 
-A **heat pump** moves heat from a cooler place to a hotter one, using work, like a fridge in reverse. It could take the chips' coolant at 45°C and raise the radiator to 100°C, where it sheds almost twice as much per square metre. But on my arithmetic, lifting 1 kW of heat that way takes about 0.35 kW of work, and that power needs more array. A pump saves mass only if the array weighs less than about a fifth as much per square metre as the radiator, which is true only with station-weight radiators.
+A **heat pump** moves heat from a cooler place to a hotter one, using work, like a fridge in reverse. It could take the chips' coolant at 45°C and raise the radiator to 100°C, where it sheds almost twice as much per square metre. But on my arithmetic, lifting 1 kW of heat that way takes about 0.35 kW of work, and that power needs more array. A pump saves mass only if the array weighs less than about a fifth as much per square metre as the radiator, which can be true with station-weight radiators but not with light ones.
 
 The cheaper lever is the chip. Running the chips' coolant at 60°C instead of 45°C cuts radiator mass by about 18%, on my arithmetic, with no extra array at all. So in orbit a chip's temperature rating is a launch cost, the same lever that makes [warm water work on the ground](/journal/heat-and-water/).
 
@@ -144,7 +144,7 @@ The cheaper lever is the chip. Running the chips' coolant at 60°C instead of 45
 
 Each is real, but each costs a margin. Mass costs on every kilowatt of every launch.
 
-Google tested its Trillium TPU in a proton beam and, revising its paper on 17 June 2026, found silent errors in the chip's logic that come to about nine per chip per year, on my arithmetic. The test assumes "significant shielding (e.g. 10 mm Al equivalent)". Ten millimetres of aluminium weighs 27 kg per square metre of enclosure, my arithmetic, so the radiation result is bought with mass too.
+Google tested its Trillium TPU in a proton beam and, revising its paper on 17 June 2026, found silent errors in the chip's logic that come to about nine per chip per year, on my arithmetic. That figure rests on a mission dose that assumes "significant shielding (e.g. 10 mm Al equivalent)". Ten millimetres of aluminium weighs 27 kg per square metre of enclosure, my arithmetic, so the radiation result is bought with mass too.
 
 Latency is short: light takes about 2 milliseconds each way from 650 kilometres straight overhead. Bandwidth to the ground is the narrow lane, so orbit suits answering questions, where a reply is a few kilobytes, more than training, which moves vast data.
 
@@ -187,7 +187,7 @@ And the fare recurs. A satellite flown on a five-year life must be launched agai
 
 In orbit the scarce thing is not power. It is mass to orbit, and the kilograms per kilowatt that decide how much of it each satellite needs.
 
-If the claim is right, three parts of the chain gain. **The launcher**, paid per kilogram, gains whether orbit works or not. SpaceX flew both computing prototypes now in orbit, Starcloud's and Google's, and also designs its own computing satellite, which makes it toll keeper and competitor at once. **The lightweight makers**, of arrays, radiators and heat pipes, gain if orbit works at all, because every kilogram they save is a launch fare saved. Astro Digital built Starcloud-1, and Planet built Google's prototype with Google; Redwire makes roll-out arrays. **The ground plug** keeps its value while orbit stays heavy. SpaceX's own risk factors warn that if "advances in nuclear energy" ease ground constraints, its orbital computing "may be materially diminished".
+If the claim is right, three parts of the chain gain. **The launcher**, paid per kilogram, gains whether orbit works or not. SpaceX flew both computing prototypes now in orbit, Starcloud's and Google's, and also designs its own computing satellite, which makes it toll keeper and competitor at once. **The lightweight makers**, of arrays, radiators and heat pipes, gain if orbit works at all, because every kilogram they save is a launch fare saved. Astro Digital built Starcloud-1, and Planet built Google's prototype with Google; Redwire makes roll-out arrays. **The ground plug** keeps its value while orbit stays heavy. SpaceX's own risk factors warn that if "advances in nuclear energy" or similar ease ground constraints, its orbital computing "may be materially diminished".
 
 The SEC asked SpaceX in April 2026 for the "power-to-mass ratios" behind its goal and the "total system mass". The prospectus said the figures "continue to be refined".
 

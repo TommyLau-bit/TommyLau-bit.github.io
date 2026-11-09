@@ -40,7 +40,7 @@ What does 20 MWe buy? One Nvidia GB200 NVL72 rack, the standard AI cabinet today
 
 ## What has to change when a reactor fits on a lorry?
 
-A small core leaks neutrons and must run for years unopened, so it needs more U-235 in its fuel.
+A small core leaks neutrons and must run for years unopened, so it needs more uranium-235, the atom that splits, in its fuel.
 
 A reactor is a kettle heated by splitting atoms. When a slow neutron is absorbed by a nucleus of uranium-235, written U-235, the nucleus splits in two; this is **fission**. The halves fly apart and their crashing is heat. Each split also throws out two or three new neutrons. If exactly one of them goes on to split another atom, the reaction holds steady and the reactor is called **critical**.
 
@@ -67,7 +67,7 @@ Yet that work pays for itself many times over in a small core. Idaho National La
 
 ## Why does the fuel come as tiny ceramic grains?
 
-Because a microreactor runs too hot, too long and too unattended for metal-clad pellets, so every speck of uranium gets its own containment.
+Because a microreactor runs too hot, too long and too unattended for metal-clad pellets. The answer engineers found is to give every speck of uranium its own containment.
 
 An ordinary reactor's fuel is uranium oxide pellets inside a thin tube of zirconium alloy, designed to sit near 300°C water. Most microreactors are cooled by helium gas or heat pipes, run much hotter, and are meant to cool themselves passively if everything stops. Zirconium tubes are the wrong tool for that job.
 

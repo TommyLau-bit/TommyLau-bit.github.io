@@ -82,7 +82,7 @@ The status of each grid's cheaper plug, at 7 November 2026:
 |---|---|---|---|
 | ERCOT, Texas | Provisional Controllable Load Resource | Approved 18 June 2026; may not run before 2027 | None found |
 | SPP, central states | CHILLS: power as available, for up to seven years | In force 1 July 2026 | None found; no signed agreement published |
-| PJM, Chicago to Virginia | Interim NITS: "a temporary, non-firm transmission service" | For loads beside a power station; for all large loads, to be filed 16 November 2026 | None found |
+| PJM, Chicago to Virginia | Interim NITS: "a temporary, non-firm transmission service" | Ordered by FERC for loads beside a power station; tariff text awaits FERC; for all large loads, to be filed 16 November 2026 | None found |
 | CAISO, California | Flexible interim connection | Board approved 28 October 2026 | None |
 | NYISO, New York | Bring new capacity or accept non-firm service | Filing in November or December | None |
 | ISO New England | To be filed by 16 November | Not filed | None |
@@ -118,7 +118,7 @@ The cuts in that model are small and partial. At 0.5% of a year's energy, the ne
 
 Three things: its own generators, batteries, or chips that slow down. Each has its own limit, and the generators' limit is set by an air permit, not by the grid.
 
-**Generators.** Almost every data centre already has diesel generators for outages. But under the federal air rule for emergency engines, running outside an emergency is capped at 100 hours a year for maintenance and testing, of which only 50 may earn money. A cut beyond that needs engines permitted to run as power stations, which is why [building your own power](/journal/building-your-own-power/) matters to this piece.
+**Generators.** Almost every data centre already has diesel generators for outages. But under the federal air rule for emergency engines, running outside an emergency is capped at 100 hours a year for maintenance and testing, of which only 50 may earn money. A cut beyond that, outside a declared emergency, needs engines permitted to run as power stations, which is why [building your own power](/journal/building-your-own-power/) matters to this piece.
 
 <a id="google-lets-the-grid-slow-its-chips"></a>
 
@@ -151,7 +151,7 @@ At 07:56 on 22 July 2026 a 230,000 volt line faulted in Dominion's zone. A **fau
 <figcaption>NERC incident review (January 2025) for the counting rule and the 2024 event; PJM's Markets and Reliability Committee deck (28 October 2026) for the rule. My drawing.</figcaption>
 </figure>
 
-Servers cannot tolerate even a short sag, so every data centre has a **UPS**, an uninterruptible power supply: batteries that take over the servers in milliseconds. Many sites also run a counting rule. A typical setting, NERC found, is three dips within one minute, after which the site moves to its generators until staff switch it back by hand.
+Servers cannot tolerate even a short sag, so every data centre has a **UPS**, an uninterruptible power supply: batteries that take over the servers in milliseconds. Many sites also run a counting rule. A typical setting, NERC, which writes the grid's reliability standards, found, is three dips within one minute, after which the site moves to its generators until staff switch it back by hand.
 
 Every site in the area sees the same dip and follows similar settings, so thousands of megawatts leave together. On 22 July about 2,900 MW left at once. With that load gone, voltage rose to about 1.14 times normal, and the high voltage set off a second wave of about 1,000 MW a minute later.
 

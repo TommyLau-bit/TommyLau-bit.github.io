@@ -204,7 +204,7 @@ The makers of power racks, which sell a cabinet for each new row, and the makers
 
 The cabinets are here. Delta and Flex each launched an 800 volt power rack at Nvidia's March 2026 conference, and Lite-On showed one. Vertiv's sidecar of up to 900 kW has "Commercial launch expected in early 2027", later than it first said.
 
-Meanwhile the AC side keeps selling. Eaton's data centre sales grew 65% in the third quarter of 2026 and its data centre orders 101%, its chief executive said on the call. These are rooms of AC switchgear, the gear a power rack plugs into.
+Meanwhile the AC side keeps selling. Eaton's data centre sales grew 65% in the third quarter of 2026 and its data centre orders 101%, its chief executive said on the call. Fibrebond, the maker of prefabricated power rooms Eaton bought in 2025, makes rooms of AC switchgear, the gear a power rack plugs into.
 
 <a id="every-megawatt-got-harder"></a>
 

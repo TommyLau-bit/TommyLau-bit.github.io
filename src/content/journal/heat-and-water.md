@@ -54,7 +54,7 @@ Microsoft's cloud chief, Scott Guthrie, put it plainly on 18 September 2025: "Tr
 
 Through a chain of sealed loops, each handing the heat to the next without the liquids ever mixing.
 
-The first link is the **cold plate**: a copper block fixed onto the chip, with fine channels inside through which coolant runs. Nvidia describes that coolant as "75% water and 25% propylene glycol" (21 June 2026). The rack loop runs to a **coolant distribution unit (CDU)**: pumps, filters and a heat exchanger in one box. It passes the heat into the building's own water, the **facility water**, which carries it to the roof. There it meets the outside air, in the only step where water can be spent.
+The first link is the **cold plate**: a copper block fixed onto the chip, with fine channels inside through which coolant runs. Nvidia describes that coolant as "75% water and 25% propylene glycol" (21 June 2026). The rack loop runs to a **coolant distribution unit (CDU)**: pumps, filters and a heat exchanger in one box. Google built its own CDU, Project Deschutes, and reported fleet-wide availability of about 99.999% since 2020 (30 April 2025). It passes the heat into the building's own water, the **facility water**, which carries it to the roof. There it meets the outside air, in the only step where water can be spent.
 
 <figure class="illo">
 <p class="illo-title">Only the last step can spend water</p>
@@ -87,7 +87,7 @@ A **cooling tower** sprays the warm water over packing while fans pull air throu
 
 A **dry cooler** is a large radiator with fans. The water stays sealed inside its coil, so none is lost, but it can only cool the water to a few degrees above the ordinary air temperature. **Adiabatic assist** is a dry cooler that wets pads in front of its coil on hot hours, spending water only when it must.
 
-A **chiller** is a refrigerator for water. A compressor can make water colder than the outside air, at the price of electricity. An **air-cooled chiller** throws that heat out with fans and uses no water; a **water-cooled chiller** throws it into a tower. A Vertiv datasheet for one air-cooled model implies removing 1 kW of heat costs about a quarter of a kilowatt at 35 degree outside air, and more as the air gets hotter.
+A **chiller** is a refrigerator for water. A compressor can make water colder than the outside air, at the price of electricity. An **air-cooled chiller** throws that heat out with fans and uses no water; a **water-cooled chiller** throws it into a tower. A datasheet from Vertiv, which makes both power and cooling gear, for one air-cooled model implies removing 1 kW of heat costs about a quarter of a kilowatt at 35 degree outside air, and more as the air gets hotter.
 
 <figure class="illo">
 <p class="illo-title">The tower saves power with water; the dry cooler saves water with power</p>
@@ -176,7 +176,7 @@ A chiller fleet is sized for the hottest hour plus spares, so the count of chill
 
 Carrier, the American heating and cooling maker, said its data centre orders had passed $3 billion so far in 2026, up nearly 350%. It reported "great demand for our new 2 megawatt and 3 megawatt air-cooled chillers" (29 October 2026). Vertiv said it was "on track to doubling chiller production capacity by year-end" (28 October 2026). So chiller orders and the dry roof are not in conflict, because most of the chillers being ordered are themselves dry.
 
-The makers are straining: Munters said "constraints remain industry-wide" (23 October 2026). But when they name what paces their customers, they name power. Johnson Controls' finance chief said some customers face "power and some electrical infrastructure limitation" (27 October 2026). No primary source names a hall held up by cooling gear.
+The makers are straining: Munters, the Swedish maker, said "constraints remain industry-wide" (23 October 2026). But when they name what paces their customers, they name power. The finance chief of Johnson Controls, whose York brand makes chillers, said some customers face "power and some electrical infrastructure limitation" (27 October 2026). No primary source names a hall held up by cooling gear.
 
 <a id="the-worst-afternoon"></a>
 
@@ -206,7 +206,7 @@ I concede that water is now a permit-stage risk, and that a closed-loop promise 
 
 The scarce thing is not water in general. It is the right to evaporate it in a given basin, and the power to go without it on the hottest afternoon.
 
-If the claim is right, three parts of the chain gain. **The loop at the chip**: cold plates, CDUs and pipework go into every AI rack, whatever the roof. **The dry roof**: dry coolers, adiabatic coolers and air-cooled chillers gain on towers in new halls. **The dry site with power**: a site with a grid allocation and scarce water is more usable than it looks, because a liquid hall can go dry cheaply. Almost every large maker now sells both the loop and the roof. Trane completed its purchase of LiquidStack, a CDU maker, on 3 March 2026, and Vertiv completed its purchase of ThermoKey, an Italian dry cooler maker, on 12 June 2026.
+If the claim is right, three parts of the chain gain. **The loop at the chip**: cold plates, CDUs and pipework go into every AI rack, whatever the roof. **The dry roof**: dry coolers, adiabatic coolers and air-cooled chillers gain on towers in new halls. **The dry site with power**: a site with a grid allocation and scarce water is more usable than it looks, because a liquid hall can go dry cheaply. Almost every large maker now sells both the loop and the roof. Trane, another chiller maker, completed its purchase of LiquidStack, a CDU maker, on 3 March 2026, and Vertiv completed its purchase of ThermoKey, an Italian dry cooler maker, on 12 June 2026.
 
 The readings come yearly and quarterly. Google's per-site water table each summer is the main one: Mesa, and whether Waltham Cross and Canelones get rows. Microsoft's first zero-water sites come online in late 2027, and whether it publishes their PUE matters. The chiller makers' orders each quarter show whether the worst afternoon is still being bought.
 
