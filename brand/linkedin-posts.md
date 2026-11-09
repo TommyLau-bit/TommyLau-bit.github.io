@@ -896,7 +896,7 @@ https://thephysicallayer.fyi/journal/heat-and-water/
 
 ---
 
-## 63 · Data centres in orbit, in depth (rebuilt 7 Nov 2026; LinkedIn Fri 27 Nov, 11:30, scheduled, verified 7 Nov)
+## 63 · Data centres in orbit, in depth (rebuilt 7 Nov 2026; was scheduled Fri 27 Nov; DELETED 9 Nov 2026, orbit removed everywhere, Tommy)
 
 SpaceX told American regulators one of its AI computing satellites would weigh 3,000 kilograms.
 

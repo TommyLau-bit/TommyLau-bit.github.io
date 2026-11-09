@@ -156,7 +156,7 @@ Source in the piece: "America is rationing the grid connection, not speeding it 
 
 ---
 
-## M13 · Wed 25 Nov 2026 08:30 SGT · data-centres-in-space · A little hotter sheds far more heat · SCHEDULED (verified 6 Nov)
+## M13 · Wed 25 Nov 2026 08:30 SGT · data-centres-in-space · A little hotter sheds far more heat · DELETED 9 Nov 2026 (orbit removed everywhere, Tommy)
 In space, heat leaves only by glowing off a radiator. And the heat a panel sheds rises with its temperature to the fourth power.
 
 Starcloud, a start-up, works out about 633 watts per square metre for a panel at 20°C. Elon Musk, SpaceX's chief executive, cites about 1,400, which on my arithmetic means a panel near 67°C.
@@ -320,7 +320,7 @@ Source in the piece: "Every organised grid is adding a plug it may cut beneath t
 
 ---
 
-## M26 · Mon 14 Dec 2026 08:30 SGT · data-centres-in-space · The fare to orbit, per kilowatt · SCHEDULED (verified 6 Nov)
+## M26 · Mon 14 Dec 2026 08:30 SGT · data-centres-in-space · The fare to orbit, per kilowatt · DELETED 9 Nov 2026 (orbit removed everywhere, Tommy)
 Google estimates today's launch price at about $3,600 a kilogram, on a reusable Falcon 9.
 
 At that price, spread over a five-year life, a Starlink-class satellite comes to $14,700 per kilowatt per year in launch cost alone. An American AI hall's power bill, on Google's own range, is $570 to $3,000 per kilowatt per year.
@@ -484,7 +484,7 @@ Source in the piece: "Households pay for the power stations the rationing does n
 
 ---
 
-## M39 · Thu 31 Dec 2026 08:30 SGT · data-centres-in-space · SpaceX's own numbers fall short of its goal · SCHEDULED (verified 6 Nov)
+## M39 · Thu 31 Dec 2026 08:30 SGT · data-centres-in-space · SpaceX's own numbers fall short of its goal · DELETED 9 Nov 2026 (orbit removed everywhere, Tommy)
 SpaceX targets 100 kilowatts of computing for every tonne it launches. Its own stated designs do not reach it yet.
 
 Its web page for AI1, its first AI satellite, gives "75 kW / ton", a quarter short if read as compute per tonne launched. Its finance chief's "About 5 megawatts per launch", at the 100 tonnes a launch SpaceX targets over time, is 50 kW per tonne: half the goal.
@@ -648,7 +648,7 @@ Source in the piece: "One morning's 3,800 MW drop made holding on a condition of
 
 ---
 
-## M52 · Tue 19 Jan 2027 08:30 SGT · data-centres-in-space · The plan's own risk: cheaper power on the ground · SCHEDULED (verified 6 Nov)
+## M52 · Tue 19 Jan 2027 08:30 SGT · data-centres-in-space · The plan's own risk: cheaper power on the ground · DELETED 9 Nov 2026 (orbit removed everywhere, Tommy)
 The case for data centres in orbit rests on the queue for power on the ground. SpaceX says so itself.
 
 Its risk factors warn that if "advances in nuclear energy" or similar "alleviate infrastructure constraints", the viability of its orbital compute "may be materially diminished". Starcloud's filing says the buildout of terrestrial energy in the western world "has not kept pace with the demand for AI".
@@ -816,7 +816,7 @@ Source in the piece: "Cut-first power goes to sites that can slow their chips or
 
 ---
 
-## M65 · MOVED to Thu 28 Jan 2027 17:30 SGT · data-centres-in-space · The space station's radiators are cold because of the crew · SCHEDULED (verified 6 Nov)
+## M65 · MOVED to Thu 28 Jan 2027 17:30 SGT · data-centres-in-space · The space station's radiators are cold because of the crew · DELETED 9 Nov 2026 (orbit removed everywhere, Tommy)
 The International Space Station's cooling loop runs at about 3°C, because it cools people, not chips.
 
 That makes its radiators big and heavy for the work they do. On my arithmetic, its six main radiator units reject about 147 watts per square metre. Each unit weighs 1,122.64 kg, and together they handle 70 kW: about 96 kg for every kilowatt.
