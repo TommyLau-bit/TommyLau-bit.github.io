@@ -29,7 +29,7 @@ The Energy Information Administration (EIA), the government's energy statistics 
 
 They are quick because they are simple. A solar farm is rows of panels on posts, and a grid battery is shipping-container cabinets of lithium-ion cells on a concrete pad. Neither has a boiler, a turbine or a cooling tower. In the EIA's own planning assumptions, a four-hour battery takes one year to build, a solar farm two, a simple gas turbine also two, a combined-cycle gas plant three and a nuclear plant six.
 
-That is the case for solar, and it is real. The earlier chapters showed the grid making new campuses wait years for a connection, and [the gas turbine makers](/journal/building-your-own-power/) selling places for 2032. Solar and batteries still wait in the same connection queue and for the same transformers, but they are the one route where nobody is waiting on a sold-out turbine.
+That is the case for solar, and it is real. The earlier chapters showed the grid making new campuses wait years for a connection, and [the gas turbine makers](/journal/building-your-own-power/) selling places for 2032. Solar and batteries still wait in the same connection queue and for the same transformers, but they are the one route that skips the turbine makers' queue.
 
 ## How much of the year does a solar farm actually produce?
 

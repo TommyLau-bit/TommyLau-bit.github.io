@@ -63,7 +63,7 @@ export const CHAPTERS: Chapter[] = [
   { slug: 'the-queue-not-the-chip', name: 'Johor and Singapore', next: 'Malaysia is not alone. In America, the grid now decides who waits, who is cut first and who pays.' },
   { slug: 'america-rations-the-plug', name: 'America rations the plug', next: 'The grid cannot simply build its way out, because its machines come from a few factories.' },
   { slug: 'the-equipment-queue', name: 'The equipment queue', next: 'So builders skip the grid and make their own power, and meet the turbine makers\' queue instead.' },
-  { slug: 'building-your-own-power', name: 'Building your own power', next: 'A heavy gas turbine ordered now ships in 2032. Why not build solar and batteries, the fastest power there is?' },
+  { slug: 'building-your-own-power', name: 'Building your own power', next: 'GE Vernova is now selling heavy gas turbine places for 2032. Why not build solar and batteries, the fastest power there is?' },
   { slug: 'solar-and-batteries', name: 'Solar and batteries', next: 'They are fast, but the grid counts them as a fraction of a firm megawatt, so buyers turn to power that runs all year: reactors.' },
   { slug: 'nuclear-for-ai', name: 'Nuclear for AI', next: 'Old reactors go first. The new ones are small, and their fuel is the gate.' },
   { slug: 'microreactors', name: 'Microreactors', next: 'The reactor is the easy part. Every route to the next gigawatt for AI runs through a queue.' },

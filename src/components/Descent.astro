@@ -378,7 +378,7 @@ const n = (i: number) => String(i).padStart(2, '0');
         </g>
         <g data-at="7">
           <rect class="night" x="0" y="0" width="800" height="400" />
-          <rect class="night night--ground" x="0" y="400" width="490" height="120" />
+          <rect class="night night--ground" x="0" y="400" width="800" height="160" />
           <circle class="star" cx="60" cy="40" r="1.4" /> <circle class="star" cx="130" cy="70" r="1" /> <circle class="star" cx="210" cy="30" r="1.6" /> <circle class="star" cx="290" cy="90" r="1.1" /> <circle class="star" cx="350" cy="44" r="1.3" /> <circle class="star" cx="430" cy="74" r="1" /> <circle class="star" cx="500" cy="28" r="1.5" /> <circle class="star" cx="560" cy="96" r="1.1" /> <circle class="star" cx="700" cy="40" r="1.2" /> <circle class="star" cx="760" cy="110" r="1.4" /> <circle class="star" cx="40" cy="150" r="1" /> <circle class="star" cx="250" cy="160" r="1.2" /> <circle class="star" cx="470" cy="170" r="1" /> <circle class="star" cx="330" cy="210" r="1.3" /> <circle class="star" cx="110" cy="230" r="1" />
           <path class="moon" d="M668 58 a24 24 0 1 0 22 34 a19 19 0 1 1 -22 -34 Z" />
           {[0, 1, 2, 3].map((k) => <rect class="charge" x={503 + k * 26} y="394" width="16" height="3" />)}
@@ -530,7 +530,7 @@ const n = (i: number) => String(i).padStart(2, '0');
     <div class="step" data-scene="3"><div class="card">
       <p class="kick kick--energy">Chapter {ch('solar-and-batteries').n} · {ch('solar-and-batteries').name}</p>
       <h2>The fastest power there is</h2>
-      <p>Solar farms and batteries are most of what America planned to build in 2026. A battery takes about a year, a solar farm about two, and nobody waits on a sold-out turbine.</p>
+      <p>Solar farms and batteries are most of what America planned to build in 2026. A battery takes about a year, a solar farm about two, and nobody waits in the turbine makers' queue.</p>
     </div></div>
     <div class="step" data-scene="3"><div class="card">
       <p class="kick kick--energy">Chapter {ch('solar-and-batteries').n} · {ch('solar-and-batteries').name}</p>
@@ -677,6 +677,7 @@ const n = (i: number) => String(i).padStart(2, '0');
     position: absolute; top: calc(1.1rem + var(--bar-off, 0px)); right: 2rem; display: flex; align-items: center; gap: 0.6rem;
     font-family: var(--sans); font-size: 0.75rem; color: var(--ink-3); opacity: 0; transition: opacity .4s;
   }
+  .rail { z-index: 1; background: var(--bg); padding: 0.2rem 0.5rem; border-radius: 4px; }
   .rail.shown { opacity: 1; }
   .rail-n { font-variant-numeric: tabular-nums; font-weight: 700; color: var(--ink-2); }
   .rail-name { color: var(--ink); font-weight: 600; }
@@ -814,6 +815,8 @@ const n = (i: number) => String(i).padStart(2, '0');
   .sun-ray { fill: none; stroke: #f59e0b; stroke-width: 2; stroke-linecap: round; }
   .night { fill: #0b1530; opacity: .86; }
   .night--ground { opacity: .45; }
+  .sun, .sun-ray { transition: opacity .6s ease; }
+  svg:has(g[data-at="7"].on) :is(.sun, .sun-ray) { opacity: 0; }
   .star { fill: #fde68a; }
   .moon { fill: #e5e7eb; }
   .lit { fill: #fbbf24; }
