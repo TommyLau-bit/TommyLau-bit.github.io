@@ -5,7 +5,7 @@ import { SITE, OG_VERSION } from '../../config';
 import { fmtDate, readingTime } from '../../utils';
 import { claimOf, claimsHomedAt } from '../../data/claims';
 import { getPitches, pitchesFor } from '../../lib/calls';
-import { layerOf } from '../../data/stack';
+import { layerOf, chapterOf, CHAPTERS } from '../../data/stack';
 import { exposureOf, slugify, companyPages } from '../../lib/exposure';
 export async function getStaticPaths() {
   // drafts render in `astro dev` only, so a draft can be read before it publishes; never in a build
@@ -29,12 +29,14 @@ const isHome = claimsHomedAt(p.id).some((c) => c.home === p.id);
 const claim = isHome ? undefined : claimOf(p.id);
 const notes = pitchesFor(await getPitches(), p.id);
 const layer = layerOf(p.id);
+const ch = chapterOf(p.id);
 // only companies with a page of their own are linked (lib/exposure.ts, companyPages)
 const companies = [...new Set(exposureOf(p).flatMap((r) => r.names))].filter((n) => paged.includes(slugify(n)));
 ---
 <Base title={p.data.title} description={p.data.summary} type="article" canonical={`${SITE.url}/journal/${p.id}/`} image={`/og/${p.id}-${OG_VERSION}.png`}>
   <article>
     <header class="article-head">
+      {ch && <p class="chapter-kick"><a href={`/#${p.id}`}>Chapter {ch.n} of {CHAPTERS.length}</a> · {ch.name}</p>}
       <h1>{p.data.title}</h1>
       <div class="meta">
         <span>{SITE.author}</span><span>·</span>
@@ -59,6 +61,14 @@ const companies = [...new Set(exposureOf(p).flatMap((r) => r.names))].filter((n)
       )}
     </header>
     <div class="prose"><Content /></div>
+    {ch && (
+      <nav class="chapter-next" aria-label="The next chapter">
+        <p class="chapter-next-why">{ch.next}</p>
+        {ch.following
+          ? <a href={`/journal/${ch.following.slug}/`}>Chapter {ch.n + 1}: {ch.following.name} <span aria-hidden="true">→</span></a>
+          : <a href="/">Back to the seven chapters <span aria-hidden="true">→</span></a>}
+      </nav>
+    )}
 
     {claim && (
       <aside class="claim-box">

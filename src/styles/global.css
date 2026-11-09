@@ -489,6 +489,10 @@ details.analogy > p:first-of-type { margin-top: 0.1rem; }
 @media (hover: hover) { .home-row--compute .home-piece a:hover .home-piece-h { color: var(--accent-2); } }
 .home-row-pieces li.home-row-also { display: block; font-family: var(--sans); font-size: 0.82rem; color: var(--ink-3); }
 .home-row-pieces .home-row-also a { font-family: var(--sans); font-size: inherit; color: var(--ink-3); }
+.home-row-pieces li.home-next { display: block; margin-top: 0.55rem; font-size: 0.9rem; line-height: 1.5; color: var(--ink-3); font-style: italic; }
+.home-row:last-child .home-next { font-style: normal; color: var(--ink-2); }
+.home-row { position: relative; }
+.home-anchor { position: absolute; top: 0; scroll-margin-top: 1rem; }
 .home-walk { font-family: var(--sans); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); margin: 0.75rem 0 1rem; }
 @media (max-width: 640px) {
   .home-row { grid-template-columns: 1fr; }
@@ -677,3 +681,12 @@ details.analogy > p:first-of-type { margin-top: 0.1rem; }
 .i-cool-t { fill: var(--cool); font-size: 12px; font-weight: 700; }
 .i-lead { fill: none; stroke: var(--ink-3); stroke-width: 0.8; }
 .i-head { fill: var(--ink-3); }
+
+/* the story: chapter line above the title, handoff to the next chapter after the piece */
+.chapter-kick { font-family: var(--sans); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); margin: 0 0 0.6rem; }
+.chapter-kick a { color: var(--accent); text-decoration: none; }
+@media (hover: hover) { .chapter-kick a:hover { text-decoration: underline; } }
+.chapter-next { margin: 2.5rem 0 1.5rem; padding: 1.1rem 1.25rem; border: 1px solid var(--rule); border-left: 3px solid var(--accent); border-radius: 6px; background: var(--bg-elev); }
+.chapter-next-why { margin: 0 0 0.6rem; color: var(--ink-2); line-height: 1.55; }
+.chapter-next a { font-family: var(--sans); font-weight: 650; color: var(--ink); text-decoration-color: var(--rule); }
+@media (hover: hover) { .chapter-next a:hover { color: var(--accent); } }

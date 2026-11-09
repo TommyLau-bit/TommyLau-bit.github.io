@@ -45,17 +45,8 @@ export const NUMBERS: Num[] = [
   { layer: 'onsite', value: '26%', what: 'Share of the enrichment bought by US reactor owners in 2025 that came from Russia; every waiver under the ban ends by 1 January 2028.', piece: 'nuclear-for-ai', asOf: 'EIA, August 2026' },
 
   // power inside the building
-  { layer: 'distribution', value: '1 MW', what: 'The draw Nvidia\'s next rack generation, Kyber, is designed for in a single cabinet.', piece: 'powering-the-rack', asOf: 'due 2027' },
-  { layer: 'distribution', value: '200 kg', what: 'Copper busbar a one megawatt rack would need at today\'s 54 volts, by Nvidia\'s own figure. The reason the industry is moving to 800 volts.', piece: 'powering-the-rack', asOf: '2026' },
-  { layer: 'distribution', value: '18,500 A', what: 'Current needed to deliver one megawatt at 54 volts. At 800 volts it is about 1,250 amps, which is why the rack is moving to 800 VDC.', piece: 'powering-the-rack', asOf: 'physics' },
-  { layer: 'distribution', value: '2 MW', what: 'Power per row of racks from Nvidia\'s 800 VDC row power centre, expected in 2027. Its power rack comes first, in the second half of 2026.', piece: 'powering-the-rack', asOf: 'August 2026' },
-  { layer: 'distribution', value: '~140 kW', what: 'Peak draw of one current Nvidia rack of 72 GPUs, in the footprint of a fridge.', piece: 'heat-and-water', asOf: '2026' },
 
   // cooling
-  { layer: 'cooling', value: '85 to 90%', what: 'Share of each AI server\'s heat that leaves through liquid cold plates in a current Jane Street data hall.', piece: 'heat-and-water', asOf: '2026' },
-  { layer: 'cooling', value: '~12×', what: 'Water consumed at the power stations supplying American data centres, nearly 800 billion litres, against 66 billion litres consumed on site. Most of a data centre\'s water follows its electricity.', piece: 'heat-and-water', asOf: '2023' },
-  { layer: 'cooling', value: '~2 L to ~0', what: 'Water evaporated per kilowatt-hour in a large liquid-cooled hall using a cooling tower, against a dry cooler, in LBNL\'s simulations. PUE stays about 1.1 either way.', piece: 'heat-and-water', asOf: '2024' },
-  { layer: 'cooling', value: '9.7 vs 469', what: 'Million gallons of water consumed in 2025 at Google\'s air-cooled Mesa campus, where it judged the source high risk, against its water-cooled campus at The Dalles, Oregon.', piece: 'heat-and-water', asOf: '2025' },
 
   // the network
   { layer: 'network', value: '102.4 Tb/s', what: 'Data moved through one Broadcom Tomahawk 6 switch chip, enough for two tiers of switches to join more than 100,000 AI chips, by Broadcom\'s own figure.', piece: 'ten-thousand-chips-one-thought', asOf: 'June 2025' },
@@ -74,7 +65,6 @@ export const NUMBERS: Num[] = [
   { layer: 'chips', value: '70 → 120 mm', what: 'Ajinomoto\'s estimate of how the base of an advanced chip package grows: about 70 millimetres square with nine wiring layers up to 2023, about 100 with eleven in 2026, about 120 with thirteen from 2031. Each layer needs its own sheet of insulating film.', piece: 'the-chip-supply-chain', asOf: 'May 2026' },
   { layer: 'chips', value: '2029 and 2030', what: 'Years for which some of ASML\'s customers already want to order EUV machines, as ASML said its planned supply for 2027 and 2028 will not fully meet demand. ASML is the only maker.', piece: 'the-chip-supply-chain', asOf: 'October 2026' },
   { layer: 'chips', value: 'through 2028', what: 'How far ahead Seagate has allocated the vast majority of its data centre nearline drive supply, with some cloud agreements to 2030. It grows supply by more terabytes per drive, not more drives.', piece: 'the-chip-supply-chain', asOf: 'October 2026' },
-  { layer: 'chips', value: '2.25×', what: 'Area of a 300 millimetre wafer against a 200 millimetre one, so each pass through the factory yields more than twice the chips.', piece: 'powering-the-rack', asOf: '2026' },
 
   // who runs the capacity
   { layer: 'operators', value: '5 GW vs ~1 GW', what: 'Power Nebius expects to have contracted by the end of 2026, against the 0.8 to 1 gigawatt it expects to have connected.', piece: 'contracted-energised-running', asOf: 'end of 2026, company target' },

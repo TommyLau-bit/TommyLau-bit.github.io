@@ -239,7 +239,7 @@ ABB told analysts in October 2026 that its data centre gear has lead times of 12
 
 Schneider also sells power rooms built in its own plants as modules. Prefabrication shortens the install, not the order book: the modules still need gear from the same queues.
 
-AI racks change the low-voltage end far more than the grid end. A rack of Nvidia's GB200 chips draws up to 132 kilowatts, about fifteen times the typical rack's almost 9, and Nvidia plans racks of a megawatt from 2027, as [Powering the rack](/journal/powering-the-rack/) explains.
+AI racks change the low-voltage end far more than the grid end. A rack of Nvidia's GB200 chips draws up to 132 kilowatts, about fifteen times the typical rack's almost 9, and Nvidia plans racks of a megawatt from 2027.
 
 <figure class="chart">
 <p class="chart-title">An AI rack draws fifteen times the power of an average one, and Nvidia plans over a hundred times</p>

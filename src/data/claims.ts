@@ -17,6 +17,14 @@ export type Claim = {
 
 export const CLAIMS: Claim[] = [
   {
+    id: 'solar-and-batteries',
+    home: 'solar-and-batteries',
+    date: '2026-11-09T19:03:58+08:00',
+    claim: 'Solar and batteries are the fastest power America builds, but PJM\'s riskiest hours are winter nights, when an AI data centre still draws nearly its full load, and PJM expects each new four-hour battery to count for less: in its class ratings, four-hour storage will be below 50 per cent of a firm megawatt for the 2030/2031 Base Residual Auction and at or below 40 per cent for 2031/2032, lower than in any auction so far, with tracking solar at 10 per cent or less in both.',
+    breaksIf: 'PJM rates four-hour storage at 50 per cent or more in its ELCC class ratings for the 2030/2031 delivery year or above 40 per cent for 2031/2032, or rates tracking solar above 10 per cent in either year.',
+    watch: ['PJM\'s ELCC class ratings for the 2030/2031 Base Residual Auction (preliminary: four-hour storage 42, tracking solar 8)', 'PJM\'s class ratings for 2031/2032 (preliminary: 34 and 8)', 'Any change in how PJM models large data centre loads (its sensitivity lifts four-hour storage from 57 to 66 for 2029/30)', 'The 2029/2030 Base Residual Auction, opening 9 December 2026', 'Whether Google\'s next Intersect park plans firming gas, as Meitner does'],
+  },
+  {
     id: 'microreactors',
     home: 'microreactors',
     date: '2026-11-07T21:19:23+08:00',

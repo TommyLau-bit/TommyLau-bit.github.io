@@ -1,10 +1,11 @@
 ---
-// The descent: the stack told as one scroll, from a high-voltage line to the rack the power feeds.
+// The descent: the story told as one scroll and one camera, from a high-voltage line
+// to the reactor: grid, substation, power beside the site, solar and batteries, nuclear.
 // Text (what happens, what binds, the pieces) is read from src/data/stack.ts; the
 // drawings are hand-made per stop. A new layer in stack.ts appears in the closing
 // funnel on its own, but needs its own drawing to get a stop of its own.
 import { getCollection } from 'astro:content';
-import { STACK } from '../data/stack';
+import { STACK, CHAPTERS } from '../data/stack';
 
 const posts = await getCollection('journal', ({ data }) => !data.draft);
 const byId = Object.fromEntries(posts.map((p) => [p.id, p]));
@@ -12,8 +13,10 @@ const L = (id: string) => STACK.find((l) => l.id === id)!;
 const reads = (ids: string[]) => ids.map((id) => byId[id]).filter(Boolean).map((p) => ({ href: `/journal/${p.id}/`, title: p.data.title }));
 // a section of a deep piece, by the anchor of the piece merged into it (CLAUDE.md, "Merging keeps the record")
 const at = (id: string, anchor: string, title: string) => (byId[id] ? [{ href: `/journal/${id}/#${anchor}`, title }] : []);
-const grid = L('grid'), equip = L('equipment'), onsite = L('onsite'), nuke = L('nuclear'), dist = L('distribution'), cool = L('cooling');
-const funnel = STACK.map((l) => ({ ...l, n: l.pieces.filter((id) => byId[id]).length })).filter((l) => l.n > 0).map((l, i) => ({ ...l, w: 100 - i * 8 }));
+const grid = L('grid'), equip = L('equipment'), onsite = L('onsite'), nuke = L('nuclear');
+const chain = CHAPTERS.filter((c) => byId[c.slug]).map((c, i) => ({ ...c, n: i + 1 }));
+const ch = (slug: string) => chain.find((c) => c.slug === slug)!;
+const read = (slug: string) => reads([slug]);
 
 // ── 1 · grid ──
 const PY = [30, 170, 310];
@@ -26,16 +29,6 @@ att.forEach(([dx, y, sag]) => {
 const ends: [number, number][] = [[446, 354], [480, 354], [466, 354], [486, 340]];
 att.forEach(([dx, y, sag], k) => { const a = PY[2] + dx, [ex, ey] = ends[k]; spans.push(`M${a} ${y} Q ${(a + ex) / 2} ${Math.max(y, ey) + sag * 0.6} ${ex} ${ey}`); });
 
-// ── 3 · hall ──
-const hallRacks = [0, 1, 2, 3, 4, 5].map((k) => 280 + k * 70);
-
-// ── 4 · rack ──
-type Row = { kind: 'P' | 'C' | 'S'; y: number; h: number };
-const order: Row['kind'][] = ['P', 'P', ...Array(10).fill('C'), ...Array(9).fill('S'), ...Array(8).fill('C'), 'P', 'P'];
-let ry = 52;
-const rows: Row[] = order.map((kind) => { const h = kind === 'S' ? 10 : 14; const r = { kind, y: ry, h }; ry += h + 2; return r; });
-const computeRows = rows.filter((r) => r.kind === 'C');
-const focusTray = computeRows[3];
 
 const n = (i: number) => String(i).padStart(2, '0');
 ---
@@ -242,91 +235,14 @@ const n = (i: number) => String(i).padStart(2, '0');
       <div class="lbl lbl--mid" data-at="3" style="left:63%;top:11%"><em class="ck">Choke point</em><b>A few makers, building to order</b><span>Hitachi Energy, Siemens Energy and Eaton add factories only as orders justify</span></div>
     </div>
 
-    <!-- 3 · NUCLEAR ─────────────────────────────────────────── -->
-    <!-- data-in: where this stop's substation sits, so the pull-back from the last stop lands on it -->
-    <div class="scene" data-zoom="2.4" data-in="63.8 69" data-name="Nuclear power" data-scale="Kilometres" style="--fx:85%;--fy:68.6%">
-      <svg viewBox="0 0 800 560">
-        <path class="s-faint" d="M0 300 Q 160 280 320 292 T 640 286 T 800 280" />
-        {[[600, 312, 1], [680, 298, 0.8], [760, 290, 0.65]].map(([x, y, s]) => (
-          <path class="s-faint" d={`M${x - 7 * s} ${y + 34 * s} L${x} ${y} L${x + 7 * s} ${y + 34 * s} M${x - 9 * s} ${y + 6 * s} H${x + 9 * s}`} />
-        ))}
-        <path class="s-faint" d="M546 366 Q 566 336 600 318 Q 640 306 680 304 Q 720 294 760 296 L 800 292" />
-        <rect class="s-ground" x="0" y="420" width="800" height="140" />
-        <rect fill="url(#d-soil)" x="0" y="426" width="800" height="134" />
-        <path class="s-line" d="M0 420 H800" />
-        <path class="s-faint" d="M0 486 H800 M0 516 H800" />
-        <path class="s-thin" d={Array.from({ length: 20 }, (_, i) => `M${i * 42} 501 h18`).join(' ')} />
-        <g data-at="4">
-          <path class="s-fill" d="M126 420 Q 150 350 142 284 H214 Q 206 350 230 420 Z" />
-          <path class="s-thin" d="M142 284 Q 178 290 214 284" />
-          <path class="s-fill" d="M20 420 Q 52 330 38 240 H136 Q 122 330 154 420 Z" />
-          <path class="s-thin" d="M38 240 Q 87 248 136 240" />
-          <path class="s-faint" d="M62 420 Q 76 330 64 244 M112 420 Q 98 330 110 244 M30 404 H144" />
-          <path class="s-faint steam" d="M50 236 c -20 -10 -10 -40 14 -38 c 4 -24 40 -26 50 -6 c 20 -8 36 10 26 28 c 14 10 4 30 -14 24" />
-          <path class="s-faint steam" d="M152 280 c -14 -8 -6 -30 10 -28 c 4 -18 30 -18 36 -4 c 16 -4 24 10 16 22" />
-          <rect class="s-fill" x="248" y="336" width="70" height="84" />
-          <path class="s-fill" d="M248 336 A35 30 0 0 1 318 336 Z" />
-          <path class="s-thin" d="M248 350 H318 M266 420 V396 H300 V420" />
-          <rect class="s-fill" x="318" y="352" width="92" height="68" />
-          <path class="s-thin" d="M314 352 H414 M330 366 H398 M330 372 H398" />
-          <rect class="s-fill2" x="336" y="342" width="10" height="10" /><rect class="s-fill2" x="370" y="342" width="10" height="10" />
-          <path class="s-line" d="M418 420 V372 M440 420 V372 M414 378 H444" />
-          <rect class="s-fill" x="420" y="400" width="16" height="20" />
-          {[0, 1].map((k) => <path class="s-wire" d={`M444 ${378 + k * 6} Q 464 ${390 + k * 6} 484 ${366 + k * 6}`} />)}
-          {[0, 1].map((k) => <path class="flow" d={`M444 ${378 + k * 6} Q 464 ${390 + k * 6} 484 ${366 + k * 6}`} />)}
-          <path class="s-line" d="M484 420 V360 M540 420 V360 M478 366 H546" />
-          <rect class="s-fill" x="494" y="396" width="16" height="24" /><rect class="s-fill" x="516" y="396" width="16" height="24" />
-          <path class="s-thin" d="M498 396 V388 M506 396 V388 M520 396 V388 M528 396 V388 M476 410 H552" />
-          <rect class="s-fill" x="580" y="344" width="200" height="76" />
-          <path class="s-thin" d={Array.from({ length: 7 }, (_, k) => `M${605 + k * 25} 344 V420`).join(' ') + ' M580 356 H780'} />
-          {[0, 1, 2, 3, 4].map((k) => (
-            <g>
-              <rect class="s-fill" x={588 + k * 38} y="334" width="30" height="10" />
-              <circle class="s-thin" cx={596 + k * 38} cy="339" r="3" /><circle class="s-thin" cx={610 + k * 38} cy="339" r="3" />
-            </g>
-          ))}
-          <path class="s-power" d="M532 420 V436 H640 V420" />
-          <path class="flow" d="M532 420 V436 H640 V420" />
-        </g>
-        <g data-at="5">
-          <g class="truck">
-            <rect class="s-fill2" x="300" y="494" width="170" height="7" />
-            <rect class="fuel" x="314" y="452" width="140" height="42" rx="8" />
-            <path class="s-thin" d="M340 452 V494 M368 452 V494 M396 452 V494 M424 452 V494" />
-            <circle class="s-thin" cx="384" cy="473" r="9" /><circle class="s-thin" cx="384" cy="473" r="3" />
-            <path class="s-fill" d="M472 503 V470 H494 L508 486 V503 Z" />
-            <path class="s-fill2" d="M478 474 H492 L501 485 H478 Z" />
-            {[322, 344, 430, 452, 494].map((cx) => <circle class="s-fill" cx={cx} cy="507" r="7" />)}
-          </g>
-          <path class="leader" d="M604 212 L430 450" />
-          <rect class="inset" x="540" y="22" width="246" height="190" rx="8" />
-          <path class="s-thin" d="M552 106 H782 M552 194 H782" />
-          {Array.from({ length: 16 }, (_, k) => 556 + k * 13.6).map((x) => (
-            <g>
-              <path class="s-thin" d={`M${x + 4} 106 V112 M${x + 4} 186 V194`} />
-              <rect class="centrifuge" x={x} y="112" width="8" height="74" rx="4" />
-            </g>
-          ))}
-          <path class="flow" d="M552 106 H782" />
-          <rect class="choke-ring" x="534" y="16" width="258" height="202" rx="10" />
-        </g>
-      </svg>
-      <div class="lbl lbl--mid" data-at="4" style="left:35.5%;top:52%"><b>Existing reactor</b><span>a licensed site, a grid connection and ordinary fuel</span></div>
-      <div class="lbl lbl--mid" data-at="4" style="left:13%;top:80%"><b>Cooling towers</b></div>
-      <div class="lbl lbl--mid" data-at="4" style="left:64%;top:58%"><b>Substation</b></div>
-      <div class="lbl lbl--mid" data-at="4" style="left:85%;top:82%"><b>Data centre</b></div>
-      <div class="lbl lbl--mid" data-at="5" style="left:48%;top:96%"><b>Microreactor</b><span>built in a factory, driven to the site on a trailer</span></div>
-      <div class="lbl lbl--mid" data-at="5" style="left:82.9%;top:10.5%;max-width:30%"><em class="ck">Choke point</em><b>HALEU fuel</b><span>uranium enriched to just under 20 per cent; America's one line has 16 centrifuges</span></div>
-    </div>
-
-    <!-- 4 · SITE ─────────────────────────────────────────── -->
-    <div class="scene" data-zoom="2.3" data-name="The site" data-scale="Hundreds of metres" style="--fx:50%;--fy:51.8%">
+    <!-- 3 · THE SITE: data-in = its grid substation, where the pull-back from the substation lands; data-out pulls back to the solar stop ─────────────────────────────────────────── -->
+    <div class="scene" data-in="4.5 63" data-out="2.4" data-name="Gas beside the site" data-scale="Hundreds of metres">
       <svg viewBox="0 0 800 560">
         <path class="s-faint" d="M0 330 Q 120 300 240 318 T 520 310 T 800 300" />
         <rect class="s-ground" x="0" y="380" width="800" height="180" />
         <rect fill="url(#d-soil)" x="0" y="386" width="800" height="174" />
         <path class="s-line" d="M0 380 H800" />
-        <g data-at="6">
+        <g data-at="4">
           <path class="s-thin" d="M14 380 V322 M58 380 V322 M8 330 H64 M14 345 L58 330 M14 330 L58 345" />
           <rect class="s-fill" x="22" y="352" width="28" height="28" />
           <path class="s-power" d="M36 380 V398 H244 V380" />
@@ -346,7 +262,7 @@ const n = (i: number) => String(i).padStart(2, '0');
             </g>
           ))}
         </g>
-        <g data-at="7">
+        <g data-at="5">
           <path class="gas" d="M800 434 H190 V380 M664 434 V380 M720 434 V380 M768 434 V380" />
           {[0, 1].map((k) => (
             <g>
@@ -382,195 +298,189 @@ const n = (i: number) => String(i).padStart(2, '0');
           <rect class="choke-ring" x="576" y="240" width="220" height="148" rx="10" />
         </g>
       </svg>
-      <div class="lbl" data-at="6" style="left:1%;top:53%"><b>From the grid</b></div>
-      <div class="lbl lbl--mid" data-at="6" style="left:50%;top:26%"><b>The data centre</b><span>coolers on the roof</span></div>
-      <div class="lbl lbl--mid" data-at="7" style="left:12%;top:57%"><b>Batteries</b></div>
-      <div class="lbl lbl--mid" data-at="7" style="left:21.5%;top:83%"><b>Fuel cells</b></div>
-      <div class="lbl lbl--mid" data-at="7" style="left:90.5%;top:54%"><b>Engines</b></div>
-      <div class="lbl lbl--mid" data-at="7" style="left:79%;top:85%"><em class="ck">Choke point</em><b>Gas turbines</b><span>skip the grid queue, join the turbine queue</span></div>
-      <div class="lbl lbl--end" data-at="7" style="left:99%;top:96%"><b>Gas pipeline</b></div>
+      <div class="lbl" data-at="4" style="left:1%;top:53%"><b>From the grid</b></div>
+      <div class="lbl lbl--mid" data-at="4" style="left:50%;top:26%"><b>The data centre</b><span>coolers on the roof</span></div>
+      <div class="lbl lbl--mid" data-at="5" style="left:12%;top:57%"><b>Batteries</b></div>
+      <div class="lbl lbl--mid" data-at="5" style="left:21.5%;top:83%"><b>Fuel cells</b></div>
+      <div class="lbl lbl--mid" data-at="5" style="left:90.5%;top:54%"><b>Engines</b></div>
+      <div class="lbl lbl--mid" data-at="5" style="left:79%;top:85%"><em class="ck">Choke point</em><b>Gas turbines</b><span>skip the grid queue, join the turbine queue</span></div>
+      <div class="lbl lbl--end" data-at="5" style="left:99%;top:96%"><b>Gas pipeline</b></div>
     </div>
 
-    <!-- 5 · HALL ─────────────────────────────────────────── -->
-    <div class="scene" data-zoom="2.4" data-name="The hall" data-scale="Tens of metres" style="--fx:56%;--fy:64.3%">
+    <!-- 4 · SOLAR AND BATTERIES: data-in = its data centre, where the pull-back from the site lands; data-out pulls back again to the nuclear stop ─ -->
+    <div class="scene" data-in="84.4 64" data-out="2.4" data-name="Solar and batteries" data-scale="Kilometres">
       <svg viewBox="0 0 800 560">
-        <rect class="s-room" x="20" y="40" width="760" height="480" rx="4" />
-        <path class="s-thin" d="M20 80 H780" />
-        <rect class="s-fill2" x="20" y="470" width="760" height="8" />
-        <path class="s-line" d="M255 80 V470" />
-        <g data-at="8">
+        <path class="s-faint" d="M0 360 Q 140 340 280 352 T 560 344 T 800 340" />
+        <rect class="s-ground" x="0" y="400" width="800" height="160" />
+        <rect fill="url(#d-soil)" x="0" y="406" width="800" height="154" />
+        <path class="s-line" d="M0 400 H800" />
+        <g data-at="6">
+          <circle class="sun" cx="150" cy="120" r="26" />
+          <path class="sun-ray" d="M150 80 V70 M150 160 V170 M110 120 H100 M190 120 H200 M122 92 L115 85 M178 148 L185 155 M178 92 L185 85 M122 148 L115 155" />
+          <path class="pv" d="M36 422 L66 422 L72 410 L42 410 Z" />
+          <path class="pv" d="M72 422 L102 422 L108 410 L78 410 Z" />
+          <path class="pv" d="M108 422 L138 422 L144 410 L114 410 Z" />
+          <path class="pv" d="M144 422 L174 422 L180 410 L150 410 Z" />
+          <path class="pv" d="M180 422 L210 422 L216 410 L186 410 Z" />
+          <path class="pv" d="M216 422 L246 422 L252 410 L222 410 Z" />
+          <path class="pv" d="M252 422 L282 422 L288 410 L258 410 Z" />
+          <path class="pv" d="M288 422 L318 422 L324 410 L294 410 Z" />
+          <path class="pv" d="M324 422 L354 422 L360 410 L330 410 Z" />
+          <path class="pv" d="M360 422 L390 422 L396 410 L366 410 Z" />
+          <path class="pv" d="M396 422 L426 422 L432 410 L402 410 Z" />
+          <path class="pv" d="M24 446 L56 446 L62 434 L30 434 Z" />
+          <path class="pv" d="M62 446 L94 446 L100 434 L68 434 Z" />
+          <path class="pv" d="M100 446 L132 446 L138 434 L106 434 Z" />
+          <path class="pv" d="M138 446 L170 446 L176 434 L144 434 Z" />
+          <path class="pv" d="M176 446 L208 446 L214 434 L182 434 Z" />
+          <path class="pv" d="M214 446 L246 446 L252 434 L220 434 Z" />
+          <path class="pv" d="M252 446 L284 446 L290 434 L258 434 Z" />
+          <path class="pv" d="M290 446 L322 446 L328 434 L296 434 Z" />
+          <path class="pv" d="M328 446 L360 446 L366 434 L334 434 Z" />
+          <path class="pv" d="M366 446 L398 446 L404 434 L372 434 Z" />
+          <path class="pv" d="M404 446 L436 446 L442 434 L410 434 Z" />
+          <path class="pv" d="M12 472 L46 472 L52 460 L18 460 Z" />
+          <path class="pv" d="M52 472 L86 472 L92 460 L58 460 Z" />
+          <path class="pv" d="M92 472 L126 472 L132 460 L98 460 Z" />
+          <path class="pv" d="M132 472 L166 472 L172 460 L138 460 Z" />
+          <path class="pv" d="M172 472 L206 472 L212 460 L178 460 Z" />
+          <path class="pv" d="M212 472 L246 472 L252 460 L218 460 Z" />
+          <path class="pv" d="M252 472 L286 472 L292 460 L258 460 Z" />
+          <path class="pv" d="M292 472 L326 472 L332 460 L298 460 Z" />
+          <path class="pv" d="M332 472 L366 472 L372 460 L338 460 Z" />
+          <path class="pv" d="M372 472 L406 472 L412 460 L378 460 Z" />
+          <path class="pv" d="M412 472 L446 472 L452 460 L418 460 Z" />
+          <path class="pv" d="M0 500 L36 500 L42 488 L6 488 Z" />
+          <path class="pv" d="M42 500 L78 500 L84 488 L48 488 Z" />
+          <path class="pv" d="M84 500 L120 500 L126 488 L90 488 Z" />
+          <path class="pv" d="M126 500 L162 500 L168 488 L132 488 Z" />
+          <path class="pv" d="M168 500 L204 500 L210 488 L174 488 Z" />
+          <path class="pv" d="M210 500 L246 500 L252 488 L216 488 Z" />
+          <path class="pv" d="M252 500 L288 500 L294 488 L258 488 Z" />
+          <path class="pv" d="M294 500 L330 500 L336 488 L300 488 Z" />
+          <path class="pv" d="M336 500 L372 500 L378 488 L342 488 Z" />
+          <path class="pv" d="M378 500 L414 500 L420 488 L384 488 Z" />
+          <path class="pv" d="M420 500 L456 500 L462 488 L426 488 Z" />
+          <path class="s-thin" d="M51 422 V428 M87 422 V428 M123 422 V428 M159 422 V428 M195 422 V428 M231 422 V428 M267 422 V428 M303 422 V428 M339 422 V428 M375 422 V428 M411 422 V428 M39 446 V452 M77 446 V452 M115 446 V452 M153 446 V452 M191 446 V452 M229 446 V452 M267 446 V452 M305 446 V452 M343 446 V452 M381 446 V452 M419 446 V452 M27 472 V478 M67 472 V478 M107 472 V478 M147 472 V478 M187 472 V478 M227 472 V478 M267 472 V478 M307 472 V478 M347 472 V478 M387 472 V478 M427 472 V478 M15 500 V506 M57 500 V506 M99 500 V506 M141 500 V506 M183 500 V506 M225 500 V506 M267 500 V506 M309 500 V506 M351 500 V506 M393 500 V506 M435 500 V506" />
           {[0, 1, 2, 3].map((k) => (
             <g>
-              <rect class="s-fill" x={430 + k * 70} y="12" width="62" height="28" rx="2" />
-              <circle class="s-thin fan" cx={446 + k * 70} cy="25" r="8" />
-              <circle class="s-thin fan" cx={476 + k * 70} cy="25" r="8" />
+              <rect class="s-fill" x={500 + k * 26} y="372" width="22" height="28" />
+              <path class="s-thin" d={`M${504 + k * 26} 378 H${518 + k * 26} M${504 + k * 26} 383 H${518 + k * 26} M${504 + k * 26} 388 H${518 + k * 26}`} />
             </g>
           ))}
-          <path class="hose hose--warm" d="M754 330 V28 H702" />
-          <path class="hose hose--cool" d="M702 48 H728 V330" />
-          <path class="flow flow--warm" d="M754 330 V28 H702" />
-          <path class="flow flow--cool" d="M702 48 H728 V330" />
-          {[34, 64, 94, 124].map((x) => (
-            <g>
-              <rect class="s-fill" x={x} y="330" width="28" height="140" />
-              {[344, 374, 404].map((y) => <rect class="s-bay" x={x + 5} y={y} width="18" height="20" rx="1" />)}
-              <path class="s-thin" d={`M${x + 14} 436 V456`} />
-            </g>
-          ))}
-          {[162, 192].map((x) => (
-            <g>
-              <rect class="s-fill" x={x} y="330" width="28" height="140" />
-              <rect class="led-panel" x={x + 6} y="342" width="16" height="8" />
-              <path class="s-thin" d={`M${x + 6} 370 H${x + 22} M${x + 6} 376 H${x + 22} M${x + 6} 382 H${x + 22}`} />
-            </g>
-          ))}
-          <rect class="s-fill" x="222" y="330" width="28" height="140" />
-          {[0, 1, 2, 3, 4, 5].flatMap((r) => [0, 1].map((c) => <rect class="s-fill2" x={226 + c * 11} y={340 + r * 20} width="9" height="16" rx="1" />))}
-          <path class="s-power" d="M48 520 V470" />
-          <path class="copper-line" d="M236 330 V150 H272" />
-          <path class="flow" d="M48 520 V470 M236 330 V150 H272" />
-          <rect class="copper" x="270" y="146" width="420" height="9" rx="2" />
-          {hallRacks.map((x) => (
-            <g>
-              <rect class="s-fill" x={x + 18} y="155" width="20" height="12" />
-              <path class="copper-line" d={`M${x + 28} 167 V250`} />
-              <rect class="s-rack" x={x} y="250" width="56" height="220" rx="2" />
-              {Array.from({ length: 26 }, (_, i) => <path class="s-thin" d={`M${x + 6} ${258 + i * 8} H${x + 50}`} />)}
-              <path class="hose hose--cool" d={`M${x + 20} 488 V470`} />
-              <path class="hose hose--warm" d={`M${x + 36} 500 V470`} />
-            </g>
-          ))}
-          <path class="flow" d="M270 150 H690" />
-          <rect class="s-fill" x="712" y="330" width="52" height="140" />
-          <circle class="s-thin" cx="738" cy="400" r="13" />
-          <path class="s-thin" d="M730 400 H746 M738 392 V408 M718 350 H758 M718 356 H758" />
-          <path class="hose hose--cool" d="M728 470 V488 H290" />
-          <path class="hose hose--warm" d="M748 470 V500 H306" />
-          <path class="flow flow--cool" d="M728 470 V488 H290" />
-          <path class="flow flow--warm" d="M306 500 H748 V470" />
+          <rect class="s-fill" x="612" y="326" width="128" height="74" />
+          {[0, 1, 2, 3].map((k) => <rect class="s-fill" x={620 + k * 30} y="316" width="24" height="10" />)}
+          <path class="s-thin" d="M612 340 H740 M644 326 V400 M676 326 V400 M708 326 V400" />
+          <rect class="s-fill" x="752" y="372" width="34" height="28" />
+          <rect class="s-fill" x="772" y="340" width="8" height="32" />
+          <path class="s-power" d="M476 410 H612 V400 M550 410 V400" />
+          <path class="flow" d="M476 410 H612 V400" />
+        </g>
+        <g data-at="7">
+          <rect class="night" x="0" y="0" width="800" height="400" />
+          <rect class="night night--ground" x="0" y="400" width="490" height="120" />
+          <circle class="star" cx="60" cy="40" r="1.4" /> <circle class="star" cx="130" cy="70" r="1" /> <circle class="star" cx="210" cy="30" r="1.6" /> <circle class="star" cx="290" cy="90" r="1.1" /> <circle class="star" cx="350" cy="44" r="1.3" /> <circle class="star" cx="430" cy="74" r="1" /> <circle class="star" cx="500" cy="28" r="1.5" /> <circle class="star" cx="560" cy="96" r="1.1" /> <circle class="star" cx="700" cy="40" r="1.2" /> <circle class="star" cx="760" cy="110" r="1.4" /> <circle class="star" cx="40" cy="150" r="1" /> <circle class="star" cx="250" cy="160" r="1.2" /> <circle class="star" cx="470" cy="170" r="1" /> <circle class="star" cx="330" cy="210" r="1.3" /> <circle class="star" cx="110" cy="230" r="1" />
+          <path class="moon" d="M668 58 a24 24 0 1 0 22 34 a19 19 0 1 1 -22 -34 Z" />
+          {[0, 1, 2, 3].map((k) => <rect class="charge" x={503 + k * 26} y="394" width="16" height="3" />)}
+          {[0, 1, 2, 3].map((k) => <rect class="lit" x={618 + k * 32} y="350" width="20" height="8" />)}
+          <path class="s-faint steam" d="M774 334 q -5 -9 2 -16 q 7 -7 0 -16 M780 334 q 5 -10 -2 -18" />
+          <path class="flow" d="M769 400 V412 H726 V400" />
+          <rect class="choke-ring" x="492" y="362" width="116" height="46" rx="8" />
         </g>
       </svg>
-      <div class="lbl lbl--end" data-at="8" style="left:53%;top:4.5%"><b>Dry coolers on the roof</b><span>the heat leaves to the air</span></div>
-      <div class="lbl lbl--mid" data-at="8" style="left:11.5%;top:50%"><b>Switchgear</b></div>
-      <div class="lbl lbl--mid" data-at="8" style="left:25.5%;top:56%"><b>Backup</b><span>UPS and batteries</span></div>
-      <div class="lbl" data-at="8" style="left:34%;top:37%"><b>Copper busway</b><span>overhead to every rack</span></div>
-      <div class="lbl lbl--end" data-at="8" style="left:97%;top:53%"><b>Coolant unit</b></div>
-      <div class="lbl lbl--mid" data-at="8" style="left:60%;top:97%"><b>Coolant under the floor</b></div>
+      <div class="lbl lbl--mid" data-at="6" style="left:29%;top:96%"><b>Solar farm</b><span>about two years to build</span></div>
+      <div class="lbl lbl--mid" data-at="6" style="left:69%;top:58%"><b>Batteries</b><span>about one year; four hours of power</span></div>
+      <div class="lbl lbl--mid" data-at="6" style="left:84%;top:49%"><b>Data centre</b><span>the same load at 3am as at 3pm</span></div>
+      <div class="lbl lbl--mid" data-at="7" style="left:42%;top:30%"><em class="ck">Choke point</em><b>The winter night</b><span>a four-hour battery reaches the evening; a December night lasts about fifteen hours</span></div>
+      <div class="lbl lbl--end" data-at="7" style="left:99%;top:80%"><b>Firming gas</b><span>planned even at Google's solar parks</span></div>
     </div>
 
-    <!-- 6 · RACK ─────────────────────────────────────────── -->
-    <div class="scene" data-name="One rack" data-scale="About two metres tall" style={`--fx:50%;--fy:${((focusTray.y + 7) / 560 * 100).toFixed(1)}%`}>
+    <!-- 5 · NUCLEAR: data-in = its data centre, where the pull-back from the solar stop lands ─────────────────────────────────────────── -->
+    <div class="scene" data-zoom="2.4" data-in="85 67" data-name="Nuclear power" data-scale="Kilometres" style="--fx:85%;--fy:68.6%">
       <svg viewBox="0 0 800 560">
-        <path class="s-faint" d="M0 14 H800 M0 20 H800 M360 20 V30 M440 20 V30" />
-        {[600, 690].map((x) => (
-          <g class="s-ghost">
-            <rect x={x} y="110" width="70" height="400" rx="2" />
-            {Array.from({ length: 30 }, (_, i) => <path d={`M${x + 5} ${120 + i * 12.6} H${x + 65}`} />)}
-          </g>
+        <path class="s-faint" d="M0 300 Q 160 280 320 292 T 640 286 T 800 280" />
+        {[[600, 312, 1], [680, 298, 0.8], [760, 290, 0.65]].map(([x, y, s]) => (
+          <path class="s-faint" d={`M${x - 7 * s} ${y + 34 * s} L${x} ${y} L${x + 7 * s} ${y + 34 * s} M${x - 9 * s} ${y + 6 * s} H${x + 9 * s}`} />
         ))}
-        <path class="s-line" d="M0 540 H800" />
-        {Array.from({ length: 11 }, (_, i) => i * 80).map((x) => <path class="s-faint" d={`M${x} 540 L${x + (x - 400) * 0.3} 560`} />)}
-        <g data-at="9">
-          <rect class="s-frame" x="300" y="30" width="200" height="500" rx="3" />
-          <path class="s-thin" d="M308 34 V526 M492 34 V526" />
-          <rect class="s-fill" x="304" y="530" width="12" height="6" />
-          <rect class="s-fill" x="484" y="530" width="12" height="6" />
-          {rows.map((r, i) => (
-            <g class="tray" style={`--d:${i * 22}ms`}>
-              <rect class={r.kind === 'C' ? 's-fill' : 's-fill2'} x="312" y={r.y} width="176" height={r.h} rx="1.5" />
-              {r.kind === 'C' && (
-                <>
-                  <circle class="led" cx="318" cy={r.y + r.h / 2} r="1.6" />
-                  {[0, 1, 2, 3].map((k) => <rect class="s-bay" x={326 + k * 24} y={r.y + 3} width="20" height={r.h - 6} rx="1" />)}
-                  {[0, 1].map((k) => <rect class="s-bay s-bay--cpu" x={426 + k * 14} y={r.y + 4} width="10" height={r.h - 8} rx="1" />)}
-                  <path class="s-ports" d={`M458 ${r.y + r.h / 2} H484`} />
-                </>
-              )}
-              {r.kind === 'S' && <path class="s-ports s-ports--sw" d={`M320 ${r.y + 5} H480`} />}
-              {r.kind === 'P' && [0, 1, 2, 3, 4, 5].map((k) => (
-                <g>
-                  <rect class="s-bay" x={315 + k * 29} y={r.y + 2} width="26" height={r.h - 4} rx="1" />
-                  <circle class="s-thin" cx={321 + k * 29} cy={r.y + r.h / 2} r="3" />
-                </g>
-              ))}
-            </g>
-          ))}
-          <rect class="focus-ring" x="309" y={focusTray.y - 3} width="182" height={focusTray.h + 6} rx="3" />
-        </g>
-        <g data-at="10">
-          {rows.filter((r) => r.kind === 'P').map((r) => <rect class="hl" x="312" y={r.y} width="176" height={r.h} rx="1.5" />)}
-          {rows.filter((r) => r.kind !== 'P').map((r) => <path class="tap" d={`M488 ${r.y + r.h / 2} H506`} />)}
-          <rect class="copper" x="506" y="46" width="8" height="470" rx="2" />
-          <path class="flow flow--v" d="M510 50 V512" />
-          <rect class="choke-ring" x="500" y="40" width="20" height="482" rx="6" />
-          <!-- inset: inside a power shelf -->
-          <rect class="inset" x="14" y="40" width="248" height="170" rx="8" />
-          <path class="leader" d="M262 100 L310 62" />
-          <path class="s-power" d="M24 140 H62" />
-          <path class="flow" d="M24 140 H62" />
-          <rect class="s-fill" x="62" y="116" width="96" height="48" rx="3" />
+        <path class="s-faint" d="M546 366 Q 566 336 600 318 Q 640 306 680 304 Q 720 294 760 296 L 800 292" />
+        <rect class="s-ground" x="0" y="420" width="800" height="140" />
+        <rect fill="url(#d-soil)" x="0" y="426" width="800" height="134" />
+        <path class="s-line" d="M0 420 H800" />
+        <path class="s-faint" d="M0 486 H800 M0 516 H800" />
+        <path class="s-thin" d={Array.from({ length: 20 }, (_, i) => `M${i * 42} 501 h18`).join(' ')} />
+        <g data-at="8">
+          <path class="s-fill" d="M126 420 Q 150 350 142 284 H214 Q 206 350 230 420 Z" />
+          <path class="s-thin" d="M142 284 Q 178 290 214 284" />
+          <path class="s-fill" d="M20 420 Q 52 330 38 240 H136 Q 122 330 154 420 Z" />
+          <path class="s-thin" d="M38 240 Q 87 248 136 240" />
+          <path class="s-faint" d="M62 420 Q 76 330 64 244 M112 420 Q 98 330 110 244 M30 404 H144" />
+          <path class="s-faint steam" d="M50 236 c -20 -10 -10 -40 14 -38 c 4 -24 40 -26 50 -6 c 20 -8 36 10 26 28 c 14 10 4 30 -14 24" />
+          <path class="s-faint steam" d="M152 280 c -14 -8 -6 -30 10 -28 c 4 -18 30 -18 36 -4 c 16 -4 24 10 16 22" />
+          <rect class="s-fill" x="248" y="336" width="70" height="84" />
+          <path class="s-fill" d="M248 336 A35 30 0 0 1 318 336 Z" />
+          <path class="s-thin" d="M248 350 H318 M266 420 V396 H300 V420" />
+          <rect class="s-fill" x="318" y="352" width="92" height="68" />
+          <path class="s-thin" d="M314 352 H414 M330 366 H398 M330 372 H398" />
+          <rect class="s-fill2" x="336" y="342" width="10" height="10" /><rect class="s-fill2" x="370" y="342" width="10" height="10" />
+          <path class="s-line" d="M418 420 V372 M440 420 V372 M414 378 H444" />
+          <rect class="s-fill" x="420" y="400" width="16" height="20" />
+          {[0, 1].map((k) => <path class="s-wire" d={`M444 ${378 + k * 6} Q 464 ${390 + k * 6} 484 ${366 + k * 6}`} />)}
+          {[0, 1].map((k) => <path class="flow" d={`M444 ${378 + k * 6} Q 464 ${390 + k * 6} 484 ${366 + k * 6}`} />)}
+          <path class="s-line" d="M484 420 V360 M540 420 V360 M478 366 H546" />
+          <rect class="s-fill" x="494" y="396" width="16" height="24" /><rect class="s-fill" x="516" y="396" width="16" height="24" />
+          <path class="s-thin" d="M498 396 V388 M506 396 V388 M520 396 V388 M528 396 V388 M476 410 H552" />
+          <rect class="s-fill" x="580" y="344" width="200" height="76" />
+          <path class="s-thin" d={Array.from({ length: 7 }, (_, k) => `M${605 + k * 25} 344 V420`).join(' ') + ' M580 356 H780'} />
           {[0, 1, 2, 3, 4].map((k) => (
             <g>
-              <rect class="s-bay" x={66 + k * 18} y="120" width="15" height="40" rx="1" />
-              <circle class="s-thin" cx={73.5 + k * 18} cy="128" r="3.5" />
+              <rect class="s-fill" x={588 + k * 38} y="334" width="30" height="10" />
+              <circle class="s-thin" cx={596 + k * 38} cy="339" r="3" /><circle class="s-thin" cx={610 + k * 38} cy="339" r="3" />
             </g>
           ))}
-          <path class="tap" d="M158 140 H190" />
-          <rect class="copper" x="190" y="98" width="8" height="100" rx="2" />
-          <path class="flow flow--v" d="M194 102 V194" />
-          {[106, 130, 154, 178].map((y) => (
-            <g>
-              <path class="tap" d={`M198 ${y} H214`} />
-              <rect class="s-fill2" x="214" y={y - 6} width="38" height="12" rx="1.5" />
-            </g>
-          ))}
+          <path class="s-power" d="M532 420 V436 H640 V420" />
+          <path class="flow" d="M532 420 V436 H640 V420" />
         </g>
-        <g data-at="11">
-          {computeRows.map((r) => (
-            <>
-              <path class="hose hose--cool" d={`M281 ${r.y + 4} H312`} />
-              <path class="hose hose--warm" d={`M293 ${r.y + r.h - 4} H312`} />
-            </>
-          ))}
-          <!-- inset: one compute tray from above, a cold plate on each processor -->
-          <rect class="inset" x="14" y="300" width="248" height="226" rx="8" />
-          <rect class="s-fill" x="34" y="380" width="200" height="106" rx="3" />
-          <path class="s-thin" d="M40 476 H228" />
-          {[90, 156].map((x) => (
+        <g data-at="9">
+          <g class="truck">
+            <rect class="s-fill2" x="300" y="494" width="170" height="7" />
+            <rect class="fuel" x="314" y="452" width="140" height="42" rx="8" />
+            <path class="s-thin" d="M340 452 V494 M368 452 V494 M396 452 V494 M424 452 V494" />
+            <circle class="s-thin" cx="384" cy="473" r="9" /><circle class="s-thin" cx="384" cy="473" r="3" />
+            <path class="s-fill" d="M472 503 V470 H494 L508 486 V503 Z" />
+            <path class="s-fill2" d="M478 474 H492 L501 485 H478 Z" />
+            {[322, 344, 430, 452, 494].map((cx) => <circle class="s-fill" cx={cx} cy="507" r="7" />)}
+          </g>
+          <path class="leader" d="M604 212 L430 450" />
+          <rect class="inset" x="540" y="22" width="246" height="190" rx="8" />
+          <path class="s-thin" d="M552 106 H782 M552 194 H782" />
+          {Array.from({ length: 16 }, (_, k) => 556 + k * 13.6).map((x) => (
             <g>
-              <rect class="cplate" x={x} y="398" width="48" height="48" rx="3" />
-              <path class="s-thin" d={`M${x + 8} 406 H${x + 40} V414 H${x + 8} V422 H${x + 40} V430 H${x + 8} V438 H${x + 40}`} />
+              <path class="s-thin" d={`M${x + 4} 106 V112 M${x + 4} 186 V194`} />
+              <rect class="centrifuge" x={x} y="112" width="8" height="74" rx="4" />
             </g>
           ))}
-          <path class="hose hose--cool" d="M277 410 H204" />
-          <path class="hose hose--warm" d="M156 422 H138" />
-          <path class="hose hose--warm" d="M90 434 H60 V466 H289" />
-          <path class="flow flow--cool" d="M277 410 H204" />
-          <path class="flow flow--warm" d="M90 434 H60 V466 H289" />
-          <rect class="pipe--cool" x="274" y="46" width="7" height="470" rx="3.5" />
-          <rect class="pipe--warm" x="286" y="46" width="7" height="470" rx="3.5" />
-          <path class="flow flow--white" d="M277.5 50 V512" />
-          <path class="flow flow--white" d="M289.5 512 V50" />
+          <path class="flow" d="M552 106 H782" />
+          <rect class="choke-ring" x="534" y="16" width="258" height="202" rx="10" />
         </g>
       </svg>
-      <div class="lbl" data-at="9" style={`left:66%;top:${(computeRows[1].y / 560 * 100).toFixed(1)}%`}><b>Compute trays</b><span>72 processors in all</span></div>
-      <div class="lbl" data-at="9" style="left:66%;top:53%"><b>Switch trays</b><span>join them into one machine</span></div>
-      <div class="lbl" data-at="10" style="left:3%;top:12.5%;max-width:29%"><b>Power shelves</b><span>turn AC into 54 volts DC for a copper bar to every tray</span></div>
-      <div class="lbl" data-at="10" style="left:66%;top:80%"><em class="ck">Choke point</em><b>Copper busbar</b><span>at a megawatt per rack, it stops fitting</span></div>
-      <div class="lbl" data-at="11" style="left:3%;top:59%;max-width:29%"><b>Liquid cooling</b><span>a cold plate on each processor: cool in, warm out</span></div>
-      <div class="lbl" data-at="11" style="left:3%;top:90%;max-width:29%"><em class="ck">A typical rack drew about 7.5 kW; this one about 120</em></div>
+      <div class="lbl lbl--mid" data-at="8" style="left:35.5%;top:52%"><b>Existing reactor</b><span>a licensed site, a grid connection and ordinary fuel</span></div>
+      <div class="lbl lbl--mid" data-at="8" style="left:13%;top:80%"><b>Cooling towers</b></div>
+      <div class="lbl lbl--mid" data-at="8" style="left:64%;top:58%"><b>Substation</b></div>
+      <div class="lbl lbl--mid" data-at="8" style="left:85%;top:82%"><b>Data centre</b></div>
+      <div class="lbl lbl--mid" data-at="9" style="left:48%;top:96%"><b>Microreactor</b><span>built in a factory, driven to the site on a trailer</span></div>
+      <div class="lbl lbl--mid" data-at="9" style="left:82.9%;top:10.5%;max-width:30%"><em class="ck">Choke point</em><b>HALEU fuel</b><span>uranium enriched to just under 20 per cent; America's one line has 16 centrifuges</span></div>
     </div>
 
-    <!-- 7 · THE WHOLE CHAIN ─────────────────────────────────────────── -->
-    <div class="scene scene--html" data-name="The whole chain" data-scale="From the grid to the rack">
-      <div class="panel funnel" data-at="12">
-        <p class="panel-h">One chain, from the grid to the rack</p>
-        {funnel.map((l, i) => (
-          <a class={`fband fband--${l.kind}`} href={`#${l.id}`} style={`--w:${l.w}%;--d:${i * 70}ms`}>
-            <span>{l.name}</span><small>{l.n} {l.n === 1 ? 'piece' : 'pieces'}</small>
+    <!-- 6 · THE WHOLE CHAIN ─────────────────────────────────────────── -->
+    <div class="scene scene--html" data-name="The whole chain" data-scale="From the grid to the reactor">
+      <div class="panel funnel" data-at="10">
+        <p class="panel-h">One question, seven chapters</p>
+        {chain.map((c, i) => (
+          <a class="fband fband--energy" href={`/journal/${c.slug}/`} style={`--w:${100 - i * 6}%;--d:${i * 70}ms`}>
+            <span>{c.n} · {c.name}</span>
           </a>
         ))}
-        <p class="panel-foot">Each band opens that layer below, with its deep pieces.</p>
+        <p class="panel-foot">Every route to the next gigawatt for AI runs through a queue.</p>
       </div>
     </div>
 
@@ -578,88 +488,76 @@ const n = (i: number) => String(i).padStart(2, '0');
 
   <div class="d-steps">
     <div class="step" data-scene="0"><div class="card">
-      <p class="kick kick--energy">{n(1)} · {grid.name}</p>
+      <p class="kick kick--energy">Chapter {ch('the-queue-not-the-chip').n} · {ch('the-queue-not-the-chip').name}</p>
       <h2>It starts with a wire</h2>
-      <p>Power for an AI data centre arrives the way it arrives anywhere else: over high-voltage lines from the public grid.</p>
+      <p>Power for an AI data centre arrives over high-voltage lines from the public grid. In Johor and Singapore, the right to draw that power, not the supply of chips, now decides who gets to build.</p>
+      <ul class="reads">{read('the-queue-not-the-chip').map((r) => <li><a href={r.href}>{r.title}</a></li>)}</ul>
     </div></div>
     <div class="step" data-scene="0"><div class="card">
-      <p class="kick kick--energy">{n(1)} · {grid.name}</p>
-      <h2>The substation is the gate</h2>
-      <p>{grid.what}</p>
+      <p class="kick kick--energy">Chapter {ch('america-rations-the-plug').n} · {ch('america-rations-the-plug').name}</p>
+      <h2>The grid rations the plug</h2>
+      <p>{grid.what} In America the grid now decides who waits, who is cut first and who pays.</p>
       <p class="binds"><strong>What binds.</strong> {grid.constraint}</p>
-      <ul class="reads">{reads(grid.pieces).map((r) => <li><a href={r.href}>{r.title}</a></li>)}</ul>
+      <ul class="reads">{read('america-rations-the-plug').map((r) => <li><a href={r.href}>{r.title}</a></li>)}</ul>
     </div></div>
 
     <div class="step" data-scene="1"><div class="card">
-      <p class="kick kick--energy">{n(2)} · {equip.name}</p>
+      <p class="kick kick--energy">Chapter {ch('the-equipment-queue').n} · {ch('the-equipment-queue').name}</p>
       <h2>The machines at the gate</h2>
       <p>{equip.what}</p>
     </div></div>
     <div class="step" data-scene="1"><div class="card">
-      <p class="kick kick--energy">{n(2)} · {equip.name}</p>
+      <p class="kick kick--energy">Chapter {ch('the-equipment-queue').n} · {ch('the-equipment-queue').name}</p>
       <h2>Built to order, not to stock</h2>
-      <p>Nothing switches on without them, and they are made in a handful of factories.</p>
+      <p>Nothing switches on without them, and they are made in a handful of factories, so the grid cannot simply build its way out.</p>
       <p class="binds"><strong>What binds.</strong> {equip.constraint}</p>
-      <ul class="reads">{reads(equip.pieces).map((r) => <li><a href={r.href}>{r.title}</a></li>)}</ul>
+      <ul class="reads">{read('the-equipment-queue').map((r) => <li><a href={r.href}>{r.title}</a></li>)}</ul>
     </div></div>
 
     <div class="step" data-scene="2"><div class="card">
-      <p class="kick kick--energy">{n(3)} · {nuke.name}</p>
-      <h2>Power that runs all year</h2>
-      <p>{nuke.what}</p>
+      <p class="kick kick--energy">Chapter {ch('building-your-own-power').n} · {ch('building-your-own-power').name}</p>
+      <h2>So build power next door</h2>
+      <p>Builders skip the grid and make their own power beside the building: gas turbines, engines and fuel cells.</p>
     </div></div>
     <div class="step" data-scene="2"><div class="card">
-      <p class="kick kick--energy">{n(3)} · {nuke.name}</p>
-      <h2>The reactor is the easy part</h2>
-      <p>Microreactors are small enough to build in a factory and drive to a site. What paces them is the fuel, not the machine.</p>
-      <p class="binds"><strong>What binds.</strong> {nuke.constraint}</p>
-      <ul class="reads">{reads(nuke.pieces).map((r) => <li><a href={r.href}>{r.title}</a></li>)}</ul>
+      <p class="kick kick--energy">Chapter {ch('building-your-own-power').n} · {ch('building-your-own-power').name}</p>
+      <h2>And meet the turbine queue</h2>
+      <p>The heavy gas turbine is the core machine, and its makers are selling slots in 2032.</p>
+      <p class="binds"><strong>What binds.</strong> Skipping the grid queue means joining the turbine makers' queue instead.</p>
+      <ul class="reads">{read('building-your-own-power').map((r) => <li><a href={r.href}>{r.title}</a></li>)}</ul>
     </div></div>
 
     <div class="step" data-scene="3"><div class="card">
-      <p class="kick kick--energy">{n(4)} · {onsite.name}</p>
-      <h2>The site, up close</h2>
-      <p>Close up, the site is more than one building. The grid connection is one way in, and more sites now add a second.</p>
+      <p class="kick kick--energy">Chapter {ch('solar-and-batteries').n} · {ch('solar-and-batteries').name}</p>
+      <h2>The fastest power there is</h2>
+      <p>Solar farms and batteries are most of what America planned to build in 2026. A battery takes about a year, a solar farm about two, and nobody waits on a sold-out turbine.</p>
     </div></div>
     <div class="step" data-scene="3"><div class="card">
-      <p class="kick kick--energy">{n(4)} · {onsite.name}</p>
-      <h2>Making power next door</h2>
-      <p>{onsite.what}</p>
-      <p class="binds"><strong>What binds.</strong> {onsite.constraint}</p>
-      <ul class="reads">{reads(onsite.pieces).map((r) => <li><a href={r.href}>{r.title}</a></li>)}</ul>
+      <p class="kick kick--energy">Chapter {ch('solar-and-batteries').n} · {ch('solar-and-batteries').name}</p>
+      <h2>But not through a winter night</h2>
+      <p>An AI data centre draws nearly the same power at 3am as at 3pm. PJM counts a megawatt of tracking solar as 7 per cent of a firm one, and a four-hour battery as 57 per cent.</p>
+      <p class="binds"><strong>What binds.</strong> A four-hour battery reaches the evening, not the night, so buyers turn to power that runs all year.</p>
+      <ul class="reads">{read('solar-and-batteries').map((r) => <li><a href={r.href}>{r.title}</a></li>)}</ul>
     </div></div>
 
     <div class="step" data-scene="4"><div class="card">
-      <p class="kick kick--energy">{n(5)} · {dist.name}</p>
-      <h2>Inside the building</h2>
-      <p>{dist.what}</p>
-      <p>Switchgear and batteries fill one room. Copper busways carry power overhead to every rack, and coolant runs beneath the floor.</p>
+      <p class="kick kick--energy">Chapter {ch('nuclear-for-ai').n} · {ch('nuclear-for-ai').name}</p>
+      <h2>Power that runs all year</h2>
+      <p>{nuke.what}</p>
+      <ul class="reads">{read('nuclear-for-ai').map((r) => <li><a href={r.href}>{r.title}</a></li>)}</ul>
+    </div></div>
+    <div class="step" data-scene="4"><div class="card">
+      <p class="kick kick--energy">Chapter {ch('microreactors').n} · {ch('microreactors').name}</p>
+      <h2>The reactor is the easy part</h2>
+      <p>Microreactors are small enough to build in a factory and drive to a site. What paces them is the fuel, not the machine.</p>
+      <p class="binds"><strong>What binds.</strong> {nuke.constraint}</p>
+      <ul class="reads">{read('microreactors').map((r) => <li><a href={r.href}>{r.title}</a></li>)}</ul>
     </div></div>
 
     <div class="step" data-scene="5"><div class="card">
-      <p class="kick kick--energy">{n(6)} · One rack</p>
-      <h2>Where all that power ends up</h2>
-      <p>Nvidia's flagship rack packs 72 processors and their switches into one cabinet. Everything above, from the grid to the busway, exists to feed racks like this.</p>
-    </div></div>
-    <div class="step" data-scene="5"><div class="card">
-      <p class="kick kick--energy">{n(6)} · {dist.name}</p>
-      <h2>Power down the back</h2>
-      <p>Each rack is fed from a copper bar running down its back, with power shelves converting the supply for the trays.</p>
-      <p class="binds"><strong>What binds.</strong> {dist.constraint}</p>
-      <ul class="reads">{reads(dist.pieces).map((r) => <li><a href={r.href}>{r.title}</a></li>)}</ul>
-    </div></div>
-    <div class="step" data-scene="5"><div class="card">
-      <p class="kick kick--energy">{n(6)} · {cool.name}</p>
-      <h2>And every watt comes back as heat</h2>
-      <p>{cool.what}</p>
-      <p class="binds"><strong>What binds.</strong> {cool.constraint}</p>
-      <ul class="reads">{reads(cool.pieces).map((r) => <li><a href={r.href}>{r.title}</a></li>)}</ul>
-    </div></div>
-
-    <div class="step" data-scene="6"><div class="card">
-      <p class="kick kick--energy">{n(7)} · The whole chain</p>
-      <h2>All of it, for one answer on your screen</h2>
-      <p>The grid, the machines at the gate, the reactors and turbines, the copper and the coolant: each layer exists to feed the rack. The slowest one sets the date for all the rest.</p>
+      <p class="kick kick--energy">The whole chain</p>
+      <h2>Every answer is a queue</h2>
+      <p>The grid, the machines at the gate, the turbines, the winter night and the reactors' fuel: each way to the next gigawatt for AI has a queue of its own. The slowest one sets the date.</p>
     </div></div>
   </div>
 </div>
@@ -910,6 +808,16 @@ const n = (i: number) => String(i).padStart(2, '0');
   @keyframes flow { to { stroke-dashoffset: -16; } }
   .choke-ring { fill: none; stroke: var(--bad); stroke-width: 1.6; stroke-dasharray: 5 4; animation: pulse 1.8s ease-in-out infinite; }
   @keyframes pulse { 50% { opacity: 0.3; } }
+
+  .pv { fill: color-mix(in srgb, #1e3a8a 55%, var(--bg-elev)); stroke: var(--ink-2); stroke-width: .8; }
+  .sun { fill: #f59e0b; }
+  .sun-ray { fill: none; stroke: #f59e0b; stroke-width: 2; stroke-linecap: round; }
+  .night { fill: #0b1530; opacity: .86; }
+  .night--ground { opacity: .45; }
+  .star { fill: #fde68a; }
+  .moon { fill: #e5e7eb; }
+  .lit { fill: #fbbf24; }
+  .charge { fill: var(--bad); }
 
   /* reveals */
   .descent.dj [data-at] { opacity: 0; transition: opacity .6s ease; }

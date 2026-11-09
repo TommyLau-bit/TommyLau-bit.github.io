@@ -2,26 +2,22 @@
 import Base from '../layouts/Base.astro';
 import Descent from '../components/Descent.astro';
 import { getCollection } from 'astro:content';
-import { SITE } from '../config';
 import { fmtDate } from '../utils';
-import { STACK, layerOf } from '../data/stack';
+import { CHAPTERS, layerOf } from '../data/stack';
 const all = await getCollection('journal', ({ data }) => !data.draft);
-const posts = all.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 const byId = Object.fromEntries(all.map((p) => [p.id, p]));
-// one section per layer, grid to rack; pieces in stack.ts order within each (best entry point first).
-// A piece listed under two layers shows once, under its home layer (layerOf).
-// Every layer keeps its section (and its #id anchor, which the descent and the
-// rest of the site link to), even one whose only piece lives under another layer.
-const layers = STACK.map((l) => ({
-  ...l,
-  posts: posts.filter((p) => layerOf(p.id)?.id === l.id).sort((a, b) => l.pieces.indexOf(a.id) - l.pieces.indexOf(b.id)),
-  also: l.pieces.map((id) => byId[id]).filter((p) => p && layerOf(p.id)?.id !== l.id),
-})).filter((l) => l.posts.length > 0 || l.also.length > 0).map((l, i) => ({ ...l, n: String(i + 1).padStart(2, '0') }));
-const mapped = new Set(STACK.flatMap((l) => l.pieces));
-const other = posts.filter((p) => !mapped.has(p.id));
-const homeOf = (id: string) => layers.find((l) => l.id === layerOf(id)?.id);
-// "The equipment queue: transformer makers..." shows as a headline with a line
-// under it, so each row reads as an article rather than a line of link text.
+// The story in seven chapters (stack.ts CHAPTERS), each handing off to the next.
+// The first chapter of each layer also carries that layer's #id, which the descent
+// and old /map/#layer links land on.
+const seen = new Set<string>();
+const chapters = CHAPTERS.filter((c) => byId[c.slug]).map((c, i) => {
+  const layer = layerOf(c.slug);
+  const anchor = layer && !seen.has(layer.id) ? (seen.add(layer.id), layer.id) : undefined;
+  return { ...c, n: i + 1, p: byId[c.slug], layer, anchor };
+});
+const mapped = new Set(CHAPTERS.map((c) => c.slug));
+const other = all.filter((p) => !mapped.has(p.id)).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+// "The equipment queue: transformer makers..." shows as a headline with a line under it.
 const split = (t: string) => {
   const m = t.match(/^(.+?)(?::\s|\.\s)(.+)$/);
   return m ? [m[1], m[2].charAt(0).toUpperCase() + m[2].slice(1)] : [t, ''];
@@ -30,23 +26,19 @@ const split = (t: string) => {
 <Base wide>
   <section class="hero hero--compact">
     <h1>AI's limit is power.</h1>
-    <p>Demand for power has outrun the grid, so data centres look for a faster way in or build their own. Every way around the grid has its own queue: the equipment makers, the turbine makers, the reactors' fuel and the cooling. This journal follows that one problem from the grid connection down to the rack, from primary sources.</p>
-    <p class="hero-start">Read the pieces below, or <a href="#descent">follow the power down</a> from the grid to the rack.</p>
+    <p>Demand for power has outrun the grid, so AI data centres look for a faster way in or build their own. Every way around the grid has its own queue: the equipment makers, the turbine makers, the winter night and the reactors' fuel. This journal follows that one problem in seven chapters, from the grid connection to the reactor, from primary sources.</p>
+    <p class="hero-start">Read the chapters in order, or <a href="#descent">follow the power</a> stop by stop.</p>
   </section>
 
-  <section class="home-list" aria-label="The pieces, from the grid to the rack">
+  <section class="home-list" aria-label="The story in seven chapters">
     <ol class="home-rows">
-      {layers.map((l) => (
-        <li class={`home-row home-row--${l.kind}`} id={l.id}>
-          <p class="home-row-n">Layer {l.n} · {l.name}</p>
+      {chapters.map((c) => (
+        <li class="home-row home-row--energy" id={c.slug}>
+          {c.anchor && <span class="home-anchor" id={c.anchor}></span>}
+          <p class="home-row-n">Chapter {c.n}{c.layer && <> · {c.layer.name}</>}</p>
           <ul class="home-row-pieces">
-            {l.posts.map((p) => (
-              <li class="home-piece"><a href={`/journal/${p.id}/`}><span class="home-piece-h">{split(p.data.title)[0]}</span>{split(p.data.title)[1] && <span class="home-piece-d">{split(p.data.title)[1]}</span>}</a><time datetime={p.data.date.toISOString()}>{fmtDate(p.data.date)}</time></li>
-            ))}
-            {l.also.map((p) => {
-              const h = homeOf(p.id);
-              return <li class="home-row-also">Covered in <a href={`/journal/${p.id}/`}>{p.data.title}</a>{h && <>, under <a href={`#${h.id}`}>Layer {h.n}</a></>}.</li>;
-            })}
+            <li class="home-piece"><a href={`/journal/${c.slug}/`}><span class="home-piece-h">{split(c.p.data.title)[0]}</span>{split(c.p.data.title)[1] && <span class="home-piece-d">{split(c.p.data.title)[1]}</span>}</a><time datetime={c.p.data.date.toISOString()}>{fmtDate(c.p.data.date)}</time></li>
+            <li class="home-next">{c.next}</li>
           </ul>
         </li>
       ))}
@@ -61,6 +53,6 @@ const split = (t: string) => {
     </ol>
   </section>
 
-  <p class="home-walk">Or follow the power down, stop by stop.</p>
+  <p class="home-walk">Or follow the power, stop by stop.</p>
   <Descent />
 </Base>

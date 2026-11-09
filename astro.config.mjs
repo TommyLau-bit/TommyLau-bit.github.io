@@ -18,6 +18,8 @@ const REDIRECTS = {
   '/journal': '/',
   // the orbit piece was removed when the site narrowed to power for AI data centres (Tommy, 9 Nov 2026)
   '/journal/data-centres-in-space': '/',
+  '/journal/powering-the-rack': '/',
+  '/journal/heat-and-water': '/',
   // the company slug once kept the umlaut as a hyphen (2 Nov 2026)
   '/companies/wa-rtsila': '/companies/wartsila/',
   // the-queue-not-the-chip
@@ -61,14 +63,14 @@ const REDIRECTS = {
   '/journal/oklo-sells-the-electricity': '/journal/nuclear-for-ai/#oklo-sells-the-electricity',
   '/journal/palisades-waits-on-the-reactor': '/journal/nuclear-for-ai/#palisades-waits-on-the-reactor',
   '/journal/terrapower-waits-on-the-fuel': '/journal/nuclear-for-ai/#terrapower-waits-on-the-fuel',
-  // powering-the-rack
-  '/journal/every-megawatt-got-harder': '/journal/powering-the-rack/#every-megawatt-got-harder',
-  '/journal/the-rack-runs-out-of-copper': '/journal/powering-the-rack/#the-rack-runs-out-of-copper',
-  '/journal/ti-feeds-the-chip': '/journal/powering-the-rack/#ti-feeds-the-chip',
-  // heat-and-water
-  '/journal/cooling-is-half-the-job': '/journal/heat-and-water/#cooling-is-half-the-job',
-  '/journal/room-to-spare': '/journal/heat-and-water/#room-to-spare',
-  '/journal/water-is-a-siting-problem': '/journal/heat-and-water/#water-is-a-siting-problem',
+  // powering-the-rack (removed 9 Nov 2026: one chain, grid to reactor)
+  '/journal/every-megawatt-got-harder': '/',
+  '/journal/the-rack-runs-out-of-copper': '/',
+  '/journal/ti-feeds-the-chip': '/',
+  // heat-and-water (removed 9 Nov 2026: one chain, grid to reactor)
+  '/journal/cooling-is-half-the-job': '/',
+  '/journal/room-to-spare': '/',
+  '/journal/water-is-a-siting-problem': '/',
   // retired 7 Nov 2026 (depth over breadth): the three chip pieces and everything merged into them land on the homepage
   '/journal/ten-thousand-chips-one-thought': '/',
   '/journal/the-chip-supply-chain': '/',
