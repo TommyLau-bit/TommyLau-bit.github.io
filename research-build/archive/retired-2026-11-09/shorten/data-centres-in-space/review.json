@@ -1,0 +1,62 @@
+{
+ "slug": "data-centres-in-space",
+ "verdict": "better",
+ "why": "AFTER gets to the point faster. The roadmap paragraph is gone, the regulator and \"who is paid\" sections are folded into the investor section, and the radiator physics moves along more briskly, while the spine, the claim, both falsifiers and every chart survive. The cuts did leave a few seams: two hedges were dropped (the Starlink power figure covers the whole craft, and the interview does not say what its W/m\u00b2 unit is), there is a temperature comparison where one figure counts the Earth's glow and the other does not, and a few names (Starcloud, Google's paper, Redwire, \"both prototypes\") lost their introductions. All of these are one-line fixes using wording from BEFORE.",
+ "issues": [
+  {
+   "kind": "factual-distortion",
+   "quote": "Its 175 kW over 160 square metres is about 1,090 watts per square metre, which the same panel sheds near 54\u00b0C once the Earth's own infrared glow is counted, my arithmetic.",
+   "fix": "This 54\u00b0C counts the Earth's glow, but the 67\u00b0C before it does not, so the gap between SpaceX's two figures looks smaller than it is. Restore the like-for-like figure from BEFORE: \"which the same panel sheds near 47\u00b0C in deep shade, or near 54\u00b0C once the Earth's glow is counted, my arithmetic.\" Optionally also restore \"To shed 1,400 watts net, it must then run near 73\u00b0C.\""
+  },
+  {
+   "kind": "factual-distortion",
+   "quote": "Read as watts per square metre of panel, a shaded two-sided panel at emissivity 0.92 sheds that only near 67\u00b0C, on my arithmetic.",
+   "fix": "The hedge that the interview does not give the unit was dropped. Restore it: \"Read as watts per square metre of panel, which the interview does not specify, a shaded two-sided panel...\""
+  },
+  {
+   "kind": "factual-distortion",
+   "quote": "For comparison, Google's paper estimates a Starlink V2 mini, one of SpaceX's internet satellites, at about 49 kW per tonne for the whole craft.",
+   "fix": "Without the caveat, this reads as a computing figure comparable to 58 and 75. Restore: \"...at 575 kg and about 28 kW. That is about 49 kW per tonne for the whole craft, and only part of that power goes to anything like computing.\""
+  },
+  {
+   "kind": "dangling-reference",
+   "quote": "SpaceX flew both computing prototypes now in orbit and designs its own satellite, which makes it toll keeper and competitor at once.",
+   "fix": "No earlier sentence in AFTER mentions any prototypes, so \"both\" has nothing to point at. Name them as BEFORE did: \"SpaceX flew both computing prototypes now in orbit, Starcloud's and Google's, and also designs its own computing satellite, which makes it toll keeper and competitor at once.\""
+  },
+  {
+   "kind": "term-undefined",
+   "quote": "At the cold end, Starcloud's white paper nets 633 watts per square metre from a panel at 20\u00b0C;",
+   "fix": "Starcloud is now first named in the body here, with no explanation. Restore the description BEFORE gave in the orbit section: \"Google's design uses it, and Starcloud, a start-up building computing satellites, has filed for it.\" Or add \"Starcloud, a start-up building computing satellites,\" at this point."
+  },
+  {
+   "kind": "term-undefined",
+   "quote": "For comparison, Google's paper estimates a Starlink V2 mini",
+   "fix": "The sentence introducing Google's research paper was cut. AFTER still cites \"Google's paper\", \"a preprint's 500 watts per kilogram\" and the \"Suncatcher paper\" caption. Restore: \"Its research paper, 'Towards a future space-based, highly scalable AI infrastructure system design', sketches 81 satellites flying in formation at about 650 kilometres...\""
+  },
+  {
+   "kind": "lost-key-point",
+   "quote": "counting the Earth's glow properly, on my arithmetic, the net falls to about 585.",
+   "fix": "\"Properly\" tells the reader Starcloud is wrong without saying why. Restore the reason briefly: \"Its sum counts the Earth's glow at about 14 watts, using the coating's absorption of sunlight; in the infrared a surface absorbs at its emissivity, about 0.92, so on my arithmetic the Earth adds about 63 watts and the net falls to about 585.\""
+  },
+  {
+   "kind": "lost-key-point",
+   "quote": "**The lightweight makers**, of arrays, radiators and heat pipes, gain if orbit works at all, because every kilogram they save is a launch fare saved.",
+   "fix": "An analyst loses every named company in this layer. Redwire also appears in the radiator chart caption with no introduction. Add one sentence from BEFORE: \"Astro Digital built Starcloud-1, and Planet built Google's prototype with Google; Redwire makes roll-out arrays.\" Optionally add the chip lever too: \"A chip that runs hotter makes the radiator smaller.\""
+  },
+  {
+   "kind": "lost-key-point",
+   "quote": "The readings are specific. SpaceX's quarterly reports, for a satellite mass and kilowatts.",
+   "fix": "The cut regulator section held the evidence that this disclosure is pending. Restore one sentence: \"The SEC asked SpaceX in April 2026 for the 'power-to-mass ratios' behind its goal and the 'total system mass'; the prospectus said the figures 'continue to be refined'.\""
+  },
+  {
+   "kind": "style",
+   "quote": "And the fare recurs: a satellite flown on a five-year life must be launched again when it wears out, while on the ground the hall and its [grid gear outlast three or four chip generations](/journal/the-equipment-queue/).",
+   "fix": "About 35 words, well over the 20-word house limit. Split it as BEFORE did: \"And the fare recurs. A satellite flown on a five-year life must be launched again when it wears out. On the ground, the hall and its grid gear outlast three or four chip generations.\""
+  },
+  {
+   "kind": "style",
+   "quote": "**The launcher**, paid per kilogram, gains whether orbit works or not; SpaceX flew both computing prototypes now in orbit and designs its own satellite, which makes it toll keeper and competitor at once.",
+   "fix": "About 33 words, and the next bullet (\"The ground plug ... 'may be materially diminished'\") is similar. Break each one at the semicolon into two sentences."
+  }
+ ]
+}

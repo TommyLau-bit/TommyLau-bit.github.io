@@ -1,0 +1,72 @@
+{
+ "slug": "building-your-own-power",
+ "verdict": "better",
+ "why": "AFTER is about 40 per cent shorter. It drops the roadmap paragraph, the behind-the-meter taxonomy, the heat-rate maths, the xAI case and the rental fleets, so the spine (turbine queue, then fast lane, then pipe, then permit) reads faster with less to hold in mind. Every number I checked carries over correctly. The cuts did leave a few seams. One pronoun now points at EIA, a Mitsubishi statement has moved to the wrong quarter, two hedges are gone (\"Williams does not say why\", the second Hyperion agreement's pending vote), and Energy Transfer and take-or-pay first appear only in the investor section. All are one-line fixes.",
+ "issues": [
+  {
+   "kind": "broken-flow",
+   "quote": "EIA, the Energy Information Administration, is the government's energy statistics office.\n\nThen it stopped.",
+   "fix": "Fold the definition inline and restore the subject: \"In the generator inventory of the Energy Information Administration (EIA), the government's energy statistics office, about 238 GW of gas capacity entered service across 2000 to 2005, by my sums.\" Then: \"The makers had built for the boom, and then it stopped.\""
+  },
+  {
+   "kind": "factual-distortion",
+   "quote": "It said orders booked in the latest quarter were due between 2028 and 2030, and that \"Order pricing has not declined\".",
+   "fix": "BEFORE dates this to the August call, not to the 6 November report: \"According to the company's summary of its August call, orders booked in that quarter were due between 2028 and 2030, and \"Order pricing has not declined\".\""
+  },
+  {
+   "kind": "factual-distortion",
+   "quote": "That is 1.39 MW built for each MW committed, by my arithmetic.",
+   "fix": "Restore the hedge so the ratio is not read as proof of the spares hypothesis: \"That is 1.39 MW built for each MW committed, by my arithmetic. Williams does not say why.\""
+  },
+  {
+   "kind": "factual-distortion",
+   "quote": "Williams' five on-site plants, including Socrates, come to about US$3,500 per kilowatt, my arithmetic from a financing that may include pipe.",
+   "fix": "The figure may include pipe, not the financing: \"come to about US$3,500 per kilowatt of all their expected capital, my arithmetic from a financing in which outside investors paid for 49 per cent; it may include pipe.\""
+  },
+  {
+   "kind": "factual-distortion",
+   "quote": "contract liabilities and current deferred income doubled from US$16.5 billion at the end of 2025 to US$33.2 billion at 30 September 2026, mainly down payments on gas orders and reservations.",
+   "fix": "BEFORE ties the rise, not the whole balance, to gas down payments, and the segment includes nuclear, hydro and steam: \"In its Power segment, which holds gas turbines with its nuclear, hydro and steam businesses, contract liabilities ... doubled ... Its quarterly report ties the rise mainly to down payments on gas orders and reservations.\""
+  },
+  {
+   "kind": "factual-distortion",
+   "quote": "A second agreement adds seven combined-cycle plants, 5,278 MW, for 2030 and 2031.",
+   "fix": "Restore that it is not yet approved: \"A second agreement, signed in March 2026, adds seven combined-cycle plants, 5,278 MW, for 2030 and 2031. Its vote is set for December 2026.\""
+  },
+  {
+   "kind": "broken-flow",
+   "quote": "The campus is leased to Meta from 2029 for an initial four years, renewable to 20, so the plants are built to last decades on a lease that can be shorter.",
+   "fix": "The lease point no longer leads anywhere. Restore its frame from BEFORE: \"The utility route moves the risk rather than removing it. Meta's power agreement with Entergy carries minimum charges and an exit fee.\" Then the lease sentence, ending \"and the minimum charges and exit fee are what protect the utility's other customers.\""
+  },
+  {
+   "kind": "lost-key-point",
+   "quote": "It expects at least 130 GW by the end of 2026. In the first nine months of 2026 it signed 52 GW of new contracts and shipped about 13 GW.",
+   "fix": "13 GW in nine months looks like it contradicts the stated 20 GW a year. Restore: \"The 20 GW a year is the pace it reached in the third quarter, when it shipped 5.3 GW; calendar 2026 shipments will be nearer 18 GW, by my estimate.\""
+  },
+  {
+   "kind": "dangling-reference",
+   "quote": "Its rivals include Precision Castparts, owned by Berkshire Hathaway. On its results call, as transcribed by a third party, its chief executive said \"2031 is now also sold out\"",
+   "fix": "\"its\" now reads as Precision Castparts or Berkshire. Name the company: \"On Howmet's results call, as transcribed by a third party, its chief executive said...\""
+  },
+  {
+   "kind": "term-undefined",
+   "quote": "**The pipelines**, Kinder Morgan, Williams and Energy Transfer, hold the fuel on take-or-pay contracts, paid whether or not the campus runs.",
+   "fix": "Energy Transfer and take-or-pay first appear here. In the pipe section, restore the definition (\"take-or-pay: the shipper pays a fixed monthly charge for its booked space whether or not it sends any gas\") and the line \"Energy Transfer, a Texas pipeline company, contracted about 900 million cubic feet a day to three Oracle data centres.\""
+  },
+  {
+   "kind": "term-undefined",
+   "quote": "Kinder Morgan's Permian Link, about 434 miles and about 2.8 Bcf/d",
+   "fix": "\"Kinder Morgan, another pipeline company, decided in October 2026 to build Permian Link, about 434 miles and about 2.8 Bcf/d.\""
+  },
+  {
+   "kind": "lost-key-point",
+   "quote": "When the pipes out are full, producers must pay buyers to take the gas.",
+   "fix": "Without the reason, the negative price looks odd. Add from BEFORE: \"...to take the gas, because shutting oil wells to stop it costs more.\""
+  },
+  {
+   "kind": "lost-key-point",
+   "quote": "GE Vernova's signings fell to 11 GW in the third quarter of 2026, from about 20 GW in each of the two quarters before, while its shipments rose. If signings keep falling",
+   "fix": "The section promises \"the strongest evidence against\", but only one point is left. Restore: \"Mitsubishi Heavy booked fewer large units in the half year than a year earlier. And all three makers are adding capacity.\""
+  }
+ ]
+}

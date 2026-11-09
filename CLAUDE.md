@@ -10,46 +10,19 @@ GitHub Pages, live at https://thephysicallayer.fyi
 scheduled, open flags, what was done each day). Rewrite its START HERE at the
 end of the session.
 
-## Research: initiation notes and calls (OFF THE SITE since 6 Nov 2026; see the JOURNAL ONLY banner. Kept for history.)
+## Retired machinery (deep clean, 9 Nov 2026)
 
-The site has a second core: Tommy's initiation notes, each a PDF in his house
-style with its live Excel model, listed at `/research` like an investor-letters
-page. Each note has a short summary page at `/research/<slug>/` (call box,
-three to five key points, downloads, the claim it rests on). Tommy's
-direction (6 Oct 2026): the page is for analysts and PMs, the same pack he
-attaches to cold emails, so it stays clean and simple. No long web pitch, no
-charts on the web page; the depth lives in the PDF and the model. Before any
-work on notes, calls, the research page or share prices, read `CALLS-SPEC.md`.
+The research notes, the paper book, calls and the daily scan are gone from the repo; their
+source is in `research-build/archive/research-page-2026-11-06/` (with `CALLS-SPEC.md` and the
+note build folders in `notes/`) and the full instructions as they were are in
+`research-build/archive/retired-2026-11-09/CLAUDE.pre-clean.md`. Old note and company URLs
+redirect home from the fixed lists in `src/data/retired-urls.ts`; never add to them.
 
-- A note's text of record is `src/content/calls/<slug>.md`; the PDF and xlsx
-  are built from it with the template in `~/Desktop/jobs/research
-  coverage/_note_template/` (scripts kept in `research-build/<slug>/`) and
-  saved in `public/research/`. A draft has `draft: true`, the call fields null
-  and Claude's view in `draftView`. The call (LONG, SHORT or NO CALL) is set
-  at publish by the book's Sunday run or by Tommy in a session (6 Nov 2026);
-  the site no longer shows it, but the build fails a non-draft note without it.
-  **Every new note adds its base value and Yahoo symbol to `src/data/notes.ts`
-  and sets `layer:`**, or the book cannot trade it.
-- Notes are never rewritten after publication. Notes are no longer marked;
-  `src/data/calls.ts` is frozen history.
-- **No dated corrections, ever** (Tommy, 2 Nov 2026, permanent). When a fact
-  in a piece or a note is found wrong, edit it so it is simply right: the
-  sentence, the chart, the evidence table, the PDF. No "Correction" paragraphs,
-  no "Where I was wrong", no `correction` field (check-call.py fails one). The
-  claims in claims.ts are corrected in place when a fact in them is wrong (Tommy, 7 Nov 2026), never otherwise reworded; the archived original text
-  of merged pieces is never edited.
-- **Notes and pieces are independent** (Tommy, 2 Nov 2026, permanent; replaces
-  "journal piece first"). A note may cover a company the journal never
-  mentions, and need not rest on a claim (`claims` may be empty). Notes and
-  pieces do not need to match or reference each other.
-- When a journal piece publishes, ask Tommy whether to draft a note on it.
-- **The book** (Tommy, 6 Nov 2026): a US$100,000 paper portfolio, the Physical Layer Radar carried onto /research, run daily by Claude (task `physical-layer-book-daily`), publishing on its own. Rules in CALLS-SPEC.md "The book".
-- **The research page is the book plus the notes** (Tommy, 6 Nov 2026): the book is the only scorecard; the notes are a library showing what each found (base value in src/data/notes.ts) and where it stands in the book. The notes' own calls are no longer shown or marked. CALLS-SPEC.md "Research page".
-- The notes are no longer marked; the book is marked daily by `physical-layer-book-daily` (Tommy, 6 Nov 2026).
-
-## Finding and publishing new work: the daily scan (DISABLED since 6 Nov 2026; see the banner. Nothing publishes without Tommy.)
-
-Scheduled task `journal-daily-scan`, every day about 08:10. It searches in three tiers: primary sources first (filings, regulators, grid operators, the claims' watch lists), then Claude's own deep search for what is emerging (extended web search, trade press as leads only), then **Leo Cui's YouTube channel** (@Leo-cui-phd-cfa, Tommy's main inspiration) as an addition, never the main supply, with Watch Later on Wednesdays, and logs everything in `research-build/topics/`. **It publishes on its own, without Tommy's approval** (his instruction, 6 Nov 2026), but only what clears the three-part quality bar, at most one new deep piece and two updates in any seven days, and only after a separate fact-check, the checkers, a clean build and a link check all pass; then WRITING-FORMAT.md §8 in full, including the LinkedIn post on the company page. Publishing nothing is the normal day.
+- **No dated corrections, ever** (Tommy, 2 Nov 2026, permanent). When a fact in a piece is
+  found wrong, edit it so it is simply right: the sentence, the chart, the evidence table.
+  No "Correction" paragraphs, no "Where I was wrong", no `correction` field. The claims in
+  claims.ts are corrected in place when a fact in them is wrong (Tommy, 7 Nov 2026), never
+  otherwise reworded; the archived original text of merged pieces is never edited.
 
 ## Before writing or editing any piece, read `WRITING-FORMAT.md`
 
@@ -93,10 +66,9 @@ cover brief and LinkedIn post, is yours to write.
   books) may appear in a piece when they test or confirm the physical
   mechanism, dated and sourced to the filing. Never a share price, market
   value, valuation multiple, target, rating, recommendation, or claim that a
-  share is cheap or expensive, in a journal piece or on any page **except
-  research notes (`/research`, its note pages and PDFs, and the track record)**. Keep them out of
+  share is cheap or expensive, in a journal piece or on any page. Keep them out of
   the exposure map, which stays "what they make" only. See WRITING-FORMAT.md
-  §4a and CALLS-SPEC.md.
+  §4a.
 - **Never post to LinkedIn from Tommy's personal profile.** The company page
   only. Verify the composer identity reads "The Physical Layer" before submitting.
 - **Scheduling the LinkedIn post is the last step of publishing, and it is
@@ -181,7 +153,6 @@ LinkedIn company page and RSS.
 
 ```bash
 python3 brand/check-piece.py src/content/journal/<slug>.md
-python3 brand/check-call.py            # research notes
 DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/lib python3 brand/make-og.py
 npm run build
 ```

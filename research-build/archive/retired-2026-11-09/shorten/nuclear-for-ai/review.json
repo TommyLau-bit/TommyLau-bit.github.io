@@ -1,0 +1,72 @@
+{
+ "slug": "nuclear-for-ai",
+ "verdict": "better",
+ "why": "AFTER keeps the spine (four clocks, restarts and uprates first, HALEU as the gate), every chart and the falsifier, and drops the regulatory detail and side stories that slowed BEFORE, so an analyst reaches each section's point faster. The cost is a few cuts that leave a point half made: Hermes 2's undersized permit, the FERC co-location rules, the Georgia uprate's pending approval, and criticality being defined after it is used. None of these changes the claim, and each can be fixed by restoring a clause from BEFORE.",
+ "issues": [
+  {
+   "kind": "lost-key-point",
+   "quote": "Hermes 2's permit covers test reactors of 35 thermal megawatts each, and at a third efficiency even two cannot make 50 megawatts of electricity. Its fuel source is not yet named.",
+   "fix": "Restore the conclusion from BEFORE: \"...even two of them cannot make 50 megawatts of electricity, so the contract implies a larger plant the NRC has not yet been asked to license. Its fuel source is not yet named.\""
+  },
+  {
+   "kind": "broken-flow",
+   "quote": "So the claim is a bet that Kemmerer misses 2030 and that Hermes 2 does too.",
+   "fix": "Restore BEFORE's reason so the bet reads as argued, not asserted: \"...and that Hermes 2, with no named fuel and a permit too small for its contract, does too.\""
+  },
+  {
+   "kind": "factual-distortion",
+   "quote": "and Google for about 96 MW in Georgia. Together that is about 1,640 MW, on my sum.",
+   "fix": "Keep BEFORE's hedge: \"Google has signed for about 96 MW in Georgia, still awaiting state approval.\""
+  },
+  {
+   "kind": "broken-flow",
+   "quote": "more zero-power criticalities, which prove a reactor but not a fuel supply; and Darlington, which burns ordinary fuel and, if on time, supports the claim. Four pilot reactors reached **criticality**, a steady self-sustaining chain reaction, in 2026, all as physics tests at zero or very low power.",
+   "fix": "The term is used before it is defined, and the definition trails after the list as an afterthought. Move the definition back to the fuel section where BEFORE had it, after the Oklo/Kairos/X-energy paragraph: \"Between June and August 2026 four reactors in the Energy Department's pilot programme reached criticality, a steady self-sustaining chain reaction. All were physics tests at zero or very low power. None is connected to a grid.\" Then end the final paragraph at \"supports the claim.\""
+  },
+  {
+   "kind": "lost-key-point",
+   "quote": "So the deal moved in front of the meter: up to 1,920 MW through 2042, delivered through the grid. The exception is in Texas, where Vistra has a binding 20-year contract for 1,200 MW from Comanche Peak, with a campus planned beside the plant.",
+   "fix": "The section no longer says why deals now go through the grid, or what that means for the buyer. Restore one sentence on the FERC rules from BEFORE (\"In an order of 18 December 2025 FERC required a co-located data centre to take one of three transmission services; a plant adding co-located load must now be studied, pay for any grid upgrades, and wait for them.\"). Also restore the closing tie-back: \"Outside Texas, a nuclear deal for AI is a financial contract that adds carbon-free power to the same grid the data centre uses, matched on paper. That is exactly what Google's hourly goal counts.\" Name the Texas grid as in BEFORE (\"on ERCOT's separate grid\")."
+  },
+  {
+   "kind": "term-undefined",
+   "quote": "Meta for 30 MW at Clinton and 433 MW at three Vistra plants",
+   "fix": "Vistra appears here for the first time with no gloss. Restore BEFORE's \"three plants of Vistra, a Texas power company\" (and \"Clinton in Illinois\")."
+  },
+  {
+   "kind": "term-undefined",
+   "quote": "The fuel loop has its first cracks: X-energy, Radiant and Meta, through Oklo, have paid Centrus ahead for HALEU.",
+   "fix": "Radiant is never introduced in AFTER. Restore BEFORE's customer line in the Centrus paragraph (\"Customers have signed: Oklo, X-energy and Radiant.\"), or drop Radiant here."
+  },
+  {
+   "kind": "term-undefined",
+   "quote": "and FERC extended its suspended connection to 1 March 2027.",
+   "fix": "\"Suspended\" is no longer explained. Restore BEFORE's short gloss: \"There a closed plant can stay 'suspended', keeping its connection, for at most 36 months in any five years; FERC extended Palisades' by 22 months, to 1 March 2027.\""
+  },
+  {
+   "kind": "broken-flow",
+   "quote": "Through a regulatory path that did not exist until 2023, a few years of repair and hiring, and about US$1.6 billion in Crane's case.",
+   "fix": "The section's answer promises \"repair and hiring\", but every repair and hiring detail was cut. Restore one sentence from BEFORE: \"Constellation ordered three new main power transformers, paying US$35 million extra for them to arrive in 2026, and had about 500 full-time staff by September 2025, nearly 80 per cent of what it needs.\""
+  },
+  {
+   "kind": "lost-key-point",
+   "quote": "NextEra Energy kept Duane Arnold's grid place through a FERC waiver of August 2025, for up to 619 MW provided the plant runs by 31 December 2029.",
+   "fix": "Duane Arnold's AI buyer is now missing, though it counts in the 9,880 MW binding total. Add from BEFORE: \"Google buys most of the output under a 25-year contract, and CIPCO, an Iowa power cooperative, the rest on the same terms.\""
+  },
+  {
+   "kind": "factual-distortion",
+   "quote": "about 2,250 MW of restarts and roughly 1,640 MW of AI-funded uprates arrive in steps from 2027 to 2034",
+   "fix": "Restore BEFORE's hedge on company dates: \"should arrive in steps from 2027 to 2034\"."
+  },
+  {
+   "kind": "style",
+   "quote": "Three things would not move me: more frameworks with new reactor developers, which are not delivery contracts; more zero-power criticalities, which prove a reactor but not a fuel supply; and Darlington, which burns ordinary fuel and, if on time, supports the claim.",
+   "fix": "At 42 words this is too long for the house range. Split it as in BEFORE: \"Three things would not move me. More signings with new reactor developers: a framework or option is not a delivery contract. More criticalities: a zero-power physics test proves a reactor, not a fuel supply. And Darlington: it burns ordinary fuel, and if it runs on time it supports the claim.\""
+  },
+  {
+   "kind": "style",
+   "quote": "Centrus's new government order of 1 July 2026 requires one tonne of uranium as HALEU by July 2032, and its first new centrifuges should start in 2029, in a build-out including 12 tonnes a year of HALEU capacity.",
+   "fix": "This merged sentence runs to 38 words. Split it back as in BEFORE: \"Centrus's new government order, signed on 1 July 2026, requires one tonne of uranium as HALEU by July 2032. Its first new centrifuges should start in 2029, in a build-out that includes 12 tonnes a year of HALEU capacity.\""
+  }
+ ]
+}

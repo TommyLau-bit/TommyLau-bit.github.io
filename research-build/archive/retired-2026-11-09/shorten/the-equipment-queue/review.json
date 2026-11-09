@@ -1,0 +1,72 @@
+{
+ "slug": "the-equipment-queue",
+ "verdict": "better",
+ "why": "AFTER cuts about 40 per cent of the prose and drops the roadmap paragraph, the physics of induction, the Schnabel railcar detail and several side quotes. The spine (three clocks, years of work, makers sizing halls to signed orders, Siemens Energy's ratio test) now reaches an analyst faster and is easier to read. A handful of merges drop hedges or causal links: Prolec GE inflating the 60 per cent, the mid-sized-unit caveat on imports, the parts idea being a hypothesis, and factory announcements lumped with price rises. These need small repairs, but none breaks the argument.",
+ "issues": [
+  {
+   "kind": "factual-distortion",
+   "quote": "More factory announcements would not move me, and nor would price rises: they show the queue holding, not clearing.",
+   "fix": "Restore the separate reasons from BEFORE: \"Two things would not move me. More factory announcements: they are the headline, not the order book. And price rises: they show the queue holding, not clearing.\""
+  },
+  {
+   "kind": "factual-distortion",
+   "quote": "GE Vernova's grid equipment backlog is up 60 per cent in a year.",
+   "fix": "Restore the hedge: \"GE Vernova's grid equipment backlog is up 60 per cent in a year, or about 40 per cent without the Prolec GE purchase.\""
+  },
+  {
+   "kind": "broken-flow",
+   "quote": "Moving a unit of 100 to 400 tons is a project of its own. So a transformer that leaves the factory in months can still take years from order to switch-on.",
+   "fix": "As written, it reads as if transport causes the years. Restore BEFORE's ending: \"...can still take years from order to switch-on, and most of that time is spent waiting for a slot at the stations.\""
+  },
+  {
+   "kind": "broken-flow",
+   "quote": "So a boom in Europe or Asia can lengthen the American wait, and the new American halls replace imports as much as they add supply.",
+   "fix": "The premise was cut. Restore it: \"The queue in America is filled by imports from makers who also serve their home grids, so a boom in Europe or Asia can lengthen the American wait.\""
+  },
+  {
+   "kind": "lost-key-point",
+   "quote": "United Nations trade data show American imports of liquid-filled transformers above 10 MVA rising from $1.26bn in 2022 to $4.15bn in 2025, 3.3 times in three years.",
+   "fix": "Add back BEFORE's caveat, since the section and chart call these 'large transformers': \"The average unit imported in 2025 cost about $0.83m, so this customs line is dominated by mid-sized units, not only the very largest.\""
+  },
+  {
+   "kind": "factual-distortion",
+   "quote": "The inference is mine: if parts gate output, a new hall adds floor space before it adds transformers.",
+   "fix": "Restore the hedge and the test: \"The inference is mine, and it is a hypothesis. ... Swedish bushing waits falling below a year, or makers saying parts no longer hold them back, would kill it.\""
+  },
+  {
+   "kind": "factual-distortion",
+   "quote": "That favours importing whole units over making cores from imported steel in a new American hall",
+   "fix": "BEFORE said \"importing whole units, or ready-made cores\", because since 8 June cores imported to build these transformers can also pay 15 per cent. Restore \"or ready-made cores\"."
+  },
+  {
+   "kind": "dangling-reference",
+   "quote": "That reshuffles the low-voltage order book; it does not shorten the grid-side queue.",
+   "fix": "'That' has lost its antecedent. Restore the sentence before it from BEFORE: \"What changes is the gear nearest the rack: busways, power shelves and, from 2027, rectifiers and new direct-current breakers.\""
+  },
+  {
+   "kind": "factual-distortion",
+   "quote": "It invests only in projects whose profitability is secured.",
+   "fix": "Restore the attribution, which turns the author's assertion back into Hitachi's statement: \"Hitachi says it invests only in projects whose profitability is secured.\""
+  },
+  {
+   "kind": "lost-key-point",
+   "quote": "Possibly: some bushings now wait longer than a whole transformer did before the pandemic, though other parts are flowing freely.",
+   "fix": "The section's prose no longer backs 'other parts are flowing freely' (only the caption does). Add back one sentence from BEFORE: \"Tap changers, another bought-in part, are quoted at 10 to 22 weeks from Ludvika, so the strain is not everywhere.\""
+  },
+  {
+   "kind": "broken-flow",
+   "quote": "The trap is that the ratio can fall while the pile grows. Siemens Energy's grid revenue is growing about 25 per cent a year on its own guidance.",
+   "fix": "The worked example of the trap was cut. Close the paragraph with BEFORE's point that at 1.48 the ratio falls \"while each year's shortfall still joins the pile\", so the trap is shown, not just named."
+  },
+  {
+   "kind": "term-undefined",
+   "quote": "Eaton, Schneider Electric, ABB, Siemens, Vertiv, Legrand, nVent, Hubbell and Powell, with a shorter queue, and Caterpillar, Cummins, Generac and Rolls-Royce for backup generators.",
+   "fix": "Powell, Vertiv and Cummins were introduced in BEFORE (Powell Industries builds switchgear and power rooms in Texas; Vertiv makes UPS, power and cooling gear; Cummins' generator-set capacity limit) but are now named only in this list. Add their one-line descriptions back here, or drop them from the list."
+  },
+  {
+   "kind": "style",
+   "quote": "Prices jumped 34 per cent in 2021 and 18 per cent in 2022, rose only about 4 per cent in 2023 and 2 per cent in 2024, then 5 per cent in 2025 and nearly 8 per cent in the year to September 2026.",
+   "fix": "At 44 words this breaks the 14 to 20 word style. Split it as BEFORE did: \"Prices jumped 34 per cent in 2021 and 18 per cent in 2022, then rose only about 4 per cent in 2023 and 2 per cent in 2024. In 2025 they rose 5 per cent, and in the year to September 2026 nearly 8 per cent.\""
+  }
+ ]
+}

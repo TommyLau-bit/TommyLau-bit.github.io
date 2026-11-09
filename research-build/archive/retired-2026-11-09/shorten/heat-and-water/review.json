@@ -1,0 +1,67 @@
+{
+ "slug": "heat-and-water",
+ "verdict": "better",
+ "why": "AFTER keeps the spine intact and gets an analyst to each answer much faster. That spine runs: heat forces liquid to the chip, warm coolant makes dry roofs cheap on LBNL's yearly medians, the cost lands on the worst afternoon, and towns force redesigns rather than cancellations. It cuts the acquisition roll-call, the heat-reuse detour and the repeated ASHRAE and Microsoft fleet detail. The trims leave a handful of real defects. Two support sentences now make claims stronger than BEFORE did: the Eaton example, and Google's \"approximately 10%\" with its \"in many places\" dropped. The \"about half the water\" comparison lost its size caveat. The company-WUE paragraph now warns against ranking numbers the reader never sees. None of these break the claim, and all can be fixed with wording from BEFORE.",
+ "issues": [
+  {
+   "kind": "factual-distortion",
+   "quote": "Almost every large maker now sells both the loop and the roof: Eaton completed its purchase of Boyd Thermal on 12 March 2026, and Vertiv completed its purchase of ThermoKey, a dry cooler maker, on 12 June 2026.",
+   "fix": "Eaton is a power maker that bought liquid cooling; BEFORE never says it sells roof plant, so it does not show 'both'. Swap it for a roof maker moving into the loop: 'Trane completed its purchase of LiquidStack, a CDU maker, on 3 March 2026, and Vertiv completed its purchase of ThermoKey, an Italian dry cooler maker, on 12 June 2026.' As a bonus, this splits a 35-word sentence."
+  },
+  {
+   "kind": "factual-distortion",
+   "quote": "It also wrote that water cooling can cut a data centre's energy use by \"approximately 10%\" against air.",
+   "fix": "Restore the qualifier from BEFORE: 'It also wrote that in many places water cooling can cut a data centre's energy use by \"approximately 10%\" against air.'"
+  },
+  {
+   "kind": "lost-key-point",
+   "quote": "On that sum, a midsize air hall with a tower uses about 9.8 litres per kWh in all, and a large dry liquid hall about 5.0.",
+   "fix": "Add BEFORE's caveat, because the chart title claims 'about half': 'The comparison sets a midsize air hall against a large liquid one, so size accounts for part of the gap.' If there is room, also keep 'In the air hall, dropping the tower saves 2.9 litres on the roof but spends about 1.4 again at the power station, through a higher PUE.' That sentence is the evidence for 'PUE is also a water number'."
+  },
+  {
+   "kind": "dangling-reference",
+   "quote": "Company water figures are not one scale either. Amazon Web Services and Meta divide water withdrawn by computing energy, while Microsoft divides water consumed, so ranking them would be a mistake.",
+   "fix": "The figures being warned about no longer appear anywhere in AFTER, and the paragraph sits in the power-station section, where it does not follow. Restore the numbers: 'So AWS's 0.12 litres per kWh in 2025, Meta's 0.19 in 2024 and Microsoft's 0.27 in its fiscal year to June 2025 are not one scale.' Add BEFORE's one-line definition, 'Consumption is withdrawal minus discharge: water lost to the local system, mostly as vapour from towers.' Or cut the paragraph entirely."
+  },
+  {
+   "kind": "factual-distortion",
+   "quote": "Amazon Web Services and Meta bridge the gap with heat exchangers at the rack: liquid at the chip, air still in the room.",
+   "fix": "BEFORE says AWS built its own in-row heat exchanger, as the press reported in July 2025, and that Meta uses heat exchangers at the rack. Fix: 'Amazon Web Services built its own in-row heat exchanger, the press reported in July 2025, and Meta uses heat exchangers at the rack: liquid at the chip, air still in the room.'"
+  },
+  {
+   "kind": "factual-distortion",
+   "quote": "Since August 2024 all its new data centre designs evaporate zero water for cooling, using chip-level liquid in a closed loop.",
+   "fix": "Restore the attribution and date from BEFORE: 'Since August 2024, it said on 9 December 2024, all its new data centre designs evaporate zero water for cooling.' Also keep the hedge on timing: 'were to pilot in 2026 and come online in late 2027', not 'come online in late 2027'."
+  },
+  {
+   "kind": "broken-flow",
+   "quote": "That reverses what ASHRAE expected in 2021, when it warned that 45 degree water \"will become increasingly difficult to use as the heat flux at the socket increases\".",
+   "fix": "'That' now points back to 'Rubin's compute trays are also \"fanless\"', not to the 45 degree design. Move the fanless sentence after this one, or open with BEFORE's subject: 'Running the hottest rack on 45 degree coolant reverses what ASHRAE expected in 2021...'"
+  },
+  {
+   "kind": "broken-flow",
+   "quote": "Old air-cooled halls can take liquid, but as a refit, and the refit is the slow part.",
+   "fix": "The question 'Can an old air-cooled hall take liquid?' was removed, so the refit paragraph now sits under 'How warm can the coolant run' and has nothing to do with that heading. Restore the heading '## Can an old air-cooled hall take liquid?' above the room-to-spare anchor. Then split the long Jane Street sentence (about 35 words) at the semicolon."
+  },
+  {
+   "kind": "lost-key-point",
+   "quote": "The makers are straining, but when they name what paces their customers, they name power. No primary source names a hall held up by cooling gear.",
+   "fix": "Both halves now carry no evidence. Keep one dated source for each from BEFORE. For the strain: 'Munters said \"constraints remain industry-wide\" (23 October 2026).' For the pacing: 'Johnson Controls' finance chief said some customers face \"power and some electrical infrastructure limitation\" (27 October 2026).'"
+  },
+  {
+   "kind": "broken-flow",
+   "quote": "So the grid and the water main are both built for the same hot afternoon.",
+   "fix": "'So' does not follow from a peak-to-average ratio alone. Restore BEFORE's link: 'Utilities must size plants, pumps and pipes for that day. A tower spends its most water just as the town's mains peak; a dry roof draws its most power just as the grid is tightest.'"
+  },
+  {
+   "kind": "lost-key-point",
+   "quote": "This limb is hard to break, because Google's 2026 policy allows \"recycled water\" at high-risk sites.",
+   "fix": "Restore the main reason from BEFORE: 'This limb is hard to break: only Google rates sources by name, and its 2026 policy allows \"recycled water\" at high-risk sites.'"
+  },
+  {
+   "kind": "lost-key-point",
+   "quote": "Rising water totals would not move me. More evaporation where water is plentiful is the trade working as designed. At the scale of the chip, heat has decided: liquid, warm. At the scale of the town and the grid,",
+   "fix": "The ending drops the roof, which is the subject of the title, and leaves 'rising water totals' with nothing behind it. Restore 'At the scale of the roof, the operator trades water for power, and the chip maker's temperature sets the price.' between the chip and town sentences. Also consider keeping BEFORE's line: 'The first two tests attack operators' choices; only the third attacks \"not how many\", and only it would overturn the idea.'"
+  }
+ ]
+}

@@ -1,0 +1,82 @@
+{
+ "slug": "america-rations-the-plug",
+ "verdict": "better",
+ "why": "AFTER keeps the spine (474 GW asked versus 6.6 cleared, no site yet on a cut-first plug, the 3,900 MW drop, the capped auction, 54 GW signed versus 4.8 billed) and drops the six-reason list, the roadmap paragraph and most of the secondary detail. It reaches each answer much faster and is far easier on the eyes for an analyst. A handful of cuts left problems: two hedges were dropped, two charts lost the prose that explains their labels, \"market monitor\" and \"generation minimum\" now appear without introduction, an \"Either way\" is left dangling, and the household-bill section no longer reaches the household. All are small fixes that use BEFORE's own wording.",
+ "issues": [
+  {
+   "kind": "lost-key-point",
+   "quote": "In the first half of 2026, PJM's total wholesale cost was $114.50 per megawatt-hour. Energy, the power actually used, was 63.5% of it. Capacity tripled, to 17.1% of the total. The monitor puts the data centre effect on capacity at $11.11 per megawatt-hour, 9.7% of the wholesale cost.",
+   "fix": "The heading asks 'How much of a household's bill is that?' but the section now stops at wholesale cost. Restore one sentence: 'What reaches a household depends on its state: in Pennsylvania the regulator tied June 2026 rises of about 3% to 10% to PJM's capacity costs, as reported, and Virginia's legislative auditor estimated data centre growth could add $14 to $37 a month to a typical household's generation and transmission costs by 2040, in 2024 dollars.'"
+  },
+  {
+   "kind": "term-undefined",
+   "quote": "The market monitor attributes $6.3 billion, 38.2% of the 2028/29 auction, to data centre load.",
+   "fix": "The market monitor was introduced in the paragraph that was cut. Write 'PJM's independent market monitor attributes $6.3 billion...'"
+  },
+  {
+   "kind": "lost-key-point",
+   "quote": "The cap has not called up new plant. The 2028/29 auction fell 6,831 MW short of PJM's own reliability requirement.",
+   "fix": "The monitor's caveat on this headline shortfall was cut. Add: 'The shortfall may be smaller than it looks: PJM's independent market monitor argued that 4,017 MW of the data centre load in the forecast had been cancelled or delayed by 21 September 2026, which on its arithmetic cuts the shortfall to 3,055 MW.' Also consider restoring 'and cleared only 525 MW of new and enlarged power stations', which supports 'has not called up new plant'."
+  },
+  {
+   "kind": "factual-distortion",
+   "quote": "The fight moved to a one-time purchase of about 6,800 MW of new capacity, with costs assigned by large-load growth, and none of it is in force.",
+   "fix": "BEFORE presents the cost assignment as PJM's refiled proposal, reported by the trade press, not as settled. Write: 'The fight moved to a one-time purchase of about 6,800 MW of new capacity, which FERC suspended to 28 February 2027; PJM refiled on 29 October, the trade press reported, with costs assigned by large-load growth. None of it is in force.'"
+  },
+  {
+   "kind": "dangling-reference",
+   "quote": "Either way, firm power gets dearer for a data centre, which pushes the next site towards the plug the grid may cut first.",
+   "fix": "'Either way' no longer has two outcomes to refer to. Restore BEFORE's preceding sentence, 'If the charge lands, households carry less of the wait.', or start the sentence 'Whatever the outcome, firm power gets dearer...'"
+  },
+  {
+   "kind": "term-undefined",
+   "quote": "Virginia's new rate class for Dominion, GS-5, covers 25 MW or more for 14 years, with a minimum bill of 85% of contracted demand for wires. But PJM capacity costs are excluded from the generation minimum, so the auction stays shared.",
+   "fix": "'The generation minimum' is never stated. Use BEFORE's figures: 'with a minimum bill of 85% of contracted demand for distribution and for transmission, and 60% for generation. But PJM capacity costs are excluded from the generation minimum, so the auction stays shared.'"
+  },
+  {
+   "kind": "dangling-reference",
+   "quote": "As of July 2026 Dominion had about 54 GW of data centres under contract, of which 12 GW was under firm service agreements.",
+   "fix": "The Dominion chart's bars are labelled 'Engineering letters', 'Construction letters' and 'Service agreements', and the figcaption says engineering letters are non-firm, but the sentence explaining that ladder was cut. Restore: 'An engineering letter pays Dominion to design the substation; a construction letter pays it to start building; an electric service agreement commits both sides.' Then write 'under one of the three, of which 12 GW was under service agreements' (BEFORE does not call them 'firm', only 'the firmest')."
+  },
+  {
+   "kind": "factual-distortion",
+   "quote": "Dominion's own forecast leaves 19 GW of the contracts out altogether",
+   "fix": "BEFORE says 19 GW of the engineering letters specifically. Write 'leaves 19 GW of the engineering letters out altogether'."
+  },
+  {
+   "kind": "lost-key-point",
+   "quote": "In August its data centres' billing peak was 4.8 GW.",
+   "fix": "Without BEFORE's 63% caveat, the 54 versus 4.8 comparison reads more extreme than the author argued. Add: 'Dominion's own planning assumes the average site takes five years to reach 63% of the power it contracted, so even a fully running site bills well below its contract.'"
+  },
+  {
+   "kind": "dangling-reference",
+   "quote": "Texas shows the funnel most clearly. ERCOT's 474 GW, as of June 2026, counts requests, not demand. By 20 August, 17 loads totalling 6,608 MW had cleared every check",
+   "fix": "The chart still shows bars for '205 GW' 'Eligible for the first batch' and 'Oncor alone, the largest wires company', and the figcaption cites the Senate briefing and Oncor's 8-K, but their explaining sentences were cut. Restore: 'On 29 July ERCOT told the state Senate that about 205 GW was eligible for its first batch study, a preliminary figure.' and 'Oncor, the largest wires company in Texas, alone held 795 requests at 30 September 2026, about 293 GW of them from data centres.'"
+  },
+  {
+   "kind": "factual-distortion",
+   "quote": "The national standard is slower: NERC's first standards for computing loads only collect data, and a minimum is expected in 2027.",
+   "fix": "BEFORE gives this as PJM's reading. Write: 'The national standard is slower: NERC's first three standards for computing loads passed their final ballot in October, but on PJM's reading they only collect data, and a minimum is expected in a standard in 2027.'"
+  },
+  {
+   "kind": "factual-distortion",
+   "quote": "PJM's proposal covers sites of 50 MW or more.",
+   "fix": "The scope is now broader than in BEFORE. Write 'PJM's proposal covers sites of 50 MW or more with at least 25 MW behind power electronics.'"
+  },
+  {
+   "kind": "broken-flow",
+   "quote": "Oracle's customers have signed US$664 billion of future revenue, of which it expects only about 13% in the next twelve months. So any model that sizes revenue or chip demand from contracted gigawatts runs early",
+   "fix": "The causal link to the stages was cut, so the 'So' does not follow. Restore 'because revenue starts as halls are delivered' at the end of the Oracle sentence."
+  },
+  {
+   "kind": "broken-flow",
+   "quote": "The chips came with the power, so energised set the pace.",
+   "fix": "The evidence for this sentence was cut. Restore before it: 'The first racks of Nvidia's GB200 chips arrived in June 2025, and the first phase was running by 30 September.'"
+  },
+  {
+   "kind": "broken-flow",
+   "quote": "The cuts in that model are small and partial. At 0.5% of a year's energy, the new load is cut for about 177 hours a year, and a typical cut lasts about two hours.",
+   "fix": "'Partial' is now unsupported. Restore 'and in 88% of those hours at least half of it keeps running' after '177 hours a year'."
+  }
+ ]
+}

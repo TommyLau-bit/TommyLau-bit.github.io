@@ -34,13 +34,13 @@ no storyline. The structure of every deep piece is now `research-build/deep-piec
   context clause on first mention; no recap and no forward "jolt" headings.
 - Two to four inline SVG charts at the turns of the argument, each titled with the sentence it proves.
 - After the story: `## Claims on record` (the piece's claim in full; earlier claims word for word inside
-  `<details class="claims-earlier">`), `## What would prove me wrong`, `## Research notes`, evidence
+  `<details class="claims-earlier">`), `## What would prove me wrong` (no `## Research notes` section since 6 Nov 2026), evidence
   tables and method notes inside `<details class="evidence">` (no corrections: wrong facts are fixed in place), the exposure map (§3.4, up to six
   groups) and the sources line (one paragraph, ending "Personal research, not investment advice.").
 - Every `<a id="<old-slug>"></a>` anchor from merged pieces survives at the beat where that idea now sits.
 
 Still forbidden anywhere in a piece: share prices, market values, valuation multiples, targets,
-ratings or any view on shares (those live in the research notes). Financials appear only as evidence
+ratings or any view on shares. Financials appear only as evidence
 for the mechanism (§4a). No em or en dashes. British spelling.
 
 ---
@@ -277,11 +277,9 @@ Voice:
   in the piece itself. "a unit called a CDU, the coolant
   distribution unit, which is effectively the rack's heart".
 
-Never appears in a journal piece, or anywhere on the site except pitch pages
-(`/research`, its note pages, PDFs and track record): a share price, a market value, a
+Never appears in a journal piece, or anywhere on the site: a share price, a market value, a
 valuation multiple, a target, a rating, a recommendation, a portfolio position,
-or a claim about a share being cheap or expensive. Pitches follow
-`CALLS-SPEC.md`.
+or a claim about a share being cheap or expensive.
 
 ---
 
@@ -315,11 +313,9 @@ Never, in a journal piece:
   language, "cheap", "expensive", "priced for perfection".
 - Management guidance presented as your own forecast. Report it as theirs.
 
-Anything that crosses into a view on the shares belongs in a pitch, never in
-the journal piece. A research note is separate (`src/content/calls/<slug>.md`, published as a PDF and model at `/research`)
-with its own rules in `CALLS-SPEC.md`: it may carry prices, valuation, a
-target and Tommy's call, and links back to the claim it rests on. The journal
-piece stays free of all of it. The sources line names the filings used,
+Anything that crosses into a view on the shares never appears on the site
+(research notes left the site on 6 Nov 2026; company studies Tommy writes himself go to
+the jobs folder). The sources line names the filings used,
 and the exposure disclaimer adds that the figures are used as evidence for the
 mechanism and imply nothing about value.
 
@@ -331,7 +327,7 @@ mechanism and imply nothing about value.
 most, never two money figures in one paragraph), so a layman can follow it. The investor layer has no
 figure cap: every number is primary-sourced and dated, tied to the mechanism, and tables are welcome.
 Still never anywhere: share prices, market values, valuation multiples, targets, ratings or any view on
-shares; those live in the research notes.
+shares.
 
 ### The top-layer budget (Tommy, 8 Oct 2026)
 
@@ -426,11 +422,10 @@ and test in claims.ts are still never reworded.
 decision. Do not add one. LinkedIn and RSS are how readers follow.
 
 **Companies.** Spell a company the same way each time in the exposure box's
-`<span class="names">`; `ALIAS` in `src/lib/exposure.ts` catches the odd
-variant. There are no company or topic pages.
+`<span class="names">`. There are no company or topic pages.
 
-**The top menu is fixed at three: Journal, Research, About** (Tommy, 6 Nov
-2026). Do not add to it or add reference pages to the footer. The homepage is
+**The top menu is fixed at two: Journal and About** (Tommy, 6 Nov
+2026; Research removed the same day). Do not add to it or add reference pages to the footer. The homepage is
 the map.
 
 ---

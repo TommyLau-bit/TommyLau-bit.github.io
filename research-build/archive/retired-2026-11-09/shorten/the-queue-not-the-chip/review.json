@@ -1,0 +1,52 @@
+{
+ "slug": "the-queue-not-the-chip",
+ "verdict": "better",
+ "why": "AFTER keeps the spine (plug, not chip), every chart, both dated tests and the three \"honest shares\". It cuts the roadmap paragraph, unit primer, operator roll-call, Sandy Ridge and most of the tariff detail, so an analyst gets to the booked-versus-drawn gap and the October ration much faster, and no em dashes or long run-ons were added. A few cuts take away the evidence a claim needed, chiefly the DayOne meter comparison, why Johor's supply is \"further away\", and the published-versus-unpublished Singapore awards. The merged water/own-power heading is also awkward. These are small fixes, not reasons to roll back.",
+ "issues": [
+  {
+   "kind": "lost-key-point",
+   "quote": "It had about 789 megawatts of IT capacity in service in Johor, and across its portfolio 99.1 per cent of the capacity in service was billing.",
+   "fix": "Restore the meter comparison that made 789 MW mean something: \"At a PUE of about 1.3, DayOne's Johor halls alone would draw about a gigawatt if run flat out, on my arithmetic: three quarters of the 1.37 gigawatts all of Malaysia's data centres drew in August. The bases differ, so this is a pointer, not proof: capacity that is billing need not be capacity that is running.\" Also put back \"At 20 September 2026\" as the date of the 789 MW figure."
+  },
+  {
+   "kind": "lost-key-point",
+   "quote": "Supply is moving further away. Tenaga is retiring 6.6 gigawatts of its own power stations by 2030, and is building a new 500 kV backbone",
+   "fix": "The evidence that supply is moving away from Johor was cut. Restore it from BEFORE: \"the original 2,100 megawatt Tanjung Bin coal station in south-west Johor retires in 2031, according to grid operator data reported by The Edge. The bids reported for the new gas plants to replace them, tendered as NEWGEN26 for 2029 to 2031, are all outside Johor.\" The map's caption also cites Tanjung Bin and Sedenak West, and the text no longer mentions either."
+  },
+  {
+   "kind": "factual-distortion",
+   "quote": "One gap remains: a second route, the Strategic Digital Infrastructure Scheme, exists for proposals with \"uniquely differentiated value\", and no award under it has been published.",
+   "fix": "As written, this reads as if the scheme is unused. BEFORE says the minister referred to operators \"awarded capacity under\" it on 6 October 2026, but no award has been published. Restore that, plus the payoff: \"So Singapore's ration is real, but not every seat is handed out in public.\""
+  },
+  {
+   "kind": "factual-distortion",
+   "quote": "Since 17 November 2023 an American licence has been needed to export advanced AI chips to any company headquartered in China, wherever it sits.",
+   "fix": "Dropping \"or whose ultimate parent is\" turns \"wherever it sits\" into nonsense and narrows the rule, which is what catches a Chinese-owned tenant in Johor. Use: \"to any company headquartered in China or Macau, or whose ultimate parent is, wherever it sits.\" Then restore \"A Chinese-owned tenant in Johor therefore needs a licence for every new shipment of top chips.\""
+  },
+  {
+   "kind": "broken-flow",
+   "quote": "## Can water or own power get round the gate?\n\nNeither: water is now a gate of its own",
+   "fix": "Water cannot \"get round\" a gate, so the heading and its answer do not match. Retitle it, for example \"## Is water the next gate, and can own power get round the queue?\", with the answer: \"Water is now a stated gate of its own, and own power moves the queue rather than removing it.\""
+  },
+  {
+   "kind": "dangling-reference",
+   "quote": "put Johor's data centre water demand at 384 million litres a day by 2030, about the size of that spare.",
+   "fix": "\"That spare\" was never given as a number, since only the 14.3 per cent margin remains. Add BEFORE's line after the SPAN sentence: \"That leaves about 340 million litres a day spare, on my arithmetic.\" Also put back \"in November 2025\" and \"on planning permissions already granted\" for the 384 figure."
+  },
+  {
+   "kind": "broken-flow",
+   "quote": "Press reports in August 2026 even put hundreds of thousands of H200s in Hong Kong, kept there while Beijing limits their import to the mainland.",
+   "fix": "The paragraph stops before its point. Add BEFORE's follow-on: \"The chips are physically there and still not running.\""
+  },
+  {
+   "kind": "term-undefined",
+   "quote": "is building a new 500 kV backbone of about 500 kilometres",
+   "fix": "The cut primer was the only place \"kV\" was defined, and the Green Lane line now spells it out as \"kilovolts\". Write \"132 or 275 kilovolts (kV)\" at the Green Lane sentence so the later \"500 kV\" is defined."
+  },
+  {
+   "kind": "lost-key-point",
+   "quote": "Here is the question I cannot yet answer.",
+   "fix": "BEFORE gave the reason this matters to an investor and the evidence that fits it. Restore \"and it matters for anyone valuing a Johor booking\". Then, before the \"Then the cheapest...\" sentence, restore: \"The record fits that reading without proving it ... operators now submitting ten-year staggered projections and receiving grid access in phases.\" End with \"Nothing published yet says which it counts.\""
+  }
+ ]
+}

@@ -2,10 +2,9 @@
 // Initiation notes were taken off the site (Tommy, 6 Nov 2026). Every old note
 // URL still resolves, to the homepage. Source archived in
 // research-build/archive/research-page-2026-11-06/.
-import { getPitches } from '../../lib/calls';
-export async function getStaticPaths() {
-  const pitches = await getPitches();
-  return pitches.map((p) => ({ params: { slug: p.id } }));
+import { NOTE_SLUGS } from '../../data/retired-urls';
+export function getStaticPaths() {
+  return NOTE_SLUGS.map((slug) => ({ params: { slug } }));
 }
 ---
 <meta http-equiv="refresh" content="0; url=/" />

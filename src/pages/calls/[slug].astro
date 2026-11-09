@@ -1,9 +1,8 @@
 ---
-// Pitches moved to /research/<slug>/ on 6 October 2026. Kept so early links work.
-import { getPitches } from '../../lib/calls';
-export async function getStaticPaths() {
-  const pitches = await getPitches();
-  return pitches.map((p) => ({ params: { slug: p.id } }));
+// Pitches moved to /research/<slug>/ on 6 October 2026 and left the site on 6 Nov 2026. Kept so early links work.
+import { NOTE_SLUGS } from '../../data/retired-urls';
+export function getStaticPaths() {
+  return NOTE_SLUGS.map((slug) => ({ params: { slug } }));
 }
 const to = '/';
 ---

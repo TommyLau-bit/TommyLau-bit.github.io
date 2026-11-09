@@ -1,0 +1,82 @@
+{
+ "slug": "powering-the-rack",
+ "verdict": "better",
+ "why": "AFTER is clearly faster and easier to read. It drops the signposting paragraph, the bar-heat arithmetic, the supply-chain digressions and the Vertiv/Fibrebond deal detail, and the spine (the rack moves, the building waits, the named-hall test) comes through more cleanly. But several cuts leave loose threads. \"The higher input voltage\" now has no lower voltage to compare against. \"800 volts is still being sampled\" lost its evidence, and \"That is why\" lost its reason. The term \"first white paper\" and the moulded case breaker in a figure caption are no longer introduced. It also lost one honest qualifier an analyst would want: no named customer hall is yet running even a power rack. Each is a one-sentence fix using BEFORE's own wording.",
+ "issues": [
+  {
+   "kind": "dangling-reference",
+   "quote": "The higher input voltage is the harder one.",
+   "fix": "Restore the sizes before it: \"That draft sets two sizes: a 5 MW unit taking 13.8 kV, and a 5 or 10 MW unit taking 34.5 kV, both making 800 volts at 98% efficiency or better in their power train.\" Then \"The higher voltage is the harder one.\""
+  },
+  {
+   "kind": "dangling-reference",
+   "quote": "Not yet: the chip side is growing fast, but on density at today's voltages, and 800 volts is still being sampled.",
+   "fix": "Restore the evidence for 'sampled' in the section body: \"Monolithic Power's Enterprise Data revenue rose 164.6% in the third quarter, and its release says it has begun sampling GaN parts for 800 volt data centre designs.\""
+  },
+  {
+   "kind": "broken-flow",
+   "quote": "There converters step it to 12 volts, then to below 1 volt for the chip itself. That is why every design converts to low voltage as late and as close to the chip as it can.",
+   "fix": "Put back the reason before 'That is why': \"At one megawatt, my arithmetic gives about 18,500 amps on the rack's 54 volt busbar and, at an assumed 0.8 volts at the chip, about 1.25 million amps, spread over thousands of power stages.\""
+  },
+  {
+   "kind": "term-undefined",
+   "quote": "Space matters twice. The first white paper calls the space near the GPUs",
+   "fix": "The cut NVLink paragraph used to introduce the first white paper. Name it here: \"Nvidia's first 800 volt white paper (October 2025) calls the space near the GPUs...\""
+  },
+  {
+   "kind": "term-undefined",
+   "quote": "On day one the breakers are mechanical, the ordinary kind in a sealed plastic case, clearing in \"up to approximately 20 ms\".",
+   "fix": "The figure caption cites 'the moulded case breaker's 20 ms', so name it: \"On day one the breakers are mechanical: moulded case circuit breakers, the ordinary kind in a sealed plastic case, clearing in 'up to approximately 20 ms'.\""
+  },
+  {
+   "kind": "term-undefined",
+   "quote": "and the danger of an arc flash in a confined rack, hold it back.",
+   "fix": "The paragraph that defined arc flash was cut, so it is never explained. Add BEFORE's gloss: \"the danger of an arc flash, the blast when a fault arcs through air, in a confined rack\"."
+  },
+  {
+   "kind": "term-undefined",
+   "quote": "Vertiv's sidecar of up to 900 kW has \"Commercial launch expected in early 2027\", later than it first said.",
+   "fix": "Vertiv appears here for the first time, and the falsifier rests on it. Introduce it: \"Vertiv, a maker of data centre power and cooling gear, says its sidecar of up to 900 kW...\""
+  },
+  {
+   "kind": "factual-distortion",
+   "quote": "Eaton said in May it expected orders for 800 volt DC projects in the second half of 2026, \"for shipments starting in late 2027\", though its first 15 kV units ship this year.",
+   "fix": "This merges two dated statements, so the 15 kV shipment reads as part of the May remark. Split them: \"Eaton said on 3 November 2026 that its first 15 kV units ship this year. In May it had said it expected orders for 800 volt DC projects in the second half of 2026, 'for shipments starting in late 2027'.\""
+  },
+  {
+   "kind": "lost-key-point",
+   "quote": "As of 7 November 2026 I found no named hall of 10 megawatts or more running on 800 volts from the building.",
+   "fix": "Restore the qualifier on the rack leg: \"I found no named customer hall running even an Nvidia-specification power rack. TrendForce expects the power rack to ship as 'an optional configuration' on Vera Rubin, with widespread use in 2028.\""
+  },
+  {
+   "kind": "broken-flow",
+   "quote": "The third is the backup.",
+   "fix": "The cut removed the link to the next sections, which now read as unconnected. Restore: \"The third is that the building's new converter is not ready, and the fourth is that its breakers and codes are not either; the next sections take each. A fifth is the backup.\""
+  },
+  {
+   "kind": "lost-key-point",
+   "quote": "That is an estimate of opportunity, not reported revenue, and part of the rise may reflect scope Vertiv has bought.",
+   "fix": "Keep one line of BEFORE's counter-evidence on 'more gear per megawatt': \"Vertiv's results fit growth more than richer gear: its finance chief credited 'strong sales volume increase, operating leverage, and continued productivity', not richer content.\""
+  },
+  {
+   "kind": "dangling-reference",
+   "quote": "Monolithic Power Systems, which makes power stages beside processors, booked US$506.7 million",
+   "fix": "onsemi is a bar in the chart but no longer appears in the text. Add BEFORE's line: \"onsemi's AI data centre revenue rose 175%, to about US$180 million.\""
+  },
+  {
+   "kind": "broken-flow",
+   "quote": "Kaohsiung-1 and the five cloud providers are designs. At the scale of the rack, current and space force the move now.",
+   "fix": "The closing summary runs straight on from the 'plans' point. Give it its own paragraph, as in BEFORE, and restore its opening: \"At the scale of the chip, the material follows the voltage. At the scale of the rack...\""
+  },
+  {
+   "kind": "dangling-reference",
+   "quote": "Cutting the current 14.8 times cuts the heat in the same bar about 219 times",
+   "fix": "No bar has been introduced, because the 100 by 10 millimetre bar example was cut. Say \"cuts the heat in the same copper bar about 219 times\", or keep BEFORE's one-sentence bar."
+  },
+  {
+   "kind": "style",
+   "quote": "On 2 November 2026 Envision, a Chinese group that makes wind turbines and batteries, said an 800 volt system on solid-state transformers, converting 10 kV straight to an 800 volt DC bus, is \"now powering live computing workloads\" at its campus in Ulanqab, Inner Mongolia.",
+   "fix": "The merge makes a 45-word sentence. Split as in BEFORE: \"...is 'now powering live computing workloads'. It is at its campus in Ulanqab, Inner Mongolia.\""
+  }
+ ]
+}

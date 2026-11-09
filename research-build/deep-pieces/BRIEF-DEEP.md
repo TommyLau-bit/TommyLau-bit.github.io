@@ -7,7 +7,7 @@ Tommy approved consolidating the journal into 10 deep pieces. The prototype, `re
 - WRITING-FORMAT.md §D (the format), §3.2 (analogy), §3.4 (exposure map), §4a, §4b, §5.
 - `research-build/archive/CONSOLIDATION-PLAN.md` (your cluster) and the prototype plus its sidecar.
 - Every piece your cluster absorbs, in full, from `src/content/journal/`, and each one's sidecar in `research-build/archive/journal-drafts/` where one exists (they hold the verified sources and the fact-check and re-check findings). Held drafts: use only their verified facts and respect every fact-check finding in their sidecars.
-- `src/data/claims.ts` for the live claims to quote, and `src/content/calls/` for the research notes resting on them.
+- `src/data/claims.ts` for the live claims to quote.
 
 ## Rules that the prototype's fact-check taught us
 - Never present a national or company-wide figure as a regional or segment one. Name the measure exactly as the source does.

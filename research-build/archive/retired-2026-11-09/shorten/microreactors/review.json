@@ -1,0 +1,77 @@
+{
+ "slug": "microreactors",
+ "verdict": "better",
+ "why": "The shortened piece keeps the full chain intact: a small core leaks neutrons, so it needs HALEU in TRISO grains; almost nobody makes that fuel; so the DOE queue decides, and the military buys first. It gets there with far less detour. Merging the physics primer into the lorry section, and cutting the kettle and household-unit asides, the TRISO layer-by-layer tour and the Air Force pairings, makes it noticeably faster and easier to read for an analyst. The faults are small and fixable: a few references left hanging by cuts (\"the DOE contract\", \"the private lane\", \"burnup\", Urenco), and two hedges dropped (\"Until recently\" on the DOE quote, and the diesel comparison being INL's rather than the Army's). There is also one softened caveat on whether X-energy's TRISO fuel is qualified.",
+ "issues": [
+  {
+   "kind": "dangling-reference",
+   "quote": "And an NRC final rule for microreactors, proposed in May 2026 with a target of licences in six to twelve months, would open the private lane.",
+   "fix": "The sentence that set up the lane was cut from the military section. Put it back after the Executive Order sentence: \"The government has built a lane for itself that private buyers cannot yet use.\""
+  },
+  {
+   "kind": "dangling-reference",
+   "quote": "From 30 June 2026 the DOE contract covered only maintenance and storage.",
+   "fix": "The AFTER text never introduces a DOE contract. Restore \"built under a government contract\" to the Piketon sentence: \"runs a cascade of sixteen centrifuges at Piketon, Ohio, built under a government contract.\" Ideally also restore \"and the department said it did not intend to buy more.\""
+  },
+  {
+   "kind": "factual-distortion",
+   "quote": "The Department of Energy (DOE) put it plainly: \"There is no commercial source of HALEU outside of Russia currently available to fuel these reactors.\"",
+   "fix": "Restore \"Until recently, the Department of Energy (DOE) put it plainly\". The quote dates from November 2023, and the same section later says Centrus now enriches HALEU for commercial customers. Without the qualifier the quote reads as a current statement."
+  },
+  {
+   "kind": "factual-distortion",
+   "quote": "But an earlier INL report puts electricity at remote sites run on diesel generators at 15 to 60 cents. That is why a first unit makes sense on an isolated base and not on a grid-connected campus.",
+   "fix": "Restore the hedge and the source: \"But an earlier INL report, drawing on the Nuclear Energy Institute (NEI), the industry's trade body, puts electricity at remote sites run on diesel generators at 15 to 60 cents. The comparison with diesel is the laboratory's, not the Army's, but it shows why a first unit makes sense on an isolated base and not on a grid-connected campus.\""
+  },
+  {
+   "kind": "lost-key-point",
+   "quote": "Idaho National Laboratory suspects the test rig rather than the fuel, but has not established the cause.",
+   "fix": "Restore the end of the original sentence: \"...but has not established the cause, and I found no final statement that the fuel is qualified.\" Without it, the caveat on X-energy's fuel reads weaker than the evidence supports."
+  },
+  {
+   "kind": "term-undefined",
+   "quote": "about 298,000 particles were run in a reactor to around three times the burnup of ordinary fuel.",
+   "fix": "Restore the gloss: \"...three times the burnup of ordinary fuel (burnup measures how much of the uranium is used).\""
+  },
+  {
+   "kind": "term-undefined",
+   "quote": "and Urenco is licensed to 10 per cent in New Mexico: both far below 19.75.",
+   "fix": "\"and Urenco, the European enrichment group, is licensed to 10 per cent in New Mexico\"."
+  },
+  {
+   "kind": "broken-flow",
+   "quote": "BWXT's statement that a year of its line's output fuels Pele implies a core of roughly 100 to 200 kilograms.",
+   "fix": "The sentence that explained why this inference matters was cut, so the paragraph now ends on an unexplained estimate. Put back before it: \"No microreactor company has published how much uranium one of its cores holds.\" Then add after it: \"and Radiant's first 50 kilograms was only part of one core.\""
+  },
+  {
+   "kind": "lost-key-point",
+   "quote": "Two of the ten selections are fuel makers, several of the rest are tests on government land, and Radiant appears twice, the second time for a military base. Fuel first means running first, and running first means selling first.",
+   "fix": "Restore the reason and the payoff line: \"Two of the ten selections are fuel makers, TRISO-X and Standard Nuclear, because a kilogram of HALEU is useless to a microreactor until someone has coated it.\" End with: \"The order of the HALEU queue is, in effect, the order of the American microreactor industry.\" That last sentence is the section's link to the claim."
+  },
+  {
+   "kind": "lost-key-point",
+   "quote": "\"Meltdown-proof\" is the wrong phrase, but the record is strong.",
+   "fix": "Restore why the TRISO record matters to the argument: \"...the particle holds its contents at temperatures far above anything a well-designed small gas-cooled core can reach after an accident. That is what lets a microreactor rely on passive cooling and sit near a base or a factory without the large exclusion zones of a conventional plant.\""
+  },
+  {
+   "kind": "lost-key-point",
+   "quote": "Uranium at 20 per cent or more is **highly enriched uranium**, which safeguards treat as usable in a weapon, so 19.75 leaves a manufacturing margin under that line.",
+   "fix": "As written, a lay reader may take HALEU to be near weapons grade. Add back from BEFORE: \"HALEU is still far too dilute for a weapon, but above 10 per cent the NRC puts sizeable quantities into a stricter security category.\""
+  },
+  {
+   "kind": "style",
+   "quote": "A complete nuclear power plant small enough to be built in a factory and moved by lorry, ship or rail, typically making 1 to 20 megawatts of electricity.",
+   "fix": "This is a sentence fragment, and it drops the source. Write it as a sentence and restore the source: \"A microreactor is a complete nuclear power plant small enough to be built in a factory and moved by lorry, ship or rail; Idaho National Laboratory puts typical output at 1 to 20 megawatts of electricity.\""
+  },
+  {
+   "kind": "style",
+   "quote": "Standard Nuclear runs a line in Oak Ridge rated at 0.5 tonnes a year, under DOE authority rather than an NRC licence, and made its first commercial delivery of HALEU TRISO, about 50 kilograms of uranium, in June 2026 to Radiant, a start-up whose 1 MWe microreactor is called Kaleidos.",
+   "fix": "At about 50 words, this sentence is far over the 20-word house limit. Split it after \"NRC licence.\" Begin the second sentence \"In June 2026 it made its first commercial delivery of HALEU TRISO...\". Also restore who Standard Nuclear is: \"built from the fuel assets of a bankrupt start-up\"."
+  },
+  {
+   "kind": "term-undefined",
+   "quote": "Equinix signed in August 2025 a \"preorder agreement\" for twenty of Radiant's Kaleidos units, with no dates or terms.",
+   "fix": "\"Equinix, a large data centre operator, signed in August 2025...\"."
+  }
+ ]
+}
