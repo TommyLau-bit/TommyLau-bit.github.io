@@ -19,7 +19,25 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 3. Done: CVs updated ("grid to chip" wording; nuclear line to the depth figures); LinkedIn profile not changed.
 4. Done: article decks archived (study-decks/archive/article-decks-retired-2026-11-07/), not deleted.
 
-## START HERE (as of Mon 9 Nov 2026, night)
+## START HERE (as of Tue 10 Nov 2026)
+
+- **10 Nov: LinkedIn only, no site change. Session closed by Tommy ("that is all").** Personal profile, quiet-confidence pass (9 to 10 Nov, every removal backed up in ~/Desktop/jobs/archive/linkedin-removed-2026-11-09.md):
+  - Headline is now "Research Analyst · Power for AI data centres · The Physical Layer".
+  - Role media cards are gone.
+  - Top skill: Commodities was swapped for Data Center Infrastructure.
+  - Projects are down to one (Monte Carlo risk hurdle).
+  - Fettes now reads "A-levels, A*AAA"; the IGCSE entry is gone.
+  - Certificates are down to the two WSP courses.
+  - 15 skills were cut.
+  - All 7 publications were deleted (they carried share calls and linked to dead /calls/ URLs).
+  - The profile URL stays https://www.linkedin.com/in/tommy-lau-170364253. It was triple-checked as working on CV 2T (pdf, docx, json), every older CV and the site's About page. Never change it.
+- **Network:**
+  - Withdrew 164 commodity, trading and macro pending invites. They can be re-invited after about 1 Dec; the names are in the backup file.
+  - Sent about 170 in-lane invites until LinkedIn's weekly invite limit stopped them. Pending invites now stand at 493.
+  - About 300 targets on company People pages never received an invite because the limit hit first: IEA, Ember, Aurora, Keppel DC, Princeton Digital, Sembcorp, Octopus Energy Generation, GE Vernova, STT GDC, Brookfield, Siemens Energy.
+  - Next batch after about 17 Nov. The method and the list are in memory (linkedin-personal-network). Always verify by the Sent count, not the button.
+  - Still Tommy's to do: a sharp headshot, and a recommendation from his Cross Labs manager.
+- SemiAnalysis interview is Wed 11 Nov, 17:00 MYT. Don't invite SemiAnalysis staff while that process is live.
 
 - **PARKED UNTIL TOMMY SAYS HE IS READY (agreed 9 Nov 2026).** The gate: Tommy can take questions on all seven chapters without notes (the claim, 2 to 3 sourced numbers, what would prove it wrong, where he agrees or disagrees with SemiAnalysis). Until he says so, build nothing below. When he does, in this order: (1) site updates and build-ons from the growth list at the end of `study-decks/ROADMAP - buy side to PM.md` (the building-your-own-power update is already drafted in `research-build/deep-pieces/updates/`, needs a fresh fact-check); (2) company studies, BWXT first, written by Tommy, kept in `~/Desktop/jobs/company studies/`, NEVER on the site; (3) calls and stock pitches, private, for interviews only, never published or emailed. Targets: about 3 company studies (cap 5) and 2 calls drawn from them; detail in the roadmap file.
 - **9 Nov ~19:10 onwards: THE SEVEN-CHAPTER STORY IS LIVE (Tommy: "Do it right now", not after the SemiAnalysis interview).** Commit 04190dd, deploy green, checked live. The site is one story in seven chapters (Johor, America, the equipment queue, building your own power, solar and batteries, nuclear, microreactors), driven by CHAPTERS in src/data/stack.ts: homepage chapter list with handoff lines, a "Chapter N of 7" line and next-chapter box on each piece, the descent rebuilt (hall and rack scenes out, a solar day/night scene in, ends on a chain panel). Solar and batteries published (dated 2026-11-09T19:03:58+08:00, claim in claims.ts). Powering the rack and Heat and water removed (archived in research-build/archive/rack-and-heat-pieces-2026-11-09/; URLs and sub-URLs redirect home). Checks: check-piece 7/7 clean; 145 internal links, 0 broken; 200 redirects, 0 bad.
