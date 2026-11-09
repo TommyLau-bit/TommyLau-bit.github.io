@@ -4,7 +4,7 @@ Tommy wants every change made together, at once, once the plan is final. More ch
 
 ## The decision
 
-The site tells one story, in a causal order: where does the next gigawatt for AI come from, and why is every answer a queue? Six chapters. Rack power and cooling are removed, because they answer a different question (what happens to the power inside the building).
+The site tells one story, in a causal order: where does the next gigawatt for AI come from, and why is every answer a queue? Seven chapters (the seventh, solar and batteries, approved 9 Nov evening and drafted; see below). Rack power and cooling are removed, because they answer a different question (what happens to the power inside the building).
 
 ## The chain (Tommy's order)
 
@@ -13,9 +13,10 @@ The site tells one story, in a causal order: where does the next gigawatt for AI
 | 1 | Johor and Singapore (the-queue-not-the-chip) | The plug, not the chip, is the limit | Malaysia is not alone: America now decides who gets cut |
 | 2 | America rations the plug (america-rations-the-plug) | The grid rations: who waits, who is cut, who pays | And the grid cannot speed up, because its machines come from a few factories |
 | 3 | The equipment queue (the-equipment-queue) | A handful of factories keep the wait, not clear it | So builders skip the grid, and meet the turbine queue instead |
-| 4 | Building your own power (building-your-own-power) | Skipping the grid's queue joins GE Vernova's six-year queue | Gas is booked to 2032, so buyers turn to power that already runs: reactors |
-| 5 | Nuclear for AI (nuclear-for-ai) | Old reactors first; new ones wait | The new reactors are small, and their fuel is the gate |
-| 6 | Microreactors (microreactors) | The reactor is the easy part; the fuel is the gate | Ending: every route to the next gigawatt runs through a queue |
+| 4 | Building your own power (building-your-own-power) | Skipping the grid's queue joins GE Vernova's six-year queue | Gas is booked to 2032, so why not build solar and batteries, the fastest power there is? |
+| 5 | Solar and batteries (solar-and-batteries) NEW, DRAFT | Fast to build, but the grid counts them as a fraction of a firm megawatt, and AI runs through every winter night | So buyers want power that runs all year: reactors |
+| 6 | Nuclear for AI (nuclear-for-ai) | Old reactors first; new ones wait | The new reactors are small, and their fuel is the gate |
+| 7 | Microreactors (microreactors) | The reactor is the easy part; the fuel is the gate | Ending: every route to the next gigawatt runs through a queue |
 
 ## Changes to make at launch (all at once, as drafts first, preview to Tommy, then one launch)
 
@@ -35,9 +36,12 @@ The site tells one story, in a causal order: where does the next gigawatt for AI
 - Descent cards: rewritten as the story; drawings and camera kept. Stop order to match the chapters where the camera allows.
 - stack.ts: layers in chapter order.
 
-## Open: possible additions (Tommy deciding)
+## The seventh piece: solar and batteries (DRAFT, 9 Nov 2026; Tommy: "yes go ahead with adding the seventh piece")
 
-Gap check (9 Nov evening). The chain answers "grid, then gas, then nuclear" but never the question every analyst asks between chapters 4 and 5: why not solar and batteries? The site touches it only in passing (a capacity-factor chart in Nuclear for AI; batteries as backup in America).
-- Candidate chapter 4b, between own power and nuclear: solar and batteries are the fastest thing to build, but AI runs around the clock. The mechanism: grid operators count a megawatt of solar or a four-hour battery as only part of a firm megawatt (PJM's ELCC class ratings, ERCOT's capacity accreditation), so a 24-hour load needs several megawatts of them per firm megawatt. Hand-off: so buyers want power that runs all year, which is nuclear. Primary sources: PJM and ERCOT accreditation filings, EIA. Must clear the quality bar before it is drafted.
-- Considered and not worth a chapter: building new transmission lines (partly in America and Equipment), the gas pipe (inside Own power), the workforce (no primary data), moving to where the power is (inside Johor).
-Tommy has not decided. Nothing is drafted.
+Title: "Solar and batteries: fast to build, but short of a winter night". Slug solar-and-batteries. Not live, not committed: the piece, cover and both source folders are in .git/info/exclude.
+- Source of record: research-build/deep-pieces/solar/solar.src.md; charts.py writes illos/; assemble.py builds src/content/journal/solar-and-batteries.md (draft: true) and holds the CLAIM until launch. Research notes: research-build/topics/solar-firm-research/. Fact-check: research-build/deep-pieces/solar/FACTCHECK.md.
+- Claim approved by Tommy, 9 Nov 2026 evening ("Yes, keep it"): the tightened version in assemble.py (four-hour storage below 50% for 2030/31 and at or below 40% for 2031/32; tracking solar 10% or less). Do not reword it at launch.
+- Launch steps (with the rest of the story, on Tommy's word): add the CLAIM from assemble.py to src/data/claims.ts (dated the launch day); add the slug to the onsite layer in src/data/stack.ts after building-your-own-power (or its own layer if the chapter list replaces layers); set draft: false and the real date; remove the four solar lines from .git/info/exclude (the piece, the cover, research-build/deep-pieces/solar/ and research-build/topics/solar-firm-research/; kept out because the repo is public), then commit them; descent card for the chapter; make-og; check-piece, build, link check; LinkedIn post on the company page (scheduled, logged in brand/linkedin-posts.md); email brief for _SEND and the rulebook mapping; study sheet PDF already in study-decks/.
+
+## Considered and not worth a chapter
+Building new transmission lines (partly in America and Equipment), the gas pipe (inside Own power), the workforce (no primary data), moving to where the power is (inside Johor).
