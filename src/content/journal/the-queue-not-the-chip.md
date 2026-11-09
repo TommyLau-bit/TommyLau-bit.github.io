@@ -49,7 +49,7 @@ Because Singapore stopped building in 2019, and Johor next door could connect a 
 
 By 2019 Singapore's data centres used about 5.3 per cent of the country's electricity, according to its communications ministry. That year the government told the industry of a "temporary pause" in new data centres. Its stated reason was that data centres are "intensive users of resources like land, water, and energy".
 
-The pause sent new building over the causeway. Johor has land and sits on the Peninsular grid of Tenaga Nasional (TNB), Malaysia's national utility. Then Tenaga sped up the slowest step it controls. Its **Green Lane Pathway**, launched on 8 August 2023 for data centres taking supply at 132 or 275 kilovolts, cut the time to connect from 36 to 48 months to 12, plant included.
+The pause sent new building over the causeway. Johor has land and sits on the Peninsular grid of Tenaga Nasional (TNB), Malaysia's national utility. Then Tenaga sped up the slowest step it controls. Its **Green Lane Pathway**, launched on 8 August 2023 for data centres taking supply at 132 or 275 kilovolts (kV), cut the time to connect from 36 to 48 months to 12, plant included.
 
 <figure class="illo">
 <p class="illo-title">Johor's data centres sit in two clusters, and their new power has to travel</p>
@@ -83,7 +83,7 @@ The fleet is about 1.6 gigawatts, but that is **maximum IT load capacity**, the 
 
 <a id="singapore-licenses-the-old-halls"></a>
 
-The ration is now being written into law. Singapore's Digital Infrastructure Bill, debated in Parliament on 6 and 7 October 2026, requires a licence for any hall with 3 megawatts or more of **critical IT load**, the power a hall can deliver to its servers. Each licence states that load, and the regulator can fine an operator or cut the load it may run. The minister expects the law in force in 2027. One gap remains: a second route, the Strategic Digital Infrastructure Scheme, exists for proposals with "uniquely differentiated value", and no award under it has been published.
+The ration is now being written into law. Singapore's Digital Infrastructure Bill, debated in Parliament on 6 and 7 October 2026, requires a licence for any hall with 3 megawatts or more of **critical IT load**, the power a hall can deliver to its servers. Each licence states that load, and the regulator can fine an operator or cut the load it may run. The minister expects the law in force in 2027. One gap remains: a second route, the Strategic Digital Infrastructure Scheme, exists for proposals with "uniquely differentiated value". On 6 October 2026 the minister referred to operators "awarded capacity under" it, but no award has been published. So Singapore's ration is real, but not every seat is handed out in public.
 
 <a id="singapore-cannot-wait-for-the-cable"></a>
 
@@ -159,15 +159,17 @@ Part of the gap is plain ramp-up: a hall built in phases books for the whole. Pa
 
 <a id="johor-plugs-in-before-it-fills"></a>
 
-The most useful point for an investor is that a hall can be finished, let and paid for while drawing little. DayOne, the operator spun out of the international business of the Chinese data centre company GDS, filed to list its shares in the United States on 5 October 2026. It had about 789 megawatts of IT capacity in service in Johor, and across its portfolio 99.1 per cent of the capacity in service was billing.
+The most useful point for an investor is that a hall can be finished, let and paid for while drawing little. DayOne, the operator spun out of the international business of the Chinese data centre company GDS, filed to list its shares in the United States on 5 October 2026. At 20 September 2026 it had about 789 megawatts of IT capacity in service in Johor, and across its portfolio 99.1 per cent of the capacity in service was billing.
 
-The reason is the contract. DayOne's are mostly 10 to 15 years and "predominantly" take-or-pay: the tenant pays for the capacity reserved whether or not it uses it. Power itself is passed through at the customer's actual use. The landlord is paid for the plug, not the power.
+At a PUE of about 1.3, DayOne's Johor halls alone would draw about a gigawatt if run flat out, on my arithmetic: three quarters of the 1.37 gigawatts all of Malaysia's data centres drew in August. The bases differ, so this is a pointer, not proof: capacity that is billing need not be capacity that is running.
+
+The reason is the contract. DayOne's are mostly 10 to 15 years and "predominantly" take-or-pay: the tenant pays for the capacity reserved whether or not it uses it. Power itself is passed through at the customer's actual use. The landlord is paid for the plug, not the power. Revenue follows the booking; electricity follows the chips.
 
 ## Who fills the halls, and what do the chips have to do with it?
 
 A few very large tenants, one above all, and American export rules set how fast that tenant can add chips, not whether a hall gets built.
 
-DayOne's largest customer, described only as "a global technology company with a leading short-form video platform", provided 69.4 per cent of its revenue in 2025. SemiAnalysis, a chip research firm, identifies it as ByteDance, the Chinese owner of TikTok. Since 17 November 2023 an American licence has been needed to export advanced AI chips to any company headquartered in China, wherever it sits. On 31 May 2026 the US Bureau of Industry and Security confirmed that this applies in Malaysia too.
+DayOne's largest customer, described only as "a global technology company with a leading short-form video platform", provided 69.4 per cent of its revenue in 2025. SemiAnalysis, a chip research firm, identifies it as ByteDance, the Chinese owner of TikTok. Since 17 November 2023 an American licence has been needed to export advanced AI chips to any company headquartered in China or Macau, or whose ultimate parent is, wherever it sits. On 31 May 2026 the US Bureau of Industry and Security confirmed that this applies in Malaysia too. A Chinese-owned tenant in Johor therefore needs a licence for every new shipment of top chips.
 
 Three details narrow that gate. Chips already installed may keep running "until further notice". A Chinese firm renting computing from a non-Chinese owner receives no export and needs no licence; the Remote Access Security Act, which would close that gap, has passed the US House but not the Senate. And the stricter rule for all of Malaysia and Thailand announced in May 2025 had not been published as a regulation by 7 November 2026.
 
@@ -200,19 +202,19 @@ The minister also gave the number behind the rule. If all 117 approved centres a
 <figcaption>Dewan Rakyat Hansard (13 and 28 October 2026; the 117-centre figure is the investment minister's oral estimate); energy ministry projection as reported by Bernama (19 October 2026); Tenaga briefing and deck (August and October 2026).</figcaption>
 </figure>
 
-Supply is moving further away. Tenaga is retiring 6.6 gigawatts of its own power stations by 2030, and is building a new 500 kV backbone of about 500 kilometres, from Paka on the east coast to Kulai East in Johor, due by 2030.
+Supply is moving further away. Tenaga is retiring 6.6 gigawatts of its own power stations by 2030, and the 2,100 megawatt Tanjung Bin coal station in south-west Johor retires in 2031, according to grid operator data reported by The Edge. The bids reported for the gas plants to replace them, tendered as NEWGEN26, are all outside Johor. Tenaga is building a new 500 kV backbone of about 500 kilometres, from Paka on the east coast to Kulai East in Johor, due by 2030.
 
 <a id="phantom-load"></a>
 
-Here is the question I cannot yet answer. An engineer sizing a grid does not add up every customer's maximum, because loads rarely peak together. An allocation queue does add them up, because each booked megawatt is a promise the planner must keep. If the spare-margin test counts bookings rather than expected draw, the 4.4 gigawatts booked and idle could use up the margin on paper while wires and turbines sit half used. Then the cheapest new gigawatt in Johor is a reclaimed booking, not a new substation.
+Here is the question I cannot yet answer, and it matters for anyone valuing a Johor booking. An engineer sizing a grid does not add up every customer's maximum, because loads rarely peak together. An allocation queue does add them up, because each booked megawatt is a promise the planner must keep. If the spare-margin test counts bookings rather than expected draw, the 4.4 gigawatts booked and idle could use up the margin on paper while wires and turbines sit half used. The record fits that reading without proving it: the 24 new applications are parked, and press reports describe operators now submitting ten-year staggered projections and receiving grid access in phases. If planning counts bookings, the cheapest new gigawatt in Johor is a reclaimed booking, not a new substation. Nothing published yet says which it counts.
 
-## Can water or own power get round the gate?
+## Is water the next gate, and can own power get round the queue?
 
-Neither: water is now a gate of its own, and own power moves the queue rather than removing it.
+Water is now a stated gate of its own, and own power moves the queue rather than removing it.
 
 <a id="johor-waits-on-the-treatment-plant"></a>
 
-In 2025 Johor's plants could treat about 2,375 million litres of water a day against demand of 2,034, a reserve margin of 14.3 per cent, according to SPAN, the national water regulator. A government written answer, as reported, put Johor's data centre water demand at 384 million litres a day by 2030, about the size of that spare. Since October 2026, areas with a low water reserve margin "will not be considered" for data centres.
+In 2025 Johor's plants could treat about 2,375 million litres of water a day against demand of 2,034, a reserve margin of 14.3 per cent, according to SPAN, the national water regulator. That leaves about 340 million litres a day spare, on my arithmetic. In November 2025 a government written answer, as reported, put Johor's data centre water demand at 384 million litres a day by 2030, on planning permissions already granted: about the size of that spare. Since October 2026, areas with a low water reserve margin "will not be considered" for data centres.
 
 American AI builders often escape grid queues by putting gas power on site, as [Building your own power](/journal/building-your-own-power/) explains. In Singapore that buys nothing that matters, because the licence states the computing load a hall may run, not its power. In Malaysia own power is now the official answer for those the grid will not serve, but it needs its own gas, plant and permits, plus the 30 per cent renewable rule. Own power gets round a queue; it does not get round a ration.
 
@@ -243,7 +245,7 @@ CLP Power, the utility for Kowloon and the New Territories, works under a **Sche
 
 <a id="the-second-gate-is-beijing"></a>
 
-The plug is not the problem; the chip is. Since December 2020 American export rules have treated Hong Kong as China. Since 15 January 2026 chips up to the class of Nvidia's H200, shipped from 2024, can be licensed case by case for end users in China; anything more powerful is presumed denied. So a Hong Kong hall is capped about two chip generations behind the frontier, however much power it has. Press reports in August 2026 even put hundreds of thousands of H200s in Hong Kong, kept there while Beijing limits their import to the mainland.
+The plug is not the problem; the chip is. Since December 2020 American export rules have treated Hong Kong as China. Since 15 January 2026 chips up to the class of Nvidia's H200, shipped from 2024, can be licensed case by case for end users in China; anything more powerful is presumed denied. So a Hong Kong hall is capped about two chip generations behind the frontier, however much power it has. Press reports in August 2026 even put hundreds of thousands of H200s in Hong Kong, kept there while Beijing limits their import to the mainland. The chips are physically there and still not running.
 
 <a id="gates-in-series"></a>
 

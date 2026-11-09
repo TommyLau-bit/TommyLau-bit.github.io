@@ -29,7 +29,7 @@ Because on the ground the scarce thing is the plug, and in orbit there is no plu
 
 A data centre on the ground needs a grid connection, and in America the wait for one now runs to years, as told in [America rations the plug](/journal/america-rations-the-plug/). It also needs land, water or air for cooling, and permits from towns that increasingly say no.
 
-In orbit, sunlight arrives at about 1,361 watts per square metre, with no clouds and no night for much of the year. Google's project lead, Travis Beals, wrote that in the right orbit "a solar panel can be up to 8 times more productive than on earth" (4 November 2025). The right orbit is a **dawn-dusk sun-synchronous orbit**: a near-polar path that rides the line between day and night, so the panels face the sun almost all the time.
+In orbit, sunlight arrives at about 1,361 watts per square metre, with no clouds and no night for much of the year. Google's project lead, Travis Beals, wrote that in the right orbit "a solar panel can be up to 8 times more productive than on earth" (4 November 2025). The right orbit is a **dawn-dusk sun-synchronous orbit**: a near-polar path that rides the line between day and night, so the panels face the sun almost all the time. Google's design uses it, and Starcloud, a start-up building computing satellites, has filed for it.
 
 So the pitch is simple: free power, no queue, no water. The rest of this piece asks what that power costs to collect and what its heat costs to throw away, both counted in kilograms.
 
@@ -43,7 +43,7 @@ At 250 watts per square metre, a 210 kW array covers about 840 square metres, my
 
 SpaceX's letter to the Federal Communications Commission (FCC), the American regulator of satellites, gives a "Mass" of 3,000 kg for satellites below 600 kilometres. The letter was filed on 29 May 2026, when SpaceX's published plans were smaller: its S-1 spoke of early satellites "generating 100 kilowatts of compute power". So the 3,000 kg may belong to the earlier design.
 
-Google's design is a cluster rather than one large craft: 81 satellites flying in formation at about 650 kilometres, linked by lasers, each carrying Google's own AI chips, its **TPUs**.
+Google's design is a cluster rather than one large craft. Its research paper, "Towards a future space-based, highly scalable AI infrastructure system design", sketches 81 satellites flying in formation at about 650 kilometres, linked by lasers. Each would carry Google's own AI chips, its **TPUs**.
 
 <figure class="illo">
 <p class="illo-title">The array is five times the radiator, and both are launched</p>
@@ -75,9 +75,9 @@ That depends on how hot it may run, and the chip decides that.
 
 A radiator cannot run hotter than the coolant feeding it, and the coolant cannot run hotter than the chips allow. Nvidia's newest racks take coolant at up to 45°C, and it leaves the chip at about 55°C, Nvidia says (16 March and 21 June 2026). That is the ceiling for any panel carrying their heat.
 
-Elon Musk, SpaceX's chief executive, gave SpaceX's figure in an interview the company filed with the SEC (9 June 2026): radiators shedding about 1,400 watts per square metre, "radiating on both sides". Read as watts per square metre of panel, a shaded two-sided panel at emissivity 0.92 sheds that only near 67°C, on my arithmetic. That is hotter than the coolant leaving Nvidia's chips today.
+Elon Musk, SpaceX's chief executive, gave SpaceX's figure in an interview the company filed with the SEC, the securities regulator (9 June 2026): radiators shedding about 1,400 watts per square metre, "radiating on both sides". Read as watts per square metre of panel, which the interview does not specify, a shaded two-sided panel at emissivity 0.92 sheds that only near 67°C, on my arithmetic. That is hotter than the coolant leaving Nvidia's chips today.
 
-SpaceX's current page implies a cooler panel. Its 175 kW over 160 square metres is about 1,090 watts per square metre, which the same panel sheds near 54°C once the Earth's own infrared glow is counted, my arithmetic. That fits warm-water coolant with little to spare. At the cold end, Starcloud's white paper nets 633 watts per square metre from a panel at 20°C; counting the Earth's glow properly, on my arithmetic, the net falls to about 585.
+SpaceX's current page implies a cooler panel. Its 175 kW over 160 square metres is about 1,090 watts per square metre, which the same panel sheds near 47°C in deep shade, or near 54°C once the Earth's own infrared glow is counted, my arithmetic. That fits warm-water coolant with little to spare. At the cold end, Starcloud's white paper nets 633 watts per square metre from a panel at 20°C. Its sum counts the Earth's glow at about 14 watts, using the coating's absorption of sunlight. In the infrared a surface absorbs at its emissivity, about 0.92, so on my arithmetic the Earth adds about 63 watts and the net falls to about 585.
 
 So a radiator sheds somewhere between about 600 and 1,400 watts per square metre, depending on how hot the chip lets it run. A 175 kW satellite needs between about 125 and 300 square metres.
 
@@ -121,7 +121,7 @@ Now add up the parts at today's published weights. The array is 8 to 14 kg per k
 <figcaption>My arithmetic from Redwire's product table, the radiator figures above at 1,400 W/m², a press figure for a GB200 rack (The Register, 21 March 2024) and NASA's battery cell range. SpaceX prospectus, 12 June 2026, for the target.</figcaption>
 </figure>
 
-SpaceX's own numbers say the same. Its page gives "Vehicle efficiency 75 kW / ton", a quarter short of the prospectus target. Its FCC mass of 3,000 kg, against its page's 175 kW average, gives about 58 kW per tonne, my arithmetic; even the 250 kW peak gives about 83. For comparison, Google's paper estimates a Starlink V2 mini, one of SpaceX's internet satellites, at about 49 kW per tonne for the whole craft.
+SpaceX's own numbers say the same. Its page gives "Vehicle efficiency 75 kW / ton", a quarter short of the prospectus target. Its FCC mass of 3,000 kg, against its page's 175 kW average, gives about 58 kW per tonne, my arithmetic; even the 250 kW peak gives about 83. For comparison, Google's paper estimates a Starlink V2 mini, one of SpaceX's internet satellites, at 575 kg and about 28 kW. That is about 49 kW per tonne for the whole craft, and only part of that power goes to anything like computing.
 
 <figure class="chart">
 <p class="chart-title">No published figure reaches SpaceX's target of 100 kW per tonne</p>
@@ -181,13 +181,15 @@ At $200 a kilogram, the same satellite falls to $810, inside the ground range. T
 <figcaption>Google's Suncatcher paper. Launch cost only: chips, arrays and the satellite itself are left out on both sides.</figcaption>
 </figure>
 
-And the fare recurs: a satellite flown on a five-year life must be launched again when it wears out, while on the ground the hall and its [grid gear outlast three or four chip generations](/journal/the-equipment-queue/). The launched power price is kilograms per kilowatt times the fare, over the years of life. Halve either and the bill halves. So the strongest case against me is both falling at once.
+And the fare recurs. A satellite flown on a five-year life must be launched again when it wears out. On the ground, the hall and its [grid gear outlast three or four chip generations](/journal/the-equipment-queue/). The launched power price is kilograms per kilowatt times the fare, over the years of life. Halve either and the bill halves. So the strongest case against me is both falling at once.
 
 ## So who holds the scarce thing, and what should an investor watch?
 
 In orbit the scarce thing is not power. It is mass to orbit, and the kilograms per kilowatt that decide how much of it each satellite needs.
 
-If the claim is right, three parts of the chain gain. **The launcher**, paid per kilogram, gains whether orbit works or not; SpaceX flew both computing prototypes now in orbit and designs its own satellite, which makes it toll keeper and competitor at once. **The lightweight makers**, of arrays, radiators and heat pipes, gain if orbit works at all, because every kilogram they save is a launch fare saved. **The ground plug** keeps its value while orbit stays heavy; SpaceX's own risk factors warn that if "advances in nuclear energy" ease ground constraints, its orbital computing "may be materially diminished".
+If the claim is right, three parts of the chain gain. **The launcher**, paid per kilogram, gains whether orbit works or not. SpaceX flew both computing prototypes now in orbit, Starcloud's and Google's, and also designs its own computing satellite, which makes it toll keeper and competitor at once. **The lightweight makers**, of arrays, radiators and heat pipes, gain if orbit works at all, because every kilogram they save is a launch fare saved. Astro Digital built Starcloud-1, and Planet built Google's prototype with Google; Redwire makes roll-out arrays. **The ground plug** keeps its value while orbit stays heavy. SpaceX's own risk factors warn that if "advances in nuclear energy" ease ground constraints, its orbital computing "may be materially diminished".
+
+The SEC asked SpaceX in April 2026 for the "power-to-mass ratios" behind its goal and the "total system mass". The prospectus said the figures "continue to be refined".
 
 The readings are specific. SpaceX's quarterly reports, for a satellite mass and kilowatts. Google's twin interconnected satellites, due in 2027, for a published mass and radiator. Starcloud-2, which its page says will be "fully operational in sun-synchronous orbit by 2027". And any published Starship price per kilogram.
 
@@ -199,7 +201,7 @@ The satellites that could be weighed against the target fly in 2027 and 2028. A 
 
 The claim stands on two legs. The first, that a kilowatt in orbit is heavy, rests on physics and on the weights of flown hardware. The second, that the fare is high, rests on a price that reuse can move fast. The legs multiply, so a fall in both would break the idea even before either test is met.
 
-Musk said that "cooling is actually much easier in space than it is on Earth". Off the chip, perhaps. Out to the world, heat can leave only as light, a few hundred to about 1,400 watts per square metre, and every square metre is launched. At the scale of the fleet, 100 gigawatts a year needs "approximately one million metric tons to orbit annually", the prospectus says. In orbit the sunlight is free, and the kilograms are the bill.
+Musk said that "cooling is actually much easier in space than it is on Earth". Off the chip, perhaps: there is no dust and no humidity. Out to the world, heat can leave only as light, a few hundred to about 1,400 watts per square metre, and every square metre is launched. At the scale of the fleet, 100 gigawatts a year needs "approximately one million metric tons to orbit annually", the prospectus says. In orbit the sunlight is free, and the kilograms are the bill.
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>

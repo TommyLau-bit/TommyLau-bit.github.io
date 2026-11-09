@@ -36,9 +36,9 @@ The measure is the **capacity factor**: what a plant actually produced in a year
 <figcaption>EIA Electric Power Monthly, Tables 6.07.A and 6.07.B (23 October 2026). Gas and coal plants are often turned down by choice; wind and solar run when the weather allows.</figcaption>
 </figure>
 
-That matters most to the companies that promised clean power around the clock. Google aims by 2030 to match every hour of electricity it uses with carbon-free power on the same grid in the same hour, and in 2024 it reached 66 per cent. Solar cannot fill the night, and batteries shift hours but not seasons. Nuclear is the only carbon-free source that runs nearly every hour at the scale of many gigawatts.
+That matters most to the companies that promised clean power around the clock. Google aims by 2030 to match every hour of electricity it uses with carbon-free power on the same grid in the same hour, and in 2024 it reached 66 per cent. Nuclear is the only carbon-free source that runs nearly every hour at the scale of many gigawatts.
 
-America already has 94 reactors at 54 plants, with about 98 gigawatts, which made 17.7 per cent of its electricity in 2025 (my division of EIA figures). The [microreactors piece](/journal/microreactors/) explains the physics of a reactor step by step.
+America already has 94 reactors at 54 plants, with about 98 gigawatts, which made 17.7 per cent of its electricity in 2025 (my division of EIA figures).
 
 ## What does "new" nuclear power for AI actually mean?
 
@@ -46,7 +46,7 @@ One of three things, arriving in this order: restarting a closed reactor, squeez
 
 A **restart** brings back a closed reactor. Three are under way: Crane (835 MW) in Pennsylvania, Palisades (about 800 MW) in Michigan and Duane Arnold (615 MW) in Iowa. An **uprate** lets a running reactor make more heat, and so more electricity, under a licence change from the Nuclear Regulatory Commission (NRC), the federal regulator. A **new build** starts from bare ground: a large reactor of about 1,100 MW, a **small modular reactor** (SMR) of up to about 300 MW, or an **advanced reactor** with a different coolant or fuel, most of which need HALEU.
 
-**HALEU**, high-assay low-enriched uranium, is the fuel that divides the field. Natural uranium is only about 0.7 per cent uranium-235, the atom that splits. Today's reactors burn fuel concentrated to about 5 per cent; HALEU is concentrated to just under 20 per cent, which lets a small or fast-neutron core run for years. It takes roughly five times the enrichment work per kilogram, and almost nobody makes it yet.
+**HALEU**, high-assay low-enriched uranium, is the fuel that divides the field. Natural uranium is only about 0.7 per cent uranium-235, the atom that splits. Today's reactors burn fuel concentrated to about 5 per cent; HALEU is concentrated to just under 20 per cent, which lets a small or fast-neutron core run for years. It takes roughly five times the enrichment work per kilogram.
 
 ## What does a nuclear project need before it can sell a kilowatt-hour?
 
@@ -61,7 +61,7 @@ The **grid place** is the right to connect to the high-voltage network at a set 
 <figcaption>My framing. "Part done" means the thing exists but needs repair, rehiring or a licence change; the fuel for ordinary reactors still has its own Russian deadline, set out later in the piece.</figcaption>
 </figure>
 
-This is the whole argument in one picture. A restart or an uprate begins with most of the clocks already run: a licensed site, a grid place held or borrowable, and ordinary fuel from a mature industry. What is left is repair work and paperwork. A new build starts the grid, reactor and licence clocks at zero, and for most advanced designs the fuel clock runs years behind the other three.
+A restart or an uprate begins with most of the clocks already run: a licensed site, a grid place held or borrowable, and ordinary fuel from a mature industry. What is left is repair work and paperwork. A new build starts the grid, reactor and licence clocks at zero, and for most advanced designs the fuel clock runs years behind the other three.
 
 ## How does a closed reactor come back to life?
 
@@ -69,21 +69,21 @@ Through a regulatory path that did not exist until 2023, a few years of repair a
 
 <a id="constellation-restarts-the-reactor"></a>
 
-Crane shut on 20 September 2019 because it could not earn enough selling power into the market. It was placed in **SAFSTOR**, a form of decommissioning in which a closed plant is kept intact and guarded while its radioactivity decays. That choice is what makes a restart possible at all.
+Crane shut on 20 September 2019 because it could not earn enough selling power into the market. It was placed in **SAFSTOR**, a form of decommissioning in which a closed plant is kept intact and guarded while its radioactivity decays. Once an owner moves to active dismantling, the reactor vessel and its internals are cut up and removed, and nothing remains to restart. Apart from the three, no closed American reactor has a restart application at the NRC.
 
-The rules were written for one-way traffic: once a reactor has shut for good, its licence no longer allows it to run. Holtec, a private nuclear company, built a way back for Palisades from February 2023: an exemption from that rule, licence amendments and an environmental assessment, approved together. For Palisades it took about 30 months, to approval on 24 July 2025.
+Once a reactor has shut for good, its licence no longer allows it to run. Holtec, a private nuclear company, built a way back for Palisades from February 2023: an exemption from that rule, licence amendments and an environmental assessment, approved together. For Palisades it took about 30 months, to approval on 24 July 2025.
 
-Crane is following the same path, about a year behind. Constellation filed in November 2024, and an NRC schedule letter of January 2026 targets a decision by 4 March 2027.
+Crane is following the same path, about a year behind. Constellation filed in November 2024, and an NRC schedule letter of January 2026 targets a decision by 4 March 2027. Constellation paid US$35 million extra for three new main power transformers to arrive in 2026, and had about 500 full-time staff by September 2025, nearly 80 per cent of what it needs.
 
-The money is modest by nuclear standards. Constellation says it has invested about US$1.6 billion, and the Energy Department lent US$1 billion of it in November 2025. Microsoft buys the output under a 20-year contract signed in September 2024. That is roughly US$1,900 per kilowatt, on my arithmetic; a new large reactor costs several times as much.
+The money is modest by nuclear standards. Constellation says it has invested about US$1.6 billion. Microsoft buys the output under a 20-year contract signed in September 2024. That is roughly US$1,900 per kilowatt, on my arithmetic; a new large reactor costs several times as much.
 
 ## Why did Crane have to borrow a place on the grid?
 
 Because its own place expired a year after it closed, and a fresh one might not have been fully ready until the end of 2030 or later.
 
-The grid here is run by **PJM**, the operator of the high-voltage network and power market for thirteen states from New Jersey to Illinois. Under PJM's tariff, a closed plant's **capacity interconnection rights**, its right to put a set number of megawatts into the network, end one year after it shuts. Crane's lapsed in 2020.
+The grid here is run by **PJM**, the operator of the high-voltage network and power market. Under PJM's tariff, a closed plant's **capacity interconnection rights**, its right to put a set number of megawatts into the network, end one year after it shuts. Crane's lapsed in 2020.
 
-So Crane applied again like a new plant. PJM's first study, in October 2025, found its full output could be delivered only once new transmission was built, some due as late as December 2030. Constellation told FERC that full delivery could be at risk until at least 31 December 2030.
+So Crane applied again like a new plant. PJM's first study, in October 2025, found its full output could be delivered only once new transmission was built, some due as late as December 2030.
 
 <figure class="chart">
 <p class="chart-title">Crane's reactor is due in 2027; full delivery through a fresh grid request might not have been</p>
@@ -92,7 +92,7 @@ So Crane applied again like a new plant. PJM's first study, in October 2025, fou
 <figcaption>Constellation (20 September 2024, 6 August 2026); FERC order 195 FERC ¶ 61,162 (1 June 2026), which records Constellation's reading of PJM's first study and says the transfer could "potentially" bring full delivery sooner.</figcaption>
 </figure>
 
-So Constellation borrowed a plug from its own fleet. On 1 June 2026 the Federal Energy Regulatory Commission (FERC), which regulates interstate power markets, let it move 760 MW of rights from Eddystone Units 3 and 4, two oil and gas units near Philadelphia, to Crane. FERC said this could "potentially" let Crane run fully before the end of 2030, and PJM's studies still decide. The reactor's own date never depended on the plug; what the borrowed rights may change is how soon all 835 MW count.
+So Constellation borrowed a plug from its own fleet. On 1 June 2026 the Federal Energy Regulatory Commission (FERC), which regulates interstate power markets, let it move 760 MW of rights from Eddystone Units 3 and 4, to Crane. FERC said this could "potentially" let Crane run fully before the end of 2030, and PJM's studies still decide. The reactor's own date never depended on the plug; what the borrowed rights may change is how soon all 835 MW count.
 
 ## If holding a grid place is enough, why is Palisades late?
 
@@ -100,13 +100,13 @@ Because a grid place makes a restart possible, not quick. Palisades kept its pla
 
 <a id="palisades-waits-on-the-reactor"></a>
 
-Palisades sits on the grid of **MISO**, the operator for much of the Midwest, and FERC extended its suspended connection to 1 March 2027. It was reconnected to its 345 kilovolt switchyard on 11 September 2026. The reactor was harder. Its **steam generators**, the heat exchangers that boil water into steam, had worn tubes, which Holtec sleeved rather than replace.
+Palisades sits on the grid of **MISO**, the operator for much of the Midwest, There a closed plant can stay "suspended", keeping its connection, for at most 36 months in any five years; FERC extended Palisades' by 22 months, to 1 March 2027. It was reconnected to its 345 kilovolt switchyard on 11 September 2026. The reactor was harder. Its **steam generators**, the heat exchangers that boil water into steam, had worn tubes, which Holtec sleeved rather than replace.
 
-Loading fuel began on 30 August 2026. Then a fuel assembly tilted about 30 degrees after it was placed, and loading stopped. Recovering it took a month, an emergency licence amendment approved on 13 October 2026 and a purpose-built tool. Holtec has given no new restart date.
+Loading fuel began on 30 August 2026. Then a fuel assembly tilted about 30 degrees after it was placed, and loading stopped. Recovering it took a month and an emergency licence amendment. Holtec has given no new restart date.
 
-The deadline is commercial. Palisades sells to two power cooperatives under 28-year contracts, and if it is not in service by March 2027, either side may end them, with Holtec owing its share of a US$100 million termination payment.
+The deadline is commercial. Palisades sells to two power cooperatives under 28-year contracts, and if it is not in service by March 2027, either side may end them.
 
-The third restart shows the same lesson the other way round. NextEra Energy kept Duane Arnold's grid place through a FERC waiver of August 2025, for up to 619 MW provided the plant runs by 31 December 2029. Its harder job is physical: a storm in August 2020 wrecked its cooling towers, so NextEra must build new ones. Its date is the first quarter of 2029 at the latest.
+The third restart shows the same lesson the other way round. NextEra Energy kept Duane Arnold's grid place through a FERC waiver of August 2025, for up to 619 MW provided the plant runs by 31 December 2029. Google buys most of the output under a 25-year contract, and CIPCO, an Iowa power cooperative, the rest on the same terms. Its harder job is physical: a storm in August 2020 wrecked its cooling towers, so NextEra must build new ones. Its date is the first quarter of 2029 at the latest.
 
 <figure class="chart">
 <p class="chart-title">Palisades won its approvals first and still has no date; Crane, a year behind, is due first</p>
@@ -130,9 +130,9 @@ The NRC sorts uprates by size. A **measurement uncertainty recapture** uprate ad
 <figcaption>NRC, Types of Power Uprates (reviewed 15 September 2026). My drawing of a generic pressurised water reactor; boiling water reactors make steam in the reactor itself, but the uprate types are the same.</figcaption>
 </figure>
 
-The NRC has approved 172 uprates since 1977, adding 8,030 MW, the output of about seven large reactors. Then the work stopped: the last came in November 2021. AI buyers have restarted it. The NRC's list of expected applications, updated on 8 September 2026, shows 31 uprates from the fourth quarter of 2026 to 2032, adding about 2,421 MW. Nineteen are extended uprates, and twelve are Constellation's.
+The NRC has approved 172 uprates since 1977, adding 8,030 MW. Then the work stopped: the last came in November 2021. AI buyers have restarted it. The NRC's list of expected applications, updated on 8 September 2026, shows 31 uprates from the fourth quarter of 2026 to 2032, adding about 2,421 MW. Nineteen are extended uprates, and twelve are Constellation's.
 
-The deals behind them are specific. On 6 October 2026 Google agreed a 20-year contract for 890 MW of uprates at eleven Constellation reactors, which Constellation will invest more than US$4.3 billion to build. Amazon has signed for about 190 MW at Calvert Cliffs in Maryland, Meta for 30 MW at Clinton and 433 MW at three Vistra plants, and Google for about 96 MW in Georgia. Together that is about 1,640 MW, on my sum.
+The deals behind them are specific. On 6 October 2026 Google agreed a 20-year contract for 890 MW of uprates at eleven Constellation reactors, which Constellation will invest more than US$4.3 billion to build. Amazon has signed for about 190 MW at Calvert Cliffs in Maryland, and Meta for 30 MW at Clinton in Illinois and 433 MW at three plants of Vistra, a Texas power company. Google has signed for about 96 MW in Georgia, still awaiting state approval. Together that is about 1,640 MW, on my sum.
 
 Google's 890 MW for US$4.3 billion is about US$4,800 per kilowatt. The two new reactors at Vogtle in Georgia cost their owners roughly US$14,000 per kilowatt, after years of overruns (my arithmetic, from reported totals).
 
@@ -158,7 +158,9 @@ Almost never directly. On the PJM and MISO grids, every binding nuclear deal for
 <figcaption>FERC (1 November 2024, ER24-2172; 18 December 2025, EL25-49); Talen quarterly report for June 2026. My drawing.</figcaption>
 </figure>
 
-The first big co-location deal hit a wall. In November 2024 FERC rejected a change that would have raised the load co-located with Talen Energy's Susquehanna plant for Amazon from 300 to 480 MW. So the deal moved in front of the meter: up to 1,920 MW through 2042, delivered through the grid. The exception is in Texas, where Vistra has a binding 20-year contract for 1,200 MW from Comanche Peak, with a campus planned beside the plant.
+The first big co-location deal hit a wall. In November 2024 FERC rejected a change that would have raised the load co-located with Talen Energy's Susquehanna plant for Amazon from 300 to 480 MW. So the deal moved in front of the meter: up to 1,920 MW through 2042, delivered through the grid. In an order of 18 December 2025 FERC required a co-located data centre to take one of three transmission services; a plant adding co-located load must now be studied, pay for any grid upgrades, and wait for them.
+
+The exception is in Texas, on ERCOT's separate grid, where Vistra has a binding 20-year contract for 1,200 MW from Comanche Peak, with a campus planned beside the plant. Outside Texas, a nuclear deal for AI is a financial contract that adds carbon-free power to the same grid the data centre uses, matched on paper.
 
 ## Who has signed what, and how binding is it?
 
@@ -170,7 +172,7 @@ Long, binding power purchase agreements on existing American reactors and their 
 
 <a id="kairos-signs-before-it-switches-on"></a>
 
-The one binding contract on a new reactor is small. On 18 August 2025 TVA, the federal power company for Tennessee, agreed to buy up to 50 MW from Kairos Power's Hermes 2 at Oak Ridge from 2030, for Google. Hermes 2's permit covers test reactors of 35 thermal megawatts each, and at a third efficiency even two cannot make 50 megawatts of electricity. Its fuel source is not yet named.
+The one binding contract on a new reactor is small. On 18 August 2025 TVA, the federal power company for Tennessee, agreed to buy up to 50 MW from Kairos Power's Hermes 2 at Oak Ridge from 2030, for Google. Hermes 2's permit covers test reactors of 35 thermal megawatts each, and at a third efficiency even two of them cannot make 50 megawatts of electricity, so the contract implies a larger plant the NRC has not yet been asked to license. Its fuel source is not yet named.
 
 <figure class="chart">
 <p class="chart-title">The firm contracts are on reactors that exist; the new ones have frameworks and targets</p>
@@ -187,7 +189,7 @@ They avoid the fuel problem but not the other three clocks, and none of the comm
 
 <a id="darlington-builds-on-the-old-plug"></a>
 
-The closest is in Canada. Ontario Power Generation is building the first of four **BWRX-300s**, a 300 MW boiling-water small reactor from GE Vernova and Hitachi, on its licensed Darlington nuclear site. It burns ordinary fuel and targets grid connection by the end of 2030. The first unit, with shared systems, is C$7.7 billion, about C$25,700 per kilowatt (my arithmetic). America's first BWRX-300 permit went to TVA on 29 September 2026, with a target, reported in the press, of 2033.
+The closest is in Canada. Ontario Power Generation is building the first of four **BWRX-300s**, a 300 MW boiling-water small reactor from GE Vernova and Hitachi, on its licensed Darlington nuclear site. It burns ordinary fuel and targets grid connection by the end of 2030. The first unit, with shared systems, is C$7.7 billion, about C$25,700 per kilowatt (my arithmetic).
 
 ## Why do the advanced reactors wait on fuel?
 
@@ -197,7 +199,7 @@ Because most of them need HALEU, and America makes it on one line of sixteen cen
 
 **Enrichment** concentrates uranium-235 by spinning uranium gas in fast centrifuges; a linked line of them is a **cascade**. The only American cascade to have made HALEU belongs to Centrus Energy, in Piketon, Ohio, with sixteen machines. By June 2026 it had made more than 1,900 kg of HALEU as gas, about 1.3 tonnes of uranium, in all its years of running (my conversion). Its contracted production finished in mid-June 2026, and its lease on the site is fixed to end on 1 October 2027.
 
-What is coming is planned, not built. Centrus's new government order of 1 July 2026 requires one tonne of uranium as HALEU by July 2032, and its first new centrifuges should start in 2029, in a build-out including 12 tonnes a year of HALEU capacity. Against that, the Energy Department expects "more than 40 metric tons" of HALEU to be needed by 2030. Its own stock should reach about 21 tonnes by 2028, handed out by allocation to a few first cores.
+What is coming is planned, not built. Centrus's new government order, signed on 1 July 2026, requires one tonne of uranium as HALEU by July 2032. Its first new centrifuges should start in 2029, in a build-out that includes 12 tonnes a year of HALEU capacity. Against that, the Energy Department expects "more than 40 metric tons" of HALEU to be needed by 2030. Its own stock should reach about 21 tonnes by 2028, handed out by allocation to a few first cores.
 
 <figure class="illo">
 <p class="illo-title">The advanced reactors have permits, ground and buyers; the fuel column is the one still open</p>
@@ -210,7 +212,9 @@ Each reactor linked to AI buyers meets that wall. **TerraPower** won an NRC cons
 
 **Oklo** broke ground on its 75 MW Aurora in Idaho in September 2025, targets 2028 to 2029, and its first core rests on five tonnes of government HALEU. **Kairos Power's** Hermes 2 has no named fuel source. **X-energy**, Amazon's partner, expects power in the early 2030s.
 
-The fuel loop has its first cracks: X-energy, Radiant and Meta, through Oklo, have paid Centrus ahead for HALEU. But no tonnage is public, and new centrifuges take years. The crack moves fuel in the 2030s, not this decade.
+Between June and August 2026 four reactors in the Energy Department's pilot programme reached **criticality**, a steady self-sustaining chain reaction. All were physics tests at zero or very low power. None is connected to a grid.
+
+The fuel loop has its first cracks: X-energy and Meta, through Oklo, have paid Centrus ahead for HALEU. But no tonnage is public, and new centrifuges take years. The crack moves fuel in the 2030s, not this decade.
 
 ## Is the old fleet's own fuel safe?
 
@@ -235,7 +239,7 @@ One more limit applies to both lanes: the shipping container. The standard packa
 
 ## So what reaches the grid by 2030?
 
-Mostly old reactors. On the companies' own dates, about 2,250 MW of restarts and roughly 1,640 MW of AI-funded uprates arrive in steps from 2027 to 2034, all on ordinary fuel. New reactors on HALEU add at most 470 MW by the end of 2030, if every one runs to schedule.
+Mostly old reactors. On the companies' own dates, about 2,250 MW of restarts and roughly 1,640 MW of AI-funded uprates should arrive in steps from 2027 to 2034, all on ordinary fuel. New reactors on HALEU add at most 470 MW by the end of 2030, if every one runs to schedule.
 
 <figure class="chart">
 <p class="chart-title">Restarts on ordinary fuel arrive first; uprates follow in steps to 2034; HALEU reactors offer little by 2030</p>
@@ -244,7 +248,7 @@ Mostly old reactors. On the companies' own dates, about 2,250 MW of restarts and
 <figcaption>Owner and developer releases and filings to 6 November 2026. Uprate megawatts are my sum of five AI-funded deals. Darlington, 300 MW on ordinary fuel in Canada, is left out because the claim tests American grids.</figcaption>
 </figure>
 
-These are plans, and plans slip. The comparison counts capacity, not energy, and much of the uprate capacity lands after 2030. What the figures rank is which lane can deliver first. The HALEU test is narrower than it looks: Aurora's 75 MW alone cannot break it, but Kemmerer 1 would, and so would Aurora and Hermes 2 together. So the claim is a bet that Kemmerer misses 2030 and that Hermes 2 does too.
+The comparison counts capacity, not energy, and much of the uprate capacity lands after 2030. What the figures rank is which lane can deliver first. The HALEU test is narrower than it looks: Aurora's 75 MW alone cannot break it, but Kemmerer 1 would, and so would Aurora and Hermes 2 together. So the claim is a bet that Kemmerer misses 2030 and that Hermes 2, with no named fuel and a permit too small for its contract, does too.
 
 ## So who holds the scarce thing, and what should an investor watch?
 
@@ -260,7 +264,7 @@ Two tests break the claim. If reactors fuelled with HALEU together send electric
 
 Some events would move me before either test. Centrus contracting its 12 tonne a year build-out with firm customers, or ASP Isotopes enriching its first uranium-235, would start a commercial HALEU supply. So would a large Energy Department HALEU allocation beyond first cores. And a second restart stalling as Palisades has would weaken the first limb.
 
-Three things would not move me: more frameworks with new reactor developers, which are not delivery contracts; more zero-power criticalities, which prove a reactor but not a fuel supply; and Darlington, which burns ordinary fuel and, if on time, supports the claim. Four pilot reactors reached **criticality**, a steady self-sustaining chain reaction, in 2026, all as physics tests at zero or very low power.
+Three things would not move me. More signings with new reactor developers: a framework or option is not a delivery contract. More criticalities: a zero-power physics test proves a reactor, not a fuel supply. And Darlington: it burns ordinary fuel, and if it runs on time it supports the claim.
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>

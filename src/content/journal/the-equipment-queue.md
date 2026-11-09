@@ -38,7 +38,7 @@ Power arrives at a large campus at **transmission voltage**, often 115 to 345 **
 
 First comes a **substation**, a fenced yard where the grid's line ends. In it sit high-voltage **circuit breakers**, giant switches that open within hundredths of a second on a fault, and **power transformers**, which step the voltage down to **medium voltage**. Next comes **medium-voltage switchgear**, a row of steel cabinets full of breakers that routes power to each hall. Smaller transformers then step down to **low voltage**, and inside each hall come low-voltage switchgear, a **UPS** (an uninterruptible power supply, bridging a grid fault on batteries) and **backup generators**.
 
-Each box is a separate product, from a separate factory, with its own waiting list. The site switches on only when the last one arrives. The slowest of them, by years, is the large power transformer at the front of the chain.
+The site switches on only when the last one arrives. The slowest of them, by years, is the large power transformer at the front of the chain.
 
 ## What does a transformer actually do, and why can't a data centre buy one off the shelf?
 
@@ -61,9 +61,9 @@ The wait hides three clocks. **Build time** is how long one transformer spends i
 
 ## Why is the steel in the core so hard to get?
 
-Because it is a special grade, rolled so its crystals line up, and America has one mill that makes it.
+Because it is a special grade, and America has one mill that makes it.
 
-**Grain-oriented electrical steel**, or GOES, is rolled and heat-treated so its crystals line up, which makes the core waste far less power as heat. The Department of Energy's report to Congress of July 2024 names Cleveland-Cliffs as "the sole active domestic GOES supplier". On data from 2020 to 2022, that mill could meet only 12 to 20 per cent of American demand, and the highest grade comes only from Nippon Steel in Japan. About 80 per cent of GOES used in America in 2019 was imported in some form, and the department called domestic supply "a major weak link".
+**Grain-oriented electrical steel**, or GOES, is rolled and heat-treated so its crystals line up, which makes the core waste far less power as heat. The Department of Energy's report to Congress of July 2024 names Cleveland-Cliffs as "the sole active domestic GOES supplier". On data from 2020 to 2022, that mill could meet only 12 to 20 per cent of American demand, and the highest grade comes only from Nippon Steel in Japan. About 80 per cent of GOES used in America in 2019 was imported in some form.
 
 More is coming, slowly: on 5 October 2026 Cleveland-Cliffs announced a $200m project to lift its output by up to 25 per cent by early 2028. Even then one mill would remain a minority supplier.
 
@@ -73,7 +73,7 @@ Into a few fixed stations, each needing skilled hands, a clean hall and heavy cr
 
 The core is stacked from thousands of thin steel sheets by hand, work the department says "requires highly-skilled work force". The copper is wound around it, the assembly is dried in ovens, fitted in a clean hall and tested at high voltage. The 2012 study put the time to make one large unit at "in excess of six months". The binding constraint is not the hours but the stations: winding lines, drying ovens, crane bays and test bays. The 2024 report says capacity "cannot easily be expanded except by building a new facility".
 
-Moving a unit of 100 to 400 tons is a project of its own. So a transformer that leaves the factory in months can still take years from order to switch-on.
+So a transformer that leaves the factory in months can still take years from order to switch-on, and most of that time is spent waiting for a slot at the stations.
 
 ## How long is the wait, and how is it measured?
 
@@ -132,7 +132,7 @@ Because a factory lasts decades and one AI cycle may not, and the makers have sa
 
 <a id="hitachi-energy-plans-the-queue"></a>
 
-At its investor day on 10 June 2026, Hitachi showed its energy backlog growing towards about $100bn by fiscal 2030, and said it expected the backlog to "remain stable at 2.5-3x" revenue. It invests only in projects whose profitability is secured. ABB, the Swiss maker of switchgear and power gear, said in October 2026 its capital spending will stay "around $1 billion", with new capacity partly from "selectively leveraging third-party assembly": borrowed floor space, which can be handed back.
+At its investor day on 10 June 2026, Hitachi showed its energy backlog growing towards about $100bn by fiscal 2030, and said it expected the backlog to "remain stable at 2.5-3x" revenue. Hitachi says it invests only in projects whose profitability is secured. ABB, the Swiss maker of switchgear and power gear, said in October 2026 its capital spending will stay "around $1 billion", with new capacity partly from "selectively leveraging third-party assembly": borrowed floor space, which can be handed back.
 
 There are three reasons. A transformer hall runs for decades, and an AI build-out that slows in 2029 would leave it idle for most of its life. The makers also remember the last boom, from 2008 to 2011, which ended with an anti-dumping order on Korean makers. And the queue pays: a long order book lets a maker choose its orders and price them.
 
@@ -177,7 +177,7 @@ Demand ran about 40 per cent ahead of capacity in fiscal 2025. By fiscal 2030 th
 
 The number the claim rests on is Siemens Energy's grid ratio: €51bn of signed, undelivered orders at 30 June 2026, divided by €12.9bn of Grid Technologies revenue over the previous four quarters. The backlog is rounded to the nearest billion, so the true ratio lies between 3.92 and 4.00; the claim records it as 3.96. It is not a quoted lead time, because the HVDC links lift it, so the direction matters more than the level.
 
-The trap is that the ratio can fall while the pile grows. Siemens Energy's grid revenue is growing about 25 per cent a year on its own guidance. At that pace the ratio holds only if orders run about 1.8 times sales; at the third quarter's 1.48 it would fall to about 3.4 by mid-2028.
+The trap is that the ratio can fall while the pile grows. Siemens Energy's grid revenue is growing about 25 per cent a year on its own guidance. At that pace the ratio holds only if orders run about 1.8 times sales; at the third quarter's 1.48 it would fall to about 3.4 by mid-2028, while each year's shortfall still joins the pile.
 
 ## Where do America's large transformers come from?
 
@@ -190,9 +190,9 @@ Mostly from abroad, and increasingly from Korea, while China supplies little.
 <figcaption>UN Comtrade, US imports of HS 850423, which carries the US customs figures, read 7 November 2026. Shares are of the 2025 total; my arithmetic.</figcaption>
 </figure>
 
-United Nations trade data show American imports of liquid-filled transformers above 10 MVA rising from $1.26bn in 2022 to $4.15bn in 2025, 3.3 times in three years. Mexico was the largest supplier in 2025, at 19 per cent, and Korea's share rose from 7 to 18 per cent. China supplied 2.2 per cent by value in 2025.
+United Nations trade data show American imports of liquid-filled transformers above 10 MVA rising from $1.26bn in 2022 to $4.15bn in 2025, 3.3 times in three years. Mexico was the largest supplier in 2025, at 19 per cent, and Korea's share rose from 7 to 18 per cent. China supplied 2.2 per cent by value in 2025. The average unit imported in 2025 cost about $0.83m, so this customs line is dominated by mid-sized units, not only the very largest.
 
-So a boom in Europe or Asia can lengthen the American wait, and the new American halls replace imports as much as they add supply.
+The queue in America is filled by imports from makers who also serve their home grids, so a boom in Europe or Asia can lengthen the American wait. The new American halls replace imports as much as they add supply.
 
 ## What do tariffs and the emergency order change?
 
@@ -205,9 +205,9 @@ They raise the cost of the steel and parts more than the finished unit, and they
 <figcaption>Proclamation 11021 and its annexes, as reissued by Proclamation 11032 (1 June 2026). For large transformers the 15% includes the normal customs duty; the 2028 rate of 25% is added to it. Since 8 June 2026, cores imported only to make large transformers can pay 15%. Large transformers are HS 8504.23; distribution transformers 8504.21 and 8504.22.</figcaption>
 </figure>
 
-Under America's **Section 232** tariffs, imposed on national security grounds, large power transformers pay 15 per cent until 31 December 2027, then 25 per cent. The GOES strip itself, and copper wire, pay 50 per cent. So until the end of 2027 a finished unit pays a third as much as the steel it is built from. That favours importing whole units over making cores from imported steel in a new American hall, and the rate on the finished unit rises just as the first new halls open.
+Under America's **Section 232** tariffs, imposed on national security grounds, large power transformers pay 15 per cent until 31 December 2027, then 25 per cent. The GOES strip itself, and copper wire, pay 50 per cent. So until the end of 2027 a finished unit pays a third as much as the steel it is built from. That favours importing whole units, or ready-made cores, over making cores from imported steel in a new American hall, and the rate on the finished unit rises just as the first new halls open.
 
-On 26 August 2026 the President signed Executive Order 14421, declaring a national emergency over the **bulk-power system**, the high-voltage network. It lets the Department of Energy bar foreign-produced equipment, including transformers, breakers, UPS systems and backup generators, where it finds a link to a covered foreign entity and an undue risk. It is not a blanket ban, and no rule had been published by 7 November. Wood Mackenzie expects much of its impact to fall on data centres that bought Chinese units to cut their wait.
+On 26 August 2026 the President signed Executive Order 14421, declaring a national emergency over the **bulk-power system**, the high-voltage network. It lets the Department of Energy bar foreign-produced equipment, including transformers, breakers, UPS systems and backup generators, where it finds a link to a covered foreign entity and an undue risk. It is not a blanket ban, and no rule had been published by 7 November.
 
 ## What are prices doing?
 
@@ -220,7 +220,7 @@ Rising again, faster than in 2023 and 2024, which is not what a market where the
 <figcaption>Bureau of Labor Statistics series PCU335311335311 and PCU335313335313, read 7 November 2026; September 2026 is preliminary. Indexing is my arithmetic.</figcaption>
 </figure>
 
-The Bureau of Labor Statistics' producer price index for transformer makers averaged 255.3 in 2020. By September 2026 it was 475.1, 86 per cent higher, preliminary for the latest month. Prices jumped 34 per cent in 2021 and 18 per cent in 2022, rose only about 4 per cent in 2023 and 2 per cent in 2024, then 5 per cent in 2025 and nearly 8 per cent in the year to September 2026. If the shortage were clearing, the index would flatten or fall. It has done the opposite.
+The Bureau of Labor Statistics' producer price index for transformer makers averaged 255.3 in 2020. By September 2026 it was 475.1, 86 per cent higher, preliminary for the latest month. Prices jumped 34 per cent in 2021 and 18 per cent in 2022, then rose only about 4 per cent in 2023 and 2 per cent in 2024. In 2025 they rose 5 per cent, and in the year to September 2026 nearly 8 per cent. If the shortage were clearing, the index would flatten or fall. It has done the opposite.
 
 ## Does the gear inside the fence queue too?
 
@@ -237,7 +237,7 @@ ABB told analysts in October 2026 that its data centre gear has lead times of 12
 
 <a id="schneider-sells-the-finished-system"></a>
 
-Schneider sells power rooms built in its own plants and delivered as modules, which cut the hours scarce electricians spend on site. Prefabrication shortens the install, not the order book: the modules still need breakers, transformers and switchgear from the same queues.
+Schneider also sells power rooms built in its own plants as modules. Prefabrication shortens the install, not the order book: the modules still need gear from the same queues.
 
 AI racks change the low-voltage end far more than the grid end. A rack of Nvidia's GB200 chips draws up to 132 kilowatts, about fifteen times the typical rack's almost 9, and Nvidia plans racks of a megawatt from 2027, as [Powering the rack](/journal/powering-the-rack/) explains.
 
@@ -248,7 +248,7 @@ AI racks change the low-voltage end far more than the grid end. A rack of Nvidia
 <figcaption>Uptime Institute global data centre survey, 2025; Schneider Electric and Nvidia reference design (December 2024); Nvidia technical blog (20 May 2025).</figcaption>
 </figure>
 
-A 100 MW campus needs the same substation, medium-voltage switchgear and generators whether it runs 11,000 racks at 9 kilowatts or 760 at 132. That reshuffles the low-voltage order book; it does not shorten the grid-side queue.
+A 100 MW campus needs the same substation, medium-voltage switchgear and generators whether it runs 11,000 racks at 9 kilowatts or 760 at 132. What changes is the gear nearest the rack: busways, power shelves and, from 2027, rectifiers and new direct-current breakers. That reshuffles the low-voltage order book; it does not shorten the grid-side queue.
 
 ## Will the parts be the next queue?
 
@@ -256,7 +256,7 @@ Possibly: some bushings now wait longer than a whole transformer did before the 
 
 <a id="the-parts-list"></a>
 
-A transformer ships only when its slowest part arrives. Hitachi Energy publishes delivery times for the components it sells to other transformer makers. On 29 October 2026 it gave 135 weeks for its GSBK and ARF high-voltage bushings from Ludvika, Sweden; in 2012 the Department of Energy heard such bushings took up to five months.
+A transformer ships only when its slowest part arrives. Hitachi Energy publishes delivery times for the components it sells to other transformer makers. On 29 October 2026 it gave 135 weeks for its GSBK and ARF high-voltage bushings from Ludvika, Sweden; in 2012 the Department of Energy heard such bushings took up to five months. Tap changers, another bought-in part, are quoted at 10 to 22 weeks from Ludvika, so the strain is not everywhere.
 
 <figure class="chart">
 <p class="chart-title">A high-voltage bushing from Sweden now waits longer than a whole transformer did in 2010</p>
@@ -265,7 +265,7 @@ A transformer ships only when its slowest part arrives. Hitachi Energy publishes
 <figcaption>Hitachi Energy, delivery times for transformer components, Ludvika updated 29 October 2026 and Hefei 4 August 2026. The 2012 figure is the US Department of Energy's. Lower-voltage bushings and tap changers show the strain is not everywhere.</figcaption>
 </figure>
 
-Two moves fit the reading that parts are binding. On 28 October 2026 GE Vernova agreed to pay about $9.0bn for Trench, which makes bushings, and called it "vertically integrating an existing supplier". And Hitachi Energy is spending $106m at Alamo, Tennessee, on what it calls the "largest bushings manufacturing facility in North America". The inference is mine: if parts gate output, a new hall adds floor space before it adds transformers.
+Two moves fit the reading that parts are binding. On 28 October 2026 GE Vernova agreed to pay about $9.0bn for Trench, which makes bushings, and called it "vertically integrating an existing supplier". And Hitachi Energy is spending $106m at Alamo, Tennessee, on what it calls the "largest bushings manufacturing facility in North America". The inference is mine, and it is a hypothesis: if parts gate output, a new hall adds floor space before it adds transformers. Swedish bushing waits falling below a year would kill it.
 
 ## Has the shortage peaked?
 
@@ -273,15 +273,15 @@ The rate of increase probably has, but every order book is still growing, and a 
 
 The case for a peak is real. Siemens Energy's grid book-to-bill fell to 1.48 in the quarter to June 2026, from 2.28 in the quarter before. Eaton's Electrical Americas ratio went flat. Wood Mackenzie's estimate of the power transformer shortage fell from 30 per cent for 2025 to 15 per cent for 2026.
 
-The case against is stronger. Every book-to-bill is still above 1, so every pile is still growing. GE Vernova's grid equipment backlog is up 60 per cent in a year. Transformer prices are rising faster than in 2023 and 2024. A real peak shows up as price cuts and idle halls. Neither is visible yet.
+The case against is stronger. Every book-to-bill is still above 1, so every pile is still growing. GE Vernova's grid equipment backlog is up 60 per cent in a year, or about 40 per cent without the Prolec GE purchase. Transformer prices are rising faster than in 2023 and 2024. A real peak shows up as price cuts and idle halls. Neither is visible yet.
 
-Spares do not change this. Installing a ready spare takes three to four weeks, but spares exist to replace a failed unit at an existing substation, not to serve new load. The industry's shared Spare Transformer Equipment Program has "never been utilized", the department wrote.
+Spares do not change this. Installing a ready spare takes three to four weeks, but spares exist to replace a failed unit at an existing substation, not to serve new load.
 
 ## So who holds the scarce thing, and what should an investor watch?
 
 Whoever owns the slowest station: the large transformer halls, the steel, and a few parts.
 
-If the queue is kept, three positions gain. **The grid makers**: Hitachi Energy, Siemens Energy and GE Vernova, with HD Hyundai Electric, Hyosung and LS Electric from Korea, hold years of signed work and the choice of which orders to take. **The inside-the-fence makers**: Eaton, Schneider Electric, ABB, Siemens, Vertiv, Legrand, nVent, Hubbell and Powell, with a shorter queue, and Caterpillar, Cummins, Generac and Rolls-Royce for backup generators. **The parts behind the parts**: bushings, tap changers and core steel come from a few suppliers.
+If the queue is kept, three positions gain. **The grid makers**: Hitachi Energy, Siemens Energy and GE Vernova, with HD Hyundai Electric, Hyosung and LS Electric from Korea, hold years of signed work and the choice of which orders to take. **The inside-the-fence makers**: Eaton, Schneider Electric, ABB, Siemens, Vertiv, Legrand, nVent, Hubbell and Powell make switchgear, UPS systems and power rooms, with a shorter queue. Caterpillar, Cummins, Generac and Rolls-Royce make the backup generators. **The parts behind the parts**: bushings, tap changers and core steel come from a few suppliers.
 
 Four numbers carry the story. Siemens Energy's grid ratio and Eaton's Electrical Americas ratio each quarter, which are the claim's tests. Book-to-bill at the grid makers, which shows whether the pile is still growing. And Hitachi Energy's component delivery page, which shows whether the parts are easing.
 
@@ -295,7 +295,7 @@ The second is orders cooling as the plants open. If book-to-bill falls below 1 a
 
 The third is someone breaking ranks. If makers outside this group, in Korea, Brazil or China, add capacity to clear the queue and American buyers accept their units, it empties faster. The Korean makers are adding capacity in Alabama and Tennessee; if they build ahead of orders, the wait shortens.
 
-The claim stands on two legs. The first is time: halls take two to three years, and steel, ovens and test bays cap output, but that expires as the halls land from 2027. The second is choice: the makers size halls to signed orders, a business decision they can drop. The wait in 2030 rests on the second leg. More factory announcements would not move me, and nor would price rises: they show the queue holding, not clearing.
+The claim stands on two legs. The first is time: halls take two to three years, and steel, ovens and test bays cap output, but that expires as the halls land from 2027. The second is choice: the makers size halls to signed orders, a business decision they can drop. The wait in 2030 rests on the second leg. Two things would not move me. More factory announcements: they are the headline, not the order book. And price rises: they show the queue holding, not clearing.
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>

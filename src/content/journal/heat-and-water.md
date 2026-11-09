@@ -69,13 +69,15 @@ Immersion, where whole servers sit in a bath of non-conducting liquid, is a side
 
 Much warmer than most people expect, and every degree of warmth matters later, on the roof.
 
-The silicon itself runs at around 85 to 105 degrees, so coolant can be far cooler than the chip and still take its heat. Nvidia's racks for Vera Rubin, which it said would ship in the second half of 2026, are "designed to operate with 45°C (113°F) warm-water inlet temperatures" (16 March 2026). The coolant "exits at roughly 55 degrees" (21 June 2026). The building's water can arrive at the CDU at about 41 degrees, Nvidia's design says. Rubin's compute trays are also "fanless".
+The silicon itself runs at around 85 to 105 degrees, so coolant can be far cooler than the chip and still take its heat. Nvidia's racks for Vera Rubin, which it said would ship in the second half of 2026, are "designed to operate with 45°C (113°F) warm-water inlet temperatures" (16 March 2026). The coolant "exits at roughly 55 degrees" (21 June 2026). The building's water can arrive at the CDU at about 41 degrees, Nvidia's design says, and Rubin's compute trays are "fanless".
 
-That reverses what ASHRAE expected in 2021, when it warned that 45 degree water "will become increasingly difficult to use as the heat flux at the socket increases". Why it matters: Nvidia says running colder means "diverting a larger share of the facility's limited grid allocation into cooling instead of compute" (25 March 2026). It claims warm cooling unlocks "up to 10% additional NVL72 racks" in the same power budget, a vendor estimate rather than a measurement.
+Running the hottest rack on 45 degree coolant reverses what ASHRAE expected in 2021, when it warned that 45 degree water "will become increasingly difficult to use as the heat flux at the socket increases". Why it matters: Nvidia says running colder means "diverting a larger share of the facility's limited grid allocation into cooling instead of compute" (25 March 2026). It claims warm cooling unlocks "up to 10% additional NVL72 racks" in the same power budget, a vendor estimate rather than a measurement.
 
 <a id="room-to-spare"></a>
 
-Old air-cooled halls can take liquid, but as a refit, and the refit is the slow part. Jane Street, a trading firm, describes one Texas hall with "4,032 GPUs across 56 racks, retrofitted for liquid cooling"; it secures its power first and picks its chips last, as told in [power first, chips last](/journal/america-rations-the-plug/#power-first-chips-last). Amazon Web Services and Meta bridge the gap with heat exchangers at the rack: liquid at the chip, air still in the room.
+## Can an old air-cooled hall take liquid?
+
+Yes, but as a refit, and the refit is the slow part. Jane Street, a trading firm, describes one Texas hall with "4,032 GPUs across 56 racks, retrofitted for liquid cooling". It secures its power first and picks its chips last, as told in [power first, chips last](/journal/america-rations-the-plug/#power-first-chips-last). Amazon Web Services built its own in-row heat exchanger, the press reported in July 2025, and Meta uses heat exchangers at the rack: liquid at the chip, air still in the room.
 
 ## What are the three ways to put heat into the outside air?
 
@@ -141,9 +143,7 @@ The lab estimates that American data centres consumed 66 billion litres of water
 <figcaption>My arithmetic from Lawrence Berkeley National Laboratory, December 2024: roof water and PUE from its Figure 4.4 medians; power station water is PUE times its national average of 4.52 litres per kWh bought, which includes hydroelectric reservoirs and ignores power contracts.</figcaption>
 </figure>
 
-On that sum, a midsize air hall with a tower uses about 9.8 litres per kWh in all, and a large dry liquid hall about 5.0. But the 4.52 includes evaporation from hydroelectric reservoirs and ignores power contracts. And the power station's water is usually in another basin. So "most of the water is at the power station" is true on paper, and it does not answer the question a town is asking.
-
-Company water figures are not one scale either. Amazon Web Services and Meta divide water withdrawn by computing energy, while Microsoft divides water consumed, so ranking them would be a mistake.
+On that sum, a midsize air hall with a tower uses about 9.8 litres per kWh in all, and a large dry liquid hall about 5.0. The comparison sets a midsize air hall against a large liquid one, so size accounts for part of the gap. In the air hall, dropping the tower saves 2.9 litres on the roof but spends about 1.4 again at the power station, through a higher PUE. But the 4.52 includes evaporation from hydroelectric reservoirs and ignores power contracts. And the power station's water is usually in another basin. So "most of the water is at the power station" is true on paper, and it does not answer the question a town is asking.
 
 <a id="water-is-a-siting-problem"></a>
 
@@ -155,7 +155,7 @@ They evaporate where they judge water plentiful, and cool with air where they ju
 
 Where it judged water scarce, it chose air. In its 2025 report Google said the sources at Waltham Cross, in England, "present a high risk of water depletion and scarcity", so it "decided to utilize air cooling technology". It said it was taking "a similar approach" at Mesa, Arizona, and Canelones, Uruguay.
 
-On 3 June 2026 Google made it policy: "If a water source is at high risk, we choose air cooling or recycled water." It also wrote that water cooling can cut a data centre's energy use by "approximately 10%" against air. That prices the trade across Google's fleet, more than the lab finds for a liquid hall.
+On 3 June 2026 Google made it policy: "If a water source is at high risk, we choose air cooling or recycled water." It also wrote that in many places water cooling can cut a data centre's energy use by "approximately 10%" against air. That prices the trade across Google's fleet, more than the lab finds for a liquid hall.
 
 Mesa now has a row: 9.7 million gallons consumed in 2025, its first listed year, against 469.0 at The Dalles. But Mesa carries no "air-cooled facility" footnote in the 2026 table, unlike Phoenix and seven others, and Google has not said why. Waltham Cross and Canelones have no row of their own yet.
 
@@ -166,7 +166,7 @@ Mesa now has a row: 9.7 million gallons consumed in 2025, its first listed year,
 <figcaption>Google 2026 Environmental Report, per-site table; risk judgements from its 2025 report, pages 40 to 41. Waltham Cross and Canelones have no row of their own yet.</figcaption>
 </figure>
 
-**Microsoft** went furthest on design. Since August 2024 all its new data centre designs evaporate zero water for cooling, using chip-level liquid in a closed loop. The cost is "a nominal increase in our annual energy usage", with no number published. Its first such sites, in Phoenix and Mount Pleasant, Wisconsin, come online in late 2027. **Amazon Web Services** says its direct evaporative cooling "requires water for less than 10% of the year" where weather permits. **Meta** said on 27 August 2026 that most of its newest AI halls use closed-loop liquid cooling.
+**Microsoft** went furthest on design. Since August 2024, it said on 9 December 2024, all its new data centre designs evaporate zero water for cooling, using chip-level liquid in a closed loop. The cost is "a nominal increase in our annual energy usage", with no number published. Its first such sites, in Phoenix and Mount Pleasant, Wisconsin, were to pilot in 2026 and come online in late 2027. **Amazon Web Services** says its direct evaporative cooling "requires water for less than 10% of the year" where weather permits. **Meta** said on 27 August 2026 that most of its newest AI halls use closed-loop liquid cooling.
 
 ## Is the chiller being designed out?
 
@@ -176,7 +176,7 @@ A chiller fleet is sized for the hottest hour plus spares, so the count of chill
 
 Carrier, the American heating and cooling maker, said its data centre orders had passed $3 billion so far in 2026, up nearly 350%. It reported "great demand for our new 2 megawatt and 3 megawatt air-cooled chillers" (29 October 2026). Vertiv said it was "on track to doubling chiller production capacity by year-end" (28 October 2026). So chiller orders and the dry roof are not in conflict, because most of the chillers being ordered are themselves dry.
 
-The makers are straining, but when they name what paces their customers, they name power. No primary source names a hall held up by cooling gear.
+The makers are straining: Munters said "constraints remain industry-wide" (23 October 2026). But when they name what paces their customers, they name power. Johnson Controls' finance chief said some customers face "power and some electrical infrastructure limitation" (27 October 2026). No primary source names a hall held up by cooling gear.
 
 <a id="the-worst-afternoon"></a>
 
@@ -188,7 +188,7 @@ A grid connection caps a building's maximum draw, at every instant. So the compu
 
 A rough bound shows the stake; the inference is mine. Suppose a dry liquid hall runs at a PUE of about 1.1 most of the year. On its worst hour, a chiller carrying the full load adds roughly 0.25, lifting the instant ratio to about 1.35. On a fixed plug, the hall then fits about 15% fewer racks than one whose worst hour stays near 1.15, my assumption for a wet hall. That likely overstates the penalty, since a chiller making 41 degree water works across a smaller lift. No operator publishes the worst-hour PUE of a dry-cooled liquid hall.
 
-Water has a peak too. Researchers at the University of California, Riverside, estimated that evaporative cooling's water demand on the peak day can run six to ten times its average (12 March 2026). So the grid and the water main are both built for the same hot afternoon. Under a fixed plug, a little water for the hottest 88 hours may buy back peak megawatts; that is a working hypothesis.
+Water has a peak too. Researchers at the University of California, Riverside, estimated that evaporative cooling's water demand on the peak day can run six to ten times its average (12 March 2026). Utilities must size plants, pumps and pipes for that day. So the grid and the water main are both built for the same hot afternoon. A tower spends its most water just as the town's mains peak; a dry roof draws its most power just as the grid is tightest. Under a fixed plug, a little water for the hottest 88 hours may buy back peak megawatts; that is a working hypothesis.
 
 <a id="towns-say-no"></a>
 
@@ -206,7 +206,7 @@ I concede that water is now a permit-stage risk, and that a closed-loop promise 
 
 The scarce thing is not water in general. It is the right to evaporate it in a given basin, and the power to go without it on the hottest afternoon.
 
-If the claim is right, three parts of the chain gain. **The loop at the chip**: cold plates, CDUs and pipework go into every AI rack, whatever the roof. **The dry roof**: dry coolers, adiabatic coolers and air-cooled chillers gain on towers in new halls. **The dry site with power**: a site with a grid allocation and scarce water is more usable than it looks, because a liquid hall can go dry cheaply. Almost every large maker now sells both the loop and the roof: Eaton completed its purchase of Boyd Thermal on 12 March 2026, and Vertiv completed its purchase of ThermoKey, a dry cooler maker, on 12 June 2026.
+If the claim is right, three parts of the chain gain. **The loop at the chip**: cold plates, CDUs and pipework go into every AI rack, whatever the roof. **The dry roof**: dry coolers, adiabatic coolers and air-cooled chillers gain on towers in new halls. **The dry site with power**: a site with a grid allocation and scarce water is more usable than it looks, because a liquid hall can go dry cheaply. Almost every large maker now sells both the loop and the roof. Trane completed its purchase of LiquidStack, a CDU maker, on 3 March 2026, and Vertiv completed its purchase of ThermoKey, an Italian dry cooler maker, on 12 June 2026.
 
 The readings come yearly and quarterly. Google's per-site water table each summer is the main one: Mesa, and whether Waltham Cross and Canelones get rows. Microsoft's first zero-water sites come online in late 2027, and whether it publishes their PUE matters. The chiller makers' orders each quarter show whether the worst afternoon is still being bought.
 
@@ -216,13 +216,13 @@ Three things would break the claim, and each tests what operators and towns do, 
 
 The first is Google's own sites. If Mesa, Waltham Cross or Canelones consumes 50 million gallons or more in 2026 or 2027, the dry roof was not chosen where Google said it would be. Mesa consumed 9.7 million in 2025, about a fiftieth of The Dalles. But two of the three sites cannot be tested until Google lists them.
 
-The second is a wet campus on scarce water: Google, Microsoft, Amazon or Meta reporting a new campus that evaporates water from a source it rates high risk. This limb is hard to break, because Google's 2026 policy allows "recycled water" at high-risk sites.
+The second is a wet campus on scarce water: Google, Microsoft, Amazon or Meta reporting a new campus that evaporates water from a source it rates high risk. This limb is hard to break: only Google rates sources by name, and its 2026 policy allows "recycled water" at high-risk sites.
 
 The third is a powered AI campus cancelled outright over water rather than redesigned. Project Blue is the live case, and so far it fits my claim. A water utility refusing service to a campus whose grid power is already secured would move me first.
 
 Henderson, Nevada, is the hardest fact I must face. Google's campus there, in a desert basin, consumed 158.8 million gallons in 2023, 207.4 in 2024 and 239.4 in 2025. Google publishes no rating of its source. Henderson is an existing campus, so it does not break the test of a new one. But if Google rated it high risk and kept evaporating, the claim's spirit would be weaker than its letter.
 
-Rising water totals would not move me. More evaporation where water is plentiful is the trade working as designed. At the scale of the chip, heat has decided: liquid, warm. At the scale of the town and the grid, both bills are sized for the same hot afternoon, and that is where the next argument about water will be settled.
+Rising water totals would not move me. More evaporation where water is plentiful is the trade working as designed. At the scale of the chip, heat has decided: liquid, warm. At the scale of the roof, the operator trades water for power, and the chip maker's temperature sets the price. At the scale of the town and the grid, both bills are sized for the same hot afternoon, and that is where the next argument about water will be settled.
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>

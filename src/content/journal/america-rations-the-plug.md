@@ -28,7 +28,7 @@ That is the claim of this piece. America cannot build wires as fast as data cent
 
 It applies to its local utility, waits while the utility and the grid operator study what the wires can carry, waits again while the upgrades are built, and only then switches on.
 
-A data centre is a **load**, a user of power, and loads join by a less formal path than power stations. In PJM, which runs the grid from Chicago to Virginia, the utilities that own the lines study each request, and PJM checks the result across the whole region.
+A data centre is a **load**, a user of power, and loads join by a less formal path than power stations.
 
 <figure class="illo">
 <p class="illo-title">Four of the five steps are paperwork; the third is steel and copper</p>
@@ -47,9 +47,9 @@ Building the upgrades. Every other step is paperwork that a regulator can redraw
 
 On 18 June 2026 FERC, the federal power regulator, said a study listing the upgrades, a cost estimate and a build time "should take no more than 60-90 days". The build is the long part. FERC's own record notes that a data centre "may only take 1-2 years to construct", while the lines and substations to serve it take longer. PJM's answer, to be filed on 16 November, is one 12-month process a year for power stations and large loads alike.
 
-Each large transformer is designed for the voltages of one substation, so none comes off a shelf. The grid businesses of Siemens Energy and Hitachi Energy hold about four and three years of signed work, as [the equipment queue](/journal/the-equipment-queue/) measures it. Winding, drying and testing take months per unit, by trained hands. Each request also changes the grid the next one is studied on, new lines cross farms and counties on their own clocks, and everyone wants the same transformers in the same years.
+Each large transformer is designed for the voltages of one substation, so none comes off a shelf. The grid businesses of Siemens Energy and Hitachi Energy hold about four and three years of signed work, as [the equipment queue](/journal/the-equipment-queue/) measures it.
 
-So a rule can make the queue fairer and its paperwork faster. It cannot make a transformer arrive sooner. That is why the grids are rationing.
+So a rule can make the queue fairer and its paperwork faster. It cannot make a transformer arrive sooner.
 
 ## How long is the line?
 
@@ -62,9 +62,9 @@ Far longer than anything that will be built: the requests are counted in hundred
 <figcaption>Office of the Texas Governor (3 August 2026); ERCOT's Senate briefing (29 July 2026, preliminary) and its presentation to the Texas regulator (20 August 2026); Oncor Form 8-K exhibit (5 November 2026). ERCOT's figures are from different dates in the same summer.</figcaption>
 </figure>
 
-Texas shows the funnel most clearly. ERCOT's 474 GW, as of June 2026, counts requests, not demand. By 20 August, 17 loads totalling 6,608 MW had cleared every check except the approval to energise. Then ERCOT paused that approval for data centres of 75 MW or more, while it audits every request at the Governor's order.
+Texas shows the funnel most clearly. ERCOT's 474 GW, as of June 2026, counts requests, not demand. On 29 July ERCOT told the state Senate that about 205 GW was eligible for its first batch study, a preliminary figure. By 20 August, 17 loads totalling 6,608 MW had cleared every check except the approval to energise. Then ERCOT paused that approval for data centres of 75 MW or more, while it audits every request at the Governor's order.
 
-Under a seventieth of the list reached the last gate, and the gate is shut until the audit reports, due by 10 December 2026. "Five times the record peak" divides requests by ERCOT's highest hour, 91.1 GW on 22 July 2026. It does not mean Texas needs five grids: a developer unsure which site will get power first files for several.
+Under a seventieth of the list reached the last gate, and the gate is shut until the audit reports, due by 10 December 2026. "Five times the record peak" divides requests by ERCOT's highest hour, 91.1 GW on 22 July 2026. It does not mean Texas needs five grids: a developer unsure which site will get power first files for several. Oncor, the largest wires company in Texas, alone held 795 requests at 30 September 2026, about 293 GW of them from data centres.
 
 ## If the wires cannot be hurried, what are the grids doing instead?
 
@@ -74,7 +74,7 @@ The second grade is **non-firm** or **interim service**. The site connects befor
 
 <a id="ferc-asks-for-a-softer-plug"></a>
 
-The push came from Washington. On 23 October 2025 the Energy Secretary sent FERC a proposed rule on connecting large loads. FERC did not write a national rule. On 18 June 2026 it instead ordered six regional grid operators to defend their large-load rules or change them, including a service for loads willing to be cut. It found that PJM's tariff, its rulebook, "appears to be unjust, unreasonable, or unduly discriminatory or preferential". PJM and its utilities file their answers by 16 November 2026.
+The push came from Washington. On 18 June 2026 FERC ordered six regional grid operators to defend their large-load rules or change them, including a service for loads willing to be cut. It found that PJM's tariff, its rulebook, "appears to be unjust, unreasonable, or unduly discriminatory or preferential". PJM and its utilities file their answers by 16 November 2026.
 
 The status of each grid's cheaper plug, at 7 November 2026:
 
@@ -92,7 +92,7 @@ The status of each grid's cheaper plug, at 7 November 2026:
 
 Not that any primary record shows. On 7 November 2026 I could find no data centre of 50 MW or more switched on under any of these tiers, in any of the seven grids.
 
-The one tier in force for ordinary large loads is SPP's CHILLS, and no signed CHILLS agreement is public. PJM's Interim NITS exists only for loads beside a power station, and its tariff text still awaits FERC. Texas's tier may not be built into ERCOT's systems until 2027.
+The one tier in force for ordinary large loads is SPP's CHILLS, and no signed CHILLS agreement is public.
 
 So the claim's test is still open. By 31 December 2027 at least two of the seven grids must have a real data centre running on such a tier, shown in a filed agreement. Rules written do not count.
 
@@ -112,7 +112,7 @@ The best estimate is academic. Duke University's Nicholas Institute calculated i
 <figcaption>Duke University Nicholas Institute, Rethinking Load Growth (11 February 2025), as summarised by the institute and the trade press; I could not open the report itself. Hours are the model's, not a contract's.</figcaption>
 </figure>
 
-The cuts in that model are small and partial. At 0.5% of a year's energy, the new load is cut for about 177 hours a year, and a typical cut lasts about two hours. The real contracts are confidential. Until a filed agreement states the hours, any model that values a cut-first megawatt like a firm one is guessing.
+The cuts in that model are small and partial. At 0.5% of a year's energy, the new load is cut for about 177 hours a year, and in 88% of those hours at least half of it keeps running. A typical cut lasts about two hours. The real contracts are confidential. Until a filed agreement states the hours, any model that values a cut-first megawatt like a firm one is guessing.
 
 ## What keeps a site running when the grid cuts it?
 
@@ -122,7 +122,7 @@ Three things: its own generators, batteries, or chips that slow down. Each has i
 
 <a id="google-lets-the-grid-slow-its-chips"></a>
 
-**Chips that slow.** By 19 March 2026 Google had deals with five utilities, covering 1 GW, under which it can "limit or shift a portion" of its machine learning work at peak. At a Phoenix site of Oracle, the cloud provider, software cut the power of 256 Nvidia chips by 25% for three hours, the trial's paper reports. No record yet shows a connection approved on a slowed chip.
+**Chips that slow.** By 19 March 2026 Google had deals with five utilities, covering 1 GW, under which it can "limit or shift a portion" of its machine learning work at peak. No record yet shows a connection approved on a slowed chip.
 
 <a id="what-the-battery-is-really-for"></a>
 <a id="california-still-shifts-the-sun"></a>
@@ -162,15 +162,15 @@ Every site in the area sees the same dip and follows similar settings, so thousa
 <figcaption>NERC incident review (January 2025); PJM's Planning Committee deck (6 October 2026), which gives the February 2025 event as about 1,800 MW and July 2026 as about 3,900 MW; earlier PJM material gave about 1,500 and 3,800. PJM release on the 2028/29 auction (14 July 2026).</figcaption>
 </figure>
 
-It was not the first time. On 10 July 2024 about 1,500 MW of data centres moved to backup, NERC's review found, and on 17 February 2025 another fault moved about 1,800 MW. July's drop was about seven times the 525 MW of new and enlarged power stations that PJM's last capacity auction added, and it came with no warning.
+It was not the first time. On 10 July 2024 about 1,500 MW of data centres moved to backup, NERC's review found, and on 17 February 2025 another fault moved about 1,800 MW. July's drop was about seven times the 525 MW of new and enlarged power stations that PJM's last capacity auction added.
 
 ## What is ride-through, and who now requires it?
 
 **Ride-through** is a rule that a site must stay connected through a brief voltage or frequency disturbance, and be back to nearly its earlier draw within seconds. Texas has one in force; PJM files its own on 16 November.
 
-The site must not open its breaker to the grid or jump to its generators. PJM's proposal covers sites of 50 MW or more. Between 90% and 110% of normal voltage a site must never leave, and deeper dips set shorter minimum times. New projects would comply from 16 January 2027, and existing sites by the later of 16 January 2028 or a year after switching on.
+The site must not open its breaker to the grid or jump to its generators. PJM's proposal covers sites of 50 MW or more with at least 25 MW behind power electronics. Between 90% and 110% of normal voltage a site must never leave, and deeper dips set shorter minimum times. New projects would comply from 16 January 2027, and existing sites by the later of 16 January 2028 or a year after switching on.
 
-Texas went first. ERCOT's ride-through rule for large computing loads has been in force since 1 August 2026, though sites running or approved before 14 November 2025 are exempt. The national standard is slower: NERC's first standards for computing loads only collect data, and a minimum is expected in 2027.
+Texas went first. ERCOT's ride-through rule for large computing loads has been in force since 1 August 2026. The national standard is slower: NERC's first three standards for computing loads passed their final ballot in October, but on PJM's reading they only collect data. A minimum is expected in a standard in 2027.
 
 ## Who pays for the wait?
 
@@ -178,7 +178,7 @@ For now, everyone on the grid, through the auction that pays power stations to s
 
 <a id="pjm-sends-the-bill"></a>
 
-PJM serves 67 million people. Its **capacity auction** pays power stations, per megawatt per day, to be available in a delivery year three years ahead. It buys readiness, not energy, and the last megawatt needed sets everyone's price. When data centres join the forecast, PJM must buy more readiness, and the price rises for every customer.
+PJM's **capacity auction** pays power stations, per megawatt per day, to be available in a delivery year three years ahead. It buys readiness, not energy, and the last megawatt needed sets everyone's price. When data centres join the forecast, PJM must buy more readiness, and the price rises for every customer.
 
 <figure class="chart">
 <p class="chart-title">PJM's auction has sat at its cap three times running, and the cap rises in December</p>
@@ -187,13 +187,13 @@ PJM serves 67 million people. Its **capacity auction** pays power stations, per 
 <figcaption>PJM auction reports and releases to 14 July 2026, and its 2029/30 planning parameters (31 August 2026). The uncapped 2028/29 price is as reported by the American Public Power Association from PJM's figures. The cap differs slightly each year.</figcaption>
 </figure>
 
-The price jumped from $28.92 a megawatt per day for 2024/25 to $269.92 for 2025/26. Since then it has hit the cap, the most the auction is allowed to pay, three times running. The cap has not called up new plant. The 2028/29 auction fell 6,831 MW short of PJM's own reliability requirement.
+The price jumped from $28.92 a megawatt per day for 2024/25 to $269.92 for 2025/26. Since then it has hit the cap, the most the auction is allowed to pay, three times running. The cap has not called up new plant. The 2028/29 auction fell 6,831 MW short of PJM's own reliability requirement. PJM's independent market monitor argued that by 21 September 2026, 4,017 MW of forecast data centre load had been cancelled or delayed, on its arithmetic cutting the shortfall to 3,055 MW.
 
 ## How much of a household's bill is that?
 
 Less than the headlines imply. Capacity was about a sixth of PJM's wholesale cost in the first half of 2026; data centres' share of it added about a tenth to the cost of each megawatt-hour.
 
-The market monitor attributes $6.3 billion, 38.2% of the 2028/29 auction, to data centre load. But the auction is only one part of what power costs.
+The monitor attributes $6.3 billion, 38.2% of the 2028/29 auction, to data centre load. But the auction is only one part of what power costs.
 
 <figure class="chart">
 <p class="chart-title">Capacity tripled, but energy is still most of the cost</p>
@@ -202,7 +202,7 @@ The market monitor attributes $6.3 billion, 38.2% of the 2028/29 auction, to dat
 <figcaption>PJM market monitor, report to the Members Committee (27 July 2026). It gives each part; the small remainder is other charges.</figcaption>
 </figure>
 
-In the first half of 2026, PJM's total wholesale cost was $114.50 per megawatt-hour. Energy, the power actually used, was 63.5% of it. Capacity tripled, to 17.1% of the total. The monitor puts the data centre effect on capacity at $11.11 per megawatt-hour, 9.7% of the wholesale cost.
+In the first half of 2026, PJM's total wholesale cost was $114.50 per megawatt-hour. Energy, the power actually used, was 63.5% of it. Capacity tripled, to 17.1% of the total. The monitor puts the data centre effect on capacity at $11.11 per megawatt-hour, 9.7% of the wholesale cost. What reaches a household depends on its state. In Pennsylvania the regulator tied June 2026 rises of about 3% to 10% to PJM's capacity costs, as reported.
 
 ## Can the bill be moved to the data centres?
 
@@ -214,11 +214,11 @@ On 27 July 2026 PJM's board proposed that new sites of 50 MW or more that did no
 
 <a id="the-bill-changes-address"></a>
 
-The fight moved to a one-time purchase of about 6,800 MW of new capacity, with costs assigned by large-load growth, and none of it is in force. Either way, firm power gets dearer for a data centre, which pushes the next site towards the plug the grid may cut first.
+The fight moved to a one-time purchase of about 6,800 MW of new capacity, which FERC suspended to 28 February 2027. PJM refiled on 29 October, the trade press reported, with costs assigned by large-load growth. None of it is in force. If the charge lands, households carry less of the wait. Either way, firm power gets dearer for a data centre, which pushes the next site towards the plug the grid may cut first.
 
 <a id="virginia-bills-the-empty-site"></a>
 
-The states have instead written long contracts with minimum bills. Virginia's new rate class for Dominion, GS-5, covers 25 MW or more for 14 years, with a minimum bill of 85% of contracted demand for wires. But PJM capacity costs are excluded from the generation minimum, so the auction stays shared.
+The states have instead written long contracts with minimum bills. Virginia's new rate class for Dominion, GS-5, covers 25 MW or more for 14 years, with a minimum bill of 85% of contracted demand for distribution and for transmission, and 60% for generation. But PJM capacity costs are excluded from the generation minimum, so the auction stays shared.
 
 ## Of all the gigawatts signed, how many are running?
 
@@ -235,7 +235,7 @@ An AI campus passes five stages. **Contracted**: land and the right to power are
 <figcaption>Dominion Energy to PJM's Load Analysis Subcommittee (29 September 2026). Dominion counts engineering letters as non-firm.</figcaption>
 </figure>
 
-As of July 2026 Dominion had about 54 GW of data centres under contract, of which 12 GW was under firm service agreements. In August its data centres' billing peak was 4.8 GW. Dominion's own forecast leaves 19 GW of the contracts out altogether, and expects its data centres to draw about 7.8 GW at peak in 2030.
+An engineering letter pays Dominion to design the substation; a construction letter pays it to start building; an electric service agreement commits both sides. As of July 2026 Dominion had about 54 GW of data centres under one of the three, of which 12 GW was under service agreements. In August its data centres' billing peak was 4.8 GW. Its planning assumes the average site takes five years to reach 63% of the power it contracted. Its forecast leaves 19 GW of the engineering letters out altogether, and expects its data centres to draw about 7.8 GW at peak in 2030.
 
 The operators show the same gap. CoreWeave, which rents out AI computing, had 3.7 GW contracted and 1.5 GW active at 30 June 2026, about 41%.
 
@@ -248,7 +248,7 @@ The operators show the same gap. CoreWeave, which rents out AI computing, had 3.
 
 <a id="nebius-paid-for-what-is-switched-on"></a>
 
-Nebius, another operator, expects 5 GW contracted by the end of 2026, against 800 MW to 1 GW connected. Revenue follows the last stage: its US$17.4 billion agreement with Microsoft is "subject to the satisfaction of the deployment and availability of the GPU Services". Oracle's customers have signed US$664 billion of future revenue, of which it expects only about 13% in the next twelve months. So any model that sizes revenue or chip demand from contracted gigawatts runs early, by quarters or years.
+Nebius, another operator, expects 5 GW contracted by the end of 2026, against 800 MW to 1 GW connected. Revenue follows the last stage: its US$17.4 billion agreement with Microsoft is "subject to the satisfaction of the deployment and availability of the GPU Services". Oracle's customers have signed US$664 billion of future revenue, of which it expects only about 13% in the next twelve months, because revenue starts as halls are delivered. So any model that sizes revenue or chip demand from contracted gigawatts runs early, by quarters or years.
 
 ## Where does the time go between signing and running?
 
@@ -282,7 +282,7 @@ At Abilene, Texas, Crusoe builds, Oracle leases the campus and OpenAI uses the c
 <figcaption>Crusoe releases (21 May 2025, 30 September 2025, 27 March 2026); Oracle's results calls of 10 June and 10 September 2026, as transcribed by The Motley Fool, since I found no primary copy. Crusoe gives no energisation date for phase two. Oracle reports handover, not chips at work, by site.</figcaption>
 </figure>
 
-Oracle reported six of eight buildings, 618 MW, handed over by 10 September 2026, as transcribed from its calls. The chips came with the power, so energised set the pace. Even so, more than two years passed between the start of work and three quarters of the campus handed over.
+The first racks of Nvidia's GB200 chips arrived in June 2025, and the first phase was running by 30 September. Oracle reported six of eight buildings, 618 MW, handed over by 10 September 2026, as transcribed from its calls. The chips came with the power, so energised set the pace. Even so, more than two years passed between the start of work and three quarters of the campus handed over.
 
 ## So who holds the scarce thing, and what should an investor watch?
 
