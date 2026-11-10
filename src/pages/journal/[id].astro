@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import { getCollection, render } from 'astro:content';
 import { SITE, OG_VERSION } from '../../config';
-import { fmtDate, readingTime } from '../../utils';
+import { readingTime } from '../../utils';
 import { claimOf, claimsHomedAt } from '../../data/claims';
 import { layerOf, chapterOf, CHAPTERS } from '../../data/stack';
 export async function getStaticPaths() {
@@ -34,8 +34,7 @@ const ch = chapterOf(p.id);
       <h1>{p.data.title}</h1>
       <div class="meta">
         <span>{SITE.author}</span><span>·</span>
-        <time datetime={p.data.date.toISOString()}>{fmtDate(p.data.date)}</time>
-        <span>·</span><span>{readingTime(p.body ?? '')} min read</span>
+        <span>{readingTime(p.body ?? '')} min read</span>
       </div>
       <aside class="plain">
         <p class="label">In plain English</p>

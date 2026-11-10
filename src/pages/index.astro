@@ -2,7 +2,6 @@
 import Base from '../layouts/Base.astro';
 import Descent from '../components/Descent.astro';
 import { getCollection } from 'astro:content';
-import { fmtDate } from '../utils';
 import { CHAPTERS, layerOf } from '../data/stack';
 const all = await getCollection('journal', ({ data }) => !data.draft);
 const byId = Object.fromEntries(all.map((p) => [p.id, p]));
@@ -37,7 +36,7 @@ const split = (t: string) => {
           {c.anchor && <span class="home-anchor" id={c.anchor}></span>}
           <p class="home-row-n">Chapter {c.n}{c.layer && <> · {c.layer.name}</>}</p>
           <ul class="home-row-pieces">
-            <li class="home-piece"><a href={`/journal/${c.slug}/`}><span class="home-piece-h">{split(c.p.data.title)[0]}</span>{split(c.p.data.title)[1] && <span class="home-piece-d">{split(c.p.data.title)[1]}</span>}</a><time datetime={c.p.data.date.toISOString()}>{fmtDate(c.p.data.date)}</time></li>
+            <li class="home-piece"><a href={`/journal/${c.slug}/`}><span class="home-piece-h">{split(c.p.data.title)[0]}</span>{split(c.p.data.title)[1] && <span class="home-piece-d">{split(c.p.data.title)[1]}</span>}</a></li>
             <li class="home-next">{c.next}</li>
           </ul>
         </li>
@@ -46,7 +45,7 @@ const split = (t: string) => {
         <li class="home-row" id="other">
           <p class="home-row-n">Other</p>
           <ul class="home-row-pieces">
-            {other.map((p) => <li class="home-piece"><a href={`/journal/${p.id}/`}><span class="home-piece-h">{split(p.data.title)[0]}</span>{split(p.data.title)[1] && <span class="home-piece-d">{split(p.data.title)[1]}</span>}</a><time datetime={p.data.date.toISOString()}>{fmtDate(p.data.date)}</time></li>)}
+            {other.map((p) => <li class="home-piece"><a href={`/journal/${p.id}/`}><span class="home-piece-h">{split(p.data.title)[0]}</span>{split(p.data.title)[1] && <span class="home-piece-d">{split(p.data.title)[1]}</span>}</a></li>)}
           </ul>
         </li>
       )}
