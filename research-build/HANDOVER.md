@@ -34,6 +34,7 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
     - No new claims; none reworded. No LinkedIn posts: every agent and I judged the updates modest, not substantial.
   - **Not landed yet, check on the day:** Siemens Energy FY26 (11 Nov), Standard Nuclear Q3 (12 Nov), FERC EL26-67 to 72 responses (16 and 20 Nov), PJM ride-through filing (16 Nov), EIA 860M (24 Nov), Tenaga Q3 (late Nov), ERCOT audit (10 Dec), PJM auction (opens 9 Dec), PJM final ELCC ratings for 2030/31 (Dec or Jan; the solar claim's test), NERC standards (31 Dec), Piketon lease (31 Dec), GE Vernova year-end (Jan).
   - **Study deck:** the seven study sheets are in the macOS Trash. ONE deck replaces them: study-decks/Study deck - power for AI data centres.pdf (8 pages; core message, how it works, numbers, how to track, per chapter, linked chapter to chapter, plain words). It carries today's updates. Update it whenever a piece changes (tools/deck2pdf.py).
+- **Trigger "1" (Tommy, 10 Nov):** the journal run, defined in research-build/THE_JOURNAL_RUN.md (skill ~/.claude/skills/journal-run). Nothing is scheduled; the run happens when he says "1". The dated "Not landed yet" list above is step 1 of the next run.
 - SemiAnalysis interview is Wed 11 Nov, 17:00 MYT. Don't invite SemiAnalysis staff while that process is live.
 
 ## Earlier START HERE (as of Tue 10 Nov 2026, morning)

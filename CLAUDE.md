@@ -6,6 +6,8 @@
 Tommy's public journal on AI and energy infrastructure. Astro static site,
 GitHub Pages, live at https://thephysicallayer.fyi
 
+**Trigger "1" = the journal run** (Tommy, 10 Nov 2026; the job hunt is "2"): the whole job on the site and everything that quotes it, step by step in `research-build/THE_JOURNAL_RUN.md`. "1" is his go-ahead for fact-checked updates and loose ends; new pieces, chapters, company studies and calls still wait for his word.
+
 **Every journal session starts with `research-build/HANDOVER.md`** (what is
 scheduled, open flags, what was done each day). Rewrite its START HERE at the
 end of the session.
