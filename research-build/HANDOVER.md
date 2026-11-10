@@ -19,7 +19,24 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 3. Done: CVs updated ("grid to chip" wording; nuclear line to the depth figures); LinkedIn profile not changed.
 4. Done: article decks archived (study-decks/archive/article-decks-retired-2026-11-07/), not deleted.
 
-## START HERE (as of Tue 10 Nov 2026)
+## START HERE (as of Tue 10 Nov 2026, evening)
+
+- **10 Nov (Tommy: "remove the gate... do point 1, site updates, all of them, now"; then "one study deck").**
+  - **Gate dropped.** No per-chapter four-point test any more. Company studies and calls are NOT started; they wait for Tommy's word (roadmap file and memory updated).
+  - **Site updates LIVE** (commit fa9afd8, deploy green, checked live). Six chapters got new primary evidence, each drafted by one agent and fact-checked by another (logs: research-build/deep-pieces/updates/<slug>.CHANGES.md):
+    - Johor: on-site power rules (EMA guide; Hansard 28 Oct), TNB GenCo and DayOne 1.5 GW study, Digital Infrastructure Bill passed 7 Oct.
+    - America: who pays (FERC ER26-3380 suspension to 28 Feb 2027, PJM refiling 29 Oct, the 13 governors' pledge).
+    - Own power: MHI 2030 to 2031, Wärtsilä and Caterpillar queues, Transco pipe clock, EIA off-grid gap. The live "Howmet: 2031 is sold out" line had NO primary source; it now uses Howmet's 29 Oct release (gas turbine revenue +45%).
+    - Solar: Roman, the third Intersect/Google park, off-grid with gas engines (the solar source solar.src.md carries the same edit; assemble.py output matches the live file).
+    - Nuclear: EIA fleet uranium unfilled (40% for 2030), DOE HALEU rounds, Centrus 10-Q.
+    - Microreactors: NRC 50.43(f) rule (effective 25 Nov), Navy picks Radiant (20 Oct), DOME approval (29 Oct).
+    - Equipment: nothing new; Eaton and Hitachi Q3 already in.
+    - No new claims; none reworded. No LinkedIn posts: every agent and I judged the updates modest, not substantial.
+  - **Not landed yet, check on the day:** Siemens Energy FY26 (11 Nov), Standard Nuclear Q3 (12 Nov), FERC EL26-67 to 72 responses (16 and 20 Nov), PJM ride-through filing (16 Nov), EIA 860M (24 Nov), Tenaga Q3 (late Nov), ERCOT audit (10 Dec), PJM auction (opens 9 Dec), PJM final ELCC ratings for 2030/31 (Dec or Jan; the solar claim's test), NERC standards (31 Dec), Piketon lease (31 Dec), GE Vernova year-end (Jan).
+  - **Study deck:** the seven study sheets are in the macOS Trash. ONE deck replaces them: study-decks/Study deck - power for AI data centres.pdf (8 pages; core message, how it works, numbers, how to track, per chapter, linked chapter to chapter, plain words). It carries today's updates. Update it whenever a piece changes (tools/deck2pdf.py).
+- SemiAnalysis interview is Wed 11 Nov, 17:00 MYT. Don't invite SemiAnalysis staff while that process is live.
+
+## Earlier START HERE (as of Tue 10 Nov 2026, morning)
 
 - **10 Nov: LinkedIn only, no site change. Session closed by Tommy ("that is all").** Personal profile, quiet-confidence pass (9 to 10 Nov, every removal backed up in ~/Desktop/jobs/archive/linkedin-removed-2026-11-09.md):
   - Headline is now "Research Analyst · Power for AI data centres · The Physical Layer".
