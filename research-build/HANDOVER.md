@@ -21,7 +21,9 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 
 ## START HERE (as of Tue 10 Nov 2026, evening)
 
-**Late 10 Nov, explanations from Tommy's study questions now in the pieces (fact-checked):** microreactors (what enrichment changes, why Russian uranium was banned, who runs Janus reactors); nuclear-for-ai (why fast and TRISO reactors need HALEU, why sodium over water, its cost); building-your-own-power (Howmet casts blades for turbine makers, it does not sell turbines). Paid for with cuts; all three pieces at or under 3,600 visible words. Study deck matches. Tommy has defended all seven chapters and asked to start company studies and calls (cap five each), BWXT first.
+**Company study shortlist (Tommy, 10 Nov 2026, late): emerging, listed, on the chain only.** Ranked: Centrus Energy, Bloom Energy, Oklo, Solaris Energy Infrastructure; ASP Isotopes watch only. BWXT and every established name (GE Vernova, Siemens Energy, Eaton, Constellation, Tenaga, Powell, Korean transformer makers, Talen) are OFF the list. Full list in study-decks/ROADMAP - buy side to PM.md. Nothing started: studies and calls begin only when Tommy picks and says go; never on the site.
+
+**Late 10 Nov, explanations from Tommy's study questions now in the pieces (fact-checked):** microreactors (what enrichment changes, why Russian uranium was banned, who runs Janus reactors); nuclear-for-ai (why fast and TRISO reactors need HALEU, why sodium over water, its cost); building-your-own-power (Howmet casts blades for turbine makers, it does not sell turbines). Paid for with cuts; all three pieces at or under 3,600 visible words. Study deck matches. Tommy has defended all seven chapters; company studies and calls are capped at five each, from the emerging shortlist below.
 
 **No visible dates (Tommy, 10 Nov 2026, late):** pieces and the homepage list no longer show a publish date ("the articles are ever changing"). The `date` field stays in frontmatter for ordering, RSS and the checker; claim dates in the claims record stay, because a claim is dated by nature. Do not add a visible date back.
 
