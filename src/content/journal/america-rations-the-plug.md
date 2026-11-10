@@ -49,7 +49,7 @@ On 18 June 2026 FERC, the federal power regulator, said a study listing the upgr
 
 Each large transformer is designed for the voltages of one substation, so none comes off a shelf. The grid businesses of Siemens Energy and Hitachi Energy hold about four and three years of signed work, as [the equipment queue](/journal/the-equipment-queue/) measures it.
 
-So a rule can make the queue fairer and its paperwork faster. It cannot make a transformer arrive sooner.
+So a rule can make the paperwork faster. It cannot make a transformer arrive sooner.
 
 ## How long is the line?
 
@@ -96,7 +96,7 @@ The one tier in force for ordinary large loads is SPP's CHILLS, and no signed CH
 
 So the claim's test is still open. By 31 December 2027 at least two of the seven grids must have a real data centre running on such a tier, shown in a filed agreement. Rules written do not count.
 
-The strongest counter-evidence is PJM's own plan for a fourth service, Fractional NITS, "a firm service, based on available system capacity": firm power for part of a site now, the rest when the upgrades arrive. If developers take part of a site firm rather than all of it cut first, the rationing happens by size, not by grade. That would still be rationing, but it would break my test.
+The strongest counter-evidence is PJM's own plan for a fourth service, Fractional NITS, "a firm service, based on available system capacity": firm power for part of a site now, the rest when the upgrades arrive. If developers take part of a site firm rather than all of it cut first, the rationing happens by size, not grade, and my test breaks.
 
 <a id="the-hours-a-cut-first-site-can-run"></a>
 ## How many hours a year would a cut-first site be cut?
@@ -187,13 +187,13 @@ PJM's **capacity auction** pays power stations, per megawatt per day, to be avai
 <figcaption>PJM auction reports and releases to 14 July 2026, and its 2029/30 planning parameters (31 August 2026). The uncapped 2028/29 price is as reported by the American Public Power Association from PJM's figures. The cap differs slightly each year.</figcaption>
 </figure>
 
-The price jumped from $28.92 a megawatt per day for 2024/25 to $269.92 for 2025/26. Since then it has hit the cap, the most the auction is allowed to pay, three times running. The cap has not called up new plant. The 2028/29 auction fell 6,831 MW short of PJM's own reliability requirement. PJM's independent market monitor argued that by 21 September 2026, 4,017 MW of forecast data centre load had been cancelled or delayed, on its arithmetic cutting the shortfall to 3,055 MW.
+The price jumped from $28.92 a megawatt per day for 2024/25 to $269.92 for 2025/26. Since then it has hit the cap, the most the auction may pay, three times running. The cap has not called up new plant. The 2028/29 auction fell 6,831 MW short of PJM's own reliability requirement. PJM's independent market monitor argued that by 21 September 2026, 4,017 MW of forecast data centre load had been cancelled or delayed, on its arithmetic cutting the shortfall to 3,055 MW.
 
 ## How much of a household's bill is that?
 
 Less than the headlines imply. Capacity was about a sixth of PJM's wholesale cost in the first half of 2026; data centres' share of it added about a tenth to the cost of each megawatt-hour.
 
-The monitor attributes $6.3 billion, 38.2% of the 2028/29 auction, to data centre load. But the auction is only one part of what power costs.
+The monitor attributes $6.3 billion, 38.2% of the 2028/29 auction, to data centre load.
 
 <figure class="chart">
 <p class="chart-title">Capacity tripled, but energy is still most of the cost</p>
@@ -206,7 +206,7 @@ In the first half of 2026, PJM's total wholesale cost was $114.50 per megawatt-h
 
 ## Can the bill be moved to the data centres?
 
-PJM tried, and FERC said no to most of it. The bill can only move as far as the states, which set retail rates, decide.
+Only part of the way. FERC can send the bill to a zone, the area one utility serves; only the states can send it to a customer.
 
 <a id="ferc-keeps-the-bill-shared"></a>
 
@@ -214,7 +214,9 @@ On 27 July 2026 PJM's board proposed that new sites of 50 MW or more that did no
 
 <a id="the-bill-changes-address"></a>
 
-The fight moved to a one-time purchase of about 6,800 MW of new capacity, which FERC suspended to 28 February 2027. PJM refiled on 29 October, the trade press reported, with costs assigned by large-load growth. None of it is in force. If the charge lands, households carry less of the wait. Either way, firm power gets dearer for a data centre, which pushes the next site towards the plug the grid may cut first.
+The fight moved to the **reliability backstop**, a one-time purchase of about 6,800 MW of new capacity. On 29 September FERC suspended it to 28 February 2027, mainly over the bill: PJM's measure of load growth could miss some new large loads. PJM refiled on 29 October: each zone would pay by its large-load growth between the actual 2026 summer peak and the 2028/29 forecast. Contracts run up to 15 years, averaging at most $555 a megawatt per day.
+
+Which customers in a zone pay, FERC wrote, is for the states. In January all 13 PJM governors pledged to steer that cost to new data centres "that have not otherwise procured capacity or agreed to be curtailable". So the bill and the plug are one decision. A site would escape the charge by buying its own capacity or taking the plug the grid may cut first. None of it is in force.
 
 <a id="virginia-bills-the-empty-site"></a>
 
@@ -288,7 +290,7 @@ The first racks of Nvidia's GB200 chips arrived in June 2025, and the first phas
 
 Whoever controls a site's terms: firm or cut first, for how many hours, with what backup and what bill. Those terms sit in tariff filings and contracts, public and rarely read.
 
-In most models a 300 MW site is a 300 MW site whatever its plug. Its value sits in the terms. Almost nobody discloses which plug they bought, and that is the gap in what investors can see.
+Almost nobody discloses which plug they bought: that is the gap investors cannot see.
 
 If the claim is right, four kinds of business gain. **Backup that runs for hours**: gas turbines, engines, fuel cells and long batteries. **Kit that holds on**: ride-through turns the UPS and switchgear into compliance equipment. **Load that can slow**, if a slowed chip is ever accepted as a connection term. **The makers of the upgrades**, whose queue is the reason for all of it.
 
@@ -393,7 +395,7 @@ PJM releases and auction reports; the 2029/30 parameters are from PJM's planning
 
 **The household bill.** Monitoring Analytics, the PJM market monitor, report to the Members Committee (27 July 2026): data centre load $6.3 billion, 38.2% of the 2028/29 auction; $29.4 billion over the four auctions from 2025/26; total wholesale cost $114.50 per MWh in the first half of 2026 against $76.16 a year earlier, up 50.3%; energy up 47.7% and 63.5% of the total; capacity up 207.1% and 17.1%; transmission up 5.6% and 17.4%; data centre capacity effect $11.11 per MWh, 9.7%. Energy $49.21, capacity $6.39 and transmission $18.82 in the first half of 2025; $72.68, $19.61 and $19.88 in the first half of 2026; energy was $155.39 per MWh in January 2026 and $82.06 in February, in Winter Storm Fern. Pennsylvania Public Utility Commission (20 May 2026), as reported. Virginia Joint Legislative Audit and Review Commission, Report 598 (9 December 2024).
 
-**Moving the bill.** PJM Board decision (Inside Lines, 27 July 2026). FERC ER26-3515 (9 October 2026), paragraphs 77, 94 and 95. FERC ER26-3380 (29 September 2026): backstop accepted, suspended to 28 February 2027, subject to refund, paper hearing. White House and governors' Statement of Principles (16 January 2026, law-firm summary). PJM's amended backstop filing (29 October 2026) is from trade press: bids from 1 March 2027, terms of up to 15 years, a target of about 6,800 MW to be recalculated, costs by large-load growth.
+**Moving the bill.** PJM Board decision (Inside Lines, 27 July 2026). FERC ER26-3515 (9 October 2026), paragraphs 77, 94 and 95. FERC ER26-3380 and EL26-108, 196 FERC ¶ 61,245 (29 September 2026): backstop accepted, suspended to 28 February 2027, subject to refund, paper hearing; relying on Load Adjustments "may be inconsistent or not reasonably capture forecasted load growth or actual large load growth"; costs go first to Electric Distributor zones, "with the ultimate cost allocation to the LSEs as determined by the state"; the backstop was suspended for a paper hearing on three issues (cost allocation, transmission owner exit rules, collateral); it quotes the White House and the governors of all 13 PJM states agreeing to "use all available authorities" so that their states' load-serving entities allocate the backstop cost to new data centre loads "that have not otherwise procured capacity or agreed to be curtailable" (Department of Energy, Statement of Principles Regarding PJM, January 2026). PJM, Inside Lines (29 October 2026), on its amended filing: procurement from 1 March 2027, bid window closing 28 March, results 10 May; target of about 6,800 MW to be recalculated and reduced by bilateral contracts; costs "based on Large Load growth between the actual summer peak load in 2026 and the forecast for the 2028/2029 Delivery Year", assigned to each zone by its contribution; terms of up to 15 years; maximum willingness to pay a MW-weighted average of $555 per MW-day.
 
 **The states.** Virginia State Corporation Commission, final order, Case PUR-2025-00058 (25 November 2025), pages 23 to 27, Rate Schedule GS-5. AEP Ohio data centre tariff, PUCO Case 24-508-EL-ATA (9 July 2025); terms from trade press. Georgia Public Service Commission (23 January 2025). Indiana Michigan Power settlement (approved February 2025, trade press). Oregon POWER Act (2025). Texas Senate Bill 6, PURA 37.0561, and the Texas regulator's large-load rule (adopted September 2026, trade press). AEP Ohio queue: more than 30 GW of interest, 13,022.7 MW of formal requests and 5,642 MW signed under the tariff, from AEP's letter to PUCO of 12 February 2026 as reported by New Project Media.
 
@@ -424,4 +426,4 @@ PJM releases and auction reports; the 2029/30 parameters are from PJM's planning
 
 ---
 
-<p class="sources">Sources: FERC orders EL26-67 (18 June 2026), ER26-3380 (29 September 2026) and ER26-3515 (9 October 2026); PJM decks to its committees (31 July, 8 September, 6 and 28 October 2026), auction reports and the market monitor's report (27 July 2026); ERCOT and the Texas Governor (July and August 2026); NERC's incident review (January 2025); the Virginia State Corporation Commission's GS-5 order (25 November 2025); Dominion to PJM (29 September 2026); Oncor, AEP, CoreWeave, Nebius and Oracle filings; Duke University (February 2025). Trade press only where marked. Personal research, not investment advice.</p>
+<p class="sources">Sources: FERC orders EL26-67 (18 June 2026), ER26-3380 (29 September 2026) and ER26-3515 (9 October 2026); PJM's amended backstop filing (29 October 2026); PJM decks to its committees (31 July, 8 September, 6 and 28 October 2026), auction reports and the market monitor's report (27 July 2026); ERCOT and the Texas Governor (July and August 2026); NERC's incident review (January 2025); the Virginia State Corporation Commission's GS-5 order (25 November 2025); Dominion to PJM (29 September 2026); Oncor, AEP, CoreWeave, Nebius and Oracle filings; Duke University (February 2025). Trade press only where marked. Personal research, not investment advice.</p>
