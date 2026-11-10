@@ -21,6 +21,8 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 
 ## START HERE (as of Tue 10 Nov 2026, evening)
 
+**Late 10 Nov, explanations from Tommy's study questions now in the pieces (fact-checked):** microreactors (what enrichment changes, why Russian uranium was banned, who runs Janus reactors); nuclear-for-ai (why fast and TRISO reactors need HALEU, why sodium over water, its cost); building-your-own-power (Howmet casts blades for turbine makers, it does not sell turbines). Paid for with cuts; all three pieces at or under 3,600 visible words. Study deck matches. Tommy has defended all seven chapters and asked to start company studies and calls (cap five each), BWXT first.
+
 **No visible dates (Tommy, 10 Nov 2026, late):** pieces and the homepage list no longer show a publish date ("the articles are ever changing"). The `date` field stays in frontmatter for ordering, RSS and the checker; claim dates in the claims record stay, because a claim is dated by nature. Do not add a visible date back.
 
 - **10 Nov (Tommy: "remove the gate... do point 1, site updates, all of them, now"; then "one study deck").**
