@@ -46,7 +46,7 @@ One of three things, arriving in this order: restarting a closed reactor, squeez
 
 A **restart** brings back a closed reactor. Three are under way: Crane (835 MW) in Pennsylvania, Palisades (about 800 MW) in Michigan and Duane Arnold (615 MW) in Iowa. An **uprate** lets a running reactor make more heat, and so more power, under a licence change from the Nuclear Regulatory Commission (NRC), the federal regulator. A **new build** starts from bare ground: a large reactor of about 1,100 MW, a **small modular reactor** (SMR) of up to about 300 MW, or an **advanced reactor** with a different coolant or fuel, most of which need HALEU.
 
-**HALEU**, high-assay low-enriched uranium, is the fuel that divides the field. Natural uranium is only about 0.7 per cent uranium-235, the atom that splits. Today's reactors burn fuel concentrated to about 5 per cent; HALEU is concentrated to just under 20 per cent, which lets a small or fast-neutron core run for years. It takes roughly five times the enrichment work per kilogram of ordinary 5 per cent fuel.
+**HALEU**, high-assay low-enriched uranium, is the fuel that divides the field. Natural uranium is only about 0.7 per cent uranium-235, the atom that splits. Today's reactors burn fuel concentrated to about 5 per cent; HALEU is concentrated to just under 20 per cent, which fast-neutron and TRISO-fuelled cores need, for reasons below.
 
 ## What does a nuclear project need before it can sell a kilowatt-hour?
 
@@ -69,7 +69,7 @@ Through a regulatory path that did not exist until 2023, a few years of repair a
 
 <a id="constellation-restarts-the-reactor"></a>
 
-Crane shut on 20 September 2019 because it could not earn enough selling power into the market. It was placed in **SAFSTOR**, a form of decommissioning in which a closed plant is kept intact and guarded while its radioactivity decays. Once an owner moves to active dismantling, the reactor vessel and its internals are cut up and removed, and nothing remains to restart. Apart from the three, no closed American reactor has a restart application at the NRC.
+Crane shut on 20 September 2019 because it could not earn enough selling power into the market. It was placed in **SAFSTOR**, a form of decommissioning in which a closed plant is kept intact and guarded while its radioactivity decays. Once dismantling starts, nothing remains to restart. Apart from the three, no closed American reactor has a restart application at the NRC.
 
 Once a reactor has shut for good, its licence no longer allows it to run. Holtec, a private nuclear company, built a way back for Palisades from February 2023: an exemption from that rule, licence amendments and an environmental assessment, approved together. For Palisades it took about 30 months, to approval on 24 July 2025.
 
@@ -102,11 +102,11 @@ Because a grid place makes a restart possible, not quick. Palisades kept its pla
 
 Palisades sits on the grid of **MISO**, the operator for much of the Midwest. There a closed plant can stay "suspended", keeping its connection, for at most 36 months in any five years; FERC extended Palisades' by 22 months, to 1 March 2027. It was reconnected to its 345 kilovolt switchyard on 11 September 2026. The reactor was harder. Its **steam generators**, the heat exchangers that boil water into steam, had worn tubes, which Holtec sleeved rather than replace.
 
-Loading fuel began on 30 August 2026. Then a fuel assembly tilted about 30 degrees after it was placed, and loading stopped. Recovering it took a month and an emergency licence amendment. Holtec has given no new restart date.
+Loading fuel began on 30 August 2026. Then a fuel assembly tilted about 30 degrees after it was placed, and loading stopped. Holtec has given no new restart date.
 
 The deadline is commercial. Palisades sells to two power cooperatives under 28-year contracts, and if it is not in service by March 2027, either side may end them.
 
-The third restart shows the same lesson the other way round. NextEra Energy kept Duane Arnold's grid place through a FERC waiver of August 2025, for up to 619 MW provided the plant runs by 31 December 2029. Google buys most of the output under a 25-year contract, and CIPCO, an Iowa power cooperative, the rest on the same terms. Its harder job is physical: a storm in August 2020 wrecked its cooling towers, so NextEra must build new ones. Its date is the first quarter of 2029 at the latest.
+The third restart shows the same lesson the other way round. NextEra Energy kept Duane Arnold's grid place through a FERC waiver of August 2025, for up to 619 MW provided the plant runs by 31 December 2029. Google buys most of the output under a 25-year contract. Its harder job is physical: a storm in August 2020 wrecked its cooling towers, so NextEra must build new ones. Its date is the first quarter of 2029 at the latest.
 
 <figure class="chart">
 <p class="chart-title">Palisades won its approvals first and still has no date; Crane, a year behind, is due first</p>
@@ -134,8 +134,6 @@ The NRC has approved 172 uprates since 1977, adding 8,030 MW. Then the work stop
 
 The deals behind them are specific. On 6 October 2026 Google agreed a 20-year contract for 890 MW of uprates at eleven Constellation reactors, which Constellation will invest more than US$4.3 billion to build. Amazon has signed for about 190 MW at Calvert Cliffs in Maryland, and Meta for 30 MW at Clinton in Illinois and 433 MW at three plants of Vistra, a Texas power company. Google has signed for about 96 MW in Georgia, still awaiting state approval. Together that is about 1,640 MW, on my sum.
 
-Google's 890 MW for US$4.3 billion is about US$4,800 per kilowatt. The two new reactors at Vogtle in Georgia cost their owners roughly US$14,000 per kilowatt, after years of overruns (my arithmetic, from reported totals).
-
 <figure class="chart">
 <p class="chart-title">A restart or uprate costs a fraction of a new large reactor for each kilowatt</p>
 <p class="chart-sub">Capital cost, US dollars per kilowatt of capacity; my arithmetic from company and press figures</p>
@@ -158,7 +156,7 @@ Almost never directly. On the PJM and MISO grids, every binding nuclear deal for
 <figcaption>FERC (1 November 2024, ER24-2172; 18 December 2025, EL25-49); Talen quarterly report for June 2026. My drawing.</figcaption>
 </figure>
 
-The first big co-location deal hit a wall. In November 2024 FERC rejected a change that would have raised the load co-located with Talen Energy's Susquehanna plant for Amazon from 300 to 480 MW. So the deal moved in front of the meter: up to 1,920 MW through 2042, delivered through the grid. In an order of 18 December 2025 FERC required a co-located data centre in PJM to take one of three transmission services; a plant adding co-located load must now be studied, pay for any grid upgrades, and wait for them.
+The first big co-location deal hit a wall. In November 2024 FERC rejected a change that would have raised the load co-located with Talen Energy's Susquehanna plant for Amazon from 300 to 480 MW. So the deal moved in front of the meter: up to 1,920 MW through 2042, delivered through the grid. Since December 2025 FERC has required a PJM plant adding co-located load to be studied, pay for any grid upgrades, and wait for them.
 
 The exception is in Texas, on ERCOT's separate grid, where Vistra has a binding 20-year contract for 1,200 MW from Comanche Peak, with a campus planned beside the plant.
 
@@ -168,11 +166,11 @@ The binding contracts sit on reactors that already exist. The deals with new rea
 
 <a id="oklo-sells-the-electricity"></a>
 
-Long, binding power purchase agreements on existing American reactors and their uprates cover about 9,880 MW (my sum of the companies' figures). The new-reactor side reads differently. Meta has funded development of two TerraPower reactors, up to 690 MW and as early as 2032. Oklo's 1.2 GW campus for Meta in Ohio rests on a framework under which Meta prepays for future power; Oklo says it is not a power purchase agreement. Google has a framework with Kairos Power for 500 MW by 2035, and Amazon a target of more than 5 GW from X-energy by 2039.
+Long, binding power purchase agreements on existing American reactors and their uprates cover about 9,880 MW (my sum of the companies' figures). The new-reactor side reads differently. Meta has funded development of two TerraPower reactors, up to 690 MW and as early as 2032. Oklo's 1.2 GW campus for Meta in Ohio rests on a prepayment framework, which Oklo says is not a power purchase agreement. Google has a framework with Kairos Power for 500 MW by 2035, and Amazon a target of more than 5 GW from X-energy by 2039.
 
 <a id="kairos-signs-before-it-switches-on"></a>
 
-The one binding contract on a new reactor is small. On 18 August 2025 TVA, the federal power company for Tennessee, agreed to buy up to 50 MW from Kairos Power's Hermes 2 at Oak Ridge from 2030, for Google. Hermes 2's permit covers test reactors of 35 thermal megawatts each, and at a third efficiency even two of them cannot make 50 megawatts of electricity, so the contract implies a larger plant the NRC has not yet been asked to license. Its fuel source is not yet named.
+The one binding contract on a new reactor is small. On 18 August 2025 TVA, the federal power company for Tennessee, agreed to buy up to 50 MW from Kairos Power's Hermes 2 at Oak Ridge from 2030, for Google. Hermes 2's permit covers two test reactors too small to make 50 megawatts of electricity, so the contract implies a larger plant not yet before the NRC. Its fuel source is not yet named.
 
 <figure class="chart">
 <p class="chart-title">The firm contracts are on reactors that exist; the new ones have frameworks and targets</p>
@@ -195,11 +193,15 @@ The closest is in Canada. Ontario Power Generation is building the first of four
 
 Because most of them need HALEU, and America makes it on one line of sixteen centrifuges whose government contract has ended.
 
+Why not ordinary fuel? In an ordinary reactor the water that carries the heat also slows the neutrons, and U-235 splits far more readily when a slow neutron hits it, so 5 per cent fuel is enough. TerraPower's Kemmerer 1 and Oklo's Aurora are **fast reactors**, cooled by liquid sodium, whose heavier atoms barely slow the neutrons. Fast neutrons split U-235 less readily, so the fuel must be richer. Kairos and X-energy need it because their TRISO fuel, coated grains of uranium, holds little uranium.
+
+Sodium is worth the trouble because it boils at about 880°C. A pressurised water reactor must hold its water at about 150 times air pressure to keep it liquid near 300°C; a sodium reactor runs hotter at close to normal pressure. A fast core also turns more of its uranium-238, most of the fuel, into plutonium, which then splits too. The price is a coolant that burns in air and reacts violently with water.
+
 <a id="terrapower-waits-on-the-fuel"></a>
 
 **Enrichment** concentrates uranium-235 by spinning uranium gas in fast centrifuges; a linked line of them is a **cascade**. The only American cascade to have made HALEU belongs to Centrus Energy, in Piketon, Ohio, with sixteen machines. By June 2026 it had made more than 1,900 kg of HALEU as gas, about 1.3 tonnes of uranium, in all its years of running (my conversion). Its contracted production finished in mid-June 2026, and the Energy Department does not currently intend to order more from it. Centrus's lease ends on 1 October 2027.
 
-What is coming is planned, not built. Centrus's new government order, signed on 1 July 2026, requires one tonne of uranium as HALEU by July 2032. The first new centrifuge left its Tennessee factory on 29 October 2026. New capacity should start in Ohio in 2029, in a build-out that includes 12 tonnes a year of HALEU. Against that, the Energy Department expects "more than 40 metric tons" of HALEU to be needed by 2030. Its own stock should reach about 21 tonnes by 2028. It has conditionally allocated some in three rounds since April 2025, to NASA and eight others, without publishing anyone's tonnage.
+What is coming is planned, not built. Centrus's new government order, signed on 1 July 2026, requires one tonne of uranium as HALEU by July 2032. New capacity should start in Ohio in 2029, in a build-out that includes 12 tonnes a year of HALEU. Against that, the Energy Department expects "more than 40 metric tons" of HALEU to be needed by 2030. Its own stock should reach about 21 tonnes by 2028. It has conditionally allocated some in three rounds since April 2025, to NASA and eight others, without publishing anyone's tonnage.
 
 <figure class="illo">
 <p class="illo-title">The advanced reactors have permits, ground and buyers; the fuel column is the one still open</p>
@@ -214,7 +216,7 @@ Each reactor linked to AI buyers meets that wall. **TerraPower** won an NRC cons
 
 Between June and August 2026 four reactors in the Energy Department's pilot programme reached **criticality**, a steady self-sustaining chain reaction, in physics tests at zero or very low power. None is on a grid.
 
-The fuel loop has its first cracks: X-energy agreed a prepayment with Centrus, and Meta's first payment under its Oklo framework went straight to Centrus as a credit towards fuel orders. But no tonnage is public. The crack moves fuel in the 2030s, not this decade.
+The fuel loop has its first cracks: X-energy agreed a prepayment with Centrus, and Meta's first payment under its Oklo framework went straight to Centrus as a credit towards fuel orders. The crack moves fuel in the 2030s, not this decade.
 
 ## Is the old fleet's own fuel safe?
 
@@ -250,7 +252,7 @@ Mostly old reactors. On the companies' own dates, about 2,250 MW of restarts and
 <figcaption>Owner and developer releases and filings to 6 November 2026. Uprate megawatts are my sum of five AI-funded deals. Darlington, 300 MW on ordinary fuel in Canada, is left out because the claim tests American grids.</figcaption>
 </figure>
 
-The comparison counts capacity, not energy, and much of the uprate capacity lands after 2030. What the figures rank is which lane can deliver first. The HALEU test is narrower than it looks: Aurora's 75 MW alone cannot break it, but Kemmerer 1 would, and so would Aurora and Hermes 2 together. So the claim is a bet that Kemmerer misses 2030 and that Hermes 2, with no named fuel and a permit too small for its contract, does too.
+The comparison counts capacity, not energy; it ranks which lane delivers first. The HALEU test is narrower than it looks: Aurora's 75 MW alone cannot break it, but Kemmerer 1 would, and so would Aurora and Hermes 2 together. So the claim is a bet that Kemmerer misses 2030 and that Hermes 2, with no named fuel and a permit too small for its contract, does too.
 
 ## So who holds the scarce thing, and what should an investor watch?
 
@@ -326,7 +328,7 @@ Cost per kilowatt, my arithmetic: Crane US$1.6bn ÷ 835 MW ≈ US$1,900. Google 
 
 **Uprates.** NRC, Types of Power Uprates and Approved Applications (reviewed 15 September 2026): 172 approved since 1977, 24,089 MWt (8,030 MWe); last approval Millstone 3, 9 November 2021. Pending list empty (15 September 2026). Expected applications (8 September 2026): 31 in the summary (10 measurement uncertainty, 2 stretch, 19 extended), 30 itemised, 7,336 MWt, about 2,421 MWe, fourth quarter 2026 to 2032; Constellation 12 (5 extended, 7 measurement uncertainty). AI-funded uprates: Google and Constellation 890 MW (6 October 2026); Amazon and Constellation, Calvert Cliffs, about 190 MW (30 September 2026); Meta and Vistra 433 MW (Perry 213, Davis-Besse 80, Beaver Valley 140; Vistra 8-K, January 2026); Meta and Constellation, Clinton, 30 MW (3 June 2025); Google and Georgia Power about 96 MW (filed 21 September 2026, press, awaiting state approval). Sum about 1,639 MW, my arithmetic. DOE conditional commitment to Constellation up to US$5bn (27 October 2026).
 
-**Deals.** Binding power purchase agreements on existing reactors, megawatts as the companies give them: Crane 835 (Microsoft); Susquehanna up to 1,920 (Amazon, in front of the meter since April 2026); Clinton 1,121 including 30 of uprate (Meta, from June 2027); Duane Arnold 615 (Google and CIPCO); Calvert Cliffs 690 including 190 of uprate (Amazon); Constellation uprates 890 (Google); Vistra 2,609 including 433 of uprate (Meta); Comanche Peak 1,200 (Vistra 8-K, 29 September 2025; buyer named as Amazon by Vistra's chief executive, 26 February 2026), in Texas, with a campus planned beside the plant. Sum 9,880 MW, my arithmetic; Google's 2,700 MW, 15-year energy supply agreement across existing Constellation plants is excluded. TerraPower's units for Meta could come as early as 2032; Kemmerer 1 is not part of that deal. New reactors: TerraPower, two units up to 690 MW funded and rights to up to six more (Meta, 9 January 2026); Oklo up to 1.2 GW, a prepayment framework, not a power purchase agreement (Oklo, 6 November 2026); Kairos 500 MW by 2035, a framework (Google, 14 October 2024); Hermes 2 up to 50 MW, a binding utility contract (TVA, 18 August 2025); X-energy more than 5 GW by 2039, a target (Amazon, October 2024). FERC co-location: rejection of the Susquehanna amendment, 1 November 2024 (ER24-2172); PJM co-location order 193 FERC ¶ 61,217 (18 December 2025, EL25-49); rehearing and compliance order 195 FERC ¶ 61,209 (18 June 2026); compliance due 16 November 2026.
+**Deals.** Binding power purchase agreements on existing reactors, megawatts as the companies give them: Crane 835 (Microsoft); Susquehanna up to 1,920 (Amazon, in front of the meter since April 2026); Clinton 1,121 including 30 of uprate (Meta, from June 2027); Duane Arnold 615 (Google, and CIPCO, an Iowa power cooperative); Calvert Cliffs 690 including 190 of uprate (Amazon); Constellation uprates 890 (Google); Vistra 2,609 including 433 of uprate (Meta); Comanche Peak 1,200 (Vistra 8-K, 29 September 2025; buyer named as Amazon by Vistra's chief executive, 26 February 2026), in Texas, with a campus planned beside the plant. Sum 9,880 MW, my arithmetic; Google's 2,700 MW, 15-year energy supply agreement across existing Constellation plants is excluded. TerraPower's units for Meta could come as early as 2032; Kemmerer 1 is not part of that deal. New reactors: TerraPower, two units up to 690 MW funded and rights to up to six more (Meta, 9 January 2026); Oklo up to 1.2 GW, a prepayment framework, not a power purchase agreement (Oklo, 6 November 2026); Kairos 500 MW by 2035, a framework (Google, 14 October 2024); Hermes 2 up to 50 MW, a binding utility contract (TVA, 18 August 2025); X-energy more than 5 GW by 2039, a target (Amazon, October 2024). FERC co-location: rejection of the Susquehanna amendment, 1 November 2024 (ER24-2172); PJM co-location order 193 FERC ¶ 61,217 (18 December 2025, EL25-49); rehearing and compliance order 195 FERC ¶ 61,209 (18 June 2026); compliance due 16 November 2026.
 
 **HALEU.** Centrus: "cumulative total of more than 1,900 kg" of HALEU as UF6 by mid-June 2026 (release, 1 July 2026); UF6 is about 67.6% uranium by mass, so about 1.28 tonnes of uranium (my arithmetic). Maintenance-only order 30 June 2026; task order of 1 July 2026 for 1 tonne of uranium by July 2032, with two options of 5 tonnes; build-out including 12 tonnes a year of HALEU capacity, first new capacity by 2029 (1 July 2026); lease fixed to end 1 October 2027 by an amendment of 19 October 2026, with DOE saying it will work to complete a long-term extension before 31 December 2026 but under no obligation to do so; DOE "does not currently intend to exercise further production options" under the HALEU Operation Contract (quarterly report, 5 November 2026); commercial enrichment, no volume, and US$5.4bn of contingent commitments, US$5.1bn under definitive agreements (4 November 2026); first new centrifuge completed and shipped from Oak Ridge to Ohio, first new capacity in Ohio in 2029 (8-K, 29 October 2026). DOE HALEU allocations (HALEU allocation process page, read 10 November 2026): round 1, 9 April 2025, TRISO-X, Kairos Power, Radiant, Westinghouse, TerraPower; round 2, 26 August 2025, Antares, Standard Nuclear, Abilene Christian University with Natura Resources; round 3, 23 July 2026, NASA and Radiant again; no tonnage stated for any recipient. DOE: "more than 40 metric tons (MT) of HALEU will be needed by 2030" (Record of Decision, 14 January 2025); stock about 21.2 tonnes by 2028 (DOE to GAO, GAO-26-107385, 20 August 2026). Oklo: five tonnes recovered from EBR-II fuel for its first core. ASP Isotopes: 8-K of 15 October 2026. X-energy: NRC final safety evaluation, 30 October 2026. Pilot programme criticalities: Antares (4 June), Valar (18 June), Aalo (4 July), Oklo's Groves test reactor (5 August 2026), all zero or low power. HALEU needs about 41 SWU per kilogram at 19.75% against about 7.8 at 4.95%, about five times, with tails at 0.25% (my arithmetic, as in the microreactors piece).
 

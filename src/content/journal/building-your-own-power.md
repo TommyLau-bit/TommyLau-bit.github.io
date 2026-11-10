@@ -63,7 +63,7 @@ Mitsubishi Heavy says gas enters its M501J turbines at 1,600°C. A common single
 
 <a id="howmet-casts-the-queue"></a>
 
-Few companies can cast these blades. The biggest is Howmet Aerospace, which also makes jet engine parts; its own 2026 brochure calls it "the largest manufacturer of gas turbine blades in the world". Its rivals include Precision Castparts, owned by Berkshire Hathaway. On 29 October Howmet said its gas turbine revenue rose 45 per cent in a year, with customers "looking to increase volumes beyond previous expectations". It plans higher capital spending beyond 2027 to keep up. So the hottest blade sets the pace of every heavy turbine, and the casters are only now paying for more.
+Few companies can cast these blades. The biggest is Howmet Aerospace, which casts blades for power-plant and jet engine makers alike; its own 2026 brochure calls it "the largest manufacturer of gas turbine blades in the world". Its rivals include Precision Castparts, owned by Berkshire Hathaway. On 29 October Howmet said its gas turbine revenue rose 45 per cent in a year, with customers "looking to increase volumes beyond previous expectations". It plans higher capital spending beyond 2027 to keep up. So the hottest blade sets the pace of every heavy turbine, and the casters are only now paying for more.
 
 ## Why don't the makers just build more factories?
 
