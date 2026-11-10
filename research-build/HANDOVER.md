@@ -21,6 +21,8 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 
 ## START HERE (as of Tue 10 Nov 2026, evening)
 
+**No visible dates (Tommy, 10 Nov 2026, late):** pieces and the homepage list no longer show a publish date ("the articles are ever changing"). The `date` field stays in frontmatter for ordering, RSS and the checker; claim dates in the claims record stay, because a claim is dated by nature. Do not add a visible date back.
+
 - **10 Nov (Tommy: "remove the gate... do point 1, site updates, all of them, now"; then "one study deck").**
   - **Gate dropped.** No per-chapter four-point test any more. Company studies and calls are NOT started; they wait for Tommy's word (roadmap file and memory updated).
   - **Site updates LIVE** (commit fa9afd8, deploy green, checked live). Six chapters got new primary evidence, each drafted by one agent and fact-checked by another (logs: research-build/deep-pieces/updates/<slug>.CHANGES.md):
