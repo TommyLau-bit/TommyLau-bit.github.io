@@ -1,12 +1,16 @@
-// ── Power roster: how a rating is worked out ────────────────────────────────
-// Five ratings (Permitting ease and OVR cut: Tommy, 11 Nov 2026). Every rating is a formula of one sourced number on the card (src/data/power.ts).
-// No rating is typed in by hand. A number that could not be sourced is null, and
-// its rating is then n/a. Each rating is clamped to 25..99; a range uses its midpoint.
+// ── Power roster: how a grade is worked out ─────────────────────────────────
+// Graded A to E on a radar chart, like a fighting-game stat sheet (Tommy, 11 Nov 2026:
+// letters replaced scores out of 99, which had no benchmark a reader could feel).
+// Every grade is read from ONE sourced number on the card (src/data/power.ts) through
+// fixed bands, shown on the page. No grade is typed in by hand. A number that could not
+// be sourced is null and grades "?"; a machine that needs no fuel grades "∞" on Stamina.
+// A range uses its midpoint. The dashed benchmark on every chart is the combined-cycle
+// gas plant: the standard power station, and EIA's own reference plant.
 
 export type Num = number | [number, number] | null;
 export type Stat = {
-  value: Num;          // the number the rating reads (null = n/a)
-  display: string;     // as shown on the card, with its unit
+  value: Num;          // the number the grade reads (null = no sourced figure)
+  display: string;     // as written in the sources fold, with its unit
   basis?: string;      // what exactly it measures
   source?: string;     // publisher and document
   url?: string;
@@ -15,43 +19,83 @@ export type Stat = {
 };
 
 export const mid = (v: Num): number | null => (v === null ? null : Array.isArray(v) ? (v[0] + v[1]) / 2 : v);
-const clamp = (x: number) => Math.max(25, Math.min(99, Math.round(x)));
 
-export type RatingKey = 'speed' | 'size' | 'cost' | 'reliability' | 'fuel';
+export type Grade = 'A' | 'B' | 'C' | 'D' | 'E' | '?' | '∞';
+export const GRADES = ['A', 'B', 'C', 'D', 'E'] as const;
+export const GRADE_WORD: Record<string, string> = { A: 'excellent', B: 'strong', C: 'middling', D: 'weak', E: 'very weak' };
+
+export type RatingKey = 'speed' | 'size' | 'cost' | 'reliability' | 'stamina' | 'potential';
 export type Rating = {
   key: RatingKey;
   name: string;
-  short: string;
-  input: 'monthsToPower' | 'sizeMW' | 'costPerKW' | 'elcc' | 'fuelDays';
+  input: 'monthsToPower' | 'sizeMW' | 'costPerKW' | 'elcc' | 'fuelDays' | 'plannedMW';
   inputName: string;
-  hint: string;        // one plain line for the key above the cards
-  formula: string;     // shown on the page
-  anchors: string;     // worked examples, shown on the page
-  f: (x: number) => number;
+  hint: string;               // one plain line for the key above the cards
+  better: 'lower' | 'higher';
+  cuts: [number, number, number, number];   // A/B, B/C, C/D, D/E boundaries
+  unit: (n: number) => string;              // how a boundary reads in the bands table
 };
 
+const months = (n: number) => `${n} months`;
+const mw = (n: number) => `${n.toLocaleString('en-GB')} MW`;
+const usd = (n: number) => `US$${n.toLocaleString('en-GB')}/kW`;
+const pct = (n: number) => `${n}%`;
+const gw = (n: number) => `${n / 1000} GW`;
+const days = (n: number) => (n >= 365 ? `${n / 365} year` : n === 1 ? '1 day' : `${n} days`);
+
 export const RATINGS: Rating[] = [
-  { key: 'speed', name: 'Speed', short: 'SPD', hint: 'how fast it can be up and running', input: 'monthsToPower', inputName: 'months from order to first power',
-    formula: '99 − 15 × log₂(months ÷ 6)', anchors: '6 months = 99, 12 = 84, 24 = 69, 48 = 54, 96 = 39',
-    f: (m) => 99 - 15 * Math.log2(m / 6) },
-  { key: 'size', name: 'Size', short: 'SIZE', hint: 'how much power one unit gives', input: 'sizeMW', inputName: 'MW from one unit (one machine, farm or reactor)',
-    formula: '40 + 59 × log₁₀(MW) ÷ 3', anchors: '1 MW = 40, 10 MW = 60, 100 MW = 79, 1,000 MW = 99',
-    f: (mw) => 40 + (59 * Math.log10(mw)) / 3 },
-  { key: 'cost', name: 'Cost', short: 'CST', hint: 'how cheap it is to build', input: 'costPerKW', inputName: 'US$ per kW to build',
-    formula: '99 − 59 × log₁₀(US$/kW ÷ 500) ÷ log₁₀(20)', anchors: '$500/kW = 99, $2,000 = 72, $10,000 = 40',
-    f: (c) => 99 - (59 * Math.log10(c / 500)) / Math.log10(20) },
-  { key: 'reliability', name: 'Reliability', short: 'REL', hint: 'how much you can count on it when demand peaks', input: 'elcc', inputName: "share of each MW PJM counts as firm (ELCC class rating, 2029/30)",
-    formula: 'ELCC in per cent', anchors: 'nuclear 96% = 96, gas combined cycle 75% = 75, tracking solar 7% = 25 (the floor)',
-    f: (cf) => cf },
-  { key: 'fuel', name: 'Stamina', short: 'STA', hint: 'how long it runs without new fuel', input: 'fuelDays', inputName: 'days it keeps running on the fuel already on site, if deliveries stop (how hard the fuel is to buy is not measured here)',
-    formula: '25 + 74 × log₁₀(days + 1) ÷ log₁₀(1,826)', anchors: '0 days (gas on a pipe) = 25, 30 = 59, 540 = 87, 1,825 (5 years) = 99; no fuel to buy = 99',
-    f: (d) => 25 + (74 * Math.log10(d + 1)) / Math.log10(1826) },
+  { key: 'speed', name: 'Speed', input: 'monthsToPower', inputName: 'months from order to first power',
+    hint: 'how fast it can be up and running', better: 'lower', cuts: [6, 18, 36, 60], unit: months },
+  { key: 'size', name: 'Size', input: 'sizeMW', inputName: 'MW from one unit (one machine, farm or reactor)',
+    hint: 'how much power one unit gives', better: 'higher', cuts: [500, 200, 50, 10], unit: mw },
+  { key: 'cost', name: 'Cost', input: 'costPerKW', inputName: 'US$ per kW to build',
+    hint: 'how cheap it is to build', better: 'lower', cuts: [1000, 1600, 3000, 6000], unit: usd },
+  { key: 'reliability', name: 'Reliability', input: 'elcc', inputName: 'share of each MW PJM counts as firm at peak (ELCC class rating, 2029/30)',
+    hint: 'how much you can count on it when demand peaks', better: 'higher', cuts: [90, 70, 50, 30], unit: pct },
+  { key: 'stamina', name: 'Stamina', input: 'fuelDays', inputName: 'how long it keeps running on the fuel already on site if deliveries stop (not how hard the fuel is to buy)',
+    hint: 'how long it runs without new fuel', better: 'higher', cuts: [365, 30, 7, 1], unit: days },
+  { key: 'potential', name: 'Potential', input: 'plannedMW', inputName: 'US capacity planned in EIA\'s generator inventory (all planned stages; projects can slip or be cancelled)',
+    hint: 'how much more of it is planned in the US', better: 'higher', cuts: [50000, 10000, 2000, 500], unit: gw },
 ];
 
-// A stat whose value is Infinity means "no fuel to buy" (sunlight): it rates 99.
-export const rateOne = (r: Rating, s: Stat | undefined): number | null => {
+export const gradeOf = (r: Rating, s: Stat | undefined): Grade => {
   const x = s ? mid(s.value) : null;
-  if (x === null) return null;
-  if (!Number.isFinite(x)) return 99;
-  return clamp(r.f(x));
+  if (x === null) return '?';
+  if (!Number.isFinite(x)) return '∞';
+  const i = r.cuts.findIndex((c) => (r.better === 'lower' ? x <= c : x >= c));
+  return GRADES[i === -1 ? 4 : i];
+};
+
+// The bands in words, for the table in the fold.
+export const bandText = (r: Rating): string[] => {
+  const [a, b, c, d] = r.cuts.map(r.unit);
+  return r.better === 'lower'
+    ? [`${a} or less`, `up to ${b}`, `up to ${c}`, `up to ${d}`, `over ${d}`]
+    : [`${a} or more`, `${b} or more`, `${c} or more`, `${d} or more`, `under ${d}`];
+};
+
+// The real figure beside each grade on the card, worked out from the same number.
+const n0 = (n: number) => Math.round(n).toLocaleString('en-GB');
+const span = (v: Num, f: (n: number) => string, unit: string) =>
+  Array.isArray(v) ? `${f(v[0])} to ${f(v[1])}${unit}` : `${f(v as number)}${unit}`;
+const dur = (d: number) => (d < 1 ? `${n0(d * 24)} hours` : d < 60 ? `${n0(d)} days` : d < 1000 ? `${n0(d / 30.44)} months` : `${n0(d / 365.25)} years`);
+
+export const figure = (r: Rating, s: Stat | undefined): string => {
+  if (!s || s.value === null) return 'no sourced figure';
+  const v = s.value;
+  const target = /target/i.test(s.display) ? ' (target)' : '';
+  switch (r.key) {
+    case 'speed': return span(v, n0, ' months') + target;
+    case 'size': return span(v, (n) => (n < 100 ? String(n) : n0(n)), ' MW');
+    case 'cost': return Array.isArray(v) ? `US$${n0(v[0])} to ${n0(v[1])}/kW` : `US$${n0(v)}/kW`;
+    case 'reliability': return `${span(v, n0, '%')} firm`;
+    case 'potential': { const x = mid(v)!; return x === 0 ? 'none planned' : `${x >= 10000 ? n0(x / 1000) : (x / 1000).toFixed(1)} GW planned`; }
+    case 'stamina': {
+      const x = mid(v)!;
+      if (!Number.isFinite(x)) return 'needs no fuel';
+      if (x === 0) return '0 days: fuel by pipe';
+      if (Array.isArray(v)) { const [a, b] = v.map(dur); const u = a.split(' ')[1]; return b.endsWith(u) ? `${a.split(' ')[0]} to ${b}` : `${a} to ${b}`; }
+      return dur(x);
+    }
+  }
 };

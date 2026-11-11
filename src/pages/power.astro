@@ -2,23 +2,38 @@
 import { LICENCE_URL } from '../data/journal-photos';
 // Power: every way to power an AI data centre, as a roster of player cards.
 // Published on Tommy's word, 11 Nov 2026. Kept simple and fun on
-// purpose: photo, ratings, ability, weakness. The numbers behind every rating sit in
-// one fold at the bottom. Data in src/data/power.ts; formulas in power-ratings.ts.
+// purpose: photo, a radar of A to E grades, ability, weakness. The numbers behind every grade sit in
+// one fold at the bottom. Data in src/data/power.ts; grade bands in power-ratings.ts.
 import Base from '../layouts/Base.astro';
 import PowerCutaway from '../components/PowerCutaway.astro';
 import { GROUPS, CARDS } from '../data/power';
 import { PHOTOS } from '../data/power-photos';
-import { RATINGS, rateOne, type RatingKey } from '../data/power-ratings';
+import { RATINGS, GRADES, GRADE_WORD, gradeOf, bandText, figure, type Grade, type RatingKey } from '../data/power-ratings';
 import { CHAPTERS } from '../data/stack';
 
 const chapterN = (slug: string) => CHAPTERS.findIndex((c) => c.slug === slug) + 1;
 const chapterName = (slug: string) => CHAPTERS.find((c) => c.slug === slug)?.name ?? slug;
 const cards = CARDS.map((c) => {
-  const r = Object.fromEntries(RATINGS.map((R) => [R.key, rateOne(R, c.stats[R.input])])) as Record<RatingKey, number | null>;
-  const claims = RATINGS.filter((R) => c.stats[R.input].claim).map((R) => ({ key: R.key, name: R.name, text: c.stats[R.input].claim as string }));
-  return { ...c, r, claims, photo: PHOTOS[c.id] };
+  const g = Object.fromEntries(RATINGS.map((R) => [R.key, gradeOf(R, c.stats[R.input])])) as Record<RatingKey, Grade>;
+  const claims = RATINGS.filter((R) => c.stats[R.input]?.claim).map((R) => ({ key: R.key, name: R.name, text: c.stats[R.input].claim as string }));
+  return { ...c, g, claims, photo: PHOTOS[c.id] };
 });
-const show = (x: number | null) => (x === null ? 'n/a' : String(x));
+
+// The radar: one axis per rating, A on the rim, E near the centre. "?" sits at the centre
+// (no sourced number), "∞" on the rim. The dashed outline is the benchmark card.
+const BENCH = cards.find((c) => c.id === 'ccgt')!;
+const CX = 120, CY = 104, RR = 62, N = RATINGS.length;
+const reach: Record<Grade, number> = { A: 1, B: 0.8, C: 0.6, D: 0.4, E: 0.2, '∞': 1, '?': 0 };
+const at = (i: number, f: number) => {
+  const a = -Math.PI / 2 + (2 * Math.PI * i) / N;
+  return [CX + RR * f * Math.cos(a), CY + RR * f * Math.sin(a)];
+};
+const poly = (fs: number[]) => fs.map((f, i) => at(i, f).map((x) => x.toFixed(1)).join(',')).join(' ');
+const shape = (c: { g: Record<RatingKey, Grade> }) => poly(RATINGS.map((R) => reach[c.g[R.key]]));
+const rings = [1, 0.8, 0.6, 0.4, 0.2].map((f) => poly(RATINGS.map(() => f)));
+const spokes = RATINGS.map((_, i) => at(i, 1));
+const labels = RATINGS.map((R, i) => { const [x, y] = at(i, 1.42); return { key: R.key, x: x.toFixed(1), y: y.toFixed(1), t: R.name }; });
+const gradeClass = (x: Grade) => (x === 'A' || x === 'B' || x === '∞' ? 'is-hi' : x === 'D' || x === 'E' ? 'is-lo' : x === '?' ? 'is-na' : '');
 ---
 <Base title="Power" description="Every way to power an AI data centre, as a roster of player cards: the grid, gas turbines, engines, fuel cells, solar, batteries and reactors." wide>
   <header class="article-head pw-head">
@@ -27,7 +42,7 @@ const show = (x: number | null) => (x === null ? 'n/a' : String(x));
     <dl class="pw-key">
       {RATINGS.map((R) => <div><dt>{R.name}</dt><dd>{R.hint}</dd></div>)}
     </dl>
-    <p class="pw-keynote">Every rating runs to 99, higher is better, and each comes from one sourced number: <a href="#formulas">see how</a>.</p>
+    <p class="pw-keynote">Graded A (excellent) to E (very weak), each from one sourced number: <a href="#formulas">see the bands</a>. The dashed outline on every chart is a standard combined-cycle gas plant, for comparison. ? means no sourced number.</p>
   </header>
 
   {GROUPS.map((g) => (
@@ -48,18 +63,28 @@ const show = (x: number | null) => (x === null ? 'n/a' : String(x));
             <div class="pcard-body">
               <h3>{c.name}</h3>
               {c.examples && <p class="pcard-ex">{c.examples}</p>}
-              <ul class="pcard-ratings">
-                {RATINGS.map((R) => {
-                  const v = c.r[R.key];
-                  return (
+              <div class="pcard-stats">
+                <svg class="pcard-radar" viewBox="0 -4 240 216" role="img" aria-label={`${c.name}: ` + RATINGS.map((R) => `${R.name} ${c.g[R.key]}`).join(', ')}>
+                  {rings.map((r) => <polygon class="rd-ring" points={r} />)}
+                  {spokes.map(([x, y]) => <line class="rd-ring" x1={CX} y1={CY} x2={x.toFixed(1)} y2={y.toFixed(1)} />)}
+                  {c.id !== BENCH.id && <polygon class="rd-bench" points={shape(BENCH)} />}
+                  <polygon class="rd-shape" points={shape(c)} />
+                  {labels.map((l) => (
+                    <g>
+                      <text class="rd-label" x={l.x} y={(+l.y - 10).toFixed(1)} text-anchor="middle">{l.t}</text>
+                      <text class={`rd-grade ${gradeClass(c.g[l.key])}`} x={l.x} y={(+l.y + 9).toFixed(1)} text-anchor="middle">{c.g[l.key]}</text>
+                    </g>
+                  ))}
+                </svg>
+                <ul class="pcard-grades">
+                  {RATINGS.map((R) => (
                     <li>
-                      <span class="pr-name">{R.name}</span>
-                      <b class={v === null ? 'is-na' : v >= 80 ? 'is-hi' : v < 50 ? 'is-lo' : ''}>{show(v)}{c.claims.some((x) => x.key === R.key) && <sup>*</sup>}</b>
-                      <span class="pr-bar"><i style={`width:${v ?? 0}%`}></i></span>
+                      <span class="pg-name">{R.name}{c.claims.some((x) => x.key === R.key) && <sup>*</sup>}</span>
+                      <span class="pg-fig">{figure(R, c.stats[R.input])}</span>
                     </li>
-                  );
-                })}
-              </ul>
+                  ))}
+                </ul>
+              </div>
               {c.claims.map((x) => <p class="pcard-claim">* {x.name}: {x.text}.</p>)}
               <p class="pcard-ab"><span>Special ability</span>{c.ability}</p>
               <p class="pcard-wk"><span>Weakness</span>{c.weakness}</p>
@@ -75,12 +100,12 @@ const show = (x: number | null) => (x === null ? 'n/a' : String(x));
   ))}
 
   <details class="pw-how" id="formulas">
-    <summary>How the ratings are worked out</summary>
-    <p>Each rating reads one sourced number and nothing else, by the formula below. Ratings run from 25 to 99; a range uses its middle. A number that could not be found in a primary source is n/a, and so is its rating. There is no overall score: the ratings measure different things, and the role on each card says what it is for.</p>
-    <table class="pw-ftable">
-      <thead><tr><th scope="col">Rating</th><th scope="col">Reads</th><th scope="col">Formula</th></tr></thead>
+    <summary>How the grades are worked out</summary>
+    <p>Each grade reads one sourced number and nothing else, through the bands below; a range uses its middle. A number that could not be found in a primary source grades ?, and a machine that needs no fuel grades ∞ on Stamina. There is no overall grade: the ratings measure different things, and the role on each card says what it is for. The benchmark outline is the combined-cycle gas plant, the standard power station and the EIA's own reference plant.</p>
+    <table class="pw-ftable pw-bands">
+      <thead><tr><th scope="col">Rating</th><th scope="col">Reads</th>{GRADES.map((G) => <th scope="col">{G} <small>{GRADE_WORD[G]}</small></th>)}</tr></thead>
       <tbody>
-        {RATINGS.map((R) => <tr><th scope="row">{R.name}</th><td>{R.inputName}</td><td><code>{R.formula}</code><br /><small>{R.anchors}</small></td></tr>)}
+        {RATINGS.map((R) => <tr><th scope="row">{R.name}</th><td>{R.inputName}</td>{bandText(R).map((t, i) => <td data-g={GRADES[i]}>{t}</td>)}</tr>)}
       </tbody>
     </table>
     <h3>The numbers behind each card</h3>
@@ -91,13 +116,14 @@ const show = (x: number | null) => (x === null ? 'n/a' : String(x));
           <ul>
             {RATINGS.map((R) => {
               const s = c.stats[R.input];
+              if (!s) return null;
               return <li><b>{R.name}:</b> {s.display}{s.source && <> ({s.url ? <a href={s.url} rel="noopener">{s.source}</a> : s.source}{s.date && `, ${s.date}`})</>}</li>;
             })}
           </ul>
         </div>
       ))}
     </div>
-    <p class="sources">Personal research, not investment advice. Ratings compare machines, not companies, and say nothing about any share.</p>
+    <p class="sources">Personal research, not investment advice. Grades compare machines, not companies, and say nothing about any share.</p>
   </details>
 </Base>
 
@@ -149,7 +175,6 @@ const show = (x: number | null) => (x === null ? 'n/a' : String(x));
   .pw-key dd { margin: 0; color: var(--ink-2); }
   .pw-keynote { font-family: var(--sans); font-size: 0.8rem; color: var(--ink-3); margin: 0; }
   .pcard-claim { margin: 0.35rem 0 0; font-size: 0.75rem; color: var(--ink-3); }
-  .pcard-ratings sup { font-size: 0.65em; margin-left: 1px; }
 
   /* the one card with no photograph: a dark silhouette, still locked */
   .pcard-ghost { position: absolute; inset: 0; display: grid; place-items: center; background: radial-gradient(circle at 50% 45%, #2a2a27, #0e0e0d); }
@@ -162,15 +187,23 @@ const show = (x: number | null) => (x === null ? 'n/a' : String(x));
   .pcard-body h3 { margin: 0; font-size: 1.1rem; line-height: 1.2; letter-spacing: -0.01em; }
   .pcard-ex { margin: -0.4rem 0 0; font-size: 0.78rem; color: var(--ink-3); line-height: 1.35; }
 
-  .pcard-ratings { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0.45rem 1rem; }
-  .pcard-ratings li { display: grid; grid-template-columns: 1fr auto; align-items: baseline; row-gap: 0.15rem; font-size: 0.74rem; }
-  .pr-name { color: var(--ink-2); }
-  .pcard-ratings b { font-size: 1rem; font-weight: 850; font-variant-numeric: tabular-nums; }
-  .pcard-ratings b.is-hi { color: var(--good); }
-  .pcard-ratings b.is-lo { color: var(--bad); }
-  .is-na { color: var(--ink-3); font-weight: 500 !important; }
-  .pr-bar { grid-column: 1 / -1; height: 5px; border-radius: 3px; background: var(--rule); overflow: hidden; }
-  .pr-bar i { display: block; height: 100%; background: var(--tier); border-radius: 3px; }
+  .pcard-stats { display: grid; gap: 0.35rem; }
+  .pcard-radar { display: block; width: 100%; max-width: 17rem; height: auto; margin: 0 auto; }
+  .rd-ring { fill: none; stroke: var(--rule); stroke-width: 1; }
+  .rd-bench { fill: none; stroke: var(--ink-3); stroke-width: 1.3; stroke-dasharray: 4 3; }
+  .rd-shape { fill: var(--tier); fill-opacity: 0.35; stroke: var(--tier); stroke-width: 2.2; stroke-linejoin: round; }
+  .rd-label { font-family: var(--sans); font-size: 10px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; fill: var(--ink-3); }
+  .rd-grade { font-family: var(--sans); font-size: 21px; font-weight: 900; fill: var(--ink); }
+  .rd-grade.is-hi { fill: var(--good); }
+  .rd-grade.is-lo { fill: var(--bad); }
+  .rd-grade.is-na { fill: var(--ink-3); }
+  .pcard-grades { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0.3rem 0.8rem; }
+  .pcard-grades li { font-size: 0.72rem; line-height: 1.25; }
+  .pg-name { display: block; color: var(--ink-2); font-weight: 700; }
+  .pcard-grades sup { font-size: 0.7em; }
+  .pg-fig { display: block; color: var(--ink-3); }
+  .pw-bands td[data-g] { white-space: nowrap; }
+  .pw-bands th small { display: block; font-weight: 500; color: var(--ink-3); }
 
   .pcard-ab, .pcard-wk { margin: 0; font-size: 0.86rem; line-height: 1.4; }
   .pcard-ab span, .pcard-wk span { display: block; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
