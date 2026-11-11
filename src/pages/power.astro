@@ -200,6 +200,7 @@ const gradeClass = (x: Grade) => (x === 'A' || x === 'B' || x === '∞' ? 'is-hi
   .pcard-grades sup { font-size: 0.7em; }
   .pg-fig { display: block; color: var(--ink-3); }
   .pw-bands td[data-g] { white-space: nowrap; }
+  @media (max-width: 560px) { .pw-bands td[data-g]::before { content: attr(data-g) '  '; font-weight: 800; display: inline-block; width: 1.4rem; } }
   .pw-bands th small { display: block; font-weight: 500; color: var(--ink-3); }
 
   .pcard-ab, .pcard-wk { margin: 0; font-size: 0.86rem; line-height: 1.4; }

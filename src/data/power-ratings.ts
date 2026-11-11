@@ -52,7 +52,7 @@ export const RATINGS: Rating[] = [
     hint: 'how much power one unit gives', better: 'higher', cuts: [500, 200, 50, 10], unit: mw },
   { key: 'cost', name: 'Cost', input: 'costPerKW', inputName: 'US$ per kW to build',
     hint: 'how cheap it is to build', better: 'lower', cuts: [1000, 1600, 3000, 6000], unit: usd },
-  { key: 'reliability', name: 'Reliability', input: 'elcc', inputName: 'share of each MW PJM counts as firm at peak (ELCC class rating, 2029/30)',
+  { key: 'reliability', name: 'Reliability', input: 'elcc', inputName: 'share of each MW PJM counts as firm at peak (ELCC class rating, 2029/30); where PJM has no class, the card names what stands in',
     hint: 'how much you can count on it when demand peaks', better: 'higher', cuts: [90, 70, 50, 30], unit: pct },
   { key: 'stamina', name: 'Stamina', input: 'fuelDays', inputName: 'how long it keeps running on the fuel already on site if deliveries stop (not how hard the fuel is to buy)',
     hint: 'how long it runs without new fuel', better: 'higher', cuts: [365, 30, 7, 1], unit: days },

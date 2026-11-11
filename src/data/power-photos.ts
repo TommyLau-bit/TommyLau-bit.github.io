@@ -2,7 +2,7 @@
 // Every photo is public domain or openly licensed on Wikimedia Commons and is credited
 // on its card. No company press photos except those a company released under an open
 // licence itself (Bloom Energy, Constellation). Files are in public/power/, 900 px wide.
-// The microreactor has no photo: none has run yet, so its card stays locked.
+// The microreactor shows NASA's Kilopower prototype (Tommy, 11 Nov 2026: the card needed a photo too).
 
 export type Photo = { src: string; alt: string; caption: string; credit: string; licence: string; page: string; pos?: string };
 
@@ -43,4 +43,7 @@ export const PHOTOS: Record<string, Photo> = {
   newreactor: { src: '/power/newreactor.jpg', alt: 'An aerial view of the Vogtle nuclear plant, with the construction site of two new reactors beside the old ones.',
     caption: 'Vogtle 3 and 4 under construction, the last new US reactors', credit: 'Charles C Watson Jr', licence: 'CC BY-SA 3.0',
     page: 'https://commons.wikimedia.org/wiki/File:Construction_at_Vogtle_Nuclear_Plant.jpg' },
+  micro: { src: '/power/micro.jpg', alt: 'A small metal reactor prototype with pipes and heat pipes on a test stand in a hangar.',
+    caption: "A prototype of NASA's Kilopower, a 1 kW reactor for space and planet surfaces", credit: 'NASA Glenn Research Center', licence: 'Public domain',
+    page: 'https://commons.wikimedia.org/wiki/File:Kilopower_experiment.jpg', pos: '55% 50%' },
 };
