@@ -32,7 +32,6 @@ export type Card = {
     fuelDays: Stat;
     permitMonths: Stat;
     bottleneck: Stat;     // display only
-    plannedMW: Stat;      // US capacity planned (EIA-860M): the Potential grade reads this
   };
   role: string;           // one word for the job it does for a data centre (replaces OVR)
   ability: string;
@@ -62,7 +61,6 @@ export const CARDS: Card[] = [
    }
   ],
   "stats": {
-   "plannedMW": {"value": null, "display": "n/a", "basis": "EIA lists generators, not grid connections; no comparable figure."},
    "sizeMW": {
     "value": 389,
     "display": "about 389 MW a load",
@@ -144,7 +142,6 @@ export const CARDS: Card[] = [
    }
   ],
   "stats": {
-   "plannedMW": {"value": 16645.6, "display": "about 16.6 GW", "basis": "Planned gas combustion turbines (prime mover GT) of 100 MW or more, all planned statuses, nameplate. The 100 MW split is my proxy for heavy-frame units, not EIA's classification.", "source": "EIA, Form EIA-860M, Preliminary Monthly Electric Generator Inventory, September 2026", "url": "https://www.eia.gov/electricity/data/eia860m/xls/september_generator2026.xlsx", "date": "23 Oct 2026"},
    "sizeMW": {
     "value": 430,
     "display": "430 MW",
@@ -237,7 +234,6 @@ export const CARDS: Card[] = [
    }
   ],
   "stats": {
-   "plannedMW": {"value": 47146.2, "display": "about 47.1 GW", "basis": "Planned natural gas combined-cycle capacity (prime movers CT, CA, CS, CC), all planned statuses, nameplate.", "source": "EIA, Form EIA-860M, Preliminary Monthly Electric Generator Inventory, September 2026", "url": "https://www.eia.gov/electricity/data/eia860m/xls/september_generator2026.xlsx", "date": "23 Oct 2026"},
    "sizeMW": {
     "value": 640,
     "display": "about 640 MW",
@@ -327,7 +323,6 @@ export const CARDS: Card[] = [
    }
   ],
   "stats": {
-   "plannedMW": {"value": 6349.7, "display": "about 6.3 GW", "basis": "Planned gas combustion turbines (prime mover GT) under 100 MW, all planned statuses, nameplate. The 100 MW split is my proxy for aeroderivatives, not EIA's classification.", "source": "EIA, Form EIA-860M, Preliminary Monthly Electric Generator Inventory, September 2026", "url": "https://www.eia.gov/electricity/data/eia860m/xls/september_generator2026.xlsx", "date": "23 Oct 2026"},
    "sizeMW": {
     "value": [
      35,
@@ -421,7 +416,6 @@ export const CARDS: Card[] = [
    }
   ],
   "stats": {
-   "plannedMW": {"value": 952.0, "display": "about 0.95 GW", "basis": "Planned natural gas internal combustion engines (prime mover IC), all planned statuses, nameplate.", "source": "EIA, Form EIA-860M, Preliminary Monthly Electric Generator Inventory, September 2026", "url": "https://www.eia.gov/electricity/data/eia860m/xls/september_generator2026.xlsx", "date": "23 Oct 2026"},
    "sizeMW": {
     "value": 18.9,
     "display": "18.9 MW an engine",
@@ -507,7 +501,6 @@ export const CARDS: Card[] = [
    }
   ],
   "stats": {
-   "plannedMW": {"value": 0, "display": "none listed", "basis": "No planned generator in the inventory has the fuel cell prime mover (FC). On-site units may go unlisted until they run; 374 MW of fuel cells are listed as operating.", "source": "EIA, Form EIA-860M, Preliminary Monthly Electric Generator Inventory, September 2026", "url": "https://www.eia.gov/electricity/data/eia860m/xls/september_generator2026.xlsx", "date": "23 Oct 2026"},
    "sizeMW": {
     "value": 10,
     "display": "10 MW (EIA reference plant)",
@@ -590,7 +583,6 @@ export const CARDS: Card[] = [
    }
   ],
   "stats": {
-   "plannedMW": {"value": null, "display": "n/a", "basis": "EIA publishes no figure for rented or temporary generation."},
    "sizeMW": {
     "value": 29,
     "display": "about 29 MW a turbine",
@@ -671,7 +663,6 @@ export const CARDS: Card[] = [
    }
   ],
   "stats": {
-   "plannedMW": {"value": 122025.2, "display": "about 122 GW", "basis": "Planned solar photovoltaic capacity, all planned statuses, nameplate.", "source": "EIA, Form EIA-860M, Preliminary Monthly Electric Generator Inventory, September 2026", "url": "https://www.eia.gov/electricity/data/eia860m/xls/september_generator2026.xlsx", "date": "23 Oct 2026"},
    "sizeMW": {
     "value": 150,
     "display": "150 MW (EIA reference plant)",
@@ -754,7 +745,6 @@ export const CARDS: Card[] = [
    }
   ],
   "stats": {
-   "plannedMW": {"value": 64234.6, "display": "about 64 GW", "basis": "Planned battery capacity, all planned statuses, nameplate.", "source": "EIA, Form EIA-860M, Preliminary Monthly Electric Generator Inventory, September 2026", "url": "https://www.eia.gov/electricity/data/eia860m/xls/september_generator2026.xlsx", "date": "23 Oct 2026"},
    "sizeMW": {
     "value": 150,
     "display": "150 MW (4 hours, 600 MWh)",
@@ -837,7 +827,6 @@ export const CARDS: Card[] = [
    }
   ],
   "stats": {
-   "plannedMW": {"value": 1792.6, "display": "about 1.8 GW", "basis": "Palisades (811.8 MW) and Crane, formerly Three Mile Island 1 (980.8 MW), listed as out of service on the Operating sheet, with modification dates of November 2026 and June 2027; nameplate. Duane Arnold appears only as retired.", "source": "EIA, Form EIA-860M, Preliminary Monthly Electric Generator Inventory, September 2026", "url": "https://www.eia.gov/electricity/data/eia860m/xls/september_generator2026.xlsx", "date": "23 Oct 2026"},
    "sizeMW": {
     "value": [
      615,
@@ -930,7 +919,6 @@ export const CARDS: Card[] = [
    }
   ],
   "stats": {
-   "plannedMW": {"value": 1048.7, "display": "about 1.0 GW", "basis": "Planned nuclear uprates on the Operating sheet (13 units, 2028 to 2034), summer capacity.", "source": "EIA, Form EIA-860M, Preliminary Monthly Electric Generator Inventory, September 2026", "url": "https://www.eia.gov/electricity/data/eia860m/xls/september_generator2026.xlsx", "date": "23 Oct 2026"},
    "sizeMW": {
     "value": 78,
     "display": "about 78 MW an uprate",
@@ -1023,7 +1011,6 @@ export const CARDS: Card[] = [
    }
   ],
   "stats": {
-   "plannedMW": {"value": 4968.0, "display": "about 5.0 GW", "basis": "Planned nuclear units: Kemmerer 1 (500 MW) and four Project Matador units (1,117 MW each, early stage with no approvals yet), nameplate.", "source": "EIA, Form EIA-860M, Preliminary Monthly Electric Generator Inventory, September 2026", "url": "https://www.eia.gov/electricity/data/eia860m/xls/september_generator2026.xlsx", "date": "23 Oct 2026"},
    "sizeMW": {
     "value": [
      50,
@@ -1112,7 +1099,6 @@ export const CARDS: Card[] = [
    }
   ],
   "stats": {
-   "plannedMW": {"value": 0, "display": "none listed", "basis": "No planned nuclear unit under 500 MW is in the inventory.", "source": "EIA, Form EIA-860M, Preliminary Monthly Electric Generator Inventory, September 2026", "url": "https://www.eia.gov/electricity/data/eia860m/xls/september_generator2026.xlsx", "date": "23 Oct 2026"},
    "sizeMW": {
     "value": [
      1,

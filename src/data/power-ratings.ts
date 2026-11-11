@@ -4,8 +4,8 @@
 // Every grade is read from ONE sourced number on the card (src/data/power.ts) through
 // fixed bands, shown on the page. No grade is typed in by hand. A number that could not
 // be sourced is null and grades "?"; a machine that needs no fuel grades "∞" on Stamina.
-// A range uses its midpoint. The dashed benchmark on every chart is the combined-cycle
-// gas plant: the standard power station, and EIA's own reference plant.
+// A range uses its midpoint. One shape per card, no benchmark outline and no sixth
+// axis (Tommy, 11 Nov 2026: keep it simple).
 
 export type Num = number | [number, number] | null;
 export type Stat = {
@@ -24,11 +24,11 @@ export type Grade = 'A' | 'B' | 'C' | 'D' | 'E' | '?' | '∞';
 export const GRADES = ['A', 'B', 'C', 'D', 'E'] as const;
 export const GRADE_WORD: Record<string, string> = { A: 'excellent', B: 'strong', C: 'middling', D: 'weak', E: 'very weak' };
 
-export type RatingKey = 'speed' | 'size' | 'cost' | 'reliability' | 'stamina' | 'potential';
+export type RatingKey = 'speed' | 'size' | 'cost' | 'reliability' | 'stamina';
 export type Rating = {
   key: RatingKey;
   name: string;
-  input: 'monthsToPower' | 'sizeMW' | 'costPerKW' | 'elcc' | 'fuelDays' | 'plannedMW';
+  input: 'monthsToPower' | 'sizeMW' | 'costPerKW' | 'elcc' | 'fuelDays';
   inputName: string;
   hint: string;               // one plain line for the key above the cards
   better: 'lower' | 'higher';
@@ -40,7 +40,6 @@ const months = (n: number) => `${n} months`;
 const mw = (n: number) => `${n.toLocaleString('en-GB')} MW`;
 const usd = (n: number) => `US$${n.toLocaleString('en-GB')}/kW`;
 const pct = (n: number) => `${n}%`;
-const gw = (n: number) => `${n / 1000} GW`;
 const days = (n: number) => (n >= 365 ? `${n / 365} year` : n === 1 ? '1 day' : `${n} days`);
 
 export const RATINGS: Rating[] = [
@@ -54,8 +53,6 @@ export const RATINGS: Rating[] = [
     hint: 'how much you can count on it when demand peaks', better: 'higher', cuts: [90, 70, 50, 30], unit: pct },
   { key: 'stamina', name: 'Stamina', input: 'fuelDays', inputName: 'how long it keeps running on the fuel already on site if deliveries stop (not how hard the fuel is to buy)',
     hint: 'how long it runs without new fuel', better: 'higher', cuts: [365, 30, 7, 1], unit: days },
-  { key: 'potential', name: 'Potential', input: 'plannedMW', inputName: 'US capacity planned in EIA\'s generator inventory (all planned stages; projects can slip or be cancelled)',
-    hint: 'how much more of it is planned in the US', better: 'higher', cuts: [50000, 10000, 2000, 500], unit: gw },
 ];
 
 export const gradeOf = (r: Rating, s: Stat | undefined): Grade => {
@@ -89,7 +86,6 @@ export const figure = (r: Rating, s: Stat | undefined): string => {
     case 'size': return span(v, (n) => (n < 100 ? String(n) : n0(n)), ' MW');
     case 'cost': return Array.isArray(v) ? `US$${n0(v[0])} to ${n0(v[1])}/kW` : `US$${n0(v)}/kW`;
     case 'reliability': return `${span(v, n0, '%')} firm`;
-    case 'potential': { const x = mid(v)!; return x === 0 ? 'none planned' : `${x >= 10000 ? n0(x / 1000) : (x / 1000).toFixed(1)} GW planned`; }
     case 'stamina': {
       const x = mid(v)!;
       if (!Number.isFinite(x)) return 'needs no fuel';
