@@ -5,7 +5,7 @@ import { SITE, OG_VERSION } from '../../config';
 import { readingTime } from '../../utils';
 import { claimOf, claimsHomedAt } from '../../data/claims';
 import { layerOf, chapterOf, CHAPTERS } from '../../data/stack';
-import { JOURNAL_PHOTOS } from '../../data/journal-photos';
+import { JOURNAL_PHOTOS, LICENCE_URL } from '../../data/journal-photos';
 export async function getStaticPaths() {
   // drafts render in `astro dev` only, so a draft can be read before it publishes; never in a build
   const posts = await getCollection('journal', ({ data }) => !data.draft || import.meta.env.DEV);
@@ -41,7 +41,7 @@ const photo = JOURNAL_PHOTOS[p.id];
       {photo && (
         <figure class="lead-photo">
           <img src={photo.src} alt={photo.alt} width={photo.w} height={photo.h} decoding="async" style={photo.pos ? `--pos: ${photo.pos}` : undefined} />
-          <figcaption>{photo.caption}. Photo: <a href={photo.page} rel="noopener">{photo.credit}, {photo.licence}</a></figcaption>
+          <figcaption>{photo.caption}. Photo: <a href={photo.page} rel="noopener">{photo.credit}</a>, {LICENCE_URL[photo.licence] && <a href={LICENCE_URL[photo.licence]} rel="noopener license">{photo.licence}</a>}{LICENCE_URL[photo.licence] ? ', resized' : photo.licence}</figcaption>
         </figure>
       )}
       <aside class="plain">

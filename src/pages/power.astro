@@ -1,4 +1,5 @@
 ---
+import { LICENCE_URL } from '../data/journal-photos';
 // Power: every way to power an AI data centre, as a roster of player cards.
 // Published on Tommy's word, 11 Nov 2026. Kept simple and fun on
 // purpose: photo, ratings, ability, weakness. The numbers behind every rating sit in
@@ -61,7 +62,7 @@ const show = (x: number | null) => (x === null ? 'n/a' : String(x));
               <p class="pcard-ch">
                 {c.chapters.map((ch) => <a href={`/journal/${ch.slug}/${ch.anchor ? `#${ch.anchor}` : ''}`}>Chapter {chapterN(ch.slug)}: {chapterName(ch.slug)}</a>)}
               </p>
-              {c.photo && <p class="pcard-credit">{c.photo.caption}. Photo: <a href={c.photo.page} rel="noopener">{c.photo.credit}, {c.photo.licence}</a></p>}
+              {c.photo && <p class="pcard-credit">{c.photo.caption}. Photo: <a href={c.photo.page} rel="noopener">{c.photo.credit}</a>, {LICENCE_URL[c.photo.licence] && <a href={LICENCE_URL[c.photo.licence]} rel="noopener license">{c.photo.licence}</a>}{LICENCE_URL[c.photo.licence] ? ', resized' : c.photo.licence}</p>}
             </div>
           </article>
         ))}

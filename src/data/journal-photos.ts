@@ -5,6 +5,14 @@
 // public/journal-photos/, 900 px wide.
 // Charts, the map, the descent and the illustrations are drawings and stay as they are.
 
+// Licence deeds for the attribution-required licences (TASL: title, author, source, licence, plus a note
+// that the file was resized). CC0 and public domain need no link.
+export const LICENCE_URL: Record<string, string> = {
+  'CC BY 2.0': 'https://creativecommons.org/licenses/by/2.0/',
+  'CC BY-SA 3.0': 'https://creativecommons.org/licenses/by-sa/3.0/',
+  'CC BY-SA 4.0': 'https://creativecommons.org/licenses/by-sa/4.0/',
+};
+
 export type Photo = { src: string; alt: string; caption: string; credit: string; licence: string; page: string; w: number; h: number; pos?: string };
 
 export const JOURNAL_PHOTOS: Record<string, Photo> = {
