@@ -36,7 +36,6 @@ export type Card = {
   role: string;           // one word for the job it does for a data centre (replaces OVR)
   ability: string;
   weakness: string;
-  drawing: string;        // aria-label of the cutaway
 };
 
 export const CARDS: Card[] = [
@@ -105,8 +104,7 @@ export const CARDS: Card[] = [
    "elcc": {"value": 99.949, "display": "99.95% of the year with power (US average, 2025)", "short": "99.95% of the year powered", "basis": "Not a PJM firmness rating, which the grid has no class for: the share of 2025 the average US customer had power, from SAIDI of 269.2 minutes including major events; 100 x (1 - 269.2 / 525,600). 2024 was worse, 662.6 minutes (99.87%).", "source": "EIA, Electric Power Annual, Table 11.1, Reliability Metrics of U.S. Distribution System", "url": "https://www.eia.gov/electricity/annual/html/epa_11_01.html", "date": "2025"}
   },
   "ability": "Firm service: the grid promises power at all times short of an emergency.",
-  "weakness": "Large transformers are quoted at 36 months, and up to 60.",
-  "drawing": "Cutaway of a grid connection: a high-voltage line feeds a substation transformer, shown open with its core, copper windings, oil, bushings and radiators, then through the fence to the data centre, while new projects wait in line for a connection."
+  "weakness": "Large transformers are quoted at 36 months, and up to 60."
  },
  {
   "id": "heavy-sc",
@@ -197,8 +195,7 @@ export const CARDS: Card[] = [
    }
   },
   "ability": "About 430 MW from one machine at 43 per cent efficiency.",
-  "weakness": "A slot sold today ships in 2032; GE Vernova's queue is 6.1 years.",
-  "drawing": "Cutaway of a heavy-frame gas turbine in simple cycle: air enters through filters, the compressor squeezes it, gas burns in the combustor, the hot gas spins the turbine stages, which turn the compressor and the generator on one shaft, and the exhaust leaves up the stack."
+  "weakness": "A slot sold today ships in 2032; GE Vernova's queue is 6.1 years."
  },
  {
   "id": "ccgt",
@@ -291,8 +288,7 @@ export const CARDS: Card[] = [
    }
   },
   "ability": "Burns about 30 per cent less gas per unit than simple cycle.",
-  "weakness": "Same turbine queue; Duke's filed plants cost about US$1,620 to 2,340 per kilowatt.",
-  "drawing": "Cutaway of a combined-cycle plant: a gas turbine sends its hot exhaust into a heat recovery boiler, whose tube banks raise steam in a drum; the steam drives a steam turbine and a second generator, and a condenser turns it back to water."
+  "weakness": "Same turbine queue; Duke's filed plants cost about US$1,620 to 2,340 per kilowatt."
  },
  {
   "id": "aero",
@@ -384,8 +380,7 @@ export const CARDS: Card[] = [
    }
   },
   "ability": "Ships about 24 months before a heavy unit; six months on site.",
-  "weakness": "Burns about 46 per cent more gas than combined cycle; 124-unit backlog.",
-  "drawing": "Cutaway of an aeroderivative gas turbine in its enclosure on a skid: a jet-engine core of compressors, an annular combustor and a high-pressure turbine, then a power turbine that drives the generator, with the exhaust leaving up a stack."
+  "weakness": "Burns about 46 per cent more gas than combined cycle; 124-unit backlog."
  },
  {
   "id": "recip",
@@ -466,8 +461,7 @@ export const CARDS: Card[] = [
    "elcc": {"value": 92, "display": "PJM ELCC 92% (Diesel Utility class)", "basis": "Under PJM's rules (Manual 21B), reciprocating internal combustion engines are the Diesel technology type, so a pipeline-gas engine falls in the Diesel Utility class, not the gas turbine class. A class rating, not a measured record for gas engines; a behind-the-meter engine gets none unless offered into PJM's auction.", "source": "PJM, ELCC Class Ratings for the 2029/2030 Base Residual Auction; PJM Manual 21B, Revision 06, section 2.4", "url": "https://www.pjm.com/-/media/DotCom/planning/res-adeq/elcc/29-30-bra-elcc-class-ratings.pdf", "date": "2026-08-07"}
   },
   "ability": "Small 18.9 MW blocks; Wärtsilä's engine reaches full load in two minutes.",
-  "weakness": "Lead times keep rising; an October 2026 order runs fully only in 2029.",
-  "drawing": "Cutaway of a reciprocating gas engine: on the left, one pair of cylinders in a V, with pistons, connecting rods and the crankshaft, and a turbocharger in the V; on the right, the generating set from the side, engine, flywheel and alternator on a skid."
+  "weakness": "Lead times keep rising; an October 2026 order runs fully only in 2029."
  },
  {
   "id": "fuelcell",
@@ -543,8 +537,7 @@ export const CARDS: Card[] = [
    "elcc": {"value": 99.9, "display": "about 99.9% available (Bloom's fleet figure)", "short": "99.9% available", "claim": "Bloom's own fleet availability, not a grid operator's rating", "basis": "PJM has no fuel cell class: a fuel cell would fall in its Other Unlimited Resource Class, which gets a rating per resource, not a class rating. Bloom's 10-K: fleet availability about 99.9% for all non-redundant installations since 2020. Availability, not PJM's peak firmness, so not strictly comparable.", "source": "Bloom Energy, Form 10-K for 2025", "url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026006516/be-20251231.htm", "date": "2026-02-09"}
   },
   "ability": "No flame: New York, New Jersey and North Carolina give fuel cells air-permit exemptions.",
-  "weakness": "EIA's planning cost is US$7,818 per kilowatt, the highest gas machine here.",
-  "drawing": "Cutaway of a solid oxide fuel cell: on the left, a magnified stack of thin cells, each a fuel layer, a ceramic electrolyte and an air layer, between metal plates; on the right, the fuel cell server with its power modules and an inverter. There is no flame."
+  "weakness": "EIA's planning cost is US$7,818 per kilowatt, the highest gas machine here."
  },
  {
   "id": "fleet",
@@ -620,8 +613,7 @@ export const CARDS: Card[] = [
    }
   },
   "ability": "Over 200 MW of bought turbines due to run from early 2027.",
-  "weakness": "Its fleet is already booked: 3.2 GW under long-term contracts.",
-  "drawing": "Cutaway of a rented power fleet: two gas turbines, each on a road trailer with its generator and exhaust stack, fed by one gas line and cabled together to the campus."
+  "weakness": "Its fleet is already booked: 3.2 GW under long-term contracts."
  },
  {
   "id": "solar",
@@ -702,8 +694,7 @@ export const CARDS: Card[] = [
    }
   },
   "ability": "EIA's planning build time is two years, and there is no fuel to buy.",
-  "weakness": "PJM counts tracking solar as 7 per cent of a firm megawatt.",
-  "drawing": "Cutaway of a solar farm: rows of panels on single-axis trackers that follow the sun across the sky, an inverter, and an inset of one panel cut through to show the glass, silicon cells and backing."
+  "weakness": "PJM counts tracking solar as 7 per cent of a firm megawatt."
  },
  {
   "id": "battery",
@@ -782,8 +773,7 @@ export const CARDS: Card[] = [
    }
   },
   "ability": "Builds in one year on EIA's planning assumptions.",
-  "weakness": "PJM's preliminary rating falls from 57 to 23 per cent by 2035/36.",
-  "drawing": "Cutaway of a grid battery: a container opened to show racks of battery modules and a cooling unit, then an inverter and a transformer that connect it to the grid."
+  "weakness": "PJM's preliminary rating falls from 57 to 23 per cent by 2035/36."
  },
  {
   "id": "restart",
@@ -875,8 +865,7 @@ export const CARDS: Card[] = [
    }
   },
   "ability": "Crane costs about US$1,900 per kilowatt and runs on ordinary fuel.",
-  "weakness": "Only three restarts exist, and Palisades has no date since fuel loading stopped.",
-  "drawing": "Cutaway of a large water-cooled reactor plant: inside the containment, the reactor core, the pressuriser and a steam generator; steam goes to the turbine hall with its turbines, generator and condenser, and a cooling tower beside it."
+  "weakness": "Only three restarts exist, and Palisades has no date since fuel loading stopped."
  },
  {
   "id": "uprate",
@@ -965,8 +954,7 @@ export const CARDS: Card[] = [
    }
   },
   "ability": "The NRC aims to review an uprate in 6 to 12 months.",
-  "weakness": "No AI-funded uprate had reached the NRC by September 2026.",
-  "drawing": "The same reactor plant, with the parts an extended uprate replaces marked: the turbine, the generator and the pumps in the turbine hall."
+  "weakness": "No AI-funded uprate had reached the NRC by September 2026."
  },
  {
   "id": "newreactor",
@@ -1043,8 +1031,7 @@ export const CARDS: Card[] = [
    "elcc": {"value": 96, "display": "PJM ELCC 96% (nuclear class)", "short": "96% firm (nuclear class)", "basis": "PJM rates nuclear as one class; applied here to new reactors, none of which has yet run.", "source": "PJM, ELCC Class Ratings for the 2029/2030 Base Residual Auction", "url": "https://www.pjm.com/-/media/DotCom/planning/res-adeq/elcc/29-30-bra-elcc-class-ratings.pdf", "date": "2026-08-07"}
   },
   "ability": "Kemmerer 1 won its construction permit about 23 months after applying.",
-  "weakness": "Needs HALEU: over 40 tonnes by 2030, against about 21 expected by 2028.",
-  "drawing": "Cutaway of a sodium-cooled reactor with salt storage, as at Kemmerer 1: the core sits in a pool of liquid sodium, which heats salt held in a hot tank; the hot salt makes steam for a turbine and returns to a cold tank."
+  "weakness": "Needs HALEU: over 40 tonnes by 2030, against about 21 expected by 2028."
  },
  {
   "id": "micro",
@@ -1119,7 +1106,6 @@ export const CARDS: Card[] = [
    "elcc": {"value": 96, "display": "PJM ELCC 96% (nuclear class)", "short": "96% firm (nuclear class)", "basis": "PJM rates nuclear as one class; applied here to microreactors, none of which has yet run on a grid.", "source": "PJM, ELCC Class Ratings for the 2029/2030 Base Residual Auction", "url": "https://www.pjm.com/-/media/DotCom/planning/res-adeq/elcc/29-30-bra-elcc-class-ratings.pdf", "date": "2026-08-07"}
   },
   "ability": "Runs three to eight years unopened, then is refuelled in a factory.",
-  "weakness": "First-of-a-kind power costs about 32.5 cents a kWh, against 8.6 industrial.",
-  "drawing": "Cutaway of a gas-cooled microreactor: the core from above, hexagonal graphite blocks holding TRISO fuel inside a ring of control drums; beside it, the reactor and a helium turbine as modules on a trailer."
+  "weakness": "First-of-a-kind power costs about 32.5 cents a kWh, against 8.6 industrial."
  }
 ];

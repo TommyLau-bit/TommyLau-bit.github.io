@@ -21,7 +21,9 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 
 ## START HERE (as of Wed 11 Nov 2026, evening)
 
-**12 Nov, after midnight: photos swapped (Tommy: the Johor, America and own-power photos were "just scenery").** Johor now a high-voltage switchyard at Kimanis, Sabah (CC BY-SA 3.0; caption says Johor has no open photo of its own); America an ERCOT control-room dispatcher (CC BY 3.0); own power a GE LMS100 turbine core on a maintenance stand (CC BY-SA 4.0). Nuclear, microreactors, equipment queue and solar unchanged. Power roster: the microreactor card now shows NASA's Kilopower prototype (public domain), so every card has a photo; the bands table shows A to E on phones.
+**12 Nov, after midnight: photos swapped (Tommy: the Johor, America and own-power photos were "just scenery").** Johor now a high-voltage switchyard at Kimanis, Sabah (CC BY-SA 3.0; caption says Johor has no open photo of its own); America an ERCOT control-room dispatcher (CC BY 3.0); own power a GE LMS100 turbine core on a maintenance stand (CC BY-SA 4.0). Nuclear, microreactors, equipment queue and solar unchanged. Power roster: the microreactor card now shows NASA's Kilopower prototype (public domain), so every card has a photo; the bands table shows A to E on phones. The microreactor drawing (PowerCutaway) and the cards' unused `drawing` fields were deleted. Session closed on Tommy's word ("call it a day").
+
+**Open, only if Tommy asks:** (1) three Power cards share a photo with a chapter (grid card = equipment-queue transformer, solar card = solar chapter, restart card = nuclear chapter's Crane, different crop); fine as is, swap only if he wants. (2) Johor's lead photo is a Sabah switchyard (no open Johor photo exists); replace if an open Johor substation or data-centre photo ever appears on Commons. (3) /power uses the site's default share card; no LinkedIn post for it (Tommy: "no post").
 
 **Website changes on 11 Nov 2026, all live (in order):**
 1. microreactors.md: Centrus "produced", not "delivered", more than 1,900 kg of HALEU (ea89870).

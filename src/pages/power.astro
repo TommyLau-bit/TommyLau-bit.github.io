@@ -5,7 +5,6 @@ import { LICENCE_URL } from '../data/journal-photos';
 // purpose: photo, a radar of A to E grades, ability, weakness. The numbers behind every grade sit in
 // one fold at the bottom. Data in src/data/power.ts; grade bands in power-ratings.ts.
 import Base from '../layouts/Base.astro';
-import PowerCutaway from '../components/PowerCutaway.astro';
 import { GROUPS, CARDS } from '../data/power';
 import { PHOTOS } from '../data/power-photos';
 import { RATINGS, GRADES, GRADE_WORD, gradeOf, bandText, figure, type Grade, type RatingKey } from '../data/power-ratings';
@@ -52,11 +51,9 @@ const gradeClass = (x: Grade) => (x === 'A' || x === 'B' || x === '∞' ? 'is-hi
       </div>
       <div class="pw-cards">
         {cards.filter((c) => c.group === g.id).map((c) => (
-          <article class={`pcard${c.photo ? '' : ' pcard--locked'}`} id={c.id} data-flip>
+          <article class="pcard" id={c.id} data-flip>
             <div class="pcard-photo">
-              {c.photo
-                ? <img src={c.photo.src} alt={c.photo.alt} loading="lazy" decoding="async" style={c.photo.pos ? `object-position:${c.photo.pos}` : undefined} />
-                : <div class="pcard-ghost"><PowerCutaway id={c.id} label="The outline of a microreactor on a trailer: none has run yet, so there is no photograph." /><span>Not built yet</span></div>}
+              {c.photo && <img src={c.photo.src} alt={c.photo.alt} loading="lazy" decoding="async" style={c.photo.pos ? `object-position:${c.photo.pos}` : undefined} />}
               <span class="pcard-role">{c.role}</span>
             </div>
             <div class="pcard-body">
@@ -174,12 +171,6 @@ const gradeClass = (x: Grade) => (x === 'A' || x === 'B' || x === '∞' ? 'is-hi
   .pw-keynote { font-family: var(--sans); font-size: 0.8rem; color: var(--ink-3); margin: 0; }
   .pcard-claim { margin: 0.35rem 0 0; font-size: 0.75rem; color: var(--ink-3); }
 
-  /* the one card with no photograph: a dark silhouette, still locked */
-  .pcard-ghost { position: absolute; inset: 0; display: grid; place-items: center; background: radial-gradient(circle at 50% 45%, #2a2a27, #0e0e0d); }
-  .pcard-ghost .pc-svg { width: 92%; filter: brightness(0) invert(1); opacity: .18; }
-  .pcard-ghost text { display: none; }
-  .pcard-ghost span { position: absolute; bottom: 0.8rem; font-size: 0.72rem; font-weight: 900; letter-spacing: 0.2em; text-transform: uppercase; color: #fff; opacity: .8; }
-  .pcard--locked .pcard-photo::after { content: '?'; position: absolute; top: 44%; left: 50%; transform: translate(-50%,-50%); z-index: 2; font-size: 3.5rem; font-weight: 900; color: #fff; opacity: .6; }
 
   .pcard-body { padding: 0.85rem 0.95rem 0.8rem; display: flex; flex-direction: column; gap: 0.6rem; flex: 1; }
   .pcard-body h3 { margin: 0; font-size: 1.1rem; line-height: 1.2; letter-spacing: -0.01em; }
