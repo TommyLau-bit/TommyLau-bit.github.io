@@ -562,7 +562,7 @@ export const CARDS: Card[] = [
     "basis": "PJM publishes no ELCC class for this machine."
    }
   },
-  "ability": "Bloom says power can be available within about 90 days.",
+  "ability": "No flame: New York, New Jersey and North Carolina give fuel cells air-permit exemptions.",
   "weakness": "EIA's planning cost is US$7,818 per kilowatt, the highest gas machine here.",
   "drawing": "Cutaway of a solid oxide fuel cell: on the left, a magnified stack of thin cells, each a fuel layer, a ceramic electrolyte and an air layer, between metal plates; on the right, the fuel cell server with its power modules and an inverter. There is no flame."
  },

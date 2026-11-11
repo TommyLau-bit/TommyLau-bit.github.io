@@ -39,7 +39,6 @@ const show = (x: number | null) => (x === null ? 'n/a' : String(x));
                 ? <img src={c.photo.src} alt={c.photo.alt} loading="lazy" decoding="async" style={c.photo.pos ? `object-position:${c.photo.pos}` : undefined} />
                 : <div class="pcard-ghost"><PowerCutaway id={c.id} label="The outline of a microreactor on a trailer: none has run yet, so there is no photograph." /><span>Not built yet</span></div>}
               <span class="pcard-role">{c.role}</span>
-              <span class="pcard-pos">{g.tag}</span>
             </div>
             <div class="pcard-body">
               <h3>{c.name}</h3>
@@ -140,7 +139,6 @@ const show = (x: number | null) => (x === null ? 'n/a' : String(x));
   .pcard-role { position: absolute; top: 0.75rem; left: 0.75rem; z-index: 2; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: #fff; background: var(--tier); border-radius: 6px; padding: 0.3rem 0.6rem; box-shadow: 0 2px 8px rgba(0,0,0,.35); }
   .pcard-claim { margin: 0.35rem 0 0; font-size: 0.75rem; color: var(--ink-3); }
   .pcard-ratings sup { font-size: 0.65em; margin-left: 1px; }
-  .pcard-pos { position: absolute; top: 0.85rem; right: 0.8rem; z-index: 2; font-size: 0.66rem; font-weight: 800; letter-spacing: 0.14em; color: #fff; background: rgba(0,0,0,.45); border-radius: 4px; padding: 0.15rem 0.4rem; }
 
   /* the one card with no photograph: a dark silhouette, still locked */
   .pcard-ghost { position: absolute; inset: 0; display: grid; place-items: center; background: radial-gradient(circle at 50% 45%, #2a2a27, #0e0e0d); }
