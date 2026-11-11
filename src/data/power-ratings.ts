@@ -15,6 +15,7 @@ export type Stat = {
   source?: string;     // publisher and document
   url?: string;
   date?: string;
+  short?: string;      // the figure as shown under the chart, when the worked-out wording would mislead
   claim?: string;      // set when the number is a company's own claim, not a measured project: flagged on the card
 };
 
@@ -42,6 +43,8 @@ const usd = (n: number) => `US$${n.toLocaleString('en-GB')}/kW`;
 const pct = (n: number) => `${n}%`;
 const days = (n: number) => (n >= 365 ? `${n / 365} year` : n === 1 ? '1 day' : `${n} days`);
 
+// Reliability reads PJM's class rating where one exists; where PJM has none (the grid, fuel
+// cells) the card says what stands in for it.
 export const RATINGS: Rating[] = [
   { key: 'speed', name: 'Speed', input: 'monthsToPower', inputName: 'months from order to first power',
     hint: 'how fast it can be up and running', better: 'lower', cuts: [6, 18, 36, 60], unit: months },
@@ -79,6 +82,7 @@ const dur = (d: number) => (d < 1 ? `${n0(d * 24)} hours` : d < 60 ? `${n0(d)} d
 
 export const figure = (r: Rating, s: Stat | undefined): string => {
   if (!s || s.value === null) return 'no sourced figure';
+  if (s.short) return s.short;
   const v = s.value;
   const target = /target/i.test(s.display) ? ' (target)' : '';
   switch (r.key) {

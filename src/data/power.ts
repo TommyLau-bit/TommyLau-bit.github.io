@@ -78,21 +78,13 @@ export const CARDS: Card[] = [
     "source": "Tenaga Nasional, Green Lane Pathway, as cited in the piece",
     "date": "2023-08-08"
    },
-   "costPerKW": {
-    "display": "n/a",
-    "basis": "No primary source publishes a per-kilowatt cost of a grid connection for a data centre.",
-    "value": null
-   },
+   "costPerKW": {"value": 505, "display": "about US$500/kW (Tenaga's worked example)", "short": "about US$500/kW to connect (Tenaga example)", "basis": "Tenaga's own worked example of its connection charge for a 40 MW high-voltage customer, not a real project: RM82,257,523 for 40,000 kW, about RM2,056/kW, at about RM4.07 to the US dollar (Bank Negara Malaysia, 11 Nov 2026). The charge is the project cost less 15 years of discounted network revenue, so it varies by site and can be zero. No US utility or regulator publishes a per-kW figure for data centres.", "source": "Tenaga Nasional, Connection Charges Book 2025, Table 7", "url": "https://www.tnb.com.my/assets/files/TNB_Connection_Charges_Book_2025_ENG.pdf", "date": "2025"},
    "capacityFactor": {
     "display": "n/a",
     "basis": "Firm service is a promise to carry the load 'at all times short of an emergency'; no percentage is published. Cut-first tiers state no hours either.",
     "value": null
    },
-   "fuelDays": {
-    "display": "n/a",
-    "basis": "Not applicable: the site holds no fuel.",
-    "value": null
-   },
+   "fuelDays": {"value": 0, "display": "0 days", "short": "0 days: power by wire", "basis": "Power comes by wire and nothing is stored on site: the same rule as gas on a pipe. If the grid goes down, so does the site."},
    "permitMonths": {
     "value": null,
     "display": "n/a",
@@ -110,11 +102,7 @@ export const CARDS: Card[] = [
     "display": "Grid mix",
     "basis": "The site buys from the grid; no fuel of its own."
    },
-   "elcc": {
-    "value": null,
-    "display": "n/a",
-    "basis": "PJM publishes no ELCC class for this machine."
-   }
+   "elcc": {"value": 99.949, "display": "99.95% of the year with power (US average, 2025)", "short": "99.95% of the year powered", "basis": "Not a PJM firmness rating, which the grid has no class for: the share of 2025 the average US customer had power, from SAIDI of 269.2 minutes including major events; 100 x (1 - 269.2 / 525,600). 2024 was worse, 662.6 minutes (99.87%).", "source": "EIA, Electric Power Annual, Table 11.1, Reliability Metrics of U.S. Distribution System", "url": "https://www.eia.gov/electricity/annual/html/epa_11_01.html", "date": "2025"}
   },
   "ability": "Firm service: the grid promises power at all times short of an emergency.",
   "weakness": "Large transformers are quoted at 36 months, and up to 60.",
@@ -475,11 +463,7 @@ export const CARDS: Card[] = [
     "source": "EIA Electric Power Annual, Table 8.2, as cited in the piece",
     "date": "2025 data"
    },
-   "elcc": {
-    "value": null,
-    "display": "n/a",
-    "basis": "n/a for now: PJM's Manual 21B puts reciprocating engines in its Diesel Utility class (92% for 2029/30), but whether gas-fired engines are classed there or as gas turbines is not settled in what I read."
-   }
+   "elcc": {"value": 92, "display": "PJM ELCC 92% (Diesel Utility class)", "basis": "Under PJM's rules (Manual 21B), reciprocating internal combustion engines are the Diesel technology type, so a pipeline-gas engine falls in the Diesel Utility class, not the gas turbine class. A class rating, not a measured record for gas engines; a behind-the-meter engine gets none unless offered into PJM's auction.", "source": "PJM, ELCC Class Ratings for the 2029/2030 Base Residual Auction; PJM Manual 21B, Revision 06, section 2.4", "url": "https://www.pjm.com/-/media/DotCom/planning/res-adeq/elcc/29-30-bra-elcc-class-ratings.pdf", "date": "2026-08-07"}
   },
   "ability": "Small 18.9 MW blocks; Wärtsilä's engine reaches full load in two minutes.",
   "weakness": "Lead times keep rising; an October 2026 order runs fully only in 2029.",
@@ -556,11 +540,7 @@ export const CARDS: Card[] = [
     "url": "https://www.eia.gov/outlooks/aeo/assumptions/pdf/EMM_Assumptions.pdf",
     "date": "2026-04"
    },
-   "elcc": {
-    "value": null,
-    "display": "n/a",
-    "basis": "PJM publishes no ELCC class for this machine."
-   }
+   "elcc": {"value": 99.9, "display": "about 99.9% available (Bloom's fleet figure)", "short": "99.9% available", "claim": "Bloom's own fleet availability, not a grid operator's rating", "basis": "PJM has no fuel cell class: a fuel cell would fall in its Other Unlimited Resource Class, which gets a rating per resource, not a class rating. Bloom's 10-K: fleet availability about 99.9% for all non-redundant installations since 2020. Availability, not PJM's peak firmness, so not strictly comparable.", "source": "Bloom Energy, Form 10-K for 2025", "url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026006516/be-20251231.htm", "date": "2026-02-09"}
   },
   "ability": "No flame: New York, New Jersey and North Carolina give fuel cells air-permit exemptions.",
   "weakness": "EIA's planning cost is US$7,818 per kilowatt, the highest gas machine here.",
@@ -602,11 +582,7 @@ export const CARDS: Card[] = [
     "url": "https://www.sec.gov/Archives/edgar/data/1697500/000162828026071604/sei-20260930.htm",
     "date": "2026-11-06"
    },
-   "costPerKW": {
-    "display": "n/a",
-    "basis": "Rented, not bought: no overnight cost applies. Solaris paid about US$163.0m for seven turbines (over 200 MW) \"secured ... from private parties\", turbines only, not a plant cost.",
-    "value": null
-   },
+   "costPerKW": {"value": 815, "display": "under US$815/kW (turbines only)", "short": "under US$815/kW (turbines only)", "basis": "Solaris paid about US$163.0m for seven turbines providing 'over 200 MW'; my division, so a ceiling. Turbine purchase price only, bought from private parties after the quarter: not an installed or new-build cost, and the fleet is rented to the user, not bought.", "source": "Solaris Energy Infrastructure, Form 10-Q to 30 September 2026", "url": "https://www.sec.gov/Archives/edgar/data/1697500/000162828026071604/sei-20260930.htm", "date": "2026-11-06"},
    "capacityFactor": {
     "display": "n/a",
     "basis": "No fleet capacity factor published.",
@@ -1043,11 +1019,7 @@ export const CARDS: Card[] = [
     "basis": "None of these designs is running; no capacity factor exists.",
     "value": null
    },
-   "fuelDays": {
-    "display": "n/a",
-    "basis": "Refuelling intervals for Natrium, Aurora and Hermes 2 are not in the pieces or a primary record found.",
-    "value": null
-   },
+   "fuelDays": {"value": 730, "display": "24 months between refuellings (Natrium)", "short": "24 months (Natrium design)", "basis": "TerraPower: each Natrium reactor (Kemmerer 1) needs a refuelling outage every 24 months. Oklo's own target is for Aurora to run up to 10 years; Kairos designs its pebble-bed reactors to refuel while running. Designs and company targets, not operating records.", "source": "TerraPower, Application of Natrium Sodium Fast Reactor Plants to Supply Heat and Power to Industrial Facilities", "url": "https://www.terrapower.com/downloads/Process-Heat.pdf", "date": "2025-10-22"},
    "permitMonths": {
     "value": 23,
     "display": "about 23 months",
@@ -1068,11 +1040,7 @@ export const CARDS: Card[] = [
     "display": "HALEU (~19.75%)",
     "basis": "Kemmerer 1, Aurora and Hermes 2 all burn high-assay low-enriched uranium."
    },
-   "elcc": {
-    "value": null,
-    "display": "n/a",
-    "basis": "PJM publishes no ELCC class for this machine."
-   }
+   "elcc": {"value": 96, "display": "PJM ELCC 96% (nuclear class)", "short": "96% firm (nuclear class)", "basis": "PJM rates nuclear as one class; applied here to new reactors, none of which has yet run.", "source": "PJM, ELCC Class Ratings for the 2029/2030 Base Residual Auction", "url": "https://www.pjm.com/-/media/DotCom/planning/res-adeq/elcc/29-30-bra-elcc-class-ratings.pdf", "date": "2026-08-07"}
   },
   "ability": "Kemmerer 1 won its construction permit about 23 months after applying.",
   "weakness": "Needs HALEU: over 40 tonnes by 2030, against about 21 expected by 2028.",
@@ -1116,11 +1084,7 @@ export const CARDS: Card[] = [
     "source": "US Army, as cited in the piece",
     "date": "2026-08-26"
    },
-   "costPerKW": {
-    "display": "n/a",
-    "basis": "No primary capital cost per kW found. INL's 2024 study (INL/RPT-24-80433) gives electricity cost, about 32.5 US cents/kWh first-of-a-kind and 12 to 15 cents mass-produced, not an overnight cost I could read.",
-    "value": null
-   },
+   "costPerKW": {"value": [10825, 23592], "display": "US$10,825 to 23,592/kW (INL estimate)", "short": "US$10,800 to 23,600/kW (estimate)", "basis": "INL's overnight capital cost for its 20 MWth liquid-metal reference microreactor: US$23,592/kWe first of a kind, US$10,825/kWe mass-produced at ten a year. The design gives 6.2 MWe; the cost excludes fuel. A study estimate, not a vendor price; none has been built.", "source": "Idaho National Laboratory, MR Cost Basis Work Scope, 2025 Microreactor Program Review", "url": "https://gain.inl.gov/content/uploads/4/2025/03/02-Abdalla-Abou-Jaoude-MR-Cost-Basis-Work-Scope_2025-MRP-Review.pdf", "date": "2025-03"},
    "capacityFactor": {
     "display": "n/a",
     "basis": "No microreactor has run at power or sold electricity.",
@@ -1152,11 +1116,7 @@ export const CARDS: Card[] = [
     "display": "HALEU TRISO",
     "basis": "Most designs burn uranium enriched to 19.75% in TRISO ceramic particles."
    },
-   "elcc": {
-    "value": null,
-    "display": "n/a",
-    "basis": "PJM publishes no ELCC class for this machine."
-   }
+   "elcc": {"value": 96, "display": "PJM ELCC 96% (nuclear class)", "short": "96% firm (nuclear class)", "basis": "PJM rates nuclear as one class; applied here to microreactors, none of which has yet run on a grid.", "source": "PJM, ELCC Class Ratings for the 2029/2030 Base Residual Auction", "url": "https://www.pjm.com/-/media/DotCom/planning/res-adeq/elcc/29-30-bra-elcc-class-ratings.pdf", "date": "2026-08-07"}
   },
   "ability": "Runs three to eight years unopened, then is refuelled in a factory.",
   "weakness": "First-of-a-kind power costs about 32.5 cents a kWh, against 8.6 industrial.",
