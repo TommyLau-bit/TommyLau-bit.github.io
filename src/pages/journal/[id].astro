@@ -40,7 +40,7 @@ const photo = JOURNAL_PHOTOS[p.id];
       </div>
       {photo && (
         <figure class="lead-photo">
-          <img src={photo.src} alt={photo.alt} width={photo.w} height={photo.h} decoding="async" />
+          <img src={photo.src} alt={photo.alt} width={photo.w} height={photo.h} decoding="async" style={photo.pos ? `--pos: ${photo.pos}` : undefined} />
           <figcaption>{photo.caption}. Photo: <a href={photo.page} rel="noopener">{photo.credit}, {photo.licence}</a></figcaption>
         </figure>
       )}
