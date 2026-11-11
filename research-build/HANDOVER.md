@@ -19,7 +19,11 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 3. Done: CVs updated ("grid to chip" wording; nuclear line to the depth figures); LinkedIn profile not changed.
 4. Done: article decks archived (study-decks/archive/article-decks-retired-2026-11-07/), not deleted.
 
-## START HERE (as of Tue 10 Nov 2026, evening)
+## START HERE (as of Wed 11 Nov 2026)
+
+**Centrus study STARTED (Tommy: "start centrus", 11 Nov).** Folder ~/Desktop/jobs/company studies/Centrus/: CENTRUS_FACT_BASE.md (about 6,250 words, six study headings, 23 tagged primary sources, every item marked Fact, Target or Arithmetic; drafted by one agent from EDGAR filings, then fact-checked line by line by a second, which fixed 17 points; no share price or view) and CENTRUS_STUDY_Tommy.md (blank skeleton Tommy writes himself, 1,500 to 2,000 words). Next: Tommy drafts in his own words (two or three days), then Claude fact-checks and pushes back for about a week until it survives 30 minutes of questions. Key earnings facts: LEU trading is about 77% of revenue and leans on TENEX ("well over one-half" through 2027) while waivers end 1 Jan 2028 and new Piketon capacity starts 2029; DOE HALEU production revenue ended June 2026; $5.4bn of the $7.0bn backlog depends on building capacity; Piketon lease ends 1 Oct 2027 (extension aim 31 Dec 2026). Not verifiable from primary sources: Meta and other prepayment amounts, Oklo agreement terms, FY2027 appropriations, Investor Day 7 Dec (transcript only). **Journal nit found, not fixed:** microreactors.md says Centrus "delivered" more than 1,900 kg of HALEU; the 1 Jul 2026 release says "produced" (also two figcaption dates name report dates loosely). Fix on Tommy's word or in the next "1".
+
+## Earlier START HERE (as of Tue 10 Nov 2026, evening)
 
 **Company study shortlist (Tommy, 10 Nov 2026, late): emerging, listed, on the chain only.** Ranked: Centrus Energy, Bloom Energy, Oklo, Solaris Energy Infrastructure; ASP Isotopes watch only. BWXT and every established name (GE Vernova, Siemens Energy, Eaton, Constellation, Tenaga, Powell, Korean transformer makers, Talen) are OFF the list. Full list in study-decks/ROADMAP - buy side to PM.md. Nothing started: studies and calls begin only when Tommy picks and says go; never on the site. **Plan (11 Nov 2026):** three studies (Centrus first, then Bloom, then Oklo or Solaris) and two calls drawn from them, cap five; about a week per study. Centrus starts when Tommy says "start Centrus"; a "1" run never starts one.
 
