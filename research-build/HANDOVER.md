@@ -21,6 +21,13 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 
 ## START HERE (as of Wed 11 Nov 2026, evening)
 
+**Website changes on 11 Nov 2026, all live (in order):**
+1. microreactors.md: Centrus "produced", not "delivered", more than 1,900 kg of HALEU (ea89870).
+2. building-your-own-power.md: rented fleets (Solaris) explained beside aeroderivatives, engines and fuel cells; Caterpillar quote cut (2c769f0).
+3. Real Commons photos under the title of five pieces: Johor, America, own power, nuclear, microreactors (5b791cb, f91361a). Equipment queue and solar have none.
+4. New /power roster page and a third top-menu item, Power (7fba27f to 46d8db5). CLAUDE.md menu rule and JOURNAL ONLY banner include it; THE_JOURNAL_RUN.md now lists the Power page as a loose end to keep in step with the pieces.
+No claims changed or reworded; no LinkedIn posts (Tommy: none for the Power page); briefs and scheduled emails quote none of the changed facts.
+
 **Also 11 Nov, from the main session (all live or saved):**
 - **Chapter 4: rented fleets explained LIVE** (commit 2c769f0): "The fourth is the **rented fleet**: Solaris Energy Infrastructure rents out turbines it owns, 3.2 GW under long-term contracts, and offers 200 MW for 2027, ahead of the makers' queues" (Solaris 8-K 29 Oct and release 4 Nov 2026). All four small gas machines (aeroderivative, reciprocating engine, fuel cell, rented fleet) are now explained in the body. Paid for by cutting the Caterpillar quote; piece at or under 3,600 visible words.
 - **Small machines, honest framing (Tommy pushed back, rightly).** Their wait is about two years against six or more for a big turbine, so the queue is not the main cost: price (EIA US$1,606/kW aero against US$868 combined cycle), about 46% more gas, permits and the gas pipe are. SpaceX/xAI Southaven: turbines bought early, limit is the air permit (Mississippi approved 41 permanent turbines, about 1.2 GW, Mar 2026; SemiAnalysis says 2.7 GW now, 1.24 GW from July 2027), not the queue. The chapter 4 claim is unchanged (claims are never reworded); if a future update touches the small-machine section, make this framing explicit.

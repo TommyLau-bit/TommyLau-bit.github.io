@@ -43,6 +43,9 @@ his explicit word.
 
 Check each against what changed; fix only what is now wrong or stale.
 
+- **Power page:** src/data/power.ts (stats, sources), src/data/power-ratings.ts (formulas). Each card quotes the
+  pieces; when a piece's number changes, change the card's stat and recheck its rating. Photos and credits in
+  src/data/power-photos.ts; journal lead photos in src/data/journal-photos.ts.
 - **Study deck:** study-decks/Study deck - power for AI data centres.md and PDF (tools/deck2pdf.py).
   Same four parts per chapter, plain words. Never commit study-decks/.
 - **Email briefs:** ~/Desktop/jobs/research coverage/briefs/ and _SEND. Rebuild a brief when its
