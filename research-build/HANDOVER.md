@@ -21,6 +21,8 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 
 ## START HERE (as of Wed 11 Nov 2026, evening)
 
+**12 Nov, after midnight: photos swapped (Tommy: the Johor, America and own-power photos were "just scenery").** Johor now a high-voltage switchyard at Kimanis, Sabah (CC BY-SA 3.0; caption says Johor has no open photo of its own); America an ERCOT control-room dispatcher (CC BY 3.0); own power a GE LMS100 turbine core on a maintenance stand (CC BY-SA 4.0). Nuclear, microreactors, equipment queue and solar unchanged. Power roster: the microreactor card now shows NASA's Kilopower prototype (public domain), so every card has a photo; the bands table shows A to E on phones.
+
 **Website changes on 11 Nov 2026, all live (in order):**
 1. microreactors.md: Centrus "produced", not "delivered", more than 1,900 kg of HALEU (ea89870).
 2. building-your-own-power.md: rented fleets (Solaris) explained beside aeroderivatives, engines and fuel cells; Caterpillar quote cut (2c769f0).

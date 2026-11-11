@@ -1,5 +1,6 @@
 // One real photograph near the top of each journal piece (Tommy, 11 Nov 2026: trial, Chapter 4 first).
-// The photo shows the actual place the piece is about where an open photo exists; where none does, a real
+// The photo shows the machine or the work the piece is about, not scenery (Tommy, 12 Nov 2026: Johor,
+// America and own power swapped from place shots to a switchyard, a grid control room and a gas turbine); a real
 // photo of the machine the piece is about (Tommy, 11 Nov 2026: transformer for the equipment queue, solar farm for solar). Every photo is
 // public domain or openly licensed on Wikimedia Commons and is credited under it. Files are in
 // public/journal-photos/, 900 px wide.
@@ -9,6 +10,7 @@
 // that the file was resized). CC0 and public domain need no link.
 export const LICENCE_URL: Record<string, string> = {
   'CC BY 2.0': 'https://creativecommons.org/licenses/by/2.0/',
+  'CC BY 3.0': 'https://creativecommons.org/licenses/by/3.0/',
   'CC BY-SA 3.0': 'https://creativecommons.org/licenses/by-sa/3.0/',
   'CC BY-SA 4.0': 'https://creativecommons.org/licenses/by-sa/4.0/',
 };
@@ -18,27 +20,27 @@ export type Photo = { src: string; alt: string; caption: string; credit: string;
 export const JOURNAL_PHOTOS: Record<string, Photo> = {
   'the-queue-not-the-chip': {
     src: '/journal-photos/the-queue-not-the-chip.jpg',
-    alt: 'A long road causeway crossing a strait from a city on the near shore to tower blocks on the far shore, with an I love Johor sign in the corner.',
-    caption: 'The Johor-Singapore Causeway from the Johor side in August 2024, with Singapore across the strait',
-    credit: 'ZKang123', licence: 'CC BY-SA 4.0',
-    page: 'https://commons.wikimedia.org/wiki/File:Johor-Singapore_Causeway_20240816_163357.jpg',
-    w: 900, h: 675, pos: '50% 75%',
+    alt: 'Rows of high-voltage circuit breakers, insulators and steel gantries in a substation switchyard under a blue sky.',
+    caption: 'A high-voltage substation at Kimanis, Sabah, in 2014: the grid hardware every Malaysian data centre waits on. Johor has no open photo of its own',
+    credit: 'CEphoto, Uwe Aranas', licence: 'CC BY-SA 3.0',
+    page: 'https://commons.wikimedia.org/wiki/File:Kimanis_Sabah_Kimanis-Power-Plant-09.jpg',
+    w: 900, h: 600, pos: '50% 55%',
   },
   'america-rations-the-plug': {
     src: '/journal-photos/america-rations-the-plug.jpg',
-    alt: 'An aerial view of large, flat-roofed data centre buildings and a substation spread among roads and fields.',
-    caption: "Data centres near Ashburn, Loudoun County, Virginia, in Dominion Energy's area, in November 2025",
-    credit: 'Theodore Christopher', licence: 'CC0',
-    page: 'https://commons.wikimedia.org/wiki/File:Data_centers_in_Ashburn.jpg',
-    w: 900, h: 573, pos: '50% 100%',
+    alt: 'A grid dispatcher on the phone at a desk of screens, beneath a wall display of a load curve and a map of Texas.',
+    caption: "A dispatcher in the control room of ERCOT, Texas's grid operator, in 2012",
+    credit: 'Dpysh w', licence: 'CC BY 3.0',
+    page: 'https://commons.wikimedia.org/wiki/File:ERCOTOperator_2.jpg',
+    w: 900, h: 599, pos: '50% 60%',
   },
   'building-your-own-power': {
     src: '/journal-photos/building-your-own-power.jpg',
-    alt: 'An aerial view of a large power station among autumn hills, with three cooling towers, three tall chimneys and a switchyard.',
-    caption: 'Homer City, Pennsylvania, in October 2024: the closed coal plant whose site is being rebuilt as up to 4,678 MW of gas plant',
-    credit: 'Designism', licence: 'CC0',
-    page: 'https://commons.wikimedia.org/wiki/File:KBTP_to_KAOO_trip_20241027_12.jpg',
-    w: 900, h: 639,
+    alt: 'The core of a GE gas turbine on a maintenance stand at a gas plant, with a crane, an air intake and exhaust stacks behind it.',
+    caption: 'The core of a GE LMS100 gas turbine on a maintenance stand at a gas plant, in 2017',
+    credit: 'Hotdiggity46290', licence: 'CC BY-SA 4.0',
+    page: 'https://commons.wikimedia.org/wiki/File:GE_LMS100.jpg',
+    w: 900, h: 675, pos: '50% 65%',
   },
   'nuclear-for-ai': {
     src: '/journal-photos/nuclear-for-ai.jpg',
