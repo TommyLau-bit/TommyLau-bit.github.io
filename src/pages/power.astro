@@ -192,7 +192,7 @@ const gradeClass = (x: Grade) => (x === 'A' || x === 'B' || x === '∞' ? 'is-hi
     box-shadow: 0 10px 24px -16px rgba(0,0,0,.5);
     transition: transform .55s cubic-bezier(.2,.8,.2,1), opacity .55s ease, filter .55s ease;
   }
-  .pcard.is-hidden { opacity: 0; transform: perspective(900px) rotateY(-18deg) translateY(18px); filter: grayscale(1); }
+  .pcard.is-hidden { opacity: 0; transform: translateY(18px) scale(0.97); filter: grayscale(1); }
   .pcard.is-shown { opacity: 1; transform: none; filter: none; }
 
   .pcard-photo { position: relative; aspect-ratio: 4 / 3; overflow: hidden; background: #111; }

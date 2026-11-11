@@ -19,7 +19,14 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 3. Done: CVs updated ("grid to chip" wording; nuclear line to the depth figures); LinkedIn profile not changed.
 4. Done: article decks archived (study-decks/archive/article-decks-retired-2026-11-07/), not deleted.
 
-## START HERE (as of Wed 11 Nov 2026, evening)
+## START HERE (as of Thu 12 Nov 2026, end of session)
+
+**Tomorrow: nothing is scheduled and nothing is waiting.** The Power page (/power) is live and finished; both scheduled tasks stay disabled; no LinkedIn post for Power (Tommy: "no post"). Start only when Tommy gives a trigger ("1" journal run, "2" job hunt).
+
+**12 Nov: the grid is a panel, not a card (Tommy).** Its grades were not like-for-like (a connection charge against a whole power station; outage minutes against PJM's peak rating), so it lost its radar and ratings. At the top of /power it keeps its photo and gives three short bullets on why the grid is a problem (Dominion has no date for 45 GW, a request waits 5 to 6+ years; Texas paused switch-ons for big data centres in August 2026; a data centre builds in 1 to 2 years, a large transformer is quoted at 3 to 5) and three on why builders go elsewhere (a date, their own schedule, the catch: makers' queues and gas by pipe), one source line and links to Chapters 1, 2 and 4. Tommy asked for it short: keep it bullets. The grid's old stats stay in power.ts, unrendered. Twelve graded cards remain.
+
+**12 Nov final check, all passed:** build clean (225 pages); check-piece clean on every piece; no em dashes or share views on /power; every internal link and anchor resolves; all 24 outside source links answer (SEC needs a named user agent, LinkedIn blocks bots); no broken images, no console errors, phone width clean. One fix from the check: the cards' flip-in tilt pushed the page 3px wider than a phone screen before they appeared; they now rise and fade in instead.
+
 
 **12 Nov, after midnight: photos swapped (Tommy: the Johor, America and own-power photos were "just scenery").** Johor back to the Causeway on Tommy's word (a Sabah switchyard was tried; no open photo of Johor's grid or data centres exists on Commons or Openverse); America an ERCOT control-room dispatcher (CC BY 3.0); own power a GE LMS100 turbine core on a maintenance stand (CC BY-SA 4.0). Nuclear, microreactors, equipment queue and solar unchanged. Power roster: the microreactor card now shows NASA's Kilopower prototype (public domain), so every card has a photo; the bands table shows A to E on phones. The microreactor drawing (PowerCutaway) and the cards' unused `drawing` fields were deleted. Session closed on Tommy's word ("call it a day").
 
