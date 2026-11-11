@@ -42,7 +42,7 @@ export const RATINGS: Rating[] = [
   { key: 'reliability', name: 'Round the clock', short: 'RTC', input: 'elcc', inputName: "share of each MW PJM counts as firm (ELCC class rating, 2029/30)",
     formula: 'ELCC in per cent', anchors: 'nuclear 96% = 96, gas combined cycle 75% = 75, tracking solar 7% = 25 (the floor)',
     f: (cf) => cf },
-  { key: 'fuel', name: 'Fuel security', short: 'FUEL', input: 'fuelDays', inputName: 'days it runs if fuel deliveries stop',
+  { key: 'fuel', name: 'Without refuelling', short: 'REFUEL', input: 'fuelDays', inputName: 'days it keeps running on the fuel already on site, if deliveries stop (how hard the fuel is to buy is not measured here)',
     formula: '25 + 74 × log₁₀(days + 1) ÷ log₁₀(1,826)', anchors: '0 days (gas on a pipe) = 25, 30 = 59, 540 = 87, 1,825 (5 years) = 99; no fuel to buy = 99',
     f: (d) => 25 + (74 * Math.log10(d + 1)) / Math.log10(1826) },
 ];
