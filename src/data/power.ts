@@ -1,5 +1,5 @@
 // ── Power: the roster of ways to power an AI data centre ────────────────────
-// DRAFT (Tommy, 11 Nov 2026). The grid first, then the machines builders turn to
+// Tommy, 11 Nov 2026. The grid first, then the machines builders turn to
 // when it makes them wait (no "unlock" idea: Tommy, 11 Nov 2026). Every number is sourced and dated; a number that
 // could not be sourced is null and shows as n/a. Ratings are never typed in:
 // they are worked out from these numbers by the formulas in power-ratings.ts.
