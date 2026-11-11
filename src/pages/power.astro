@@ -1,0 +1,294 @@
+---
+// Power: every way to power an AI data centre, as a roster of player cards.
+// DRAFT (Tommy, 11 Nov 2026): not live until Tommy says so. Data in src/data/power.ts;
+// every rating is worked out from one sourced number by a formula in power-ratings.ts.
+import Base from '../layouts/Base.astro';
+import PowerCutaway from '../components/PowerCutaway.astro';
+import { GROUPS, CARDS } from '../data/power';
+import { RATINGS, rateOne, ovr, OVR_MIN, mid, type RatingKey } from '../data/power-ratings';
+import { CHAPTERS } from '../data/stack';
+
+const chapterN = (slug: string) => CHAPTERS.findIndex((c) => c.slug === slug) + 1;
+const chapterName = (slug: string) => CHAPTERS.find((c) => c.slug === slug)?.name ?? slug;
+const cards = CARDS.map((c) => {
+  const r = Object.fromEntries(RATINGS.map((R) => [R.key, rateOne(R, c.stats[R.input])])) as Record<RatingKey, number | null>;
+  const have = Object.values(r).filter((x) => x !== null).length;
+  return { ...c, r, have, ovr: ovr(Object.values(r)) };
+});
+const tier = (o: number | null) => (o === null ? 'na' : o >= 80 ? 'gold' : o >= 65 ? 'silver' : 'bronze');
+// the number each rating read, in short, under its bar
+const n0 = (x: number) => Math.round(x).toLocaleString('en-GB');
+const UNIT: Record<RatingKey, (x: number) => string> = {
+  speed: (x) => `${n0(x)} months`, scale: (x) => `${x < 10 ? x.toFixed(1) : n0(x)} MW`, cost: (x) => `US$${n0(x)}/kW`,
+  reliability: (x) => `${n0(x)}% firm`, fuel: (x) => (!Number.isFinite(x) ? 'no fuel to buy' : x === 0 ? '0 days: gas on a pipe' : x < 1 ? `${n0(x * 24)} hours` : `${n0(x)} days`), permitting: (x) => `${n0(x)} months`,
+};
+const input = (c: (typeof CARDS)[number], R: (typeof RATINGS)[number]) => { const x = mid(c.stats[R.input].value); if (x === null) return 'not sourced'; return UNIT[R.key](x) + (/target/.test(c.stats[R.input].display) ? ' (target)' : /claim/.test(c.stats[R.input].display) ? " (maker's claim)" : ''); };
+const show = (x: number | null) => (x === null ? 'n/a' : String(x));
+const statRows: { key: keyof (typeof CARDS)[number]['stats']; name: string }[] = [
+  { key: 'sizeMW', name: 'Size per unit' },
+  { key: 'monthsToPower', name: 'Order to first power' },
+  { key: 'costPerKW', name: 'Cost to build' },
+  { key: 'fuel', name: 'Fuel and burn' },
+  { key: 'elcc', name: 'Counted as firm' },
+  { key: 'capacityFactor', name: 'Share of hours it ran' },
+  { key: 'fuelDays', name: 'Runs without a delivery' },
+  { key: 'permitMonths', name: 'Main permit' },
+  { key: 'bottleneck', name: 'Main bottleneck' },
+];
+const naList = cards.flatMap((c) => RATINGS.filter((R) => c.r[R.key] === null).map((R) => `${c.name}: ${R.name.toLowerCase()} (no sourced ${R.inputName.split(' (')[0]})`));
+---
+<Base title="Power" description="Every way to power an AI data centre, as a roster: the grid, gas turbines, engines, fuel cells, solar, batteries and reactors, each with its sourced numbers and ratings worked out from them." wide>
+  <header class="article-head pw-head">
+    <p class="kicker">Draft</p>
+    <h1>Power: the roster</h1>
+    <p class="pw-lede">Every way to power an AI data centre, as a team of players. The grid starts the game. Each machine after it is unlocked when the one before makes you wait. Every rating is worked out from a sourced number on the card, by a formula shown at the bottom of the page.</p>
+    <nav class="pw-jump" aria-label="On this page">
+      {GROUPS.map((g) => <a href={`#${g.id}`}>{g.name}</a>)}
+      <a href="#formulas">How the ratings are worked out</a>
+    </nav>
+  </header>
+
+  <section class="pw-table-wrap" aria-label="The roster at a glance">
+    <table class="pw-table">
+      <thead>
+        <tr><th scope="col">Player</th><th scope="col" class="num">OVR</th>{RATINGS.map((R) => <th scope="col" class="num" title={R.name}>{R.short}</th>)}</tr>
+      </thead>
+      <tbody>
+        {cards.map((c) => (
+          <tr>
+            <th scope="row"><a href={`#${c.id}`}>{c.name}</a></th>
+            <td class={`num ovr ovr--${tier(c.ovr)}`}>{show(c.ovr)}</td>
+            {RATINGS.map((R) => <td class={`num ${c.r[R.key] === null ? 'is-na' : ''}`}>{show(c.r[R.key])}</td>)}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    <p class="pw-note">{RATINGS.map((R) => `${R.short} ${R.name}`).join(' · ')}. OVR is the average of the ratings a card has, shown only when it has at least {OVR_MIN} of the six.</p>
+  </section>
+
+  {GROUPS.map((g) => (
+    <section class="pw-group" id={g.id}>
+      <div class="pw-unlock">
+        <span class="pw-unlock-n">{g.n === 0 ? 'Starter' : `Unlock ${g.n}`}</span>
+        <h2>{g.name}</h2>
+        <p>{g.unlock}</p>
+      </div>
+      <div class="pw-cards">
+        {cards.filter((c) => c.group === g.id).map((c) => (
+          <article class={`pcard pcard--${tier(c.ovr)}`} id={c.id} data-unlock>
+            <header class="pcard-top">
+              <div class="pcard-ovr"><b>{show(c.ovr)}</b><span>OVR</span><small>{c.have} of 6</small></div>
+              <div class="pcard-name">
+                <span class="pcard-pos">{g.tag}</span>
+                <h3>{c.name}</h3>
+                {c.examples && <p class="pcard-ex">{c.examples}</p>}
+              </div>
+            </header>
+            <div class="pcard-art"><PowerCutaway id={c.id} label={c.drawing} /></div>
+            <ul class="pcard-ratings" aria-label="Ratings, with the number each one reads">
+              {RATINGS.map((R) => {
+                const v = c.r[R.key];
+                return (
+                  <li>
+                    <span class="pr-name">{R.name}</span>
+                    <span class="pr-bar"><i style={`width:${v ?? 0}%`}></i></span>
+                    <small class="pr-in">{input(c, R)}</small>
+                    <b class={v === null ? 'is-na' : v >= 80 ? 'is-hi' : v < 50 ? 'is-lo' : ''}>{show(v)}</b>
+                  </li>
+                );
+              })}
+            </ul>
+            <p class="pcard-ab"><span>Special ability</span>{c.ability}</p>
+            <p class="pcard-wk"><span>Weakness</span>{c.weakness}</p>
+            <details class="pcard-stats">
+              <summary>Raw stats and sources</summary>
+              <dl>
+                {statRows.map((s) => {
+                  const st = c.stats[s.key];
+                  return (
+                    <div>
+                      <dt>{s.name}</dt>
+                      <dd>
+                        <span class={st.display === 'n/a' ? 'is-na' : ''}>{st.display}</span>
+                        {st.basis && <small>{st.basis}</small>}
+                        {st.source && <small class="src">{st.url ? <a href={st.url} rel="noopener">{st.source}</a> : st.source}{st.date && `, ${st.date}`}</small>}
+                      </dd>
+                    </div>
+                  );
+                })}
+                <div><dt>Who makes it</dt><dd>{c.makers.join(', ')}</dd></div>
+              </dl>
+            </details>
+            <p class="pcard-ch">
+              {c.chapters.map((ch) => <a href={`/journal/${ch.slug}/${ch.anchor ? `#${ch.anchor}` : ''}`}>Chapter {chapterN(ch.slug)}: {chapterName(ch.slug)}</a>)}
+            </p>
+          </article>
+        ))}
+      </div>
+    </section>
+  ))}
+
+  <section class="pw-formulas" id="formulas">
+    <h2>How the ratings are worked out</h2>
+    <p>Each rating reads one number on the card and nothing else. Ratings run from 25 to 99; a number given as a range uses its middle. A number that could not be found in a primary source shows as n/a, and so does its rating. OVR is the plain average of the ratings a card has, shown only when it has at least {OVR_MIN} of the six: with fewer, an average says more about the gaps than about the machine. Where a time is a target rather than a record, the card says so.</p>
+    <table class="pw-ftable">
+      <thead><tr><th scope="col">Rating</th><th scope="col">Reads</th><th scope="col">Formula</th><th scope="col">Worked examples</th></tr></thead>
+      <tbody>
+        {RATINGS.map((R) => <tr><th scope="row">{R.name}</th><td>{R.inputName}</td><td><code>{R.formula}</code></td><td>{R.anchors}</td></tr>)}
+      </tbody>
+    </table>
+    <p>The curves are logarithmic because the machines differ by factors, not by steps: the cards run from 1 MW to 835 MW a unit, and from about 3 to about 87 months to first power. Each halving of the wait adds 15 points to Speed.</p>
+    {naList.length > 0 && (
+      <>
+        <h3>Not found in a primary source (n/a)</h3>
+        <ul class="pw-na">{naList.map((x) => <li>{x}</li>)}</ul>
+      </>
+    )}
+    <p class="sources">Personal research, not investment advice. Ratings compare machines, not companies, and say nothing about any share.</p>
+  </section>
+</Base>
+
+<script is:inline>
+  // the unlock: cards flip in as they reach the screen. Without the script, or with
+  // reduced motion, every card is simply shown.
+  (function () {
+    if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var cards = document.querySelectorAll('[data-unlock]');
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('is-unlocked'); io.unobserve(e.target); } });
+    }, { rootMargin: '0px 0px -10% 0px' });
+    cards.forEach(function (c) { var r = c.getBoundingClientRect(); if (r.top < innerHeight) return; c.classList.add('is-locked'); io.observe(c); });
+  })();
+</script>
+
+<style is:global>
+  .pw-head { padding-bottom: 1rem; }
+  .pw-head .kicker { color: var(--accent); }
+  .pw-lede { font-size: 1.15rem; color: var(--ink-2); max-width: 44rem; margin: 0 0 1rem; }
+  .pw-jump { display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; font-family: var(--sans); font-size: 0.85rem; }
+  .pw-jump a { color: var(--ink-2); text-decoration-color: var(--rule); }
+
+  .pw-table-wrap { margin: 1rem 0 2.5rem; overflow-x: auto; }
+  .pw-table { border-collapse: collapse; width: 100%; font-family: var(--sans); font-size: 0.88rem; }
+  .pw-table th, .pw-table td { padding: 0.45rem 0.5rem; border-bottom: 1px solid var(--rule); text-align: left; white-space: nowrap; }
+  .pw-table thead th { font-size: 0.72rem; letter-spacing: 0.06em; color: var(--ink-3); }
+  .pw-table tbody th { font-weight: 600; }
+  .pw-table tbody th a { text-decoration: none; }
+  .pw-table .num { text-align: right; font-variant-numeric: tabular-nums; }
+  .pw-table .ovr { font-weight: 800; }
+  .is-na { color: var(--ink-3); font-weight: 400 !important; }
+  .pw-note { font-family: var(--sans); font-size: 0.78rem; color: var(--ink-3); margin: 0.5rem 0 0; }
+
+  .pw-group { margin: 3rem 0 0; scroll-margin-top: 3.5rem; }
+  .pw-unlock { border-top: 2px solid var(--ink); padding-top: 0.9rem; margin-bottom: 1.25rem; }
+  .pw-unlock-n { font-family: var(--sans); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); }
+  .pw-unlock h2 { font-family: var(--sans); font-size: 1.5rem; margin: 0.15rem 0 0.3rem; letter-spacing: -0.01em; }
+  .pw-unlock p { margin: 0; color: var(--ink-2); max-width: 44rem; }
+
+  .pw-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 26rem), 1fr)); gap: 1.25rem; }
+
+  /* the player card */
+  .pcard {
+    --tier: #8a6a3d; --tier-2: #c8a46a;
+    --hot: #b91c1c; --cool: #0e7490; --fuel: #b45309; --metal: color-mix(in srgb, var(--ink) 8%, var(--bg-elev));
+    position: relative; display: flex; flex-direction: column; gap: 0.7rem;
+    background: var(--bg-elev); border: 1px solid var(--rule); border-radius: 14px; padding: 0.9rem 0.95rem 0.8rem;
+    box-shadow: 0 0 0 1px color-mix(in srgb, var(--tier) 35%, transparent) inset, 0 6px 18px -12px rgba(0,0,0,.35);
+    font-family: var(--sans); scroll-margin-top: 3.5rem;
+    transition: transform .55s cubic-bezier(.2,.8,.2,1), opacity .55s ease, filter .55s ease;
+  }
+  .pcard::before { content: ''; position: absolute; inset: 0 0 auto 0; height: 5px; border-radius: 14px 14px 0 0; background: linear-gradient(90deg, var(--tier), var(--tier-2), var(--tier)); }
+  .pcard--gold { --tier: #b7861b; --tier-2: #f2c94c; }
+  .pcard--silver { --tier: #7b8794; --tier-2: #cfd6de; }
+  .pcard--bronze { --tier: #8a5a35; --tier-2: #d39a6a; }
+  .pcard--na { --tier: var(--ink-3); --tier-2: var(--rule); }
+  .pcard.is-locked { opacity: 0; transform: perspective(900px) rotateY(-16deg) translateY(18px); filter: grayscale(1); }
+  .pcard.is-unlocked { opacity: 1; transform: none; filter: none; }
+  .pcard.is-unlocked::after { content: 'Unlocked'; position: absolute; top: 0.9rem; right: 0.9rem; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--tier); border: 1.5px solid var(--tier); border-radius: 4px; padding: 0.1rem 0.35rem; animation: pw-stamp 1.6s ease forwards; }
+  @keyframes pw-stamp { 0% { opacity: 0; transform: scale(1.6) rotate(-8deg); } 20% { opacity: 1; transform: scale(1) rotate(-8deg); } 75% { opacity: 1; } 100% { opacity: 0; transform: rotate(-8deg); } }
+
+  .pcard-top { display: flex; gap: 0.75rem; align-items: center; padding-top: 0.2rem; }
+  .pcard-ovr { flex: none; width: 3.6rem; height: 3.6rem; border-radius: 10px; display: grid; place-content: center; text-align: center; color: #fff; background: linear-gradient(145deg, var(--tier-2), var(--tier)); }
+  .pcard-ovr b { font-size: 1.6rem; line-height: 1; font-weight: 850; font-variant-numeric: tabular-nums; text-shadow: 0 1px 2px rgba(0,0,0,.35); }
+  .pcard-ovr small { font-size: 0.55rem; font-weight: 700; opacity: .85; }
+  .pcard-ovr span { font-size: 0.6rem; font-weight: 800; letter-spacing: 0.12em; opacity: .9; }
+  .pcard-pos { font-size: 0.65rem; font-weight: 800; letter-spacing: 0.12em; color: var(--tier); }
+  .pcard-name h3 { margin: 0.05rem 0 0; font-size: 1.08rem; line-height: 1.2; letter-spacing: -0.01em; }
+  .pcard-ex { margin: 0.15rem 0 0; font-size: 0.78rem; color: var(--ink-3); line-height: 1.35; }
+
+  .pcard-art { border-radius: 8px; background: color-mix(in srgb, var(--ink) 3%, var(--bg)); padding: 0.4rem 0.2rem 0.1rem; }
+  .pc-svg { display: block; width: 100%; height: auto; font-family: var(--sans); }
+  .pc-t { fill: var(--ink); font-size: 10.5px; font-weight: 650; }
+  .pc-n { fill: var(--ink-3); font-size: 9.5px; }
+  .pc-fuel-t { fill: var(--fuel); font-size: 9.5px; font-weight: 700; }
+  .pc-cool-t { fill: var(--cool); font-size: 9.5px; font-weight: 700; }
+  .pc-hot-t { fill: var(--hot); font-size: 9.5px; font-weight: 700; }
+  .pc-shaft { fill: none; stroke: var(--ink-2); stroke-width: 3; stroke-linecap: round; }
+  .pc-fuel { fill: none; stroke: var(--fuel); stroke-width: 2.4; stroke-linecap: round; }
+  .pc-steam { fill: none; stroke: color-mix(in srgb, var(--hot) 55%, var(--cool)); stroke-width: 1.8; stroke-linecap: round; }
+  .pc-power { fill: none; stroke: var(--accent); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+  .pc-oil { fill: color-mix(in srgb, var(--fuel) 14%, var(--bg-elev)); }
+  .pc-copper { fill: color-mix(in srgb, #b45309 55%, var(--bg-elev)); stroke: var(--ink-2); stroke-width: 0.8; }
+  .pc-wait { fill: none; stroke: var(--ink-3); stroke-width: 1; stroke-dasharray: 3 2; }
+  .pc-anode { fill: color-mix(in srgb, var(--fuel) 35%, var(--bg-elev)); }
+  .pc-cathode { fill: color-mix(in srgb, var(--cool) 30%, var(--bg-elev)); }
+  .pc-ceramic { fill: var(--ink-2); }
+  .pc-hotbox { fill: color-mix(in srgb, var(--hot) 14%, var(--bg-elev)); stroke: var(--hot); stroke-width: 0.8; }
+  .pc-sun { fill: color-mix(in srgb, #f59e0b 70%, var(--bg-elev)); stroke: #d97706; stroke-width: 1; }
+  .pc-sunray { fill: none; stroke: #d97706; stroke-width: 1.4; stroke-linecap: round; }
+  .pc-panel { fill: color-mix(in srgb, #1d4ed8 45%, var(--bg-elev)); stroke: var(--ink-2); stroke-width: 0.8; }
+  .pc-glass { fill: color-mix(in srgb, #60a5fa 20%, var(--bg-elev)); stroke: var(--ink-3); stroke-width: 0.6; }
+  .pc-cell { fill: color-mix(in srgb, #1d4ed8 55%, var(--bg-elev)); }
+  .pc-module { fill: color-mix(in srgb, var(--good) 22%, var(--bg-elev)); stroke: var(--ink-3); stroke-width: 0.6; }
+  .pc-core { fill: color-mix(in srgb, var(--hot) 30%, var(--bg-elev)); stroke: var(--hot); stroke-width: 0.8; }
+  .pc-sodium { fill: color-mix(in srgb, #a855f7 16%, var(--bg-elev)); stroke: var(--ink-3); stroke-width: 0.6; }
+  .pc-salthot { fill: color-mix(in srgb, var(--hot) 22%, var(--bg-elev)); }
+  .pc-saltcold { fill: color-mix(in srgb, var(--cool) 22%, var(--bg-elev)); }
+  .pc-graphite { fill: color-mix(in srgb, var(--ink) 10%, var(--bg-elev)); stroke: var(--ink-3); stroke-width: 0.7; }
+  .pc-triso { fill: var(--hot); }
+  .pc-absorb { fill: var(--ink-2); }
+
+  .pcard-ratings { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0.3rem 0.9rem; }
+  .pcard-ratings li { display: grid; grid-template-columns: 1fr auto; grid-template-rows: auto auto auto; column-gap: 0.4rem; font-size: 0.74rem; }
+  .pr-name { color: var(--ink-2); }
+  .pr-in { color: var(--ink-3); font-size: 0.66rem; margin-top: 0.1rem; }
+  .pcard-ratings b { grid-row: 1 / 4; grid-column: 2; align-self: center; font-size: 1.05rem; font-weight: 800; font-variant-numeric: tabular-nums; min-width: 1.6rem; text-align: right; }
+  .pcard-ratings b.is-hi { color: var(--good); }
+  .pcard-ratings b.is-lo { color: var(--bad); }
+  .pr-bar { height: 5px; border-radius: 3px; background: var(--rule); overflow: hidden; }
+  .pr-bar i { display: block; height: 100%; background: var(--tier); border-radius: 3px; }
+
+  .pcard-ab, .pcard-wk { margin: 0; font-size: 0.86rem; line-height: 1.4; color: var(--ink); }
+  .pcard-ab span, .pcard-wk span { display: block; font-size: 0.64rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+  .pcard-ab span { color: var(--good); }
+  .pcard-wk span { color: var(--bad); }
+
+  .pcard-stats { border-top: 1px solid var(--rule); padding-top: 0.5rem; font-size: 0.8rem; }
+  .pcard-stats summary { cursor: pointer; font-weight: 650; color: var(--ink-2); }
+  .pcard-stats dl { margin: 0.5rem 0 0; }
+  .pcard-stats dl > div { display: grid; grid-template-columns: 7.5rem 1fr; gap: 0.6rem; padding: 0.35rem 0; border-bottom: 1px dotted var(--rule); }
+  .pcard-stats dt { color: var(--ink-3); }
+  .pcard-stats dd { margin: 0; }
+  .pcard-stats dd > span { font-weight: 650; }
+  .pcard-stats small { display: block; color: var(--ink-3); font-size: 0.72rem; line-height: 1.35; margin-top: 0.1rem; }
+  .pcard-stats small.src a { color: var(--ink-3); }
+  .pcard-ch { margin: auto 0 0; display: flex; flex-direction: column; gap: 0.15rem; font-size: 0.8rem; font-weight: 650; }
+  .pcard-ch a { color: var(--accent); text-decoration: none; }
+  @media (hover: hover) { .pcard-ch a:hover { text-decoration: underline; } }
+
+  .pw-formulas { margin: 4rem 0 2rem; max-width: 52rem; scroll-margin-top: 3.5rem; }
+  .pw-formulas h2 { font-family: var(--sans); font-size: 1.5rem; }
+  .pw-formulas h3 { font-family: var(--sans); font-size: 1.05rem; margin-top: 1.5rem; }
+  .pw-ftable { border-collapse: collapse; width: 100%; font-family: var(--sans); font-size: 0.85rem; margin: 1rem 0; }
+  .pw-ftable th, .pw-ftable td { text-align: left; vertical-align: top; padding: 0.5rem; border-bottom: 1px solid var(--rule); }
+  .pw-ftable code { font-family: var(--mono); font-size: 0.82rem; white-space: nowrap; }
+  .pw-na { font-family: var(--sans); font-size: 0.85rem; columns: 2 16rem; }
+  @media (max-width: 560px) {
+    .pw-ftable thead { display: none; }
+    .pw-ftable tr { display: block; border-bottom: 1px solid var(--rule); padding: 0.4rem 0; }
+    .pw-ftable th, .pw-ftable td { display: block; border: 0; padding: 0.15rem 0; }
+    .pw-ftable code { white-space: normal; }
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .pcard { --hot: #f87171; --cool: #22d3ee; --fuel: #f59e0b; } }
+  :root[data-theme="dark"] .pcard { --hot: #f87171; --cool: #22d3ee; --fuel: #f59e0b; }
+</style>

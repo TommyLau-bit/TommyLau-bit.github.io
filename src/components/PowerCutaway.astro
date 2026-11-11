@@ -1,0 +1,520 @@
+---
+// Cutaway drawings for the Power roster cards. One drawing per machine, in the house
+// line-art style (the .i-* classes in global.css), viewBox 360 x 210. Labels are plain
+// part names only; every number on a card comes from src/data/power.ts.
+interface Props { id: string; label: string }
+const { id, label } = Astro.props;
+
+// blade rows between two sloping walls: x from a to b, wall half-heights ha -> hb around cy
+const blades = (a: number, b: number, ha: number, hb: number, cy: number, n: number, gap = 4) =>
+  Array.from({ length: n }, (_, i) => {
+    const x = a + ((b - a) * (i + 0.5)) / n;
+    const h = ha + ((hb - ha) * (x - a)) / (b - a);
+    return `M${x.toFixed(1)} ${(cy - h + 2).toFixed(1)} V${cy - gap} M${x.toFixed(1)} ${cy + gap} V${(cy + h - 2).toFixed(1)}`;
+  }).join(' ');
+const zig = (x0: number, x1: number, y0: number, y1: number, n: number) =>
+  `M${x0} ${y0} ` + Array.from({ length: n }, (_, i) => `L${x0 + ((x1 - x0) * (i + 1)) / n} ${i % 2 ? y0 : y1}`).join(' ');
+const rows = (n: number, f: (i: number) => string) => Array.from({ length: n }, (_, i) => f(i)).join(' ');
+const towerX = rows(6, (i) => `M${33 + i * 1.6} ${182 - i * 22} L${59 - i * 1.6} ${160 - i * 22} M${59 - i * 1.6} ${182 - i * 22} L${33 + i * 1.6} ${160 - i * 22}`);
+const sunRays = rows(8, (i) => `M${(36 + 19 * Math.cos((i * Math.PI) / 4)).toFixed(1)} ${(34 + 19 * Math.sin((i * Math.PI) / 4)).toFixed(1)} L${(36 + 26 * Math.cos((i * Math.PI) / 4)).toFixed(1)} ${(34 + 26 * Math.sin((i * Math.PI) / 4)).toFixed(1)}`);
+const hexCells = [[0, 0], [1, 0], [-1, 0], [0.5, 0.866], [-0.5, 0.866], [0.5, -0.866], [-0.5, -0.866], [1.5, 0.866], [-1.5, 0.866], [1.5, -0.866], [-1.5, -0.866], [0, 1.732], [0, -1.732], [2, 0], [-2, 0], [1, 1.732], [-1, 1.732], [1, -1.732], [-1, -1.732]];
+const hexes = hexCells.map(([q, s]) => Array.from({ length: 6 }, (_, k) => `${k ? 'L' : 'M'}${(74 + q * 15.75 + 9 * Math.cos((Math.PI / 3) * k + Math.PI / 6)).toFixed(1)} ${(92 + s * 15.75 + 9 * Math.sin((Math.PI / 3) * k + Math.PI / 6)).toFixed(1)}`).join(' ') + ' Z').join(' ');
+const triso = Array.from({ length: 30 }, (_, i) => ({ x: (74 + (4 + (i % 10) * 3.6) * Math.cos(i * 2.4)).toFixed(1), y: (92 + (4 + (i % 10) * 3.6) * Math.sin(i * 2.4)).toFixed(1) }));
+const drums = Array.from({ length: 12 }, (_, i) => { const a = (i * Math.PI) / 6, cx = 74 + 53 * Math.cos(a), cy = 92 + 53 * Math.sin(a); return { cx: cx.toFixed(1), cy: cy.toFixed(1), d: `M${(cx + 6 * Math.cos(a + 1.57)).toFixed(1)} ${(cy + 6 * Math.sin(a + 1.57)).toFixed(1)} A6 6 0 0 1 ${(cx + 6 * Math.cos(a - 1.57)).toFixed(1)} ${(cy + 6 * Math.sin(a - 1.57)).toFixed(1)} Z` }; });
+const stack5 = Array.from({ length: 5 }, (_, i) => 40 + i * 27);
+const trailers = [8, 178];
+const trackerRows = [0, 1, 2].map((r) => ({ y: 108 + r * 26, x0: 14 + r * 10 }));
+---
+<svg class="pc-svg" viewBox="0 0 360 210" role="img" aria-label={label}>
+  {id === 'grid' && (
+    <g>
+      <rect class="i-ground" x="0" y="182" width="360" height="28" />
+      <path class="i-line" d="M0 182 H360" />
+      
+      <path class="i-line" d="M30 182 L42 44 L46 30 L50 44 L62 182 M24 60 H68 M30 82 H62" />
+      <path class="i-thin" d={towerX} />
+      <path class="i-thin" d="M24 60 V68 M68 60 V68 M30 82 V90 M62 82 V90" />
+      <path class="i-line" d="M0 74 Q 12 78 24 68 M0 96 Q 14 100 30 90 M68 68 Q 92 86 116 96 M62 90 Q 90 104 116 104" />
+      
+      <rect class="i-metal" x="116" y="96" width="92" height="86" rx="3" />
+      <rect class="pc-oil" x="120" y="104" width="84" height="74" />
+      <path class="i-line" d="M128 112 H196 V170 H128 Z M150 112 V170 M174 112 V170" />
+      {[128, 152, 176].map((x) => (
+        <g>
+          <rect class="pc-copper" x={x + 6} y="118" width="10" height="46" rx="2" />
+          <path class="i-thin" d={rows(8, (i) => `M${x + 6} ${121 + i * 5.5} H${x + 16}`)} />
+        </g>
+      ))}
+      {[136, 162, 188].map((x) => (
+        <g>
+          <path class="i-fill" d={`M${x - 4} 96 L${x - 3} 62 H${x + 3} L${x + 4} 96 Z`} />
+          <path class="i-thin" d={rows(6, (i) => `M${x - 5} ${90 - i * 5} H${x + 5}`)} />
+        </g>
+      ))}
+      <path class="i-line" d="M116 96 L104 96 M104 96 V182" />
+      <rect class="i-fill" x="208" y="110" width="16" height="60" />
+      <path class="i-thin" d="M211 112 V168 M214 112 V168 M217 112 V168 M220 112 V168" />
+      
+      <path class="i-thin" d={rows(10, (i) => `M${232 + i * 4} 168 V182`) + ' M230 168 H272'} />
+      <path class="pc-power" d="M224 150 H282" />
+      <rect class="i-fill" x="282" y="110" width="72" height="72" />
+      <path class="i-thin" d={rows(4, (i) => `M${290 + i * 16} 120 V176`)} />
+      {[290, 306, 322, 338].map((x) => rows(6, (i) => `M${x - 3} ${124 + i * 8} H${x + 9}`)).map((d) => <path class="i-thin" d={d} />)}
+      
+      {[0, 1, 2, 3, 4].map((i) => <rect class="pc-wait" x={232 + i * 24} y="34" width="18" height="12" rx="2" />)}
+      <path class="i-dash" d="M232 54 H350" />
+      <text class="pc-n" x="232" y="28">waiting for a connection</text>
+      <text class="pc-t" x="162" y="198" text-anchor="middle">substation transformer</text>
+      <text class="pc-t" x="46" y="22" text-anchor="middle">high-voltage line</text>
+      <text class="pc-t" x="318" y="198" text-anchor="middle">data centre</text>
+    </g>
+  )}
+
+  {id === 'heavy-sc' && (
+    <g>
+      <rect class="i-ground" x="0" y="186" width="360" height="24" />
+      <path class="i-line" d="M0 186 H360" />
+      <rect class="i-metal" x="8" y="96" width="58" height="56" rx="6" />
+      <path class="i-thin" d={rows(6, (i) => `M14 ${104 + i * 8} H60`)} />
+      <rect class="pc-copper" x="20" y="110" width="34" height="28" rx="3" opacity=".55" />
+      <path class="pc-shaft" d="M66 124 H300" />
+      
+      <path class="i-fill" d="M74 40 H112 V84 L96 96 H90 L74 84 Z" />
+      <path class="i-thin" d={rows(5, (i) => `M78 ${46 + i * 7} H108`)} />
+      <path class="i-cool" d="M93 22 V38 M88 32 l5 7 l5 -7" />
+      
+      <path class="i-fill" d="M92 80 L170 96 L170 152 L92 168 Z" />
+      <path class="i-thin" d={blades(92, 170, 44, 28, 124, 13)} />
+      
+      <rect class="i-fill" x="170" y="90" width="32" height="68" rx="5" />
+      <path class="i-hot-f" d="M186 120 C177 112 182 104 186 96 C190 104 196 112 186 120 Z" opacity=".85" />
+      <path class="i-hot-f" d="M186 152 C177 144 182 136 186 128 C190 136 196 144 186 152 Z" opacity=".85" />
+      <path class="pc-fuel" d="M186 62 V90 M150 62 H186" />
+      <text class="pc-fuel-t" x="148" y="58" text-anchor="end">gas</text>
+      
+      <path class="i-fill" d="M202 96 L262 82 L262 166 L202 152 Z" />
+      <path class="i-hot" d={blades(202, 262, 28, 42, 124, 4)} />
+      
+      <path class="i-fill" d="M262 82 L300 70 V178 L262 166 Z" />
+      <path class="i-fill" d="M300 70 V20 H336 V178 H300" />
+      <path class="i-thin" d="M300 40 H336 M300 60 H336" />
+      <path class="i-hot" d="M318 16 q -6 -6 0 -12 M308 16 q -5 -5 0 -10 M328 16 q 5 -5 0 -10" />
+      <path class="i-hot" d="M270 124 H292 M286 118 l7 6 l-7 6" />
+      <text class="pc-t" x="131" y="184" text-anchor="middle">compressor</text>
+      <text class="pc-t" x="186" y="78" text-anchor="middle">combustor</text>
+      <text class="pc-t" x="232" y="184" text-anchor="middle">turbine</text>
+      <text class="pc-t" x="37" y="170" text-anchor="middle">generator</text>
+      <text class="pc-n" x="318" y="200" text-anchor="middle">stack</text>
+    </g>
+  )}
+
+  {id === 'ccgt' && (
+    <g>
+      <rect class="i-ground" x="0" y="190" width="360" height="20" />
+      <path class="i-line" d="M0 190 H360" />
+      
+      <rect class="i-metal" x="6" y="128" width="26" height="34" rx="4" />
+      <path class="pc-shaft" d="M32 145 H124" />
+      <path class="i-fill" d="M36 124 L76 132 L76 158 L36 166 Z" />
+      <path class="i-thin" d={blades(36, 76, 21, 13, 145, 7, 3)} />
+      <rect class="i-fill" x="76" y="128" width="16" height="34" rx="3" />
+      <path class="i-hot-f" d="M84 152 C79 147 82 142 84 137 C86 142 89 147 84 152 Z" />
+      <path class="pc-fuel" d="M84 110 V128" />
+      <path class="i-fill" d="M92 132 L122 124 L122 166 L92 158 Z" />
+      <path class="i-hot" d={blades(92, 122, 13, 21, 145, 3, 3)} />
+      <path class="i-hot" d="M124 145 H146 M140 140 l6 5 l-6 5" />
+      
+      <path class="i-fill" d="M146 70 H236 V190 H146 Z" />
+      {[156, 180, 204].map((x, k) => <path class={k === 0 ? 'i-hot' : k === 1 ? 'pc-steam' : 'i-cool'} d={rows(12, (i) => `M${x} ${80 + i * 8.5} H${x + 22}`) + ` M${x} 80 V${80 + 11 * 8.5} M${x + 22} 80 V${80 + 11 * 8.5}`} />)}
+      <path class="i-fill" d="M216 70 V14 H232 V70" />
+      <path class="i-faint" d="M224 10 q -5 -5 0 -9 M218 10 q -4 -4 0 -8" />
+      <rect class="i-metal" x="160" y="46" width="44" height="16" rx="8" />
+      <path class="i-thin" d="M170 62 V70 M194 62 V70" />
+      
+      <path class="pc-steam" d="M204 54 H262 V118" />
+      <path class="i-fill" d="M252 118 L290 110 L290 156 L252 148 Z" />
+      <path class="i-thin" d={blades(252, 290, 15, 23, 133, 5, 3)} />
+      <path class="pc-shaft" d="M290 133 H304" />
+      <rect class="i-metal" x="304" y="114" width="48" height="38" rx="5" />
+      <path class="i-thin" d={rows(4, (i) => `M310 ${121 + i * 8} H346`)} />
+      <rect class="i-fill" x="246" y="160" width="56" height="26" rx="3" />
+      <path class="i-cool" d="M252 168 H296 M252 176 H296" />
+      <path class="i-cool" d="M246 182 H236" />
+      <text class="pc-t" x="52" y="182" text-anchor="middle">gas turbine</text>
+      <text class="pc-t" x="191" y="34" text-anchor="middle">heat recovery boiler</text>
+      <text class="pc-t" x="300" y="100" text-anchor="middle">steam turbine</text>
+      <text class="pc-n" x="274" y="201" text-anchor="middle">condenser</text>
+      <text class="pc-n" x="328" y="166" text-anchor="middle">generators</text>
+    </g>
+  )}
+
+  {id === 'aero' && (
+    <g>
+      <rect class="i-ground" x="0" y="190" width="360" height="20" />
+      <path class="i-line" d="M0 190 H360" />
+      
+      <rect class="i-dash" x="10" y="56" width="340" height="126" rx="4" />
+      <path class="i-fill" d="M40 56 V20 H96 V56" />
+      <path class="i-thin" d={rows(4, (i) => `M44 ${26 + i * 7} H92`)} />
+      <path class="i-cool" d="M68 6 V18 M63 12 l5 6 l5 -6" />
+      <rect class="i-metal" x="18" y="98" width="40" height="52" rx="6" />
+      <path class="i-thin" d={rows(5, (i) => `M22 ${105 + i * 9} H54`)} />
+      <path class="pc-shaft" d="M58 124 H300" />
+      
+      <path class="i-fill" d="M76 92 L112 100 L112 148 L76 156 Z" />
+      <path class="i-thin" d={blades(76, 112, 30, 22, 124, 5, 3)} />
+      <path class="i-fill" d="M112 104 L164 110 L164 138 L112 144 Z" />
+      <path class="i-thin" d={blades(112, 164, 18, 12, 124, 10, 3)} />
+      
+      <path class="i-fill" d="M164 106 H190 V142 H164 Z" />
+      <path class="i-hot-f" d="M177 120 C171 115 174 110 177 106 C180 110 183 115 177 120 Z" />
+      <path class="i-hot-f" d="M177 142 C171 137 174 132 177 128 C180 132 183 137 177 142 Z" />
+      <path class="pc-fuel" d="M177 74 V106" />
+      
+      <path class="i-fill" d="M190 110 L212 106 L212 142 L190 138 Z" />
+      <path class="i-hot" d={blades(190, 212, 14, 18, 124, 2, 3)} />
+      <path class="i-fill" d="M212 100 L262 90 L262 158 L212 148 Z" />
+      <path class="i-hot" d={blades(212, 262, 24, 34, 124, 5, 3)} />
+      <path class="i-fill" d="M262 90 L300 84 V164 L262 158 Z" />
+      <path class="i-fill" d="M300 84 V20 H332 V164 H300" />
+      <path class="i-hot" d="M316 16 q -5 -5 0 -10 M308 16 q -4 -4 0 -8 M324 16 q 4 -4 0 -8" />
+      
+      <path class="i-line" d="M14 182 H346" />
+      {[40, 120, 200, 280].map((x) => <rect class="i-fill" x={x} y="182" width="24" height="8" />)}
+      <text class="pc-t" x="120" y="172" text-anchor="middle">jet-engine core</text>
+      <text class="pc-t" x="238" y="80" text-anchor="middle">power turbine</text>
+      <text class="pc-t" x="38" y="166" text-anchor="middle">generator</text>
+      <text class="pc-n" x="108" y="68">enclosure on a skid</text>
+    </g>
+  )}
+
+  {id === 'recip' && (
+    <g>
+      <rect class="i-ground" x="0" y="190" width="360" height="20" />
+      <path class="i-line" d="M0 190 H360" />
+      
+      <path class="i-fill" d="M40 140 L22 70 L58 58 L80 118 L102 58 L138 70 L120 140 Q 80 180 40 140 Z" />
+      <circle class="i-metal" cx="80" cy="146" r="26" />
+      <circle class="i-line" cx="80" cy="146" r="7" />
+      <path class="pc-shaft" d="M80 146 L92 132" />
+      
+      <g transform="rotate(-22 80 146)">
+        <rect class="i-thin" x="66" y="58" width="28" height="64" />
+        <rect class="i-metal" x="68" y="82" width="24" height="18" rx="2" />
+        <path class="i-thin" d="M68 86 H92 M68 90 H92" />
+        <path class="i-line" d="M80 92 L82 132" />
+        <path class="i-hot-f" d="M80 76 C74 70 77 66 80 62 C83 66 86 70 80 76 Z" opacity=".8" />
+        <rect class="i-fill" x="62" y="46" width="36" height="12" />
+      </g>
+      <g transform="rotate(22 80 146)">
+        <rect class="i-thin" x="66" y="58" width="28" height="64" />
+        <rect class="i-metal" x="68" y="70" width="24" height="18" rx="2" />
+        <path class="i-thin" d="M68 74 H92 M68 78 H92" />
+        <path class="i-line" d="M80 80 L76 132" />
+        <rect class="i-fill" x="62" y="46" width="36" height="12" />
+      </g>
+      
+      <circle class="i-fill" cx="80" cy="38" r="12" />
+      <path class="i-thin" d="M80 26 V50 M68 38 H92 M72 30 L88 46 M72 46 L88 30" />
+      <path class="pc-fuel" d="M80 2 V26" />
+      
+      <rect class="i-fill" x="164" y="96" width="112" height="70" rx="4" />
+      {[0, 1, 2, 3, 4, 5].map((i) => <path class="i-fill" d={`M${170 + i * 17} 96 V82 H${184 + i * 17} V96`} />)}
+      <path class="i-thin" d="M164 130 H276 M164 112 H276" />
+      <circle class="i-thin" cx="206" cy="150" r="8" /><circle class="i-thin" cx="238" cy="150" r="8" />
+      <rect class="i-metal" x="276" y="104" width="10" height="56" rx="3" />
+      <rect class="i-metal" x="286" y="100" width="62" height="66" rx="6" />
+      <path class="i-thin" d={rows(6, (i) => `M292 ${108 + i * 9} H342`)} />
+      <rect class="i-fill" x="214" y="56" width="34" height="20" rx="8" />
+      <path class="i-hot" d="M248 66 H262 V40" />
+      <path class="i-line" d="M158 166 H352 V176 H158 Z" />
+      {[172, 230, 300].map((x) => <path class="i-thin" d={`M${x} 176 V190 M${x + 14} 176 V190`} />)}
+      <text class="pc-t" x="80" y="198" text-anchor="middle">piston and crankshaft</text>
+      <text class="pc-t" x="220" y="200" text-anchor="middle">engine</text>
+      <text class="pc-t" x="317" y="200" text-anchor="middle">alternator</text>
+      <text class="pc-n" x="231" y="48" text-anchor="middle">turbocharger</text>
+      <text class="pc-fuel-t" x="88" y="12">gas</text>
+    </g>
+  )}
+
+  {id === 'fuelcell' && (
+    <g>
+      
+      <rect class="i-fill" x="14" y="32" width="150" height="146" rx="4" />
+      {Array.from({ length: 5 }, (_, i) => {
+        const y = 40 + i * 27;
+        return (
+          <g>
+            <rect class="i-metal" x="20" y={y} width="138" height="6" />
+            <rect class="pc-anode" x="20" y={y + 6} width="138" height="7" />
+            <rect class="pc-ceramic" x="20" y={y + 13} width="138" height="3" />
+            <rect class="pc-cathode" x="20" y={y + 16} width="138" height="7" />
+          </g>
+        );
+      })}
+      <path class="pc-fuel" d="M0 49.5 H14 M0 76.5 H14 M0 103.5 H14 M0 130.5 H14 M0 157.5 H14" />
+      <path class="i-cool" d="M178 59.5 H164 M178 86.5 H164 M178 113.5 H164 M178 140.5 H164 M178 167.5 H164" />
+      <text class="pc-fuel-t" x="14" y="24">gas side</text>
+      <text class="pc-cool-t" x="164" y="24" text-anchor="end">air side</text>
+      <text class="pc-n" x="89" y="194" text-anchor="middle">ceramic cells, no flame</text>
+      <path class="i-lead" d="M164 32 L196 50" />
+      
+      <rect class="i-fill" x="196" y="50" width="156" height="132" rx="4" />
+      {[202, 238, 274].map((x) => (
+        <g>
+          <rect class="i-metal" x={x} y="62" width="30" height="104" rx="3" />
+          <rect class="pc-hotbox" x={x + 5} y="72" width="20" height="56" rx="2" />
+          <path class="i-thin" d={rows(8, (i) => `M${x + 7} ${76 + i * 6.5} H${x + 23}`)} />
+          <circle class="i-thin" cx={x + 15} cy="148" r="7" />
+        </g>
+      ))}
+      <rect class="i-fill" x="312" y="62" width="34" height="104" rx="3" />
+      <path class="pc-power" d="M318 140 l6 -10 h-4 l6 -10" />
+      <path class="i-thin" d="M318 76 H340 M318 84 H340 M318 92 H340" />
+      <path class="i-line" d="M192 182 H356" />
+      <path class="pc-power" d="M346 120 H360" />
+      <text class="pc-t" x="252" y="198" text-anchor="middle">power modules</text>
+      <text class="pc-n" x="329" y="198" text-anchor="middle">inverter</text>
+      <text class="pc-t" x="274" y="42" text-anchor="middle">fuel cell server</text>
+    </g>
+  )}
+
+  {id === 'fleet' && (
+    <g>
+      <rect class="i-ground" x="0" y="184" width="360" height="26" />
+      <path class="i-line" d="M0 184 H360" />
+      {[0, 1].map((k) => {
+        const x = 8 + k * 170;
+        return (
+          <g>
+            <rect class="i-fill" x={x} y="92" width="150" height="66" rx="3" />
+            <path class="i-fill" d={`M${x + 112} 92 V40 H${x + 136} V92`} />
+            <path class="i-hot" d={`M${x + 124} 36 q -5 -5 0 -10 M${x + 117} 36 q -4 -4 0 -8`} />
+            <rect class="i-metal" x={x + 8} y="106" width="28" height="38" rx="4" />
+            <path class="pc-shaft" d={`M${x + 36} 125 H${x + 112}`} />
+            <path class="i-fill" d={`M${x + 42} 112 L${x + 76} 117 L${x + 76} 133 L${x + 42} 138 Z`} />
+            <path class="i-thin" d={blades(x + 42, x + 76, 13, 8, 125, 6, 2)} />
+            <rect class="i-fill" x={x + 76} y="115" width="10" height="20" rx="2" />
+            <path class="i-hot-f" d={`M${x + 81} 132 C${x + 78} 129 ${x + 80} 125 ${x + 81} 122 C${x + 82} 125 ${x + 84} 129 ${x + 81} 132 Z`} />
+            <path class="i-fill" d={`M${x + 86} 117 L${x + 110} 110 L${x + 110} 140 L${x + 86} 133 Z`} />
+            <path class="i-hot" d={blades(x + 86, x + 110, 8, 15, 125, 3, 2)} />
+            <path class="i-line" d={`M${x} 158 H${x + 150} M${x - 2} 162 H${x + 152}`} />
+            {[x + 98, x + 116, x + 134].map((cx) => <circle class="i-metal" cx={cx} cy="172" r="10" />)}
+            {[x + 98, x + 116, x + 134].map((cx) => <circle class="i-thin" cx={cx} cy="172" r="4" />)}
+            <path class="i-line" d={`M${x + 18} 162 V178 M${x + 12} 178 H${x + 24}`} />
+          </g>
+        );
+      })}
+      <path class="pc-power" d="M158 150 H178 M328 150 H352 V196" />
+      <path class="pc-fuel" d="M70 18 V92 M240 18 V92 M60 18 H250" />
+      <text class="pc-fuel-t" x="155" y="12" text-anchor="middle">gas</text>
+      <text class="pc-t" x="83" y="204" text-anchor="middle">turbine on a trailer</text>
+      <text class="pc-t" x="253" y="204" text-anchor="middle">rented by the month</text>
+      <text class="pc-n" x="30" y="86" text-anchor="middle">generator</text>
+    </g>
+  )}
+
+  {id === 'solar' && (
+    <g>
+      <circle class="pc-sun" cx="36" cy="34" r="14" />
+      <path class="pc-sunray" d={sunRays} />
+      <path class="i-faint" d="M10 86 Q 120 -10 250 86" />
+      <rect class="i-ground" x="0" y="170" width="360" height="40" />
+      <path class="i-line" d="M0 170 H360" />
+      
+      {[0, 1, 2].map((r) => {
+        const y = 108 + r * 26, s = 1 - r * 0.0;
+        return (
+          <g>
+            {[0, 1, 2, 3, 4, 5].map((c) => {
+              const x = 14 + r * 10 + c * 36;
+              return (
+                <g>
+                  <path class="i-thin" d={`M${x + 16} ${y + 6} V${y + 30}`} />
+                  <path class="pc-panel" d={`M${x} ${y + 8} L${x + 30} ${y - 2} L${x + 32} ${y + 4} L${x + 2} ${y + 14} Z`} />
+                  <path class="i-thin" d={`M${x + 10} ${y + 4.7} L${x + 12} ${y + 10.7} M${x + 20} ${y + 1.4} L${x + 22} ${y + 7.4}`} />
+                </g>
+              );
+            })}
+            <path class="i-line" d={`M${14 + r * 10} ${y + 6} H${14 + r * 10 + 214}`} />
+          </g>
+        );
+      })}
+      
+      <rect class="i-fill" x="246" y="140" width="22" height="30" rx="2" />
+      <path class="pc-power" d="M250 162 l5 -8 h-3 l5 -8" />
+      
+      <circle class="i-fill" cx="306" cy="74" r="48" />
+      <rect class="pc-glass" x="266" y="56" width="80" height="8" />
+      <rect class="pc-cell" x="266" y="64" width="80" height="10" />
+      <path class="i-thin" d="M276 64 V74 M296 64 V74 M316 64 V74 M336 64 V74" />
+      <rect class="i-metal" x="266" y="74" width="80" height="6" />
+      <rect class="i-fill" x="266" y="80" width="80" height="6" />
+      <path class="i-lead" d="M264 92 L222 112" />
+      <text class="pc-n" x="306" y="48" text-anchor="middle">glass</text>
+      <text class="pc-n" x="306" y="100" text-anchor="middle">silicon cells</text>
+      <text class="pc-t" x="120" y="188" text-anchor="middle">panels on trackers follow the sun</text>
+      <text class="pc-n" x="257" y="186" text-anchor="middle">inverter</text>
+    </g>
+  )}
+
+  {id === 'battery' && (
+    <g>
+      <rect class="i-ground" x="0" y="184" width="360" height="26" />
+      <path class="i-line" d="M0 184 H360" />
+      
+      <rect class="i-fill" x="10" y="48" width="236" height="132" rx="3" />
+      <path class="i-thin" d={rows(29, (i) => `M${14 + i * 8} 48 V56`)} />
+      {[0, 1, 2, 3, 4].map((k) => {
+        const x = 20 + k * 40;
+        return (
+          <g>
+            <rect class="i-metal" x={x} y="64" width="32" height="108" rx="2" />
+            {Array.from({ length: 7 }, (_, j) => (
+              <g>
+                <rect class="pc-module" x={x + 3} y={67 + j * 15} width="26" height="12" rx="1.5" />
+                <path class="i-thin" d={`M${x + 9.5} ${67 + j * 15} V${79 + j * 15} M${x + 16} ${67 + j * 15} V${79 + j * 15} M${x + 22.5} ${67 + j * 15} V${79 + j * 15}`} />
+              </g>
+            ))}
+          </g>
+        );
+      })}
+      <rect class="i-fill" x="222" y="64" width="18" height="108" rx="2" />
+      <path class="i-cool" d="M226 80 h10 M226 90 h10 M226 100 h10" />
+      <circle class="i-thin" cx="231" cy="140" r="6" />
+      
+      <rect class="i-fill" x="258" y="104" width="36" height="76" rx="3" />
+      <path class="pc-power" d="M268 150 l6 -10 h-4 l6 -10" />
+      <path class="i-thin" d="M264 112 H288 M264 118 H288" />
+      <rect class="i-metal" x="304" y="120" width="44" height="60" rx="3" />
+      <path class="i-thin" d="M310 126 V174 M316 126 V174 M336 126 V174 M342 126 V174" />
+      {[316, 326, 336].map((x) => <path class="i-fill" d={`M${x - 3} 120 L${x - 2} 100 H${x + 2} L${x + 3} 120 Z`} />)}
+      <path class="pc-power" d="M246 150 H258 M294 150 H304" />
+      <text class="pc-t" x="110" y="40" text-anchor="middle">racks of battery cells</text>
+      <text class="pc-n" x="231" y="198" text-anchor="middle">cooling</text>
+      <text class="pc-n" x="276" y="198" text-anchor="middle">inverter</text>
+      <text class="pc-n" x="326" y="198" text-anchor="middle">transformer</text>
+    </g>
+  )}
+
+  {(id === 'restart' || id === 'uprate') && (
+    <g>
+      <rect class="i-ground" x="0" y="188" width="360" height="22" />
+      <path class="i-line" d="M0 188 H360" />
+      
+      <path class="i-fill" d="M10 188 V86 A62 62 0 0 1 134 86 V188" />
+      <path class="i-thin" d="M18 188 V88 A54 54 0 0 1 126 88 V188" />
+      
+      <rect class="i-metal" x="34" y="94" width="34" height="80" rx="16" />
+      <rect class="pc-core" x="40" y="130" width="22" height="32" rx="2" />
+      <path class="i-thin" d="M44 130 V162 M48 130 V162 M52 130 V162 M56 130 V162 M60 130 V162" />
+      <path class="i-line" d="M45 94 V112 M51 94 V116 M57 94 V112" />
+      
+      <rect class="i-metal" x="90" y="70" width="26" height="104" rx="12" />
+      <path class="i-hot" d="M98 168 V100 Q 103 92 108 100 V168" />
+      <path class="i-hot" d="M100 168 V104 Q 103 99 106 104 V168" opacity=".6" />
+      <rect class="i-metal" x="72" y="80" width="12" height="34" rx="6" />
+      <path class="i-hot" d="M68 120 H90" />
+      <path class="i-cool" d="M90 160 H68" />
+      
+      <path class="pc-steam" d="M103 70 V58 H166 V100" />
+      <rect class="i-fill" x="148" y="88" width="128" height="100" />
+      <path class="i-fill" d="M156 104 L180 98 L180 132 L156 126 Z" />
+      <path class="i-thin" d={blades(156, 180, 11, 17, 115, 4, 2)} />
+      <path class="i-fill" d="M184 98 L214 90 L214 140 L184 132 Z" />
+      <path class="i-thin" d={blades(184, 214, 17, 25, 115, 5, 2)} />
+      <path class="i-fill" d="M216 98 L246 90 L246 140 L216 132 Z" />
+      <path class="i-thin" d={blades(216, 246, 17, 25, 115, 5, 2)} />
+      <path class="pc-shaft" d="M150 115 H254" />
+      <rect class="i-metal" x="248" y="100" width="24" height="30" rx="4" />
+      <rect class="i-fill" x="168" y="150" width="76" height="24" rx="3" />
+      <path class="i-cool" d="M174 158 H238 M174 166 H238" />
+      <path class="i-cool" d="M168 170 H136 V160 H126" />
+      <path class="pc-power" d="M272 115 H292" />
+      
+      <path class="i-fill" d="M296 188 Q 312 130 302 66 H346 Q 336 130 352 188 Z" />
+      <path class="i-faint" d="M314 60 q -8 -10 2 -20 q 10 -10 0 -22 M332 60 q 8 -12 -2 -24" />
+      {id === 'uprate' && (
+        <g>
+          <rect class="i-choke" x="150" y="92" width="126" height="54" rx="6" />
+          <rect class="i-choke" x="164" y="146" width="84" height="32" rx="6" />
+          <text class="pc-hot-t" x="240" y="48" text-anchor="middle">new turbine, generator, pumps</text>
+        </g>
+      )}
+      {id === 'restart' && <text class="pc-t" x="212" y="80" text-anchor="middle">turbine hall</text>}
+      <text class="pc-t" x="72" y="20" text-anchor="middle">containment</text>
+      <text class="pc-n" x="51" y="184" text-anchor="middle">core</text>
+      <text class="pc-n" x="103" y="184" text-anchor="middle">steam gen.</text>
+      <text class="pc-n" x="324" y="202" text-anchor="middle">cooling tower</text>
+      <text class="pc-n" x="206" y="202" text-anchor="middle">condenser</text>
+    </g>
+  )}
+
+  {id === 'newreactor' && (
+    <g>
+      <rect class="i-ground" x="0" y="188" width="360" height="22" />
+      <path class="i-line" d="M0 188 H360" />
+      
+      <rect class="i-fill" x="8" y="60" width="112" height="128" />
+      <rect class="i-metal" x="20" y="74" width="88" height="110" rx="10" />
+      <rect class="pc-sodium" x="25" y="90" width="78" height="90" rx="8" />
+      {Array.from({ length: 7 }, (_, i) => <rect class="pc-core" x={34 + i * 8.5} y="138" width="6" height="34" rx="1" />)}
+      <rect class="i-fill" x="84" y="96" width="12" height="44" rx="2" />
+      <path class="i-hot" d="M87 100 V136 M93 100 V136" />
+      <path class="i-line" d="M44 74 V128 M64 74 V128" />
+      
+      <path class="i-hot" d="M96 86 V48 H150 V70" />
+      <rect class="i-fill" x="136" y="70" width="42" height="118" rx="4" />
+      <rect class="pc-salthot" x="140" y="96" width="34" height="88" rx="2" />
+      <rect class="i-fill" x="186" y="70" width="42" height="118" rx="4" />
+      <rect class="pc-saltcold" x="190" y="120" width="34" height="64" rx="2" />
+      <path class="i-cool" d="M207 70 V40 H24 V74" />
+      
+      <path class="i-hot" d="M157 70 V30 H252 V80" />
+      <rect class="i-metal" x="240" y="80" width="24" height="70" rx="10" />
+      <path class="pc-steam" d="M264 96 H278" />
+      <path class="i-fill" d="M278 90 L310 82 L310 134 L278 126 Z" />
+      <path class="i-thin" d={blades(278, 310, 18, 26, 108, 5, 2)} />
+      <path class="pc-shaft" d="M310 108 H322" />
+      <rect class="i-metal" x="322" y="92" width="30" height="34" rx="4" />
+      <path class="i-cool" d="M240 140 H228" />
+      <text class="pc-t" x="56" y="110" text-anchor="middle">sodium pool</text>
+      <text class="pc-n" x="64" y="200" text-anchor="middle">core</text>
+      <text class="pc-t" x="182" y="202" text-anchor="middle">hot and cold salt tanks</text>
+      <text class="pc-n" x="300" y="150" text-anchor="middle">turbine</text>
+      <text class="pc-n" x="300" y="22" text-anchor="middle">drawn: Kemmerer 1</text>
+    </g>
+  )}
+
+  {id === 'micro' && (
+    <g>
+      <rect class="i-ground" x="0" y="190" width="360" height="20" />
+      <path class="i-line" d="M0 190 H360" />
+      
+      <circle class="i-metal" cx="74" cy="92" r="62" />
+      <circle class="i-fill" cx="74" cy="92" r="44" />
+      <path class="pc-graphite" d={hexes} />
+      {triso.map((t) => <circle class="pc-triso" cx={t.x} cy={t.y} r="1.4" />)}
+      {drums.map((d) => <g><circle class="i-fill" cx={d.cx} cy={d.cy} r="6" /><path class="pc-absorb" d={d.d} /></g>)}
+      
+      <rect class="i-fill" x="160" y="96" width="70" height="66" rx="4" />
+      <rect class="i-metal" x="172" y="104" width="46" height="50" rx="12" />
+      <rect class="pc-core" x="184" y="116" width="22" height="26" rx="3" />
+      <rect class="i-fill" x="238" y="96" width="112" height="66" rx="4" />
+      <path class="i-fill" d="M250 116 L282 110 L282 148 L250 142 Z" />
+      <path class="i-thin" d={blades(250, 282, 13, 19, 129, 5, 2)} />
+      <path class="pc-shaft" d="M282 129 H300" />
+      <rect class="i-metal" x="300" y="110" width="40" height="38" rx="4" />
+      <path class="i-hot" d="M218 116 H250" />
+      <path class="i-cool" d="M250 142 H218" />
+      <path class="i-line" d="M156 162 H354 M156 166 H354" />
+      {[180, 200, 316, 336].map((cx) => <g><circle class="i-metal" cx={cx} cy="178" r="10" /><circle class="i-thin" cx={cx} cy="178" r="4" /></g>)}
+      <path class="i-lead" d="M136 92 L160 110" />
+      <text class="pc-t" x="74" y="172" text-anchor="middle">core from above</text>
+      <text class="pc-n" x="74" y="186" text-anchor="middle">TRISO fuel, control drums</text>
+      <text class="pc-t" x="195" y="88" text-anchor="middle">reactor</text>
+      <text class="pc-t" x="294" y="88" text-anchor="middle">helium turbine</text>
+      <text class="pc-n" x="255" y="204" text-anchor="middle">on a trailer</text>
+    </g>
+  )}
+</svg>
