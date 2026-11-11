@@ -95,6 +95,11 @@ html { scroll-padding-top: 3.25rem; }
 /* article */
 .article-head { padding: 3rem 0 1.5rem; }
 .article-head h1 { font-family: var(--sans); font-size: clamp(1.9rem, 4.5vw, 2.7rem); line-height: 1.12; letter-spacing: -0.02em; margin: 0 0 1rem; }
+.lead-photo { margin: 1.5rem 0 0; }
+.lead-photo img { display: block; width: 100%; height: auto; aspect-ratio: 2 / 1; object-fit: cover; object-position: var(--pos, 50% 60%); border-radius: 6px; background: var(--bg-elev); }
+.lead-photo figcaption { font-family: var(--sans); font-size: 0.78rem; line-height: 1.5; color: var(--ink-3); margin-top: 0.5rem; }
+.lead-photo figcaption a { color: var(--ink-3); }
+@media (min-width: 80rem) { .lead-photo figcaption { font-size: 0.85rem; } }
 .plain { border-left: 3px solid var(--accent); padding: 0.6rem 1rem; margin: 1.25rem 0 0; background: var(--bg-elev); border-radius: 0 6px 6px 0; }
 .plain .label { font-family: var(--sans); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin: 0 0 0.25rem; }
 .plain p { margin: 0; color: var(--ink-2); }

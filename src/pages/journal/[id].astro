@@ -5,6 +5,7 @@ import { SITE, OG_VERSION } from '../../config';
 import { readingTime } from '../../utils';
 import { claimOf, claimsHomedAt } from '../../data/claims';
 import { layerOf, chapterOf, CHAPTERS } from '../../data/stack';
+import { JOURNAL_PHOTOS } from '../../data/journal-photos';
 export async function getStaticPaths() {
   // drafts render in `astro dev` only, so a draft can be read before it publishes; never in a build
   const posts = await getCollection('journal', ({ data }) => !data.draft || import.meta.env.DEV);
@@ -26,6 +27,7 @@ const isHome = claimsHomedAt(p.id).some((c) => c.home === p.id);
 const claim = isHome ? undefined : claimOf(p.id);
 const layer = layerOf(p.id);
 const ch = chapterOf(p.id);
+const photo = JOURNAL_PHOTOS[p.id];
 ---
 <Base title={p.data.title} description={p.data.summary} type="article" canonical={`${SITE.url}/journal/${p.id}/`} image={`/og/${p.id}-${OG_VERSION}.png`}>
   <article>
@@ -36,6 +38,12 @@ const ch = chapterOf(p.id);
         <span>{SITE.author}</span><span>·</span>
         <span>{readingTime(p.body ?? '')} min read</span>
       </div>
+      {photo && (
+        <figure class="lead-photo">
+          <img src={photo.src} alt={photo.alt} width={photo.w} height={photo.h} decoding="async" />
+          <figcaption>{photo.caption}. Photo: <a href={photo.page} rel="noopener">{photo.credit}, {photo.licence}</a></figcaption>
+        </figure>
+      )}
       <aside class="plain">
         <p class="label">In plain English</p>
         <p>{p.data.summary}</p>
