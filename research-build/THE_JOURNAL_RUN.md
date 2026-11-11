@@ -61,13 +61,15 @@ Check each against what changed; fix only what is now wrong or stale.
   Illustrations to the standard in memory (feedback-illustration-quality).
 - **Interview prep docs** in ~/Desktop/jobs/interview prep/ that are still in use, if they quote a changed fact.
 
-## 5. Company studies and calls (DORMANT)
+## 5. Company studies and calls
 
-Off until Tommy says he can defend himself and asks for them. Then, per the roadmap:
-- Company studies: BWXT first, written with Tommy, in ~/Desktop/jobs/company studies/, NEVER on the site.
-  No price, valuation, target or call. About 3, cap 5.
-- Calls: two, private, interviews only, never published or emailed.
-- From then on, every "1" run also checks each study and call against new filings and results.
+Plan agreed 11 Nov 2026 (full plan: study-decks/ROADMAP - buy side to PM.md, "The plan"). A "1" run never
+starts a study or call; Tommy starts each one himself ("start Centrus").
+- Company studies: three, cap five, emerging names only: Centrus Energy, then Bloom Energy, then Oklo or
+  Solaris (ASP Isotopes watch only). Written by Tommy, fact-checked and pushed back on by Claude, in
+  ~/Desktop/jobs/company studies/, NEVER on the site. No price, valuation, target or call.
+- Calls: two, from those studies, private, interviews only, never published or emailed.
+- Once a study or call exists, every "1" run also checks it against new filings and results.
 
 ## 6. Close
 
