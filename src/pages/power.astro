@@ -57,20 +57,19 @@ const gradeClass = (x: Grade) => (x === 'A' || x === 'B' || x === '∞' ? 'is-hi
           <figcaption>{gridPhoto.caption}. Photo: <a href={gridPhoto.page} rel="noopener">{gridPhoto.credit}</a>, {LICENCE_URL[gridPhoto.licence] && <a href={LICENCE_URL[gridPhoto.licence]} rel="noopener license">{gridPhoto.licence}</a>}{LICENCE_URL[gridPhoto.licence] ? ', resized' : gridPhoto.licence}</figcaption>
         </figure>}
         <div class="pw-grid-text">
-          <p class="pw-grid-lead">A grid connection needs no machine to buy and no fuel to find, and firm service promises power at all times short of an emergency. The catch is the date.</p>
-          <h3>Why builders stop waiting</h3>
+          <h3>Why the grid is a problem</h3>
           <ul>
-            <li><b>Often there is no date at all.</b> Dominion, in northern Virginia, America's biggest data-centre market, has given connection dates to 25 GW of new data centres out to 2031 and none yet to a further 45 GW. Its forecast puts load under its newest contracts at "2032 and beyond", so a request made today waits at least five to six years, my reading of its figures. <span class="pw-src-line">Dominion, GS-5 report (May 2026) and deck to PJM (29 September 2026).</span></li>
-            <li><b>Even the front of the queue can stop.</b> In Texas, 17 loads totalling 6,608 MW had cleared every check but the approval to switch on by 20 August 2026. ERCOT, the Texas grid operator, then paused that approval for data centres of 75 MW or more while it audits every request. <span class="pw-src-line">ERCOT to the Public Utility Commission of Texas (20 August 2026).</span></li>
-            <li><b>The building is quicker than the wires.</b> The federal regulator's own record notes a data centre "may only take 1-2 years to construct", while the lines and substations to serve it take longer. Large transformers alone are quoted at 36 months, and up to 60. <span class="pw-src-line">FERC, EL26-67 (18 June 2026); US Department of Energy (July 2024).</span></li>
-            <li><b>Where the grid moved, builders stayed on it.</b> Tenaga's Green Lane cut the time to connect a Johor data centre from 36 to 48 months to 12, and new building crossed the Causeway from Singapore. The wait, not the grid, is what pushes builders off it. <span class="pw-src-line">Tenaga Nasional, Green Lane release (9 August 2023).</span></li>
+            <li>No date: Dominion, in Virginia, has none yet for 45 GW of data centres. A request today waits 5 to 6 years or more.</li>
+            <li>Even approved sites can be paused: Texas froze switch-ons for big data centres in August 2026.</li>
+            <li>A data centre takes 1 to 2 years to build. A large transformer alone is quoted at 3 to 5 years.</li>
           </ul>
-          <h3>Why the cards below win on the eye test</h3>
+          <h3>Why builders go elsewhere</h3>
           <ul>
-            <li><b>They come with a date.</b> A rented gas fleet runs in 2 to 5 months, fuel cells in about 3 months by Bloom's own claim, gas engines in 27 to 38 months. Each is a date a buyer can plan around; the grid often gives none.</li>
-            <li><b>The builder holds the schedule.</b> On site, the power station is the builder's own project, so the date turns on its order and its permits rather than on a utility's upgrades for everyone in the queue.</li>
-            <li><b>The catch: they swap one queue for another.</b> GE Vernova's heavy gas turbine queue is about six years of its output, and it has sold slots for 2032 delivery. Gas still comes by pipe, and the builder now runs a power station of its own. That is why every card below has a weakness. <span class="pw-src-line">GE Vernova, third-quarter results (28 October 2026).</span></li>
+            <li>A date they can plan on: a rented gas fleet in months, gas engines in about 2 to 3 years.</li>
+            <li>Their own schedule, not a utility's queue.</li>
+            <li>The catch: the machine makers have queues too, and gas still comes by pipe.</li>
           </ul>
+          <p class="pw-src-line">Sources: Dominion (May and September 2026); ERCOT (20 August 2026); FERC (18 June 2026); US Department of Energy (July 2024); the cards below. Where the grid is quick, as in Johor (12 months), builders stay on it.</p>
           <p class="pcard-ch"><a href="/journal/the-queue-not-the-chip/#why-did-so-many-data-centres-come-to-johor">Chapter {chapterN('the-queue-not-the-chip')}: {chapterName('the-queue-not-the-chip')}</a><a href="/journal/america-rations-the-plug/#which-step-takes-longest-and-why-can-no-rule-hurry-it">Chapter {chapterN('america-rations-the-plug')}: {chapterName('america-rations-the-plug')}</a><a href="/journal/building-your-own-power/">Chapter {chapterN('building-your-own-power')}: {chapterName('building-your-own-power')}</a></p>
         </div>
       </div>
@@ -179,6 +178,7 @@ const gradeClass = (x: Grade) => (x === 'A' || x === 'B' || x === '∞' ? 'is-hi
   .pw-grid h3 { font-size: 1.05rem; margin: 1.1rem 0 0.4rem; }
   .pw-grid ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.55rem; font-size: 0.95rem; line-height: 1.5; }
   .pw-src-line { display: block; font-size: 0.78rem; color: var(--ink-2); margin-top: 0.15rem; }
+  .pw-grid-text > .pw-src-line, .pw-grid-text > .pcard-ch { margin-top: 0.9rem; }
   @media (max-width: 760px) { .pw-grid { grid-template-columns: 1fr; } }
   .pw-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr)); gap: 1.25rem; }
 
