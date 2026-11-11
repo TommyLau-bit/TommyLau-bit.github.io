@@ -33,6 +33,7 @@ export type Card = {
     permitMonths: Stat;
     bottleneck: Stat;     // display only
   };
+  role: string;           // one word for the job it does for a data centre (replaces OVR)
   ability: string;
   weakness: string;
   drawing: string;        // aria-label of the cutaway
@@ -41,6 +42,7 @@ export type Card = {
 export const CARDS: Card[] = [
  {
   "id": "grid",
+  "role": "Default",
   "group": "grid",
   "name": "Grid connection",
   "examples": "Johor and America",
@@ -120,6 +122,7 @@ export const CARDS: Card[] = [
  },
  {
   "id": "heavy-sc",
+  "role": "Bridge",
   "group": "biggas",
   "name": "Heavy-frame gas turbine, simple cycle",
   "examples": "GE Vernova 7HA, Siemens HL, Mitsubishi JAC",
@@ -211,6 +214,7 @@ export const CARDS: Card[] = [
  },
  {
   "id": "ccgt",
+  "role": "Baseload",
   "group": "biggas",
   "name": "Combined-cycle gas plant",
   "examples": "One gas turbine plus a steam turbine",
@@ -304,6 +308,7 @@ export const CARDS: Card[] = [
  },
  {
   "id": "aero",
+  "role": "Fast start",
   "group": "smallgas",
   "name": "Aeroderivative gas turbine",
   "examples": "GE Vernova LM2500XPRESS, LM6000",
@@ -396,6 +401,7 @@ export const CARDS: Card[] = [
  },
  {
   "id": "recip",
+  "role": "Modular",
   "group": "smallgas",
   "name": "Reciprocating gas engine",
   "examples": "Wärtsilä, Caterpillar",
@@ -481,6 +487,7 @@ export const CARDS: Card[] = [
  },
  {
   "id": "fuelcell",
+  "role": "Modular",
   "group": "smallgas",
   "name": "Solid oxide fuel cell",
   "examples": "Bloom Energy",
@@ -505,6 +512,7 @@ export const CARDS: Card[] = [
    "monthsToPower": {
     "value": 3,
     "display": "about 3 months (Bloom's claim)",
+    "claim": "Bloom's own claim of about 90 days, not a measured project",
     "basis": "Bloom's own statement that on-site generation can make power available within about 90 days 'in certain project scopes', subject to permitting and site conditions. A company claim, not a measured project. EIA's planning lead time for fuel cells is 3 years.",
     "source": "Bloom Energy, Form 10-K for 2025",
     "url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026006516/be-20251231.htm",
@@ -560,6 +568,7 @@ export const CARDS: Card[] = [
  },
  {
   "id": "fleet",
+  "role": "Stopgap",
   "group": "smallgas",
   "name": "Rented power fleet",
   "examples": "Solaris Energy Infrastructure",
@@ -640,6 +649,7 @@ export const CARDS: Card[] = [
  },
  {
   "id": "solar",
+  "role": "Daytime",
   "group": "sun",
   "name": "Utility solar farm",
   "examples": null,
@@ -721,6 +731,7 @@ export const CARDS: Card[] = [
  },
  {
   "id": "battery",
+  "role": "Buffer",
   "group": "sun",
   "name": "Battery storage, grid scale",
   "examples": null,
@@ -800,6 +811,7 @@ export const CARDS: Card[] = [
  },
  {
   "id": "restart",
+  "role": "Baseload",
   "group": "nuclear",
   "name": "Reactor restart",
   "examples": "Crane, Palisades, Duane Arnold",
@@ -892,6 +904,7 @@ export const CARDS: Card[] = [
  },
  {
   "id": "uprate",
+  "role": "Top-up",
   "group": "nuclear",
   "name": "Reactor uprate",
   "examples": null,
@@ -981,6 +994,7 @@ export const CARDS: Card[] = [
  },
  {
   "id": "newreactor",
+  "role": "Long game",
   "group": "nuclear",
   "name": "New reactor",
   "examples": "Kemmerer 1, Aurora, Hermes 2",
@@ -1066,6 +1080,7 @@ export const CARDS: Card[] = [
  },
  {
   "id": "micro",
+  "role": "Prospect",
   "group": "micro",
   "name": "Microreactor",
   "examples": "Janus programme, Radiant Kaleidos, BWXT Pele",

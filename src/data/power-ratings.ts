@@ -1,5 +1,5 @@
 // ── Power roster: how a rating is worked out ────────────────────────────────
-// Every rating is a formula of one sourced number on the card (src/data/power.ts).
+// Five ratings (Permitting ease and OVR cut: Tommy, 11 Nov 2026). Every rating is a formula of one sourced number on the card (src/data/power.ts).
 // No rating is typed in by hand. A number that could not be sourced is null, and
 // its rating is then n/a. Each rating is clamped to 25..99; a range uses its midpoint.
 
@@ -11,17 +11,18 @@ export type Stat = {
   source?: string;     // publisher and document
   url?: string;
   date?: string;
+  claim?: string;      // set when the number is a company's own claim, not a measured project: flagged on the card
 };
 
 export const mid = (v: Num): number | null => (v === null ? null : Array.isArray(v) ? (v[0] + v[1]) / 2 : v);
 const clamp = (x: number) => Math.max(25, Math.min(99, Math.round(x)));
 
-export type RatingKey = 'speed' | 'size' | 'cost' | 'reliability' | 'fuel' | 'permitting';
+export type RatingKey = 'speed' | 'size' | 'cost' | 'reliability' | 'fuel';
 export type Rating = {
   key: RatingKey;
   name: string;
   short: string;
-  input: 'monthsToPower' | 'sizeMW' | 'costPerKW' | 'elcc' | 'fuelDays' | 'permitMonths';
+  input: 'monthsToPower' | 'sizeMW' | 'costPerKW' | 'elcc' | 'fuelDays';
   inputName: string;
   formula: string;     // shown on the page
   anchors: string;     // worked examples, shown on the page
@@ -44,9 +45,6 @@ export const RATINGS: Rating[] = [
   { key: 'fuel', name: 'Fuel security', short: 'FUEL', input: 'fuelDays', inputName: 'days it runs if fuel deliveries stop',
     formula: '25 + 74 × log₁₀(days + 1) ÷ log₁₀(1,826)', anchors: '0 days (gas on a pipe) = 25, 30 = 59, 540 = 87, 1,825 (5 years) = 99; no fuel to buy = 99',
     f: (d) => 25 + (74 * Math.log10(d + 1)) / Math.log10(1826) },
-  { key: 'permitting', name: 'Permitting ease', short: 'PRM', input: 'permitMonths', inputName: 'months for the main permit or licence',
-    formula: '99 − 15 × log₂(months ÷ 6)', anchors: 'same curve as Speed: 6 months = 99, 24 = 69, 48 = 54',
-    f: (m) => 99 - 15 * Math.log2(m / 6) },
 ];
 
 // A stat whose value is Infinity means "no fuel to buy" (sunlight): it rates 99.
@@ -55,12 +53,4 @@ export const rateOne = (r: Rating, s: Stat | undefined): number | null => {
   if (x === null) return null;
   if (!Number.isFinite(x)) return 99;
   return clamp(r.f(x));
-};
-
-// OVR: the plain average of the ratings a card has, shown only when it has at least
-// four of the six; with fewer, an average says more about the gaps than the machine.
-export const OVR_MIN = 4;
-export const ovr = (vals: (number | null)[]) => {
-  const v = vals.filter((x): x is number => x !== null);
-  return v.length >= OVR_MIN ? Math.round(v.reduce((a, b) => a + b, 0) / v.length) : null;
 };

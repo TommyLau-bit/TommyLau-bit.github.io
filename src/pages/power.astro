@@ -7,21 +7,20 @@ import Base from '../layouts/Base.astro';
 import PowerCutaway from '../components/PowerCutaway.astro';
 import { GROUPS, CARDS } from '../data/power';
 import { PHOTOS } from '../data/power-photos';
-import { RATINGS, rateOne, ovr, OVR_MIN, type RatingKey } from '../data/power-ratings';
+import { RATINGS, rateOne, type RatingKey } from '../data/power-ratings';
 import { CHAPTERS } from '../data/stack';
 
 const chapterN = (slug: string) => CHAPTERS.findIndex((c) => c.slug === slug) + 1;
 const chapterName = (slug: string) => CHAPTERS.find((c) => c.slug === slug)?.name ?? slug;
 const cards = CARDS.map((c) => {
   const r = Object.fromEntries(RATINGS.map((R) => [R.key, rateOne(R, c.stats[R.input])])) as Record<RatingKey, number | null>;
-  return { ...c, r, ovr: ovr(Object.values(r)), photo: PHOTOS[c.id] };
+  const claims = RATINGS.filter((R) => c.stats[R.input].claim).map((R) => ({ key: R.key, name: R.name, text: c.stats[R.input].claim as string }));
+  return { ...c, r, claims, photo: PHOTOS[c.id] };
 });
-const tier = (o: number | null) => (o === null ? 'na' : o >= 80 ? 'gold' : o >= 65 ? 'silver' : 'bronze');
 const show = (x: number | null) => (x === null ? 'n/a' : String(x));
 ---
 <Base title="Power" description="Every way to power an AI data centre, as a roster of player cards: the grid, gas turbines, engines, fuel cells, solar, batteries and reactors." wide>
   <header class="article-head pw-head">
-    <p class="kicker">Draft</p>
     <h1>Power: the roster</h1>
     <p class="pw-lede">Every way to power an AI data centre, as a team of players, in the order builders reach for them: the grid first, then the machines they build when the grid makes them wait.</p>
   </header>
@@ -34,12 +33,12 @@ const show = (x: number | null) => (x === null ? 'n/a' : String(x));
       </div>
       <div class="pw-cards">
         {cards.filter((c) => c.group === g.id).map((c) => (
-          <article class={`pcard pcard--${tier(c.ovr)}${c.photo ? '' : ' pcard--locked'}`} id={c.id} data-flip>
+          <article class={`pcard${c.photo ? '' : ' pcard--locked'}`} id={c.id} data-flip>
             <div class="pcard-photo">
               {c.photo
                 ? <img src={c.photo.src} alt={c.photo.alt} loading="lazy" decoding="async" style={c.photo.pos ? `object-position:${c.photo.pos}` : undefined} />
                 : <div class="pcard-ghost"><PowerCutaway id={c.id} label="The outline of a microreactor on a trailer: none has run yet, so there is no photograph." /><span>Not built yet</span></div>}
-              <div class="pcard-ovr"><b>{show(c.ovr)}</b><span>OVR</span></div>
+              <span class="pcard-role">{c.role}</span>
               <span class="pcard-pos">{g.tag}</span>
             </div>
             <div class="pcard-body">
@@ -51,12 +50,13 @@ const show = (x: number | null) => (x === null ? 'n/a' : String(x));
                   return (
                     <li>
                       <span class="pr-name">{R.name}</span>
-                      <b class={v === null ? 'is-na' : v >= 80 ? 'is-hi' : v < 50 ? 'is-lo' : ''}>{show(v)}</b>
+                      <b class={v === null ? 'is-na' : v >= 80 ? 'is-hi' : v < 50 ? 'is-lo' : ''}>{show(v)}{c.claims.some((x) => x.key === R.key) && <sup>*</sup>}</b>
                       <span class="pr-bar"><i style={`width:${v ?? 0}%`}></i></span>
                     </li>
                   );
                 })}
               </ul>
+              {c.claims.map((x) => <p class="pcard-claim">* {x.name}: {x.text}.</p>)}
               <p class="pcard-ab"><span>Special ability</span>{c.ability}</p>
               <p class="pcard-wk"><span>Weakness</span>{c.weakness}</p>
               <p class="pcard-ch">
@@ -72,7 +72,7 @@ const show = (x: number | null) => (x === null ? 'n/a' : String(x));
 
   <details class="pw-how" id="formulas">
     <summary>How the ratings are worked out</summary>
-    <p>Each rating reads one sourced number and nothing else, by the formula below. Ratings run from 25 to 99; a range uses its middle. A number that could not be found in a primary source is n/a, and so is its rating. OVR is the average of a card's ratings, shown only when it has at least {OVR_MIN} of the six.</p>
+    <p>Each rating reads one sourced number and nothing else, by the formula below. Ratings run from 25 to 99; a range uses its middle. A number that could not be found in a primary source is n/a, and so is its rating. There is no overall score: the ratings measure different things, and the role on each card says what it is for.</p>
     <table class="pw-ftable">
       <thead><tr><th scope="col">Rating</th><th scope="col">Reads</th><th scope="col">Formula</th></tr></thead>
       <tbody>
@@ -131,19 +131,15 @@ const show = (x: number | null) => (x === null ? 'n/a' : String(x));
     box-shadow: 0 10px 24px -16px rgba(0,0,0,.5);
     transition: transform .55s cubic-bezier(.2,.8,.2,1), opacity .55s ease, filter .55s ease;
   }
-  .pcard--gold { --tier: #b7861b; --tier-2: #f2c94c; }
-  .pcard--silver { --tier: #7b8794; --tier-2: #cfd6de; }
-  .pcard--bronze { --tier: #8a5a35; --tier-2: #d39a6a; }
-  .pcard--na { --tier: var(--ink-3); --tier-2: #9a9a94; }
   .pcard.is-hidden { opacity: 0; transform: perspective(900px) rotateY(-18deg) translateY(18px); filter: grayscale(1); }
   .pcard.is-shown { opacity: 1; transform: none; filter: none; }
 
   .pcard-photo { position: relative; aspect-ratio: 4 / 3; overflow: hidden; background: #111; }
   .pcard-photo img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; }
   .pcard-photo::before { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.35) 0%, rgba(0,0,0,0) 35%); pointer-events: none; z-index: 1; }
-  .pcard-ovr { position: absolute; top: 0.7rem; left: 0.7rem; z-index: 2; width: 3.4rem; height: 3.4rem; border-radius: 10px; display: grid; place-content: center; text-align: center; color: #fff; background: linear-gradient(145deg, var(--tier-2), var(--tier)); box-shadow: 0 2px 8px rgba(0,0,0,.4); }
-  .pcard-ovr b { font-size: 1.55rem; line-height: 1; font-weight: 900; font-variant-numeric: tabular-nums; text-shadow: 0 1px 2px rgba(0,0,0,.35); }
-  .pcard-ovr span { font-size: 0.58rem; font-weight: 800; letter-spacing: 0.12em; }
+  .pcard-role { position: absolute; top: 0.75rem; left: 0.75rem; z-index: 2; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: #fff; background: var(--tier); border-radius: 6px; padding: 0.3rem 0.6rem; box-shadow: 0 2px 8px rgba(0,0,0,.35); }
+  .pcard-claim { margin: 0.35rem 0 0; font-size: 0.75rem; color: var(--ink-3); }
+  .pcard-ratings sup { font-size: 0.65em; margin-left: 1px; }
   .pcard-pos { position: absolute; top: 0.85rem; right: 0.8rem; z-index: 2; font-size: 0.66rem; font-weight: 800; letter-spacing: 0.14em; color: #fff; background: rgba(0,0,0,.45); border-radius: 4px; padding: 0.15rem 0.4rem; }
 
   /* the one card with no photograph: a dark silhouette, still locked */
