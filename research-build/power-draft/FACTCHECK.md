@@ -189,3 +189,8 @@ File september_generator2026.xlsx re-downloaded, sha256 matched; latest release 
 ## Filled gaps, checked 11 Nov 2026 by an independent agent
 
 TNB Connection Charges Book 2025 Table 7 figures OK (worked example, not a real project); rate fixed from RM4.2 to about RM4.07 (Bank Negara, 11 Nov 2026), so about US$505/kW, shown as about US$500. EIA EPA Table 11.1 OK (2025 SAIDI 269.2 with major events, 99.949%). PJM 2029/30 ELCC OK: Diesel Utility 92%, Nuclear 96%, Gas CT 59%, Gas CC 75%; Manual 21B puts RICE in Diesel technology type (wording now "under PJM's rules"). Bloom 10-K 99.9% fleet availability verbatim OK; fuel cells sit in PJM's Other Unlimited Resource Class (wording fixed). Solaris 10-Q US$163.0m, over 200 MW, so at most US$815/kW OK (turbine price only, wording fixed). TerraPower Natrium refuelling every 24 months verbatim OK; Oklo 10 years UNVERIFIED at primary level, kept as Oklo's own target; Kairos online refuelling attributed to Kairos. INL microreactor OCC 23,592 FOAK / 10,825 NOAK OK (6.2 MWe, excludes fuel; noted).
+
+
+## Grid speed (Dominion), checked 12 Nov 2026 by an independent agent
+
+Dominion to PJM LAS (29 Sep 2026) slide 5 "Non-firm load - includes load from ELOAs (2032 and beyond)" OK; ramp "5 years maturing at a utilization rate of 63%" OK and is a ramp after energisation, not a wait; slide 6 32,473 MW ELOAs, 19,044 MW not in forecast (59%) OK. GS-5 report (May 2026) p.2: energisation dates to 25 GW "between now and 2031", 45 GW with no dates yet OK. "At least 5 to 6 years from a 2026 request" is a fair floor but our inference, not a Dominion figure: wording says so. Replaces Johor's 12 to 48 months as the grid's Speed (grade C to E): Tommy, 12 Nov, asked why build your own if the grid only rated C.

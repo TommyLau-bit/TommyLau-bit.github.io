@@ -67,16 +67,7 @@ export const CARDS: Card[] = [
     "source": "ERCOT presentation to the Public Utility Commission of Texas (20 August 2026), as cited in the piece",
     "date": "2026-08-20"
    },
-   "monthsToPower": {
-    "value": [
-     12,
-     48
-    ],
-    "display": "12 months on Green Lane, 36 to 48 before (Johor)",
-    "basis": "Time to connect a data centre at 132 or 275 kV in Malaysia: 36 to 48 months before Tenaga's Green Lane Pathway (8 August 2023), 12 months under it, plant included. No equivalent American figure is published for loads.",
-    "source": "Tenaga Nasional, Green Lane Pathway, as cited in the piece",
-    "date": "2023-08-08"
-   },
+   "monthsToPower": {"value": [60, 72], "display": "at least 5 to 6 years (Dominion, northern Virginia; my inference)", "short": "5 to 6+ years (Dominion, Virginia)", "basis": "Dominion, America's biggest data-centre market: it has given connection dates to 25 GW of new data centres out to 2031 and none yet to a further 45 GW, and its forecast models load under its newest contracts as arriving \"2032 and beyond\", a modelling assumption, not a date anyone has been given. So a 2026 request waits at least five to six years, my inference and a floor: it queues behind the undated 45 GW. First power is not full load: Dominion assumes five more years of ramp after it. One utility, not a national figure; sites with spare substation capacity can connect sooner, and Johor's fast lane connects in 12 months (36 to 48 before it).", "source": "Dominion Energy, GS-5 Large-Load Rate Class Report (May 2026); Dominion to PJM's Load Analysis Subcommittee (29 September 2026)", "url": "https://sustainability.dominionenergy.com/GS-5%20Large%20Load%20Rate%20Class%20Report.pdf", "date": "2026-09-29"},
    "costPerKW": {"value": 505, "display": "about US$500/kW (Tenaga's worked example)", "short": "about US$500/kW to connect (Tenaga example)", "basis": "Tenaga's own worked example of its connection charge for a 40 MW high-voltage customer, not a real project: RM82,257,523 for 40,000 kW, about RM2,056/kW, at about RM4.07 to the US dollar (Bank Negara Malaysia, 11 Nov 2026). The charge is the project cost less 15 years of discounted network revenue, so it varies by site and can be zero. No US utility or regulator publishes a per-kW figure for data centres.", "source": "Tenaga Nasional, Connection Charges Book 2025, Table 7", "url": "https://www.tnb.com.my/assets/files/TNB_Connection_Charges_Book_2025_ENG.pdf", "date": "2025"},
    "capacityFactor": {
     "display": "n/a",
