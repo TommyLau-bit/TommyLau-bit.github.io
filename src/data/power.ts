@@ -1,18 +1,18 @@
 // ── Power: the roster of ways to power an AI data centre ────────────────────
-// DRAFT (Tommy, 11 Nov 2026). The grid first, then the machines a builder
-// "unlocks" to skip its queue. Every number is sourced and dated; a number that
+// DRAFT (Tommy, 11 Nov 2026). The grid first, then the machines builders turn to
+// when it makes them wait (no "unlock" idea: Tommy, 11 Nov 2026). Every number is sourced and dated; a number that
 // could not be sourced is null and shows as n/a. Ratings are never typed in:
 // they are worked out from these numbers by the formulas in power-ratings.ts.
 import type { Stat } from './power-ratings';
 
-export type Group = { id: string; n: number; name: string; tag: string; unlock: string };
+export type Group = { id: string; name: string; tag: string; why: string };
 export const GROUPS: Group[] = [
-  { id: 'grid', n: 0, name: 'The grid connection', tag: 'GRID', unlock: 'Everyone starts here: no machine to buy and no fuel to find, if the grid will connect you.' },
-  { id: 'biggas', n: 1, name: 'Big gas turbines', tag: 'GAS-L', unlock: 'Unlocked when the grid says wait: build your own power station beside the campus.' },
-  { id: 'smallgas', n: 2, name: 'Small gas machines', tag: 'GAS-S', unlock: 'Unlocked when the big turbines are sold out: smaller machines, from other queues.' },
-  { id: 'sun', n: 3, name: 'Solar and batteries', tag: 'SUN', unlock: 'Unlocked when gas is slow: the fastest power to build, but not through a winter night.' },
-  { id: 'nuclear', n: 4, name: 'Large nuclear', tag: 'NUC', unlock: 'Unlocked when you need power every hour of the year: old reactors first, new ones later.' },
-  { id: 'micro', n: 5, name: 'Microreactors', tag: 'MICRO', unlock: 'The last unlock: a reactor small enough to ship, if its fuel can be made.' },
+  { id: 'grid', name: 'The grid', tag: 'GRID', why: 'Where every builder starts: no machine to buy and no fuel to find, if the grid will connect you.' },
+  { id: 'biggas', name: 'Big gas turbines', tag: 'GAS-L', why: 'When the grid makes you wait, you build your own power station beside the campus.' },
+  { id: 'smallgas', name: 'Small gas machines', tag: 'GAS-S', why: 'When the big turbines are sold out, smaller machines come from other factories and other queues.' },
+  { id: 'sun', name: 'Solar and batteries', tag: 'SUN', why: 'The fastest power to build, but it cannot carry a winter night.' },
+  { id: 'nuclear', name: 'Large nuclear', tag: 'NUC', why: 'Power for every hour of the year: old reactors first, new ones later.' },
+  { id: 'micro', name: 'Microreactors', tag: 'MICRO', why: 'A reactor small enough to move by road, if its fuel can be made.' },
 ];
 
 export type Card = {

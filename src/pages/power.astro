@@ -23,19 +23,18 @@ const show = (x: number | null) => (x === null ? 'n/a' : String(x));
   <header class="article-head pw-head">
     <p class="kicker">Draft</p>
     <h1>Power: the roster</h1>
-    <p class="pw-lede">Every way to power an AI data centre, as a team of players. Everyone starts on the grid. When the grid makes you wait, you unlock the next machine.</p>
+    <p class="pw-lede">Every way to power an AI data centre, as a team of players, in the order builders reach for them: the grid first, then the machines they build when the grid makes them wait.</p>
   </header>
 
   {GROUPS.map((g) => (
     <section class="pw-group" id={g.id}>
-      <div class="pw-unlock">
-        <span class="pw-unlock-n">{g.n === 0 ? 'Starter' : `Unlock ${g.n}`}</span>
+      <div class="pw-ghead">
         <h2>{g.name}</h2>
-        <p>{g.unlock}</p>
+        <p>{g.why}</p>
       </div>
       <div class="pw-cards">
         {cards.filter((c) => c.group === g.id).map((c) => (
-          <article class={`pcard pcard--${tier(c.ovr)}${c.photo ? '' : ' pcard--locked'}`} id={c.id} data-unlock>
+          <article class={`pcard pcard--${tier(c.ovr)}${c.photo ? '' : ' pcard--locked'}`} id={c.id} data-flip>
             <div class="pcard-photo">
               {c.photo
                 ? <img src={c.photo.src} alt={c.photo.alt} loading="lazy" decoding="async" style={c.photo.pos ? `object-position:${c.photo.pos}` : undefined} />
@@ -99,14 +98,14 @@ const show = (x: number | null) => (x === null ? 'n/a' : String(x));
 </Base>
 
 <script is:inline>
-  // the unlock: cards flip in as they reach the screen. Without the script, or with
+  // cards flip in as they reach the screen. Without the script, or with
   // reduced motion, every card is simply shown.
   (function () {
     if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     var io = new IntersectionObserver(function (es) {
-      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('is-unlocked'); e.target.classList.remove('is-locked'); io.unobserve(e.target); } });
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('is-shown'); e.target.classList.remove('is-hidden'); io.unobserve(e.target); } });
     }, { rootMargin: '0px 0px -10% 0px' });
-    document.querySelectorAll('[data-unlock]').forEach(function (c) { if (c.getBoundingClientRect().top < innerHeight) return; c.classList.add('is-locked'); io.observe(c); });
+    document.querySelectorAll('[data-flip]').forEach(function (c) { if (c.getBoundingClientRect().top < innerHeight) return; c.classList.add('is-hidden'); io.observe(c); });
   })();
 </script>
 
@@ -116,10 +115,9 @@ const show = (x: number | null) => (x === null ? 'n/a' : String(x));
   .pw-lede { font-size: 1.15rem; color: var(--ink-2); max-width: 40rem; margin: 0; }
 
   .pw-group { margin: 2.75rem 0 0; scroll-margin-top: 3.5rem; }
-  .pw-unlock { border-top: 2px solid var(--ink); padding-top: 0.9rem; margin-bottom: 1.25rem; }
-  .pw-unlock-n { font-family: var(--sans); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); }
-  .pw-unlock h2 { font-family: var(--sans); font-size: 1.5rem; margin: 0.15rem 0 0.3rem; letter-spacing: -0.01em; }
-  .pw-unlock p { margin: 0; color: var(--ink-2); max-width: 44rem; }
+  .pw-ghead { border-top: 2px solid var(--ink); padding-top: 0.9rem; margin-bottom: 1.25rem; }
+  .pw-ghead h2 { font-family: var(--sans); font-size: 1.5rem; margin: 0 0 0.3rem; letter-spacing: -0.01em; }
+  .pw-ghead p { margin: 0; color: var(--ink-2); max-width: 44rem; }
 
   .pw-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr)); gap: 1.25rem; }
 
@@ -137,13 +135,11 @@ const show = (x: number | null) => (x === null ? 'n/a' : String(x));
   .pcard--silver { --tier: #7b8794; --tier-2: #cfd6de; }
   .pcard--bronze { --tier: #8a5a35; --tier-2: #d39a6a; }
   .pcard--na { --tier: var(--ink-3); --tier-2: #9a9a94; }
-  .pcard.is-locked { opacity: 0; transform: perspective(900px) rotateY(-18deg) translateY(18px); filter: grayscale(1); }
-  .pcard.is-unlocked { opacity: 1; transform: none; filter: none; }
-  .pcard.is-unlocked:not(.pcard--locked) .pcard-photo::after { content: 'Unlocked'; position: absolute; top: 50%; left: 50%; z-index: 3; font-size: 0.85rem; font-weight: 900; letter-spacing: 0.2em; text-transform: uppercase; color: #fff; border: 2px solid #fff; border-radius: 4px; padding: 0.2rem 0.5rem; background: rgba(0,0,0,.35); animation: pw-stamp 1.5s ease forwards; pointer-events: none; }
-  @keyframes pw-stamp { 0% { opacity: 0; transform: translate(-50%,-50%) scale(1.8) rotate(-8deg); } 20% { opacity: 1; transform: translate(-50%,-50%) scale(1) rotate(-8deg); } 70% { opacity: 1; } 100% { opacity: 0; transform: translate(-50%,-50%) rotate(-8deg); } }
+  .pcard.is-hidden { opacity: 0; transform: perspective(900px) rotateY(-18deg) translateY(18px); filter: grayscale(1); }
+  .pcard.is-shown { opacity: 1; transform: none; filter: none; }
 
-  .pcard-photo { position: relative; aspect-ratio: 4 / 3; background: #111; }
-  .pcard-photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .pcard-photo { position: relative; aspect-ratio: 4 / 3; overflow: hidden; background: #111; }
+  .pcard-photo img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; }
   .pcard-photo::before { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.35) 0%, rgba(0,0,0,0) 35%); pointer-events: none; z-index: 1; }
   .pcard-ovr { position: absolute; top: 0.7rem; left: 0.7rem; z-index: 2; width: 3.4rem; height: 3.4rem; border-radius: 10px; display: grid; place-content: center; text-align: center; color: #fff; background: linear-gradient(145deg, var(--tier-2), var(--tier)); box-shadow: 0 2px 8px rgba(0,0,0,.4); }
   .pcard-ovr b { font-size: 1.55rem; line-height: 1; font-weight: 900; font-variant-numeric: tabular-nums; text-shadow: 0 1px 2px rgba(0,0,0,.35); }

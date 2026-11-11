@@ -16,7 +16,7 @@ export type Stat = {
 export const mid = (v: Num): number | null => (v === null ? null : Array.isArray(v) ? (v[0] + v[1]) / 2 : v);
 const clamp = (x: number) => Math.max(25, Math.min(99, Math.round(x)));
 
-export type RatingKey = 'speed' | 'scale' | 'cost' | 'reliability' | 'fuel' | 'permitting';
+export type RatingKey = 'speed' | 'size' | 'cost' | 'reliability' | 'fuel' | 'permitting';
 export type Rating = {
   key: RatingKey;
   name: string;
@@ -32,7 +32,7 @@ export const RATINGS: Rating[] = [
   { key: 'speed', name: 'Speed', short: 'SPD', input: 'monthsToPower', inputName: 'months from order to first power',
     formula: '99 − 15 × log₂(months ÷ 6)', anchors: '6 months = 99, 12 = 84, 24 = 69, 48 = 54, 96 = 39',
     f: (m) => 99 - 15 * Math.log2(m / 6) },
-  { key: 'scale', name: 'Scale', short: 'SCL', input: 'sizeMW', inputName: 'MW per unit',
+  { key: 'size', name: 'Size', short: 'SIZE', input: 'sizeMW', inputName: 'MW from one unit (one machine, farm or reactor)',
     formula: '40 + 59 × log₁₀(MW) ÷ 3', anchors: '1 MW = 40, 10 MW = 60, 100 MW = 79, 1,000 MW = 99',
     f: (mw) => 40 + (59 * Math.log10(mw)) / 3 },
   { key: 'cost', name: 'Cost', short: 'CST', input: 'costPerKW', inputName: 'US$ per kW to build',
