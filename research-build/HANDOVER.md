@@ -26,6 +26,9 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 2. building-your-own-power.md: rented fleets (Solaris) explained beside aeroderivatives, engines and fuel cells; Caterpillar quote cut (2c769f0).
 3. Real Commons photos under the title of five pieces: Johor, America, own power, nuclear, microreactors (5b791cb, f91361a). Equipment queue and solar have none.
 5. Later 11 Nov (Tommy: "can't you just use simple photos of a transformer and solar panels"): the equipment queue now shows a high-voltage substation transformer (Novoklimov, CC0) and solar a Topaz Solar Farm photo (US Fish and Wildlife Service, public domain), the same files as the Power page's grid and solar cards. All seven pieces now have a lead photo; where no open photo of the real site exists, a real photo of the machine is fine.
+6. Photo credits (73c8884): all 16 Commons licences checked against the Commons API on 11 Nov, all match (5 CC0, 4 public domain, 5 CC BY-SA, 2 CC BY). CC BY and BY-SA credits now link the licence deed and say "resized" (LICENCE_URL in src/data/journal-photos.ts, used by the pieces and /power). Any new photo: openly licensed, credited, licence in LICENCE_URL if attribution-required.
+**Standing rule (Tommy, 11 Nov):** any photo that suits the piece is fine; the real site is not required (memory: journal-photos).
+**Open: nothing.** Everything Tommy asked for on 11 Nov is done and live. Next: Tommy drafts the Centrus study; the next "1" run starts from the Not landed yet list below.
 4. New /power roster page and a third top-menu item, Power (7fba27f to 46d8db5). CLAUDE.md menu rule and JOURNAL ONLY banner include it; THE_JOURNAL_RUN.md now lists the Power page as a loose end to keep in step with the pieces.
 No claims changed or reworded; no LinkedIn posts (Tommy: none for the Power page); briefs and scheduled emails quote none of the changed facts.
 
