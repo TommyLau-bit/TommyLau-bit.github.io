@@ -179,3 +179,8 @@ OK 159, WRONG 6, UNVERIFIED 4 (of 169 checks).
 8. recip elcc: PJM's Diesel Utility class (92%) is defined to include RICE; confirm in Manual 21B whether gas engines are classed before saying "no ELCC class".
 9. solar permitMonths: remove or source the "Queued Up 2026, 61-month median" parenthesis.
 10. Smaller: recip permit "not decided" unsourced; uprate "acceptance review is extra" not on the NRC page; GROUPS grid line "cheapest power there is" has no number behind it; newreactor date could read "approved 4 March, issued 9 March 2026"; grid months display could separate Green Lane (12) from before (36 to 48).
+
+
+## Potential (EIA-860M, September 2026), checked 11 Nov 2026 by an independent agent
+
+File september_generator2026.xlsx re-downloaded, sha256 matched; latest release (23 Oct 2026, next 24 Nov). Recomputed from scratch: combined cycle 47,146.2 MW OK; gas GT >=100 MW 16,645.6 and <100 MW 6,349.7 OK (gas only; two petroleum GT units of 114 MW excluded); gas IC 952.0 OK (gas only); fuel cells planned 0, operating 373.8 MW OK; solar 122,025.2 OK; batteries 64,234.6 OK; planned nuclear 4,968.0 OK (Kemmerer 500 L; four Matador 1,117 P); restarts Palisades 811.8 (OA) and Crane 980.8 (OS) = 1,792.6 OK, but the file has no "return date" column (dates are in Other Modification): wording fixed; uprates 13 units 1,048.7 MW summer OK; no rental figure in this file OK. The 100 MW heavy/aero split is a proxy, labelled as such.

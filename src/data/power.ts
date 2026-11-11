@@ -837,7 +837,7 @@ export const CARDS: Card[] = [
    }
   ],
   "stats": {
-   "plannedMW": {"value": 1792.6, "display": "about 1.8 GW", "basis": "Palisades (811.8 MW) and Crane, formerly Three Mile Island 1 (980.8 MW), listed as out of service on the Operating sheet with return dates; nameplate. Duane Arnold appears only as retired.", "source": "EIA, Form EIA-860M, Preliminary Monthly Electric Generator Inventory, September 2026", "url": "https://www.eia.gov/electricity/data/eia860m/xls/september_generator2026.xlsx", "date": "23 Oct 2026"},
+   "plannedMW": {"value": 1792.6, "display": "about 1.8 GW", "basis": "Palisades (811.8 MW) and Crane, formerly Three Mile Island 1 (980.8 MW), listed as out of service on the Operating sheet, with modification dates of November 2026 and June 2027; nameplate. Duane Arnold appears only as retired.", "source": "EIA, Form EIA-860M, Preliminary Monthly Electric Generator Inventory, September 2026", "url": "https://www.eia.gov/electricity/data/eia860m/xls/september_generator2026.xlsx", "date": "23 Oct 2026"},
    "sizeMW": {
     "value": [
      615,
