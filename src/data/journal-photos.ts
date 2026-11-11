@@ -1,6 +1,7 @@
 // One real photograph near the top of each journal piece (Tommy, 11 Nov 2026: trial, Chapter 4 first).
-// The photo shows the machine or the work the piece is about, not scenery (Tommy, 12 Nov 2026: Johor,
-// America and own power swapped from place shots to a switchyard, a grid control room and a gas turbine); a real
+// The photo shows the machine or the work the piece is about, not scenery (Tommy, 12 Nov 2026: America and own
+// power swapped to a grid control room and a gas turbine; Johor keeps the Causeway, as no open photo of Johor's
+// grid or data centres exists); a real
 // photo of the machine the piece is about (Tommy, 11 Nov 2026: transformer for the equipment queue, solar farm for solar). Every photo is
 // public domain or openly licensed on Wikimedia Commons and is credited under it. Files are in
 // public/journal-photos/, 900 px wide.
@@ -20,11 +21,11 @@ export type Photo = { src: string; alt: string; caption: string; credit: string;
 export const JOURNAL_PHOTOS: Record<string, Photo> = {
   'the-queue-not-the-chip': {
     src: '/journal-photos/the-queue-not-the-chip.jpg',
-    alt: 'Rows of high-voltage circuit breakers, insulators and steel gantries in a substation switchyard under a blue sky.',
-    caption: 'A high-voltage substation at Kimanis, Sabah, in 2014: the grid hardware every Malaysian data centre waits on. Johor has no open photo of its own',
-    credit: 'CEphoto, Uwe Aranas', licence: 'CC BY-SA 3.0',
-    page: 'https://commons.wikimedia.org/wiki/File:Kimanis_Sabah_Kimanis-Power-Plant-09.jpg',
-    w: 900, h: 600, pos: '50% 55%',
+    alt: 'A long road causeway crossing a strait from a city on the near shore to tower blocks on the far shore, with an I love Johor sign in the corner.',
+    caption: 'The Johor-Singapore Causeway from the Johor side in August 2024, with Singapore across the strait',
+    credit: 'ZKang123', licence: 'CC BY-SA 4.0',
+    page: 'https://commons.wikimedia.org/wiki/File:Johor-Singapore_Causeway_20240816_163357.jpg',
+    w: 900, h: 675, pos: '50% 75%',
   },
   'america-rations-the-plug': {
     src: '/journal-photos/america-rations-the-plug.jpg',
