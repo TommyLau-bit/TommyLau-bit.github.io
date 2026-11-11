@@ -155,7 +155,7 @@ Now the fast lane has a queue of its own. Since the start of 2025 GE Vernova has
 
 <a id="the-engines-queue-too"></a>
 
-The second is the **reciprocating gas engine**, a very large piston engine running on gas, which comes in small blocks. On 5 October 2026 Wärtsilä announced a 282 MW order for a US data centre, due for delivery in 2028 and fully running in 2029. On 27 October Wärtsilä said "lead times for our engines continue to increase". Caterpillar, the American engine maker, says the backlog of its Power & Energy business "continues to grow due to strong order rates". The third is the **fuel cell**, which turns gas into electricity chemically: Bloom Energy's product revenue rose 179 per cent in the third quarter of 2026, and it is doubling its factory.
+The second is the **reciprocating gas engine**, a giant piston engine running on gas, sold in small blocks. On 5 October 2026 Wärtsilä announced a 282 MW order for a US data centre, due for delivery in 2028 and fully running in 2029. Wärtsilä now says "lead times for our engines continue to increase". The third is the **fuel cell**, which turns gas into electricity chemically: Bloom Energy's product revenue rose 179 per cent in the third quarter of 2026. The fourth is the **rented fleet**: Solaris Energy Infrastructure rents out turbines it owns, 3.2 GW under long-term contracts, and offers 200 MW for 2027, ahead of the makers' queues.
 
 <a id="the-product-is-time"></a>
 
