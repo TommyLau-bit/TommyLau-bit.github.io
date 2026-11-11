@@ -24,6 +24,10 @@ const show = (x: number | null) => (x === null ? 'n/a' : String(x));
   <header class="article-head pw-head">
     <h1>Power: the roster</h1>
     <p class="pw-lede">Every way to power an AI data centre, as a team of players, in the order builders reach for them: the grid first, then the machines they build when the grid makes them wait.</p>
+    <dl class="pw-key">
+      {RATINGS.map((R) => <div><dt>{R.name}</dt><dd>{R.hint}</dd></div>)}
+    </dl>
+    <p class="pw-keynote">Every rating runs to 99, higher is better, and each comes from one sourced number: <a href="#formulas">see how</a>.</p>
   </header>
 
   {GROUPS.map((g) => (
@@ -138,6 +142,12 @@ const show = (x: number | null) => (x === null ? 'n/a' : String(x));
   .pcard-photo img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; }
   .pcard-photo::before { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.35) 0%, rgba(0,0,0,0) 35%); pointer-events: none; z-index: 1; }
   .pcard-role { position: absolute; top: 0.75rem; left: 0.75rem; z-index: 2; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: #fff; background: var(--tier); border-radius: 6px; padding: 0.3rem 0.6rem; box-shadow: 0 2px 8px rgba(0,0,0,.35); }
+  .pw-key { display: grid; gap: 0.3rem; max-width: 44rem; margin: 1.1rem 0 0.4rem; font-family: var(--sans); font-size: 0.9rem; }
+  .pw-key div { display: flex; gap: 0.4rem; align-items: baseline; }
+  .pw-key dt { font-weight: 800; white-space: nowrap; }
+  .pw-key dt::after { content: ':'; }
+  .pw-key dd { margin: 0; color: var(--ink-2); }
+  .pw-keynote { font-family: var(--sans); font-size: 0.8rem; color: var(--ink-3); margin: 0; }
   .pcard-claim { margin: 0.35rem 0 0; font-size: 0.75rem; color: var(--ink-3); }
   .pcard-ratings sup { font-size: 0.65em; margin-left: 1px; }
 
