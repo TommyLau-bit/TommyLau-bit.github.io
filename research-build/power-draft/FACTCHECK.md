@@ -194,3 +194,8 @@ TNB Connection Charges Book 2025 Table 7 figures OK (worked example, not a real 
 ## Grid speed (Dominion), checked 12 Nov 2026 by an independent agent
 
 Dominion to PJM LAS (29 Sep 2026) slide 5 "Non-firm load - includes load from ELOAs (2032 and beyond)" OK; ramp "5 years maturing at a utilization rate of 63%" OK and is a ramp after energisation, not a wait; slide 6 32,473 MW ELOAs, 19,044 MW not in forecast (59%) OK. GS-5 report (May 2026) p.2: energisation dates to 25 GW "between now and 2031", 45 GW with no dates yet OK. "At least 5 to 6 years from a 2026 request" is a fair floor but our inference, not a Dominion figure: wording says so. Replaces Johor's 12 to 48 months as the grid's Speed (grade C to E): Tommy, 12 Nov, asked why build your own if the grid only rated C.
+
+
+## Grid panel, 12 Nov 2026
+
+The grid card was replaced by a text panel on Tommy's word. No new figures: every fact is already sourced in a chapter or a card and checked above (Dominion GS-5 and PJM LAS deck; ERCOT to the PUCT, 20 Aug 2026; FERC EL26-67 quote "may only take 1-2 years to construct"; DOE July 2024 transformer lead times; Tenaga Green Lane 36 to 48 months to 12; GE Vernova Q3 2026 "sold multiple slots for 2032 delivery" and about six years of output; card speeds for the fleet, fuel cell and engines as on the cards).

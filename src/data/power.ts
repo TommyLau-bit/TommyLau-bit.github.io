@@ -7,7 +7,7 @@ import type { Stat } from './power-ratings';
 
 export type Group = { id: string; name: string; tag: string; why: string };
 export const GROUPS: Group[] = [
-  { id: 'grid', name: 'The grid', tag: 'GRID', why: 'Where every builder starts: no machine to buy and no fuel to find, if the grid will connect you.' },
+  { id: 'grid', name: 'The grid', tag: 'GRID', why: 'The default every builder starts from, and the bar every card below is trying to beat. So it carries no grades.' },
   { id: 'biggas', name: 'Big gas turbines', tag: 'GAS-L', why: 'When the grid makes you wait, you build your own power station beside the campus.' },
   { id: 'smallgas', name: 'Small gas machines', tag: 'GAS-S', why: 'When the big turbines are sold out, smaller machines come from other factories and other queues.' },
   { id: 'sun', name: 'Solar and batteries', tag: 'SUN', why: 'The fastest power to build, but it cannot carry a winter night.' },

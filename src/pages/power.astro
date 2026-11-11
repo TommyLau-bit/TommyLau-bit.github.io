@@ -12,7 +12,8 @@ import { CHAPTERS } from '../data/stack';
 
 const chapterN = (slug: string) => CHAPTERS.findIndex((c) => c.slug === slug) + 1;
 const chapterName = (slug: string) => CHAPTERS.find((c) => c.slug === slug)?.name ?? slug;
-const cards = CARDS.map((c) => {
+const gridPhoto = PHOTOS['grid'];
+const cards = CARDS.filter((c) => c.id !== 'grid').map((c) => {
   const g = Object.fromEntries(RATINGS.map((R) => [R.key, gradeOf(R, c.stats[R.input])])) as Record<RatingKey, Grade>;
   const claims = RATINGS.filter((R) => c.stats[R.input]?.claim).map((R) => ({ key: R.key, name: R.name, text: c.stats[R.input].claim as string }));
   return { ...c, g, claims, photo: PHOTOS[c.id] };
@@ -36,7 +37,7 @@ const gradeClass = (x: Grade) => (x === 'A' || x === 'B' || x === '∞' ? 'is-hi
 <Base title="Power" description="Every way to power an AI data centre, as a roster of player cards: the grid, gas turbines, engines, fuel cells, solar, batteries and reactors." wide>
   <header class="article-head pw-head">
     <h1>Power: the roster</h1>
-    <p class="pw-lede">Every way to power an AI data centre, as a team of players, in the order builders reach for them: the grid first, then the machines they build when the grid makes them wait.</p>
+    <p class="pw-lede">Every way to power an AI data centre, as a team of players. The grid comes first as the default every builder starts from; the cards are the machines they build when it makes them wait.</p>
     <dl class="pw-key">
       {RATINGS.map((R) => <div><dt>{R.name}</dt><dd>{R.hint}</dd></div>)}
     </dl>
@@ -49,6 +50,31 @@ const gradeClass = (x: Grade) => (x === 'A' || x === 'B' || x === '∞' ? 'is-hi
         <h2>{g.name}</h2>
         <p>{g.why}</p>
       </div>
+      {g.id === 'grid' ? (
+      <div class="pw-grid">
+        {gridPhoto && <figure class="pw-grid-photo">
+          <img src={gridPhoto.src} alt={gridPhoto.alt} loading="lazy" decoding="async" style={gridPhoto.pos ? `object-position:${gridPhoto.pos}` : undefined} />
+          <figcaption>{gridPhoto.caption}. Photo: <a href={gridPhoto.page} rel="noopener">{gridPhoto.credit}</a>, {LICENCE_URL[gridPhoto.licence] && <a href={LICENCE_URL[gridPhoto.licence]} rel="noopener license">{gridPhoto.licence}</a>}{LICENCE_URL[gridPhoto.licence] ? ', resized' : gridPhoto.licence}</figcaption>
+        </figure>}
+        <div class="pw-grid-text">
+          <p class="pw-grid-lead">A grid connection needs no machine to buy and no fuel to find, and firm service promises power at all times short of an emergency. The catch is the date.</p>
+          <h3>Why builders stop waiting</h3>
+          <ul>
+            <li><b>Often there is no date at all.</b> Dominion, in northern Virginia, America's biggest data-centre market, has given connection dates to 25 GW of new data centres out to 2031 and none yet to a further 45 GW. Its forecast puts load under its newest contracts at "2032 and beyond", so a request made today waits at least five to six years, my reading of its figures. <span class="pw-src-line">Dominion, GS-5 report (May 2026) and deck to PJM (29 September 2026).</span></li>
+            <li><b>Even the front of the queue can stop.</b> In Texas, 17 loads totalling 6,608 MW had cleared every check but the approval to switch on by 20 August 2026. ERCOT, the Texas grid operator, then paused that approval for data centres of 75 MW or more while it audits every request. <span class="pw-src-line">ERCOT to the Public Utility Commission of Texas (20 August 2026).</span></li>
+            <li><b>The building is quicker than the wires.</b> The federal regulator's own record notes a data centre "may only take 1-2 years to construct", while the lines and substations to serve it take longer. Large transformers alone are quoted at 36 months, and up to 60. <span class="pw-src-line">FERC, EL26-67 (18 June 2026); US Department of Energy (July 2024).</span></li>
+            <li><b>Where the grid moved, builders stayed on it.</b> Tenaga's Green Lane cut the time to connect a Johor data centre from 36 to 48 months to 12, and new building crossed the Causeway from Singapore. The wait, not the grid, is what pushes builders off it. <span class="pw-src-line">Tenaga Nasional, Green Lane release (9 August 2023).</span></li>
+          </ul>
+          <h3>Why the cards below win on the eye test</h3>
+          <ul>
+            <li><b>They come with a date.</b> A rented gas fleet runs in 2 to 5 months, fuel cells in about 3 months by Bloom's own claim, gas engines in 27 to 38 months. Each is a date a buyer can plan around; the grid often gives none.</li>
+            <li><b>The builder holds the schedule.</b> On site, the power station is the builder's own project, so the date turns on its order and its permits rather than on a utility's upgrades for everyone in the queue.</li>
+            <li><b>The catch: they swap one queue for another.</b> GE Vernova's heavy gas turbine queue is about six years of its output, and it has sold slots for 2032 delivery. Gas still comes by pipe, and the builder now runs a power station of its own. That is why every card below has a weakness. <span class="pw-src-line">GE Vernova, third-quarter results (28 October 2026).</span></li>
+          </ul>
+          <p class="pcard-ch"><a href="/journal/the-queue-not-the-chip/#why-did-so-many-data-centres-come-to-johor">Chapter {chapterN('the-queue-not-the-chip')}: {chapterName('the-queue-not-the-chip')}</a><a href="/journal/america-rations-the-plug/#which-step-takes-longest-and-why-can-no-rule-hurry-it">Chapter {chapterN('america-rations-the-plug')}: {chapterName('america-rations-the-plug')}</a><a href="/journal/building-your-own-power/">Chapter {chapterN('building-your-own-power')}: {chapterName('building-your-own-power')}</a></p>
+        </div>
+      </div>
+      ) : (
       <div class="pw-cards">
         {cards.filter((c) => c.group === g.id).map((c) => (
           <article class="pcard" id={c.id} data-flip>
@@ -91,6 +117,7 @@ const gradeClass = (x: Grade) => (x === 'A' || x === 'B' || x === '∞' ? 'is-hi
           </article>
         ))}
       </div>
+      )}
     </section>
   ))}
 
@@ -144,6 +171,15 @@ const gradeClass = (x: Grade) => (x === 'A' || x === 'B' || x === '∞' ? 'is-hi
   .pw-ghead h2 { font-family: var(--sans); font-size: 1.5rem; margin: 0 0 0.3rem; letter-spacing: -0.01em; }
   .pw-ghead p { margin: 0; color: var(--ink-2); max-width: 44rem; }
 
+  .pw-grid { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: 1.5rem; align-items: start; font-family: var(--sans); }
+  .pw-grid-photo { margin: 0; }
+  .pw-grid-photo img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; }
+  .pw-grid-photo figcaption { font-size: 0.75rem; color: var(--ink-3, var(--ink-2)); margin-top: 0.4rem; }
+  .pw-grid-lead { margin: 0 0 0.6rem; font-size: 1.02rem; }
+  .pw-grid h3 { font-size: 1.05rem; margin: 1.1rem 0 0.4rem; }
+  .pw-grid ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.55rem; font-size: 0.95rem; line-height: 1.5; }
+  .pw-src-line { display: block; font-size: 0.78rem; color: var(--ink-2); margin-top: 0.15rem; }
+  @media (max-width: 760px) { .pw-grid { grid-template-columns: 1fr; } }
   .pw-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr)); gap: 1.25rem; }
 
   /* the player card */
