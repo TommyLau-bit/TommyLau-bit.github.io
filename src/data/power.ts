@@ -507,7 +507,7 @@ export const CARDS: Card[] = [
    },
    "permitMonths": {
     "display": "n/a",
-    "basis": "No months published. Bloom's 10-K says air permits are usually needed only for larger installations and New York, New Jersey and North Carolina exempt fuel cells, but that permit times have lengthened.",
+    "basis": "No months published. Bloom's 10-K says air permits are usually needed only for larger installations and New York, New Jersey and North Carolina exempt fuel cells; its Q3 2026 10-Q says air permits for larger installations are at times taking longer than expected.",
     "value": null
    },
    "bottleneck": {
