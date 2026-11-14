@@ -193,10 +193,10 @@ Source in the piece: "Buyers pay only for the last stage, and the later megawatt
 
 ---
 
-## M16 · Mon 30 Nov 2026 08:30 SGT · the-equipment-queue · More than half again in under two years · SCHEDULED (verified 6 Nov)
-Siemens Energy's grid order backlog grew from €33bn in September 2024 to €51bn in June 2026.
+## M16 · Mon 30 Nov 2026 08:30 SGT · the-equipment-queue · More than half again in two years · SCHEDULED (verified 6 Nov; edited on LinkedIn 14 Nov to €52bn at Sept 2026, verified)
+Siemens Energy's grid order backlog grew from €33bn in September 2024 to €52bn in September 2026.
 
-That is more than half again in under two years, while the industry was announcing new factories. But a plant takes two to three years from announcement to first product, so most of the new floor space arrives from 2027 on. Until those plants run, every extra order can only lengthen the queue.
+That is more than half again in two years, while the industry was announcing new factories. But a plant takes two to three years from announcement to first product, so most of the new floor space arrives from 2027 on. Until those plants run, every extra order can only lengthen the queue.
 
 From the piece: The equipment queue
 

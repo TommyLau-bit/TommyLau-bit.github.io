@@ -840,11 +840,11 @@ https://thephysicallayer.fyi/journal/america-rations-the-plug/
 
 ---
 
-## 59 · The equipment queue, in depth (rebuilt 7 Nov 2026; LinkedIn Wed 18 Nov, 11:30, scheduled, verified 7 Nov)
+## 59 · The equipment queue, in depth (rebuilt 7 Nov 2026; LinkedIn Wed 18 Nov, 11:30, scheduled, verified 7 Nov; text edited on LinkedIn 14 Nov to 3.7 years after Siemens Energy FY26, verified)
 
 Hitachi Energy is building or expanding more than 40 factories, and expects its signed orders to still be worth two and a half to three years of sales when they open.
 
-Siemens Energy's grid business carries about four years of signed work, up from three and a half when its building began. The makers of transformers and switchgear are building fast enough to keep the queue, not to clear it, and a data centre's real start date is often set by that queue before the site is chosen.
+Siemens Energy's grid business carries about 3.7 years of signed work, up from three and a half when its building began. The makers of transformers and switchgear are building fast enough to keep the queue, not to clear it, and a data centre's real start date is often set by that queue before the site is chosen.
 
 The piece covers what a transformer does, why its steel is scarce, and where the months go in the factory.
 

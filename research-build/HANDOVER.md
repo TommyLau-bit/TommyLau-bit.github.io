@@ -19,7 +19,23 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 3. Done: CVs updated ("grid to chip" wording; nuclear line to the depth figures); LinkedIn profile not changed.
 4. Done: article decks archived (study-decks/archive/article-decks-retired-2026-11-07/), not deleted.
 
-## START HERE (as of Thu 12 Nov 2026, end of session)
+## START HERE (as of Sat 14 Nov 2026, journal run "1")
+
+**Live (commit 2781cdd, deploy verified on the live pages).** Three fact-checked updates from results that landed, each drafted by one agent and checked by a separate one (briefs research-build/deep-pieces/updates/BRIEF-14NOV.md and BRIEF-FACTCHECK-14NOV.md, logs <slug>.CHANGES-14NOV.md):
+1. **The equipment queue:** Siemens Energy FY26 (release 11 Nov). Grid Technologies backlog €52bn at 30 Sept 2026 over fiscal 2026 revenue €14,106m: **about 3.7 years, DOWN from about 4 (3.96) in June**, still above 3.56 (Sept 2024). Q4 book-to-bill 1.30, full year 1.70; FY27 grid revenue guided +22 to 24%. The claim's test is at least 3.6 at 30 June 2028 (claims.ts unchanged); at Q4's 1.30 pace the ratio reaches about 3.1 by mid-2028, so the claim is close to failing. The piece says so plainly; chart has a new Sept point; claim evidence line now "Close to the line". **This is the chapter to watch at Siemens Energy's Q1 FY27 (Feb 2027).**
+2. **Building your own power:** Siemens Energy gas turbines 104 GW at 30 Sept (65 firm, 39 reservations, expected firm in FY27); Q4 firmed only ~2 GW, added 14 GW of reservations; Siemens puts all makers' capacity at ~130 GW against 130 to 150 GW a year of new gas plant to 2030 (slide gives no period for the 130). Three-maker total about 260 GW. Three short sentences cut to stay at 3,600 words.
+3. **Microreactors:** Standard Nuclear Q3 (8-K and 10-Q, 12 Nov): DOE approval of SN-TN and SN-ID **slipped to a February 2027 target** (was Q4 2026); capacity figures unchanged (0.7 t today, 2.7 t with both plants).
+4. **America rations the plug:** knock-on line now "about 3.7 and 3.1 years of signed work".
+
+**Loose ends done:** study deck (equipment-queue numbers row, TRISO watch line; PDF rebuilt; not committed); email briefs EquipmentQueue and BuildingYourOwnPower rebuilt (same file names) and _SEND refreshed; LinkedIn queue: post 59 (Wed 18 Nov) edited to "about 3.7 years" and mini post M16 (Mon 30 Nov 08:30) to "€52bn in September 2026 ... in two years", both verified in the scheduled list after reload (Edit post works directly on scheduled posts; no cancel-reschedule needed). The desktop list shows only the first ten (to Tue 1 Dec 08:30); later queued posts could not be checked. CV 2T, Power page, map and interview prep quote none of the changed facts. No new LinkedIn post: these are quarterly number refreshes, not substantial updates (Tommy may decide otherwise for the equipment queue). Scheduled emails: 29 audited; none quotes a changed fact; three carried the old BuildingYourOwnPower brief (Lisa Payne, APA, Tue 17 Nov 07:40; Oliver Nunn, Endgame, Wed 18 Nov 06:20; Hugh Grossman, RepuTex, Wed 18 Nov 06:30, MYT): each cancelled, brief swapped for the rebuilt one and rescheduled to the same time, toast confirmed; drafts empty, 29 still scheduled, nothing sent.
+
+**Scout, four other chapters (SCOUT-14NOV.md): nothing primary landed 10 to 14 Nov.** Leads only: Malaysia's Energy Commission said (press, 10 Nov) a separate wholesale market for large users including data centres would start by 2029 or 2030; use only if the Commission publishes a paper. X-energy Long Mott construction permit 9 Nov (Dow, not AI). PJM Board letter of 5 or 6 Nov on the FERC show-cause issues not yet read.
+
+**Not landed yet (check on the day):** FERC EL26-67 to 72 responses (16 Nov; SPP 20 Nov; answers 16 Dec), PJM ride-through filing (16 Nov), NRC Part 57 microreactor final rule (reportedly by 23 Nov, one secondary source), EIA 860M (24 Nov), NRC 50.43(f) rule effective (25 Nov), Tenaga Q3 (late Nov), Centrus Investor Day (7 Dec), PJM auction opens (9 Dec), Siemens Energy annual report (10 Dec), ERCOT audit (10 Dec), PJM final ELCC 2030/31 (Dec or Jan), NERC standards (31 Dec), Piketon lease extension aim (31 Dec), GE Vernova year-end (Jan), Standard Nuclear DOE approval (Feb 2027), Siemens Energy Q1 FY27 (Feb 2027).
+
+**Company studies:** unchanged. Centrus done and in _SEND; Bloom Energy next, only when Tommy says.
+
+## Earlier START HERE (as of Thu 12 Nov 2026, end of session)
 
 **Tomorrow: nothing is scheduled and nothing is waiting.** The Power page (/power) is live and finished; both scheduled tasks stay disabled; no LinkedIn post for Power (Tommy: "no post"). Start only when Tommy gives a trigger ("1" journal run, "2" job hunt).
 
