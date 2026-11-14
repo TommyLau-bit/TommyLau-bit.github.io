@@ -13,7 +13,7 @@ draft: false
 
 Hitachi Energy, the grid business of Japan's Hitachi, is building or expanding more than 40 factories to make the heavy electrical gear that AI data centres need. At its investor day in June 2026 it told investors what it expects when they open: a pile of signed orders still worth two and a half to three years of sales.
 
-Siemens Energy tells the same story from Germany. It has added factory space and is spending more than €2bn on more, and its grid business now carries about four years of signed work, up from three and a half when the building began.
+Siemens Energy tells the same story from Germany. It has added factory space and is spending more than €2bn on more, and its grid business now carries about 3.7 years of signed work, down from about four in June but above the 3.56 of September 2024, when the building began.
 
 That is the claim of this piece. The makers of transformers and switchgear are building fast enough to keep the queue, not to clear it, and on their own figures the queue will still hold years of work in 2030. A data centre's real start date is set by that queue, often before the site is chosen.
 
@@ -90,9 +90,9 @@ Every maker of this gear that publishes a backlog has more years of work waiting
 **Backlog** is the pile of signed orders not yet delivered. **Book-to-bill** is orders divided by sales in the same period; above 1, the pile is growing. **Years of work** is backlog divided by the previous four quarters' sales, my arithmetic from each filing.
 
 <figure class="chart">
-<p class="chart-title">The wait is getting longer, and the new factories are still to come</p>
+<p class="chart-title">The wait still runs to years, and the new factories are still to come</p>
 <p class="chart-sub">Signed orders not yet delivered, in years of each business's sales</p>
-<svg viewBox="0 0 560 320" role="img" aria-label="Line chart. Siemens Energy's grid business rose from 3.56 years of work in September 2024 to about 4 in June 2026, Hitachi Energy from about 2.8 in March 2025 to about 3.1 in September 2026, and Eaton's Americas electrical business from 0.89 in December 2024 to 1.05 in June 2026, where it held in September 2026. The new transformer and switchgear plants are due from 2027 to 2029.">
+<svg viewBox="0 0 560 320" role="img" aria-label="Line chart. Siemens Energy's grid business rose from 3.56 years of work in September 2024 to about 4 in March and June 2026, then eased to about 3.7 in September 2026, Hitachi Energy from about 2.8 in March 2025 to about 3.1 in September 2026, and Eaton's Americas electrical business from 0.89 in December 2024 to 1.05 in June 2026, where it held in September 2026. The new transformer and switchgear plants are due from 2027 to 2029.">
 <rect class="c-zone" x="267" y="20" width="273" height="260"/>
 <text class="c-zone-t" x="280" y="40">New plants due</text>
 <g class="c-grid">
@@ -102,11 +102,11 @@ Every maker of this gear that publishes a backlog has more years of work waiting
 <text x="32" y="284" text-anchor="end">0</text><text x="32" y="226" text-anchor="end">1</text><text x="32" y="168" text-anchor="end">2</text><text x="32" y="111" text-anchor="end">3</text><text x="32" y="53" text-anchor="end">4</text>
 <text x="85.5" y="302" text-anchor="middle">2025</text><text x="176.4" y="302" text-anchor="middle">2026</text><text x="267.3" y="302" text-anchor="middle">2027</text><text x="358.2" y="302" text-anchor="middle">2028</text><text x="449.1" y="302" text-anchor="middle">2029</text>
 </g>
-<polyline class="c-line c-s1" points="62.7,74.3 153.6,65.1 199.1,46.0 221.8,51.2"/>
+<polyline class="c-line c-s1" points="62.7,74.3 153.6,65.1 199.1,46.0 221.8,51.2 244.5,67.0"/>
 <polyline class="c-line c-s2" points="108.2,118.2 199.1,110.7 221.8,103.2 244.5,100.9"/>
 <polyline class="c-line c-s3" points="85.5,228.6 130.9,226.3 153.6,225.1 176.4,222.2 199.1,219.9 221.8,219.3 244.5,219.3"/>
-<circle class="c-dot c-s1" cx="221.8" cy="51.2" r="3.5"/><circle class="c-dot c-s2" cx="244.5" cy="100.9" r="3.5"/><circle class="c-dot c-s3" cx="244.5" cy="219.3" r="3.5"/>
-<text class="c-lab c-s1t" x="62" y="96">Siemens Energy grid, about 4</text>
+<circle class="c-dot c-s1" cx="244.5" cy="67.0" r="3.5"/><circle class="c-dot c-s2" cx="244.5" cy="100.9" r="3.5"/><circle class="c-dot c-s3" cx="244.5" cy="219.3" r="3.5"/>
+<text class="c-lab c-s1t" x="62" y="96">Siemens Energy grid, about 3.7</text>
 <text class="c-lab c-s2t" x="96" y="140">Hitachi Energy, about 3.1</text>
 <text class="c-lab c-s3t" x="62" y="210">Eaton Americas, 1.05</text>
 <g class="c-plant">
@@ -115,10 +115,10 @@ Every maker of this gear that publishes a backlog has more years of work waiting
 <line x1="494.5" y1="272" x2="494.5" y2="280"/><text x="494.5" y="264" text-anchor="middle">Hitachi Energy</text>
 </g>
 </svg>
-<figcaption>Years of work is backlog divided by the same business's sales over the previous four quarters, my arithmetic from each company's filings to 30 September 2026; Siemens Energy's latest is 30 June 2026. Siemens Energy's figure includes long HVDC links, so compare the direction, not the levels. Plant dates are each maker's own: Eaton's Jonesville and Bellevue plants in 2027, Siemens Energy's Nuremberg expansion by 2028, Hitachi Energy's Gallman plant in 2029.</figcaption>
+<figcaption>Years of work is backlog divided by the same business's sales over the previous four quarters, my arithmetic from each company's filings to 30 September 2026. Siemens Energy's figure includes long HVDC links, so compare the direction, not the levels. Plant dates are each maker's own: Eaton's Jonesville and Bellevue plants in 2027, Siemens Energy's Nuremberg expansion by 2028, Hitachi Energy's Gallman plant in 2029.</figcaption>
 </figure>
 
-Hitachi Energy had $66.9bn of orders waiting at 30 September 2026, about 3.1 years of its sales, up from about 2.8 in March 2025. Siemens Energy's grid business, Grid Technologies, had €51bn at 30 June 2026, about four years, up from 3.56 in September 2024. GE Vernova's grid business, Electrification, had $42.2bn of equipment backlog at 30 September 2026, 60 per cent more than a year earlier, including $5bn from Prolec GE, the transformer maker it bought outright in February 2026.
+Hitachi Energy had $66.9bn of orders waiting at 30 September 2026, about 3.1 years of its sales, up from about 2.8 in March 2025. Siemens Energy's grid business, Grid Technologies, had €52bn at 30 September 2026, about 3.7 years, down from about four in June but up from 3.56 in September 2024. GE Vernova's grid business, Electrification, had $42.2bn of equipment backlog at 30 September 2026, 60 per cent more than a year earlier, including $5bn from Prolec GE, the transformer maker it bought outright in February 2026.
 
 <a id="eaton-order-book-outruns-it"></a>
 
@@ -175,9 +175,9 @@ At its capital market day on 20 November 2025, Siemens Energy set regional deman
 
 Demand ran about 40 per cent ahead of capacity in fiscal 2025. By fiscal 2030 the gap narrows to about 10 per cent, as capacity nearly doubles from fiscal 2023, by my reading of the chart's bars. Every year that demand exceeds output, the shortfall joins the pile.
 
-The number the claim rests on is Siemens Energy's grid ratio: €51bn of signed, undelivered orders at 30 June 2026, divided by €12.9bn of Grid Technologies revenue over the previous four quarters. The backlog is rounded to the nearest billion, so the true ratio lies between 3.92 and 4.00; the claim records it as 3.96. It is not a quoted lead time, because the HVDC links lift it, so the direction matters more than the level.
+The number the claim rests on is Siemens Energy's grid ratio: €52bn of signed, undelivered orders at 30 September 2026, divided by €14.1bn of Grid Technologies revenue in fiscal 2026. The backlog is rounded to the nearest billion, so the true ratio lies between 3.65 and 3.72; the claim was set at 3.96 in June. It is not a quoted lead time, because the HVDC links lift it, so the direction matters more than the level.
 
-The trap is that the ratio can fall while the pile grows. Siemens Energy's grid revenue is growing about 25 per cent a year on its own guidance. At that pace the ratio holds only if orders run about 1.8 times sales; at the third quarter's 1.48 it would fall to about 3.4 by mid-2028, while each year's shortfall still joins the pile.
+The trap is that the ratio can fall while the pile grows, and in the fourth quarter it did. The backlog rose by about €1bn, but record sales of €4.4bn pulled the ratio from about four to 3.7. Siemens Energy guides grid revenue up 22 to 24 per cent in fiscal 2027. At that pace the ratio holds only if orders run about 1.7 times sales, the full year's pace; at the fourth quarter's 1.30 it would fall to about 3.1 by mid-2028.
 
 ## Where do America's large transformers come from?
 
@@ -271,7 +271,7 @@ Two moves fit the reading that parts are binding. On 28 October 2026 GE Vernova 
 
 The rate of increase probably has, but every order book is still growing, and a narrower gap still adds to the pile.
 
-The case for a peak is real. Siemens Energy's grid book-to-bill fell to 1.48 in the quarter to June 2026, from 2.28 in the quarter before. Eaton's Electrical Americas ratio went flat. Wood Mackenzie's estimate of the power transformer shortage fell from 30 per cent for 2025 to 15 per cent for 2026.
+The case for a peak is real. Siemens Energy's grid book-to-bill fell to 1.30 in the quarter to September 2026, from 1.48 in June's quarter and 2.28 in March's. Eaton's Electrical Americas ratio went flat. Wood Mackenzie's estimate of the power transformer shortage fell from 30 per cent for 2025 to 15 per cent for 2026.
 
 The case against is stronger. Every book-to-bill is still above 1, so every pile is still growing. GE Vernova's grid equipment backlog is up 60 per cent in a year, or about 40 per cent without the Prolec GE purchase. Transformer prices are rising faster than in 2023 and 2024. A real peak shows up as price cuts and idle halls. Neither is visible yet.
 
@@ -289,9 +289,9 @@ A utility can clear a site's place in the grid queue, as in [America rations the
 
 ## What would prove me wrong
 
-Three tests can break the claim. The first is the ratio drifting down. If by 30 June 2028 Siemens Energy's grid order book has fallen below 3.6 years of its sales, or Eaton's Electrical Americas below one year, the first wave of new plants has shortened the queue and the claim fails. This test is closer than it looks: Siemens Energy's grid sales grow about 25 per cent a year, so at the third quarter's book-to-bill of 1.48 the ratio would reach about 3.4 by mid-2028. Orders must run about 1.8 times sales to hold it, and Eaton's ratio has already gone flat.
+Three tests can break the claim. The first is the ratio drifting down. If by 30 June 2028 Siemens Energy's grid order book has fallen below 3.6 years of its sales, or Eaton's Electrical Americas below one year, the first wave of new plants has shortened the queue and the claim fails. This test is close: Siemens Energy's ratio is already 3.7, and at the fourth quarter's book-to-bill of 1.30 it would reach about 3.1 by mid-2028. Orders must run about 1.7 times sales to hold it, and Eaton's ratio has already gone flat.
 
-The second is orders cooling as the plants open. If book-to-bill falls below 1 at the grid makers just as the 2027 halls start, the makers built into a slowdown. For now Siemens Energy's grid business is at 1.48 and GE Vernova's at about 1.4.
+The second is orders cooling as the plants open. If book-to-bill falls below 1 at the grid makers just as the 2027 halls start, the makers built into a slowdown. For now Siemens Energy's grid business is at 1.30 for the quarter and 1.70 for the year, and GE Vernova's at about 1.4.
 
 The third is someone breaking ranks. If makers outside this group, in Korea, Brazil or China, add capacity to clear the queue and American buyers accept their units, it empties faster. The Korean makers are adding capacity in Alabama and Tennessee; if they build ahead of orders, the wait shortens.
 
@@ -338,7 +338,7 @@ Claim: "By Siemens Energy's own estimate, demand for large and medium power tran
 
 Breaks if: "Before 30 September 2030: Grid Technologies' orders fall below its revenue for any full fiscal year; or its order backlog in euros, as Siemens Energy reports it (€51bn at 30 June 2026), falls for two consecutive quarters; or Siemens Energy publishes a revised estimate showing transformer capacity meeting demand in Europe and North America before fiscal 2030."
 
-Where later evidence bears on it: No new annual figures by 7 November 2026; fiscal 2026 results are due in November. Grid Technologies' book-to-bill was 1.48 in the quarter to June 2026 and 1.88 over nine months, and its backlog rose to €51bn. Siemens Energy announced its Charlotte plant for early 2026; a Reuters report of 26 June 2025 relayed a board member giving early 2027, and its release of 3 February 2026 gives no date.
+Where later evidence bears on it: Close to the line. Grid Technologies' fiscal 2026 orders of €24.0bn exceeded its revenue of €14.1bn, a book-to-bill of 1.70 (1.30 in the fourth quarter), and its backlog rose to €52bn at 30 September 2026, but record sales pulled its ratio to about 3.7, against the test's 3.6 (release, 11 November 2026). Siemens Energy announced its Charlotte plant for early 2026; a Reuters report of 26 June 2025 relayed a board member giving early 2027, and its release of 3 February 2026 gives no date.
 
 </details>
 
@@ -352,11 +352,11 @@ Where later evidence bears on it: No new annual figures by 7 November 2026; fisc
 | Maker, business | Backlog | Revenue, previous four quarters | Years of work | Earlier point | Orders against revenue | Latest filing |
 |---|---|---|---|---|---|---|
 | Hitachi Energy | $66.9bn, 30 September 2026 | about $21.6bn | about 3.1 | about 2.8 (31 March 2025) | 1.66 times, fiscal 2025 | Hitachi results, 28 October 2026 |
-| Siemens Energy, Grid Technologies | €51bn, 30 June 2026 | €12,889m | about 4.0 (3.92 to 4.00 on rounding) | 3.56 (30 September 2024) | 1.48 in the quarter; 1.88 in nine months | Earnings release, 5 August 2026 |
+| Siemens Energy, Grid Technologies | €52bn, 30 September 2026 | €14,106m | about 3.7 (3.65 to 3.72 on rounding) | 3.56 (30 September 2024); about 3.96 (30 June 2026) | 1.30 in the quarter; 1.70 in fiscal 2026 | Earnings release, 11 November 2026 |
 | Eaton, Electrical Americas | $15,993m, 30 September 2026 | $15,229m | 1.050 | 1.049 (30 June 2026); 0.93 (30 June 2025); 0.89 (31 December 2024) | twelve-month organic orders up 39% | Form 10-Q, 3 November 2026 |
 | GE Vernova, Electrification | equipment backlog $42.2bn, 30 September 2026, up $15.7bn (60%), incl. $5bn from Prolec GE | | | | book-to-bill about 1.4; orders $5,371m, down 9% organic | Release, 28 October 2026 |
 
-Siemens Energy's trailing revenue is the nine months to June 2026, €9,744m, plus the fourth quarter of fiscal 2025, €3,145m (fiscal 2025 €11,305m less nine months €8,160m); €51bn is rounded to €1bn. Eaton's four quarters are $3,506m, $3,600m, $3,951m and $4,172m to 30 September 2026; whole company backlog about $26.2bn, "approximately 72%" targeted for delivery in the next twelve months (Form 10-Q). Electrical Americas margin 29.8% in the third quarter of 2026 against 30.3% a year earlier, and 27.5% in the second quarter. Total Electrical twelve-month book-to-bill 1.2 and backlog up 46% (release, 3 November 2026). Years of work is my arithmetic. The ratio rises when prices go up before deliveries catch up, when buyers book earlier, and, for Hitachi's dollar figures, when the euro strengthens.
+Siemens Energy's trailing revenue is fiscal 2026 to 30 September, €14,106m, of which the fourth quarter €4,362m; orders €23,979m, €5,651m in the fourth quarter; €52bn is rounded to €1bn (earnings release, 11 November 2026). At 30 June 2026 it was €51bn over €12,889m, about 3.96. Eaton's four quarters are $3,506m, $3,600m, $3,951m and $4,172m to 30 September 2026; whole company backlog about $26.2bn, "approximately 72%" targeted for delivery in the next twelve months (Form 10-Q). Electrical Americas margin 29.8% in the third quarter of 2026 against 30.3% a year earlier, and 27.5% in the second quarter. Total Electrical twelve-month book-to-bill 1.2 and backlog up 46% (release, 3 November 2026). Years of work is my arithmetic. The ratio rises when prices go up before deliveries catch up, when buyers book earlier, and, for Hitachi's dollar figures, when the euro strengthens.
 
 **Why they will not overbuild.** Hitachi Investor Day energy presentation, 10 June 2026: backlog towards about $100bn by fiscal 2030, "remain stable at 2.5-3x"; investment only in projects with secured profitability; more than $6bn of factory spending 2024 to 2027. Hitachi Energy release of 15 September 2026: US programme around $1.5bn. ABB Q3 2026 release, 20 October 2026: capital spending "around $1 billion and do not expect it to rise further in the mid-term"; "selectively leveraging third-party assembly". Siemens Energy: about 20% capacity added for €600m and over €2bn more for transformers and switchgear by fiscal 2028 (shareholder letter, 14 November 2025). Department of Energy (2012) on consolidation over the preceding decades and on the 2011 dumping petition.
 
@@ -378,7 +378,7 @@ Siemens Energy's trailing revenue is the nine months to June 2026, €9,744m, pl
 | Prolec GE | Goldsboro, North Carolina, $140m | Medium power transformers | 14 May 2025 | Capacity doubled by 2030 |
 | Cleveland-Cliffs | Butler Works, Pennsylvania, $200m | GOES, up to 25% more | 5 October 2026 | Early 2028 |
 
-**Siemens Energy's chart.** Capital market day, 20 November 2025: demand for large and medium power transformers in Europe and North America against the capacity of all market players, about 40% above in fiscal 2025 and about 10% in fiscal 2030; only the two percentages are its labels; the doubling of capacity is my reading of the bars. Drift arithmetic: orders 10% above output, output growing 6% a year, starting from 3.96, my arithmetic. The harder case: Grid Technologies revenue grew 28.6% comparable in the third quarter of fiscal 2026 and is guided to grow 25 to 27% in fiscal 2026 (shareholder letter, 22 May 2026). A year later the ratio is R/(1+g) plus (book-to-bill minus 1): at 25% growth and 1.48, 3.96 becomes about 3.65 after one year and about 3.40 after two; holding 3.96 needs about 1.8. My arithmetic.
+**Siemens Energy's chart.** Capital market day, 20 November 2025: demand for large and medium power transformers in Europe and North America against the capacity of all market players, about 40% above in fiscal 2025 and about 10% in fiscal 2030; only the two percentages are its labels; the doubling of capacity is my reading of the bars. Drift arithmetic: orders 10% above output, output growing 6% a year, starting from 3.96, my arithmetic. The harder case: Grid Technologies revenue grew 26.2% comparable in fiscal 2026 and is guided to grow 22 to 24% in fiscal 2027 (earnings release, 11 November 2026). A year later the ratio is R/(1+g) plus (book-to-bill minus 1): at 23% growth, holding 3.69 needs about 1.7; at 1.30 a quarter-by-quarter run gives about 3.1 by 30 June 2028. My arithmetic.
 
 **Imports.** UN Comtrade, reporter United States, imports of HS 850423 (liquid dielectric transformers over 10,000 kVA), read 7 November 2026: 2022 $1,258m; 2023 $1,927m; 2024 $2,978m; 2025 $4,145m (5,021 units). 2025 by origin: Mexico $803m (19.4%), Korea $748m (18.0%), Brazil $531m (12.8%), Austria $431m (10.4%), Netherlands $260m, Taiwan $248m, Canada $213m, China $90m (2.2%). 2022: Mexico 31.2%, Korea 7.4%. January to August 2026 $3,011m against $2,743m; China 4.7%. Korea's exports of HS 850423 to the US (Korea customs via Comtrade): $109m in 2022, $738m in 2025, 57% of its exports of the line. Department of Energy (2012): Korean exports to the US $33m in 2005 and $279m in 2011.
 
@@ -392,7 +392,7 @@ Siemens Energy's trailing revenue is the nine months to June 2026, €9,744m, pl
 
 **Parts.** Hitachi Energy, delivery times for transformer components, Ludvika updated 29 October 2026: GSBK and ARF bushings 245 to 550 kV, 135 weeks; GSA-OA, ARF AF and ED 245 kV, 40; GOH 46; GOB+ 40; GSA 40; GOE 27; tap changers 10 to 22. Hefei updated 4 August 2026: ARF 245 and 420, 14 weeks; ARF 550, 16 weeks. GE Vernova release, 28 October 2026: Trench for about $9.0bn, "vertically integrating an existing supplier", closing expected late 2027. Hitachi Energy release, 20 August 2025: Alamo, "largest bushings manufacturing facility in North America", operational by mid-2027. EU F-gas Regulation (EU) 2024/573, Article 13(9), as summarised by Germany's Umweltbundesamt and ESB Networks: new switchgear above 52 kV to 145 kV from 1 January 2028, above 145 kV from 1 January 2032. Council of the European Union, note ST 10693/1/26 REV 1 (24 June 2026), from Italy, Bulgaria and the Czech Republic: "If fluoronitrile-based solutions disappear from the EU market, only one manufacturer of dry-air solutions remains".
 
-**The peak.** Siemens Energy Grid Technologies book-to-bill: 1.48 in the third quarter of fiscal 2026 (5,367 over 3,624), 2.28 in the second (release of 12 May 2026). GE Vernova release, 28 October 2026: Electrification equipment backlog $42.2bn, up $15.7bn in a year, including about $5bn from Prolec GE (closed 2 February 2026); about 40% without it, my arithmetic. Eaton Form 10-Q, 3 November 2026. Wood Mackenzie (14 August 2025 and 31 August 2026): shortage 30% for 2025, 15% for 2026; 128 weeks in the second quarter of 2025 (15 October 2025). National Renewable Energy Laboratory, Major Drivers of Long-Term Distribution Transformer Demand (February 2024): distribution transformers up to 2 years; about 30 weeks by the second quarter of 2025 (Wood Mackenzie, as cited by the Congressional Research Service, report R48933, 23 April 2026). Edison Electric Institute, 9 July 2026: investor-owned utility capital spending about $239bn in 2026; $204.1bn in 2024 (2025 Financial Review).
+**The peak.** Siemens Energy Grid Technologies book-to-bill: 1.30 in the fourth quarter of fiscal 2026 (5,651 over 4,362; release of 11 November 2026), 1.48 in the third (5,367 over 3,624), 2.28 in the second (release of 12 May 2026). GE Vernova release, 28 October 2026: Electrification equipment backlog $42.2bn, up $15.7bn in a year, including about $5bn from Prolec GE (closed 2 February 2026); about 40% without it, my arithmetic. Eaton Form 10-Q, 3 November 2026. Wood Mackenzie (14 August 2025 and 31 August 2026): shortage 30% for 2025, 15% for 2026; 128 weeks in the second quarter of 2025 (15 October 2025). National Renewable Energy Laboratory, Major Drivers of Long-Term Distribution Transformer Demand (February 2024): distribution transformers up to 2 years; about 30 weeks by the second quarter of 2025 (Wood Mackenzie, as cited by the Congressional Research Service, report R48933, 23 April 2026). Edison Electric Institute, 9 July 2026: investor-owned utility capital spending about $239bn in 2026; $204.1bn in 2024 (2025 Financial Review).
 
 **Spares.** Department of Energy (July 2024), Table 1: a ready spare installs in three to four weeks; STEP: "to date STEP has never been utilized"; Grid Assurance "has not yet actually provided a replacement LPT".
 
@@ -421,4 +421,4 @@ Siemens Energy's trailing revenue is the nine months to June 2026, €9,744m, pl
 
 ---
 
-<p class="sources">Sources: Hitachi results to 28 October 2026, Investor Day (10 June 2026) and Hitachi Energy releases and component delivery page (29 October 2026); Siemens Energy Capital Market Day (20 November 2025), shareholder letters and earnings releases to 5 August 2026; Eaton, GE Vernova, ABB, Schneider Electric, Generac, Caterpillar, Cummins, Powell and Vertiv filings, releases and calls to 3 November 2026; HD Hyundai Electric, Hyosung, Virginia Transformer, Prolec GE and Cleveland-Cliffs releases; Reuters (26 June 2025); US Department of Energy (June 2012 and July 2024); National Renewable Energy Laboratory (February 2024); Federal Register; UN Comtrade; Bureau of Labor Statistics; IMF; Edison Electric Institute; Uptime Institute; Nvidia; Council of the European Union; Wood Mackenzie. Years of work are my arithmetic. Personal research, not investment advice.</p>
+<p class="sources">Sources: Hitachi results to 28 October 2026, Investor Day (10 June 2026) and Hitachi Energy releases and component delivery page (29 October 2026); Siemens Energy Capital Market Day (20 November 2025), shareholder letters and earnings releases to 11 November 2026; Eaton, GE Vernova, ABB, Schneider Electric, Generac, Caterpillar, Cummins, Powell and Vertiv filings, releases and calls to 3 November 2026; HD Hyundai Electric, Hyosung, Virginia Transformer, Prolec GE and Cleveland-Cliffs releases; Reuters (26 June 2025); US Department of Energy (June 2012 and July 2024); National Renewable Energy Laboratory (February 2024); Federal Register; UN Comtrade; Bureau of Labor Statistics; IMF; Edison Electric Institute; Uptime Institute; Nvidia; Council of the European Union; Wood Mackenzie. Years of work are my arithmetic. Personal research, not investment advice.</p>

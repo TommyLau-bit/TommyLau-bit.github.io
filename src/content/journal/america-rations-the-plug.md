@@ -47,7 +47,7 @@ Building the upgrades. Every other step is paperwork that a regulator can redraw
 
 On 18 June 2026 FERC, the federal power regulator, said a study listing the upgrades, a cost estimate and a build time "should take no more than 60-90 days". The build is the long part. FERC's own record notes that a data centre "may only take 1-2 years to construct", while the lines and substations to serve it take longer. PJM's answer, to be filed on 16 November, is one 12-month process a year for power stations and large loads alike.
 
-Each large transformer is designed for the voltages of one substation, so none comes off a shelf. The grid businesses of Siemens Energy and Hitachi Energy hold about four and three years of signed work, as [the equipment queue](/journal/the-equipment-queue/) measures it.
+Each large transformer is designed for the voltages of one substation, so none comes off a shelf. The grid businesses of Siemens Energy and Hitachi Energy hold about 3.7 and 3.1 years of signed work, as [the equipment queue](/journal/the-equipment-queue/) measures it.
 
 So a rule can make the paperwork faster. It cannot make a transformer arrive sooner.
 
