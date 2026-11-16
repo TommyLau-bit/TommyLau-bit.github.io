@@ -37,11 +37,11 @@ const gradeClass = (x: Grade) => (x === 'A' || x === 'B' || x === '∞' ? 'is-hi
 <Base title="Power" description="Every way to power an AI data centre, as a roster of player cards: the grid, gas turbines, engines, fuel cells, solar, batteries and reactors." wide>
   <header class="article-head pw-head">
     <h1>Power: the roster</h1>
-    <p class="pw-lede">Every way to power an AI data centre, as a team of players. The grid comes first as the default every builder starts from; the cards are the machines they build when it makes them wait.</p>
+    <p class="pw-lede">Every way to power an AI data centre, as a team of players. The grid comes first, as the default every builder starts from. The cards are the machines they build when the grid makes them wait.</p>
     <dl class="pw-key">
       {RATINGS.map((R) => <div><dt>{R.name}</dt><dd>{R.hint}</dd></div>)}
     </dl>
-    <p class="pw-keynote">Graded A (excellent) to E (very weak), each from one sourced number: <a href="#formulas">see the bands</a>.</p>
+    <p class="pw-keynote">Graded A (excellent) to E (very weak), each from one sourced number. <a href="#formulas">See the bands</a>.</p>
   </header>
 
   {GROUPS.map((g) => (
@@ -59,17 +59,17 @@ const gradeClass = (x: Grade) => (x === 'A' || x === 'B' || x === '∞' ? 'is-hi
         <div class="pw-grid-text">
           <h3>Why the grid is a problem</h3>
           <ul>
-            <li>No date: Dominion, in Virginia, has none yet for 45 GW of data centres. A request today waits 5 to 6 years or more.</li>
-            <li>Even approved sites can be paused: Texas froze switch-ons for big data centres in August 2026.</li>
-            <li>A data centre takes 1 to 2 years to build. A large transformer alone is quoted at 3 to 5 years.</li>
+            <li>No date. Dominion, in Virginia, still hasn't given one to 45 GW of data centres. A request today waits 5 to 6 years or more.</li>
+            <li>Even approved sites can be paused. Texas froze switch-ons for big data centres in August 2026.</li>
+            <li>A data centre takes 1 to 2 years to build, but a large transformer alone is quoted at 3 to 5 years.</li>
           </ul>
           <h3>Why builders go elsewhere</h3>
           <ul>
-            <li>A date they can plan on: a rented gas fleet in months, gas engines in about 2 to 3 years.</li>
+            <li>A date they can actually plan on. A rented gas fleet takes months, gas engines about 2 to 3 years.</li>
             <li>Their own schedule, not a utility's queue.</li>
-            <li>The catch: the machine makers have queues too, and gas still comes by pipe.</li>
+            <li>But the machine makers have queues too, and gas still comes by pipe.</li>
           </ul>
-          <p class="pw-src-line">Sources: Dominion (May and September 2026); ERCOT (20 August 2026); FERC (18 June 2026); US Department of Energy (July 2024); the cards below. Where the grid is quick, as in Johor (12 months), builders stay on it.</p>
+          <p class="pw-src-line">Sources: Dominion (May and September 2026); ERCOT (20 August 2026); FERC (18 June 2026); US Department of Energy (July 2024); the cards below. Where the grid is quick, like Johor (12 months), builders just stay on it.</p>
           <p class="pcard-ch"><a href="/journal/the-queue-not-the-chip/#why-did-so-many-data-centres-come-to-johor">Chapter {chapterN('the-queue-not-the-chip')}: {chapterName('the-queue-not-the-chip')}</a><a href="/journal/america-rations-the-plug/#which-step-takes-longest-and-why-can-no-rule-hurry-it">Chapter {chapterN('america-rations-the-plug')}: {chapterName('america-rations-the-plug')}</a><a href="/journal/building-your-own-power/">Chapter {chapterN('building-your-own-power')}: {chapterName('building-your-own-power')}</a></p>
         </div>
       </div>
@@ -122,7 +122,7 @@ const gradeClass = (x: Grade) => (x === 'A' || x === 'B' || x === '∞' ? 'is-hi
 
   <details class="pw-how" id="formulas">
     <summary>How the grades are worked out</summary>
-    <p>Each grade reads one sourced number and nothing else, through the bands below; a range uses its middle. A number that could not be found in a primary source grades ?, and a machine that needs no fuel grades ∞ on Stamina. There is no overall grade: the ratings measure different things, and the role on each card says what it is for.</p>
+    <p>Each grade reads one sourced number and nothing else, through the bands below; a range uses its middle. A number that could not be found in a primary source grades ?, and a machine that needs no fuel grades ∞ on Stamina. There's no overall grade. Reason being, the ratings measure different things, and the role on each card tells you what it's for.</p>
     <table class="pw-ftable pw-bands">
       <thead><tr><th scope="col">Rating</th><th scope="col">Reads</th>{GRADES.map((G) => <th scope="col">{G} <small>{GRADE_WORD[G]}</small></th>)}</tr></thead>
       <tbody>

@@ -1,7 +1,7 @@
 ---
 title: "America rations the plug: who may be cut, who must hold on, who pays"
 date: 2026-09-22T18:53:00+08:00
-summary: "America cannot build grid wires as fast as data centres ask for them, so its grids are rationing the connection instead of speeding it up. Most of its grids are writing a cheaper plug the grid may cut first, though no data centre yet runs on one; sites must now hold on when the voltage dips, after 3,900 megawatts left Virginia's grid in one morning; and households still share the bill for the wait. Meanwhile signed gigawatts run far ahead of running ones: Dominion has about 54 gigawatts of data centres under contract and bills 4.8."
+summary: "America can't build grid wires as fast as data centres ask for them, so instead of speeding up the connection, its grids are rationing it. Most of them are writing a cheaper plug the grid may cut first (although no data centre runs on one yet), sites now have to hold on when the voltage dips after 3,900 megawatts left Virginia's grid in one morning, and households still share the bill for the wait. Meanwhile signed gigawatts are way ahead of running ones, and Dominion has about 54 gigawatts of data centres under contract but only bills 4.8."
 category: "Analysis"
 format: "depth"
 cover: "/covers/america-rations-the-plug.svg"
@@ -12,48 +12,48 @@ draft: false
 <a id="america-rations-the-plug"></a>
 <a id="ercot-rations-the-plug"></a>
 
-On 3 August 2026 the Governor of Texas said ERCOT, which runs most of the state's grid, was weighing over 474 gigawatts of requests to connect. That is more than five times the most power Texas has ever used at once, and about nine tenths of it is data centres.
+On 3 August 2026 the Governor of Texas said ERCOT, which runs most of the state's grid, was looking at over 474 gigawatts of requests to connect. That's more than five times the most power Texas has ever used at once, and about nine tenths of it is data centres.
 
-Twelve days earlier, a fault on a power line in Dominion Energy's part of Virginia was cleared exactly as designed. Even so, about 3,900 megawatts of data centres switched themselves off the grid onto their own backup. And in September Dominion told PJM, the grid operator, that it had about 54 gigawatts of data centres under contract, against 4.8 gigawatts it actually bills.
+Twelve days earlier, a fault on a power line in Dominion Energy's part of Virginia was cleared exactly the way it should be. Even so, about 3,900 megawatts of data centres switched themselves off the grid and onto their own backup. Then in September, Dominion told PJM, the grid operator, that it had about 54 gigawatts of data centres under contract, but it only actually bills 4.8 gigawatts.
 
-That is the claim of this piece. America cannot build wires as fast as data centres ask for them, so it is rationing the connection rather than speeding it up: a firm plug for those who wait, a cheaper plug the grid may cut first for those who will not, and rules that make every site hold on when the grid wobbles. The gap between signed and running gigawatts is where the wait shows, and households still share the bill for it.
+Put simply, America can't build wires as fast as data centres ask for them, so it's rationing the connection rather than speeding it up. Basically, there's a firm plug for those who wait, a cheaper plug the grid may cut first for those who won't, and rules that make every site hold on when the grid wobbles. The gap between signed and running gigawatts is where you see the wait, and households still share the bill for it.
 
 <details class="analogy">
 <summary>The analogy</summary>
-<p>Picture a restaurant whose gas main is full, with the bigger one booked for years. A table with full service waits for the new main: that is firm service. Diners seated now on the terrace get their burners turned down first when the kitchen is slammed, and must bring a camping stove: that is the cut-first tier and its backup.</p>
-<p>When the lights flicker, nobody may run for the door at once, because a stampede tips the room over: that is holding on. Meanwhile someone pays for gas bottles rented until the main is dug: that is the bill for the wait. And the bookings book is fuller than the dining room ever will be: that is the gap between signed and running.</p>
+<p>Think of a restaurant whose gas main is already full, and the bigger one is booked for years. If you want a table with full service, you wait for the new main. That's firm service. If you want to be seated now, you go on the terrace, but your burners get turned down first when the kitchen is slammed, and you have to bring a camping stove. That's the cut-first tier and its backup.</p>
+<p>When the lights flicker, nobody is allowed to run for the door at once, because a stampede tips the whole room over. That's holding on. Meanwhile, someone has to pay for the gas bottles rented until the new main is dug. That's the bill for the wait. And the bookings book is fuller than the dining room will ever be. That's the gap between signed and running.</p>
 </details>
 
 ## How does a data centre get connected to the grid?
 
-It applies to its local utility, waits while the utility and the grid operator study what the wires can carry, waits again while the upgrades are built, and only then switches on.
+It applies to its local utility, then waits while the utility and the grid operator study what the wires can carry. Then it waits again while the upgrades are built, and only after that does it switch on.
 
-A data centre is a **load**, a user of power, and loads join by a less formal path than power stations.
+A data centre is a **load**, meaning a user of power, and loads join the grid by a less formal path than power stations do.
 
 <figure class="illo">
-<p class="illo-title">Four of the five steps are paperwork; the third is steel and copper</p>
+<p class="illo-title">Four of the five steps are paperwork, but the third is steel and copper</p>
 <p class="illo-sub">From application to running, for a large data centre in an American grid, simplified</p>
 <svg viewBox="0 0 940 282" role="img" aria-label="The five steps from application to running for a large data centre in America. One, apply: the developer files its site, megawatts and a deposit with the local utility, in weeks. Two, study: the utility and grid operator check what the wires can carry; FERC wants studies done in 60 to 90 days. Three, build the upgrades: new lines, substations and transformers, made by factories and built by the utility, which takes years and is the step no rule can hurry; it is shaded. Four, switch on: firm service waits for step three, or the site switches on now on a tier the grid may cut first. Five, run: the site must hold on through voltage dips, with its UPS batteries and generators, and pays its share of the bill every year."><line class="i-ground" x1="10" y1="190" x2="930" y2="190"/><path class="i-line" d="M154 130 H218"/><path class="i-line" d="M211 125 l7 5 l-7 5" style="fill:none"/><path class="i-line" d="M342 130 H408"/><path class="i-line" d="M401 125 l7 5 l-7 5" style="fill:none"/><path class="i-line" d="M532 130 H598"/><path class="i-line" d="M591 125 l7 5 l-7 5" style="fill:none"/><path class="i-line" d="M722 130 H788"/><path class="i-line" d="M781 125 l7 5 l-7 5" style="fill:none"/><rect class="i-fill" x="58" y="70" width="56" height="74" rx="3"/><line class="i-thin" x1="66" y1="86" x2="106" y2="86"/><line class="i-thin" x1="66" y1="98" x2="100" y2="98"/><line class="i-thin" x1="66" y1="110" x2="106" y2="110"/><line class="i-thin" x1="66" y1="122" x2="100" y2="122"/><text class="i-k" x="86" y="138" text-anchor="middle">300 MW</text><ellipse class="i-metal" cx="132" cy="182" rx="16" ry="5"/><ellipse class="i-metal" cx="132" cy="174" rx="16" ry="5"/><ellipse class="i-metal" cx="132" cy="166" rx="16" ry="5"/><ellipse class="i-metal" cx="132" cy="158" rx="16" ry="5"/><line class="i-thin" x1="236" y1="90" x2="270" y2="70"/><line class="i-thin" x1="270" y1="70" x2="310" y2="96"/><line class="i-thin" x1="236" y1="90" x2="250" y2="140"/><line class="i-thin" x1="250" y1="140" x2="296" y2="150"/><line class="i-thin" x1="296" y1="150" x2="326" y2="130"/><line class="i-thin" x1="310" y1="96" x2="326" y2="130"/><line class="i-thin" x1="270" y1="70" x2="296" y2="150"/><circle class="i-fill" cx="236" cy="90" r="5"/><circle class="i-fill" cx="270" cy="70" r="5"/><circle class="i-fill" cx="310" cy="96" r="5"/><circle class="i-fill" cx="250" cy="140" r="5"/><circle class="i-fill" cx="296" cy="150" r="5"/><circle class="i-fill" cx="326" cy="130" r="5"/><circle class="i-line" cx="298" cy="118" r="20" style="fill:none"/><line class="i-line" x1="312" y1="132" x2="330" y2="152"/><rect class="i-choke" x="396" y="40" width="148" height="150" rx="6"/><path class="i-line" d="M420 190 L436 58 L452 190 M426 150 H446 M430 110 H442 M412 76 H460" style="fill:none"/><rect class="i-fill" x="470" y="112" width="56" height="78" rx="4"/><rect class="i-fill" x="476" y="88" width="8" height="24" rx="3"/><rect class="i-fill" x="494" y="88" width="8" height="24" rx="3"/><rect class="i-fill" x="512" y="88" width="8" height="24" rx="3"/><line class="i-thin" x1="478" y1="130" x2="518" y2="130"/><line class="i-thin" x1="478" y1="146" x2="518" y2="146"/><path class="i-line" d="M610 130 H650 L680 92 H712 M650 130 L680 168 H712" style="fill:none"/><circle class="i-fill" cx="650" cy="130" r="5"/><text class="i-n" x="674" y="84">firm</text><text class="i-hot-t" x="674" y="160">cut first</text><rect class="i-fill" x="794" y="84" width="74" height="106" rx="3"/><rect class="i-metal" x="802" y="100" width="14" height="78" rx="1"/><rect class="i-metal" x="824" y="100" width="14" height="78" rx="1"/><rect class="i-metal" x="846" y="100" width="14" height="78" rx="1"/><rect class="i-cool-f" x="876" y="132" width="26" height="58" rx="2"/><text class="i-k" x="889" y="126" text-anchor="middle">UPS</text><rect class="i-metal" x="906" y="150" width="30" height="40" rx="2"/><line class="i-thin" x1="912" y1="150" x2="912" y2="140"/><text class="i-k" x="921" y="136" text-anchor="middle">gen</text><text class="i-t" x="92" y="214" text-anchor="middle">1. Apply</text><text class="i-n" x="92" y="231" text-anchor="middle">site, megawatts, deposit</text><text class="i-n" x="92" y="247" text-anchor="middle">to the local utility</text><text class="i-k" x="92" y="267" text-anchor="middle">weeks</text><text class="i-t" x="280" y="214" text-anchor="middle">2. Study</text><text class="i-n" x="280" y="231" text-anchor="middle">what the wires can carry</text><text class="i-n" x="280" y="247" text-anchor="middle">utility and grid operator</text><text class="i-k" x="280" y="267" text-anchor="middle">FERC wants 60 to 90 days</text><text class="i-t" x="470" y="214" text-anchor="middle">3. Build the upgrades</text><text class="i-n" x="470" y="231" text-anchor="middle">lines, substations, transformers</text><text class="i-n" x="470" y="247" text-anchor="middle">factories and the utility</text><text class="i-hot-t" x="470" y="267" text-anchor="middle">years: no rule hurries it</text><text class="i-t" x="660" y="214" text-anchor="middle">4. Switch on</text><text class="i-n" x="660" y="231" text-anchor="middle">firm, or on a tier cut first</text><text class="i-n" x="660" y="247" text-anchor="middle">utility and grid operator</text><text class="i-k" x="660" y="267" text-anchor="middle">firm waits for step 3</text><text class="i-t" x="850" y="214" text-anchor="middle">5. Run</text><text class="i-n" x="850" y="231" text-anchor="middle">hold on in a dip, pay the bill</text><text class="i-n" x="850" y="247" text-anchor="middle">the site</text><text class="i-k" x="850" y="267" text-anchor="middle">every year after</text><text class="i-head" x="10" y="22">Who decides each step, and how long it takes</text></svg>
 <figcaption>FERC's PJM show cause order (18 June 2026) for the study target and who handles load requests; the equipment queue for the build. My drawing.</figcaption>
 </figure>
 
-Five steps follow. The developer applies with a site, a size in **megawatts (MW)**, a schedule for ramping up and a deposit. A megawatt is a million watts, the draw of about a thousand homes; a **gigawatt (GW)** is a thousand megawatts. The utility and the grid operator study whether the wires can carry it. The study lists the **upgrades** the site needs: new or bigger lines, substations, transformers and breakers. The upgrades are built. Then the utility gives "approval to energise", and the site switches on and ramps up.
+There are five steps. First, the developer applies with a site, a size in **megawatts (MW)**, a schedule for ramping up and a deposit. A megawatt is a million watts, the draw of about a thousand homes; a **gigawatt (GW)** is a thousand megawatts. Then the utility and the grid operator study whether the wires can carry it. The study lists the **upgrades** the site needs, like new or bigger lines, substations, transformers and breakers. Next, the upgrades are built. Finally, the utility gives "approval to energise", and the site switches on and ramps up.
 
-What the site gets at the end is **firm service**, the grid's promise to carry it at all times short of an emergency. To promise that, the grid must have both the wires to reach the site and enough power stations standing ready for its peak. Both are now short.
+What the site gets at the end is **firm service**, which is the grid's promise to carry it at all times, short of an emergency. To promise that, the grid needs both the wires to reach the site and enough power stations standing ready for its peak. Right now, both are short.
 
 ## Which step takes longest, and why can no rule hurry it?
 
-Building the upgrades. Every other step is paperwork that a regulator can redraw in months; the upgrades are steel, copper and factory slots.
+Building the upgrades. Every other step is paperwork that a regulator can redraw in months, but the upgrades are steel, copper and factory slots.
 
-On 18 June 2026 FERC, the federal power regulator, said a study listing the upgrades, a cost estimate and a build time "should take no more than 60-90 days". The build is the long part. FERC's own record notes that a data centre "may only take 1-2 years to construct", while the lines and substations to serve it take longer. PJM's answer, to be filed on 16 November, is one 12-month process a year for power stations and large loads alike.
+On 18 June 2026 FERC, the federal power regulator, said a study listing the upgrades, a cost estimate and a build time "should take no more than 60-90 days". The long part is the build. FERC's own record notes that a data centre "may only take 1-2 years to construct", but the lines and substations to serve it take longer. PJM's answer, to be filed on 16 November, is one 12-month process a year for both power stations and large loads.
 
-Each large transformer is designed for the voltages of one substation, so none comes off a shelf. The grid businesses of Siemens Energy and Hitachi Energy hold about 3.7 and 3.1 years of signed work, as [the equipment queue](/journal/the-equipment-queue/) measures it.
+Each large transformer is designed for the voltages of one substation, so none of them comes off a shelf. The grid businesses of Siemens Energy and Hitachi Energy hold about 3.7 and 3.1 years of signed work, as [the equipment queue](/journal/the-equipment-queue/) measures it.
 
-So a rule can make the paperwork faster. It cannot make a transformer arrive sooner.
+So a rule can make the paperwork faster, but it can't make a transformer arrive any sooner.
 
 ## How long is the line?
 
-Far longer than anything that will be built: the requests are counted in hundreds of gigawatts, and what reaches the last gate in single figures.
+Far longer than anything that will actually be built. The requests are counted in hundreds of gigawatts, and what reaches the last gate is in single figures.
 
 <figure class="chart">
 <p class="chart-title">Texas has been asked for 474 gigawatts, and has cleared 6.6</p>
@@ -62,21 +62,21 @@ Far longer than anything that will be built: the requests are counted in hundred
 <figcaption>Office of the Texas Governor (3 August 2026); ERCOT's Senate briefing (29 July 2026, preliminary) and its presentation to the Texas regulator (20 August 2026); Oncor Form 8-K exhibit (5 November 2026). ERCOT's figures are from different dates in the same summer.</figcaption>
 </figure>
 
-Texas shows the funnel most clearly. ERCOT's 474 GW, as of June 2026, counts requests, not demand. On 29 July ERCOT told the state Senate that about 205 GW was eligible for its first batch study, a preliminary figure. By 20 August, 17 loads totalling 6,608 MW had cleared every check except the approval to energise. Then ERCOT paused that approval for data centres of 75 MW or more, while it audits every request at the Governor's order.
+Texas shows the funnel most clearly. ERCOT's 474 GW, as of June 2026, is a count of requests, not demand. On 29 July, ERCOT told the state Senate that about 205 GW was eligible for its first batch study, which is a preliminary figure. By 20 August, 17 loads totalling 6,608 MW had cleared every check except the approval to energise. Then ERCOT paused that approval for data centres of 75 MW or more, while it audits every request on the Governor's order.
 
-Under a seventieth of the list reached the last gate, and the gate is shut until the audit reports, due by 10 December 2026. "Five times the record peak" divides requests by ERCOT's highest hour, 91.1 GW on 22 July 2026. It does not mean Texas needs five grids: a developer unsure which site will get power first files for several. Oncor, the largest wires company in Texas, alone held 795 requests at 30 September 2026, about 293 GW of them from data centres.
+So under a seventieth of the list reached the last gate, and that gate is shut until the audit reports, which is due by 10 December 2026. "Five times the record peak" just divides requests by ERCOT's highest hour, 91.1 GW on 22 July 2026. It doesn't mean Texas needs five grids. Reason being, a developer who isn't sure which site will get power first files for several. Oncor, the largest wires company in Texas, held 795 requests on its own at 30 September 2026, about 293 GW of them from data centres.
 
 ## If the wires cannot be hurried, what are the grids doing instead?
 
-Selling the connection in two grades: a firm plug that waits for the upgrades, and a cheaper one that switches on now on whatever spare capacity exists, and is cut first when the grid is tight.
+They're selling the connection in two grades. There's a firm plug that waits for the upgrades, and a cheaper one that switches on now using whatever spare capacity there is, but gets cut first when the grid is tight.
 
-The second grade is **non-firm** or **interim service**. The site connects before its upgrades are built and runs as long as the wires have room. When they do not, the grid turns it down before anyone with firm service. When the upgrades arrive it converts to firm.
+The second grade is called **non-firm** or **interim service**. The site connects before its upgrades are built and runs as long as the wires have room. When they don't, the grid turns it down before anyone with firm service. Once the upgrades arrive, it converts to firm.
 
 <a id="ferc-asks-for-a-softer-plug"></a>
 
-The push came from Washington. On 18 June 2026 FERC ordered six regional grid operators to defend their large-load rules or change them, including a service for loads willing to be cut. It found that PJM's tariff, its rulebook, "appears to be unjust, unreasonable, or unduly discriminatory or preferential". PJM and its utilities file their answers by 16 November 2026.
+The push came from Washington. On 18 June 2026 FERC ordered six regional grid operators to either defend their large-load rules or change them, and that included a service for loads willing to be cut. It found that PJM's tariff, its rulebook, "appears to be unjust, unreasonable, or unduly discriminatory or preferential". PJM and its utilities file their answers by 16 November 2026.
 
-The status of each grid's cheaper plug, at 7 November 2026:
+Here's where each grid's cheaper plug stood at 7 November 2026:
 
 | Grid | The cut-first or early tier | Status | Any data centre running on it? |
 |---|---|---|---|
@@ -90,20 +90,20 @@ The status of each grid's cheaper plug, at 7 November 2026:
 
 ## Is any data centre actually running on a cut-first plug?
 
-Not that any primary record shows. On 7 November 2026 I could find no data centre of 50 MW or more switched on under any of these tiers, in any of the seven grids.
+Not that I can find in any primary record. On 7 November 2026 I couldn't find a single data centre of 50 MW or more switched on under any of these tiers, in any of the seven grids.
 
-The one tier in force for ordinary large loads is SPP's CHILLS, and no signed CHILLS agreement is public.
+The only tier in force for ordinary large loads is SPP's CHILLS, and no signed CHILLS agreement has been made public.
 
-So the claim's test is still open. By 31 December 2027 at least two of the seven grids must have a real data centre running on such a tier, shown in a filed agreement. Rules written do not count.
+So the test of my claim is still open. By 31 December 2027 at least two of the seven grids need to have a real data centre running on one of these tiers, shown in a filed agreement. Rules on paper don't count.
 
-The strongest counter-evidence is PJM's own plan for a fourth service, Fractional NITS, "a firm service, based on available system capacity": firm power for part of a site now, the rest when the upgrades arrive. If developers take part of a site firm rather than all of it cut first, the rationing happens by size, not grade, and my test breaks.
+To be fair, the strongest evidence against me is PJM's own plan for a fourth service, Fractional NITS, "a firm service, based on available system capacity". That means firm power for part of a site now, and the rest when the upgrades arrive. If developers take part of a site firm rather than all of it cut first, then the rationing is by size, not grade, and my test breaks.
 
 <a id="the-hours-a-cut-first-site-can-run"></a>
 ## How many hours a year would a cut-first site be cut?
 
-Nobody publishes it, which is the gap an investor should notice. A cut-first megawatt is worth the hours it is allowed to run, and no tier states them.
+Nobody publishes it, and that's the gap an investor should notice. A cut-first megawatt is only worth the hours it's allowed to run, and none of the tiers state them.
 
-The best estimate is academic. Duke University's Nicholas Institute calculated in February 2025 how much new load America's 22 largest grids could take without new power stations, if that load accepted cuts in the tightest hours. Its answer, as the institute and the trade press summarise it, runs from 76 GW to 126 GW.
+The best estimate I found is an academic one. In February 2025 Duke University's Nicholas Institute worked out how much new load America's 22 largest grids could take without new power stations, if that load accepted cuts in the tightest hours. Its answer, as the institute and the trade press summarise it, is somewhere between 76 GW and 126 GW.
 
 <figure class="chart">
 <p class="chart-title">If new load accepts a few cuts a year, existing grids can take far more of it</p>
@@ -112,22 +112,22 @@ The best estimate is academic. Duke University's Nicholas Institute calculated i
 <figcaption>Duke University Nicholas Institute, Rethinking Load Growth (11 February 2025), as summarised by the institute and the trade press; I could not open the report itself. Hours are the model's, not a contract's.</figcaption>
 </figure>
 
-The cuts in that model are small and partial. At 0.5% of a year's energy, the new load is cut for about 177 hours a year, and in 88% of those hours at least half of it keeps running. A typical cut lasts about two hours. The real contracts are confidential. Until a filed agreement states the hours, any model that values a cut-first megawatt like a firm one is guessing.
+The cuts in that model are small, and only partial. At 0.5% of a year's energy, the new load gets cut for about 177 hours a year, and in 88% of those hours at least half of it keeps running. A typical cut lasts about two hours. However, the real contracts are confidential. So until a filed agreement states the hours, any model that values a cut-first megawatt like a firm one is just guessing.
 
 ## What keeps a site running when the grid cuts it?
 
-Three things: its own generators, batteries, or chips that slow down. Each has its own limit, and the generators' limit is set by an air permit, not by the grid.
+Three things: its own generators, batteries, or chips that slow down. Each one has its own limit, and for generators that limit is set by an air permit, not by the grid.
 
-**Generators.** Almost every data centre already has diesel generators for outages. But under the federal air rule for emergency engines, running outside an emergency is capped at 100 hours a year for maintenance and testing, of which only 50 may earn money. A cut beyond that, outside a declared emergency, needs engines permitted to run as power stations, which is why [building your own power](/journal/building-your-own-power/) matters to this piece.
+**Generators.** Almost every data centre already has diesel generators for outages. But under the federal air rule for emergency engines, running outside an emergency is capped at 100 hours a year for maintenance and testing, of which only 50 may earn money. A cut beyond that, outside a declared emergency, needs engines that are permitted to run as power stations. That's why [building your own power](/journal/building-your-own-power/) matters here.
 
 <a id="google-lets-the-grid-slow-its-chips"></a>
 
-**Chips that slow.** By 19 March 2026 Google had deals with five utilities, covering 1 GW, under which it can "limit or shift a portion" of its machine learning work at peak. No record yet shows a connection approved on a slowed chip.
+**Chips that slow.** By 19 March 2026 Google had deals with five utilities covering 1 GW, which let it "limit or shift a portion" of its machine learning work at peak. But no record yet shows a connection that was approved on a slowed chip.
 
 <a id="what-the-battery-is-really-for"></a>
 <a id="california-still-shifts-the-sun"></a>
 
-**Batteries.** A large battery at a site could carry it through a cut. But the batteries America is building mostly move solar power into the evening: California's fleet earned about $35 per kilowatt a year from shifting energy, against $9 from steadying the grid. And in PJM's capacity market a megawatt of **demand response**, load that agrees to be cut on call, counts for more than a megawatt of four-hour battery.
+**Batteries.** A large battery at a site could carry it through a cut. But the batteries America is building mostly move solar power into the evening. California's fleet earned about $35 per kilowatt a year from shifting energy, against $9 from steadying the grid. On top of that, in PJM's capacity market a megawatt of **demand response**, meaning load that agrees to be cut on call, counts for more than a megawatt of four-hour battery.
 
 <figure class="chart">
 <p class="chart-title">PJM counts a megawatt that can be cut for more than a megawatt of battery</p>
@@ -138,22 +138,22 @@ Three things: its own generators, batteries, or chips that slow down. Each has i
 
 ## Why did 3,900 megawatts of data centres leave Virginia's grid in one morning?
 
-Because every site did exactly what it was set to do, at the same moment. No equipment failed; the fault was in the sum.
+Because every site did exactly what it was set to do, all at the same moment. No equipment failed. The problem was all of them doing it together.
 
 <a id="the-power-it-drops"></a>
 
-At 07:56 on 22 July 2026 a 230,000 volt line faulted in Dominion's zone. A **fault** is current rushing to the ground, through a failed part or a branch on a line, and while it lasts voltage sags across the whole area. Breakers opened within hundredths of a second, and PJM found no relay misoperated. The grid did its job.
+At 07:56 on 22 July 2026, a 230,000 volt line faulted in Dominion's zone. A **fault** is when current rushes to the ground, through a failed part or a branch on a line, and while it lasts the voltage sags across the whole area. The breakers opened within hundredths of a second, and PJM found no relay had misoperated. So the grid did its job.
 
 <figure class="illo">
-<p class="illo-title">Each site counts the dips and leaves on the third; PJM's rule says stay</p>
+<p class="illo-title">Each site counts the dips and leaves on the third, but PJM's rule says stay</p>
 <p class="illo-sub">A fault the grid clears normally, as one data centre sees it, and PJM's proposed ride-through rule, simplified, not to scale in time</p>
 <svg viewBox="0 0 940 350" role="img" aria-label="Left: what a data centre sees in a fault the grid clears normally. Voltage on the line falls to about a third of normal for about a twentieth of a second, the fault is cleared, and the line is retried twice, each retry another dip. The UPS counts the dips; a common setting is three within a minute, after which the site moves to its generators and stays there until staff switch it back. Its draw from the grid falls to nothing, and with that load gone the voltage overshoots. Right: PJM's proposed rule, how long a site must stay connected at each voltage: above 1.2 times normal it may trip; 1.1 to 1.2, one second; 0.9 to 1.1, always; 0.8 to 0.9, two seconds; 0.5 to 0.8, half a second; below half, a quarter of a second. It must then return to 90 per cent of its earlier draw within two seconds."><text class="i-head" x="10" y="18">What the site sees on the line, and what it does</text><line class="i-faint" x1="70" y1="65.0" x2="548" y2="65.0"/><text class="i-k" x="62" y="69.0" text-anchor="end">normal</text><line class="i-faint" x1="70" y1="127.5" x2="548" y2="127.5"/><text class="i-k" x="62" y="131.5" text-anchor="end">half</text><line class="i-ground" x1="70" y1="190" x2="548" y2="190"/><path class="i-line" d="M70 65.0 H130 L134 152.5 H142 L146 65.0 H250 L254 152.5 H262 L266 65.0 H370 L374 152.5 H382 L386 65.0 H410 C422 65.0 426 53.7 440 53.7 H466 C480 53.7 490 65.0 510 65.0 H548" style="fill:none"/><text class="i-n" x="138" y="168.5" text-anchor="middle">fault</text><text class="i-n" x="258" y="168.5" text-anchor="middle">retry</text><text class="i-n" x="378" y="168.5" text-anchor="middle">retry</text><text class="i-k" x="138" y="34" text-anchor="middle">cleared in about 0.05 s</text><text class="i-hot-t" x="450" y="45.7" text-anchor="middle">voltage overshoots</text><text class="i-k" x="62" y="236" text-anchor="end">draw</text><path class="i-cool" d="M70 230 H382 L386 260 H548" style="fill:none"/><circle class="i-fill" cx="138" cy="284" r="11"/><text class="i-t" x="138" y="289" text-anchor="middle">1</text><circle class="i-fill" cx="258" cy="284" r="11"/><text class="i-t" x="258" y="289" text-anchor="middle">2</text><circle class="i-hot-f" cx="378" cy="284" r="11"/><text class="i-t" x="378" y="289" text-anchor="middle">3</text><text class="i-n" x="70" y="316">The UPS counts the dips. A common setting: three within a minute,</text><text class="i-n" x="70" y="332">and the site moves to its generators until staff switch it back.</text><text class="i-hot-t" x="396" y="289">the site leaves the grid</text><text class="i-head" x="620" y="18">PJM's proposed rule: stay on for at least</text><text class="i-k" x="630" y="57" text-anchor="end">above 1.2</text><text class="i-n" x="648" y="57">may trip</text><text class="i-k" x="630" y="97" text-anchor="end">1.1 to 1.2</text><rect class="i-fill" x="640" y="80" width="92" height="24" rx="2"/><text class="i-n" x="740" y="97">1 s</text><text class="i-k" x="630" y="137" text-anchor="end">0.9 to 1.1</text><rect class="i-cool-f" x="640" y="120" width="218" height="24" rx="2"/><text class="i-n" x="866" y="137">always</text><text class="i-k" x="630" y="177" text-anchor="end">0.8 to 0.9</text><rect class="i-fill" x="640" y="160" width="120" height="24" rx="2"/><text class="i-n" x="768" y="177">2 s</text><text class="i-k" x="630" y="217" text-anchor="end">0.5 to 0.8</text><rect class="i-fill" x="640" y="200" width="66" height="24" rx="2"/><text class="i-n" x="714" y="217">0.5 s</text><text class="i-k" x="630" y="257" text-anchor="end">below 0.5</text><rect class="i-fill" x="640" y="240" width="39" height="24" rx="2"/><text class="i-n" x="687" y="257">0.25 s</text><text class="i-n" x="620" y="292">Voltage as a share of normal. Then back to 90%</text><text class="i-n" x="620" y="308">of its earlier draw within 2 seconds.</text><line class="i-faint" x1="600" y1="30" x2="600" y2="340"/></svg>
 <figcaption>NERC incident review (January 2025) for the counting rule and the 2024 event; PJM's Markets and Reliability Committee deck (28 October 2026) for the rule. My drawing.</figcaption>
 </figure>
 
-Servers cannot tolerate even a short sag, so every data centre has a **UPS**, an uninterruptible power supply: batteries that take over the servers in milliseconds. Many sites also run a counting rule. A typical setting, NERC, which writes the grid's reliability standards, found, is three dips within one minute, after which the site moves to its generators until staff switch it back by hand.
+Servers can't handle even a short sag, so every data centre has a **UPS**, an uninterruptible power supply, which is batteries that take over the servers in milliseconds. Many sites also run a counting rule. NERC, which writes the grid's reliability standards, found that a typical setting is three dips within one minute. After that, the site moves to its generators until staff switch it back by hand.
 
-Every site in the area sees the same dip and follows similar settings, so thousands of megawatts leave together. On 22 July about 2,900 MW left at once. With that load gone, voltage rose to about 1.14 times normal, and the high voltage set off a second wave of about 1,000 MW a minute later.
+Every site in the area sees the same dip and follows similar settings, so thousands of megawatts leave together. On 22 July, about 2,900 MW left at once. With that load gone, the voltage rose to about 1.14 times normal, and that high voltage set off a second wave of about 1,000 MW a minute later.
 
 <figure class="chart">
 <p class="chart-title">July's drop was the largest in PJM's history, and the third in two years</p>
@@ -162,23 +162,23 @@ Every site in the area sees the same dip and follows similar settings, so thousa
 <figcaption>NERC incident review (January 2025); PJM's Planning Committee deck (6 October 2026), which gives the February 2025 event as about 1,800 MW and July 2026 as about 3,900 MW; earlier PJM material gave about 1,500 and 3,800. PJM release on the 2028/29 auction (14 July 2026).</figcaption>
 </figure>
 
-It was not the first time. On 10 July 2024 about 1,500 MW of data centres moved to backup, NERC's review found, and on 17 February 2025 another fault moved about 1,800 MW. July's drop was about seven times the 525 MW of new and enlarged power stations that PJM's last capacity auction added.
+This wasn't the first time. On 10 July 2024 about 1,500 MW of data centres moved to backup, NERC's review found, and on 17 February 2025 another fault moved about 1,800 MW. For scale, July's drop was about seven times the 525 MW of new and enlarged power stations that PJM's last capacity auction added.
 
 ## What is ride-through, and who now requires it?
 
-**Ride-through** is a rule that a site must stay connected through a brief voltage or frequency disturbance, and be back to nearly its earlier draw within seconds. Texas has one in force; PJM files its own on 16 November.
+**Ride-through** is a rule that says a site has to stay connected through a brief voltage or frequency disturbance, and be back to nearly its earlier draw within seconds. Texas already has one in force, and PJM files its own on 16 November.
 
-The site must not open its breaker to the grid or jump to its generators. PJM's proposal covers sites of 50 MW or more with at least 25 MW behind power electronics. Between 90% and 110% of normal voltage a site must never leave, and deeper dips set shorter minimum times. New projects would comply from 16 January 2027, and existing sites by the later of 16 January 2028 or a year after switching on.
+In practice, the site can't open its breaker to the grid or jump to its generators. PJM's proposal covers sites of 50 MW or more with at least 25 MW behind power electronics. Between 90% and 110% of normal voltage, a site can never leave, and the deeper the dip, the shorter the minimum time. New projects would have to comply from 16 January 2027, and existing sites by the later of 16 January 2028 or a year after switching on.
 
-Texas went first. ERCOT's ride-through rule for large computing loads has been in force since 1 August 2026. The national standard is slower: NERC's first three standards for computing loads passed their final ballot in October, but on PJM's reading they only collect data. A minimum is expected in a standard in 2027.
+Texas went first. ERCOT's ride-through rule for large computing loads has been in force since 1 August 2026. The national standard is slower. NERC's first three standards for computing loads passed their final ballot in October, but the way PJM reads them, they only collect data. An actual minimum is expected in a standard in 2027.
 
 ## Who pays for the wait?
 
-For now, everyone on the grid, through the auction that pays power stations to stand ready. In PJM that price has sat at its cap three times running.
+For now, everyone on the grid does, through the auction that pays power stations to stand ready. In PJM, that price has hit its cap three times running.
 
 <a id="pjm-sends-the-bill"></a>
 
-PJM's **capacity auction** pays power stations, per megawatt per day, to be available in a delivery year three years ahead. It buys readiness, not energy, and the last megawatt needed sets everyone's price. When data centres join the forecast, PJM must buy more readiness, and the price rises for every customer.
+PJM's **capacity auction** pays power stations, per megawatt per day, to be available in a delivery year three years ahead. It's paying for readiness, not energy, and the last megawatt needed sets the price for everyone. So when data centres join the forecast, PJM has to buy more readiness, and the price goes up for every customer.
 
 <figure class="chart">
 <p class="chart-title">PJM's auction has sat at its cap three times running, and the cap rises in December</p>
@@ -187,13 +187,13 @@ PJM's **capacity auction** pays power stations, per megawatt per day, to be avai
 <figcaption>PJM auction reports and releases to 14 July 2026, and its 2029/30 planning parameters (31 August 2026). The uncapped 2028/29 price is as reported by the American Public Power Association from PJM's figures. The cap differs slightly each year.</figcaption>
 </figure>
 
-The price jumped from $28.92 a megawatt per day for 2024/25 to $269.92 for 2025/26. Since then it has hit the cap, the most the auction may pay, three times running. The cap has not called up new plant. The 2028/29 auction fell 6,831 MW short of PJM's own reliability requirement. PJM's independent market monitor argued that by 21 September 2026, 4,017 MW of forecast data centre load had been cancelled or delayed, on its arithmetic cutting the shortfall to 3,055 MW.
+The price jumped from $28.92 a megawatt per day for 2024/25 to $269.92 for 2025/26. Since then it has hit the cap, which is the most the auction is allowed to pay, three times running. However, the cap hasn't brought in new plant. The 2028/29 auction fell 6,831 MW short of PJM's own reliability requirement. PJM's independent market monitor argued that by 21 September 2026, 4,017 MW of forecast data centre load had been cancelled or delayed, which on its arithmetic cuts the shortfall to 3,055 MW.
 
 ## How much of a household's bill is that?
 
-Less than the headlines imply. Capacity was about a sixth of PJM's wholesale cost in the first half of 2026; data centres' share of it added about a tenth to the cost of each megawatt-hour.
+Less than the headlines make it sound. Capacity was about a sixth of PJM's wholesale cost in the first half of 2026. The data centres' share of it added about a tenth to the cost of each megawatt-hour.
 
-The monitor attributes $6.3 billion, 38.2% of the 2028/29 auction, to data centre load.
+The monitor puts $6.3 billion, 38.2% of the 2028/29 auction, down to data centre load.
 
 <figure class="chart">
 <p class="chart-title">Capacity tripled, but energy is still most of the cost</p>
@@ -202,33 +202,33 @@ The monitor attributes $6.3 billion, 38.2% of the 2028/29 auction, to data centr
 <figcaption>PJM market monitor, report to the Members Committee (27 July 2026). It gives each part; the small remainder is other charges.</figcaption>
 </figure>
 
-In the first half of 2026, PJM's total wholesale cost was $114.50 per megawatt-hour. Energy, the power actually used, was 63.5% of it. Capacity tripled, to 17.1% of the total. The monitor puts the data centre effect on capacity at $11.11 per megawatt-hour, 9.7% of the wholesale cost. What reaches a household depends on its state. In Pennsylvania the regulator tied June 2026 rises of about 3% to 10% to PJM's capacity costs, as reported.
+In the first half of 2026, PJM's total wholesale cost was $114.50 per megawatt-hour. Energy, which is the power actually used, was 63.5% of it. Capacity tripled, to 17.1% of the total. The monitor puts the data centre effect on capacity at $11.11 per megawatt-hour, 9.7% of the wholesale cost. How much of that reaches a household depends on its state. In Pennsylvania, the regulator tied June 2026 rises of about 3% to 10% to PJM's capacity costs, as reported.
 
 ## Can the bill be moved to the data centres?
 
-Only part of the way. FERC can send the bill to a zone, the area one utility serves; only the states can send it to a customer.
+Only partly. FERC can send the bill to a zone, the area one utility serves, but only the states can send it to a customer.
 
 <a id="ferc-keeps-the-bill-shared"></a>
 
-On 27 July 2026 PJM's board proposed that new sites of 50 MW or more that did not bring their own power stations would be cut first in a shortage. On 9 October FERC rejected that service, finding that parts of it appeared to be "an impermissible intrusion on retail rate regulation". "States have a crucial role", it said, "by designating which retail customers must be curtailed".
+On 27 July 2026 PJM's board proposed that new sites of 50 MW or more that did not bring their own power stations would be cut first in a shortage. On 9 October, FERC rejected that service, because it found that parts of it appeared to be "an impermissible intrusion on retail rate regulation". "States have a crucial role", it said, "by designating which retail customers must be curtailed".
 
 <a id="the-bill-changes-address"></a>
 
-The fight moved to the **reliability backstop**, a one-time purchase of about 6,800 MW of new capacity. On 29 September FERC suspended it to 28 February 2027, mainly over the bill: PJM's measure of load growth could miss some new large loads. PJM refiled on 29 October: each zone would pay by its large-load growth between the actual 2026 summer peak and the 2028/29 forecast. Contracts run up to 15 years, averaging at most $555 a megawatt per day.
+So the fight moved to the **reliability backstop**, a one-time purchase of about 6,800 MW of new capacity. On 29 September, FERC suspended it to 28 February 2027, mainly over the bill. Reason being, PJM's measure of load growth could miss some new large loads. PJM refiled on 29 October, so that each zone would pay by its large-load growth between the actual 2026 summer peak and the 2028/29 forecast. Contracts run for up to 15 years, at an average of no more than $555 a megawatt per day.
 
-Which customers in a zone pay, FERC wrote, is for the states. In January all 13 PJM governors pledged to steer that cost to new data centres "that have not otherwise procured capacity or agreed to be curtailable". So the bill and the plug are one decision. A site would escape the charge by buying its own capacity or taking the plug the grid may cut first. None of it is in force.
+FERC wrote that which customers in a zone pay is up to the states. In January, all 13 PJM governors pledged to steer that cost to new data centres "that have not otherwise procured capacity or agreed to be curtailable". So basically, the bill and the plug are the same decision. A site would avoid the charge by buying its own capacity or by taking the plug the grid may cut first. None of this is in force yet.
 
 <a id="virginia-bills-the-empty-site"></a>
 
-The states have instead written long contracts with minimum bills. Virginia's new rate class for Dominion, GS-5, covers 25 MW or more for 14 years, with a minimum bill of 85% of contracted demand for distribution and for transmission, and 60% for generation. But PJM capacity costs are excluded from the generation minimum, so the auction stays shared.
+What the states have done instead is write long contracts with minimum bills. Virginia's new rate class for Dominion, GS-5, covers 25 MW or more for 14 years, with a minimum bill of 85% of contracted demand for distribution and for transmission, and 60% for generation. But PJM capacity costs are left out of the generation minimum, so the auction cost is still shared.
 
 ## Of all the gigawatts signed, how many are running?
 
-A fraction. Signed power runs far ahead of power at work, at the utility and at the operator alike.
+Only a fraction. Signed power is far ahead of power actually at work, both at the utility and at the operators.
 
 <a id="contracted-energised-running"></a>
 
-An AI campus passes five stages. **Contracted**: land and the right to power are signed. **Built**: the shell, cooling plant and substation go up. **Energised**: the utility switches the connection on. **Delivered**: the finished hall is handed to the tenant. **Running**: chips are drawing power for paying work. Only the last stage earns.
+An AI campus goes through five stages. **Contracted**: land and the right to power are signed. **Built**: the shell, cooling plant and substation go up. **Energised**: the utility switches the connection on. **Delivered**: the finished hall is handed to the tenant. **Running**: chips are drawing power for paying work. Only the last one earns money.
 
 <figure class="chart">
 <p class="chart-title">Dominion has about 54 gigawatts of data centres under contract, and bills 4.8</p>
@@ -237,12 +237,12 @@ An AI campus passes five stages. **Contracted**: land and the right to power are
 <figcaption>Dominion Energy to PJM's Load Analysis Subcommittee (29 September 2026). Dominion counts engineering letters as non-firm.</figcaption>
 </figure>
 
-An engineering letter pays Dominion to design the substation; a construction letter pays it to start building; an electric service agreement commits both sides. As of July 2026 Dominion had about 54 GW of data centres under one of the three, of which 12 GW was under service agreements. In August its data centres' billing peak was 4.8 GW. Its planning assumes the average site takes five years to reach 63% of the power it contracted. Its forecast leaves 19 GW of the engineering letters out altogether, and expects its data centres to draw about 7.8 GW at peak in 2030.
+An engineering letter pays Dominion to design the substation, a construction letter pays it to start building, and an electric service agreement commits both sides. As of July 2026 Dominion had about 54 GW of data centres under one of the three, of which 12 GW was under service agreements. In August, its data centres' billing peak was only 4.8 GW. Dominion's own planning assumes the average site takes five years to reach 63% of the power it contracted. Its forecast leaves out 19 GW of the engineering letters altogether, and expects its data centres to draw about 7.8 GW at peak in 2030.
 
-The operators show the same gap. CoreWeave, which rents out AI computing, had 3.7 GW contracted and 1.5 GW active at 30 June 2026, about 41%.
+You see the same gap at the operators. CoreWeave, which rents out AI computing, had 3.7 GW contracted and 1.5 GW active at 30 June 2026, about 41%.
 
 <figure class="chart">
-<p class="chart-title">At the operators too, signed power runs far ahead of power at work</p>
+<p class="chart-title">At the operators too, signed power is far ahead of power at work</p>
 <p class="chart-sub">Contracted, connected and active power, gigawatts</p>
 <svg viewBox="0 0 560 314" role="img" aria-label="Bar chart in gigawatts. CoreWeave at 30 June 2026: 3.7 contracted, 1.5 active. Nebius: 5 contracted, its target for the end of 2026; 0.8 to 1 connected, its guide for the end of 2026; about 0.17 active at the end of 2025, its latest active figure."><g class="c-grid"><line x1="200.0" y1="28" x2="200.0" y2="294"/><line x1="249.1" y1="28" x2="249.1" y2="294"/><line x1="298.2" y1="28" x2="298.2" y2="294"/><line x1="347.3" y1="28" x2="347.3" y2="294"/><line x1="396.4" y1="28" x2="396.4" y2="294"/><line x1="445.5" y1="28" x2="445.5" y2="294"/></g><g class="c-axis"><text x="200.0" y="22" text-anchor="middle">0</text><text x="249.1" y="22" text-anchor="middle">1</text><text x="298.2" y="22" text-anchor="middle">2</text><text x="347.3" y="22" text-anchor="middle">3</text><text x="396.4" y="22" text-anchor="middle">4</text><text x="445.5" y="22" text-anchor="middle">5</text></g><text class="c-lab c-s2t" x="0" y="56">CoreWeave, 30 June 2026</text><text class="c-box-t" x="0" y="79">Contracted</text><text class="c-note" x="0" y="94">signed power</text><rect class="c-bar c-mute" x="200" y="70" width="181.6" height="22" rx="2"/><text class="c-lab c-s1t" x="387.6" y="86">3.7 GW</text><text class="c-box-t" x="0" y="121">Active</text><text class="c-note" x="0" y="136">chips drawing power</text><rect class="c-bar" x="200" y="112" width="73.6" height="22" rx="2"/><text class="c-lab c-s1t" x="279.6" y="128">1.5 GW</text><text class="c-lab c-s2t" x="0" y="170">Nebius</text><text class="c-box-t" x="0" y="193">Contracted</text><text class="c-note" x="0" y="208">end 2026 target</text><rect class="c-bar c-mute" x="200" y="184" width="245.5" height="22" rx="2"/><text class="c-lab c-s1t" x="451.5" y="200">5 GW</text><text class="c-box-t" x="0" y="235">Connected</text><text class="c-note" x="0" y="250">end 2026 guide</text><rect class="c-bar c-alt" x="200" y="226" width="39.3" height="22" rx="2"/><rect class="c-bar c-mute" x="239.3" y="226" width="9.8" height="22" rx="2"/><text class="c-lab c-s1t" x="255.1" y="242">0.8 to 1 GW</text><text class="c-box-t" x="0" y="277">Active</text><text class="c-note" x="0" y="292">end 2025, latest</text><rect class="c-bar" x="200" y="268" width="8.3" height="22" rx="2"/><text class="c-lab c-s1t" x="214.3" y="284">about 0.17 GW</text><line class="c-base" x1="200" y1="28" x2="200" y2="294"/></svg>
 <figcaption>CoreWeave earnings release (11 August 2026); Nebius shareholder letters (12 February and 12 August 2026). Nebius has never reported connected and active power for the same date; its third-quarter letter is due on 12 November 2026.</figcaption>
@@ -250,19 +250,19 @@ The operators show the same gap. CoreWeave, which rents out AI computing, had 3.
 
 <a id="nebius-paid-for-what-is-switched-on"></a>
 
-Nebius, another operator, expects 5 GW contracted by the end of 2026, against 800 MW to 1 GW connected. Revenue follows the last stage: its US$17.4 billion agreement with Microsoft is "subject to the satisfaction of the deployment and availability of the GPU Services". Oracle's customers have signed US$664 billion of future revenue, of which it expects only about 13% in the next twelve months, because revenue starts as halls are delivered. So any model that sizes revenue or chip demand from contracted gigawatts runs early, by quarters or years.
+Nebius, another operator, expects to have 5 GW contracted by the end of 2026 but only 800 MW to 1 GW connected. The revenue only comes at the last stage. Its US$17.4 billion agreement with Microsoft is "subject to the satisfaction of the deployment and availability of the GPU Services". Oracle's customers have signed US$664 billion of future revenue, but it only expects about 13% of it in the next twelve months, because revenue starts as the halls are delivered. So any model that sizes revenue or chip demand from contracted gigawatts is going to be early, by quarters or even years.
 
 ## Where does the time go between signing and running?
 
-Mostly before energised, in the stage the builder controls least. After that, the tenant sets the pace.
+Mostly before the site is energised, which is the stage the builder controls least. After that, the tenant sets the pace.
 
 <a id="power-first-chips-last"></a>
 
-Jane Street, the trading firm that builds its own AI halls, buys power first, because generators, transformers and some liquid cooling kit can take more than a year. It picks a chip once the building is nearly ready.
+Jane Street, the trading firm that builds its own AI halls, buys the power first, because generators, transformers and some liquid cooling kit can take more than a year to arrive. It only picks a chip once the building is nearly ready.
 
 <a id="abilene-switched-on-in-stages"></a>
 
-At Abilene, Texas, Crusoe builds, Oracle leases the campus and OpenAI uses the computing. Work on the first two buildings began in June 2024, and Crusoe says they were energised within a year.
+At Abilene in Texas, Crusoe builds the campus, Oracle leases it and OpenAI uses the computing. Work on the first two buildings began in June 2024, and Crusoe says they were energised within a year.
 
 <figure class="chart">
 <p class="chart-title">Abilene arrived building by building, and the chips arrived with the power</p>
@@ -284,27 +284,27 @@ At Abilene, Texas, Crusoe builds, Oracle leases the campus and OpenAI uses the c
 <figcaption>Crusoe releases (21 May 2025, 30 September 2025, 27 March 2026); Oracle's results calls of 10 June and 10 September 2026, as transcribed by The Motley Fool, since I found no primary copy. Crusoe gives no energisation date for phase two. Oracle reports handover, not chips at work, by site.</figcaption>
 </figure>
 
-The first racks of Nvidia's GB200 chips arrived in June 2025, and the first phase was running by 30 September. Oracle reported six of eight buildings, 618 MW, handed over by 10 September 2026, as transcribed from its calls. The chips came with the power, so energised set the pace. Even so, more than two years passed between the start of work and three quarters of the campus handed over.
+The first racks of Nvidia's GB200 chips arrived in June 2025, and the first phase was running by 30 September. Oracle reported six of the eight buildings, 618 MW, handed over by 10 September 2026, as transcribed from its calls. Here the chips came with the power, so energising set the pace. Even so, it took more than two years to go from the start of work to three quarters of the campus handed over.
 
 ## So who holds the scarce thing, and what should an investor watch?
 
-Whoever controls a site's terms: firm or cut first, for how many hours, with what backup and what bill. Those terms sit in tariff filings and contracts, public and rarely read.
+Whoever controls a site's terms, meaning firm or cut first, for how many hours, with what backup and what bill. Those terms sit in tariff filings and contracts, which are public, but hardly anyone reads them.
 
-Almost nobody discloses which plug they bought: that is the gap investors cannot see.
+Almost nobody discloses which plug they bought, and that's the gap investors can't see.
 
-If the claim is right, four kinds of business gain. **Backup that runs for hours**: gas turbines, engines, fuel cells and long batteries. **Kit that holds on**: ride-through turns the UPS and switchgear into compliance equipment. **Load that can slow**, if a slowed chip is ever accepted as a connection term. **The makers of the upgrades**, whose queue is the reason for all of it.
+If I'm right, four kinds of business gain. **Backup that runs for hours**, like gas turbines, engines, fuel cells and long batteries. **Kit that holds on**, because ride-through turns the UPS and switchgear into compliance equipment. **Load that can slow**, if a slowed chip is ever accepted as a connection term. And **the makers of the upgrades**, whose queue is the reason for all of this.
 
-The readings come quickly: the grids' large-load filings on 16 November, ERCOT's audit by 10 December, and PJM's 2029/30 auction in December.
+We'll know more soon. The grids' large-load filings are due on 16 November, ERCOT's audit by 10 December, and PJM's 2029/30 auction is in December.
 
 ## What would prove me wrong
 
-Three tests can break the claim. First, if by the end of 2027 fewer than two of the seven organised grids have a real data centre of 50 MW or more switched on under a cut-first tier, shown in a filed agreement, the rationing is on paper only. Texas's power to shed every large load in an emergency is load shedding, not a tier.
+There are three tests that can break my claim. First, if by the end of 2027 fewer than two of the seven organised grids have a real data centre of 50 MW or more switched on under a cut-first tier, shown in a filed agreement, then the rationing is only on paper. Texas's power to shed every large load in an emergency doesn't count, because that's load shedding, not a tier.
 
-Second, if PJM reports another transfer of 1,500 MW or more after a normally cleared fault in 2028, after existing sites were due to comply, holding on changed nothing. Third, if makers add factories fast enough and PJM's new yearly process works, developers take firm service and the lower tier empties. A firm partial plug such as PJM's planned Fractional NITS taking the place of the cut-first one would point the same way.
+Second, if PJM reports another transfer of 1,500 MW or more after a normally cleared fault in 2028, when existing sites should already comply, then holding on changed nothing. Third, if the makers add factories fast enough and PJM's new yearly process works, developers will just take firm service and the lower tier will empty. If a firm partial plug like PJM's planned Fractional NITS takes the place of the cut-first one, that would point the same way.
 
-The stages have tests of their own, from my earlier claims. At Abilene, if the campus is energised but Oracle has still not reported all eight buildings delivered by its March 2027 results, fitting out, not power, is setting the pace. At Nebius, if it connects at least 800 MW by the end of 2026 but has fewer than 800 MW active at 30 June 2027, its halls are waiting for chips, not power. And if transformer and generator lead times fall back to months while chips become the longest wait again, power first and chips last breaks.
+The stages have their own tests too, from my earlier claims. At Abilene, if the campus is energised but Oracle still hasn't reported all eight buildings delivered by its March 2027 results, then it's the fitting out setting the pace, not the power. At Nebius, if it connects at least 800 MW by the end of 2026 but has fewer than 800 MW active at 30 June 2027, then its halls are waiting for chips, not power. And if transformer and generator lead times fall back to months while chips become the longest wait again, then power first and chips last breaks.
 
-What would not move me is the view that contracted gigawatts are fine because everything gets built eventually. Eventually is the whole question.
+What wouldn't move me is the argument that contracted gigawatts are fine because everything gets built eventually. To me, when it gets built is the whole question.
 
 <details class="claims-record">
 <summary>The claims on record, word for word</summary>
