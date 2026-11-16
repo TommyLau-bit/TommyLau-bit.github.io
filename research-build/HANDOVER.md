@@ -19,7 +19,24 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 3. Done: CVs updated ("grid to chip" wording; nuclear line to the depth figures); LinkedIn profile not changed.
 4. Done: article decks archived (study-decks/archive/article-decks-retired-2026-11-07/), not deleted.
 
-## START HERE (as of Sat 14 Nov 2026, journal run "1")
+## START HERE (as of Mon 16 Nov 2026, end of session)
+
+**Nothing is waiting on Claude. Start only on Tommy's trigger ("1" journal run, "2" job hunt).** Both scheduled tasks stay disabled.
+
+**Power page consistency fixes, live 16 Nov (commit 1bbf761, verified on the live page).** Tommy found five inconsistencies; each was checked against the sources (EIA AEO2026 Table 3 re-read from the PDF: combined cycle US$1,032/kW, heavy frame 1,158, aeroderivative 2,275). Full record in research-build/power-draft/FACTCHECK.md, "Consistency fixes, 16 Nov 2026".
+1. **Combined cycle, cost:** grade unchanged (EIA planning figure, like for like). Weakness now says real plants cost more than the figure graded: Duke's about US$1,620 to 2,340/kW.
+2. **Combined cycle, speed:** now counted from an order today like the heavy frame: "at least 81 to 92 months" (a floor), **Speed D to E**. Mitsubishi's 2028 to 2030 slots and Hyperion stay in the basis as faster cases.
+3. **Heavy frame, weakness:** 6.1 years is output under contract, not a wait; a slot sold today ships in 2032 and runs about 18 months later.
+4. **Aeroderivative, ability:** "about four years from an order today, against about seven".
+5. **Reactor restart:** stays D under the rule (midpoint 36.5 against the 36 cut). Crane second half 2027 per Constellation's Q2 release; **Q3 not yet confirmed from Constellation's own release: check it next run.**
+
+Nothing else (pieces, deck, briefs, CV, emails) quotes the changed Power figures. No LinkedIn post.
+
+**Bloom study: DONE 14 Nov**, BLOOM_COMPANY_STUDY.pdf in _SEND, rulebook hook rule extended (details in the 14 Nov block below). Next study: Oklo or Solaris, only when Tommy says.
+
+**Due now or soon (check in the next "1"):** FERC EL26-67 to 72 responses and PJM ride-through filing (both 16 Nov), SPP (20 Nov), NRC Part 57 microreactor final rule (reportedly by 23 Nov), EIA 860M (24 Nov), NRC 50.43(f) effective (25 Nov), Tenaga Q3 (late Nov); the rest of the list is in the 14 Nov block below.
+
+## Earlier START HERE (as of Sat 14 Nov 2026, journal run "1")
 
 **Live (commit 2781cdd, deploy verified on the live pages).** Three fact-checked updates from results that landed, each drafted by one agent and checked by a separate one (briefs research-build/deep-pieces/updates/BRIEF-14NOV.md and BRIEF-FACTCHECK-14NOV.md, logs <slug>.CHANGES-14NOV.md):
 1. **The equipment queue:** Siemens Energy FY26 (release 11 Nov). Grid Technologies backlog €52bn at 30 Sept 2026 over fiscal 2026 revenue €14,106m: **about 3.7 years, DOWN from about 4 (3.96) in June**, still above 3.56 (Sept 2024). Q4 book-to-bill 1.30, full year 1.70; FY27 grid revenue guided +22 to 24%. The claim's test is at least 3.6 at 30 June 2028 (claims.ts unchanged); at Q4's 1.30 pace the ratio reaches about 3.1 by mid-2028, so the claim is close to failing. The piece says so plainly; chart has a new Sept point; claim evidence line now "Close to the line". **This is the chapter to watch at Siemens Energy's Q1 FY27 (Feb 2027).**
