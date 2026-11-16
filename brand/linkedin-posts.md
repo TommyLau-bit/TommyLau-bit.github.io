@@ -842,11 +842,11 @@ https://thephysicallayer.fyi/journal/america-rations-the-plug/
 
 ## 59 · The equipment queue, in depth (rebuilt 7 Nov 2026; LinkedIn Wed 18 Nov, 11:30, scheduled, verified 7 Nov; text edited on LinkedIn 14 Nov to 3.7 years after Siemens Energy FY26, verified)
 
-Hitachi Energy is building or expanding more than 40 factories, and it still expects its signed orders to be worth two and a half to three years of sales by the time they open.
+Hitachi Energy is building or expanding more than 40 factories, and expects its signed orders to still be worth two and a half to three years of sales when they open.
 
-Siemens Energy's grid business has about 3.7 years of signed work, up from three and a half when it started building. So the makers of transformers and switchgear are building fast enough to keep the queue, not to clear it. And a data centre's real start date is often set by that queue before the site is chosen.
+Siemens Energy's grid business carries about 3.7 years of signed work, up from three and a half when its building began. The makers of transformers and switchgear are building fast enough to keep the queue, not to clear it, and a data centre's real start date is often set by that queue before the site is chosen.
 
-The piece goes through what a transformer does, why its steel is scarce, and where the months go in the factory.
+The piece covers what a transformer does, why its steel is scarce, and where the months go in the factory.
 
 https://thephysicallayer.fyi/journal/the-equipment-queue/
 
@@ -856,11 +856,11 @@ https://thephysicallayer.fyi/journal/the-equipment-queue/
 
 ## 60 · Building your own power, in depth (rebuilt 7 Nov 2026; LinkedIn Fri 20 Nov, 11:30, scheduled, verified 7 Nov)
 
-GE Vernova had 122 gigawatts of gas turbines under contract at the end of September. It ships about 20 a year.
+GE Vernova had 122 gigawatts of gas turbines under contract at the end of September, and ships about 20 a year.
 
-That's why building your own power next to an AI campus doesn't skip the queue. Basically, you swap the grid's waiting list for the turbine maker's. It's now selling production slots for 2032, and the quicker machines, the gas pipe and the air permit all have their own clocks too.
+That is why building your own power beside an AI campus does not skip the queue. It swaps the grid's waiting list for the turbine maker's, now selling production slots for 2032, and the quicker machines, the gas pipe and the air permit all have clocks of their own.
 
-The piece goes through how a gas turbine works, why its hottest blade is so hard to make, and what buyers pay to stand in line.
+The piece covers how a gas turbine works, why its hottest blade is so hard to make, and what buyers pay to stand in line.
 
 https://thephysicallayer.fyi/journal/building-your-own-power/
 
@@ -914,9 +914,9 @@ https://thephysicallayer.fyi/journal/data-centres-in-space/
 
 PJM, the grid operator from Chicago to Virginia, counts a megawatt of tracking solar as 7 per cent of a firm one, and a four-hour battery as 57 per cent.
 
-That's the problem with powering AI with solar and batteries. They're the fastest power America builds, about a year for a battery and two for a solar farm, with no turbine queue. But an AI data centre draws nearly the same power at 3am as at 3pm, and PJM's riskiest hours are winter nights. And its preliminary ratings expect each new battery to count for less.
+That is the catch in powering AI with solar and batteries. They are the fastest power America builds, about a year for a battery and two for a solar farm, with no turbine queue. But an AI data centre draws nearly the same power at 3am as at 3pm, and PJM's riskiest hours are winter nights. Its preliminary ratings expect each new battery to count for less.
 
-The piece goes through what a capacity factor is, why a four-hour battery reaches the evening but not the night, and how the grid prices that gap.
+The piece covers what a capacity factor is, why a four-hour battery reaches the evening but not the night, and how the grid prices the gap.
 
 https://thephysicallayer.fyi/journal/solar-and-batteries/
 

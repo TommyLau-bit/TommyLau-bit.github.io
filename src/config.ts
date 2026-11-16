@@ -1,7 +1,7 @@
 // ── ONE PLACE TO CHANGE THE NAME, TAGLINE AND LINKS ──────────────────────────
 export const SITE = {
   name: 'The Physical Layer',
-  tagline: 'Power for AI data centres, in plain English.',
+  tagline: 'Power for AI data centres',
   description:
     'A journal on one question: what decides how fast an AI data centre gets its power? I go through the grid connection, the equipment, gas, solar and batteries, and nuclear, in seven chapters, from primary sources and written so anyone can follow it.',
   author: 'Tommy Lau',

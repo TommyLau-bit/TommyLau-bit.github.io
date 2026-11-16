@@ -132,7 +132,7 @@ Source in the piece: "Distance sets the medium, and only light crosses a hall"; 
 ## M11 · Mon 23 Nov 2026 08:30 SGT · hong-kong-has-the-plug · A small load on a big system · SCHEDULED (verified 6 Nov)
 Hong Kong's data centres drew about 283 megawatts on average in the first nine months of 2026.
 
-That's my arithmetic from CLP Power's own figures. Data centres were 6.6% of its 28,131 GWh of sales over those nine months. Against CLP's highest local demand in 2025, 7,455 megawatts, the average draw is under 4% of the peak. It's like one extra kettle in a busy kitchen. You see it on the bill, not at the fuse box. The load is growing, though. CLP's sales to data centres were up 12.8% on a year earlier.
+That is my arithmetic from CLP Power's own figures: data centres were 6.6% of its 28,131 GWh of sales over those nine months. Set against CLP's highest local demand in 2025, 7,455 megawatts, the average draw is under 4% of the peak. Think of one extra kettle in a busy kitchen: you see it on the bill, not at the fuse box. The load is growing, though. CLP's sales to data centres rose 12.8% on a year earlier.
 
 From the piece: Johor and Singapore: the plug, not the chip
 
@@ -147,7 +147,7 @@ By 20 August 2026, only 17 large sites in Texas had cleared every check except t
 
 Then ERCOT, which runs most of the state's grid, paused that last approval for data centres and crypto mines of 75 MW or more while it audits every request. Its reports are due by 10 December 2026.
 
-It's like a nightclub queue round the block where the bouncer lets 17 people get to the door, then locks it to check everyone's ID again. So under a seventieth of the queue reached the final gate.
+Think of a nightclub queue round the block where the bouncer lets 17 people reach the door, then locks it to check everyone's ID again. Under a seventieth of the queue reached the final gate.
 
 From the piece: America rations the plug
 
@@ -171,7 +171,7 @@ Source in the piece: "Heat leaves only as light, so the radiator's temperature s
 ## M14 · Thu 26 Nov 2026 08:30 SGT · the-queue-not-the-chip · Paid for the plug, not the power · SCHEDULED (verified 6 Nov)
 A Johor data centre can be switched on, let and earning while drawing little power.
 
-Reason being, the operator gets paid for the plug, not the power. DayOne, one of Johor's largest operators, says in its US listing filing of 5 October 2026 that its contracts are long and take-or-pay. They pay for capacity, and power is passed through at whatever customers actually use. It's like renting a parking space. You pay for the bay whether the car is in it or not.
+That is because the operator is paid for the plug, not the power. DayOne, one of Johor's largest operators, describes in its US listing filing of 5 October 2026 long take-or-pay contracts that pay for capacity, with power passed through at what customers actually consume. Like renting a parking space: you pay for the bay whether or not the car is in it.
 
 From the piece: Johor and Singapore: the plug, not the chip
 
@@ -184,9 +184,9 @@ Source in the piece: "A Johor hall earns on its plug, while the tenant's licence
 ## M15 · Fri 27 Nov 2026 08:30 SGT · contracted-energised-running · The later megawatt costs up to twice as much · SCHEDULED (verified 6 Nov)
 Nebius, which rents out AI computing, prices its new deals at US$20 to 25 million a megawatt a year. Its 2026 base is US$12 million.
 
-On top of that, buyers pay up front to hold their place. About 70% of the deals it signed in the second quarter of 2026 included prepayments covering 50 to 60% of the related capital spending.
+Buyers also pay up front to hold their place. About 70% of the deals it signed in the second quarter of 2026 included prepayments covering 50 to 60% of the related capital spending.
 
-It's the same as concert tickets that sell out. The last seats cost the most, and you pay before the show. So later buyers pay more for the same megawatt, and they pay it in cash.
+It is the same pattern as concert tickets that sell out: the last seats cost the most, and you pay before the show. Later buyers pay more for the same megawatt, in cash.
 
 #DataCentres #AIInfrastructure #Neocloud
 Source in the piece: "Buyers pay only for the last stage, and the later megawatt costs more"; Nebius shareholder letter (12 August 2026).
@@ -196,7 +196,7 @@ Source in the piece: "Buyers pay only for the last stage, and the later megawatt
 ## M16 · Mon 30 Nov 2026 08:30 SGT · the-equipment-queue · More than half again in two years · SCHEDULED (verified 6 Nov; edited on LinkedIn 14 Nov to €52bn at Sept 2026, verified)
 Siemens Energy's grid order backlog grew from €33bn in September 2024 to €52bn in September 2026.
 
-So it grew by more than half again in two years, while the industry was announcing new factories. The problem is a plant takes two to three years from announcement to first product, so most of the new floor space arrives from 2027 on. Until those plants run, every extra order just makes the queue longer.
+That is more than half again in two years, while the industry was announcing new factories. But a plant takes two to three years from announcement to first product, so most of the new floor space arrives from 2027 on. Until those plants run, every extra order can only lengthen the queue.
 
 From the piece: The equipment queue
 
@@ -211,7 +211,7 @@ GE Vernova plans to raise gas turbine output from 20 GW a year now to 24 GW in 2
 
 Even at 30 GW a year, the 122 GW it held under contract at the end of September would still be four years of work.
 
-Reason being, it isn't building a new heavy-duty factory. The plan uses "lean and incremental machinery in our existing factory footprint". It's like a bakery with a two-year waiting list that adds a second oven, not a second shop. The list gets shorter slowly, if at all.
+That is because it is not building a new heavy-duty factory. The plan uses "lean and incremental machinery in our existing factory footprint". Picture a bakery with a two-year waiting list that adds a second oven, not a second shop. The list gets shorter slowly, if at all.
 
 #GasTurbines #EnergyInfrastructure #Manufacturing
 Source in the piece: "The maker is paid to keep the queue, not to clear it"; GE Vernova results releases and calls (22 April, 22 July and 28 October 2026).
@@ -219,9 +219,9 @@ Source in the piece: "The maker is paid to keep the queue, not to clear it"; GE 
 ---
 
 ## M18 · Wed 02 Dec 2026 08:30 SGT · nuclear-for-ai · A held plug is not a quick restart · SCHEDULED (verified 6 Nov)
-Keeping a reactor's place on the grid makes a restart possible, but it doesn't make it quick.
+Keeping a reactor's place on the grid makes a restart possible. It does not make it quick.
 
-Palisades, an 800 MW plant in Michigan, kept its place on the Midwest grid to 1 March 2027 and reconnected its switchyard on 11 September 2026. Then fuel loading stopped when a fuel assembly tilted. Holtec, which is restarting it, recovered the assembly by 21 October but gave no new date. Its power contracts can be ended if the plant isn't running by March 2027. So the plug was ready, and it was the reactor that set the pace.
+Palisades, an 800 MW plant in Michigan, kept its place on the Midwest grid to 1 March 2027 and reconnected its switchyard on 11 September 2026. Then fuel loading stopped when a fuel assembly tilted. Holtec, which is restarting it, recovered the assembly by 21 October and gave no new date. Its power contracts can be ended if the plant is not running by March 2027. The plug was ready. The reactor set the pace.
 
 From the piece: Nuclear for AI: the old reactors come first because they already own the hard parts
 
@@ -296,9 +296,9 @@ Source in the piece: intro and "Distance sets the medium, and only light crosses
 ---
 
 ## M24 · Thu 10 Dec 2026 08:30 SGT · hong-kong-has-the-plug · Three dates, and the utility's comes first · SCHEDULED (verified 6 Nov)
-If you ask three parties when Hong Kong's AI megasite opens, you get three different answers, and the power company's is the earliest.
+Ask three parties when Hong Kong's AI megasite opens and you get three answers. The power company's is the earliest.
 
-CLP, which is building the power supply for Sandy Ridge, targets operations in phases from mid-2027. Range, the winning bidder, expects its park to be delivered within 2028. The government told legislators on 22 April 2026 to expect operations in 2029. If the grid was what's holding Hong Kong back, you'd see it first in these dates. You don't. Whereas in Johor and Singapore, the connection is the scarce thing.
+CLP, which is building the power supply for Sandy Ridge, targets operations in phases from mid-2027. Range, the winning bidder, expects its park to be delivered within 2028. The government told legislators on 22 April 2026 to expect operations in 2029. If the grid were the thing holding Hong Kong back, it would show up first in these dates. It does not. In Johor and Singapore, by contrast, the connection is the scarce thing.
 
 From the piece: Johor and Singapore: the plug, not the chip
 
@@ -309,11 +309,11 @@ Source in the piece: "At Sandy Ridge, the utility gives the earliest date"; CLP 
 ---
 
 ## M25 · Fri 11 Dec 2026 08:30 SGT · america-rations-the-plug · "Interim" can mean seven years · SCHEDULED (verified 6 Nov)
-The Southwest Power Pool, which runs the grid across America's central states, accepted a cut-first tier called CHILLS on 5 June 2026. Under it, a site gets power as available, for up to seven years.
+The Southwest Power Pool, which runs the grid across America's central states, accepted a cut-first tier called CHILLS on 5 June 2026. A site gets power as available, for up to seven years.
 
-So the trade is, you switch on sooner, but the grid may cut you first while the new wires are built. And the wires are waiting on equipment. Siemens Energy's grid business holds about four years of work, Hitachi Energy about three.
+That is the trade on offer: switch on sooner, but the grid may cut you first while the new wires are built. And the wires wait on gear: Siemens Energy's grid business holds about four years of work, Hitachi Energy about three.
 
-This is my reading, not SPP's words. If the seven years run from a site's own switch-on, a data centre connecting under it now could still be cut-first in 2033.
+My reading, not SPP's words: if the seven years run from a site's own switch-on, a data centre connecting under it now could still be cut-first in 2033.
 
 #Grid #DataCentres #EnergyInfrastructure
 Source in the piece: "Every organised grid is adding a plug it may cut beneath the firm one"; SPP's CHILLS acceptance (5 June 2026), makers' years of work from The equipment queue (Siemens Energy at 30 June 2026, Hitachi at 30 September 2026).
@@ -335,7 +335,7 @@ Source in the piece: "At today's launch price, orbital power costs several times
 ## M27 · Tue 15 Dec 2026 08:30 SGT · the-queue-not-the-chip · Who pays for idle wires · SCHEDULED (verified 6 Nov)
 In Malaysia, a new high voltage customer that draws well below what it declared pays a charge on the gap.
 
-Tenaga charges RM8.50 per kilowatt of shortfall below 85% of phased declared demand, in years one to four. But the shared network behind a waiting hall stays in the tariff that every customer pays. So the campus only carries part of the cost of the wires built for it. Malaysia's energy regulator will study a user-pays basis for 2028 to 2032, the energy minister told Parliament in October 2026.
+Tenaga charges RM8.50 per kilowatt of shortfall below 85% of phased declared demand, in years one to four. But the shared network behind a waiting hall stays in the tariff that every customer pays. So the campus carries only part of the cost of the wires built for it. Malaysia's energy regulator will study a user-pays basis for 2028 to 2032, the energy minister told Parliament in October 2026.
 
 From the piece: Johor and Singapore: the plug, not the chip
 
@@ -346,11 +346,11 @@ Source in the piece: "A Johor hall earns on its plug..." and the "Who pays for t
 ---
 
 ## M28 · Wed 16 Dec 2026 08:30 SGT · contracted-energised-running · Same revenue, half the megawatts · SCHEDULED (verified 6 Nov)
-If you divide Nebius's revenue by its price per megawatt, you get the megawatts at work. The problem is it has two prices.
+Divide Nebius's revenue by its price per megawatt and you get the megawatts at work. But which price?
 
 On my arithmetic, US$9.6 billion of annualised revenue is 800 MW at its 2026 base of US$12 million a megawatt a year. At its new-deal prices of US$20 to 25 million, the same revenue is only about 384 to 480 MW.
 
-So anyone dividing by the old rate could count up to about twice the megawatts that are actually running. It's like guessing how many people are in a restaurant from the till, when half the menu has doubled in price.
+So anyone dividing by the old rate could count up to about twice the megawatts actually running. It is like guessing how many people are in a restaurant from the till, when half the menu has doubled in price.
 
 #AIInfrastructure #DataCentres #Power
 Source in the piece: "Even at Nebius, signed power runs five times ahead of connected, and billing lags again"; Nebius letter (12 August 2026), my arithmetic as the piece states.
@@ -358,9 +358,9 @@ Source in the piece: "Even at Nebius, signed power runs five times ahead of conn
 ---
 
 ## M29 · Thu 17 Dec 2026 08:30 SGT · the-equipment-queue · A long queue has a cost · SCHEDULED (verified 6 Nov)
-A long order book isn't free money. In the second quarter of 2026, Eaton's Electrical Americas margin fell to 27.5%, and in the third it recovered only to 29.8%, below the 30.3% of a year earlier.
+A long order book is not free money. In the second quarter of 2026, Eaton's Electrical Americas margin fell to 27.5%, and in the third it recovered only to 29.8%, below the 30.3% of a year earlier.
 
-Reason being, metal costs went up on orders that had been priced months earlier. When a customer books today for delivery later, the maker carries the risk that its materials cost more by the time it builds. It's like a builder who agreed a fixed price in spring and then buys the timber in autumn.
+The reason: higher metal costs met orders that had been priced months earlier. When a customer books today for delivery later, the maker carries the risk that its materials cost more by the time it builds. Like a builder who agreed a fixed price in spring and buys the timber in autumn.
 
 From the piece: The equipment queue
 
@@ -375,7 +375,7 @@ GE Vernova's next step up in output depends on parts it does not make. Its chief
 
 The hottest turbine blades are cast by specialists. Howmet Aerospace, which calls itself "the largest manufacturer of gas turbine blades in the world", grew gas turbine revenue 45% in the third quarter of 2026.
 
-So the queue for a power station runs back through a queue for blades. To be fair, Howmet isn't the only gate. Several of its largest customers have their own furnaces.
+So the queue for a power station runs back through a queue for blades. It is not the only gate: several of Howmet's largest customers have their own furnaces.
 
 #GasTurbines #SupplyChain #EnergyInfrastructure
 Source in the piece: "The maker is paid to keep the queue, not to clear it"; GE Vernova call and Howmet Aerospace releases to 29 October 2026.
@@ -385,7 +385,7 @@ Source in the piece: "The maker is paid to keep the queue, not to clear it"; GE 
 ## M31 · Mon 21 Dec 2026 08:30 SGT · nuclear-for-ai · New is not the same as slow · SCHEDULED (verified 6 Nov)
 A brand new reactor can keep pace with the old ones, as long as it burns ordinary fuel.
 
-In Canada, Ontario Power Generation is building the first 300 MW BWRX-300, a small reactor designed by GE Vernova and Hitachi, beside its existing Darlington nuclear station. Its new grid line is only 22 km, inside an existing corridor. It was licensed to build on 4 April 2025, and Ontario Power Generation targets connection to the grid by the end of 2030, while the American uprates are still arriving. So what splits the fast projects from the slow ones isn't their age. It's the fuel and the plug.
+In Canada, Ontario Power Generation is building the first 300 MW BWRX-300, a small reactor designed by GE Vernova and Hitachi, beside its existing Darlington nuclear station. Its new grid line is only 22 km, inside an existing corridor. It was licensed to build on 4 April 2025, and Ontario Power Generation targets connection to the grid by the end of 2030, while the American uprates are still arriving. What divides the fast projects from the slow is not their age. It is the fuel and the plug.
 
 From the piece: Nuclear for AI: the old reactors come first because they already own the hard parts
 
@@ -462,7 +462,7 @@ Source in the piece: "Every speed step buys the switch, the translator and the l
 ## M37 · Tue 29 Dec 2026 08:30 SGT · hong-kong-has-the-plug · Three flagships behind · SCHEDULED (verified 6 Nov)
 When Sandy Ridge's first phase runs, the best Nvidia chip it can hope for will sit about two generations behind.
 
-US rules review chips up to the class of Nvidia's H200, a chip of 2024, case by case when shipped from America to a user in Hong Kong. Anything better is presumed refused. Since then Nvidia has moved two generations on, Blackwell in 2024, then Rubin in 2026, with Blackwell Ultra in between. Rubin has four times the H200's memory bandwidth. It's like opening a new garage in 2027 under a rule that caps you at a car from 2024.
+US rules review chips up to the class of Nvidia's H200, a chip of 2024, case by case when shipped from America to a user in Hong Kong. Anything better is presumed refused. Since then Nvidia has moved two generations on: Blackwell in 2024, then Rubin in 2026, with Blackwell Ultra between them. Rubin has four times the H200's memory bandwidth. It is like opening a new garage in 2027 under a rule that caps you at a car from 2024.
 
 From the piece: Johor and Singapore: the plug, not the chip
 
@@ -477,7 +477,7 @@ PJM, which runs the grid from Chicago to Virginia, pays power stations to stand 
 
 For 2024/25 it was $28.92 per megawatt a day. For 2028/29 it was $325, the cap.
 
-It's like a hotel on a sold-out weekend, where the last room booked sets the rate every guest pays. PJM's independent market monitor puts $6.3 billion, 38.2% of the latest auction, down to data centre load. And households in its 13 states and Washington DC share the bill.
+It works like a hotel on a sold-out weekend: the last room booked sets the rate every guest pays. PJM's independent market monitor attributes $6.3 billion, 38.2% of the latest auction, to data centre load. Households in its 13 states and Washington DC share the bill.
 
 #Grid #DataCentres #Energy
 Source in the piece: "Households pay for the power stations the rationing does not build"; PJM auction reports (30 July 2024 to 14 July 2026) and Monitoring Analytics (27 July 2026).
@@ -499,7 +499,7 @@ Source in the piece: "Every kilogram is a launch bill, and no design yet meets 1
 ## M40 · Fri 01 Jan 2027 08:30 SGT · the-queue-not-the-chip · A licensed number of megawatts · SCHEDULED (verified 6 Nov)
 Singapore is about to put a number on every large data centre's licence.
 
-Under the Digital Infrastructure Bill, debated on 6 and 7 October 2026, any hall with 3 megawatts or more of critical IT load needs a licence stating that load, own-use halls included. The regulator can enforce by a fine or by cutting the licensed load. About 70 data centres are in scope, and the Act is expected in force in 2027. So the ration now reaches halls that are already running, not just new ones.
+Under the Digital Infrastructure Bill, debated on 6 and 7 October 2026, any hall with 3 megawatts or more of critical IT load needs a licence stating that load, own-use halls included. The regulator can enforce by a fine or by cutting the licensed load. About 70 data centres are in scope, and the Act is expected in force in 2027. So the ration now reaches halls already running, not just new ones.
 
 From the piece: Johor and Singapore: the plug, not the chip
 
@@ -512,9 +512,9 @@ Source in the piece: "Singapore rations the plug, and from 2027 the ration reach
 ## M41 · Mon 04 Jan 2027 08:30 SGT · contracted-energised-running · A late hall earns nothing · SCHEDULED (verified 6 Nov)
 Nebius's US$17.4 billion agreement with Microsoft is "subject to the satisfaction of the deployment and availability of the GPU Services".
 
-Basically, Microsoft pays for chips that are installed and running, not for a building with the power on. If Nebius misses a delivery date after a grace period and cannot offer other capacity, Microsoft may end that service, and late delivery carries damages.
+In plain terms, Microsoft pays for chips that are installed and running, not for a building with the power on. If Nebius misses a delivery date after a grace period and cannot offer other capacity, Microsoft may end that service, and late delivery carries damages.
 
-It's like a landlord who only gets paid once the tenant has the keys and the lights work. Nebius defines active power as "power being consumed by IT equipment". That's the stage buyers pay for, and Nebius said in August it had delivered every tranche to Microsoft.
+Like a landlord paid only once the tenant has the keys and the lights work. Nebius defines active power as "power being consumed by IT equipment". That is the stage buyers pay for, and Nebius said in August it had delivered every tranche to Microsoft.
 
 #DataCentres #AIInfrastructure #Neocloud
 Source in the piece: "Buyers pay only for the last stage, and the later megawatt costs more"; Nebius Form 6-K on the Microsoft agreement (8 September 2025) and letter (13 May 2026).
@@ -524,7 +524,7 @@ Source in the piece: "Buyers pay only for the last stage, and the later megawatt
 ## M42 · Tue 05 Jan 2027 08:30 SGT · the-equipment-queue · Three or four chip generations · SCHEDULED (verified 6 Nov)
 A transformer ordered today joins a pile of work that would take three or four AI chip generations to clear.
 
-Nvidia has launched a new flagship about once a year: Blackwell in 2024, Blackwell Ultra in 2025, Rubin in 2026. The big grid makers have three to four years of signed orders on their books. To be fair, that's backlog over a year of sales, not a quoted lead time, so a new order doesn't have to wait behind the whole pile. But a data centre's real start date is set when its transformer is booked, years before its chips are on sale.
+Nvidia has launched a new flagship about once a year: Blackwell in 2024, Blackwell Ultra in 2025, Rubin in 2026. The big grid makers have three to four years of signed orders on their books. That is backlog over a year of sales, not a quoted lead time, and a new order need not wait behind the whole pile. But a data centre's real start date is set when its transformer is booked, years before its chips are on sale.
 
 From the piece: The equipment queue
 
@@ -535,11 +535,11 @@ Source in the piece: "The transformer is booked before the chip it will power is
 ---
 
 ## M43 · Wed 06 Jan 2027 08:30 SGT · building-your-own-power · An old coal plant's pollution is worth something · SCHEDULED (verified 6 Nov)
-Homer City is building up to 4,678 MW of gas plant on a Pennsylvania coal site. It got out of a full air review by netting.
+Homer City is building up to 4,678 MW of gas plant on a Pennsylvania coal site. It avoided a full air review by netting.
 
-The new plant adds 1,142.8 tons a year of NOx, a smog-forming gas. Retiring the old coal boilers removed 2,031.8 tons. The cut is bigger than the rise, so the permit got easier.
+The new plant adds 1,142.8 tons a year of NOx, a smog-forming gas. Retiring the old coal boilers removed 2,031.8 tons. The cut outweighs the rise, so the permit got easier.
 
-It's like trading in an old car to pay for a new one. But the trade-in expires, because a cut only counts within five years. So a coal site that shut long ago has nothing left to spend.
+It is like trading in an old car to pay for a new one. But the trade-in expires: a cut counts only within five years. A coal site shut long ago has nothing left to spend.
 
 From the piece: Building your own power
 
@@ -551,7 +551,7 @@ Source in the piece: "The permit and the pipe run on clocks of their own"; Penns
 ## M44 · Thu 07 Jan 2027 08:30 SGT · nuclear-for-ai · Sold at 50, permitted at 35 thermal · SCHEDULED (verified 6 Nov)
 A reactor sold to deliver up to 50 megawatts of electricity is, so far, permitted as two test reactors of 35 thermal megawatts each.
 
-TVA agreed on 18 August 2025 to buy up to 50 MW from Kairos Power's Hermes 2 at Oak Ridge from 2030. But Kairos's permits cover two test reactors of 35 thermal megawatts each, a measure of heat, which cannot make 50 electrical megawatts. The permits were issued under the research section of the law, which caps energy sales at half the plant's yearly running costs. The NRC hasn't been asked to license a larger one yet.
+TVA agreed on 18 August 2025 to buy up to 50 MW from Kairos Power's Hermes 2 at Oak Ridge from 2030. But Kairos's permits cover two test reactors of 35 thermal megawatts each, a measure of heat, which cannot make 50 electrical megawatts. The permits were issued under the research section of the law, which caps energy sales at half the plant's yearly running costs. The NRC has not yet been asked to license a larger one.
 
 From the piece: Nuclear for AI: the old reactors come first because they already own the hard parts
 
@@ -628,7 +628,7 @@ Source in the piece: "The glass and the mirrors are bought once"; Corning result
 ## M50 · Fri 15 Jan 2027 08:30 SGT · hong-kong-has-the-plug · Hong Kong over Johor, for one class of chip · SCHEDULED (verified 6 Nov)
 On my reading of the US rule text, an H200-class chip has an easier path into a Chinese company's hall in Hong Kong than into the same company's hall in Johor.
 
-Since 15 January 2026, that class shipped straight from America to a user in Hong Kong is reviewed case by case. The same shipment to a China-headquartered tenant's hall in Johor is presumed refused. To be fair, it's still not an easy path. The exporter must certify that US supply is sufficient and that exports to China and Macau stay within 50% of what was shipped for use in America. Nvidia said on 26 August 2026 that its Hopper shipments to China were less than 1% of its data centre revenue.
+Since 15 January 2026, that class shipped straight from America to a user in Hong Kong is reviewed case by case. The same shipment to a China-headquartered tenant's hall in Johor is presumed refused. The door is heavy, though. The exporter must certify that US supply is sufficient and that exports to China and Macau stay within 50% of what was shipped for use in America. Nvidia said on 26 August 2026 that its Hopper shipments to China were less than 1% of its data centre revenue.
 
 #DataCentres #ExportControls #HongKong
 
@@ -637,11 +637,11 @@ Source in the piece: "The chip licence follows the hall's address, and its ceili
 ---
 
 ## M51 · Mon 18 Jan 2027 08:30 SGT · america-rations-the-plug · Hold on for one full second · SCHEDULED (verified 6 Nov)
-A data centre is built never to lose power, so at the first flicker it runs to its own generators. PJM now wants it to do the opposite.
+A data centre is built never to lose power, so at the first flicker it runs to its own generators. PJM now wants the opposite.
 
 Its proposal of 6 October 2026 says sites of 50 MW or more must stay connected through set dips and swells, including a full second at up to 120% of normal voltage. Switching to backup does not "by itself" count as compliance.
 
-It's like being told you can't yank every plug in the house when a bulb flickers. New projects would comply from 16 January 2027, and existing sites by the later of 16 January 2028 or a year after switching on, with limited exceptions.
+It is like being told you may not yank every plug in the house when a bulb flickers. New projects would comply from 16 January 2027, and existing sites by the later of 16 January 2028 or a year after switching on, with limited exceptions.
 
 #Grid #DataCentres #Power
 Source in the piece: "One morning's 3,800 MW drop made holding on a condition of the plug"; PJM's ride-through proposal (6 October 2026).
@@ -661,9 +661,9 @@ Source in the piece: "The sun has no queue, which is why the designs go up"; Spa
 ---
 
 ## M53 · Wed 20 Jan 2027 08:30 SGT · the-queue-not-the-chip · Same draw, two answers · SCHEDULED (verified 6 Nov)
-Malaysia's data centres use 58.5% of the power they contracted, or about 23% of what they booked. It's the same draw, it just depends what you divide by.
+Malaysia's data centres use 58.5% of the power they contracted, or about 23% of what they booked. Same draw, two answers.
 
-On 28 October 2026 Malaysia's Deputy Prime Minister said data centres had contracted 2,346 megawatts by August 2026 and used about 1,374, or 58.5%. Against the 6 gigawatts booked at 45 operating sites, which ministers gave on 13 October, the same draw is about 23%. So before trusting any share, check what it's a share of.
+On 28 October 2026 Malaysia's Deputy Prime Minister said data centres had contracted 2,346 megawatts by August 2026 and used about 1,374, or 58.5%. Against the 6 gigawatts booked at 45 operating sites, which ministers gave on 13 October, the same draw is about 23%. Before trusting any share, ask what it is a share of.
 
 From the piece: Johor and Singapore: the plug, not the chip
 
@@ -678,7 +678,7 @@ Abilene, Texas, is the fastest AI campus the piece could date. Work on the first
 
 The first racks of Nvidia GB200 chips arrived in June 2025 and the first phase was running by 30 September 2025. By 10 September 2026 Oracle said six of eight buildings, 618 MW, were with its customer, as transcribed from its results call.
 
-So even on the fastest path, more than two years passed between the start of work and three quarters of the campus handed over. A signed gigawatt isn't computing.
+So even on the fastest path, more than two years passed between the start of work and three quarters of the campus handed over. A signed gigawatt is not computing.
 
 #DataCentres #AIInfrastructure #Power
 Source in the piece: "When the chips come with the power, delivery follows within a quarter or two"; Crusoe releases (30 September 2025) and Oracle's results calls (10 June and 10 September 2026, as transcribed by The Motley Fool).
@@ -686,9 +686,9 @@ Source in the piece: "When the chips come with the power, delivery follows withi
 ---
 
 ## M55 · Fri 22 Jan 2027 08:30 SGT · the-equipment-queue · Shorter install, same wait · SCHEDULED (verified 6 Nov)
-Some buyers are getting round part of the equipment queue by having the power room built in a factory. That shortens the job, but not the wait.
+Some buyers are getting round part of the equipment queue by having the power room built in a factory. It shortens the job, not the wait.
 
-A data centre cannot switch on without switchgear, and every piece must be installed and tested on site by electricians, who are scarce too. Schneider Electric sells more power rooms built and tested in its own factories, which cuts the work on site. So the install gets shorter, but the order book doesn't.
+A data centre cannot switch on without switchgear, and every piece must be installed and tested on site by electricians, who are scarce too. Schneider Electric sells more power rooms built and tested in its own factories, which cuts the work on site. That shortens the install. It does not shorten the order book.
 
 From the piece: The equipment queue
 
@@ -703,7 +703,7 @@ Meta's lease on its Hyperion AI campus in Louisiana runs from 2029 for an initia
 
 A heavy gas turbine slot GE Vernova sells now ships in 2032. It then needs about 18 months on site, so it makes power around 2034.
 
-So a turbine ordered today makes power just after that first four-year term ends. And the risk sits with the buyer. Meta's power agreement with Entergy carries minimum charges and an exit fee, and Meta guarantees part of the campus's value for 16 years if it leaves.
+So a turbine ordered today makes power just after that first four-year term ends. And the risk sits with the buyer: Meta's power agreement with Entergy carries minimum charges and an exit fee, and Meta guarantees part of the campus's value for 16 years if it leaves.
 
 #GasTurbines #DataCentres #Power
 Source in the piece: "Every route lands years out, and a turbine ordered today lands last"; GE Vernova call (28 October 2026), Meta 2025 Form 10-K, Entergy filings.
@@ -713,7 +713,7 @@ Source in the piece: "Every route lands years out, and a turbine ordered today l
 ## M57 · Tue 26 Jan 2027 08:30 SGT · nuclear-for-ai · The Russian gap can be bridged · SCHEDULED (verified 6 Nov)
 Russia sold 26% of the enrichment American reactor owners bought in 2025, and the waivers that let them keep buying end by 1 January 2028.
 
-That sounds like a cliff, but it's a squeeze on price and timing, not a wall. US-origin supply was 23%. Urenco's Eunice plant in New Mexico adds about a fifth of the Russian volume by early 2027. And at the end of 2025 owners held 118 million pounds of uranium, against 40.9 million loaded that year. Much of it still needs enriching, but 51.8 million pounds was already enriched and 7.8 million was finished fuel. It's like a household with a stocked larder when one shop shuts. The gap that cannot be bridged for now is HALEU, the richer fuel the new reactors need.
+That sounds like a cliff. It is a squeeze on price and timing, not a wall. US-origin supply was 23%. Urenco's Eunice plant in New Mexico adds about a fifth of the Russian volume by early 2027. And at the end of 2025 owners held 118 million pounds of uranium, against 40.9 million loaded that year. Much of it still needs enriching, but 51.8 million pounds was already enriched and 7.8 million was finished fuel. Like a household with a stocked larder when one shop shuts. The gap that cannot be bridged for now is HALEU, the richer fuel the new reactors need.
 
 From the piece: Nuclear for AI: the old reactors come first because they already own the hard parts
 
@@ -792,7 +792,7 @@ Source in the piece: "The glass and the mirrors are bought once" and the layer t
 ## M63 · Wed 03 Feb 2027 08:30 SGT · hong-kong-has-the-plug · Thirty-six times Hong Kong · SCHEDULED (verified 6 Nov)
 Hong Kong's one AI megasite is meant to hold 36 times the computing power the whole city has now.
 
-The government's figure for Sandy Ridge is 180,000 petaflops by 2032, against a base of 5,000 petaflops today, 3,000 of them at Cyberport's AI Supercomputing Centre. The site has 250,000 square metres of floor area, and the investment is HK$23.8 billion to its third year of operation. As for who decides what runs there, the government told legislators it's "the operator according to its business plan and market demand".
+The government's figure for Sandy Ridge is 180,000 petaflops by 2032, against a base of 5,000 petaflops today, 3,000 of them at Cyberport's AI Supercomputing Centre. The site has 250,000 square metres of floor area, and the investment is HK$23.8 billion to its third year of operation. So who decides what runs there? In the government's words to legislators: "the operator according to its business plan and market demand".
 
 From the piece: Johor and Singapore: the plug, not the chip
 
@@ -805,9 +805,9 @@ Source in the piece: "The figures behind the charts" (Sandy Ridge's terms); Inno
 ## M64 · MOVED to Tue 26 Jan 2027 17:30 SGT · america-rations-the-plug · Slowing the chips instead of buying a battery · SCHEDULED (verified 6 Nov)
 At an Oracle site in Phoenix, software cut the power of 256 Nvidia chips by 25% for three hours. No battery was involved.
 
-That's the idea behind a new kind of flexibility. Load that can drop in seconds is useful to the grid, as long as it drops when the grid asks. By 19 March 2026 Google had deals with five utilities, covering 1 GW, to "limit or shift a portion" of its machine learning work at peak.
+That is the idea behind a new kind of flexibility. Load that can drop in seconds is useful to the grid, as long as it drops when the grid asks. By 19 March 2026 Google had deals with five utilities, covering 1 GW, to "limit or shift a portion" of its machine learning work at peak.
 
-But no public record yet shows a grid connection approved on the strength of a slowed chip.
+The catch: no public record yet shows a grid connection approved on the strength of a slowed chip.
 
 From the piece: America rations the plug
 

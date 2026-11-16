@@ -1,4 +1,4 @@
-# LinkedIn text, voice pass (16 Nov 2026 night). APPLIED 17 Nov 2026 on Tommy's go (profile About, company tagline and Overview all live).
+# LinkedIn text, voice pass (16 Nov 2026 night). SUPERSEDED 17 Nov 2026: LinkedIn is in Claude's register, not Tommy's voice. Live text is in research-build/HANDOVER.md (17 Nov entry).
 
 ## Personal profile: About
 OLD:
