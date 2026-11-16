@@ -1,6 +1,6 @@
 # LinkedIn queue: voice-pass rewrites (16 Nov 2026)
 
-For Tommy's approval, then paste into the company page's scheduled queue (Edit post works directly on scheduled posts). Scheduled times are unchanged. Not yet applied on LinkedIn.
+For Tommy's approval, then paste into the company page's scheduled queue (Edit post works directly on scheduled posts). Scheduled times are unchanged. APPLIED on LinkedIn 17 Nov 2026 (all 33 edited in place and verified against this file).
 
 33 scheduled posts: 3 main (11:30) and 30 mini (08:30, M64 at 17:30). Posts 35 to 37 are left out: their pieces were never published and they are not in the queue (queue verified at 40 posts on 9 Nov). The "Source in the piece" line is never posted, so it is not included.
 

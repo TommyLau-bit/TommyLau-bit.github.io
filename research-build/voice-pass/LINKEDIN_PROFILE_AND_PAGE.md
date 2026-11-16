@@ -1,4 +1,4 @@
-# LinkedIn text, voice pass (16 Nov 2026 night). Paste only after Tommy says go.
+# LinkedIn text, voice pass (16 Nov 2026 night). APPLIED 17 Nov 2026 on Tommy's go (profile About, company tagline and Overview all live).
 
 ## Personal profile: About
 OLD:
