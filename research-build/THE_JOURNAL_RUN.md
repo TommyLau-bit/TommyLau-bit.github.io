@@ -1,7 +1,5 @@
 # The journal run (trigger: "1")
 
-**★ WHOSE VOICE (Tommy, final, 17 Nov 2026).** Everything in this repo (the 7 articles, homepage, About, /power, descriptions, chart titles, the claims record, the LinkedIn company page, profile and posts) is written in Claude's sleek, professional register as set out in WRITING-FORMAT.md, NEVER in Tommy's raw voice (no "Basically", "Reason being", "To be fair" connectors). A voice pass was tried 16 Nov and reversed 17 Nov (history: commit 936bccd). LinkedIn: fewest words, low key, straight to the point. Tommy's own voice is only for his messages to people (emails, chases, LinkedIn notes/DMs), which live in ~/Desktop/jobs; rule: ~/Desktop/jobs/pipelines/TOMMY_VOICE.md.
-
 Set by Tommy, 10 Nov 2026. When Tommy says **"1"** (or "journal run", "check the updates"), run this whole job:
 the journal website and everything connected to it. The job-hunt trigger is "2"; this is its twin.
 
