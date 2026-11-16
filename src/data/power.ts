@@ -7,12 +7,12 @@ import type { Stat } from './power-ratings';
 
 export type Group = { id: string; name: string; tag: string; why: string };
 export const GROUPS: Group[] = [
-  { id: 'grid', name: 'The grid', tag: 'GRID', why: 'Every builder starts here, and every card below is trying to beat it. So it carries no grades.' },
+  { id: 'grid', name: 'The grid', tag: 'GRID', why: 'The default every builder starts from, and the bar every card below is trying to beat. So it carries no grades.' },
   { id: 'biggas', name: 'Big gas turbines', tag: 'GAS-L', why: 'When the grid makes you wait, you build your own power station beside the campus.' },
-  { id: 'smallgas', name: 'Small gas machines', tag: 'GAS-S', why: 'When the big turbines are sold out, smaller machines come from other factories, with other queues.' },
-  { id: 'sun', name: 'Solar and batteries', tag: 'SUN', why: 'The fastest power to build, but it can\'t get you through a winter night.' },
-  { id: 'nuclear', name: 'Large nuclear', tag: 'NUC', why: 'Power every hour of the year. Old reactors come first, new ones later.' },
-  { id: 'micro', name: 'Microreactors', tag: 'MICRO', why: 'A reactor small enough to move by road, as long as someone can make its fuel.' },
+  { id: 'smallgas', name: 'Small gas machines', tag: 'GAS-S', why: 'When the big turbines are sold out, smaller machines come from other factories and other queues.' },
+  { id: 'sun', name: 'Solar and batteries', tag: 'SUN', why: 'The fastest power to build, but it cannot carry a winter night.' },
+  { id: 'nuclear', name: 'Large nuclear', tag: 'NUC', why: 'Power for every hour of the year: old reactors first, new ones later.' },
+  { id: 'micro', name: 'Microreactors', tag: 'MICRO', why: 'A reactor small enough to move by road, if its fuel can be made.' },
 ];
 
 export type Card = {
@@ -94,7 +94,7 @@ export const CARDS: Card[] = [
    },
    "elcc": {"value": 99.949, "display": "99.95% of the year with power (US average, 2025)", "short": "99.95% of the year powered", "basis": "Not a PJM firmness rating, which the grid has no class for: the share of 2025 the average US customer had power, from SAIDI of 269.2 minutes including major events; 100 x (1 - 269.2 / 525,600). 2024 was worse, 662.6 minutes (99.87%).", "source": "EIA, Electric Power Annual, Table 11.1, Reliability Metrics of U.S. Distribution System", "url": "https://www.eia.gov/electricity/annual/html/epa_11_01.html", "date": "2025"}
   },
-  "ability": "Firm service. Basically, the grid promises power at all times short of an emergency.",
+  "ability": "Firm service: the grid promises power at all times short of an emergency.",
   "weakness": "Large transformers are quoted at 36 months, and up to 60."
  },
  {
@@ -186,7 +186,7 @@ export const CARDS: Card[] = [
    }
   },
   "ability": "About 430 MW from one machine at 43 per cent efficiency.",
-  "weakness": "A slot sold today ships in 2032 and starts running about 18 months after that. GE Vernova has 6.1 years of output under contract."
+  "weakness": "A slot sold today ships in 2032 and runs about 18 months later; GE Vernova holds 6.1 years of output under contract."
  },
  {
   "id": "ccgt",
@@ -280,7 +280,7 @@ export const CARDS: Card[] = [
    }
   },
   "ability": "Burns about 30 per cent less gas per unit than simple cycle.",
-  "weakness": "Real plants cost more than the planning figure used here. Duke's run about US$1,620 to 2,340 per kilowatt."
+  "weakness": "Real plants cost more than the planning figure graded here: Duke's run about US$1,620 to 2,340 per kilowatt."
  },
  {
   "id": "aero",
@@ -371,8 +371,8 @@ export const CARDS: Card[] = [
     "origin": "new"
    }
   },
-  "ability": "Ships about two years before a heavy unit and runs six months after that. So about four years from an order today, against about seven.",
-  "weakness": "Burns about 46 per cent more gas than combined cycle, and there's a 124-unit backlog."
+  "ability": "Ships about two years before a heavy unit and runs six months later: about four years from an order today, against about seven.",
+  "weakness": "Burns about 46 per cent more gas than combined cycle; 124-unit backlog."
  },
  {
   "id": "recip",
@@ -453,7 +453,7 @@ export const CARDS: Card[] = [
    "elcc": {"value": 92, "display": "PJM ELCC 92% (Diesel Utility class)", "basis": "Under PJM's rules (Manual 21B), reciprocating internal combustion engines are the Diesel technology type, so a pipeline-gas engine falls in the Diesel Utility class, not the gas turbine class. A class rating, not a measured record for gas engines; a behind-the-meter engine gets none unless offered into PJM's auction.", "source": "PJM, ELCC Class Ratings for the 2029/2030 Base Residual Auction; PJM Manual 21B, Revision 06, section 2.4", "url": "https://www.pjm.com/-/media/DotCom/planning/res-adeq/elcc/29-30-bra-elcc-class-ratings.pdf", "date": "2026-08-07"}
   },
   "ability": "Small 18.9 MW blocks; Wärtsilä's engine reaches full load in two minutes.",
-  "weakness": "Lead times keep getting longer. An order placed in October 2026 only runs fully in 2029."
+  "weakness": "Lead times keep rising; an October 2026 order runs fully only in 2029."
  },
  {
   "id": "fuelcell",
@@ -528,8 +528,8 @@ export const CARDS: Card[] = [
    },
    "elcc": {"value": 99.9, "display": "about 99.9% available (Bloom's fleet figure)", "short": "99.9% available", "claim": "Bloom's own fleet availability, not a grid operator's rating", "basis": "PJM has no fuel cell class: a fuel cell would fall in its Other Unlimited Resource Class, which gets a rating per resource, not a class rating. Bloom's 10-K: fleet availability about 99.9% for all non-redundant installations since 2020. Availability, not PJM's peak firmness, so not strictly comparable.", "source": "Bloom Energy, Form 10-K for 2025", "url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026006516/be-20251231.htm", "date": "2026-02-09"}
   },
-  "ability": "No flame, so New York, New Jersey and North Carolina give fuel cells air-permit exemptions.",
-  "weakness": "EIA's planning cost is US$7,818 per kilowatt, the most expensive gas machine here."
+  "ability": "No flame: New York, New Jersey and North Carolina give fuel cells air-permit exemptions.",
+  "weakness": "EIA's planning cost is US$7,818 per kilowatt, the highest gas machine here."
  },
  {
   "id": "fleet",
@@ -604,8 +604,8 @@ export const CARDS: Card[] = [
     "origin": "new"
    }
   },
-  "ability": "Over 200 MW of turbines already bought, due to run from early 2027.",
-  "weakness": "Its fleet is already booked, with 3.2 GW under long-term contracts."
+  "ability": "Over 200 MW of bought turbines due to run from early 2027.",
+  "weakness": "Its fleet is already booked: 3.2 GW under long-term contracts."
  },
  {
   "id": "solar",
@@ -686,7 +686,7 @@ export const CARDS: Card[] = [
    }
   },
   "ability": "EIA's planning build time is two years, and there is no fuel to buy.",
-  "weakness": "PJM only counts tracking solar as 7 per cent of a firm megawatt."
+  "weakness": "PJM counts tracking solar as 7 per cent of a firm megawatt."
  },
  {
   "id": "battery",
@@ -765,7 +765,7 @@ export const CARDS: Card[] = [
    }
   },
   "ability": "Builds in one year on EIA's planning assumptions.",
-  "weakness": "PJM's preliminary rating drops from 57 to 23 per cent by 2035/36."
+  "weakness": "PJM's preliminary rating falls from 57 to 23 per cent by 2035/36."
  },
  {
   "id": "restart",
@@ -857,7 +857,7 @@ export const CARDS: Card[] = [
    }
   },
   "ability": "Crane costs about US$1,900 per kilowatt and runs on ordinary fuel.",
-  "weakness": "There are only three restarts, and Palisades has had no date since fuel loading stopped."
+  "weakness": "Only three restarts exist, and Palisades has no date since fuel loading stopped."
  },
  {
   "id": "uprate",
@@ -1023,7 +1023,7 @@ export const CARDS: Card[] = [
    "elcc": {"value": 96, "display": "PJM ELCC 96% (nuclear class)", "short": "96% firm (nuclear class)", "basis": "PJM rates nuclear as one class; applied here to new reactors, none of which has yet run.", "source": "PJM, ELCC Class Ratings for the 2029/2030 Base Residual Auction", "url": "https://www.pjm.com/-/media/DotCom/planning/res-adeq/elcc/29-30-bra-elcc-class-ratings.pdf", "date": "2026-08-07"}
   },
   "ability": "Kemmerer 1 won its construction permit about 23 months after applying.",
-  "weakness": "Needs HALEU, over 40 tonnes by 2030, but only about 21 are expected by 2028."
+  "weakness": "Needs HALEU: over 40 tonnes by 2030, against about 21 expected by 2028."
  },
  {
   "id": "micro",
@@ -1098,6 +1098,6 @@ export const CARDS: Card[] = [
    "elcc": {"value": 96, "display": "PJM ELCC 96% (nuclear class)", "short": "96% firm (nuclear class)", "basis": "PJM rates nuclear as one class; applied here to microreactors, none of which has yet run on a grid.", "source": "PJM, ELCC Class Ratings for the 2029/2030 Base Residual Auction", "url": "https://www.pjm.com/-/media/DotCom/planning/res-adeq/elcc/29-30-bra-elcc-class-ratings.pdf", "date": "2026-08-07"}
   },
   "ability": "Runs three to eight years unopened, then is refuelled in a factory.",
-  "weakness": "First-of-a-kind power costs about 32.5 cents a kWh, against 8.6 for industrial users."
+  "weakness": "First-of-a-kind power costs about 32.5 cents a kWh, against 8.6 industrial."
  }
 ];

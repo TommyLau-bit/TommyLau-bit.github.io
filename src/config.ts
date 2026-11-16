@@ -3,7 +3,7 @@ export const SITE = {
   name: 'The Physical Layer',
   tagline: 'Power for AI data centres',
   description:
-    'A journal on one question: what decides how fast an AI data centre gets its power? I go through the grid connection, the equipment, gas, solar and batteries, and nuclear, in seven chapters, from primary sources and written so anyone can follow it.',
+    'A journal on one question: what decides how fast an AI data centre gets its power. The grid connection, the equipment, gas, solar and batteries, and nuclear, in seven chapters from primary sources and written to be understood by anyone.',
   author: 'Tommy Lau',
   email: 'tommyllk2003@gmail.com',
   linkedin: 'https://www.linkedin.com/in/tommy-lau-170364253',

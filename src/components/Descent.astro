@@ -228,11 +228,11 @@ const n = (i: number) => String(i).padStart(2, '0');
       </svg>
       <div class="lbl" data-at="2" style="left:1%;top:12%"><b>High-voltage line in</b></div>
       <div class="lbl lbl--mid" data-at="2" style="left:31%;top:24%"><b>Bushings</b><span>carry the line through the lid</span></div>
-      <div class="lbl lbl--mid" data-at="2" style="left:39%;top:88%"><b>Core and windings</b><span>steel sheets stacked by hand, copper wound round them, all sitting in oil</span></div>
+      <div class="lbl lbl--mid" data-at="2" style="left:39%;top:88%"><b>Core and windings</b><span>steel sheets stacked by hand, copper wound round them, all in oil</span></div>
       <div class="lbl lbl--mid" data-at="2" style="left:17%;top:93%"><b>Radiators</b><span>the oil carries heat out</span></div>
       <div class="lbl lbl--mid" data-at="3" style="left:82.75%;top:36%"><b>Switchgear</b><span>routes power inside the fence and cuts it on a fault</span></div>
       <div class="lbl lbl--end" data-at="3" style="left:99%;top:95%"><b>To the data halls</b></div>
-      <div class="lbl lbl--mid" data-at="3" style="left:63%;top:11%"><em class="ck">Choke point</em><b>A few makers, building to order</b><span>Hitachi Energy, Siemens Energy and Eaton only add factories when orders justify it</span></div>
+      <div class="lbl lbl--mid" data-at="3" style="left:63%;top:11%"><em class="ck">Choke point</em><b>A few makers, building to order</b><span>Hitachi Energy, Siemens Energy and Eaton add factories only as orders justify</span></div>
     </div>
 
     <!-- 3 · THE SITE: data-in = its grid substation, where the pull-back from the substation lands; data-out pulls back to the solar stop ─────────────────────────────────────────── -->
@@ -391,7 +391,7 @@ const n = (i: number) => String(i).padStart(2, '0');
       <div class="lbl lbl--mid" data-at="6" style="left:29%;top:96%"><b>Solar farm</b><span>about two years to build</span></div>
       <div class="lbl lbl--mid" data-at="6" style="left:69%;top:58%"><b>Batteries</b><span>about one year; four hours of power</span></div>
       <div class="lbl lbl--mid" data-at="6" style="left:84%;top:49%"><b>Data centre</b><span>the same load at 3am as at 3pm</span></div>
-      <div class="lbl lbl--mid" data-at="7" style="left:42%;top:30%"><em class="ck">Choke point</em><b>The winter night</b><span>a four-hour battery gets you to the evening, but a December night lasts about fifteen hours</span></div>
+      <div class="lbl lbl--mid" data-at="7" style="left:42%;top:30%"><em class="ck">Choke point</em><b>The winter night</b><span>a four-hour battery reaches the evening; a December night lasts about fifteen hours</span></div>
       <div class="lbl lbl--end" data-at="7" style="left:99%;top:80%"><b>Firming gas</b><span>planned even at Google's solar parks</span></div>
     </div>
 
@@ -490,13 +490,13 @@ const n = (i: number) => String(i).padStart(2, '0');
     <div class="step" data-scene="0"><div class="card">
       <p class="kick kick--energy">Chapter {ch('the-queue-not-the-chip').n} · {ch('the-queue-not-the-chip').name}</p>
       <h2>It starts with a wire</h2>
-      <p>Power for an AI data centre comes in over high-voltage lines from the public grid. In Johor and Singapore, what decides who gets to build now isn't the chips, it's the right to draw that power.</p>
+      <p>Power for an AI data centre arrives over high-voltage lines from the public grid. In Johor and Singapore, the right to draw that power, not the supply of chips, now decides who gets to build.</p>
       <ul class="reads">{read('the-queue-not-the-chip').map((r) => <li><a href={r.href}>{r.title}</a></li>)}</ul>
     </div></div>
     <div class="step" data-scene="0"><div class="card">
       <p class="kick kick--energy">Chapter {ch('america-rations-the-plug').n} · {ch('america-rations-the-plug').name}</p>
       <h2>The grid rations the plug</h2>
-      <p>{grid.what} In America it's now the grid that decides who waits, who gets cut first and who pays.</p>
+      <p>{grid.what} In America the grid now decides who waits, who is cut first and who pays.</p>
       <p class="binds"><strong>What binds.</strong> {grid.constraint}</p>
       <ul class="reads">{read('america-rations-the-plug').map((r) => <li><a href={r.href}>{r.title}</a></li>)}</ul>
     </div></div>
@@ -509,7 +509,7 @@ const n = (i: number) => String(i).padStart(2, '0');
     <div class="step" data-scene="1"><div class="card">
       <p class="kick kick--energy">Chapter {ch('the-equipment-queue').n} · {ch('the-equipment-queue').name}</p>
       <h2>Built to order, not to stock</h2>
-      <p>Nothing switches on without them, and they're made in a handful of factories. That's why the grid can't just build its way out.</p>
+      <p>Nothing switches on without them, and they are made in a handful of factories, so the grid cannot simply build its way out.</p>
       <p class="binds"><strong>What binds.</strong> {equip.constraint}</p>
       <ul class="reads">{read('the-equipment-queue').map((r) => <li><a href={r.href}>{r.title}</a></li>)}</ul>
     </div></div>
@@ -517,26 +517,26 @@ const n = (i: number) => String(i).padStart(2, '0');
     <div class="step" data-scene="2"><div class="card">
       <p class="kick kick--energy">Chapter {ch('building-your-own-power').n} · {ch('building-your-own-power').name}</p>
       <h2>So build power next door</h2>
-      <p>So builders skip the grid and make their own power right beside the building, with gas turbines, engines and fuel cells.</p>
+      <p>Builders skip the grid and make their own power beside the building: gas turbines, engines and fuel cells.</p>
     </div></div>
     <div class="step" data-scene="2"><div class="card">
       <p class="kick kick--energy">Chapter {ch('building-your-own-power').n} · {ch('building-your-own-power').name}</p>
       <h2>And meet the turbine queue</h2>
-      <p>The heavy gas turbine is the main machine here, and its makers are selling slots in 2032.</p>
-      <p class="binds"><strong>What binds.</strong> Basically, you skip the grid queue and join the turbine makers' queue instead.</p>
+      <p>The heavy gas turbine is the core machine, and its makers are selling slots in 2032.</p>
+      <p class="binds"><strong>What binds.</strong> Skipping the grid queue means joining the turbine makers' queue instead.</p>
       <ul class="reads">{read('building-your-own-power').map((r) => <li><a href={r.href}>{r.title}</a></li>)}</ul>
     </div></div>
 
     <div class="step" data-scene="3"><div class="card">
       <p class="kick kick--energy">Chapter {ch('solar-and-batteries').n} · {ch('solar-and-batteries').name}</p>
       <h2>The fastest power there is</h2>
-      <p>Solar farms and batteries are most of what America planned to build in 2026. A battery takes about a year and a solar farm about two, and neither has to wait in the turbine makers' queue.</p>
+      <p>Solar farms and batteries are most of what America planned to build in 2026. A battery takes about a year, a solar farm about two, and nobody waits in the turbine makers' queue.</p>
     </div></div>
     <div class="step" data-scene="3"><div class="card">
       <p class="kick kick--energy">Chapter {ch('solar-and-batteries').n} · {ch('solar-and-batteries').name}</p>
       <h2>But not through a winter night</h2>
-      <p>The problem is an AI data centre draws nearly the same power at 3am as at 3pm. PJM counts a megawatt of tracking solar as 7 per cent of a firm one, and a four-hour battery as 57 per cent.</p>
-      <p class="binds"><strong>What binds.</strong> A four-hour battery gets you through the evening but not the night. So buyers turn to power that runs all year.</p>
+      <p>An AI data centre draws nearly the same power at 3am as at 3pm. PJM counts a megawatt of tracking solar as 7 per cent of a firm one, and a four-hour battery as 57 per cent.</p>
+      <p class="binds"><strong>What binds.</strong> A four-hour battery reaches the evening, not the night, so buyers turn to power that runs all year.</p>
       <ul class="reads">{read('solar-and-batteries').map((r) => <li><a href={r.href}>{r.title}</a></li>)}</ul>
     </div></div>
 
@@ -549,7 +549,7 @@ const n = (i: number) => String(i).padStart(2, '0');
     <div class="step" data-scene="4"><div class="card">
       <p class="kick kick--energy">Chapter {ch('microreactors').n} · {ch('microreactors').name}</p>
       <h2>The reactor is the easy part</h2>
-      <p>Microreactors are small enough to build in a factory and drive to a site. The machine isn't what holds them back, it's the fuel.</p>
+      <p>Microreactors are small enough to build in a factory and drive to a site. What paces them is the fuel, not the machine.</p>
       <p class="binds"><strong>What binds.</strong> {nuke.constraint}</p>
       <ul class="reads">{read('microreactors').map((r) => <li><a href={r.href}>{r.title}</a></li>)}</ul>
     </div></div>
@@ -557,7 +557,7 @@ const n = (i: number) => String(i).padStart(2, '0');
     <div class="step" data-scene="5"><div class="card">
       <p class="kick kick--energy">The whole chain</p>
       <h2>Every answer is a queue</h2>
-      <p>Every way to the next gigawatt for AI has its own queue, whether it's the grid, the machines at the gate, the turbines, the winter night or the reactors' fuel. Basically, the slowest one sets the date.</p>
+      <p>The grid, the machines at the gate, the turbines, the winter night and the reactors' fuel: each way to the next gigawatt for AI has a queue of its own. The slowest one sets the date.</p>
     </div></div>
   </div>
 </div>
