@@ -199,3 +199,11 @@ Dominion to PJM LAS (29 Sep 2026) slide 5 "Non-firm load - includes load from EL
 ## Grid panel, 12 Nov 2026
 
 The grid card was replaced by a text panel on Tommy's word. No new figures: every fact is already sourced in a chapter or a card and checked above (Dominion GS-5 and PJM LAS deck; ERCOT to the PUCT, 20 Aug 2026; FERC EL26-67 quote "may only take 1-2 years to construct"; DOE July 2024 transformer lead times; Tenaga Green Lane 36 to 48 months to 12; GE Vernova Q3 2026 "sold multiple slots for 2032 delivery" and about six years of output; card speeds for the fleet, fuel cell and engines as on the cards).
+
+## Consistency fixes, 16 Nov 2026 (Tommy's five points)
+
+- **Combined cycle, Speed:** was 29 to 52 months (Hyperion, from regulator approval, plants that already held turbines), graded D. Now counted like the heavy-frame card from an order placed today: at least 81 to 92 months, a floor (same GE Vernova 2032 slot plus at least 18 months on site; EIA AEO2026 Table 3 gives combined cycle a 3-year lead time against 2 for a combustion turbine). Grade D to E. Mitsubishi's 2028 to 2030 deliveries and Hyperion kept in the basis.
+- **Combined cycle, weakness:** now says Duke's US$1,620 to 2,340/kW are real plants above the EIA planning figure the grade uses (US$1,032, re-read in AEO2026 Table 3, April 2026: CC multi-shaft 1,032, CT frame 1,158, CT aero 2,275, all confirmed).
+- **Heavy frame, weakness:** "queue is 6.1 years" reworded: 6.1 years is GE Vernova's 122 GW under contract over 20 GW a year of output, not a wait; the slot ships 2032 and runs about 18 months later.
+- **Aeroderivative, ability:** the 24-month gap now reads as relative: about four years from an order today against about seven.
+- **Restart, Speed:** unchanged. 34 to 39 months, midpoint 36.5 against the 36-month C/D line, so D by the rule; Crane still second half of 2027 (Constellation Q2 2026 release; Q3 not confirmed from Constellation's own release).

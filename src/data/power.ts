@@ -186,7 +186,7 @@ export const CARDS: Card[] = [
    }
   },
   "ability": "About 430 MW from one machine at 43 per cent efficiency.",
-  "weakness": "A slot sold today ships in 2032; GE Vernova's queue is 6.1 years."
+  "weakness": "A slot sold today ships in 2032 and runs about 18 months later; GE Vernova holds 6.1 years of output under contract."
  },
  {
   "id": "ccgt",
@@ -219,13 +219,14 @@ export const CARDS: Card[] = [
    },
    "monthsToPower": {
     "value": [
-     29,
-     52
+     81,
+     92
     ],
-    "display": "29 to 52 months",
-    "basis": "Meta's Hyperion: Louisiana's regulator approved three Entergy gas plants (2,262 MW) in August 2025 for service in 2028 and 2029; my arithmetic from approval month to January 2028 and December 2029.",
-    "source": "Louisiana Public Service Commission approval, docket U-37425, as cited in the piece",
-    "date": "2025-08"
+    "display": "at least 81 to 92 months",
+    "short": "at least 81 to 92 months",
+    "basis": "Counted like the heavy-frame card, from an order placed today: a combined-cycle plant is built around the same heavy turbine, and a GE Vernova slot sold on 28 October 2026 ships in 2032 (63 to 74 months later). It then needs at least the simple cycle's 18 months on site, and more: EIA's table gives a combined cycle a three-year lead time against two for a simple-cycle turbine. So a floor, my arithmetic. Mitsubishi Heavy says orders it booked in its August 2026 quarter are due between 2028 and 2030, so a buyer who finds a slot there can be faster. Plants already holding turbines run sooner: Entergy's three plants for Meta's Hyperion, approved in August 2025, are due in 2028 and 2029.",
+    "source": "GE Vernova results call (28 October 2026) and call of 22 July 2026; EIA, Assumptions to the Annual Energy Outlook 2026, Table 3; Mitsubishi Heavy Q&A summary (6 August 2026); Louisiana PSC docket U-37425, as cited in the piece",
+    "date": "2026-10-28"
    },
    "costPerKW": {
     "value": 1032,
@@ -279,7 +280,7 @@ export const CARDS: Card[] = [
    }
   },
   "ability": "Burns about 30 per cent less gas per unit than simple cycle.",
-  "weakness": "Same turbine queue; Duke's filed plants cost about US$1,620 to 2,340 per kilowatt."
+  "weakness": "Real plants cost more than the planning figure graded here: Duke's run about US$1,620 to 2,340 per kilowatt."
  },
  {
   "id": "aero",
@@ -370,7 +371,7 @@ export const CARDS: Card[] = [
     "origin": "new"
    }
   },
-  "ability": "Ships about 24 months before a heavy unit; six months on site.",
+  "ability": "Ships about two years before a heavy unit and runs six months later: about four years from an order today, against about seven.",
   "weakness": "Burns about 46 per cent more gas than combined cycle; 124-unit backlog."
  },
  {
