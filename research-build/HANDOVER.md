@@ -21,7 +21,24 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 3. Done: CVs updated ("grid to chip" wording; nuclear line to the depth figures); LinkedIn profile not changed.
 4. Done: article decks archived (study-decks/archive/article-decks-retired-2026-11-07/), not deleted.
 
-## START HERE (as of Mon 16 Nov 2026, end of session)
+## START HERE (as of Tue 17 Nov 2026, journal run "1")
+
+**Nothing is waiting on Claude. Start only on Tommy's trigger ("1" journal run, "2" job hunt).** Both scheduled tasks stay disabled.
+
+**Live (commits 0a5308d, fcbc3b5; both verified on the live pages).** Scouts SCOUT-17NOV-A.md and -B.md; briefs BRIEF-17NOV.md and BRIEF-FACTCHECK-17NOV.md; logs <slug>.CHANGES-17NOV.md. One writer and one separate fact-checker per chapter.
+1. **Nuclear for AI:** Oklo announced definitive Centrus HALEU contracts on 12 Nov (Centrus 8-K ex. 99.1): up to five Aurora powerhouses, deliveries from 2029, no tonnage. "The crack moves fuel in the 2030s" now "only at the decade's end"; watch line now asks how much of the 12 t/yr is contracted; Oklo claim evidence line extended. Crane "second half of 2027" now sourced to Constellation's FERC waiver request ER26-2028 (31 Mar 2026, p.17); the 6 Aug release says only "in 2027" and the Q3 release (9 Nov) gives no date. Plutonium sentence cut for room.
+2. **America rations the plug:** the RTOs' answers to FERC's show-cause orders (EL26-67 to 72), read from the transmittal letters via FERC eLibrary's public API (method in the CHANGES log): ISO-NE ER27-484 (13 Nov, cut above $250/MWh), PJM ER27-531 (Interim NITS from 16 Mar 2027; single 12-month study, first cycle late Nov 2027 to 2029), CAISO ER27-506/532 (from 16 Feb 2027), NYISO ER27-517 ($200 cut from 1 Jun 2028), MISO ER27-526/527 (Interim NITS; GRITS, part non-firm for good, cut above $100/MWh, not before 1 Jan 2029, "more than 95% of hours"). **The piece said MISO had no cut-first tier: fixed.** PJM ride-through filed ER27-522 (16 Nov, from 16 Jan 2027). SPP due 20 Nov.
+3. **Power page:** reactor restart source now cites the FERC filing (date field 2026-03-31). "Cut-first tiers state no hours" still true (no tier guarantees hours).
+
+**Loose ends done:** study deck (nuclear: Oklo contracts, 12 t/yr tracking; America: the filings) and PDF rebuilt, not committed. Email briefs NuclearForAI and AmericaRationsThePlug rebuilt (same names; the America watch line made date-proof) and _SEND refreshed. Gmail: the 13 scheduled emails carrying the America brief each cancelled, brief swapped, rescheduled to the same time with the toast confirmed (Daniel Roberts fell back to a draft once and was rescheduled from Drafts); 100 still scheduled, Drafts back to Tommy's own 9, nothing sent. The two nuclear-brief emails (Amar Naik, Daniel Filippone, 24 Nov) kept the old brief: nothing in it is wrong. Centrus study: CENTRUS_FACT_BASE.md has the 12 Nov Oklo row; **its PDF was not rebuilt** (no builder found; deck2pdf is hardwired to the deck). CV 2T, map, interview prep: nothing quotes the changes.
+
+**For Tommy:** (a) a LinkedIn post for the America update is drafted in america-rations-the-plug.CHANGES-17NOV.md, not scheduled; his call whether it is substantial. (b) The fact-checker notes two filed services now offer the firm part-plug the piece calls its strongest counter-evidence (MISO's Firm Service Step Up, PJM's interim withdrawal rights); the "What would prove me wrong" text was left untouched. (c) Mini post M51 (Mon 18 Jan 2027) calls PJM's ride-through a "proposal of 6 October": update once FERC rules on ER27-522.
+
+**Source files are stale:** research-build/deep-pieces/nuclear/nuclear.src.md and plug/plug.src.md date from 7 Nov and already differ from the live pieces (later updates edited the live files directly). Never re-run their assemble.py.
+
+**Not landed yet (check on the day):** SPP large-load filing (20 Nov), NRC Part 57 final rule (reportedly by 23 Nov), EIA 860M (24 Nov), NRC 50.43(f) effective (25 Nov, confirmed 91 FR 67195), Tenaga Q3 (late Nov), FERC orders on the ER27 filings (PJM asked within 120 days), Centrus Investor Day (7 Dec), PJM auction opens (9 Dec), Siemens Energy annual report (10 Dec), ERCOT audit (10 Dec), PJM final ELCC 2030/31 (Dec or Jan), NERC standards (31 Dec), Piketon lease extension aim (31 Dec), GE Vernova year-end (Jan), Standard Nuclear DOE approval (Feb 2027), Siemens Energy Q1 FY27 (Feb 2027).
+
+## Earlier START HERE (as of Mon 16 Nov 2026, end of session)
 
 **Nothing is waiting on Claude. Start only on Tommy's trigger ("1" journal run, "2" job hunt).** Both scheduled tasks stay disabled.
 
