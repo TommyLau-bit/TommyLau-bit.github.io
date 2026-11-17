@@ -23,6 +23,8 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 
 ## START HERE (as of Tue 17 Nov 2026, journal run "1")
 
+**Later 17 Nov (commit 8ab4371, live):** the Oklo study's fact-check found four loose Oklo facts in nuclear-for-ai, fixed in place on Tommy's word: Aurora-INL "up to 75 MW" (filings give only 15 to 75 MWe; text, both charts, ladder note, power.ts basis), the no-binding-PPA line now sourced to Oklo's 10-K 2025 instead of "Oklo says not a PPA", Aurora buyers "none binding" in the gates chart, claims.ts watch "target 2028 to 2029". Nuclear brief rebuilt and in _SEND; two scheduled emails still carry the older brief (only difference: "Aurora's 75 MW").
+
 **Nothing is waiting on Claude. Start only on Tommy's trigger ("1" journal run, "2" job hunt).** Both scheduled tasks stay disabled.
 
 **Live (commits 0a5308d, fcbc3b5; both verified on the live pages).** Scouts SCOUT-17NOV-A.md and -B.md; briefs BRIEF-17NOV.md and BRIEF-FACTCHECK-17NOV.md; logs <slug>.CHANGES-17NOV.md. One writer and one separate fact-checker per chapter.
