@@ -973,7 +973,7 @@ export const CARDS: Card[] = [
      345
     ],
     "display": "50 to 345 MW",
-    "basis": "Kemmerer 1 (TerraPower Natrium) 345 MW, Oklo Aurora 75 MW, Kairos Hermes 2 up to 50 MW.",
+    "basis": "Kemmerer 1 (TerraPower Natrium) 345 MW, Oklo Aurora up to 75 MW, Kairos Hermes 2 up to 50 MW.",
     "source": "NRC and developers, as cited in the piece",
     "date": "2026-11-07"
    },
