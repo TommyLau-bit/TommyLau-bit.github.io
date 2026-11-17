@@ -802,8 +802,8 @@ export const CARDS: Card[] = [
     ],
     "display": "34 to 39 months",
     "basis": "Crane: from Constellation's announcement and Microsoft contract (20 September 2024) to power in the second half of 2027; my arithmetic. Palisades, further along, has no date since its fuel loading stopped.",
-    "source": "Constellation (20 September 2024, 6 August 2026), as cited in the piece",
-    "date": "2026-08-06"
+    "source": "Constellation (20 September 2024) and its FERC waiver request, docket ER26-2028 (31 March 2026, page 17: \"physically able to generate in the second half of 2027\"), as cited in the piece",
+    "date": "2026-03-31"
    },
    "costPerKW": {
     "value": 1900,
