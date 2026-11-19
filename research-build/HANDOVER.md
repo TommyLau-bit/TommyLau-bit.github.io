@@ -21,7 +21,15 @@ Read this first in every journal session, then CLAUDE.md and WRITING-FORMAT.md. 
 3. Done: CVs updated ("grid to chip" wording; nuclear line to the depth figures); LinkedIn profile not changed.
 4. Done: article decks archived (study-decks/archive/article-decks-retired-2026-11-07/), not deleted.
 
-## START HERE (as of Tue 17 Nov 2026, journal run "1")
+## START HERE (as of Thu 19 Nov 2026, end of session)
+
+**Nothing is waiting on Claude. Start only on Tommy's trigger ("1" journal run, "2" job hunt).** Both scheduled tasks stay disabled. Nothing on the site changed on 19 Nov (last site commit 8ab4371, 17 Nov).
+
+**Oklo study: DONE 19 Nov (jobs folder, never on the site).** Tommy's notes fact-checked (pushback kept in company studies/Oklo/archive/), ten questions PASSED (four on retry: interest vs operations, 0 MW binding, the Meta deal, the fuel chain). OKLO_COMPANY_STUDY.pdf (2 pages, 3 charts, source in Oklo/note-source/, build.py) is in _SEND; rulebook hook extended to Oklo. OKLO_STUDY_Tommy.md is his notes in his own format with the ten Q&As (he keeps them in OneNote; no PDF of the notes). _SEND/refresh.sh had been deleting the UCL transcript; it now recopies it from essentials/UCL. **All three planned studies are done (Centrus, Bloom, Oklo). Calls (stage 4) start only on Tommy's word.**
+
+**Carry from 17 Nov:** the "Not landed yet" list below still holds (SPP 20 Nov, NRC Part 57 by ~23 Nov, EIA 860M 24 Nov, NRC 50.43(f) effective 25 Nov, Tenaga Q3, FERC ER27 orders, Centrus Investor Day 7 Dec, PJM auction 9 Dec, Siemens Energy 10 Dec, ERCOT 10 Dec).
+
+## Earlier START HERE (as of Tue 17 Nov 2026, journal run "1")
 
 **Later 17 Nov (commit 8ab4371, live):** the Oklo study's fact-check found four loose Oklo facts in nuclear-for-ai, fixed in place on Tommy's word: Aurora-INL "up to 75 MW" (filings give only 15 to 75 MWe; text, both charts, ladder note, power.ts basis), the no-binding-PPA line now sourced to Oklo's 10-K 2025 instead of "Oklo says not a PPA", Aurora buyers "none binding" in the gates chart, claims.ts watch "target 2028 to 2029". Nuclear brief rebuilt and in _SEND; two scheduled emails still carry the older brief (only difference: "Aurora's 75 MW").
 
